@@ -1,0 +1,625 @@
+{
+ "_comment": "Source mappings for pipeline/run.py. One entry per source database. `nutrients` maps NutrientKey -> spec (or list of specs tried in order: first non-null wins). Column names are matched tolerantly (case/punctuation-insensitive) and may be lists of candidates. See README.md 'Adding a source mapping'. Entries marked status 'TODO verify against file' are best guesses from published layouts and MUST be checked with `run.py --inspect`.",
+ "settings": {
+  "name_rules": "name_rules.json",
+  "name_overrides": "name_overrides.jsonl",
+  "curate_rules": "curate_rules.json",
+  "common_foods": "common_foods.txt",
+  "servings_defaults": "servings_defaults.json",
+  "dedupe": {
+   "name_threshold": 0.88,
+   "cosine_min": 0.98,
+   "kcal_rel_tol": 0.1,
+   "kcal_abs_tol": 5.0,
+   "max_posting": 400
+  },
+  "normalize": {
+   "g_tolerance": 0.5
+  },
+  "servings": {
+   "max_per_food": 6
+  }
+ },
+ "source_priority": [
+  "usda_foundation",
+  "usda_sr_legacy",
+  "cnf",
+  "usda_fndds",
+  "cofid",
+  "ciqual",
+  "ausnut",
+  "frida"
+ ],
+ "sources": [
+  {
+   "key": "usda_sr_legacy",
+   "enabled": true,
+   "status": "TODO verify against file",
+   "db": "USDA FDC SR Legacy",
+   "citation": "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central: SR Legacy (April 2018). fdc.nal.usda.gov. TODO: confirm the exact citation text/version the owner's workbook gives.",
+   "sheet": "SR Legacy",
+   "layout": "wide",
+   "header_row": 0,
+   "id_column": [
+    "NDB_No",
+    "NDB No",
+    "ndb_number",
+    "FDC_ID"
+   ],
+   "id_pad": 5,
+   "name_column": [
+    "Long_Desc",
+    "Description",
+    "Descrip",
+    "Shrt_Desc"
+   ],
+   "name_is_abbreviated": "auto",
+   "group_column": [
+    "FdGrp_Desc",
+    "Food Group",
+    "food_category"
+   ],
+   "alias_columns": [
+    "ComName"
+   ],
+   "nutrients": {
+    "kcal": {
+     "column": [
+      "Energ_Kcal",
+      "Energy_kcal",
+      "Energy (kcal)"
+     ],
+     "unit": "kcal"
+    },
+    "protein": {
+     "column": [
+      "Protein_(g)",
+      "Protein_g",
+      "Protein"
+     ],
+     "unit": "g"
+    },
+    "fat": {
+     "column": [
+      "Lipid_Tot_(g)",
+      "Lipid_Tot_g",
+      "Total lipid (fat)",
+      "Fat_g"
+     ],
+     "unit": "g"
+    },
+    "carbs": {
+     "column": [
+      "Carbohydrt_(g)",
+      "Carbohydrt_g",
+      "Carbohydrate, by difference"
+     ],
+     "unit": "g"
+    },
+    "fiber": {
+     "column": [
+      "Fiber_TD_(g)",
+      "Fiber_TD_g",
+      "Fiber, total dietary"
+     ],
+     "unit": "g"
+    },
+    "sugar": {
+     "column": [
+      "Sugar_Tot_(g)",
+      "Sugar_Tot_g",
+      "Sugars, total"
+     ],
+     "unit": "g"
+    },
+    "satFat": {
+     "column": [
+      "FA_Sat_(g)",
+      "FA_Sat_g"
+     ],
+     "unit": "g"
+    },
+    "mufa": {
+     "column": [
+      "FA_Mono_(g)",
+      "FA_Mono_g"
+     ],
+     "unit": "g"
+    },
+    "pufa": {
+     "column": [
+      "FA_Poly_(g)",
+      "FA_Poly_g"
+     ],
+     "unit": "g"
+    },
+    "calcium": {
+     "column": [
+      "Calcium_(mg)",
+      "Calcium_mg"
+     ],
+     "unit": "mg"
+    },
+    "iron": {
+     "column": [
+      "Iron_(mg)",
+      "Iron_mg"
+     ],
+     "unit": "mg"
+    },
+    "magnesium": {
+     "column": [
+      "Magnesium_(mg)",
+      "Magnesium_mg"
+     ],
+     "unit": "mg"
+    },
+    "phosphorus": {
+     "column": [
+      "Phosphorus_(mg)",
+      "Phosphorus_mg"
+     ],
+     "unit": "mg"
+    },
+    "potassium": {
+     "column": [
+      "Potassium_(mg)",
+      "Potassium_mg"
+     ],
+     "unit": "mg"
+    },
+    "sodium": {
+     "column": [
+      "Sodium_(mg)",
+      "Sodium_mg"
+     ],
+     "unit": "mg"
+    },
+    "zinc": {
+     "column": [
+      "Zinc_(mg)",
+      "Zinc_mg"
+     ],
+     "unit": "mg"
+    },
+    "copper": {
+     "column": [
+      "Copper_(mg)",
+      "Copper_mg"
+     ],
+     "unit": "mg"
+    },
+    "manganese": {
+     "column": [
+      "Manganese_(mg)",
+      "Manganese_mg"
+     ],
+     "unit": "mg"
+    },
+    "selenium": {
+     "column": [
+      "Selenium_(µg)",
+      "Selenium_(ug)",
+      "Selenium_ug"
+     ],
+     "unit": "µg"
+    },
+    "vitC": {
+     "column": [
+      "Vit_C_(mg)",
+      "Vit_C_mg"
+     ],
+     "unit": "mg"
+    },
+    "b1": {
+     "column": [
+      "Thiamin_(mg)",
+      "Thiamin_mg"
+     ],
+     "unit": "mg"
+    },
+    "b2": {
+     "column": [
+      "Riboflavin_(mg)",
+      "Riboflavin_mg"
+     ],
+     "unit": "mg"
+    },
+    "b3": {
+     "column": [
+      "Niacin_(mg)",
+      "Niacin_mg"
+     ],
+     "unit": "mg"
+    },
+    "b5": {
+     "column": [
+      "Panto_Acid_(mg)",
+      "Panto_Acid_mg"
+     ],
+     "unit": "mg"
+    },
+    "b6": {
+     "column": [
+      "Vit_B6_(mg)",
+      "Vit_B6_mg"
+     ],
+     "unit": "mg"
+    },
+    "folate": [
+     {
+      "column": [
+       "Folate_DFE_(µg)",
+       "Folate_DFE_(ug)",
+       "Folate_DFE_ug"
+      ],
+      "unit": "µg DFE"
+     },
+     {
+      "sum": [
+       {
+        "column": [
+         "Food_Folate_(µg)",
+         "Food_Folate_(ug)",
+         "Food_Folate_ug"
+        ]
+       },
+       {
+        "column": [
+         "Folic_Acid_(µg)",
+         "Folic_Acid_(ug)",
+         "Folic_Acid_ug"
+        ],
+        "factor": 1.7,
+        "optional": true
+       }
+      ],
+      "unit": "µg DFE"
+     },
+     {
+      "column": [
+       "Folate_Tot_(µg)",
+       "Folate_Tot_(ug)",
+       "Folate_Tot_ug"
+      ],
+      "unit": "µg total folate"
+     }
+    ],
+    "choline": {
+     "column": [
+      "Choline_Tot_(mg)",
+      "Choline_Tot_mg"
+     ],
+     "unit": "mg"
+    },
+    "b12": {
+     "column": [
+      "Vit_B12_(µg)",
+      "Vit_B12_(ug)",
+      "Vit_B12_ug"
+     ],
+     "unit": "µg"
+    },
+    "vitA": {
+     "column": [
+      "Vit_A_RAE",
+      "Vit_A_(RAE)",
+      "Vitamin A, RAE"
+     ],
+     "unit": "µg RAE"
+    },
+    "vitE": {
+     "column": [
+      "Vit_E_(mg)",
+      "Vit_E_mg"
+     ],
+     "unit": "mg"
+    },
+    "vitD": [
+     {
+      "column": [
+       "Vit_D_(µg)",
+       "Vit_D_µg",
+       "Vit_D_(ug)",
+       "Vit_D_ug"
+      ],
+      "unit": "µg"
+     },
+     {
+      "column": [
+       "Vit_D_IU"
+      ],
+      "unit": "IU"
+     }
+    ],
+    "vitK": {
+     "column": [
+      "Vit_K_(µg)",
+      "Vit_K_µg",
+      "Vit_K_(ug)",
+      "Vit_K_ug"
+     ],
+     "unit": "µg"
+    }
+   },
+   "portions": {
+    "layout": "wide_pairs",
+    "pairs": [
+     {
+      "grams": "GmWt_1",
+      "desc": "GmWt_Desc1"
+     },
+     {
+      "grams": "GmWt_2",
+      "desc": "GmWt_Desc2"
+     }
+    ]
+   }
+  },
+  {
+   "key": "cnf",
+   "enabled": true,
+   "status": "TODO verify against file",
+   "db": "Canadian Nutrient File",
+   "citation": "Health Canada. Canadian Nutrient File (CNF), 2015 (or later) release. canada.ca/en/health-canada/services/food-nutrition/healthy-eating/nutrient-data. TODO: confirm version.",
+   "sheet": "NUTRIENT AMOUNT",
+   "layout": "long",
+   "header_row": 0,
+   "id_column": "FoodID",
+   "id_pad": null,
+   "long": {
+    "nutrient_column": "NutrientID",
+    "value_column": "NutrientValue",
+    "match_on": "code",
+    "nutrient_lookup": {
+     "sheet": "NUTRIENT NAME",
+     "id_column": "NutrientID",
+     "code_column": "NutrientCode",
+     "name_column": "NutrientName",
+     "unit_column": "NutrientUnit"
+    }
+   },
+   "names": {
+    "sheet": "FOOD NAME",
+    "id_column": "FoodID",
+    "name_column": "FoodDescription",
+    "group_column": "FoodGroupID",
+    "group_lookup": {
+     "sheet": "FOOD GROUP",
+     "id_column": "FoodGroupID",
+     "name_column": "FoodGroupName"
+    }
+   },
+   "name_is_abbreviated": false,
+   "alias_columns": [],
+   "nutrients": {
+    "kcal": [
+     {
+      "match": [
+       "208"
+      ],
+      "unit": "kcal"
+     },
+     {
+      "match": [
+       "268"
+      ],
+      "unit": "kJ"
+     }
+    ],
+    "protein": {
+     "match": [
+      "203"
+     ]
+    },
+    "fat": {
+     "match": [
+      "204"
+     ]
+    },
+    "carbs": {
+     "match": [
+      "205"
+     ]
+    },
+    "fiber": {
+     "match": [
+      "291"
+     ]
+    },
+    "sugar": {
+     "match": [
+      "269"
+     ]
+    },
+    "satFat": {
+     "match": [
+      "606"
+     ]
+    },
+    "mufa": {
+     "match": [
+      "645"
+     ]
+    },
+    "pufa": {
+     "match": [
+      "646"
+     ]
+    },
+    "la": {
+     "match": [
+      "618"
+     ]
+    },
+    "ala": {
+     "match": [
+      "619"
+     ]
+    },
+    "epa": {
+     "match": [
+      "629"
+     ]
+    },
+    "dha": {
+     "match": [
+      "621"
+     ]
+    },
+    "vitC": {
+     "match": [
+      "401"
+     ]
+    },
+    "vitE": {
+     "match": [
+      "323"
+     ]
+    },
+    "vitK": {
+     "match": [
+      "430"
+     ]
+    },
+    "b1": {
+     "match": [
+      "404"
+     ]
+    },
+    "b2": {
+     "match": [
+      "405"
+     ]
+    },
+    "b3": {
+     "match": [
+      "406"
+     ]
+    },
+    "b5": {
+     "match": [
+      "410"
+     ]
+    },
+    "b6": {
+     "match": [
+      "415"
+     ]
+    },
+    "b12": {
+     "match": [
+      "418"
+     ]
+    },
+    "choline": {
+     "match": [
+      "421"
+     ]
+    },
+    "calcium": {
+     "match": [
+      "301"
+     ]
+    },
+    "iron": {
+     "match": [
+      "303"
+     ]
+    },
+    "magnesium": {
+     "match": [
+      "304"
+     ]
+    },
+    "phosphorus": {
+     "match": [
+      "305"
+     ]
+    },
+    "potassium": {
+     "match": [
+      "306"
+     ]
+    },
+    "zinc": {
+     "match": [
+      "309"
+     ]
+    },
+    "copper": {
+     "match": [
+      "312"
+     ]
+    },
+    "manganese": {
+     "match": [
+      "315"
+     ]
+    },
+    "selenium": {
+     "match": [
+      "317"
+     ]
+    },
+    "sodium": {
+     "match": [
+      "307"
+     ]
+    },
+    "vitA": {
+     "match": [
+      "320"
+     ],
+     "unit": "µg RAE"
+    },
+    "vitD": [
+     {
+      "match": [
+       "328"
+      ],
+      "unit": "µg"
+     },
+     {
+      "match": [
+       "324"
+      ],
+      "unit": "IU"
+     }
+    ],
+    "folate": [
+     {
+      "match": [
+       "435"
+      ],
+      "unit": "µg DFE"
+     },
+     {
+      "match": [
+       "432"
+      ],
+      "unit": "µg food folate"
+     },
+     {
+      "match": [
+       "417"
+      ],
+      "unit": "µg total folate"
+     }
+    ]
+   },
+   "portions": {
+    "layout": "long",
+    "sheet": "CONVERSION FACTOR",
+    "id_column": "FoodID",
+    "measure_id_column": "MeasureID",
+    "factor_column": "ConversionFactorValue",
+    "measure_lookup": {
+     "sheet": "MEASURE NAME",
+     "id_column": "MeasureID",
+     "name_column": "MeasureDescription"
+    }
+   }
+  }
+ ]
+}

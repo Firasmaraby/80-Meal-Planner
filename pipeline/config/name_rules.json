@@ -1,0 +1,1391 @@
+{
+ "_comment": "Rules for stages/names.py. Everything is lower-case; lexicons are comma-separated strings (phrases are matched on singularised word tokens, so 'apple' also matches 'apples'). Edit freely - no code change needed. Re-run the pipeline afterwards.",
+ "review_threshold": 0.7,
+ "abbreviations_note": "Only applied to sources that set name_is_abbreviated=true (e.g. USDA SR 'Shrt_Desc'). Whole-word replacement.",
+ "abbreviations": {
+  "ckd": "cooked",
+  "rstd": "roasted",
+  "bld": "boiled",
+  "brld": "broiled",
+  "brsd": "braised",
+  "bkd": "baked",
+  "stmd": "steamed",
+  "frsh": "fresh",
+  "frz": "frozen",
+  "unckd": "uncooked",
+  "unprep": "unprepared",
+  "prep": "prepared",
+  "drnd": "drained",
+  "sol": "solids",
+  "liq": "liquids",
+  "cnd": "canned",
+  "dehyd": "dehydrated",
+  "swt": "sweet",
+  "unswtnd": "unsweetened",
+  "swtnd": "sweetened",
+  "enr": "enriched",
+  "unenr": "unenriched",
+  "fort": "fortified",
+  "unfort": "unfortified",
+  "skn": "skin",
+  "sknless": "skinless",
+  "w/": "with",
+  "wo/": "without",
+  "w/o": "without",
+  "chse": "cheese",
+  "choc": "chocolate",
+  "pnut": "peanut",
+  "veg": "vegetable",
+  "vegs": "vegetables",
+  "sce": "sauce",
+  "stk": "steak",
+  "brst": "breast",
+  "ckn": "chicken",
+  "ln": "lean",
+  "trmd": "trimmed",
+  "sep": "separable",
+  "incl": "includes",
+  "lt": "light",
+  "reg": "regular",
+  "imit": "imitation",
+  "mxd": "mixed",
+  "nat": "natural",
+  "prcssd": "processed",
+  "pwd": "powder",
+  "pdr": "powder",
+  "evap": "evaporated",
+  "cond": "condensed",
+  "slt": "salt",
+  "sltd": "salted",
+  "unslt": "unsalted",
+  "unsltd": "unsalted",
+  "wtr": "water",
+  "grnd": "ground",
+  "chpd": "chopped",
+  "dcd": "diced",
+  "slcd": "sliced",
+  "shrd": "shredded",
+  "mshd": "mashed",
+  "whl": "whole",
+  "yel": "yellow",
+  "grn": "green",
+  "bnls": "boneless",
+  "rtb": "ready-to-bake",
+  "rte": "ready-to-eat",
+  "rtd": "ready-to-drink",
+  "rts": "ready-to-serve",
+  "cmmcl": "commercial",
+  "cmmcly": "commercially",
+  "ns": "not specified",
+  "asst": "assorted",
+  "var": "varieties",
+  "vit": "vitamin",
+  "vitd": "vitamin d",
+  "fz": "frozen",
+  "unsalt": "unsalted"
+ },
+ "drop_inline": [
+  "\\(?\\s*includes? (?:foods for )?usda'?s? (?:food distribution program|commodity)[^)]*\\)?",
+  "\\bincludes? usda commodity(?: food)?(?: [a-z]?\\d+)?",
+  "\\(\\s*nfs\\s*\\)",
+  "\\bnfs\\b",
+  "\\bnot further specified\\b",
+  "\\bmeat only\\b",
+  "\\bbroilers? or fryers?\\b",
+  "\\bbroilers?(?:-fryers?)?\\b",
+  "\\bcommercial(?:ly)?(?: prepared)?\\b",
+  "\\ball (?:types|varieties|commercial varieties|grades|classes|styles|colors)\\b",
+  "\\bmature seeds\\b",
+  "\\bwithout salt\\b",
+  "\\bdrained(?: solids?)?\\b",
+  "\\bsolids and liquids\\b",
+  "\\bunprepared\\b",
+  "\\bas purchased\\b",
+  "\\bdry heat\\b",
+  "\\bmoist heat\\b",
+  "\\bseparable lean and fat\\b",
+  "\\btrimmed to [0-9/.]+\\s*(?:inch(?:es)?\\s*)?fat\\b",
+  "\\bregular pack\\b",
+  "\\byear round average\\b",
+  "\\busda (?:choice|select|prime)\\b",
+  "\\bupc:?\\s*\\d+\\b",
+  "(?<=boiled) in (?:unsalted |salted )?water\\b",
+  "\\b\\d+ grams protein per \\d+ ounces?\\b"
+ ],
+ "drop_parts": [
+  "fresh",
+  "choice",
+  "select",
+  "prime",
+  "standard",
+  "all grades",
+  "retail cuts",
+  "lip-on",
+  "imported",
+  "regular",
+  "prepared",
+  "fluid",
+  "whole, raw or cooked",
+  "fat not added in cooking",
+  "salt not added in cooking",
+  "no added fat",
+  "from raw",
+  "from fresh",
+  "generic",
+  "assorted",
+  "ns as to .*",
+  "nfs.*",
+  "not specified",
+  "ready to use",
+  "cooked as ingredient",
+  "includes .*",
+  "as ingredient",
+  "mixed species",
+  "unspecified",
+  "plain or buttermilk",
+  "all purpose",
+  "domestic",
+  "commercial",
+  "retail",
+  "wild or farmed"
+ ],
+ "mod_rewrites": {
+  "meat and skin": "with skin",
+  "meat and skin and giblets and neck": "with skin",
+  "separable lean only": "lean only",
+  "skin only": "skin only",
+  "skin eaten": "with skin",
+  "skin not eaten": "without skin",
+  "skinless": "without skin",
+  "flesh and skin": "with skin",
+  "flesh only": "without skin"
+ },
+ "mod_rewrite_regex": [
+  [
+   "^(\\d+)% lean meat / \\d+% fat$",
+   "\\1% lean"
+  ],
+  [
+   "^(\\d+)% lean meat and \\d+% fat$",
+   "\\1% lean"
+  ],
+  [
+   "^(\\d+)% lean$",
+   "\\1% lean"
+  ]
+ ],
+ "states": [
+  "raw",
+  "uncooked",
+  "cooked",
+  "boiled",
+  "roasted",
+  "baked",
+  "fried",
+  "pan-fried",
+  "deep-fried",
+  "stir-fried",
+  "grilled",
+  "broiled",
+  "braised",
+  "steamed",
+  "stewed",
+  "simmered",
+  "microwaved",
+  "poached",
+  "sauteed",
+  "toasted",
+  "smoked",
+  "canned",
+  "frozen",
+  "dried",
+  "dehydrated",
+  "freeze-dried",
+  "pickled",
+  "cured",
+  "dry roasted",
+  "oil roasted",
+  "dry",
+  "brewed",
+  "tinned",
+  "hard-boiled",
+  "soft-boiled",
+  "scrambled"
+ ],
+ "cooking_methods": [
+  "boiled",
+  "roasted",
+  "baked",
+  "fried",
+  "pan-fried",
+  "deep-fried",
+  "stir-fried",
+  "grilled",
+  "broiled",
+  "braised",
+  "steamed",
+  "stewed",
+  "simmered",
+  "microwaved",
+  "poached",
+  "sauteed",
+  "toasted",
+  "dry roasted",
+  "oil roasted",
+  "hard-boiled",
+  "soft-boiled",
+  "scrambled"
+ ],
+ "state_spelling": {
+  "tinned": "canned",
+  "pan fried": "pan-fried",
+  "deep fried": "deep-fried",
+  "stir fried": "stir-fried"
+ },
+ "promote_heads": [
+  "fish",
+  "nuts",
+  "seeds",
+  "beverages",
+  "alcoholic beverage",
+  "game meat",
+  "spices",
+  "cereals",
+  "snacks",
+  "candies",
+  "mollusks",
+  "crustaceans",
+  "fast foods",
+  "restaurant",
+  "sweeteners",
+  "legumes",
+  "fruit juice",
+  "vegetables",
+  "fruits",
+  "babyfood",
+  "baby food"
+ ],
+ "invert_heads": {
+  "beans": "beans",
+  "peas": "peas",
+  "peppers": "peppers",
+  "oil": "oil",
+  "vinegar": "vinegar",
+  "sauce": "sauce",
+  "tea": "tea",
+  "sugars": "sugar",
+  "syrups": "syrup",
+  "cheese": "cheese",
+  "soup": "soup",
+  "noodles": "noodles",
+  "rice": "rice",
+  "bread": "bread",
+  "crackers": "crackers",
+  "pie": "pie",
+  "cake": "cake",
+  "cookies": "cookies",
+  "juice": "juice",
+  "pudding": "pudding"
+ },
+ "invert_skip_mods": [
+  "brownies",
+  "assorted",
+  "mixed",
+  "fortified",
+  "enriched",
+  "unenriched",
+  "plain",
+  "dry",
+  "prepared",
+  "with",
+  "without",
+  "not",
+  "ready-to-eat",
+  "ready-to-serve",
+  "ready-to-drink",
+  "light",
+  "low sodium",
+  "reduced sodium",
+  "unsalted",
+  "salted"
+ ],
+ "animal_heads": [
+  "beef",
+  "pork",
+  "lamb",
+  "veal",
+  "chicken",
+  "turkey",
+  "duck",
+  "goose",
+  "quail",
+  "goat",
+  "mutton",
+  "rabbit",
+  "bison",
+  "venison",
+  "elk",
+  "deer",
+  "moose",
+  "buffalo",
+  "ostrich",
+  "emu",
+  "kangaroo",
+  "pheasant",
+  "squab",
+  "guinea hen",
+  "wild boar",
+  "horse"
+ ],
+ "prefix_mods": [
+  "ground",
+  "minced"
+ ],
+ "cut_nouns": [
+  "breast",
+  "thigh",
+  "drumstick",
+  "wing",
+  "leg",
+  "back",
+  "neck",
+  "rib",
+  "ribs",
+  "loin",
+  "tenderloin",
+  "sirloin",
+  "shoulder",
+  "chuck",
+  "round",
+  "brisket",
+  "flank",
+  "shank",
+  "rump",
+  "tail",
+  "liver",
+  "heart",
+  "kidney",
+  "tongue",
+  "gizzard",
+  "giblets",
+  "steak",
+  "roast",
+  "chop",
+  "cutlet",
+  "fillet",
+  "belly",
+  "ribeye",
+  "rib eye",
+  "short loin",
+  "top loin",
+  "tri-tip",
+  "oxtail",
+  "feet",
+  "skin",
+  "brain",
+  "tripe",
+  "spleen",
+  "lung",
+  "tenderloin",
+  "plate",
+  "arm",
+  "blade",
+  "hindshank",
+  "foreshank",
+  "cheek",
+  "head"
+ ],
+ "cut_suffixes": [
+  "steak",
+  "roast",
+  "chop",
+  "cutlet",
+  "fillet",
+  "ribs",
+  "loin",
+  "tenderloin",
+  "breast",
+  "shank"
+ ],
+ "product_nouns": [
+  "bacon",
+  "ham",
+  "sausage",
+  "salami",
+  "pepperoni",
+  "prosciutto",
+  "chorizo",
+  "pastrami",
+  "bologna",
+  "frankfurter",
+  "hot dog",
+  "jerky",
+  "pate",
+  "luncheon meat",
+  "meatball"
+ ],
+ "proper_words": [
+  "brussels",
+  "swiss",
+  "chinese",
+  "italian",
+  "french",
+  "greek",
+  "mexican",
+  "indian",
+  "american",
+  "japanese",
+  "korean",
+  "thai",
+  "danish",
+  "dutch",
+  "english",
+  "irish",
+  "scottish",
+  "australian",
+  "canadian",
+  "jerusalem",
+  "atlantic",
+  "pacific",
+  "alaska",
+  "alaskan",
+  "florida",
+  "california",
+  "new zealand",
+  "granny smith",
+  "fuji",
+  "gala",
+  "red delicious",
+  "golden delicious",
+  "bartlett",
+  "bosc",
+  "anjou",
+  "concord",
+  "thompson",
+  "medjool",
+  "deglet noor",
+  "hass",
+  "yukon gold",
+  "jasmine",
+  "basmati",
+  "arborio",
+  "dijon",
+  "worcestershire",
+  "tabasco",
+  "cajun",
+  "creole",
+  "caesar",
+  "thousand island",
+  "monterey jack",
+  "colby",
+  "romano",
+  "kentucky",
+  "tennessee",
+  "bourbon",
+  "scotch",
+  "mediterranean",
+  "european",
+  "asian",
+  "african",
+  "caribbean",
+  "hawaiian",
+  "spanish",
+  "german",
+  "british",
+  "russian",
+  "turkish",
+  "lebanese",
+  "moroccan",
+  "vietnamese",
+  "filipino",
+  "polish",
+  "mexico",
+  "india",
+  "china",
+  "japan",
+  "france",
+  "italy",
+  "usa",
+  "uk",
+  "navajo",
+  "apache",
+  "hopi",
+  "mandarin",
+  "valencia",
+  "navel",
+  "bing",
+  "rainier",
+  "cavendish",
+  "braeburn",
+  "pink lady",
+  "honeycrisp",
+  "mcintosh",
+  "cortland",
+  "empire",
+  "jonathan",
+  "rome",
+  "macoun",
+  "gravenstein",
+  "ataulfo"
+ ],
+ "acronyms": [
+  "uht",
+  "bbq",
+  "usda",
+  "ii",
+  "tvp",
+  "mct",
+  "dha",
+  "epa",
+  "uk",
+  "us",
+  "usa",
+  "ph",
+  "dfe",
+  "nfs"
+ ],
+ "min_category_score": 3,
+ "group_weight": 4,
+ "source_group_hints": [
+  [
+   "dairy and egg",
+   "dairy"
+  ],
+  [
+   "spices and herbs",
+   "condiment"
+  ],
+  [
+   "baby food",
+   "prepared"
+  ],
+  [
+   "fats and oils",
+   "oil_fat"
+  ],
+  [
+   "poultry",
+   "poultry"
+  ],
+  [
+   "soups, sauces",
+   "prepared"
+  ],
+  [
+   "sausages and luncheon",
+   "meat"
+  ],
+  [
+   "breakfast cereal",
+   "grain"
+  ],
+  [
+   "fruit",
+   "fruit"
+  ],
+  [
+   "pork products",
+   "meat"
+  ],
+  [
+   "vegetable",
+   "vegetable"
+  ],
+  [
+   "nut and seed",
+   "nut_seed"
+  ],
+  [
+   "nuts and seeds",
+   "nut_seed"
+  ],
+  [
+   "beef products",
+   "meat"
+  ],
+  [
+   "beverages",
+   "beverage"
+  ],
+  [
+   "finfish and shellfish",
+   "fish"
+  ],
+  [
+   "fish and shellfish",
+   "fish"
+  ],
+  [
+   "legume",
+   "legume"
+  ],
+  [
+   "lamb, veal",
+   "meat"
+  ],
+  [
+   "baked products",
+   "grain"
+  ],
+  [
+   "sweets",
+   "sweet"
+  ],
+  [
+   "cereal grains and pasta",
+   "grain"
+  ],
+  [
+   "cereals, grains",
+   "grain"
+  ],
+  [
+   "fast food",
+   "prepared"
+  ],
+  [
+   "meals, entrees",
+   "prepared"
+  ],
+  [
+   "mixed dishes",
+   "prepared"
+  ],
+  [
+   "snacks",
+   "prepared"
+  ],
+  [
+   "restaurant",
+   "prepared"
+  ],
+  [
+   "egg",
+   "egg"
+  ],
+  [
+   "milk",
+   "dairy"
+  ],
+  [
+   "cheese",
+   "dairy"
+  ],
+  [
+   "meat",
+   "meat"
+  ],
+  [
+   "fish",
+   "fish"
+  ],
+  [
+   "seafood",
+   "fish"
+  ],
+  [
+   "cereal",
+   "grain"
+  ],
+  [
+   "bread",
+   "grain"
+  ],
+  [
+   "oil",
+   "oil_fat"
+  ],
+  [
+   "sugar",
+   "sweet"
+  ],
+  [
+   "confection",
+   "sweet"
+  ],
+  [
+   "alcohol",
+   "beverage"
+  ],
+  [
+   "drink",
+   "beverage"
+  ],
+  [
+   "herb",
+   "condiment"
+  ],
+  [
+   "condiment",
+   "condiment"
+  ],
+  [
+   "sauce",
+   "condiment"
+  ],
+  [
+   "pulse",
+   "legume"
+  ],
+  [
+   "nut",
+   "nut_seed"
+  ],
+  [
+   "seed",
+   "nut_seed"
+  ]
+ ],
+ "category_order": [
+  "prepared",
+  "sweet",
+  "condiment",
+  "beverage",
+  "oil_fat",
+  "dairy",
+  "egg",
+  "poultry",
+  "fish",
+  "meat",
+  "legume",
+  "nut_seed",
+  "grain",
+  "fruit",
+  "vegetable",
+  "other"
+ ],
+ "categories": {
+  "fruit": "apple, apricot, avocado, banana, blackberry, blackcurrant, blueberry, boysenberry, cantaloupe, carambola, starfruit, cherry, clementine, crabapple, cranberry, currant, custard apple, date, dragon fruit, pitaya, durian, elderberry, feijoa, fig, gooseberry, grape, grapefruit, guava, honeydew, jackfruit, jujube, kiwi, kiwifruit, kumquat, lemon, lime, loganberry, longan, loquat, lychee, mandarin, mango, mangosteen, melon, mulberry, nectarine, olive, orange, papaya, pawpaw, passion fruit, peach, pear, persimmon, pineapple, plantain, plum, pomegranate, pomelo, prickly pear, prune, quince, raisin, raspberry, rhubarb, sapodilla, satsuma, strawberry, tamarind, tangerine, tangelo, watermelon, fruit, applesauce, acai, ackee, breadfruit, cherimoya, soursop, lingonberry, physalis, berry, citrus, sultana, rockmelon, muskmelon, fruit cocktail, dried fruit, tomatillo, ugli, jabuticaba, rambutan, sapote, salak, guanabana, mixed fruit",
+  "vegetable": "artichoke, arugula, rocket, asparagus, bamboo shoot, beet, beetroot, beet green, bok choy, pak choi, broccoli, broccoli raab, rapini, brussels sprout, cabbage, coleslaw mix, carrot, cauliflower, celeriac, celery, chard, swiss chard, chicory, chive, collard, collards, cress, cucumber, daikon, dandelion green, eggplant, aubergine, endive, escarole, fennel, garlic, ginger, gourd, green bean, snap bean, string bean, wax bean, runner bean, french bean, jicama, kale, kohlrabi, leek, lettuce, mushroom, mustard green, okra, onion, parsley, parsnip, pea pod, snow pea, snap pea, sugar snap pea, green pea, pepper, sweet pepper, bell pepper, chili pepper, jalapeno, potato, pumpkin, radicchio, radish, rutabaga, swede, seaweed, kelp, nori, shallot, scallion, spinach, sprout, bean sprout, squash, butternut, zucchini, courgette, sweet potato, taro, tomato, turnip, turnip green, watercress, yam, cassava, yuca, yucca, lotus root, vegetable, mixed vegetable, basil, cilantro, coriander, dill, mint, rosemary, sage, thyme, tarragon, chervil, lemongrass, corn, sweet corn, sweetcorn, salad green, mesclun, romaine, iceberg, tomatillo, nopale, cactus, bitter melon, bitter gourd, chayote, sauerkraut, kimchi, pickle, microgreen, amaranth leaves, grape leaves, horseradish root, parsley root, salsify, burdock, artichoke heart, hearts of palm, palm heart, water chestnut, fiddlehead, ramp, tomato paste, mixed veg, stir fry vegetable",
+  "legume": "bean, black bean, kidney bean, pinto bean, navy bean, white bean, lima bean, butter bean, fava bean, broad bean, adzuki bean, azuki bean, mung bean, cannellini, borlotti, great northern bean, haricot, lentil, chickpea, garbanzo, split pea, black-eyed pea, cowpea, pigeon pea, soybean, soya, tofu, tempeh, natto, lupin, lupini, legume, pulse, dal, dhal, bean curd, soy flour, textured vegetable protein, tvp, hyacinth bean, winged bean, moth bean, yardlong bean",
+  "grain": "wheat, flour, bread, bagel, roll, bun, tortilla, pita, naan, chapati, roti, pasta, spaghetti, macaroni, noodle, vermicelli, couscous, rice, oat, oatmeal, porridge, muesli, granola, cereal, cornflake, corn flake, barley, rye, millet, quinoa, buckwheat, bulgur, farro, spelt, sorghum, amaranth, teff, polenta, cornmeal, corn flour, grits, semolina, bran, wheat germ, germ, cracker, crispbread, pretzel, popcorn, rice cake, muffin, croissant, english muffin, biscuit, scone, crumpet, matzo, pasta shell, ramen noodle, udon, soba, rice noodle, breadcrumb, bread crumb, stuffing mix, farina, cream of wheat, cornstarch, corn starch, tapioca, sago, wild rice, brown rice, white rice, basmati, risotto rice, flatbread, sourdough, baguette, ciabatta, focaccia, grain, whole grain, cereal grain, rolled oat, steel cut oat, pearl barley, triticale, kamut, freekeh, fonio",
+  "nut_seed": "almond, brazil nut, cashew, chestnut, coconut, hazelnut, filbert, macadamia, pecan, pine nut, pistachio, walnut, peanut, peanut butter, almond butter, nut butter, cashew butter, sunflower seed, pumpkin seed, pepita, sesame, sesame seed, tahini, flaxseed, flax seed, linseed, chia, chia seed, hemp seed, poppy seed, mixed nut, nut, seed, coconut milk, coconut cream, coconut meat, coconut flour, acorn, ginkgo nut, lotus seed, watermelon seed, safflower seed, cottonseed, nut meal, almond flour, almond paste, marzipan nut, hickory nut, beechnut, pili nut, kola nut",
+  "dairy": "milk, cheese, yogurt, yoghurt, cream, kefir, buttermilk, whey, cottage cheese, ricotta, paneer, quark, skyr, condensed milk, evaporated milk, milk powder, dairy, cheddar, mozzarella, parmesan, feta, brie, camembert, gouda, swiss cheese, blue cheese, cream cheese, goat cheese, halloumi, provolone, edam, emmental, gruyere, monterey jack, mascarpone, colby, roquefort, gorgonzola, manchego, pecorino, romano, fromage frais, creme fraiche, sour cream, half and half, whipping cream, heavy cream, curd, casein, lassi, processed cheese, cheese spread, cheese slice",
+  "egg": "egg, egg white, egg yolk, egg substitute, egg whole, duck egg, quail egg, goose egg, hen egg, egg powder, dried egg, egg albumen, scrambled egg, boiled egg, fried egg, poached egg, omelet, omelette",
+  "meat": "beef, pork, lamb, mutton, veal, goat, venison, bison, buffalo, rabbit, ham, bacon, sausage, hot dog, frankfurter, wiener, salami, pepperoni, prosciutto, chorizo, pastrami, bologna, liver, kidney, heart, tongue, tripe, steak, mince, ground beef, jerky, luncheon meat, lunchmeat, game meat, elk, moose, deer, boar, ostrich, emu, kangaroo, horse, oxtail, ribs, brisket, meat, organ, spam, corned beef, roast beef, pate, liverwurst, bratwurst, mortadella, capicola, blood sausage, black pudding, haggis, sweetbread, gizzard, giblet, offal, mutton chop, lamb chop, pork chop, pork belly, pork rind, squirrel, opossum, beaver, bear, muskrat, raccoon, caribou, reindeer, antelope, seal, whale, walrus, camel",
+  "poultry": "chicken, turkey, duck, goose, quail, pheasant, guinea hen, squab, poultry, hen, rooster, capon, cornish hen, partridge, grouse, pigeon, chicken breast, chicken thigh, chicken wing, chicken drumstick, ground turkey, ground chicken, turkey breast",
+  "fish": "fish, salmon, tuna, cod, haddock, tilapia, trout, sardine, mackerel, herring, anchovy, halibut, pollock, pollack, sole, flounder, plaice, bass, sea bass, catfish, snapper, swordfish, mahi, mahi mahi, shrimp, prawn, crab, lobster, crayfish, crawfish, oyster, mussel, clam, scallop, squid, calamari, octopus, caviar, roe, eel, carp, perch, pike, whitefish, smelt, shark, seafood, shellfish, mollusk, crustacean, surimi, cuttlefish, abalone, cockle, whelk, winkle, langoustine, kipper, pilchard, sprat, whitebait, hake, monkfish, grouper, bream, mullet, turbot, skate, ray, barramundi, orange roughy, rockfish, pompano, tilefish, sturgeon, burbot, cusk, ling, dab, coley, saithe, basa, pangasius, bonito, albacore, bluefish, shad, lamprey, sea urchin, sea cucumber, jellyfish, fish roe, fish stick",
+  "oil_fat": "oil, olive oil, butter, margarine, lard, tallow, shortening, ghee, fat, dripping, suet, cooking spray, cod liver oil, fish oil, oil spread, vegetable oil, canola oil, rapeseed oil, sunflower oil, soybean oil, coconut oil, palm oil, peanut oil, sesame oil, corn oil, safflower oil, avocado oil, flaxseed oil, walnut oil, grapeseed oil, rice bran oil, schmaltz, goose fat, duck fat, chicken fat, beef fat, pork fat, butter oil, spread, dairy spread, blended spread, mct oil, salad oil, cooking fat, vegetable shortening, hydrogenated oil",
+  "beverage": "beverage, drink, juice, soda, cola, coffee, tea, water, beer, wine, liquor, spirit, whiskey, whisky, vodka, rum, gin, brandy, cider, lemonade, smoothie, milkshake, energy drink, sports drink, almond milk, soy milk, oat milk, rice milk, hemp milk, cashew milk, coconut water, kombucha, sake, liqueur, punch, nectar, tonic, club soda, seltzer, mineral water, soft drink, fizzy drink, carbonated beverage, cocktail, margarita, tequila, champagne, port, sherry, vermouth, mead, hot chocolate, cocoa drink, malt drink, chocolate drink, protein shake, kvass, ginger ale, root beer, fruit drink, fruit punch, orange juice, apple juice, tomato juice, vegetable juice, lemon juice, lime juice, grape juice, instant coffee, espresso, latte, cappuccino, herbal tea, iced tea, green tea, black tea, matcha, yerba mate, horchata, eggnog, ale, lager, stout, cooler, shandy, alcoholic beverage, malt beverage, drinking water, tap water, bottled water, infusion",
+  "condiment": "sauce, ketchup, catsup, mustard, mayonnaise, mayo, vinegar, salt, spice, seasoning, dressing, salad dressing, salsa, relish, gravy, bouillon, stock, soy sauce, miso, hummus, guacamole, pesto, chutney, baking powder, baking soda, yeast, vanilla, extract, food coloring, gelatin, wasabi, horseradish, caper, curry paste, curry powder, marinade, tartar sauce, hot sauce, sriracha, fish sauce, oyster sauce, hoisin, teriyaki, worcestershire, cinnamon, cumin, turmeric, paprika, oregano, nutmeg, clove, cardamom, coriander seed, fennel seed, mustard seed, saffron, allspice, chili powder, garlic powder, onion powder, black pepper, white pepper, cayenne, ginger ground, bay leaf, herb dried, dill seed, celery seed, cumin seed, caraway, anise, star anise, sumac, za'atar, garam masala, five spice, mace, tarragon dried, thyme dried, basil dried, sage dried, parsley dried, rosemary dried, mint dried, asafoetida, fenugreek, vanilla extract, almond extract, cream of tartar, msg, monosodium glutamate, tamari, mirin, miso paste, tahini sauce, aioli, remoulade, barbecue sauce, bbq sauce, steak sauce, a1, teriyaki sauce, enchilada sauce, taco sauce, pasta sauce, marinara, alfredo, tomato sauce, white sauce, cheese sauce, pickle relish, sandwich spread, nutritional yeast, brewer's yeast, liquid smoke, kimchi sauce, harissa, sambal, gochujang, tabasco, ranch dressing",
+  "sweet": "sugar, honey, syrup, molasses, jam, jelly, marmalade, preserve, candy, chocolate, cocoa, cookie, cake, brownie, pie, pastry, doughnut, donut, danish, pudding, custard, ice cream, sorbet, sherbet, popsicle, gelatin dessert, marshmallow, frosting, icing, sweetener, caramel, toffee, fudge, dessert, sprinkles, granola bar, candy bar, chewing gum, cheesecake, tart, cupcake, eclair, macaroon, meringue, wafer, gumdrop, jelly bean, licorice, lollipop, nougat, praline, truffle, turkey delight, turkish delight, halva, baklava, flan, mousse, trifle, crumble, cobbler, strudel, sundae, gelato, frozen yogurt, frozen dessert, maple syrup, corn syrup, agave, stevia, aspartame, sucralose, apple butter, fruit leather, fruit snack, fruit roll, cereal bar, energy bar, protein bar, snack bar, chocolate chip, shortbread, gingerbread, biscotti, rice pudding, bread pudding, panna cotta, tiramisu, creme brulee, pavlova, pancake syrup, dulce de leche, nutella, chocolate spread, hazelnut spread, treacle, golden syrup, powdered sugar, brown sugar, icing sugar, cotton candy, sugar substitute",
+  "prepared": "soup, stew, chili, pizza, sandwich, burger, hamburger, cheeseburger, burrito, taco, enchilada, quesadilla, lasagna, casserole, macaroni and cheese, mac and cheese, salad, coleslaw, pot pie, dumpling, sushi, spring roll, egg roll, nugget, fish stick, french fry, fries, potato chip, corn chip, tortilla chip, chip, crisp, snack, fast food, entree, dinner, meal, frozen meal, hash brown, mashed potato, meatball, meat loaf, meatloaf, stuffing, pancake, waffle, french toast, quiche, fried rice, curry, stir fry, baked bean, refried bean, tamale, empanada, pierogi, ramen, pad thai, kebab, kabob, gyro, falafel, wrap, hot pocket, pot roast, shepherd's pie, chicken parmesan, fajita, nacho, trail mix, broth, consomme, bisque, chowder, gumbo, jambalaya, risotto, paella, pilaf, stuffed, sloppy joe, corn dog, calzone, panini, sub sandwich, hoagie, blt, club sandwich, deli salad, potato salad, tuna salad, egg salad, chicken salad, pasta salad, fish cake, crab cake, croquette, fritter, tempura, katsu, schnitzel, bao, dim sum, samosa, pakora, bhaji, biryani, tikka masala, korma, mac n cheese, baby food, babyfood, infant formula, formula, toddler, gerber, happy meal, value meal, kids meal, lunchable, instant noodle, cup noodle, noodle soup, pop tart, toaster pastry, breakfast sandwich, breakfast burrito, biscuits and gravy, tv dinner, ready meal, microwave meal, pot noodle, rice bowl, burrito bowl, poke bowl, buddha bowl, smoothie bowl, overnight oats, protein pancake"
+ },
+ "tags": {
+  "fatty_fish": "salmon, mackerel, sardine, herring, anchovy, trout, bluefin, eel, pilchard, sprat, kipper, whitebait, albacore, sturgeon, shad, bluefish, fatty fish, lake trout, pompano",
+  "leafy_green": "spinach, kale, chard, lettuce, arugula, rocket, collard, collards, mustard green, watercress, bok choy, pak choi, turnip green, beet green, endive, escarole, radicchio, dandelion green, salad green, romaine, mesclun, microgreen, cress, amaranth leaves, mizuna, tatsoi, lambs lettuce",
+  "whole_grain": "whole wheat, whole grain, whole-grain, wholemeal, wholegrain, brown rice, oat, oatmeal, rolled oat, buckwheat, quinoa, bulgur, amaranth, millet, teff, wild rice, farro, sorghum, popcorn, rye whole, whole rye, whole barley, hulled barley, freekeh, kamut, spelt whole, steel cut",
+  "plant_iron": "lentil, chickpea, garbanzo, tofu, tempeh, spinach, pumpkin seed, pepita, sesame, quinoa, blackstrap, amaranth, kale, swiss chard, soybean, edamame, kidney bean, black bean, white bean, pinto bean, navy bean, adzuki, mung bean, hemp seed, cashew, prune, tahini, oat, nutritional yeast, cocoa",
+  "fermented": "yogurt, yoghurt, kefir, kimchi, sauerkraut, miso, tempeh, natto, kombucha, sourdough, cheese, buttermilk, soy sauce, tamari, fish sauce, skyr, quark, lassi, cheddar, parmesan, mozzarella, feta, brie, camembert, gouda, blue cheese, cottage cheese, kvass"
+ },
+ "tag_processed_keywords": "sausage, bacon, ham, hot dog, frankfurter, salami, pepperoni, bologna, luncheon meat, lunchmeat, spam, jerky, nugget, potato chip, french fry, candy, cookie, cake, soft drink, soda, ice cream, margarine, shortening, cereal bar, fish stick, instant noodle, processed cheese, cheese spread, doughnut, donut, pop tart, cracker, cornflake, corn flake, pizza, hot dog, mortadella, chorizo, pate, liverwurst, bratwurst, corn chip, tortilla chip, energy drink, chocolate bar, candy bar, gummy, marshmallow, frosting",
+ "tag_processed_categories": [
+  "prepared",
+  "sweet"
+ ],
+ "synonyms": [
+  {
+   "terms": [
+    "chickpea",
+    "garbanzo",
+    "garbanzo bean",
+    "chick pea",
+    "bengal gram"
+   ]
+  },
+  {
+   "terms": [
+    "zucchini",
+    "courgette"
+   ]
+  },
+  {
+   "terms": [
+    "eggplant",
+    "aubergine",
+    "brinjal"
+   ]
+  },
+  {
+   "terms": [
+    "cilantro",
+    "coriander leaves",
+    "coriander leaf",
+    "fresh coriander",
+    "coriander"
+   ],
+   "unless": [
+    "seed",
+    "ground",
+    "powder",
+    "dried",
+    "spice"
+   ]
+  },
+  {
+   "terms": [
+    "shrimp",
+    "prawn"
+   ]
+  },
+  {
+   "terms": [
+    "arugula",
+    "rocket",
+    "roquette"
+   ],
+   "unless": [
+    "fuel",
+    "salad rocket launcher"
+   ]
+  },
+  {
+   "terms": [
+    "rutabaga",
+    "swede"
+   ]
+  },
+  {
+   "terms": [
+    "snow pea",
+    "mangetout",
+    "mange tout"
+   ]
+  },
+  {
+   "terms": [
+    "bell pepper",
+    "sweet pepper",
+    "capsicum"
+   ]
+  },
+  {
+   "terms": [
+    "beet",
+    "beetroot"
+   ],
+   "unless": [
+    "greens",
+    "green",
+    "sugar"
+   ]
+  },
+  {
+   "terms": [
+    "scallion",
+    "green onion",
+    "spring onion",
+    "salad onion"
+   ]
+  },
+  {
+   "terms": [
+    "sweet corn",
+    "sweetcorn"
+   ]
+  },
+  {
+   "terms": [
+    "cornstarch",
+    "cornflour",
+    "corn starch"
+   ]
+  },
+  {
+   "terms": [
+    "powdered sugar",
+    "icing sugar",
+    "confectioners sugar",
+    "confectioners' sugar"
+   ]
+  },
+  {
+   "terms": [
+    "superfine sugar",
+    "caster sugar",
+    "castor sugar"
+   ]
+  },
+  {
+   "terms": [
+    "whole wheat",
+    "wholemeal",
+    "whole-wheat",
+    "whole meal"
+   ]
+  },
+  {
+   "terms": [
+    "ground beef",
+    "beef mince",
+    "minced beef",
+    "hamburger meat"
+   ]
+  },
+  {
+   "terms": [
+    "cookie",
+    "biscuit"
+   ],
+   "unless": [
+    "buttermilk",
+    "baking powder",
+    "gravy",
+    "southern",
+    "plain or"
+   ]
+  },
+  {
+   "terms": [
+    "potato chips",
+    "crisps",
+    "potato crisps"
+   ]
+  },
+  {
+   "terms": [
+    "yogurt",
+    "yoghurt",
+    "yoghourt"
+   ]
+  },
+  {
+   "terms": [
+    "oats",
+    "porridge oats",
+    "rolled oats"
+   ]
+  },
+  {
+   "terms": [
+    "peanut",
+    "groundnut",
+    "monkey nut"
+   ],
+   "unless": [
+    "oil"
+   ]
+  },
+  {
+   "terms": [
+    "canola oil",
+    "rapeseed oil"
+   ]
+  },
+  {
+   "terms": [
+    "bok choy",
+    "pak choi",
+    "pak choy"
+   ]
+  },
+  {
+   "terms": [
+    "green beans",
+    "string beans",
+    "snap beans",
+    "french beans",
+    "haricot vert"
+   ]
+  },
+  {
+   "terms": [
+    "fava beans",
+    "broad beans",
+    "faba beans"
+   ]
+  },
+  {
+   "terms": [
+    "navy beans",
+    "haricot beans"
+   ]
+  },
+  {
+   "terms": [
+    "lima beans",
+    "butter beans"
+   ]
+  },
+  {
+   "terms": [
+    "okra",
+    "lady's finger",
+    "ladys finger",
+    "ladies fingers",
+    "gumbo"
+   ],
+   "unless": [
+    "soup",
+    "chicken"
+   ]
+  },
+  {
+   "terms": [
+    "kiwifruit",
+    "kiwi",
+    "kiwi fruit",
+    "chinese gooseberry"
+   ]
+  },
+  {
+   "terms": [
+    "romaine lettuce",
+    "cos lettuce",
+    "romaine",
+    "cos"
+   ],
+   "unless": [
+    "cosmo"
+   ]
+  },
+  {
+   "terms": [
+    "golden raisins",
+    "sultanas",
+    "sultana"
+   ]
+  },
+  {
+   "terms": [
+    "papaya",
+    "pawpaw"
+   ]
+  },
+  {
+   "terms": [
+    "passion fruit",
+    "granadilla"
+   ]
+  },
+  {
+   "terms": [
+    "ketchup",
+    "catsup",
+    "tomato ketchup"
+   ]
+  },
+  {
+   "terms": [
+    "crayfish",
+    "crawfish"
+   ]
+  },
+  {
+   "terms": [
+    "squid",
+    "calamari"
+   ]
+  },
+  {
+   "terms": [
+    "cantaloupe",
+    "rockmelon",
+    "muskmelon"
+   ]
+  },
+  {
+   "terms": [
+    "hot dog",
+    "frankfurter",
+    "wiener",
+    "weiner"
+   ]
+  },
+  {
+   "terms": [
+    "soda",
+    "soft drink",
+    "fizzy drink",
+    "carbonated beverage"
+   ]
+  },
+  {
+   "terms": [
+    "mayonnaise",
+    "mayo"
+   ]
+  },
+  {
+   "terms": [
+    "celeriac",
+    "celery root"
+   ]
+  },
+  {
+   "terms": [
+    "jerusalem artichoke",
+    "sunchoke"
+   ]
+  },
+  {
+   "terms": [
+    "swiss chard",
+    "chard",
+    "silverbeet",
+    "silver beet"
+   ]
+  },
+  {
+   "terms": [
+    "chili pepper",
+    "chilli pepper",
+    "chile pepper",
+    "hot pepper",
+    "chilli",
+    "chili",
+    "chile"
+   ],
+   "unless": [
+    "con carne",
+    "sauce",
+    "powder",
+    "bean",
+    "dog"
+   ]
+  },
+  {
+   "terms": [
+    "fish stick",
+    "fish finger",
+    "fish fingers"
+   ]
+  },
+  {
+   "terms": [
+    "popsicle",
+    "ice lolly",
+    "ice pop"
+   ]
+  },
+  {
+   "terms": [
+    "broiled",
+    "grilled"
+   ]
+  },
+  {
+   "terms": [
+    "molasses",
+    "black treacle",
+    "treacle"
+   ]
+  },
+  {
+   "terms": [
+    "baking soda",
+    "bicarbonate of soda",
+    "sodium bicarbonate"
+   ]
+  },
+  {
+   "terms": [
+    "tomato paste",
+    "tomato puree",
+    "tomato purée"
+   ]
+  },
+  {
+   "terms": [
+    "all-purpose flour",
+    "plain flour",
+    "all purpose flour"
+   ]
+  },
+  {
+   "terms": [
+    "self-rising flour",
+    "self-raising flour",
+    "self rising flour"
+   ]
+  },
+  {
+   "terms": [
+    "heavy cream",
+    "double cream",
+    "heavy whipping cream"
+   ]
+  },
+  {
+   "terms": [
+    "skim milk",
+    "skimmed milk",
+    "nonfat milk",
+    "fat free milk",
+    "fat-free milk"
+   ]
+  },
+  {
+   "terms": [
+    "frosting",
+    "icing"
+   ],
+   "unless": [
+    "sugar"
+   ]
+  },
+  {
+   "terms": [
+    "candy",
+    "sweets"
+   ],
+   "unless": [
+    "potato",
+    "corn",
+    "cotton"
+   ]
+  },
+  {
+   "terms": [
+    "doughnut",
+    "donut"
+   ]
+  },
+  {
+   "terms": [
+    "muesli",
+    "granola"
+   ],
+   "unless": [
+    "bar"
+   ]
+  },
+  {
+   "terms": [
+    "cassava",
+    "manioc",
+    "yuca",
+    "yucca"
+   ]
+  },
+  {
+   "terms": [
+    "lemon grass",
+    "lemongrass"
+   ]
+  },
+  {
+   "terms": [
+    "blackcurrant",
+    "black currant"
+   ]
+  },
+  {
+   "terms": [
+    "redcurrant",
+    "red currant"
+   ]
+  },
+  {
+   "terms": [
+    "rapini",
+    "broccoli raab",
+    "broccoli rabe"
+   ]
+  }
+ ],
+ "spelling": {
+  "yoghurt": "yogurt",
+  "yoghourt": "yogurt",
+  "flavour": "flavor",
+  "flavoured": "flavored",
+  "colour": "color",
+  "fibre": "fiber",
+  "pasteurised": "pasteurized",
+  "homogenised": "homogenized",
+  "iodised": "iodized",
+  "caramelised": "caramelized",
+  "grey": "gray",
+  "mould": "mold",
+  "litre": "liter",
+  "tinned": "canned",
+  "skimmed": "skim",
+  "semi-skimmed": "low-fat",
+  "sulphur": "sulfur",
+  "favourite": "favorite",
+  "doughnut": "donut",
+  "cheque": "check",
+  "jewellery": "jewelry",
+  "organised": "organized",
+  "sweetcorn": "sweet corn",
+  "wholemeal": "whole wheat",
+  "aubergine": "eggplant",
+  "courgette": "zucchini",
+  "prawn": "shrimp",
+  "garbanzo": "chickpea",
+  "beetroot": "beet",
+  "capsicum": "bell pepper",
+  "rocket": "arugula",
+  "swede": "rutabaga",
+  "cornflour": "cornstarch",
+  "mangetout": "snow pea",
+  "crisps": "potato chips"
+ },
+ "dedupe_stopwords": [
+  "the",
+  "of",
+  "and",
+  "a",
+  "an",
+  "in",
+  "or",
+  "from",
+  "for",
+  "as",
+  "to",
+  "style",
+  "type",
+  "form"
+ ],
+ "generic_base_nouns": [
+  "fish",
+  "meat",
+  "seed",
+  "nut",
+  "cereal",
+  "game",
+  "beverage",
+  "spice",
+  "snack",
+  "candy",
+  "food",
+  "product",
+  "mix",
+  "oil",
+  "sauce",
+  "bread",
+  "beans",
+  "peas",
+  "peppers",
+  "cheese",
+  "soup",
+  "rice",
+  "cake",
+  "pie",
+  "cookies",
+  "crackers",
+  "noodles",
+  "juice",
+  "tea"
+ ],
+ "paren_keep_words": [
+  "with",
+  "without",
+  "no",
+  "not",
+  "and",
+  "or",
+  "in",
+  "from",
+  "for",
+  "added",
+  "plus",
+  "skin",
+  "raw",
+  "cooked",
+  "prepared",
+  "fortified",
+  "enriched"
+ ],
+ "alias_skip_pattern": "native|indian|usda|traditional|typical|includes|nfs|approximately|average"
+}

@@ -1,0 +1,344 @@
+{
+ "settings": {
+  "name_rules": "../config/name_rules.json",
+  "name_overrides": "none.jsonl",
+  "curate_rules": "../config/curate_rules.json",
+  "common_foods": "../config/common_foods.txt",
+  "servings_defaults": "../config/servings_defaults.json",
+  "dedupe": {
+   "name_threshold": 0.88,
+   "cosine_min": 0.98,
+   "kcal_rel_tol": 0.1,
+   "kcal_abs_tol": 5.0
+  },
+  "servings": {
+   "max_per_food": 6
+  }
+ },
+ "source_priority": [
+  "fake_us",
+  "fake_ca",
+  "fake_uk"
+ ],
+ "sources": [
+  {
+   "key": "fake_us",
+   "db": "Synthetic US Table (test)",
+   "citation": "SYNTHETIC test data A, not real.",
+   "status": "synthetic",
+   "sheet": "FakeUSDA",
+   "layout": "wide",
+   "header_row": 0,
+   "id_column": "NDB_No",
+   "id_pad": 5,
+   "name_column": "Long_Desc",
+   "group_column": "FdGrp_Desc",
+   "nutrients": {
+    "kcal": {
+     "column": "Energ_Kcal",
+     "unit": "kcal"
+    },
+    "protein": {
+     "column": "Protein_g",
+     "unit": "g"
+    },
+    "fat": {
+     "column": "Lipid_Tot_g",
+     "unit": "g"
+    },
+    "carbs": {
+     "column": "Carbohydrt_g",
+     "unit": "g"
+    },
+    "fiber": {
+     "column": "Fiber_TD_g",
+     "unit": "g"
+    },
+    "sugar": {
+     "column": "Sugar_Tot_g",
+     "unit": "g"
+    },
+    "satFat": {
+     "column": "FA_Sat_g",
+     "unit": "g"
+    },
+    "calcium": {
+     "column": "Calcium_mg",
+     "unit": "mg"
+    },
+    "iron": {
+     "column": "Iron_mg",
+     "unit": "mg"
+    },
+    "magnesium": {
+     "column": "Magnesium_mg",
+     "unit": "mg"
+    },
+    "potassium": {
+     "column": "Potassium_mg",
+     "unit": "mg"
+    },
+    "sodium": {
+     "column": "Sodium_mg",
+     "unit": "mg"
+    },
+    "zinc": {
+     "column": "Zinc_mg",
+     "unit": "mg"
+    },
+    "vitC": {
+     "column": "Vit_C_mg",
+     "unit": "mg"
+    },
+    "vitA": [
+     {
+      "column": "Vit_A_RAE",
+      "unit": "µg RAE"
+     },
+     {
+      "column": "Vit_A_IU",
+      "unit": "IU"
+     }
+    ],
+    "folate": {
+     "column": "Folate_DFE_ug",
+     "unit": "µg DFE"
+    },
+    "vitD": [
+     {
+      "column": "Vit_D_ug",
+      "unit": "µg"
+     },
+     {
+      "column": "Vit_D_IU",
+      "unit": "IU"
+     }
+    ],
+    "vitE": {
+     "column": "Vit_E_mg",
+     "unit": "mg"
+    },
+    "vitK": {
+     "column": "Vit_K_ug",
+     "unit": "µg"
+    },
+    "b12": {
+     "column": "Vit_B12_ug",
+     "unit": "µg"
+    }
+   },
+   "portions": {
+    "layout": "wide_pairs",
+    "pairs": [
+     {
+      "grams": "GmWt_1",
+      "desc": "GmWt_Desc1"
+     },
+     {
+      "grams": "GmWt_2",
+      "desc": "GmWt_Desc2"
+     }
+    ]
+   }
+  },
+  {
+   "key": "fake_ca",
+   "db": "Synthetic CA Table (test)",
+   "citation": "SYNTHETIC test data B, not real.",
+   "status": "synthetic",
+   "sheet": "FakeCNF",
+   "layout": "wide",
+   "header_row": 2,
+   "id_column": "FoodID",
+   "name_column": "FoodDescription",
+   "nutrients": {
+    "kcal": [
+     {
+      "column": "Energy (kcal)",
+      "unit": "kcal"
+     },
+     {
+      "column": "Energy (kJ)",
+      "unit": "kJ"
+     }
+    ],
+    "protein": {
+     "column": "Protein (g)",
+     "unit": "g"
+    },
+    "fat": {
+     "column": "Total Fat (g)",
+     "unit": "g"
+    },
+    "carbs": {
+     "column": "Carbohydrate (g)",
+     "unit": "g"
+    },
+    "fiber": {
+     "column": "Dietary Fibre (g)",
+     "unit": "g"
+    },
+    "calcium": {
+     "column": "Calcium (mg)",
+     "unit": "mg"
+    },
+    "iron": {
+     "column": "Iron (mg)",
+     "unit": "mg"
+    },
+    "potassium": {
+     "column": "Potassium (mg)",
+     "unit": "mg"
+    },
+    "sodium": {
+     "column": "Sodium (g)",
+     "unit": "g"
+    },
+    "vitC": {
+     "column": "Vitamin C (mg)",
+     "unit": "mg"
+    },
+    "vitA": {
+     "column": "Vitamin A (RAE µg)",
+     "unit": "µg RAE"
+    },
+    "vitD": {
+     "column": "Vitamin D (IU)",
+     "unit": "IU"
+    },
+    "folate": {
+     "column": "Folate DFE (mcg)",
+     "unit": "µg DFE"
+    },
+    "vitE": {
+     "column": "Vitamin E (mg)",
+     "unit": "mg"
+    }
+   }
+  },
+  {
+   "key": "fake_uk",
+   "db": "Synthetic UK Table (test)",
+   "citation": "SYNTHETIC test data C, not real.",
+   "status": "synthetic",
+   "sheet": "UK_Values",
+   "layout": "long",
+   "id_column": "Code",
+   "long": {
+    "nutrient_column": "Component",
+    "value_column": "Value",
+    "unit_column": "Unit",
+    "match_on": "raw"
+   },
+   "names": {
+    "sheet": "UK_Foods",
+    "id_column": "Code",
+    "name_column": "Food Name",
+    "group_column": "Group"
+   },
+   "nutrients": {
+    "kcal": {
+     "match": [
+      "Energy"
+     ],
+     "unit": "kJ"
+    },
+    "protein": {
+     "match": [
+      "Protein"
+     ]
+    },
+    "fat": {
+     "match": [
+      "Fat"
+     ]
+    },
+    "carbs": {
+     "match": [
+      "Carbohydrate"
+     ]
+    },
+    "fiber": {
+     "match": [
+      "Fibre"
+     ]
+    },
+    "sodium": {
+     "match": [
+      "Sodium"
+     ]
+    },
+    "calcium": {
+     "match": [
+      "Calcium"
+     ]
+    },
+    "iron": {
+     "match": [
+      "Iron"
+     ]
+    },
+    "potassium": {
+     "match": [
+      "Potassium"
+     ]
+    },
+    "magnesium": {
+     "match": [
+      "Magnesium"
+     ]
+    },
+    "manganese": {
+     "match": [
+      "Manganese"
+     ]
+    },
+    "selenium": {
+     "match": [
+      "Selenium"
+     ]
+    },
+    "iodine": {
+     "match": [
+      "Iodine"
+     ]
+    },
+    "vitC": {
+     "match": [
+      "Vitamin C"
+     ]
+    },
+    "vitA": {
+     "match": [
+      "Vitamin A"
+     ]
+    },
+    "vitD": {
+     "match": [
+      "Vitamin D"
+     ]
+    },
+    "vitE": {
+     "match": [
+      "Vitamin E"
+     ]
+    },
+    "vitK": {
+     "match": [
+      "Vitamin K"
+     ]
+    },
+    "folate": {
+     "match": [
+      "Folate"
+     ]
+    },
+    "b12": {
+     "match": [
+      "Vitamin B12"
+     ]
+    }
+   }
+  }
+ ]
+}

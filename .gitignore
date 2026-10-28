@@ -36,8 +36,13 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
-example
+
 
 # generated native folders
 /ios
 /android
+
+.env
+pipeline/out/
+pipeline/input/
+*.xlsx.tmp

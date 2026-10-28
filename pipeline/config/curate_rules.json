@@ -1,0 +1,53 @@
+{
+  "_comment": "Rules for stages/curate.py. Patterns are case-insensitive regexes tested against the primary raw name, the cleaned name and the source food-group text. Every decision is written to out/curate_log.csv.",
+
+  "min_nutrients_for_common": 8,
+  "require_any_of": ["kcal", "protein"],
+
+  "drop": [
+    {"reason": "lab_sample",
+     "pattern": "\\b(test sample|lab sample|laboratory|sample\\s*#?\\d+|reference material|standard reference|srm\\s*\\d+|nist|calibration|proficiency|qc sample|quality control|dummy|placeholder|test food|do not use|unused|discontinued|deleted)\\b|^(sample|test)\\b"},
+    {"reason": "industrial_ingredient",
+     "pattern": "\\bindustrial\\b|\\bfor (?:food ?service|institutional|bakery|manufactur\\w*|further processing)\\b|\\bfood ?service\\b|\\bbulk\\b|\\bwholesale\\b|\\bfoodservice\\b"},
+    {"reason": "infant_formula",
+     "pattern": "\\binfant\\b|\\bformula,? (?:ready|powder|prepared|milk|soy|liquid|concentrate)|\\bhuman milk\\b|\\bbreast ?milk\\b|\\bsimilac\\b|\\benfamil\\b|\\bnutramigen\\b|\\bpediasure\\b|\\bfollow-?on\\b|\\btoddler\\b"},
+    {"reason": "baby_food",
+     "pattern": "\\bbaby ?foods?\\b|\\bbabyfood\\b|\\bgerber\\b|\\bbeech-?nut\\b|\\bheinz baby\\b|\\bstrained\\b|\\bjunior\\b.*\\bgerber\\b"},
+    {"reason": "supplement_or_medical",
+     "pattern": "\\bdietary supplement\\b|\\bmedical food\\b|\\benteral\\b|\\btube feeding\\b|\\bpet food\\b|\\bdog food\\b|\\bcat food\\b"}
+  ],
+
+  "drop_source_groups": ["baby foods", "babyfoods", "infant"],
+
+  "rare": [
+    {"reason": "game_meat", "categories": ["meat", "poultry"], "unless_commonness_at_least": 45,
+     "pattern": "\\b(game|bison|buffalo|venison|elk|moose|caribou|reindeer|deer|antelope|rabbit|hare|wild boar|boar|squirrel|opossum|possum|beaver|bear|muskrat|raccoon|ostrich|emu|kangaroo|goat|horse|camel|seal|whale|walrus|pheasant|quail|partridge|grouse|pigeon|squab|goose|guinea)\\b"},
+    {"reason": "organ_meat_beyond_liver", "categories": ["meat", "poultry"], "unless_commonness_at_least": 60,
+     "pattern": "\\b(hearts?|kidneys?|tongue|tripe|brains?|spleen|lungs?|pancreas|thymus|sweetbreads?|intestines?|stomach|testes|gizzards?|giblets?|feet|trotters?|blood|udder|cheeks?|lips?|snout|ears?|heads?|chitterlings?|offal|variety meats?)\\b"},
+    {"reason": "obscure_meat_part", "categories": ["meat", "poultry"], "unless_commonness_at_least": 60,
+     "pattern": "\\bskin only\\b|\\bfat only\\b|\\bseparable fat\\b|\\bbones?\\b|\\bneck bones\\b"},
+    {"reason": "regional_ethnic_low_commonness", "commonness_below": 40,
+     "pattern": "alaska(?:n)? native|northern plains|navajo|hopi|apache|shoshone|bannock|pima|pueblo|inuit|maori|oglala|lakota|sioux|cherokee|\\bcree\\b|haida|tlingit|yupik|eskimo|aboriginal|pacific northwest|southwest indian|wild plant|traditional|nunavut|bush tucker|indigenous|muktuk|akutaq|fry bread"},
+    {"reason": "branded",
+     "pattern": "[®™]|\\bupc\\b|\\b(kellogg|kraft|nabisco|general mills|quaker|campbell|pillsbury|mcdonald|burger king|wendy'?s|taco bell|kfc|pizza hut|subway|domino'?s|starbucks|dunkin|little caesars|arby'?s|chick-?fil-?a|popeyes|applebee|denny'?s|olive garden|chili'?s|red lobster|pepperidge|hershey|nestle|oscar mayer|hormel|tyson|heinz|lean cuisine|healthy choice|stouffer|banquet|hot pockets|jimmy dean|ben & jerry|haagen|dannon|yoplait|chobani|gatorade|coca-?cola|pepsi|red bull|snickers|twix|m&m|reese'?s|oreo|cheerios|pop-?tarts|lunchables|little debbie|entenmann|sara lee|rice-?a-?roni|uncle ben|knorr|lipton|kikkoman|bush'?s|goya|progresso|swanson|digiorno|totino|kashi|cascadian|amy'?s|annie'?s|trader joe|whole foods|walmart|great value|kirkland)\\b"},
+    {"reason": "restaurant_item", "source_group_pattern": "restaurant|fast food", "commonness_below": 40, "pattern": "$^"}
+  ],
+
+  "rank": {
+    "category_base": {"fruit": 20, "vegetable": 20, "meat": 18, "poultry": 20, "fish": 18, "egg": 20, "dairy": 18,
+                      "grain": 18, "legume": 18, "nut_seed": 18, "oil_fat": 14, "beverage": 10, "condiment": 8,
+                      "sweet": 6, "prepared": 4, "other": 0},
+    "common_exact": 40,
+    "common_subset": 30,
+    "brevity": {"1": 12, "2": 9, "3": 5, "4": 2, "5": 0, "default": -8},
+    "per_extra_source": 5,
+    "max_source_bonus_count": 4,
+    "good_states": ["raw", "boiled", "baked", "roasted", "steamed", "grilled", "broiled", "cooked", "dry", "brewed"],
+    "good_state_bonus": 4,
+    "no_state_bonus": 2,
+    "board_coverage_weight": 10,
+    "low_name_conf_penalty": 5,
+    "digit_penalty": 3,
+    "rare_cap": 20
+  }
+}
