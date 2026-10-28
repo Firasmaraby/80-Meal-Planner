@@ -56,7 +56,12 @@ export type IconName = { ios: SFSymbol; md: AndroidSymbol };
 export const I = {
   today: { ios: 'sun.max.fill', md: 'wb_sunny' },
   board: { ios: 'square.grid.3x3.fill', md: 'grid_view' },
-  plans: { ios: 'fork.knife', md: 'restaurant_menu' },
+  plans: { ios: 'calendar.day.timeline.left', md: 'calendar_view_week' },
+  meals: { ios: 'fork.knife', md: 'dinner_dining' },
+  bookmark: { ios: 'bookmark.fill', md: 'bookmark' },
+  restore: { ios: 'arrow.uturn.left.circle', md: 'restore' },
+  more: { ios: 'ellipsis', md: 'more_horiz' },
+  filter: { ios: 'line.3.horizontal.decrease', md: 'filter_list' },
   learn: { ios: 'book.fill', md: 'menu_book' },
   you: { ios: 'person.crop.circle.fill', md: 'account_circle' },
   add: { ios: 'plus', md: 'add' },

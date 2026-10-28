@@ -71,6 +71,8 @@ export default function RootLayout() {
             <Stack.Screen name="log" options={{ presentation: 'modal' }} />
             <Stack.Screen name="food/[id]" options={{ presentation: 'modal' }} />
             <Stack.Screen name="nutrient/[key]" options={{ presentation: 'formSheet', sheetAllowedDetents: [0.6, 1], sheetGrabberVisible: true }} />
+            <Stack.Screen name="library/[key]" />
+            <Stack.Screen name="learn" />
             <Stack.Screen name="grocery" />
             <Stack.Screen name="admin" />
           </Stack>

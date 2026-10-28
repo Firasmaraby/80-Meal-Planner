@@ -7,7 +7,7 @@ export const TABS = [
   { name: 'index', label: 'Today', icon: I.today },
   { name: 'board', label: 'Board', icon: I.board },
   { name: 'plans', label: 'Plans', icon: I.plans },
-  { name: 'learn', label: 'Learn', icon: I.learn },
+  { name: 'meals', label: 'Meals', icon: I.meals },
   { name: 'you', label: 'You', icon: I.you },
 ] as const;
 

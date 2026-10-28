@@ -1,13 +1,11 @@
-import { router } from 'expo-router';
 import { useState } from 'react';
 import { View, useWindowDimensions } from 'react-native';
 
-import { NUTRIENTS } from '@/engine/nutrients';
 import type { NutrientKey } from '@/engine/types';
 import { useDay, useHistory } from '@/state/day';
-import { daysBetween, today, useStore } from '@/state/store';
+import { today } from '@/state/store';
 import { useOpenNutrient } from '@/ui/panels';
-import { Button, Card, Chip, Row, Screen, Section, Txt } from '@/ui/primitives';
+import { Card, Chip, Row, Screen, Section, Txt } from '@/ui/primitives';
 import { MAX_WIDTH, groupColor, radius, space, useTheme } from '@/ui/theme';
 import { NutrientTile } from '@/ui/viz';
 
@@ -25,7 +23,6 @@ export default function Board() {
   const history = useHistory(35, date);
   const open = useOpenNutrient();
   const [show, setShow] = useState<'eaten' | 'projected'>('eaten');
-  const focus = day.profile.focus;
   const cols = 5;
   const inner = Math.min(width, MAX_WIDTH) - space.lg * 2;
   const tileSize = Math.floor((inner - space.sm * (cols - 1)) / cols);
@@ -68,7 +65,6 @@ export default function Board() {
                   pct={p.pct}
                   ghost={ghost}
                   noData={p.amount == null && (ghostBy.get(k)?.amount == null)}
-                  focus={focus.includes(k)}
                   size={tileSize}
                   onPress={() => open(k)}
                 />
@@ -102,8 +98,6 @@ export default function Board() {
           </Txt>
         </Card>
       </Section>
-
-      <FocusCycle />
 
       <Txt v="caption" dim={2} style={{ marginTop: space.xl, lineHeight: 18 }}>
         Targets are the US/Canadian Dietary Reference Intakes (National Academies) for your age, sex and life stage. Tiles marked “no data” are
@@ -172,77 +166,5 @@ function Heatmap({ days }: { days: { date: string; ratio: number; logged: boolea
         </Row>
       ))}
     </View>
-  );
-}
-
-/** Six-week Focus 3 cycles: lock in, then add three more. */
-function FocusCycle() {
-  const c = useTheme();
-  const profile = useStore((s) => s.profile);
-  const lockInFocus = useStore((s) => s.lockInFocus);
-  const setFocus = useStore((s) => s.setFocus);
-  const [picking, setPicking] = useState<NutrientKey[] | null>(null);
-  const weeks = daysBetween(profile.focusStartedAt ?? today(), today()) / 7;
-  const ready = weeks >= 6;
-  const candidates = GROUPS.flatMap((g) => g.keys).filter((k) => !profile.lockedIn.includes(k) && k !== 'b7' && k !== 'iodine');
-
-  return (
-    <Section title="Focus cycle">
-      <Card>
-        <Txt v="h3">{ready ? 'Six weeks done. Lock them in.' : `Week ${Math.floor(weeks) + 1} of 6`}</Txt>
-        <Txt v="caption" dim={1} style={{ marginTop: 4, lineHeight: 18 }}>
-          {ready
-            ? 'Your first three are habit now. Keep them, and pick the next three to build on.'
-            : 'Stick with the same three until the foods that cover them are automatic. Then add the next three.'}
-        </Txt>
-        {profile.lockedIn.length > 0 && (
-          <Row gap={6} style={{ marginTop: space.md, flexWrap: 'wrap' }}>
-            <Txt v="caption" dim={2}>
-              Locked in:
-            </Txt>
-            {profile.lockedIn.map((k) => (
-              <Txt key={k} v="caption" style={{ fontWeight: '700' }}>
-                {NUTRIENTS[k].short}
-              </Txt>
-            ))}
-          </Row>
-        )}
-        {picking ? (
-          <>
-            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: space.md }}>
-              {candidates.map((k) => (
-                <Chip
-                  key={k}
-                  label={NUTRIENTS[k].label.replace(/ \(.+\)/, '')}
-                  active={picking.includes(k)}
-                  color={c.accent}
-                  onPress={() =>
-                    setPicking(picking.includes(k) ? picking.filter((x) => x !== k) : picking.length < 3 ? [...picking, k] : picking)
-                  }
-                />
-              ))}
-            </View>
-            <Button
-              label={ready ? `Lock in & start ${picking.length}/3` : `Change focus (${picking.length}/3)`}
-              disabled={picking.length !== 3}
-              style={{ marginTop: space.md }}
-              onPress={() => {
-                if (ready) lockInFocus(picking);
-                else setFocus(picking);
-                setPicking(null);
-              }}
-            />
-          </>
-        ) : (
-          <Button
-            kind={ready ? 'primary' : 'secondary'}
-            label={ready ? 'Choose my next three' : 'Change my focus'}
-            style={{ marginTop: space.md }}
-            onPress={() => setPicking(ready ? [] : profile.focus)}
-          />
-        )}
-        <Button kind="ghost" small label="How Focus 3 works" style={{ marginTop: space.xs }} onPress={() => router.push({ pathname: '/learn', params: { open: 'three' } })} />
-      </Card>
-    </Section>
   );
 }

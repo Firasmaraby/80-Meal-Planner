@@ -164,11 +164,6 @@ export interface Profile {
   proteinPerKg: number;
   /** saturated-fat ceiling as % of calories */
   satFatPct: number;
-  /** the user's current "Focus 3" */
-  focus: NutrientKey[];
-  focusStartedAt?: string; // ISO date
-  /** nutrients locked in from earlier focus cycles */
-  lockedIn: NutrientKey[];
   diet: string[]; // filters: vegetarian, pescatarian, dairy-free, gluten-free...
 }
 

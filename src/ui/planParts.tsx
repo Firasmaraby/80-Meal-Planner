@@ -2,16 +2,19 @@
  * Shared pieces for the plan screens (onboarding, plan library, plan detail):
  * the micronutrient fingerprint, plan averages, diet matching, a pill and a bottom action bar.
  */
+import { Image } from 'expo-image';
+import { router } from 'expo-router';
 import { useMemo, type ReactNode } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { boardProgress, dayPlanTotal, sum, type NutrientProgress } from '@/engine/calc';
 import { BOARD_KEYS, NUTRIENTS } from '@/engine/nutrients';
-import type { MealPlan, NutrientKey, NutrientVector, Profile } from '@/engine/types';
+import type { Meal, MealPlan, MealSlot, NutrientKey, NutrientVector, Profile } from '@/engine/types';
 import { FOOD_INDEX } from '@/state/catalog';
 
-import { Icon, Row, Txt, type IconName } from './primitives';
+import { MealArt } from './MealArt';
+import { Icon, Row, Txt, tap, type IconName } from './primitives';
 import { groupColor, MAX_WIDTH, radius, space, useTheme } from './theme';
 
 // ── Diet filters ───────────────────────────────────────────────────────────
@@ -33,7 +36,7 @@ const SATISFIED_BY: Record<string, string[]> = {
   'gluten-free': ['gluten-free'],
 };
 
-export function dietMatches(plan: MealPlan, diet: string[]): boolean {
+export function dietMatches(plan: Pick<MealPlan, 'tags'>, diet: string[]): boolean {
   const tags = plan.tags.map((t) => t.toLowerCase());
   return diet.every((d) => (SATISFIED_BY[d] ?? [d]).some((t) => tags.includes(t)));
 }
@@ -195,6 +198,160 @@ export function BottomBar({ children }: { children: ReactNode }) {
       <View style={{ width: '100%', maxWidth: MAX_WIDTH, alignSelf: 'center', paddingHorizontal: space.lg, paddingTop: space.md, gap: space.sm }}>
         {children}
       </View>
+    </View>
+  );
+}
+
+// ── Meals ──────────────────────────────────────────────────────────────────
+
+export const SLOT_LABEL: Record<MealSlot, string> = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', snack: 'Snack' };
+export const SLOT_PLURAL: Record<MealSlot, string> = { breakfast: 'Breakfasts', lunch: 'Lunches', dinner: 'Dinners', snack: 'Snacks' };
+export const SLOT_ORDER: MealSlot[] = ['breakfast', 'lunch', 'dinner', 'snack'];
+
+/** The meal's picture: its photo when it has one, otherwise the plate drawn from its ingredients. */
+export function MealThumb({ meal, size = 56 }: { meal: Pick<Meal, 'ingredients' | 'photoUrl'>; size?: number }) {
+  const c = useTheme();
+  if (!meal.photoUrl) return <MealArt ingredients={meal.ingredients} size={size} />;
+  return (
+    <Image
+      source={{ uri: meal.photoUrl }}
+      contentFit="cover"
+      transition={150}
+      accessibilityIgnoresInvertColors
+      style={{ width: size, height: size, borderRadius: size > 100 ? radius.lg : radius.md, backgroundColor: c.surface2 }}
+    />
+  );
+}
+
+/** Horizontal chip row that bleeds to the screen edge. */
+export function ChipRow({ label, children }: { label?: string; children: ReactNode }) {
+  return (
+    <View style={{ marginTop: space.md }}>
+      {label ? (
+        <Txt v="label" dim={2} style={{ marginBottom: 6 }}>
+          {label}
+        </Txt>
+      ) : null}
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={{ marginHorizontal: -space.lg }}
+        contentContainerStyle={{ paddingHorizontal: space.lg, gap: space.sm }}>
+        {children}
+      </ScrollView>
+    </View>
+  );
+}
+
+/** Open a meal in the library. The key is `${planId}~${mealId}`; the screen decodes it. */
+export const openLibraryMeal = (key: string) =>
+  router.push({ pathname: '/library/[key]', params: { key: encodeURIComponent(key) } });
+
+/** The board nutrients a set of totals covers best, as % of the person's daily need. */
+export function topMicros(totals: NutrientVector, who: Who, n = 3): NutrientProgress[] {
+  return boardProgress(totals, who)
+    .filter((x) => x.amount != null && x.pct > 0)
+    .sort((a, b) => b.pct - a.pct)
+    .slice(0, n);
+}
+
+/** "512 kcal · P 32 · C 40 · F 18", with the macro letters in their colours. */
+export function MacroLine({ totals }: { totals: NutrientVector }) {
+  const c = useTheme();
+  const r = (k: NutrientKey) => Math.round(totals[k] ?? 0);
+  const part = (letter: string, k: NutrientKey, color: string) => (
+    <Txt v="caption" dim={1} key={letter}>
+      <Txt v="caption" color={color} style={{ fontWeight: '800' }}>
+        {letter}
+      </Txt>{' '}
+      {r(k)}
+    </Txt>
+  );
+  return (
+    <Row gap={space.sm} style={{ flexWrap: 'wrap' }}>
+      <Txt v="caption" dim={1}>
+        <Txt v="caption" style={{ fontWeight: '800' }}>
+          {r('kcal').toLocaleString()}
+        </Txt>{' '}
+        kcal
+      </Txt>
+      {part('P', 'protein', c.protein)}
+      {part('C', 'carbs', c.carbs)}
+      {part('F', 'fat', c.fat)}
+    </Row>
+  );
+}
+
+/** kcal, protein, carbs, fat and fiber as one row of big numbers. */
+export function MacroRow({ totals }: { totals: NutrientVector }) {
+  const c = useTheme();
+  const items: { label: string; value: string; color: string }[] = [
+    { label: 'kcal', value: Math.round(totals.kcal ?? 0).toLocaleString(), color: c.ink },
+    { label: 'protein', value: `${Math.round(totals.protein ?? 0)}g`, color: c.protein },
+    { label: 'carbs', value: `${Math.round(totals.carbs ?? 0)}g`, color: c.carbs },
+    { label: 'fat', value: `${Math.round(totals.fat ?? 0)}g`, color: c.fat },
+    { label: 'fiber', value: `${Math.round(totals.fiber ?? 0)}g`, color: c.fiber },
+  ];
+  return (
+    <View
+      accessible
+      accessibilityLabel={items.map((i) => `${i.value.replace('g', ' grams')} ${i.label}`).join(', ')}
+      style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+      {items.map((i) => (
+        <View key={i.label} style={{ flex: 1 }}>
+          <Txt v="num" color={i.color} style={{ fontSize: 17 }}>
+            {i.value}
+          </Txt>
+          <Txt v="caption" dim={2} style={{ fontSize: 11 }}>
+            {i.label}
+          </Txt>
+        </View>
+      ))}
+    </View>
+  );
+}
+
+/** Two or three options in one rounded track; the chosen one sits raised. */
+export function Segmented<T extends string>({
+  options,
+  value,
+  onChange,
+}: {
+  options: { key: T; label: string }[];
+  value: T;
+  onChange: (k: T) => void;
+}) {
+  const c = useTheme();
+  return (
+    <View accessibilityRole="tablist" style={{ flexDirection: 'row', padding: 3, borderRadius: radius.pill, backgroundColor: c.surface2 }}>
+      {options.map((o) => {
+        const on = o.key === value;
+        return (
+          <Pressable
+            key={o.key}
+            accessibilityRole="tab"
+            accessibilityLabel={o.label}
+            accessibilityState={{ selected: on }}
+            onPress={() => {
+              if (!on) tap('select');
+              onChange(o.key);
+            }}
+            style={{
+              flex: 1,
+              height: 36,
+              borderRadius: radius.pill,
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundColor: on ? c.surface : 'transparent',
+              borderWidth: on ? StyleSheet.hairlineWidth : 0,
+              borderColor: c.line,
+            }}>
+            <Txt v="caption" color={on ? c.ink : c.ink2} style={{ fontWeight: '700' }}>
+              {o.label}
+            </Txt>
+          </Pressable>
+        );
+      })}
     </View>
   );
 }

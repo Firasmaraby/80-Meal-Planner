@@ -3,10 +3,10 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, ScrollView, Switch, TextInput, View } from 'react-native';
 
 import { boardProgress, foodHighlights, scaled } from '@/engine/calc';
-import { requirementsFor } from '@/engine/dri';
-import { NUTRIENTS } from '@/engine/nutrients';
+import { COMPLETE_AT, NUTRIENTS } from '@/engine/nutrients';
 import type { Food, MealSlot, NutrientKey, Profile } from '@/engine/types';
 import { FOODS, food, foodSearch } from '@/state/catalog';
+import { useDay } from '@/state/day';
 import { today, useStore } from '@/state/store';
 import { Chip, Icon, I, IconButton, Row, Screen, Section, Txt, tap } from '@/ui/primitives';
 import { radius, space, useTheme } from '@/ui/theme';
@@ -80,26 +80,37 @@ export default function LogFood() {
       .slice(0, 8);
   }, [recents, favFoods]);
 
-  const { focus, sex, age, lifeStage, diet } = profile;
+  // what today's plan still leaves open: board nutrients with data that end the day under 80%
+  const projected = useDay(date).projectedProgress;
+  const { diet } = profile;
+  const gaps = useMemo(
+    () =>
+      projected
+        .filter((p) => p.amount != null && !p.complete)
+        .map((p) => ({ key: p.key, need: p.req.rda * COMPLETE_AT - (p.amount ?? 0), pct: p.pct })),
+    [projected],
+  );
   const suggestions = useMemo(() => {
-    const p = { sex, age, lifeStage };
-    const reqs = requirementsFor(focus, p);
+    if (gaps.length === 0) return { foods: [] as Food[], keys: [] as NutrientKey[] };
     const skip = new Set([...favFoods, ...recentFoods].map((f) => f.id));
-    return FOODS.filter(
+    const scored = FOODS.filter(
       (f) => !f.rare && (f.rank ?? 50) >= 50 && f.category !== 'sweet' && f.category !== 'oil_fat' && !f.tags?.includes('processed') && fitsDiet(f, diet) && !skip.has(f.id),
     )
       .map((f) => {
-        const portion = portionOf(f);
-        const v = scaled(f, portion.g);
-        // average of how much of each focus nutrient one typical serving covers (capped, so one huge value can't win)
-        const score = focus.reduce((s, k) => s + Math.min(1, (v[k] ?? 0) / (reqs[k]?.rda ?? Infinity)), 0) / Math.max(1, focus.length);
-        return { f, score };
+        const v = scaled(f, portionOf(f).g);
+        // share of each open gap that one typical serving covers (capped at 1, so one huge value can't win)
+        const hits = gaps.map((g) => ({ key: g.key, share: Math.min(1, (v[g.key] ?? 0) / g.need) }));
+        return { f, score: hits.reduce((s, h) => s + h.share, 0), keys: hits.filter((h) => h.share >= 0.1).map((h) => h.key) };
       })
-      .filter((x) => x.score >= 0.15)
+      .filter((x) => x.score >= 0.25)
       .sort((a, b) => b.score - a.score)
-      .slice(0, 6)
-      .map((x) => x.f);
-  }, [focus, sex, age, lifeStage, diet, favFoods, recentFoods]);
+      .slice(0, 6);
+    // the chips show the gaps these foods work on, most-covered first
+    const tally = new Map<NutrientKey, number>();
+    for (const x of scored) for (const k of x.keys) tally.set(k, (tally.get(k) ?? 0) + 1);
+    const keys = [...tally.entries()].sort((a, b) => b[1] - a[1]).map(([k]) => k);
+    return { foods: scored.map((x) => x.f), keys };
+  }, [gaps, diet, favFoods, recentFoods]);
 
   const quickAdd = (f: Food) => {
     const portion = portionOf(f);
@@ -206,12 +217,13 @@ export default function LogFood() {
                 <View style={{ gap: space.sm }}>{recentFoods.map((f) => row(f))}</View>
               </Section>
             )}
-            {suggestions.length > 0 && (
-              <Section title="Fills your focus 3">
+            {suggestions.foods.length > 0 && (
+              <Section title="Fills what today’s plan leaves open">
                 <Txt v="caption" dim={2} style={{ marginTop: -space.xs }}>
-                  Good in {focus.map((k) => NUTRIENTS[k].label.replace(/ \(.+\)/, '').toLowerCase()).join(', ')}, per typical serving.
+                  Still short on {suggestions.keys.slice(0, 3).map((k) => NUTRIENTS[k].label.replace(/ \(.+\)/, '').toLowerCase()).join(', ')}
+                  {suggestions.keys.length > 3 ? ' and more' : ''}. Shown per typical serving.
                 </Txt>
-                <View style={{ gap: space.sm }}>{suggestions.map((f) => row(f, focus))}</View>
+                <View style={{ gap: space.sm }}>{suggestions.foods.map((f) => row(f, suggestions.keys))}</View>
               </Section>
             )}
             {favFoods.length === 0 && recentFoods.length === 0 && (

@@ -6,7 +6,8 @@ import type { Profile } from '@/engine/types';
 import type { DayMeal } from '@/state/day';
 import { useStore } from '@/state/store';
 
-import { Button, Icon, I, Row, Txt, tap } from './primitives';
+import { MealArt } from './MealArt';
+import { Button, Icon, IconButton, I, Row, Txt, tap } from './primitives';
 import { radius, space, useTheme } from './theme';
 import { MicroChip } from './viz';
 
@@ -16,6 +17,7 @@ export function MealCard({ m, date, planId, profile }: { m: DayMeal; date: strin
   const c = useTheme();
   const logMeal = useStore((s) => s.logMeal);
   const unlogMeal = useStore((s) => s.unlogMeal);
+  const removeMealFromDay = useStore((s) => s.removeMealFromDay);
   const top = boardProgress(m.totals, profile)
     .filter((x) => x.amount != null)
     .sort((a, b) => b.pct - a.pct)
@@ -46,31 +48,45 @@ export function MealCard({ m, date, planId, profile }: { m: DayMeal; date: strin
             {SLOT_LABEL[m.meal.slot]}
             {m.meal.prepMinutes ? `  ·  ${m.meal.prepMinutes} min` : ''}
           </Txt>
-          {m.edited && (
+          {m.source === 'added' ? (
             <Row gap={4}>
-              <Icon name={I.swap} size={12} color={c.vitamin} />
-              <Txt v="caption" color={c.vitamin} style={{ fontWeight: '700', fontSize: 11 }}>
-                customised
+              <Icon name={I.meals} size={12} color={c.mineral} />
+              <Txt v="caption" color={c.mineral} style={{ fontWeight: '700', fontSize: 11 }}>
+                {m.replaces ? 'swapped in' : 'added'}
               </Txt>
             </Row>
+          ) : (
+            m.edited && (
+              <Row gap={4}>
+                <Icon name={I.swap} size={12} color={c.vitamin} />
+                <Txt v="caption" color={c.vitamin} style={{ fontWeight: '700', fontSize: 11 }}>
+                  customised
+                </Txt>
+              </Row>
+            )
           )}
         </Row>
-        <Txt v="h3" style={{ marginTop: 2 }} color={m.eaten ? c.ink2 : c.ink}>
-          {m.meal.name}
-        </Txt>
-        <Row style={{ marginTop: 6 }} gap={space.md}>
-          <Txt v="caption" dim={1}>
-            <Txt v="caption" style={{ fontWeight: '800' }}>
-              {kcal}
-            </Txt>{' '}
-            kcal
-          </Txt>
-          <Txt v="caption" dim={1}>
-            <Txt v="caption" style={{ fontWeight: '800' }} color={c.protein}>
-              {protein} g
-            </Txt>{' '}
-            protein
-          </Txt>
+        <Row gap={space.md} style={{ alignItems: 'flex-start', marginTop: 2 }}>
+          <View style={{ flex: 1 }}>
+            <Txt v="h3" color={m.eaten ? c.ink2 : c.ink}>
+              {m.meal.name}
+            </Txt>
+            <Row style={{ marginTop: 6 }} gap={space.md}>
+              <Txt v="caption" dim={1}>
+                <Txt v="caption" style={{ fontWeight: '800' }}>
+                  {kcal}
+                </Txt>{' '}
+                kcal
+              </Txt>
+              <Txt v="caption" dim={1}>
+                <Txt v="caption" style={{ fontWeight: '800' }} color={c.protein}>
+                  {protein} g
+                </Txt>{' '}
+                protein
+              </Txt>
+            </Row>
+          </View>
+          <MealArt ingredients={m.ingredients} size={52} />
         </Row>
         <Row style={{ marginTop: space.sm, flexWrap: 'wrap' }} gap={6}>
           {top.map((t) => (
@@ -98,6 +114,8 @@ export function MealCard({ m, date, planId, profile }: { m: DayMeal; date: strin
             label="Swap / edit"
             onPress={() => router.push({ pathname: '/meal/[id]', params: { id: m.meal.id, date } })}
           />
+          <View style={{ flex: 1 }} />
+          <IconButton icon={I.trash} label={`Remove ${m.meal.name} from this day`} onPress={() => removeMealFromDay(date, m.meal.id)} />
         </Row>
       </Pressable>
     </View>

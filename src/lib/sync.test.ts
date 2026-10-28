@@ -1,17 +1,24 @@
 import { describe, expect, it } from 'vitest';
 
 import type { Profile } from '../engine/types';
+import type { AddedMeal } from '../state/store';
 import {
   chunk,
+  dayMealsToRows,
   logToRow,
+  mergeDayMealRows,
   mergeRemoteLogs,
   parseTime,
+  planDayMealSync,
   planSync,
   profileToRow,
   pruneSyncedTombstones,
   resolveProfile,
+  rowsToDayMeals,
   rowToLog,
   rowToProfile,
+  skipUid,
+  type DayMealRow,
   type ProfileRow,
   type SyncableLog,
 } from './sync';
@@ -222,9 +229,6 @@ describe('profile sync', () => {
     lifeStage: 'none',
     proteinPerKg: 1.6,
     satFatPct: 10,
-    focus: ['iron', 'magnesium', 'vitD'],
-    focusStartedAt: '2026-10-01',
-    lockedIn: ['vitC'],
     diet: ['vegetarian'],
   };
 
@@ -237,13 +241,11 @@ describe('profile sync', () => {
     expect(Object.keys(profileToRow('u1', { profile, updatedAt: T('09:00:00') }))).not.toContain('is_admin');
   });
 
-  it('trims a timestamp to a DATE for focus_started_at and caps focus at 3', () => {
-    const row = profileToRow('u1', {
-      profile: { ...profile, focusStartedAt: '2026-10-01T12:34:56.000Z', focus: ['iron', 'zinc', 'b12', 'vitK'] },
-      updatedAt: T('09:00:00'),
-    });
-    expect(row.focus_started_at).toBe('2026-10-01');
-    expect(row.focus).toHaveLength(3);
+  it('has no focus columns any more', () => {
+    const keys = Object.keys(profileToRow('u1', { profile, updatedAt: T('09:00:00') }));
+    expect(keys).not.toContain('focus');
+    expect(keys).not.toContain('focus_started_at');
+    expect(keys).not.toContain('locked_in');
   });
 
   it('treats the blank sign-up row as "no profile yet"', () => {
@@ -281,5 +283,150 @@ describe('helpers', () => {
     expect(chunk([1, 2, 3, 4, 5], 2)).toEqual([[1, 2], [3, 4], [5]]);
     expect(chunk([], 3)).toEqual([]);
     expect(() => chunk([1], 0)).toThrow();
+  });
+});
+
+describe('day meals', () => {
+  const salad: AddedMeal = {
+    uid: 'add-1',
+    key: 'med~m7',
+    slot: 'lunch',
+    name: 'Chickpea salad',
+    prepMinutes: 10,
+    instructions: 'Toss.',
+    ingredients: [
+      { foodId: 'chickpeas', grams: 150, swapGroup: 'legumes', note: 'drained' },
+      { foodId: 'olive_oil', grams: 10 },
+    ],
+  };
+  const swap: AddedMeal = {
+    uid: 'add-2',
+    key: 'med~m9',
+    slot: 'dinner',
+    name: 'Grilled fish',
+    ingredients: [{ foodId: 'salmon', grams: 180 }],
+    replaces: 'm3',
+  };
+  const dayAdds = { '2026-10-28': [salad, swap], '2026-10-29': [{ ...salad, uid: 'add-3' }] };
+  const daySkips = { '2026-10-28': ['m1', 'm2'], '2026-10-30': ['m5'] };
+  const U = T('09:00:00');
+
+  it('round-trips adds and skips through the row format', () => {
+    const rows = dayMealsToRows('u1', dayAdds, daySkips, U);
+    expect(rows).toHaveLength(6);
+    expect(rowsToDayMeals(rows)).toEqual({ dayAdds, daySkips });
+  });
+
+  it('round-trips through JSON (what the network does)', () => {
+    const rows = JSON.parse(JSON.stringify(dayMealsToRows('u1', dayAdds, daySkips, U))) as DayMealRow[];
+    expect(rowsToDayMeals(rows)).toEqual({ dayAdds, daySkips });
+  });
+
+  it('maps an added meal to nulls for absent optionals and omits them going back', () => {
+    const [row] = dayMealsToRows('u1', { '2026-10-28': [swap] }, {}, U);
+    expect(row).toMatchObject({
+      user_id: 'u1', uid: 'add-2', date: '2026-10-28', kind: 'added', library_key: 'med~m9',
+      slot: 'dinner', name: 'Grilled fish', prep_minutes: null, instructions: null,
+      client_updated_at: U, deleted_at: null,
+    });
+    const back = rowsToDayMeals([row]).dayAdds['2026-10-28'][0];
+    expect('prepMinutes' in back).toBe(false);
+    expect('instructions' in back).toBe(false);
+  });
+
+  it('a replacement carries the replaced plan meal in plan_meal_id', () => {
+    const rows = dayMealsToRows('u1', dayAdds, {}, U);
+    expect(rows.find((r) => r.uid === 'add-2')?.plan_meal_id).toBe('m3');
+    expect(rows.find((r) => r.uid === 'add-1')?.plan_meal_id).toBeNull();
+    expect(rowsToDayMeals(rows).dayAdds['2026-10-28'][1].replaces).toBe('m3');
+  });
+
+  it('skipped rows get a deterministic uid and carry the plan meal id', () => {
+    const a = dayMealsToRows('u1', {}, daySkips, U);
+    const b = dayMealsToRows('u1', {}, daySkips, T('12:00:00'));
+    expect(a.map((r) => r.uid)).toEqual(['skip:2026-10-28:m1', 'skip:2026-10-28:m2', 'skip:2026-10-30:m5']);
+    expect(b.map((r) => r.uid)).toEqual(a.map((r) => r.uid));
+    expect(skipUid('2026-10-28', 'm1')).toBe('skip:2026-10-28:m1');
+    expect(a[0]).toMatchObject({
+      kind: 'skipped', plan_meal_id: 'm1', library_key: null, slot: null, name: null, ingredients: [],
+    });
+  });
+
+  it('collapses duplicate skips and ignores tombstones and malformed rows when mapping back', () => {
+    const rows = dayMealsToRows('u1', { '2026-10-28': [salad] }, { '2026-10-28': ['m1', 'm1'] }, U);
+    expect(rows).toHaveLength(2);
+    const dead = rows.map((r) => ({ ...r, deleted_at: U }));
+    expect(rowsToDayMeals(dead)).toEqual({ dayAdds: {}, daySkips: {} });
+    const broken: DayMealRow = { ...rows[0], name: null };
+    expect(rowsToDayMeals([broken]).dayAdds).toEqual({});
+  });
+
+  it('never puts server-only columns in the payload', () => {
+    const keys = Object.keys(dayMealsToRows('u1', dayAdds, daySkips, U)[0]);
+    expect(keys).not.toContain('id');
+    expect(keys).not.toContain('updated_at');
+  });
+
+  describe('planDayMealSync', () => {
+    it('pushes everything when nothing was synced', () => {
+      const cur = dayMealsToRows('u1', dayAdds, daySkips, U);
+      const plan = planDayMealSync(cur, [], U);
+      expect(plan.upserts).toEqual(cur);
+      expect(plan.tombstones).toEqual([]);
+    });
+
+    it('sends nothing for unchanged rows, even with a newer stamp', () => {
+      const synced = dayMealsToRows('u1', dayAdds, daySkips, U);
+      const cur = dayMealsToRows('u1', dayAdds, daySkips, T('11:00:00'));
+      expect(planDayMealSync(cur, synced, T('11:00:00'))).toEqual({ upserts: [], tombstones: [], unchanged: 6 });
+    });
+
+    it('sends an edited added meal', () => {
+      const synced = dayMealsToRows('u1', dayAdds, daySkips, U);
+      const edited = { ...salad, ingredients: [{ foodId: 'chickpeas', grams: 200 }] };
+      const cur = dayMealsToRows('u1', { ...dayAdds, '2026-10-28': [edited, swap] }, daySkips, T('11:00:00'));
+      const plan = planDayMealSync(cur, synced, T('11:00:00'));
+      expect(plan.upserts.map((r) => r.uid)).toEqual(['add-1']);
+      expect(plan.upserts[0].client_updated_at).toBe(T('11:00:00'));
+    });
+
+    it('turns a removed add and a restored skip into full-row tombstones', () => {
+      const synced = dayMealsToRows('u1', dayAdds, daySkips, U);
+      const cur = dayMealsToRows('u1', { '2026-10-28': [swap], '2026-10-29': dayAdds['2026-10-29'] }, { '2026-10-28': ['m1'], '2026-10-30': ['m5'] }, T('11:00:00'));
+      const plan = planDayMealSync(cur, synced, T('11:00:00'));
+      expect(plan.tombstones.map((r) => r.uid).sort()).toEqual(['add-1', 'skip:2026-10-28:m2']);
+      for (const t of plan.tombstones) {
+        expect(t.deleted_at).toBe(T('11:00:00'));
+        expect(t.client_updated_at).toBe(T('11:00:00'));
+      }
+      expect(plan.tombstones.find((r) => r.uid === 'add-1')?.name).toBe('Chickpea salad');
+      expect(plan.upserts).toEqual([]);
+    });
+
+    it('resurrects a previously deleted skip (same uid, newer stamp)', () => {
+      const tomb = dayMealsToRows('u1', {}, { '2026-10-28': ['m1'] }, U).map((r) => ({ ...r, deleted_at: U }));
+      const cur = dayMealsToRows('u1', {}, { '2026-10-28': ['m1'] }, T('12:00:00'));
+      const plan = planDayMealSync(cur, tomb, T('12:00:00'));
+      expect(plan.upserts).toEqual(cur);
+      expect(plan.tombstones).toEqual([]);
+    });
+
+    it('does not tombstone a row that is already a tombstone', () => {
+      const tomb = dayMealsToRows('u1', {}, { '2026-10-28': ['m1'] }, U).map((r) => ({ ...r, deleted_at: U }));
+      expect(planDayMealSync([], tomb, T('12:00:00'))).toEqual({ upserts: [], tombstones: [], unchanged: 0 });
+    });
+  });
+
+  describe('mergeDayMealRows', () => {
+    const [row] = dayMealsToRows('u1', {}, { '2026-10-28': ['m1'] }, T('10:00:00'));
+    it('adds unknown uids, newer remote wins, newer local stays, tombstone wins a tie', () => {
+      const newerDead = { ...row, client_updated_at: T('11:00:00'), deleted_at: T('11:00:00') };
+      expect(mergeDayMealRows([], [row])).toEqual([row]);
+      expect(mergeDayMealRows([row], [newerDead])).toEqual([newerDead]);
+      expect(mergeDayMealRows([newerDead], [row])).toEqual([newerDead]);
+      const tie = { ...row, deleted_at: T('10:00:00') };
+      expect(mergeDayMealRows([row], [tie])).toEqual([tie]);
+      expect(mergeDayMealRows([tie], [row])).toEqual([tie]);
+    });
   });
 });

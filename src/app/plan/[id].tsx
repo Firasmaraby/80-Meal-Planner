@@ -4,17 +4,35 @@ import { Pressable, ScrollView, View, useWindowDimensions } from 'react-native';
 
 import { boardProgress, dayPlanTotal, logsGlycemicLoad, macroTargets, mealTotal, pillars, bandLabel } from '@/engine/calc';
 import { BOARD_KEYS } from '@/engine/nutrients';
-import type { Meal } from '@/engine/types';
+import type { Meal, MealSlot } from '@/engine/types';
 import { FOOD_INDEX, food } from '@/state/catalog';
 import { usePlan } from '@/state/day';
+import { libraryKey } from '@/state/library';
 import { useStore } from '@/state/store';
 import { useOpenNutrient } from '@/ui/panels';
 import { Button, Card, Chip, Icon, I, IconButton, Row, Screen, Section, Txt } from '@/ui/primitives';
-import { BAR_CLEARANCE, BottomBar, Fingerprint, Pill, planStats, tagLabel, useWho } from '@/ui/planParts';
+import {
+  BAR_CLEARANCE,
+  BottomBar,
+  Fingerprint,
+  MacroLine,
+  MacroRow,
+  MealThumb,
+  Pill,
+  Segmented,
+  SLOT_LABEL,
+  SLOT_ORDER,
+  SLOT_PLURAL,
+  openLibraryMeal,
+  planStats,
+  tagLabel,
+  topMicros,
+  useWho,
+} from '@/ui/planParts';
 import { MAX_WIDTH, radius, space, useTheme } from '@/ui/theme';
 import { MicroChip, NutrientTile } from '@/ui/viz';
 
-const SLOT_LABEL = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', snack: 'Snack' } as const;
+type Mode = 'day' | 'all';
 
 const goBack = () => (router.canGoBack() ? router.back() : router.replace('/plans'));
 
@@ -30,6 +48,7 @@ export default function PlanDetail() {
   const openNutrient = useOpenNutrient();
   const who = useWho(profile);
 
+  const [mode, setMode] = useState<Mode>('day');
   const [sel, setSel] = useState(0);
   const [openMeal, setOpenMeal] = useState<string | null>(null);
 
@@ -133,72 +152,81 @@ export default function PlanDetail() {
           </Card>
         )}
 
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          style={{ marginHorizontal: -space.lg, marginTop: space.xl }}
-          contentContainerStyle={{ paddingHorizontal: space.lg, gap: space.sm }}>
-          {days.map((d, i) => (
-            <Chip key={d.day} label={`Day ${d.day}`} active={i === idx} onPress={() => setSel(i)} />
-          ))}
-        </ScrollView>
+        <View style={{ marginTop: space.xl }}>
+          <Segmented<Mode>
+            options={[
+              { key: 'day', label: 'By day' },
+              { key: 'all', label: 'All meals' },
+            ]}
+            value={mode}
+            onChange={setMode}
+          />
+        </View>
 
-        <Card style={{ marginTop: space.md }}>
-          <Row style={{ justifyContent: 'space-between' }}>
-            <View>
+        {mode === 'all' ? (
+          <AllMeals planId={plan.id} days={days} />
+        ) : (
+          <>
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              style={{ marginHorizontal: -space.lg, marginTop: space.md }}
+              contentContainerStyle={{ paddingHorizontal: space.lg, gap: space.sm }}>
+              {days.map((d, i) => (
+                <Chip key={d.day} label={`Day ${d.day}`} active={i === idx} onPress={() => setSel(i)} />
+              ))}
+            </ScrollView>
+
+            <Card style={{ marginTop: space.md }}>
               <Txt v="h3">
-                {view.done} of {view.of} reach 80%
+                Day {day.day}: {view.done} of {view.of} reach 80%
               </Txt>
               <Txt v="caption" dim={2}>
                 Each tile is done at 80%: the dashed line.
               </Txt>
-            </View>
-            <View style={{ alignItems: 'flex-end' }}>
-              <Txt v="num">{Math.round(view.total.kcal ?? 0).toLocaleString()} kcal</Txt>
-              <Txt v="caption" dim={2}>
-                {Math.round(view.total.protein ?? 0)} g protein
-              </Txt>
-            </View>
-          </Row>
-          <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: space.sm, marginTop: space.md }}>
-            {BOARD_KEYS.map((k) => {
-              const pr = byKey.get(k);
-              if (!pr) return null;
-              return <NutrientTile key={k} k={k} pct={pr.pct} noData={pr.amount == null} size={tile} onPress={() => openNutrient(k)} />;
-            })}
-          </View>
-        </Card>
-
-        <Section title="Framework pillars">
-          <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: space.sm }}>
-            {items.map((it) => (
-              <View
-                key={it.label}
-                style={{ flexGrow: 1, flexBasis: '30%', minWidth: 100, padding: space.md, borderRadius: radius.md, backgroundColor: c.surface, borderWidth: 1, borderColor: c.line }}>
-                <Row gap={6}>
-                  <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: tone(it.status) }} />
-                  <Txt v="caption" dim={1} style={{ fontWeight: '700', fontSize: 12 }}>
-                    {it.label}
-                  </Txt>
-                </Row>
-                <Txt v="num" style={{ fontSize: 20, marginTop: 4 }}>
-                  {it.value}
-                </Txt>
-                <Txt v="caption" dim={2} style={{ fontSize: 11 }}>
-                  {it.sub}
-                </Txt>
+              <View style={{ height: 1, backgroundColor: c.line, marginVertical: space.md }} />
+              <MacroRow totals={view.total} />
+              <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: space.sm, marginTop: space.md }}>
+                {BOARD_KEYS.map((k) => {
+                  const pr = byKey.get(k);
+                  if (!pr) return null;
+                  return <NutrientTile key={k} k={k} pct={pr.pct} noData={pr.amount == null} size={tile} onPress={() => openNutrient(k)} />;
+                })}
               </View>
-            ))}
-          </View>
-        </Section>
+            </Card>
 
-        <Section title={`Day ${day.day} meals`}>
-          <View style={{ gap: space.md }}>
-            {day.meals.map((m) => (
-              <MealRow key={m.id} meal={m} open={openMeal === m.id} onToggle={() => setOpenMeal(openMeal === m.id ? null : m.id)} />
-            ))}
-          </View>
-        </Section>
+            <Section title={`Day ${day.day} meals`}>
+              <View style={{ gap: space.md }}>
+                {day.meals.map((m) => (
+                  <MealRow key={m.id} meal={m} planId={plan.id} open={openMeal === m.id} onToggle={() => setOpenMeal(openMeal === m.id ? null : m.id)} />
+                ))}
+              </View>
+            </Section>
+            <Section title="Framework pillars">
+              <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: space.sm }}>
+                {items.map((it) => (
+                  <View
+                    key={it.label}
+                    style={{ flexGrow: 1, flexBasis: '30%', minWidth: 100, padding: space.md, borderRadius: radius.md, backgroundColor: c.surface, borderWidth: 1, borderColor: c.line }}>
+                    <Row gap={6}>
+                      <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: tone(it.status) }} />
+                      <Txt v="caption" dim={1} style={{ fontWeight: '700', fontSize: 12 }}>
+                        {it.label}
+                      </Txt>
+                    </Row>
+                    <Txt v="num" style={{ fontSize: 20, marginTop: 4 }}>
+                      {it.value}
+                    </Txt>
+                    <Txt v="caption" dim={2} style={{ fontSize: 11 }}>
+                      {it.sub}
+                    </Txt>
+                  </View>
+                ))}
+              </View>
+            </Section>
+
+          </>
+        )}
       </Screen>
 
       <BottomBar>
@@ -230,81 +258,143 @@ export default function PlanDetail() {
   );
 }
 
-function MealRow({ meal, open, onToggle }: { meal: Meal; open: boolean; onToggle: () => void }) {
+function MealRow({ meal, planId, open, onToggle }: { meal: Meal; planId: string; open: boolean; onToggle: () => void }) {
   const c = useTheme();
-  const profile = useStore((s) => s.profile);
+  const profile = useStore((st) => st.profile);
+  const who = useWho(profile);
   const totals = useMemo(() => mealTotal(meal, FOOD_INDEX), [meal]);
-  const top = useMemo(
-    () =>
-      boardProgress(totals, profile)
-        .filter((x) => x.amount != null)
-        .sort((a, b) => b.pct - a.pct)
-        .slice(0, 3),
-    [totals, profile],
-  );
+  const top = useMemo(() => topMicros(totals, who), [totals, who]);
   return (
-    <Pressable
-      accessibilityRole="button"
-      accessibilityState={{ expanded: open }}
-      accessibilityLabel={`${SLOT_LABEL[meal.slot]}: ${meal.name}. ${open ? 'Hide' : 'Show'} ingredients`}
-      onPress={onToggle}
-      style={({ pressed }) => ({ opacity: pressed ? 0.85 : 1 })}>
-      <Card>
-        <Row style={{ justifyContent: 'space-between' }}>
-          <Txt v="label" dim={2}>
-            {SLOT_LABEL[meal.slot]}
-            {meal.prepMinutes ? `  ·  ${meal.prepMinutes} min` : ''}
-          </Txt>
-          <View style={{ transform: [{ rotate: open ? '90deg' : '0deg' }] }}>
-            <Icon name={I.chevron} size={14} color={c.ink3} />
+    <Card>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityState={{ expanded: open }}
+        accessibilityLabel={`${SLOT_LABEL[meal.slot]}: ${meal.name}. ${open ? 'Hide' : 'Show'} ingredients and instructions`}
+        onPress={onToggle}
+        style={({ pressed }) => ({ opacity: pressed ? 0.85 : 1 })}>
+        <Row gap={space.md} style={{ alignItems: 'flex-start' }}>
+          <MealThumb meal={meal} size={56} />
+          <View style={{ flex: 1, gap: 2 }}>
+            <Row style={{ justifyContent: 'space-between' }}>
+              <Txt v="label" dim={2}>
+                {SLOT_LABEL[meal.slot]}
+                {meal.prepMinutes ? `  ·  ${meal.prepMinutes} min` : ''}
+              </Txt>
+              <View style={{ transform: [{ rotate: open ? '90deg' : '0deg' }] }}>
+                <Icon name={I.chevron} size={14} color={c.ink3} />
+              </View>
+            </Row>
+            <Txt v="h3">{meal.name}</Txt>
+            <MacroLine totals={totals} />
           </View>
-        </Row>
-        <Txt v="h3" style={{ marginTop: 2 }}>
-          {meal.name}
-        </Txt>
-        <Row style={{ marginTop: 6 }} gap={space.md}>
-          <Txt v="caption" dim={1}>
-            <Txt v="caption" style={{ fontWeight: '800' }}>
-              {Math.round(totals.kcal ?? 0)}
-            </Txt>{' '}
-            kcal
-          </Txt>
-          <Txt v="caption" dim={1}>
-            <Txt v="caption" style={{ fontWeight: '800' }} color={c.protein}>
-              {Math.round(totals.protein ?? 0)} g
-            </Txt>{' '}
-            protein
-          </Txt>
         </Row>
         <Row style={{ marginTop: space.sm, flexWrap: 'wrap' }} gap={6}>
           {top.map((t) => (
             <MicroChip key={t.key} k={t.key} pct={t.pct} />
           ))}
         </Row>
-        {open && (
-          <View style={{ marginTop: space.md, borderTopWidth: 1, borderTopColor: c.line, paddingTop: space.sm }}>
-            {meal.instructions ? (
-              <Txt v="caption" dim={1} style={{ lineHeight: 18, marginBottom: space.sm }}>
+      </Pressable>
+      {open && (
+        <View style={{ marginTop: space.md, borderTopWidth: 1, borderTopColor: c.line, paddingTop: space.sm }}>
+          <Txt v="label" dim={2} style={{ marginBottom: 2 }}>
+            Ingredients
+          </Txt>
+          {meal.ingredients.map((ing, i) => (
+            <Row key={i} style={{ justifyContent: 'space-between', paddingVertical: 6 }} gap={space.md}>
+              <View style={{ flex: 1 }}>
+                <Txt v="body">{food(ing.foodId)?.name ?? ing.foodId}</Txt>
+                {ing.note ? (
+                  <Txt v="caption" dim={2}>
+                    {ing.note}
+                  </Txt>
+                ) : null}
+              </View>
+              <Txt v="num" dim={1}>
+                {Math.round(ing.grams)} g
+              </Txt>
+            </Row>
+          ))}
+          {meal.instructions ? (
+            <>
+              <Txt v="label" dim={2} style={{ marginTop: space.md, marginBottom: 4 }}>
+                How to make it
+              </Txt>
+              <Txt v="body" dim={1} style={{ lineHeight: 22 }}>
                 {meal.instructions}
               </Txt>
-            ) : null}
-            {meal.ingredients.map((ing, i) => (
-              <Row key={i} style={{ justifyContent: 'space-between', paddingVertical: 6 }} gap={space.md}>
-                <View style={{ flex: 1 }}>
-                  <Txt v="body">{food(ing.foodId)?.name ?? ing.foodId}</Txt>
-                  {ing.note ? (
-                    <Txt v="caption" dim={2}>
-                      {ing.note}
-                    </Txt>
-                  ) : null}
-                </View>
-                <Txt v="num" dim={1}>
-                  {Math.round(ing.grams)} g
-                </Txt>
-              </Row>
+            </>
+          ) : null}
+          <Button
+            small
+            kind="secondary"
+            icon={I.chevron}
+            label="Open meal"
+            style={{ marginTop: space.md, alignSelf: 'flex-start' }}
+            onPress={() => openLibraryMeal(libraryKey(planId, meal.id))}
+          />
+        </View>
+      )}
+    </Card>
+  );
+}
+
+/** Every meal in the plan, grouped by slot. Tap one to open it in the meal library. */
+function AllMeals({ planId, days }: { planId: string; days: { day: number; meals: Meal[] }[] }) {
+  const groups = useMemo(
+    () =>
+      SLOT_ORDER.map((slot) => ({
+        slot,
+        items: days.flatMap((d) => d.meals.filter((m) => m.slot === slot).map((meal) => ({ meal, day: d.day }))),
+      })).filter((g) => g.items.length > 0),
+    [days],
+  );
+  return (
+    <>
+      {groups.map((g) => (
+        <Section key={g.slot} title={`${SLOT_PLURAL[g.slot]} · ${g.items.length}`}>
+          <View style={{ gap: space.md }}>
+            {g.items.map(({ meal, day }) => (
+              <MealOpenRow key={meal.id} meal={meal} planId={planId} day={day} slot={g.slot} />
             ))}
           </View>
-        )}
+        </Section>
+      ))}
+    </>
+  );
+}
+
+function MealOpenRow({ meal, planId, day, slot }: { meal: Meal; planId: string; day: number; slot: MealSlot }) {
+  const c = useTheme();
+  const profile = useStore((st) => st.profile);
+  const who = useWho(profile);
+  const totals = useMemo(() => mealTotal(meal, FOOD_INDEX), [meal]);
+  const top = useMemo(() => topMicros(totals, who), [totals, who]);
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={`Day ${day}, ${SLOT_LABEL[slot]}: ${meal.name}. Open meal`}
+      onPress={() => openLibraryMeal(libraryKey(planId, meal.id))}
+      style={({ pressed }) => ({ opacity: pressed ? 0.85 : 1 })}>
+      <Card>
+        <Row gap={space.md} style={{ alignItems: 'flex-start' }}>
+          <MealThumb meal={meal} size={56} />
+          <View style={{ flex: 1, gap: 2 }}>
+            <Row style={{ justifyContent: 'space-between' }}>
+              <Txt v="label" dim={2}>
+                Day {day}
+                {meal.prepMinutes ? `  ·  ${meal.prepMinutes} min` : ''}
+              </Txt>
+              <Icon name={I.chevron} size={14} color={c.ink3} />
+            </Row>
+            <Txt v="h3">{meal.name}</Txt>
+            <MacroLine totals={totals} />
+          </View>
+        </Row>
+        <Row style={{ marginTop: space.sm, flexWrap: 'wrap' }} gap={6}>
+          {top.map((t) => (
+            <MicroChip key={t.key} k={t.key} pct={t.pct} />
+          ))}
+        </Row>
       </Card>
     </Pressable>
   );

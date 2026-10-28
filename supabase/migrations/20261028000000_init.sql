@@ -88,9 +88,6 @@ create table public.profiles (
   life_stage        text not null default 'none' check (life_stage in ('none','pregnant','lactating')),
   protein_per_kg    numeric not null default 1.6 check (protein_per_kg between 0.1 and 4),
   sat_fat_pct       numeric not null default 10 check (sat_fat_pct between 0 and 100),
-  focus             text[] not null default '{}' check (cardinality(focus) <= 3),  -- "Focus 3"
-  focus_started_at  date,
-  locked_in         text[] not null default '{}',
   diet              text[] not null default '{}',
   is_admin          boolean not null default false,
   -- 'epoch' on purpose: the blank row made at sign-up must lose to ANY real client write
@@ -223,19 +220,78 @@ create table public.custom_foods (
 );
 create index custom_foods_user_updated_idx on public.custom_foods (user_id, updated_at);
 
-create table public.focus_cycles (
-  id          uuid primary key default gen_random_uuid(),
-  user_id     uuid not null references auth.users (id) on delete cascade,
-  nutrients   text[] not null check (cardinality(nutrients) between 1 and 3),
-  started_on  date not null,
-  ended_on    date,
-  created_at  timestamptz not null default now(),
-  updated_at  timestamptz not null default now(),
-  constraint focus_cycles_dates check (ended_on is null or ended_on >= started_on)
+-- Shape check for ingredient arrays stored as jsonb: [{ foodId, grams, swapGroup?, note? }].
+-- Mirrors the client `Ingredient` type. Immutable + pure, so it is usable in CHECK constraints.
+-- (CASE guards the numeric cast: SQL does not promise AND short-circuiting.)
+create function public.is_valid_ingredients(p jsonb)
+returns boolean
+language sql
+immutable
+set search_path = ''
+as $$
+  select case
+    when p is null or pg_catalog.jsonb_typeof(p) <> 'array' then false
+    when pg_catalog.jsonb_array_length(p) > 100 then false
+    else not exists (
+      select 1 from pg_catalog.jsonb_array_elements(p) e
+      where case
+        when pg_catalog.jsonb_typeof(e) <> 'object' then true
+        when pg_catalog.jsonb_typeof(e -> 'foodId') is distinct from 'string'
+          or pg_catalog.char_length(e ->> 'foodId') not between 1 and 200 then true
+        when pg_catalog.jsonb_typeof(e -> 'grams') is distinct from 'number' then true
+        when (e ->> 'grams')::numeric <= 0 or (e ->> 'grams')::numeric > 100000 then true
+        when e ? 'swapGroup' and pg_catalog.jsonb_typeof(e -> 'swapGroup') not in ('string', 'null') then true
+        when e ? 'note' and pg_catalog.jsonb_typeof(e -> 'note') not in ('string', 'null') then true
+        else false
+      end
+    )
+  end;
+$$;
+
+-- Per-day meal changes: meals added to a day from the meal library ('added', optionally
+-- replacing a plan meal) and plan meals removed from a day ('skipped'). Mirrors the client's
+-- dayAdds / daySkips. Offline-synced like food_logs: upsert on (user_id, uid), soft delete.
+create table public.day_meals (
+  id                 uuid primary key default gen_random_uuid(),
+  user_id            uuid not null references auth.users (id) on delete cascade,
+  uid                text not null check (char_length(uid) between 1 and 200),  -- client id; skips use 'skip:<date>:<plan meal id>'
+  date               date not null,                       -- local calendar day of the user
+  kind               text not null check (kind in ('added','skipped')),
+  library_key        text check (library_key is null or char_length(library_key) between 1 and 300),  -- `${planId}~${mealId}`
+  -- added: the plan meal this one replaces (null = pure addition); skipped: the plan meal removed
+  plan_meal_id       text check (plan_meal_id is null or char_length(plan_meal_id) between 1 and 100),
+  slot               text check (slot in ('breakfast','lunch','dinner','snack')),
+  name               text check (name is null or char_length(name) between 1 and 200),
+  prep_minutes       integer check (prep_minutes is null or prep_minutes >= 0),
+  instructions       text,
+  -- [{ "foodId": "...", "grams": 120, "swapGroup": "...", "note": "..." }]
+  ingredients        jsonb not null default '[]'::jsonb check (public.is_valid_ingredients(ingredients)),
+  client_updated_at  timestamptz not null default now(),
+  deleted_at         timestamptz,
+  created_at         timestamptz not null default now(),
+  updated_at         timestamptz not null default now(),
+  -- idempotent offline sync: upsert on (user_id, uid)
+  constraint day_meals_user_uid_uniq unique (user_id, uid),
+  constraint day_meals_added_shape check (
+    kind <> 'added'
+    or (library_key is not null and slot is not null and name is not null
+        and case when pg_catalog.jsonb_typeof(ingredients) = 'array'
+                 then pg_catalog.jsonb_array_length(ingredients) > 0 else false end)
+  ),
+  constraint day_meals_skipped_shape check (kind <> 'skipped' or plan_meal_id is not null)
 );
--- at most one open cycle per user
-create unique index focus_cycles_one_open_idx on public.focus_cycles (user_id) where ended_on is null;
-create index focus_cycles_user_idx on public.focus_cycles (user_id, started_on);
+comment on table public.day_meals is 'Meals added to a day from the library (kind=added) and plan meals removed from a day (kind=skipped). Soft-deleted via deleted_at.';
+create index day_meals_user_date_idx on public.day_meals (user_id, date);
+create index day_meals_user_updated_idx on public.day_meals (user_id, updated_at);
+
+-- Library meals the user starred. Keys are `${planId}~${mealId}`; no FK because the plan
+-- version may be archived or the meal may come from a local plan.
+create table public.favorite_meals (
+  user_id      uuid not null references auth.users (id) on delete cascade,
+  library_key  text not null check (char_length(library_key) between 1 and 300),
+  created_at   timestamptz not null default now(),
+  primary key (user_id, library_key)
+);
 
 -- 2. functions + triggers -----------------------------------------------------------
 
@@ -258,7 +314,7 @@ create trigger meal_plans_touch       before update on public.meal_plans       f
 create trigger enrollments_touch      before update on public.enrollments      for each row execute function public.set_updated_at();
 create trigger food_logs_touch        before update on public.food_logs        for each row execute function public.set_updated_at();
 create trigger custom_foods_touch     before update on public.custom_foods     for each row execute function public.set_updated_at();
-create trigger focus_cycles_touch     before update on public.focus_cycles     for each row execute function public.set_updated_at();
+create trigger day_meals_touch        before update on public.day_meals        for each row execute function public.set_updated_at();
 
 -- 2b. last-write-wins for offline-synced tables -------------------------------------
 -- Clients upsert with their own `client_updated_at`. A write that is OLDER than what
@@ -283,6 +339,7 @@ $$;
 
 create trigger food_logs_lww before insert or update on public.food_logs for each row execute function public.lww_guard();
 create trigger profiles_lww  before insert or update on public.profiles  for each row execute function public.lww_guard();
+create trigger day_meals_lww before insert or update on public.day_meals for each row execute function public.lww_guard();
 
 -- 2c. is_admin() ---------------------------------------------------------------------
 create function public.is_admin()
@@ -451,7 +508,8 @@ alter table public.profiles         enable row level security;
 alter table public.enrollments      enable row level security;
 alter table public.food_logs        enable row level security;
 alter table public.custom_foods     enable row level security;
-alter table public.focus_cycles     enable row level security;
+alter table public.day_meals        enable row level security;
+alter table public.favorite_meals   enable row level security;
 
 -- 3a. catalog: world-readable, admin-writable ------------------------------------------------
 create policy foods_select on public.foods for select to anon, authenticated using (true);
@@ -526,7 +584,7 @@ create policy enrollments_update_own on public.enrollments
 create policy enrollments_delete_own on public.enrollments
   for delete to authenticated using (user_id = (select auth.uid()));
 
--- 3e. food_logs / custom_foods / focus_cycles: owner only ------------------------------------------------
+-- 3e. food_logs / custom_foods / day_meals / favorite_meals: owner only ------------------------------------------------
 create policy food_logs_select_own on public.food_logs
   for select to authenticated using (user_id = (select auth.uid()));
 create policy food_logs_insert_own on public.food_logs
@@ -547,14 +605,24 @@ create policy custom_foods_update_own on public.custom_foods
 create policy custom_foods_delete_own on public.custom_foods
   for delete to authenticated using (user_id = (select auth.uid()));
 
-create policy focus_cycles_select_own on public.focus_cycles
+create policy day_meals_select_own on public.day_meals
   for select to authenticated using (user_id = (select auth.uid()));
-create policy focus_cycles_insert_own on public.focus_cycles
+create policy day_meals_insert_own on public.day_meals
   for insert to authenticated with check (user_id = (select auth.uid()));
-create policy focus_cycles_update_own on public.focus_cycles
+create policy day_meals_update_own on public.day_meals
   for update to authenticated
   using (user_id = (select auth.uid())) with check (user_id = (select auth.uid()));
-create policy focus_cycles_delete_own on public.focus_cycles
+create policy day_meals_delete_own on public.day_meals
+  for delete to authenticated using (user_id = (select auth.uid()));
+
+create policy favorite_meals_select_own on public.favorite_meals
+  for select to authenticated using (user_id = (select auth.uid()));
+create policy favorite_meals_insert_own on public.favorite_meals
+  for insert to authenticated with check (user_id = (select auth.uid()));
+create policy favorite_meals_update_own on public.favorite_meals
+  for update to authenticated
+  using (user_id = (select auth.uid())) with check (user_id = (select auth.uid()));
+create policy favorite_meals_delete_own on public.favorite_meals
   for delete to authenticated using (user_id = (select auth.uid()));
 
 -- 4. grants -------------------------------------------------------------------------------------------
@@ -563,14 +631,14 @@ create policy focus_cycles_delete_own on public.focus_cycles
 -- never available to API roles.
 revoke all on public.foods, public.swap_groups, public.meal_plans, public.plan_meals,
               public.plan_ingredients, public.profiles, public.enrollments, public.food_logs,
-              public.custom_foods, public.focus_cycles
+              public.custom_foods, public.day_meals, public.favorite_meals
   from anon;
 grant select on public.foods, public.swap_groups, public.meal_plans,
                 public.plan_meals, public.plan_ingredients
   to anon;
 revoke truncate, references, trigger on public.foods, public.swap_groups, public.meal_plans,
               public.plan_meals, public.plan_ingredients, public.profiles, public.enrollments,
-              public.food_logs, public.custom_foods, public.focus_cycles
+              public.food_logs, public.custom_foods, public.day_meals, public.favorite_meals
   from authenticated;
 
 -- Trigger functions are never called directly.
@@ -664,7 +732,7 @@ grant  execute on function public.enroll_in_plan(text, integer, date) to authent
 
 -- 5c. delete_my_account: Apple requires in-app account deletion ---------------------------------------------
 -- Deletes the caller's auth.users row; everything user-owned (profiles, enrollments,
--- food_logs, custom_foods, focus_cycles, auth identities and sessions) cascades.
+-- food_logs, custom_foods, day_meals, favorite_meals, auth identities and sessions) cascades.
 -- plans authored by the user keep existing (meal_plans.created_by -> NULL).
 --
 -- REQUIRES that the function owner may delete from auth.users. That is true for the

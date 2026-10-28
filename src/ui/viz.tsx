@@ -114,7 +114,6 @@ export function NutrientTile({
   pct,
   ghost,
   noData,
-  focus,
   size = 64,
   onPress,
 }: {
@@ -122,7 +121,6 @@ export function NutrientTile({
   pct: number;
   ghost?: number;
   noData?: boolean;
-  focus?: boolean;
   size?: number;
   onPress?: () => void;
 }) {
@@ -138,6 +136,8 @@ export function NutrientTile({
   }, [pct, done, fill, pop]);
   const fillStyle = useAnimatedStyle(() => ({ height: `${fill.value * 100}%` }));
   const ghostH = Math.min(Math.max(ghost ?? 0, pct), 1);
+  // mini tiles (Today's board preview) show the label only; the fill tells the story
+  const mini = size < 52;
 
   return (
     <Pressable
@@ -153,8 +153,9 @@ export function NutrientTile({
           width: size,
           height: size,
           backgroundColor: c.surface,
-          borderColor: focus ? c.ink : c.line,
-          borderWidth: focus ? 2 : 1,
+          borderColor: c.line,
+          borderWidth: 1,
+          borderRadius: mini ? radius.sm : radius.md,
           opacity: pressed ? 0.8 : 1,
         },
       ]}>
@@ -167,16 +168,22 @@ export function NutrientTile({
         </Animated.View>
       </View>
       {/* the 80% finish line */}
-      <View style={[tile.line, { bottom: `${COMPLETE_AT * 100}%`, borderColor: done ? 'rgba(255,255,255,0.6)' : c.ink3 }]} />
-      <View style={[tile.content, done && info.short.length > 3 && { paddingTop: 8 }]}>
-        <Txt v="h3" numberOfLines={1} color={done ? '#fff' : c.ink} style={{ fontSize: (size > 70 ? 18 : 15) - (info.short.length > 3 ? 3 : 0), paddingHorizontal: 4 }}>
-          {info.short}
+      <View style={[tile.line, mini && { left: 3, right: 3, borderTopWidth: 1 }, { bottom: `${COMPLETE_AT * 100}%`, borderColor: done ? 'rgba(255,255,255,0.6)' : c.ink3 }]} />
+      <View style={[tile.content, done && !mini && info.short.length > 3 && { paddingTop: 8 }]}>
+        <Txt
+          v="h3"
+          numberOfLines={1}
+          color={done ? '#fff' : noData ? c.ink3 : c.ink}
+          style={{ fontSize: (mini ? 12 : size > 70 ? 18 : 15) - (info.short.length > 3 ? (mini ? 3 : 3) : 0), paddingHorizontal: mini ? 1 : 4 }}>
+          {mini ? (MINI_LABEL[k] ?? info.short) : info.short}
         </Txt>
+        {!mini && (
         <Txt v="caption" color={done ? '#fff' : noData ? c.ink3 : c.ink2} style={{ fontSize: 11, fontWeight: '700', fontVariant: ['tabular-nums'] }}>
           {noData ? 'no data' : fmtPct(pct)}
         </Txt>
+        )}
       </View>
-      {done && (
+      {done && !mini && (
         <View style={[tile.badge, { backgroundColor: '#fff' }]}>
           <Icon name={I.check} size={10} color={g.fg} />
         </View>
@@ -184,6 +191,9 @@ export function NutrientTile({
     </Pressable>
   );
 }
+
+/** Labels that need shortening to fit a mini tile. */
+const MINI_LABEL: Partial<Record<NutrientKey, string>> = { choline: 'Ch', fiber: 'Fib' };
 
 const tile = StyleSheet.create({
   base: { borderRadius: radius.md, overflow: 'hidden' },

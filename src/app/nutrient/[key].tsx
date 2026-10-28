@@ -5,8 +5,8 @@ import { COMPLETE_AT, NUTRIENTS } from '@/engine/nutrients';
 import type { NutrientKey } from '@/engine/types';
 import { FOODS, food } from '@/state/catalog';
 import { useDay } from '@/state/day';
-import { today, useStore } from '@/state/store';
-import { Button, Card, I, IconButton, Row, Screen, Section, Txt } from '@/ui/primitives';
+import { today } from '@/state/store';
+import { Card, I, IconButton, Row, Screen, Section, Txt } from '@/ui/primitives';
 import { groupColor, space, useTheme } from '@/ui/theme';
 import { NutrientTile, fmtAmount, fmtPct } from '@/ui/viz';
 
@@ -16,8 +16,6 @@ export default function NutrientSheet() {
   const { key } = useLocalSearchParams<{ key: NutrientKey }>();
   const info = NUTRIENTS[key];
   const day = useDay(today());
-  const focus = useStore((s) => s.profile.focus);
-  const setFocus = useStore((s) => s.setFocus);
   const p = day.progress.find((x) => x.key === key);
   const proj = day.projectedProgress.find((x) => x.key === key);
   if (!info || !p) return null;
@@ -140,14 +138,6 @@ export default function NutrientSheet() {
         ))}
       </Section>
 
-      {!focus.includes(key) && key !== 'b7' && key !== 'iodine' && (
-        <Button
-          kind="secondary"
-          label={focus.length < 3 ? 'Add to my focus 3' : `Swap into focus (replaces ${NUTRIENTS[focus[2]].short})`}
-          style={{ marginTop: space.xl }}
-          onPress={() => setFocus([...focus.slice(0, 2), key])}
-        />
-      )}
     </Screen>
   );
 }

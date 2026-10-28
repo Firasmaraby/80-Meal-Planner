@@ -1,52 +1,66 @@
 import { router } from 'expo-router';
-import { Pressable, View } from 'react-native';
+import { Pressable, View, useWindowDimensions } from 'react-native';
 
-import { gapCloser, type NutrientProgress } from '@/engine/calc';
+import { gapCloser } from '@/engine/calc';
 import { NUTRIENTS } from '@/engine/nutrients';
 import type { Tip } from '@/content/tips';
 import { FOODS } from '@/state/catalog';
 import type { DayData } from '@/state/day';
-import { daysBetween, today, useStore } from '@/state/store';
+import { useStore } from '@/state/store';
 
 import { Card, Icon, I, Row, Txt, tap } from './primitives';
-import { radius, space, useTheme } from './theme';
+import { MAX_WIDTH, radius, space, useTheme } from './theme';
 import { NutrientTile, fmtPct } from './viz';
 
 const openNutrient = (key: string) => router.push({ pathname: '/nutrient/[key]', params: { key } });
 
-// ── Focus 3 ────────────────────────────────────────────────────────────────
+// ── Board preview ──────────────────────────────────────────────────────────
 
-export function FocusCard({ day }: { day: DayData }) {
+/**
+ * The whole board in miniature on Today: every vitamin and mineral, filling as the
+ * day goes. The pale band is what the rest of today's meals will add.
+ */
+export function BoardPreviewCard({ day }: { day: DayData }) {
   const c = useTheme();
-  const { focus, focusStartedAt } = day.profile;
-  const week = Math.min(6, Math.floor(daysBetween(focusStartedAt ?? today(), day.date) / 7) + 1);
-  const items = focus
-    .map((k) => ({ p: day.progress.find((x) => x.key === k), g: day.projectedProgress.find((x) => x.key === k) }))
-    .filter((x): x is { p: NutrientProgress; g: NutrientProgress } => !!x.p && !!x.g);
-
+  const { width } = useWindowDimensions();
+  const cols = 9;
+  const inner = Math.min(width, MAX_WIDTH) - space.lg * 2 - space.lg * 2;
+  // a couple of px slack for the card's hairline borders, so 9 always fit on a row
+  const size = Math.floor((inner - 4 - 5 * (cols - 1)) / cols);
+  const ghost = new Map(day.projectedProgress.map((p) => [p.key, p]));
+  const remaining = day.projectedScore.done - day.score.done;
   return (
     <Card>
-      <Row style={{ justifyContent: 'space-between', alignItems: 'flex-start' }}>
-        <View style={{ flex: 1 }}>
-          <Txt v="label" dim={1}>
-            Your focus 3
-          </Txt>
-          <Txt v="caption" dim={2} style={{ marginTop: 2 }}>
-            Week {week} of 6 · make these a habit, then add three more
-          </Txt>
-        </View>
-        <Icon name={I.target} size={18} color={c.ink2} />
-      </Row>
-      <Row style={{ marginTop: space.md, justifyContent: 'space-between' }} gap={space.md}>
-        {items.map(({ p, g }) => (
-          <View key={p.key} style={{ flex: 1, alignItems: 'center', gap: 6 }}>
-            <NutrientTile k={p.key} pct={p.pct} ghost={g.pct} noData={p.amount == null && g.amount == null} size={78} focus onPress={() => openNutrient(p.key)} />
-            <Txt v="caption" dim={1} numberOfLines={1} style={{ fontWeight: '600' }}>
-              {NUTRIENTS[p.key].label.replace(/ \(.+\)/, '')}
+      <Pressable accessibilityRole="button" accessibilityLabel="Open your board" onPress={() => router.push('/board')}>
+        <Row style={{ justifyContent: 'space-between', alignItems: 'flex-start' }}>
+          <View style={{ flex: 1 }}>
+            <Txt v="label" dim={1}>
+              Your board
+            </Txt>
+            <Txt v="caption" dim={2} style={{ marginTop: 2 }}>
+              {remaining > 0
+                ? `${remaining} more tile${remaining === 1 ? '' : 's'} complete once you’ve eaten today’s meals`
+                : day.score.done > 0
+                  ? 'Everything your meals can fill today is filled'
+                  : 'Tiles fill as you eat. Done at the dashed 80% line.'}
             </Txt>
           </View>
-        ))}
-      </Row>
+          <Icon name={I.chevron} size={16} color={c.ink3} />
+        </Row>
+        <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 5, marginTop: space.md }}>
+          {day.progress.map((p) => (
+            <NutrientTile
+              key={p.key}
+              k={p.key}
+              pct={p.pct}
+              ghost={ghost.get(p.key)?.pct}
+              noData={p.amount == null && ghost.get(p.key)?.amount == null}
+              size={size}
+              onPress={() => openNutrient(p.key)}
+            />
+          ))}
+        </View>
+      </Pressable>
     </Card>
   );
 }

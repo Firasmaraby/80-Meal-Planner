@@ -9,7 +9,7 @@ import type { FoodTag, MealSlot, NutrientKey } from '@/engine/types';
 import { food as findFood } from '@/state/catalog';
 import { today, useStore } from '@/state/store';
 import { Button, Card, Chip, Icon, I, IconButton, Row, Screen, Section, Stepper, Txt, tap } from '@/ui/primitives';
-import { MAX_WIDTH, groupColor, radius, space, useTheme } from '@/ui/theme';
+import { MAX_WIDTH, groupColor, space, useTheme } from '@/ui/theme';
 import { MicroChip, NutrientTile, fmtPct } from '@/ui/viz';
 import { useOpenNutrient } from '@/ui/panels';
 
@@ -108,7 +108,6 @@ export default function FoodScreen() {
   const highlights = foodHighlights(f, grams, profile, 4);
   const top = highlights[0];
   const rest = highlights.slice(1);
-  const focusRows = profile.focus.map((k) => byKey.get(k)).filter((p): p is NonNullable<typeof p> => !!p);
   const kcal = Math.round(portion.kcal ?? 0);
 
   const servingChips = [...(f.servings ?? [])];
@@ -215,18 +214,6 @@ export default function FoodScreen() {
               </Txt>
             </>
           )}
-          {focusRows.length > 0 && (
-            <View style={{ marginTop: space.sm, paddingTop: space.md, borderTopWidth: 1, borderTopColor: c.line, gap: 6 }}>
-              <Txt v="label" dim={2}>
-                Your focus 3
-              </Txt>
-              <Row gap={6} style={{ flexWrap: 'wrap' }}>
-                {focusRows.map((p) => (
-                  <MicroChip key={p.key} k={p.key} pct={p.pct} />
-                ))}
-              </Row>
-            </View>
-          )}
         </Card>
 
         {/* amount */}
@@ -266,7 +253,6 @@ export default function FoodScreen() {
                       k={k}
                       pct={p.pct}
                       noData={p.amount == null}
-                      focus={profile.focus.includes(k)}
                       size={tileSize}
                       onPress={() => openNutrient(k)}
                     />

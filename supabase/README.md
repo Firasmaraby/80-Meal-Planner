@@ -23,7 +23,7 @@ supabase db push             # applies supabase/migrations/*.sql
 
 or paste `supabase/migrations/20261028000000_init.sql` into **SQL Editor -> New query -> Run**. The file is wrapped in a transaction: it either applies completely or not at all. Run it once; it is not re-runnable (it does not use `if not exists` on tables).
 
-Afterwards, check **Authentication -> Policies**: all ten tables should show RLS enabled.
+Afterwards, check **Authentication -> Policies**: all eleven tables should show RLS enabled.
 
 ## 3. Load the catalog
 
@@ -50,7 +50,7 @@ The admin page can now insert plans and call `publish_plan`.
 
 ## Account deletion (App Store requirement)
 
-The app calls `supabase.rpc('delete_my_account')`. The function is `SECURITY DEFINER` and deletes the caller's `auth.users` row; profile, enrollments, food logs, custom foods and focus cycles cascade. It needs the function owner to be allowed to delete from `auth.users`, which is true for the default `postgres` role that owns functions created by migrations and the SQL editor.
+The app calls `supabase.rpc('delete_my_account')`. The function is `SECURITY DEFINER` and deletes the caller's `auth.users` row; profile, enrollments, food logs, custom foods, day meals and favorite meals cascade. It needs the function owner to be allowed to delete from `auth.users`, which is true for the default `postgres` role that owns functions created by migrations and the SQL editor.
 
 Sign in with Apple additionally expects you to revoke the user's Apple token when the account is deleted. That needs Apple's REST API and your client secret, so do it in an Edge Function that revokes the token and then deletes the user (call this RPC, or `auth.admin.deleteUser`). Not included yet.
 
@@ -59,5 +59,6 @@ Sign in with Apple additionally expects you to revoke the user's Apple token whe
 - **Plan versions** are immutable once published or archived (triggers). Uploading creates `version = max + 1` as a draft; `publish_plan(id, version)` publishes it and archives the previous published version in one transaction. Enrollments pin `(plan_id, version)` with a RESTRICT foreign key, and users can still read the archived version they are enrolled in. Use `enroll_in_plan(id, version)` to switch plans atomically.
 - **Sync**: `updated_at` is always server time (the pull cursor). `client_updated_at` is the device edit time and drives last-write-wins: the `lww_guard` trigger silently skips a write that is older than the stored row.
 - **Custom foods** must have ids starting with `custom:`; catalog ids must not. `food_logs.food_id` has no foreign key because it can point at either table.
-- **Soft deletes**: `food_logs` and `custom_foods` keep tombstones (`deleted_at`) so deletes reach other devices. Purge old ones with a scheduled job if the tables grow (for example `delete from food_logs where deleted_at < now() - interval '90 days'`).
+- **Day meals**: `day_meals` syncs per-day meal changes. `kind = 'added'` is a library meal put on a day (`plan_meal_id` = the plan meal it replaces, if any); `kind = 'skipped'` is a plan meal removed from a day (`plan_meal_id` = that meal, deterministic `uid = skip:<date>:<plan meal id>`). Upsert on `(user_id, uid)`; `ingredients` is validated by `public.is_valid_ingredients` (non-empty for `added`). `favorite_meals` holds starred library keys (`<planId>~<mealId>`).
+- **Soft deletes**: `food_logs`, `custom_foods` and `day_meals` keep tombstones (`deleted_at`) so deletes reach other devices. Purge old ones with a scheduled job if the tables grow (for example `delete from food_logs where deleted_at < now() - interval '90 days'`).
 - PostgREST returns at most 1000 rows per request by default; `src/lib/plansRepo.ts` and `src/lib/sync.ts` page through results.

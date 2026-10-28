@@ -7,8 +7,10 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { LEARN } from '@/content/tips';
 import { BOARD_KEYS, NUTRIENTS } from '@/engine/nutrients';
 import type { NutrientKey } from '@/engine/types';
-import { Button, Card, Icon, I, Row, Txt, tap } from '@/ui/primitives';
+import { Button, Card, Icon, I, IconButton, Row, Txt, tap } from '@/ui/primitives';
 import { MAX_WIDTH, groupColor, radius, space, useTheme } from '@/ui/theme';
+
+const goBack = () => (router.canGoBack() ? router.back() : router.replace('/you'));
 
 const SUBSTACK = 'https://firasmaraby.substack.com';
 
@@ -37,7 +39,7 @@ export default function Learn() {
     return true;
   }, []);
 
-  // deep links: /learn?open=three expands and scrolls to that card, even when the tab is already mounted
+  // deep links: /learn?open=why80 expands and scrolls to that card, even when the screen is already mounted
   useEffect(() => {
     if (!open || !LEARN.some((l) => l.id === open)) return;
     setOpenId(open);
@@ -70,9 +72,12 @@ export default function Learn() {
             offsets.current.column = e.nativeEvent.layout.y;
           }}
           style={{ width: '100%', maxWidth: MAX_WIDTH, alignSelf: 'center', paddingHorizontal: space.lg }}>
-          <Txt v="label" dim={1}>
-            Learn
-          </Txt>
+          <Row gap={space.md}>
+            <IconButton icon={I.back} label="Back" onPress={goBack} />
+            <Txt v="label" dim={1}>
+              Learn
+            </Txt>
+          </Row>
           <Card tone="accentSoft" style={{ marginTop: space.sm, padding: space.xl, gap: space.sm }}>
             <Row gap={6}>
               <Icon name={I.spark} size={16} color={c.accent} />
@@ -84,7 +89,7 @@ export default function Learn() {
               The framework, in five minutes.
             </Txt>
             <Txt v="body" dim={1}>
-              Six short cards: why micros come first, why 80%, and how to build the habit three nutrients at a time. Tap one to open it.
+              Five short cards: why micros come first, why 80%, and how the numbers add up. Tap one to open it.
             </Txt>
           </Card>
 

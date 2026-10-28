@@ -11,7 +11,7 @@ import {
   macroTargets,
   pillars,
 } from '@/engine/calc';
-import type { Ingredient, Meal, MealPlan, NutrientVector, PlanDay } from '@/engine/types';
+import type { Ingredient, Meal, MealPlan, MealSlot, NutrientVector, PlanDay } from '@/engine/types';
 
 import { BUNDLED_PLANS, FOOD_INDEX, isFattyFish } from './catalog';
 import { addDays, daysBetween, useStore, type Log } from './store';
@@ -51,12 +51,20 @@ export function planDayFor(plan: MealPlan, startedOn: string, date: string): Pla
 }
 
 export interface DayMeal {
-  meal: Meal;
+  meal: Meal; // for added meals, meal.id is the entry's uid
   ingredients: Ingredient[]; // effective (with the user's edits)
   edited: boolean;
   eaten: boolean;
   totals: NutrientVector;
+  /** where it came from: the user's plan, or added from the meal library */
+  source: 'plan' | 'added';
+  /** library key, for opening the meal in the library */
+  key?: string;
+  /** the plan meal this added meal replaced */
+  replaces?: string;
 }
+
+const SLOT_ORDER: Record<MealSlot, number> = { breakfast: 0, lunch: 1, snack: 2, dinner: 3 };
 
 export function useDay(date: string) {
   const profile = useStore((s) => s.profile);
@@ -64,25 +72,50 @@ export function useDay(date: string) {
   const allLogs = useStore((s) => s.logs);
   const dayEdits = useStore((s) => s.dayEdits);
   const planEdits = useStore((s) => s.planEdits);
+  const dayAdds = useStore((s) => s.dayAdds);
+  const daySkips = useStore((s) => s.daySkips);
   const plan = usePlan(enrollment?.planId, enrollment?.version);
 
   return useMemo(() => {
     const logs = allLogs.filter((l) => l.date === date);
     const planDay = plan && enrollment ? planDayFor(plan, enrollment.startedOn, date) : undefined;
 
-    const meals: DayMeal[] = (planDay?.meals ?? []).map((meal) => {
-      const edit = dayEdits[`${date}|${meal.id}`] ?? (plan ? planEdits[`${plan.id}|${meal.id}`] : undefined);
-      const ingredients = edit ?? meal.ingredients;
-      const eatenLogs = logs.filter((l) => l.mealId === meal.id);
+    const skips = new Set(daySkips[date] ?? []);
+    const fromPlan: DayMeal[] = (planDay?.meals ?? [])
+      .filter((meal) => !skips.has(meal.id))
+      .map((meal) => {
+        const edit = dayEdits[`${date}|${meal.id}`] ?? (plan ? planEdits[`${plan.id}|${meal.id}`] : undefined);
+        const ingredients = edit ?? meal.ingredients;
+        const eatenLogs = logs.filter((l) => l.mealId === meal.id);
+        const eaten = eatenLogs.length > 0;
+        return {
+          meal,
+          ingredients,
+          edited: !!edit,
+          eaten,
+          source: 'plan' as const,
+          key: plan ? `${plan.id}~${meal.id}` : undefined,
+          totals: eaten ? logsTotal(eatenLogs, FOOD_INDEX) : ingredientsTotal(ingredients, FOOD_INDEX),
+        };
+      });
+    const fromLibrary: DayMeal[] = (dayAdds[date] ?? []).map((a) => {
+      const meal: Meal = { id: a.uid, slot: a.slot, name: a.name, prepMinutes: a.prepMinutes, instructions: a.instructions, ingredients: a.ingredients };
+      const eatenLogs = logs.filter((l) => l.mealId === a.uid);
       const eaten = eatenLogs.length > 0;
       return {
         meal,
-        ingredients,
-        edited: !!edit,
+        ingredients: a.ingredients,
+        edited: false,
         eaten,
-        totals: eaten ? logsTotal(eatenLogs, FOOD_INDEX) : ingredientsTotal(ingredients, FOOD_INDEX),
+        source: 'added' as const,
+        key: a.key,
+        replaces: a.replaces,
+        totals: eaten ? logsTotal(eatenLogs, FOOD_INDEX) : ingredientsTotal(a.ingredients, FOOD_INDEX),
       };
     });
+    // stable order: by slot, plan meals before added ones within a slot
+    const meals = [...fromPlan, ...fromLibrary].sort((a, b) => SLOT_ORDER[a.meal.slot] - SLOT_ORDER[b.meal.slot]);
+    const skipped = (planDay?.meals ?? []).filter((m) => skips.has(m.id) && !fromLibrary.some((a) => a.replaces === m.id));
 
     const eaten = logsTotal(logs, FOOD_INDEX);
     const remaining = meals.filter((m) => !m.eaten);
@@ -101,6 +134,7 @@ export function useDay(date: string) {
       plan,
       planDay,
       meals,
+      skipped,
       logs,
       extras,
       eaten,
@@ -113,7 +147,7 @@ export function useDay(date: string) {
       pillars: pillars(eaten, gl, profile, macros),
       profile,
     };
-  }, [allLogs, date, plan, enrollment, dayEdits, planEdits, profile]);
+  }, [allLogs, date, plan, enrollment, dayEdits, planEdits, dayAdds, daySkips, profile]);
 }
 
 export type DayData = ReturnType<typeof useDay>;

@@ -15,7 +15,6 @@ export const TIPS: Tip[] = [
   { id: 'why80', title: 'Why 80%, not 100%?', body: 'The RDA is set about 20% above what the average person needs. Hitting 80% of it lands you around 96% of the typical requirement. 80% is the real bar.' },
   { id: 'micro-size', title: 'Micro in size, not importance', body: 'Vitamins and minerals are the cofactors behind thousands of reactions: hormones, energy, sleep, recovery. Calories are the fuel. These are the mechanics.' },
   { id: 'triage', title: 'Your body triages', body: 'Run short on vitamin K and your body keeps blood clotting going while artery maintenance waits. Short-term survival wins, and long-term health pays.' },
-  { id: 'three', title: 'Three at a time', body: 'Lock in three nutrients for six weeks until the foods become habit. Then add three more. Your floor keeps rising.' },
   { id: 'bingo', title: 'Food as a bingo card', body: 'Look at your plate as vitamins and minerals. Filling the board each day pushes you to eat foods you never would have picked.' },
   { id: 'gl', title: 'Load, not just index', body: 'Glycemic load = GI × the carbs you actually eat. Watermelon has a high GI but a small load. Portion matters.' },
   { id: 'fiber', title: 'Fiber counts as a micro', body: 'More fiber, legumes and greens feed the gut bacteria tied to better long-term health. People often find their palate shifts too.' },
@@ -82,16 +81,6 @@ export const LEARN: LearnCard[] = [
       'Bruce Ames proposed that when micronutrients run short, the body rations them like a battlefield medic: short-term survival first, long-term maintenance later.',
       'Vitamin K goes to blood clotting before it goes to keeping calcium out of your arteries. Selenium goes to the most essential selenoproteins first, and the rest drop off.',
       "It's a theory, not settled law. But the worst case of acting on it is that you eat far more whole, unprocessed food. That's the bet behind every plan here.",
-    ],
-  },
-  {
-    id: 'three',
-    kicker: 'The on-ramp',
-    title: 'Three at a time',
-    paragraphs: [
-      'Pick three nutrients, say vitamin C, iron and vitamin K, and focus only on them for six to eight weeks.',
-      '100 g of kiwi covers your vitamin C. 100 g of raw spinach plus a can of chickpeas covers vitamin K and much of your iron. That is a small amount of food.',
-      'Once those foods are habit, keep them and add three more. Within a year you will have rebuilt your diet without ever chasing a vague goal like "eat healthy".',
     ],
   },
   {

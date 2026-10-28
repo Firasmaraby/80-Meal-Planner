@@ -44,7 +44,7 @@ const chickpeas = food('chickpeas', 'Chickpeas, boiled', { kcal: 164, carbs: 27.
 
 const man: Profile = {
   sex: 'male', age: 36, heightCm: 190, weightKg: 87, activity: 'very', goal: 'maintain', lifeStage: 'none',
-  proteinPerKg: 1.6, satFatPct: 10, focus: ['vitC', 'iron', 'vitK'], lockedIn: [], diet: [],
+  proteinPerKg: 1.6, satFatPct: 10, diet: [],
 };
 const woman: Profile = { ...man, sex: 'female', age: 28, heightCm: 165, weightKg: 60, activity: 'moderate' };
 

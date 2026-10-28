@@ -8,12 +8,9 @@ import { BOARD_KEYS, NUTRIENTS } from '@/engine/nutrients';
 import type { Activity, Goal, LifeStage, Sex } from '@/engine/types';
 import { isBackendConfigured, supabase } from '@/lib/supabase';
 import { food } from '@/state/catalog';
-import { useDay } from '@/state/day';
-import { daysBetween, today, useStore } from '@/state/store';
-import { useOpenNutrient } from '@/ui/panels';
+import { today, useStore } from '@/state/store';
 import { Button, Card, Chip, Icon, I, IconButton, Row, Screen, Section, Txt, tap } from '@/ui/primitives';
 import { radius, space, useTheme } from '@/ui/theme';
-import { NutrientTile } from '@/ui/viz';
 
 const ACTIVITY: { key: Activity; label: string }[] = [
   { key: 'sedentary', label: 'Sedentary' },
@@ -67,13 +64,10 @@ export default function You() {
   const setIncludeRare = useStore((s) => s.setIncludeRare);
   const resetAll = useStore((s) => s.resetAll);
   const logs = useStore((s) => s.logs);
-  const openNutrient = useOpenNutrient();
-  const day = useDay(today());
   const [status, setStatus] = useState<string | null>(null);
   const email = useAuthEmail();
 
   const macros = macroTargets(profile, calorieTarget(profile));
-  const weeks = daysBetween(profile.focusStartedAt ?? today(), today()) / 7;
   const version = Constants.expoConfig?.version ?? '1.0.0';
 
   const exportCsv = async () => {
@@ -264,24 +258,34 @@ export default function You() {
         </Card>
       </Section>
 
-      <Section title="Focus 3">
-        <Card style={{ gap: space.md }}>
-          <Row style={{ justifyContent: 'space-between' }}>
-            <Txt v="bodyStrong">Week {Math.min(6, Math.floor(weeks) + 1)} of 6</Txt>
+      <Section title="Learn">
+        <Pressable
+          accessibilityRole="link"
+          accessibilityLabel="Learn the framework"
+          onPress={() => {
+            tap('select');
+            router.push('/learn');
+          }}
+          style={({ pressed }) => ({
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: space.md,
+            padding: space.lg,
+            borderRadius: radius.lg,
+            backgroundColor: c.surface,
+            borderWidth: 1,
+            borderColor: c.line,
+            opacity: pressed ? 0.8 : 1,
+          })}>
+          <Icon name={I.learn} size={18} color={c.ink2} />
+          <View style={{ flex: 1 }}>
+            <Txt v="bodyStrong">Learn the framework</Txt>
             <Txt v="caption" dim={2}>
-              {profile.lockedIn.length} locked in
+              Why 80%, and a field guide to every nutrient.
             </Txt>
-          </Row>
-          <Row gap={space.md} style={{ justifyContent: 'center' }}>
-            {profile.focus.map((k) => {
-              const p = day.progress.find((x) => x.key === k);
-              return (
-                <NutrientTile key={k} k={k} pct={p?.pct ?? 0} noData={p?.amount == null} size={80} focus onPress={() => openNutrient(k)} />
-              );
-            })}
-          </Row>
-          <Button kind="secondary" label="Open my board" icon={I.board} onPress={() => router.push('/board')} />
-        </Card>
+          </View>
+          <Icon name={I.chevron} size={13} color={c.ink3} />
+        </Pressable>
       </Section>
 
       <Section title="Search">

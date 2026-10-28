@@ -7,6 +7,7 @@ import { BOARD_KEYS, NUTRIENTS } from '@/engine/nutrients';
 import type { Ingredient } from '@/engine/types';
 import { FOOD_INDEX, SWAP_INDEX, food, foodSearch, swapCandidates } from '@/state/catalog';
 import { useDay } from '@/state/day';
+import { useLibraryMeal } from '@/state/library';
 import { today, useStore } from '@/state/store';
 import { Button, Card, Chip, Icon, I, IconButton, Row, Screen, Section, Stepper, Txt, tap } from '@/ui/primitives';
 import { radius, space, useTheme } from '@/ui/theme';
@@ -20,6 +21,9 @@ export default function MealScreen() {
   const dm = day.meals.find((m) => m.meal.id === id);
   const editMeal = useStore((s) => s.editMeal);
   const resetMeal = useStore((s) => s.resetMeal);
+  const updateAddedMeal = useStore((s) => s.updateAddedMeal);
+  const removeMealFromDay = useStore((s) => s.removeMealFromDay);
+  const libraryMeal = useLibraryMeal(dm?.key);
   const logMeal = useStore((s) => s.logMeal);
 
   const [ings, setIngs] = useState<Ingredient[]>(() => dm?.ingredients ?? []);
@@ -27,13 +31,13 @@ export default function MealScreen() {
   const [mode, setMode] = useState<SwapMode>('calories');
   const [query, setQuery] = useState('');
 
-  const original = dm?.meal.ingredients ?? [];
+  const original = (dm?.source === 'added' ? libraryMeal?.meal.ingredients : dm?.meal.ingredients) ?? dm?.ingredients ?? [];
   const now = useMemo(() => ingredientsTotal(ings, FOOD_INDEX), [ings]);
   const base = useMemo(() => ingredientsTotal(original, FOOD_INDEX), [original]);
   const changed = JSON.stringify(ings) !== JSON.stringify(dm?.ingredients ?? []);
   const differsFromPlan = JSON.stringify(ings) !== JSON.stringify(original);
 
-  if (!dm || !day.plan) {
+  if (!dm) {
     return (
       <Screen>
         <Txt v="h2">Meal not found</Txt>
@@ -41,14 +45,15 @@ export default function MealScreen() {
       </Screen>
     );
   }
-  const plan = day.plan;
+  const planId = dm.source === 'plan' ? day.plan?.id : undefined;
+  const isAdded = dm.source === 'added';
 
   const top = boardProgress(now, day.profile)
     .filter((x) => x.amount != null)
     .sort((a, b) => b.pct - a.pct)
     .slice(0, 6);
 
-  // net change vs the plan's original recipe, in RDA points
+  // net change vs the original recipe, in RDA points
   const delta = diff(now, base);
   const deltaChips = boardProgress(delta, day.profile, BOARD_KEYS)
     .filter((x) => Math.abs(x.pct) >= 0.05)
@@ -63,8 +68,9 @@ export default function MealScreen() {
   };
 
   const save = (always: boolean) => {
-    editMeal(date, plan.id, dm.meal.id, ings, always);
-    if (dm.eaten) logMeal(date, dm.meal, ings, plan.id);
+    if (isAdded) updateAddedMeal(date, dm.meal.id, ings);
+    else if (planId) editMeal(date, planId, dm.meal.id, ings, always);
+    if (dm.eaten) logMeal(date, dm.meal, ings, planId);
     router.back();
   };
 
@@ -233,7 +239,7 @@ export default function MealScreen() {
         {changed ? (
           <>
             <Button label={dm.eaten ? 'Update what I ate' : 'Use for today'} icon={I.check} onPress={() => save(false)} />
-            <Button kind="secondary" label="Use every time this meal comes up" onPress={() => save(true)} />
+            {!isAdded && <Button kind="secondary" label="Use every time this meal comes up" onPress={() => save(true)} />}
           </>
         ) : !dm.eaten ? (
           <Button
@@ -241,22 +247,32 @@ export default function MealScreen() {
             icon={I.check}
             onPress={() => {
               tap('success');
-              logMeal(date, dm.meal, ings, plan.id);
+              logMeal(date, dm.meal, ings, planId);
               router.back();
             }}
           />
         ) : null}
-        {(dm.edited || changed) && (
+        {(dm.edited || changed || (isAdded && differsFromPlan)) && (
           <Button
             kind="ghost"
-            label="Reset to the plan’s recipe"
+            label="Reset to the original recipe"
             icon={I.undo}
             onPress={() => {
-              resetMeal(date, plan.id, dm.meal.id);
+              if (isAdded) updateAddedMeal(date, dm.meal.id, original);
+              else if (planId) resetMeal(date, planId, dm.meal.id);
               setIngs(original);
             }}
           />
         )}
+        <Button
+          kind="ghost"
+          label="Remove from this day"
+          icon={I.trash}
+          onPress={() => {
+            removeMealFromDay(date, dm.meal.id);
+            router.back();
+          }}
+        />
       </View>
     </Screen>
   );

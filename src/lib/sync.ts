@@ -1,5 +1,5 @@
 /**
- * Offline-first sync for food logs and the profile.
+ * Offline-first sync for food logs, per-day meal changes and the profile.
  *
  * Model
  *  - The device is the source of truth while offline. Every local edit bumps `updatedAt`
@@ -21,7 +21,8 @@
  */
 import type { SupabaseClient } from '@supabase/supabase-js';
 
-import type { LogItem, MealSlot, NutrientKey, Profile } from '../engine/types';
+import type { Ingredient, LogItem, MealSlot, Profile } from '../engine/types';
+import type { AddedMeal } from '../state/store';
 
 // ── Types ──────────────────────────────────────────────────────────────────
 
@@ -338,9 +339,6 @@ export interface ProfileRow {
   life_stage: Profile['lifeStage'];
   protein_per_kg: number;
   sat_fat_pct: number;
-  focus: string[];
-  focus_started_at: string | null;
-  locked_in: string[];
   diet: string[];
   client_updated_at: string;
 }
@@ -359,10 +357,6 @@ export function profileToRow(userId: string, sp: SyncableProfile): ProfileRow {
     life_stage: p.lifeStage,
     protein_per_kg: p.proteinPerKg,
     sat_fat_pct: p.satFatPct,
-    focus: p.focus.slice(0, 3),
-    // the column is a DATE; the app may hold a full ISO timestamp
-    focus_started_at: p.focusStartedAt ? p.focusStartedAt.slice(0, 10) : null,
-    locked_in: p.lockedIn,
     diet: p.diet,
     client_updated_at: sp.updatedAt,
   };
@@ -384,12 +378,9 @@ export function rowToProfile(row: ProfileRow): SyncableProfile | null {
     lifeStage: row.life_stage,
     proteinPerKg: Number(row.protein_per_kg),
     satFatPct: Number(row.sat_fat_pct),
-    focus: row.focus as NutrientKey[],
-    lockedIn: row.locked_in as NutrientKey[],
     diet: row.diet,
   };
   if (row.name != null) profile.name = row.name;
-  if (row.focus_started_at != null) profile.focusStartedAt = row.focus_started_at;
   return { profile, updatedAt: row.client_updated_at };
 }
 
@@ -436,4 +427,294 @@ export async function syncProfile(
   }
   if (action === 'pull') return remote;
   return local ?? remote;
+}
+
+// ── Day meals (meals added to / removed from a day) ───────────────────────
+
+/**
+ * Row shape of public.day_meals as sent by the client.
+ *  - kind 'added'   : a library meal put on `date`; `plan_meal_id` is the plan meal it replaces (or null).
+ *  - kind 'skipped' : the plan meal `plan_meal_id` removed from `date`; slot/name/ingredients are empty.
+ */
+export interface DayMealRow {
+  user_id: string;
+  uid: string;
+  date: string;
+  kind: 'added' | 'skipped';
+  library_key: string | null;
+  plan_meal_id: string | null;
+  slot: MealSlot | null;
+  name: string | null;
+  prep_minutes: number | null;
+  instructions: string | null;
+  ingredients: Ingredient[];
+  client_updated_at: string;
+  deleted_at: string | null;
+}
+
+/** Row shape of public.day_meals as returned by the server. */
+export interface DayMealServerRow extends DayMealRow {
+  id: string;
+  updated_at: string;
+}
+
+export interface DayMealsState {
+  dayAdds: Record<string, AddedMeal[]>;
+  daySkips: Record<string, string[]>;
+}
+
+export interface DayMealSyncPlan {
+  /** Live rows that are new or changed since the last synced state (resurrections included). */
+  upserts: DayMealRow[];
+  /** Rows that were live at the last sync but are gone locally: soft deletes. */
+  tombstones: DayMealRow[];
+  unchanged: number;
+}
+
+/** Deterministic client id of a skip, so the same skip from any device hits the same row. */
+export function skipUid(date: string, planMealId: string): string {
+  return `skip:${date}:${planMealId}`;
+}
+
+function cleanIngredient(i: Ingredient): Ingredient {
+  const out: Ingredient = { foodId: i.foodId, grams: Number(i.grams) };
+  if (i.swapGroup != null) out.swapGroup = i.swapGroup;
+  if (i.note != null) out.note = i.note;
+  return out;
+}
+
+/**
+ * dayAdds / daySkips -> LIVE rows, all stamped `updatedAt`. Pure; it never emits tombstones
+ * (it cannot know what was synced before): use `planDayMealSync` for that, and for not
+ * re-stamping unchanged rows, which would beat newer edits made on another device.
+ * Order: dates as given in the objects, adds before skips within a date. Duplicate skips collapse.
+ */
+export function dayMealsToRows(
+  userId: string,
+  dayAdds: Record<string, readonly AddedMeal[]>,
+  daySkips: Record<string, readonly string[]>,
+  updatedAt: string,
+): DayMealRow[] {
+  const rows: DayMealRow[] = [];
+  const seen = new Set<string>();
+  for (const [date, adds] of Object.entries(dayAdds)) {
+    for (const m of adds) {
+      if (seen.has(m.uid)) continue;
+      seen.add(m.uid);
+      rows.push({
+        user_id: userId,
+        uid: m.uid,
+        date,
+        kind: 'added',
+        library_key: m.key,
+        plan_meal_id: m.replaces ?? null,
+        slot: m.slot,
+        name: m.name,
+        prep_minutes: m.prepMinutes ?? null,
+        instructions: m.instructions ?? null,
+        ingredients: m.ingredients.map(cleanIngredient),
+        client_updated_at: updatedAt,
+        deleted_at: null,
+      });
+    }
+  }
+  for (const [date, ids] of Object.entries(daySkips)) {
+    for (const planMealId of ids) {
+      const uid = skipUid(date, planMealId);
+      if (seen.has(uid)) continue;
+      seen.add(uid);
+      rows.push({
+        user_id: userId,
+        uid,
+        date,
+        kind: 'skipped',
+        library_key: null,
+        plan_meal_id: planMealId,
+        slot: null,
+        name: null,
+        prep_minutes: null,
+        instructions: null,
+        ingredients: [],
+        client_updated_at: updatedAt,
+        deleted_at: null,
+      });
+    }
+  }
+  return rows;
+}
+
+/**
+ * Rows -> dayAdds / daySkips. Tombstones and malformed rows are ignored. Input order is kept
+ * within each day. Pass the FULL set of rows (see `mergeDayMealRows`), not just an incremental pull.
+ */
+export function rowsToDayMeals(rows: readonly DayMealRow[]): DayMealsState {
+  const dayAdds: Record<string, AddedMeal[]> = {};
+  const daySkips: Record<string, string[]> = {};
+  for (const r of rows) {
+    if (r.deleted_at != null) continue;
+    if (r.kind === 'skipped') {
+      if (r.plan_meal_id == null) continue;
+      const list = (daySkips[r.date] ??= []);
+      if (!list.includes(r.plan_meal_id)) list.push(r.plan_meal_id);
+    } else if (r.kind === 'added') {
+      if (r.library_key == null || r.slot == null || r.name == null) continue;
+      const meal: AddedMeal = {
+        uid: r.uid,
+        key: r.library_key,
+        slot: r.slot,
+        name: r.name,
+        ingredients: (r.ingredients ?? []).map(cleanIngredient),
+      };
+      if (r.prep_minutes != null) meal.prepMinutes = Number(r.prep_minutes);
+      if (r.instructions != null) meal.instructions = r.instructions;
+      if (r.plan_meal_id != null) meal.replaces = r.plan_meal_id;
+      (dayAdds[r.date] ??= []).push(meal);
+    }
+  }
+  return { dayAdds, daySkips };
+}
+
+/** Everything about a row except its timestamps / tombstone: "did the user change this?" */
+function dayMealContent(r: DayMealRow): string {
+  return JSON.stringify([
+    r.date, r.kind, r.library_key, r.plan_meal_id, r.slot, r.name, r.prep_minutes, r.instructions,
+    r.ingredients.map((i) => [i.foodId, i.grams, i.swapGroup ?? null, i.note ?? null]),
+  ]);
+}
+
+/**
+ * Decide what to push. `synced` is the row set the device last pushed/pulled (including
+ * tombstones); `current` is what the store holds now (from `dayMealsToRows`).
+ *  - uid new, changed, or previously a tombstone -> upsert (stamped with the current row's time)
+ *  - uid synced as live but absent now           -> tombstone (the old row, deleted at `updatedAt`)
+ *  - otherwise                                    -> unchanged (not sent, so it cannot clobber newer remote edits)
+ * Tombstones carry the full old row because the INSERT half of an upsert still has to satisfy
+ * the table's CHECK constraints.
+ */
+export function planDayMealSync(
+  current: readonly DayMealRow[],
+  synced: readonly DayMealRow[],
+  updatedAt: string,
+): DayMealSyncPlan {
+  const before = new Map(synced.map((r) => [r.uid, r]));
+  const now = new Set<string>();
+  const upserts: DayMealRow[] = [];
+  const tombstones: DayMealRow[] = [];
+  let unchanged = 0;
+
+  for (const r of current) {
+    now.add(r.uid);
+    const prev = before.get(r.uid);
+    if (!prev || prev.deleted_at != null || dayMealContent(prev) !== dayMealContent(r)) upserts.push(r);
+    else unchanged++;
+  }
+  for (const prev of synced) {
+    if (prev.deleted_at == null && !now.has(prev.uid)) {
+      tombstones.push({ ...prev, client_updated_at: updatedAt, deleted_at: updatedAt });
+    }
+  }
+  return { upserts, tombstones, unchanged };
+}
+
+/**
+ * Last-write-wins merge of pulled rows into the known row set, by uid (same rule as
+ * `mergeRemoteLogs`: strictly newer wins; on a tie a tombstone beats a live row, else local stays).
+ */
+export function mergeDayMealRows(local: readonly DayMealRow[], remote: readonly DayMealRow[]): DayMealRow[] {
+  const merged = local.slice();
+  const index = new Map(merged.map((r, i) => [r.uid, i]));
+  for (const r of remote) {
+    const i = index.get(r.uid);
+    if (i === undefined) {
+      index.set(r.uid, merged.length);
+      merged.push(r);
+      continue;
+    }
+    const l = merged[i];
+    const lt = parseTime(l.client_updated_at);
+    const rt = parseTime(r.client_updated_at);
+    let remoteWins: boolean;
+    if (Number.isNaN(rt)) remoteWins = false;
+    else if (Number.isNaN(lt)) remoteWins = true;
+    else if (rt !== lt) remoteWins = rt > lt;
+    else remoteWins = r.deleted_at != null && l.deleted_at == null;
+    if (remoteWins) merged[i] = r;
+  }
+  return merged;
+}
+
+function normalizeDayMealRow(row: DayMealRow): DayMealRow {
+  return {
+    user_id: row.user_id,
+    uid: row.uid,
+    date: row.date,
+    kind: row.kind,
+    library_key: row.library_key ?? null,
+    plan_meal_id: row.plan_meal_id ?? null,
+    slot: row.slot ?? null,
+    name: row.name ?? null,
+    prep_minutes: row.prep_minutes == null ? null : Number(row.prep_minutes),
+    instructions: row.instructions ?? null,
+    ingredients: Array.isArray(row.ingredients) ? row.ingredients.map(cleanIngredient) : [],
+    client_updated_at: row.client_updated_at,
+    deleted_at: row.deleted_at ?? null,
+  };
+}
+
+/** Upsert day-meal rows (live and tombstones) on (user_id, uid). Idempotent; stale writes lose server-side. */
+export async function pushDayMeals(
+  client: SupabaseClient,
+  rows: readonly DayMealRow[],
+  batchSize = 200,
+): Promise<{ pushed: number }> {
+  // one statement must not contain the same conflict key twice: keep the newest per uid
+  const newest = new Map<string, DayMealRow>();
+  for (const r of rows) {
+    const prev = newest.get(r.uid);
+    if (!prev || !(parseTime(r.client_updated_at) < parseTime(prev.client_updated_at))) newest.set(r.uid, r);
+  }
+  const batchRows = [...newest.values()];
+  for (const batch of chunk(batchRows, batchSize)) {
+    const { error } = await client.from('day_meals').upsert(batch, { onConflict: 'user_id,uid' });
+    if (error) fail('pushDayMeals', error);
+  }
+  return { pushed: batchRows.length };
+}
+
+/**
+ * Fetch day-meal rows changed on the server since `cursor` (null = everything), tombstones
+ * included, plus the new cursor (a server timestamp). Merge with `mergeDayMealRows`, then
+ * derive the store state with `rowsToDayMeals`.
+ */
+export async function pullDayMeals(
+  client: SupabaseClient,
+  userId: string,
+  cursor: string | null,
+  pageSize = 1000,
+): Promise<{ rows: DayMealRow[]; cursor: string | null }> {
+  const cursorMs = parseTime(cursor);
+  const since = Number.isNaN(cursorMs) ? null : new Date(cursorMs - PULL_OVERLAP_MS).toISOString();
+
+  const out: DayMealRow[] = [];
+  let newCursor = cursor;
+  for (let offset = 0; ; offset += pageSize) {
+    let q = client
+      .from('day_meals')
+      .select('*')
+      .eq('user_id', userId)
+      .order('updated_at', { ascending: true })
+      .order('id', { ascending: true })
+      .range(offset, offset + pageSize - 1);
+    if (since) q = q.gte('updated_at', since);
+
+    const { data, error } = await q;
+    if (error) fail('pullDayMeals', error);
+    const rows = (data ?? []) as DayMealServerRow[];
+    for (const row of rows) {
+      out.push(normalizeDayMealRow(row));
+      newCursor = row.updated_at;
+    }
+    if (rows.length < pageSize) break;
+  }
+  return { rows: out, cursor: newCursor };
 }

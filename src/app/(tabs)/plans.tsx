@@ -7,28 +7,10 @@ import type { MealPlan } from '@/engine/types';
 import { useAllPlans } from '@/state/day';
 import { useStore } from '@/state/store';
 import { Button, Card, Chip, Icon, I, Row, Screen, Txt } from '@/ui/primitives';
-import { Fingerprint, FingerprintLegend, Pill, DIET_OPTIONS, bandKey, dietMatches, planStats, tagLabel, useWho, type PlanStats } from '@/ui/planParts';
+import { ChipRow, Fingerprint, FingerprintLegend, MealThumb, Pill, DIET_OPTIONS, bandKey, dietMatches, planStats, tagLabel, useWho, type PlanStats } from '@/ui/planParts';
 import { space, useTheme } from '@/ui/theme';
 
 const fmtN = (n: number) => Math.round(n).toLocaleString();
-
-/** Horizontal chip row that bleeds to the screen edge. */
-function ChipRow({ label, children }: { label: string; children: React.ReactNode }) {
-  return (
-    <View style={{ marginTop: space.md }}>
-      <Txt v="label" dim={2} style={{ marginBottom: 6 }}>
-        {label}
-      </Txt>
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        style={{ marginHorizontal: -space.lg }}
-        contentContainerStyle={{ paddingHorizontal: space.lg, gap: space.sm }}>
-        {children}
-      </ScrollView>
-    </View>
-  );
-}
 
 export default function Plans() {
   const c = useTheme();
@@ -197,6 +179,8 @@ function PlanCard({ plan, stats, enrolled, yourBand }: { plan: MealPlan; stats: 
           ))}
         </Row>
 
+        <MealStrip plan={plan} />
+
         <View style={{ height: 1, backgroundColor: c.line, marginVertical: space.md }} />
 
         <Row gap={space.lg} style={{ alignItems: 'center' }}>
@@ -218,5 +202,41 @@ function PlanCard({ plan, stats, enrolled, yourBand }: { plan: MealPlan; stats: 
         </Row>
       </Card>
     </Pressable>
+  );
+}
+
+const STRIP_MAX = 6;
+
+/** A peek at what you'd eat: the plan's meals in order from day 1, drawn as plates. */
+function MealStrip({ plan }: { plan: MealPlan }) {
+  const c = useTheme();
+  const meals = useMemo(() => [...plan.days].sort((a, b) => a.day - b.day).flatMap((d) => d.meals), [plan]);
+  if (meals.length === 0) return null;
+  const shown = meals.slice(0, STRIP_MAX);
+  const more = meals.length - shown.length;
+  return (
+    <ScrollView
+      horizontal
+      showsHorizontalScrollIndicator={false}
+      accessibilityElementsHidden
+      importantForAccessibility="no-hide-descendants"
+      style={{ marginHorizontal: -space.lg, marginTop: space.md }}
+      contentContainerStyle={{ paddingHorizontal: space.lg, gap: space.md }}>
+      {shown.map((m) => (
+        <View key={m.id} style={{ width: 68, alignItems: 'center', gap: 6 }}>
+          <MealThumb meal={m} size={44} />
+          <Txt v="caption" dim={1} numberOfLines={2} style={{ fontSize: 11, lineHeight: 14, textAlign: 'center' }}>
+            {m.name}
+          </Txt>
+        </View>
+      ))}
+      {more > 0 && (
+        <View style={{ paddingHorizontal: space.md, height: 44, alignItems: 'center', justifyContent: 'center', borderRadius: 22, backgroundColor: c.surface2 }}>
+          <Txt v="caption" dim={1} style={{ fontWeight: '800', fontSize: 12 }}>
+            +{more} more
+          </Txt>
+        </View>
+      )}
+    </ScrollView>
   );
 }

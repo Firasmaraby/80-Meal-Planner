@@ -8,7 +8,7 @@ Built with Expo (React Native) for iOS and Android, plus a web preview. Supabase
 
 | Area | Where |
 |---|---|
-| Screens (Expo Router) | `src/app/` (tabs: Today, Board, Plans, Learn, You; modals: log, food, meal swap, nutrient sheet; onboarding; grocery; admin upload) |
+| Screens (Expo Router) | `src/app/` (tabs: Today, Board, Plans, Meals, You; plus meal library detail, meal swap, food search/detail, nutrient sheet, Learn, onboarding, grocery, admin upload) |
 | Nutrition engine (pure TS, tested) | `src/engine/`: DRI tables, totals, the 80% board, pillars (sat fat, omega 6:3, glycemic load), swaps, gap closer, search |
 | Design system | `src/ui/`: tokens, primitives, Ring / NutrientTile / MacroBar, meal cards, panels |
 | State | `src/state/`: persisted store (zustand + AsyncStorage), day projections, catalog |

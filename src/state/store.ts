@@ -2,7 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
-import type { Ingredient, LogItem, Meal, MealPlan, MealSlot, NutrientKey, Profile } from '@/engine/types';
+import type { Ingredient, LogItem, Meal, MealPlan, MealSlot, Profile } from '@/engine/types';
 
 export const today = (d = new Date()) => {
   const z = (n: number) => String(n).padStart(2, '0');
@@ -24,6 +24,19 @@ const uid = () => Math.random().toString(36).slice(2, 10) + Date.now().toString(
 
 export type Log = LogItem & { updatedAt: string };
 
+/** A meal the user put on a specific day, from the meal library. */
+export interface AddedMeal {
+  uid: string; // unique per day entry; used as the meal id for logging
+  key: string; // library key `${planId}~${mealId}`
+  slot: MealSlot;
+  name: string;
+  prepMinutes?: number;
+  instructions?: string;
+  ingredients: Ingredient[];
+  /** the plan meal this one stands in for, if it was a replacement */
+  replaces?: string;
+}
+
 export interface Enrollment {
   planId: string;
   version: number;
@@ -40,8 +53,6 @@ export const DEFAULT_PROFILE: Profile = {
   lifeStage: 'none',
   proteinPerKg: 1.6,
   satFatPct: 10,
-  focus: ['vitC', 'iron', 'vitK'],
-  lockedIn: [],
   diet: [],
 };
 
@@ -54,7 +65,12 @@ interface State {
   dayEdits: Record<string, Ingredient[]>;
   /** "every time" edits for a plan meal: key `${planId}|${mealId}` */
   planEdits: Record<string, Ingredient[]>;
+  /** meals added to a day from the library: key = date */
+  dayAdds: Record<string, AddedMeal[]>;
+  /** plan meal ids the user removed from a day: key = date */
+  daySkips: Record<string, string[]>;
   favorites: string[];
+  favoriteMeals: string[];
   recents: string[];
   includeRare: boolean;
   /** plans uploaded through the admin page while running without a backend */
@@ -73,8 +89,11 @@ interface State {
   editMeal: (date: string, planId: string, mealId: string, ings: Ingredient[], always: boolean) => void;
   resetMeal: (date: string, planId: string, mealId: string) => void;
   toggleFavorite: (foodId: string) => void;
-  setFocus: (keys: NutrientKey[]) => void;
-  lockInFocus: (next: NutrientKey[]) => void;
+  addMealToDay: (date: string, key: string, meal: Meal, opts?: { slot?: MealSlot; replaces?: string }) => string;
+  removeMealFromDay: (date: string, mealId: string) => void;
+  restorePlanMeal: (date: string, planMealId: string) => void;
+  updateAddedMeal: (date: string, uid: string, ings: Ingredient[]) => void;
+  toggleFavoriteMeal: (key: string) => void;
   setIncludeRare: (v: boolean) => void;
   addLocalPlans: (plans: MealPlan[]) => void;
   setRemotePlans: (plans: MealPlan[]) => void;
@@ -90,7 +109,10 @@ const initial = {
   logs: [] as Log[],
   dayEdits: {},
   planEdits: {},
+  dayAdds: {} as Record<string, AddedMeal[]>,
+  daySkips: {} as Record<string, string[]>,
   favorites: [] as string[],
+  favoriteMeals: [] as string[],
   recents: [] as string[],
   includeRare: false,
   localPlans: [] as MealPlan[],
@@ -134,8 +156,7 @@ export const useStore = create<State>()(
       ...initial,
 
       setProfile: (p) => set((s) => ({ profile: { ...s.profile, ...p } })),
-      finishOnboarding: () =>
-        set((s) => ({ onboarded: true, profile: { ...s.profile, focusStartedAt: s.profile.focusStartedAt ?? today() } })),
+      finishOnboarding: () => set({ onboarded: true }),
 
       enroll: (plan, startedOn = today()) => set({ enrollment: { planId: plan.id, version: plan.version, startedOn } }),
       leavePlan: () => set({ enrollment: undefined }),
@@ -186,15 +207,51 @@ export const useStore = create<State>()(
       toggleFavorite: (id) =>
         set((s) => ({ favorites: s.favorites.includes(id) ? s.favorites.filter((f) => f !== id) : [id, ...s.favorites] })),
 
-      setFocus: (keys) => set((s) => ({ profile: { ...s.profile, focus: keys.slice(0, 3) } })),
-      lockInFocus: (next) =>
+      addMealToDay: (date, key, meal, opts = {}) => {
+        const entry: AddedMeal = {
+          uid: `add-${uid()}`,
+          key,
+          slot: opts.slot ?? meal.slot,
+          name: meal.name,
+          prepMinutes: meal.prepMinutes,
+          instructions: meal.instructions,
+          ingredients: meal.ingredients.map((i) => ({ ...i })),
+          replaces: opts.replaces,
+        };
         set((s) => ({
-          profile: {
-            ...s.profile,
-            lockedIn: [...new Set([...s.profile.lockedIn, ...s.profile.focus])],
-            focus: next.slice(0, 3),
-            focusStartedAt: today(),
-          },
+          dayAdds: { ...s.dayAdds, [date]: [...(s.dayAdds[date] ?? []), entry] },
+          daySkips: opts.replaces
+            ? { ...s.daySkips, [date]: [...new Set([...(s.daySkips[date] ?? []), opts.replaces])] }
+            : s.daySkips,
+          // a replaced meal that was already logged is no longer what was eaten
+          logs: opts.replaces ? s.logs.filter((l) => !(l.date === date && l.mealId === opts.replaces)) : s.logs,
+        }));
+        return entry.uid;
+      },
+      removeMealFromDay: (date, mealId) =>
+        set((s) => {
+          const adds = s.dayAdds[date] ?? [];
+          const added = adds.find((a) => a.uid === mealId);
+          const logs = s.logs.filter((l) => !(l.date === date && l.mealId === mealId));
+          if (added) return { logs, dayAdds: { ...s.dayAdds, [date]: adds.filter((a) => a.uid !== mealId) } };
+          return { logs, daySkips: { ...s.daySkips, [date]: [...new Set([...(s.daySkips[date] ?? []), mealId])] } };
+        }),
+      restorePlanMeal: (date, planMealId) =>
+        set((s) => ({
+          daySkips: { ...s.daySkips, [date]: (s.daySkips[date] ?? []).filter((id) => id !== planMealId) },
+          // drop any library meal that was standing in for it
+          dayAdds: { ...s.dayAdds, [date]: (s.dayAdds[date] ?? []).filter((a) => a.replaces !== planMealId) },
+          logs: s.logs.filter(
+            (l) => !(l.date === date && (s.dayAdds[date] ?? []).some((a) => a.replaces === planMealId && a.uid === l.mealId)),
+          ),
+        })),
+      updateAddedMeal: (date, mealUid, ings) =>
+        set((s) => ({
+          dayAdds: { ...s.dayAdds, [date]: (s.dayAdds[date] ?? []).map((a) => (a.uid === mealUid ? { ...a, ingredients: ings } : a)) },
+        })),
+      toggleFavoriteMeal: (key) =>
+        set((s) => ({
+          favoriteMeals: s.favoriteMeals.includes(key) ? s.favoriteMeals.filter((k) => k !== key) : [key, ...s.favoriteMeals],
         })),
 
       setIncludeRare: (v) => set({ includeRare: v }),
@@ -206,7 +263,16 @@ export const useStore = create<State>()(
     {
       name: 'eighty-v1',
       storage: createJSONStorage(() => safeStorage),
-      version: 1,
+      version: 2,
+      // v2: Focus 3 removed; meals can be added to / removed from a day
+      migrate: (persisted, version) => {
+        const st = (persisted ?? {}) as Record<string, unknown> & { profile?: Record<string, unknown> };
+        if (version < 2 && st.profile) {
+          const { focus: _f, focusStartedAt: _s, lockedIn: _l, ...profile } = st.profile;
+          st.profile = profile;
+        }
+        return st as unknown as State;
+      },
     },
   ),
 );

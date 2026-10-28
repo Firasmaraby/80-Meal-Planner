@@ -9,7 +9,7 @@ import { food } from '@/state/catalog';
 import { useDay, useHistory } from '@/state/day';
 import { addDays, daysBetween, today, useStore } from '@/state/store';
 import { MealCard } from '@/ui/MealCard';
-import { FocusCard, GapCloserCard, PillarStrip, TipCard } from '@/ui/panels';
+import { BoardPreviewCard, GapCloserCard, PillarStrip, TipCard } from '@/ui/panels';
 import { Button, Card, Icon, I, IconButton, Row, Screen, Section, Txt } from '@/ui/primitives';
 import { radius, space, useTheme } from '@/ui/theme';
 import { MacroBar, Ring } from '@/ui/viz';
@@ -26,6 +26,7 @@ export default function Today() {
   const history = useHistory(7, date);
   const enrollment = useStore((s) => s.enrollment);
   const removeLog = useStore((s) => s.removeLog);
+  const restorePlanMeal = useStore((s) => s.restorePlanMeal);
   const isToday = date === today();
 
   const dayNum = day.planDay?.day;
@@ -97,24 +98,39 @@ export default function Today() {
       </Card>
 
       <View style={{ marginTop: space.md }}>
-        <FocusCard day={day} />
+        <BoardPreviewCard day={day} />
       </View>
 
-      {day.plan ? (
+      {day.plan || day.meals.length > 0 ? (
         <Section
-          title={`${day.plan.name} · Day ${dayNum ?? '–'} of ${day.plan.days.length}`}
+          title={day.plan ? `${day.plan.name} · Day ${dayNum ?? '–'} of ${day.plan.days.length}` : 'Your meals'}
           action={
-            <Pressable onPress={() => router.push({ pathname: '/plan/[id]', params: { id: day.plan!.id } })}>
-              <Txt v="caption" color={c.accent} style={{ fontWeight: '700' }}>
-                {bandLabel(day.plan.band)} kcal
-              </Txt>
-            </Pressable>
+            day.plan ? (
+              <Pressable onPress={() => router.push({ pathname: '/plan/[id]', params: { id: day.plan!.id } })}>
+                <Txt v="caption" color={c.accent} style={{ fontWeight: '700' }}>
+                  {bandLabel(day.plan.band)} kcal
+                </Txt>
+              </Pressable>
+            ) : undefined
           }>
           <View>
             {day.meals.map((m) => (
               <MealCard key={m.meal.id} m={m} date={date} planId={day.plan?.id} profile={day.profile} />
             ))}
           </View>
+          {day.skipped.map((m) => (
+            <Row key={m.id} style={{ justifyContent: 'space-between', paddingVertical: 6, paddingLeft: 34 }}>
+              <Txt v="caption" dim={2} style={{ flex: 1 }} numberOfLines={1}>
+                Removed: {m.name}
+              </Txt>
+              <Pressable accessibilityRole="button" accessibilityLabel={`Put ${m.name} back`} onPress={() => restorePlanMeal(date, m.id)}>
+                <Txt v="caption" color={c.accent} style={{ fontWeight: '700' }}>
+                  Put back
+                </Txt>
+              </Pressable>
+            </Row>
+          ))}
+          <Button kind="secondary" icon={I.meals} label="Add a meal from the library" style={{ marginTop: space.sm }} onPress={() => router.push('/meals')} />
         </Section>
       ) : (
         <Section title="Meal plan">
@@ -124,6 +140,7 @@ export default function Today() {
               Every plan is built to cover your vitamins and minerals in your calorie band. Follow it and your board fills itself.
             </Txt>
             <Button label="Browse plans" icon={I.plans} style={{ marginTop: space.md }} onPress={() => router.push('/plans')} />
+            <Button kind="ghost" label="Or pick single meals" icon={I.meals} style={{ marginTop: space.xs }} onPress={() => router.push('/meals')} />
           </Card>
         </Section>
       )}

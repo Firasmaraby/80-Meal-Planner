@@ -4,27 +4,22 @@ import { Pressable, TextInput, View, useWindowDimensions } from 'react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 
 import { BAND_STEP, bandFor, bandLabel, calorieTarget, macroTargets } from '@/engine/calc';
-import { BOARD_KEYS, NUTRIENTS } from '@/engine/nutrients';
 import type { Activity, Goal, LifeStage, MealPlan, NutrientKey, Profile, Sex } from '@/engine/types';
 import { useAllPlans } from '@/state/day';
 import { useStore } from '@/state/store';
 import { BAR_CLEARANCE, BottomBar, DIET_OPTIONS, Fingerprint, Pill, bandKey, dietMatches, planStats, tagLabel, useWho } from '@/ui/planParts';
 import { Button, Card, Chip, Icon, I, Row, Screen, Txt, tap, type IconName } from '@/ui/primitives';
-import { MAX_WIDTH, font, groupColor, radius, space, useTheme } from '@/ui/theme';
+import { MAX_WIDTH, font, radius, space, useTheme } from '@/ui/theme';
 import { NutrientTile } from '@/ui/viz';
 
-type StepId = 'welcome' | 'you' | 'activity' | 'diet' | 'focus' | 'numbers';
+type StepId = 'welcome' | 'you' | 'activity' | 'diet' | 'numbers';
 const STEPS: { id: StepId; label: string }[] = [
   { id: 'welcome', label: 'Welcome' },
   { id: 'you', label: 'About you' },
   { id: 'activity', label: 'Activity' },
   { id: 'diet', label: 'Diet' },
-  { id: 'focus', label: 'Focus 3' },
   { id: 'numbers', label: 'Your numbers' },
 ];
-
-const SUGGESTED_FOCUS: NutrientKey[] = ['vitC', 'iron', 'vitK'];
-const FOCUS_CHOICES = BOARD_KEYS.filter((k) => k !== 'b7' && k !== 'iodine');
 
 const ACTIVITIES: { key: Activity; label: string; desc: string }[] = [
   { key: 'sedentary', label: 'Sedentary', desc: 'Desk day, little planned exercise' },
@@ -60,7 +55,6 @@ export default function Onboarding() {
   const [activity, setActivity] = useState<Activity>(stored.activity);
   const [goal, setGoal] = useState<Goal>(stored.goal);
   const [diet, setDiet] = useState<string[]>(stored.diet);
-  const [focus, setFocus] = useState<NutrientKey[]>(SUGGESTED_FOCUS);
 
   const id = STEPS[step].id;
   const last = step === STEPS.length - 1;
@@ -69,7 +63,6 @@ export default function Onboarding() {
     if (id === 'you') setProfile({ sex, age, heightCm, weightKg, lifeStage: sex === 'female' ? lifeStage : 'none' });
     if (id === 'activity') setProfile({ activity, goal });
     if (id === 'diet') setProfile({ diet });
-    if (id === 'focus') setProfile({ focus });
   };
   const next = () => {
     commit();
@@ -111,7 +104,6 @@ export default function Onboarding() {
           )}
           {id === 'activity' && <ActivityGoal {...{ activity, setActivity, goal, setGoal }} pregnantOrNursing={sex === 'female' && lifeStage !== 'none'} />}
           {id === 'diet' && <Diet diet={diet} setDiet={setDiet} />}
-          {id === 'focus' && <FocusPick focus={focus} setFocus={setFocus} />}
           {id === 'numbers' && <Numbers onStart={finish} />}
         </Animated.View>
       </Screen>
@@ -127,7 +119,7 @@ export default function Onboarding() {
         ) : (
           <Row gap={space.sm}>
             <Button kind="secondary" label="Back" icon={I.back} onPress={back} />
-            <Button label="Continue" style={{ flex: 1 }} disabled={id === 'focus' && focus.length !== 3} onPress={next} />
+            <Button label="Continue" style={{ flex: 1 }} onPress={next} />
           </Row>
         )}
       </BottomBar>
@@ -464,144 +456,7 @@ function Diet({ diet, setDiet }: { diet: string[]; setDiet: (d: string[]) => voi
   );
 }
 
-// ── 5 · Focus 3 ────────────────────────────────────────────────────────────
-
-const GROUPS: { title: string; keys: NutrientKey[] }[] = [
-  { title: 'Vitamins', keys: FOCUS_CHOICES.filter((k) => NUTRIENTS[k].group === 'vitamin') },
-  { title: 'Minerals', keys: FOCUS_CHOICES.filter((k) => NUTRIENTS[k].group === 'mineral') },
-  { title: 'Fiber', keys: FOCUS_CHOICES.filter((k) => k === 'fiber') },
-];
-
-function FocusPick({ focus, setFocus }: { focus: NutrientKey[]; setFocus: (f: NutrientKey[]) => void }) {
-  const c = useTheme();
-  const { width } = useWindowDimensions();
-  const [peek, setPeek] = useState<NutrientKey>(focus[0] ?? 'vitC');
-  const cols = 5;
-  const inner = Math.min(width, MAX_WIDTH) - space.lg * 2;
-  const size = Math.floor((inner - space.sm * (cols - 1)) / cols);
-  const isSuggested = focus.length === 3 && SUGGESTED_FOCUS.every((k) => focus.includes(k));
-
-  const toggle = (k: NutrientKey) => {
-    setPeek(k);
-    if (focus.includes(k)) setFocus(focus.filter((x) => x !== k));
-    else setFocus([...focus, k].slice(-3)); // a fourth pick replaces the oldest
-  };
-
-  return (
-    <View>
-      <Heading title="Your Focus 3" sub="Start with three. Six weeks. Then add three more." />
-
-      <Row gap={space.sm}>
-        {[0, 1, 2].map((i) => {
-          const k = focus[i];
-          const g = k ? groupColor(c, k === 'fiber' ? 'fiber' : NUTRIENTS[k].group) : undefined;
-          return (
-            <Pressable
-              key={i}
-              accessibilityRole="button"
-              accessibilityLabel={k ? `Remove ${NUTRIENTS[k].label}` : 'Empty slot. Pick a nutrient below'}
-              disabled={!k}
-              onPress={() => k && toggle(k)}
-              style={{
-                flex: 1,
-                height: 60,
-                borderRadius: radius.md,
-                alignItems: 'center',
-                justifyContent: 'center',
-                backgroundColor: g ? g.soft : 'transparent',
-                borderWidth: g ? 0 : 1.5,
-                borderStyle: g ? 'solid' : 'dashed',
-                borderColor: c.ink3,
-                paddingHorizontal: 4,
-              }}>
-              {k && g ? (
-                <Txt v="caption" color={g.fg} numberOfLines={1} style={{ fontWeight: '800', textAlign: 'center' }}>
-                  {NUTRIENTS[k].label.replace(/ \(.+\)/, '')}
-                </Txt>
-              ) : (
-                <Txt v="caption" dim={2}>
-                  Pick one
-                </Txt>
-              )}
-            </Pressable>
-          );
-        })}
-      </Row>
-      <Row style={{ justifyContent: 'space-between', marginTop: space.sm }}>
-        <Txt v="caption" dim={2}>
-          {focus.length} of 3 picked
-        </Txt>
-        {!isSuggested && (
-          <Pressable accessibilityRole="button" accessibilityLabel="Use the suggested start" onPress={() => setFocus(SUGGESTED_FOCUS)}>
-            <Txt v="caption" color={c.accent} style={{ fontWeight: '700' }}>
-              Use suggested start
-            </Txt>
-          </Pressable>
-        )}
-      </Row>
-
-      <Card style={{ marginTop: space.md, padding: space.md }} tone="surface2">
-        <Txt v="bodyStrong">{NUTRIENTS[peek].label}</Txt>
-        <Txt v="caption" dim={1} style={{ marginTop: 2, lineHeight: 18 }}>
-          {NUTRIENTS[peek].why}
-        </Txt>
-      </Card>
-
-      {GROUPS.map((g) => (
-        <View key={g.title} style={{ marginTop: space.xl, gap: space.sm }}>
-          <Txt v="label" dim={1}>
-            {g.title}
-          </Txt>
-          <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: space.sm }}>
-            {g.keys.map((k) => (
-              <PickTile key={k} k={k} size={size} on={focus.includes(k)} onPress={() => toggle(k)} />
-            ))}
-          </View>
-        </View>
-      ))}
-      <Txt v="caption" dim={2} style={{ marginTop: space.lg }}>
-        Vitamin C, iron and vitamin K are the suggested start.
-      </Txt>
-    </View>
-  );
-}
-
-function PickTile({ k, size, on, onPress }: { k: NutrientKey; size: number; on: boolean; onPress: () => void }) {
-  const c = useTheme();
-  const g = groupColor(c, k === 'fiber' ? 'fiber' : NUTRIENTS[k].group);
-  return (
-    <Pressable
-      accessibilityRole="button"
-      accessibilityState={{ selected: on }}
-      accessibilityLabel={NUTRIENTS[k].label}
-      onPress={() => {
-        tap('select');
-        onPress();
-      }}
-      style={({ pressed }) => ({
-        width: size,
-        height: size,
-        borderRadius: radius.md,
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: on ? g.fg : g.soft,
-        borderWidth: 1,
-        borderColor: on ? g.fg : c.line,
-        opacity: pressed ? 0.8 : 1,
-      })}>
-      <Txt v="h3" color={on ? '#fff' : g.fg}>
-        {NUTRIENTS[k].short}
-      </Txt>
-      {on && (
-        <View style={{ position: 'absolute', top: 5, right: 5, width: 16, height: 16, borderRadius: 8, backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center' }}>
-          <Icon name={I.check} size={10} color={g.fg} />
-        </View>
-      )}
-    </Pressable>
-  );
-}
-
-// ── 6 · Your numbers ───────────────────────────────────────────────────────
+// ── 5 · Your numbers ───────────────────────────────────────────────────────
 
 function Numbers({ onStart }: { onStart: (plan: MealPlan) => void }) {
   const c = useTheme();
@@ -626,7 +481,7 @@ function Numbers({ onStart }: { onStart: (plan: MealPlan) => void }) {
 
   return (
     <View>
-      <Heading title="Your numbers" />
+      <Heading title="Your numbers" sub="Every plan is built so its meals fill your vitamins and minerals. Your board shows it happening." />
       <Card>
         <Txt v="label" dim={1}>
           Daily target
