@@ -97,6 +97,37 @@ const initial = {
   remotePlans: [] as MealPlan[],
 };
 
+/**
+ * Storage can be unavailable (private browsing, sandboxed web previews).
+ * Never let that stop the app from starting: fall back to in-memory for the session.
+ */
+const memory = new Map<string, string>();
+const safeStorage = {
+  getItem: async (k: string) => {
+    try {
+      return await AsyncStorage.getItem(k);
+    } catch {
+      return memory.get(k) ?? null;
+    }
+  },
+  setItem: async (k: string, v: string) => {
+    memory.set(k, v);
+    try {
+      await AsyncStorage.setItem(k, v);
+    } catch {
+      /* in-memory only */
+    }
+  },
+  removeItem: async (k: string) => {
+    memory.delete(k);
+    try {
+      await AsyncStorage.removeItem(k);
+    } catch {
+      /* in-memory only */
+    }
+  },
+};
+
 export const useStore = create<State>()(
   persist(
     (set) => ({
@@ -174,7 +205,7 @@ export const useStore = create<State>()(
     }),
     {
       name: 'eighty-v1',
-      storage: createJSONStorage(() => AsyncStorage),
+      storage: createJSONStorage(() => safeStorage),
       version: 1,
     },
   ),
