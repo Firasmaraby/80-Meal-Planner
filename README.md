@@ -4,6 +4,10 @@ A micronutrient-first meal plan app. Users pick a plan for their calorie band an
 
 Built with Expo (React Native) for iOS and Android, plus a web preview. Supabase is the backend, and the app works fully offline without it.
 
+## Status
+
+Working app on sample data: 128 USDA-cited foods and 3 sample plans. The real food database and meal plans plug in through `pipeline/` and the plan importer. See [docs/ROADMAP.md](docs/ROADMAP.md) for what's built, what needs a phone build to test, and what's next.
+
 ## What's inside
 
 | Area | Where |
@@ -17,6 +21,8 @@ Built with Expo (React Native) for iOS and Android, plus a web preview. Supabase
 | Excel plan template + importer | `templates/`, `src/import/` |
 | Backend | `supabase/` (schema, RLS, RPCs), `src/lib/` (client, sync, plans repo) |
 | Food DB cleanup pipeline | `pipeline/` (Python) |
+| Personalisation | `src/engine/personalize.ts`: plans sized to each person's calories (micros first), dislike swaps |
+| Plan grading + AI kit | `src/engine/planReport.ts`, `src/import/planText.ts`, `templates/AI_Plan_Builder_Brief.md`, `templates/AI_Food_List.csv` |
 
 ## Run it
 
