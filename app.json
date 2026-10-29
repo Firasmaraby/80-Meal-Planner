@@ -23,7 +23,10 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.firasmaraby.eighty"
+      "package": "com.firasmaraby.eighty",
+      "permissions": [
+        "android.permission.health.WRITE_NUTRITION"
+      ]
     },
     "web": {
       "output": "single",
@@ -46,6 +49,31 @@
           "dark": {
             "backgroundColor": "#0C110F"
           }
+        }
+      ],
+      [
+        "@kingstinct/react-native-healthkit",
+        {
+          "NSHealthShareUsageDescription": "Eighty writes the vitamins, minerals and macros from your meals to Apple Health. It never reads your health data.",
+          "NSHealthUpdateUsageDescription": "Eighty writes the vitamins, minerals and macros from your meals to Apple Health.",
+          "background": false
+        }
+      ],
+      "react-native-health-connect",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36,
+            "minSdkVersion": 26
+          }
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "enableRemoteNotifications": false
         }
       ]
     ],

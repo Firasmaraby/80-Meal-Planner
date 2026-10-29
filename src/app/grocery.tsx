@@ -2,120 +2,48 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { Platform, Pressable, Share, View } from 'react-native';
 
-import { roundGrams } from '@/engine/calc';
-import type { Food, FoodCategory, Ingredient } from '@/engine/types';
-import { food } from '@/state/catalog';
-import { planDayFor, usePlan } from '@/state/day';
-import { addDays, today, useStore } from '@/state/store';
+import { AISLES, aggregateGrocery, planPreviewDays, type GroceryItem } from '@/lib/kitchen';
+import { FOOD_INDEX } from '@/state/catalog';
+import { usePlan } from '@/state/day';
+import { useKitchen, useWeek } from '@/state/kitchenStore';
+import { today, useStore } from '@/state/store';
 import { Button, Card, Icon, I, IconButton, Row, Screen, Txt, tap } from '@/ui/primitives';
 import { radius, space, useTheme } from '@/ui/theme';
 
-const AISLES = ['Produce', 'Proteins', 'Legumes & grains', 'Dairy', 'Nuts & seeds', 'Pantry'] as const;
-type Aisle = (typeof AISLES)[number];
-
-const AISLE_OF: Partial<Record<FoodCategory, Aisle>> = {
-  fruit: 'Produce',
-  vegetable: 'Produce',
-  meat: 'Proteins',
-  poultry: 'Proteins',
-  fish: 'Proteins',
-  egg: 'Proteins',
-  legume: 'Legumes & grains',
-  grain: 'Legumes & grains',
-  dairy: 'Dairy',
-  nut_seed: 'Nuts & seeds',
-};
-
-interface Item {
-  id: string;
-  name: string;
-  detail?: string;
-  grams: number;
-  qty: string;
-  hint?: string;
-  aisle: Aisle;
-}
-
-const fmtQty = (g: number) => (g >= 1000 ? `${(g / 1000).toFixed(1)} kg` : `${roundGrams(g)} g`);
-
-const fmtCount = (n: number) => {
-  if (n >= 10) return String(Math.round(n));
-  const r = Math.round(n * 2) / 2;
-  const whole = Math.floor(r);
-  const half = r - whole === 0.5;
-  if (!whole) return '½';
-  return half ? `${whole}½` : String(whole);
-};
-
-const PLURALIZE = /^(cup|slice|fillet|clove|piece|stalk|head|can|stick|leaf|sprig|ear|breast|thigh|bunch|handful|serving|patty|link|wedge|spear|floret|pod|stem)\b/i;
-
-/** "≈ 7 medium" from the food's first household serving, when there is one. */
-function servingHint(f: Food | undefined, grams: number): string | undefined {
-  const s = f?.servings?.[0];
-  if (!s || !s.g) return undefined;
-  const m = s.label.match(/^(\d+(?:\.\d+)?|\d+\/\d+)\s+(.*)$/);
-  let qty = 1;
-  let label = s.label;
-  if (m) {
-    qty = m[1].includes('/') ? Number(m[1].split('/')[0]) / Number(m[1].split('/')[1]) : Number(m[1]);
-    label = m[2];
-  }
-  const n = (grams / s.g) * qty;
-  if (n < 0.25) return undefined;
-  const text = fmtCount(n);
-  if (n > 1 && PLURALIZE.test(label)) label = label.replace(PLURALIZE, (w) => (w.toLowerCase().endsWith('s') ? w : `${w}s`));
-  return `≈ ${text} ${label}`;
-}
+const label = (i: GroceryItem) => `${i.name}${i.detail ? `, ${i.detail}` : ''}`;
 
 export default function Grocery() {
   const c = useTheme();
   const { planId } = useLocalSearchParams<{ planId?: string }>();
   const enrollment = useStore((s) => s.enrollment);
-  const planEdits = useStore((s) => s.planEdits);
-  const dayEdits = useStore((s) => s.dayEdits);
   const id = planId ?? enrollment?.planId;
   const enrolledHere = !!enrollment && enrollment.planId === id;
   const plan = usePlan(id, enrolledHere ? enrollment.version : undefined);
 
+  const household = useKitchen((s) => s.householdSize);
+  const setHousehold = useKitchen((s) => s.setHouseholdSize);
+  const pantry = useKitchen((s) => s.pantry);
+  const togglePantry = useKitchen((s) => s.togglePantry);
+
   const [checked, setChecked] = useState<Set<string>>(() => new Set());
+  const [showHave, setShowHave] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
 
-  const startedOn = enrollment?.startedOn;
-  const items = useMemo<Item[]>(() => {
-    if (!plan || !plan.days.length) return [];
-    const sorted = [...plan.days].sort((a, b) => a.day - b.day);
-    const totals = new Map<string, number>();
-    const add = (ings: Ingredient[]) => {
-      for (const ing of ings) totals.set(ing.foodId, (totals.get(ing.foodId) ?? 0) + ing.grams);
-    };
-    // next 7 days: from today (or the plan's start, if it hasn't begun) when enrolled; otherwise Day 1..7 cycling
-    const from = enrolledHere && startedOn && startedOn > today() ? startedOn : today();
-    for (let i = 0; i < 7; i++) {
-      const date = addDays(from, i);
-      const d = enrolledHere && startedOn ? planDayFor(plan, startedOn, date) : sorted[i % sorted.length];
-      if (!d) continue;
-      for (const meal of d.meals) {
-        const edit = enrolledHere ? (dayEdits[`${date}|${meal.id}`] ?? planEdits[`${plan.id}|${meal.id}`]) : planEdits[`${plan.id}|${meal.id}`];
-        add(edit ?? meal.ingredients);
-      }
-    }
-    return [...totals.entries()].map(([foodId, grams]) => {
-      const f = food(foodId);
-      const [first, ...rest] = (f?.name ?? foodId).split(',');
-      return {
-        id: foodId,
-        name: first.trim(),
-        detail: rest.join(',').trim() || undefined,
-        grams,
-        qty: fmtQty(grams),
-        hint: servingHint(f, grams),
-        aisle: (f && AISLE_OF[f.category]) || 'Pantry',
-      };
-    });
-  }, [plan, enrolledHere, startedOn, planEdits, dayEdits]);
+  // the next 7 days: from today, or from the plan's start if it has not begun
+  const start = enrollment && enrollment.startedOn > today() ? enrollment.startedOn : today();
+  const week = useWeek(start);
+  const items = useMemo<GroceryItem[]>(() => {
+    // following this plan: what is really planned, with swaps, sizing, added library meals and skipped meals
+    // just looking at another plan: its first 7 days as written
+    const days = enrolledHere ? week : plan ? planPreviewDays(plan, start) : [];
+    return aggregateGrocery(days, FOOD_INDEX, household);
+  }, [enrolledHere, week, plan, start, household]);
 
-  const groups = AISLES.map((a) => ({ aisle: a, items: items.filter((i) => i.aisle === a).sort((x, y) => x.name.localeCompare(y.name)) })).filter((g) => g.items.length);
-  const left = items.filter((i) => !checked.has(i.id));
+  const have = useMemo(() => new Set(pantry), [pantry]);
+  const need = items.filter((i) => !have.has(i.foodId));
+  const haveItems = items.filter((i) => have.has(i.foodId));
+  const groups = AISLES.map((a) => ({ aisle: a, items: need.filter((i) => i.aisle === a) })).filter((g) => g.items.length);
+  const inBasket = need.filter((i) => checked.has(i.foodId)).length;
 
   const toggle = (key: string) => {
     tap('select');
@@ -128,12 +56,12 @@ export default function Grocery() {
   };
 
   const share = async () => {
-    const lines = [`Grocery list · ${plan?.name} · next 7 days`];
+    const lines = [`Grocery list · ${plan?.name} · next 7 days · for ${household}`];
     for (const g of groups) {
-      const todo = g.items.filter((i) => !checked.has(i.id));
+      const todo = g.items.filter((i) => !checked.has(i.foodId));
       if (!todo.length) continue;
       lines.push('', g.aisle.toUpperCase());
-      for (const i of todo) lines.push(`- ${i.name}${i.detail ? `, ${i.detail}` : ''}: ${i.qty}${i.hint ? ` (${i.hint})` : ''}`);
+      for (const i of todo) lines.push(`- ${label(i)}: ${i.qty}${i.hint ? ` (${i.hint})` : ''}`);
     }
     const message = lines.join('\n');
     try {
@@ -173,7 +101,10 @@ export default function Grocery() {
       header={
         <Row style={{ justifyContent: 'space-between', marginBottom: space.md }}>
           <IconButton icon={I.back} label="Back" onPress={back} />
-          <Button small kind="secondary" icon={I.upload} label="Share list" onPress={share} />
+          <Row gap={space.sm}>
+            <Button small kind="secondary" icon={I.flame} label="Prep day" onPress={() => router.push('/prep')} />
+            <Button small kind="secondary" icon={I.upload} label="Share list" onPress={share} />
+          </Row>
         </Row>
       }>
       <Txt v="label" dim={2}>
@@ -185,7 +116,7 @@ export default function Grocery() {
       <Txt v="caption" dim={1} style={{ marginTop: 4, lineHeight: 18 }}>
         {enrolledHere ? 'Everything for your next 7 days' : 'Everything for the first 7 days'}, with your swaps applied.{' '}
         <Txt v="caption" style={{ fontWeight: '700' }}>
-          {items.length - left.length} of {items.length} in the basket.
+          {inBasket} of {need.length} in the basket.
         </Txt>
       </Txt>
       {notice && (
@@ -194,14 +125,29 @@ export default function Grocery() {
         </Txt>
       )}
 
-      {groups.length === 0 && (
+      <Card style={{ marginTop: space.lg, paddingVertical: space.md }}>
+        <Row style={{ justifyContent: 'space-between' }}>
+          <View style={{ flex: 1 }}>
+            <Txt v="h3">Cooking for {household}</Txt>
+            <Txt v="caption" dim={2}>
+              {household === 1 ? 'Just you' : 'Amounts are for everyone'}
+            </Txt>
+          </View>
+          <Row gap={space.sm}>
+            <IconButton icon={I.minus} label="Cook for one fewer person" onPress={() => setHousehold(household - 1)} />
+            <IconButton icon={I.add} label="Cook for one more person" onPress={() => setHousehold(household + 1)} />
+          </Row>
+        </Row>
+      </Card>
+
+      {items.length === 0 && (
         <Txt v="caption" dim={2} style={{ marginTop: space.xl }}>
-          This plan has no meals yet.
+          Nothing to buy for the next 7 days. Add a meal to a day and it shows up here.
         </Txt>
       )}
 
       {groups.map((g) => {
-        const done = g.items.filter((i) => checked.has(i.id)).length;
+        const done = g.items.filter((i) => checked.has(i.foodId)).length;
         return (
           <View key={g.aisle} style={{ marginTop: space.xl, gap: space.sm }}>
             <Row style={{ justifyContent: 'space-between' }}>
@@ -214,53 +160,114 @@ export default function Grocery() {
             </Row>
             <Card style={{ paddingVertical: space.xs }}>
               {g.items.map((it, i) => {
-                const on = checked.has(it.id);
+                const on = checked.has(it.foodId);
                 return (
-                  <Pressable
-                    key={it.id}
-                    accessibilityRole="checkbox"
-                    accessibilityState={{ checked: on }}
-                    accessibilityLabel={`${it.name}${it.detail ? `, ${it.detail}` : ''}, ${it.qty}`}
-                    onPress={() => toggle(it.id)}
-                    style={{ flexDirection: 'row', alignItems: 'center', gap: space.md, paddingVertical: space.md, borderTopWidth: i ? 1 : 0, borderTopColor: c.line }}>
-                    <View
-                      style={{
-                        width: 24,
-                        height: 24,
-                        borderRadius: radius.sm / 2,
-                        borderWidth: 2,
-                        borderColor: on ? c.ink : c.ink3,
-                        backgroundColor: on ? c.ink : 'transparent',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                      }}>
-                      {on && <Icon name={I.check} size={13} color={c.bg} />}
-                    </View>
-                    <View style={{ flex: 1, opacity: on ? 0.45 : 1 }}>
-                      <Txt v="bodyStrong" style={{ textDecorationLine: on ? 'line-through' : 'none' }}>
-                        {it.name}
-                      </Txt>
-                      {it.detail ? (
-                        <Txt v="caption" dim={2}>
-                          {it.detail}
+                  <View key={it.foodId} style={{ paddingVertical: space.md, borderTopWidth: i ? 1 : 0, borderTopColor: c.line, gap: space.sm }}>
+                    <Pressable
+                      accessibilityRole="checkbox"
+                      accessibilityState={{ checked: on }}
+                      accessibilityLabel={`${label(it)}, ${it.qty}${it.hint ? `, ${it.hint}` : ''}`}
+                      onPress={() => toggle(it.foodId)}
+                      style={{ flexDirection: 'row', alignItems: 'center', gap: space.md }}>
+                      <View
+                        style={{
+                          width: 24,
+                          height: 24,
+                          borderRadius: radius.sm / 2,
+                          borderWidth: 2,
+                          borderColor: on ? c.ink : c.ink3,
+                          backgroundColor: on ? c.ink : 'transparent',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                        }}>
+                        {on && <Icon name={I.check} size={13} color={c.bg} />}
+                      </View>
+                      <View style={{ flex: 1, opacity: on ? 0.45 : 1 }}>
+                        <Txt v="bodyStrong" style={{ textDecorationLine: on ? 'line-through' : 'none' }}>
+                          {it.name}
                         </Txt>
-                      ) : null}
-                    </View>
-                    <View style={{ alignItems: 'flex-end', opacity: on ? 0.45 : 1 }}>
-                      <Txt v="num">{it.qty}</Txt>
-                      {it.hint ? (
-                        <Txt v="caption" dim={2}>
-                          {it.hint}
-                        </Txt>
-                      ) : null}
-                    </View>
-                  </Pressable>
+                        {it.detail ? (
+                          <Txt v="caption" dim={2}>
+                            {it.detail}
+                          </Txt>
+                        ) : null}
+                      </View>
+                      <View style={{ alignItems: 'flex-end', opacity: on ? 0.45 : 1 }}>
+                        <Txt v="num">{it.qty}</Txt>
+                        {it.hint ? (
+                          <Txt v="caption" dim={2}>
+                            {it.hint}
+                          </Txt>
+                        ) : null}
+                      </View>
+                    </Pressable>
+                    <HaveIt name={label(it)} onPress={() => togglePantry(it.foodId)} />
+                  </View>
                 );
               })}
             </Card>
           </View>
         );
       })}
+
+      {haveItems.length > 0 && (
+        <View style={{ marginTop: space.xl, gap: space.sm }}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityState={{ expanded: showHave }}
+            accessibilityLabel={`Already have, ${haveItems.length} items`}
+            onPress={() => {
+              tap('select');
+              setShowHave((v) => !v);
+            }}
+            style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', minHeight: 32 }}>
+            <Txt v="label" dim={1}>
+              Already have · {haveItems.length}
+            </Txt>
+            <View style={{ transform: [{ rotate: showHave ? '90deg' : '0deg' }] }}>
+              <Icon name={I.chevron} size={14} color={c.ink3} />
+            </View>
+          </Pressable>
+          {showHave && (
+            <Card style={{ paddingVertical: space.xs }}>
+              {haveItems.map((it, i) => (
+                <Row key={it.foodId} style={{ paddingVertical: space.md, borderTopWidth: i ? 1 : 0, borderTopColor: c.line, gap: space.md }}>
+                  <View style={{ flex: 1 }}>
+                    <Txt v="bodyStrong" dim={1}>
+                      {label(it)}
+                    </Txt>
+                    <Txt v="caption" dim={2}>
+                      {it.qty}
+                      {it.hint ? ` · ${it.hint}` : ''}
+                    </Txt>
+                  </View>
+                  <Button small kind="secondary" label="Need it" accessibilityLabel={`Need ${label(it)} after all`} onPress={() => togglePantry(it.foodId)} />
+                </Row>
+              ))}
+            </Card>
+          )}
+        </View>
+      )}
     </Screen>
+  );
+}
+
+/** A small "I already have this" pill under an item. */
+function HaveIt({ name, onPress }: { name: string; onPress: () => void }) {
+  const c = useTheme();
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={`I already have ${name}`}
+      hitSlop={6}
+      onPress={() => {
+        tap('select');
+        onPress();
+      }}
+      style={{ alignSelf: 'flex-start', marginLeft: 24 + space.md, height: 26, paddingHorizontal: 10, borderRadius: radius.pill, backgroundColor: c.surface2, justifyContent: 'center' }}>
+      <Txt v="caption" dim={1} style={{ fontSize: 12, fontWeight: '700' }}>
+        Have it
+      </Txt>
+    </Pressable>
   );
 }

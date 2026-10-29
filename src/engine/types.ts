@@ -164,6 +164,10 @@ export interface Profile {
   proteinPerKg: number;
   /** saturated-fat ceiling as % of calories */
   satFatPct: number;
+  /** scale plan portions to this person's calorie target (micros-first) */
+  sizeToMe: boolean;
+  /** foods (ids) or whole categories ("cat:fish") the person won't eat; auto-swapped */
+  dislikes: string[];
   diet: string[]; // filters: vegetarian, pescatarian, dairy-free, gluten-free...
 }
 

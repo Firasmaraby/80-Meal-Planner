@@ -1,5 +1,5 @@
 import Constants from 'expo-constants';
-import { router } from 'expo-router';
+import { router, type Href } from 'expo-router';
 import { useEffect, useState, type ReactNode } from 'react';
 import { Alert, Platform, Pressable, Share, Switch, View } from 'react-native';
 
@@ -9,7 +9,7 @@ import type { Activity, Goal, LifeStage, Sex } from '@/engine/types';
 import { isBackendConfigured, supabase } from '@/lib/supabase';
 import { food } from '@/state/catalog';
 import { today, useStore } from '@/state/store';
-import { Button, Card, Chip, Icon, I, IconButton, Row, Screen, Section, Txt, tap } from '@/ui/primitives';
+import { Button, Card, Chip, Icon, I, IconButton, Row, Screen, Section, Txt, tap, type IconName } from '@/ui/primitives';
 import { radius, space, useTheme } from '@/ui/theme';
 
 const ACTIVITY: { key: Activity; label: string }[] = [
@@ -258,34 +258,25 @@ export default function You() {
         </Card>
       </Section>
 
+      <Section title="Your plan">
+        <LinkRow icon={I.meals} title="Food preferences" sub="Size plans to your calories, and foods you don't eat" href="/settings/food" />
+        <LinkRow icon={I.cart} title="Grocery list" sub="The next 7 days, for your household" href="/grocery" />
+        <LinkRow icon={I.calendar} title="Prep day" sub="What to batch-cook for the week" href="/prep" />
+        <LinkRow icon={I.spark} title="Supplements" sub="Optional. Food first, supplements fill the gaps" href="/supplements" />
+      </Section>
+
+      <Section title="Progress">
+        <LinkRow icon={I.trend} title="Report card" sub="Your last 30 days: what you hit, what you missed" href="/report" />
+        <LinkRow icon={I.heart} title="Weekly check-in" sub="Energy, sleep, mood: about 20 seconds" href="/checkin" />
+      </Section>
+
+      <Section title="Reminders & health">
+        <LinkRow icon={I.clock} title="Reminders" sub="Meal times, prep the night before, evening check" href="/settings/reminders" />
+        <LinkRow icon={I.heart} title="Apple Health / Health Connect" sub="Write your nutrition to your phone's health app" href="/settings/health" />
+      </Section>
+
       <Section title="Learn">
-        <Pressable
-          accessibilityRole="link"
-          accessibilityLabel="Learn the framework"
-          onPress={() => {
-            tap('select');
-            router.push('/learn');
-          }}
-          style={({ pressed }) => ({
-            flexDirection: 'row',
-            alignItems: 'center',
-            gap: space.md,
-            padding: space.lg,
-            borderRadius: radius.lg,
-            backgroundColor: c.surface,
-            borderWidth: 1,
-            borderColor: c.line,
-            opacity: pressed ? 0.8 : 1,
-          })}>
-          <Icon name={I.learn} size={18} color={c.ink2} />
-          <View style={{ flex: 1 }}>
-            <Txt v="bodyStrong">Learn the framework</Txt>
-            <Txt v="caption" dim={2}>
-              Why 80%, and a field guide to every nutrient.
-            </Txt>
-          </View>
-          <Icon name={I.chevron} size={13} color={c.ink3} />
-        </Pressable>
+        <LinkRow icon={I.learn} title="Learn the framework" sub="Why 80%, and a field guide to every nutrient." href="/learn" />
       </Section>
 
       <Section title="Search">
@@ -482,5 +473,38 @@ function NumberStepper({
       </Txt>
       <IconButton icon={I.add} label={`More ${unit}`} onPress={() => set(value + step)} />
     </Row>
+  );
+}
+
+function LinkRow({ icon, title, sub, href }: { icon: IconName; title: string; sub: string; href: Href }) {
+  const c = useTheme();
+  return (
+    <Pressable
+      accessibilityRole="link"
+      accessibilityLabel={title}
+      onPress={() => {
+        tap('select');
+        router.push(href);
+      }}
+      style={({ pressed }) => ({
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: space.md,
+        padding: space.lg,
+        borderRadius: radius.lg,
+        backgroundColor: c.surface,
+        borderWidth: 1,
+        borderColor: c.line,
+        opacity: pressed ? 0.8 : 1,
+      })}>
+      <Icon name={icon} size={18} color={c.ink2} />
+      <View style={{ flex: 1 }}>
+        <Txt v="bodyStrong">{title}</Txt>
+        <Txt v="caption" dim={2}>
+          {sub}
+        </Txt>
+      </View>
+      <Icon name={I.chevron} size={13} color={c.ink3} />
+    </Pressable>
   );
 }

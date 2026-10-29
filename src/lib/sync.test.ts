@@ -229,6 +229,8 @@ describe('profile sync', () => {
     lifeStage: 'none',
     proteinPerKg: 1.6,
     satFatPct: 10,
+    sizeToMe: true,
+    dislikes: ['cat:fish', 'mushrooms-white-raw'],
     diet: ['vegetarian'],
   };
 

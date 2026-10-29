@@ -115,6 +115,11 @@ export function MealCard({ m, date, planId, profile }: { m: DayMeal; date: strin
             onPress={() => router.push({ pathname: '/meal/[id]', params: { id: m.meal.id, date } })}
           />
           <View style={{ flex: 1 }} />
+          <IconButton
+            icon={I.flame}
+            label={`Cook ${m.meal.name} step by step`}
+            onPress={() => router.push({ pathname: '/cook/[id]', params: { id: m.meal.id, date } })}
+          />
           <IconButton icon={I.trash} label={`Remove ${m.meal.name} from this day`} onPress={() => removeMealFromDay(date, m.meal.id)} />
         </Row>
       </Pressable>

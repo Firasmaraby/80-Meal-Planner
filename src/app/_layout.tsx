@@ -6,6 +6,8 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { fetchPublishedPlans } from '@/lib/plansRepo';
+import { useReminderSync } from '@/lib/reminders';
+import { useHealthSync } from '@/lib/useHealthSync';
 import { isBackendConfigured } from '@/lib/supabase';
 import { useStore } from '@/state/store';
 import { palettes } from '@/ui/theme';
@@ -20,6 +22,13 @@ function useHydrated() {
     return unsub;
   }, []);
   return hydrated;
+}
+
+/** Background jobs that follow the user's data: local reminders and health-app export. */
+function BackgroundSync() {
+  useReminderSync();
+  useHealthSync();
+  return null;
 }
 
 function OnboardingGate() {
@@ -63,6 +72,7 @@ export default function RootLayout() {
       <SafeAreaProvider>
         <ThemeProvider value={theme}>
           <OnboardingGate />
+          <BackgroundSync />
           <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: c.bg } }}>
             <Stack.Screen name="(tabs)" />
             <Stack.Screen name="onboarding" options={{ gestureEnabled: false }} />
@@ -74,7 +84,15 @@ export default function RootLayout() {
             <Stack.Screen name="library/[key]" />
             <Stack.Screen name="learn" />
             <Stack.Screen name="grocery" />
+            <Stack.Screen name="rescue" options={{ presentation: 'modal' }} />
+            <Stack.Screen name="checkin" options={{ presentation: 'modal' }} />
+            <Stack.Screen name="report" />
+            <Stack.Screen name="supplements" />
+            <Stack.Screen name="settings/food" />
+            <Stack.Screen name="cook/[id]" options={{ presentation: 'fullScreenModal' }} />
+            <Stack.Screen name="settings/reminders" />
             <Stack.Screen name="admin" />
+            <Stack.Screen name="settings/health" />
           </Stack>
         </ThemeProvider>
       </SafeAreaProvider>

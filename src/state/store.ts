@@ -53,6 +53,8 @@ export const DEFAULT_PROFILE: Profile = {
   lifeStage: 'none',
   proteinPerKg: 1.6,
   satFatPct: 10,
+  sizeToMe: true,
+  dislikes: [],
   diet: [],
 };
 
@@ -263,7 +265,7 @@ export const useStore = create<State>()(
     {
       name: 'eighty-v1',
       storage: createJSONStorage(() => safeStorage),
-      version: 2,
+      version: 3,
       // v2: Focus 3 removed; meals can be added to / removed from a day
       migrate: (persisted, version) => {
         const st = (persisted ?? {}) as Record<string, unknown> & { profile?: Record<string, unknown> };
@@ -271,6 +273,8 @@ export const useStore = create<State>()(
           const { focus: _f, focusStartedAt: _s, lockedIn: _l, ...profile } = st.profile;
           st.profile = profile;
         }
+        // v3: plan sizing + dislikes
+        if (version < 3) st.profile = { ...DEFAULT_PROFILE, ...(st.profile ?? {}) };
         return st as unknown as State;
       },
     },

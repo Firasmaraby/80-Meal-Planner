@@ -2,6 +2,7 @@
 """Builds MealPlan_Template.xlsx for the Eighty meal-plan importer.
 
 Run:  python3 templates/build_template.py
+Then run:  python3 templates/build_ai_kit.py  (adds the AI Brief and Targets sheets and AI_Food_List.csv)
 Reads src/data/foods.json and src/data/swapGroups.json when present (re-run after they change).
 """
 import json

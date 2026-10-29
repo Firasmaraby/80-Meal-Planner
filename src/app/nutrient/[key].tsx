@@ -19,6 +19,7 @@ export default function NutrientSheet() {
   const p = day.progress.find((x) => x.key === key);
   const proj = day.projectedProgress.find((x) => x.key === key);
   if (!info || !p) return null;
+  const fromSupplements = day.supplementTotals[key] ?? 0;
   const g = groupColor(c, key === 'fiber' ? 'fiber' : info.group);
 
   // today's sources
@@ -97,6 +98,18 @@ export default function NutrientSheet() {
               {fmtAmount(p.req.ul, info.unit)}
             </Txt>
           </Row>
+        )}
+        {fromSupplements > 0 && (
+          <View style={{ gap: 2, marginTop: 4 }}>
+            <Txt v="caption" dim={1}>
+              Includes {fmtAmount(fromSupplements, info.unit)} from supplements
+            </Txt>
+            {p.overUL && (
+              <Txt v="caption" color={c.danger} style={{ fontWeight: '600', lineHeight: 18 }}>
+                Food plus supplements are above the upper limit for {info.label.toLowerCase()}. More isn’t better here.
+              </Txt>
+            )}
+          </View>
         )}
         {info.sparse && (
           <Txt v="caption" dim={2} style={{ marginTop: 4 }}>

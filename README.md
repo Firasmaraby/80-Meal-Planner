@@ -31,9 +31,31 @@ Native modules (haptics, SVG) work in Expo Go. Store builds use EAS: `npx eas-cl
 
 ## Adding meal plans
 
+There are two ways in. Both end in the same report: import errors, a framework report per plan (calories against the band, protein, sat fat, omega 6:3, glycemic load, fatty fish, nutrients under 80% per day) and a fix-list you can paste back to the AI.
+
+**From an Excel template**
+
 1. Open `templates/MealPlan_Template.xlsx`. Regenerate it after the food DB changes with `python3 templates/build_template.py`.
 2. Fill in Plans, Meals and Ingredients. Reference foods by `food_id` from the Foods sheet, or by name (the importer fuzzy-matches names and flags anything uncertain). **Never type nutrition values.** They're computed from the cited food database.
-3. In the app, go to You, then Plan admin, then upload. The report shows unmatched foods and days outside the calorie band. Publish (Supabase) or save on the device (demo mode).
+3. In the app, go to You, then Plan admin, choose **Upload .xlsx** and pick the file.
+
+**From an AI** (ChatGPT, Claude, …)
+
+1. In Plan admin choose **Paste from AI**. Tap **Copy sample as AI text** to show the AI the exact format, and give it your brief.
+2. The AI answers with three CSV blocks under `=== PLANS ===`, `=== MEALS ===` and `=== INGREDIENTS ===` (same columns as the template sheets; tags separated by `|`). Code fences, notes around the blocks, blank lines, `;` as separator and quoted fields are all fine.
+3. Paste the answer and tap **Import**. Tap **Copy fix-list for the AI** (on a phone this opens the share sheet), paste it back to the AI, and repeat until the plans pass. Error rows refer to the CSV line within each block, the header being row 1.
+
+Then **Publish** (Supabase) or **Save on this device** (demo mode). Only import errors block publishing. Framework warnings are listed and counted in the publish confirmation, but don't block.
+
+**From the command line**
+
+```bash
+node scripts/check-plan.mjs path/to/plan.xlsx      # the Excel template
+node scripts/check-plan.mjs path/to/ai-answer.txt  # the AI's pasted text
+node scripts/check-plan.mjs path/to/plan.txt --json
+```
+
+It prints the import issues, a per-plan, per-day table and the fix-list. Exit code 0 means every plan passes, 1 means import errors, 2 means the plans import but need work. It needs no extra install: it loads the app's TypeScript through the Vite that ships with vitest (tsx and vite-node aren't installed).
 
 ## Backend
 

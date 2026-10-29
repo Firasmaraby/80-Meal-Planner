@@ -88,6 +88,8 @@ create table public.profiles (
   life_stage        text not null default 'none' check (life_stage in ('none','pregnant','lactating')),
   protein_per_kg    numeric not null default 1.6 check (protein_per_kg between 0.1 and 4),
   sat_fat_pct       numeric not null default 10 check (sat_fat_pct between 0 and 100),
+  size_to_me        boolean not null default true,   -- scale plan portions to the person's calories
+  dislikes          text[] not null default '{}' check (cardinality(dislikes) <= 200),  -- food ids or 'cat:<category>'
   diet              text[] not null default '{}',
   is_admin          boolean not null default false,
   -- 'epoch' on purpose: the blank row made at sign-up must lose to ANY real client write

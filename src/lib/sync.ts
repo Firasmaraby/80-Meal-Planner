@@ -339,6 +339,8 @@ export interface ProfileRow {
   life_stage: Profile['lifeStage'];
   protein_per_kg: number;
   sat_fat_pct: number;
+  size_to_me: boolean;
+  dislikes: string[];
   diet: string[];
   client_updated_at: string;
 }
@@ -357,6 +359,8 @@ export function profileToRow(userId: string, sp: SyncableProfile): ProfileRow {
     life_stage: p.lifeStage,
     protein_per_kg: p.proteinPerKg,
     sat_fat_pct: p.satFatPct,
+    size_to_me: p.sizeToMe,
+    dislikes: p.dislikes,
     diet: p.diet,
     client_updated_at: sp.updatedAt,
   };
@@ -378,6 +382,8 @@ export function rowToProfile(row: ProfileRow): SyncableProfile | null {
     lifeStage: row.life_stage,
     proteinPerKg: Number(row.protein_per_kg),
     satFatPct: Number(row.sat_fat_pct),
+    sizeToMe: row.size_to_me ?? true,
+    dislikes: row.dislikes ?? [],
     diet: row.diet,
   };
   if (row.name != null) profile.name = row.name;

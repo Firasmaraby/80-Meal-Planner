@@ -6,9 +6,11 @@ import { tipFor } from '@/content/tips';
 import { bandLabel } from '@/engine/calc';
 import { NUTRIENTS } from '@/engine/nutrients';
 import { food } from '@/state/catalog';
-import { useDay, useHistory } from '@/state/day';
+import { useDay, useHistory, type DayData } from '@/state/day';
 import { addDays, daysBetween, today, useStore } from '@/state/store';
+import { CheckinPromptCard } from '@/ui/checkin';
 import { MealCard } from '@/ui/MealCard';
+import { RescueEntry } from '@/ui/rescue';
 import { BoardPreviewCard, GapCloserCard, PillarStrip, TipCard } from '@/ui/panels';
 import { Button, Card, Icon, I, IconButton, Row, Screen, Section, Txt } from '@/ui/primitives';
 import { radius, space, useTheme } from '@/ui/theme';
@@ -100,6 +102,9 @@ export default function Today() {
       <View style={{ marginTop: space.md }}>
         <BoardPreviewCard day={day} />
       </View>
+      <View style={{ marginTop: space.md }}>
+        <CheckinPromptCard />
+      </View>
 
       {day.plan || day.meals.length > 0 ? (
         <Section
@@ -108,11 +113,12 @@ export default function Today() {
             day.plan ? (
               <Pressable onPress={() => router.push({ pathname: '/plan/[id]', params: { id: day.plan!.id } })}>
                 <Txt v="caption" color={c.accent} style={{ fontWeight: '700' }}>
-                  {bandLabel(day.plan.band)} kcal
+                  {day.sizing?.on ? `Sized to ${day.sizing.kcal.toLocaleString()} kcal` : `${bandLabel(day.plan.band)} kcal`}
                 </Txt>
               </Pressable>
             ) : undefined
           }>
+          {day.sizing && <SizingNote sizing={day.sizing} />}
           <View>
             {day.meals.map((m) => (
               <MealCard key={m.meal.id} m={m} date={date} planId={day.plan?.id} profile={day.profile} />
@@ -131,6 +137,9 @@ export default function Today() {
             </Row>
           ))}
           <Button kind="secondary" icon={I.meals} label="Add a meal from the library" style={{ marginTop: space.sm }} onPress={() => router.push('/meals')} />
+          <View style={{ marginTop: space.sm }}>
+            <RescueEntry date={date} />
+          </View>
         </Section>
       ) : (
         <Section title="Meal plan">
@@ -209,5 +218,43 @@ export default function Today() {
         </View>
       )}
     </Screen>
+  );
+}
+
+/**
+ * Explains how the plan was made theirs: portions sized to their calories (micros first),
+ * swaps for foods they don't eat, and when a different band would serve them better.
+ */
+function SizingNote({ sizing }: { sizing: NonNullable<DayData['sizing']> }) {
+  const c = useTheme();
+  const swapped = sizing.swaps.map((s) => `${food(s.from)?.name.split(',')[0] ?? s.from} → ${food(s.to)?.name.split(',')[0] ?? s.to}`);
+  const lines: { text: string; tone: string }[] = [];
+  if (sizing.on && !sizing.advice.ok)
+    lines.push({
+      tone: c.warn,
+      text:
+        sizing.advice.suggest === 'lower'
+          ? `Your target is ${sizing.target.toLocaleString()} kcal. This plan stops at ${sizing.kcal.toLocaleString()} so no nutrient drops below 80%. A lower-calorie plan will fit you better.`
+          : `Your target is ${sizing.target.toLocaleString()} kcal. This plan tops out at ${sizing.kcal.toLocaleString()}. A higher-calorie plan will fit you better.`,
+    });
+  if (swapped.length) lines.push({ tone: c.ink2, text: `Swapped for you: ${swapped.join(', ')}.` });
+  if (sizing.unresolved.length)
+    lines.push({ tone: c.ink2, text: `No close swap for ${sizing.unresolved.map((id) => food(id)?.name.split(',')[0] ?? id).join(', ')}; open the meal to replace it.` });
+  if (!lines.length) return null;
+  return (
+    <View style={{ gap: 6, padding: space.md, borderRadius: radius.md, backgroundColor: c.surface2, marginBottom: space.md }}>
+      {lines.map((l) => (
+        <Txt key={l.text} v="caption" color={l.tone} style={{ lineHeight: 18 }}>
+          {l.text}
+        </Txt>
+      ))}
+      {sizing.on && !sizing.advice.ok && (
+        <Pressable accessibilityRole="button" onPress={() => router.push('/plans')}>
+          <Txt v="caption" color={c.accent} style={{ fontWeight: '700' }}>
+            See plans that fit →
+          </Txt>
+        </Pressable>
+      )}
+    </View>
   );
 }

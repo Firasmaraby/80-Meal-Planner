@@ -28,8 +28,11 @@ const walk = (dir) =>
 const resetRoute = `try{history.replaceState(null,'','/')}catch(e){}`;
 
 if (flag === '--single') {
-  const js = walk(join(src, '_expo/static/js/web')).filter((f) => f.endsWith('.js'));
-  if (js.length !== 1) throw new Error(`expected one JS bundle, found ${js.length}; set asyncRoutes: false`);
+  // inline the entry bundle that index.html loads; lazy chunks (e.g. native-only modules
+  // behind a web guard) are never requested on web, so they're left out
+  const entry = readFileSync(join(src, 'index.html'), 'utf8').match(/src="\/(_expo\/static\/js\/web\/entry-[^"]+\.js)"/)?.[1];
+  if (!entry) throw new Error('no entry bundle in index.html; set asyncRoutes: false');
+  const js = [join(src, entry)];
   const MIME = { '.ttf': 'font/ttf', '.png': 'image/png' };
   // embed every asset the bundle references as a data: URI
   const bundle = readFileSync(js[0], 'utf8')

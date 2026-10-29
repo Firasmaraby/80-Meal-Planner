@@ -13,8 +13,11 @@ import {
 } from '@/engine/calc';
 import type { Ingredient, Meal, MealPlan, MealSlot, NutrientVector, PlanDay } from '@/engine/types';
 
-import { BUNDLED_PLANS, FOOD_INDEX, isFattyFish } from './catalog';
+import { personalizeDay, sizingAdvice } from '@/engine/personalize';
+
+import { BUNDLED_PLANS, FOODS, FOOD_INDEX, SWAP_GROUPS, isFattyFish } from './catalog';
 import { addDays, daysBetween, useStore, type Log } from './store';
+import { foldInSupplements, plannedIds, supplementTotal, takenIds, useWellness } from './wellnessStore';
 
 export function useAllPlans(): MealPlan[] {
   const local = useStore((s) => s.localPlans);
@@ -74,6 +77,8 @@ export function useDay(date: string) {
   const planEdits = useStore((s) => s.planEdits);
   const dayAdds = useStore((s) => s.dayAdds);
   const daySkips = useStore((s) => s.daySkips);
+  const supplements = useWellness((s) => s.supplements);
+  const takenOn = useWellness((s) => s.takenOn);
   const plan = usePlan(enrollment?.planId, enrollment?.version);
 
   return useMemo(() => {
@@ -81,11 +86,21 @@ export function useDay(date: string) {
     const planDay = plan && enrollment ? planDayFor(plan, enrollment.startedOn, date) : undefined;
 
     const skips = new Set(daySkips[date] ?? []);
+    // the plan, made theirs: dislikes swapped, portions sized to their calories (micros first)
+    const target = calorieTarget(profile);
+    const personal = planDay
+      ? personalizeDay(planDay, profile, {
+          foods: FOOD_INDEX,
+          catalog: FOODS,
+          groups: SWAP_GROUPS,
+          targetKcal: profile.sizeToMe ? target : undefined,
+        })
+      : undefined;
     const fromPlan: DayMeal[] = (planDay?.meals ?? [])
       .filter((meal) => !skips.has(meal.id))
       .map((meal) => {
         const edit = dayEdits[`${date}|${meal.id}`] ?? (plan ? planEdits[`${plan.id}|${meal.id}`] : undefined);
-        const ingredients = edit ?? meal.ingredients;
+        const ingredients = edit ?? personal?.meals.get(meal.id) ?? meal.ingredients;
         const eatenLogs = logs.filter((l) => l.mealId === meal.id);
         const eaten = eatenLogs.length > 0;
         return {
@@ -117,12 +132,27 @@ export function useDay(date: string) {
     const meals = [...fromPlan, ...fromLibrary].sort((a, b) => SLOT_ORDER[a.meal.slot] - SLOT_ORDER[b.meal.slot]);
     const skipped = (planDay?.meals ?? []).filter((m) => skips.has(m.id) && !fromLibrary.some((a) => a.replaces === m.id));
 
-    const eaten = logsTotal(logs, FOOD_INDEX);
+    // supplements count on the board: taken ones are eaten, active ones still to take are projected
+    const taken = takenIds(takenOn, date);
+    const supplementTotals = supplementTotal(taken);
+    const supplementPlanned = supplementTotal(plannedIds(supplements, taken));
+    const eaten = foldInSupplements(logsTotal(logs, FOOD_INDEX), supplementTotals);
     const remaining = meals.filter((m) => !m.eaten);
     const projected = { ...eaten };
     for (const m of remaining) addInto(projected, ingredientsTotal(m.ingredients, FOOD_INDEX));
+    foldInSupplements(projected, supplementPlanned);
 
-    const kcalTarget = plan ? Math.round((plan.band.min + plan.band.max) / 2) : calorieTarget(profile);
+    const kcalTarget = plan && !profile.sizeToMe ? Math.round((plan.band.min + plan.band.max) / 2) : target;
+    const sizing = personal
+      ? {
+          on: profile.sizeToMe,
+          target,
+          kcal: Math.round(personal.kcal),
+          advice: profile.sizeToMe ? sizingAdvice(personal.kcal, target) : { ok: true },
+          swaps: personal.swaps,
+          unresolved: personal.unresolved,
+        }
+      : undefined;
     const macros = macroTargets(profile, kcalTarget);
     const progress = boardProgress(eaten, profile);
     const projectedProgress = boardProgress(projected, profile);
@@ -135,10 +165,13 @@ export function useDay(date: string) {
       planDay,
       meals,
       skipped,
+      sizing,
       logs,
       extras,
       eaten,
       projected,
+      supplementTotals,
+      supplementPlanned,
       macros,
       progress,
       projectedProgress,
@@ -147,7 +180,7 @@ export function useDay(date: string) {
       pillars: pillars(eaten, gl, profile, macros),
       profile,
     };
-  }, [allLogs, date, plan, enrollment, dayEdits, planEdits, dayAdds, daySkips, profile]);
+  }, [allLogs, date, plan, enrollment, dayEdits, planEdits, dayAdds, daySkips, profile, supplements, takenOn]);
 }
 
 export type DayData = ReturnType<typeof useDay>;
@@ -156,6 +189,7 @@ export type DayData = ReturnType<typeof useDay>;
 export function useHistory(days = 35, end: string) {
   const profile = useStore((s) => s.profile);
   const logs = useStore((s) => s.logs);
+  const takenOn = useWellness((s) => s.takenOn);
   return useMemo(() => {
     const byDate = new Map<string, Log[]>();
     for (const l of logs) byDate.set(l.date, [...(byDate.get(l.date) ?? []), l]);
@@ -163,7 +197,7 @@ export function useHistory(days = 35, end: string) {
     for (let i = days - 1; i >= 0; i--) {
       const date = addDays(end, -i);
       const l = byDate.get(date) ?? [];
-      const s = dayScore(boardProgress(logsTotal(l, FOOD_INDEX), profile));
+      const s = dayScore(boardProgress(foldInSupplements(logsTotal(l, FOOD_INDEX), supplementTotal(takenOn[date])), profile));
       out.push({ date, ratio: s.ratio, logged: l.length > 0, eightyDay: s.eightyDay, fish: l.some((x) => isFattyFish(x.foodId)) });
     }
     let streak = 0;
@@ -179,5 +213,5 @@ export function useHistory(days = 35, end: string) {
       fishThisWeek: last7.filter((d) => d.fish).length,
       eightyDaysThisWeek: last7.filter((d) => d.eightyDay).length,
     };
-  }, [logs, profile, days, end]);
+  }, [logs, profile, days, end, takenOn]);
 }
