@@ -4,6 +4,14 @@ import type { Food } from './types';
  * In-memory food search. Fast enough for tens of thousands of foods on a phone:
  * tokens are pre-normalised once; a query is matched by token prefix with
  * a one-typo tolerance for longer words, then ranked by match quality + commonness.
+ *
+ * Library rules (foods that carry `head` / `tier`; pipeline/search_check.py is the Python twin, keep them in step):
+ *  - head grouping: results are grouped by `head`, the best member is shown, the others come back as `group`;
+ *  - exact head beats the rest. Match class: 4 exact head (same tokens as the query), 3 exact name / alias,
+ *    2 every query token matches (exact or prefix), 1 the rest (typo tolerance, or the query is only contained in the
+ *    head: "apple" in "pineapple"). A better class always wins: Apple, raw > Apple pie > Pineapple;
+ *  - inside a class an `everyday` food beats an `extended` one.
+ * Foods without `head` behave as before: every food is its own group and there is no tier preference.
  */
 
 const STOP = new Set(['and', 'or', 'with', 'of', 'the', 'a', 'in', 'raw']);
@@ -61,38 +69,68 @@ interface Entry {
   nameTokens: string[];
   aliasTokens: string[][];
   aliasNames: string[];
+  head: string; // normalised head ('' = none)
+  headTokens: string[];
+  everyday: boolean;
 }
 
 export interface SearchHit {
   food: Food;
   score: number; // 0..1
+  /** match class 0..4, see the module comment */
+  cls?: number;
+  /** every matching food with the same head, best first (the first is `food`) */
+  group?: Food[];
 }
+
+const cmpId = (a: Food, b: Food) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+
+const makeEntry = (food: Food): Entry => ({
+  food,
+  name: normalize(food.name),
+  nameTokens: tokens(food.name),
+  aliasTokens: (food.aliases ?? []).map(tokens),
+  aliasNames: (food.aliases ?? []).map(normalize),
+  head: food.head ? normalize(food.head) : '',
+  headTokens: food.head ? tokens(food.head) : [],
+  everyday: food.tier === 'everyday',
+});
 
 export class FoodSearch {
   private entries: Entry[];
 
   constructor(foods: Food[]) {
-    this.entries = foods.map((food) => ({
-      food,
-      name: normalize(food.name),
-      nameTokens: tokens(food.name),
-      aliasTokens: (food.aliases ?? []).map(tokens),
-      aliasNames: (food.aliases ?? []).map(normalize),
-    }));
+    this.entries = foods.map(makeEntry);
+  }
+
+  /** Rebuild the index (the extended tier arrived). */
+  setFoods(foods: Food[]): void {
+    this.entries = foods.map(makeEntry);
   }
 
   search(query: string, opts: { limit?: number; includeRare?: boolean } = {}): SearchHit[] {
     const q = tokens(query);
     const qNorm = normalize(query);
     if (!q.length) return [];
-    const hits: SearchHit[] = [];
+    interface Raw { cls: number; ev: number; score: number; rank: number; food: Food }
+    const raw: Raw[] = [];
     for (const e of this.entries) {
       if (e.food.rare && !opts.includeRare) continue;
-      const s = scoreEntry(e, q, qNorm);
-      if (s > 0) hits.push({ food: e.food, score: s });
+      const [score, cls] = scoreEntry(e, q, qNorm);
+      if (score > 0) raw.push({ cls, ev: e.everyday ? 1 : 0, score, rank: e.food.rank ?? 50, food: e.food });
     }
-    hits.sort((a, b) => b.score - a.score || (b.food.rank ?? 50) - (a.food.rank ?? 50));
-    return hits.slice(0, opts.limit ?? 30);
+    // best member first: class, everyday, score, rank
+    raw.sort((a, b) => b.cls - a.cls || b.ev - a.ev || b.score - a.score || b.rank - a.rank || cmpId(a.food, b.food));
+    const groups = new Map<string, SearchHit & { ev: number; rank: number }>();
+    for (const r of raw) {
+      const key = r.food.head ? `head:${r.food.head}` : `id:${r.food.id}`;
+      const g = groups.get(key);
+      if (!g) groups.set(key, { food: r.food, score: r.score, cls: r.cls, ev: r.ev, rank: r.rank, group: [r.food] });
+      else g.group!.push(r.food);
+    }
+    const out = [...groups.values()];
+    out.sort((a, b) => b.cls! - a.cls! || b.ev - a.ev || b.score - a.score || b.rank - a.rank || cmpId(a.food, b.food));
+    return out.slice(0, opts.limit ?? 30).map(({ food, score, cls, group }) => ({ food, score, cls, group }));
   }
 }
 
@@ -107,20 +145,30 @@ function tokenMatch(qt: string, cands: string[]): number {
   return best;
 }
 
-function scoreEntry(e: Entry, q: string[], qNorm: string): number {
-  // exact name or alias match is the strongest signal
-  if (e.name === qNorm || e.aliasNames.includes(qNorm)) return 0.97 + rankBoost(e.food) * 0.03;
+const sameTokens = (a: string[], b: string[]) => a.length === b.length && [...a].sort().join(' ') === [...b].sort().join(' ');
 
-  const fields = [e.nameTokens, ...e.aliasTokens];
+/** [score 0..1, match class 0..4]; class 0 = no match. */
+function scoreEntry(e: Entry, q: string[], qNorm: string): [number, number] {
+  // 4: the query names the head (same tokens, any order)
+  if (e.headTokens.length && sameTokens(e.headTokens, q)) return [0.98 + rankBoost(e.food) * 0.02, 4];
+  // 3: exact name or alias is the strongest signal after the head
+  if (e.name === qNorm || e.aliasNames.includes(qNorm) || e.aliasTokens.some((a) => a.length && sameTokens(a, q))) {
+    return [0.97 + rankBoost(e.food) * 0.03, 3];
+  }
+
+  const fields = [e.nameTokens, ...e.aliasTokens, ...(e.headTokens.length ? [e.headTokens] : [])];
   let best = 0;
+  let cls = 0;
   for (const f of fields) {
     let total = 0;
+    let exactish = true;
     for (const qt of q) {
       const m = tokenMatch(qt, f);
       if (m === 0) {
         total = 0;
         break;
       }
+      if (m < 0.6) exactish = false;
       total += m;
     }
     if (!total) continue;
@@ -130,9 +178,18 @@ function scoreEntry(e: Entry, q: string[], qNorm: string): number {
     // prefer concise names: query covers more of the name
     s -= Math.min(0.2, Math.max(0, f.length - q.length) * 0.03);
     best = Math.max(best, s);
+    if (exactish) cls = 2;
+    else if (cls === 0) cls = 1;
   }
-  if (!best) return 0;
-  return Math.min(0.96, best * 0.85 + rankBoost(e.food) * 0.15);
+  if (!best) {
+    // 1: only contained in the head / name ("apple" in "pineapple") - weakest; single words of 4+ letters
+    const hay = e.head || e.name;
+    if (qNorm.length >= 4 && !qNorm.includes(' ') && hay.includes(qNorm) && !hay.startsWith(qNorm)) {
+      return [0.3 + rankBoost(e.food) * 0.1, 1];
+    }
+    return [0, 0];
+  }
+  return [Math.min(0.96, best * 0.85 + rankBoost(e.food) * 0.15), cls || 1];
 }
 
 const rankBoost = (f: Food) => (f.rank ?? 50) / 100;

@@ -1,0 +1,1578 @@
+[
+ {
+  "id": "mediterranean-reset",
+  "version": 1,
+  "name": "Mediterranean Reset",
+  "band": {
+   "min": 1800,
+   "max": 2000
+  },
+  "cuisine": "Mediterranean",
+  "tags": [
+   "pescatarian",
+   "high-fiber"
+  ],
+  "description": "SAMPLE — Three days of olive-oil, legume and fish-forward Mediterranean eating. Built to clear most micronutrient targets with fatty fish twice, low-GI carbs and plenty of fiber.",
+  "author": "Eighty sample",
+  "days": [
+   {
+    "day": 1,
+    "meals": [
+     {
+      "id": "med-1",
+      "slot": "breakfast",
+      "name": "Berry Greek yogurt oat bowl",
+      "prepMinutes": 5,
+      "instructions": "Stir the oats and ground flax into the yogurt and let it sit for a few minutes (or overnight in the fridge). Top with blueberries and chopped walnuts.",
+      "ingredients": [
+       {
+        "foodId": "yogurt-greek-plain-nonfat",
+        "grams": 200,
+        "swapGroup": "dairy_protein"
+       },
+       {
+        "foodId": "oats-rolled-dry",
+        "grams": 40,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "blueberries-raw",
+        "grams": 100,
+        "swapGroup": "berries"
+       },
+       {
+        "foodId": "walnuts-english",
+        "grams": 15,
+        "swapGroup": "nuts_seeds",
+        "note": "chopped"
+       },
+       {
+        "foodId": "flaxseed-ground",
+        "grams": 10,
+        "swapGroup": "nuts_seeds"
+       }
+      ]
+     },
+     {
+      "id": "med-2",
+      "slot": "lunch",
+      "name": "Chickpea, egg and feta salad with pita",
+      "prepMinutes": 15,
+      "instructions": "Toss the chickpeas with chopped cucumber, tomato, romaine, grated carrot and parsley. Dress with olive oil and lemon, then top with the sliced egg and crumbled feta and serve with warm pita.",
+      "ingredients": [
+       {
+        "foodId": "chickpeas-boiled",
+        "grams": 150,
+        "swapGroup": "legumes",
+        "note": "drained"
+       },
+       {
+        "foodId": "cucumber-raw",
+        "grams": 100
+       },
+       {
+        "foodId": "tomato-red-raw",
+        "grams": 100
+       },
+       {
+        "foodId": "romaine-lettuce-raw",
+        "grams": 60,
+        "swapGroup": "leafy_greens"
+       },
+       {
+        "foodId": "carrots-raw",
+        "grams": 80
+       },
+       {
+        "foodId": "egg-hard-boiled",
+        "grams": 50
+       },
+       {
+        "foodId": "feta-cheese",
+        "grams": 40
+       },
+       {
+        "foodId": "olive-oil",
+        "grams": 10,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "lemon-juice-raw",
+        "grams": 15
+       },
+       {
+        "foodId": "parsley-raw",
+        "grams": 10
+       },
+       {
+        "foodId": "pita-whole-wheat",
+        "grams": 25
+       }
+      ]
+     },
+     {
+      "id": "med-3",
+      "slot": "dinner",
+      "name": "Lemon-garlic salmon with quinoa and broccoli",
+      "prepMinutes": 30,
+      "instructions": "Roast the salmon at 200 °C for 12 to 15 minutes with garlic, lemon and half the oil. Steam the broccoli, toss with the remaining oil and serve over the quinoa.",
+      "ingredients": [
+       {
+        "foodId": "salmon-atlantic-farmed-cooked",
+        "grams": 150,
+        "swapGroup": "fatty_fish",
+        "note": "weight cooked"
+       },
+       {
+        "foodId": "quinoa-cooked",
+        "grams": 150,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "broccoli-raw",
+        "grams": 150
+       },
+       {
+        "foodId": "olive-oil",
+        "grams": 8,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "garlic-raw",
+        "grams": 5
+       },
+       {
+        "foodId": "lemon-juice-raw",
+        "grams": 15
+       },
+       {
+        "foodId": "salt-iodized",
+        "grams": 1.5
+       }
+      ]
+     },
+     {
+      "id": "med-4",
+      "slot": "snack",
+      "name": "Apple and almonds",
+      "prepMinutes": 2,
+      "instructions": "Slice the apple and eat it with the almonds.",
+      "ingredients": [
+       {
+        "foodId": "apple-raw",
+        "grams": 150
+       },
+       {
+        "foodId": "almonds-raw",
+        "grams": 20,
+        "swapGroup": "nuts_seeds"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "day": 2,
+    "meals": [
+     {
+      "id": "med-5",
+      "slot": "breakfast",
+      "name": "Spinach feta omelet with toast and orange",
+      "prepMinutes": 15,
+      "instructions": "Soften the spinach and tomato in a little olive oil, add the beaten eggs and cook until set. Fold in the feta and serve with toast and a sliced orange.",
+      "ingredients": [
+       {
+        "foodId": "egg-whole-raw",
+        "grams": 100
+       },
+       {
+        "foodId": "spinach-raw",
+        "grams": 60,
+        "swapGroup": "leafy_greens"
+       },
+       {
+        "foodId": "tomato-red-raw",
+        "grams": 80
+       },
+       {
+        "foodId": "feta-cheese",
+        "grams": 20
+       },
+       {
+        "foodId": "olive-oil",
+        "grams": 5,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "bread-whole-wheat",
+        "grams": 86
+       },
+       {
+        "foodId": "orange-raw",
+        "grams": 130,
+        "swapGroup": "vit_c_fruit"
+       }
+      ]
+     },
+     {
+      "id": "med-6",
+      "slot": "lunch",
+      "name": "Lentil and vegetable soup",
+      "prepMinutes": 35,
+      "instructions": "Sweat the onion, carrot and garlic in olive oil, then add the lentils, tomato, cumin and enough water to cover. Simmer for 20 minutes, stir in the kale and serve with pita.",
+      "ingredients": [
+       {
+        "foodId": "lentils-boiled",
+        "grams": 200,
+        "swapGroup": "legumes"
+       },
+       {
+        "foodId": "carrots-raw",
+        "grams": 80
+       },
+       {
+        "foodId": "onion-raw",
+        "grams": 60
+       },
+       {
+        "foodId": "tomato-red-raw",
+        "grams": 100
+       },
+       {
+        "foodId": "kale-raw",
+        "grams": 50,
+        "swapGroup": "leafy_greens"
+       },
+       {
+        "foodId": "olive-oil",
+        "grams": 10,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "garlic-raw",
+        "grams": 5
+       },
+       {
+        "foodId": "cumin-seed",
+        "grams": 1
+       }
+      ]
+     },
+     {
+      "id": "med-7",
+      "slot": "dinner",
+      "name": "Baked mackerel with white beans, tomatoes and barley",
+      "prepMinutes": 30,
+      "instructions": "Bake the mackerel fillets on a bed of white beans, tomato and zucchini with garlic and olive oil at 200 °C for 15 minutes. Finish with parsley and lemon and serve over barley.",
+      "ingredients": [
+       {
+        "foodId": "mackerel-atlantic-raw",
+        "grams": 110,
+        "swapGroup": "fatty_fish",
+        "note": "raw weight"
+       },
+       {
+        "foodId": "white-beans-boiled",
+        "grams": 150,
+        "swapGroup": "legumes"
+       },
+       {
+        "foodId": "zucchini-raw",
+        "grams": 120
+       },
+       {
+        "foodId": "tomato-red-raw",
+        "grams": 150
+       },
+       {
+        "foodId": "olive-oil",
+        "grams": 8,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "garlic-raw",
+        "grams": 5
+       },
+       {
+        "foodId": "parsley-raw",
+        "grams": 10
+       },
+       {
+        "foodId": "lemon-juice-raw",
+        "grams": 15
+       },
+       {
+        "foodId": "barley-pearled-cooked",
+        "grams": 90,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "salt-iodized",
+        "grams": 1.5
+       }
+      ]
+     },
+     {
+      "id": "med-8",
+      "slot": "snack",
+      "name": "Greek yogurt with raspberries and chia",
+      "prepMinutes": 3,
+      "instructions": "Spoon the yogurt into a bowl and top with raspberries and chia seeds.",
+      "ingredients": [
+       {
+        "foodId": "yogurt-greek-plain-nonfat",
+        "grams": 150,
+        "swapGroup": "dairy_protein"
+       },
+       {
+        "foodId": "raspberries-raw",
+        "grams": 100,
+        "swapGroup": "berries"
+       },
+       {
+        "foodId": "chia-seeds-dried",
+        "grams": 10,
+        "swapGroup": "nuts_seeds"
+       }
+      ]
+     },
+     {
+      "id": "med-9",
+      "slot": "snack",
+      "name": "Brazil nut and almonds",
+      "prepMinutes": 1,
+      "instructions": "Eat one Brazil nut with a small handful of almonds. One Brazil nut alone covers the day's selenium.",
+      "ingredients": [
+       {
+        "foodId": "brazil-nuts",
+        "grams": 5
+       },
+       {
+        "foodId": "almonds-raw",
+        "grams": 10,
+        "swapGroup": "nuts_seeds"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "day": 3,
+    "meals": [
+     {
+      "id": "med-10",
+      "slot": "breakfast",
+      "name": "Strawberry chia overnight oats with boiled eggs",
+      "prepMinutes": 10,
+      "instructions": "Mix the oats, milk and chia in a jar and refrigerate overnight, then top with sliced strawberries. Serve with two hard-boiled eggs on the side.",
+      "ingredients": [
+       {
+        "foodId": "oats-rolled-dry",
+        "grams": 50,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "milk-2pct",
+        "grams": 200
+       },
+       {
+        "foodId": "chia-seeds-dried",
+        "grams": 12,
+        "swapGroup": "nuts_seeds"
+       },
+       {
+        "foodId": "strawberries-raw",
+        "grams": 120,
+        "swapGroup": "berries"
+       },
+       {
+        "foodId": "egg-hard-boiled",
+        "grams": 100
+       }
+      ]
+     },
+     {
+      "id": "med-11",
+      "slot": "lunch",
+      "name": "Sardine and arugula salad on rye",
+      "prepMinutes": 10,
+      "instructions": "Pile the sardines, arugula, tomato and cucumber on the rye bread and dress with olive oil and lemon.",
+      "ingredients": [
+       {
+        "foodId": "sardines-canned-oil-drained",
+        "grams": 92,
+        "swapGroup": "fatty_fish"
+       },
+       {
+        "foodId": "arugula-raw",
+        "grams": 40,
+        "swapGroup": "leafy_greens"
+       },
+       {
+        "foodId": "tomato-red-raw",
+        "grams": 100
+       },
+       {
+        "foodId": "cucumber-raw",
+        "grams": 80
+       },
+       {
+        "foodId": "bread-rye",
+        "grams": 64
+       },
+       {
+        "foodId": "olive-oil",
+        "grams": 8,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "lemon-juice-raw",
+        "grams": 15
+       }
+      ]
+     },
+     {
+      "id": "med-12",
+      "slot": "dinner",
+      "name": "Garlic cod and chickpea bulgur bowl",
+      "prepMinutes": 25,
+      "instructions": "Sauté the garlic and pepper in olive oil, add the cod, chickpeas, cumin and spinach and cook for 5 minutes until the fish flakes. Spoon over the bulgur and finish with parsley.",
+      "ingredients": [
+       {
+        "foodId": "cod-atlantic-cooked",
+        "grams": 170,
+        "swapGroup": "lean_protein",
+        "note": "weight cooked"
+       },
+       {
+        "foodId": "bulgur-cooked",
+        "grams": 150,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "chickpeas-boiled",
+        "grams": 80,
+        "swapGroup": "legumes"
+       },
+       {
+        "foodId": "bell-pepper-red-raw",
+        "grams": 120,
+        "swapGroup": "vit_c_fruit"
+       },
+       {
+        "foodId": "spinach-raw",
+        "grams": 60,
+        "swapGroup": "leafy_greens"
+       },
+       {
+        "foodId": "olive-oil",
+        "grams": 12,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "garlic-raw",
+        "grams": 5
+       },
+       {
+        "foodId": "cumin-seed",
+        "grams": 2
+       },
+       {
+        "foodId": "parsley-raw",
+        "grams": 10
+       },
+       {
+        "foodId": "salt-iodized",
+        "grams": 1.5
+       }
+      ]
+     },
+     {
+      "id": "med-13",
+      "slot": "snack",
+      "name": "Hummus and carrots",
+      "prepMinutes": 3,
+      "instructions": "Dip the carrot sticks into the hummus.",
+      "ingredients": [
+       {
+        "foodId": "hummus-commercial",
+        "grams": 60
+       },
+       {
+        "foodId": "carrots-raw",
+        "grams": 100
+       }
+      ]
+     },
+     {
+      "id": "med-14",
+      "slot": "snack",
+      "name": "Kiwi and pistachios",
+      "prepMinutes": 2,
+      "instructions": "Peel and slice the kiwi and serve with the pistachios.",
+      "ingredients": [
+       {
+        "foodId": "kiwi-green-raw",
+        "grams": 138,
+        "swapGroup": "vit_c_fruit"
+       },
+       {
+        "foodId": "pistachios-raw",
+        "grams": 20,
+        "swapGroup": "nuts_seeds"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lean-performance",
+  "version": 1,
+  "name": "Lean Performance",
+  "band": {
+   "min": 2200,
+   "max": 2400
+  },
+  "cuisine": "North American",
+  "tags": [
+   "high-protein"
+  ],
+  "description": "SAMPLE — Three high-protein training days built on lean meat, fatty fish, eggs and dairy, with beans and whole grains for slow carbs. Roughly 2 g protein per kg for an 80 kg adult.",
+  "author": "Eighty sample",
+  "days": [
+   {
+    "day": 1,
+    "meals": [
+     {
+      "id": "lean-1",
+      "slot": "breakfast",
+      "name": "Veggie scramble with blueberry walnut oats",
+      "prepMinutes": 20,
+      "instructions": "Scramble the eggs with spinach and mushrooms in a little olive oil. Cook the oats in water and top with blueberries and walnuts.",
+      "ingredients": [
+       {
+        "foodId": "egg-whole-raw",
+        "grams": 150
+       },
+       {
+        "foodId": "spinach-raw",
+        "grams": 60,
+        "swapGroup": "leafy_greens"
+       },
+       {
+        "foodId": "mushrooms-white-raw",
+        "grams": 80
+       },
+       {
+        "foodId": "olive-oil",
+        "grams": 5,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "oats-rolled-dry",
+        "grams": 50,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "blueberries-raw",
+        "grams": 80,
+        "swapGroup": "berries"
+       },
+       {
+        "foodId": "walnuts-english",
+        "grams": 15,
+        "swapGroup": "nuts_seeds"
+       }
+      ]
+     },
+     {
+      "id": "lean-2",
+      "slot": "lunch",
+      "name": "Chicken burrito bowl",
+      "prepMinutes": 25,
+      "instructions": "Slice the chicken over the rice and black beans. Add romaine, pepper, avocado and salsa.",
+      "ingredients": [
+       {
+        "foodId": "chicken-breast-roasted",
+        "grams": 150,
+        "swapGroup": "lean_protein"
+       },
+       {
+        "foodId": "black-beans-boiled",
+        "grams": 150,
+        "swapGroup": "legumes"
+       },
+       {
+        "foodId": "brown-rice-cooked",
+        "grams": 150,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "salsa",
+        "grams": 60
+       },
+       {
+        "foodId": "avocado-raw",
+        "grams": 70
+       },
+       {
+        "foodId": "romaine-lettuce-raw",
+        "grams": 60,
+        "swapGroup": "leafy_greens"
+       },
+       {
+        "foodId": "bell-pepper-red-raw",
+        "grams": 100,
+        "swapGroup": "vit_c_fruit"
+       }
+      ]
+     },
+     {
+      "id": "lean-3",
+      "slot": "dinner",
+      "name": "Roasted salmon, sweet potato and broccoli",
+      "prepMinutes": 35,
+      "instructions": "Roast the sweet potato wedges at 200 °C for 25 minutes, adding the salmon and broccoli for the last 12 minutes. Finish with garlic, lemon and olive oil.",
+      "ingredients": [
+       {
+        "foodId": "salmon-atlantic-farmed-cooked",
+        "grams": 150,
+        "swapGroup": "fatty_fish",
+        "note": "weight cooked"
+       },
+       {
+        "foodId": "sweet-potato-baked",
+        "grams": 200
+       },
+       {
+        "foodId": "broccoli-raw",
+        "grams": 200
+       },
+       {
+        "foodId": "olive-oil",
+        "grams": 8,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "garlic-raw",
+        "grams": 5
+       },
+       {
+        "foodId": "lemon-juice-raw",
+        "grams": 15
+       },
+       {
+        "foodId": "salt-iodized",
+        "grams": 1.5
+       }
+      ]
+     },
+     {
+      "id": "lean-4",
+      "slot": "snack",
+      "name": "Greek yogurt hemp bowl",
+      "prepMinutes": 3,
+      "instructions": "Top the yogurt with raspberries and hemp hearts.",
+      "ingredients": [
+       {
+        "foodId": "yogurt-greek-plain-nonfat",
+        "grams": 200,
+        "swapGroup": "dairy_protein"
+       },
+       {
+        "foodId": "raspberries-raw",
+        "grams": 100,
+        "swapGroup": "berries"
+       },
+       {
+        "foodId": "hemp-hearts",
+        "grams": 20,
+        "swapGroup": "nuts_seeds"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "day": 2,
+    "meals": [
+     {
+      "id": "lean-5",
+      "slot": "breakfast",
+      "name": "Skyr oat power bowl",
+      "prepMinutes": 5,
+      "instructions": "Stir the oats, flax and sliced banana into the skyr and top with almonds.",
+      "ingredients": [
+       {
+        "foodId": "skyr-plain-nonfat",
+        "grams": 200,
+        "swapGroup": "dairy_protein"
+       },
+       {
+        "foodId": "oats-rolled-dry",
+        "grams": 50,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "banana-raw",
+        "grams": 120
+       },
+       {
+        "foodId": "almonds-raw",
+        "grams": 15,
+        "swapGroup": "nuts_seeds"
+       },
+       {
+        "foodId": "flaxseed-ground",
+        "grams": 10,
+        "swapGroup": "nuts_seeds"
+       }
+      ]
+     },
+     {
+      "id": "lean-6",
+      "slot": "lunch",
+      "name": "Lean beef and quinoa bowl",
+      "prepMinutes": 25,
+      "instructions": "Brown the beef with garlic, then serve over the quinoa with sautéed kale, carrot, pepper and tomato. Scatter with pumpkin seeds.",
+      "ingredients": [
+       {
+        "foodId": "beef-ground-93-cooked",
+        "grams": 120
+       },
+       {
+        "foodId": "quinoa-cooked",
+        "grams": 150,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "kale-raw",
+        "grams": 80,
+        "swapGroup": "leafy_greens"
+       },
+       {
+        "foodId": "carrots-raw",
+        "grams": 100
+       },
+       {
+        "foodId": "bell-pepper-red-raw",
+        "grams": 100,
+        "swapGroup": "vit_c_fruit"
+       },
+       {
+        "foodId": "tomato-red-raw",
+        "grams": 100
+       },
+       {
+        "foodId": "olive-oil",
+        "grams": 8,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "pumpkin-seeds-dried",
+        "grams": 15,
+        "swapGroup": "nuts_seeds"
+       },
+       {
+        "foodId": "garlic-raw",
+        "grams": 5
+       }
+      ]
+     },
+     {
+      "id": "lean-7",
+      "slot": "dinner",
+      "name": "Grilled mackerel with lentils and asparagus",
+      "prepMinutes": 30,
+      "instructions": "Grill the mackerel fillets for 4 minutes per side. Serve with warm lentils, roasted asparagus, lemon and parsley.",
+      "ingredients": [
+       {
+        "foodId": "mackerel-atlantic-raw",
+        "grams": 130,
+        "swapGroup": "fatty_fish",
+        "note": "raw weight"
+       },
+       {
+        "foodId": "lentils-boiled",
+        "grams": 150,
+        "swapGroup": "legumes"
+       },
+       {
+        "foodId": "asparagus-raw",
+        "grams": 150
+       },
+       {
+        "foodId": "olive-oil",
+        "grams": 8,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "lemon-juice-raw",
+        "grams": 15
+       },
+       {
+        "foodId": "parsley-raw",
+        "grams": 10
+       },
+       {
+        "foodId": "salt-iodized",
+        "grams": 1.5
+       }
+      ]
+     },
+     {
+      "id": "lean-8",
+      "slot": "snack",
+      "name": "Cottage cheese and strawberries",
+      "prepMinutes": 3,
+      "instructions": "Spoon the cottage cheese into a bowl and top with sliced strawberries.",
+      "ingredients": [
+       {
+        "foodId": "cottage-cheese-2pct",
+        "grams": 200,
+        "swapGroup": "dairy_protein"
+       },
+       {
+        "foodId": "strawberries-raw",
+        "grams": 150,
+        "swapGroup": "berries"
+       }
+      ]
+     },
+     {
+      "id": "lean-9",
+      "slot": "snack",
+      "name": "Turkey, cheddar and avocado pita",
+      "prepMinutes": 5,
+      "instructions": "Fill the whole wheat pita with the turkey, cheddar and sliced avocado.",
+      "ingredients": [
+       {
+        "foodId": "turkey-breast-roasted",
+        "grams": 80,
+        "swapGroup": "lean_protein"
+       },
+       {
+        "foodId": "cheddar-cheese",
+        "grams": 20
+       },
+       {
+        "foodId": "avocado-raw",
+        "grams": 40
+       },
+       {
+        "foodId": "pita-whole-wheat",
+        "grams": 40
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "day": 3,
+    "meals": [
+     {
+      "id": "lean-10",
+      "slot": "breakfast",
+      "name": "Egg white omelet with toast and orange",
+      "prepMinutes": 15,
+      "instructions": "Cook the whole eggs and egg whites with spinach and tomato in a nonstick pan. Serve with toast and an orange.",
+      "ingredients": [
+       {
+        "foodId": "egg-whole-raw",
+        "grams": 100
+       },
+       {
+        "foodId": "egg-whites-raw",
+        "grams": 90
+       },
+       {
+        "foodId": "spinach-raw",
+        "grams": 60,
+        "swapGroup": "leafy_greens"
+       },
+       {
+        "foodId": "tomato-red-raw",
+        "grams": 80
+       },
+       {
+        "foodId": "bread-whole-wheat",
+        "grams": 86
+       },
+       {
+        "foodId": "orange-raw",
+        "grams": 130,
+        "swapGroup": "vit_c_fruit"
+       }
+      ]
+     },
+     {
+      "id": "lean-11",
+      "slot": "lunch",
+      "name": "Chicken and broccoli whole wheat pasta",
+      "prepMinutes": 25,
+      "instructions": "Toss the pasta with the chicken, broccoli, tomato and olive oil. Finish with grated parmesan.",
+      "ingredients": [
+       {
+        "foodId": "pasta-whole-wheat-cooked",
+        "grams": 160
+       },
+       {
+        "foodId": "chicken-breast-roasted",
+        "grams": 140,
+        "swapGroup": "lean_protein"
+       },
+       {
+        "foodId": "broccoli-raw",
+        "grams": 120
+       },
+       {
+        "foodId": "tomato-red-raw",
+        "grams": 100
+       },
+       {
+        "foodId": "olive-oil",
+        "grams": 10,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "parmesan-cheese",
+        "grams": 15
+       }
+      ]
+     },
+     {
+      "id": "lean-12",
+      "slot": "dinner",
+      "name": "Pork tenderloin with barley, carrots and Brussels sprouts",
+      "prepMinutes": 40,
+      "instructions": "Roast the tenderloin at 200 °C for 20 minutes alongside the carrots and halved sprouts. Rest the pork, slice and serve over the barley.",
+      "ingredients": [
+       {
+        "foodId": "pork-tenderloin-roasted",
+        "grams": 150,
+        "swapGroup": "lean_protein"
+       },
+       {
+        "foodId": "barley-pearled-cooked",
+        "grams": 150,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "brussels-sprouts-raw",
+        "grams": 150
+       },
+       {
+        "foodId": "carrots-raw",
+        "grams": 120
+       },
+       {
+        "foodId": "olive-oil",
+        "grams": 8,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "garlic-raw",
+        "grams": 5
+       },
+       {
+        "foodId": "salt-iodized",
+        "grams": 1.5
+       }
+      ]
+     },
+     {
+      "id": "lean-13",
+      "slot": "snack",
+      "name": "Sardines on rye",
+      "prepMinutes": 5,
+      "instructions": "Mash the sardines with lemon juice and spread on the rye bread.",
+      "ingredients": [
+       {
+        "foodId": "sardines-canned-oil-drained",
+        "grams": 92,
+        "swapGroup": "fatty_fish"
+       },
+       {
+        "foodId": "bread-rye",
+        "grams": 32
+       },
+       {
+        "foodId": "lemon-juice-raw",
+        "grams": 10
+       }
+      ]
+     },
+     {
+      "id": "lean-14",
+      "slot": "snack",
+      "name": "Whey and banana shake",
+      "prepMinutes": 3,
+      "instructions": "Blend the whey, banana and milk until smooth.",
+      "ingredients": [
+       {
+        "foodId": "whey-protein-powder",
+        "grams": 30
+       },
+       {
+        "foodId": "banana-raw",
+        "grams": 120
+       },
+       {
+        "foodId": "milk-2pct",
+        "grams": 250
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "plant-power-bowls",
+  "version": 1,
+  "name": "Plant Power Bowls",
+  "band": {
+   "min": 1600,
+   "max": 1800
+  },
+  "cuisine": "Asian fusion",
+  "tags": [
+   "vegetarian",
+   "high-fiber"
+  ],
+  "description": "SAMPLE — Three days of colorful vegetarian bowls with tofu, tempeh, edamame, eggs and yogurt for protein and B12, plus legumes and whole grains for fiber and low-GI energy.",
+  "author": "Eighty sample",
+  "days": [
+   {
+    "day": 1,
+    "meals": [
+     {
+      "id": "plant-1",
+      "slot": "breakfast",
+      "name": "Turmeric tofu and egg scramble with toast",
+      "prepMinutes": 15,
+      "instructions": "Crumble the tofu into a pan with mushrooms, turmeric and a little oil and cook until golden. Add the beaten eggs, spinach and scallions, stir until set, and serve with toast and an orange.",
+      "ingredients": [
+       {
+        "foodId": "tofu-firm-raw",
+        "grams": 100,
+        "swapGroup": "lean_protein"
+       },
+       {
+        "foodId": "egg-whole-raw",
+        "grams": 100
+       },
+       {
+        "foodId": "spinach-raw",
+        "grams": 80,
+        "swapGroup": "leafy_greens"
+       },
+       {
+        "foodId": "mushrooms-white-raw",
+        "grams": 80
+       },
+       {
+        "foodId": "scallions-raw",
+        "grams": 20
+       },
+       {
+        "foodId": "turmeric-ground",
+        "grams": 1
+       },
+       {
+        "foodId": "canola-oil",
+        "grams": 5,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "bread-whole-wheat",
+        "grams": 43
+       },
+       {
+        "foodId": "orange-raw",
+        "grams": 130,
+        "swapGroup": "vit_c_fruit"
+       }
+      ]
+     },
+     {
+      "id": "plant-2",
+      "slot": "lunch",
+      "name": "Edamame quinoa bowl with tahini dressing",
+      "prepMinutes": 20,
+      "instructions": "Pile the quinoa, edamame, carrot, cabbage and cucumber into a bowl. Whisk the tahini with soy sauce, ginger and lemon and drizzle over the top, then crumble over the nori.",
+      "ingredients": [
+       {
+        "foodId": "quinoa-cooked",
+        "grams": 120,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "edamame-prepared",
+        "grams": 100
+       },
+       {
+        "foodId": "carrots-raw",
+        "grams": 60
+       },
+       {
+        "foodId": "cabbage-raw",
+        "grams": 60
+       },
+       {
+        "foodId": "cucumber-raw",
+        "grams": 60
+       },
+       {
+        "foodId": "tahini",
+        "grams": 10
+       },
+       {
+        "foodId": "soy-sauce",
+        "grams": 8
+       },
+       {
+        "foodId": "ginger-root-raw",
+        "grams": 5
+       },
+       {
+        "foodId": "lemon-juice-raw",
+        "grams": 10
+       },
+       {
+        "foodId": "nori-laver-raw",
+        "grams": 3
+       }
+      ]
+     },
+     {
+      "id": "plant-3",
+      "slot": "dinner",
+      "name": "Tempeh bok choy stir-fry with brown rice",
+      "prepMinutes": 25,
+      "instructions": "Pan-fry the tempeh until golden, then add the bok choy, broccoli, pepper, garlic and ginger and stir-fry for 4 minutes. Splash with soy sauce and serve over rice.",
+      "ingredients": [
+       {
+        "foodId": "tempeh",
+        "grams": 100,
+        "swapGroup": "lean_protein"
+       },
+       {
+        "foodId": "bok-choy-raw",
+        "grams": 150,
+        "swapGroup": "leafy_greens"
+       },
+       {
+        "foodId": "broccoli-raw",
+        "grams": 100
+       },
+       {
+        "foodId": "bell-pepper-red-raw",
+        "grams": 100,
+        "swapGroup": "vit_c_fruit"
+       },
+       {
+        "foodId": "brown-rice-cooked",
+        "grams": 120,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "soy-sauce",
+        "grams": 10
+       },
+       {
+        "foodId": "ginger-root-raw",
+        "grams": 6
+       },
+       {
+        "foodId": "garlic-raw",
+        "grams": 5
+       },
+       {
+        "foodId": "canola-oil",
+        "grams": 6,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "salt-iodized",
+        "grams": 1.5
+       }
+      ]
+     },
+     {
+      "id": "plant-4",
+      "slot": "snack",
+      "name": "Yogurt with kiwi, flax and almonds",
+      "prepMinutes": 3,
+      "instructions": "Top the yogurt with sliced kiwi, ground flax and chopped almonds.",
+      "ingredients": [
+       {
+        "foodId": "yogurt-greek-plain-nonfat",
+        "grams": 200,
+        "swapGroup": "dairy_protein"
+       },
+       {
+        "foodId": "kiwi-green-raw",
+        "grams": 138,
+        "swapGroup": "vit_c_fruit"
+       },
+       {
+        "foodId": "flaxseed-ground",
+        "grams": 10,
+        "swapGroup": "nuts_seeds"
+       },
+       {
+        "foodId": "almonds-raw",
+        "grams": 10,
+        "swapGroup": "nuts_seeds"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "day": 2,
+    "meals": [
+     {
+      "id": "plant-5",
+      "slot": "breakfast",
+      "name": "Peanut butter banana oats",
+      "prepMinutes": 8,
+      "instructions": "Simmer the oats in milk, then top with sliced banana, peanut butter and chia seeds.",
+      "ingredients": [
+       {
+        "foodId": "oats-rolled-dry",
+        "grams": 50,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "milk-2pct",
+        "grams": 250
+       },
+       {
+        "foodId": "banana-raw",
+        "grams": 100
+       },
+       {
+        "foodId": "peanut-butter-smooth",
+        "grams": 12
+       },
+       {
+        "foodId": "chia-seeds-dried",
+        "grams": 10,
+        "swapGroup": "nuts_seeds"
+       }
+      ]
+     },
+     {
+      "id": "plant-6",
+      "slot": "lunch",
+      "name": "Black bean sweet potato bowl with fried eggs",
+      "prepMinutes": 30,
+      "instructions": "Roast cubed sweet potato at 200 °C for 25 minutes. Serve with warmed black beans, wilted kale, avocado and salsa, topped with the fried eggs and sunflower seeds.",
+      "ingredients": [
+       {
+        "foodId": "black-beans-boiled",
+        "grams": 150,
+        "swapGroup": "legumes"
+       },
+       {
+        "foodId": "sweet-potato-baked",
+        "grams": 150
+       },
+       {
+        "foodId": "kale-raw",
+        "grams": 80,
+        "swapGroup": "leafy_greens"
+       },
+       {
+        "foodId": "avocado-raw",
+        "grams": 40
+       },
+       {
+        "foodId": "salsa",
+        "grams": 50
+       },
+       {
+        "foodId": "egg-whole-raw",
+        "grams": 100
+       },
+       {
+        "foodId": "sunflower-seeds-dried",
+        "grams": 12,
+        "swapGroup": "nuts_seeds"
+       }
+      ]
+     },
+     {
+      "id": "plant-7",
+      "slot": "dinner",
+      "name": "Red lentil and spinach curry with rice",
+      "prepMinutes": 35,
+      "instructions": "Soften the onion, garlic and ginger in oil, add turmeric and cumin, then the lentils, tomato and a splash of water. Simmer for 15 minutes, fold in the spinach and serve with rice.",
+      "ingredients": [
+       {
+        "foodId": "lentils-boiled",
+        "grams": 150,
+        "swapGroup": "legumes"
+       },
+       {
+        "foodId": "tomato-red-raw",
+        "grams": 150
+       },
+       {
+        "foodId": "spinach-raw",
+        "grams": 80,
+        "swapGroup": "leafy_greens"
+       },
+       {
+        "foodId": "onion-raw",
+        "grams": 60
+       },
+       {
+        "foodId": "ginger-root-raw",
+        "grams": 6
+       },
+       {
+        "foodId": "garlic-raw",
+        "grams": 5
+       },
+       {
+        "foodId": "turmeric-ground",
+        "grams": 2
+       },
+       {
+        "foodId": "cumin-seed",
+        "grams": 2
+       },
+       {
+        "foodId": "canola-oil",
+        "grams": 6,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "brown-rice-cooked",
+        "grams": 90,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "salt-iodized",
+        "grams": 1.5
+       }
+      ]
+     },
+     {
+      "id": "plant-8",
+      "slot": "snack",
+      "name": "Yogurt with raspberries",
+      "prepMinutes": 3,
+      "instructions": "Spoon the yogurt into a bowl and top with raspberries.",
+      "ingredients": [
+       {
+        "foodId": "yogurt-greek-plain-nonfat",
+        "grams": 150,
+        "swapGroup": "dairy_protein"
+       },
+       {
+        "foodId": "raspberries-raw",
+        "grams": 100,
+        "swapGroup": "berries"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "day": 3,
+    "meals": [
+     {
+      "id": "plant-9",
+      "slot": "breakfast",
+      "name": "Egg and veggie fried rice",
+      "prepMinutes": 15,
+      "instructions": "Stir-fry the scallions, peas and carrots in oil, add the rice, then push aside and scramble the eggs in the pan. Season with soy sauce and serve with an orange.",
+      "ingredients": [
+       {
+        "foodId": "egg-whole-raw",
+        "grams": 100
+       },
+       {
+        "foodId": "brown-rice-cooked",
+        "grams": 100,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "scallions-raw",
+        "grams": 20
+       },
+       {
+        "foodId": "peas-green-raw",
+        "grams": 60
+       },
+       {
+        "foodId": "carrots-raw",
+        "grams": 50
+       },
+       {
+        "foodId": "soy-sauce",
+        "grams": 8
+       },
+       {
+        "foodId": "canola-oil",
+        "grams": 6,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "orange-raw",
+        "grams": 130,
+        "swapGroup": "vit_c_fruit"
+       }
+      ]
+     },
+     {
+      "id": "plant-10",
+      "slot": "lunch",
+      "name": "Chickpea buckwheat buddha bowl",
+      "prepMinutes": 20,
+      "instructions": "Arrange the buckwheat, chickpeas, pepper and cabbage in a bowl. Drizzle with tahini and lemon juice and sprinkle with hemp hearts.",
+      "ingredients": [
+       {
+        "foodId": "chickpeas-boiled",
+        "grams": 120,
+        "swapGroup": "legumes"
+       },
+       {
+        "foodId": "buckwheat-groats-cooked",
+        "grams": 120,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "bell-pepper-red-raw",
+        "grams": 100,
+        "swapGroup": "vit_c_fruit"
+       },
+       {
+        "foodId": "cabbage-raw",
+        "grams": 60
+       },
+       {
+        "foodId": "hemp-hearts",
+        "grams": 10,
+        "swapGroup": "nuts_seeds"
+       },
+       {
+        "foodId": "tahini",
+        "grams": 8
+       },
+       {
+        "foodId": "lemon-juice-raw",
+        "grams": 15
+       }
+      ]
+     },
+     {
+      "id": "plant-11",
+      "slot": "dinner",
+      "name": "Ginger tofu and broccoli stir-fry with quinoa",
+      "prepMinutes": 25,
+      "instructions": "Sear the tofu cubes until crisp, then add broccoli, bok choy, mushrooms, ginger and garlic. Finish with soy sauce and sesame seeds and serve over quinoa.",
+      "ingredients": [
+       {
+        "foodId": "tofu-firm-raw",
+        "grams": 150,
+        "swapGroup": "lean_protein"
+       },
+       {
+        "foodId": "broccoli-raw",
+        "grams": 150
+       },
+       {
+        "foodId": "bok-choy-raw",
+        "grams": 100,
+        "swapGroup": "leafy_greens"
+       },
+       {
+        "foodId": "mushrooms-white-raw",
+        "grams": 80
+       },
+       {
+        "foodId": "quinoa-cooked",
+        "grams": 100,
+        "swapGroup": "low_gi_grains"
+       },
+       {
+        "foodId": "soy-sauce",
+        "grams": 10
+       },
+       {
+        "foodId": "ginger-root-raw",
+        "grams": 6
+       },
+       {
+        "foodId": "garlic-raw",
+        "grams": 5
+       },
+       {
+        "foodId": "sesame-seeds-dried",
+        "grams": 5
+       },
+       {
+        "foodId": "canola-oil",
+        "grams": 6,
+        "swapGroup": "healthy_oils"
+       },
+       {
+        "foodId": "salt-iodized",
+        "grams": 1.5
+       }
+      ]
+     },
+     {
+      "id": "plant-12",
+      "slot": "snack",
+      "name": "Yogurt with strawberries and flax",
+      "prepMinutes": 3,
+      "instructions": "Top the yogurt with sliced strawberries and ground flax.",
+      "ingredients": [
+       {
+        "foodId": "yogurt-greek-plain-nonfat",
+        "grams": 200,
+        "swapGroup": "dairy_protein"
+       },
+       {
+        "foodId": "strawberries-raw",
+        "grams": 120,
+        "swapGroup": "berries"
+       },
+       {
+        "foodId": "flaxseed-ground",
+        "grams": 10,
+        "swapGroup": "nuts_seeds"
+       }
+      ]
+     },
+     {
+      "id": "plant-13",
+      "slot": "snack",
+      "name": "Dark chocolate and sunflower seeds",
+      "prepMinutes": 1,
+      "instructions": "Enjoy the chocolate with a small handful of sunflower seeds.",
+      "ingredients": [
+       {
+        "foodId": "dark-chocolate-70-85",
+        "grams": 10
+       },
+       {
+        "foodId": "sunflower-seeds-dried",
+        "grams": 10,
+        "swapGroup": "nuts_seeds"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -72,7 +72,19 @@ export interface Food {
   src: FoodSource[];
   rare?: boolean; // hidden from search unless "include rare items"
   rank?: number; // commonness 0–100, higher = shown first
+  /** the base food a person types ("chicken breast"); search groups results by it */
+  head?: string;
+  /** how it is prepared/sold: raw | cooked | dried | canned | frozen | juice | product | dish */
+  form?: string;
+  /** everyday = shown first (and all the plan-writing AI sees); extended = searchable, ranked lower */
+  tier?: FoodTier;
+  /** nutrients whose value is estimated or borrowed from another record (e.g. 'la' is always estimated) */
+  estimated?: NutrientKey[];
+  /** ids this food answered to before the food library was rebuilt (see src/data/legacyIdMap.json) */
+  legacyIds?: string[];
 }
+
+export type FoodTier = 'everyday' | 'extended';
 
 export type FoodCategory =
   | 'fruit'
