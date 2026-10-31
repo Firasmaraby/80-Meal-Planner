@@ -9,9 +9,12 @@
  */
 import everydayJson from '@/data/foods.everyday.json';
 import legacyIdMapJson from '@/data/legacyIdMap.json';
+import libraryPlansJson from '@/data/libraryPlans.json';
 import { decodeFoods, type FoodBundle } from '@/data/loadFoods';
 import plansJson from '@/data/plans.json';
+import recipesJson from '@/data/recipes.json';
 import swapGroupsJson from '@/data/swapGroups.json';
+import { expandPlans, type CompactPlan, type LibraryRecipe } from '@/engine/libraryPlans';
 import { FoodSearch } from '@/engine/search';
 import type { Food, MealPlan, SwapGroup } from '@/engine/types';
 import type { FoodResolver } from '@/import/planWorkbook';
@@ -43,6 +46,13 @@ export const FOOD_INDEX = new FoodIndex(FOODS);
 export const SWAP_GROUPS = swapGroupsJson as unknown as SwapGroup[];
 export const SWAP_INDEX = new Map(SWAP_GROUPS.map((g) => [g.key, g]));
 export const BUNDLED_PLANS = plansJson as unknown as MealPlan[];
+
+/**
+ * The plan library: every size of every plan family built by `node scripts/build-plans.mjs` (see content/GUIDE.md), expanded into
+ * full MealPlans with their ingredients and recipe fields. Empty until a family has been built; BUNDLED_PLANS is unaffected.
+ */
+export const LIBRARY_RECIPES = recipesJson as unknown as LibraryRecipe[];
+export const LIBRARY_PLANS: MealPlan[] = expandPlans(libraryPlansJson as unknown as CompactPlan[], LIBRARY_RECIPES);
 
 // the old ids a rebuilt food answers to (so `isDisliked`, favourites etc. saved under an old id keep matching)
 for (const [oldId, newId] of Object.entries(LEGACY_ID_MAP)) {
