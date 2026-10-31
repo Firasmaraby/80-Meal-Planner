@@ -100,6 +100,17 @@ class Entry:
         self.head = normalize(food["head"]) if food.get("head") else ""
         self.head_tokens = tokens(food["head"]) if food.get("head") else []
         self.everyday = food.get("tier") == "everyday"
+        # composite = a dish, a branded / ultra-processed product or a mix / drink / dough: demoted one class unless asked for
+        self.processed = "processed" in (food.get("tags") or [])
+        self.composite = (food.get("form") == "dish" or "processed" in (food.get("tags") or [])
+                          or bool(COMPOSITE_RX.search(food["name"])) or bool(MIXED_RX.search(food["name"].split(",")[0])))
+
+
+COMPOSITE_RX = re.compile(r"\b(?:mix|dough|flavou?red|drink|beverage|punch|cocoa|shake|dessert|pudding|splash|cocktail|imitation|"
+                          r"substitute|topping|filling|dressing|sauce|soup|salad|sandwich|pie|cake|cookie|candy|burger|pizza)\b", re.I)
+
+
+MIXED_RX = re.compile(r"\b(?:with|and)\b", re.I)    # "Corn with red pepper", "Milk and cereal bar": a mixed food
 
 
 def rank_boost(f: dict) -> float:
@@ -114,10 +125,13 @@ def score_entry_cls(e: Entry, q: list[str], q_norm: str) -> tuple[float, int]:
     """-> (score 0..1, match class 0..4); class 0 = no match.  See the module docstring."""
     # 4: exact head (the query names the head: same tokens, any order)
     if e.head_tokens and sorted(e.head_tokens) == sorted(q):
-        return 0.98 + rank_boost(e.food) * 0.02, 4
+        return (0.99 if e.head == q_norm else 0.98) + rank_boost(e.food) * 0.01, 4
     # 3: exact name or alias
     if e.name == q_norm or q_norm in e.alias_names or any(sorted(a) == sorted(q) for a in e.alias_tokens if a):
         return 0.97 + rank_boost(e.food) * 0.03, 3
+    # 3: a multi-word query that is the start of the name ("skim milk" -> "Skim milk, UHT") beats a scattered token match
+    if len(q) >= 2 and (e.name + " ").startswith(q_norm + " "):
+        return 0.95 + rank_boost(e.food) * 0.01, 3
     best = 0.0
     cls = 0
     fields = [e.name_tokens] + e.alias_tokens + ([e.head_tokens] if e.head_tokens else [])
@@ -171,6 +185,8 @@ class FoodSearch:
             if e.food.get("rare") and not include_rare:
                 continue
             s, cls = score_entry_cls(e, q, q_norm)
+            if s > 0 and e.composite and (cls < 4 or e.processed) and not (COMPOSITE_RX.search(query) and COMPOSITE_RX.search(e.food["name"])):
+                cls = max(1, cls - 1)     # a plain query must not surface a mix / dough / drink / dish / branded product first
             if s > 0:
                 hits.append((cls, 1 if e.everyday else 0, s, e.food.get("rank", 50), e.food))
         # best member first: class, everyday, score, rank
@@ -214,8 +230,13 @@ def decode_bundle(bundle: dict, tier: str) -> list[dict]:
     return out
 
 
+def head_key(s: str) -> str:
+    """Same idea as consumer.names_en.head_key: singular words, no punctuation (Blueberries == blueberry == Blueberry)."""
+    return " ".join(_singular(w) for w in normalize(s).split() if w not in {"style", "type"})
+
+
 def _as_list(v) -> list[str]:
-    return [x.lower() for x in (v if isinstance(v, list) else [v])]
+    return [head_key(x) for x in (v if isinstance(v, list) else [v])]
 
 
 def run_real_checks(foods: list[dict], queries: list[dict], top: int = 3) -> dict:
@@ -226,10 +247,10 @@ def run_real_checks(foods: list[dict], queries: list[dict], top: int = 3) -> dic
     ok1 = ok3 = 0
     for qd in queries:
         heads = _as_list(qd["head"])
-        forms = _as_list(qd["form"]) if qd.get("form") else None
+        forms = [x.lower() for x in (qd["form"] if isinstance(qd["form"], list) else [qd["form"]])] if qd.get("form") else None
 
         def good(f: dict) -> bool:
-            return (f.get("head", "").lower() in heads) and (forms is None or f.get("form", "").lower() in forms)
+            return (head_key(f.get("head", "")) in heads) and (forms is None or f.get("form", "").lower() in forms)
         hits = fs.search_grouped(qd["q"], limit=top)
         got = [f"{h['food']['name']} [{h['food'].get('head')}/{h['food'].get('form')}]" for h in hits]
         if hits and good(hits[0]["food"]):

@@ -107,20 +107,6 @@ def is_ultra_processed(rec: dict[str, Any]) -> bool:
     return bool(ULTRA_RX.search(f"{rec['raw_name']} | {rec['name']}"))
 
 
-def duplicate_filter(recs: list[dict[str, Any]]) -> dict[str, str]:
-    """Duplicates by clean display name within the same category: keep the higher-ranked one.
-    Returns {canonical_id: kept_canonical_id} for the losers."""
-    best: dict[tuple[str, str], dict[str, Any]] = {}
-    losers: dict[str, str] = {}
-    for r in sorted(recs, key=lambda r: (-r["score"], r["canonical_id"])):
-        key = (r["name"].lower(), r["category"])
-        if key in best:
-            losers[r["canonical_id"]] = best[key]["canonical_id"]
-        else:
-            best[key] = r
-    return losers
-
-
 # ------------------------------------------------------------------ everyday selection
 MAX_PER_HEAD = 8
 EXTRA_VARIANT_MIN_RANK = 45

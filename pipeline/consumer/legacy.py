@@ -60,7 +60,7 @@ def best_match(old: dict[str, Any], recs: list[dict[str, Any]], lex: N.Lexicon, 
         if not rt:
             continue
         inter = len(ot & rt)
-        if inter == 0 or not ((ohead_t - GENERIC_WORDS) <= (rt | _toks(" ".join(r.get("aliases", []))))):
+        if inter == 0 or not ((ohead_t - GENERIC_WORDS) <= (rt | _toks(" ".join(r.get("aliases", []))) | _toks(r["head"]))):
             continue                 # the legacy head's words must all be in the candidate's name / aliases
         jac = inter / len(ot | rt)
         s = 4.0 * jac
@@ -123,6 +123,11 @@ def load_legacy(path: str | Path) -> list[dict[str, Any]]:
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
+# the sample data cited databases by short names; the library uses foodpipe's citation strings
+LEGACY_DB = {"USDA FDC SR Legacy": "USDA FoodData Central (SR Legacy)",
+             "USDA FDC Foundation": "USDA FoodData Central (Foundation Foods)"}
+
+
 def legacy_record(old: dict[str, Any], lex: N.Lexicon) -> dict[str, Any]:
     """A sample food with no foodpipe equivalent within 15 % kcal stays in the library as it was (same id, same hand-made values)."""
     nr = N.build_name(old["name"], "", lex)
@@ -134,8 +139,8 @@ def legacy_record(old: dict[str, Any], lex: N.Lexicon) -> dict[str, Any]:
         "canonical_id": "legacy:" + old["id"], "id": old["id"], "food_id": "legacy:" + old["id"], "source_id": "legacy_sample",
         "name_en": old["name"], "raw_name": old["name"], "name": old["name"], "head": nr.head,
         "form": legacy_form(old["name"], old["category"]), "category": old["category"], "food_group": "", "state": "",
-        "n": n, "estimated": [], "notes": ["hand-made sample food kept as is: no foodpipe equivalent within 15% kcal"],
-        "src": [[s["db"], s["ref"]] for s in old.get("src", [])] or [["Eighty sample food", old["id"]]],
+        "n": n, "estimated": [], "notes": ["not from the cited DB: hand-made sample food kept as is (no foodpipe equivalent within 15% kcal)"],
+        "src": [[LEGACY_DB.get(s["db"], s["db"]), s["ref"]] for s in old.get("src", [])] or [["Eighty sample food", old["id"]]],
         "n_sources": 1, "n_members": 1, "tags": list(old.get("tags", [])), "aliases": [a.lower() for a in old.get("aliases", [])],
         "aliases_out": [a.lower() for a in old.get("aliases", [])][:5], "branded": False, "ext_reasons": [], "ultra": False,
         "tier": "everyday", "why": "legacy_sample_kept", "rank": 70, "score": 70.0, "hidden_reason": None,

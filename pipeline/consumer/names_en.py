@@ -121,6 +121,8 @@ BOILER_SUB: list[tuple[re.Pattern, str]] = [(re.compile(p, re.I), r) for p, r in
     (r",?\s*year[- ]round average", ""),
     (r"\bUSDA commodity\b[^,]*", ""),
     (r"\b(?:broilers? or fryers?|broilers?[- ]fryers?|broilers?|fryers?)\b", ""),
+    (r"\b(greek)[- ]style\b", r"\1"),
+    (r"\s*\((?=[^()]*,)[^()]*\)", ""),
     (r"\bwhole ?meal wheat flour\b", "whole wheat"),
     (r"\bwhole ?meal wheat\b", "whole wheat"),
     (r"\bYogourt \(yogurt\)", "Yogurt"),
@@ -199,7 +201,7 @@ DESCRIPTOR_RX = re.compile(
 DROP_LEAD = {
     "fish", "beverages", "beverage", "spices", "mollusks", "crustaceans", "game meat", "nuts", "alcoholic beverage",
     "alcoholic beverages", "sweets", "snacks", "vegetables", "fruits", "fruit", "legumes", "spices and herbs", "seeds",
-    "alcohol", "grain", "grains", "baked products", "breakfast cereals", "frozen novelties", "dessert", "desserts", "dairy", "meat", "poultry",
+    "alcohol", "indian", "mexican", "italian", "latino", "grain", "grains", "baked products", "breakfast cereals", "frozen novelties", "dessert", "desserts", "dairy", "meat", "poultry",
     "lunchmeat", "frozen entree", "entree", "plant-based beverage", "plant based beverage", "restaurant food",
 }
 # lead words dropped, but only when something follows and the new head isn't empty; 'dessert'/'lunchmeat' etc stay
@@ -281,6 +283,16 @@ def singular_word(w: str) -> str:
         return r.capitalize() if w[:1].isupper() else r
     s = _base_singular(lw)
     return s.capitalize() if w[:1].isupper() and s != lw else (w if s == lw else s)
+
+
+_KEY_STOP = {"style", "type"}
+
+
+def head_key(s: str) -> str:
+    """Normalised key for grouping / matching heads and names: folded, punctuation and hyphens dropped, every word singularised
+    ('Blueberries' == 'Blueberry', 'Greek yogurt-style' == 'Greek yogurt style' == 'greek yogurt')."""
+    t = re.sub(r"[^a-z0-9%]+", " ", fold(s))
+    return " ".join(_base_singular(w) for w in t.split() if w not in _KEY_STOP)
 
 
 def singular_phrase(p: str) -> str:
@@ -479,6 +491,7 @@ REWRITES: list[tuple[re.Pattern, str]] = [(re.compile(p, re.I), r) for p, r in [
     (r"^Candies, chocolate, dark\b", "Dark chocolate"),
     (r"^Candies, chocolate, (milk|white)\b", r"\1 chocolate"),
     (r"^Candies, semisweet chocolate\b", "Semisweet chocolate"),
+    (r"^Leavening agents?, (baking soda|baking powder[^,]*|yeast[^,]*)", r"\1"),
     (r"^Mollusks, ", ""),
     (r"^Crustaceans, ", ""),
 ]]
@@ -813,6 +826,9 @@ CUT_CANON: dict[str, list[tuple[re.Pattern, str]]] = {sp: [(re.compile(p, re.I),
 }.items()}
 
 
+CHEESE_WORDS = {"feta", "brie", "camembert", "parmesan", "cheddar", "mozzarella", "gouda", "edam", "emmental", "emmentaler", "gruyere",
+                "provolone", "ricotta", "mascarpone", "halloumi", "roquefort", "gorgonzola", "stilton", "havarti", "muenster",
+                "colby", "romano", "asiago", "fontina", "manchego", "paneer", "pecorino", "burrata", "cotija", "monterey"}
 HEAD_CANON = {
     "kiwifruit": "kiwi", "kiwi fruit": "kiwi", "cashew nuts": "cashews", "cashew nut": "cashews", "cashew": "cashews",
     "pistachio nuts": "pistachios", "pistachio": "pistachios", "pistachio nut": "pistachios", "hazelnut": "hazelnuts",
@@ -824,7 +840,15 @@ HEAD_CANON = {
     "sunflower seed": "sunflower seeds", "pumpkin seed": "pumpkin seeds", "sesame seed": "sesame seeds", "chia seed": "chia seeds",
     "flaxseeds": "flaxseed", "linseed": "flaxseed", "flax seeds": "flaxseed", "hemp seed": "hemp seeds",
     "cheddar": "cheddar cheese", "mozzarella": "mozzarella cheese", "parmesan": "parmesan cheese", "feta": "feta cheese",
-    "yoghurt": "yogurt", "greek-style yogurt": "greek yogurt", "plant-based beverage": "plant-based milk",
+    "yoghurt": "yogurt", "greek-style yogurt": "greek yogurt", "greek style yogurt": "greek yogurt",
+    "green onion": "scallion", "green onions": "scallion", "spring onion": "scallion", "spring onions": "scallion",
+    "collard": "collard greens", "collards": "collard greens", "oatmeal": "oats", "rolled oats": "oats", "porridge oats": "oats",
+    "pearl barley": "barley", "pearled barley": "barley", "whole milk": "milk", "skim milk": "milk", "skimmed milk": "milk",
+    "low-fat milk": "milk", "cow milk": "milk", "cow's milk": "milk", "semi-skimmed milk": "milk", "light tuna": "tuna",
+    "white tuna": "tuna", "albacore tuna": "tuna", "skipjack tuna": "tuna", "yellowfin tuna": "tuna", "bluefin tuna": "tuna",
+    "bicarbonate of soda": "baking soda", "naan bread": "naan", "kiwi fruit": "kiwi",
+    "atlantic salmon": "salmon", "sockeye salmon": "salmon", "coho salmon": "salmon", "pink salmon": "salmon",
+    "chinook salmon": "salmon", "chum salmon": "salmon", "king salmon": "salmon", "red salmon": "salmon", "plant-based beverage": "plant-based milk",
     "nopales": "nopales", "egg white": "egg white", "eggs": "egg", "sweet corn": "sweet corn", "corn": "sweet corn",
     "peppers": "bell pepper", "tomatoes": "tomato", "potatoes": "potato", "bananas": "banana", "apples": "apple",
 }
@@ -852,6 +876,12 @@ def head_of(parts: list[str], lex: Lexicon | None = None) -> str:
     h = re.sub(r"\([^)]*\)", "", parts[0]).strip().lower()
     h = re.sub(r"\s+", " ", h)
     # known head contained as a prefix of the first part ("kidney beans canned" -> "kidney beans")
+    cut = re.split(r"\s+(?:from|with|without|made|in|for|on)\s+", h)[0].strip()
+    if cut:
+        h = cut
+        h = HEAD_CANON.get(h, h)
+    if h in CHEESE_WORDS:
+        return h + " cheese"
     words = h.split(" ")
     if len(words) > 3:
         stop = {"with", "and", "of", "in", "the", "a", "from", "style", "type", "or", "on", "for", "&"}
@@ -910,6 +940,8 @@ def form_of(state: str, name: str, category: str, parts: list[str] | None = None
             return "product"
         return "dish"
     first = low.split(",")[0]
+    if category == "fruit" and re.search(r"\b(raisins?|prunes?|sultanas?)\b", first) and not re.search(r"juice|bread|bun|cake|cookie|pie", first):
+        return "dried"
     if re.search(r"\bjuices?\b", first) and category in {"fruit", "vegetable", "beverage"} and not re.search(r"\b(in|with) [\w ]*juice", first):
         return "juice"
     f = STATE_FORM.get(state)
@@ -976,7 +1008,7 @@ EXTRA_ALIASES = {
     "chickpeas": ["garbanzo", "garbanzo beans"], "zucchini": ["courgette"], "eggplant": ["aubergine"],
     "cilantro": ["coriander leaves"], "shrimp": ["prawns"], "arugula": ["rocket"], "rutabaga": ["swede"],
     "snow peas": ["mangetout"], "bell pepper": ["capsicum", "sweet pepper"], "beet": ["beetroot"],
-    "scallions": ["green onion", "spring onion"], "sweet corn": ["sweetcorn"], "cornstarch": ["cornflour"],
+    "scallions": ["green onion", "spring onion"], "sweet corn": ["sweetcorn", "corn"], "cornstarch": ["cornflour"],
     "oats": ["porridge oats", "rolled oats", "oatmeal"], "peanuts": ["groundnuts"], "canola oil": ["rapeseed oil"],
     "bok choy": ["pak choi"], "green beans": ["string beans", "snap beans", "french beans"],
     "fava beans": ["broad beans"], "lima beans": ["butter beans"], "kiwi": ["kiwifruit", "kiwi fruit"],
@@ -993,7 +1025,7 @@ EXTRA_ALIASES = {
     "nutritional yeast": ["nooch"], "cottage cheese": ["curd cheese"], "sour cream": ["soured cream"],
     "whole wheat bread": ["wholemeal bread", "brown bread"], "white bread": ["sandwich bread"],
     "pita bread": ["pitta", "pita"], "pasta": ["spaghetti", "macaroni"], "cottonseed oil": [], "mackerel": ["scomber"],
-    "chicken breast": ["chicken"], "turkey breast": ["turkey"], "pork tenderloin": ["pork loin"],
+    "cider vinegar": ["apple cider vinegar"], "chicken breast": ["chicken"], "turkey breast": ["turkey"], "pork tenderloin": ["pork loin"],
     "salmon": ["salmon fillet"], "cod": ["codfish"], "tuna": ["tunafish"], "avocado": ["avo"], "blueberries": ["blueberry"],
     "peanut butter": ["pb"], "almond milk": ["almond beverage"], "soy milk": ["soymilk", "soya milk"],
     "coconut milk": ["coconut cream"], "butter": ["salted butter"], "egg": ["eggs"], "milk": ["whole milk"],
@@ -1038,6 +1070,9 @@ def aliases_for(head: str, name: str, extra_names: list[str] | None = None, lex:
     return out[:5]
 
 
+_GENERIC_PAREN = CUT_WORDS | POULTRY_CUTS | {"steaks", "fillets", "fillet", "slices", "pieces", "strips", "cubes", "flakes", "whole", "mixed", "assorted"}
+
+
 def paren_names(raw: str) -> list[str]:
     """Alternative names given in parentheses: 'Kiwifruit (Chinese gooseberry)' -> ['chinese gooseberry'] (short only)."""
     out = []
@@ -1045,6 +1080,6 @@ def paren_names(raw: str) -> list[str]:
         t = m.group(1).strip()
         if re.search(r"\d|includes|alaska|indigenous|%|approx|cooked|raw|salted|dry|canned|boiled", t, re.I):
             continue
-        if len(t.split()) <= 3:
+        if len(t.split()) <= 3 and t.lower() not in _GENERIC_PAREN:
             out.append(t.lower())
     return out

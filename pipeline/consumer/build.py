@@ -27,7 +27,7 @@ REPO = PIPE.parent
 if str(PIPE) not in sys.path:
     sys.path.insert(0, str(PIPE))
 
-from consumer import adapter, curate as C, export_app as X, legacy as L, names_en as N  # noqa: E402
+from consumer import adapter, aliases as A, curate as C, export_app as X, legacy as L, names_en as N  # noqa: E402
 from consumer import report as REP  # noqa: E402
 import search_check as SC  # noqa: E402
 
@@ -69,6 +69,10 @@ def main(argv: list[str] | None = None) -> int:
     for r in records:
         C.enrich(r, lex)
 
+    head_aliases = A.load_aliases(PIPE / "config" / "head_aliases.json")
+    prep = C.prepare(records, lex, head_aliases)
+    print(f"  head aliases applied to {prep['aliased']} records; {prep['heads_respelled']} heads respelled to one form per head key")
+
     # legacy sample foods -------------------------------------------------------------------------------
     legacy_foods = _load_json(LEGACY_DIR / "foods.json")
     # pass 1: hidden reasons + scores, so the legacy matcher can see which records are usable
@@ -89,7 +93,8 @@ def main(argv: list[str] | None = None) -> int:
     waive = {m["canonical_id"] for m, _ in legacy_match.values() if m is not None and m["hidden_reason"] == "supplement"}
     # pass 2: real tiers with the legacy targets pinned to everyday
     reset(records)
-    C.curate(records, lex, pinned=pinned, unhide_ok=waive, target=args.target)
+    cur = C.curate(records, lex, pinned=pinned, unhide_ok=waive, target=args.target)
+    print(f"  collapsed {cur['collapsed']} records into their survivors (same normalised name + form + category)")
     for r in records:
         r.pop("hidden", None)
 
@@ -201,10 +206,17 @@ def main(argv: list[str] | None = None) -> int:
     if search_res:
         print(f"real search: top-1 {search_res['top1']:.1%}, top-3 {search_res['top3']:.1%} ({search_res['n']} queries)")
 
+    live_heads = {r["head"] for r in live}
+    unmatched = [h for h in dict.fromkeys(e.head for e in lex.entries) if h not in live_heads]
+    with (out / "unmatched_candidates.jsonl").open("w", encoding="utf-8") as f:
+        for h in unmatched:
+            f.write(json.dumps({"head": h, "candidates": A.candidates(h, records)}, ensure_ascii=False) + "\n")
+    print(f"  {len(unmatched)} heads on the list have no food (candidates in unmatched_candidates.jsonl)")
+
     print("writing CURATION_REPORT.md ...", flush=True)
     md = REP.build_report(records=records, lex=lex, astats=astats, excluded=excluded, sizes=sizes, search_res=search_res,
                           foods_for_search=foods_for_search, legacy_rows=legacy_rows, plan_check=plan_check,
-                          waived=waive, raw_wide_names=REP.raw_preferred_names(args.input), target=args.target)
+                          waived=waive, prep=prep, collapsed=cur['collapsed'], unmatched=unmatched, raw_wide_names=REP.raw_preferred_names(args.input), target=args.target)
     (out / "CURATION_REPORT.md").write_text(md, encoding="utf-8")
     print(f"done in {time.time() - t0:.0f}s; sizes: " + ", ".join(f"{k} {v / 1e6:.2f} MB" for k, v in sizes.items()))
     return 0

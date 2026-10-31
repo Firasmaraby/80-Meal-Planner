@@ -1,0 +1,41 @@
+{
+  "_comment": "Ranking preferences, read by consumer/rank.py. category_forms: the form a plain query should find first for a category (first = best). category_words / heads[...].prefer|avoid are whole words or phrases looked for in the lower-cased display name: a hit adds +8 (prefer) or -8 (avoid, at most two hits). heads[...].forms overrides the category form. generic_avoid words count only when the head itself does not contain them, so 'pizza dough' keeps its own dough. Keys of 'heads' are matched on the normalised head key (singular, no punctuation).",
+  "category_forms": {
+    "fruit": ["raw"], "vegetable": ["raw"], "meat": ["cooked"], "poultry": ["cooked"], "fish": ["cooked", "raw"],
+    "grain": ["cooked"], "legume": ["cooked"], "egg": ["cooked", "raw"], "nut_seed": ["raw"], "dairy": ["product"],
+    "oil_fat": ["product"], "beverage": ["product", "juice"], "condiment": ["product"], "sweet": ["product"], "prepared": ["dish"]
+  },
+  "category_words": {
+    "meat": {"prefer": ["lean", "skinless"],
+             "avoid": ["with skin", "stuffed", "breaded", "battered", "coated", "frozen", "fried", "luncheon", "sliced", "roll", "patty", "nugget", "cured", "smoked", "canned", "dehydrated", "imitation", "breakfast", "deli"]},
+    "poultry": {"prefer": ["skinless", "lean"],
+                "avoid": ["with skin", "stuffed", "breaded", "battered", "coated", "frozen", "fried", "luncheon", "sliced", "roll", "patty", "nugget", "cured", "smoked", "canned", "dehydrated", "imitation", "breakfast", "deli", "tender"]},
+    "fish": {"avoid": ["breaded", "battered", "stuffed", "coated", "fried", "smoked", "pickled", "paste", "cake", "stick", "roe", "imitation", "salted", "kippered"]},
+    "grain": {"avoid": ["flour", "mix", "instant", "flavored", "unprepared", "bran", "germ", "pudding", "cereal"]},
+    "legume": {"avoid": ["flour", "mix", "sprouted", "soup", "paste", "flavored"]},
+    "dairy": {"avoid": ["flavored", "chocolate", "strawberry", "malted", "imitation", "substitute", "dessert", "mix"]}
+  },
+  "generic_avoid": ["mix", "dough", "flavored", "flavoured", "beverage", "drink", "punch", "cocoa", "shake", "dessert", "pudding",
+                    "imitation", "substitute", "unprepared", "topping", "filling", "splash", "cocktail"],
+  "heads": {
+    "salmon": {"prefer": ["atlantic"], "avoid": ["chum", "pink", "sockeye", "coho", "chinook", "king", "lox", "smoked", "canned", "nugget"]},
+    "rice": {"forms": ["cooked"], "prefer": ["white", "long-grain"], "avoid": ["glutinous", "mochi", "instant", "vermicelli", "paper", "pudding", "wild", "flour", "bran", "noodle", "cracker", "cake", "porridge"]},
+    "milk": {"prefer": ["2%", "whole", "reduced fat", "3.25%"], "avoid": ["goat", "sheep", "buffalo", "human", "camel", "condensed", "evaporated", "dry", "powder", "chocolate", "strawberry", "malted", "instant", "nonfat", "skim"]},
+    "olive oil": {"avoid": ["spray", "mayonnaise", "dressing"]},
+    "kiwi": {"avoid": ["juice", "drink", "gold"]},
+    "oats": {"forms": ["dried", "cooked"], "prefer": ["regular", "rolled"], "avoid": ["instant", "flavored", "bran", "cookie"]},
+    "egg": {"forms": ["raw", "cooked"], "prefer": ["whole"], "avoid": ["turkey", "goose", "duck", "quail", "substitute", "powder", "dried"]},
+    "apple": {"prefer": ["with skin"], "avoid": ["dried", "juice", "sauce"]},
+    "banana": {"avoid": ["dehydrated", "powder", "chips"]},
+    "butter": {"prefer": ["salted"], "avoid": ["whipped", "light", "spread", "clarified", "oil", "peanut", "almond"]},
+    "yogurt": {"prefer": ["plain"], "avoid": ["frozen", "soy", "drink", "tube"]},
+    "coffee": {"prefer": ["brewed"], "avoid": ["instant", "powder", "substitute", "latte", "cappuccino", "mocha"]},
+    "tea": {"prefer": ["brewed"], "avoid": ["instant", "powder", "iced", "ready"]},
+    "pasta": {"forms": ["cooked"], "prefer": ["enriched"], "avoid": ["whole wheat", "gluten", "sauce", "salad", "fresh"]},
+    "bread": {"avoid": ["crumb", "pudding", "stuffing", "stick"]},
+    "tuna": {"forms": ["canned"], "prefer": ["light", "water"], "avoid": ["salad", "bluefin", "yellowfin"]},
+    "tofu": {"forms": ["raw", "cooked"], "prefer": ["firm"], "avoid": ["fried", "dried", "koya", "salted", "fermented"]},
+    "peanut butter": {"prefer": ["smooth"], "avoid": ["reduced", "chocolate", "cookie"]},
+    "cheddar cheese": {"avoid": ["reduced", "spread", "sauce", "soup", "low"]}
+  }
+}

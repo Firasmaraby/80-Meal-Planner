@@ -65,7 +65,8 @@ def _ex(r: dict[str, Any]) -> str:
 
 def build_report(*, records: list[dict[str, Any]], lex, astats: dict, excluded: list[dict], sizes: dict[str, int],
                  search_res: dict | None, foods_for_search: list[dict], legacy_rows: list[dict], plan_check: list[dict],
-                 waived: set[str], raw_wide_names: list[str], target: int) -> str:
+                 waived: set[str], raw_wide_names: list[str], target: int, prep: dict | None = None,
+                 collapsed: int = 0, unmatched: list[str] | None = None) -> str:
     from search_check import FoodSearch
     L: list[str] = []
     A = L.append

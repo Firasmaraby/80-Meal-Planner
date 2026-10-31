@@ -8,6 +8,7 @@ import re
 from collections import Counter, defaultdict
 from typing import Any
 
+from . import aliases as A
 from . import names_en as N
 from . import rank as R
 from . import tiers as T
@@ -36,49 +37,106 @@ def enrich(rec: dict[str, Any], lex: N.Lexicon) -> dict[str, Any]:
 
 
 def common_positions(lex: N.Lexicon) -> dict[str, tuple[int, set[str]]]:
+    """head key -> (position in the list, preferred forms)."""
     pos: dict[str, tuple[int, set[str]]] = {}
     for e in lex.entries:
-        if e.head not in pos:
-            pos[e.head] = (len(pos), set())
+        k = N.head_key(e.head)
+        if k not in pos:
+            pos[k] = (len(pos), set())
         if e.form:
-            pos[e.head][1].add(e.form)
+            pos[k][1].add(e.form)
     return pos
 
 
+def prepare(records: list[dict[str, Any]], lex: N.Lexicon, aliases: dict[str, list[str]] | None = None) -> dict[str, int]:
+    """After enrich: apply head_aliases.json, then make every head spelled one way per head key ('Blueberries' / 'blueberry' /
+    'blueberries' -> one head), and give the list's own heads the same spelling. Idempotent."""
+    for r in records:
+        r.setdefault("src0", [list(x) for x in r["src"]])
+        r.setdefault("n_sources0", r["n_sources"])
+        r.setdefault("head0", r["head"])
+        r["head"] = r["head0"]
+    n_alias = A.apply_aliases(records, aliases or {})
+    by_key: dict[str, Counter] = defaultdict(Counter)
+    for r in records:
+        by_key[N.head_key(r["head"])][r["head"]] += 1
+    listed = {N.head_key(e.head): e.head for e in lex.entries}
+    canon: dict[str, str] = {}
+    for k, cnt in by_key.items():
+        canon[k] = listed[k] if k in listed and listed[k] in cnt else sorted(cnt, key=lambda h: (-cnt[h], len(h), h))[0]
+    merged = 0
+    for r in records:
+        c = canon[N.head_key(r["head"])]
+        if c != r["head"]:
+            merged += 1
+            r["head"] = c
+    for e in lex.entries:
+        e.head = canon.get(N.head_key(e.head), e.head)
+    lex.known = {e.head for e in lex.entries}
+    return {"aliased": n_alias, "heads_respelled": merged, "head_keys": len(by_key)}
+
+
+REGION_RUNG = {"cnf": 0, "usda_fdc_sr_legacy": 1, "usda_fdc_foundation": 2}
+
+
+def collapse(records: list[dict[str, Any]], pinned: set[str]) -> int:
+    """Records with the same normalised display name + form + category are one food ('Blueberries, raw' == 'Blueberry, raw').
+    The region-priority record (cnf, usda_sr, usda_foundation, other; then more nutrients) stays, the others are hidden as
+    `duplicate_name` and their citations are added to the survivor's `src`. Returns how many were collapsed."""
+    groups: dict[tuple[str, str, str], list[dict[str, Any]]] = defaultdict(list)
+    for r in records:
+        if not r["hidden_reason"]:
+            groups[(N.head_key(r["name"]), r["category"], r["form"])].append(r)
+    n = 0
+    for grp in groups.values():
+        if len(grp) < 2:
+            continue
+        grp.sort(key=lambda r: (r["canonical_id"] not in pinned, REGION_RUNG.get(r["source_id"], 3), -r["n_board"], r["canonical_id"]))
+        win = grp[0]
+        have = {(db, ref) for db, ref in win["src"]}
+        for lose in grp[1:]:
+            lose["hidden_reason"] = "duplicate_name"
+            lose["duplicate_of"] = win["canonical_id"]
+            n += 1
+            for db, ref in lose["src"]:
+                if (db, ref) not in have:
+                    have.add((db, ref))
+                    win["src"].append([db, ref])
+        win["n_sources"] = max(win["n_sources"], len({db for db, _ in win["src"]}))
+        win["collapsed"] = len(grp) - 1
+    return n
+
+
 def curate(records: list[dict[str, Any]], lex: N.Lexicon, pinned: set[str] | None = None, target: int = 3000,
-           unhide_ok: set[str] | None = None) -> dict[str, Any]:
-    """Assign tier / reason / score / rank to every record (in place). Returns summary dicts.
+           unhide_ok: set[str] | None = None, prefs: R.Prefs | None = None) -> dict[str, Any]:
+    """Assign tier / reason / score / rank to every record (in place). Returns summary numbers.
 
     unhide_ok: canonical ids whose 'supplement' hidden reason is waived (legacy sample foods a bundled plan uses)."""
     pinned = pinned or set()
     unhide_ok = unhide_ok or set()
     pos = common_positions(lex)
     n_common = len(pos)
-    prefer: dict[str, list[str]] = {}
+    head_prefer: dict[str, list[str]] = {}
     for e in lex.entries:
         if e.prefer:
-            prefer.setdefault(e.head, []).extend(e.prefer)
+            head_prefer.setdefault(e.head, []).extend(e.prefer)
+    prefs = prefs or R.Prefs(head_prefer=head_prefer)
     for r in records:
+        r["src"] = [list(x) for x in r["src0"]]
+        r["n_sources"] = r["n_sources0"]
+        r.pop("collapsed", None)
         r["hidden_reason"] = T.hidden_reason(r)
         if r["hidden_reason"] == "supplement" and r["canonical_id"] in unhide_ok:
             r["hidden_reason"] = None
             r["waived"] = "legacy_plan_ingredient"
-        r["score"] = R.score(r, pos, n_common, prefer)
-    # duplicates (by clean display name within the same category): keep the higher-ranked
-    live = [r for r in records if not r["hidden_reason"]]
-    losers = T.duplicate_filter(live)
-    by_id = {r["canonical_id"]: r for r in records}
-    for lid, kept in losers.items():
-        if lid in pinned or lid in unhide_ok:
-            # keep the pinned one: swap roles
-            continue
-        by_id[lid]["hidden_reason"] = "duplicate_name"
-        by_id[lid]["duplicate_of"] = kept
+    n_collapsed = collapse(records, pinned | unhide_ok)
+    for r in records:
+        r["score"] = R.score(r, pos, n_common, prefs)
     live = [r for r in records if not r["hidden_reason"]]
     # extended-only
     for r in live:
         reasons = list(r["ext_reasons"])
-        if r["n_board"] < SPARSE_MIN_BOARD and r["head"] not in pos:
+        if r["n_board"] < SPARSE_MIN_BOARD and N.head_key(r["head"]) not in pos:
             reasons.append("sparse_data")
         r["ext_all"] = reasons
     cands = [r for r in live if not r["ext_all"] or r["canonical_id"] in pinned]
@@ -93,7 +151,7 @@ def curate(records: list[dict[str, Any]], lex: N.Lexicon, pinned: set[str] | Non
             r["tier"] = "extended"
             r["why"] = ",".join(r.get("ext_all", [])) or "below_everyday_cut"
         r["rank"] = R.to_rank(r["score"], r["tier"]) if r["tier"] != "hidden" else 0
-    return {"chosen": chosen, "losers": losers}
+    return {"chosen": chosen, "collapsed": n_collapsed}
 
 
 def hidden_summary(records: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:

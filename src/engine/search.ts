@@ -8,9 +8,10 @@ import type { Food } from './types';
  * Library rules (foods that carry `head` / `tier`; pipeline/search_check.py is the Python twin, keep them in step):
  *  - head grouping: results are grouped by `head`, the best member is shown, the others come back as `group`;
  *  - exact head beats the rest. Match class: 4 exact head (same tokens as the query), 3 exact name / alias,
- *    2 every query token matches (exact or prefix), 1 the rest (typo tolerance, or the query is only contained in the
+ *    (3 also: a multi-word query that is the start of the name), 2 every query token matches (exact or prefix), 1 the rest (typo tolerance, or the query is only contained in the
  *    head: "apple" in "pineapple"). A better class always wins: Apple, raw > Apple pie > Pineapple;
- *  - inside a class an `everyday` food beats an `extended` one.
+ *  - inside a class an `everyday` food beats an `extended` one;
+ *  - composite foods (dish, branded / ultra-processed, mix / dough / drink / dessert ...) drop one class unless the query asks for them.
  * Foods without `head` behave as before: every food is its own group and there is no tier preference.
  */
 
@@ -72,7 +73,13 @@ interface Entry {
   head: string; // normalised head ('' = none)
   headTokens: string[];
   everyday: boolean;
+  composite: boolean;
+  processed: boolean;
 }
+
+const COMPOSITE_RX = /\b(?:mix|dough|flavou?red|drink|beverage|punch|cocoa|shake|dessert|pudding|splash|cocktail|imitation|substitute|topping|filling|dressing|sauce|soup|salad|sandwich|pie|cake|cookie|candy|burger|pizza)\b/i;
+
+const MIXED_RX = /\b(?:with|and)\b/i; // "Corn with red pepper", "Milk and cereal bar": a mixed food
 
 export interface SearchHit {
   food: Food;
@@ -94,6 +101,9 @@ const makeEntry = (food: Food): Entry => ({
   head: food.head ? normalize(food.head) : '',
   headTokens: food.head ? tokens(food.head) : [],
   everyday: food.tier === 'everyday',
+  processed: !!food.tags?.includes('processed'),
+  composite:
+    food.form === 'dish' || !!food.tags?.includes('processed') || COMPOSITE_RX.test(food.name) || MIXED_RX.test(food.name.split(',')[0]),
 });
 
 export class FoodSearch {
@@ -116,7 +126,9 @@ export class FoodSearch {
     const raw: Raw[] = [];
     for (const e of this.entries) {
       if (e.food.rare && !opts.includeRare) continue;
-      const [score, cls] = scoreEntry(e, q, qNorm);
+      const [score, cls0] = scoreEntry(e, q, qNorm);
+      let cls = cls0;
+      if (score > 0 && e.composite && (cls < 4 || e.processed) && !(COMPOSITE_RX.test(query) && COMPOSITE_RX.test(e.food.name))) cls = Math.max(1, cls - 1);
       if (score > 0) raw.push({ cls, ev: e.everyday ? 1 : 0, score, rank: e.food.rank ?? 50, food: e.food });
     }
     // best member first: class, everyday, score, rank
@@ -150,11 +162,14 @@ const sameTokens = (a: string[], b: string[]) => a.length === b.length && [...a]
 /** [score 0..1, match class 0..4]; class 0 = no match. */
 function scoreEntry(e: Entry, q: string[], qNorm: string): [number, number] {
   // 4: the query names the head (same tokens, any order)
-  if (e.headTokens.length && sameTokens(e.headTokens, q)) return [0.98 + rankBoost(e.food) * 0.02, 4];
+  if (e.headTokens.length && sameTokens(e.headTokens, q)) return [(e.head === qNorm ? 0.99 : 0.98) + rankBoost(e.food) * 0.01, 4];
   // 3: exact name or alias is the strongest signal after the head
   if (e.name === qNorm || e.aliasNames.includes(qNorm) || e.aliasTokens.some((a) => a.length && sameTokens(a, q))) {
     return [0.97 + rankBoost(e.food) * 0.03, 3];
   }
+
+  // 3: a multi-word query that is the start of the name ("skim milk" -> "Skim milk, UHT") beats a scattered token match
+  if (q.length >= 2 && `${e.name} `.startsWith(`${qNorm} `)) return [0.95 + rankBoost(e.food) * 0.01, 3];
 
   const fields = [e.nameTokens, ...e.aliasTokens, ...(e.headTokens.length ? [e.headTokens] : [])];
   let best = 0;

@@ -1,0 +1,419 @@
+{
+ "_comment": "head -> canonical food ids (foodpipe canonical_id) that are that head even though their name says it differently. Applied in consumer/curate.prepare before tiering and ranking. Rule-confirmed by consumer/make_aliases.py (candidate name contains every key token of the head); hand entries are kept on re-run.",
+ "_reject": {
+  "_heads": [
+   "artificial sweetener",
+   "cheese puff",
+   "chicken salad",
+   "chili",
+   "deli turkey",
+   "egg salad",
+   "white rice",
+   "coriander",
+   "risotto rice",
+   "pork rind",
+   "duck fat",
+   "hard-boiled egg",
+   "stir fry",
+   "dal",
+   "green curry",
+   "tempura",
+   "fruit snack",
+   "graham crackers",
+   "1% milk",
+   "2% milk"
+  ],
+  "hot sauce": [
+   "Harissa"
+  ],
+  "1% milk": [
+   "Skim milk"
+  ]
+ },
+ "acai": [
+  "cf_88cf27803c",
+  "cf_96fe68d484"
+ ],
+ "all-purpose flour": [
+  "cf_0fac6b4f3f",
+  "cf_3d359ccce9",
+  "cf_b67e8ba45e"
+ ],
+ "arborio rice": [
+  "cf_9f86b407c6"
+ ],
+ "basmati": [
+  "cf_8ba4939912",
+  "cf_dde02a14fa"
+ ],
+ "bean burrito": [
+  "cf_80265351f0",
+  "cf_cb5871ec0a",
+  "cf_ab549f65bf",
+  "cf_cdca1a4c52"
+ ],
+ "bean soup": [
+  "cf_bf0c4afd66",
+  "cf_ff9a4c783f",
+  "cf_6a1ac503e5",
+  "cf_ea30850eeb"
+ ],
+ "beef and broccoli": [
+  "cf_c5bc0dc1cf"
+ ],
+ "beef bouillon": [
+  "cf_0454097c6d",
+  "cf_714a821db9"
+ ],
+ "beef stew": [
+  "cf_91b54044c8",
+  "cf_da51d0c0a7",
+  "cf_457e2b7d82",
+  "cf_d9f8ba3572"
+ ],
+ "beef stir fry": [
+  "cf_d391ad365e",
+  "cf_2b2e604a37",
+  "cf_c5bc0dc1cf",
+  "cf_eadb428cb5"
+ ],
+ "biscuit mix": [
+  "cf_36fa5f0ffe",
+  "cf_8b9601ef1a"
+ ],
+ "bread flour": [
+  "cf_0b9aacb030",
+  "cf_6f88602a03",
+  "cf_037e5d9a97",
+  "cf_68cda00c4d"
+ ],
+ "bread mix": [
+  "cf_1911ddc541",
+  "cf_c91ffbbc40",
+  "cf_acc0db9484",
+  "cf_f068dfcde6"
+ ],
+ "brown lentils": [
+  "cf_8d771869cf",
+  "cf_5512daac40"
+ ],
+ "brownie mix": [
+  "cf_0ac2c915b5"
+ ],
+ "buckwheat noodles": [
+  "cf_b54f891ad8",
+  "cf_dc67703db6",
+  "cf_d3fa253777",
+  "cf_077ae5a19c"
+ ],
+ "burrito": [
+  "cf_ef3d2b1785"
+ ],
+ "caesar dressing": [
+  "cf_bce7cc3417",
+  "cf_13b7c55051",
+  "cf_f075293ab6",
+  "cf_4871e4c675"
+ ],
+ "cake flour": [
+  "cf_f86e72b96b",
+  "cf_cbd3dead03"
+ ],
+ "chapati": [
+  "cf_b723ce2e47"
+ ],
+ "cheese slice": [
+  "cf_842926d415"
+ ],
+ "chia": [
+  "cf_112880d2c5",
+  "cf_1f008f21dd"
+ ],
+ "chia seeds": [
+  "cf_112880d2c5",
+  "cf_1f008f21dd"
+ ],
+ "chicken bouillon": [
+  "cf_5e72c348d7",
+  "cf_d5da99bc34",
+  "cf_6e0448caaa"
+ ],
+ "chicken stir fry": [
+  "cf_429397045b"
+ ],
+ "chicken tender": [
+  "cf_5acb6dc68f",
+  "cf_4d90fc02d4"
+ ],
+ "chili paste": [
+  "cf_3bde59f8d6"
+ ],
+ "chili seasoning": [
+  "cf_dbee504d5d"
+ ],
+ "chocolate candy": [
+  "cf_a9a1c47fb1",
+  "cf_66ced28a3c",
+  "cf_858cbadb2b",
+  "cf_a9e9be2f3a"
+ ],
+ "cinnamon roll": [
+  "cf_6a7096e862"
+ ],
+ "cocoa butter": [
+  "cf_b16715f55a"
+ ],
+ "cooking spray": [
+  "cf_141f33deaa"
+ ],
+ "crab cake": [
+  "cf_2077588359"
+ ],
+ "crab meat": [
+  "cf_56dc9b5a55",
+  "cf_f737de8b9c"
+ ],
+ "cream of chicken soup": [
+  "cf_2600a7c610",
+  "cf_6f707a9525",
+  "cf_0d8be9e169",
+  "cf_ede38d47ad"
+ ],
+ "cream of mushroom soup": [
+  "cf_ca6f2447cc",
+  "cf_68a2088cfc",
+  "cf_5e38360fd6",
+  "cf_863a54c4a7"
+ ],
+ "crushed tomato": [
+  "cf_874c490814"
+ ],
+ "cucumber pickle": [
+  "cf_45ee49c01d",
+  "cf_3d625e0645",
+  "cf_80f1c44218",
+  "cf_cfa5d7beae"
+ ],
+ "cumin": [
+  "cf_3cbee1c59e"
+ ],
+ "dill pickle": [
+  "cf_45ee49c01d",
+  "cf_e079cabef9"
+ ],
+ "dried fish": [
+  "cf_0c7ce87d46",
+  "cf_bf7d541d0c",
+  "cf_34c5187cd9"
+ ],
+ "extra firm tofu": [
+  "cf_13e3e3084f",
+  "cf_3b3e2bd143"
+ ],
+ "extra virgin olive oil": [
+  "cf_67f56c64a6"
+ ],
+ "fenugreek": [
+  "cf_2549558f65",
+  "cf_ef9b868e96",
+  "cf_385b9168d7"
+ ],
+ "fenugreek seed": [
+  "cf_2549558f65",
+  "cf_ef9b868e96"
+ ],
+ "frozen pizza": [
+  "cf_bb5640a5cb",
+  "cf_5a5af9a617"
+ ],
+ "fruit spread": [
+  "cf_e5050c6cd2",
+  "cf_2501a3aed5"
+ ],
+ "gelatin powder": [
+  "cf_96e1d1f0aa"
+ ],
+ "green lentils": [
+  "cf_277bbf673e",
+  "cf_ef2628fcf3",
+  "cf_46895c8c47",
+  "cf_8d771869cf"
+ ],
+ "grits": [
+  "cf_99a2e0f0f6"
+ ],
+ "ground flaxseed": [
+  "cf_b94149dc1c"
+ ],
+ "guava paste": [
+  "cf_9f2d806f20"
+ ],
+ "half and half": [
+  "cf_55ed17d1a1"
+ ],
+ "halloumi cheese": [
+  "cf_b3bccc2369",
+  "cf_27e5dc1a88"
+ ],
+ "hard-boiled egg": [
+  "cf_7800b7cac4"
+ ],
+ "honey mustard dressing": [
+  "cf_ee7e687432",
+  "cf_9f368f1b19",
+  "cf_f2a65ea1d5"
+ ],
+ "hot sauce": [
+  "cf_9f35937870",
+  "cf_aea306e6e7"
+ ],
+ "lactose-free milk": [
+  "cf_c76dce1a53"
+ ],
+ "marmalade": [
+  "cf_e90625b499"
+ ],
+ "matcha powder": [
+  "cf_c7c9073b5a"
+ ],
+ "miso paste": [
+  "cf_f79993c06d",
+  "cf_19aac84f32"
+ ],
+ "muffin mix": [
+  "cf_bba6360065",
+  "cf_6ac7e36cd2",
+  "cf_bc339ae9fc",
+  "cf_06fbcd63dc"
+ ],
+ "nutritional yeast": [
+  "cf_b78a3825c5"
+ ],
+ "oil and vinegar dressing": [
+  "cf_b2d86cd42c"
+ ],
+ "pad thai": [
+  "cf_3ecf25f59c"
+ ],
+ "pancake mix": [
+  "cf_0df526b7cc",
+  "cf_88ba3bc00b",
+  "cf_49bcc76b91",
+  "cf_512dcd4a94"
+ ],
+ "pot roast": [
+  "cf_146323001f",
+  "cf_750281bb87"
+ ],
+ "powdered sugar": [
+  "cf_ef10b9085c"
+ ],
+ "quesadilla": [
+  "cf_7804056820"
+ ],
+ "quinoa flour": [
+  "cf_da5e847431"
+ ],
+ "ranch dressing": [
+  "cf_0c80d765a8",
+  "cf_6f3f8db11d",
+  "cf_625560056f"
+ ],
+ "red wine vinegar": [
+  "cf_5a6453336f"
+ ],
+ "rice and beans": [
+  "cf_41e85bf29e"
+ ],
+ "rice bran oil": [
+  "cf_ce7a6093c0"
+ ],
+ "rice pilaf": [
+  "cf_05338ef488",
+  "cf_8665856aad"
+ ],
+ "salmon sushi": [
+  "cf_8a92eb09b1"
+ ],
+ "salsa verde": [
+  "cf_910ee71a62"
+ ],
+ "saltine crackers": [
+  "cf_61a43e4de5"
+ ],
+ "self-rising flour": [
+  "cf_d152ba430d"
+ ],
+ "sole": [
+  "cf_2110e92597",
+  "cf_488c99dbf3",
+  "cf_c349f515fc",
+  "cf_b4050502a7"
+ ],
+ "spaghetti with meat sauce": [
+  "cf_8000cfaf7d",
+  "cf_548aeac908",
+  "cf_c3dee4a35a"
+ ],
+ "sprinkle": [
+  "cf_c9bdca38bb"
+ ],
+ "star fruit": [
+  "cf_d65c6db296"
+ ],
+ "stevia": [
+  "cf_6d936b1904"
+ ],
+ "stock cube": [
+  "cf_4d4bf58c15"
+ ],
+ "stuffed pepper": [
+  "cf_ec37463feb"
+ ],
+ "sweet and sour chicken": [
+  "cf_224abb8d3f"
+ ],
+ "taco seasoning": [
+  "cf_2fc0fc9260"
+ ],
+ "tahini": [
+  "cf_acd434009c"
+ ],
+ "textured vegetable protein": [
+  "cf_0b3b76ab38"
+ ],
+ "tikka masala sauce": [
+  "cf_bd4a2a50d8"
+ ],
+ "tofu skin": [
+  "cf_5b75db3dd3",
+  "cf_9b0f521cde"
+ ],
+ "vermicelli": [
+  "cf_9222059bee",
+  "cf_60719f3bd0",
+  "cf_5d9817ca32",
+  "cf_dd04534793"
+ ],
+ "white vinegar": [
+  "cf_bcdeffed5c"
+ ],
+ "whole wheat flour": [
+  "cf_7b43fc4d2c",
+  "cf_d1a045eb90",
+  "cf_890ced9715",
+  "cf_e6c94f37ac"
+ ],
+ "whole wheat pita bread": [
+  "cf_a444596199",
+  "cf_1cae4b7187",
+  "cf_e57235f6da"
+ ],
+ "whole wheat spaghetti": [
+  "cf_e00c999b72",
+  "cf_c0b871435c"
+ ],
+ "whole wheat tortilla": [
+  "cf_6111eeb22a"
+ ]
+}
