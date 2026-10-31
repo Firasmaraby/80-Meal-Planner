@@ -1,0 +1,1848 @@
+# Everyday heads: the foods a person actually types. Extends common_foods.txt (kept for the older pipeline).
+# Format:  head | preferred form | household servings (label=grams;label=grams)      '#' starts a comment.
+#   * head: lower case; plural/singular does not matter (normalised the same way as the generated heads).
+#   * form: raw | cooked | dried (or dry) | canned | frozen | juice | product | dish.  Empty = no preference.
+#     A head may appear several times with different forms when several are everyday ("oats|dried", "oats|cooked").
+#   * order = importance: earlier lines are more common (feeds the rank), North American staples first, then Mediterranean,
+#     Asian, Latin American, Middle Eastern and Indian staples.
+#   * servings come from USDA household measures where the unit weight is well known; a wrong default is worse than none.
+# Tier rules (see tiers.py): the best record per (head, form) of these heads is everyday, plus a few materially different variants.
+
+# ================================================================ FRUIT - North American staples
+apple|raw|1 medium=182;1 cup sliced=109|with skin
+banana|raw|1 medium=118;1 cup sliced=150|raw
+orange|raw|1 medium=131;1 cup sections=180|all
+strawberries|raw|1 cup whole=144;1 cup sliced=166
+blueberries|raw|1 cup=148
+raspberries|raw|1 cup=123
+blackberries|raw|1 cup=144
+grapes|raw|1 cup=151
+watermelon|raw|1 cup diced=152;1 wedge=286
+cantaloupe|raw|1 cup cubes=177
+honeydew melon|raw|1 cup diced=170
+pineapple|raw|1 cup chunks=165;1 slice=56
+mango|raw|1 cup pieces=165;1 fruit=336
+peach|raw|1 medium=150
+pear|raw|1 medium=178
+plum|raw|1 medium=66
+nectarine|raw|1 medium=142
+apricot|raw|1 apricot=35
+cherries|raw|1 cup with pits=138
+kiwi|raw|1 medium=69
+grapefruit|raw|1/2 medium=123
+lemon|raw|1 medium=58
+lime|raw|1 medium=67
+tangerine|raw|1 medium=88
+clementine|raw|1 fruit=74
+mandarin|raw|1 fruit=88
+avocado|raw|1/2 fruit=100;1 fruit=201
+pomegranate|raw|1/2 fruit=141
+cranberries|raw|1 cup=100
+papaya|raw|1 cup cubes=140
+coconut|raw|1 piece=45
+coconut meat|raw
+fig|raw|1 medium=50
+dates|dried|1 date=24
+dates|raw
+prunes|dried|1 prune=9.5
+raisins|dried|1 small box=43;1 cup=145
+apple|dried
+apricot|dried
+cranberries|dried
+banana|dried
+mango|dried
+cherries|dried
+blueberries|dried
+applesauce|canned|1 cup=244
+fruit cocktail|canned|1 cup=248
+peach|canned
+pear|canned
+pineapple|canned
+mandarin|canned
+apple|frozen
+blueberries|frozen|1 cup=155
+strawberries|frozen|1 cup=152
+raspberries|frozen
+mango|frozen
+peach|frozen
+orange juice|juice|1 cup=248
+apple juice|juice|1 cup=248
+grape juice|juice|1 cup=253
+grapefruit juice|juice|1 cup=247
+cranberry juice|juice|1 cup=253
+pineapple juice|juice|1 cup=250
+prune juice|juice|1 cup=256
+pomegranate juice|juice
+tomato juice|juice|1 cup=243
+lemon juice|juice|1 tbsp=15
+lime juice|juice|1 tbsp=15
+carrot juice|juice|1 cup=236
+vegetable juice|juice
+# ---- fruit: more
+persimmon|raw
+guava|raw
+passion fruit|raw
+lychee|raw
+dragon fruit|raw
+star fruit|raw
+jackfruit|raw
+durian|raw
+rambutan|raw
+longan|raw
+mangosteen|raw
+tamarind|raw
+plantain|raw|1 medium=179
+plantain|cooked
+quince|raw
+gooseberries|raw
+currants|raw
+blackcurrants|raw
+elderberries|raw
+mulberries|raw
+cantaloupe|raw
+casaba melon|raw
+crenshaw melon|raw
+grapefruit|raw
+pomelo|raw
+kumquat|raw
+rhubarb|raw
+olives|canned|5 large=22
+olives|product
+sultanas|dried
+goji berries|dried
+acai|product
+figs|dried|1 fig=19
+persimmon|dried
+pears|dried
+peaches|dried
+apricots|dried
+currants|dried
+cherries|canned
+fruit salad|canned
+lychee|canned
+jackfruit|canned
+banana chips|product
+fruit leather|product
+mixed berries|frozen
+cherry|frozen
+papaya|dried
+pineapple|dried
+pineapple|frozen
+watermelon|juice
+coconut water|product|1 cup=240
+coconut water|juice
+coconut milk|canned|1/2 cup=120
+coconut milk|product
+coconut cream|canned
+coconut|dried
+coconut oil|product
+# ================================================================ VEGETABLES
+broccoli|raw|1 cup chopped=91;1 spear=31|raw
+broccoli|cooked|1 cup chopped=156
+spinach|raw|1 cup=30;1 bunch=340|raw
+spinach|cooked|1 cup=180
+kale|raw|1 cup chopped=21|raw
+kale|cooked|1 cup chopped=130
+carrot|raw|1 medium=61;1 cup chopped=128|raw
+carrot|cooked|1 cup sliced=156
+tomato|raw|1 medium=123;1 cup chopped=180;1 cherry tomato=17|red
+cucumber|raw|1/2 cup slices=52;1 medium=201
+iceberg lettuce|raw|1 cup shredded=72
+romaine lettuce|raw|1 cup shredded=47
+green leaf lettuce|raw|1 cup shredded=36
+red leaf lettuce|raw|1 cup shredded=28
+butterhead lettuce|raw|1 cup=55
+lettuce|raw|1 cup=36
+arugula|raw|1 cup=20
+potato|raw|1 medium=173|flesh and skin
+potato|cooked|1 medium=173|baked
+potato|dried
+sweet potato|cooked|1 medium=114
+sweet potato|raw|1 medium=130
+onion|raw|1 medium=110;1 cup chopped=160
+red onion|raw|1 medium=110
+white onion|raw
+yellow onion|raw
+scallions|raw|1 medium=15;1 cup chopped=100
+leek|raw|1 leek=89
+garlic|raw|1 clove=3
+shallot|raw|1 tbsp=10
+bell pepper|raw|1 medium=119;1 cup chopped=149
+red bell pepper|raw|1 medium=119
+green bell pepper|raw|1 medium=119
+yellow bell pepper|raw
+chili pepper|raw|1 pepper=45
+jalapeno pepper|raw|1 pepper=14
+celery|raw|1 stalk=40;1 cup chopped=101
+cauliflower|raw|1 cup chopped=107
+cauliflower|cooked|1 cup=124
+cabbage|raw|1 cup shredded=70
+cabbage|cooked
+red cabbage|raw|1 cup shredded=70
+savoy cabbage|raw
+napa cabbage|raw|1 cup shredded=76
+bok choy|raw|1 cup shredded=70
+brussels sprouts|raw|1 cup=88
+brussels sprouts|cooked|1 cup=156
+asparagus|raw|1 spear=16;1 cup=134
+asparagus|cooked|1 cup=180
+green beans|raw|1 cup=110
+green beans|cooked|1 cup=125
+green beans|canned
+green beans|frozen
+green peas|raw|1 cup=145
+green peas|cooked|1 cup=160
+green peas|frozen
+green peas|canned
+snow peas|raw|1 cup=98
+sugar snap peas|raw|1 cup=98
+sweet corn|cooked|1 ear=90;1 cup kernels=164
+sweet corn|raw|1 ear=90
+sweet corn|canned|1 cup=164
+sweet corn|frozen
+zucchini|raw|1 medium=196;1 cup sliced=113
+zucchini|cooked
+yellow squash|raw|1 medium=196
+butternut squash|raw|1 cup cubes=140
+butternut squash|cooked|1 cup cubes=205
+acorn squash|raw
+acorn squash|cooked
+spaghetti squash|cooked|1 cup=155
+spaghetti squash|raw
+pumpkin|raw|1 cup cubes=116
+pumpkin|canned|1 cup=245
+pumpkin|cooked
+eggplant|raw|1 cup cubes=82
+eggplant|cooked
+mushroom|raw|1 cup pieces=70;1 medium=18
+mushroom|cooked|1 cup pieces=156
+portobello mushroom|raw
+portobello mushroom|cooked
+shiitake mushroom|raw
+shiitake mushroom|cooked
+shiitake mushroom|dried
+oyster mushroom|raw
+enoki mushroom|raw
+beet|raw|1 medium=82
+beet|cooked|1 cup slices=170
+beet|canned
+radish|raw|1 medium=4.5;1 cup slices=116
+turnip|raw|1 medium=122
+turnip|cooked
+rutabaga|raw
+rutabaga|cooked
+parsnip|raw
+parsnip|cooked
+celeriac|raw
+kohlrabi|raw
+fennel|raw|1 bulb=234
+artichoke|cooked|1 medium=120
+artichoke|canned
+artichoke hearts|canned
+okra|raw
+okra|cooked
+collard greens|raw
+collard greens|cooked
+swiss chard|raw|1 cup=36
+swiss chard|cooked
+mustard greens|raw
+mustard greens|cooked
+turnip greens|raw
+turnip greens|cooked
+beet greens|raw
+dandelion greens|raw
+watercress|raw|1 cup=34
+endive|raw
+radicchio|raw
+escarole|raw
+mixed greens|raw
+spring mix|raw
+microgreens|raw
+alfalfa sprouts|raw
+bean sprouts|raw
+mung bean sprouts|raw
+broccoli raab|raw
+broccoli raab|cooked
+broccoli|frozen
+cauliflower|frozen
+spinach|frozen
+spinach|canned
+carrot|frozen
+carrot|canned
+mixed vegetables|frozen
+mixed vegetables|canned
+brussels sprouts|frozen
+kale|frozen
+potato|canned
+tomato|canned|1 cup=240
+tomatoes|canned
+diced tomatoes|canned
+crushed tomatoes|canned
+tomato sauce|canned|1 cup=245
+tomato paste|canned|1 tbsp=16
+tomato puree|canned
+sun-dried tomatoes|dried
+sun-dried tomatoes|product
+cherry tomato|raw
+roma tomato|raw
+tomatillo|raw
+pickles|product|1 spear=35
+dill pickle|product
+cucumber pickle|product
+sauerkraut|canned|1 cup=142
+sauerkraut|product
+kimchi|product|1 cup=150
+pickled beets|canned
+pickled onions|product
+pickled ginger|product
+capers|product|1 tbsp=9
+roasted red peppers|canned
+jalapeno pepper|canned
+hot peppers|canned
+banana peppers|raw
+poblano pepper|raw
+serrano pepper|raw
+habanero pepper|raw
+cayenne pepper|raw
+sweet potato|canned
+sweet potato|frozen
+yam|raw
+yam|cooked
+cassava|raw
+cassava|cooked
+taro|raw
+taro|cooked
+yambean|raw
+water chestnuts|canned
+water chestnuts|raw
+bamboo shoots|canned
+bamboo shoots|raw
+lotus root|raw
+daikon|raw
+daikon|cooked
+burdock root|raw
+ginger root|raw|1 tbsp=6
+turmeric root|raw
+horseradish|product
+wasabi|product
+lemon grass|raw
+chives|raw|1 tbsp=3
+parsley|raw|1 tbsp=4;1 cup=60
+cilantro|raw|1 tbsp=1;1 cup=16
+basil|raw|1 tbsp=2
+mint|raw
+dill|raw
+rosemary|raw
+thyme|raw
+sage|raw
+oregano|raw
+tarragon|raw
+bay leaf|dried
+curry leaves|raw
+seaweed|dried
+nori|dried
+kelp|raw
+wakame|dried
+wakame|raw
+hearts of palm|canned
+hearts of palm|raw
+nopales|raw
+nopales|cooked
+cactus pad|raw
+chayote|raw
+chayote|cooked
+bitter melon|raw
+bitter melon|cooked
+winter melon|raw
+luffa|raw
+bottle gourd|raw
+ridge gourd|raw
+drumstick|raw
+yardlong beans|raw
+yardlong beans|cooked
+lima beans|raw
+lima beans|cooked
+lima beans|frozen
+fava beans|raw
+fava beans|cooked
+fava beans|canned
+edamame|frozen
+edamame|cooked
+edamame|raw
+cowpeas|cooked
+pigeon peas|cooked
+winged beans|raw
+pepper|product
+# ================================================================ LEGUMES
+lentils|cooked|1 cup=198|boiled
+lentils|dried|1 cup=192
+red lentils|cooked
+red lentils|dried
+green lentils|cooked
+brown lentils|cooked
+black lentils|cooked
+chickpeas|cooked|1 cup=164|boiled
+chickpeas|canned|1 cup=240
+chickpeas|dried|1 cup=200
+black beans|cooked|1 cup=172|boiled
+black beans|canned|1 cup=240
+black beans|dried
+kidney beans|cooked|1 cup=177|boiled
+kidney beans|canned|1 cup=256
+kidney beans|dried
+pinto beans|cooked|1 cup=171
+pinto beans|canned
+pinto beans|dried
+navy beans|cooked|1 cup=182
+navy beans|canned
+navy beans|dried
+white beans|cooked|1 cup=179
+white beans|canned
+white beans|dried
+great northern beans|cooked
+great northern beans|canned
+cannellini beans|canned
+cannellini beans|cooked
+lima beans|dried
+lima beans|canned
+black-eyed peas|cooked|1 cup=171
+black-eyed peas|canned
+black-eyed peas|dried
+split peas|cooked|1 cup=196
+split peas|dried
+yellow split peas|cooked
+green split peas|cooked
+adzuki beans|cooked
+adzuki beans|dried
+mung beans|cooked
+mung beans|dried
+fava beans|dried
+borlotti beans|cooked
+cranberry beans|cooked
+cranberry beans|canned
+pink beans|cooked
+small white beans|cooked
+baked beans|canned|1 cup=254
+refried beans|canned|1 cup=252
+refried beans|dish
+hummus|product|2 tbsp=30;1 cup=246
+falafel|dish|1 patty=17
+tofu|raw|1/2 cup=126|firm
+tofu|product
+firm tofu|raw
+silken tofu|raw
+extra firm tofu|raw
+fried tofu|cooked
+tofu|cooked
+tempeh|product|1/2 cup=83
+tempeh|cooked
+natto|product|1/2 cup=88
+miso|product|1 tbsp=17
+soybeans|cooked|1 cup=172
+soybeans|dried
+soybeans|canned
+soybeans|raw
+soy milk|product|1 cup=243
+soy milk|juice
+soy yogurt|product
+soy sauce|product|1 tbsp=16
+tamari|product
+soy protein|product
+tvp|dried
+textured vegetable protein|dried
+seitan|product
+peanuts|raw|1 oz=28;1 cup=146
+peanuts|dried
+peanuts|cooked
+peanut butter|product|2 tbsp=32|smooth
+dal|dish
+chana dal|cooked
+chana dal|dried
+toor dal|cooked
+moong dal|cooked
+urad dal|cooked
+masoor dal|cooked
+lupini beans|product
+carob|product
+# ================================================================ GRAINS & CEREALS
+oats|dried|1/2 cup=40|regular and quick/rolled
+oats|cooked|1 cup=234
+rolled oats|dried
+steel cut oats|dried
+instant oatmeal|dried
+oat bran|dried
+oat bran|cooked
+rice|cooked|1 cup=158|white
+rice|dried|1 cup=185
+rice|raw
+brown rice|cooked|1 cup=195
+brown rice|dried|1 cup=190
+basmati rice|cooked
+basmati rice|dried
+jasmine rice|cooked
+jasmine rice|dried
+wild rice|cooked|1 cup=164
+wild rice|dried
+sushi rice|cooked
+arborio rice|dried
+glutinous rice|cooked
+red rice|cooked
+black rice|cooked
+rice cake|product|1 cake=9
+rice noodles|cooked|1 cup=176
+rice noodles|dried
+rice flour|product
+rice bran|product
+rice paper|product
+puffed rice|product
+quinoa|cooked|1 cup=185
+quinoa|dried|1/4 cup=43
+quinoa flour|product
+barley|cooked|1 cup=157
+barley|dried
+pearl barley|cooked
+pearl barley|dried
+buckwheat|cooked|1 cup=168
+buckwheat|dried
+buckwheat groats|cooked
+buckwheat flour|product
+buckwheat noodles|cooked
+soba noodles|cooked
+soba noodles|dried
+bulgur|cooked|1 cup=182
+bulgur|dried
+couscous|cooked|1 cup=157
+couscous|dried
+whole wheat couscous|cooked
+millet|cooked|1 cup=174
+millet|dried
+sorghum|cooked
+sorghum|dried
+teff|cooked
+teff|dried
+amaranth|cooked
+amaranth|dried
+farro|cooked
+farro|dried
+spelt|cooked
+spelt|dried
+freekeh|cooked
+kamut|cooked
+rye|dried
+rye flour|product
+wheat berries|cooked
+wheat germ|product|1 tbsp=7
+wheat bran|product
+cornmeal|dried|1 cup=157
+cornmeal|product
+polenta|cooked
+polenta|dried
+grits|cooked|1 cup=242
+grits|dried
+corn flour|product
+cornstarch|product|1 tbsp=8
+popcorn|product|1 cup=8
+popcorn|cooked
+corn tortilla|product|1 tortilla=26
+flour tortilla|product|1 tortilla=49
+whole wheat tortilla|product
+tortilla|product
+tortilla chips|product|1 oz=28
+taco shells|product|1 shell=13
+tostada|product
+masa harina|dried
+hominy|canned
+hominy|cooked
+all-purpose flour|product|1 cup=125|all-purpose
+wheat flour|product|1 cup=125
+whole wheat flour|product|1 cup=120
+bread flour|product
+cake flour|product
+self-rising flour|product
+almond flour|product|1/4 cup=28
+coconut flour|product
+chickpea flour|product
+gluten-free flour|product
+semolina|product
+semolina|dried
+pasta|cooked|1 cup=140|enriched
+pasta|dried|2 oz=56|enriched
+spaghetti|cooked|1 cup=140
+spaghetti|dried
+macaroni|cooked|1 cup=140
+macaroni|dried
+penne|cooked
+penne|dried
+fusilli|cooked
+fusilli|dried
+lasagna noodles|cooked
+lasagna noodles|dried
+egg noodles|cooked|1 cup=160
+egg noodles|dried
+whole wheat pasta|cooked|1 cup=140
+whole wheat pasta|dried
+whole wheat spaghetti|cooked
+gluten-free pasta|cooked
+chickpea pasta|cooked
+lentil pasta|cooked
+fresh pasta|product
+ramen noodles|dried
+ramen noodles|cooked
+udon noodles|cooked
+udon noodles|product
+somen noodles|cooked
+starch noodles|cooked
+starch noodles|dried
+vermicelli|cooked
+vermicelli|dried
+orzo|cooked
+orzo|dried
+gnocchi|cooked
+gnocchi|product
+ravioli|cooked
+ravioli|canned
+tortellini|cooked
+tortellini|product
+white bread|product|1 slice=29
+whole wheat bread|product|1 slice=33
+multigrain bread|product|1 slice=34
+whole grain bread|product|1 slice=33
+rye bread|product|1 slice=32
+pumpernickel bread|product|1 slice=32
+sourdough bread|product|1 slice=47
+french bread|product
+italian bread|product
+oat bread|product
+raisin bread|product
+cinnamon bread|product
+potato bread|product
+gluten-free bread|product
+bread|product|1 slice=30
+toast|cooked
+bagel|product|1 bagel=105
+english muffin|product|1 muffin=57
+croissant|product|1 croissant=57
+pita bread|product|1 pita=64
+whole wheat pita bread|product
+naan bread|product|1 piece=90
+naan|product
+chapati|product
+chapati roti bread|product
+paratha|product
+flatbread|product
+lavash|product
+tortilla wrap|product
+hamburger bun|product|1 bun=43
+hot dog bun|product|1 bun=45
+dinner roll|product|1 roll=28
+bread roll|product
+baguette|product
+ciabatta bread|product
+focaccia|product
+brioche|product
+pretzel|product|1 oz=28
+breadcrumbs|product|1 cup=108
+croutons|product
+stuffing|dish
+crackers|product|5 crackers=15
+saltine crackers|product
+graham crackers|product|1 sheet=7
+whole wheat crackers|product
+rice crackers|product
+crispbread|product
+melba toast cracker|product
+breadsticks|product
+pancake|product|1 medium=38
+pancake|dish
+waffle|product|1 waffle=35
+french toast|dish
+crepe|product
+muffin|product|1 muffin=113
+blueberry muffin|product
+biscuit|product
+scone|product
+doughnut|product
+granola|product|1/4 cup=30
+granola bar|product|1 bar=24
+muesli|product|1/2 cup=55
+cornflakes|product|1 cup=28
+corn flakes|product
+bran flakes|product
+shredded wheat|product
+puffed wheat|product
+cream of wheat|cooked
+cream of wheat|dried
+cream of rice|cooked
+porridge|cooked
+oatmeal|cooked
+overnight oats|dish
+# ================================================================ NUTS & SEEDS
+almonds|raw|1 oz=28;1 cup=143|raw
+almonds|dried
+almonds|product
+walnuts|raw|1 oz=28
+pecans|raw|1 oz=28
+cashews|raw|1 oz=28
+cashews|dried
+pistachios|raw|1 oz=28
+hazelnuts|raw|1 oz=28
+macadamia nuts|raw|1 oz=28
+brazil nuts|raw|1 oz=28
+pine nuts|raw|1 oz=28
+pine nuts|dried
+chestnuts|raw
+chestnuts|cooked
+mixed nuts|product|1 oz=28
+trail mix|product
+almond butter|product|2 tbsp=32
+cashew butter|product
+sunflower seed butter|product
+tahini|product|1 tbsp=15
+chia seeds|dried|1 tbsp=12
+chia seeds|raw
+flaxseed|dried|1 tbsp=10
+flaxseed|product
+ground flaxseed|product
+pumpkin seeds|dried|1 oz=28
+pumpkin seeds|raw
+sunflower seeds|dried|1 oz=28
+sunflower seeds|raw
+sesame seeds|dried|1 tbsp=9
+sesame seeds|raw
+hemp seeds|raw|3 tbsp=30
+hemp seeds|dried
+poppy seeds|dried|1 tsp=3
+watermelon seeds|dried
+lotus seeds|dried
+almond milk|product|1 cup=240
+oat milk|product|1 cup=240
+rice milk|product
+cashew milk|product
+hazelnut milk|product
+coconut milk beverage|product
+nutella|product
+chocolate spread|product
+marzipan|product
+praline|product
+nut butter|product
+# ================================================================ DAIRY & EGGS
+egg|raw|1 large=50|whole
+egg|cooked|1 large=50|hard-boiled/whole
+egg|product
+hard-boiled egg|cooked
+scrambled egg|cooked
+fried egg|cooked
+poached egg|cooked
+egg white|raw|1 large=33
+egg white|cooked
+egg yolk|raw|1 large=17
+egg yolk|cooked
+egg substitute|product
+duck egg|raw
+quail egg|raw
+milk|product|1 cup=244|2%/whole
+milk|raw
+skim milk|product|1 cup=245
+chocolate milk|product|1 cup=250
+buttermilk|product|1 cup=245
+evaporated milk|canned|1 cup=252
+condensed milk|canned|1 tbsp=19
+powdered milk|dried
+goat milk|product|1 cup=244
+sheep milk|product
+lactose-free milk|product
+kefir|product|1 cup=243
+yogurt|product|1 cup=245;1 container=170|plain
+yogurt|raw
+greek yogurt|product|1 container=170;1 cup=245
+skyr|product
+quark|product
+cottage cheese|product|1 cup=226
+ricotta cheese|product|1/2 cup=124
+cream cheese|product|1 tbsp=14;2 tbsp=29|regular
+cheddar cheese|product|1 slice=28;1 cup shredded=113|cheddar
+mozzarella cheese|product|1 oz=28;1 cup shredded=112
+parmesan cheese|product|1 tbsp=5;1 oz=28
+swiss cheese|product|1 slice=28
+provolone cheese|product
+gouda cheese|product
+brie cheese|product
+camembert cheese|product
+feta cheese|product|1 oz=28;1/4 cup=38
+goat cheese|product|1 oz=28
+blue cheese|product|1 oz=28
+gorgonzola cheese|product
+monterey cheese jack|product
+colby cheese|product
+pepper jack cheese|product
+american cheese|product|1 slice=21
+processed cheese|product
+cheese slice|product
+string cheese|product|1 stick=28
+halloumi cheese|product
+paneer cheese|product
+queso fresco cheese|product
+cotija cheese|product
+mascarpone cheese|product
+pecorino romano cheese|product
+romano cheese|product
+manchego cheese|product
+gruyere cheese|product
+emmental cheese|product
+edam cheese|product
+havarti cheese|product
+muenster cheese|product
+asiago cheese|product
+fontina cheese|product
+burrata cheese|product
+cheese|product
+butter|product|1 tbsp=14;1 pat=5|salted
+salted butter|product
+unsalted butter|product
+ghee|product|1 tbsp=13
+clarified butter|product
+margarine|product|1 tbsp=14
+light butter|product
+cream|product|1 tbsp=15
+heavy cream|product|1 tbsp=15;1 cup=238
+whipping cream|product
+light cream|product
+half and half|product|1 tbsp=15;1 cup=242
+sour cream|product|1 tbsp=12;2 tbsp=24
+whipped cream|product
+whipped topping|product
+creme fraiche|product
+coffee creamer|product
+ice cream|product|1/2 cup=66
+frozen yogurt|product
+gelato|product
+sorbet|product
+sherbet|product
+ice lolly|product
+milkshake|product
+custard|product
+rice pudding|dish
+pudding|product
+flan|product
+whey|product
+casein|product
+# ================================================================ MEAT & POULTRY
+chicken breast|cooked|3 oz=85;1 breast=172|roasted
+chicken breast|raw||with skin
+chicken breast|product
+chicken thigh|cooked|1 thigh=52
+chicken thigh|raw
+chicken drumstick|cooked|1 drumstick=44
+chicken drumstick|raw
+chicken wing|cooked|1 wing=21
+chicken wing|raw
+chicken leg|cooked
+chicken leg|raw
+chicken|cooked
+chicken|raw
+whole chicken|cooked
+whole chicken|raw
+chicken liver|cooked
+chicken liver|raw
+chicken gizzard|cooked
+ground chicken|cooked
+ground chicken|raw
+rotisserie chicken|cooked
+chicken tender|cooked
+chicken nuggets|product
+chicken breast|canned
+chicken sausage|product
+chicken|canned
+turkey breast|cooked|3 oz=85
+turkey breast|raw
+turkey breast|product
+turkey|cooked
+turkey|raw
+turkey thigh|cooked
+turkey leg|cooked
+turkey drumstick|cooked
+ground turkey|cooked|3 oz=85
+ground turkey|raw
+turkey bacon|product
+turkey sausage|product
+deli turkey|product
+turkey slice|product
+duck|cooked
+duck breast|cooked
+duck|raw
+goose|cooked
+ground beef|cooked|3 oz=85|85%/80%
+ground beef|raw||85%/80%
+lean ground beef|cooked
+beef sirloin|cooked|3 oz=85|lean
+beef sirloin|raw
+beef tenderloin|cooked
+beef tenderloin|raw
+beef ribeye|cooked
+beef ribeye|raw
+beef strip steak|cooked
+beef strip steak|raw
+t-bone steak|cooked
+flank steak|cooked
+flank steak|raw
+skirt steak|cooked
+skirt steak|raw
+beef chuck|cooked
+beef chuck|raw
+beef round|cooked
+beef round|raw
+beef brisket|cooked
+beef brisket|raw
+beef short ribs|cooked
+beef short ribs|raw
+beef rib|cooked
+beef rib|raw
+beef shank|cooked
+beef stew meat|cooked
+beef stew meat|raw
+beef steak|cooked
+beef steak|raw
+beef roast|cooked
+beef liver|cooked|3 oz=85
+beef liver|raw
+beef|cooked
+beef|raw
+corned beef|product
+corned beef|canned
+roast beef|product
+pastrami|product
+beef jerky|dried|1 oz=28
+beef jerky|product
+beef bacon|product
+veal|cooked
+veal|raw
+veal cutlet|cooked
+pork tenderloin|cooked|3 oz=85|lean
+pork tenderloin|raw
+pork chop|cooked|1 chop=145
+pork chop|raw
+pork loin|cooked
+pork loin|raw
+pork shoulder|cooked
+pork shoulder|raw
+pork ribs|cooked
+pork ribs|raw
+pork belly|cooked
+pork belly|raw
+pork leg|cooked
+pork leg|raw
+ground pork|cooked
+ground pork|raw
+pork|cooked
+pork|raw
+pork liver|cooked
+bacon|cooked|1 slice=8|pan-fried
+bacon|product
+bacon|raw
+canadian bacon|product
+ham|product|1 slice=28;3 oz=85
+ham|cooked
+ham|canned
+prosciutto|product
+pancetta|product
+salami|product|1 slice=23
+pepperoni|product
+bologna|product
+chorizo|product
+sausage|cooked
+sausage|product
+pork sausage|cooked
+italian sausage|cooked
+bratwurst|cooked
+hot dog|cooked|1 frank=45
+hot dog|product
+frankfurter|cooked
+meatballs|cooked
+meatloaf|dish
+lamb leg|cooked
+lamb leg|raw
+lamb chop|cooked|1 chop=60
+lamb chop|raw
+lamb shoulder|cooked
+lamb shoulder|raw
+lamb rack|cooked
+ground lamb|cooked
+ground lamb|raw
+lamb|cooked
+lamb|raw
+lamb shank|cooked
+lamb liver|cooked
+mutton|cooked
+goat|cooked
+goat|raw
+bison|cooked
+venison|cooked
+rabbit|cooked
+ostrich|cooked
+liver pate|product
+liver sausage|product
+beef broth|product|1 cup=240
+chicken broth|product|1 cup=240
+bone broth|product
+vegetable broth|product
+beef bouillon|product
+chicken bouillon|product
+gelatin|product
+# ================================================================ FISH & SEAFOOD
+salmon|cooked|3 oz=85;1 fillet=178|atlantic
+salmon|raw||atlantic
+salmon|canned|1/2 cup=90
+salmon|product
+smoked salmon|product|1 oz=28;3 oz=85
+tuna|canned|1 can=165;3 oz=85|light
+tuna|cooked
+tuna|raw
+light tuna|canned
+white tuna|canned
+albacore tuna|canned
+yellowfin tuna|cooked
+yellowfin tuna|raw
+bluefin tuna|cooked
+bluefin tuna|raw
+skipjack tuna|canned
+tuna|product
+sardines|canned|1 can=92
+sardines|raw
+sardines|cooked
+sardine|canned
+sardine|raw
+anchovies|canned|1 anchovy=4
+anchovy|raw
+herring|raw
+herring|cooked
+herring|product
+herring|canned
+pickled herring|product
+mackerel|raw
+mackerel|cooked
+mackerel|canned
+mackerel|product
+king mackerel|raw
+spanish mackerel|raw
+trout|cooked
+trout|raw
+rainbow trout|cooked
+rainbow trout|raw
+arctic char|cooked
+arctic char|raw
+cod|cooked|3 oz=85
+cod|raw
+cod|dried
+atlantic cod|cooked
+atlantic cod|raw
+haddock|cooked
+haddock|raw
+haddock|product
+pollock|cooked
+pollock|raw
+alaska pollock|cooked
+halibut|cooked
+halibut|raw
+tilapia|cooked
+tilapia|raw
+catfish|cooked
+catfish|raw
+sea bass|cooked
+sea bass|raw
+striped bass|cooked
+snapper|cooked
+snapper|raw
+red snapper|cooked
+grouper|cooked
+mahi mahi|cooked
+mahi mahi|raw
+swordfish|cooked
+swordfish|raw
+flounder|cooked
+flounder|raw
+sole|cooked
+sole|raw
+plaice|cooked
+plaice|raw
+perch|cooked
+perch|raw
+pike|cooked
+walleye|cooked
+carp|cooked
+eel|cooked
+eel|raw
+whitefish|cooked
+whitefish|raw
+whitefish|product
+rockfish|cooked
+monkfish|cooked
+mullet|cooked
+pompano|cooked
+bream|cooked
+sea bream|cooked
+sea bream|raw
+hake|cooked
+hake|raw
+whiting|cooked
+turbot|cooked
+skate|cooked
+shark|cooked
+barramundi|cooked
+barramundi|raw
+orange roughy|cooked
+fish sticks|product
+fish fillet|cooked
+fish|cooked
+fish|raw
+fish roe|product
+caviar|product
+fish oil|product
+cod liver oil|product
+shrimp|cooked|3 oz=85;1 large=7
+shrimp|raw
+shrimp|canned
+shrimp|product
+crab|cooked
+crab|raw
+crab|canned
+crab|product
+crab meat|canned
+imitation crab|product
+lobster|cooked
+lobster|raw
+crayfish|cooked
+crayfish|raw
+prawns|cooked
+scallops|cooked
+scallops|raw
+oysters|cooked
+oysters|raw
+oysters|canned
+oysters|product
+clams|cooked
+clams|raw
+clams|canned
+mussels|cooked
+mussels|raw
+squid|cooked
+squid|raw
+squid|product
+octopus|cooked
+octopus|raw
+cuttlefish|cooked
+abalone|cooked
+abalone|raw
+sea urchin|raw
+sea cucumber|raw
+fish cake|product
+fishcake|product
+surimi|product
+fish paste|product
+dried fish|dried
+dried shrimp|dried
+bonito flakes|dried
+fish sauce|product|1 tbsp=18
+oyster sauce|product
+anchovy paste|product
+# ================================================================ FATS & OILS
+olive oil|product|1 tbsp=13.5;1 tsp=4.5
+extra virgin olive oil|product
+canola oil|product|1 tbsp=14
+vegetable oil|product|1 tbsp=14
+sunflower oil|product|1 tbsp=14
+safflower oil|product|1 tbsp=14
+corn oil|product|1 tbsp=14
+soybean oil|product|1 tbsp=14
+peanut oil|product|1 tbsp=14
+sesame oil|product|1 tbsp=14
+avocado oil|product|1 tbsp=14
+coconut oil|product|1 tbsp=14
+palm oil|product
+walnut oil|product
+flaxseed oil|product|1 tbsp=14
+almond oil|product
+grapeseed oil|product
+rice bran oil|product
+mustard oil|product
+hemp oil|product
+cooking spray|product
+lard|product|1 tbsp=13
+tallow|product
+duck fat|product
+shortening|product
+mayonnaise|product|1 tbsp=14
+miracle whip|product
+salad dressing|product|2 tbsp=30
+ranch dressing|product
+italian dressing|product
+caesar dressing|product
+vinaigrette|product
+balsamic vinaigrette|product
+blue cheese dressing|product
+thousand island dressing|product
+honey mustard dressing|product
+french dressing|product
+oil and vinegar dressing|product
+# ================================================================ BEVERAGES
+water|product|1 cup=237
+tap water|product
+mineral water|product
+sparkling water|product
+coffee|product|1 cup=237|brewed
+coffee|cooked
+espresso|product
+instant coffee|dried
+tea|product|1 cup=237|brewed
+green tea|product
+black tea|product
+herbal tea|product
+chamomile tea|product
+peppermint tea|product
+iced tea|product
+chai|product
+cocoa|dried
+hot chocolate|product
+hot cocoa|product
+cocoa powder|product|1 tbsp=5
+kombucha|product
+lemonade|product
+orange drink|product
+fruit punch|product
+cola|product
+ginger ale|product
+tonic water|product
+root beer|product
+lemon-lime soda|product
+diet soda|product
+soft drink|product
+sports drink|product
+energy drink|product
+smoothie|product
+beer|product
+wine|product
+red wine|product|5 fl oz=147
+white wine|product
+champagne|product
+whiskey|product
+vodka|product
+rum|product
+gin|product
+tequila|product
+liqueur|product
+sake|product
+cider|product
+hard cider|product
+vermouth|product
+sherry|product
+brandy|product
+port wine|product
+cocktail|product
+horchata|product
+lassi|product
+ayran|product
+yakult|product
+bubble tea|product
+almond milk|juice
+# ================================================================ CONDIMENTS, HERBS, SPICES
+salt|product|1 tsp=6
+table salt|product
+sea salt|product
+black pepper|product|1 tsp=2.3
+white pepper|product
+cayenne pepper|product
+red pepper flakes|product
+paprika|product|1 tsp=2.3
+smoked paprika|product
+chili powder|product|1 tsp=2.7
+cumin|product|1 tsp=2.1
+cumin seed|product
+turmeric|product|1 tsp=3
+cinnamon|product|1 tsp=2.6
+ginger|product|1 tsp=1.8
+ginger|dried
+nutmeg|product
+cloves|product
+allspice|product
+cardamom|product
+star anise|product
+fennel seed|product
+mustard seed|product
+caraway seed|product
+celery seed|product
+fenugreek|product
+fenugreek seed|product
+saffron|product
+vanilla extract|product|1 tsp=4.2
+vanilla bean|product
+garlic powder|product|1 tsp=2.8
+onion powder|product|1 tsp=2.4
+garlic|dried
+onion|dried
+curry powder|product|1 tsp=2
+garam masala|product
+italian seasoning|product
+taco seasoning|product
+chili seasoning|product
+poultry seasoning|product
+herbes de provence|product
+za'atar|product
+sumac|product
+ras el hanout|product
+five spice|product
+old bay seasoning|product
+cajun seasoning|product
+jerk seasoning|product
+adobo seasoning|product
+basil|dried
+oregano|dried
+thyme|dried
+rosemary|dried
+sage|dried
+parsley|dried
+dill|dried
+mint|dried
+tarragon|dried
+marjoram|dried
+bay leaf|product
+cilantro|dried
+chives|dried
+ketchup|product|1 tbsp=17
+mustard|product|1 tsp=5;1 tbsp=15
+dijon mustard|product
+yellow mustard|product
+whole grain mustard|product
+barbecue sauce|product|2 tbsp=36
+hot sauce|product|1 tsp=5
+sriracha|product
+tabasco|product
+worcestershire sauce|product
+teriyaki sauce|product
+hoisin sauce|product
+sweet chili sauce|product
+oyster sauce|product
+salsa|product|2 tbsp=32
+pico de gallo|product
+guacamole|product|2 tbsp=30
+pesto|product|1 tbsp=16
+marinara sauce|product|1/2 cup=125
+spaghetti sauce|product
+pasta sauce|product
+alfredo sauce|product
+tomato sauce|product
+enchilada sauce|product
+curry sauce|product
+tikka masala sauce|product
+gravy|product
+soy sauce|product
+miso paste|product
+gochujang|product
+harissa|product
+chimichurri|product
+tzatziki|product
+tahini sauce|product
+sambal|product
+chili paste|product
+chili oil|product
+chili garlic sauce|product
+mirin|product
+rice vinegar|product|1 tbsp=15
+balsamic vinegar|product|1 tbsp=16
+apple cider vinegar|product|1 tbsp=15
+red wine vinegar|product
+white vinegar|product
+white wine vinegar|product
+vinegar|product
+cider vinegar|product
+malt vinegar|product
+relish|product
+pickle relish|product
+chutney|product
+mango chutney|product
+horseradish sauce|product
+cocktail sauce|product
+tartar sauce|product
+wasabi|product
+nutritional yeast|product|2 tbsp=10
+yeast|product
+baking powder|product|1 tsp=4.6
+baking soda|product|1 tsp=4.6
+cream of tartar|product
+gelatin powder|product
+agar|product
+xanthan gum|product
+bouillon cube|product
+stock cube|product
+msg|product
+liquid smoke|product
+lemon zest|product
+lemon peel|product
+orange zest|product
+# ================================================================ SWEETS, SUGARS, BAKING
+sugar|product|1 tsp=4.2;1 tbsp=12.6
+granulated sugar|product
+brown sugar|product|1 tsp=4.6;1 cup packed=220
+powdered sugar|product
+coconut sugar|product
+cane sugar|product
+honey|product|1 tbsp=21|honey
+maple syrup|product|1 tbsp=20
+agave syrup|product|1 tbsp=21
+molasses|product|1 tbsp=20
+corn syrup|product|1 tbsp=21
+golden syrup|product
+date syrup|product
+stevia|product
+artificial sweetener|product
+jam|product|1 tbsp=20
+jelly|product|1 tbsp=18
+marmalade|product
+fruit spread|product
+peanut butter and jelly|dish
+dark chocolate|product|1 oz=28
+milk chocolate|product|1 oz=28
+white chocolate|product
+chocolate chips|product|1 tbsp=10
+semisweet chocolate|product
+baking chocolate|product
+cocoa butter|product
+chocolate bar|product
+chocolate candy|product
+candy|product
+gummy bears|product
+jelly beans|product
+hard candy|product
+lollipop|product
+licorice|product
+marshmallow|product
+caramel|product
+toffee|product
+fudge|product
+nougat|product
+halva|product
+turkish delight|product
+brownie|product
+chocolate cake|product
+cake|product
+cheesecake|product
+cupcake|product
+carrot cake|product
+pound cake|product
+sponge cake|product
+angel food cake|product
+cookie|product|1 cookie=16
+chocolate chip cookie|product
+oatmeal cookie|product
+sugar cookie|product
+shortbread|product
+biscotti|product
+macaron|product
+gingerbread|product
+pie|product
+apple pie|product
+pumpkin pie|product
+pecan pie|product
+fruit pie|product
+pie crust|product
+tart|product
+danish pastry|product
+cinnamon roll|product
+churro|product
+baklava|product
+cannoli|product
+eclair|product
+cream puff|product
+tiramisu|dish
+chocolate pudding|product
+vanilla pudding|product
+gelatin dessert|product
+jello|product
+frosting|product
+whipped cream|product
+sprinkles|product
+cake mix|dried
+pancake mix|dried
+brownie mix|dried
+biscuit mix|dried
+muffin mix|dried
+bread mix|dried
+# ================================================================ PREPARED FOODS, DISHES, SNACKS
+pizza|dish|1 slice=107
+cheese pizza|dish
+pepperoni pizza|dish
+frozen pizza|dish
+hamburger|dish
+cheeseburger|dish
+veggie burger|product
+veggie burger|dish
+burger patty|cooked
+hot dog|dish
+sandwich|dish
+turkey sandwich|dish
+ham sandwich|dish
+chicken sandwich|dish
+tuna sandwich|dish
+egg sandwich|dish
+blt sandwich|dish
+grilled cheese sandwich|dish
+peanut butter sandwich|dish
+club sandwich|dish
+sub sandwich|dish
+wrap|dish
+burrito|dish
+chicken burrito|dish
+bean burrito|dish
+taco|dish
+chicken taco|dish
+beef taco|dish
+quesadilla|dish
+enchilada|dish
+fajita|dish
+nachos|dish
+tamale|dish
+empanada|dish
+chili con carne|dish
+chili|dish
+macaroni and cheese|dish
+mac and cheese|dish
+spaghetti with meat sauce|dish
+spaghetti and meatballs|dish
+lasagna|dish
+pasta salad|dish
+pasta primavera|dish
+fettuccine alfredo|dish
+carbonara|dish
+risotto|dish
+paella|dish
+fried rice|dish
+rice and beans|dish
+spanish rice|dish
+rice pilaf|dish
+jambalaya|dish
+stir fry|dish
+chicken stir fry|dish
+beef stir fry|dish
+vegetable stir fry|dish
+chicken curry|dish
+beef curry|dish
+vegetable curry|dish
+lentil curry|dish
+chickpea curry|dish
+butter chicken|dish
+chicken tikka masala|dish
+palak paneer|dish
+saag|dish
+dal makhani|dish
+biryani|dish
+samosa|dish
+pakora|dish
+bhaji|dish
+idli|dish
+dosa|dish
+upma|dish
+poha|dish
+khichdi|dish
+tandoori chicken|dish
+naan|dish
+raita|dish
+chicken soup|dish
+chicken noodle soup|dish
+tomato soup|dish
+vegetable soup|dish
+minestrone soup|dish
+lentil soup|dish
+split pea soup|dish
+bean soup|dish
+black bean soup|dish
+mushroom soup|dish
+cream of mushroom soup|dish
+cream of chicken soup|dish
+clam chowder|dish
+corn chowder|dish
+potato soup|dish
+broccoli cheddar soup|dish
+french onion soup|dish
+pumpkin soup|dish
+butternut squash soup|dish
+gazpacho|dish
+miso soup|dish
+ramen|dish
+pho|dish
+wonton soup|dish
+hot and sour soup|dish
+tom yum soup|dish
+borscht|dish
+goulash|dish
+stew|dish
+beef stew|dish
+irish stew|dish
+chicken pot pie|dish
+shepherd's pie|dish
+pot roast|dish
+meat pie|dish
+pie|dish
+casserole|dish
+tuna casserole|dish
+green bean casserole|dish
+stuffed peppers|dish
+cabbage rolls|dish
+meatloaf|dish
+fish and chips|dish
+fish taco|dish
+fish cake|dish
+crab cake|dish
+shrimp scampi|dish
+shrimp cocktail|dish
+sushi|dish
+california roll|dish
+salmon sushi|dish
+sashimi|dish
+tempura|dish
+teriyaki chicken|dish
+katsu|dish
+tonkatsu|dish
+yakitori|dish
+gyoza|dish
+dumplings|dish
+spring roll|dish
+egg roll|dish
+pad thai|dish
+green curry|dish
+red curry|dish
+massaman curry|dish
+satay|dish
+bibimbap|dish
+kimchi fried rice|dish
+bulgogi|dish
+japchae|dish
+tteokbokki|dish
+mapo tofu|dish
+kung pao chicken|dish
+general tso's chicken|dish
+orange chicken|dish
+sweet and sour chicken|dish
+beef and broccoli|dish
+lo mein|dish
+chow mein|dish
+dim sum|dish
+bao|dish
+congee|dish
+hummus|dish
+falafel wrap|dish
+shawarma|dish
+gyro|dish
+kebab|dish
+doner kebab|dish
+shish kebab|dish
+kofta|dish
+tabbouleh|dish
+fattoush|dish
+baba ganoush|dish
+dolma|dish
+moussaka|dish
+spanakopita|dish
+greek salad|dish
+caprese salad|dish
+caesar salad|dish
+garden salad|dish
+chef salad|dish
+cobb salad|dish
+coleslaw|dish
+potato salad|dish
+egg salad|dish
+tuna salad|dish
+chicken salad|dish
+fruit salad|dish
+waldorf salad|dish
+taco salad|dish
+three bean salad|dish
+bruschetta|dish
+crostini|dish
+antipasto|dish
+ratatouille|dish
+frittata|dish
+quiche|dish
+omelet|dish
+scrambled eggs|dish
+eggs benedict|dish
+shakshuka|dish
+huevos rancheros|dish
+breakfast burrito|dish
+breakfast sandwich|dish
+hash browns|dish
+home fries|dish
+french fries|product|1 serving=117
+sweet potato fries|product
+potato chips|product|1 oz=28
+potato wedges|product
+mashed potatoes|dish
+baked potato|cooked
+scalloped potatoes|dish
+tater tots|product
+onion rings|product
+corn chips|product
+cheese puffs|product
+pretzels|product
+popcorn|dish
+trail mix|dish
+rice cakes|product
+granola bar|dish
+protein bar|product
+energy bar|product
+fruit snacks|product
+pork rinds|product
+beef jerky|dish
+cheese stick|product
+edamame|dish
+guacamole|dish
+salsa|dish
+refried beans|product
+tofu scramble|dish
+veggie wrap|dish
+buddha bowl|dish
+poke bowl|dish
+grain bowl|dish
+burrito bowl|dish
+acai bowl|dish
+smoothie bowl|dish
+oatmeal|dish
+yogurt parfait|dish
+chia pudding|dish
+protein pancakes|dish
+cauliflower rice|cooked
+cauliflower rice|product
+zucchini noodles|raw
+zucchini noodles|cooked
+veggie chips|product
+hummus|product
+# ================================================================ INTERNATIONAL STAPLES (extra)
+tzatziki|product
+labneh|product
+tahini|dried
+olive tapenade|product
+sun-dried tomato|product
+artichoke dip|product
+polenta|product
+risotto rice|dried
+passata|product
+pesto|dish
+parmigiano reggiano|product
+mozzarella di bufala|product
+prosciutto crudo|product
+bresaola|product
+mortadella|product
+nduja|product
+focaccia|dish
+panini|dish
+bruschetta|product
+pomodoro sauce|product
+kimchi|dish
+miso soup|product
+nori|product
+seaweed salad|dish
+tofu skin|product
+yuba|product
+rice vinegar|dish
+mochi|product
+red bean paste|product
+adzuki bean paste|product
+matcha powder|product
+dashi|product
+katsuobushi|product
+umeboshi|product
+natto|dish
+lotus root|cooked
+bamboo shoots|cooked
+bok choy|cooked
+choy sum|raw
+choy sum|cooked
+gai lan|raw
+gai lan|cooked
+napa cabbage|cooked
+water spinach|raw
+water spinach|cooked
+long beans|cooked
+thai basil|raw
+galangal|raw
+kaffir lime leaves|raw
+palm sugar|product
+tamarind paste|product
+coconut aminos|product
+rice paper rolls|dish
+banh mi|dish
+pho noodles|cooked
+vermicelli noodles|cooked
+masa|product
+tortilla|dish
+black beans|dish
+pinto beans|dish
+plantain chips|product
+tostones|dish
+queso|product
+salsa verde|product
+mole|product
+chipotle|product
+adobo|product
+ceviche|dish
+arepa|product
+pupusa|dish
+empanadas|dish
+dulce de leche|product
+guava|dried
+guava paste|product
+acai|raw
+cassava flour|product
+tapioca|product
+tapioca pearls|dried
+tapioca|cooked
+quinoa|dish
+amaranth|product
+hibiscus tea|product
+yerba mate tea|product
+yerba mate tea|product
+couscous|product
+harissa|dish
+preserved lemon|product
+dates|product
+date paste|product
+pomegranate molasses|product
+orange blossom water|product
+rose water|product
+za'atar|dish
+sumac|dish
+halva|dish
+kunafa|dish
+falafel|product
+ful medames|dish
+fava beans|product
+koshari|dish
+shakshuka|product
+lentil soup|product
+mujaddara|dish
+freekeh|dried
+bulgur|product
+labneh|dish
+ayran|dish
+turmeric|dried
+ghee|dish
+paneer cheese|dish
+tofu|dish
+dal|product
+chana masala|dish
+rajma|dish
+aloo gobi|dish
+baingan bharta|dish
+bhindi masala|dish
+sambar|dish
+rasam|dish
+chutney|dish
+papad|product
+atta|product
+jaggery|product
+basmati|dried
+kheer|dish
+gulab jamen/jambu|dish
+jalebi|dish
+barfi|dish
+lassi|dish
+masala chai|product
+mango lassi|product

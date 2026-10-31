@@ -34,7 +34,7 @@ TAGS: list[str] = ["fatty_fish", "leafy_green", "whole_grain", "plant_iron", "fe
 
 # Exact set of keys a Food object may carry (types.ts `Food`).
 FOOD_KEYS_REQUIRED = {"id", "name", "category", "n", "src"}
-FOOD_KEYS_OPTIONAL = {"aliases", "tags", "gi", "servings", "rare", "rank"}
+FOOD_KEYS_OPTIONAL = {"aliases", "tags", "gi", "servings", "rare", "rank", "head", "form", "tier", "estimated", "legacyIds"}
 FOOD_KEYS = FOOD_KEYS_REQUIRED | FOOD_KEYS_OPTIONAL
 
 # Nutrient groups used by plausibility checks (all canonical unit g unless noted).
