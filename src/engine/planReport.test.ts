@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import { BUNDLED_PLANS, FOODS, FOOD_INDEX } from '@/state/catalog';
 
-import { bestSources, fixListForAI, gradePlan } from './planReport';
+import { REFERENCE_PANEL, RULES, bestSources, fixListForAI, gradePlan } from './planReport';
 
 describe('plan grading', () => {
   it('grades the sample plans day by day with no calorie errors', () => {
@@ -30,5 +30,29 @@ describe('plan grading', () => {
     expect(ids.length).toBeGreaterThan(0);
     for (const id of ids) expect(FOOD_INDEX.has(id)).toBe(true);
     expect(bestSources('b12', FOODS, true).every((id) => !['meat', 'poultry', 'fish'].includes(FOOD_INDEX.get(id)!.category))).toBe(true);
+  });
+
+  it('grades against another panel and with other rules, and the defaults are unchanged', () => {
+    const plan = BUNDLED_PLANS[0];
+    const base = gradePlan(plan, FOOD_INDEX, FOODS);
+    expect(gradePlan(plan, FOOD_INDEX, FOODS, {})).toEqual(base);
+    expect(gradePlan(plan, FOOD_INDEX, FOODS, { panel: REFERENCE_PANEL, rules: RULES })).toEqual(base);
+
+    // a panel of the woman alone can only lift coverage (men need more of most things), never lower it
+    const woman = gradePlan(plan, FOOD_INDEX, FOODS, { panel: [{ sex: 'female', age: 40, lifeStage: 'none' }] });
+    base.days.forEach((d, i) => {
+      for (const [k, pct] of Object.entries(d.coverage)) expect(woman.days[i].coverage[k as keyof typeof d.coverage]!, k).toBeGreaterThanOrEqual(pct! - 1e-9);
+    });
+    // pregnancy needs more iron and folate than the default panel
+    const pregnant = gradePlan(plan, FOOD_INDEX, FOODS, { panel: [{ sex: 'female', age: 40, lifeStage: 'pregnant' }] });
+    expect(pregnant.days[0].coverage.iron!).toBeLessThan(woman.days[0].coverage.iron!);
+
+    // rules overrides move the protein floor, the GL ceiling and the fish rule
+    const strict = gradePlan(plan, FOOD_INDEX, FOODS, { rules: { proteinMinPctKcal: 99, glycemicLoadMax: 1, fattyFishPerWeek: 99 } });
+    expect(strict.issues.filter((i) => i.code === 'protein_low').length).toBe(plan.days.length);
+    expect(strict.issues.some((i) => i.code === 'gl_high' && /aim ≤1\)/.test(i.message))).toBe(true);
+    expect(strict.issues.some((i) => i.code === 'fish_low' && /aim ≥99/.test(i.message))).toBe(true);
+    const lax = gradePlan(plan, FOOD_INDEX, FOODS, { rules: { fattyFishPerWeek: 0, proteinMinPctKcal: 0 } });
+    expect(lax.issues.some((i) => i.code === 'fish_low' || i.code === 'protein_low')).toBe(false);
   });
 });

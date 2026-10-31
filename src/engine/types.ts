@@ -126,6 +126,22 @@ export interface Meal {
   instructions?: string;
   photoUrl?: string;
   ingredients: Ingredient[];
+  // Library recipes (see content/GUIDE.md); the Excel and AI importers leave these empty.
+  /** the recipe this meal is cooked from; one recipe can appear in many plans */
+  recipeId?: string;
+  /** two or three sentences for someone browsing the meal library */
+  about?: string;
+  steps?: string[];
+  cookMinutes?: number;
+  /** spice level, audience, keeping and weekday shape: "mild", "freezer-friendly", "15-minute"... */
+  tags?: string[];
+  /** one "make it your own" line */
+  tip?: string;
+  inspiredBy?: string;
+  /** portions the steps make; 2 = the second becomes tomorrow's lunch */
+  servings?: number;
+  /** this slot eats the previous night's second portion */
+  leftover?: boolean;
 }
 
 export interface PlanDay {
@@ -143,7 +159,62 @@ export interface MealPlan {
   description?: string;
   author?: string;
   days: PlanDay[];
+  // Library plans: one size of a plan family (see content/GUIDE.md).
+  /** the family this plan is a size of */
+  familyId?: string;
+  size?: PlanSize;
+  /** the calorie bands the family's gate verified for this size */
+  covers?: CalorieBand[];
+  style?: PlanStyle;
+  /** the lowest carb setting this plan fits */
+  carbStyle?: CarbStyle;
+  summary?: string;
+  howItWorks?: string;
+  /** recipe ids of the dishes that define the family */
+  signature?: string[];
+  regions?: string[];
+  lifeStage?: LifeStage;
+  /** display names for slots that are not breakfast, lunch, dinner or snack (Ramadan: Suhoor, Iftar) */
+  slotNames?: Partial<Record<MealSlot, string>>;
 }
+
+export type PlanSize = 'light' | 'standard' | 'big' | 'xl';
+
+/** Whole-food carbs (intact grains, legumes, potatoes), whole grains too, or everything in moderation. Ordered strictest first. */
+export type CarbStyle = 'whole' | 'wholegrain' | 'any';
+
+export type PlanStyle =
+  // eating patterns
+  | 'balanced'
+  | 'vegan'
+  | 'vegetarian'
+  | 'pescatarian'
+  | 'flexitarian'
+  // goals
+  | 'muscle'
+  | 'fat-loss'
+  | 'endurance'
+  | 'low-gi'
+  | 'keto'
+  | 'low-carb'
+  | 'heart'
+  | 'gut'
+  | 'anti-inflammatory'
+  // life stage
+  | 'prenatal'
+  | 'postpartum'
+  | 'healthy-aging'
+  // lifestyle
+  | 'family'
+  | 'quick'
+  | 'batch'
+  | 'budget'
+  | 'ramadan'
+  | 'intermittent-fasting'
+  | 'gluten-free'
+  | 'dairy-free'
+  | 'iron-focus'
+  | 'paleo';
 
 export interface CalorieBand {
   min: number;
@@ -181,6 +252,8 @@ export interface Profile {
   /** foods (ids) or whole categories ("cat:fish") the person won't eat; auto-swapped */
   dislikes: string[];
   diet: string[]; // filters: vegetarian, pescatarian, dairy-free, gluten-free...
+  /** the strictest carb sources this person wants in their plans; library plans above it are hidden */
+  carbStyle?: CarbStyle;
 }
 
 export interface LogItem {

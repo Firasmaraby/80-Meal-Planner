@@ -1,0 +1,445 @@
+{
+  "id": "fixture-mini",
+  "name": "Mini Test Week",
+  "style": "balanced",
+  "cuisine": "Mediterranean",
+  "regions": [
+    "Greece",
+    "Turkey"
+  ],
+  "summary": "A two day test week that only the unit tests use. It has six small recipes, one dinner that makes tomorrow's lunch, and fish on both days.",
+  "howItWorks": "Day one cooks a double portion of salmon and potatoes, and the second portion becomes day two's lunch. Eggs, lentils and yogurt carry the protein, while kale, spinach and herbs bring the vitamins. This file exists to exercise the tools, so it is shorter than a real week.",
+  "signature": [
+    "salmon-potatoes-broccoli",
+    "lentil-kale-soup"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "2000-2200"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600"
+      ],
+      "adjust": [
+        {
+          "day": 2,
+          "swap": {
+            "from": "hummus-carrot-snack",
+            "to": "yogurt-walnut-berries"
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 2600,
+      "covers": [
+        "2400-2800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "hummus-carrot-snack"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "veggie-egg-scramble",
+      "name": "Spinach and mushroom egg scramble on toast",
+      "inspiredBy": "Greek strapatsada, with greens folded in",
+      "about": "Soft eggs scrambled with mushrooms, spinach and tomato, piled on whole wheat toast with an orange on the side. Eggs bring choline and B12, and the vitamin C in the orange helps you absorb the iron in the spinach.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 120
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 60,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 130
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a non-stick pan over medium heat and cook the mushrooms until they are golden and the pan is dry, about 4 minutes.",
+        "Add the tomato and spinach and stir until the spinach has wilted and the tomato is soft.",
+        "Beat the eggs with the salt and pepper, pour them in and stir gently until just set but still glossy.",
+        "Toast the bread, spoon the eggs on top and finish with chopped parsley.",
+        "Eat the orange alongside."
+      ],
+      "prepMin": 5,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Swap the spinach for any leafy green you have in the fridge."
+    },
+    {
+      "id": "lentil-kale-soup",
+      "name": "Lemony lentil and kale soup",
+      "inspiredBy": "Turkish red lentil soup and Greek fakes",
+      "about": "A thick, cumin-scented lentil soup with carrots, tomato and a big handful of kale, brightened with lemon at the end. The lentils and kale together cover a lot of your iron and folate, and the lemon helps your body absorb that iron.",
+      "ingredients": [
+        {
+          "food": "lentils-boiled-aa94b1",
+          "g": 260,
+          "swap": "legumes",
+          "note": "cooked"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 80,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 70
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 100
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 70
+        }
+      ],
+      "steps": [
+        "Soften the onion and carrot in the olive oil over medium heat until the onion is translucent, about 6 minutes.",
+        "Stir in the garlic and cumin for a minute until fragrant.",
+        "Add the crushed tomato, the lentils and a mug of water, and simmer for 10 minutes.",
+        "Stir in the kale and cook until it is bright green and tender, about 4 minutes.",
+        "Finish with the lemon juice and parsley, and top each bowl with a spoonful of yogurt."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "freezer-friendly"
+      ],
+      "tip": "Use canned lentils, drained and rinsed, to save time."
+    },
+    {
+      "id": "salmon-potatoes-broccoli",
+      "name": "Roasted salmon with lemon potatoes and broccoli",
+      "inspiredBy": "Greek lemon potatoes, with salmon in place of lamb",
+      "about": "Salmon roasted over lemony potatoes with a green tray of broccoli and a cool dill yogurt sauce. It makes two portions, so tomorrow's lunch is done. The salmon is your best source of vitamin D and omega-3 for the day.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-baked-or-broiled-d8fbbc",
+          "g": 130,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "potato-white-flesh-and-skin-baked-8f9d6d",
+          "g": 200
+        },
+        {
+          "food": "broccoli-boiled-2f9f2c",
+          "g": 150
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 5
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 60
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C and toss the potato wedges with half the olive oil, the oregano, salt and half the lemon juice on a tray.",
+        "Roast the potatoes for 20 minutes, then add the broccoli and pepper to the tray and roast 10 minutes more.",
+        "Rub the salmon with the garlic and the rest of the oil and lemon, set it on the tray and roast until it flakes, about 10 minutes.",
+        "Stir the dill into the yogurt for a quick sauce.",
+        "Serve one portion now. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 10,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Trout works the same way."
+    },
+    {
+      "id": "yogurt-walnut-berries",
+      "name": "Greek yogurt with walnuts, chia and berries",
+      "about": "Thick yogurt topped with crunchy walnuts, a spoonful of chia and a handful of berries. It is a quick snack with protein, calcium and plant omega-3.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 170
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 80
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 10
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl, scatter over the berries, walnuts and chia, and eat."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "chicken-chickpea-stew",
+      "name": "Chicken and chickpea stew with spinach",
+      "inspiredBy": "Moroccan tagine flavours with a Greek lemon finish",
+      "about": "Lean chicken simmered with chickpeas, tomato and warm spices, with spinach wilted in at the end and toasted almonds on top. It is a good source of zinc and iron, and the tomato and lemon help your body use them.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-skinless-roasted-b47347",
+          "g": 120
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 130,
+          "swap": "legumes"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 120
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 70
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "brown-rice-cooked-3014d1",
+          "g": 100,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 60
+        }
+      ],
+      "steps": [
+        "Soften the onion in the olive oil until golden, about 8 minutes, then stir in the garlic, paprika and cinnamon for a minute.",
+        "Add the tomato, the chickpeas and a splash of water and simmer for 10 minutes.",
+        "Slice the chicken, add it to the pot and warm it through.",
+        "Fold in the spinach until just wilted and add the lemon juice.",
+        "Serve over the brown rice with a spoonful of yogurt and the almonds scattered on top."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ]
+    },
+    {
+      "id": "hummus-carrot-snack",
+      "name": "Hummus with carrot and pepper sticks",
+      "about": "Creamy hummus with crunchy carrot and red pepper sticks for dipping. The chickpeas and tahini add iron, and the pepper adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "hummus-443cc0",
+          "g": 80
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 80
+        }
+      ],
+      "steps": [
+        "Cut the carrot and pepper into sticks.",
+        "Serve them with the hummus for dipping."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veggie-egg-scramble"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lentil-kale-soup"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "salmon-potatoes-broccoli"
+        },
+        {
+          "slot": "snack",
+          "recipe": "yogurt-walnut-berries"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veggie-egg-scramble"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "salmon-potatoes-broccoli",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "chicken-chickpea-stew"
+        },
+        {
+          "slot": "snack",
+          "recipe": "hummus-carrot-snack"
+        }
+      ]
+    }
+  ]
+}

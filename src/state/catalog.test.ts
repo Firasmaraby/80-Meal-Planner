@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 
-import { BUNDLED_PLANS, FOODS, FOOD_INDEX, LEGACY_ID_MAP, SWAP_GROUPS, ensureExtendedLoaded, foodSearch, isExtendedLoaded, swapCandidates } from './catalog';
+import { BUNDLED_PLANS, FOODS, FOOD_INDEX, LEGACY_ID_MAP, LIBRARY_PLANS, LIBRARY_RECIPES, SWAP_GROUPS, ensureExtendedLoaded, foodSearch, isExtendedLoaded, swapCandidates } from './catalog';
+import libraryPlansJson from '@/data/libraryPlans.json';
+import { expandPlans } from '@/engine/libraryPlans';
 import { isDisliked } from '@/engine/personalize';
 import legacyFoods from '../../pipeline/config/legacy/foods.json';
 import legacyPlans from '../../pipeline/config/legacy/plans.json';
@@ -76,4 +78,24 @@ describe('lazy extended tier', () => {
     expect(foodSearch.search(ext.name, { limit: 5 }).length).toBeGreaterThan(0);
     expect(foodSearch.search('apple')[0].food.tier).toBe('everyday');
   }, 60_000);
+});
+
+describe('plan library loader', () => {
+  it('with an empty libraryPlans.json the app has no library plans and the bundled samples are unchanged', () => {
+    expect(expandPlans([], LIBRARY_RECIPES)).toEqual([]);
+    expect(LIBRARY_PLANS).toHaveLength((libraryPlansJson as unknown[]).length);
+    expect(BUNDLED_PLANS).toHaveLength(3);
+    expect(BUNDLED_PLANS.every((p) => p.familyId === undefined && p.days.every((d) => d.meals.every((m) => m.recipeId === undefined)))).toBe(true);
+  });
+
+  it('every shipped library plan expands to foods that exist, with the recipe fields on each meal', () => {
+    for (const p of LIBRARY_PLANS) {
+      expect(p.familyId && p.size && p.carbStyle && p.covers?.length, p.id).toBeTruthy();
+      for (const d of p.days)
+        for (const m of d.meals) {
+          expect(m.recipeId, p.id).toBeTruthy();
+          for (const i of m.ingredients) expect(FOOD_INDEX.get(i.foodId), `${p.id}: ${i.foodId}`).toBeDefined();
+        }
+    }
+  });
 });

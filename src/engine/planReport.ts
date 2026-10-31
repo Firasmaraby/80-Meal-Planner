@@ -11,7 +11,9 @@ import { goToSources } from './goToSources';
 import { COMPLETE_AT, NUTRIENTS } from './nutrients';
 import type { Food, MealPlan, NutrientKey, Profile } from './types';
 
-export const REFERENCE_PANEL: Pick<Profile, 'sex' | 'age' | 'lifeStage'>[] = [
+export type ReferencePerson = Pick<Profile, 'sex' | 'age' | 'lifeStage'>;
+
+export const REFERENCE_PANEL: ReferencePerson[] = [
   { sex: 'male', age: 40, lifeStage: 'none' },
   { sex: 'female', age: 40, lifeStage: 'none' },
 ];
@@ -27,6 +29,15 @@ export const RULES = {
   proteinMinPctKcal: 20,
   fattyFishPerWeek: 2,
 } as const;
+
+export type Rules = Record<keyof typeof RULES, number>;
+
+export interface GradeOptions {
+  /** who the plan must work for; default REFERENCE_PANEL */
+  panel?: ReferencePerson[];
+  /** overrides for RULES (a muscle plan's protein floor, a vegan plan's fish rule of 0...) */
+  rules?: Partial<Rules>;
+}
 
 export interface ReportIssue {
   level: 'error' | 'warning' | 'info';
@@ -75,7 +86,9 @@ export interface PlanReport {
 const isPlantBased = (plan: MealPlan) => plan.tags.some((t) => /vegetarian|vegan/i.test(t));
 const round = (x: number) => Math.round(x);
 
-export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []): PlanReport {
+export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = [], opts: GradeOptions = {}): PlanReport {
+  const panel = opts.panel ?? REFERENCE_PANEL;
+  const rules: Rules = { ...RULES, ...opts.rules };
   const days = [...plan.days].sort((a, b) => a.day - b.day);
   const issues: ReportIssue[] = [];
   const dayReports: DayReport[] = days.map((d) => {
@@ -84,7 +97,7 @@ export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []
     const protein = totals.protein ?? 0;
     const items = d.meals.flatMap((m) => m.ingredients);
     const coverage: DayReport['coverage'] = {};
-    for (const person of REFERENCE_PANEL) {
+    for (const person of panel) {
       for (const p of boardProgress(totals, person)) {
         if (p.amount == null) continue;
         coverage[p.key] = Math.min(coverage[p.key] ?? Infinity, p.pct);
@@ -138,47 +151,47 @@ export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []
         fix: sources.length ? `Add or increase one of: ${sources.join(', ')}.` : undefined,
       });
     }
-    if (r.satFatPct != null && r.satFatPct > RULES.satFatMaxPct)
+    if (r.satFatPct != null && r.satFatPct > rules.satFatMaxPct)
       issues.push({
         level: 'warning',
         code: 'sat_fat_high',
         day: r.day,
-        message: `Day ${r.day}: saturated fat is ${r.satFatPct.toFixed(1)}% of calories (max ${RULES.satFatMaxPct}%).`,
+        message: `Day ${r.day}: saturated fat is ${r.satFatPct.toFixed(1)}% of calories (max ${rules.satFatMaxPct}%).`,
         fix: 'Swap butter, cheese, coconut or fatty meat for olive oil, fish, legumes or lean poultry.',
       });
-    if (r.omegaRatio != null && r.omegaRatio > RULES.omegaMaxRatio)
+    if (r.omegaRatio != null && r.omegaRatio > rules.omegaMaxRatio)
       issues.push({
         level: 'warning',
         code: 'omega_high',
         day: r.day,
-        message: `Day ${r.day}: omega-6:3 ratio is ${r.omegaRatio.toFixed(1)}:1 (aim ≤${RULES.omegaMaxRatio}:1).`,
+        message: `Day ${r.day}: omega-6:3 ratio is ${r.omegaRatio.toFixed(1)}:1 (aim ≤${rules.omegaMaxRatio}:1).`,
         fix: 'Add fatty fish, chia, ground flax or walnuts; use olive oil instead of seed oils.',
       });
-    if (r.glycemicLoad > RULES.glycemicLoadMax)
+    if (r.glycemicLoad > rules.glycemicLoadMax)
       issues.push({
         level: 'warning',
         code: 'gl_high',
         day: r.day,
-        message: `Day ${r.day}: glycemic load ${round(r.glycemicLoad)} (aim ≤${RULES.glycemicLoadMax}).`,
+        message: `Day ${r.day}: glycemic load ${round(r.glycemicLoad)} (aim ≤${rules.glycemicLoadMax}).`,
         fix: 'Replace white rice, bread or pasta with legumes, quinoa, oats or barley.',
       });
-    if (r.proteinPctKcal < RULES.proteinMinPctKcal)
+    if (r.proteinPctKcal < rules.proteinMinPctKcal)
       issues.push({
         level: 'warning',
         code: 'protein_low',
         day: r.day,
-        message: `Day ${r.day}: protein is ${round(r.proteinPctKcal)}% of calories (aim ≥${RULES.proteinMinPctKcal}%).`,
+        message: `Day ${r.day}: protein is ${round(r.proteinPctKcal)}% of calories (aim ≥${rules.proteinMinPctKcal}%).`,
         fix: 'Add lean protein: chicken, fish, eggs, Greek yogurt, tofu, tempeh or legumes.',
       });
   }
 
   const fish = dayReports.reduce((n, r) => n + r.fattyFishMeals, 0);
   const fishPerWeek = dayReports.length ? (fish * 7) / dayReports.length : 0;
-  if (!isPlantBased(plan) && fishPerWeek < RULES.fattyFishPerWeek)
+  if (!isPlantBased(plan) && fishPerWeek < rules.fattyFishPerWeek)
     issues.push({
       level: 'warning',
       code: 'fish_low',
-      message: `Fatty fish appears ${fishPerWeek.toFixed(1)}× per week (aim ≥${RULES.fattyFishPerWeek}).`,
+      message: `Fatty fish appears ${fishPerWeek.toFixed(1)}× per week (aim ≥${rules.fattyFishPerWeek}).`,
       fix: 'Use salmon, sardines, mackerel, trout or herring in at least two meals per 7 days.',
     });
 

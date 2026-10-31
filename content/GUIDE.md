@@ -96,7 +96,9 @@ Every family is labelled automatically with the lowest setting it fits:
 | **Everything in moderation** | adds white rice, white pasta, naan and other refined staples, only where the cuisine truly needs them (sushi rice, a bowl of pasta), in modest portions next to plenty of vegetables. |
 
 Aim the library at about half whole-food, a third whole grains, and the rest everything. Give grain-based meals the
-`grains` swap group so people can trade rice for quinoa or buckwheat.
+`low_gi_grains` swap group so people can trade rice for quinoa or buckwheat. The swap groups are `leafy_greens`,
+`legumes`, `low_gi_grains`, `vit_c_fruit`, `berries`, `fatty_fish`, `lean_protein`, `nuts_seeds`, `dairy_protein` and
+`healthy_oils` (see `src/data/swapGroups.json`).
 
 ## 7. Writing: the voice
 
