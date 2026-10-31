@@ -6,6 +6,7 @@ import { boardProgress, foodHighlights, scaled } from '@/engine/calc';
 import { COMPLETE_AT, NUTRIENTS } from '@/engine/nutrients';
 import type { Food, MealSlot, NutrientKey, Profile } from '@/engine/types';
 import { FOODS, food, foodSearch } from '@/state/catalog';
+import { useExtendedFoods } from '@/state/useExtendedFoods';
 import { useDay } from '@/state/day';
 import { today, useStore } from '@/state/store';
 import { Chip, Icon, I, IconButton, Row, Screen, Section, Txt, tap } from '@/ui/primitives';
@@ -56,6 +57,7 @@ export default function LogFood() {
   const [added, setAdded] = useState<Record<string, string>>({});
   const timers = useRef<Record<string, ReturnType<typeof setTimeout>>>({});
 
+  const extendedReady = useExtendedFoods(); // the searchable library grows once the extended tier has loaded
   const profile = useStore((s) => s.profile);
   const favorites = useStore((s) => s.favorites);
   const recents = useStore((s) => s.recents);
@@ -69,7 +71,7 @@ export default function LogFood() {
   }, []);
 
   const q = query.trim();
-  const results = useMemo(() => (q ? foodSearch.search(q, { includeRare }).map((h) => h.food) : []), [q, includeRare]);
+  const results = useMemo(() => (q ? foodSearch.search(q, { includeRare }).map((h) => h.food) : []), [q, includeRare, extendedReady]);
 
   const favFoods = useMemo(() => favorites.map(food).filter((f): f is Food => !!f).slice(0, 10), [favorites]);
   const recentFoods = useMemo(() => {

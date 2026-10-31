@@ -1,12 +1,15 @@
 """Fill MealPlan_Template.xlsx with the bundled sample plans → Sample_Plans_Filled.xlsx (a worked example)."""
 import json
+import sys
 from pathlib import Path
 
 from openpyxl import load_workbook
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / 'templates'))
+from foods_bundle import load_everyday  # noqa: E402
 plans = json.loads((ROOT / 'src/data/plans.json').read_text())
-foods = {f['id']: f['name'] for f in json.loads((ROOT / 'src/data/foods.json').read_text())}
+foods = {f['id']: f['name'] for f in load_everyday()}
 wb = load_workbook(ROOT / 'templates/MealPlan_Template.xlsx')
 
 

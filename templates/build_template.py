@@ -3,9 +3,10 @@
 
 Run:  python3 templates/build_template.py
 Then run:  python3 templates/build_ai_kit.py  (adds the AI Brief and Targets sheets and AI_Food_List.csv)
-Reads src/data/foods.json and src/data/swapGroups.json when present (re-run after they change).
+Reads src/data/foods.everyday.json (the Everyday tier) and src/data/swapGroups.json when present (re-run after they change).
 """
 import json
+import sys
 from pathlib import Path
 
 from openpyxl import Workbook
@@ -15,8 +16,9 @@ from openpyxl.worksheet.datavalidation import DataValidation
 from openpyxl.worksheet.protection import SheetProtection
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from foods_bundle import load_everyday  # noqa: E402
 OUT = Path(__file__).resolve().parent / "MealPlan_Template.xlsx"
-FOODS_JSON = ROOT / "src" / "data" / "foods.json"
 SWAP_JSON = ROOT / "src" / "data" / "swapGroups.json"
 
 CUISINES = ["Mediterranean", "North American", "Asian fusion", "Middle Eastern", "Mexican",
@@ -167,7 +169,7 @@ def build():
     wb = Workbook()
     build_instructions(wb)
 
-    foods = as_list(load_json(FOODS_JSON), "foods")
+    foods = load_everyday()
     groups = as_list(load_json(SWAP_JSON), "swapGroups", "groups")
 
     # ---------------- Plans
@@ -251,7 +253,7 @@ def build():
             wf.append([f.get("id", ""), f.get("name", ""), f.get("category", "")])
         wf.auto_filter.ref = f"A1:C{len(foods) + 1}"
     else:
-        wf.cell(row=2, column=2, value="Note: src/data/foods.json was not found when this template was built. "
+        wf.cell(row=2, column=2, value="Note: src/data/foods.everyday.json (the Everyday tier) was not found when this template was built. "
                                        "Re-run templates/build_template.py to fill this list.").font = Font(italic=True, color="C00000")
     wf.protection = SheetProtection(sheet=True, autoFilter=False, sort=False, formatColumns=False)
     wf.sheet_properties.tabColor = "999999"

@@ -43,8 +43,13 @@ if (flag === '--single') {
     })
     .replaceAll('</script', '<\\/script');
   const css = walk(join(src, '_expo/static/css')).map((f) => readFileSync(f, 'utf8')).join('\n');
-  const page = `<title>Eighty</title>
-<meta name="description" content="Eighty: a micronutrient-first meal plan app (interactive demo with sample data)">
+  const page = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eighty</title>
+<meta name="description" content="Eighty: a micronutrient-first meal plan app (interactive demo with sample plans)">
 <style>
   :root { --bg: #F6F4EE; }
   @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0C110F; color-scheme: dark } }
@@ -54,9 +59,13 @@ if (flag === '--single') {
   #root { display: flex; height: 100%; flex: 1; }
   ${css}
 </style>
+</head>
+<body>
 <div id="root"></div>
 <script>${resetRoute}</script>
 <script>${bundle}</script>
+</body>
+</html>
 `;
   writeFileSync(out, page);
   console.log(`single-page demo: ${out} (${(page.length / 1e6).toFixed(1)} MB)`);

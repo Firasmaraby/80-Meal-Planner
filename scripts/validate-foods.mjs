@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Validates src/data/foods.json (no dependencies).
+// Validates the food bundles src/data/foods.everyday.json + foods.extended.json (or the one file given; no dependencies).
 // Errors (exit 1): duplicate ids, invalid nutrient keys, negative / non-numeric values, fat < satFat + mufa + pufa - 1,
 //                  bad category/tag, missing src.
 // Warnings: kcal not within ±15% of 4*protein + 4*(carbs-fiber) + 2*fiber + 9*fat.
@@ -8,8 +8,21 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const file = process.argv[2] || path.join(here, '..', 'src', 'data', 'foods.json');
-const foods = JSON.parse(fs.readFileSync(file, 'utf8'));
+// default: both compact bundles in src/data (decoded); a plain array of Food objects also works
+const files = process.argv[2] ? [process.argv[2]] : ['foods.everyday.json', 'foods.extended.json'].map((f) => path.join(here, '..', 'src', 'data', f));
+function decodeBundle(b) {
+  return b.foods.map((r) => {
+    const n = {};
+    b.keys.forEach((k, i) => { n[k] = r[11][i]; });
+    const f = { id: r[0], name: r[1], category: r[2], tags: r[7], n, src: r[9].map(([db, ref]) => ({ db: typeof db === 'number' ? b.dbs[db] : db, ref })) };
+    if (r[12] != null) f.gi = r[12];
+    return f;
+  });
+}
+const foods = files.flatMap((file) => {
+  const j = JSON.parse(fs.readFileSync(file, 'utf8'));
+  return Array.isArray(j) ? j : decodeBundle(j);
+});
 
 const KEYS = new Set(['kcal','protein','carbs','fiber','sugar','fat','satFat','mufa','pufa','ala','epa','dha','la','vitA','vitC','vitD','vitE','vitK','b1','b2','b3','b5','b6','b7','folate','b12','choline','calcium','iron','magnesium','phosphorus','potassium','zinc','copper','manganese','selenium','iodine','sodium']);
 const CATS = new Set(['fruit','vegetable','legume','grain','nut_seed','dairy','egg','meat','poultry','fish','oil_fat','beverage','condiment','sweet','prepared','other']);
@@ -60,7 +73,7 @@ for (const f of foods) {
   }
 }
 
-console.log(`${foods.length} foods checked in ${file}`);
+console.log(`${foods.length} foods checked in ${files.map((f) => path.basename(f)).join(" + ")}`);
 if (warns.length) { console.log(`\nWARNINGS (${warns.length}):`); warns.forEach((w) => console.log('  - ' + w)); }
 if (errors.length) { console.log(`\nERRORS (${errors.length}):`); errors.forEach((e) => console.log('  - ' + e)); process.exit(1); }
 console.log('\nNo errors.');

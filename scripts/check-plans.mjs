@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 // Checks the sample meal plans against the Eighty framework (no dependencies).
-//   node scripts/check-plans.mjs [plans.json] [foods.json] [swapGroups.json]
+//   node scripts/check-plans.mjs [plans.json] [foods.json | bundle.json] [swapGroups.json]
+//   (default foods: src/data/foods.everyday.json + foods.extended.json, with src/data/legacyIdMap.json for old ids;
+//    a plain array of Food objects, e.g. pipeline/config/legacy/foods.json, is accepted too)
 // Per plan and day: kcal (vs band), protein, fiber, sat-fat % of kcal, omega-6:3 ratio, and % of an adult-male
 // RDA/AI for each micronutrient. Missing (null) food data counts as 0, so every figure is a lower bound for nutrients;
 // the omega-6:3 ratio is flagged "~" when a noticeable amount of fat comes from foods that have no linoleic-acid data.
@@ -11,11 +13,36 @@ import { fileURLToPath } from 'node:url';
 const here = path.dirname(fileURLToPath(import.meta.url));
 const dataDir = path.join(here, '..', 'src', 'data');
 const plansFile = process.argv[2] || path.join(dataDir, 'plans.json');
-const foodsFile = process.argv[3] || path.join(dataDir, 'foods.json');
+const foodsFile = process.argv[3];
 const groupsFile = process.argv[4] || path.join(dataDir, 'swapGroups.json');
 
 const plans = JSON.parse(fs.readFileSync(plansFile, 'utf8'));
-const foods = new Map(JSON.parse(fs.readFileSync(foodsFile, 'utf8')).map((f) => [f.id, f]));
+// compact bundle -> Food (see src/data/loadFoods.ts)
+function decodeBundle(b) {
+  return b.foods.map((r) => {
+    const n = {};
+    b.keys.forEach((k, i) => { if (r[11][i] != null) n[k] = r[11][i]; });
+    const f = { id: r[0], name: r[1], category: r[2], head: r[3], form: r[4], rank: r[5], n };
+    if (r[7].length) f.tags = r[7];
+    if (r[12] != null) f.gi = r[12];
+    return f;
+  });
+}
+function loadFoods() {
+  const list = [];
+  const files = foodsFile ? [foodsFile] : [path.join(dataDir, 'foods.everyday.json'), path.join(dataDir, 'foods.extended.json')];
+  for (const file of files) {
+    const j = JSON.parse(fs.readFileSync(file, 'utf8'));
+    list.push(...(Array.isArray(j) ? j : decodeBundle(j)));
+  }
+  const map = new Map(list.map((f) => [f.id, f]));
+  if (!foodsFile) {
+    const legacy = JSON.parse(fs.readFileSync(path.join(dataDir, 'legacyIdMap.json'), 'utf8'));
+    for (const [oldId, newId] of Object.entries(legacy)) if (map.has(newId) && !map.has(oldId)) map.set(oldId, map.get(newId));
+  }
+  return map;
+}
+const foods = loadFoods();
 const groups = new Map(JSON.parse(fs.readFileSync(groupsFile, 'utf8')).map((g) => [g.key, g]));
 
 // adult male RDA / AI

@@ -6,6 +6,7 @@ import { boardProgress, diff, ingredientsTotal, swapOptions, swapGrams, type Swa
 import { BOARD_KEYS, NUTRIENTS } from '@/engine/nutrients';
 import type { Ingredient } from '@/engine/types';
 import { FOOD_INDEX, SWAP_INDEX, food, foodSearch, swapCandidates } from '@/state/catalog';
+import { useExtendedFoods } from '@/state/useExtendedFoods';
 import { useDay } from '@/state/day';
 import { useLibraryMeal } from '@/state/library';
 import { today, useStore } from '@/state/store';
@@ -14,6 +15,7 @@ import { radius, space, useTheme } from '@/ui/theme';
 import { MicroChip, fmtPct } from '@/ui/viz';
 
 export default function MealScreen() {
+  useExtendedFoods(); // re-render (and re-search) once the extended food tier has loaded
   const c = useTheme();
   const { id, date: dateParam } = useLocalSearchParams<{ id: string; date?: string }>();
   const date = dateParam ?? today();

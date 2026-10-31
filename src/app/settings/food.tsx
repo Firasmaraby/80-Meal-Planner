@@ -3,6 +3,7 @@ import { useMemo, useState } from 'react';
 import { Pressable, Switch, TextInput, View } from 'react-native';
 
 import { food, foodSearch } from '@/state/catalog';
+import { useExtendedFoods } from '@/state/useExtendedFoods';
 import { useDay } from '@/state/day';
 import { today, useStore } from '@/state/store';
 import { Card, Chip, Icon, I, IconButton, Row, Screen, Section, Txt, tap } from '@/ui/primitives';
@@ -31,6 +32,7 @@ export default function FoodPreferences() {
   const setProfile = useStore((s) => s.setProfile);
   const day = useDay(today());
   const [query, setQuery] = useState('');
+  const extendedReady = useExtendedFoods();
 
   const { dislikes, sizeToMe } = profile;
   const toggleDislike = (d: string) =>
@@ -46,7 +48,7 @@ export default function FoodPreferences() {
             .filter((f) => !dislikes.includes(f.id) && !dislikes.includes(`cat:${f.category}`))
             .slice(0, 6)
         : [],
-    [q, dislikes],
+    [q, dislikes, extendedReady],
   );
 
   const swaps = day.sizing?.swaps ?? [];

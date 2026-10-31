@@ -7,6 +7,7 @@
  * person reaches 80% of their RDA/AI.
  */
 import { boardProgress, dayPlanTotal, getFood, logsGlycemicLoad, omegaRatio, satFatPctOfKcal, type FoodIndex } from './calc';
+import { goToSources } from './goToSources';
 import { COMPLETE_AT, NUTRIENTS } from './nutrients';
 import type { Food, MealPlan, NutrientKey, Profile } from './types';
 
@@ -193,14 +194,9 @@ export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []
 }
 
 /** Everyday foods richest in a nutrient per 100 kcal, as food_ids an AI can use directly. */
+/** Food ids to suggest when a day is short of `key`: the curated go-to whole foods (see goToSources.ts). */
 export function bestSources(key: NutrientKey, catalog: Food[], plantOnly = false, limit = 4): string[] {
-  return catalog
-    .filter((f) => !f.rare && (f.rank ?? 50) >= 50 && (f.n[key] ?? 0) > 0 && (f.n.kcal ?? 0) > 0)
-    .filter((f) => !plantOnly || !['meat', 'poultry', 'fish'].includes(f.category))
-    .filter((f) => !['sweet', 'condiment', 'beverage'].includes(f.category))
-    .sort((a, b) => (b.n[key]! / b.n.kcal!) - (a.n[key]! / a.n.kcal!))
-    .slice(0, limit)
-    .map((f) => f.id);
+  return goToSources(key, catalog, plantOnly, limit).map((f) => f.id);
 }
 
 export interface FixListInput {

@@ -10,7 +10,7 @@
 - **Progress**: weekly check-in, 30-day report card, optional supplements.
 - **Plan authoring**: Excel template and the AI Plan Builder kit (`templates/AI_Plan_Builder_Brief.md`, `templates/AI_Food_List.csv`), with an import report and an AI fix-list in Plan admin, plus `scripts/check-plan.mjs`.
 - **Backend**: Supabase schema with row-level security, versioned plans, offline-first sync.
-- **Food database pipeline**: `pipeline/`, ready for the 7-source database.
+- **Food library**: 3,000 everyday + about 15,400 extended foods from 9 cited databases (CNF first, then USDA), grouped search with common foods first, typo tolerance, baby food / supplements / duplicates hidden with reasons. Rebuilt by `pipeline/consumer/build.py`; values spot-checked against the sources.
 
 ## Needs a phone build to test (EAS development build)
 - Apple Health / Health Connect export (`src/lib/health.*.ts`). Device checklist is in the code comments and the PR notes.
@@ -18,8 +18,8 @@
 - Haptics, native tabs, form-sheet presentation.
 
 ## Blocked / next
-1. **Food database**: the 7-source workbook needs to reach the build environment, then `pipeline/run.py --inspect` → source mappings → full run → name review → replaces `src/data/foods.json` (the current 128 foods are a sample).
+1. **Food library gaps**: 260 everyday names have no food in the databases, mostly dishes and named varieties (jasmine rice, penne, skyr, dijon). Candidates are in `pipeline/out/unmatched_candidates.jsonl`; add them from a branded or recipe source, or leave them out.
 2. **Sign-in** (Apple, Google, email) and account deletion: needs the Supabase project and an Apple developer account.
-3. **Real meal plans**: authored with the AI kit; the 3 bundled plans are samples.
+3. **Real meal plans**: authored with the AI kit; the 3 bundled plans are samples. With real data they come up short on vitamin D (fish and dairy values in CNF are lower than the old sample data) and Lean Performance day 3 is at omega-6:3 5:1.
 4. **Store prep**: EAS project, bundle ids (`com.firasmaraby.eighty`), privacy policy, screenshots, TestFlight / Play internal testing.
 5. Later: barcode scanning, meal photos, family accounts, coach analytics, subscriptions.

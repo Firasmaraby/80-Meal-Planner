@@ -17,7 +17,11 @@ import type { Food, Ingredient, PlanDay, Profile, SwapGroup } from './types';
 export type Dislike = string;
 
 export const isDisliked = (food: Food | undefined, dislikes: Dislike[]) =>
-  !!food && (dislikes.includes(food.id) || dislikes.includes(`cat:${food.category}`));
+  !!food &&
+  (dislikes.includes(food.id) ||
+    dislikes.includes(`cat:${food.category}`) ||
+    // dislikes saved under an id from before the food library was rebuilt
+    !!food.legacyIds?.some((id) => dislikes.includes(id)));
 
 /**
  * How much each kind of food flexes when a day is sized up or down.

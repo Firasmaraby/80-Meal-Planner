@@ -162,14 +162,14 @@ describe('parsePlanText errors', () => {
   });
 
   it('flags an unknown food with suggestions, at the CSV line within its block', () => {
-    const text = MINI.replace(`mini-d1-l,${apple.id},,200,,`, 'mini-d1-l,not-a-real-id,yoghurt,200,,');
+    const text = MINI.replace(`mini-d1-l,${apple.id},,200,,`, 'mini-d1-l,not-a-real-id,yoghurt nonfat,200,,');
     const { plans, issues } = parsePlanText(text, foodResolver);
     expect(plans).toEqual([]); // the plan is held back
     const e = errorsOf({ issues });
     expect(e).toHaveLength(1);
     expect(e[0]).toMatchObject({ sheet: 'Ingredients', row: 4 }); // header, 2 breakfast rows, then this one
-    expect(e[0].message).toContain('yoghurt');
-    expect(e[0].suggestion).toContain('yogurt-greek-plain-nonfat');
+    expect(e[0].message).toContain('yoghurt nonfat');
+    expect(e[0].suggestion).toMatch(/yogurt-.*nonfat/);
   });
 
   it('flags bad grams on the right line, counting a multi-line field in an earlier block', () => {
@@ -212,7 +212,7 @@ describe('fix-list for a broken AI answer', () => {
     a.days[0].meals = a.days[0].meals.slice(0, 1); // plan A: a day with a single meal
     const unknown = b.days[1].meals[0].ingredients[0];
     unknown.foodId = 'made-up-food'; // plan B: a food that doesn't exist
-    const text = plansToText([a, b], { foodName: (id) => (id === 'made-up-food' ? 'yoghurt' : food(id)?.name) });
+    const text = plansToText([a, b], { foodName: (id) => (id === 'made-up-food' ? 'yoghurt nonfat' : food(id)?.name) });
 
     const { plans, issues } = parsePlanText(text, foodResolver);
     expect(plans.map((p) => p.id)).toEqual([a.id]);
@@ -220,7 +220,7 @@ describe('fix-list for a broken AI answer', () => {
     const fix = fixListForAI({ reports, importIssues: issues });
 
     expect(fix).toContain('FORMAT / FOOD ERRORS');
-    expect(fix).toMatch(/- Ingredients row \d+: food_name "yoghurt" has no confident match\./);
+    expect(fix).toMatch(/- Ingredients row \d+: food_name "yoghurt nonfat" has no confident match\./);
     expect(fix).toContain('Use: yogurt-');
     expect(fix).toMatch(new RegExp(`PLAN ${a.id} .*fix\\(es\\) needed`));
     expect(fix).toMatch(/Day 1: \d+ kcal is below the \d+–\d+ band\. Fix: Add about \d+ kcal on day 1/);

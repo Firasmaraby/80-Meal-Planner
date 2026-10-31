@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Builds the AI meal-plan kit from src/data/foods.json and AI_Plan_Builder_Brief.md.
+"""Builds the AI meal-plan kit from src/data/foods.everyday.json (the Everyday tier) and AI_Plan_Builder_Brief.md.
 
 Run:  python3 templates/build_ai_kit.py
 Run it after templates/build_template.py regenerates the template (that rebuild drops these sheets).
@@ -21,8 +21,9 @@ from openpyxl import load_workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 
 TEMPLATES = Path(__file__).resolve().parent
+sys.path.insert(0, str(TEMPLATES))
+from foods_bundle import load_everyday  # noqa: E402
 ROOT = TEMPLATES.parent
-FOODS_JSON = ROOT / "src" / "data" / "foods.json"
 BRIEF_MD = TEMPLATES / "AI_Plan_Builder_Brief.md"
 FOOD_CSV = TEMPLATES / "AI_Food_List.csv"
 TEMPLATE_XLSX = TEMPLATES / "MealPlan_Template.xlsx"
@@ -176,7 +177,7 @@ def save_in_place(wb, path):
 
 
 def main():
-    foods = json.loads(FOODS_JSON.read_text(encoding="utf-8"))
+    foods = load_everyday()
     brief_text = BRIEF_MD.read_text(encoding="utf-8")
     targets = parse_targets(brief_text)
     lines = brief_text.splitlines()

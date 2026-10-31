@@ -31,7 +31,8 @@ describe('plan sizing', () => {
     const down = personalizeDay(day, who, { ...opts, targetKcal: 1600 });
     const score = (m: Map<string, { foodId: string; grams: number }[]>) =>
       dayScore(boardProgress(ingredientsTotal([...m.values()].flat(), FOOD_INDEX), who)).done;
-    expect(score(down.meals)).toBe(score(base.meals));
+    // sizing down never loses a tile (it can gain one: grams are rounded, so a pinch of iodised salt may round up)
+    expect(score(down.meals)).toBeGreaterThanOrEqual(score(base.meals));
     // trims what it can from oils and grains, and says when that isn't enough
     expect(dayKcal(down.meals)).toBeLessThan(dayKcal(base.meals));
     expect(sizingAdvice(dayKcal(down.meals), 1600)).toEqual({ ok: false, suggest: 'lower' });
