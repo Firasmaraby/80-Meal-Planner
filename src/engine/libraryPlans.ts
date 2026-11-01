@@ -139,7 +139,7 @@ export function expandPlans(plans: CompactPlan[], recipes: LibraryRecipe[]): Mea
             if (!r) throw new Error(`Plan ${p.id} uses recipe "${m.recipe}", which is not in recipes.json.`);
             const k = (perSlot.get(m.slot) ?? 0) + 1;
             perSlot.set(m.slot, k);
-            return mealFrom(
+            const meal = mealFrom(
               {
                 id: r.id,
                 name: r.name,
@@ -157,6 +157,8 @@ export function expandPlans(plans: CompactPlan[], recipes: LibraryRecipe[]): Mea
               `${p.id}-d${d.day}-${m.slot}${k}`,
               m.leftover,
             );
+            if (m.heroes?.length) meal.heroes = m.heroes;
+            return meal;
           }),
         };
       }),

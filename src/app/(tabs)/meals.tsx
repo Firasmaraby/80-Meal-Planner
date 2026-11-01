@@ -1,12 +1,16 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Pressable, TextInput, View } from 'react-native';
 
+import { rowMinutes } from '@/engine/families';
 import { COMPLETE_AT, NUTRIENTS } from '@/engine/nutrients';
-import type { MealSlot, NutrientKey } from '@/engine/types';
+import { PLAN_STYLES } from '@/engine/planStyles';
+import { carbStyleFits } from '@/engine/carbStyle';
+import type { CarbStyle, MealSlot, NutrientKey, PlanStyle } from '@/engine/types';
 import { food } from '@/state/catalog';
 import { useDay } from '@/state/day';
 import { useMealLibrary, type LibraryMeal } from '@/state/library';
 import { today, useStore } from '@/state/store';
+import { CARB_NEEDS, CarbFilter } from '@/ui/carbParts';
 import {
   ChipRow,
   DIET_OPTIONS,
@@ -22,6 +26,7 @@ import {
   useWho,
 } from '@/ui/planParts';
 import { Button, Card, Chip, Icon, I, Row, Screen, Txt } from '@/ui/primitives';
+import { slotLabelOf } from '@/ui/recipeParts';
 import { radius, space, useTheme } from '@/ui/theme';
 import { MicroChip } from '@/ui/viz';
 
@@ -50,15 +55,26 @@ export default function Meals() {
   const [query, setQuery] = useState('');
   const [slot, setSlot] = useState<SlotFilter>('all');
   const [cuisine, setCuisine] = useState<string | null>(null);
+  const [style, setStyle] = useState<PlanStyle | null>(null);
+  const [showMore, setShowMore] = useState(false);
   const [diet, setDiet] = useState<string[]>(() => profile.diet);
+  const carbStyle: CarbStyle = profile.carbStyle ?? 'whole';
   const [sort, setSort] = useState<Sort>('today');
   const [saved, setSaved] = useState(false);
   const [limit, setLimit] = useState(PAGE);
 
   // a new search or filter starts back at the top of the list
-  useEffect(() => setLimit(PAGE), [query, slot, cuisine, diet, saved, sort]);
+  useEffect(() => setLimit(PAGE), [query, slot, cuisine, style, diet, saved, sort, showMore, carbStyle]);
 
   const cuisines = useMemo(() => [...new Set(library.map((m) => m.cuisine))].sort(), [library]);
+  // only the styles the library really has, in the order the app lists them
+  const styles = useMemo(() => {
+    const present = new Set(library.map((m) => m.style).filter((x): x is PlanStyle => !!x));
+    return (Object.keys(PLAN_STYLES) as PlanStyle[]).filter((k) => present.has(k));
+  }, [library]);
+  // library meals that need more rice, pasta or bread than the person chose; samples and uploads are never hidden
+  const over = useMemo(() => new Set(library.filter((m) => m.fromLibrary && !carbStyleFits(m.carbStyle, carbStyle)).map((m) => m.key)), [library, carbStyle]);
+  const overCarbs = (lm: LibraryMeal) => over.has(lm.key);
   const dietChips = useMemo(() => {
     const known: string[] = DIET_OPTIONS.map((d) => d.key);
     const extra = [...new Set(library.flatMap((m) => m.tags.map((t) => t.toLowerCase())))].filter((t) => !known.includes(t)).sort();
@@ -75,7 +91,7 @@ export default function Meals() {
   );
 
   const haystack = useMemo(
-    () => new Map(library.map((m) => [m.key, [m.meal.name, ...m.meal.ingredients.map((i) => food(i.foodId)?.name ?? '')].join(' ').toLowerCase()])),
+    () => new Map(library.map((m) => [m.key, [m.meal.name, ...(m.meal.tags ?? []), ...m.meal.ingredients.map((i) => food(i.foodId)?.name ?? '')].join(' ').toLowerCase()])),
     [library],
   );
 
@@ -90,14 +106,21 @@ export default function Meals() {
     [library, gaps],
   );
 
-  const shown = useMemo(() => {
+  // everything but the carb choice, so we can say how many it hides
+  const matching = useMemo(() => {
     const tokens = query.toLowerCase().split(/\s+/).filter(Boolean);
-    const list = ranked
+    return ranked
       .filter((r) => slot === 'all' || r.lm.meal.slot === slot)
       .filter((r) => !cuisine || r.lm.cuisine === cuisine)
+      .filter((r) => !style || r.lm.style === style)
       .filter((r) => dietMatches(r.lm, diet))
       .filter((r) => !saved || favoriteMeals.includes(r.lm.key))
       .filter((r) => tokens.every((t) => haystack.get(r.lm.key)?.includes(t)));
+  }, [ranked, slot, cuisine, style, diet, saved, favoriteMeals, query, haystack]);
+  const hiddenCount = useMemo(() => matching.filter((r) => over.has(r.lm.key)).length, [matching, over]);
+
+  const shown = useMemo(() => {
+    const list = matching.filter((r) => showMore || !over.has(r.lm.key));
     const kcal = (r: Ranked) => r.lm.totals.kcal ?? 0;
     const byName = (a: Ranked, b: Ranked) => a.lm.meal.name.localeCompare(b.lm.meal.name);
     return list.sort((a, b) => {
@@ -105,12 +128,13 @@ export default function Meals() {
       if (sort === 'light') return kcal(a) - kcal(b) || byName(a, b);
       return b.score - a.score || b.closes.length - a.closes.length || byName(a, b);
     });
-  }, [ranked, slot, cuisine, diet, saved, favoriteMeals, query, haystack, sort]);
+  }, [matching, showMore, over, sort]);
 
-  const filtered = slot !== 'all' || cuisine != null || diet.length > 0 || saved || query.trim().length > 0;
+  const filtered = slot !== 'all' || cuisine != null || style != null || diet.length > 0 || saved || query.trim().length > 0;
   const clear = () => {
     setSlot('all');
     setCuisine(null);
+    setStyle(null);
     setDiet([]);
     setSaved(false);
     setQuery('');
@@ -144,11 +168,26 @@ export default function Meals() {
           <Chip key={q} label={q} active={cuisine === q} onPress={() => setCuisine(cuisine === q ? null : q)} />
         ))}
       </ChipRow>
+      {styles.length > 0 && (
+        <ChipRow label="Style">
+          <Chip label="Any" accessibilityLabel="Any style" active={style == null} onPress={() => setStyle(null)} />
+          {styles.map((k) => (
+            <Chip
+              key={k}
+              label={PLAN_STYLES[k].label}
+              accessibilityLabel={`Style: ${PLAN_STYLES[k].label}. ${PLAN_STYLES[k].blurb}`}
+              active={style === k}
+              onPress={() => setStyle(style === k ? null : k)}
+            />
+          ))}
+        </ChipRow>
+      )}
       <ChipRow label="Diet">
         {dietChips.map((t) => (
           <Chip key={t} label={tagLabel(t)} active={diet.includes(t)} onPress={() => toggleDiet(t)} />
         ))}
       </ChipRow>
+      {(over.size > 0 || showMore) && <CarbFilter carbStyle={carbStyle} showMore={showMore} onChange={setShowMore} hiddenCount={hiddenCount} noun="meals" />}
 
       <View style={{ marginTop: space.lg }}>
         <Segmented<Sort>
@@ -184,7 +223,9 @@ export default function Meals() {
             {filtered && <Button small kind="secondary" label="Clear filters" onPress={clear} />}
           </Card>
         ) : (
-          visible.map((r) => <MealResult key={r.lm.key} r={r} showFit={sort === 'today'} saved={favoriteMeals.includes(r.lm.key)} />)
+          visible.map((r) => (
+            <MealResult key={r.lm.key} r={r} showFit={sort === 'today'} saved={favoriteMeals.includes(r.lm.key)} beyond={overCarbs(r.lm)} />
+          ))
         )}
         {shown.length > visible.length && (
           <Button kind="secondary" label={`Show ${Math.min(PAGE, shown.length - visible.length)} more`} onPress={() => setLimit((n) => n + PAGE)} />
@@ -237,12 +278,15 @@ function SearchField({ value, onChange }: { value: string; onChange: (v: string)
   );
 }
 
-function MealResult({ r, showFit, saved }: { r: Ranked; showFit: boolean; saved: boolean }) {
+function MealResult({ r, showFit, saved, beyond }: { r: Ranked; showFit: boolean; saved: boolean; beyond: boolean }) {
   const c = useTheme();
   const profile = useStore((s) => s.profile);
   const who = useWho(profile);
   const { lm } = r;
   const top = useMemo(() => topMicros(lm.totals, who), [lm.totals, who]);
+  const slotName = slotLabelOf(lm.meal.slot, lm.slotNames, SLOT_LABEL);
+  const minutes = rowMinutes(lm.meal);
+  const inPlans = lm.planCount > 1 ? ` · in ${lm.planCount} plans` : '';
 
   const fit =
     !showFit ? null : r.closes.length > 0 ? (
@@ -262,7 +306,7 @@ function MealResult({ r, showFit, saved }: { r: Ranked; showFit: boolean; saved:
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${SLOT_LABEL[lm.meal.slot]}: ${lm.meal.name}, from ${lm.planName}. ${Math.round(lm.totals.kcal ?? 0)} kilocalories${saved ? '. Saved' : ''}. Open meal`}
+      accessibilityLabel={`${slotName}: ${lm.meal.name}, from ${lm.planName}${lm.planCount > 1 ? `, in ${lm.planCount} plans` : ''}. ${Math.round(lm.totals.kcal ?? 0)} kilocalories${beyond ? `. Beyond your carb choice: ${CARB_NEEDS[lm.carbStyle]}` : ''}${saved ? '. Saved' : ''}. Open meal`}
       onPress={() => openLibraryMeal(lm.key)}
       style={({ pressed }) => ({ opacity: pressed ? 0.85 : 1, transform: [{ scale: pressed ? 0.99 : 1 }] })}>
       <Card>
@@ -271,8 +315,8 @@ function MealResult({ r, showFit, saved }: { r: Ranked; showFit: boolean; saved:
           <View style={{ flex: 1, gap: 2 }}>
             <Row style={{ justifyContent: 'space-between' }}>
               <Txt v="label" dim={2}>
-                {SLOT_LABEL[lm.meal.slot]}
-                {lm.meal.prepMinutes ? `  ·  ${lm.meal.prepMinutes} min` : ''}
+                {slotName}
+                {minutes ? `  ·  ${minutes} min` : ''}
               </Txt>
               {saved && <Icon name={I.bookmark} size={14} color={c.accent} />}
             </Row>
@@ -281,6 +325,7 @@ function MealResult({ r, showFit, saved }: { r: Ranked; showFit: boolean; saved:
             </Txt>
             <Txt v="caption" dim={2} numberOfLines={1}>
               from {lm.planName}
+              {inPlans}
             </Txt>
             <View style={{ marginTop: 2 }}>
               <MacroLine totals={lm.totals} />
@@ -293,6 +338,14 @@ function MealResult({ r, showFit, saved }: { r: Ranked; showFit: boolean; saved:
           ))}
         </Row>
         {fit && <View style={{ marginTop: space.sm }}>{fit}</View>}
+        {beyond && (
+          <Row gap={4} style={{ marginTop: space.sm }}>
+            <Icon name={I.info} size={12} color={c.warn} />
+            <Txt v="caption" color={c.warn} style={{ fontWeight: '700' }}>
+              {CARB_NEEDS[lm.carbStyle]}, beyond your carb choice
+            </Txt>
+          </Row>
+        )}
       </Card>
     </Pressable>
   );

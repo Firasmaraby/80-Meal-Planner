@@ -56,6 +56,7 @@ export const DEFAULT_PROFILE: Profile = {
   sizeToMe: true,
   dislikes: [],
   diet: [],
+  carbStyle: 'whole',
 };
 
 interface State {
@@ -151,6 +152,19 @@ const safeStorage = {
     }
   },
 };
+
+/** Bring a state saved by an older version up to the current shape. Exported for the tests. */
+export function migrateState(persisted: unknown, version: number): unknown {
+  const st = (persisted ?? {}) as Record<string, unknown> & { profile?: Record<string, unknown> };
+  if (version < 2 && st.profile) {
+    const { focus: _f, focusStartedAt: _s, lockedIn: _l, ...profile } = st.profile;
+    st.profile = profile;
+  }
+  if (version < 3) st.profile = { ...DEFAULT_PROFILE, ...(st.profile ?? {}) };
+  // v4: everyone starts on whole-food carbs, which they can change in Food preferences
+  if (version < 4) st.profile = { ...(st.profile ?? DEFAULT_PROFILE), carbStyle: st.profile?.carbStyle ?? DEFAULT_PROFILE.carbStyle };
+  return st;
+}
 
 export const useStore = create<State>()(
   persist(
@@ -265,18 +279,11 @@ export const useStore = create<State>()(
     {
       name: 'eighty-v1',
       storage: createJSONStorage(() => safeStorage),
-      version: 3,
+      version: 4,
       // v2: Focus 3 removed; meals can be added to / removed from a day
-      migrate: (persisted, version) => {
-        const st = (persisted ?? {}) as Record<string, unknown> & { profile?: Record<string, unknown> };
-        if (version < 2 && st.profile) {
-          const { focus: _f, focusStartedAt: _s, lockedIn: _l, ...profile } = st.profile;
-          st.profile = profile;
-        }
-        // v3: plan sizing + dislikes
-        if (version < 3) st.profile = { ...DEFAULT_PROFILE, ...(st.profile ?? {}) };
-        return st as unknown as State;
-      },
+      // v3: plan sizing + dislikes
+      // v4: carb style
+      migrate: (persisted, version) => migrateState(persisted, version) as unknown as State,
     },
   ),
 );

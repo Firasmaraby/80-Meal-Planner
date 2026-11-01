@@ -2,12 +2,14 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { Pressable, View, useWindowDimensions } from 'react-native';
 
-import { addInto, boardProgress, dayScore, ingredientsTotal } from '@/engine/calc';
+import { addInto, boardProgress, dayScore } from '@/engine/calc';
+import { SIZE_LABEL } from '@/engine/families';
+import { displayIngredientName } from '@/engine/ingredientName';
 import { BOARD_KEYS } from '@/engine/nutrients';
 import type { MealSlot, NutrientVector } from '@/engine/types';
-import { FOOD_INDEX, food } from '@/state/catalog';
+import { food } from '@/state/catalog';
 import { useAllPlans, useDay, type DayData } from '@/state/day';
-import { useLibraryMeal, type LibraryMeal } from '@/state/library';
+import { libraryMealFrom, useLibraryMeal, type LibraryMeal } from '@/state/library';
 import { addDays, today, useStore } from '@/state/store';
 import { GROUP_LABEL, groupColors, plateBreakdown } from '@/ui/MealArt';
 import { useOpenNutrient } from '@/ui/panels';
@@ -21,6 +23,7 @@ import {
   SLOT_ORDER,
   tagLabel,
 } from '@/ui/planParts';
+import { RecipeAbout, RecipeSteps, RecipeTip, TagChip, minutesLabel, slotLabelOf } from '@/ui/recipeParts';
 import { Button, Card, Chip, Icon, I, IconButton, Row, Screen, Section, Txt, tap, type IconName } from '@/ui/primitives';
 import { MAX_WIDTH, radius, space, useTheme } from '@/ui/theme';
 import { NutrientTile } from '@/ui/viz';
@@ -50,19 +53,7 @@ function useResolvedMeal(key?: string): LibraryMeal | undefined {
     for (let i = key.indexOf('~'); i >= 0; i = key.indexOf('~', i + 1)) {
       const plan = plans.find((p) => p.id === key.slice(0, i));
       const meal = plan?.days.flatMap((d) => d.meals).find((m) => m.id === key.slice(i + 1));
-      if (plan && meal) {
-        return {
-          key,
-          meal,
-          planId: plan.id,
-          planName: plan.name,
-          cuisine: plan.cuisine,
-          tags: plan.tags,
-          band: plan.band,
-          totals: ingredientsTotal(meal.ingredients, FOOD_INDEX),
-          alsoIn: [],
-        };
-      }
+      if (plan && meal) return { ...libraryMealFrom(plan, meal), key };
     }
     return undefined;
   }, [fromLibrary, key, plans]);
@@ -115,6 +106,9 @@ export default function LibraryMealScreen() {
   const progress = boardProgress(lm.totals, profile);
   const byKey = new Map(progress.map((p) => [p.key, p]));
   const hasNoData = progress.some((p) => p.amount == null);
+  const minutes = minutesLabel(meal);
+  // a recipe's own tags (mild, freezer-friendly...) when it has them, else the plan's diet tags
+  const tags = meal.tags?.length ? meal.tags.slice(0, 6) : lm.tags.slice(0, 4);
 
   const cols = 5;
   const inner = Math.min(width, MAX_WIDTH) - space.lg * 2;
@@ -156,13 +150,14 @@ export default function LibraryMealScreen() {
         </Card>
 
         <Txt v="label" dim={2} style={{ marginTop: space.lg }}>
-          {SLOT_LABEL[meal.slot]}
-          {meal.prepMinutes ? `  ·  ${meal.prepMinutes} min` : ''}
+          {slotLabelOf(meal.slot, lm.slotNames, SLOT_LABEL)}
+          {minutes ? `  ·  ${minutes}` : ''}
           {lm.cuisine ? `  ·  ${lm.cuisine}` : ''}
         </Txt>
         <Txt v="title" style={{ marginTop: 2 }}>
           {meal.name}
         </Txt>
+        <RecipeAbout about={meal.about} inspiredBy={meal.inspiredBy} />
         <Pressable
           accessibilityRole="link"
           accessibilityLabel={`From the ${lm.planName} plan. Open plan`}
@@ -176,24 +171,34 @@ export default function LibraryMealScreen() {
           </Txt>
           <Icon name={I.chevron} size={13} color={c.accent} />
         </Pressable>
-        {lm.alsoIn.length > 0 && (
+        {lm.planCount > 1 && (
           <Txt v="caption" dim={2} style={{ marginTop: 2 }}>
-            Also in {lm.alsoIn.join(', ')}
+            In {lm.planCount} plans{lm.alsoIn.length > 0 ? `: also ${lm.alsoIn.slice(0, 3).join(', ')}${lm.alsoIn.length > 3 ? ` and ${lm.alsoIn.length - 3} more` : ''}` : ''}
           </Txt>
         )}
-        {lm.tags.length > 0 && (
+        {tags.length > 0 && (
           <Row gap={6} style={{ flexWrap: 'wrap', marginTop: space.sm }}>
-            {lm.tags.slice(0, 4).map((t) => (
-              <Tag key={t} label={tagLabel(t)} />
+            {tags.map((t) => (
+              <TagChip key={t} label={tagLabel(t)} />
             ))}
           </Row>
         )}
 
-        {meal.instructions ? (
+        {meal.steps?.length ? (
+          <Section title="How to make it">
+            <RecipeSteps steps={meal.steps} />
+            <RecipeTip tip={meal.tip} />
+          </Section>
+        ) : meal.instructions ? (
           <Section title="How to make it">
             <Txt v="body" style={{ lineHeight: 23 }}>
               {meal.instructions}
             </Txt>
+            <RecipeTip tip={meal.tip} />
+          </Section>
+        ) : meal.tip ? (
+          <Section title="Make it your own">
+            <RecipeTip tip={meal.tip} />
           </Section>
         ) : null}
 
@@ -225,7 +230,7 @@ export default function LibraryMealScreen() {
                 gap={space.md}
                 style={{ justifyContent: 'space-between', paddingVertical: space.sm, borderTopWidth: i ? 1 : 0, borderTopColor: c.line }}>
                 <View style={{ flex: 1 }}>
-                  <Txt v="body">{food(ing.foodId)?.name ?? ing.foodId}</Txt>
+                  <Txt v="body">{displayIngredientName(food(ing.foodId), ing.foodId)}</Txt>
                   {ing.note ? (
                     <Txt v="caption" dim={2}>
                       {ing.note}
@@ -238,6 +243,11 @@ export default function LibraryMealScreen() {
               </Row>
             ))}
           </Card>
+          {meal.recipeId && lm.size ? (
+            <Txt v="caption" dim={2} style={{ lineHeight: 18 }}>
+              Amounts are for the {SIZE_LABEL[lm.size]} size of this plan.
+            </Txt>
+          ) : null}
         </Section>
       </Screen>
 
@@ -248,17 +258,6 @@ export default function LibraryMealScreen() {
           <Button label="Add to today" icon={I.add} onPress={() => setOpen(true)} />
         )}
       </BottomBar>
-    </View>
-  );
-}
-
-function Tag({ label }: { label: string }) {
-  const c = useTheme();
-  return (
-    <View style={{ paddingHorizontal: 9, height: 24, borderRadius: radius.pill, backgroundColor: c.surface2, justifyContent: 'center' }}>
-      <Txt v="caption" dim={1} style={{ fontSize: 12, fontWeight: '700' }}>
-        {label}
-      </Txt>
     </View>
   );
 }

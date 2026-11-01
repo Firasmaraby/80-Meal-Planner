@@ -121,7 +121,7 @@ export default function Today() {
           {day.sizing && <SizingNote sizing={day.sizing} />}
           <View>
             {day.meals.map((m) => (
-              <MealCard key={m.meal.id} m={m} date={date} planId={day.plan?.id} profile={day.profile} />
+              <MealCard key={m.meal.id} m={m} date={date} planId={day.plan?.id} profile={day.profile} slotNames={day.plan?.slotNames} />
             ))}
           </View>
           {day.skipped.map((m) => (

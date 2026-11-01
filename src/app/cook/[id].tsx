@@ -5,10 +5,13 @@ import { Pressable, ScrollView, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { roundGrams } from '@/engine/calc';
-import { findDurations, formatClock, householdMeasure, splitFoodName, splitSteps } from '@/lib/kitchen';
+import { recipeMinutes } from '@/engine/families';
+import { displayIngredientName } from '@/engine/ingredientName';
+import { findDurations, formatClock, householdMeasure, splitFoodName } from '@/lib/kitchen';
 import { cancelTimerNotification, scheduleTimerNotification } from '@/lib/reminders';
 import { food } from '@/state/catalog';
 import { useDay } from '@/state/day';
+import { useRecipeSteps } from '@/state/library';
 import { useKitchen } from '@/state/kitchenStore';
 import { today, useStore } from '@/state/store';
 import { Button, Icon, I, IconButton, Row, Screen, Txt, tap } from '@/ui/primitives';
@@ -32,7 +35,9 @@ export default function Cook() {
   const dm = day.meals.find((m) => m.meal.id === id);
   const household = useKitchen((s) => s.householdSize);
 
-  const steps = useMemo(() => splitSteps(dm?.meal.instructions), [dm?.meal.instructions]);
+  // library recipes carry their steps; older plans have one block of text that is split into sentences
+  const steps = useRecipeSteps(dm?.meal, dm?.source === 'added' ? dm.key : undefined);
+  const recipe = dm?.meal;
   const durations = useMemo(() => steps.map((s) => findDurations(s)), [steps]);
   const pages = steps.length + 2; // ingredients, each step, all done
   const [page, setPage] = useState(0);
@@ -163,7 +168,7 @@ export default function Cook() {
               {dm.meal.name}
             </Txt>
             <Txt v="body" dim={1} style={{ marginTop: 4, fontSize: 17, lineHeight: 24 }}>
-              {[dm.meal.prepMinutes ? `${dm.meal.prepMinutes} min` : null, household > 1 ? `for ${household} people` : null].filter(Boolean).join(' · ') ||
+              {[recipe && recipeMinutes(recipe) && !dm.meal.leftover ? `${recipeMinutes(recipe)} min` : null, household > 1 ? `for ${household} people` : null].filter(Boolean).join(' · ') ||
                 'Tick things off as you gather them.'}
             </Txt>
             <View style={{ marginTop: space.lg }}>
@@ -171,7 +176,7 @@ export default function Cook() {
                 const f = food(ing.foodId);
                 const grams = roundGrams(ing.grams * household);
                 const on = ticked.has(i);
-                const { name, detail } = splitFoodName(f, ing.foodId);
+                const { name, detail } = splitFoodName(f && { ...f, name: displayIngredientName(f, ing.foodId) }, ing.foodId);
                 const hint = householdMeasure(f, grams);
                 return (
                   <Pressable

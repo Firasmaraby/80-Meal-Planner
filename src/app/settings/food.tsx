@@ -6,6 +6,7 @@ import { food, foodSearch } from '@/state/catalog';
 import { useExtendedFoods } from '@/state/useExtendedFoods';
 import { useDay } from '@/state/day';
 import { today, useStore } from '@/state/store';
+import { CARB_QUESTION, CarbChoices } from '@/ui/carbParts';
 import { Card, Chip, Icon, I, IconButton, Row, Screen, Section, Txt, tap } from '@/ui/primitives';
 import { radius, space, useTheme } from '@/ui/theme';
 
@@ -35,6 +36,7 @@ export default function FoodPreferences() {
   const extendedReady = useExtendedFoods();
 
   const { dislikes, sizeToMe } = profile;
+  const carbStyle = profile.carbStyle ?? 'whole';
   const toggleDislike = (d: string) =>
     setProfile({ dislikes: dislikes.includes(d) ? dislikes.filter((x) => x !== d) : [...dislikes, d] });
 
@@ -87,6 +89,13 @@ export default function FoodPreferences() {
           />
         </Row>
       </Card>
+
+      <Section title="Bread, rice and pasta">
+        <Txt v="body" dim={1}>
+          {CARB_QUESTION} Plans that need more than you pick are tucked away, and the Plans tab can still show them.
+        </Txt>
+        <CarbChoices value={carbStyle} onChange={(v) => setProfile({ carbStyle: v })} />
+      </Section>
 
       <Section title="Foods I don’t eat">
         <Row gap={6} style={{ flexWrap: 'wrap' }}>

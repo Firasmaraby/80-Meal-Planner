@@ -4,20 +4,26 @@ import { Pressable, TextInput, View, useWindowDimensions } from 'react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 
 import { BAND_STEP, bandFor, bandLabel, calorieTarget, macroTargets } from '@/engine/calc';
-import type { Activity, Goal, LifeStage, MealPlan, NutrientKey, Profile, Sex } from '@/engine/types';
-import { useAllPlans } from '@/state/day';
+import { familyVisible, pickSize } from '@/engine/families';
+import { PLAN_STYLES } from '@/engine/planStyles';
+import type { Activity, CarbStyle, Goal, LifeStage, MealPlan, NutrientKey, Profile, Sex } from '@/engine/types';
+import { FOOD_INDEX } from '@/state/catalog';
+import { useFamilies } from '@/state/families';
 import { useStore } from '@/state/store';
-import { BAR_CLEARANCE, BottomBar, DIET_OPTIONS, Fingerprint, Pill, bandKey, dietMatches, planStats, tagLabel, useWho } from '@/ui/planParts';
+import { CARB_QUESTION, CarbChoices } from '@/ui/carbParts';
+import { Choice } from '@/ui/Choice';
+import { BAR_CLEARANCE, BottomBar, DIET_OPTIONS, Fingerprint, Pill, dietMatches, planStats, tagLabel, useWho } from '@/ui/planParts';
 import { Button, Card, Chip, Icon, I, Row, Screen, Txt, tap, type IconName } from '@/ui/primitives';
 import { MAX_WIDTH, font, radius, space, useTheme } from '@/ui/theme';
 import { NutrientTile } from '@/ui/viz';
 
-type StepId = 'welcome' | 'you' | 'activity' | 'diet' | 'numbers';
+type StepId = 'welcome' | 'you' | 'activity' | 'diet' | 'carbs' | 'numbers';
 const STEPS: { id: StepId; label: string }[] = [
   { id: 'welcome', label: 'Welcome' },
   { id: 'you', label: 'About you' },
   { id: 'activity', label: 'Activity' },
   { id: 'diet', label: 'Diet' },
+  { id: 'carbs', label: 'Carbs' },
   { id: 'numbers', label: 'Your numbers' },
 ];
 
@@ -36,6 +42,7 @@ const GOALS: { key: Goal; label: string; desc: string }[] = [
 
 const KG_PER_LB = 0.45359237;
 const CM_PER_IN = 2.54;
+const MAX_SUGGESTED = 6;
 const clamp = (n: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, n));
 const round1 = (n: number) => Math.round(n * 10) / 10;
 
@@ -55,6 +62,7 @@ export default function Onboarding() {
   const [activity, setActivity] = useState<Activity>(stored.activity);
   const [goal, setGoal] = useState<Goal>(stored.goal);
   const [diet, setDiet] = useState<string[]>(stored.diet);
+  const [carbStyle, setCarbStyle] = useState<CarbStyle>(stored.carbStyle ?? 'whole');
 
   const id = STEPS[step].id;
   const last = step === STEPS.length - 1;
@@ -63,6 +71,7 @@ export default function Onboarding() {
     if (id === 'you') setProfile({ sex, age, heightCm, weightKg, lifeStage: sex === 'female' ? lifeStage : 'none' });
     if (id === 'activity') setProfile({ activity, goal });
     if (id === 'diet') setProfile({ diet });
+    if (id === 'carbs') setProfile({ carbStyle });
   };
   const next = () => {
     commit();
@@ -104,6 +113,7 @@ export default function Onboarding() {
           )}
           {id === 'activity' && <ActivityGoal {...{ activity, setActivity, goal, setGoal }} pregnantOrNursing={sex === 'female' && lifeStage !== 'none'} />}
           {id === 'diet' && <Diet diet={diet} setDiet={setDiet} />}
+          {id === 'carbs' && <Carbs value={carbStyle} onChange={setCarbStyle} />}
           {id === 'numbers' && <Numbers onStart={finish} />}
         </Animated.View>
       </Screen>
@@ -185,54 +195,6 @@ function Heading({ title, sub }: { title: string; sub?: string }) {
         </Txt>
       ) : null}
     </View>
-  );
-}
-
-/** A big selectable card. Ink border = chosen. */
-function Choice({ label, desc, selected, onPress }: { label: string; desc?: string; selected: boolean; onPress: () => void }) {
-  const c = useTheme();
-  return (
-    <Pressable
-      accessibilityRole="radio"
-      accessibilityState={{ selected }}
-      accessibilityLabel={desc ? `${label}. ${desc}` : label}
-      onPress={() => {
-        tap('select');
-        onPress();
-      }}
-      style={({ pressed }) => ({
-        flexDirection: 'row',
-        alignItems: 'center',
-        gap: space.md,
-        padding: space.lg,
-        borderRadius: radius.md,
-        borderWidth: 2,
-        borderColor: selected ? c.ink : c.line,
-        backgroundColor: c.surface,
-        opacity: pressed ? 0.85 : 1,
-      })}>
-      <View style={{ flex: 1 }}>
-        <Txt v="h3">{label}</Txt>
-        {desc ? (
-          <Txt v="caption" dim={1} style={{ marginTop: 2 }}>
-            {desc}
-          </Txt>
-        ) : null}
-      </View>
-      <View
-        style={{
-          width: 22,
-          height: 22,
-          borderRadius: 11,
-          borderWidth: 2,
-          borderColor: selected ? c.ink : c.ink3,
-          backgroundColor: selected ? c.ink : 'transparent',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}>
-        {selected && <Icon name={I.check} size={11} color={c.bg} />}
-      </View>
-    </Pressable>
   );
 }
 
@@ -456,28 +418,43 @@ function Diet({ diet, setDiet }: { diet: string[]; setDiet: (d: string[]) => voi
   );
 }
 
-// ── 5 · Your numbers ───────────────────────────────────────────────────────
+// ── 5 · Carbs ──────────────────────────────────────────────────────────────
+
+function Carbs({ value, onChange }: { value: CarbStyle; onChange: (v: CarbStyle) => void }) {
+  return (
+    <View>
+      <Heading title={CARB_QUESTION} sub="We use this to pick plans that suit you. You can change it any time in You, Food preferences." />
+      <CarbChoices value={value} onChange={onChange} />
+    </View>
+  );
+}
+
+// ── 6 · Your numbers ───────────────────────────────────────────────────────
 
 function Numbers({ onStart }: { onStart: (plan: MealPlan) => void }) {
   const c = useTheme();
   const profile: Profile = useStore((s) => s.profile);
-  const plans = useAllPlans();
+  const families = useFamilies();
   const who = useWho(profile);
 
   const kcal = useMemo(() => calorieTarget(profile), [profile]);
   const band = useMemo(() => bandFor(kcal), [kcal]);
   const protein = useMemo(() => macroTargets(profile, kcal).protein, [profile, kcal]);
+  const carbStyle = profile.carbStyle ?? 'whole';
 
+  // one card per family, at the size that fits: the families near your band, then your diet, within your carb choice
   const { list, exact } = useMemo(() => {
-    const dist = (p: MealPlan) => Math.abs(p.band.min - band.min);
-    const byBand = (a: MealPlan, b: MealPlan) => dist(a) - dist(b) || a.name.localeCompare(b.name);
-    const near = plans.filter((p) => dist(p) <= BAND_STEP).sort(byBand);
-    const pool = near.length ? near : [...plans].sort(byBand).slice(0, 3);
-    const matching = pool.filter((p) => dietMatches(p, profile.diet));
-    return { list: matching.length || !profile.diet.length ? matching : pool, exact: matching.length > 0 || !profile.diet.length };
-  }, [plans, band.min, profile.diet]);
+    const all = families.filter((f) => familyVisible(f, carbStyle, FOOD_INDEX)).map((family) => ({ family, pick: pickSize(family, kcal) }));
+    type Entry = (typeof all)[number];
+    const byBand = (a: Entry, b: Entry) => a.pick.gap - b.pick.gap || a.family.name.localeCompare(b.family.name);
+    const near = all.filter((e) => e.pick.gap <= BAND_STEP).sort(byBand);
+    const pool = near.length ? near : [...all].sort(byBand).slice(0, 3);
+    const matching = pool.filter((e) => dietMatches(e.family, profile.diet));
+    const chosen = matching.length || !profile.diet.length ? matching : pool;
+    return { list: chosen.slice(0, MAX_SUGGESTED), exact: matching.length > 0 || !profile.diet.length };
+  }, [families, kcal, carbStyle, profile.diet]);
 
-  const stats = useMemo(() => new Map(list.map((p) => [p.id, planStats(p, who)])), [list, who]);
+  const stats = useMemo(() => new Map(list.map((e) => [e.pick.plan.id, planStats(e.pick.plan, who)])), [list, who]);
 
   return (
     <View>
@@ -531,23 +508,30 @@ function Numbers({ onStart }: { onStart: (plan: MealPlan) => void }) {
         </Card>
       ) : (
         <View style={{ gap: space.md }}>
-          {list.map((p) => {
+          {list.map(({ family, pick }) => {
+            const p = pick.plan;
             const st = stats.get(p.id)!;
-            const same = bandKey(p.band) === bandKey(band);
+            const same = pick.covered;
             return (
-              <Card key={p.id}>
+              <Card key={family.id}>
                 <Txt v="label" dim={2}>
-                  {p.cuisine}
+                  {family.cuisine}
                 </Txt>
                 <Txt v="h2" style={{ marginTop: 2 }}>
-                  {p.name}
+                  {family.name}
                 </Txt>
                 <Row gap={6} style={{ flexWrap: 'wrap', marginTop: space.sm }}>
                   <Pill label={`${bandLabel(p.band)} kcal`} color={same ? c.bg : c.ink2} bg={same ? c.ink : c.surface2} />
-                  {p.tags.slice(0, 3).map((t) => (
+                  {family.style ? <Pill label={PLAN_STYLES[family.style].label} /> : null}
+                  {family.tags.slice(0, family.style ? 2 : 3).map((t) => (
                     <Pill key={t} label={tagLabel(t)} />
                   ))}
                 </Row>
+                {family.summary && family.isLibrary ? (
+                  <Txt v="caption" dim={1} style={{ marginTop: space.sm, lineHeight: 18 }} numberOfLines={3}>
+                    {family.summary}
+                  </Txt>
+                ) : null}
                 <Row gap={space.lg} style={{ marginTop: space.md }}>
                   <Fingerprint progress={st.progress} size={11} gap={3} />
                   <View style={{ flex: 1 }}>

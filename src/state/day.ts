@@ -15,7 +15,7 @@ import type { Ingredient, Meal, MealPlan, MealSlot, NutrientVector, PlanDay } fr
 
 import { personalizeDay, sizingAdvice } from '@/engine/personalize';
 
-import { BUNDLED_PLANS, FOODS, FOOD_INDEX, SWAP_GROUPS, isFattyFish } from './catalog';
+import { BUNDLED_PLANS, FOODS, FOOD_INDEX, LIBRARY_PLANS, SWAP_GROUPS, isFattyFish } from './catalog';
 import { addDays, daysBetween, useStore, type Log } from './store';
 import { foldInSupplements, plannedIds, supplementTotal, takenIds, useWellness } from './wellnessStore';
 
@@ -25,7 +25,7 @@ export function useAllPlans(): MealPlan[] {
   return useMemo(() => {
     // newest version per id wins; remote > local > bundled on ties
     const byId = new Map<string, MealPlan>();
-    for (const p of [...BUNDLED_PLANS, ...local, ...remote]) {
+    for (const p of [...BUNDLED_PLANS, ...LIBRARY_PLANS, ...local, ...remote]) {
       const cur = byId.get(p.id);
       if (!cur || p.version >= cur.version) byId.set(p.id, p);
     }
@@ -40,7 +40,7 @@ export function usePlan(id?: string, version?: number): MealPlan | undefined {
   return useMemo(() => {
     if (!id) return undefined;
     // an enrollment pins its version, so users aren't disrupted by a new upload
-    const pinned = [...remote, ...local, ...BUNDLED_PLANS].find((p) => p.id === id && p.version === version);
+    const pinned = [...remote, ...local, ...LIBRARY_PLANS, ...BUNDLED_PLANS].find((p) => p.id === id && p.version === version);
     return pinned ?? all.find((p) => p.id === id);
   }, [id, version, all, local, remote]);
 }

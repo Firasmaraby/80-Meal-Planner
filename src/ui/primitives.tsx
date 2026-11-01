@@ -234,18 +234,22 @@ export function Chip({
   onPress,
   color,
   style,
+  accessibilityLabel,
 }: {
   label: string;
   active?: boolean;
   onPress?: () => void;
   color?: string;
   style?: StyleProp<ViewStyle>;
+  /** spoken name when the visible label alone is not enough ("Style: Vegan") */
+  accessibilityLabel?: string;
 }) {
   const c = useTheme();
   const tint = color ?? c.ink;
   return (
     <Pressable
       accessibilityRole="button"
+      accessibilityLabel={accessibilityLabel}
       accessibilityState={{ selected: !!active }}
       onPress={() => {
         tap('select');

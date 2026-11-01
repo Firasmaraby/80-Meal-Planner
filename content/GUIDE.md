@@ -205,6 +205,7 @@ already met, so the gate there is mostly protein, saturated fat and omega balanc
 }
 ```
 
+- **Ingredient amounts are what you buy and measure, before cooking.** If the recipe cooks it, pick the *raw* or *dry* entry and its raw or dry weight: "Chicken thigh, raw", "Barley, pearled, raw", "Shrimp, raw", "Potato, raw". Use cooked entries only for things bought ready to eat: canned beans, lentils and chickpeas, canned fish, a boiled egg made ahead, leftover cooked grain. The steps then always agree with the list.
 - **Ingredient amounts** are grams for **one serving at Standard size**. The compiler sizes the other sizes with the app's own engine, then applies the `adjust` list.
 - **Foods** come only from `templates/AI_Food_List.csv`, the everyday list. Copy the `food_id` exactly. If a food you need isn't there, pick the nearest one and mention it in your hand-back.
 - **Snacks** that are simply a food (an apple, a handful of almonds) are still small recipes with one ingredient, a name and a one-line `about`.

@@ -2,7 +2,8 @@ import { router } from 'expo-router';
 import { Pressable, StyleSheet, View } from 'react-native';
 
 import { boardProgress } from '@/engine/calc';
-import type { Profile } from '@/engine/types';
+import { rowMinutes } from '@/engine/families';
+import type { MealPlan, Profile } from '@/engine/types';
 import type { DayMeal } from '@/state/day';
 import { useStore } from '@/state/store';
 
@@ -13,7 +14,20 @@ import { MicroChip } from './viz';
 
 const SLOT_LABEL = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', snack: 'Snack' } as const;
 
-export function MealCard({ m, date, planId, profile }: { m: DayMeal; date: string; planId?: string; profile: Profile }) {
+export function MealCard({
+  m,
+  date,
+  planId,
+  profile,
+  slotNames,
+}: {
+  m: DayMeal;
+  date: string;
+  planId?: string;
+  profile: Profile;
+  /** the plan's own names for its slots (Ramadan: Suhoor and Iftar) */
+  slotNames?: MealPlan['slotNames'];
+}) {
   const c = useTheme();
   const logMeal = useStore((s) => s.logMeal);
   const unlogMeal = useStore((s) => s.unlogMeal);
@@ -22,6 +36,8 @@ export function MealCard({ m, date, planId, profile }: { m: DayMeal; date: strin
     .filter((x) => x.amount != null)
     .sort((a, b) => b.pct - a.pct)
     .slice(0, 3);
+  const slotName = m.source === 'plan' ? (slotNames?.[m.meal.slot] ?? SLOT_LABEL[m.meal.slot]) : SLOT_LABEL[m.meal.slot];
+  const minutes = rowMinutes(m.meal);
   const kcal = Math.round(m.totals.kcal ?? 0);
   const protein = Math.round(m.totals.protein ?? 0);
 
@@ -37,7 +53,7 @@ export function MealCard({ m, date, planId, profile }: { m: DayMeal; date: strin
 
       <Pressable
         accessibilityRole="button"
-        accessibilityLabel={`${SLOT_LABEL[m.meal.slot]}: ${m.meal.name}. Open details and swaps`}
+        accessibilityLabel={`${slotName}: ${m.meal.name}${m.meal.leftover ? '. Leftovers' : ''}. Open details and swaps`}
         onPress={() => router.push({ pathname: '/meal/[id]', params: { id: m.meal.id, date } })}
         style={({ pressed }) => [
           styles.card,
@@ -45,8 +61,8 @@ export function MealCard({ m, date, planId, profile }: { m: DayMeal; date: strin
         ]}>
         <Row style={{ justifyContent: 'space-between' }}>
           <Txt v="label" dim={2}>
-            {SLOT_LABEL[m.meal.slot]}
-            {m.meal.prepMinutes ? `  ·  ${m.meal.prepMinutes} min` : ''}
+            {slotName}
+            {m.meal.leftover ? '  ·  Leftovers' : minutes ? `  ·  ${minutes} min` : ''}
           </Txt>
           {m.source === 'added' ? (
             <Row gap={4}>

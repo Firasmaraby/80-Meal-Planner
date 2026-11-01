@@ -3,6 +3,7 @@ import { useMemo, useState } from 'react';
 import { Pressable, TextInput, View } from 'react-native';
 
 import { boardProgress, diff, ingredientsTotal, swapOptions, swapGrams, type SwapMode } from '@/engine/calc';
+import { displayIngredientName } from '@/engine/ingredientName';
 import { BOARD_KEYS, NUTRIENTS } from '@/engine/nutrients';
 import type { Ingredient } from '@/engine/types';
 import { FOOD_INDEX, SWAP_INDEX, food, foodSearch, swapCandidates } from '@/state/catalog';
@@ -10,7 +11,9 @@ import { useExtendedFoods } from '@/state/useExtendedFoods';
 import { useDay } from '@/state/day';
 import { useLibraryMeal } from '@/state/library';
 import { today, useStore } from '@/state/store';
+import { SLOT_LABEL, tagLabel } from '@/ui/planParts';
 import { Button, Card, Chip, Icon, I, IconButton, Row, Screen, Section, Stepper, Txt, tap } from '@/ui/primitives';
+import { RecipeAbout, RecipeSteps, RecipeTip, TagChip, minutesLabel, slotLabelOf } from '@/ui/recipeParts';
 import { radius, space, useTheme } from '@/ui/theme';
 import { MicroChip, fmtPct } from '@/ui/viz';
 
@@ -49,6 +52,11 @@ export default function MealScreen() {
   }
   const planId = dm.source === 'plan' ? day.plan?.id : undefined;
   const isAdded = dm.source === 'added';
+  // a meal added from the library carries only its ingredients: the recipe's words come from the library copy
+  const recipe = dm.meal.about || dm.meal.steps?.length ? dm.meal : (libraryMeal?.meal ?? dm.meal);
+  const richRecipe = !!(recipe.about || recipe.steps?.length);
+  const minutes = recipe.leftover && !isAdded ? undefined : minutesLabel(recipe);
+  const slotNames = isAdded ? libraryMeal?.slotNames : day.plan?.slotNames;
 
   const top = boardProgress(now, day.profile)
     .filter((x) => x.amount != null)
@@ -82,14 +90,25 @@ export default function MealScreen() {
       header={
         <Row style={{ justifyContent: 'space-between', marginBottom: space.md }}>
           <Txt v="label" dim={1}>
-            {dm.meal.slot}
-            {dm.meal.prepMinutes ? ` · ${dm.meal.prepMinutes} min` : ''}
+            {slotLabelOf(dm.meal.slot, slotNames, SLOT_LABEL)}
+            {minutes ? ` · ${minutes}` : ''}
           </Txt>
           <IconButton icon={I.close} label="Close" onPress={() => router.back()} />
         </Row>
       }>
       <Txt v="title">{dm.meal.name}</Txt>
-      {dm.meal.instructions ? (
+      {richRecipe ? (
+        <>
+          <RecipeAbout about={recipe.about} inspiredBy={recipe.inspiredBy} />
+          {recipe.tags?.length ? (
+            <Row gap={6} style={{ flexWrap: 'wrap', marginTop: space.sm }}>
+              {recipe.tags.slice(0, 6).map((t) => (
+                <TagChip key={t} label={tagLabel(t)} />
+              ))}
+            </Row>
+          ) : null}
+        </>
+      ) : dm.meal.instructions ? (
         <Txt v="body" dim={1} style={{ marginTop: space.sm }}>
           {dm.meal.instructions}
         </Txt>
@@ -144,7 +163,7 @@ export default function MealScreen() {
                 <View style={{ padding: space.lg, gap: space.sm }}>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <View style={{ flex: 1 }}>
-                      <Txt v="bodyStrong">{f?.name ?? ing.foodId}</Txt>
+                      <Txt v="bodyStrong">{displayIngredientName(f, ing.foodId)}</Txt>
                       {original[i] && original[i].foodId !== ing.foodId && (
                         <Txt v="caption" color={c.vitamin}>
                           swapped from {origFood?.name.split(',')[0] ?? original[i].foodId}
@@ -236,6 +255,17 @@ export default function MealScreen() {
           })}
         </Card>
       </Section>
+
+      {recipe.steps?.length ? (
+        <Section title="How to make it">
+          <RecipeSteps steps={recipe.steps} />
+          <RecipeTip tip={recipe.tip} />
+        </Section>
+      ) : recipe.tip ? (
+        <Section title="Make it your own">
+          <RecipeTip tip={recipe.tip} />
+        </Section>
+      ) : null}
 
       <View style={{ gap: space.sm, marginTop: space.xl }}>
         {changed ? (

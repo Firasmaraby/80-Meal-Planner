@@ -142,6 +142,8 @@ export interface Meal {
   servings?: number;
   /** this slot eats the previous night's second portion */
   leftover?: boolean;
+  /** the board nutrients this meal is best at, as a fraction of the adult woman's RDA (1.4 = 140%), strongest first */
+  heroes?: { key: NutrientKey; pct: number }[];
 }
 
 export interface PlanDay {

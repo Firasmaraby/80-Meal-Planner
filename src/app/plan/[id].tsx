@@ -2,11 +2,15 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, View, useWindowDimensions } from 'react-native';
 
-import { boardProgress, dayPlanTotal, logsGlycemicLoad, macroTargets, mealTotal, pillars, bandLabel } from '@/engine/calc';
+import { boardProgress, calorieTarget, dayPlanTotal, logsGlycemicLoad, macroTargets, mealTotal, pillars, bandLabel } from '@/engine/calc';
+import { SIZE_LABEL, pickSize, rowMinutes } from '@/engine/families';
+import { displayIngredientName } from '@/engine/ingredientName';
 import { BOARD_KEYS } from '@/engine/nutrients';
-import type { Meal, MealSlot } from '@/engine/types';
+import { PLAN_STYLES } from '@/engine/planStyles';
+import type { Meal, MealPlan } from '@/engine/types';
 import { FOOD_INDEX, food } from '@/state/catalog';
 import { usePlan } from '@/state/day';
+import { useFamilyOf } from '@/state/families';
 import { libraryKey } from '@/state/library';
 import { useStore } from '@/state/store';
 import { useOpenNutrient } from '@/ui/panels';
@@ -29,10 +33,13 @@ import {
   topMicros,
   useWho,
 } from '@/ui/planParts';
+import { HeroLine, RecipeSteps, slotLabelOf } from '@/ui/recipeParts';
 import { MAX_WIDTH, radius, space, useTheme } from '@/ui/theme';
 import { MicroChip, NutrientTile } from '@/ui/viz';
 
 type Mode = 'day' | 'all';
+
+const bandWords = (b: { min: number; max: number }) => `${b.min.toLocaleString()} to ${b.max.toLocaleString()}`;
 
 const goBack = () => (router.canGoBack() ? router.back() : router.replace('/plans'));
 
@@ -47,6 +54,7 @@ export default function PlanDetail() {
   const plan = usePlan(id, enrollment?.planId === id ? enrollment.version : undefined);
   const openNutrient = useOpenNutrient();
   const who = useWho(profile);
+  const family = useFamilyOf(plan);
 
   const [mode, setMode] = useState<Mode>('day');
   const [sel, setSel] = useState(0);
@@ -57,6 +65,9 @@ export default function PlanDetail() {
   const day = days[idx];
 
   const avg = useMemo(() => (plan ? planStats(plan, who) : undefined), [plan, who]);
+  // the size that fits the person, so the switcher can point it out
+  const target = calorieTarget(profile);
+  const fits = useMemo(() => (family && family.sizes.length > 1 ? pickSize(family, target) : undefined), [family, target]);
 
   const view = useMemo(() => {
     if (!plan || !day) return undefined;
@@ -84,6 +95,18 @@ export default function PlanDetail() {
     );
   }
 
+  const sizeNote = fits
+    ? [
+        avg ? `About ${(Math.round((avg.avg.kcal ?? 0) / 50) * 50).toLocaleString()} kcal a day, built for ${bandWords(plan.band)} kcal.` : '',
+        fits.plan.id === plan.id
+          ? fits.covered
+            ? 'This is the size for you.'
+            : 'This is the closest size to you.'
+          : `The ${fits.plan.size ? SIZE_LABEL[fits.plan.size] : ''} size fits you best.`,
+      ]
+        .filter(Boolean)
+        .join(' ')
+    : '';
   const enrolledHere = enrollment?.planId === plan.id;
   const enrolledElsewhere = !!enrollment && !enrolledHere;
   const start = () => {
@@ -111,22 +134,56 @@ export default function PlanDetail() {
       <Screen bottomInset={BAR_CLEARANCE} header={<IconButton icon={I.back} label="Back" onPress={goBack} />}>
         <Txt v="label" dim={2} style={{ marginTop: space.lg }}>
           {plan.cuisine}
+          {plan.regions?.length ? `  ·  ${plan.regions.join(', ')}` : ''}
         </Txt>
         <Txt v="title" style={{ marginTop: 2 }}>
-          {plan.name}
+          {family?.name ?? plan.name}
         </Txt>
-        {plan.description ? (
+        {plan.summary ?? plan.description ? (
           <Txt v="body" dim={1} style={{ marginTop: space.sm }}>
-            {plan.description}
+            {plan.summary ?? plan.description}
           </Txt>
         ) : null}
         <Row gap={6} style={{ flexWrap: 'wrap', marginTop: space.md }}>
-          <Pill label={`${bandLabel(plan.band)} kcal`} color={c.bg} bg={c.ink} />
+          {plan.style ? <Pill label={PLAN_STYLES[plan.style].label} color={c.bg} bg={c.ink} /> : null}
+          <Pill label={`${bandLabel(plan.band)} kcal`} color={plan.style ? undefined : c.bg} bg={plan.style ? undefined : c.ink} />
           <Pill label={`${days.length} ${days.length === 1 ? 'day' : 'days'}`} />
           {plan.tags.map((t) => (
             <Pill key={t} label={tagLabel(t)} />
           ))}
         </Row>
+
+        {family && family.sizes.length > 1 && fits ? (
+          <View style={{ marginTop: space.lg, gap: space.sm }}>
+            <Txt v="label" dim={2}>
+              Size
+            </Txt>
+            <Segmented<string>
+              options={family.sizes.map((p) => ({ key: p.id, label: p.size ? SIZE_LABEL[p.size] : p.name }))}
+              value={plan.id}
+              onChange={(next) => {
+                if (next !== plan.id) router.setParams({ id: next });
+              }}
+            />
+            <Txt v="caption" dim={1} style={{ lineHeight: 18 }} accessibilityLiveRegion="polite">
+              {sizeNote}
+            </Txt>
+          </View>
+        ) : null}
+
+        {plan.howItWorks ? (
+          <Card style={{ marginTop: space.lg, gap: space.sm }}>
+            <Row gap={6}>
+              <Icon name={I.calendar} size={14} color={c.ink2} />
+              <Txt v="label" dim={1}>
+                How this week works
+              </Txt>
+            </Row>
+            <Txt v="body" style={{ lineHeight: 22 }}>
+              {plan.howItWorks}
+            </Txt>
+          </Card>
+        ) : null}
 
         {avg && (
           <Card style={{ marginTop: space.lg }}>
@@ -164,7 +221,7 @@ export default function PlanDetail() {
         </View>
 
         {mode === 'all' ? (
-          <AllMeals planId={plan.id} days={days} />
+          <AllMeals plan={plan} days={days} />
         ) : (
           <>
             <ScrollView
@@ -198,7 +255,14 @@ export default function PlanDetail() {
             <Section title={`Day ${day.day} meals`}>
               <View style={{ gap: space.md }}>
                 {day.meals.map((m) => (
-                  <MealRow key={m.id} meal={m} planId={plan.id} open={openMeal === m.id} onToggle={() => setOpenMeal(openMeal === m.id ? null : m.id)} />
+                  <MealRow
+                    key={m.id}
+                    meal={m}
+                    plan={plan}
+                    leftoverFrom={idx > 0 ? days[idx - 1].day : days[days.length - 1].day}
+                    open={openMeal === m.id}
+                    onToggle={() => setOpenMeal(openMeal === m.id ? null : m.id)}
+                  />
                 ))}
               </View>
             </Section>
@@ -258,7 +322,15 @@ export default function PlanDetail() {
   );
 }
 
-function MealRow({ meal, planId, open, onToggle }: { meal: Meal; planId: string; open: boolean; onToggle: () => void }) {
+function LeftoverPill({ from }: { from: number }) {
+  const c = useTheme();
+  return <Pill label={`Leftovers from day ${from}`} icon={I.restore} color={c.accent} bg={c.accentSoft} />;
+}
+
+function MealRow({ meal, plan, leftoverFrom, open, onToggle }: { meal: Meal; plan: MealPlan; leftoverFrom: number; open: boolean; onToggle: () => void }) {
+  const planId = plan.id;
+  const slotName = slotLabelOf(meal.slot, plan.slotNames, SLOT_LABEL);
+  const minutes = rowMinutes(meal);
   const c = useTheme();
   const profile = useStore((st) => st.profile);
   const who = useWho(profile);
@@ -269,7 +341,7 @@ function MealRow({ meal, planId, open, onToggle }: { meal: Meal; planId: string;
       <Pressable
         accessibilityRole="button"
         accessibilityState={{ expanded: open }}
-        accessibilityLabel={`${SLOT_LABEL[meal.slot]}: ${meal.name}. ${open ? 'Hide' : 'Show'} ingredients and instructions`}
+        accessibilityLabel={`${slotName}: ${meal.name}${meal.leftover ? `. Leftovers from day ${leftoverFrom}` : ''}. ${open ? 'Hide' : 'Show'} ingredients and instructions`}
         onPress={onToggle}
         style={({ pressed }) => ({ opacity: pressed ? 0.85 : 1 })}>
         <Row gap={space.md} style={{ alignItems: 'flex-start' }}>
@@ -277,8 +349,8 @@ function MealRow({ meal, planId, open, onToggle }: { meal: Meal; planId: string;
           <View style={{ flex: 1, gap: 2 }}>
             <Row style={{ justifyContent: 'space-between' }}>
               <Txt v="label" dim={2}>
-                {SLOT_LABEL[meal.slot]}
-                {meal.prepMinutes ? `  ·  ${meal.prepMinutes} min` : ''}
+                {slotName}
+                {minutes ? `  ·  ${minutes} min` : ''}
               </Txt>
               <View style={{ transform: [{ rotate: open ? '90deg' : '0deg' }] }}>
                 <Icon name={I.chevron} size={14} color={c.ink3} />
@@ -288,6 +360,12 @@ function MealRow({ meal, planId, open, onToggle }: { meal: Meal; planId: string;
             <MacroLine totals={totals} />
           </View>
         </Row>
+        {meal.leftover || meal.heroes?.length ? (
+          <View style={{ marginTop: space.sm, gap: 6, alignItems: 'flex-start' }}>
+            {meal.leftover ? <LeftoverPill from={leftoverFrom} /> : null}
+            <HeroLine heroes={meal.heroes} />
+          </View>
+        ) : null}
         <Row style={{ marginTop: space.sm, flexWrap: 'wrap' }} gap={6}>
           {top.map((t) => (
             <MicroChip key={t.key} k={t.key} pct={t.pct} />
@@ -302,7 +380,7 @@ function MealRow({ meal, planId, open, onToggle }: { meal: Meal; planId: string;
           {meal.ingredients.map((ing, i) => (
             <Row key={i} style={{ justifyContent: 'space-between', paddingVertical: 6 }} gap={space.md}>
               <View style={{ flex: 1 }}>
-                <Txt v="body">{food(ing.foodId)?.name ?? ing.foodId}</Txt>
+                <Txt v="body">{displayIngredientName(food(ing.foodId), ing.foodId)}</Txt>
                 {ing.note ? (
                   <Txt v="caption" dim={2}>
                     {ing.note}
@@ -314,7 +392,14 @@ function MealRow({ meal, planId, open, onToggle }: { meal: Meal; planId: string;
               </Txt>
             </Row>
           ))}
-          {meal.instructions ? (
+          {meal.steps?.length ? (
+            <>
+              <Txt v="label" dim={2} style={{ marginTop: space.md, marginBottom: space.sm }}>
+                How to make it
+              </Txt>
+              <RecipeSteps steps={meal.steps} />
+            </>
+          ) : meal.instructions ? (
             <>
               <Txt v="label" dim={2} style={{ marginTop: space.md, marginBottom: 4 }}>
                 How to make it
@@ -339,7 +424,8 @@ function MealRow({ meal, planId, open, onToggle }: { meal: Meal; planId: string;
 }
 
 /** Every meal in the plan, grouped by slot. Tap one to open it in the meal library. */
-function AllMeals({ planId, days }: { planId: string; days: { day: number; meals: Meal[] }[] }) {
+function AllMeals({ plan, days }: { plan: MealPlan; days: { day: number; meals: Meal[] }[] }) {
+  const planId = plan.id;
   const groups = useMemo(
     () =>
       SLOT_ORDER.map((slot) => ({
@@ -351,10 +437,10 @@ function AllMeals({ planId, days }: { planId: string; days: { day: number; meals
   return (
     <>
       {groups.map((g) => (
-        <Section key={g.slot} title={`${SLOT_PLURAL[g.slot]} · ${g.items.length}`}>
+        <Section key={g.slot} title={`${plan.slotNames?.[g.slot] ?? SLOT_PLURAL[g.slot]} · ${g.items.length}`}>
           <View style={{ gap: space.md }}>
             {g.items.map(({ meal, day }) => (
-              <MealOpenRow key={meal.id} meal={meal} planId={planId} day={day} slot={g.slot} />
+              <MealOpenRow key={meal.id} meal={meal} planId={planId} day={day} slotName={plan.slotNames?.[g.slot] ?? SLOT_LABEL[g.slot]} leftoverFrom={leftoverFromDay(days, day)} />
             ))}
           </View>
         </Section>
@@ -363,7 +449,14 @@ function AllMeals({ planId, days }: { planId: string; days: { day: number; meals
   );
 }
 
-function MealOpenRow({ meal, planId, day, slot }: { meal: Meal; planId: string; day: number; slot: MealSlot }) {
+/** The day before `day` in the week (day 1 eats the last night's leftovers from the end of the week before). */
+function leftoverFromDay(days: { day: number }[], day: number) {
+  const i = days.findIndex((d) => d.day === day);
+  return i > 0 ? days[i - 1].day : days[days.length - 1].day;
+}
+
+function MealOpenRow({ meal, planId, day, slotName, leftoverFrom }: { meal: Meal; planId: string; day: number; slotName: string; leftoverFrom: number }) {
+  const minutes = rowMinutes(meal);
   const c = useTheme();
   const profile = useStore((st) => st.profile);
   const who = useWho(profile);
@@ -372,7 +465,7 @@ function MealOpenRow({ meal, planId, day, slot }: { meal: Meal; planId: string; 
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`Day ${day}, ${SLOT_LABEL[slot]}: ${meal.name}. Open meal`}
+      accessibilityLabel={`Day ${day}, ${slotName}: ${meal.name}${meal.leftover ? `. Leftovers from day ${leftoverFrom}` : ''}. Open meal`}
       onPress={() => openLibraryMeal(libraryKey(planId, meal.id))}
       style={({ pressed }) => ({ opacity: pressed ? 0.85 : 1 })}>
       <Card>
@@ -382,7 +475,7 @@ function MealOpenRow({ meal, planId, day, slot }: { meal: Meal; planId: string; 
             <Row style={{ justifyContent: 'space-between' }}>
               <Txt v="label" dim={2}>
                 Day {day}
-                {meal.prepMinutes ? `  ·  ${meal.prepMinutes} min` : ''}
+                {minutes ? `  ·  ${minutes} min` : ''}
               </Txt>
               <Icon name={I.chevron} size={14} color={c.ink3} />
             </Row>
@@ -390,6 +483,12 @@ function MealOpenRow({ meal, planId, day, slot }: { meal: Meal; planId: string; 
             <MacroLine totals={totals} />
           </View>
         </Row>
+        {meal.leftover || meal.heroes?.length ? (
+          <View style={{ marginTop: space.sm, gap: 6, alignItems: 'flex-start' }}>
+            {meal.leftover ? <LeftoverPill from={leftoverFrom} /> : null}
+            <HeroLine heroes={meal.heroes} />
+          </View>
+        ) : null}
         <Row style={{ marginTop: space.sm, flexWrap: 'wrap' }} gap={6}>
           {top.map((t) => (
             <MicroChip key={t.key} k={t.key} pct={t.pct} />

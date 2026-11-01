@@ -9,7 +9,7 @@
  * (carbStyle.test.ts pins 30 real names from the everyday tier and checks that every grain-category food gets an answer).
  */
 import { getFood, type FoodIndex } from './calc';
-import type { CarbStyle, Food, MealPlan } from './types';
+import type { CarbStyle, Food, Meal, MealPlan } from './types';
 
 const ORDER: Record<CarbStyle, number> = { whole: 0, wholegrain: 1, any: 2 };
 
@@ -55,6 +55,19 @@ export function carbStyleOfFood(food: Pick<Food, 'name' | 'head' | 'category'>):
   if (test(RICE, text)) return test(COLOURED_RICE, text) ? 'wholegrain' : 'any';
   // a grain-category food nothing above recognised (cream of wheat, semolina, corn flakes...) is a refined product
   return grain ? 'any' : 'whole';
+}
+
+/** The most permissive level any ingredient of one meal needs. */
+export function carbStyleOfMeal(meal: Pick<Meal, 'ingredients'>, foods: FoodIndex): CarbStyle {
+  let worst: CarbStyle = 'whole';
+  for (const ing of meal.ingredients) {
+    const f = getFood(foods, ing.foodId);
+    if (!f) continue;
+    const s = carbStyleOfFood(f);
+    if (ORDER[s] > ORDER[worst]) worst = s;
+    if (worst === 'any') return worst;
+  }
+  return worst;
 }
 
 /** The most permissive level any ingredient of the plan needs. */
