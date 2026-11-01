@@ -112,10 +112,22 @@ The app's voice is a warm friend who cooks well. Casual, clear and encouraging. 
   - Say what it should look, smell or sound like: "until the onions are soft and golden, about 8 minutes".
   - Write them so they work at any size: describe the ingredients rather than repeating grams ("add the lentils and the stock"). The app shows the scaled amounts in the ingredient list.
   - Mention leftovers when a recipe makes two servings: "Pack the second portion for tomorrow's lunch."
-- **`about`:** 2 or 3 sentences for someone browsing. What it is, why it tastes good, and one plain-language nutrition point.
-  - Good: *"A smoky, garlicky white bean and tomato stew with a big handful of kale stirred in at the end. The beans and kale together cover most of your iron and folate for the day, and a squeeze of lemon helps your body absorb that iron."*
+- **Make it easy to scan.** People read on a phone, so no blocks of text:
+  - Split longer text into short paragraphs with a blank line (`\n\n` in the JSON).
+  - Bold the key words with `**double asterisks**`: one or two phrases per paragraph, never whole sentences.
+  - Nothing else: no headings, bullets or other markdown.
+- **`about`:** 2 or 3 sentences for someone browsing. What it is, why it tastes good, and one plain-language nutrition point. Bold the one thing that matters most.
+  - Good: *"A smoky, garlicky white bean and tomato stew with a big handful of kale stirred in at the end. The beans and kale together cover **most of your iron and folate** for the day, and a squeeze of lemon helps your body absorb that iron."*
   - Bad: *"Nutrient-dense meal optimised for micronutrient coverage."*
-- **`howItWorks`** (plan level): a short friendly paragraph on the logic of the week. Which meals carry the hard nutrients, why fish lands on Tuesday and Friday, how the leftovers flow, what to prep on Sunday.
+- **`howItWorks`** (plan level): the logic of the week in **3 to 5 short paragraphs** of about 50 words at most, each opening with a bolded key phrase. Which meals carry the hard nutrients, why fish lands on Tuesday and Friday, how the leftovers flow, what to prep on Sunday. For example:
+
+  ```
+  **Cook once, eat twice.** Monday's lemon chicken, Wednesday's lentil soup and Friday's chickpea stew each make two portions, so the next day's lunch is already done.
+
+  **Fish three times.** Sardines on Tuesday and salmon on Thursday carry your omega-3 and help with **vitamin D**. It's always cooked fresh, never a leftover.
+
+  **Sunday prep.** Blitz a batch of hummus and mix the first jar of overnight oats.
+  ```
 - **`summary`** (plan level): one or two sentences for the plan card.
 - **`tip`** (optional): one "make it your own" line, a swap or a shortcut.
 - **Spelling:** Canadian English (flavour, yogurt, colour) to match the app.
@@ -169,7 +181,7 @@ already met, so the gate there is mostly protein, saturated fat and omega balanc
   "cuisine": "Mediterranean",
   "regions": ["Greece", "Southern Italy", "Spain"],
   "summary": "One or two sentences for the plan card.",
-  "howItWorks": "A friendly paragraph on the logic of the week.",
+  "howItWorks": "**Key phrase.** Short paragraph.\n\n**Key phrase.** Short paragraph.\n\n**Key phrase.** Short paragraph.",
   "signature": ["greek-lemon-chicken-orzo", "sardines-on-white-beans", "shakshuka-with-feta"],
   "lifeStage": "none",                     // "pregnant" or "lactating" for those families
   "sizes": {
@@ -230,3 +242,18 @@ already met, so the gate there is mostly protein, saturated fat and omega balanc
    - any foods you missed in the list;
    - anything you're unsure about.
 7. **Review:** the chef critic, then the final reviewer, may return numbered fixes. Fix each one, re-run the gate, and reply with what changed.
+
+## 11. What the critic catches most (avoid these up front)
+
+These are the problems that sent the pilot back. Check your week for each one before you hand it back.
+
+- **Ingredients that aren't of the cuisine,** added for a number: chia in Mediterranean food, mushrooms in a Greek lentil soup. Find a nutrient source the cuisine already uses.
+- **A dish renamed into something it isn't.** A barley pot isn't a paella. Name it for what it is: "Saffron barley with chicken (inspired by paella)".
+- **Protein crutches.** Eggs on every salad, or 130 g of yogurt "spooned on top". Use protein that belongs in the dish.
+- **The same flavour base twice in a day.** Beans, tomato and paprika at breakfast and again at dinner.
+- **One vegetable everywhere.** Red pepper in 8 recipes. Vary the produce across the week.
+- **Weird breakfasts.** Lentil salad at breakfast. Keep breakfasts recognisable for the culture.
+- **Lists that don't match the steps.** Cooked shrimp in the list, "cook until pink" in the steps. Use raw weights for anything you cook.
+- **Untrue claims.** "Pearled barley is a whole grain", "salmon gives you calcium", "spinach covers your iron". Only claim what the dish really carries.
+- **Recipes that silently need another recipe.** "Hummus" with no hummus recipe. If a component is made, include how.
+- **Portions nobody eats.** 300 g of shelled mussels, or 2½ eggs. Use whole eggs and real plates.
