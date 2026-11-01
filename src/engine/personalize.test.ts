@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 import { BUNDLED_PLANS, FOODS, FOOD_INDEX, SWAP_GROUPS } from '@/state/catalog';
 
 import { boardProgress, dayScore, ingredientsTotal } from './calc';
-import { daySizing, personalizeDay, scaleIngredients, sizingAdvice, swapDislikes } from './personalize';
+import { daySizing, personalizeDay, scaleIngredients, sizingAdvice, swapDislikes, wholeUnits } from './personalize';
 
 const who = { sex: 'male' as const, age: 36, lifeStage: 'none' as const, diet: [] as string[] };
 const opts = { foods: FOOD_INDEX, catalog: FOODS, groups: SWAP_GROUPS };
@@ -78,5 +78,27 @@ describe('sizing advice', () => {
     expect(sizingAdvice(1980, 1900).ok).toBe(true);
     expect(sizingAdvice(1900, 1500)).toEqual({ ok: false, suggest: 'lower' });
     expect(sizingAdvice(1900, 2400)).toEqual({ ok: false, suggest: 'higher' });
+  });
+});
+
+describe('whole units', () => {
+  const egg = FOODS.find((f) => f.category === 'egg' && /^egg, whole, raw/i.test(f.name))!;
+  const oats = FOODS.find((f) => f.head === 'oats')!;
+  const orig = [{ foodId: egg.id, grams: 100 }, { foodId: oats.id, grams: 50 }];
+
+  it('rounds sized eggs to whole eggs, up when sizing down, and leaves other foods alone', () => {
+    const down = wholeUnits([{ foodId: egg.id, grams: 72 }, { foodId: oats.id, grams: 41 }], orig, FOOD_INDEX, 'up');
+    expect(down).toEqual([{ foodId: egg.id, grams: 100 }, { foodId: oats.id, grams: 41 }]);
+    expect(wholeUnits([{ foodId: egg.id, grams: 170 }, orig[1]], orig, FOOD_INDEX, 'nearest')[0].grams).toBe(150);
+    expect(wholeUnits([{ foodId: egg.id, grams: 20 }, orig[1]], orig, FOOD_INDEX, 'nearest')[0].grams).toBe(50); // never zero eggs
+    expect(wholeUnits(orig, orig, FOOD_INDEX, 'up')).toEqual(orig); // as written stays as written
+  });
+
+  it('sized plan days only ever hold whole eggs', () => {
+    for (const target of [1500, 1700, 2600, 3000]) {
+      const p = personalizeDay(day, who, { ...opts, targetKcal: target });
+      for (const ings of p.meals.values())
+        for (const i of ings) if (/^egg, whole/i.test(FOOD_INDEX.get(i.foodId)?.name ?? '') && i.grams !== day.meals.flatMap((m) => m.ingredients).find((x) => x.foodId === i.foodId)?.grams) expect(i.grams % 50).toBe(0);
+    }
   });
 });

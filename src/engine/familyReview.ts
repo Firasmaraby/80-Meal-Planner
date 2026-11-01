@@ -53,12 +53,14 @@ export function renderReview(family: FamilyFile, size: PlanSize, ctx: CompileCon
       if (r.inspiredBy) out.push(`*Inspired by ${r.inspiredBy.replace(/^inspired by /i, '')}*`, '');
       if (r.about) out.push(r.about, '');
       out.push(`Used: ${uses.join(', ')}`, '');
-      out.push('Ingredients (one serving, Standard size):');
-      for (const i of r.ingredients) {
+      // amounts as this size serves them (sizing keeps the ingredient order); Standard is the recipe as written
+      out.push(`Ingredients (one serving, ${SIZE_LABEL[size]} size, day ${d.day}):`);
+      r.ingredients.forEach((i, k) => {
         const f = getFood(ctx.foods, i.food);
-        const measure = f ? householdMeasure(f, i.g) : undefined;
-        out.push(`- ${i.g} g ${f?.name ?? i.food}${measure ? ` (${measure})` : ''}${i.note ? `, ${i.note}` : ''}`);
-      }
+        const g = m.ingredients[k]?.foodId === i.food ? m.ingredients[k].grams : i.g;
+        const measure = f ? householdMeasure(f, g) : undefined;
+        out.push(`- ${g} g ${f?.name ?? i.food}${measure ? ` (${measure})` : ''}${i.note ? `, ${i.note}` : ''}`);
+      });
       out.push('');
       (r.steps ?? []).forEach((s, k) => out.push(`${k + 1}. ${s}`));
       out.push('');

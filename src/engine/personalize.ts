@@ -190,6 +190,23 @@ export function scaleIngredients(ings: Ingredient[], t: number, foods: FoodIndex
   });
 }
 
+/** Foods you can only use whole: a recipe can say 2 eggs, not 1.4. Grams per unit. */
+const WHOLE_UNIT = (f: Food | undefined): number | undefined =>
+  f?.category === 'egg' && /^(?:duck |quail )?egg, whole\b/i.test(f.name) ? (/quail/i.test(f.name) ? 10 : /duck/i.test(f.name) ? 70 : 50) : undefined;
+
+/**
+ * Round sized whole-unit foods (eggs) to whole units. Sizing down rounds up, so rounding never costs a tile the
+ * sizing protected; sizing up rounds to the nearest. Amounts the plan didn't change are left as written.
+ */
+export function wholeUnits(ings: Ingredient[], original: Ingredient[], foods: FoodIndex, mode: 'up' | 'nearest'): Ingredient[] {
+  return ings.map((ing, i) => {
+    const unit = WHOLE_UNIT(getFood(foods, ing.foodId));
+    if (!unit || ing.grams === original[i]?.grams) return ing;
+    const n = Math.max(1, mode === 'up' ? Math.ceil(ing.grams / unit - 0.05) : Math.round(ing.grams / unit));
+    return n * unit === ing.grams ? ing : { ...ing, grams: n * unit };
+  });
+}
+
 /** How far from the target a sized day may land before another band is the better fit. */
 export const SIZING_TOLERANCE = 0.05;
 
@@ -281,10 +298,11 @@ export function personalizeDay(
   });
   const before = swapped.flat().reduce((n, i) => n + ((getFood(opts.foods, i.foodId)?.n.kcal ?? 0) * i.grams) / 100, 0);
   let sized = swapped;
-  if (opts.targetKcal && opts.targetKcal < before - 10) sized = sizeDayDown(swapped, opts.targetKcal, opts.foods, profile);
-  else if (opts.targetKcal && opts.targetKcal > before + 10) {
+  if (opts.targetKcal && opts.targetKcal < before - 10) {
+    sized = sizeDayDown(swapped, opts.targetKcal, opts.foods, profile).map((ings, i) => wholeUnits(ings, swapped[i], opts.foods, 'up'));
+  } else if (opts.targetKcal && opts.targetKcal > before + 10) {
     const t = daySizing(swapped, opts.targetKcal, opts.foods);
-    sized = swapped.map((ings) => scaleIngredients(ings, t, opts.foods));
+    sized = swapped.map((ings) => wholeUnits(scaleIngredients(ings, t, opts.foods), ings, opts.foods, 'nearest'));
   }
   const after = sized.flat().reduce((n, i) => n + ((getFood(opts.foods, i.foodId)?.n.kcal ?? 0) * i.grams) / 100, 0);
   const meals = new Map(day.meals.map((m, i) => [m.id, sized[i]]));
