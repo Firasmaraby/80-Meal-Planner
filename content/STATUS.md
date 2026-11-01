@@ -12,7 +12,11 @@ Every family in CATALOG.md moves through these steps:
 
 | Family | Wave | Status | Notes |
 |---|---|---|---|
-| med-coast | Pilot | shipped, waiting for Firas's taste test | Light 1400-1800, Standard 1800-2400, Big 2400-3200. 1200-1400 dropped honestly. 25 recipes. |
+| med-coast | Pilot | shipped, approved by Firas | Light 1400-1800, Standard 1800-2400, Big 2400-3200. 1200-1400 dropped honestly. 25 recipes. Text being reformatted into paragraphs with bold. |
+| levant | 1A | authoring | |
+| north-india | 1A | authoring | |
+| west-africa | 1A | authoring | |
+| japan-korea | 1A | authoring | |
 
 ## Lessons from the pilot (now in GUIDE.md and the engine)
 - **Weekly omega balance.** Omega-6:3 is graded over the week (≤4:1), with a daily ceiling of 6:1. Grading it day by day pushed chia onto most breakfasts and fish into snacks.
@@ -31,3 +35,4 @@ Every family in CATALOG.md moves through these steps:
 ## Session log
 - **Oct 31:** GUIDE.md and CATALOG.md written. Toolchain (plan-lab, plan-review, build-plans, carb style, style gates) built.
 - **Nov 1:** app screens for the library, stable food ids, and the med-coast pilot through the author, critic and final-review loop. Shipped.
+- **Nov 1 (later):** Firas approved the pilot. Asked for paragraph breaks and bold in explanations (rich text, guide §7), and special-diet families after the regions (CATALOG restructured). Batch 1A started.

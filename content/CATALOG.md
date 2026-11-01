@@ -102,97 +102,65 @@ except where the cuisine is built on a staple: then use the whole-grain form, or
 20. **`north-america` · North American Kitchen** (Canada and the US, comfort made bright).
     - **Dishes:** turkey chili with beans; maple-mustard salmon with roasted sweet potato and Brussels sprouts; Canadian split pea soup; egg and veg breakfast muffins; a big chopped Cobb-style salad; Cajun-spiced shrimp with greens; steel-cut oats with berries and walnuts; bison or lean beef burgers in lettuce wraps or whole-grain buns.
 
-## Wave 2: eating patterns (12)
-- **Vegan (4):**
-  - `vegan-levant` · Vegan Mediterranean and Levant (Light to Big);
-  - `vegan-india` · Vegan Indian;
-  - `vegan-east-asia` · Vegan East Asian (tofu, tempeh, edamame, natto if it's in the list);
-  - `vegan-latin` · Vegan Latin.
+## Wave 2 onward: special diets (several families per diet)
 
-  Every vegan family:
-  - B12 through fortified soy milk or fortified nutritional yeast every day, and the `about` says so kindly;
-  - calcium-set tofu;
-  - seeds for zinc;
-  - an iron and vitamin C pairing at every main meal;
-  - walnuts, chia and flax for omega-3.
-- **Vegetarian (3), lacto-ovo:**
-  - `veg-mediterranean`;
-  - `veg-india`;
-  - `veg-global` · World Vegetarian.
-- **Pescatarian (3):**
-  - `pesca-coastal` · Japanese and Nordic coast;
-  - `pesca-med` · Mediterranean seafood;
-  - `pesca-latin` · Latin American and Caribbean coast.
-- **Flexitarian (2):** plant-forward, with meat once or twice a week.
-  - `flexi-global`;
-  - `flexi-family`.
+Built after all 20 regional families. Each diet gets 2 to 4 families in different cuisines, so people on a diet still
+get variety. Every family follows the same rules as the regional ones (80% every day, taste first), plus its diet's
+gates in `src/engine/planStyles.ts`. Diet tags such as vegan, gluten-free, halal-friendly and nut-free are also
+computed for every plan, regional ones included, so the Plans filters work across the whole library.
 
-## Wave 3: goals (24)
-- **Muscle gain (5):** 2400-4200, Standard, Big and XL. Protein ≥30%, spread over 4 or 5 meals of 30 to 50 g, with a pre- and post-training snack.
-  - `muscle-global`;
-  - `muscle-middle-east`;
-  - `muscle-asia`;
-  - `muscle-latin`;
-  - `muscle-vegan`, built on tofu, tempeh, seitan only if it's in the list, legumes and soy milk.
-- **Fat loss (3):** 1200-2200, Light and Standard. Big volume and protein ≥30%, so people feel full.
-  - `lean-med`;
-  - `lean-asia`;
-  - `lean-latin`.
-- **Endurance (2):** 2400-4200. Carbs ≥50%, built around training days.
-  - `endurance-global`;
-  - `endurance-med`.
-- **Low-GI and diabetes-friendly (4):** 1200-2800. GL ≤70 per 2000 kcal, fibre ≥30 g, and carbs spread evenly.
-  - `lowgi-med`;
-  - `lowgi-south-asia` (high priority: South Asians carry a high diabetes risk);
-  - `lowgi-middle-east`;
-  - `lowgi-latin`.
-- **Keto (2):** net carbs ≤40 g. Mediterranean-style, built on olive oil, avocado, nuts, fish, eggs and greens, so saturated fat stays under 10%.
-  - `keto-med`;
-  - `keto-global`.
-- **Low-carb (2):** ≤100 g carbs.
-  - `lowcarb-med`;
-  - `lowcarb-global`.
-- **Heart-healthy (2):** DASH-style, sodium ≤2000 mg, saturated fat <7%.
-  - `heart-dash`;
-  - `heart-med`.
-- **Gut health (2):** 30 plants a week, fermented foods on 5 days, fibre ≥35 g.
-  - `gut-30-plants`;
-  - `gut-fermented`.
-- **Anti-inflammatory (2):** omega ≤3:1, fish 3 times a week, colourful plants.
-  - `anti-inflam-med`;
-  - `anti-inflam-asia`.
+**Order of work:** the diets the most people need come first:
 
-## Wave 4: life stage and lifestyle (22)
-- **Prenatal (2):** pregnancy DRIs (iron 27 mg, folate 600 µg, iodine 220 µg, choline 450 mg); no high-mercury, raw or smoked fish; no liver; eggs fully cooked; pasteurised cheeses only.
-  - `prenatal-med`;
-  - `prenatal-global`.
-- **Postpartum and breastfeeding (1):** `postpartum`. Lactation DRIs, one-hand snacks, batch-friendly.
-- **60+ healthy ageing (2):** 25 g of protein at each main meal, B12, D and calcium, softer textures, smaller portions.
-  - `aging-med`;
-  - `aging-global`.
-- **Family-friendly (2):** mild, kid-approved, adult-sized.
-  - `family-weeknights`;
-  - `family-world`.
-- **20-minute meals (3):**
-  - `quick-med`;
-  - `quick-asia`;
-  - `quick-global`.
-- **Sunday batch-cook (2):** 2 cook sessions cover the week.
-  - `batch-sunday`;
-  - `batch-veg`.
-- **Budget (2):** legumes, eggs, canned fish, frozen veg, oats.
-  - `budget-global`;
-  - `budget-veg`.
-- **Ramadan (2):** a suhoor that keeps you full and an iftar that starts with dates and water, then soup, then the main, plus a late snack.
-  - `ramadan-arabian`;
-  - `ramadan-south-asia`.
-- **16:8 intermittent fasting (1):** `if-16-8`. Two meals and a snack, in a noon to 8 pm window.
-- **Gluten-free (1):** `gluten-free-world`.
-- **Dairy-free (1):** `dairy-free-world`.
-- **Iron focus (1):** `iron-focus`. For menstruating women: iron at 100% every day, vitamin C pairings, and tea away from meals.
-- **Grain-free paleo-style (1):** `paleo`.
+| Batch | Diets |
+|---|---|
+| A | diabetes-friendly, vegan, keto, gluten-free |
+| B | vegetarian, muscle gain, lean, heart-healthy |
+| C | prenatal, postpartum, PCOS, menopause |
+| D | everything else |
+
+| Diet (style) | Families | Cuisines and notes |
+|---|---|---|
+| Diabetes-friendly / low-GI (`low-gi`) | 4 | South Asian (top priority, high diabetes risk), Middle Eastern, Mediterranean, Latin. GL at most 70 per 2,000 kcal, carbs spread evenly, fibre at least 30 g. |
+| Keto (`keto`) | 4 | Mediterranean, Middle Eastern, Asian, Latin. Net carbs at most 40 g. Olive oil, fish, nuts, avocado and greens keep saturated fat under 10%. |
+| Low-carb, moderate (`low-carb`) | 3 | Global, Mediterranean, Asian. Carbs at most 100 g. |
+| PCOS-friendly (`pcos`) | 2 | Low-GI, protein at least 25%, omega-3 rich, spearmint tea welcome. |
+| Vegan (`vegan`) | 4 | Mediterranean-Levant, Indian, East Asian, Latin. B12 from fortified foods every day, calcium-set tofu, seeds for zinc. |
+| High-protein vegan (`muscle` + vegan) | 1 | Tofu, tempeh, seitan, legumes, soy milk. |
+| Vegetarian (`vegetarian`) | 3 | Mediterranean, global, and Indian lacto-vegetarian with no eggs. |
+| Pescatarian (`pescatarian`) | 3 | Japanese-Nordic coast, Mediterranean, Latin-Caribbean coast. |
+| Flexitarian (`flexitarian`) | 2 | Global, family. |
+| Gluten-free / celiac-friendly (`gluten-free`) | 3 | Latin, South Asian, Mediterranean. Note in the app: check labels for cross-contamination. |
+| Dairy-free (`dairy-free`) | 2 | East Asian, global. Calcium from tofu, sardines, greens, fortified plant milk. |
+| Top-allergen-free (`allergen-free`) | 2 | No peanuts, tree nuts, eggs, dairy, shellfish or sesame. |
+| Heart-healthy / DASH / low-sodium (`heart`) | 3 | Sodium at most 2,000 mg, saturated fat under 7%. |
+| Low-cholesterol (`heart` variant) | 2 | Oats, legumes, nuts and plant sterols; very low saturated fat. |
+| Anti-inflammatory (`anti-inflammatory`) | 2 | Omega at most 3:1 weekly, fish 3 times. |
+| Gut health / high-fibre (`gut`) | 2 | 30 plants a week, fermented foods 5 days. |
+| Low-FODMAP (`low-fodmap`) | 2 | Short-term elimination, ideally with a dietitian (the app says so). No onion, garlic, wheat, large legume servings, high-FODMAP fruit or lactose. Garlic-infused oil and scallion greens for flavour. |
+| Paleo (`paleo`) | 2 | No grains, legumes, dairy or added sugar. |
+| Whole30-style (`whole30`) | 2 | Paleo plus no sweeteners or alcohol, 30-day framing. |
+| Muscle gain / bulk (`muscle`) | 4 | 2,400 to 4,200 kcal. Global, Middle Eastern, Asian, Latin. |
+| Lean / cut (`fat-loss`) | 3 | 1,200 to 2,200 kcal, high volume and high protein. |
+| Endurance (`endurance`) | 2 | High carb around training. |
+| Prenatal (`prenatal`) | 2 | Pregnancy DRIs and food-safety bans. |
+| Postpartum and breastfeeding (`postpartum`) | 2 | Lactation DRIs, one-hand snacks. |
+| Menopause (`menopause`) | 2 | Calcium, vitamin D, protein at every meal, soy and flax. |
+| 60+ healthy ageing (`healthy-aging`) | 2 | 25 g protein per main meal, softer textures. |
+| Iron focus (`iron-focus`) | 2 | Iron 100% every day for menstruating women. |
+| Halal (`halal`) | 2 | Gulf, South Asian. No pork, no alcohol in cooking, halal meat noted. |
+| Kosher-style (`kosher`) | 2 | No pork or shellfish, never meat with dairy in a meal. |
+| Jain vegetarian (`jain`) | 1 | No meat, fish or eggs, no root vegetables (onion, garlic, potato, carrot). |
+| Ramadan (`ramadan`) | 3 | Arabian, South Asian, North African: suhoor and iftar. |
+| Intermittent fasting 16:8 (`intermittent-fasting`) | 2 | Two meals and a snack. |
+| Busy / 20-minute (`quick`) | 3 | Mediterranean, Asian, global. |
+| Budget (`budget`) | 3 | Global, vegetarian, family. |
+| Sunday batch-cook (`batch`) | 2 | |
+| Family-friendly (`family`) | 2 | Mild, kid-approved, adult-sized. |
+
+About 90 families in all, which makes the whole library about 110 families and 350+ sized plans.
 
 ## Not offered, and why
 - **Carnivore:** it can't reach vitamin C, folate or fibre, and contradicts the framework.
-- **Low-FODMAP:** a clinical diet that needs a dietitian's review. Planned for later, with professional input.
+- **Raw vegan:** can't reliably reach B12, vitamin D, iodine or zinc.
+- **Kidney (renal), low-residue and other medical diets:** they need individual clinical limits (potassium, phosphorus, fibre) that conflict with the 80% targets. These need a clinician.
 - **Plans under 1,200 kcal:** they can't meet the micronutrient floor, and they aren't safe without medical supervision.
