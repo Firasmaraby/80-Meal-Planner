@@ -34,6 +34,7 @@ import {
   useWho,
 } from '@/ui/planParts';
 import { HeroLine, RecipeSteps, slotLabelOf } from '@/ui/recipeParts';
+import { RichText } from '@/ui/RichText';
 import { MAX_WIDTH, radius, space, useTheme } from '@/ui/theme';
 import { MicroChip, NutrientTile } from '@/ui/viz';
 
@@ -179,9 +180,7 @@ export default function PlanDetail() {
                 How this week works
               </Txt>
             </Row>
-            <Txt v="body" style={{ lineHeight: 22 }}>
-              {plan.howItWorks}
-            </Txt>
+            <RichText text={plan.howItWorks} v="body" style={{ lineHeight: 22 }} />
           </Card>
         ) : null}
 

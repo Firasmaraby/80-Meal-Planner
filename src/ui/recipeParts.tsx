@@ -6,6 +6,7 @@ import { NUTRIENTS } from '@/engine/nutrients';
 import type { Meal, MealSlot } from '@/engine/types';
 
 import { Icon, I, Row, Txt } from './primitives';
+import { RichText, plainText } from './RichText';
 import { radius, space, useTheme } from './theme';
 
 /** "Suhoor" for a plan that renames the slot, otherwise the usual word. */
@@ -36,9 +37,7 @@ export function RecipeAbout({ about, inspiredBy }: { about?: string; inspiredBy?
   return (
     <View style={{ marginTop: space.sm, gap: 4 }}>
       {about ? (
-        <Txt v="body" dim={1} style={{ fontSize: 16, lineHeight: 24 }}>
-          {about}
-        </Txt>
+        <RichText text={about} v="body" dim={1} style={{ fontSize: 16, lineHeight: 24 }} />
       ) : null}
       {inspiredBy ? (
         <Txt v="caption" dim={2} style={{ lineHeight: 18 }}>
@@ -77,12 +76,12 @@ export function RecipeTip({ tip }: { tip?: string }) {
   return (
     <View
       accessible
-      accessibilityLabel={`Tip. ${tip}`}
+      accessibilityLabel={`Tip. ${plainText(tip)}`}
       style={{ flexDirection: 'row', gap: space.sm, padding: space.md, borderRadius: radius.md, backgroundColor: c.accentSoft, alignItems: 'flex-start' }}>
       <Icon name={I.bulb} size={16} color={c.accent} />
-      <Txt v="body" style={{ flex: 1, lineHeight: 22 }}>
-        {tip}
-      </Txt>
+      <View style={{ flex: 1 }}>
+        <RichText text={tip} v="body" style={{ lineHeight: 22 }} />
+      </View>
     </View>
   );
 }

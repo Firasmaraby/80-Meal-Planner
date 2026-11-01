@@ -25,6 +25,7 @@ import {
   type FormatIssue,
   type ValidateContext,
 } from './family';
+import { boldStats, markerCount, paragraphWords, parseRich } from './richText';
 import { HARD_NUTRIENTS, fixListForAI, gradePlan, type DayReport } from './planReport';
 import { SIZING_TOLERANCE, sizingAdvice } from './personalize';
 import { PLAN_STYLES, distinctGroceries, gradeOptionsFor, styleNutrientGates, styleStructureGates } from './planStyles';
@@ -162,6 +163,46 @@ function usage(family: FamilyFile) {
 }
 
 /** Writing and recipe-shape checks that do not depend on portion size. */
+/** Limits on the rich text (paragraphs and **bold**) in the guide's section 7. */
+export const RICH_LIMITS = { howItWorksMinParagraphs: 2, paragraphWords: 70, boldPerParagraph: 3, boldWords: 8 } as const;
+
+/** Every string in the file with the path it sits at. */
+function* stringsOf(value: unknown, path = ''): Generator<{ path: string; text: string }> {
+  if (typeof value === 'string') yield { path, text: value };
+  else if (Array.isArray(value)) for (const [i, v] of value.entries()) yield* stringsOf(v, `${path}[${i}]`);
+  else if (value && typeof value === 'object') for (const [k, v] of Object.entries(value)) yield* stringsOf(v, path ? `${path}.${k}` : k);
+}
+
+/** Fields that may use paragraphs and bold: howItWorks at the plan level, about and tip on a recipe. */
+const isRichPath = (path: string) => path === 'howItWorks' || /^recipes\[\d+\]\.(about|tip)$/.test(path);
+
+/** Rich text checks: balanced `**` everywhere, and the shape of howItWorks, about and tip. */
+function richChecks(family: FamilyFile, raw: unknown, fail: (code: string, message: string, fix: string, recipe?: string) => void) {
+  const recipeOf = (path: string) => {
+    const i = /^recipes\[(\d+)\]/.exec(path)?.[1];
+    return i ? family.recipes[+i]?.id : undefined;
+  };
+  for (const { path, text } of stringsOf(raw))
+    if (markerCount(text) % 2)
+      fail('bold_unbalanced', `${path}: has an unmatched "**" ("${text.slice(0, 60)}").`, 'Close every bold phrase with a second "**", or remove the stray one.', recipeOf(path));
+
+  for (const { path, text } of stringsOf(raw)) {
+    if (!isRichPath(path)) continue;
+    const recipe = recipeOf(path);
+    parseRich(text).forEach((p, n) => {
+      const words = paragraphWords(p);
+      const { phrases, longest } = boldStats(p);
+      const at = `${path}, paragraph ${n + 1}`;
+      if (words > RICH_LIMITS.paragraphWords && path === 'howItWorks') fail('paragraph_long', `${at}: ${words} words (max ${RICH_LIMITS.paragraphWords}).`, 'Split it into shorter paragraphs with a blank line.', recipe);
+      if (phrases > RICH_LIMITS.boldPerParagraph) fail('bold_many', `${at}: ${phrases} bold phrases (max ${RICH_LIMITS.boldPerParagraph}).`, 'Bold only the one or two phrases that matter.', recipe);
+      if (longest > RICH_LIMITS.boldWords) fail('bold_long', `${at}: a bold phrase is ${longest} words (max ${RICH_LIMITS.boldWords}).`, 'Bold key words, never whole sentences.', recipe);
+    });
+  }
+  const paragraphs = parseRich(family.howItWorks).length;
+  if (family.howItWorks?.trim() && paragraphs < RICH_LIMITS.howItWorksMinParagraphs)
+    fail('howItWorks_paragraphs', `howItWorks: ${paragraphs} paragraph (min ${RICH_LIMITS.howItWorksMinParagraphs}).`, 'Split it into short paragraphs with a blank line, each opening with a bolded key phrase.');
+}
+
 export function writingChecks(family: FamilyFile, raw: unknown): LabFailure[] {
   const out: LabFailure[] = [];
   const fail = (code: string, message: string, fix: string, recipe?: string, kind: LabFailure['kind'] = 'writing') => out.push({ kind, code, message, fix, recipe });
@@ -173,6 +214,7 @@ export function writingChecks(family: FamilyFile, raw: unknown): LabFailure[] {
   }
   if (!family.summary?.trim()) fail('summary', 'summary is missing (one or two sentences for the plan card).', 'Add a summary.');
   if (!family.howItWorks?.trim()) fail('howItWorks', 'howItWorks is missing (a friendly paragraph on the logic of the week).', 'Add howItWorks.');
+  richChecks(family, raw, (code, message, fix, recipe) => fail(code, message, fix, recipe));
 
   for (const r of family.recipes) {
     const where = used.get(r.id);

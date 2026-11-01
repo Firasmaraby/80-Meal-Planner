@@ -299,6 +299,62 @@ describe('plan lab', () => {
     expect(writingChecks(g, g).map((x) => x.code)).toEqual(['steps', 'about']); // a breakfast is held to the full rules
   });
 
+  describe('rich text checks', () => {
+    const codes = (f: FamilyFile) => writingChecks(f, f).map((x) => x.code);
+    const words = (n: number) => Array.from({ length: n }, (_, i) => `w${i}`).join(' ');
+
+    it('passes the fixture', () => {
+      expect(codes(clone())).toEqual([]);
+    });
+
+    it('wants at least 2 paragraphs in howItWorks', () => {
+      const f = clone();
+      f.howItWorks = '**One block.** Everything in a single paragraph with no break at all.';
+      expect(codes(f)).toEqual(['howItWorks_paragraphs']);
+      f.howItWorks += '\n\nAnd a second one.';
+      expect(codes(f)).toEqual([]);
+    });
+
+    it('allows no howItWorks paragraph over 70 words', () => {
+      const f = clone();
+      f.howItWorks = `**Short.** Fine.\n\n${words(70)}`;
+      expect(codes(f)).toEqual([]);
+      f.howItWorks = `**Short.** Fine.\n\n${words(71)}`;
+      const hit = writingChecks(f, f).filter((x) => x.code === 'paragraph_long');
+      expect(hit).toHaveLength(1);
+      expect(hit[0].message).toContain('paragraph 2');
+    });
+
+    it('wants an even number of ** in every text field', () => {
+      const f = clone();
+      f.recipes[1].steps![0] += ' **oops';
+      f.recipes[2].tip = 'Trout **works the same way.';
+      f.summary += ' **';
+      const found = writingChecks(f, f).filter((x) => x.code === 'bold_unbalanced');
+      expect(found.map((x) => x.recipe)).toEqual([undefined, f.recipes[1].id, f.recipes[2].id]);
+      expect(found[1].message).toContain('recipes[1].steps[0]');
+    });
+
+    it('allows at most 3 bold phrases per paragraph', () => {
+      const f = clone();
+      f.recipes[0].tip = 'Use **a** or **b** or **c** here.';
+      expect(codes(f)).toEqual([]);
+      f.recipes[0].tip = 'Use **a** or **b** or **c** or **d** here.';
+      expect(codes(f)).toEqual(['bold_many']);
+      // the count is per paragraph, so the same four phrases over two paragraphs is fine
+      f.recipes[0].tip = 'Use **a** or **b**.\n\nOr **c** or **d**.';
+      expect(codes(f)).toEqual([]);
+    });
+
+    it('allows bold spans of at most 8 words', () => {
+      const f = clone();
+      f.recipes[0].about += ` **${words(8)}**`;
+      expect(codes(f)).toEqual([]);
+      f.recipes[0].about += ` **${words(9)}**`;
+      expect(codes(f)).toEqual(['bold_long']);
+    });
+  });
+
   it('allows no recipe more than twice a week except breakfasts and leftovers', () => {
     const f = clone();
     f.week.push({ day: 3, meals: [{ slot: 'dinner', recipe: 'chicken-chickpea-stew' }] }, { day: 4, meals: [{ slot: 'dinner', recipe: 'chicken-chickpea-stew' }, { slot: 'breakfast', recipe: 'veggie-egg-scramble' }] });

@@ -15,6 +15,7 @@ import {
   type SizePick,
 } from '@/engine/families';
 import { PLAN_STYLES } from '@/engine/planStyles';
+import { plainText } from '@/engine/richText';
 import type { CarbStyle, MealPlan, PlanStyle } from '@/engine/types';
 import { FOOD_INDEX } from '@/state/catalog';
 import { useFamilies } from '@/state/families';
@@ -284,7 +285,7 @@ function PlanCard({ entry, carbStyle, yourBand }: { entry: Entry; carbStyle: Car
 
         {family.isLibrary && family.summary ? (
           <Txt v="body" dim={1} numberOfLines={3} style={{ marginTop: space.sm, lineHeight: 21 }}>
-            {family.summary}
+            {plainText(family.summary)}
           </Txt>
         ) : null}
 

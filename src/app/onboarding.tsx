@@ -7,6 +7,7 @@ import { BAND_STEP, bandFor, bandLabel, calorieTarget, macroTargets } from '@/en
 import { familyVisible, pickSize } from '@/engine/families';
 import { PLAN_STYLES } from '@/engine/planStyles';
 import type { Activity, CarbStyle, Goal, LifeStage, MealPlan, NutrientKey, Profile, Sex } from '@/engine/types';
+import { plainText } from '@/engine/richText';
 import { FOOD_INDEX } from '@/state/catalog';
 import { useFamilies } from '@/state/families';
 import { useStore } from '@/state/store';
@@ -529,7 +530,7 @@ function Numbers({ onStart }: { onStart: (plan: MealPlan) => void }) {
                 </Row>
                 {family.summary && family.isLibrary ? (
                   <Txt v="caption" dim={1} style={{ marginTop: space.sm, lineHeight: 18 }} numberOfLines={3}>
-                    {family.summary}
+                    {plainText(family.summary)}
                   </Txt>
                 ) : null}
                 <Row gap={space.lg} style={{ marginTop: space.md }}>
