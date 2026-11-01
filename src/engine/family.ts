@@ -9,13 +9,14 @@
  *
  * Pure TypeScript with no Node or React Native imports: scripts/plan-lab.mjs, scripts/build-plans.mjs, the tests and the app share it.
  */
-import { boardProgress, getFood, ingredientsTotal, type FoodIndex } from './calc';
+import { boardProgress, getFood, ingredientsTotal, omega3, type FoodIndex } from './calc';
+import { RULES } from './planReport';
 import { carbStyleOfPlan } from './carbStyle';
 import { BOARD_KEYS } from './nutrients';
 import { personalizeDay } from './personalize';
 import { mealFrom, type CompactPlan, type Hero, type LibraryIngredient, type LibraryRecipe } from './libraryPlans';
 import { FOOD_BANS, PLAN_STYLES, isPlanStyle } from './planStyles';
-import type { Ingredient, CalorieBand, Food, LifeStage, Meal, MealPlan, MealSlot, NutrientKey, PlanSize, PlanStyle, SwapGroup } from './types';
+import type { Ingredient, CalorieBand, Food, LifeStage, Meal, MealPlan, MealSlot, NutrientKey, PlanSize, PlanStyle, Profile, SwapGroup } from './types';
 
 // ── The file ───────────────────────────────────────────────────────────────
 
@@ -378,11 +379,12 @@ export function sizingPerson(plan: Pick<MealPlan, 'lifeStage'>) {
 }
 
 /** Size every day of a plan to `kcal` with the app's own engine. `dayKcal` is what each day actually reached. */
-export function sizePlan(plan: MealPlan, kcal: number, ctx: CompileContext): { plan: MealPlan; dayKcal: number[] } {
+export function sizePlan(plan: MealPlan, kcal: number, ctx: CompileContext, panel: Pick<Profile, 'sex' | 'age' | 'lifeStage'>[] = []): { plan: MealPlan; dayKcal: number[] } {
   const person = sizingPerson(plan);
   const dayKcal: number[] = [];
   const days = plan.days.map((d) => {
-    const p = personalizeDay(d, person, { foods: ctx.foods, catalog: ctx.catalog, groups: ctx.groups, targetKcal: kcal });
+    // sizing keeps every tile complete for the woman it sizes for and for anyone else the plan is graded for
+    const p = personalizeDay(d, person, { foods: ctx.foods, catalog: ctx.catalog, groups: ctx.groups, targetKcal: kcal, alsoProtect: panel });
     dayKcal.push(p.kcal);
     return { ...d, meals: d.meals.map((m) => ({ ...m, ingredients: p.meals.get(m.id) ?? m.ingredients })) };
   });
@@ -405,8 +407,23 @@ export function compileSize(family: FamilyFile, size: PlanSize, ctx: CompileCont
   let plan = planFromWeek(family, week, size);
   if (size !== 'standard') plan = sizePlan(plan, spec.kcal, ctx).plan;
   plan.tags = dietTagsOf(plan, ctx.foods);
+  // the framework's ~4:1 omega-6:3 over the week earns a badge (plans must reach 6:1, see RULES)
+  const w = weeklyOmega(plan, ctx.foods);
+  if (w != null && w <= RULES.omegaGoodRatio) plan.tags.push('omega-balanced');
   plan.carbStyle = carbStyleOfPlan(plan, ctx.foods);
   return { size, kcal: spec.kcal, covers: plan.covers ?? [], plan, problems };
+}
+
+/** Omega-6:3 over the whole plan (omega-6 and omega-3 grams summed across the days). */
+export function weeklyOmega(plan: Pick<MealPlan, 'days'>, foods: FoodIndex): number | undefined {
+  let n6 = 0;
+  let n3 = 0;
+  for (const d of plan.days) {
+    const t = ingredientsTotal(d.meals.flatMap((m) => m.ingredients), foods);
+    n6 += t.la ?? 0;
+    n3 += omega3(t) ?? 0;
+  }
+  return n3 > 0 ? n6 / n3 : undefined;
 }
 
 export function compileFamily(family: FamilyFile, ctx: CompileContext): CompiledSize[] {

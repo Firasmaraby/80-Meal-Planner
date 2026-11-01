@@ -128,7 +128,8 @@ describe('compiling a family', () => {
     expect(p.covers).toEqual([{ min: 2000, max: 2200 }]);
     expect(p.band).toEqual({ min: 2000, max: 2200 });
     expect(p.carbStyle).toBe('wholegrain'); // whole wheat bread and brown rice
-    expect(p.tags).toEqual([]); // chicken, fish, eggs, dairy, wheat and nuts: no diet label
+    // chicken, fish, eggs, dairy, wheat and nuts: no diet label; fish twice and walnuts give a 4:1 week
+    expect(p.tags).toEqual(["omega-balanced"]);
   });
 
   it('applies adjust steps: add, drop by slot and index, drop by recipe, swap, day "*"', () => {

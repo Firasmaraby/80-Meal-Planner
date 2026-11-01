@@ -82,9 +82,12 @@ export interface Requirement {
   ul?: number;
 }
 
+/** Fibre's AI is defined as 14 g per 1000 kcal eaten (the table values assume typical intakes, e.g. 38 g at about 2700 kcal). */
+export const FIBER_G_PER_1000_KCAL = 14;
+
 export function requirement(
   key: NutrientKey,
-  p: Pick<Profile, 'sex' | 'age' | 'lifeStage'>,
+  p: Pick<Profile, 'sex' | 'age' | 'lifeStage'> & { energyKcal?: number },
 ): Requirement | undefined {
   const r = DRI[key];
   if (!r) return undefined;
@@ -97,12 +100,13 @@ export function requirement(
   } else {
     rda = r.v[ai + (p.sex === 'female' ? 5 : 0)];
   }
+  if (key === 'fiber' && p.energyKcal && p.energyKcal > 0) rda = (FIBER_G_PER_1000_KCAL * p.energyKcal) / 1000;
   return { rda, kind: r.kind, ul: r.ul?.[ulIndex(age)] };
 }
 
 export function requirementsFor(
   keys: NutrientKey[],
-  p: { sex: Sex; age: number; lifeStage: LifeStage },
+  p: { sex: Sex; age: number; lifeStage: LifeStage; energyKcal?: number },
 ): Partial<Record<NutrientKey, Requirement>> {
   const out: Partial<Record<NutrientKey, Requirement>> = {};
   for (const k of keys) {

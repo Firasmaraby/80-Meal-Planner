@@ -26,11 +26,12 @@ Each day, at every band the family claims (checked at the band's lowest and high
   Vitamin D, iodine and biotin are "hard from food". They're reported but don't fail the gate, yet you still do your
   best: fatty fish, eggs, dairy, mushrooms, iodized salt, seaweed.
 - **Saturated fat** under 10% of calories.
-- **Omega-6 to omega-3 ratio** at most 4:1 **over the week**, and no single day above 6:1. It's a pattern, not a
-  daily target: the salmon day balances the olive-oil-and-chicken day. Fatty fish (2 to 3 times a week), walnuts,
-  and some chia or flax where it's natural to the dish all help. Sunflower and corn oil don't. Never build the week
-  around the ratio: if it fails, add a natural omega-3 food to a dish where it belongs.
-- **Glycaemic load** inside the daily limit, with tighter limits for low-GI families.
+- **Omega-6 to omega-3 ratio** at most **6:1 over the week**, and no single day above 9:1. The framework's ideal is about
+  4:1; a week that reaches it earns a "Great omega balance" badge. Get there the way the cuisine would: fatty fish 2 to
+  3 times a week, and walnuts, flax or chia **only where the cuisine already uses them**. Keep the cuisine's own fat
+  (olive oil, sesame oil, ghee, a little palm oil): never swap in canola just for the ratio, and never sprinkle flax or
+  chia on a dish that doesn't have it. Anti-inflammatory plans aim tighter: 3:1 over the week.
+- **Glycaemic load** at most 100 per 2,000 kcal, scaled to each day's calories (70 for low-GI families).
 - **Protein:** at least the style's floor. Balanced is 20% of calories, muscle gain is 30%, and the 60+ family puts
   25 g at every main meal.
 - **Fatty fish** twice a week (salmon, sardines, mackerel, trout, herring, anchovies), unless the family is vegetarian

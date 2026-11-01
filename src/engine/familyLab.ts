@@ -27,7 +27,7 @@ import {
 } from './family';
 import { boldStats, markerCount, paragraphWords, parseRich } from './richText';
 import { HARD_NUTRIENTS, fixListForAI, gradePlan, type DayReport } from './planReport';
-import { SIZING_TOLERANCE, sizingAdvice } from './personalize';
+import { PROTEIN_SOURCES, SIZING_TOLERANCE, sizingAdvice } from './personalize';
 import { PLAN_STYLES, distinctGroceries, gradeOptionsFor, styleNutrientGates, styleStructureGates } from './planStyles';
 import type { CalorieBand, Food, MealPlan, NutrientKey, PlanSize } from './types';
 
@@ -107,7 +107,7 @@ const SALT = /^(table |sea |kosher )?salt\b/i;
 const NOT_A_SPICE = /sauce|vinegar|\boil\b|paste|prepared|chutney|puree|ketchup|mayonnaise|dressing|miso|capers|horseradish|stock|olive|roasted|wasabi|extract|coffee/i;
 const DRIED_SPICE =
   /\b(ground|dried|powder|seeds?|saffron|cayenne|paprika|cinnamon|clove|nutmeg|allspice|garam masala|curry|pepper|bay leaf|mace|turmeric|cardamom|seasoning|herbes|chili|masala)\b/i;
-const PROTEIN_SOURCES = new Set<Food['category']>(['meat', 'poultry', 'fish', 'egg', 'legume', 'dairy']);
+// the same set the sizing engine protects when it trims a day
 
 export const isOil = (f: Food) => f.category === 'oil_fat' && /\boil\b/i.test(f.name);
 export const isSalt = (f: Food) => f.category === 'condiment' && SALT.test(f.name);
@@ -279,8 +279,8 @@ export function edgesOf(covers: CalorieBand[]): { kcal: number; labels: string[]
 
 /** Grade one plan already sized to `kcal`: day rows, framework issues, style gates and cooking sense. */
 export function gradeEdge(family: FamilyFile, base: MealPlan, size: PlanSize, kcal: number, deps: LabDeps) {
-  const { plan: sized, dayKcal } = sizePlan(base, kcal, deps);
   const opts = gradeOptionsFor(family.style, kcal);
+  const { plan: sized, dayKcal } = sizePlan(base, kcal, deps, opts.panel ?? []);
   const band = base.covers?.find((b) => kcal >= b.min && kcal <= b.max) ?? base.band;
   const report = gradePlan({ ...sized, band }, deps.foods, deps.catalog, opts);
   const failures: LabFailure[] = [];

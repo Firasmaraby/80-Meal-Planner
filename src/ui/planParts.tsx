@@ -44,6 +44,7 @@ export function dietMatches(plan: Pick<MealPlan, 'tags'>, diet: string[]): boole
 export const tagLabel = (t: string) => {
   const known = DIET_OPTIONS.find((d) => d.key === t);
   if (known) return known.label;
+  if (t === 'omega-balanced') return 'Great omega balance';
   // "15-minute" keeps its hyphen; "gluten-free" and "freezer-friendly" read as words
   const s = /^\d/.test(t) ? t : t.replace(/[-_]/g, ' ');
   return s.charAt(0).toUpperCase() + s.slice(1);

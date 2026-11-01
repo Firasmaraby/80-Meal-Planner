@@ -23,10 +23,14 @@ export const HARD_NUTRIENTS: NutrientKey[] = ['vitD', 'iodine', 'b7'];
 
 export const RULES = {
   satFatMaxPct: 10,
-  /** omega-6:3 over the whole week: the framework's ~4:1 is a pattern, so a salmon day balances an olive-oil day */
-  omegaMaxRatio: 4,
+  /** omega-6:3 over the whole week. The framework aims for about 4:1; a plan must reach 6:1 (a typical diet is 15-20:1),
+   *  so each cuisine keeps its own fats (olive oil, sesame, ghee) and omega-3 comes mainly from fatty fish */
+  omegaMaxRatio: 6,
   /** ...with no single day running away from it */
-  omegaDayMaxRatio: 6,
+  omegaDayMaxRatio: 9,
+  /** a week at or under this earns the "great omega balance" badge */
+  omegaGoodRatio: 4,
+  /** glycemic load per 2000 kcal; each day's limit scales with that day's calories (a bigger day eats more carbs) */
   glycemicLoadMax: 100,
   /** protein as % of the day's calories */
   proteinMinPctKcal: 20,
@@ -107,7 +111,7 @@ export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []
     const items = d.meals.flatMap((m) => m.ingredients);
     const coverage: DayReport['coverage'] = {};
     for (const person of panel) {
-      for (const p of boardProgress(totals, person)) {
+      for (const p of boardProgress(totals, { ...person, energyKcal: kcal })) {
         if (p.amount == null) continue;
         coverage[p.key] = Math.min(coverage[p.key] ?? Infinity, p.pct);
       }
@@ -178,12 +182,13 @@ export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []
         message: `Day ${r.day}: omega-6:3 ratio is ${r.omegaRatio.toFixed(1)}:1 (no day above ${rules.omegaDayMaxRatio}:1).`,
         fix: 'Add fatty fish, chia, ground flax or walnuts; use olive oil instead of seed oils.',
       });
-    if (r.glycemicLoad > rules.glycemicLoadMax)
+    const glLimit = (rules.glycemicLoadMax * Math.max(r.kcal, 1)) / 2000;
+    if (r.glycemicLoad > glLimit)
       issues.push({
         level: 'warning',
         code: 'gl_high',
         day: r.day,
-        message: `Day ${r.day}: glycemic load ${round(r.glycemicLoad)} (aim ≤${rules.glycemicLoadMax}).`,
+        message: `Day ${r.day}: glycemic load ${round(r.glycemicLoad)} (aim ≤${round(glLimit)} at ${round(r.kcal)} kcal).`,
         fix: 'Replace white rice, bread or pasta with legumes, quinoa, oats or barley.',
       });
     if (r.proteinPctKcal < rules.proteinMinPctKcal)

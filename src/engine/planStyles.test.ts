@@ -164,7 +164,7 @@ describe('plan styles', () => {
     family.week = [{ day: 1, meals: [{ slot: 'snack', recipe: 'hummus-carrot-snack' }] }];
     expect(styleStructureGates('gut', standard(family), FOOD_INDEX).map((g) => g.code)).toEqual(['plant_variety', 'fermented']);
     expect(gradeOptionsFor('low-gi', 2000).rules.glycemicLoadMax).toBe(70);
-    expect(gradeOptionsFor('low-gi', 3000).rules.glycemicLoadMax).toBe(105);
+    expect(gradeOptionsFor('low-gi', 3000).rules.glycemicLoadMax).toBe(70); // per 2000 kcal: gradePlan scales it per day
     expect(gradeOptionsFor('endurance', 2000).rules.glycemicLoadMax).toBe(Infinity);
   });
 });

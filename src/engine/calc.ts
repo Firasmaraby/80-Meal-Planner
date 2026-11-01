@@ -149,10 +149,12 @@ export interface NutrientProgress {
 
 export function boardProgress(
   totals: NutrientVector,
-  p: Pick<Profile, 'sex' | 'age' | 'lifeStage'>,
+  p: Pick<Profile, 'sex' | 'age' | 'lifeStage'> & { energyKcal?: number },
   keys: NutrientKey[] = BOARD_KEYS,
 ): NutrientProgress[] {
-  const reqs = requirementsFor(keys, p);
+  // fibre scales with energy: a full profile uses its own calorie target, a reference person the energy it's given
+  const energyKcal = p.energyKcal ?? ('weightKg' in p && 'heightCm' in p && 'activity' in p ? calorieTarget(p as Profile) : undefined);
+  const reqs = requirementsFor(keys, { ...p, energyKcal });
   return keys
     .filter((k) => reqs[k])
     .map((k) => {

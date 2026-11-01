@@ -227,12 +227,25 @@ export function sizingAdvice(achievedKcal: number, targetKcal: number): { ok: bo
  * stays at ≥80%. Vegetables and fruit are never trimmed. Stops at the target or when no
  * safe cut is left (the caller then suggests a lower-band plan).
  */
-export function sizeDayDown(meals: Ingredient[][], targetKcal: number, foods: FoodIndex, who: Who): Ingredient[][] {
+export function sizeDayDown(meals: Ingredient[][], targetKcal: number, foods: FoodIndex, who: Who | Who[]): Ingredient[][] {
+  // several people: a cut must keep every tile that was complete for any of them (the plan lab grades a panel)
+  const people = Array.isArray(who) ? who : [who];
   const out = meals.map((m) => m.map((i) => ({ ...i })));
   const orig = meals.map((m) => m.map((i) => i.grams));
   const kcalOf = () => out.flat().reduce((n, i) => n + ((getFood(foods, i.foodId)?.n.kcal ?? 0) * i.grams) / 100, 0);
-  const progress = () => boardProgress(ingredientsTotal(out.flat(), foods), who);
+  // progress per person, keyed "<person>:<nutrient>"
+  const progress = () => {
+    const t = ingredientsTotal(out.flat(), foods);
+    return people.flatMap((w, pi) => boardProgress(t, { ...w, energyKcal: targetKcal }).map((p) => ({ ...p, key: `${pi}:${p.key}` })));
+  };
   const protectedKeys = new Set(progress().filter((p) => p.complete).map((p) => p.key));
+  // a meal that started with a real protein portion keeps one: never trim its protein foods under MEAL_PROTEIN_FLOOR
+  const proteinOf = (ings: Ingredient[]) =>
+    ings.reduce((n, i) => {
+      const f = getFood(foods, i.foodId);
+      return f && PROTEIN_SOURCES.has(f.category) ? n + ((f.n.protein ?? 0) * i.grams) / 100 : n;
+    }, 0);
+  const proteinFloor = out.map((m) => Math.min(MEAL_PROTEIN_FLOOR, proteinOf(m)));
   let kcal = kcalOf();
   for (let round = 0; round < 200 && kcal > targetKcal; round++) {
     const before = new Map(progress().map((p) => [p.key, p.pct]));
@@ -243,6 +256,7 @@ export function sizeDayDown(meals: Ingredient[][], targetKcal: number, foods: Fo
         if (!f || (FIXED_CATEGORIES.has(f.category) && !isStarchyVeg(f)) || !f.n.kcal) return;
         if (ing.grams <= orig[mi][ii] * MIN_MULT + 0.5) return;
         const grams = Math.max(orig[mi][ii] * MIN_MULT, ing.grams * 0.9);
+        if (PROTEIN_SOURCES.has(f.category) && proteinOf(meal) - ((f.n.protein ?? 0) * (ing.grams - grams)) / 100 < proteinFloor[mi] - 1e-6) return;
         const saved = (f.n.kcal * (ing.grams - grams)) / 100;
         const was = ing.grams;
         ing.grams = grams;
@@ -265,6 +279,10 @@ export function sizeDayDown(meals: Ingredient[][], targetKcal: number, foods: Fo
 }
 
 const FIXED_CATEGORIES = new Set<Food['category']>(['vegetable', 'fruit']);
+/** foods that count as a meal's real protein (the same set the plan lab checks) */
+export const PROTEIN_SOURCES = new Set<Food['category']>(['meat', 'poultry', 'fish', 'egg', 'legume', 'dairy']);
+/** grams of protein from protein foods that a lunch or dinner keeps when a day is sized down */
+const MEAL_PROTEIN_FLOOR = 15;
 
 export interface PersonalizeOptions {
   foods: FoodIndex;
@@ -272,6 +290,8 @@ export interface PersonalizeOptions {
   groups: SwapGroup[];
   /** the day's calorie target; omit to skip sizing */
   targetKcal?: number;
+  /** other people whose complete tiles sizing down must also keep (the plan lab's reference panel) */
+  alsoProtect?: Who[];
 }
 
 export interface PersonalizedDay {
@@ -302,7 +322,7 @@ export function personalizeDay(
   const before = swapped.flat().reduce((n, i) => n + ((getFood(opts.foods, i.foodId)?.n.kcal ?? 0) * i.grams) / 100, 0);
   let sized = swapped;
   if (opts.targetKcal && opts.targetKcal < before - 10) {
-    sized = sizeDayDown(swapped, opts.targetKcal, opts.foods, profile).map((ings, i) => wholeUnits(ings, swapped[i], opts.foods, 'up'));
+    sized = sizeDayDown(swapped, opts.targetKcal, opts.foods, [profile, ...(opts.alsoProtect ?? [])]).map((ings, i) => wholeUnits(ings, swapped[i], opts.foods, 'up'));
   } else if (opts.targetKcal && opts.targetKcal > before + 10) {
     const t = daySizing(swapped, opts.targetKcal, opts.foods);
     sized = swapped.map((ings) => wholeUnits(scaleIngredients(ings, t, opts.foods), ings, opts.foods, 'nearest'));

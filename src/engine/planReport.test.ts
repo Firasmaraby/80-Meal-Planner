@@ -50,7 +50,7 @@ describe('plan grading', () => {
     // rules overrides move the protein floor, the GL ceiling and the fish rule
     const strict = gradePlan(plan, FOOD_INDEX, FOODS, { rules: { proteinMinPctKcal: 99, glycemicLoadMax: 1, fattyFishPerWeek: 99 } });
     expect(strict.issues.filter((i) => i.code === 'protein_low').length).toBe(plan.days.length);
-    expect(strict.issues.some((i) => i.code === 'gl_high' && /aim ≤1\)/.test(i.message))).toBe(true);
+    expect(strict.issues.some((i) => i.code === 'gl_high' && /aim ≤1 at \d+ kcal\)/.test(i.message))).toBe(true);
     expect(strict.issues.some((i) => i.code === 'fish_low' && /aim ≥99/.test(i.message))).toBe(true);
     const lax = gradePlan(plan, FOOD_INDEX, FOODS, { rules: { fattyFishPerWeek: 0, proteinMinPctKcal: 0 } });
     expect(lax.issues.some((i) => i.code === 'fish_low' || i.code === 'protein_low')).toBe(false);

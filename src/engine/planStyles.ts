@@ -1,6 +1,6 @@
 /**
  * Plan styles: the identity of a plan family and the extra checks it has to pass on top of the framework defaults
- * (planReport RULES: protein >= 20% of kcal, sat fat < 10%, omega 6:3 <= 4:1 over the week and <= 6:1 on any day, GL <= 100 a day, fatty fish twice a week).
+ * (planReport RULES: protein >= 20% of kcal, sat fat < 10%, omega 6:3 <= 6:1 over the week (4:1 earns a badge) and <= 9:1 on any day, GL <= 100 a day, fatty fish twice a week).
  *
  * `PLAN_STYLES[style].gates` is plain config. scripts/plan-lab.mjs reads it through:
  *   gradeOptionsFor     who to grade against and which RULES change (protein floor, sat fat, GL, fish...)
@@ -273,7 +273,7 @@ export const isPlanStyle = (s: unknown): s is PlanStyle => typeof s === 'string'
 export function gradeOptionsFor(style: PlanStyle, kcal: number): { panel: ReferencePerson[]; rules: Partial<Rules> } {
   const g = PLAN_STYLES[style].gates;
   const rules: Partial<Rules> = { ...g.rules };
-  if (g.glPer2000Kcal) rules.glycemicLoadMax = (g.glPer2000Kcal * kcal) / 2000;
+  if (g.glPer2000Kcal) rules.glycemicLoadMax = g.glPer2000Kcal; // per 2000 kcal, scaled per day by gradePlan
   const panel = g.lifeStage ? [{ ...FEMALE, lifeStage: g.lifeStage }] : kcal < 1600 ? [FEMALE] : REFERENCE_PANEL;
   return { panel, rules };
 }
