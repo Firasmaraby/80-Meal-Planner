@@ -268,7 +268,9 @@ export interface SwapOption {
   highlights: { key: NutrientKey; pctPoints: number }[];
 }
 
-export const roundGrams = (g: number) => (g < 20 ? Math.max(1, Math.round(g)) : Math.round(g / 5) * 5);
+/** Kitchen-friendly grams: pinches (saffron, cayenne, salt) to 0.1 g, small amounts to the gram, the rest to 5 g. */
+export const roundGrams = (g: number) =>
+  g < 2 ? Math.max(0.1, Math.round(g * 10) / 10) : g < 20 ? Math.round(g) : Math.round(g / 5) * 5;
 
 export function swapGrams(original: Food, originalGrams: number, candidate: Food, mode: SwapMode): number {
   if (mode === 'grams') return originalGrams;

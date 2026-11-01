@@ -102,3 +102,28 @@ describe('whole units', () => {
     }
   });
 });
+
+describe('pinches', () => {
+  it('keeps spice-sized amounts to a tenth of a gram when sizing', () => {
+    const saffron = FOODS.find((f) => /saffron/i.test(f.name)) ?? FOODS.find((f) => f.category === 'condiment')!;
+    const chicken = FOODS.find((f) => f.head === 'chicken breast')!;
+    const ings = [{ foodId: saffron.id, grams: 0.1 }, { foodId: chicken.id, grams: 150 }];
+    for (const target of [300, 900]) {
+      const p = personalizeDay({ day: 1, meals: [{ id: 'm', slot: 'dinner', name: 'x', ingredients: ings }] }, who, { ...opts, targetKcal: target });
+      expect(p.meals.get('m')![0].grams).toBeLessThan(0.5);
+    }
+  });
+});
+
+describe('starchy vegetables', () => {
+  it('potatoes shrink with the day like grains, while greens stay as written', () => {
+    const potato = FOODS.find((f) => f.head === 'potato' && f.category === 'vegetable')!;
+    const kale = FOODS.find((f) => f.head === 'kale')!;
+    const chicken = FOODS.find((f) => f.head === 'chicken breast')!;
+    const ings = [{ foodId: potato.id, grams: 300 }, { foodId: kale.id, grams: 100 }, { foodId: chicken.id, grams: 200 }];
+    const p = personalizeDay({ day: 1, meals: [{ id: 'm', slot: 'dinner', name: 'x', ingredients: ings }] }, who, { ...opts, targetKcal: 350 });
+    const [pot, k] = p.meals.get('m')!;
+    expect(pot.grams).toBeLessThan(300);
+    expect(k.grams).toBe(100);
+  });
+});

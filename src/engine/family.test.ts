@@ -153,7 +153,7 @@ describe('compiling a family', () => {
     expect(nothing.week).toEqual(week);
   });
 
-  it('Light drops the written snack and sizes each day to its kcal with vegetables and fruit fixed', () => {
+  it('Light drops the written snack and sizes each day to its kcal with vegetables (not potatoes) and fruit fixed', () => {
     const light = compileSize(fixture, 'light', ctx)!;
     expect(light.plan.id).toBe('fixture-mini-light');
     expect(light.problems).toEqual([]);
@@ -169,7 +169,8 @@ describe('compiling a family', () => {
           const base = fixture.recipes.find((r) => r.id === m.recipeId)!.ingredients[k];
           expect(i.foodId).toBe(base.food);
           const cat = FOOD_INDEX.get(i.foodId)!.category;
-          if (cat === 'vegetable' || cat === 'fruit') expect(i.grams).toBe(base.g);
+          const starchy = /potato/i.test(FOOD_INDEX.get(i.foodId)!.name); // potatoes size like grains
+          if ((cat === 'vegetable' && !starchy) || cat === 'fruit') expect(i.grams).toBe(base.g);
         }),
       );
     }

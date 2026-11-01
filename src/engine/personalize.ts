@@ -5,7 +5,7 @@
  *    group (or, failing that, its category) whose micronutrient profile is closest,
  *    calorie-matched. Micros are what the plan was built for, so that's what we match.
  * 2. Sizing: each day is scaled to the person's calorie target. Vegetables and fruit stay
- *    fixed; oils and grains flex most, legumes, nuts and fish least (see FLEX).
+ *    fixed (starchy ones like potatoes size like grains); oils and grains flex most, legumes, nuts and fish least (see FLEX).
  */
 import { BOARD_KEYS } from './nutrients';
 import { requirementsFor } from './dri';
@@ -43,8 +43,11 @@ const FLEX: Partial<Record<Food['category'], number>> = {
   nut_seed: 0.6,
   legume: 0.6,
 };
+/** Potatoes, sweet potatoes, cassava and friends are filed as vegetables but eaten as the starch: they size like grains. */
+const STARCHY_RX = /\b(?:potato(?:es)?|sweet potato|yam|cassava|yuca|plantain|taro|breadfruit|sweet corn|corn)\b/i;
+const isStarchyVeg = (f: Food) => f.category === 'vegetable' && STARCHY_RX.test(f.head ?? f.name) && !/\b(?:leaves|leaf|greens|chips|starch|flour)\b/i.test(f.name);
 // Sizing DOWN doesn't use these weights; see sizeDayDown (micros first).
-const flexOf = (f: Food | undefined, _t: number) => (f ? (FLEX[f.category] ?? 1) : 1);
+const flexOf = (f: Food | undefined, _t: number) => (f ? (isStarchyVeg(f) ? FLEX.grain! : (FLEX[f.category] ?? 1)) : 1);
 
 const MIN_MULT = 0.5;
 const MAX_MULT = 1.8;
@@ -237,7 +240,7 @@ export function sizeDayDown(meals: Ingredient[][], targetKcal: number, foods: Fo
     out.forEach((meal, mi) =>
       meal.forEach((ing, ii) => {
         const f = getFood(foods, ing.foodId);
-        if (!f || FIXED_CATEGORIES.has(f.category) || !f.n.kcal) return;
+        if (!f || (FIXED_CATEGORIES.has(f.category) && !isStarchyVeg(f)) || !f.n.kcal) return;
         if (ing.grams <= orig[mi][ii] * MIN_MULT + 0.5) return;
         const grams = Math.max(orig[mi][ii] * MIN_MULT, ing.grams * 0.9);
         const saved = (f.n.kcal * (ing.grams - grams)) / 100;
@@ -257,7 +260,7 @@ export function sizeDayDown(meals: Ingredient[][], targetKcal: number, foods: Fo
     kcal = kcalOf();
   }
   // round UP to friendly amounts so rounding can't nudge a protected tile under 80%
-  const up = (g: number) => (g < 20 ? Math.ceil(g) : Math.ceil(g / 5) * 5);
+  const up = (g: number) => (g < 2 ? Math.ceil(g * 10 - 1e-9) / 10 : g < 20 ? Math.ceil(g) : Math.ceil(g / 5) * 5);
   return out.map((m) => m.map((i) => ({ ...i, grams: up(i.grams) })));
 }
 
