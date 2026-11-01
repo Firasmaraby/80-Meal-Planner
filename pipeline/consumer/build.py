@@ -99,7 +99,13 @@ def main(argv: list[str] | None = None) -> int:
         r.pop("hidden", None)
 
     live = [r for r in records if r["tier"] != "hidden"]
-    X.make_ids(live)
+    ids_path = PIPE / "config" / "food_ids.json"      # issued ids never change (recipes and logs refer to them)
+    registry = _load_json(ids_path) if ids_path.exists() else {}
+    n_known = len(registry)
+    X.make_ids(live, registry)
+    if not args.no_app_write:
+        ids_path.write_text(json.dumps(registry, indent=0, sort_keys=True) + "\n", encoding="utf-8")
+    print(f"  food ids: {n_known} kept from food_ids.json, {len(registry) - n_known} new")
     kept_legacy = [L.legacy_record(old, lex) for old in legacy_foods if legacy_match[old["id"]][0] is None]
     assert not ({r["id"] for r in live} & {r["id"] for r in kept_legacy}), "legacy id collides with a generated id"
     rule_cfg = _load_json(PIPE / "config" / "servings_defaults.json")

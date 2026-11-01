@@ -473,7 +473,10 @@ REWRITES: list[tuple[re.Pattern, str]] = [(re.compile(p, re.I), r) for p, r in [
     (r"^Syrups?, maple\b", "Maple syrup"),
     (r"^Honey\b", "Honey"),
     (r"^Salt, table\b", "Salt, table"),
-    (r"^Vinegar, (\w+)\b", r"\1 vinegar"),
+    (r"^Vinegar, ([\w ]+?)(?=,|$| \()", r"\1 vinegar"),   # "Vinegar, red wine" -> "red wine vinegar"
+    (r"^distilled vinegar \(white\)", "White vinegar"),
+    (r"^Cumin \(cummin\)", "Cumin"),
+    (r"^Olive \(average\)", "Olives"),
     (r"^Chocolate, dark\b", "Dark chocolate"),
     (r"^Chocolate, (milk|white)\b", r"\1 chocolate"),
     (r"^Sweet potatoes?, ", "Sweet potato, "),

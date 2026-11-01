@@ -29,17 +29,30 @@ CATEGORIES = ["fruit", "vegetable", "legume", "grain", "nut_seed", "dairy", "egg
 TAGS = ["fatty_fish", "leafy_green", "whole_grain", "plant_iron", "fermented", "processed"]
 
 
-def make_ids(records: list[dict[str, Any]]) -> None:
-    """id = slug(display name) + '-' + 6 hex of sha1(canonical_id). Stable for identical input, unique by construction."""
+def make_ids(records: list[dict[str, Any]], registry: dict[str, str] | None = None) -> None:
+    """id = slug(display name) + '-' + 6 hex of sha1(canonical_id), unique by construction.
+    `registry` (canonical_id -> id, pipeline/config/food_ids.json) freezes ids once issued: recipes and people's logs refer
+    to foods by id, so a later name cleanup must never change one. New foods get a fresh id and are added to it."""
+    registry = registry if registry is not None else {}
     used: set[str] = set()
+    fresh: list[dict[str, Any]] = []
     for r in sorted(records, key=lambda r: r["canonical_id"]):
+        rid = registry.get(r["canonical_id"])
+        if rid and rid not in used:
+            used.add(rid)
+            r["id"] = rid
+        else:
+            fresh.append(r)
+    taken = used | set(registry.values())
+    for r in fresh:
         base = f"{slugify(r['name'])}-{short_hash(r['canonical_id'])}"
         cand, n = base, 2
-        while cand in used:
+        while cand in taken:
             cand = f"{base}-{n}"
             n += 1
-        used.add(cand)
+        taken.add(cand)
         r["id"] = cand
+        registry[r["canonical_id"]] = cand
 
 
 def _num(v: float | None) -> Any:
