@@ -19,6 +19,14 @@ COLS = {"kcal": "energy_kcal", "protein": "protein_g", "fat": "fat_g", "fiber": 
         "manganese": "manganese_mg", "selenium": "selenium_ug", "iodine": "iodine_ug", "sodium": "sodium_mg"}
 
 
+def dropped_outliers():
+    """(food id, nutrient) pairs the peer outlier check removed on purpose (pipeline/out/outliers.csv, action = dropped)."""
+    path = REPO / "pipeline" / "out" / "outliers.csv"
+    if not path.exists():
+        return set()
+    return {(r["id"], r["nutrient"]) for r in csv.DictReader(path.open(encoding="utf-8")) if r["action"] == "dropped"}
+
+
 def num(r, c):
     try:
         return float(r.get(c, ""))
@@ -30,6 +38,7 @@ def main(n=60, seed=7):
     bundle = json.loads((REPO / "src" / "data" / "foods.everyday.json").read_text(encoding="utf-8"))
     keys, dbs = bundle["keys"], bundle["dbs"]
     wide = {(r["source_citation"], r["food_id"].split(":", 1)[-1]): r for r in csv.DictReader(WIDE.open(encoding="utf-8"))}
+    dropped = dropped_outliers()
     random.seed(seed)
     sample = random.sample([f for f in bundle["foods"] if f[9][0][1] != "gap-fill"], n)
     bad = checked = 0
@@ -39,8 +48,8 @@ def main(n=60, seed=7):
             print("no source row:", f[1]); bad += 1; continue
         app = dict(zip(keys, f[11]))
         for k, col in COLS.items():
-            if k in f[10]:
-                continue                      # estimated / rescaled: not a copy of the source
+            if k in f[10] or (f[0], k) in dropped:
+                continue                      # estimated / rescaled / dropped as a peer outlier: not a copy of the source
             v, got = num(row, col), app.get(k)
             if k == "kcal" and v is None and num(row, "energy_kj") is not None:
                 v = num(row, "energy_kj") / 4.184

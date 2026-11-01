@@ -73,7 +73,10 @@ The app's foods come from the unified foodpipe v1.0 database (release `food-db-v
 
 - one food per cluster, Canadian Nutrient File first, then USDA, then the rest; every source that confirms a food stays in its citations;
 - three tiers: **everyday** (3,000 foods people actually log, bundled, and the only foods the AI plan kit offers), **extended** (searchable, ranked below, loaded on demand), **hidden** (baby food, supplements, duplicates, records without energy or not per 100 g edible portion), each hidden food with its reason;
-- clean English names, one base food (`head`) per group, so search shows "Apple, raw" first and groups the other apple foods under it.
+- clean English names, one base food (`head`) per group, so search shows "Apple, raw" first and groups the other apple foods under it;
+- **glycaemic index** (bundle row index 12) from `pipeline/config/gi_values.json`: values from the International Tables of Glycemic Index (Atkinson, Foster-Powell, Brand-Miller 2008; update 2021) by food head, each with its table entry in `src`. A food with 5 g or more available carbohydrate (carbs minus fibre) per 100 g that no mapping covers gets a category default and is marked estimated (row index 13, `Food.giEstimated`). The glycaemic load is GI x available carbohydrate / 100 (`glycemicLoad` in `src/engine/calc.ts`). The audit trail is `pipeline/out/gi_assignments.csv`;
+- **fatty acids**: a food with 1 g or more fat and a missing saturated / mono / poly split borrows the proportions of total fat (sat, mufa, pufa, ala, epa, dha) from the best member of its canonical cluster, else from the highest-ranked food with the same head and category, scaled to its own fat and marked estimated (`pipeline/out/fa_borrowed.csv`). No donor, no split;
+- **peer outliers**: a board micronutrient more than 2.5x above or 0.25x below the median of foods with the same head and form (and a meaningful gap) is dropped, with an `outlier` note and the citation kept; kcal, protein and fat are only listed. Everything flagged is in `pipeline/out/outliers.csv`.
 
 ```bash
 python3 pipeline/consumer/build.py           # rebuild src/data/foods.*.json, the seed CSV and pipeline/out/CURATION_REPORT.md

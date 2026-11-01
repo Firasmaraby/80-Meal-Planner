@@ -8,6 +8,7 @@ import re
 from collections import Counter, defaultdict
 from typing import Any
 
+from . import adapter as AD
 from . import aliases as A
 from . import names_en as N
 from . import rank as R
@@ -205,3 +206,40 @@ def hidden_summary(records: list[dict[str, Any]]) -> dict[str, list[dict[str, An
         if r["tier"] == "hidden":
             out[r["hidden_reason"]].append(r)
     return out
+
+
+def borrow_fatty_acids_by_head(records: list[dict[str, Any]]) -> dict[str, int]:
+    """Route 2 of the fatty-acid borrowing (route 1, the same canonical cluster, ran in adapter.load_records).
+    A live record with fat >= 1 g and a missing sat / mono / poly split takes the proportions of the highest-ranked OTHER live record
+    with the same head and category that has a measured split of its own (never one that was itself borrowed). Needs
+    tiers and ranks, so it runs after curate. Returns the counts. Records without a donor keep the split missing."""
+    live = [r for r in records if r.get("tier") not in (None, "hidden")]
+    donors: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
+    for r in sorted(live, key=lambda r: (-r["rank"], r["canonical_id"])):
+        if AD.has_fa_split(r["n"]) and not r.get("fa_borrow"):
+            donors[(r["head"], r["category"])].append(r)
+    by_route = {"cluster": 0, "head": 0, "none": 0}
+    everyday = {"cluster": 0, "head": 0, "none": 0}
+    for r in live:
+        if r.get("fa_borrow"):
+            by_route["cluster"] += 1
+            everyday["cluster"] += r["tier"] == "everyday"
+            continue
+        if not AD.needs_fa_split(r["n"]):
+            continue
+        cands = [d for d in donors.get((r["head"], r["category"]), []) if d["canonical_id"] != r["canonical_id"]]
+        if not cands:
+            by_route["none"] += 1
+            everyday["none"] += r["tier"] == "everyday"
+            continue
+        d = cands[0]
+        if not AD.borrow_fatty_acids(r["n"], r["estimated"], r["notes"], d["n"], f"{d['name']} [{d['canonical_id']}]",
+                                     "same head and category", r.get("food_group")):
+            by_route["none"] += 1
+            everyday["none"] += r["tier"] == "everyday"
+            continue
+        r["fa_borrow"] = "head"
+        r["fa_donor"] = d["name"]
+        by_route["head"] += 1
+        everyday["head"] += r["tier"] == "everyday"
+    return {"all": by_route, "everyday": everyday}

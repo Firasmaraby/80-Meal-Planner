@@ -4,7 +4,8 @@
  *
  * Bundle: { v: 1, keys: NutrientKey[], dbs?: string[], foods: Row[] }
  * Row:    [id, name, category, head, form, rank, aliases[], tags[], servings[[label, g]], src[[db, ref]],
- *          estimated[], values[] (aligned to keys, null = no data), gi?]
+ *          estimated[], values[] (aligned to keys, null = no data), gi?, giEstimated?]
+ * `gi` is the glycaemic index (glucose = 100); `giEstimated` is 1 when it is a category default or an analogue, not a table value.
  * `src[i][0]` is an index into `dbs` (a plain citation string is accepted too).
  */
 import type { Food, FoodCategory, FoodSource, FoodTag, FoodTier, NutrientKey, NutrientVector, Serving } from '@/engine/types';
@@ -23,6 +24,7 @@ export type FoodRow = [
   estimated: NutrientKey[],
   values: (number | null)[],
   gi?: number | null,
+  giEstimated?: 0 | 1,
 ];
 
 export interface FoodBundle {
@@ -57,6 +59,7 @@ export function decodeFood(row: FoodRow, keys: NutrientKey[], dbs: string[] | un
   if (servings.length) food.servings = servings;
   if (row[10].length) food.estimated = row[10];
   if (row[12] != null) food.gi = row[12];
+  if (row[13]) food.giEstimated = true;
   return food;
 }
 

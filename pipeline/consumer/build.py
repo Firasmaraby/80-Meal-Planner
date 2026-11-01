@@ -27,7 +27,7 @@ REPO = PIPE.parent
 if str(PIPE) not in sys.path:
     sys.path.insert(0, str(PIPE))
 
-from consumer import adapter, aliases as A, curate as C, export_app as X, legacy as L, names_en as N  # noqa: E402
+from consumer import adapter, aliases as A, curate as C, export_app as X, gi as GI, legacy as L, names_en as N, qa as QA  # noqa: E402
 from consumer import report as REP  # noqa: E402
 import search_check as SC  # noqa: E402
 
@@ -98,6 +98,11 @@ def main(argv: list[str] | None = None) -> int:
     for r in records:
         r.pop("hidden", None)
 
+    fa_stats = C.borrow_fatty_acids_by_head(records)
+    fa_all, fa_ev = fa_stats["all"], fa_stats["everyday"]
+    print(f"  fatty-acid split borrowed (live foods; everyday in brackets): same cluster {fa_all['cluster']} ({fa_ev['cluster']}), "
+          f"same head + category {fa_all['head']} ({fa_ev['head']}); still missing {fa_all['none']} ({fa_ev['none']})")
+
     live = [r for r in records if r["tier"] != "hidden"]
     ids_path = PIPE / "config" / "food_ids.json"      # issued ids never change (recipes and logs refer to them)
     registry = _load_json(ids_path) if ids_path.exists() else {}
@@ -106,6 +111,12 @@ def main(argv: list[str] | None = None) -> int:
     if not args.no_app_write:
         ids_path.write_text(json.dumps(registry, indent=0, sort_keys=True) + "\n", encoding="utf-8")
     print(f"  food ids: {n_known} kept from food_ids.json, {len(registry) - n_known} new")
+    flags = QA.find_outliers(records)
+    n_dropped = QA.apply_outliers(flags)
+    print(f"  peer outliers: {len(flags)} flagged, {n_dropped} board values dropped, {len(flags) - n_dropped} listed only")
+    ov_path = PIPE / "config" / "value_overrides.json"
+    if ov_path.exists():
+        print(f"  reviewed overrides: {QA.apply_overrides(live, _load_json(ov_path))} values")
     kept_legacy = [L.legacy_record(old, lex) for old in legacy_foods if legacy_match[old["id"]][0] is None]
     assert not ({r["id"] for r in live} & {r["id"] for r in kept_legacy}), "legacy id collides with a generated id"
     rule_cfg = _load_json(PIPE / "config" / "servings_defaults.json")
@@ -125,10 +136,11 @@ def main(argv: list[str] | None = None) -> int:
         legacy_by_new.setdefault(m["id"], old)
         legacy_rows.append({"old_id": old["id"], "old_name": old["name"], "new_id": m["id"], "new_name": m["name"],
                             "tier": m["tier"], **info})
+    gi_table = GI.load_table(PIPE / "config" / "gi_values.json")
     for r in live:
         lg = legacy_by_new.get(r["id"])
         r["servings"], r["servings_from"] = X.pick_servings(r, hs, rule_cfg, lg)
-        r["gi"] = lg.get("gi") if lg else None
+        r["gi"], r["gi_src"], r["gi_est"] = GI.pick_gi(r, gi_table, lg.get("gi") if lg else None)
         r["aliases_out"] = [a for a in r["aliases"] if a != r["name"].lower()]
         if lg:
             for a in lg.get("aliases", []):
@@ -147,11 +159,14 @@ def main(argv: list[str] | None = None) -> int:
     errs = X.validate_bundle(be) + X.validate_bundle(bx)
     if errs:
         raise SystemExit("bundle validation failed:\n" + "\n".join(errs[:20]))
-    gi_by_id = {r["id"]: r["gi"] for r in live if r.get("gi") is not None}
+    gi_by_id = {r["id"]: (r["gi"], r["gi_est"]) for r in live if r.get("gi") is not None}
     for b in (be, bx):
         for row in b["foods"]:
             if row[0] in gi_by_id:
-                row.append(gi_by_id[row[0]])
+                gi, est = gi_by_id[row[0]]
+                row.append(gi)            # index 12: glycemic index; index 13: 1 when it is a category default, not a table value
+                if est:
+                    row.append(1)
     sizes = {}
     if not args.no_app_write:
         app.mkdir(parents=True, exist_ok=True)
@@ -194,6 +209,11 @@ def main(argv: list[str] | None = None) -> int:
     X.write_seed(out / "foods_seed.csv", live)
     X.write_review(out / "everyday_review.csv", everyday)
     X.write_notes(out / "food_notes.csv", live)
+    QA.write_outliers(out / "outliers.csv", flags)
+    GI.write_assignments(out / "gi_assignments.csv", live)
+    X.write_fa_borrowed(out / "fa_borrowed.csv", live)
+    gi_stats = GI.summary(live)
+    print("  glycemic index (everyday, available carbs >= 5 g): " + ", ".join(f"{k} {v}" for k, v in gi_stats["everyday"].items()))
     for r in records:
         r.setdefault("id", "")
     X.write_curation_log(out / "curation_log.csv", records_all)

@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
 
 import fixtureJson from '../../content/families/_fixture-mini.json';
-import { FOODS, FOOD_INDEX } from '@/state/catalog';
+import { FOODS, FOOD_INDEX, FoodIndex } from '@/state/catalog';
 import { familyDeps } from '@/state/familyDeps';
 
 import { ingredientsTotal } from './calc';
@@ -29,14 +29,17 @@ import type { MealPlan } from './types';
 vi.setConfig({ testTimeout: 30_000 }); // each lab run sizes 3 sizes at 6 calorie levels, about a second
 
 const fixture = fixtureJson as unknown as FamilyFile;
+/** Lab mechanics tests grade the hand-made two-day fixture. With real glycaemic indices it is over the daily GL gate (103-108),
+ *  so these tests grade it without GIs; the GL gate itself is covered by planStyles.test.ts and glycemicLoad.test.ts. */
+const mechanicsDeps = { ...familyDeps, foods: new FoodIndex(FOODS.map((f) => ({ ...f, gi: undefined }))) };
 const clone = (): FamilyFile => structuredClone(fixture);
-const lab = (f: FamilyFile) => runLab(f, familyDeps);
+const lab = (f: FamilyFile) => runLab(f, mechanicsDeps);
 /** The Standard size alone (2 calorie levels instead of 6): enough for tests that are not about sizing. */
 const labStd = (f: FamilyFile) => {
   const g = structuredClone(f);
   delete g.sizes.light;
   delete g.sizes.big;
-  return runLab(g, familyDeps);
+  return runLab(g, mechanicsDeps);
 };
 const codes = (f: FamilyFile) => labStd(f).failures.map((x) => x.code);
 
@@ -212,7 +215,7 @@ describe('plan lab', () => {
       for (const d of e.days) {
         expect(d.proteinPct).toBeGreaterThanOrEqual(20);
         expect(d.satPct).toBeLessThan(10);
-        expect(d.omega).toBeLessThanOrEqual(4);
+        expect(d.omega).toBeLessThanOrEqual(6); // the daily gate (omegaDayMaxRatio); 4.15 now that borrowed fatty acids count as omega-6
         expect(d.gl).toBeLessThanOrEqual(100);
         expect(d.under80.every((u) => u.hard)).toBe(true);
       }
@@ -427,7 +430,7 @@ describe('build: from file to shipped data', () => {
   });
 
   it('writes a passing family, refuses a failing one, and with allowFail keeps only the verified bands', () => {
-    const ok = buildFamily(fixture, familyDeps);
+    const ok = buildFamily(fixture, mechanicsDeps);
     expect(ok).toMatchObject({ written: true, id: 'fixture-mini', notes: [] });
     expect(ok.plans.map((p) => p.size)).toEqual(['light', 'standard', 'big']);
     expect(ok.recipes).toHaveLength(6);
@@ -436,18 +439,18 @@ describe('build: from file to shipped data', () => {
 
     const bad = clone();
     bad.recipes[0].tip = 'a — b';
-    const refused = buildFamily(bad, familyDeps);
+    const refused = buildFamily(bad, mechanicsDeps);
     expect(refused).toMatchObject({ written: false, plans: [], recipes: [] });
     expect(refused.notes[0]).toMatch(/Refused: 1 failure/);
 
     const broken = clone();
     broken.recipes[0].ingredients[0].food = 'nope';
-    expect(buildFamily(broken, familyDeps, { allowFail: true })).toMatchObject({ written: false });
+    expect(buildFamily(broken, mechanicsDeps, { allowFail: true })).toMatchObject({ written: false });
 
     // a Light plan claiming a band far above its size cannot pass there; the band that does pass stays in covers
     const partial = clone();
     partial.sizes.light!.covers = ['1400-1600', '1600-1800', '3200-3700'];
-    const built = buildFamily(partial, familyDeps, { allowFail: true });
+    const built = buildFamily(partial, mechanicsDeps, { allowFail: true });
     expect(built.written).toBe(true);
     const claimed = [{ min: 1400, max: 1600 }, { min: 1600, max: 1800 }, { min: 3200, max: 3700 }];
     const kept = verifiedBands(built.lab, 'light', claimed);

@@ -114,6 +114,60 @@ def reconcile_fatty_acids(n: dict[str, float], est: list[str], notes: list[str])
         notes.append("fatty acids: sat / mono / poly dropped, the source's split is inconsistent with its total fat")
 
 
+def estimate_la(n: dict[str, float], est: list[str], notes: list[str], food_group: str | None) -> None:
+    """Linoleic acid (omega-6) is not in the source: estimate it from PUFA minus the known omega-3s.
+    Fish without EPA / DHA values is skipped: most of its PUFA is omega-3, so the estimate would call it omega-6."""
+    fish_without_o3 = food_group == "fish_seafood" and (n.get("epa") is None or n.get("dha") is None)
+    if n.get("pufa") is not None and not fish_without_o3:
+        known = sum(n.get(k) or 0.0 for k in ("ala", "epa", "dha"))
+        n["la"] = max(0.0, n["pufa"] - known)
+        if not any(x.startswith("la: estimated") for x in notes):
+            notes.append("la: estimated as pufa - (ala+epa+dha)")
+        if "la" not in est:
+            est.append("la")
+
+
+# ---- borrowing a fatty-acid split from a donor record --------------------------------------------------------------
+FA_BORROW_MIN_FAT = 1.0                    # below this the split is nutritionally irrelevant and the proportions are noise
+FA_PROPORTION_KEYS = ("satFat", "mufa", "pufa", "ala", "epa", "dha")
+
+
+def needs_fa_split(n: dict[str, float]) -> bool:
+    """Fat of at least 1 g and at least one of saturated / mono / polyunsaturated missing (usually all three; "Heavy cream" has
+    sat and mono but no poly, which counts as zero omega-6)."""
+    return (n.get("fat") or 0.0) >= FA_BORROW_MIN_FAT and any(n.get(k) is None for k in FATTY_ACIDS)
+
+
+def has_fa_split(n: dict[str, float]) -> bool:
+    return (n.get("fat") or 0.0) >= FA_BORROW_MIN_FAT and all(n.get(k) is not None for k in FATTY_ACIDS)
+
+
+def borrow_fatty_acids(n: dict[str, float], est: list[str], notes: list[str], donor_n: dict[str, float], donor_label: str,
+                       route: str, food_group: str | None = None) -> bool:
+    """Fill the missing sat / mono / poly (and ala / epa / dha where the record has no value of its own, when pufa is borrowed) as
+    the donor's proportions of total fat, scaled to this record's own fat. Every borrowed key is marked estimated; `la` is
+    re-estimated from the new pufa. Measured values are never changed: when the record has some of the three already and the
+    borrowed rest would push the sum above its total fat, nothing is borrowed. A fully borrowed split goes through
+    reconcile_fatty_acids, so the three can never add up to more than the food's fat. Returns whether anything was borrowed."""
+    fat, dfat = n["fat"], donor_n["fat"]
+    fill = {k: donor_n[k] / dfat * fat for k in FATTY_ACIDS if n.get(k) is None and donor_n.get(k) is not None}
+    if not fill:
+        return False
+    measured = sum(n[k] for k in FATTY_ACIDS if n.get(k) is not None)
+    if measured and measured + sum(fill.values()) > fat + 0.05:
+        return False
+    if "pufa" in fill:
+        fill.update({k: donor_n[k] / dfat * fat for k in FA_DETAIL if n.get(k) is None and donor_n.get(k) is not None})
+    for k, v in fill.items():
+        n[k] = sig4(v)
+        if k not in est:
+            est.append(k)
+    reconcile_fatty_acids(n, est, notes)
+    estimate_la(n, est, notes, food_group)
+    notes.append(f"fatty acids: {'/'.join(k for k in fill if k in FATTY_ACIDS)} borrowed as proportions of total fat from {donor_label} ({route})")
+    return True
+
+
 def map_nutrients(row: dict[str, Any], est_cols: set[str] | None = None) -> tuple[dict[str, float], list[str], list[str]]:
     """Map one foodpipe row (column -> raw value) to (n, estimated_keys, notes).
 
@@ -184,26 +238,21 @@ def map_nutrients(row: dict[str, Any], est_cols: set[str] | None = None) -> tupl
 
     reconcile_fatty_acids(n, est, notes)
 
-    # linoleic acid (omega-6) is not in the source: estimate it from PUFA minus the known omega-3s.
-    # Fish without EPA / DHA values is skipped: most of its PUFA is omega-3, so the estimate would call it omega-6.
-    fish_without_o3 = row.get("food_group") == "fish_seafood" and (n.get("epa") is None or n.get("dha") is None)
-    if n.get("pufa") is not None and not fish_without_o3:
-        known = sum(n.get(k) or 0.0 for k in ("ala", "epa", "dha"))
-        n["la"] = max(0.0, n["pufa"] - known)
-        notes.append("la: estimated as pufa - (ala+epa+dha)")
-        if "la" not in est:
-            est.append("la")
+    estimate_la(n, est, notes, row.get("food_group"))
 
     return n, est, notes
 
 
-def pick_display(members: list[dict[str, Any]]) -> dict[str, Any] | None:
-    """Owner decision 1. Among the cluster's members that are active and on an edible-portion basis choose, in order:
-    cnf, usda_fdc_sr_legacy, usda_fdc_foundation, the foodpipe-preferred member, any other member.
-    Ties inside one rung: preferred first, then more non-empty nutrient columns, then food_id (deterministic)."""
+def has_energy(m: dict[str, Any]) -> bool:
+    return num(m.get("energy_kcal")) is not None or num(m.get("energy_kj")) is not None
+
+
+def ladder(members: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """The cluster's eligible members (active, edible-portion basis) in display order: cnf, usda_fdc_sr_legacy,
+    usda_fdc_foundation, the foodpipe-preferred member, any other; ties: preferred, more nutrient columns, food_id."""
     elig = [m for m in members if m.get("status") == "active" and m.get("basis") == EDIBLE_BASIS]
     if not elig:
-        return None
+        return []
 
     def rung(m: dict[str, Any]) -> int:
         s = m.get("source_id")
@@ -214,16 +263,21 @@ def pick_display(members: list[dict[str, Any]]) -> dict[str, Any] | None:
     def completeness(m: dict[str, Any]) -> int:
         return sum(1 for c in NUTRIENT_COLUMNS if num(m.get(c)) is not None)
 
-    def has_energy(m: dict[str, Any]) -> bool:
-        return num(m.get("energy_kcal")) is not None or num(m.get("energy_kj")) is not None
-
     elig.sort(key=lambda m: (rung(m), m.get("is_preferred") not in (True, "True", "true"), -completeness(m), m["food_id"]))
-    # Deviation (documented in the report): a record with no energy value would be hidden as `no_kcal`; if the ladder lands on
-    # one while another eligible member has energy, take the first member (still in ladder order) that has it.
+    return elig
+
+
+def pick_display(members: list[dict[str, Any]]) -> dict[str, Any] | None:
+    """Owner decision 1. Among the cluster's members that are active and on an edible-portion basis choose, in order:
+    cnf, usda_fdc_sr_legacy, usda_fdc_foundation, the foodpipe-preferred member, any other member.
+    Ties inside one rung: preferred first, then more non-empty nutrient columns, then food_id (deterministic).
+    Deviation (documented in the report): a record with no energy value would be hidden as `no_kcal`; if the ladder lands on
+    one while another eligible member has energy, take the first member (still in ladder order) that has it."""
+    elig = ladder(members)
     for m in elig:
         if has_energy(m):
             return m
-    return elig[0]
+    return elig[0] if elig else None
 
 
 def ref_of(food_id: str) -> str:
@@ -275,6 +329,15 @@ def load_records(input_dir: str | Path) -> tuple[list[dict[str, Any]], dict[str,
             skipped_no_edible += 1
             continue
         n, est, notes = map_nutrients(disp, est_columns(disp))
+        fa_route = fa_donor = ""
+        if needs_fa_split(n):          # route 1: the best other member of the same cluster that has a split
+            for m in ladder(members):
+                if m["food_id"] == disp["food_id"]:
+                    continue
+                dn, _, _ = map_nutrients(m, est_columns(m))
+                if has_fa_split(dn) and borrow_fatty_acids(n, est, notes, dn, f"{m['name_en']} [{m['food_id']}]", "same cluster", disp.get("food_group")):
+                    fa_route, fa_donor = "cluster", m["name_en"]
+                    break
         active = [m for m in members if m.get("status") == "active"]
         records.append({
             "canonical_id": cid,
@@ -288,6 +351,8 @@ def load_records(input_dir: str | Path) -> tuple[list[dict[str, Any]], dict[str,
             "n": n,
             "estimated": est,
             "notes": notes,
+            "fa_borrow": fa_route,
+            "fa_donor": fa_donor,
             "src": build_src(disp, members, disp.get("filled_from_sources_cite_also", "")),
             "n_sources": len({m["source_id"] for m in active}),
             "n_members": len(active),

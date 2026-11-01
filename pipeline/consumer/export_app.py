@@ -198,6 +198,17 @@ def write_notes(path: Path, records: list[dict[str, Any]]) -> None:
             w.writerow([r["id"], r["tier"], "; ".join(r["notes"]), " ".join(r["estimated"]), r.get("servings_from", ""), r["n_sources"]])
 
 
+def write_fa_borrowed(path: Path, records: list[dict[str, Any]]) -> None:
+    with path.open("w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["id", "tier", "name", "fat_g", "route", "donor", "satFat", "mufa", "pufa", "la"])
+        for r in sorted(records, key=lambda r: r["id"]):
+            if r.get("fa_borrow"):
+                n = r["n"]
+                w.writerow([r["id"], r["tier"], r["name"], n.get("fat"), "same cluster" if r["fa_borrow"] == "cluster" else "same head + category",
+                            r.get("fa_donor", ""), n.get("satFat"), n.get("mufa"), n.get("pufa"), n.get("la")])
+
+
 def write_curation_log(path: Path, records: list[dict[str, Any]]) -> None:
     with path.open("w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)

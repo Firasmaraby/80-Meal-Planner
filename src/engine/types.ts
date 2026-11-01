@@ -67,6 +67,7 @@ export interface Food {
   aliases?: string[];
   tags?: FoodTag[];
   gi?: number | null; // glycemic index (glucose = 100)
+  giEstimated?: boolean; // gi is a category default or a close analogue, not a value from the GI tables
   servings?: Serving[];
   n: NutrientVector; // per 100 g
   src: FoodSource[];
