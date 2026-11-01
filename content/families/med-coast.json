@@ -1,0 +1,1758 @@
+{
+  "id": "med-coast",
+  "name": "Mediterranean Coast",
+  "style": "balanced",
+  "cuisine": "Mediterranean",
+  "regions": [
+    "Greece",
+    "Southern Italy",
+    "Spain"
+  ],
+  "summary": "A week of the way people eat along the Mediterranean coast: beans and lentils most days, olive oil, plenty of vegetables, oily fish twice plus shrimp, and a little feta and yogurt. Greek, Southern Italian and Spanish dishes built on potatoes, legumes, barley and oats.",
+  "howItWorks": "Cook once, eat twice is the engine of this week. Monday's lemon chicken, Wednesday's lentil soup, Friday's chickpea stew and Saturday's saffron barley each make two portions, and the second one is the next day's lunch. Saturday's tortilla does the same, so Sunday morning's breakfast is a cold slice. The other lunches are quick assemblies: a meze plate on Monday, a village salad on Wednesday and a Sicilian fava, orange and fennel salad on Friday. Fish lands on Tuesday, Thursday and Sunday, never two days in a row, and it is always cooked fresh because fish does not reheat well. Sardines and salmon are your oily fish, so they carry the omega-3 and help with vitamin D, and the sardines bring calcium from their soft bones. Beans, lentils or chickpeas show up on most days and eggs turn up every day, which keeps your choline up. Olive oil is the heart of this way of eating and brings plenty of omega-6, so walnuts, a spoonful of chia in the oats and the fish bring the omega-3 back into balance across the week. Kale, sardines, yogurt and feta cover calcium, while lentils, chickpeas and fava beans cover iron. On Sunday night, blitz a batch of quick hummus (it feeds Monday's meze plate and Thursday's snack) and mix the first jar of oats, then repeat the oats on Tuesday and Thursday nights. Save your energy for Saturday, when the tortilla and the saffron barley take a little more time.",
+  "signature": [
+    "lemon-chicken-potatoes",
+    "sardines-white-beans-kale",
+    "fakes-lentil-soup",
+    "shrimp-saganaki-potatoes"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "yogurt-orange-honey"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "yogurt-orange-honey"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "orange-walnuts"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "sardines-lemon-cucumber"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "orange-walnuts"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "figs-almonds"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "sardines-lemon-cucumber"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "yogurt-oats-fig-almond",
+      "name": "Overnight oats with Greek yogurt, figs and almonds",
+      "inspiredBy": "Greek yogurt with honey, figs and nuts, turned into make-ahead oats",
+      "about": "Rolled oats soaked overnight in thick Greek yogurt with chopped dried figs and a little chia, then topped with chopped almonds and a drizzle of honey. It is ready when you wake up, creamy, a little sweet and nicely crunchy on top. The oats and chia add fibre, the figs add a little calcium and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 140,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 30,
+          "note": "chopped"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 8
+        }
+      ],
+      "steps": [
+        "The night before, stir the oats, yogurt, chia and chopped figs together in a jar or bowl with about 100 ml (⅓ cup) of milk or water. It should look a little too runny, since the oats and chia will drink it up.",
+        "Cover and chill overnight. The figs soften and sweeten the oats as they sit.",
+        "In the morning, give it a stir. It should be thick and spoonable, and a splash more milk or water loosens it if it has gone stiff.",
+        "Roughly chop the almonds and scatter them on top with a drizzle of honey."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Swap the figs for berries or a chopped orange, whatever you have. Make a few jars at once on Sunday, Tuesday and Thursday evenings."
+    },
+    {
+      "id": "strapatsada-spinach",
+      "name": "Strapatsada, Greek tomato and feta scrambled eggs with spinach",
+      "inspiredBy": "Greek strapatsada, with a handful of spinach folded in",
+      "about": "Soft eggs scrambled into juicy cherry tomatoes with crumbled feta, oregano and a little spinach, with an orange on the side. It is a proper hot breakfast in about ten minutes. Eggs bring protein and choline, and the tomatoes and orange bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 180,
+          "note": "halved"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 25
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 130,
+          "swap": "vit_c_fruit",
+          "note": "on the side"
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a non-stick pan over medium heat. Add the tomatoes with the oregano and cook, pressing them with the back of a spoon, until they collapse into a thick, jammy sauce, about 4 minutes.",
+        "Stir in the spinach until it wilts.",
+        "Beat the eggs with the salt and pour them in. Stir gently until they are softly set and still glossy, about 2 minutes.",
+        "Crumble the feta over the top and eat right away, with the orange alongside."
+      ],
+      "prepMin": 3,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "In the winter, canned crushed tomato works well here when fresh tomatoes are pale."
+    },
+    {
+      "id": "potato-kale-tortilla",
+      "name": "Spanish potato and kale tortilla with tomato salad",
+      "inspiredBy": "Spanish tortilla española, with kale folded in and less oil",
+      "about": "A thick, soft omelette of slow-cooked potatoes, sweet onion, kale and eggs, served in wedges with a juicy tomato and cucumber salad. It is a slow weekend breakfast that makes two portions, and the cold slice is just as good tomorrow morning. The eggs bring protein and choline and the potato brings potassium.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 150,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 60
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "stems removed, finely sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 120,
+          "note": "halved"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a non-stick frying pan over medium-low heat. Add the potatoes and onion with a pinch of the salt, cover and cook, stirring now and then, until the potatoes are completely tender but not browned, about 15 minutes. Add a little more oil if it starts to catch.",
+        "Stir in the kale and cook until it is tender and bright green, about 3 minutes, then tip everything into a bowl and let it cool for a few minutes.",
+        "Beat the eggs with a pinch of salt and fold in the potato mixture. Let it sit for 5 minutes so the egg soaks in.",
+        "Pour it back into the pan over low heat and cook until the edges are set and the middle is just a little wobbly, about 6 minutes.",
+        "Put a plate over the pan, flip the pan over so the tortilla drops onto the plate, then slide it back into the pan and cook 3 minutes more, until golden on both sides.",
+        "Toss the tomatoes and cucumber with the parsley, lemon juice and a few drops of olive oil, and serve a wedge with the salad. Wrap the second portion for tomorrow's breakfast and make a fresh batch of the salad then."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Skip the flip and finish the top under a hot grill if turning it feels scary."
+    },
+    {
+      "id": "meze-plate",
+      "name": "Greek meze plate with quick hummus, tzatziki and a boiled egg",
+      "inspiredBy": "Greek and Cypriot meze tables, built as a quick lunch",
+      "about": "A lunch plate to graze from: lemony hummus, a quick garlicky yogurt dip, feta, a boiled egg, olives and crunchy fennel, cucumber and cherry tomatoes. Only the egg gets cooked, and the hummus comes from your Sunday night batch. Chickpeas, yogurt, egg and feta make it a solid protein lunch, and the raw vegetables bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed, for the hummus"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 4,
+          "note": "for the hummus"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 40
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 20
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 120
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 140
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 60
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 20
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Make the hummus on Sunday night for the week. The batch uses a whole can of chickpeas (about 240 g drained), 1 tbsp of tahini, a little garlic, most of a lemon's juice and a pinch of salt, blitzed with a few spoonfuls of ice-cold water for 2 to 3 minutes until pale and silky. It keeps 4 days in the fridge, and today's plate uses a portion of it (the ingredient list shows that portion).",
+        "Lower the egg gently into a small pot of boiling water, cook for 8 minutes, then cool it under cold water and peel.",
+        "Grate a third of the cucumber, squeeze out the water and stir it into the yogurt with the rest of the garlic, finely grated, and a pinch of salt.",
+        "Cut the rest of the cucumber and the fennel into sticks and halve the tomatoes. Spoon the hummus and the yogurt dip onto a plate, squeeze over the remaining lemon juice, and arrange the vegetables, feta, olives and the halved egg around them. Finish with chopped parsley."
+      ],
+      "prepMin": 10,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Boil a few eggs on Sunday as well, and this lunch takes five minutes. A fresh tub of hummus works too."
+    },
+    {
+      "id": "village-salad-chickpeas",
+      "name": "Village-style salad with chickpeas and feta",
+      "inspiredBy": "Greek horiatiki, with chickpeas to turn it into a lunch",
+      "about": "Chunky tomatoes, cucumber, pepper and red onion with olives, a slab of feta, a spoon of cool yogurt and a pile of chickpeas, all dressed with olive oil, red wine vinegar and oregano. The tomatoes make their own dressing as it sits, so it is better after five minutes. Chickpeas, feta and yogurt make it a real lunch, and the pepper and tomato bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 200,
+          "note": "halved"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 120
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 50
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 30
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 20
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 60
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 240,
+          "swap": "legumes",
+          "note": "rinsed, about 1 can"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 70,
+          "swap": "dairy_protein",
+          "note": "plain, for the garlicky dollop"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 8
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Halve the tomatoes, cut the cucumber and pepper into thick pieces and slice the red onion thinly.",
+        "Toss them in a big bowl with the olives and chickpeas.",
+        "Whisk the olive oil, vinegar, oregano and salt together and pour over, then toss well.",
+        "Lay the feta on top in one slab, spoon alongside the yogurt, stirred with the finely grated garlic and a pinch of salt, scatter with parsley and let it sit for 5 minutes before eating."
+      ],
+      "prepMin": 10,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "In summer, use big ripe tomatoes cut into wedges. Pack the dressing separately if you take it to work."
+    },
+    {
+      "id": "sicilian-fava-orange-fennel-salad",
+      "name": "Sicilian-style fava bean, orange and fennel salad with egg",
+      "inspiredBy": "Sicilian orange and fennel salad, with fava beans for a lunch, and feta standing in for ricotta salata",
+      "about": "Juicy orange segments, shaved fennel, olives and red onion with creamy fava beans, toasted almonds and parsley, in a lemony olive oil dressing with a pinch of chili. It is bright, crunchy and a little sweet. The fava beans, egg and feta carry the protein, and the orange and lemon give you plenty of vitamin C.",
+      "ingredients": [
+        {
+          "food": "broadbeans-fava-beans-boiled-351b61",
+          "g": 220,
+          "swap": "legumes",
+          "note": "canned or frozen, cooked and drained"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "hard-boiled"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 120
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 20
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 30
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 30
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.3,
+          "note": "optional, to taste"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Lower the egg gently into boiling water for 8 minutes, then cool and peel it. Toast the almonds in a dry pan until golden, about 3 minutes, then chop roughly.",
+        "Slice the fennel very thinly and the red onion into fine rings. Peel the orange, removing the white pith, and cut it into rounds or segments over the bowl so the juice falls in.",
+        "Add the fava beans, olives, parsley, the feta, crumbled, and the egg, quartered, to the bowl.",
+        "Whisk the olive oil, lemon juice, salt and chili together, pour over and toss gently. Top with the toasted almonds."
+      ],
+      "prepMin": 15,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook"
+      ],
+      "tip": "Leave out the chili for a milder salad."
+    },
+    {
+      "id": "lemon-chicken-potatoes",
+      "name": "Greek lemon chicken with oregano potatoes and red peppers",
+      "inspiredBy": "Greek kotopoulo lemonato, with roasted kale and a garlicky yogurt on the side",
+      "about": "Chicken thighs roasted with lemony oregano potatoes and red peppers until the edges are golden, with kale roasted on a second tray until crisp and a cool garlic yogurt to spoon over. It makes two portions, so tomorrow's lunch is already done. The chicken brings protein, niacin and zinc, and the kale brings calcium and vitamin K.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "boneless, skinless thighs"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 200,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 100
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "stems removed, torn"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1.5
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 25
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C. Toss the potato wedges and pepper strips on a big tray with half the olive oil, the oregano, half the lemon juice and most of the salt. Spread them out in a single layer so they roast instead of steaming.",
+        "Roast for 20 minutes, until the potatoes are starting to colour.",
+        "Rub the chicken with half the garlic, the rest of the oil and a little of the lemon juice, tuck it in among the potatoes and roast until the chicken is cooked through and golden, 25 to 30 minutes.",
+        "Put the kale on a second tray with a few drops of oil and a pinch of salt and roast for the last 8 to 10 minutes, until the leaves are crisp at the edges.",
+        "Stir the rest of the garlic, finely grated, and the chopped parsley into the yogurt with a pinch of salt.",
+        "Serve one portion now with the kale, the yogurt and a squeeze of lemon. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Leave the skin on if you like, and the chicken stays even juicier. Reheat the second portion in the oven or air fryer for 10 minutes, or eat it at room temperature. A microwave makes roast potatoes sad."
+    },
+    {
+      "id": "sardines-white-beans-kale",
+      "name": "Sardines on garlicky white beans with kale and almonds",
+      "inspiredBy": "Spanish sardines with beans and Italian white bean and sardine toasts, without the bread",
+      "about": "Creamy white beans simmered with garlic, onion and smoky paprika, with kale wilted in and canned sardines warmed on top. Toasted almonds, a squeeze of lemon and an optional pinch of chili finish it. Sardines eaten with their soft bones are one of the best food sources of calcium, and they bring omega-3 and vitamin D too.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 120,
+          "swap": "fatty_fish",
+          "note": "canned in olive oil, with bones"
+        },
+        {
+          "food": "anchovy-european-canned-with-olive-oil-drained-solids-737656",
+          "g": 20,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "cannellini-beans-canned-re-heated-drained-4380d5",
+          "g": 220,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "stems removed, torn"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 40
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5,
+          "note": "smoked paprika (pimentón)"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.3,
+          "note": "optional, like Calabrian chili"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan over medium heat until golden and fragrant, about 3 minutes, then tip them out and chop roughly.",
+        "In the same pan, warm the olive oil over low heat and soften the onion and garlic with the chopped anchovies until sweet and golden and the anchovies have melted away, about 6 minutes.",
+        "Stir in the smoked paprika and the chili, if using, then add the beans, a splash of water and the salt and simmer for 6 minutes, mashing a few beans against the pan to thicken the sauce.",
+        "Stir in the kale and cook until it is bright green and just tender, 3 to 4 minutes.",
+        "Lay the sardines on top for a minute to warm through, then finish with the lemon juice, parsley and toasted almonds."
+      ],
+      "prepMin": 10,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ],
+      "tip": "Mackerel fillets in olive oil work just as well as sardines. Leave out the chili for a mild version."
+    },
+    {
+      "id": "fakes-lentil-soup",
+      "name": "Fakes, Greek lentil soup with spinach and feta",
+      "inspiredBy": "Greek fakes, with spinach stirred in and a splash of vinegar at the end",
+      "about": "A thick, comforting Greek lentil soup with tomato, barley and oregano, finished with a splash of red wine vinegar, a raw drizzle of olive oil and crumbled feta. The vinegar is the secret, since it wakes everything up. It makes two bowls and tastes even better tomorrow, and the lentils are a great source of iron, folate and fibre.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 110,
+          "swap": "legumes",
+          "note": "dried brown lentils, rinsed"
+        },
+        {
+          "food": "barley-dry-69ade1",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "pearled"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 100
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 100
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1.5
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 10
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 10
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 30,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Warm half the olive oil in a large pot and soften the onion over medium heat until it is translucent, about 8 minutes.",
+        "Stir in the garlic and oregano for a minute until fragrant.",
+        "Add the lentils, barley, crushed tomato and about four times as much water as lentils. Bring to a boil, then simmer gently, partly covered, until the lentils and barley are completely soft and the soup is thick, 35 to 40 minutes. Add the salt near the end.",
+        "Stir in the spinach until it wilts, then take the pot off the heat.",
+        "Stir in the vinegar and parsley, taste for salt, and finish each bowl with crumbled feta, a dollop of yogurt and a drizzle of the rest of the olive oil.",
+        "Pack the second portion for tomorrow's lunch. It thickens overnight, so add a splash of water and a fresh splash of vinegar when you reheat it."
+      ],
+      "prepMin": 10,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "In a hurry? Use canned lentils, drained, and simmer for 20 minutes."
+    },
+    {
+      "id": "salmon-tomato-olive-barley",
+      "name": "Salmon with tomatoes, olives and anchovy on lemony barley",
+      "inspiredBy": "Southern Italian puttanesca flavours, with barley in place of pasta",
+      "about": "Salmon roasted over blistered cherry tomatoes, black olives and a few melted anchovies, served on chewy lemony barley with tender kale stirred through. The tomatoes burst into a sauce all on their own. Salmon is one of the best food sources of omega-3 and a good source of vitamin D, and the kale adds calcium while the barley adds fibre.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 200,
+          "swap": "fatty_fish",
+          "note": "skin-on fillet"
+        },
+        {
+          "food": "barley-dry-69ade1",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "pearled"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 200
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 25
+        },
+        {
+          "food": "anchovy-european-canned-with-olive-oil-drained-solids-737656",
+          "g": 20,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 30
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "stems removed, finely sliced"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        }
+      ],
+      "steps": [
+        "Rinse the barley and simmer it in plenty of salted water until tender but still chewy, about 25 minutes. Add the kale for the last 3 minutes, then drain well.",
+        "Meanwhile, heat the oven to 200 C. Chop the anchovies and toss them with the tomatoes, thin onion wedges, garlic and olives on a small tray with half the olive oil and the oregano. Roast for 10 minutes, until the tomatoes begin to burst and the anchovies have melted into the juices.",
+        "Nestle the salmon among the tomatoes, brush it with a little of the remaining oil and roast until it just flakes, 10 to 12 minutes.",
+        "Toss the drained barley and kale with the lemon juice and the rest of the oil.",
+        "Serve the salmon and the tomato juices over the barley and scatter with parsley."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "The anchovies melt away and just add savoury depth, so even anchovy skeptics usually enjoy it. Add a pinch of chili flakes if you like heat."
+    },
+    {
+      "id": "espinacas-con-garbanzos",
+      "name": "Espinacas con garbanzos, Andalusian chickpea and spinach stew",
+      "inspiredBy": "the Seville tapas classic, with almonds ground into the base instead of fried bread",
+      "about": "A smoky, garlicky chickpea and spinach stew thickened with ground toasted almonds, with cumin, paprika and a splash of vinegar to finish. A halved boiled egg, a spoon of cool yogurt and a scatter of crunchy almonds go on top. It makes two portions, and the chickpeas, egg and yogurt bring protein while the almonds bring vitamin E and the chickpeas bring iron and fibre.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 240,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "hard-boiled"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 45,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 150,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 20,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 50
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 100
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2,
+          "note": "smoked paprika (pimentón)"
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.3,
+          "note": "optional, for pimentón picante heat"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 10
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 8 minutes, cool them under cold water and peel them. Toast the almonds in a dry pan until golden. Set a few aside to chop for the top, and blitz or pound the rest with a third of the garlic, a pinch of salt and a splash of the vinegar into a rough paste.",
+        "Warm the olive oil in a wide pot and soften the onion with the rest of the garlic, sliced, over medium heat, about 6 minutes.",
+        "Stir in the cumin, smoked paprika and the chili, if using, for 30 seconds, until fragrant.",
+        "Add the crushed tomato, chickpeas and a mug of water and simmer until the sauce has thickened, about 12 minutes.",
+        "Stir in the almond paste, then the spinach in handfuls until it all wilts, about 3 minutes.",
+        "Finish with the rest of the vinegar, taste for salt, and top each bowl with a halved egg, a spoonful of yogurt and the chopped almonds. Pack the second portion for tomorrow's lunch and boil a fresh egg to go on top of it."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Leave out the chili for a milder stew."
+    },
+    {
+      "id": "shrimp-saganaki-potatoes",
+      "name": "Shrimp saganaki with feta and lemony potatoes",
+      "inspiredBy": "Greek garides saganaki, with potatoes on the side instead of bread",
+      "about": "Plump shrimp in a bright tomato sauce with oregano, topped with feta that melts into creamy pockets, served with warm lemony potatoes to mop it all up. It is on the table in 30 minutes. Shrimp are a lean protein with plenty of selenium, and the feta adds calcium.",
+      "ingredients": [
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "raw, peeled"
+        },
+        {
+          "food": "anchovy-european-canned-with-olive-oil-drained-solids-737656",
+          "g": 20,
+          "swap": "fatty_fish",
+          "note": "optional, for depth"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 150
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 30
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 150,
+          "note": "baby potatoes"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 80
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 40
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Halve the potatoes if they are large and boil them in salted water until tender, about 15 minutes. Drain, then toss with half the lemon juice and a little of the parsley.",
+        "Meanwhile, warm the olive oil in a skillet and soften the onion and red pepper over medium heat, about 5 minutes. Stir in the garlic, oregano and the chopped anchovies for a minute, until the anchovies dissolve.",
+        "Add the crushed tomato and simmer until thick and saucy, about 8 minutes.",
+        "Slide in the shrimp and cook until they are pink and curled, 3 to 4 minutes.",
+        "Crumble the feta over the top, cover for a couple of minutes until it softens, then finish with the rest of the lemon juice and parsley.",
+        "Serve with the potatoes alongside."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Mussels are a classic swap for the shrimp. Add them to the sauce, cover until they open, about 5 minutes, and discard any that stay shut. Pre-cooked shrimp only need the last minute."
+    },
+    {
+      "id": "saffron-barley-chicken",
+      "name": "Saffron barley with chicken, peas and red pepper",
+      "inspiredBy": "Spanish paella, made with pearled barley in place of rice",
+      "about": "A golden, creamy pot of chicken, red pepper, peas and chewy pearled barley, cooked in a smoky tomato sofrito and perfumed with saffron, then topped with toasted walnuts for crunch. It is a slow weekend dish that makes two portions. Barley is full of fibre, and the chicken and peas make this a complete one-pot dinner.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 165,
+          "swap": "lean_protein",
+          "note": "boneless breasts, cut in chunks"
+        },
+        {
+          "food": "barley-dry-69ade1",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "pearled"
+        },
+        {
+          "food": "green-peas-raw-867b3e",
+          "g": 80,
+          "note": "frozen"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 100
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 80
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 60
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2,
+          "note": "smoked paprika (pimentón)"
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.1
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 20
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Steep the saffron in a mug of hot water. Rinse the barley. Toast the walnuts in a dry pan until fragrant and chop them roughly.",
+        "Warm half the olive oil in a wide, deep pan and brown the chicken on all sides over medium-high heat, then set it aside.",
+        "Add the rest of the oil and soften the onion and red pepper over medium heat for 8 minutes. Stir in the garlic and smoked paprika, then the crushed tomato, and cook until the sofrito turns dark and jammy, about 5 minutes.",
+        "Stir in the barley to coat it in the sofrito, then pour in the saffron water and enough hot water to come to about 2½ to 3 times the barley's volume. Add the salt and the chicken.",
+        "Simmer gently, stirring now and then and topping up with hot water if it gets dry, until the barley is tender and the pot is creamy rather than soupy, about 30 minutes.",
+        "Scatter the peas over the top for the last 5 minutes, then take the pan off the heat and let it rest, covered, for 5 minutes.",
+        "Finish with the lemon juice, parsley and toasted walnuts. Pack the second portion for tomorrow's lunch. It reheats well with a splash of water."
+      ],
+      "prepMin": 20,
+      "cookMin": 55,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers"
+      ],
+      "tip": "Use boneless thighs for an even juicier pot, or add a handful of mussels or shrimp for the last 5 minutes for a seafood version. Barley will not form a crisp base like rice does, so the walnuts bring the crunch."
+    },
+    {
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "id": "yogurt-figs-honey-walnuts",
+      "name": "Greek yogurt with honey, walnuts and figs",
+      "about": "Thick yogurt with chopped dried figs, crunchy walnuts and a drizzle of honey. It is the classic Greek sweet snack, with protein and calcium from the yogurt and plant omega-3 from the walnuts.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 110,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 15
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 5
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 28,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl, top with the chopped figs and walnuts, and drizzle with the honey."
+      ],
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "id": "yogurt-figs-honey-almonds",
+      "name": "Greek yogurt with honey, figs and toasted almonds",
+      "about": "Thick yogurt with chopped dried figs, warm toasted almonds and a drizzle of honey. It is a classic Greek sweet snack, with protein and calcium from the yogurt and vitamin E from the almonds.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 20
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 6
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan until golden, about 3 minutes. Spoon the yogurt into a bowl, top with the chopped figs and warm almonds, and drizzle with the honey."
+      ],
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "id": "fig-almond-bites",
+      "name": "Fig and almond bites",
+      "inspiredBy": "Spanish pan de higo and Greek fig and nut sweets",
+      "about": "Sticky dried figs chopped with almonds and rolled into little balls. They are chewy, sweet and crunchy at once, with vitamin E and a little calcium.",
+      "ingredients": [
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 25
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Chop the figs and almonds very finely and mash them together with a few drops of lemon juice until they stick.",
+        "Roll the mixture into small balls."
+      ],
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Make a batch and keep the balls in a container in the fridge for the week."
+    },
+    {
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "id": "orange-almonds",
+      "name": "Orange and toasted almonds",
+      "about": "A juicy orange with a handful of warm toasted almonds. The vitamin C and the crunch of the nuts make a snack that keeps you going, and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan until golden, about 3 minutes. Peel the orange and eat it with the warm almonds."
+      ],
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "id": "lemony-hummus-sticks",
+      "name": "Quick lemony hummus with fennel and cucumber sticks",
+      "about": "Creamy lemon and garlic hummus with crunchy fennel and cucumber sticks for dipping. The chickpeas and tahini add iron and fibre, and tahini adds calcium.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 60,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 4
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 70
+        }
+      ],
+      "steps": [
+        "Use a portion of Sunday night's hummus (the batch is a whole can of chickpeas, about 240 g drained, with 1 tbsp of tahini, garlic, lemon and salt). The ingredient list shows this snack's portion. If you are starting fresh, blitz that amount with a few spoonfuls of ice-cold water until pale and silky.",
+        "Cut the fennel and cucumber into sticks and dip away."
+      ],
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Thursday is the last day the Sunday batch is at its best."
+    },
+    {
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "id": "figs-almonds",
+      "name": "Dried figs and almonds",
+      "about": "A few soft dried figs with a handful of warm toasted almonds. It is a sweet, chewy and crunchy snack, with fibre, calcium and vitamin E.",
+      "ingredients": [
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 40
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan until golden, about 3 minutes, and eat them with the figs."
+      ],
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "prepMin": 3,
+      "cookMin": 8,
+      "servings": 1,
+      "id": "garlic-mushrooms-lemon",
+      "name": "Garlic mushrooms with lemon and parsley",
+      "inspiredBy": "Spanish champiñones al ajillo",
+      "about": "Mushrooms sizzled in a hot pan with garlic until golden, then finished with lemon and a handful of parsley. They work as a small savoury snack or a starter, they are meaty and savoury, and they are a good source of niacin and B vitamins.",
+      "ingredients": [
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 150,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 6
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a pan over medium-high heat and cook the mushrooms until golden and their water has cooked off, about 6 minutes.",
+        "Add the garlic and stir for 30 seconds, then finish with the lemon juice, salt and parsley."
+      ],
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "prepMin": 3,
+      "cookMin": 10,
+      "servings": 1,
+      "id": "garlic-mushrooms-egg",
+      "name": "Garlic mushrooms with soft eggs and parsley",
+      "inspiredBy": "Spanish champiñones al ajillo, with eggs on top",
+      "about": "Mushrooms sizzled with garlic, lemon and parsley, with two soft-boiled eggs to break over the top. It works as a small savoury snack or a starter, and it gives you protein, choline and niacin.",
+      "ingredients": [
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 1.5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lower the eggs gently into boiling water for 6 to 7 minutes for a soft yolk, then cool and peel them.",
+        "Warm the olive oil in a pan over medium-high heat and cook the mushrooms until golden and their water has cooked off, about 5 minutes. Add the garlic and stir for 30 seconds.",
+        "Finish with the lemon juice, salt and parsley and serve with the halved eggs on top."
+      ],
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "id": "orange-walnuts",
+      "name": "Orange and toasted walnuts",
+      "about": "A juicy orange with a handful of warm toasted walnuts. The vitamin C and the crunch of the nuts make a snack that keeps you going, and the walnuts bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan until fragrant, about 3 minutes, and eat them with the peeled orange."
+      ],
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "id": "yogurt-orange-honey",
+      "name": "Greek yogurt with orange and honey",
+      "about": "Thick Greek yogurt with juicy orange pieces and a drizzle of honey. It is a bright, simple snack with protein, calcium and plenty of vitamin C.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 120,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 6
+        }
+      ],
+      "steps": [
+        "Peel the orange, cut it into pieces over the bowl so the juice falls in, spoon over the yogurt and drizzle with the honey."
+      ],
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "id": "sardines-lemon-cucumber",
+      "name": "Sardine tapa with lemon, cucumber and olives",
+      "inspiredBy": "Spanish and Portuguese tinned fish tapas",
+      "about": "A few canned sardines on cool cucumber rounds with a squeeze of lemon, a few olives and a pinch of smoked paprika. It is the kind of thing you would be served with a drink in a Spanish bar, and a hungry-day extra on the larger plans. Sardines bring omega-3, vitamin D and calcium from their soft bones.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 65,
+          "swap": "fatty_fish",
+          "note": "canned in olive oil, with bones"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 10
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 0.5,
+          "note": "smoked paprika (pimentón)"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Slice the cucumber into thick rounds, top each with a piece of sardine, and finish with the lemon juice, olives, a dusting of smoked paprika and chopped parsley."
+      ],
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "id": "tzatziki-dippers",
+      "name": "Tzatziki with cucumber and fennel dippers",
+      "about": "A quick garlicky yogurt and cucumber dip with a drizzle of olive oil, with cucumber rounds and fennel strips for scooping. It is cool and fresh, with plenty of protein.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 140
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 60
+        }
+      ],
+      "steps": [
+        "Grate a third of the cucumber, squeeze out the water, and stir it into the yogurt with the finely grated garlic, lemon juice, chopped parsley, salt and the olive oil.",
+        "Slice the rest of the cucumber into rounds, cut the fennel into strips and dip away."
+      ],
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Chopped mint or dill is lovely in the dip if you have some."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "yogurt-oats-fig-almond"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "meze-plate"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lemon-chicken-potatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "yogurt-figs-honey-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "orange-almonds"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "strapatsada-spinach"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lemon-chicken-potatoes",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "sardines-white-beans-kale"
+        },
+        {
+          "slot": "snack",
+          "recipe": "tzatziki-dippers"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fig-almond-bites"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "yogurt-oats-fig-almond"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "village-salad-chickpeas"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "fakes-lentil-soup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "garlic-mushrooms-egg"
+        },
+        {
+          "slot": "snack",
+          "recipe": "tzatziki-dippers"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "strapatsada-spinach"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "fakes-lentil-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "salmon-tomato-olive-barley"
+        },
+        {
+          "slot": "snack",
+          "recipe": "figs-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lemony-hummus-sticks"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "yogurt-oats-fig-almond"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "sicilian-fava-orange-fennel-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "espinacas-con-garbanzos"
+        },
+        {
+          "slot": "snack",
+          "recipe": "garlic-mushrooms-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "yogurt-figs-honey-almonds"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "potato-kale-tortilla"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "espinacas-con-garbanzos",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "saffron-barley-chicken"
+        },
+        {
+          "slot": "snack",
+          "recipe": "yogurt-figs-honey-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "orange-almonds"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "potato-kale-tortilla",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "saffron-barley-chicken",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "shrimp-saganaki-potatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "yogurt-figs-honey-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fig-almond-bites"
+        }
+      ]
+    }
+  ]
+}
