@@ -1,6 +1,6 @@
 /**
  * Plan styles: the identity of a plan family and the extra checks it has to pass on top of the framework defaults
- * (planReport RULES: protein >= 20% of kcal, sat fat < 10%, omega 6:3 <= 4:1, GL <= 100 a day, fatty fish twice a week).
+ * (planReport RULES: protein >= 20% of kcal, sat fat < 10%, omega 6:3 <= 4:1 over the week and <= 6:1 on any day, GL <= 100 a day, fatty fish twice a week).
  *
  * `PLAN_STYLES[style].gates` is plain config. scripts/plan-lab.mjs reads it through:
  *   gradeOptionsFor     who to grade against and which RULES change (protein floor, sat fat, GL, fish...)
@@ -222,7 +222,7 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
   'anti-inflammatory': {
     label: 'Anti-inflammatory',
     blurb: 'Oily fish, olive oil, colour and spices, with a tight omega balance.',
-    gates: { rules: { omegaMaxRatio: 3, fattyFishPerWeek: 3 } },
+    gates: { rules: { omegaMaxRatio: 3, omegaDayMaxRatio: 5, fattyFishPerWeek: 3 } },
   },
   // life stage
   prenatal: {

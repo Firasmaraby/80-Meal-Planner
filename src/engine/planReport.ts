@@ -6,7 +6,7 @@
  * so a plan that passes works for either. A nutrient counts when every reference
  * person reaches 80% of their RDA/AI.
  */
-import { boardProgress, dayPlanTotal, getFood, logsGlycemicLoad, omegaRatio, satFatPctOfKcal, type FoodIndex } from './calc';
+import { boardProgress, dayPlanTotal, getFood, logsGlycemicLoad, omega3, omegaRatio, satFatPctOfKcal, type FoodIndex } from './calc';
 import { goToSources } from './goToSources';
 import { COMPLETE_AT, NUTRIENTS } from './nutrients';
 import type { Food, MealPlan, NutrientKey, Profile } from './types';
@@ -23,7 +23,10 @@ export const HARD_NUTRIENTS: NutrientKey[] = ['vitD', 'iodine', 'b7'];
 
 export const RULES = {
   satFatMaxPct: 10,
+  /** omega-6:3 over the whole week: the framework's ~4:1 is a pattern, so a salmon day balances an olive-oil day */
   omegaMaxRatio: 4,
+  /** ...with no single day running away from it */
+  omegaDayMaxRatio: 6,
   glycemicLoadMax: 100,
   /** protein as % of the day's calories */
   proteinMinPctKcal: 20,
@@ -48,6 +51,7 @@ export interface ReportIssue {
     | 'micro_low_hard'
     | 'sat_fat_high'
     | 'omega_high'
+    | 'omega_week_high'
     | 'gl_high'
     | 'protein_low'
     | 'fish_low';
@@ -65,6 +69,9 @@ export interface DayReport {
   proteinPctKcal: number;
   satFatPct?: number;
   omegaRatio?: number;
+  /** omega-6 (la) and omega-3 grams, for the weekly ratio */
+  omega6?: number;
+  omega3?: number;
   glycemicLoad: number;
   /** lowest % of RDA across the reference panel, per board nutrient with data */
   coverage: Partial<Record<NutrientKey, number>>;
@@ -78,6 +85,8 @@ export interface PlanReport {
   band: MealPlan['band'];
   days: DayReport[];
   fishPerWeek: number;
+  /** omega-6:3 over the whole week (the framework's target) */
+  omegaWeek?: number;
   issues: ReportIssue[];
   /** no errors and no non-hard micronutrient gaps */
   pass: boolean;
@@ -115,6 +124,8 @@ export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []
       proteinPctKcal: kcal ? ((protein * 4) / kcal) * 100 : 0,
       satFatPct: satFatPctOfKcal(totals),
       omegaRatio: omegaRatio(totals),
+      omega6: totals.la ?? undefined,
+      omega3: omega3(totals),
       glycemicLoad: logsGlycemicLoad(items, foods),
       coverage,
       under80,
@@ -159,12 +170,12 @@ export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []
         message: `Day ${r.day}: saturated fat is ${r.satFatPct.toFixed(1)}% of calories (max ${rules.satFatMaxPct}%).`,
         fix: 'Swap butter, cheese, coconut or fatty meat for olive oil, fish, legumes or lean poultry.',
       });
-    if (r.omegaRatio != null && r.omegaRatio > rules.omegaMaxRatio)
+    if (r.omegaRatio != null && r.omegaRatio > rules.omegaDayMaxRatio)
       issues.push({
         level: 'warning',
         code: 'omega_high',
         day: r.day,
-        message: `Day ${r.day}: omega-6:3 ratio is ${r.omegaRatio.toFixed(1)}:1 (aim ≤${rules.omegaMaxRatio}:1).`,
+        message: `Day ${r.day}: omega-6:3 ratio is ${r.omegaRatio.toFixed(1)}:1 (no day above ${rules.omegaDayMaxRatio}:1).`,
         fix: 'Add fatty fish, chia, ground flax or walnuts; use olive oil instead of seed oils.',
       });
     if (r.glycemicLoad > rules.glycemicLoadMax)
@@ -185,6 +196,17 @@ export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []
       });
   }
 
+  const week6 = dayReports.reduce((n, r) => n + (r.omega6 ?? 0), 0);
+  const week3 = dayReports.reduce((n, r) => n + (r.omega3 ?? 0), 0);
+  const omegaWeek = week3 > 0 && dayReports.some((r) => r.omega6 != null) ? week6 / week3 : undefined;
+  if (omegaWeek != null && omegaWeek > rules.omegaMaxRatio)
+    issues.push({
+      level: 'warning',
+      code: 'omega_week_high',
+      message: `Over the week, omega-6:3 is ${omegaWeek.toFixed(1)}:1 (aim ≤${rules.omegaMaxRatio}:1).`,
+      fix: 'Add fatty fish, walnuts, chia or ground flax on a few days; use olive oil instead of seed oils.',
+    });
+
   const fish = dayReports.reduce((n, r) => n + r.fattyFishMeals, 0);
   const fishPerWeek = dayReports.length ? (fish * 7) / dayReports.length : 0;
   if (!isPlantBased(plan) && fishPerWeek < rules.fattyFishPerWeek)
@@ -201,6 +223,7 @@ export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []
     band: plan.band,
     days: dayReports,
     fishPerWeek,
+    omegaWeek,
     issues,
     pass: !issues.some((i) => i.level === 'error' || i.code === 'micro_low'),
   };

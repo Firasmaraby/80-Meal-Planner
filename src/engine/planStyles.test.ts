@@ -49,7 +49,7 @@ describe('plan styles', () => {
     expect(gradeOptionsFor('vegan', 2000).rules.fattyFishPerWeek).toBe(0);
     expect(gradeOptionsFor('vegetarian', 2000).rules.fattyFishPerWeek).toBe(0);
     expect(gradeOptionsFor('balanced', 2000).rules).toEqual({});
-    expect(gradeOptionsFor('anti-inflammatory', 2000).rules).toEqual({ omegaMaxRatio: 3, fattyFishPerWeek: 3 });
+    expect(gradeOptionsFor('anti-inflammatory', 2000).rules).toEqual({ omegaMaxRatio: 3, omegaDayMaxRatio: 5, fattyFishPerWeek: 3 });
   });
 
   it('vegan also catches honey, gelatin, animal fat, dairy and egg by name, not plant milks or butter beans', () => {

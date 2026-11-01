@@ -63,7 +63,7 @@ function dayTones(d: DayReport, band: { min: number; max: number }): Record<'kca
     kcal: d.kcal >= band.min && d.kcal <= band.max ? 'good' : 'over',
     protein: d.proteinPctKcal >= RULES.proteinMinPctKcal ? 'good' : d.proteinPctKcal >= RULES.proteinMinPctKcal * 0.8 ? 'watch' : 'over',
     satFat: atMost(d.satFatPct, RULES.satFatMaxPct),
-    omega: atMost(d.omegaRatio, RULES.omegaMaxRatio),
+    omega: atMost(d.omegaRatio, RULES.omegaDayMaxRatio),
     gl: atMost(d.glycemicLoad, RULES.glycemicLoadMax),
   };
 }
@@ -590,7 +590,7 @@ function PlanReportCard({ report }: { report: PlanReport }) {
           );
         })}
         <Txt v="caption" dim={2} style={{ fontSize: 11, lineHeight: 16, marginTop: 6 }}>
-          kcal against {report.band.min.toLocaleString()}–{report.band.max.toLocaleString()} · protein share of kcal (aim ≥ {RULES.proteinMinPctKcal}%) · sat fat max {RULES.satFatMaxPct}% · omega 6:3 aim ≤ {RULES.omegaMaxRatio}:1 · glycemic load aim ≤ {RULES.glycemicLoadMax} · fish = meals with fatty fish ({report.fishPerWeek.toFixed(1)} a week{fishLow ? ', aim ≥ 2' : ''}). Bold colour means close to or past the limit.
+          kcal against {report.band.min.toLocaleString()}–{report.band.max.toLocaleString()} · protein share of kcal (aim ≥ {RULES.proteinMinPctKcal}%) · sat fat max {RULES.satFatMaxPct}% · omega 6:3 aim ≤ {RULES.omegaMaxRatio}:1 over the week{report.omegaWeek != null ? ` (this plan ${report.omegaWeek.toFixed(1)}:1)` : ''}, no day above {RULES.omegaDayMaxRatio}:1 · glycemic load aim ≤ {RULES.glycemicLoadMax} · fish = meals with fatty fish ({report.fishPerWeek.toFixed(1)} a week{fishLow ? ', aim ≥ 2' : ''}). Bold colour means close to or past the limit.
         </Txt>
       </View>
 
@@ -630,7 +630,7 @@ function PlanReportCard({ report }: { report: PlanReport }) {
 
 const ISSUE_GROUPS: { title: string; codes: ReportIssue['code'][] }[] = [
   { title: 'Calories', codes: ['kcal_low', 'kcal_high'] },
-  { title: 'Fats and glycemic load', codes: ['sat_fat_high', 'omega_high', 'gl_high'] },
+  { title: 'Fats and glycemic load', codes: ['sat_fat_high', 'omega_high', 'omega_week_high', 'gl_high'] },
   { title: 'Protein', codes: ['protein_low'] },
   { title: 'Fatty fish', codes: ['fish_low'] },
   { title: 'Nutrients under 80%', codes: ['micro_low'] },

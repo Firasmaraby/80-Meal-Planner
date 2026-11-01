@@ -26,8 +26,10 @@ Each day, at every band the family claims (checked at the band's lowest and high
   Vitamin D, iodine and biotin are "hard from food". They're reported but don't fail the gate, yet you still do your
   best: fatty fish, eggs, dairy, mushrooms, iodized salt, seaweed.
 - **Saturated fat** under 10% of calories.
-- **Omega-6 to omega-3 ratio** at most 4:1. Fatty fish, walnuts, chia, flax and canola help. Sunflower and corn oil
-  don't.
+- **Omega-6 to omega-3 ratio** at most 4:1 **over the week**, and no single day above 6:1. It's a pattern, not a
+  daily target: the salmon day balances the olive-oil-and-chicken day. Fatty fish (2 to 3 times a week), walnuts,
+  and some chia or flax where it's natural to the dish all help. Sunflower and corn oil don't. Never build the week
+  around the ratio: if it fails, add a natural omega-3 food to a dish where it belongs.
 - **Glycaemic load** inside the daily limit, with tighter limits for low-GI families.
 - **Protein:** at least the style's floor. Balanced is 20% of calories, muscle gain is 30%, and the 60+ family puts
   25 g at every main meal.

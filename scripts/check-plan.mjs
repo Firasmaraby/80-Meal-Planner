@@ -96,7 +96,7 @@ try {
         const kcalBad = d.kcal < r.band.min || d.kcal > r.band.max;
         const protBad = d.proteinPctKcal < RULES.proteinMinPctKcal;
         const satBad = d.satFatPct != null && d.satFatPct > RULES.satFatMaxPct;
-        const omBad = d.omegaRatio != null && d.omegaRatio > RULES.omegaMaxRatio;
+        const omBad = d.omegaRatio != null && d.omegaRatio > RULES.omegaDayMaxRatio;
         const glBad = d.glycemicLoad > RULES.glycemicLoadMax;
         const cell = (text, w, bad) => (bad ? red(padL(text, w)) : padL(text, w));
         const under = d.under80.map((u) => `${NUTRIENTS[u.key].short} ${Math.round(u.pct * 100)}%`).join(', ');
