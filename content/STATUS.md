@@ -21,10 +21,14 @@ Every family in CATALOG.md moves through these steps:
 | china-home | 1B | shipped | Light, Standard, Big (1400-3200). Real Sichuan pepper and star anise; cornstarch as thickener. 24 recipes. |
 | mexico | 1B | shipped | Light 1600-1800 only (1400 can't be trimmed without losing iron, calcium or vitamin E), Standard, Big. Real ancho, guajillo, chipotle, achiote. 25 recipes. |
 | south-india | 1B | shipped | Light, Standard, Big (1400-3200). Sambar and bisi bele bath powders, fermented hoppers. 25 recipes. Weekly omega about 3:1. |
-| maghreb | 1C | authoring | |
-| east-africa | 1C | authoring | |
-| thai-viet | 1C | authoring | |
-| caribbean | 1C | authoring | |
+| maghreb | 1C | shipped | Light 1600-1800 only, Standard, Big. Chakchouka with harissa, bissara, harira, chermoula sardines, lamb and prune tagine. Fish most days (olive oil alone breaks the daily omega ceiling). |
+| east-africa | 1C | shipped | Light, Standard, Big (1400-3200). Injera, niter kibbeh, githeri with dried maize, suqaar with xawaash, doro wat. "Whole grains too" (injera). |
+| caribbean | 1C | shipped | Light, Standard, Big (1400-3200). Ackee and saltfish, jerk with rice and peas, curry goat with West Indian curry powder, escovitch. Great omega balance. |
+| thai-viet | 1C | shipped | Light, Standard, Big (1400-3200). Jok, khai jiao, gỏi cuốn, red curry with Thai basil, som tam, xôi, phở bò, cá kho tộ. "Everything in moderation" (rice noodles, rice paper). |
+| persia-anatolia | 1D | next | |
+| nile | 1D | next | |
+| island-asia | 1D | next | |
+| south-america | 1D | next | |
 
 ## Lessons from the pilot (now in GUIDE.md and the engine)
 - **Weekly omega balance.** Omega-6:3 is graded over the week (≤6:1, Firas's choice; ≤4:1 earns the "Great omega balance" badge), with a daily ceiling of 9:1. Grading it day by day pushed chia onto most breakfasts and fish into snacks.
@@ -46,3 +50,4 @@ Every family in CATALOG.md moves through these steps:
 - **Nov 1 (later):** Firas approved the pilot. Asked for paragraph breaks and bold in explanations (rich text, guide §7), and special-diet families after the regions (CATALOG restructured). Batch 1A started.
 - **Nov 1-2:** batch 1A through author, critic and Opus final review; omega rule moved to 6:1; staples toolchain (find-food, curated blends, promote-on-use); spices off the grocery cap. Batch 1A shipped (5 families, 14 plans, 127 recipes); the 3 sample plans retired from browsing. Household measures fixed (walnut halves, whole counts, no "70 tbsp"). Recipe ids must start with the family id. Batch 1B (gulf, china-home, mexico, south-india) authored.
 - **Nov 2:** batch 1B shipped (9 families, 26 plans, 224 recipes in the app). New curated staples: loomi, rose water, date syrup, Sichuan peppercorn, star anise, five-spice, douchi, ancho, guajillo, chipotles in adobo, achiote, sambar, bisi bele bath and rasam powders, jaggery; for 1C, injera, galangal, makrut lime leaves, Scotch bonnet, culantro, shrimp paste. Engine: up to 10 g of starch or flour is a thickener (carb style unchanged); seasonings scale with the dish's mass when sizing up; the spice cap grows with the plate. Batch 1C started.
+- **Nov 2 (later):** batch 1C shipped (13 families, 38 plans, 320 recipes). Data: choline estimated from protein where unmeasured (3,626 values; ended the egg crutch), reviewed servings overrides (rolled oats). New curated staples: whole-wheat couscous, orange blossom water, injera, galangal, makrut lime leaves, Scotch bonnet, culantro, shrimp paste, Thai and holy basil, palm sugar, niter kibbeh, mitmita, xawaash, West Indian curry powder. Rules: spices and salt don't count toward the 14-ingredient cap; dried field corn is an intact grain; flatbreads and injera are bread.
