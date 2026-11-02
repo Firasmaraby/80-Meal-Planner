@@ -57,13 +57,25 @@ export function carbStyleOfFood(food: Pick<Food, 'name' | 'head' | 'category'>):
   return grain ? 'any' : 'whole';
 }
 
+/** A thickener or dusting: a spoonful of starch or flour doesn't make a stir-fry a refined-carb meal. */
+const THICKENER = /starch|arrowroot|\bflour\b/;
+const NOT_THICKENER = /noodle|tortilla|bread|wrap|pasta|vermicelli/;
+export const THICKENER_MAX_G = 10;
+
+/** The carb style one ingredient needs: like its food, except that up to 10 g of starch or flour (a sauce thickener) counts as whole. */
+export function carbStyleOfIngredient(food: Pick<Food, 'name' | 'head' | 'category'>, grams: number): CarbStyle {
+  const s = carbStyleOfFood(food);
+  if (s !== 'whole' && grams <= THICKENER_MAX_G && THICKENER.test(`${food.name} ${food.head ?? ''}`.toLowerCase()) && !NOT_THICKENER.test(food.name.toLowerCase())) return 'whole';
+  return s;
+}
+
 /** The most permissive level any ingredient of one meal needs. */
 export function carbStyleOfMeal(meal: Pick<Meal, 'ingredients'>, foods: FoodIndex): CarbStyle {
   let worst: CarbStyle = 'whole';
   for (const ing of meal.ingredients) {
     const f = getFood(foods, ing.foodId);
     if (!f) continue;
-    const s = carbStyleOfFood(f);
+    const s = carbStyleOfIngredient(f, ing.grams);
     if (ORDER[s] > ORDER[worst]) worst = s;
     if (worst === 'any') return worst;
   }
@@ -78,7 +90,7 @@ export function carbStyleOfPlan(plan: Pick<MealPlan, 'days'>, foods: FoodIndex):
       for (const ing of meal.ingredients) {
         const f = getFood(foods, ing.foodId);
         if (!f) continue;
-        const s = carbStyleOfFood(f);
+        const s = carbStyleOfIngredient(f, ing.grams);
         if (ORDER[s] > ORDER[worst]) worst = s;
         if (worst === 'any') return worst;
       }

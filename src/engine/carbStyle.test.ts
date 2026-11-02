@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import { FOODS, FOOD_INDEX } from '@/state/catalog';
 
-import { carbStyleFits, carbStyleOfFood, carbStyleOfPlan } from './carbStyle';
+import { carbStyleFits, carbStyleOfFood, carbStyleOfIngredient, carbStyleOfPlan } from './carbStyle';
 import type { CarbStyle, MealPlan } from './types';
 
 // real names from the everyday tier
@@ -107,5 +107,20 @@ describe('carb style of a plan', () => {
     expect(carbStyleFits('whole', 'any')).toBe(true);
     expect(carbStyleFits('wholegrain', 'whole')).toBe(false);
     expect(carbStyleFits('any', 'wholegrain')).toBe(false);
+  });
+});
+
+describe('thickeners', () => {
+  it('a spoonful of starch or flour in a sauce keeps the meal at its own level; more than 10 g counts', () => {
+    const starch = FOODS.find((f) => /cornstarch|corn starch/i.test(f.name)) ?? FOODS.find((f) => /starch/i.test(f.name))!;
+    expect(carbStyleOfFood(starch)).toBe('any');
+    expect(carbStyleOfIngredient(starch, 8)).toBe('whole');
+    expect(carbStyleOfIngredient(starch, 25)).toBe('any');
+    const meal = (g: number) => ({ days: [{ day: 1, meals: [{ id: 'm', slot: 'dinner' as const, name: 'x', ingredients: [{ foodId: byName('Quinoa, cooked').id, grams: 150 }, { foodId: starch.id, grams: g }] }] }] });
+    expect(carbStyleOfPlan(meal(6), FOOD_INDEX)).toBe('whole');
+    expect(carbStyleOfPlan(meal(30), FOOD_INDEX)).toBe('any');
+    // bread is never a thickener, however little
+    expect(carbStyleOfIngredient(byName('Naan bread'), 5)).toBe('any');
+    expect(carbStyleOfIngredient(FOODS.find((f) => f.name.startsWith('Flour tortilla'))!, 5)).toBe('any');
   });
 });

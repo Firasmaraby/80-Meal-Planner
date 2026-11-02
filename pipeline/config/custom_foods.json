@@ -297,6 +297,195 @@
    "kcal": "atwater",
    "recipe": "Labneh is yogurt strained until firm. Whole-milk Greek yogurt (about 81 % water) strained to about 74 % water is 1.4 times as concentrated, so protein, fat (and its fatty-acid split), calcium, phosphorus and vitamin A are 1.4 times Greek yogurt. Lactose drains with the whey: it stays at the same concentration in a smaller water phase, so per 100 g it falls to about 0.9 of the yogurt's (0.65 of the 1.4x figure), which lowers carbohydrate and sugar. Energy is recomputed from the macros (4/9/4).",
    "limits": "Whey-soluble nutrients (potassium, B2, B12, sodium) are left missing because how much drains varies; many labnehs also carry salt and are stored under olive oil, which this does not include."
+  },
+  {
+   "key": "loomi",
+   "name": "Loomi (dried black lime)",
+   "head": "loomi",
+   "form": "dried",
+   "category": "condiment",
+   "aliases": ["dried lime", "black lime", "limoo amani", "noomi basra", "omani lime"],
+   "servings": [{"label": "1 whole", "g": 6}, {"label": "1 tsp, ground", "g": 2}],
+   "components": [
+    {"food": "lime-raw-30841a", "g": 770, "note": "fresh lime is 88 % water; loomi about 10 %, so 770 g of fresh lime dries to 100 g"}
+   ],
+   "omit": ["vitC", "folate", "thiamin"],
+   "recipe": "Loomi is whole lime boiled briefly in brine and sun-dried until black and hollow. Values are fresh lime concentrated by its lost water (770 g fresh per 100 g dried).",
+   "limits": "Vitamin C, folate and thiamin are left missing because drying in the sun destroys an unknown share of them. Brined loomi carries some salt that is not counted. It is used one or two at a time, so its nutrients barely matter."
+  },
+  {
+   "key": "rose-water",
+   "name": "Rose water",
+   "head": "rose water",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["rosewater", "gulab jal", "maa ward"],
+   "servings": [{"label": "1 tsp", "g": 5}],
+   "components": [
+    {"food": "water-municipal-95c157", "g": 100}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fat"],
+   "recipe": "Rose water is a steam distillate of rose petals: water with aroma compounds and no meaningful energy or nutrients, so it takes the values of water.",
+   "limits": "Only energy and macronutrients (all zero) are given. Used by the teaspoon for aroma."
+  },
+  {
+   "key": "date-syrup",
+   "name": "Date syrup (dibs)",
+   "head": "date syrup",
+   "form": "product",
+   "category": "sweet",
+   "aliases": ["dibs", "date molasses", "silan", "date honey"],
+   "servings": [{"label": "1 tbsp", "g": 20}],
+   "components": [
+    {"food": "date-natural-and-dry-321f92", "g": 105, "note": "dates are pressed and the juice reduced; the fibre stays in the pulp"}
+   ],
+   "omit": ["fiber", "vitC", "folate"],
+   "kcal": "atwater",
+   "recipe": "Date syrup is the juice of cooked dates, strained and reduced to a thick syrup. Values are dried dates per 105 g with the fibre removed (it stays behind in the pressed pulp), energy recomputed.",
+   "limits": "Minerals are assumed to pass into the juice in full, so potassium and iron are probably overstated by 10 to 30 %. Brands vary in thickness."
+  },
+  {
+   "key": "sichuan-peppercorn",
+   "name": "Sichuan peppercorn",
+   "head": "sichuan peppercorn",
+   "form": "dried",
+   "category": "condiment",
+   "aliases": ["sichuan pepper", "szechuan pepper", "szechuan peppercorn", "huajiao", "hua jiao", "prickly ash"],
+   "servings": [{"label": "1 tsp", "g": 2}],
+   "components": [
+    {"food": "black-pepper-6fd5df", "g": 50, "note": "dried berry spice"},
+    {"food": "coriander-seed-cilantro-973ca2", "g": 50, "note": "dried husky seed spice"}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat"],
+   "recipe": "No source database has Sichuan peppercorn (the dried husks of Zanthoxylum). Energy and macronutrients are the mean of two dried berry and seed spices, black pepper and coriander seed.",
+   "limits": "Micronutrients and the fat split are left missing. Used by the half teaspoon, so only the macros could matter, and barely."
+  },
+  {
+   "key": "star-anise",
+   "name": "Star anise",
+   "head": "star anise",
+   "form": "dried",
+   "category": "condiment",
+   "aliases": ["badian", "chinese star anise", "ba jiao"],
+   "servings": [{"label": "1 pod", "g": 0.5}, {"label": "1 tsp, ground", "g": 2}],
+   "components": [
+    {"food": "anise-seeds-60dad1", "g": 100}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat"],
+   "recipe": "No source database has star anise (Illicium verum). It takes the energy and macronutrients of anise seed, a dried aromatic fruit with the same flavour compound (anethole).",
+   "limits": "Micronutrients and the fat split are left missing; a pod weighs half a gram."
+  },
+  {
+   "key": "five-spice",
+   "name": "Chinese five-spice powder",
+   "head": "five spice",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["five spice", "five-spice", "wu xiang fen", "5 spice"],
+   "servings": [{"label": "1 tsp", "g": 2.5}],
+   "components": [
+    {"custom": "star-anise", "g": 30},
+    {"food": "cinnamon-ground-ed5c78", "g": 25},
+    {"food": "fennel-seed-8a14d7", "g": 20},
+    {"custom": "sichuan-peppercorn", "g": 15},
+    {"food": "clove-ground-863cd5", "g": 10}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat"],
+   "recipe": "A common home ratio: star anise 30, cassia or cinnamon 25, fennel seed 20, Sichuan peppercorn 15, cloves 10.",
+   "limits": "Only energy and macronutrients, because two components carry macros only. Used by the teaspoon."
+  },
+  {
+   "key": "douchi",
+   "name": "Fermented black beans (douchi)",
+   "head": "fermented black beans",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["douchi", "dou chi", "salted black beans", "chinese black beans", "fermented black soybeans"],
+   "tags": ["fermented"],
+   "servings": [{"label": "1 tbsp", "g": 8}],
+   "components": [
+    {"food": "natto-dried-hoshi-natto-bc6f9c", "g": 70, "note": "dried fermented soybeans"},
+    {"food": "table-salt-fdccfe", "g": 10, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"},
+    {"food": "water-municipal-95c157", "g": 20, "zero_if_missing": ["iodine"], "why": "moisture of soft dried douchi"}
+   ],
+   "omit": ["vitK"],
+   "recipe": "Douchi are black soybeans fermented with a mould, salted and partly dried. Values are dried fermented soybeans (70 g), salt (10 g) and moisture (20 g) per 100 g.",
+   "limits": "Vitamin K is left out (the natto proxy is rich in K2 from a bacterium douchi doesn't use). Sodium varies a lot by brand; rinsing before use, as many cooks do, removes some of it."
+  },
+  {
+   "key": "ancho-chile",
+   "name": "Ancho chile, dried",
+   "head": "ancho chile",
+   "form": "dried",
+   "category": "vegetable",
+   "aliases": ["ancho", "ancho chili", "ancho pepper", "dried poblano", "chile ancho"],
+   "servings": [{"label": "1 whole", "g": 15}],
+   "components": [
+    {"food": "pasilla-pepper-dried-c20085", "g": 100, "note": "another dried Mexican chile of the same kind"}
+   ],
+   "omit": ["vitC"],
+   "recipe": "Ancho is a dried ripe poblano. It takes the values of dried pasilla chile, the nearest dried Mexican chile in the source data (both are mild, wrinkled, raisin-sweet dried chiles).",
+   "limits": "Vitamin C is left missing because it varies widely with drying. Anchos are a little milder and fleshier than pasillas."
+  },
+  {
+   "key": "guajillo-chile",
+   "name": "Guajillo chile, dried",
+   "head": "guajillo chile",
+   "form": "dried",
+   "category": "vegetable",
+   "aliases": ["guajillo", "guajillo chili", "guajillo pepper", "chile guajillo"],
+   "servings": [{"label": "1 whole", "g": 6}],
+   "components": [
+    {"food": "chili-pepper-red-sun-dried-d3dda3", "g": 50},
+    {"food": "pasilla-pepper-dried-c20085", "g": 50}
+   ],
+   "omit": ["vitC"],
+   "recipe": "Guajillo is a dried mirasol chile, thin-skinned and bright red. Values are the mean of sun-dried red chile and dried pasilla chile.",
+   "limits": "Vitamin C is left missing because it varies widely with drying."
+  },
+  {
+   "key": "chipotle-in-adobo",
+   "name": "Chipotle peppers in adobo sauce",
+   "head": "chipotle in adobo",
+   "form": "canned",
+   "category": "condiment",
+   "aliases": ["chipotle", "chipotles", "chipotle in adobo", "chipotles en adobo", "chipotle peppers"],
+   "servings": [{"label": "1 pepper with sauce", "g": 15}, {"label": "1 tbsp", "g": 15}],
+   "components": [
+    {"food": "chili-pepper-red-sun-dried-d3dda3", "g": 12, "note": "smoked dried jalapeno, rehydrated"},
+    {"food": "tomato-paste-7d3238", "g": 15},
+    {"food": "vinegar-d9b2f1", "g": 12},
+    {"food": "onion-raw-11f646", "g": 8},
+    {"food": "garlic-raw-a9c6a6", "g": 2},
+    {"food": "sugar-refined-552eca", "g": 3},
+    {"food": "table-salt-fdccfe", "g": 2.2, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"},
+    {"food": "water-municipal-95c157", "g": 46, "zero_if_missing": ["iodine"], "why": "the liquid of the sauce"}
+   ],
+   "omit": ["vitC"],
+   "recipe": "A typical canned chipotles en adobo: smoked dried jalapenos rehydrated in a thin sauce of tomato, vinegar, onion, garlic, a little sugar and salt (about 860 mg sodium per 100 g, close to common labels).",
+   "limits": "Brands vary in sugar and salt. Vitamin C is left missing."
+  },
+  {
+   "key": "achiote-paste",
+   "name": "Achiote paste (recado rojo)",
+   "head": "achiote paste",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["achiote", "recado rojo", "annatto paste", "achiote condimentado"],
+   "servings": [{"label": "1 tbsp", "g": 16}],
+   "components": [
+    {"food": "paprika-59bfc4", "g": 45, "note": "stands in for ground annatto seed (similar dried seed spice macros)"},
+    {"food": "vinegar-d9b2f1", "g": 30},
+    {"food": "garlic-raw-a9c6a6", "g": 8},
+    {"food": "cumin-seed-626f82", "g": 3},
+    {"food": "oregano-ground-ec4216", "g": 3},
+    {"food": "black-pepper-6fd5df", "g": 2},
+    {"food": "table-salt-fdccfe", "g": 4, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"},
+    {"food": "water-municipal-95c157", "g": 5, "zero_if_missing": ["iodine"], "why": "moisture"}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat", "sodium"],
+   "recipe": "Recado rojo: ground annatto seed with vinegar or bitter orange, garlic, cumin, oregano, pepper and salt, pressed into a paste. Annatto seed itself is not in any source database, so paprika stands in for its share.",
+   "limits": "Only energy, macronutrients and sodium; annatto's micronutrients are not predicted by paprika. Used by the tablespoon for colour and flavour."
   }
  ]
 }
