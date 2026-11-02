@@ -1,0 +1,1763 @@
+{
+  "id": "caribbean",
+  "name": "Caribbean Kitchen",
+  "style": "balanced",
+  "cuisine": "Caribbean",
+  "regions": [
+    "Jamaica",
+    "Trinidad and Tobago",
+    "Cuba",
+    "Puerto Rico",
+    "Haiti"
+  ],
+  "summary": "A week of Caribbean home cooking: ackee and saltfish, jerk chicken with rice and peas, curry channa, run down mackerel, Cuban black bean soup, Haitian griot and a Saturday curry goat. Brown rice, plantain and yuca for the carbs, Scotch bonnet, thyme and allspice for the soul, and plenty of lime.",
+  "howItWorks": "**Cook once, eat twice.** Monday's jerk chicken, Tuesday's curry channa, Wednesday's run down mackerel, Thursday's black bean soup, Friday's griot and Saturday's curry goat each make two portions, so the next day's lunch is done. The shrimp, snapper and breakfasts are cooked fresh.\n\n**Fatty fish four times.** Run down mackerel on Wednesday (it comes back at Thursday's lunch) and sardines on toast on Thursday and Sunday carry your **omega-3 and B12**, and they help with **vitamin D**. Ackee and saltfish, shrimp and snapper round out the seafood.\n\n**The Sunday before.** Soak 90 g of dry kidney beans and 160 g of dry black beans in separate bowls on Saturday night. On Sunday, simmer each with a bay leaf until tender, about 1 hour, and salt at the end. They keep 4 to 5 days chilled, so freeze a tub. Brown rice cooks fresh with each dish, about 40 minutes.\n\n**Whole-food carbs, Caribbean style.** Brown rice, whole-wheat flatbread and dumplings, yuca and plantain do the work, with beans or chickpeas most days. Plantain is boiled or baked, never fried, and coconut milk is a spoonful at a time. The warm milk with the eggs, banana milk and peanut punch carry **calcium**.\n\n**Pickles and heat.** Pikliz, escovitch pickle, lime and Scotch bonnet brighten the rich dishes. Make the pikliz on Thursday night, and soak the salt cod on Sunday, Wednesday and Saturday nights.",
+  "signature": [
+    "caribbean-jerk-chicken-rice-and-peas",
+    "caribbean-ackee-saltfish-callaloo",
+    "caribbean-run-down-mackerel-dumplings",
+    "caribbean-curry-channa-aloo-flatbread"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "caribbean-banana-peanuts"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "caribbean-banana-peanuts"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "caribbean-roasted-channa-lime"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "caribbean-plantain-chips-baked"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "caribbean-peanuts-lime-pepper"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "caribbean-avocado-toast-tomato"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "caribbean-roasted-channa-lime"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "caribbean-ackee-saltfish-callaloo",
+      "name": "Ackee and saltfish with callaloo and boiled green plantain",
+      "inspiredBy": "Jamaican ackee and saltfish, with boiled green plantain standing in for boiled green banana",
+      "about": "Jamaica's national breakfast: mild, buttery ackee folded through flaked salt cod, onion, thyme and Scotch bonnet, with a big pile of callaloo, soft boiled green plantain and sliced avocado (Jamaicans call it pear) on the side. It is salty, savoury and gently hot. The callaloo brings **iron and vitamin A**, and the salt cod brings protein and iodine.",
+      "ingredients": [
+        {
+          "food": "ackee-canned-drained-77774f",
+          "g": 100
+        },
+        {
+          "food": "cod-salted-dried-9fc034",
+          "g": 30,
+          "note": "soaked overnight"
+        },
+        {
+          "food": "amaranth-leaves-59b7b7",
+          "g": 200,
+          "swap": "leafy_greens",
+          "note": "callaloo, or use spinach"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 30,
+          "swap": "vit_c_fruit",
+          "note": "diced"
+        },
+        {
+          "food": "scotch-bonnet-pepper-dd7a44",
+          "g": 2,
+          "note": "left whole, or minced for more fire"
+        },
+        {
+          "food": "thyme-raw-56b319",
+          "g": 1,
+          "note": "a few fresh sprigs"
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.3
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "plantain-green-raw-c9bd2d",
+          "g": 50,
+          "note": "peeled and sliced into thick coins"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "on the side"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "The night before, rinse the salt cod and leave it in a bowl of cold water in the fridge. Change the water once or twice if you think of it.",
+        "In the morning, score the plantain peel lengthwise and pry it off, then slice the plantain into thick coins. Boil in unsalted water until tender, 15 to 20 minutes, and drain.",
+        "Meanwhile, drain the cod, cover it with fresh water and simmer for 10 minutes. Drain again, then flake the fish, discarding any skin and bones. Taste a flake. If it is still very salty, give it another quick simmer in fresh water.",
+        "Warm the oil in a wide pan. Soften the onion, scallion, red pepper and thyme for 5 minutes, then add the whole Scotch bonnet and the allspice and cook for 1 minute more.",
+        "Add the tomato and cook until it collapses, about 4 minutes. Stir in the flaked cod. Push the cod mixture to one side of the pan and wilt the callaloo in the other half, about 3 minutes. Lift the callaloo onto the plate.",
+        "Fold the ackee into the cod mixture last and very gently, so it stays in soft golden pieces. Warm it through for 2 minutes, crack over the black pepper and fish out the Scotch bonnet. You won't need extra salt. Serve with the callaloo, plantain and sliced avocado."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Boil the plantain the night before and warm it in the pan with the onions. Canned ackee and salt cod come from a Caribbean grocer or online, and salt cod keeps for months in the pantry. Soak the cod the night before each ackee morning."
+    },
+    {
+      "id": "caribbean-callaloo-egg-scramble-toast",
+      "name": "Callaloo and egg scramble with tomato and whole-wheat toast",
+      "inspiredBy": "Jamaican callaloo cooked with egg, a favourite home breakfast",
+      "about": "Eggs scrambled with wilted callaloo, onion, tomato, scallion and thyme, with a whisper of Scotch bonnet, served on whole-wheat toast with ripe avocado. It is a quick, green Jamaican morning plate. The callaloo and egg together bring **iron, choline and vitamin A**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 110,
+          "note": "2 extra-large eggs"
+        },
+        {
+          "food": "amaranth-leaves-59b7b7",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "callaloo, or use spinach"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "thyme-raw-56b319",
+          "g": 1,
+          "note": "a few fresh sprigs"
+        },
+        {
+          "food": "scotch-bonnet-pepper-dd7a44",
+          "g": 0.5,
+          "note": "minced, a tiny pinch"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 30,
+          "note": "toasted"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Warm the oil in a non-stick pan over medium heat. Cook the onion, scallion, thyme and Scotch bonnet until soft, about 4 minutes.",
+        "Add the tomato and cook for 3 minutes, until it breaks down. Stir in the callaloo and cook until wilted, about 3 minutes.",
+        "Beat the eggs with the salt and pour them over the greens. Stir gently over low heat until softly set, about 2 minutes.",
+        "Toast the bread and fan the avocado on top or beside it. Pile on the eggs and callaloo."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Spinach or kale works if you can't find callaloo, and a dash of hot pepper sauce at the table is traditional."
+    },
+    {
+      "id": "caribbean-cuban-eggs-sofrito-toast",
+      "name": "Cuban-style scrambled eggs with sofrito on whole-wheat toast",
+      "inspiredBy": "Cuban huevos revueltos con sofrito, with toast and a mug of warm milk",
+      "about": "Soft scrambled eggs stirred through a quick sofrito of onion, pepper, garlic, tomato and a pinch of cumin, piled on crisp whole-wheat toast, with a little avocado salad and a mug of warm milk on the side. It is a filling, everyday Cuban breakfast. The eggs bring **choline and B12**, and the warm milk adds calcium.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 35,
+          "note": "1 thin slice, toasted"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "swap": "vit_c_fruit",
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.4
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.3
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "culantro-038d9c",
+          "g": 4,
+          "note": "chopped, or cilantro"
+        },
+        {
+          "food": "evaporated-milk-2-fat-528375",
+          "g": 60,
+          "swap": "dairy_protein",
+          "note": "thinned with an equal amount of hot water, for a mug of warm milk"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a non-stick pan over medium heat. Cook the onion and pepper until soft and sweet, about 5 minutes, then stir in the garlic, oregano and cumin for 30 seconds.",
+        "Add the tomato and cook until it has broken down into a thick sofrito, about 4 minutes.",
+        "Beat the eggs with the salt. Turn the heat to low, pour the eggs over the sofrito and stir gently until they are softly set and still glossy, about 2 minutes.",
+        "Toast the bread. Slice the avocado and dress it with the lime juice and a pinch of salt, and heat the milk with an equal amount of water.",
+        "Pile the eggs on the toast and scatter with the culantro. Serve the avocado alongside, with the hot milk."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make a double batch of sofrito on Sunday and the eggs take five minutes. Stir a shot of strong coffee into the hot milk and it's café con leche. A spoonful of black beans from the Sunday pot on the side is very Cuban."
+    },
+    {
+      "id": "caribbean-camarones-guisados-yuca",
+      "name": "Puerto Rican-style stewed shrimp with recaito and boiled yuca",
+      "inspiredBy": "Puerto Rican camarones guisados, with yuca in place of rice",
+      "about": "Plump shrimp simmered in a bright tomato sauce built on recaito, the green culantro and garlic base of Puerto Rican cooking, finished with lime, then spooned over a few chunks of boiled yuca. It is quick and fresh. The shrimp bring **protein, iodine and selenium**.",
+      "ingredients": [
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 220,
+          "swap": "lean_protein",
+          "note": "peeled and deveined"
+        },
+        {
+          "food": "cassava-manioc-raw-41bc74",
+          "g": 40,
+          "note": "peeled, woody core removed, cut in chunks"
+        },
+        {
+          "food": "culantro-038d9c",
+          "g": 25,
+          "note": "or cilantro"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 90,
+          "swap": "vit_c_fruit",
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "a quarter for the recaito, the rest chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "chopped"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Put the yuca in a pot of salted water, bring to a boil and cook until tender when pierced, 20 to 25 minutes. Drain.",
+        "Meanwhile, blitz the culantro, the garlic and a quarter of the onion with a splash of water into a green paste. That is your recaito.",
+        "Warm the oil in a wide pan. Cook the rest of the onion and the red pepper, chopped, for 5 minutes. Stir in the recaito and cook for 2 minutes until it smells fresh and herby.",
+        "Add the tomato and simmer for 8 minutes, until the sauce is thick and glossy.",
+        "Slide in the shrimp and cook, turning once, until pink and curled, 3 to 4 minutes. Squeeze in the lime juice and taste for salt.",
+        "Serve the shrimp over the yuca."
+      ],
+      "prepMin": 15,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make the sauce and boil the yuca on Sunday night. At lunch, warm the sauce and cook the shrimp in it, 5 minutes. Double the recaito and freeze the extra in an ice cube tray. Culantro is the long, serrated leaf in Latin and Caribbean grocery stores. It tastes like a stronger cilantro, so use extra cilantro if you can't find it."
+    },
+    {
+      "id": "caribbean-jerk-chicken-rice-and-peas",
+      "name": "Jerk chicken with brown rice and peas and lime slaw",
+      "inspiredBy": "Jamaican jerk chicken and rice and peas, roasted in the oven with brown rice rather than smoked over pimento wood",
+      "about": "Chicken thighs rubbed with a fiery green paste of Scotch bonnet, allspice, thyme, scallion and ginger, roasted until charred at the edges, with coconut brown rice and kidney beans, the Jamaican Sunday plate, and a crunchy lime cabbage slaw. It makes two portions, and it is just as good cold the next day. The beans and rice together bring **fibre, iron and folate**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 175,
+          "swap": "lean_protein",
+          "note": "boneless thighs"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 35,
+          "note": "about a third kept for the rice"
+        },
+        {
+          "food": "scotch-bonnet-pepper-dd7a44",
+          "g": 3,
+          "note": "seeded for less heat"
+        },
+        {
+          "food": "thyme-raw-56b319",
+          "g": 2,
+          "note": "fresh sprigs"
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 1.5,
+          "note": "ground pimento"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "peeled"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 32,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "kidney-beans-dry-312b4c",
+          "g": 45,
+          "swap": "legumes",
+          "note": "soaked and cooked ahead"
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 35,
+          "note": "shaken well"
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 80,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Soak the kidney beans on Saturday night, then simmer in fresh water until just tender, about 1 hour. Use your Sunday pot if you made one (see the plan notes). Drain, keeping the cooking liquid.",
+        "Blitz two thirds of the scallion with the Scotch bonnet, thyme, allspice, ginger, garlic, half the lime juice and a third of the salt into a rough green paste. Toss the chicken with the paste and the oil and marinate for at least 30 minutes, or overnight in the fridge.",
+        "Heat the oven to 220°C (425°F). Roast the chicken on a tray until browned and cooked through, about 25 minutes. For a little extra char, finish it under the broiler for 2 minutes.",
+        "For the rice and peas, put the brown rice, beans, coconut milk, the rest of the scallion, a few thyme leaves and another third of the salt in a pot. Add bean liquid and water to about a thumb's width above the rice. Bring to a boil, cover, and cook on the lowest heat until the rice is tender, about 40 minutes. Rest 10 minutes, covered, then fluff.",
+        "Toss the cabbage with the rest of the lime juice and salt, and leave it to soften while you finish.",
+        "Slice the chicken and serve over the rice and peas with the slaw. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 25,
+      "cookMin": 60,
+      "servings": 2,
+      "tags": [
+        "spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Marinate in the morning and dinner is just roasting and a pot of rice. For less fire, seed the Scotch bonnet or use half. The leftovers are lovely cold in a wrap too."
+    },
+    {
+      "id": "caribbean-curry-channa-aloo-flatbread",
+      "name": "Trinidad curry channa and aloo on whole-wheat flatbread",
+      "inspiredBy": "Trinidad doubles and channa and aloo, with a dry-skillet whole-wheat flatbread in place of the fried bara and bhaji greens folded in",
+      "about": "Chickpeas and potato simmered with West Indian curry powder, garlic, roasted cumin and a whole Scotch bonnet until thick and spoonable, with bhaji greens folded in, piled on a warm whole-wheat flatbread with cucumber and a tamarind sauce. It makes two portions and the curry gets better overnight. The chickpeas and greens bring **iron, folate and fibre**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-rinsed-211d8c",
+          "g": 250,
+          "swap": "legumes"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 45,
+          "note": "cut in small cubes"
+        },
+        {
+          "food": "amaranth-leaves-59b7b7",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "bhaji, which is amaranth leaves, or use spinach; washed and roughly chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "west-indian-curry-powder-1ebb42",
+          "g": 4
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1,
+          "note": "toasted in the pan"
+        },
+        {
+          "food": "scotch-bonnet-pepper-dd7a44",
+          "g": 2,
+          "note": "left whole"
+        },
+        {
+          "food": "culantro-038d9c",
+          "g": 8,
+          "note": "or cilantro, chopped"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 8,
+          "note": "for the sauce"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60
+        },
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 28,
+          "note": "for the flatbread"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "For the flatbreads, mix the flour with a pinch of the salt and enough warm water to make a soft dough. Knead for 3 minutes, cover and rest while you make the curry.",
+        "Warm half the oil in a pot. Cook the onion until soft, about 5 minutes. Add the garlic, curry powder and cumin and stir for 1 minute until it smells toasty, adding a splash of water if it starts to stick.",
+        "Add the potato, chickpeas, the whole Scotch bonnet, the rest of the salt and enough water to just cover. Simmer, partly covered, until the potato is tender and the sauce is thick, about 20 minutes. Mash a few chickpeas against the side of the pot to thicken it.",
+        "Stir in the bhaji greens and half the culantro and cook until wilted, about 2 minutes. Fish out the Scotch bonnet.",
+        "Divide the dough into balls and roll each one thin. Cook in a dry hot skillet, 1 to 2 minutes a side, until puffed with brown spots, brushing with a little of the remaining oil.",
+        "Stir the tamarind paste with a few spoonfuls of water, a pinch of salt and a little of the culantro. Serve the curry on the flatbread with the cucumber, the tamarind sauce and the rest of the culantro. Pack the second portion for tomorrow's lunch and rewarm the flatbread in a dry pan."
+      ],
+      "prepMin": 20,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Real doubles are two soft fried baras with channa between them. For a snack-sized version, fold the curry in a small flatbread with a shake of pepper sauce. Dried chickpeas, soaked overnight, work too."
+    },
+    {
+      "id": "caribbean-run-down-mackerel-dumplings",
+      "name": "Run down mackerel with pumpkin and whole-wheat dumplings",
+      "inspiredBy": "Jamaican run down, traditionally made with salted mackerel and served with boiled green banana or dumplings, here with fresh mackerel",
+      "about": "Mackerel simmered in a coconut milk sauce with onion, thyme, Scotch bonnet and tomato, cooked down until it thickens and turns rich (that is the \"run down\"), with sweet pumpkin and little whole-wheat dumplings cooked right in the sauce. It makes two portions and is gentler than it sounds. The mackerel brings **omega-3 and B12**, and the pumpkin adds vitamin A.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 200,
+          "swap": "fatty_fish",
+          "note": "fillets, skin on, bones out"
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 30,
+          "note": "shaken well"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "thyme-raw-56b319",
+          "g": 2,
+          "note": "fresh sprigs"
+        },
+        {
+          "food": "scotch-bonnet-pepper-dd7a44",
+          "g": 3,
+          "note": "left whole"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20,
+          "note": "sliced"
+        },
+        {
+          "food": "pumpkin-raw-dd46c7",
+          "g": 100,
+          "note": "butternut, kabocha or calabaza; peeled, in small cubes"
+        },
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 15,
+          "note": "for the dumplings"
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.5
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Put the coconut milk, onion, scallion, garlic, thyme, allspice and whole Scotch bonnet in a wide pan with about three times as much water as coconut milk. Simmer for about 10 minutes, until the sauce thickens and the coconut milk starts to turn oily. That is the run down.",
+        "Add the tomato and pumpkin. Cook, partly covered, until the pumpkin is soft and starting to fall apart, about 12 minutes. Mash some of it into the sauce to thicken it.",
+        "Meanwhile, stir the flour with a pinch of the salt and just enough water to make a stiff dough. Roll it into little fingers, about as long as your thumb.",
+        "Drop the dumplings into the sauce and simmer for 10 minutes, stirring gently now and then. Add a splash more water if the sauce doesn't half-cover the dumplings.",
+        "Cut the mackerel into big chunks and nestle them into the sauce. Cover and cook gently until the fish just flakes, 6 to 8 minutes.",
+        "Add the lime juice, taste for salt and fish out the Scotch bonnet. Pack the second portion for tomorrow's lunch and rewarm it gently, without boiling."
+      ],
+      "prepMin": 20,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Salted or canned mackerel is the traditional fish: if you use it, soak the salted kind and skip the salt. Frozen mackerel fillets are easy to find and work well, and the fishmonger can fillet a whole one."
+    },
+    {
+      "id": "caribbean-cuban-black-bean-soup",
+      "name": "Cuban black bean soup with pork and avocado",
+      "inspiredBy": "Cuban sopa de frijoles negros, with a little pork for body",
+      "about": "A thick, silky black bean soup with a golden sofrito of onion, pepper and garlic, cumin, oregano and a splash of vinegar at the end, with small cubes of lean pork simmered in, topped with creamy avocado, tangy pickled onion and culantro. It makes two portions and tastes better the next day. The beans bring **fibre, folate and iron**.",
+      "ingredients": [
+        {
+          "food": "black-beans-dry-9f5377",
+          "g": 80,
+          "swap": "legumes",
+          "note": "soaked overnight, or cooked beans from the Sunday pot"
+        },
+        {
+          "food": "pork-butt-portion-lean-raw-26a201",
+          "g": 45,
+          "swap": "lean_protein",
+          "note": "trimmed and diced small"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "half in the pot, half in the sofrito, a little sliced raw for the top"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 50,
+          "swap": "vit_c_fruit",
+          "note": "half in the pot, half in the sofrito"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3,
+          "note": "1 leaf"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "distilled-vinegar-white-dd0119",
+          "g": 12,
+          "note": "some for the soup, some for the onion"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "culantro-038d9c",
+          "g": 4,
+          "note": "or cilantro"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "From dry beans: soak them overnight in plenty of water and drain. Put them in a big pot with the pork, the bay leaf, half the onion and half the pepper (in big pieces) and water to cover by a few centimetres. Bring to a boil, then simmer, partly covered, until the beans are very tender, about 1 hour 15 minutes.",
+        "From the Sunday pot: simmer the pork alone with the bay leaf and the big onion and pepper pieces in water for 25 minutes, until nearly tender. The cooked beans go in at step 4, so they don't turn to mush.",
+        "While that simmers, warm the oil and soften most of the remaining onion and the remaining pepper, finely chopped, for 8 minutes, keeping a little onion back for the top. Add the garlic, cumin and oregano and cook for 1 minute.",
+        "Stir the sofrito and the salt into the pot (add the Sunday beans now, if that is your route) and simmer for 20 minutes. Fish out the big pepper and onion pieces and the bay leaf. Mash about a third of the beans against the side of the pot, so the soup turns thick and creamy, then stir in most of the vinegar.",
+        "Slice a little onion thinly and toss it with the last splash of vinegar and a pinch of salt. Let it sit for 10 minutes.",
+        "Ladle the soup into bowls and top with the avocado, pickled onion and culantro. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 75,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "With the Sunday pot this is a 45-minute soup, and a pressure cooker does the dry beans and pork in about 30 minutes. For a smoky note, simmer a bit of smoked turkey or a spoonful of smoked paprika in the pot."
+    },
+    {
+      "id": "caribbean-griot-pork-pikliz-cassava",
+      "name": "Haitian griot-style pork with pikliz and baked cassava",
+      "inspiredBy": "Haitian griot, simmered and then roasted rather than fried, with baked cassava in place of fried plantain",
+      "about": "Cubes of pork shoulder marinated in lime, garlic, thyme and Scotch bonnet, simmered until tender, then roasted until the edges are crisp and caramelized, with fiery pikliz slaw and baked cassava sticks. It is Haiti's celebration dish, baked here instead of deep-fried. The pork brings **protein, thiamin and zinc**, and the pikliz adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "pork-butt-portion-lean-raw-26a201",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "shoulder, trimmed, cut in 4 cm cubes"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 45,
+          "note": "about 2 limes; sour orange is traditional"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20
+        },
+        {
+          "food": "thyme-raw-56b319",
+          "g": 1.5
+        },
+        {
+          "food": "scotch-bonnet-pepper-dd7a44",
+          "g": 2,
+          "note": "a little in the marinade, a little in the pikliz"
+        },
+        {
+          "food": "clove-cb7cf1",
+          "g": 0.2,
+          "note": "1 whole clove, or a pinch ground"
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 70,
+          "note": "shredded, for the pikliz"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "grated, for the pikliz"
+        },
+        {
+          "food": "distilled-vinegar-white-dd0119",
+          "g": 35,
+          "note": "for the pikliz"
+        },
+        {
+          "food": "cassava-manioc-raw-41bc74",
+          "g": 60,
+          "note": "peeled, woody core removed, cut in sticks"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Make the pikliz first, ideally the day before. Mix the cabbage, carrot, a few thin slices of Scotch bonnet, the vinegar, a squeeze of lime and a pinch of salt in a jar. Press it down, cover and chill. It keeps for 5 days.",
+        "Blitz the scallion, garlic, thyme, a little Scotch bonnet, the clove, the rest of the lime juice and the salt into a loose marinade. Toss with the pork and leave for at least 2 hours, or overnight.",
+        "Tip the pork and all its marinade into a pot with a splash of water. Cover and simmer gently until the pork is tender, about 40 minutes. A pressure cooker does it in 15.",
+        "Meanwhile, heat the oven to 220°C (425°F). Boil the cassava sticks for 10 minutes, drain, toss with the oil and spread on a tray. Roast for about 25 minutes, turning once, until crisp at the edges.",
+        "Uncover the pork, turn up the heat and cook until the liquid has reduced to a sticky glaze. Spread the pork on a tray and roast it in the oven for the last 10 minutes, until the edges crisp and darken.",
+        "Serve the pork with the cassava and a generous pile of pikliz. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 25,
+      "cookMin": 70,
+      "servings": 2,
+      "tags": [
+        "spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Make the pikliz on Thursday night and it will be properly sharp by Friday. Sour oranges are the traditional marinade; lime with a splash of orange juice comes close. Pikliz is lovely on rice and beans too."
+    },
+    {
+      "id": "caribbean-curry-goat-rice-cucumber",
+      "name": "Trinidad curry goat with pumpkin, brown rice and cucumber chow",
+      "inspiredBy": "Trinidad curry goat, with pumpkin and brown rice instead of potato and dhalpuri roti",
+      "about": "Goat rubbed with a fresh green seasoning, then simmered low and slow with West Indian curry powder and a whole Scotch bonnet until it falls apart in a thick, golden sauce with sweet pumpkin, served over brown rice with a sharp lime and culantro cucumber salad. It's the weekend project and it makes two portions. The goat brings **iron, zinc and B12**, and the pumpkin brings vitamin A.",
+      "ingredients": [
+        {
+          "food": "goat-lean-raw-67f543",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "boneless, cut in chunks"
+        },
+        {
+          "food": "pumpkin-raw-dd46c7",
+          "g": 150,
+          "note": "butternut, kabocha or calabaza; peeled, cut in big chunks"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 25,
+          "note": "for the green seasoning"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "grated"
+        },
+        {
+          "food": "west-indian-curry-powder-1ebb42",
+          "g": 6
+        },
+        {
+          "food": "scotch-bonnet-pepper-dd7a44",
+          "g": 2,
+          "note": "left whole"
+        },
+        {
+          "food": "culantro-038d9c",
+          "g": 16,
+          "note": "half for the seasoning, half for the chow; or cilantro"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Wash the goat in cold water with a squeeze of the lime juice and drain well. Blitz the scallion, half the culantro, half the garlic and the ginger into a green paste. Rub it into the goat with half the curry powder and half the salt, and leave for at least an hour, or overnight in the fridge.",
+        "Warm the oil in a heavy pot over medium-high heat. Add the rest of the curry powder and cook, stirring, for about 2 minutes, until it darkens and smells toasted. Add the onion and cook until it starts to brown, about 5 minutes.",
+        "Add the goat and brown it on all sides, about 8 minutes. Stir in the rest of the garlic and the whole Scotch bonnet, pour in enough water to nearly cover, cover and simmer on low for about 1 hour 15 minutes, until the goat is nearly tender. A pressure cooker needs about 40 minutes.",
+        "Add the pumpkin, a bit more water if needed, and the rest of the salt. Cook for 25 minutes more, until the pumpkin is soft, the goat is falling apart and the sauce is thick. Fish out the Scotch bonnet.",
+        "Meanwhile, cook the brown rice in plenty of salted water, about 40 minutes, and drain.",
+        "For the chow, toss the cucumber with the rest of the lime juice, half the remaining culantro and a pinch of salt.",
+        "Serve the curry over the rice with the cucumber chow and the last of the culantro on top. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 25,
+      "cookMin": 120,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Goat is at halal butchers, Caribbean grocers or online. If you buy bone-in goat, which is classic and gives a richer sauce, buy about a third more by weight. Lamb shoulder is a fine stand-in."
+    },
+    {
+      "id": "caribbean-escovitch-snapper-plantain",
+      "name": "Escovitch snapper with baked plantain and slaw",
+      "inspiredBy": "Jamaican escovitch fish, pan-seared instead of deep-fried, with baked plantain in place of bammy or festival",
+      "about": "Seared red snapper topped with a hot vinegar pickle of onion, carrot, pepper and Scotch bonnet, the Jamaican way, served with baked plantain wedges and a crunchy lime cabbage slaw. The fish is pan-seared instead of deep-fried. The snapper is lean and high in protein, and the carrot and red pepper bring **vitamin A and vitamin C**.",
+      "ingredients": [
+        {
+          "food": "snapper-raw-58298f",
+          "g": 180,
+          "swap": "lean_protein",
+          "note": "skin-on fillets"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.5
+        },
+        {
+          "food": "thyme-raw-56b319",
+          "g": 1.5,
+          "note": "minced"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "distilled-vinegar-white-dd0119",
+          "g": 40,
+          "note": "for the pickle"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "cut in thin matchsticks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "swap": "vit_c_fruit",
+          "note": "thinly sliced"
+        },
+        {
+          "food": "scotch-bonnet-pepper-dd7a44",
+          "g": 3,
+          "note": "thinly sliced, seeds out"
+        },
+        {
+          "food": "plantain-green-raw-c9bd2d",
+          "g": 110,
+          "note": "peeled, cut in thick wedges"
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 60,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        }
+      ],
+      "steps": [
+        "Peel the plantain and cut it into thick wedges. Parboil in water for 8 minutes and drain well. Meanwhile, heat the oven to 220°C (425°F). Toss the wedges with a little of the oil and bake, turning once, until soft inside and golden at the edges, about 20 minutes.",
+        "Make the pickle. Put the vinegar, a splash of water, the allspice and a pinch of salt in a small pan and bring to a simmer. Add the onion, carrot, red pepper and Scotch bonnet and simmer for 2 minutes, just to take the raw edge off. Take off the heat.",
+        "Pat the snapper dry and season with the thyme, black pepper and the rest of the salt.",
+        "Heat the rest of the oil in a non-stick pan over medium-high heat. Cook the fish skin side down until golden and crisp, about 4 minutes, then flip for 2 to 3 minutes until just cooked through.",
+        "Toss the cabbage with the lime juice and a pinch of salt.",
+        "Put the fish on a plate and spoon the hot pickle and a little of its liquid over the top. Leave it for 5 minutes so the flavours soak in. Serve with the plantain and slaw."
+      ],
+      "prepMin": 20,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "The pickle keeps in the fridge for a week and is great on grilled chicken or an egg sandwich. Mackerel or kingfish steaks work too."
+    },
+    {
+      "id": "caribbean-mango-lime",
+      "name": "Mango with lime and black pepper",
+      "about": "Ripe mango chunks with a squeeze of lime and a crack of black pepper, the way it is sold from a roadside cart. It is sweet, sharp and juicy. Mango brings **vitamin C and vitamin A**.",
+      "ingredients": [
+        {
+          "food": "mango-raw-80de97",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "peeled and cubed"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Cut the mango into chunks and put them in a bowl.",
+        "Squeeze over the lime juice, crack on a little black pepper and toss."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "caribbean-pineapple-chow",
+      "name": "Pineapple chow with culantro and lime",
+      "inspiredBy": "Trinidad pineapple chow",
+      "about": "Pineapple chunks tossed with chopped culantro, garlic, lime juice and a tiny bit of Scotch bonnet, a Trinidad street snack. It is sweet, sour, herby and hot all at once. Pineapple brings **vitamin C and manganese**.",
+      "ingredients": [
+        {
+          "food": "pineapple-raw-7de748",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "cut in chunks"
+        },
+        {
+          "food": "culantro-038d9c",
+          "g": 3,
+          "note": "finely chopped, or cilantro"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1,
+          "note": "minced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "scotch-bonnet-pepper-dd7a44",
+          "g": 0.3,
+          "note": "minced, a tiny pinch"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Put the pineapple in a bowl and add the culantro, garlic, lime juice, Scotch bonnet and salt.",
+        "Toss well and leave for 5 minutes so the juices mingle."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "caribbean-cucumber-chow",
+      "name": "Cucumber chow with lime and culantro",
+      "inspiredBy": "Trinidad cucumber chow",
+      "about": "Crisp cucumber tossed with lime juice, garlic, chopped culantro and a pinch of Scotch bonnet, a Trinidad street-side favourite. It is cool, sharp and refreshing.",
+      "ingredients": [
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 200,
+          "note": "sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "culantro-038d9c",
+          "g": 3,
+          "note": "chopped, or cilantro"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1,
+          "note": "minced"
+        },
+        {
+          "food": "scotch-bonnet-pepper-dd7a44",
+          "g": 0.3,
+          "note": "minced, a tiny pinch"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Slice the cucumber into a bowl.",
+        "Add the lime juice, culantro, garlic, Scotch bonnet and salt, toss and leave for 5 minutes."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "caribbean-peanuts-lime-pepper",
+      "name": "Roasted peanuts with lime and pepper",
+      "about": "A small handful of roasted peanuts tossed with lime juice and a pinch of cayenne, to be eaten warm. They are crunchy, salty and a bit hot. Peanuts bring **vitamin E, magnesium and protein**.",
+      "ingredients": [
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 30,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Warm the peanuts in a dry pan for 2 minutes until fragrant.",
+        "Toss with the lime juice and cayenne in a bowl."
+      ],
+      "prepMin": 2,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "caribbean-banana-peanuts",
+      "name": "Banana with roasted peanuts and cinnamon",
+      "about": "A ripe banana sliced over a small handful of roasted peanuts with a pinch of cinnamon, a quick filling snack. It brings **potassium, vitamin B6 and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 110,
+          "note": "1 medium"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 20,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Peel and slice the banana.",
+        "Scatter with the peanuts and the cinnamon."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "caribbean-sardines-toast-tomato",
+      "name": "Sardines on whole-wheat toast with tomato and pepper",
+      "inspiredBy": "Trinidad sardines and bake, with whole-wheat toast in place of a fried bake",
+      "about": "Canned sardines mashed onto crisp whole-wheat toast with ripe tomato, onion and a bite of Scotch bonnet, a nod to the Trinidad tradition of sardines with bake. It is salty, sharp and satisfying. The sardines, bones and all, bring **omega-3, calcium and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 75,
+          "swap": "fatty_fish",
+          "note": "canned in oil, drained, with the soft bones"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "note": "toasted"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "scotch-bonnet-pepper-dd7a44",
+          "g": 0.4,
+          "note": "minced, a tiny pinch"
+        },
+        {
+          "food": "thyme-raw-56b319",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Toast the bread. Drain the sardines and mash them roughly with the lime juice, Scotch bonnet and thyme.",
+        "Pile the sardines on the toast and top with the tomato and onion."
+      ],
+      "prepMin": 5,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "caribbean-peanut-punch",
+      "name": "Jamaican-style peanut punch",
+      "inspiredBy": "Jamaican peanut punch, made without sweetened condensed milk",
+      "about": "A thick, creamy drink of evaporated milk, roasted peanuts, banana, nutmeg and cinnamon blended smooth, a Jamaican favourite. It is a snack you can sip. It brings **protein, calcium and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "evaporated-milk-2-fat-528375",
+          "g": 90,
+          "swap": "dairy_protein",
+          "note": "evaporated milk"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 40
+        },
+        {
+          "food": "nutmeg-ground-15c547",
+          "g": 0.2
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Blend everything with half a cup of cold water and a few ice cubes. Blend for a full minute, until no grit is left.",
+        "Pour into a tall glass and grate a little more nutmeg on top."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "caribbean-banana-milk-nutmeg",
+      "name": "Banana milk with nutmeg",
+      "about": "A cold, frothy blend of evaporated milk and ripe banana with a grating of nutmeg, the kind of drink Jamaican and Bajan kids grow up on. It is creamy and sweet with no added sugar. The evaporated milk brings **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "evaporated-milk-2-fat-528375",
+          "g": 100,
+          "swap": "dairy_protein",
+          "note": "evaporated milk"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 80
+        },
+        {
+          "food": "nutmeg-ground-15c547",
+          "g": 0.2
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Blend everything with half a cup of cold water and a few ice cubes. Blend for a full minute, until smooth and frothy.",
+        "Pour into a glass and finish with a little more nutmeg."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "caribbean-roasted-channa-lime",
+      "name": "Roasted channa with lime and pepper",
+      "inspiredBy": "Trinidad channa, roasted instead of fried",
+      "about": "Chickpeas roasted until crisp at the edges with curry powder and cayenne, then tossed with lime, in the spirit of the spiced channa sold at Trinidad snack stands. They are crunchy, warmly spiced and a little hot. Chickpeas bring **protein, iron and fibre**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-rinsed-211d8c",
+          "g": 100,
+          "swap": "legumes",
+          "note": "canned, drained, rinsed and patted very dry"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "west-indian-curry-powder-1ebb42",
+          "g": 0.4
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the dry chickpeas with the oil, curry powder, cayenne and salt on a tray.",
+        "Roast, shaking the tray now and then, until golden and crisp, about 25 minutes.",
+        "Squeeze over the lime juice and eat while warm."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "caribbean-pumpkin-wedges-allspice",
+      "name": "Roasted pumpkin wedges with allspice and lime",
+      "about": "Wedges of pumpkin roasted until sweet and caramelized at the edges, with a dusting of allspice and a squeeze of lime. It is soft, warm and homey. Pumpkin brings **vitamin A and potassium**.",
+      "ingredients": [
+        {
+          "food": "pumpkin-raw-dd46c7",
+          "g": 200,
+          "note": "peeled, in wedges"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.3
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the pumpkin with the oil, allspice and salt on a tray.",
+        "Roast, turning once, until tender and browned at the edges, about 25 minutes.",
+        "Squeeze over the lime juice."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Roast them on Monday alongside the jerk chicken. They're good warm or at room temperature."
+    },
+    {
+      "id": "caribbean-avocado-toast-tomato",
+      "name": "Avocado on whole-wheat toast with tomato and lime",
+      "about": "Ripe avocado mashed on crisp whole-wheat toast with sliced tomato, lime and black pepper, a simple snack that many Caribbean homes have always made with their own avocado trees. It is creamy and fresh. The avocado brings **vitamin E and potassium**.",
+      "ingredients": [
+        {
+          "food": "avocado-raw-c06278",
+          "g": 70,
+          "note": "ripe"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 35,
+          "note": "1 slice, toasted"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the bread. Mash the avocado with the lime juice and salt.",
+        "Spread it on the toast and top with the tomato and black pepper."
+      ],
+      "prepMin": 4,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "caribbean-plantain-chips-baked",
+      "name": "Baked plantain chips with lime and cayenne",
+      "inspiredBy": "Caribbean plantain chips, baked instead of fried",
+      "about": "Thin slices of green plantain baked until crisp, tossed with lime and a pinch of cayenne, the way plantain chips are made all over the Caribbean but without the deep fryer. They are crunchy, salty and a little hot. Plantain brings **potassium and fibre**.",
+      "ingredients": [
+        {
+          "food": "plantain-green-raw-c9bd2d",
+          "g": 80,
+          "note": "peeled and sliced very thin"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 4
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Toss the plantain slices with the oil and salt and spread in a single layer on a tray.",
+        "Bake, turning once, until crisp and golden, about 20 minutes. Watch them at the end, as they colour fast.",
+        "Toss with the lime juice and cayenne."
+      ],
+      "prepMin": 8,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "caribbean-ackee-saltfish-callaloo"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "caribbean-camarones-guisados-yuca"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "caribbean-jerk-chicken-rice-and-peas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "caribbean-peanuts-lime-pepper"
+        },
+        {
+          "slot": "snack",
+          "recipe": "caribbean-banana-milk-nutmeg"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "caribbean-cuban-eggs-sofrito-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "caribbean-jerk-chicken-rice-and-peas",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "caribbean-curry-channa-aloo-flatbread"
+        },
+        {
+          "slot": "snack",
+          "recipe": "caribbean-pumpkin-wedges-allspice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "caribbean-cucumber-chow"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "caribbean-callaloo-egg-scramble-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "caribbean-curry-channa-aloo-flatbread",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "caribbean-run-down-mackerel-dumplings"
+        },
+        {
+          "slot": "snack",
+          "recipe": "caribbean-peanut-punch"
+        },
+        {
+          "slot": "snack",
+          "recipe": "caribbean-pineapple-chow"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "caribbean-ackee-saltfish-callaloo"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "caribbean-run-down-mackerel-dumplings",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "caribbean-cuban-black-bean-soup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "caribbean-sardines-toast-tomato"
+        },
+        {
+          "slot": "snack",
+          "recipe": "caribbean-mango-lime"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "caribbean-callaloo-egg-scramble-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "caribbean-cuban-black-bean-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "caribbean-griot-pork-pikliz-cassava"
+        },
+        {
+          "slot": "snack",
+          "recipe": "caribbean-peanut-punch"
+        },
+        {
+          "slot": "snack",
+          "recipe": "caribbean-cucumber-chow"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "caribbean-cuban-eggs-sofrito-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "caribbean-griot-pork-pikliz-cassava",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "caribbean-curry-goat-rice-cucumber"
+        },
+        {
+          "slot": "snack",
+          "recipe": "caribbean-banana-milk-nutmeg"
+        },
+        {
+          "slot": "snack",
+          "recipe": "caribbean-mango-lime"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "caribbean-ackee-saltfish-callaloo"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "caribbean-curry-goat-rice-cucumber",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "caribbean-escovitch-snapper-plantain"
+        },
+        {
+          "slot": "snack",
+          "recipe": "caribbean-sardines-toast-tomato"
+        },
+        {
+          "slot": "snack",
+          "recipe": "caribbean-pineapple-chow"
+        }
+      ]
+    }
+  ]
+}
