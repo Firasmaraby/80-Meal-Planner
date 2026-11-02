@@ -39,7 +39,9 @@ Each day, at every band the family claims (checked at the band's lowest and high
 
 Per recipe and per week, the cooking-sense checks:
 
-- realistic amounts: oil at most 2 tbsp (27 g) per serving, salt at most 2.5 g, dried spices at most 8 g;
+- realistic amounts: oil at most 2 tbsp (27 g) per serving, salt at most 2.5 g, dried spices at most 8 g, and at most
+  400 g of raw meat, poultry and fish together in one serving at any size (write the week near its label so Big doesn't
+  have to grow the meat; let Big add a side or snack instead);
 - every main meal has a real protein source;
 - 4 to 14 ingredients;
 - 3 to 9 steps;

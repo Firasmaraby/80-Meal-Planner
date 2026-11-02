@@ -301,6 +301,17 @@ describe('plan lab', () => {
     expect(LIMITS).toMatchObject({ oilG: 27, saltG: 2.5, spiceG: 8, proteinSourceG: 15 });
   });
 
+  it('flags a serving with more than 400 g of raw meat, poultry or fish', () => {
+    const f = clone();
+    const stew = f.recipes.find((r) => r.id === 'chicken-chickpea-stew')!;
+    const meat = stew.ingredients.find((i) => i.food.startsWith('chicken'))!;
+    meat.g = 380; // grows past 400 g at Big
+    const found = lab(f).failures.filter((x) => x.code === 'portion' && x.size === 'big' && x.kcal === 2800);
+    expect(found.map((x) => x.recipe)).toEqual(['chicken-chickpea-stew']);
+    expect(found[0].message).toMatch(/\d+ g of raw meat, poultry or fish in one serving \(max 400 g, about 14 oz\)/);
+    expect(LIMITS.fleshG).toBe(400);
+  });
+
   it('lets a bigger plate carry proportionally more spice', () => {
     expect(spiceLimit(500)).toBe(8);
     expect(spiceLimit(700)).toBe(8);

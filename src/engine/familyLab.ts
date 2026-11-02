@@ -96,6 +96,8 @@ export interface LabDeps extends CompileContext {
 export const LIMITS = {
   oilG: 27,
   saltG: 2.5,
+  /** raw meat, poultry and fish in one serving, together: about 14 oz raw (300 g cooked), a big appetite at 3,200 kcal */
+  fleshG: 400,
   /** per serving of a ~700 kcal meal; a bigger plate carries proportionally more (a 1,050 kcal curry may hold 12 g) */
   spiceG: 8,
   proteinSourceG: 15,
@@ -138,6 +140,7 @@ export function cookingSenseChecks(plan: MealPlan, foods: FoodIndex, size: PlanS
       let salt = 0;
       let spice = 0;
       let protein = 0;
+      let flesh = 0;
       let mealKcal = 0;
       for (const i of m.ingredients) {
         const f = getFood(foods, i.foodId);
@@ -146,9 +149,12 @@ export function cookingSenseChecks(plan: MealPlan, foods: FoodIndex, size: PlanS
         if (isOil(f)) oil += i.grams;
         else if (isSalt(f)) salt += i.grams;
         else if (isDriedSpice(f)) spice += i.grams;
+        if (f.category === 'meat' || f.category === 'poultry' || f.category === 'fish') flesh += i.grams;
         if (isProteinSource(f)) protein += ((f.n.protein ?? 0) * i.grams) / 100;
       }
       if (oil > LIMITS.oilG) add('oil', recipe, d.day, `${m.name}: ${Math.round(oil)} g of oil per serving (max ${LIMITS.oilG} g, 2 tbsp).`, 'Cut the oil, or move some of the fat to nuts, avocado or fish.');
+      if (flesh > LIMITS.fleshG)
+        add('portion', recipe, d.day, `${m.name}: ${Math.round(flesh)} g of raw meat, poultry or fish in one serving (max ${LIMITS.fleshG} g, about 14 oz).`, 'Write the dish closer to the size it is served at, or let the size add a side or snack instead of growing the meat.');
       if (salt > LIMITS.saltG) add('salt', recipe, d.day, `${m.name}: ${salt.toFixed(1)} g of salt per serving (max ${LIMITS.saltG} g).`, 'Use less salt and add acid, herbs or spices for flavour.');
       const spiceMax = spiceLimit(mealKcal);
       if (spice > spiceMax) add('spice', recipe, d.day, `${m.name}: ${spice.toFixed(1)} g of dried spices or herbs per serving (max ${spiceMax.toFixed(1)} g for a ${Math.round(mealKcal)} kcal plate).`, 'Use less of the dried spice, or switch to fresh herbs.');
