@@ -1120,6 +1120,97 @@
    ],
    "recipe": "Whole-wheat lavash is a thin, soft flatbread of the same dough as whole-wheat pita; it takes the pita's values.",
    "limits": "Thinner breads lose a little more moisture, so energy per 100 g may be slightly higher than listed."
+  },
+  {
+   "key": "peri-peri-sauce",
+   "name": "Peri-peri sauce",
+   "head": "peri-peri sauce",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["piri piri", "peri peri", "piri-piri sauce", "african bird's eye chili sauce"],
+   "servings": [{"label": "1 tbsp", "g": 15}],
+   "components": [
+    {"food": "chili-pepper-red-raw-72faf1", "g": 45, "note": "African bird's eye chili"},
+    {"food": "lemon-juice-raw-7ae426", "g": 25},
+    {"food": "garlic-raw-a9c6a6", "g": 8},
+    {"food": "canola-oil-6744e1", "g": 10},
+    {"food": "paprika-59bfc4", "g": 4},
+    {"food": "vinegar-d9b2f1", "g": 5},
+    {"food": "table-salt-fdccfe", "g": 3, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"}
+   ],
+   "omit": ["vitC"],
+   "recipe": "A home peri-peri: bird's eye chilies blended with lemon, garlic, a little oil, paprika, vinegar and salt.",
+   "limits": "Vitamin C left out (stored sauce). Bottled versions vary in oil, sugar and salt."
+  },
+  {
+   "key": "skyr",
+   "name": "Skyr, plain",
+   "head": "skyr",
+   "form": "product",
+   "category": "dairy",
+   "aliases": ["icelandic yogurt", "skyr natural", "icelandic skyr"],
+   "servings": [{"label": "3/4 cup", "g": 170}],
+   "components": [
+    {"food": "greek-yogurt-plain-nonfat-a79a72", "g": 100, "note": "a strained, high-protein cultured milk of the same kind"}
+   ],
+   "recipe": "Skyr is a strained, almost fat-free cultured dairy food; it takes the values of plain nonfat Greek yogurt, which it matches closely.",
+   "limits": "Skyr is usually a little higher in protein (about 11 g per 100 g) than the Greek yogurt used here."
+  },
+  {
+   "key": "tvorog",
+   "name": "Tvorog (quark, farmer's cheese)",
+   "head": "tvorog",
+   "form": "product",
+   "category": "dairy",
+   "aliases": ["quark", "farmer's cheese", "twarog", "tvaroh", "cottage cheese dry curd", "pot cheese"],
+   "servings": [{"label": "1/2 cup", "g": 110}],
+   "components": [
+    {"food": "cottage-cheese-2-fat-49f49a", "g": 100, "note": "fresh curd cheese of the same kind"}
+   ],
+   "recipe": "Tvorog (quark) is fresh, drained curd cheese; it takes the values of 2 % cottage cheese, the nearest fresh curd in the source data.",
+   "limits": "Tvorog is drier than cottage cheese, so protein per 100 g is probably 10 to 30 % higher; sodium is usually lower (unsalted curd)."
+  },
+  {
+   "key": "khmeli-suneli",
+   "name": "Khmeli-suneli (Georgian spice blend)",
+   "head": "khmeli-suneli",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["khmeli suneli", "hmeli suneli", "georgian spice mix"],
+   "servings": [{"label": "1 tsp", "g": 2}],
+   "components": [
+    {"food": "coriander-seed-cilantro-973ca2", "g": 30},
+    {"food": "fenugreek-seed-95f5a8", "g": 20},
+    {"food": "dill-dried-c53e5b", "g": 15},
+    {"food": "basil-dried-160272", "g": 15},
+    {"food": "savory-ground-7ef03f", "g": 12},
+    {"food": "bay-leaf-513612", "g": 4},
+    {"food": "black-pepper-6fd5df", "g": 4}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat"],
+   "recipe": "Khmeli-suneli: ground coriander and blue fenugreek with dried dill, basil, savory, bay and pepper (marigold petals are often added for colour).",
+   "limits": "Blue fenugreek and marigold are not in any source; ordinary fenugreek stands in. Only macronutrients; used by the teaspoon."
+  },
+  {
+   "key": "adjika",
+   "name": "Adjika (Georgian chili paste)",
+   "head": "adjika",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["ajika", "adzhika", "abkhazian chili paste"],
+   "servings": [{"label": "1 tsp", "g": 6}],
+   "components": [
+    {"food": "chili-pepper-red-raw-72faf1", "g": 45},
+    {"food": "red-bell-pepper-raw-42163e", "g": 25},
+    {"food": "garlic-raw-a9c6a6", "g": 12},
+    {"food": "coriander-seed-cilantro-973ca2", "g": 4},
+    {"food": "fenugreek-seed-95f5a8", "g": 2},
+    {"food": "table-salt-fdccfe", "g": 6, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"},
+    {"food": "water-municipal-95c157", "g": 6, "zero_if_missing": ["iodine"], "why": "moisture"}
+   ],
+   "omit": ["vitC"],
+   "recipe": "Red adjika: hot and sweet red peppers ground with garlic, coriander, fenugreek and salt into a fiery paste.",
+   "limits": "Vitamin C left out (stored paste); salt varies by maker."
   }
  ]
 }
