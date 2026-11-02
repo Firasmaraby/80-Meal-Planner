@@ -1,0 +1,1893 @@
+{
+  "id": "persia-anatolia",
+  "name": "Persian & Turkish Table",
+  "style": "balanced",
+  "cuisine": "Persian & Turkish",
+  "regions": [
+    "Iran",
+    "Turkey",
+    "Gilan",
+    "Black Sea coast",
+    "Antalya",
+    "Southeast Anatolia"
+  ],
+  "summary": "A week at a Persian and Turkish table. Menemen, nan-o-panir-o-sabzi and kuku for breakfast, then ghormeh sabzi, köfte, kuru fasulye and a weekend fesenjan with brown basmati and bulgur, herbs by the handful, and fish three times.",
+  "howItWorks": "**Cook once, eat twice.** Monday's ghormeh sabzi, Tuesday's köfte, Thursday's kuru fasulye and Saturday's fesenjan each make two portions, so the next day's lunch is already cooked. Saturday's kuku sabzi does the same for Sunday breakfast.\n\n**Rice and beans in batches.** Cook enough brown basmati for two portions on Monday and again on Saturday, steamed under a tea towel. Soak Thursday's white beans on Wednesday night. Both keep 4 to 5 days in the fridge.\n\n**Fish three times.** Sardines on Wednesday, salmon on Friday and mackerel on Sunday carry your **omega-3, vitamin D and B12**. They are never back to back, and always cooked fresh. Walnuts in the nan-o-panir and the fesenjan add plant omega-3 on the other days.\n\n**Herbs, greens and calcium.** Parsley, cilantro, dill, mint and scallion fill the ghormeh sabzi, kuku and herb rice, with kale and arugula alongside, for **vitamin K, folate and iron**. Feta, yogurt, tahini and kale bring the calcium.\n\n**Prep ahead.** Boil the egg for each nan-o-panir morning the night before, and soak the beans on Wednesday night. Saturday's fesenjan is the slow weekend project, so start it mid-afternoon and let it bubble while you finish dinner.",
+  "signature": [
+    "persia-anatolia-ghormeh-sabzi",
+    "persia-anatolia-fesenjan-chicken",
+    "persia-anatolia-hamsi-style-sardines-kale",
+    "persia-anatolia-chicken-kofte-coban"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 4,
+          "swap": {
+            "from": "persia-anatolia-dates-walnuts-hazelnuts",
+            "to": "persia-anatolia-date-walnut-hazelnut"
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "persia-anatolia-mast-o-khiar"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "persia-anatolia-ayran-cucumber"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "persia-anatolia-figs-walnuts"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "persia-anatolia-ayran-cucumber"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "persia-anatolia-mast-o-khiar"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "persia-anatolia-dates-walnuts-hazelnuts"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "persia-anatolia-figs-hazelnuts"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "persia-anatolia-menemen",
+      "name": "Menemen with white cheese, Turkish eggs with tomato and pepper",
+      "about": "Turkey's favourite scramble: tomatoes and green pepper cooked down until jammy, then softly set eggs and a little crumbled white cheese stirred through, with Aleppo pepper. You eat it straight from the pan, scooping it up with warm lavash. The eggs and tomatoes bring **protein, choline and lycopene** for a morning that lasts.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 160,
+          "note": "ripe, chopped"
+        },
+        {
+          "food": "green-bell-pepper-raw-9af6da",
+          "g": 70,
+          "note": "Turkish sivri or any mild green pepper, sliced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 20,
+          "swap": "dairy_protein",
+          "note": "crumbled, as the white cheese"
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "lavash-whole-wheat-244146",
+          "g": 50,
+          "note": "warmed"
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a small, wide pan over medium heat. Add the onion and green pepper and cook until soft but not browned, about 4 minutes.",
+        "Add the tomato with the Aleppo pepper, black pepper and salt. Cook, stirring and mashing now and then, until it breaks down into a thick, jammy sauce, about 5 minutes.",
+        "Crack the eggs straight into the pan, scatter over the feta and stir it all gently through the tomatoes. Take the pan off the heat while the eggs still look a little wet, because they keep cooking in the hot pan. Scatter with the parsley.",
+        "Bring the pan to the table with the warm lavash and scoop it up. Mopping the pan with the bread is the whole point."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Turkish cooks argue about whether the onion belongs, so leave it out if you are on the other side. Leave the cheese out for a plain menemen."
+    },
+    {
+      "id": "persia-anatolia-nan-panir-sabzi",
+      "name": "Nan-o-panir-o-sabzi with walnuts, a boiled egg and fresh herbs",
+      "about": "The classic Persian breakfast plate: warm lavash, salty feta, walnut halves and a soft-boiled egg, with a heap of fresh herbs and cucumber to roll up into little bites. Nothing to cook but an egg. The herbs bring **vitamin K and folate**, and the walnuts add plant omega-3.",
+      "ingredients": [
+        {
+          "food": "lavash-whole-wheat-244146",
+          "g": 45,
+          "note": "whole-wheat lavash"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 25,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "halves"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "soft-boiled"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 5
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 130
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3,
+          "note": "a pinch, for the cucumber"
+        }
+      ],
+      "steps": [
+        "Lower the egg gently into a small pot of boiling water and cook for 6 minutes for a jammy yolk. Cool it under cold water and peel.",
+        "Wash the herbs and scallion and shake them dry. Leave the mint and parsley as whole sprigs, which is how they are served.",
+        "Slice the cucumber and arrange it on a plate with the herbs and scallion. Sprinkle the cucumber with a pinch of salt.",
+        "Put the feta and walnut halves on the side of the plate with the halved egg. Warm the lavash in a dry pan or the toaster.",
+        "Tear off a piece of bread, wrap a little feta, a walnut and a few herb leaves inside, and eat it as a small roll (this is called a loghmeh). Keep going until the plate is empty."
+      ],
+      "prepMin": 8,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Persian breakfast comes with sweet black tea. Boil the egg the night before and this takes 5 minutes. Fresh tarragon or basil on the plate is lovely if you find it."
+    },
+    {
+      "id": "persia-anatolia-kuku-sabzi",
+      "name": "Kuku sabzi, Persian herb frittata with barberries and yogurt",
+      "about": "A thick, deep-green frittata packed with parsley, cilantro, dill, scallion and spinach, with dried fenugreek and tart barberries running through it. It is a Nowruz classic, and it makes two portions, so tomorrow's breakfast is cold wedges tucked into bread. The herbs bring **vitamin K, folate and iron** in a single sitting.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs per portion"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 20,
+          "note": "finely chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 30,
+          "note": "green and white parts, finely chopped"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "finely chopped"
+        },
+        {
+          "food": "kasuri-methi-dried-fenugreek-leaves-6f4317",
+          "g": 1,
+          "note": "shanbalileh"
+        },
+        {
+          "food": "barberries-dried-zereshk-6c241b",
+          "g": 6,
+          "note": "rinsed, soaked in water for 5 minutes and drained"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lavash-whole-wheat-244146",
+          "g": 45,
+          "note": "whole-wheat lavash"
+        }
+      ],
+      "steps": [
+        "Chop the parsley, cilantro, dill, scallion and spinach very finely. A few pulses in a food processor does it, and the pile should look like a lot more green than you expect.",
+        "Beat the eggs in a big bowl with the fenugreek, turmeric, pepper and salt. Fold in all the herbs and the drained barberries. It should be thick, more green than yellow.",
+        "Warm half the olive oil in a 20 to 22 cm non-stick, oven-safe pan over medium heat. Pour in the mixture, flatten the top and cover. Cook covered over low heat for 15 minutes, until the edges pull away from the pan and the top is almost set.",
+        "Heat the broiler. Brush the top with the rest of the oil and slide the pan under for 3 to 4 minutes, until the top is set and just golden. You can flip it with a plate instead if you prefer.",
+        "Let it cool for 5 minutes, then cut into wedges. Serve one portion warm with the yogurt and lavash.",
+        "Wrap the second portion for tomorrow. Cold kuku in lavash with a spoonful of yogurt is a very good breakfast sandwich."
+      ],
+      "prepMin": 15,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "A handful of chopped walnuts folded in is traditional if you like crunch. If you cannot find barberries, a few chopped dried cranberries give a similar tang."
+    },
+    {
+      "id": "persia-anatolia-piyaz",
+      "name": "Antalya-style piyaz, white bean salad with egg and tahini",
+      "inspiredBy": "Turkish piyaz, the white bean salad served with köfte, here as a lunch with a boiled egg and the tahini-lemon dressing they make in Antalya",
+      "about": "Creamy white beans, juicy tomato and a lot of parsley under a lemony tahini dressing, with sumac onions and a halved boiled egg on top. It is a Turkish meze turned into lunch, and it is better after it sits for 10 minutes. The beans bring **fibre, folate and iron**, and the egg adds choline.",
+      "ingredients": [
+        {
+          "food": "white-beans-boiled-c7bc32",
+          "g": 160,
+          "swap": "legumes",
+          "note": "from a tin, drained and rinsed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "boiled"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 40,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 30,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 15
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1.5
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "lavash-whole-wheat-244146",
+          "g": 30,
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Lower the egg into a small pot of boiling water and cook for 8 minutes, then cool it under cold water and peel.",
+        "Toss the sliced red onion with the sumac and a pinch of the salt, squeezing it with your fingers for a minute until it softens and turns pink. Leave it for 10 minutes.",
+        "Mash the garlic with the rest of the salt, then whisk it with the tahini, lemon juice, adding cold water a teaspoon at a time until it is pale and pourable like thin cream. Whisk in the olive oil.",
+        "Toss the white beans gently with the dressing and most of the parsley. Spread them on a plate.",
+        "Pile the tomato and sumac onions on top, add the halved egg, sprinkle with the Aleppo pepper and the rest of the parsley, and eat with the toasted lavash."
+      ],
+      "prepMin": 12,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cooked from dried beans (about 70 g dry), it tastes even better. Flaked tinned tuna instead of the egg is a Turkish favourite too."
+    },
+    {
+      "id": "persia-anatolia-mercimek-corbasi",
+      "name": "Mercimek çorbası, Turkish red lentil soup with mint and Aleppo oil",
+      "about": "The soup every Turkish kitchen starts a meal with: red lentils, carrot, potato and onion blended silky smooth, with a lemon squeeze and a spoonful of sizzling olive oil, dried mint and Aleppo pepper on top. A peppery arugula (roka) salad and toasted bread make it lunch. The lentils bring **iron, folate and plant protein**, and the lemon helps you take up that iron.",
+      "ingredients": [
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed until the water runs clearer"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "chopped"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 30,
+          "note": "peeled and cubed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 1
+        },
+        {
+          "food": "mint-dried-3fe241",
+          "g": 0.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "lavash-whole-wheat-244146",
+          "g": 40,
+          "note": "toasted"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "for the side"
+        }
+      ],
+      "steps": [
+        "Warm half the olive oil in a medium pot over medium heat and soften the onion and carrot for 5 minutes. Stir in the cumin and a pinch of paprika for 30 seconds.",
+        "Add the lentils, potato, salt and about 600 ml (2½ cups) of water. Bring to a boil, skim off any foam, then simmer gently until everything is very soft, about 20 minutes.",
+        "Blend the soup smooth with an immersion blender (or in batches in a blender, leaving the lid vent open). If it is too thick, loosen it with hot water. Stir in half the lemon juice and taste for salt.",
+        "Warm the rest of the olive oil in a small pan with the dried mint and Aleppo pepper until it sizzles and turns red, 30 seconds. Spoon it over the soup.",
+        "Serve with the toasted lavash and the arugula, with the rest of the lemon squeezed over the leaves."
+      ],
+      "prepMin": 10,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "freezer-friendly"
+      ],
+      "tip": "Double or triple the soup and freeze the rest in single portions for up to 3 months."
+    },
+    {
+      "id": "persia-anatolia-lahmacun-style-flatbread",
+      "name": "Lahmacun-style flatbread with spiced beef, parsley salad and ayran",
+      "inspiredBy": "Turkish lahmacun, with a whole-wheat lavash standing in for the thin dough so it takes 25 minutes",
+      "about": "Whole-wheat lavash spread thin with a spiced beef, tomato and pepper topping and baked until crisp at the edges and still bendy in the middle, then rolled up with a handful of parsley, sumac onions and lemon, with a cold glass of ayran, as it is eaten in Turkey. The beef brings **iron, zinc and vitamin B12**, and the yogurt in the ayran brings calcium.",
+      "ingredients": [
+        {
+          "food": "lavash-whole-wheat-244146",
+          "g": 60,
+          "note": "large"
+        },
+        {
+          "food": "beef-chuck-for-stew-lean-and-fat-raw-8d6ce5",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "lean chuck, ground (see step 1)"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70
+        },
+        {
+          "food": "green-bell-pepper-raw-9af6da",
+          "g": 40
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 30
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "biber-salcas-turkish-red-pepper-paste-03f415",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 35,
+          "note": "half for the topping, half for the salad"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 25,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein",
+          "note": "for the ayran"
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 1.5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Cut the beef into small cubes and pulse it in a food processor in short bursts until finely ground, or ask the butcher to grind it. Heat the oven to 230 C.",
+        "Chop the tomato, green pepper, onion and garlic, and blend or finely chop with the pepper paste into a thick, rough paste. Drain off any extra liquid so the lavash does not turn soggy.",
+        "Mix the paste with the beef, half the parsley (finely chopped), the Aleppo pepper, paprika, cumin, black pepper and most of the salt until it is sticky and well combined.",
+        "Cut the lavash in half if it is large, brush the tops lightly with water, then with half the oil, and spread the beef mixture over it in a thin, even layer, right out to the edges.",
+        "Bake on a tray for 6 to 8 minutes, until the edges are crisp and the meat is cooked through, but the middle is still bendy enough to roll.",
+        "Meanwhile toss the sliced red onion with the sumac, a pinch of salt, the rest of the parsley, the rest of the oil and half the lemon juice. Pile it on the hot lavash, squeeze over the rest of the lemon, roll up and eat with your hands.",
+        "Whisk the yogurt with 150 ml of cold water and a pinch of salt for the ayran, and pour it over ice."
+      ],
+      "prepMin": 15,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Blend the topping on Friday night and keep it covered in the fridge. On Saturday it is 10 minutes in the oven."
+    },
+    {
+      "id": "persia-anatolia-ghormeh-sabzi",
+      "name": "Ghormeh sabzi, Persian herb stew with beef and kidney beans, with brown basmati",
+      "about": "Iran's national stew: a deep green, savoury-sour pot of parsley, cilantro, scallion and spinach fried until dark with fenugreek (shanbalileh), with tender beef, kidney beans and a dried lime (limoo amani) for the sour note. It makes two portions, and it is even better tomorrow. The herbs and beans bring **iron, folate and vitamin K**, and the lime and lemon help you take up the iron.",
+      "ingredients": [
+        {
+          "food": "beef-chuck-for-stew-lean-and-fat-raw-8d6ce5",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "cut in 2 cm cubes"
+        },
+        {
+          "food": "kidney-beans-boiled-f9c02e",
+          "g": 125,
+          "swap": "legumes",
+          "note": "from a tin, drained and rinsed"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 35,
+          "note": "finely chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "finely chopped"
+        },
+        {
+          "food": "kasuri-methi-dried-fenugreek-leaves-6f4317",
+          "g": 2,
+          "note": "shanbalileh"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 70,
+          "note": "finely chopped"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 1
+        },
+        {
+          "food": "loomi-dried-black-lime-8b452f",
+          "g": 2,
+          "note": "one whole dried lime serves two portions, pierced a few times"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "brown basmati"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm a third of the olive oil in a heavy pot over medium heat. Cook the onion until golden, about 8 minutes, then stir in the turmeric, add the beef and brown it for 5 minutes.",
+        "Pour in enough water to cover the beef by 2 cm (about 3 cups for two portions). Add the pierced dried lime, the salt and pepper. Bring to a boil, cover and simmer gently for 1 hour.",
+        "While the beef simmers, warm the rest of the oil in a wide pan over medium-low heat. Fry the parsley, cilantro, scallion and spinach, stirring often, until they turn dark green and smell toasty, about 20 minutes. Stir in the fenugreek for the last 2 minutes. This slow frying is where the flavour comes from.",
+        "Tip the fried herbs and the kidney beans into the pot. Simmer uncovered for 25 to 30 minutes, until the beef is very tender and the sauce is thick and glossy. Taste, and add the lemon juice and a little salt until it is pleasantly sour.",
+        "For the rice, rinse the brown basmati and simmer it in a big pot of salted boiling water for 25 minutes, like pasta, then drain. Return it to the pot, wrap the lid in a clean tea towel and leave it for 10 minutes to steam and fluff up. Cook enough for both portions.",
+        "Serve the stew over the rice. Pack the second portion for tomorrow's lunch. The dried lime stays in the pot, and you can press it with a spoon on the plate for more sourness."
+      ],
+      "prepMin": 20,
+      "cookMin": 95,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Short on time? In a pressure cooker, cook the beef for 20 minutes, then add the herbs and beans and simmer for 10 minutes. You can also fry the herbs the night before."
+    },
+    {
+      "id": "persia-anatolia-chicken-kofte-coban",
+      "name": "Chicken köfte with bulgur pilav and çoban salatası",
+      "inspiredBy": "Adana and Urfa köfte, which are lamb, made here with chicken thighs and a little bulgur pilav on the side",
+      "about": "Garlicky, spiced chicken köfte shaped on skewers and cooked until browned, with a nutty bulgur pilav and a crunchy shepherd's salad of tomato, cucumber and pepper. It makes two portions, so tomorrow's lunch is already cooked. The chicken and bulgur bring **protein, niacin and fibre**, and the salad brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "boneless, skinless thighs"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 25,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 35,
+          "note": "finely chopped, some for the salad"
+        },
+        {
+          "food": "biber-salcas-turkish-red-pepper-paste-03f415",
+          "g": 8
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "bulgur-dry-raw-2980c3",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "coarse, for the pilav"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100
+        },
+        {
+          "food": "green-bell-pepper-raw-9af6da",
+          "g": 40
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 25
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        }
+      ],
+      "steps": [
+        "Cut the chicken into small cubes and pulse in a food processor in short bursts until finely ground and sticky, or ask the butcher to grind it. Squeeze the grated onion lightly, leaving it moist.",
+        "Mix the chicken with the onion, garlic, parsley, pepper paste, Aleppo pepper, cumin, sumac, black pepper and half the salt. Knead for 2 minutes, until sticky. Chill for at least 20 minutes, or up to a day.",
+        "For the pilav, warm a third of the oil in a small pot and toast the bulgur for 1 minute. Add the rest of the salt and 1.5 times its volume in hot water. Cover and simmer gently for 12 minutes, then leave it off the heat, covered, for 10 minutes. Make enough for both portions.",
+        "With wet hands, mould the chicken around skewers or into long fingers about 2 cm thick. Heat half the remaining oil in a non-stick pan over medium-high heat, or heat the broiler.",
+        "Cook the köfte, turning now and then, until browned all over and cooked through with no pink in the middle, 8 to 10 minutes.",
+        "For the çoban salatası, chop the tomato, cucumber, green pepper and red onion into small, even pieces. Toss with the rest of the oil, the lemon juice, a pinch of salt and a little chopped parsley.",
+        "Serve the köfte on the pilav with the salad. Pack the second portion of köfte and pilav for tomorrow, and chop the salad fresh then."
+      ],
+      "prepMin": 25,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Warm the leftover köfte and pilav in a pan with a splash of water. A spoonful of yogurt on the side is lovely if you have it."
+    },
+    {
+      "id": "persia-anatolia-hamsi-style-sardines-kale",
+      "name": "Cornmeal and hazelnut sardines with Black Sea kale and lemon potatoes",
+      "inspiredBy": "Black Sea hamsi tava, fried fresh anchovies in cornmeal, made with sardines or fresh anchovies, a little of the region's hazelnut and karalahana (Black Sea kale)",
+      "about": "Fresh sardines rolled in cornmeal and a little ground hazelnut, then pan-fried until golden and crisp, the way people on the Black Sea coast fry their anchovies, with garlicky kale and parsley-lemon potatoes. It is quick and punchy. The sardines bring **omega-3, vitamin D and B12**, and the kale and hazelnuts bring calcium and vitamin E.",
+      "ingredients": [
+        {
+          "food": "european-pilchard-or-sardine-raw-e12560",
+          "g": 155,
+          "swap": "fatty_fish",
+          "note": "fresh, cleaned and gutted, heads off. Fresh anchovies work too"
+        },
+        {
+          "food": "cornmeal-yellow-whole-grain-2712ac",
+          "g": 12,
+          "note": "fine, yellow"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "finely ground"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 150,
+          "swap": "leafy_greens",
+          "note": "leaves stripped from the stems, sliced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 30
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 150,
+          "note": "small, in 3 cm chunks"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put the potatoes in a pot of cold salted water, bring to a boil and cook until just tender, about 12 to 15 minutes. Drain, then toss with half the lemon juice and the parsley.",
+        "While they cook, warm a third of the oil in a wide pan over medium heat and soften the onion for 5 minutes. Add the garlic and Aleppo pepper for 30 seconds, then the kale with a splash of water. Cover and cook until the kale is tender and bright, 8 to 10 minutes. Season with salt.",
+        "Pat the sardines very dry with paper towels and season with salt and pepper. Mix the cornmeal with the ground hazelnuts on a plate, roll the sardines in it and pat off the excess.",
+        "Warm the rest of the oil in a large non-stick pan over medium heat. Fry the sardines for 3 minutes a side, keeping the heat at medium because the ground hazelnut scorches, until the coating is golden and crisp and the flesh flakes.",
+        "Serve the sardines on the kale with the potatoes beside them and the rest of the lemon squeezed over everything."
+      ],
+      "prepMin": 15,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Fresh sardines are scarce. Whole frozen ones, thawed and patted dry, work. Ask the fishmonger to scale and gut them. They are small, so you will want 5 or 6."
+    },
+    {
+      "id": "persia-anatolia-etli-kuru-fasulye",
+      "name": "Etli kuru fasulye, Turkish white bean stew with beef, kale and bulgur pilav",
+      "inspiredBy": "Turkish etli kuru fasulye, with some Black Sea karalahana kale stirred in",
+      "about": "Turkey's favourite home stew: tender white beans in a thick, savoury red pepper sauce with Aleppo pepper, a little beef and a handful of kale, served with bulgur pilav and a sumac onion salad on the side. It makes two portions, and it is even better the next day. The beans and kale bring **fibre, folate, iron and calcium**.",
+      "ingredients": [
+        {
+          "food": "white-beans-dry-4b906c",
+          "g": 70,
+          "swap": "legumes",
+          "note": "soaked overnight, then drained"
+        },
+        {
+          "food": "beef-chuck-for-stew-lean-and-fat-raw-8d6ce5",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "cut in small cubes"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "leaves stripped from the stems, sliced"
+        },
+        {
+          "food": "biber-salcas-turkish-red-pepper-paste-03f415",
+          "g": 12
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 1.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15,
+          "note": "chopped"
+        },
+        {
+          "food": "bulgur-dry-raw-2980c3",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "coarse, for the pilav"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 40,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1.5
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        }
+      ],
+      "steps": [
+        "Soak the beans in plenty of water overnight, or cover them with boiling water for 1 hour if you forgot. Drain them.",
+        "Warm half the oil in a heavy pot over medium heat and brown the beef for 5 minutes. Add the onion and carrot and cook until soft, about 8 minutes. Add the garlic, pepper paste and Aleppo pepper and stir for 2 minutes, until it darkens.",
+        "Add the beans with enough hot water to cover them by 3 cm, about 3 cups for two portions. Bring to a boil, then cover and simmer gently for about 1 hour, until the beans are creamy and the beef is tender. Add the salt and pepper when the beans are nearly done.",
+        "Stir in the kale for the last 10 minutes and let the sauce reduce until thick.",
+        "For the pilav, warm the rest of the oil in a small pot, toast the bulgur for 1 minute, then add 1.5 times its volume in hot water and a pinch of salt. Cover and cook gently for 12 minutes, then leave it covered for 10 minutes. Make enough for both portions.",
+        "Toss the red onion with the sumac, the lemon juice and half the parsley and squeeze it with your fingers to soften. Serve the beans over the pilav with the onion salad and the rest of the parsley.",
+        "Pack the second portion for tomorrow's lunch. It thickens overnight, so add a splash of water when you reheat."
+      ],
+      "prepMin": 15,
+      "cookMin": 80,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Short on time? In a pressure cooker, the soaked beans take about 25 minutes. Two 400 g tins of white beans work too, simmered for just 25 minutes. For a vegetarian version, leave out the beef."
+    },
+    {
+      "id": "persia-anatolia-salmon-herb-rice",
+      "name": "Saffron salmon with sabzi polo style herb rice and grilled tomatoes",
+      "inspiredBy": "Persian sabzi polo ba mahi, the Nowruz herb rice with fish, made with brown basmati and a baked salmon fillet",
+      "about": "A saffron and lemon salmon fillet, baked until just flaky, on a bed of brown basmati rice steamed through with a mountain of parsley, dill, cilantro and scallion. Grilled tomatoes alongside, as in a Persian kebab house. The salmon brings **omega-3, vitamin D and B12**, and the herb rice is a big hit of vitamin K.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "skin-on fillet"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "brown basmati"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 20,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 15,
+          "note": "finely chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "finely chopped"
+        },
+        {
+          "food": "kasuri-methi-dried-fenugreek-leaves-6f4317",
+          "g": 1,
+          "note": "shanbalileh"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.1,
+          "note": "ground and steeped in 1 tbsp hot water"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "halved"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the rice and simmer it in plenty of salted boiling water for 25 minutes, like pasta. Drain it, return it to the pot, cover with a tea towel under the lid and leave it for 10 minutes to steam. If you have time, soak the rinsed rice for 30 minutes first.",
+        "Mash the garlic with a little of the salt. Mix it with the steeped saffron and its water, half the lemon juice, the turmeric, pepper and a teaspoon of the oil. Coat the salmon and leave it for 15 minutes.",
+        "Heat the oven to 220 C. Put the salmon skin-side down on a tray with the halved tomatoes, cut-sides up. Drizzle the tomatoes with a little oil and a pinch of salt. Roast for 10 to 12 minutes, until the salmon flakes and the tomato edges are charred.",
+        "Warm the rest of the oil in a small pan, stir in the fenugreek for 20 seconds, and fold it through the hot rice with the parsley, dill, cilantro and scallion and a pinch of salt. Return the rice to the pot, cover with the towel lid and steam on the lowest heat for 5 minutes, so the herbs wilt into the rice and it turns bright green.",
+        "Serve the salmon on the herb rice with the tomatoes and the rest of the lemon."
+      ],
+      "prepMin": 20,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook extra brown basmati the tea-towel way and keep it for 4 to 5 days in the fridge, or freeze it in portions."
+    },
+    {
+      "id": "persia-anatolia-fesenjan-chicken",
+      "name": "Fesenjan-inspired chicken with walnut and pomegranate, with brown basmati",
+      "inspiredBy": "Persian fesenjan from Gilan, with a lighter hand with the walnuts and a brown basmati base",
+      "about": "Chicken thighs slowly simmered in a rich, dark sauce of ground toasted walnuts and sweet-sour pomegranate molasses, with turmeric and cinnamon, and finished with fresh pomegranate seeds. It is the Persian celebration stew, and it is even better the next day. The walnuts bring **plant omega-3, magnesium and copper**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "boneless, skinless thighs, cut in 4 cm pieces"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 35,
+          "swap": "nuts_seeds",
+          "note": "ground"
+        },
+        {
+          "food": "pomegranate-molasses-008fae",
+          "g": 22
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 70,
+          "note": "finely chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 1
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.1,
+          "note": "ground and steeped in 1 tbsp hot water"
+        },
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 20,
+          "note": "seeds, for serving"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "brown basmati"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan over medium heat for 4 minutes, until they smell nutty. Cool them, then grind to a coarse, damp-sand texture in a food processor, in short pulses so they do not turn to paste.",
+        "Warm the oil in a heavy pot over medium heat and cook the onion until soft and golden, about 8 minutes. Stir in the turmeric, add the chicken and turn it for 3 minutes, until it just loses its pink.",
+        "Stir in the ground walnuts, the cinnamon, salt, pepper and just enough water to cover the chicken. Bring to a gentle simmer, cover with the lid slightly ajar, and cook for 40 minutes, stirring often so it does not catch. The sauce will darken and thicken.",
+        "Stir in the pomegranate molasses and the saffron water, and simmer for 20 minutes more, until the oil from the walnuts rises to the top and the chicken is very tender. Taste: it should be sour first, then sweet. Add a little more water if it has thickened too far.",
+        "For the rice, rinse the brown basmati and simmer it in plenty of salted boiling water for 25 minutes, then drain. Return it to the pot, wrap the lid in a tea towel and let it steam for 10 minutes. Make enough for both portions.",
+        "Serve the chicken over the rice, scattered with the pomegranate seeds. Pack the second portion for tomorrow's lunch. Warm it gently with a splash of water, because the sauce thickens overnight."
+      ],
+      "prepMin": 20,
+      "cookMin": 75,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Like most Persian stews it is even better made a day ahead. Pomegranate molasses varies by brand, so taste first. If it is too sharp, a small spoon of pekmez rounds it out."
+    },
+    {
+      "id": "persia-anatolia-uskumru-sumac-onions",
+      "name": "Grilled mackerel (uskumru) with tahini sauce, sumac onions and arugula",
+      "inspiredBy": "Turkish grilled mackerel, with a Hatay-style tahini tarator",
+      "about": "A fat, oily mackerel fillet seared until the skin is crisp, then served the Turkish coastal way, with sumac onions, peppery arugula, tomato and warm lavash to tuck it into, plus a lemony tahini sauce borrowed from Hatay and the Levant. It takes 20 minutes. The mackerel brings **omega-3, vitamin D and B12**, and the tahini and arugula add calcium.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 145,
+          "swap": "fatty_fish",
+          "note": "skin-on fillets"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 50,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15,
+          "note": "chopped"
+        },
+        {
+          "food": "sumac-268746",
+          "g": 2
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 30
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 20
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 120,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100
+        },
+        {
+          "food": "lavash-whole-wheat-244146",
+          "g": 45,
+          "note": "warmed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toss the sliced red onion with the sumac, half the parsley, a pinch of salt and a third of the lemon juice. Squeeze it with your fingers until it softens and turns pink. Leave it while you cook.",
+        "Mash the garlic with a pinch of salt and whisk it with the tahini, half the remaining lemon juice and 2 to 3 tablespoons of cold water, until pale and pourable like thin cream.",
+        "Pat the mackerel dry and season both sides with salt, pepper and the Aleppo pepper. Rub the skin with a little of the oil.",
+        "Heat a heavy pan or the broiler on high. Cook the fillets skin-side down for 4 minutes without moving them, until the skin is crisp, then flip for 1 to 2 minutes, until just cooked through.",
+        "Dress the arugula and sliced tomato with the rest of the lemon juice, the rest of the oil and a pinch of salt.",
+        "Serve the mackerel on the sumac onions with the salad, a spoonful of the tahini sauce and the rest of the parsley, and the warm lavash alongside. Tuck some into a piece of bread if you like."
+      ],
+      "prepMin": 12,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Mackerel is strongly flavoured, so do not skip the lemon and the sumac onions. If you cannot find fresh mackerel, use sardines or trout."
+    },
+    {
+      "id": "persia-anatolia-dates-walnuts-hazelnuts",
+      "name": "Medjool dates stuffed with walnuts and hazelnuts",
+      "about": "Soft dates stuffed with walnut halves and a hazelnut, the sweet nibble Persian and Turkish families serve with tea. The walnuts bring **plant omega-3 and magnesium**, the hazelnuts bring vitamin E, and the dates bring potassium.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 48,
+          "note": "2 pitted dates"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "halves"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 10,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Slit the dates open, take out the pits and press a walnut half and a hazelnut or two into each date. Serve with a cup of tea."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "persia-anatolia-ayran-cucumber",
+      "name": "Ayran with cucumber sticks",
+      "about": "The salty, frothy Turkish yogurt drink, with dried mint and cucumber sticks on the side. It is **calcium and protein** in a glass.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mint-dried-3fe241",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "cut in sticks"
+        }
+      ],
+      "steps": [
+        "Whisk the yogurt with 130 ml of cold water, the salt and the dried mint until frothy, and serve over ice if you like.",
+        "Eat the cucumber sticks alongside."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "persia-anatolia-date-walnut-hazelnut",
+      "name": "A Medjool date stuffed with walnut and hazelnut",
+      "about": "One soft date stuffed with a walnut half and a hazelnut, the small sweet bite that goes with a cup of tea. The walnut brings **plant omega-3**, the hazelnut brings vitamin E, and the date brings potassium.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 24,
+          "note": "1 pitted date"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "halves"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 10,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Slit the date open, take out the pit and press a walnut half and a hazelnut or two into it. Serve with a cup of tea."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "persia-anatolia-mast-o-khiar",
+      "name": "Mast-o-khiar, cucumber yogurt with dill and mint",
+      "inspiredBy": "Persian mast-o-khiar, with a little lavash to scoop",
+      "about": "Cool, thick yogurt with grated cucumber, fresh dill and mint, with torn lavash for scooping. It is the Iranian answer to a hot afternoon. The yogurt brings **calcium and protein**, and the cucumber keeps it light.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 110,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "grated or finely diced"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "torn"
+        },
+        {
+          "food": "lavash-whole-wheat-244146",
+          "g": 30,
+          "note": "torn"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Squeeze the grated cucumber lightly. Stir it into the yogurt with the dill, mint and salt, and loosen with a spoonful of cold water.",
+        "Serve in a bowl with the torn lavash for scooping."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "persia-anatolia-yogurt-honey-figs",
+      "name": "Yogurt with pekmez and dried figs",
+      "inspiredBy": "Pekmezli yoğurt, the Turkish afternoon bowl, with Aegean dried figs",
+      "about": "Thick yogurt with a drizzle of dark grape molasses (pekmez) and chopped dried figs, a simple Turkish afternoon treat. The yogurt brings **calcium and protein**, and the figs add fibre.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pekmez-grape-molasses-0f40ea",
+          "g": 8
+        },
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 25,
+          "swap": "vit_c_fruit",
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl, drizzle with the pekmez and scatter over the chopped figs."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "persia-anatolia-roasted-chickpeas-leblebi",
+      "name": "Roasted chickpeas, leblebi style",
+      "inspiredBy": "Turkish leblebi, the roasted chickpeas sold at every market, made from tinned chickpeas in the oven",
+      "about": "Crunchy oven-roasted chickpeas with cumin, Aleppo pepper and lemon, in the style of the leblebi sold at Turkish nut shops. They bring **plant protein, fibre and folate**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 105,
+          "swap": "legumes",
+          "note": "from a tin, drained and rinsed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C. Pat the chickpeas very dry and toss with the oil, cumin, Aleppo pepper and salt on a tray.",
+        "Roast for 25 to 30 minutes, shaking the tray halfway, until golden and crunchy. Squeeze over the lemon while they are hot. They crisp further as they cool."
+      ],
+      "prepMin": 4,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Roast a fresh tray on the day. They lose their crunch after 3 days in a jar."
+    },
+    {
+      "id": "persia-anatolia-figs-hazelnuts",
+      "name": "Dried figs with hazelnuts",
+      "about": "Aegean dried figs with hazelnuts from the Black Sea coast, a sweet and nutty Turkish tea-time plate. The hazelnuts bring **vitamin E and magnesium**, and the figs bring fibre and a little calcium.",
+      "ingredients": [
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 40,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Serve the figs and hazelnuts together on a small plate. Toast the hazelnuts in a dry pan for 3 minutes first if you like."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "persia-anatolia-orange-cinnamon",
+      "name": "Orange slices with cinnamon",
+      "about": "Sliced orange with a pinch of cinnamon, a Persian-style fruit plate. The orange brings **vitamin C and folate**.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 200,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Peel the orange and slice it into rounds. Sprinkle with the cinnamon and chill for 10 minutes if you have time."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "persia-anatolia-tahini-honey-flatbread",
+      "name": "Tahini and pekmez on warm lavash",
+      "inspiredBy": "Turkish tahin-pekmez, tahini swirled with grape molasses",
+      "about": "A thick swirl of tahini and pekmez (grape molasses) on warm whole-wheat lavash, a very Turkish sweet snack. The tahini brings **calcium, copper and healthy fats**.",
+      "ingredients": [
+        {
+          "food": "lavash-whole-wheat-244146",
+          "g": 45,
+          "note": "warmed"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 18
+        },
+        {
+          "food": "pekmez-grape-molasses-0f40ea",
+          "g": 8
+        }
+      ],
+      "steps": [
+        "Warm the lavash. Spread the tahini over it, then drizzle with the pekmez and swirl them together with a knife. Fold and eat."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "persia-anatolia-figs-walnuts",
+      "name": "Dried figs with walnuts and hazelnuts",
+      "inspiredBy": "Turkish incir ve ceviz, the classic pairing, with a few Black Sea hazelnuts",
+      "about": "Chewy dried figs with walnut halves and a few hazelnuts, a classic Turkish and Persian pairing. The figs bring **fibre and a little calcium**, the walnuts bring plant omega-3, and the hazelnuts bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 45,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "halves"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 6,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Tuck a walnut half into each fig, or serve them side by side on a plate with the hazelnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "persia-anatolia-pomegranate-walnuts",
+      "name": "Pomegranate seeds with walnuts",
+      "inspiredBy": "the pomegranate and walnut pairing of fesenjan, as a snack",
+      "about": "Ruby pomegranate seeds with a handful of walnut halves, the sweet-tart and rich pairing that Persian cooks love. The walnuts bring **plant omega-3 and magnesium**, and the pomegranate brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 110,
+          "swap": "vit_c_fruit",
+          "note": "seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "halves"
+        }
+      ],
+      "steps": [
+        "Tip the pomegranate seeds into a bowl and eat them with the walnut halves, a spoonful of each at a time."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "persia-anatolia-orange-hazelnuts",
+      "name": "Orange with toasted hazelnuts",
+      "about": "Mediterranean oranges with toasted Black Sea hazelnuts, a simple Turkish pairing. The hazelnuts bring **vitamin E and magnesium** and the orange brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 180,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Toast the hazelnuts in a dry pan for 3 minutes, until fragrant. Peel and slice the orange and eat it with the nuts."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "persia-anatolia-nan-panir-sabzi"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "persia-anatolia-piyaz"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "persia-anatolia-ghormeh-sabzi"
+        },
+        {
+          "slot": "snack",
+          "recipe": "persia-anatolia-figs-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "persia-anatolia-menemen"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "persia-anatolia-ghormeh-sabzi",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "persia-anatolia-chicken-kofte-coban"
+        },
+        {
+          "slot": "snack",
+          "recipe": "persia-anatolia-pomegranate-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "persia-anatolia-yogurt-honey-figs"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "persia-anatolia-nan-panir-sabzi"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "persia-anatolia-chicken-kofte-coban",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "persia-anatolia-hamsi-style-sardines-kale"
+        },
+        {
+          "slot": "snack",
+          "recipe": "persia-anatolia-orange-cinnamon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "persia-anatolia-roasted-chickpeas-leblebi"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "persia-anatolia-menemen"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "persia-anatolia-mercimek-corbasi"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "persia-anatolia-etli-kuru-fasulye"
+        },
+        {
+          "slot": "snack",
+          "recipe": "persia-anatolia-dates-walnuts-hazelnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "persia-anatolia-yogurt-honey-figs"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "persia-anatolia-nan-panir-sabzi"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "persia-anatolia-etli-kuru-fasulye",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "persia-anatolia-salmon-herb-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "persia-anatolia-figs-hazelnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "persia-anatolia-roasted-chickpeas-leblebi"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "persia-anatolia-kuku-sabzi"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "persia-anatolia-lahmacun-style-flatbread"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "persia-anatolia-fesenjan-chicken"
+        },
+        {
+          "slot": "snack",
+          "recipe": "persia-anatolia-orange-hazelnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "persia-anatolia-tahini-honey-flatbread"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "persia-anatolia-kuku-sabzi",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "persia-anatolia-fesenjan-chicken",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "persia-anatolia-uskumru-sumac-onions"
+        },
+        {
+          "slot": "snack",
+          "recipe": "persia-anatolia-orange-cinnamon"
+        }
+      ]
+    }
+  ]
+}
