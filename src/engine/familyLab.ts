@@ -27,7 +27,8 @@ import {
 } from './family';
 import { boldStats, markerCount, paragraphWords, parseRich } from './richText';
 import { HARD_NUTRIENTS, fixListForAI, gradePlan, type DayReport } from './planReport';
-import { PROTEIN_SOURCES, SIZING_TOLERANCE, sizingAdvice } from './personalize';
+import { SIZING_TOLERANCE, sizingAdvice } from './personalize';
+import { isProteinSource } from './foodRoles';
 import { PLAN_STYLES, distinctGroceries, gradeOptionsFor, isSpiceShelf, styleNutrientGates, styleStructureGates } from './planStyles';
 import type { CalorieBand, Food, MealPlan, NutrientKey, PlanSize } from './types';
 
@@ -145,14 +146,14 @@ export function cookingSenseChecks(plan: MealPlan, foods: FoodIndex, size: PlanS
         if (isOil(f)) oil += i.grams;
         else if (isSalt(f)) salt += i.grams;
         else if (isDriedSpice(f)) spice += i.grams;
-        if (PROTEIN_SOURCES.has(f.category)) protein += ((f.n.protein ?? 0) * i.grams) / 100;
+        if (isProteinSource(f)) protein += ((f.n.protein ?? 0) * i.grams) / 100;
       }
       if (oil > LIMITS.oilG) add('oil', recipe, d.day, `${m.name}: ${Math.round(oil)} g of oil per serving (max ${LIMITS.oilG} g, 2 tbsp).`, 'Cut the oil, or move some of the fat to nuts, avocado or fish.');
       if (salt > LIMITS.saltG) add('salt', recipe, d.day, `${m.name}: ${salt.toFixed(1)} g of salt per serving (max ${LIMITS.saltG} g).`, 'Use less salt and add acid, herbs or spices for flavour.');
       const spiceMax = spiceLimit(mealKcal);
       if (spice > spiceMax) add('spice', recipe, d.day, `${m.name}: ${spice.toFixed(1)} g of dried spices or herbs per serving (max ${spiceMax.toFixed(1)} g for a ${Math.round(mealKcal)} kcal plate).`, 'Use less of the dried spice, or switch to fresh herbs.');
       if ((m.slot === 'lunch' || m.slot === 'dinner') && protein < LIMITS.proteinSourceG)
-        add('protein_source', recipe, d.day, `${m.name}: only ${protein.toFixed(1)} g of protein from a real protein source (a ${m.slot} needs ${LIMITS.proteinSourceG} g).`, 'Add fish, poultry, meat, eggs, tofu, yogurt or legumes.');
+        add('protein_source', recipe, d.day, `${m.name}: only ${protein.toFixed(1)} g of protein from a real protein source (a ${m.slot} needs ${LIMITS.proteinSourceG} g).`, 'Add fish, poultry, meat, eggs, tofu, seitan, yogurt or legumes.');
     }
   return [...groups.values()].map((g) => ({ ...g, message: g.days!.length > 1 ? `Days ${g.days!.join(', ')}: ${g.message}` : `Day ${g.day}: ${g.message}` }));
 }

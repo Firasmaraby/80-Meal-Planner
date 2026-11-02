@@ -9,6 +9,7 @@
  */
 import { BOARD_KEYS } from './nutrients';
 import { requirementsFor } from './dri';
+import { isPlantDairy, isProteinSource } from './foodRoles';
 import { boardProgress, getFood, ingredientsTotal, roundGrams, scaled, swapGrams, type FoodIndex } from './calc';
 import { COMPLETE_AT } from './nutrients';
 import type { Food, Ingredient, PlanDay, Profile, SwapGroup } from './types';
@@ -127,10 +128,10 @@ export function swapDislikes(
 const PROTEIN_ROLE = new Set<Food['category']>(['fish', 'meat', 'poultry', 'egg', 'legume']);
 
 function dietAllows(f: Food, diet: string[]): boolean {
-  if (diet.includes('vegan') && ['meat', 'poultry', 'fish', 'dairy', 'egg'].includes(f.category)) return false;
+  if (diet.includes('vegan') && ['meat', 'poultry', 'fish', 'dairy', 'egg'].includes(f.category) && !isPlantDairy(f)) return false;
   if (diet.includes('vegetarian') && ['meat', 'poultry', 'fish'].includes(f.category)) return false;
   if (diet.includes('pescatarian') && ['meat', 'poultry'].includes(f.category)) return false;
-  if (diet.includes('dairy-free') && f.category === 'dairy') return false;
+  if (diet.includes('dairy-free') && f.category === 'dairy' && !isPlantDairy(f)) return false;
   return true;
 }
 
@@ -258,7 +259,7 @@ export function sizeDayDown(meals: Ingredient[][], targetKcal: number, foods: Fo
   const proteinOf = (ings: Ingredient[]) =>
     ings.reduce((n, i) => {
       const f = getFood(foods, i.foodId);
-      return f && PROTEIN_SOURCES.has(f.category) ? n + ((f.n.protein ?? 0) * i.grams) / 100 : n;
+      return f && isProteinSource(f) ? n + ((f.n.protein ?? 0) * i.grams) / 100 : n;
     }, 0);
   const proteinFloor = out.map((m) => Math.min(MEAL_PROTEIN_FLOOR, proteinOf(m)));
   let kcal = kcalOf();
@@ -271,7 +272,7 @@ export function sizeDayDown(meals: Ingredient[][], targetKcal: number, foods: Fo
         if (!f || (FIXED_CATEGORIES.has(f.category) && !isStarchyVeg(f)) || !f.n.kcal) return;
         if (ing.grams <= orig[mi][ii] * MIN_MULT + 0.5) return;
         const grams = Math.max(orig[mi][ii] * MIN_MULT, ing.grams * 0.9);
-        if (PROTEIN_SOURCES.has(f.category) && proteinOf(meal) - ((f.n.protein ?? 0) * (ing.grams - grams)) / 100 < proteinFloor[mi] - 1e-6) return;
+        if (isProteinSource(f) && proteinOf(meal) - ((f.n.protein ?? 0) * (ing.grams - grams)) / 100 < proteinFloor[mi] - 1e-6) return;
         const saved = (f.n.kcal * (ing.grams - grams)) / 100;
         const was = ing.grams;
         ing.grams = grams;
@@ -294,8 +295,6 @@ export function sizeDayDown(meals: Ingredient[][], targetKcal: number, foods: Fo
 }
 
 const FIXED_CATEGORIES = new Set<Food['category']>(['vegetable', 'fruit']);
-/** foods that count as a meal's real protein (the same set the plan lab checks) */
-export const PROTEIN_SOURCES = new Set<Food['category']>(['meat', 'poultry', 'fish', 'egg', 'legume', 'dairy']);
 /** grams of protein from protein foods that a lunch or dinner keeps when a day is sized down */
 const MEAL_PROTEIN_FLOOR = 15;
 

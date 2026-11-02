@@ -9,6 +9,7 @@
  */
 import { dayPlanTotal, getFood, type FoodIndex } from './calc';
 import { carbStyleOfFood } from './carbStyle';
+import { isPlantDairy } from './foodRoles';
 import { requirement } from './dri';
 import { REFERENCE_PANEL, type ReferencePerson, type Rules } from './planReport';
 import type { Food, FoodCategory, LifeStage, MealPlan, MealSlot, PlanStyle } from './types';
@@ -39,6 +40,7 @@ const FISH_WORDS =
 /** The reason a food is an animal product by name or category, if it is. `dairy`/`egg` control which families count. */
 function animalReason(f: Food, opts: { dairy: boolean; egg: boolean; flesh: boolean; other: boolean }): string | undefined {
   if (opts.flesh && ['meat', 'poultry', 'fish'].includes(f.category)) return f.category === 'fish' ? 'fish' : 'meat';
+  if (isPlantDairy(f)) return undefined;
   if (opts.dairy && f.category === 'dairy') return 'dairy';
   if (opts.egg && f.category === 'egg') return 'egg';
   if (PLANT_CATEGORIES.has(f.category)) return undefined;
