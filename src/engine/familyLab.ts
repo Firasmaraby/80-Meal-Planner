@@ -224,6 +224,9 @@ export function writingChecks(family: FamilyFile, raw: unknown, foods?: FoodInde
   if (!family.summary?.trim()) fail('summary', 'summary is missing (one or two sentences for the plan card).', 'Add a summary.');
   if (!family.howItWorks?.trim()) fail('howItWorks', 'howItWorks is missing (a friendly paragraph on the logic of the week).', 'Add howItWorks.');
   richChecks(family, raw, (code, message, fix, recipe) => fail(code, message, fix, recipe));
+  // the week's text is shown for every size, so it can't quote one size's grams (the Prep screen sizes the batches)
+  const gramsHit = /[^.]*\b\d+\s?g\b[^.]*/.exec(family.howItWorks ?? '');
+  if (gramsHit) fail('grams_in_text', `howItWorks quotes grams ("${gramsHit[0].trim().slice(0, 70)}"), which only fit one size.`, 'Describe the batch in words ("the week\'s beans") and point to the Prep screen for amounts.');
 
   for (const r of family.recipes) {
     const where = used.get(r.id);

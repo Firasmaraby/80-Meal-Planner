@@ -337,6 +337,12 @@ describe('plan lab', () => {
     expect(lab(h).failures.some((x) => x.code === 'ingredients' && x.recipe === 'salmon-potatoes-broccoli')).toBe(false);
   });
 
+  it('keeps gram amounts out of howItWorks, since the text is shown for every size', () => {
+    const f = clone();
+    f.howItWorks = `${f.howItWorks}\n\n**Sunday beans.** Soak 270 g of dry pinto beans overnight.`;
+    expect(writingChecks(f, f).map((x) => x.code)).toContain('grams_in_text');
+  });
+
   it('checks the writing: about with 2 sentences, steps, summary and howItWorks', () => {
     const f = clone();
     f.recipes[0].about = 'Just one sentence here.';
