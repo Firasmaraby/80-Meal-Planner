@@ -567,6 +567,96 @@
    "kcal": "atwater",
    "recipe": "Jaggery is whole cane juice boiled down without separating the molasses. Values are refined sugar with molasses added back (82 + 20 g per 100 g, the extra water boiled off), which lands on typical jaggery: about 380 kcal, a little iron, potassium and calcium.",
    "limits": "Mineral content of real jaggery varies several-fold with the cane and the pan (iron especially); palm jaggery differs again. Treat the minerals as a rough middle."
+  },
+  {
+   "key": "injera",
+   "name": "Injera (teff flatbread)",
+   "head": "injera",
+   "form": "product",
+   "category": "grain",
+   "aliases": ["enjera", "teff injera", "ethiopian flatbread", "taita"],
+   "servings": [{"label": "1 injera", "g": 160}, {"label": "1/4 injera", "g": 40}],
+   "components": [
+    {"food": "teff-dry-67adb3", "g": 36, "note": "teff flour"},
+    {"food": "water-municipal-95c157", "g": 64, "zero_if_missing": ["iodine"], "why": "water in the fermented batter, most of it kept in the cooked bread"}
+   ],
+   "recipe": "Injera is a fermented batter of teff flour and water cooked on one side. 100 g of finished injera holds about 36 g of teff flour (a typical 1 : 2 flour-to-water batter, part of the water steaming off).",
+   "limits": "Fermentation changes some B vitamins and phytate (iron absorption improves) but not the totals much. Many North American injera are part wheat or barley flour; this is the all-teff kind."
+  },
+  {
+   "key": "galangal",
+   "name": "Galangal",
+   "head": "galangal",
+   "form": "raw",
+   "category": "vegetable",
+   "aliases": ["galanga", "blue ginger", "laos", "kha", "lengkuas"],
+   "servings": [{"label": "1 inch piece", "g": 10}],
+   "components": [
+    {"food": "ginger-root-raw-da2481", "g": 100, "note": "a related rhizome"}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat"],
+   "recipe": "No source database has galangal. It takes the energy and macronutrients of fresh ginger root, a close relative eaten the same way (sliced into soups and pastes).",
+   "limits": "Micronutrients are left missing. Used by the slice."
+  },
+  {
+   "key": "makrut-lime-leaves",
+   "name": "Makrut lime leaves",
+   "head": "makrut lime leaves",
+   "form": "raw",
+   "category": "vegetable",
+   "aliases": ["kaffir lime leaves", "lime leaves", "bai makrut", "daun jeruk", "citrus leaves"],
+   "servings": [{"label": "4 leaves", "g": 2}],
+   "components": [
+    {"food": "lemon-peel-raw-d60963", "g": 100, "note": "aromatic citrus tissue"}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat"],
+   "recipe": "No source database has makrut lime leaves. They take the energy and macronutrients of raw citrus peel, the nearest aromatic citrus tissue.",
+   "limits": "Micronutrients are left missing; a few leaves weigh a gram or two, so they don't move the numbers."
+  },
+  {
+   "key": "scotch-bonnet",
+   "name": "Scotch bonnet pepper",
+   "head": "scotch bonnet",
+   "form": "raw",
+   "category": "vegetable",
+   "aliases": ["scotch bonnet", "habanero", "habanero pepper", "bonney pepper", "goat pepper", "adjuma"],
+   "servings": [{"label": "1 pepper", "g": 8}],
+   "components": [
+    {"food": "chili-pepper-red-raw-72faf1", "g": 100}
+   ],
+   "recipe": "Scotch bonnet and habanero are Capsicum chinense chiles; they take the values of raw hot red chili pepper, which they match closely apart from heat.",
+   "limits": "Vitamin C varies with ripeness. Very hot: half a pepper seasons a pot."
+  },
+  {
+   "key": "culantro",
+   "name": "Culantro",
+   "head": "culantro",
+   "form": "raw",
+   "category": "vegetable",
+   "aliases": ["recao", "shado beni", "chadon beni", "ngo gai", "sawtooth coriander", "long coriander"],
+   "servings": [{"label": "1/4 cup, chopped", "g": 4}],
+   "components": [
+    {"food": "coriander-cilantro-raw-c0e7c1", "g": 100, "note": "same family, same use"}
+   ],
+   "recipe": "Culantro (Eryngium foetidum) is a stronger cousin of cilantro used in the Caribbean and Vietnam; it takes the values of fresh cilantro.",
+   "limits": "A proxy: the leaves are tougher and likely a little higher in minerals. Used by the handful."
+  },
+  {
+   "key": "shrimp-paste",
+   "name": "Shrimp paste (belacan, terasi)",
+   "head": "shrimp paste",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["belacan", "belachan", "terasi", "kapi", "bagoong alamang", "mam ruoc"],
+   "tags": ["fermented"],
+   "servings": [{"label": "1 tsp", "g": 5}],
+   "components": [
+    {"food": "dried-shrimp-c654e1", "g": 70},
+    {"food": "table-salt-fdccfe", "g": 15, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"},
+    {"food": "water-municipal-95c157", "g": 15, "zero_if_missing": ["iodine"], "why": "moisture of the pressed paste"}
+   ],
+   "recipe": "Shrimp paste is tiny shrimp or krill salted, fermented and pressed. Values are dried shrimp (70 g), salt (15 g) and moisture (15 g) per 100 g, about 6 g sodium.",
+   "limits": "Brands range widely in salt and moisture; Filipino bagoong is wetter. Used by the teaspoon, and toasted before use."
   }
  ]
 }
