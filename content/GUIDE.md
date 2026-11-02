@@ -276,7 +276,7 @@ These are the problems that sent the pilot back. Check your week for each one be
 - **Portions nobody eats.** 300 g of shelled mussels, or 2½ eggs. Use whole eggs and real plates.
 - **Crutches the batch 1A and 1B critics counted** (they count slots, so count yours first):
   - **Dairy:** yogurt, laban or labneh in 15+ slots a week. Aim at about 10 or fewer, never 4 in a day, unless the cuisine truly eats it that often.
-  - **Eggs:** an egg at all 7 breakfasts, then egg snacks to patch choline. Choline also comes from fish, chicken, beef, shrimp, soy and legumes. Use eggs where the dish has them, and say so when the gate forces more.
+  - **Eggs:** an egg at all 7 breakfasts, then egg snacks to patch choline. Choline also comes from fish, chicken, beef, lamb, goat, shrimp, tofu and legumes (since Nov 2 the library estimates choline for those foods from their protein when it wasn't measured, so they now count). Use eggs where the dish has them, and say so when the gate forces more.
   - **Walnuts, almonds, chia, flax** dropped into savoury dishes or every snack for omega or vitamin E. Use them only where the cuisine does (blended soy milk, a nut snack, a sweet porridge).
   - **One fruit or vegetable everywhere:** orange, carrot, bok choy, papaya, cucumber in 5+ recipes, or 3 times in one day.
 - **Stand-ins when the real staple exists.** Chili powder for ancho or chipotle, paprika for achiote, "curry powder" for sambar powder, sansho for Sichuan pepper, lemon for loomi. Search first with `scripts/find-food.mjs`; curated staples are added on request.

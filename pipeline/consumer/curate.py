@@ -243,3 +243,64 @@ def borrow_fatty_acids_by_head(records: list[dict[str, Any]]) -> dict[str, int]:
         by_route["head"] += 1
         everyday["head"] += r["tier"] == "everyday"
     return {"all": by_route, "everyday": everyday}
+
+
+# --------------------------------------------------------------------------------------------- choline
+# Choline is measured for only about half of the foods, and a missing value counts as zero in the app, so plans looked choline-poor
+# unless they leaned on eggs. In muscle meat, fish and legumes choline tracks protein closely (lentils: 3.9 mg per g protein dry,
+# 3.6 boiled; chickpeas 4.85 and 4.83), so a missing value is estimated from a measured donor's choline per gram of protein.
+CHOLINE_CATS = ("meat", "poultry", "fish", "legume", "egg", "dairy")
+CHOLINE_FALLBACK_CATS = ("meat", "poultry", "fish")      # muscle tissue: a category median is defensible; dairy and legumes vary too much
+ORGAN_RX = re.compile(r"\b(?:liver|kidney|heart|giblets?|brain|tongue|tripe|offal|sweetbread|gizzard|roe|caviar|marrow|blood|skin|fat)\b", re.I)
+PROCESSED_RX = re.compile(r"\b(?:sausage|salami|bologna|frankfurter|hot dog|nugget|breaded|battered|patty|loaf|spread|pate|pâté|jerky|"
+                          r"bacon|ham|luncheon|canned with|in sauce|salad|soup|stew|curry|with)\b", re.I)
+CHOLINE_MIN_PROTEIN = 2.0
+CHOLINE_FALLBACK_MIN_DONORS = 10
+
+
+def _choline_ratio(r: dict[str, Any]) -> float | None:
+    n = r["n"]
+    if n.get("choline") is None or "choline" in r["estimated"] or (n.get("protein") or 0) < CHOLINE_MIN_PROTEIN:
+        return None
+    return n["choline"] / n["protein"]
+
+
+def borrow_choline(records: list[dict[str, Any]]) -> dict[str, int]:
+    """Fill a missing choline value on live meat, poultry, fish, egg, dairy and legume records (protein >= 2 g):
+    1. same head and category: the highest-ranked measured donor, preferring the same form; choline = donor mg per g protein x own protein;
+    2. otherwise, for plain muscle meat, poultry and fish only (no organ meat, no processed food): the category's median ratio over
+       its measured plain foods (at least 10 of them).
+    The value is marked estimated with a note naming the donor. Returns counts per route."""
+    live = [r for r in records if r.get("tier") not in (None, "hidden")]
+    donors: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
+    plain: dict[str, list[float]] = defaultdict(list)
+    for r in sorted(live, key=lambda r: (-r["rank"], r["canonical_id"])):
+        ratio = _choline_ratio(r)
+        if ratio is None or r["category"] not in CHOLINE_CATS:
+            continue
+        donors[(r["head"], r["category"])].append(r)
+        if r["category"] in CHOLINE_FALLBACK_CATS and not ORGAN_RX.search(r["name"]) and not PROCESSED_RX.search(r["name"]):
+            plain[r["category"]].append(ratio)
+    medians = {c: sorted(v)[len(v) // 2] for c, v in plain.items() if len(v) >= CHOLINE_FALLBACK_MIN_DONORS}
+    out = {"head": 0, "category": 0, "none": 0}
+    for r in live:
+        n = r["n"]
+        if r["category"] not in CHOLINE_CATS or n.get("choline") is not None or (n.get("protein") or 0) < CHOLINE_MIN_PROTEIN:
+            continue
+        cands = [d for d in donors.get((r["head"], r["category"]), []) if d["canonical_id"] != r["canonical_id"]]
+        cands.sort(key=lambda d: d.get("form") != r.get("form"))      # stable: same form first, rank order kept within
+        if cands:
+            d = cands[0]
+            ratio, why = _choline_ratio(d), f"{d['name']} [{d['canonical_id']}]"
+            route = "head"
+        elif r["category"] in medians and not ORGAN_RX.search(r["name"]) and not PROCESSED_RX.search(r["name"]):
+            ratio, why = medians[r["category"]], f"the median of measured plain {r['category']} foods"
+            route = "category"
+        else:
+            out["none"] += 1
+            continue
+        n["choline"] = round(ratio * n["protein"], 1)
+        r["estimated"].append("choline")
+        r["notes"].append(f"choline estimated from {why}: {ratio:.2f} mg per g protein")
+        out[route] += 1
+    return out

@@ -136,6 +136,9 @@ def main(argv: list[str] | None = None) -> int:
     print(f"  fatty-acid split borrowed (live foods; everyday in brackets): same cluster {fa_all['cluster']} ({fa_ev['cluster']}), "
           f"same head + category {fa_all['head']} ({fa_ev['head']}); still missing {fa_all['none']} ({fa_ev['none']})")
 
+    ch = C.borrow_choline(records)
+    print(f"  choline estimated from protein (live foods): same head {ch['head']}, category median {ch['category']}; still missing {ch['none']}")
+
     live = [r for r in records if r["tier"] != "hidden"]
     n_known = len(registry)
     X.make_ids(live, registry)
