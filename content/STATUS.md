@@ -29,10 +29,10 @@ Every family in CATALOG.md moves through these steps:
 | nile | 1D | shipped | Nile Valley Kitchen. Light, Standard, Big (1400-3200). Ful, ta'meya, molokhia, koshari, bamia, mullah, sayadeya. Fish every day (olive oil and tahini). |
 | island-asia | 1D | shipped | Light, Standard, Big (1400-3200). Bubur ayam, nasi lemak, tapsilog, adobo, sinigang, pinakbet, rendang, laksa, ikan bakar. |
 | south-america | 1D | shipped | Light, Standard, Big (1400-3200). Pericos, cuscuz, feijoada, lomo saltado, moqueca capixaba, ajiaco. |
-| southern-africa | 1E | next | |
-| nordic | 1E | next | |
-| east-europe | 1E | next | |
-| north-america | 1E | next | |
+| southern-africa | 1E | shipped | Light, Standard, Big (1400-3200). Bobotie with Cape Malay masala, pap and pilchards, sadza ne nyama, umngqusho, chakalaka, peri-peri chicken, braaied mackerel. Great omega balance. 23 recipes. |
+| nordic | 1E | shipped | Light 1600-1800 only (1400 can't be trimmed on four days), Standard, Big. Rye and oat porridge, gravlax, Danish fishcakes, lohikeitto, ärtsoppa, meatballs with lingonberry. Great omega balance. 20 recipes. |
+| east-europe | 1E | shipped | Light, Standard, Big (1400-3200). Kasha with porcini, borscht, gołąbki, lobio with sulguni, satsivi, pkhali, smoked sprats on rye, syrniki. Fatty fish four times. 21 recipes. |
+| north-america | 1E | shipped | Light, Standard, Big (1400-3200). Maple-mustard salmon, split pea soup with summer savory, blackened chicken Cobb, wild rice hotdish, chili, back bacon sandwich. 23 recipes. |
 
 ## Lessons from the pilot (now in GUIDE.md and the engine)
 - **Weekly omega balance.** Omega-6:3 is graded over the week (≤6:1, Firas's choice; ≤4:1 earns the "Great omega balance" badge), with a daily ceiling of 9:1. Grading it day by day pushed chia onto most breakfasts and fish into snacks.
@@ -56,3 +56,4 @@ Every family in CATALOG.md moves through these steps:
 - **Nov 2:** batch 1B shipped (9 families, 26 plans, 224 recipes in the app). New curated staples: loomi, rose water, date syrup, Sichuan peppercorn, star anise, five-spice, douchi, ancho, guajillo, chipotles in adobo, achiote, sambar, bisi bele bath and rasam powders, jaggery; for 1C, injera, galangal, makrut lime leaves, Scotch bonnet, culantro, shrimp paste. Engine: up to 10 g of starch or flour is a thickener (carb style unchanged); seasonings scale with the dish's mass when sizing up; the spice cap grows with the plate. Batch 1C started.
 - **Nov 2 (later):** batch 1C shipped (13 families, 38 plans, 320 recipes). Data: choline estimated from protein where unmeasured (3,626 values; ended the egg crutch), reviewed servings overrides (rolled oats). New curated staples: whole-wheat couscous, orange blossom water, injera, galangal, makrut lime leaves, Scotch bonnet, culantro, shrimp paste, Thai and holy basil, palm sugar, niter kibbeh, mitmita, xawaash, West Indian curry powder. Rules: spices and salt don't count toward the 14-ingredient cap; dried field corn is an intact grain; flatbreads and injera are bread.
 - **Nov 2 (evening):** batch 1D shipped (17 families, 50 plans, 419 recipes). New gate: every day at every size under the tolerable upper limits (vitamin A as preformed retinol; manganese has no food UL); four shipped families fixed at Big. Curated staples for Persian, Egyptian, Island Asian and South American cooking. howItWorks may not quote grams (the Prep screen sizes batches). Carb rules: lavash, sangak and barbari are bread.
+- **Nov 2 (night):** batch 1E shipped, so **Wave 1 is complete**: 21 regional families, 62 plans, 506 recipes. Smoked sprats now take the USDA Atlantic sardine values (B12, vitamin D) and the fatty fish tag. Curated staples for Nordic, Eastern European and North American cooking (lingonberry jam, Swedish mustard, rye flakes, sulguni, sprats, dried porcini, ajvar, Dijon, Cajun blackening spice). Next: Wave 2, the special-diet catalogue.
