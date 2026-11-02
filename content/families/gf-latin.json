@@ -1,0 +1,1941 @@
+{
+  "id": "gf-latin",
+  "name": "Gluten-free Latin Kitchen",
+  "style": "gluten-free",
+  "cuisine": "Latin American",
+  "regions": [
+    "Mexico",
+    "Peru",
+    "Colombia",
+    "Brazil"
+  ],
+  "summary": "A week of Latin American home cooking that is gluten-free because the cuisine is: Colombian arepas and ajiaco, Peruvian quinoa soup and salmon in ají amarillo, Brazilian galinhada and moqueca, and Mexican tacos and weekend tamales. Corn, rice, quinoa, potato, cassava and plantain take turns, with lime, cilantro and chile throughout.",
+  "howItWorks": "**Gluten-free by its ingredients.** Nothing here is a substitute: corn, rice, quinoa, potato, cassava, plantain and tapioca take turns. If you have celiac disease, check that tortillas say 100% corn, and buy masarepa, masa harina and tapioca starch from a gluten-free line. Stock, chipotles in adobo, colorau and spice blends are where hidden gluten hides.\n\n**Cook once, eat twice.** Monday's quinoa soup, Thursday's galinhada and Saturday's tamales each make two portions, so the next day's lunch is already done. Wednesday evening's quinoa con leche covers both Thursday and Friday breakfasts.\n\n**Fish four times.** Salmon on Tuesday and Friday, sardines in Thursday's causa and a quick sardine plate on Sunday carry your **omega-3** and **vitamin D**, and the soft sardine bones add calcium. Flaxseed in the yogurt bowls and chia in the chía fresca add a little more omega-3 through the week.\n\n**Sunday bean pot.** Soak about 2 cups of dried black beans overnight, then simmer them with an onion and a bay leaf for about 1 hour, salting at the end. That's enough for the week. They keep 4 to 5 days, so freeze a tub. Rice keeps 3 days, so cook it close to the day.\n\n**Eggs, dairy and greens.** Eggs carry **choline**, and so do beef, chicken and a little liver. Queijo coalho, yogurt and milk carry calcium, and kale, spinach and beans carry **iron and folate** most days.",
+  "signature": [
+    "gf-latin-sopa-quinua-res",
+    "gf-latin-galinhada",
+    "gf-latin-tamales-puerco-rojo",
+    "gf-latin-ajiaco"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-latin-anticuchos-pollo"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-latin-sardinas-limon-tomate"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-latin-frijol-elote-vaso"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-latin-huevos-duros-limon-chile"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-latin-frijol-elote-vaso"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-latin-anticuchos-pollo"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-latin-mango-chile-limon"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "servings": 1,
+      "id": "gf-latin-arepas-huevos-pericos",
+      "name": "Arepas with huevos pericos and black beans",
+      "inspiredBy": "Colombian and Venezuelan arepas with huevos pericos, the everyday scramble of eggs, tomato and scallion",
+      "about": "Golden corn arepas with a soft scramble of eggs, tomato, scallion and wilted spinach, warm black beans and a squeeze of lime. Arepas are made from precooked corn flour, so they are naturally gluten-free and cook in a dry pan. The eggs, beans and spinach bring **protein, choline, iron and folate**, and the lime keeps it bright.",
+      "ingredients": [
+        {
+          "food": "masarepa-precooked-corn-flour-b58618",
+          "g": 35,
+          "note": "precooked cornmeal for arepas, not masa harina"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 90,
+          "note": "finely chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20,
+          "note": "sliced thin"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 55,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "black-beans-dry-9f5377",
+          "g": 55,
+          "swap": "legumes",
+          "note": "cooked ahead, see the steps"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Use black beans from your Sunday pot (see the plan notes), or canned beans at about three times the dry weight, drained and rinsed. Warm them with a splash of water.",
+        "Stir the masarepa with a pinch of the salt and enough warm water to make a soft dough, a bit firmer than play dough. Let it rest for 5 minutes, then shape it into two discs (one at the Light size) about 1.5 cm thick, pinching any cracks closed.",
+        "Cook the arepas in a dry nonstick or cast-iron pan over medium heat until they have a golden crust and sound hollow when tapped, about 7 minutes a side. Or brown them for 4 minutes a side and finish them in a 200°C (400°F) oven for 8 minutes.",
+        "While they cook, warm the oil in a second pan and soften the scallion for 2 minutes. Add the tomato and cook for about 4 minutes, until it turns jammy, then stir in the spinach until it wilts.",
+        "Beat the eggs with the rest of the salt, pour them in and stir gently until just set and still glossy, about 2 minutes. Stir in half the cilantro.",
+        "Split the arepas and fill them with the eggs, or serve them alongside. Add the beans, a squeeze of lime and the rest of the cilantro."
+      ],
+      "prepMin": 8,
+      "cookMin": 18,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook the arepas the night before and re-crisp them in a dry pan or toaster for 3 minutes, and breakfast takes 10. At the Light size, make one arepa. Check the label on the masarepa: it should say precooked corn, nothing else (buy a gluten-free line if you are celiac)."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-tapioca-coalho-manga",
+      "name": "Tapioca crepes with queijo coalho, a fried egg and linhaça mango yogurt",
+      "inspiredBy": "Brazilian tapioca, the cassava-starch crepe sold at breakfast stands in the northeast, with a fried egg and iogurte com linhaça (yogurt with ground flaxseed) on the side",
+      "about": "A lacy, chewy crepe made from cassava starch, folded around golden queijo coalho that goes soft and spotty in the pan, with a fried egg alongside. Cool yogurt with mango and a spoon of ground flaxseed makes it a proper breakfast. It is **gluten-free by nature**, and the egg, cheese and yogurt bring protein, choline and calcium.",
+      "ingredients": [
+        {
+          "food": "cassava-starch-tapioca-raw-6172c8",
+          "g": 40,
+          "note": "tapioca starch, not pearls"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg"
+        },
+        {
+          "food": "queijo-coalho-02fc0d",
+          "g": 32,
+          "note": "sliced into 3 or 4 batons"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 8,
+          "note": "ground flaxseed, stirred into the yogurt"
+        },
+        {
+          "food": "mango-raw-80de97",
+          "g": 110,
+          "swap": "vit_c_fruit",
+          "note": "diced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Stir the tapioca starch and salt with just enough water to make it feel like damp sand that holds together when squeezed. Leave it for 10 minutes, then rub it through a sieve so it turns into fine, fluffy crumbs.",
+        "Heat a nonstick pan over medium heat. Scatter the crumbs in an even round about 18 cm wide, with no oil. After about a minute they fuse into a pale, lacy crepe.",
+        "Lay the coalho on one half, press lightly and let it soften for 1 to 2 minutes, until the cheese is spotty and the crepe is just set. Fold the crepe over and slide it onto a plate.",
+        "Fry the egg in the same pan, without oil, until the white is set and the yolk is still soft, about 2 minutes. Tuck it next to the crepe, or inside it, as many Brazilians do.",
+        "Stir the ground flaxseed into the yogurt, toss the mango with the lime juice and spoon it over the yogurt."
+      ],
+      "prepMin": 12,
+      "cookMin": 6,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Brazilian shops sell tapioca already hydrated (goma), which skips the first step. Or hydrate and sieve the starch the night before; it keeps in a sealed tub in the fridge, and breakfast takes 8 minutes. If you are celiac, buy the starch from a gluten-free line. Queijo coalho is sold at Brazilian shops, and halloumi grills the same way."
+    },
+    {
+      "servings": 2,
+      "id": "gf-latin-quinua-con-leche",
+      "name": "Quinoa con leche with banana and cinnamon",
+      "inspiredBy": "Peruvian quinua con leche, the warm breakfast quinoa simmered in milk with cinnamon and clove",
+      "about": "Quinoa simmered slowly in milk with cinnamon and clove until creamy, sweetened with mashed banana and topped with a few slices. It is the kind of breakfast Lima sells in a cup on cold mornings. Quinoa and milk together bring **complete protein, magnesium and calcium**.",
+      "ingredients": [
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "rinsed well"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 270
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 55,
+          "note": "half mashed in, the rest sliced on top"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1.2
+        },
+        {
+          "food": "clove-cb7cf1",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa in a fine sieve under cold running water for a minute, until the water runs clear. This washes off the bitter coating.",
+        "Put the quinoa, milk, cinnamon, clove and salt in a pot (enough for both bowls) and bring it to a gentle simmer. A cinnamon stick, if you have one, is even better.",
+        "Cook uncovered on low heat for about 20 minutes, stirring now and then, until the grains have popped open and the porridge is creamy. Add a splash of milk or water if it gets too thick.",
+        "Mash half the banana into the pot for sweetness.",
+        "Spoon one portion into a bowl and slice half of the remaining banana on top.",
+        "Pack the second portion for tomorrow. It sets firm in the fridge, so loosen it with a splash of milk when you reheat it, and slice the last of the banana on top."
+      ],
+      "prepMin": 5,
+      "cookMin": 24,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Cook it on Wednesday evening while dinner is on, then reheat one bowl on Thursday and the other on Friday, about 3 minutes each. Stir in a spoon of raisins or a little honey if you like it sweeter."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-arroz-feijao-couve-coalho",
+      "name": "Rice and black beans with garlicky couve, orange and grilled queijo coalho",
+      "inspiredBy": "the Brazilian everyday plate of arroz e feijão with couve refogada, laranja and queijo coalho grelhado",
+      "about": "Rice and black beans with thin ribbons of garlicky couve (kale or collards), sweet orange slices and squares of golden grilled queijo coalho. It is the Brazilian lunch plate found in every kitchen, and the orange is there to cut through the beans. The beans, greens and cheese bring **iron, folate and calcium**, and the orange helps you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 25,
+          "note": "cook it fresh, see the steps"
+        },
+        {
+          "food": "black-beans-dry-9f5377",
+          "g": 70,
+          "swap": "legumes",
+          "note": "cooked ahead, see the steps"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 120,
+          "swap": "leafy_greens",
+          "note": "couve: collard greens or kale, about half a bunch, stems out, rolled and sliced into thin ribbons"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 110,
+          "swap": "vit_c_fruit",
+          "note": "peeled and sliced"
+        },
+        {
+          "food": "queijo-coalho-02fc0d",
+          "g": 45
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Use a few spoons of leftover rice, or cook it fresh: rinse it and simmer it covered in twice its volume of water for about 15 minutes, then let it rest off the heat for 5. Use the beans from your Sunday pot (see the plan notes), or canned beans at about three times the dry weight, drained and rinsed, and warm them with a splash of water.",
+        "Soften the onion in half the oil for about 6 minutes, until soft and golden, then stir it through the beans.",
+        "In the same pan, warm the rest of the oil with the garlic for 30 seconds. Add the couve and toss over high heat for 2 to 3 minutes, until bright green and still a little crisp. Season with salt and the lime juice.",
+        "Slice the coalho into thick squares and cook in a dry nonstick pan over medium heat for 1 to 2 minutes a side, until golden and spotty.",
+        "Pile the rice and beans on a plate. Add the couve, cheese and orange."
+      ],
+      "prepMin": 12,
+      "cookMin": 20,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Queijo coalho is sold at Brazilian shops; halloumi grills the same way."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-caldo-tlalpeno",
+      "name": "Caldo tlalpeño with chicken, chickpeas and chipotle",
+      "inspiredBy": "Mexico City caldo tlalpeño, the smoky chicken and chickpea soup",
+      "about": "A brothy, smoky Mexico City soup of shredded chicken, chickpeas and carrot in a tomato and chipotle broth, finished with avocado, cilantro and lime. The sauce is fried first, which is what gives it that sweet, deep red base. Chicken and chickpeas bring **protein, iron and folate**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 110,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 100,
+          "swap": "legumes",
+          "note": "canned, drained and rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 35
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 90
+        },
+        {
+          "food": "chipotle-peppers-in-adobo-sauce-f692a1",
+          "g": 8,
+          "note": "chipotle in adobo"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Blend the tomato, chipotle, garlic, half the onion, the cumin and oregano with a splash of water until smooth.",
+        "Warm the oil in a pot, add the sauce and fry it for 5 minutes, stirring, until it darkens and thickens.",
+        "Add the chicken thigh, the carrot, the cilantro stems (chop the leaves for the end), the salt and enough water to cover by 3 cm. Simmer for 15 minutes, until the chicken is cooked through. Lift it out and shred it.",
+        "Add the chickpeas to the pot and simmer for 5 minutes. Return the chicken.",
+        "Ladle into a bowl and top with the rest of the onion, finely chopped, plus the avocado, cilantro and a squeeze of lime."
+      ],
+      "prepMin": 12,
+      "cookMin": 27,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Check the label on the canned chipotles and on any boxed broth you use. Half a chipotle gives a gentle heat; add a whole one if you like it hot."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-causa-sardinas-aguacate",
+      "name": "Causa with sardines, egg and avocado",
+      "inspiredBy": "causa limeña, the cold layered potato terrine from Lima, here with canned sardines and avocado in the middle",
+      "about": "A cool, lime-bright layer of golden mashed potato spiked with ají amarillo, filled with mashed sardines and creamy avocado, and finished with sliced egg, tomato and cilantro. It is a Lima lunch staple and a lunchbox hero because it is served cold. The sardines bring **omega-3, calcium and vitamin B12**, and the potato brings potassium.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 130,
+          "note": "peeled and cut in chunks"
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 12,
+          "note": "ají amarillo paste"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 14
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 90,
+          "swap": "fatty_fish",
+          "note": "canned in oil, drained, with the bones"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 hard-boiled egg, sliced"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 55
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "in wedges"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Lower the egg into a pot of boiling water with the potato chunks. Boil for 10 minutes, then lift the egg into cold water. Keep the potatoes going until very tender, about 15 minutes in all. Drain them, and let them steam dry in the pot for a minute.",
+        "Mash the warm potatoes until smooth with the ají amarillo paste, most of the lime juice, the oil and a pinch of salt. You want a smooth, bright yellow dough. Chill it for 10 minutes.",
+        "Mash the sardines (bones and all, they melt in) with the avocado, the rest of the lime juice, the sliced scallion and a pinch of salt.",
+        "Press half the potato into a flat layer on a plate, spread the sardine and avocado filling over it and top with the rest of the potato, smoothing the surface.",
+        "Garnish with the sliced egg, tomato wedges and cilantro. Eat it cold or at room temperature."
+      ],
+      "prepMin": 20,
+      "cookMin": 18,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Boil the potatoes the night before and lunch is a 10 minute assembly. Canned tuna or chicken are the classic fillings, and both work here. Buy sardines in oil or water, not in a sauce, and check the label on the ají paste."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-carne-hogao-maduros",
+      "name": "Beef in hogao with black beans and baked maduros",
+      "inspiredBy": "Colombian hogao, the tomato and scallion sofrito, over lean beef, with black beans in place of red, ripe plantain and avocado from the bandeja paisa plate",
+      "about": "Lean ground beef simmered in hogao, the Colombian tomato and scallion base, with spinach wilted in, next to warm black beans, sweet caramelized baked plantain and a few slices of avocado. The sweet plantain with the savoury, tangy beef is the classic Colombian pairing. The beef, beans and spinach bring **iron, zinc and vitamin B12**.",
+      "ingredients": [
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 110,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 35,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "black-beans-dry-9f5377",
+          "g": 45,
+          "swap": "legumes",
+          "note": "cooked ahead, see the steps"
+        },
+        {
+          "food": "plantain-ripe-raw-c315a0",
+          "g": 130,
+          "note": "ripe, yellow with black spots"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Peel the plantain and slice it on a long diagonal into thick pieces. Toss with a third of the oil and a pinch of salt and roast for 20 to 25 minutes, turning once, until soft and caramelized at the edges.",
+        "For the hogao, warm half the remaining oil in a pan and soften the scallion and garlic for 2 minutes. Add the tomato and cumin and cook for 8 minutes, until it turns jammy. Scoop out a third.",
+        "Use black beans from your Sunday pot (frozen, if you stashed a tub), or canned beans at about three times the dry weight, drained and rinsed. Warm them in a small pot with the scooped-out hogao and a splash of water.",
+        "Brown the beef in a pan with the rest of the oil for about 5 minutes, breaking it up. Stir in the rest of the hogao and the salt, and simmer for 5 minutes, then fold in the spinach until it wilts.",
+        "Serve the beef with the beans, maduros and avocado, with the cilantro and lime juice over everything."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "The plantain should be properly ripe, with a mostly black skin, for real sweetness."
+    },
+    {
+      "servings": 2,
+      "id": "gf-latin-sopa-quinua-res",
+      "name": "Peruvian quinoa soup with beef and vegetables",
+      "inspiredBy": "Peruvian sopa de quinua, the everyday Andean quinoa soup, with lean ground beef and greens for a fuller meal",
+      "about": "A bright, herby soup of lean beef, potato, carrot and quinoa, finished with kale, peas, a fistful of cilantro and lime. It is an Andean home classic on cold evenings and it reheats beautifully. The quinoa and beef bring **protein, iron and zinc**, and the lime helps you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 125,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 32,
+          "swap": "low_gi_grains",
+          "note": "rinsed well"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 70,
+          "note": "peeled and diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 40
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "stems out, sliced thin"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 12
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 10,
+          "note": "ají amarillo paste"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Warm the oil in a wide pot over medium heat. Cook the onion, garlic, ají amarillo paste and cumin until the onion is soft and sweet, about 5 minutes.",
+        "Add the beef and stir for 4 minutes, breaking it up, until it loses its raw colour. Add the carrot, potato, oregano and salt, then pour in enough water to cover everything by 3 cm.",
+        "Bring to a boil, lower the heat and simmer for 12 minutes. Rinse the quinoa in a sieve, stir it in and simmer for 12 minutes more, until the grains look translucent and have popped their tails.",
+        "Stir in the peas and kale for the last 3 minutes. Switch off the heat and stir in the cilantro and lime juice.",
+        "Eat one portion now. Pack the second for tomorrow's lunch, and loosen it with a splash of water when you reheat it, because the quinoa keeps drinking."
+      ],
+      "prepMin": 12,
+      "cookMin": 35,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Rinse the quinoa well, and skip bulk bins if you are celiac, since cross-contact is common there. If you use boxed broth in place of water, check the label for wheat."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-salmon-aji-amarillo-papas",
+      "name": "Roasted salmon in ají amarillo glaze with crisp potatoes and salsa criolla",
+      "inspiredBy": "Peruvian flavours: the ají amarillo of every Lima kitchen, and the lime-and-onion salsa criolla that goes with fish",
+      "about": "Salmon roasted with a fruity, gently hot ají amarillo and garlic glaze, next to crisp-edged potatoes and roasted red pepper with a sharp onion salsa. The glaze caramelizes while the fish stays tender. Salmon brings **omega-3, vitamin D and B12**.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "skin-on fillet"
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 14
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 14,
+          "note": "half for the glaze, half for the salsa"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 160,
+          "note": "3 or 4 small ones, halved"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 80,
+          "note": "cut in strips"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 45,
+          "note": "sliced very thin, red onion if you have it"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the potatoes and red pepper with half the oil and a pinch of the salt on a tray. Roast for 25 minutes, turning once, until the potatoes are crisp and golden at the edges.",
+        "Meanwhile make the salsa criolla. Soak the sliced onion in cold water for 2 minutes to soften its bite, drain, then toss with half the lime juice, half the cilantro and a pinch of salt. Leave it to sit.",
+        "Stir the ají amarillo paste with the grated garlic, the rest of the lime juice and a spoon of the oil. Pat the salmon dry, season it with salt and spread the glaze over the top.",
+        "Push the vegetables over, put the salmon on the tray skin-side down and roast for 10 to 12 minutes, until it just flakes and the glaze has darkened at the edges.",
+        "Serve the salmon with the potatoes and pepper, drizzle with the last of the oil, and spoon the salsa criolla on top with the rest of the cilantro."
+      ],
+      "prepMin": 15,
+      "cookMin": 37,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Ají amarillo paste is sold at Latin grocers and online; check the label, since a few brands add fillers."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-tacos-picadillo-res",
+      "name": "Beef picadillo tacos with carrot, peas and cabbage slaw",
+      "inspiredBy": "Mexican picadillo, the home-style ground beef with tomato, carrot and peas, served in corn tortillas",
+      "about": "Lean ground beef simmered with tomato, onion, carrot and peas and a little ancho and cumin, spooned into warm corn tortillas with crunchy lime cabbage and a little grated queijo coalho. Picadillo is an everyday Mexican supper and it is on the table in about 35 minutes. The beef brings **iron, zinc and vitamin B12**, and the carrots bring vitamin A.",
+      "ingredients": [
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 115,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "finely diced"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 40
+        },
+        {
+          "food": "ancho-chile-dried-b95180",
+          "g": 4,
+          "note": "stemmed and seeded, toasted and ground, or 1 tsp ancho powder"
+        },
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 70,
+          "note": "small ones"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 60,
+          "note": "shredded fine"
+        },
+        {
+          "food": "queijo-coalho-02fc0d",
+          "g": 25,
+          "note": "grated"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.3
+        }
+      ],
+      "steps": [
+        "Toast the ancho in a dry pan for 20 seconds each side, then soak it in hot water for 10 minutes, until soft. Blend it with the tomato, garlic, cumin and oregano until smooth.",
+        "Warm the oil in a wide pan and soften the onion and carrot for 5 minutes. Add the beef and brown it for about 5 minutes, breaking it up.",
+        "Pour in the blended sauce and the salt and simmer for 10 minutes, until thick and clinging. Stir in the peas for the last 3 minutes.",
+        "Toss the cabbage with half the lime juice and a pinch of salt. Warm the tortillas in a dry pan.",
+        "Fill the tortillas with the picadillo and top with the grated coalho (queso fresco or cotija if you have it), the cilantro and the rest of the lime juice. Serve the slaw alongside."
+      ],
+      "prepMin": 15,
+      "cookMin": 22,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Queso fresco is the Mexican choice if you can find it. Check the tortillas say 100% corn, nothing else, and check the label on the ancho powder if you use it. Picadillo keeps 3 days and is good over rice or in a baked potato."
+    },
+    {
+      "servings": 2,
+      "id": "gf-latin-galinhada",
+      "name": "Galinhada with chicken, corn and peas",
+      "inspiredBy": "Brazilian galinhada from Goiás, the one-pot chicken and rice coloured with urucum, with a little chicken liver the way many home cooks add giblets",
+      "about": "Chicken thighs and a little chicken liver cooked with rice in one pot with tomato, sweet pepper and golden urucum, with corn and peas scattered on top and spinach folded through at the end. It is Brazilian Sunday comfort food on a Thursday, and it is even better the next day. The liver is a small amount with a big payoff: it brings **iron, vitamin B12 and folate**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "cut in chunks"
+        },
+        {
+          "food": "chicken-liver-raw-6931a6",
+          "g": 35,
+          "note": "chicken liver, trimmed and chopped small"
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 36,
+          "note": "long-grain, rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 90,
+          "note": "chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 30
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 60
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "colorau-urucum-and-corn-powder-c79a9c",
+          "g": 2,
+          "note": "or sweet paprika with a pinch of turmeric"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Toss the chicken with the lime juice, half the salt and the pepper. Warm the oil in a wide heavy pot over medium-high heat and brown the chicken for about 3 minutes a side. Set it aside.",
+        "In the same pot, cook the onion, red pepper and garlic with the colorau for 5 minutes, until soft. Add the tomato and the raw chopped liver and cook for 4 minutes more, stirring, until the tomato is jammy and the liver melts in.",
+        "Stir in the rinsed rice for a minute so every grain gets coated. Return the chicken and pour in hot water, about twice the volume of the rice. Add the rest of the salt.",
+        "Bring to a simmer, cover and cook on low for 15 minutes. Scatter the corn and peas on top, cover again and cook for 5 minutes more. Switch off the heat and leave it covered for 10 minutes.",
+        "Fluff with a fork and fold in the spinach, scallion and cilantro, so the spinach wilts in the steam. Eat one portion now and pack the second for tomorrow's lunch."
+      ],
+      "prepMin": 12,
+      "cookMin": 45,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "The liver disappears into the rice and just adds depth; leave it out if you prefer. Colorau is sold at Brazilian and Latin shops. Check the label, because some brands cut it with wheat flour; plain sweet paprika plus a pinch of turmeric is a safe stand-in."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-moqueca-salmao-mandioca",
+      "name": "Salmon moqueca capixaba-style with peppers, tomato and mashed cassava",
+      "inspiredBy": "moqueca capixaba from Espírito Santo, the coconut-free moqueca cooked with tomato, peppers, cilantro and urucum, with salmon and a mash of cassava where the coast would serve pirão",
+      "about": "Salmon gently stewed with ripe tomato, sweet pepper, onion, cilantro and golden urucum, spooned over a soft mash of cassava that soaks up the juices, with quick garlicky kale (couve) on the side. The capixaba style skips the coconut and lets the tomato and lime do the work. Salmon brings **omega-3, vitamin D and B12**, and the kale brings calcium.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "skinless fillet, or pull the skin off"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "sliced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 80,
+          "note": "sliced into strips"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "sliced into rings"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 12
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12
+        },
+        {
+          "food": "cassava-manioc-raw-41bc74",
+          "g": 110,
+          "note": "peeled, cut in chunks, woody core removed"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "couve: stems out, sliced into thin ribbons"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "colorau-urucum-and-corn-powder-c79a9c",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.6
+        }
+      ],
+      "steps": [
+        "Put the cassava in a pot of salted water, bring it to a boil and cook for about 20 minutes, until a knife slides in with no resistance.",
+        "Meanwhile, rub the salmon with half the lime juice and a pinch of salt. Layer the onion, pepper and tomato in a wide pan with the garlic, half the oil, the colorau and a pinch of salt. Cover and cook over medium heat for 10 minutes, until the vegetables are soft and have made a juicy sauce.",
+        "Nestle the salmon into the vegetables, cover and simmer gently for 8 minutes, until the fish flakes. Do not stir, or the fish will break up.",
+        "Drain the cassava, keeping a splash of its water. Mash it with a spoon of the oil, the rest of the lime juice, a pinch of salt and enough cooking water to make it creamy.",
+        "Warm the rest of the oil in a pan with a pinch of salt and toss the kale over high heat for 2 to 3 minutes, until bright green and still a little crisp.",
+        "Spoon the mash into a bowl, lay the fish and stew over it, and scatter with the cilantro. Serve the garlicky kale alongside."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Frozen peeled cassava is sold at most Latin and Caribbean shops and saves the peeling. Any firm fish works, and shrimp is classic. Check the label on the colorau."
+    },
+    {
+      "servings": 2,
+      "id": "gf-latin-tamales-puerco-rojo",
+      "name": "Pork tamales in red chile salsa with lime cabbage slaw",
+      "inspiredBy": "Mexican tamales rojos de puerco, with olive oil in the masa in place of lard",
+      "about": "Soft, tender masa wrapped around shredded pork in a deep guajillo and ancho salsa, steamed in corn husks until the masa pulls away clean. It is the weekend project: put on some music and fold a batch. The masa is corn, so it is **naturally gluten-free**, and the pork brings protein and thiamin.",
+      "ingredients": [
+        {
+          "food": "corn-flour-masa-harina-white-or-yellow-dry-raw-d14c95",
+          "g": 62,
+          "note": "masa harina for tamales"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 120,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "guajillo-chile-dried-eb6416",
+          "g": 5,
+          "note": "stemmed and seeded"
+        },
+        {
+          "food": "ancho-chile-dried-b95180",
+          "g": 4,
+          "note": "stemmed and seeded"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 90,
+          "note": "shredded fine, for the slaw"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.8
+        }
+      ],
+      "steps": [
+        "Soak about eight dried corn husks (they are a wrapper, not on the list) in a big bowl of hot water for 30 minutes, weighed down with a plate, until soft and pliable.",
+        "Simmer the pork in a pot of salted water with a quarter of the onion and garlic for 40 minutes, until it shreds easily. Lift it out, shred it, and keep about 2 cups of the broth.",
+        "Toast the guajillo and ancho in a dry pan for 20 seconds each side, then soak in hot water for 10 minutes. Blend with the tomato, most of the remaining onion (keep a thin slice for the slaw), the rest of the garlic, cumin, oregano and a pinch of salt. Simmer the salsa in a pan for 8 minutes, until thick and darker, then stir in the pork and let it cool.",
+        "Mix the masa harina and the rest of the salt with warm broth, a splash at a time, until it comes together. Then beat in the oil for 3 minutes, until the dough is soft and spreadable like thick hummus.",
+        "Spread a few spoons of masa over the lower two thirds of a husk, add a spoonful of pork, fold in the sides and fold the narrow end up. Stand the tamales upright, folded side down, in a steamer.",
+        "Steam, covered, for 60 to 70 minutes, topping up the water now and then, until the masa pulls away cleanly from the husk. Rest for 10 minutes.",
+        "Toss the cabbage with the lime juice, a pinch of salt and a little of the onion, sliced thin, and serve with the tamales. Keep the second portion for tomorrow's lunch and reheat it in a steamer or microwave, still in its husk."
+      ],
+      "prepMin": 45,
+      "cookMin": 120,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly",
+        "makes-leftovers",
+        "freezer-friendly",
+        "weekend-project"
+      ],
+      "tip": "Dried corn husks are sold at Latin grocers and in many supermarkets' Mexican aisle. No husks? Use parchment squares tied with kitchen string. Traditional masa is whipped lard; oil gives a denser, still tender tamale. Tamales freeze for 3 months. Check the label on the masa harina (buy a gluten-free line if you are celiac)."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-ajiaco",
+      "name": "Ajiaco with chicken, corn and potatoes",
+      "inspiredBy": "Colombian ajiaco santafereño from Bogotá, with the three kinds of potato simplified and yogurt standing in for cream",
+      "about": "A thick, golden Bogotá soup of chicken, corn and potatoes, perfumed with guascas and finished with creamy avocado, fresh cilantro and a spoon of cool yogurt. Some of the potatoes melt into the broth to thicken it, and the rest stay in tender chunks. Potatoes and corn bring **potassium, vitamin C and B6**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 120,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 135,
+          "note": "half peeled and sliced thin, half in chunks"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 70,
+          "note": "frozen corn kernels"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 25
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 45,
+          "note": "sliced"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 60,
+          "swap": "dairy_protein",
+          "note": "in place of cream, about ¼ cup"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "guascas-dried-2060b3",
+          "g": 0.5,
+          "note": "dried; or a pinch of dried oregano"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Warm the oil in a pot over medium heat and soften the scallion and garlic for 2 minutes. Add the chicken, the salt and enough water to cover everything by 3 cm.",
+        "Bring to a simmer and cook for 15 minutes. Add the sliced potatoes, which will dissolve into the broth, and simmer for 15 minutes more.",
+        "Add the potato chunks, the corn and the guascas and simmer for another 15 minutes, until the chunks are tender and the broth is thick and golden.",
+        "Lift the chicken out, shred it and return it to the pot for a minute.",
+        "Ladle into a bowl. Top with the avocado, cilantro and a spoon of the yogurt."
+      ],
+      "prepMin": 12,
+      "cookMin": 48,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Guascas is sold dried at Colombian shops; leave it out if you cannot find it. Yellow potatoes plus some russets give the classic texture. A few capers and a spoon of cream on top is how Bogotá serves it. Check the label on any boxed broth."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-mango-chile-limon",
+      "name": "Mango with lime and chile",
+      "about": "Juicy mango cubes with a squeeze of lime and a pinch of chile, the way Mexican street stalls sell it. It is sweet, sharp and a little hot. The mango brings **vitamin C and vitamin A**.",
+      "ingredients": [
+        {
+          "food": "mango-raw-80de97",
+          "g": 120,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Cube the mango and toss it with the lime juice, a pinch of cayenne and a tiny pinch of salt."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "tags": [
+        "medium-spicy",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Check the label on the chile powder if you use a blend instead of pure cayenne."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-naranja-chile-limon",
+      "name": "Orange with lime and chile",
+      "about": "Juicy orange segments with a squeeze of lime and a pinch of chile, the way Mexican fruit stalls serve it. It is cold, sweet and a little hot. Oranges bring **vitamin C and folate**.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 180,
+          "swap": "vit_c_fruit",
+          "note": "1 large orange"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Peel the orange and cut it into rounds or segments, then squeeze the lime over and dust with cayenne and a tiny pinch of salt."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "tags": [
+        "medium-spicy",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Check the label on the chile powder if you use a blend instead of pure cayenne."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-chia-fresca-naranja",
+      "name": "Chía fresca with orange and lime",
+      "inspiredBy": "Mexican chía fresca, the chia agua fresca sold at street stalls, sweetened only with orange",
+      "about": "Chia seeds soaked in water with fresh orange and lime juice until they plump up and turn jelly-like. It is cool, tangy and lightly sweet. Chia brings **omega-3, calcium and magnesium** in a very Mexican way.",
+      "ingredients": [
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "juiced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        }
+      ],
+      "steps": [
+        "Stir the chia into a tall glass of cold water (about 250 ml) and leave it for 10 minutes, stirring once or twice, until it plumps up.",
+        "Stir in the orange juice and lime juice, add ice, and drink it right away."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-banana-iogurte-linhaca",
+      "name": "Banana yogurt with flaxseed and cinnamon",
+      "inspiredBy": "Brazilian iogurte com banana e linhaça, the everyday snack bowl",
+      "about": "Thick yogurt topped with sliced banana, a spoon of ground flaxseed and a dusting of cinnamon, a very Brazilian way to snack. It is creamy, sweet and a little nutty. The yogurt brings **protein and calcium**, and the flaxseed brings omega-3.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 55
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 6,
+          "note": "ground flaxseed"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Slice the banana into the yogurt, then sprinkle with the ground flaxseed and cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-coalho-laranja",
+      "name": "Grilled queijo coalho with orange",
+      "inspiredBy": "queijo coalho na brasa, the grilled cheese sold on skewers on Brazilian beaches",
+      "about": "Squares of queijo coalho seared until golden and squeaky, with juicy orange segments to cut through the salt. It is the Brazilian beach snack, done in a pan. The cheese brings **calcium and protein**, and the orange brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "queijo-coalho-02fc0d",
+          "g": 32,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 130,
+          "swap": "vit_c_fruit"
+        }
+      ],
+      "steps": [
+        "Cut the coalho into thick squares and sear them in a dry nonstick pan over medium heat for 1 to 2 minutes a side, until golden and spotty.",
+        "Peel the orange, split it into segments and eat them with the warm cheese."
+      ],
+      "prepMin": 3,
+      "cookMin": 4,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Halloumi works the same way."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-dip-frijol-crudites",
+      "name": "Black bean dip with carrot and red pepper sticks",
+      "inspiredBy": "Mexican frijoles negros mashed with lime and cumin, served like a dip",
+      "about": "Creamy mashed black beans with lime, garlic, cumin and a little olive oil, scooped up with crunchy carrot and red pepper sticks. It is savoury, tangy and filling. Black beans bring **fibre, iron and folate**.",
+      "ingredients": [
+        {
+          "food": "black-beans-dry-9f5377",
+          "g": 40,
+          "swap": "legumes",
+          "note": "cooked ahead, see the steps"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 3
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "cut in strips"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Use beans from your Sunday pot (see the plan notes), or canned beans at about three times the dry weight, drained and rinsed.",
+        "Mash them with a fork or blitz with the lime juice, grated garlic, cumin, oil and salt, adding a splash of water for a creamy texture. Stir in the cilantro.",
+        "Serve with the carrot and red pepper for dipping."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Make a double batch on Sunday; it keeps 4 days."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-guacamole-crudites",
+      "name": "Guacamole with red pepper strips and baked tortilla wedges",
+      "inspiredBy": "Mexican guacamole, scooped with crisp baked tortilla and raw red pepper",
+      "about": "Chunky avocado mashed with lime, onion, cilantro and a little tomato, scooped up with crisp baked corn tortilla wedges and sweet red pepper strips. It is creamy, fresh and very filling. Avocado brings **vitamin E, potassium and healthy fat**, and the red pepper brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "avocado-raw-c06278",
+          "g": 70
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 30
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 10
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 15,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 90,
+          "note": "cut in strips"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Spread the tortilla wedges on a tray and bake for about 8 minutes, until crisp.",
+        "Mash the avocado roughly with the lime juice and salt, then fold in the tomato, onion and cilantro, all finely chopped.",
+        "Scoop with the warm wedges and the red pepper strips."
+      ],
+      "prepMin": 8,
+      "cookMin": 8,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Check the tortillas say 100% corn, nothing else."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-garbanzos-tostados",
+      "name": "Roasted chickpeas with lime and chile",
+      "about": "Chickpeas roasted until crunchy and tossed with lime, cumin and a pinch of cayenne. They are salty, tangy and very moreish, the kind of snack you can carry in your pocket. Chickpeas bring **protein, fibre and folate**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 100,
+          "swap": "legumes",
+          "note": "canned, drained, rinsed and dried well"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Pat the chickpeas very dry with a towel, then toss them with the oil, cumin and salt.",
+        "Spread them on a tray and roast for 25 minutes, shaking the tray halfway, until crunchy and deep golden.",
+        "Toss with the lime juice and cayenne while hot."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Roast a double batch if you like, and re-crisp the second half in a hot oven for 5 minutes before you eat it."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-anticuchos-pollo",
+      "name": "Chicken anticuchos with ají amarillo",
+      "inspiredBy": "Peruvian anticuchos, the street-corner skewers usually made with beef heart, here with chicken thigh",
+      "about": "Chicken thigh cubes marinated in ají amarillo, garlic, cumin and lime, threaded on skewers and grilled until charred at the edges. They are smoky, juicy and mildly hot. The chicken brings **protein and niacin**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "cut in 3 cm cubes"
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Stir the ají amarillo paste with the grated garlic, cumin, lime juice, oil and salt. Toss the chicken in it and leave for at least 20 minutes, or all day in the fridge.",
+        "Thread the chicken on skewers (soak wooden ones in water first).",
+        "Grill or broil about 10 cm from the heat for 8 to 10 minutes, turning once or twice, until charred in spots and cooked through."
+      ],
+      "prepMin": 25,
+      "cookMin": 10,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Marinate in the morning and it takes 10 minutes at snack time. Check the label on the ají paste."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-huevos-duros-limon-chile",
+      "name": "Hard-boiled eggs with lime and chile",
+      "inspiredBy": "Mexican huevos duros with lime, salt and chile, the bar and street-stall snack",
+      "about": "Hard-boiled eggs sprinkled with lime juice, a pinch of salt and chile, a simple Mexican snack. They are creamy, sharp and a little hot. The eggs bring **protein and choline**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Lower the eggs into boiling water and cook for 10 minutes. Cool them in cold water, then peel.",
+        "Halve the eggs and sprinkle with the lime juice, salt and cayenne."
+      ],
+      "prepMin": 3,
+      "cookMin": 10,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Boil a few extra on Sunday; they keep 5 days in the shell. Check the label on the chile powder if it is a blend."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-frijol-elote-vaso",
+      "name": "Black bean and corn cup with lime",
+      "inspiredBy": "Mexican ensalada de frijol y elote, the bean and corn salad",
+      "about": "Black beans and sweet corn tossed with tomato, onion, cilantro, lime and a little olive oil in a cup. It is cool, savoury and bright, and easy to carry. Beans and corn together bring **fibre, iron and folate**.",
+      "ingredients": [
+        {
+          "food": "black-beans-dry-9f5377",
+          "g": 45,
+          "swap": "legumes",
+          "note": "cooked ahead, see the steps"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 50,
+          "note": "frozen kernels, thawed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Use beans from your Sunday pot (see the plan notes), or canned beans at about three times the dry weight, drained and rinsed.",
+        "Toss the beans with the corn, tomato, onion, cilantro, lime juice, oil and salt.",
+        "Let it sit for 10 minutes so the flavours settle, then eat it cold."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "It keeps 2 days in the fridge, so make a double batch."
+    },
+    {
+      "servings": 1,
+      "id": "gf-latin-sardinas-limon-tomate",
+      "name": "Sardines with lime, tomato and onion",
+      "inspiredBy": "Mexican sardinas a la mexicana, made here as a no-cook salpicón with lime, tomato and onion",
+      "about": "Canned sardines, with their soft bones, dressed with lime, diced tomato, onion and cilantro. It takes five minutes and tastes bright and briny. Sardines bring **omega-3, calcium and vitamin B12**.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 90,
+          "swap": "fatty_fish",
+          "note": "canned in oil, drained"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "finely diced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Mix the tomato, onion, cilantro, lime juice, salt and a pinch of cayenne in a small bowl.",
+        "Break the sardines into big chunks, spoon the tomato mixture over and eat right away."
+      ],
+      "prepMin": 6,
+      "cookMin": 0,
+      "tags": [
+        "medium-spicy",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Add a sliced serrano for more heat. Buy sardines in oil or water, not in a sauce."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-latin-arepas-huevos-pericos"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-latin-arroz-feijao-couve-coalho"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-latin-sopa-quinua-res"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-latin-chia-fresca-naranja"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-latin-garbanzos-tostados"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-latin-tapioca-coalho-manga"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-latin-sopa-quinua-res",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-latin-salmon-aji-amarillo-papas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-latin-dip-frijol-crudites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-latin-naranja-chile-limon"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-latin-arepas-huevos-pericos"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-latin-caldo-tlalpeno"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-latin-tacos-picadillo-res"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-latin-chia-fresca-naranja"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-latin-guacamole-crudites"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-latin-quinua-con-leche"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-latin-causa-sardinas-aguacate"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-latin-galinhada"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-latin-dip-frijol-crudites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-latin-garbanzos-tostados"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-latin-quinua-con-leche",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-latin-galinhada",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-latin-moqueca-salmao-mandioca"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-latin-banana-iogurte-linhaca"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-latin-mango-chile-limon"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-latin-tapioca-coalho-manga"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-latin-carne-hogao-maduros"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-latin-tamales-puerco-rojo"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-latin-guacamole-crudites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-latin-naranja-chile-limon"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-latin-arepas-huevos-pericos"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-latin-tamales-puerco-rojo",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-latin-ajiaco"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-latin-sardinas-limon-tomate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-latin-coalho-laranja"
+        }
+      ]
+    }
+  ]
+}
