@@ -1,0 +1,1852 @@
+{
+  "id": "island-asia",
+  "name": "Filipino, Malaysian & Indonesian Table",
+  "style": "balanced",
+  "cuisine": "Maritime Southeast Asian",
+  "regions": [
+    "Philippines",
+    "Malaysia",
+    "Indonesia"
+  ],
+  "summary": "A week of Filipino, Malaysian and Indonesian home cooking: bubur ayam, nasi lemak and tapsilog breakfasts, chicken adobo, mackerel sinigang, pinakbet, a lighter beef rendang, gado-gado, a laksa-inspired weekend soup and grilled mackerel with sambal, all on brown rice.",
+  "howItWorks": "**Cook once, eat twice.** Tuesday's adobo, Wednesday's tempeh stir-fry, Thursday's pinakbet, Friday's rendang and Saturday's laksa each make two portions, so the next day's lunch is done. The kacang hijau makes two bowls too. The mackerel is always cooked fresh.\n\n**Rice batch.** On Sunday, cook 1½ cups of dry brown rice (about 4½ cups cooked) for Monday to Wednesday, and simmer Monday's bubur base while you're at it. On Wednesday night, cook another 1½ cups dry (about 4½ cups cooked) for Thursday to Sunday. It keeps 4 or 5 days in the fridge. Press a little into a block on Sunday for Monday's gado-gado.\n\n**Fish four times.** Mackerel sinigang on Monday, sardine sambal on Wednesday and Friday and mackerel ikan bakar on Sunday bring your **omega-3**, and the sardine bones bring calcium. None of them land on back-to-back days.\n\n**Coconut as flavour.** Coconut milk goes in by the spoonful, for the nasi lemak rice, the rendang, the laksa and the kacang hijau. The cooking oil is canola, in small amounts, so **saturated fat stays under 10%**.\n\n**Salt, and a little liver.** Soy sauce, fish sauce and shrimp paste do most of the salting, plus a measured pinch of salt, and each recipe measures them. A little chicken liver in the bubur ayam, as many Jakarta cooks do, brings **vitamin A, B12 and choline**.",
+  "signature": [
+    "island-asia-chicken-adobo-mustard-greens",
+    "island-asia-sinigang-mackerel-kangkong-okra",
+    "island-asia-lighter-beef-rendang-garlic-kangkong",
+    "island-asia-laksa-inspired-shrimp-tofu-noodle-soup"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "island-asia-ginataang-kalabasa"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "island-asia-okra-tomato-sambal-belacan"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "island-asia-kangkong-sambal-lime"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "island-asia-okra-tomato-sambal-belacan"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "island-asia-kangkong-sambal-lime"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "island-asia-tempe-goreng-sambal-kecap"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "island-asia-kacang-goreng-chili-salt"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "island-asia-nasi-lemak-sardine-sambal-egg",
+      "name": "Nasi lemak-inspired plate with sardine sambal, egg and peanuts",
+      "inspiredBy": "Malaysian nasi lemak, with brown rice, only a little coconut milk and tinned sardines in sambal (sambal sardin)",
+      "about": "Gingery pandan and coconut rice with a hot, tangy sardine sambal, a boiled egg, crunchy peanuts and cool cucumber, the classic Malaysian breakfast plate. The sardines come with their soft bones, so this plate brings **calcium, omega-3 and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 85,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 15,
+          "note": "full-fat, just enough to scent the rice"
+        },
+        {
+          "food": "pandan-leaves-309faf",
+          "g": 4,
+          "note": "a knotted pandan leaf, fresh or frozen"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg"
+        },
+        {
+          "food": "sardines-in-tomatosauce-canned-ff72c8",
+          "g": 100,
+          "swap": "fatty_fish",
+          "note": "tinned in tomato sauce, bones and all"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 30,
+          "note": "sliced thin"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "sambal-oelek-fd8b79",
+          "g": 12,
+          "note": "sambal oelek"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 2,
+          "note": "tamarind paste"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "dry-roasted, unsalted"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lower the egg into a small pot of simmering water for 8 minutes, until the white is set and the yolk is just firm. Cool it under cold water, then peel and halve it.",
+        "While the egg cooks, put the rice in another small pot with the coconut milk, the pandan, the ginger, a splash of water and the salt. Cover and warm over low heat for 5 minutes, until it's hot and the grains look glossy. Fish out the pandan and ginger.",
+        "Soften the shallot and garlic in the oil in a small pan, about 4 minutes. Stir in the sambal oelek for a minute, until the oil turns red and it smells sweet and sharp.",
+        "Add the sardines with their sauce and the tamarind, break them up with a spoon and simmer for 3 minutes, until thick and jammy.",
+        "Pile the coconut rice on a plate with the sambal, egg, cucumber and peanuts. Eat everything together."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Boil the eggs and make the sardine sambal the night before, and the plate takes 5 minutes. The sambal keeps 3 days in the fridge, so a double batch covers both nasi lemak mornings. Skip the pandan if you can't find it."
+    },
+    {
+      "id": "island-asia-tapsilog-garlic-rice-beef-egg-atchara",
+      "name": "Tapsilog-inspired garlic rice with beef tapa, fried egg and atchara",
+      "inspiredBy": "Filipino tapsilog (tapa, sinangag, itlog), with lean beef, brown rice and a quick carrot atchara",
+      "about": "Thin slices of beef cured in soy, calamansi and garlic and seared hot, with garlicky fried brown rice, a fried egg and a quick sweet-sour carrot pickle. It's the Filipino all-day breakfast, and the beef and egg bring **iron, zinc and choline**, while the atchara keeps it bright instead of heavy.",
+      "ingredients": [
+        {
+          "food": "beef-steak-boneless-round-lean-raw-64d7dd",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "lean round steak, sliced about 3 mm thick against the grain"
+        },
+        {
+          "food": "soy-sauce-shoyu-52e366",
+          "g": 9,
+          "note": "soy sauce"
+        },
+        {
+          "food": "calamansi-6e1da5",
+          "g": 10,
+          "note": "juice"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 12,
+          "note": "minced, half for the beef and half for the rice"
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 4,
+          "note": "half for the beef, half for the atchara"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 85,
+          "swap": "low_gi_grains",
+          "note": "from your batch, cold"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "shredded"
+        },
+        {
+          "food": "cane-vinegar-dced97",
+          "g": 20,
+          "note": "cane vinegar"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toss the beef with the soy sauce, calamansi, half the garlic, half the palm sugar and the pepper. Leave it to cure while you make the atchara, or overnight in the fridge.",
+        "For the atchara, toss the carrot and ginger with the vinegar, the rest of the palm sugar and a pinch of the salt. Squeeze it with your hands for a minute, then leave it for 15 minutes to turn tangy and a little sweet.",
+        "Heat a little of the oil in a wide pan and fry the rest of the garlic until pale gold, about 1 minute. Add the cold rice, breaking up any clumps, and stir-fry for 4 minutes, until hot with a few crisp grains. Season with the rest of the salt and tip it into a bowl.",
+        "Wipe the pan, heat it hard with a little more oil and sear the beef for 1 to 2 minutes per side, until browned and sticky at the edges. Pile it on the rice.",
+        "Fry the egg in the remaining oil until the edges are crisp and the yolk is still runny. Serve with a spoonful of atchara."
+      ],
+      "prepMin": 10,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Do steps 1 and 2 the night before and breakfast is 12 minutes. Green papaya is the traditional atchara, so use it in place of the carrot if you have it. A small dish of vinegar with chopped chili and garlic is how most Filipino tables finish it."
+    },
+    {
+      "id": "island-asia-bubur-ayam-chicken-rice-porridge",
+      "name": "Bubur ayam, Indonesian chicken rice porridge with fried shallot",
+      "inspiredBy": "Indonesian bubur ayam, made with brown rice, mustard greens (sawi) and the chicken liver (ati) that tops the Jakarta version",
+      "about": "A silky, turmeric-yellow rice porridge with shredded ginger chicken, a little tender chicken liver, mustard greens, crushed peanuts and crisp fried shallots, finished with sweet soy, sambal and a squeeze of lime. It's warm, gentle and the way a lot of Indonesia starts the day. The little bit of liver brings **vitamin A, B12 and iron**.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 90,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "boneless, skinless thigh"
+        },
+        {
+          "food": "chicken-liver-raw-6931a6",
+          "g": 30,
+          "note": "chicken liver, trimmed"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "smashed"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 20,
+          "note": "sliced into thin rings"
+        },
+        {
+          "food": "mustard-greens-raw-d4b57b",
+          "g": 110,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "dry-roasted, unsalted, crushed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "kecap-manis-sweet-soy-sauce-bee7ea",
+          "g": 6,
+          "note": "kecap manis (sweet soy sauce)"
+        },
+        {
+          "food": "sambal-oelek-fd8b79",
+          "g": 4,
+          "note": "sambal oelek"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "note": "about half a lime"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 1,
+          "note": "about ½ tsp"
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Fry the shallot rings in the oil over medium heat until golden and crisp, about 4 minutes. Lift them out onto a paper towel and keep the flavoured oil in the pot.",
+        "Add the garlic, ginger and turmeric to the oil for 30 seconds. Add the rice, the chicken thigh and about 4 times as much water as rice by volume. Bring to a boil, then simmer gently, stirring now and then, for 25 minutes.",
+        "Add the liver and simmer for 5 minutes more. Mash about a third of the rice against the side of the pot, so the porridge turns thick and creamy.",
+        "Lift out the chicken and liver, shred the chicken with two forks and chop the liver. Stir the mustard greens into the porridge for 1 minute, until bright, then season with the salt and white pepper.",
+        "Ladle into a bowl and top with the chicken, liver, fried shallot and peanuts. Drizzle over the kecap manis, add the sambal and squeeze the lime over."
+      ],
+      "prepMin": 10,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "On weekdays, simmer the porridge with the chicken the night before, then reheat it in the morning with a splash of water and add the liver, greens and toppings fresh (about 10 minutes). A pressure cooker does the whole porridge in 15 minutes. Leave the liver out and use 150 g of chicken if you prefer."
+    },
+    {
+      "id": "island-asia-gado-gado-tofu-egg-peanut-sauce",
+      "name": "Gado-gado with tofu, egg, lontong and peanut sauce",
+      "inspiredBy": "Indonesian gado-gado, with pan-fried tofu and a lontong-style pressed rice cake made from the batch rice",
+      "about": "Blanched long beans and bean sprouts with a slice of pressed rice, golden tofu, a boiled egg and crisp cucumber, all under a warm, garlicky peanut sauce with sambal, sweet soy and tamarind. The tofu is calcium-set, so this one lunch brings **lots of calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "yardlong-beans-asparagus-bean-or-cowpea-raw-bfc6f1",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "long beans, cut into 4 cm pieces"
+        },
+        {
+          "food": "mung-bean-sprouts-raw-abdb2d",
+          "g": 70,
+          "note": "mung bean sprouts"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 110,
+          "swap": "low_gi_grains",
+          "note": "cold rice from your batch, pressed into a lontong-style block"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "calcium-set, check the label, cut into cubes"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 35,
+          "swap": "nuts_seeds",
+          "note": "dry-roasted, unsalted"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "peeled"
+        },
+        {
+          "food": "sambal-oelek-fd8b79",
+          "g": 8,
+          "note": "sambal oelek"
+        },
+        {
+          "food": "kecap-manis-sweet-soy-sauce-bee7ea",
+          "g": 8,
+          "note": "kecap manis"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 3,
+          "note": "tamarind paste"
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 3,
+          "note": "palm sugar"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Pack the cold rice firmly into a small container lined with plastic wrap, or roll it tightly in the wrap, and chill it while you cook. Slice it into thick squares to serve.",
+        "Lower the egg into a pot of boiling water for 8 minutes, then lift it out into cold water. In the same water, blanch the long beans for 3 minutes and the sprouts for 20 seconds. Drain well and let them cool a little.",
+        "Pan-fry the tofu cubes in the oil over medium-high heat for 3 to 4 minutes per side, until golden and crisp at the edges.",
+        "Blitz the peanuts with the garlic, salt, sambal, kecap manis, tamarind, palm sugar and about 4 tablespoons of hot water in a mini chopper, until it pours like thick cream. Add a splash more water if it's too thick.",
+        "Arrange the vegetables, the rice slices, tofu, cucumber and the halved egg on a plate and spoon the sauce over."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "The sauce keeps 4 days in a jar in the fridge, thinned with a splash of water. Swap the tofu for tempeh if you like, or add a handful of blanched spinach for more greens."
+    },
+    {
+      "id": "island-asia-chicken-adobo-mustard-greens",
+      "name": "Chicken adobo with garlic, bay leaf and wilted mustard greens",
+      "inspiredBy": "Filipino adobo, braised in cane vinegar, soy sauce and garlic, with mustasa (mustard greens) wilted in at the end",
+      "about": "Chicken thighs braised in vinegar, soy sauce, garlic, bay leaf and black pepper until the sauce is sticky and tangy, with mustard greens wilted in at the end and fresh tomato wedges to cut the richness. Adobo tastes better the next day, so tomorrow's lunch is done. The chicken and greens bring **protein, vitamin K and calcium**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 200,
+          "swap": "lean_protein",
+          "note": "boneless, skinless thighs"
+        },
+        {
+          "food": "soy-sauce-shoyu-52e366",
+          "g": 10,
+          "note": "soy sauce"
+        },
+        {
+          "food": "cane-vinegar-dced97",
+          "g": 25,
+          "note": "cane vinegar"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "smashed"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 30,
+          "note": "sliced"
+        },
+        {
+          "food": "mustard-greens-raw-d4b57b",
+          "g": 130,
+          "swap": "leafy_greens",
+          "note": "mustasa (mustard greens), cut into 5 cm pieces"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3,
+          "note": "about 1 leaf"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5,
+          "note": "coarsely cracked"
+        }
+      ],
+      "steps": [
+        "Put the chicken thighs, soy sauce, vinegar, garlic, bay leaf, pepper and about ½ cup (125 ml) of water per serving in a wide pot. Marinate for 15 minutes if you have the time.",
+        "Bring to a boil, then simmer without stirring for 5 minutes, so the sharp smell of the vinegar cooks off. Cover and simmer gently for 20 minutes, until the chicken is tender.",
+        "Lift the chicken out. Boil the sauce hard, uncovered, for 5 to 6 minutes, until it has reduced to a glossy glaze.",
+        "Heat the oil in a wide pan with the shallot and brown the chicken for 2 to 3 minutes per side, then pour the sauce back over it. Add the mustard greens and cook for 2 minutes, until just wilted and still bright green.",
+        "Serve over rice with the tomato wedges. Pack the second portion, with its rice and a little of the sauce, for tomorrow's lunch."
+      ],
+      "prepMin": 10,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Add a thinly sliced chili to the sauce for heat. Some cooks add a splash of coconut milk at the end (adobo sa gata). To freeze, do it before the greens go in."
+    },
+    {
+      "id": "island-asia-tumis-tempeh-tofu-kangkong",
+      "name": "Tumis tempeh, tofu and kangkong with chili and kecap manis",
+      "inspiredBy": "Indonesian orek tempe and tumis kangkung, a sticky, sweet and hot stir-fry",
+      "about": "Browned tempeh and tofu cubes with plenty of water spinach, stir-fried with shallot, garlic, galangal and plenty of fresh chili, then glazed with sweet soy. Tempeh is a **complete plant protein with iron**, and the calcium-set tofu adds **a lot of calcium**. The leftovers are just as good the next day.",
+      "ingredients": [
+        {
+          "food": "tempeh-b9c516",
+          "g": 110,
+          "swap": "legumes",
+          "note": "cut into 1.5 cm cubes"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "calcium-set, cut into 1.5 cm cubes"
+        },
+        {
+          "food": "water-spinach-yosai-stems-and-leaves-raw-75b16b",
+          "g": 230,
+          "swap": "leafy_greens",
+          "note": "water spinach, cut into 6 cm lengths"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 25,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "galangal-3d40ae",
+          "g": 5,
+          "note": "peeled and thinly sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "kecap-manis-sweet-soy-sauce-bee7ea",
+          "g": 14,
+          "note": "kecap manis"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 80,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Fry the tempeh cubes in the oil in a wide non-stick pan over medium-high heat for 5 minutes, stirring now and then, until golden. Add the tofu and fry for 3 minutes more. Lift them out.",
+        "In the same pan, stir-fry the shallot, garlic, chili and galangal for 2 minutes, until it smells wonderful.",
+        "Add the kangkong stems with 2 tablespoons of water for 1 minute, then the leaves for 1 minute more, until bright green and just wilted.",
+        "Add the tomato and kecap manis, return the tempeh and tofu to the pan and toss over high heat for 2 minutes, until glossy and sticky. Add the salt.",
+        "Serve over rice. Pack the second portion, with its rice, for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "The leftover won't be crisp, but it's just as good in a rice bowl with cucumber. Make it milder by seeding the chili. No water spinach? Use spinach, added at the very end."
+    },
+    {
+      "id": "island-asia-sinigang-mackerel-kangkong-okra",
+      "name": "Sinigang with mackerel, kangkong and okra",
+      "inspiredBy": "Filipino sinigang sa sampalok, the sour tamarind soup, made with mackerel (as with hasa-hasa) in place of the usual bangus",
+      "about": "A bright, sour tamarind broth with tender mackerel, tomato, okra and a big handful of water spinach (kangkong), with a long chili for gentle heat. It's one of the Philippines' great comfort soups, and the mackerel brings **omega-3**, while the greens add folate and vitamin K.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "fillets, cut into 4 cm pieces"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 14,
+          "note": "tamarind paste"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "quartered"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 30,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "okra-gumbo-raw-424b0a",
+          "g": 60,
+          "note": "whole, stems trimmed"
+        },
+        {
+          "food": "water-spinach-yosai-stems-and-leaves-raw-75b16b",
+          "g": 140,
+          "swap": "leafy_greens",
+          "note": "water spinach, cut into 6 cm lengths"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 8,
+          "note": "long red chili, left whole"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "sliced"
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 6,
+          "note": "fish sauce, patis"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 110,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        }
+      ],
+      "steps": [
+        "Bring about 2 cups (500 ml) of water per serving to a boil with the shallot, tomato and ginger. Simmer for 8 minutes, until the tomato has softened into the broth.",
+        "Stir in the tamarind paste until it dissolves, then the fish sauce. Add the okra and the whole chili and simmer for 3 minutes.",
+        "Lay the mackerel in the broth and simmer very gently for 5 minutes, until it's just opaque and flakes. Try not to stir it, or it will break up.",
+        "Add the kangkong, stems first, and the leaves for the last 30 seconds, until just wilted. Taste: it should be sour first, then salty. Add more tamarind or fish sauce if it needs it.",
+        "Ladle into a deep bowl and eat with the rice on the side."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Bangus (milkfish), salmon belly or a firm white fish all work too, but mackerel is very rich in omega-3. Fish like this doesn't keep well, so it's cooked fresh and doesn't make a leftover lunch."
+    },
+    {
+      "id": "island-asia-pancit-bihon-pork-tofu-bok-choy",
+      "name": "Pancit bihon with pork, tofu and mustard greens",
+      "inspiredBy": "Filipino pancit bihon guisado, with tokwa (tofu), extra vegetables and a lighter hand with the noodles",
+      "about": "Thin rice vermicelli stir-fried with lean pork, golden tofu, long beans, mustard greens, carrot and garlic in a light soy, fish sauce and calamansi sauce. It's the Filipino party noodle turned into a quick lunch, and the calcium-set tofu and mustard greens bring **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "rice-vermicelli-dry-raw-363c6b",
+          "g": 50,
+          "note": "dry rice vermicelli (bihon)"
+        },
+        {
+          "food": "pork-butt-portion-lean-raw-26a201",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "lean pork shoulder, sliced thin"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 90,
+          "swap": "lean_protein",
+          "note": "calcium-set, cut into small cubes"
+        },
+        {
+          "food": "mustard-greens-raw-d4b57b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "mustasa (mustard greens), sliced"
+        },
+        {
+          "food": "yardlong-beans-asparagus-bean-or-cowpea-raw-bfc6f1",
+          "g": 100,
+          "note": "sitaw (long beans), cut into 4 cm lengths"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 45,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 25,
+          "note": "sliced"
+        },
+        {
+          "food": "soy-sauce-shoyu-52e366",
+          "g": 6,
+          "note": "soy sauce"
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 4,
+          "note": "fish sauce"
+        },
+        {
+          "food": "calamansi-6e1da5",
+          "g": 15,
+          "note": "juice, plus extra to serve"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Soak the vermicelli in hot water for 5 to 6 minutes, until it's pliable but still has some bite. Drain it, keeping about ⅓ cup (80 ml) of the soaking water. Toss the pork with half the soy sauce.",
+        "Heat half the oil in a wide pan or wok over high heat and fry the tofu for 4 minutes, turning, until golden. Lift it out.",
+        "Add the rest of the oil, then the shallot and garlic for 1 minute, then the pork for 3 minutes, until no longer pink. Add the carrot and long beans and stir-fry for 3 minutes, then the mustard greens for 1 minute.",
+        "Add the noodles, the tofu, the rest of the soy sauce, the fish sauce and the reserved soaking water. Toss with tongs for 2 to 3 minutes, until the noodles have soaked up the liquid and are tender.",
+        "Finish with pepper and the calamansi, and put extra calamansi on the table."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cut everything before you start, since stir-frying goes fast. Chicken breast works in place of the pork."
+    },
+    {
+      "id": "island-asia-pinakbet-pork-squash-okra-long-beans",
+      "name": "Pinakbet with pork, squash, okra and long beans",
+      "inspiredBy": "Tagalog-style pinakbet, with shrimp paste (belacan) in place of the softer bagoong alamang",
+      "about": "A one-pot Filipino vegetable stew of squash, okra, long beans and tomato, built on lean pork and a spoon of salty shrimp paste. The vegetables steam in their own juices, so it tastes deeply of vegetable, and it covers **lots of fibre, vitamin A and potassium**. It reheats beautifully for lunch.",
+      "ingredients": [
+        {
+          "food": "pork-butt-portion-lean-raw-26a201",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "lean pork shoulder, cut into 2 cm cubes"
+        },
+        {
+          "food": "shrimp-paste-belacan-terasi-c9c4da",
+          "g": 4,
+          "note": "shrimp paste, standing in for bagoong"
+        },
+        {
+          "food": "pumpkin-raw-dd46c7",
+          "g": 170,
+          "note": "kalabasa, seeded, cut into 3 cm chunks"
+        },
+        {
+          "food": "okra-gumbo-raw-424b0a",
+          "g": 100,
+          "note": "whole, stems trimmed"
+        },
+        {
+          "food": "yardlong-beans-asparagus-bean-or-cowpea-raw-bfc6f1",
+          "g": 90,
+          "note": "sitaw, cut into 5 cm lengths"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 25,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 85,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Soften the shallot, garlic and ginger in the oil in a wide pot over medium heat, about 3 minutes. Add the pork and brown it for 4 minutes.",
+        "Stir in the shrimp paste for 1 minute, until it smells fragrant, then add the tomato and cook for 3 minutes, until it breaks down into a sauce.",
+        "Add the squash and about ¼ cup (60 ml) of water per serving, cover and simmer for 8 minutes.",
+        "Lay the beans on top, cover and cook for 8 minutes. Add the okra for the last 5 minutes. Give the pot a shake now and then instead of stirring, so the vegetables stay whole.",
+        "Season with pepper, but taste first: the shrimp paste is the salt here. Serve with rice, and pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Eggplant (talong) and bitter melon (ampalaya) are the classic extras: add a few chunks of eggplant with the beans, and salt a few slices of bitter melon for 10 minutes, squeeze them and add them too. A wedge of calamansi on top is nice."
+    },
+    {
+      "id": "island-asia-lighter-beef-rendang-garlic-kangkong",
+      "name": "Lighter beef rendang with garlicky kangkong",
+      "inspiredBy": "Minangkabau rendang, cooked to the saucier kalio stage with much less coconut milk, served with a quick kangkong stir-fry",
+      "about": "Lean beef chuck simmered slowly in coconut milk, lemongrass, galangal, chili and tamarind until the sauce cooks down to a thick, dark gravy that clings to the beef, with a quick garlicky stir-fry of water spinach on the side. It uses a fraction of the usual coconut milk, so it's rich and spicy but low in saturated fat, and **high in iron and zinc**. Rendang gets better overnight, so tomorrow's lunch is done.",
+      "ingredients": [
+        {
+          "food": "beef-arm-pot-roast-lean-raw-37c898",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "lean beef chuck (or shin), trimmed and cut into 3 cm cubes"
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 30,
+          "note": "full-fat, don't shake the can"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 30,
+          "note": "roughly chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 9,
+          "note": "peeled, 6 g for the paste and 3 g for the kangkong"
+        },
+        {
+          "food": "galangal-3d40ae",
+          "g": 6,
+          "note": "peeled and sliced"
+        },
+        {
+          "food": "lemon-grass-citronella-raw-517537",
+          "g": 12,
+          "note": "tender white part, sliced"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 12,
+          "note": "roughly chopped"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 4,
+          "note": "tamarind paste"
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 3
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "water-spinach-yosai-stems-and-leaves-raw-75b16b",
+          "g": 160,
+          "swap": "leafy_greens",
+          "note": "water spinach, cut into 6 cm lengths"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 0.8,
+          "note": "ground"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.4,
+          "note": "ground"
+        },
+        {
+          "food": "clove-cb7cf1",
+          "g": 0.1,
+          "note": "ground"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Blitz the shallot, 6 g of the garlic, galangal, lemongrass, chili, turmeric, coriander, cumin, clove and cinnamon with 2 tablespoons of water into a thick paste.",
+        "Spoon the thick cream from the top of the coconut milk into a heavy pot over medium heat and fry the paste for 4 minutes, until it smells wonderful and the oil starts to separate. Add the beef and stir to coat.",
+        "Pour in the rest of the coconut milk, the tamarind and about ½ cup (125 ml) of water per serving. Simmer, partly covered, for 75 to 90 minutes, stirring now and then, until the beef is very tender.",
+        "Uncover, turn the heat up and cook for 15 to 20 minutes more, stirring often, until the sauce is thick and dark, clings to the beef and a little oil shows at the edges. Stir in the palm sugar and most of the salt.",
+        "While it reduces, fry the rest of the garlic in the oil for 30 seconds, then toss in the kangkong with a splash of water and the last pinch of salt for 2 minutes, until just wilted.",
+        "Serve the rendang with the rice and the kangkong. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 105,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "For a weeknight, cook it in a pressure cooker: 25 minutes on high, then reduce uncovered for 15 minutes. Or do the paste and the long simmer the day before and finish the reduction while the rice reheats."
+    },
+    {
+      "id": "island-asia-laksa-inspired-shrimp-tofu-noodle-soup",
+      "name": "Laksa-inspired noodle soup with shrimp, tofu and bean sprouts",
+      "inspiredBy": "Malaysian curry laksa, with a fresh paste, a little coconut milk, a shrimp-shell stock and plenty of sprouts and herbs",
+      "about": "A fragrant, gently spicy coconut broth built on a fresh paste of lemongrass, galangal, chili, shallot and shrimp paste, with a stock made from the shrimp shells, ladled over rice vermicelli, shrimp, golden tofu, mustard greens and crunchy bean sprouts. It's the weekend project, and the shrimp and calcium-set tofu make it **high in protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "rice-vermicelli-dry-raw-363c6b",
+          "g": 40,
+          "note": "dry rice vermicelli"
+        },
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "raw, peeled weight; buy about 180 g shell-on and keep the shells for the stock"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "calcium-set, cut into sticks"
+        },
+        {
+          "food": "mung-bean-sprouts-raw-abdb2d",
+          "g": 60,
+          "note": "mung bean sprouts"
+        },
+        {
+          "food": "mustard-greens-raw-d4b57b",
+          "g": 150,
+          "swap": "leafy_greens",
+          "note": "sawi (mustard greens), sliced"
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 25,
+          "note": "full-fat, don't shake the can"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 30,
+          "note": "roughly chopped"
+        },
+        {
+          "food": "lemon-grass-citronella-raw-517537",
+          "g": 12,
+          "note": "tender white part, sliced"
+        },
+        {
+          "food": "galangal-3d40ae",
+          "g": 6,
+          "note": "peeled and sliced"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 12,
+          "note": "roughly chopped"
+        },
+        {
+          "food": "shrimp-paste-belacan-terasi-c9c4da",
+          "g": 3,
+          "note": "shrimp paste"
+        },
+        {
+          "food": "thai-basil-c5f9f2",
+          "g": 6,
+          "note": "Thai basil, standing in for laksa leaf (daun kesum)"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12,
+          "note": "about 1 lime"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 0.8,
+          "note": "ground"
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Peel the shrimp and put the shells in a pot with about 1½ cups (375 ml) of water per serving. Simmer for 10 minutes, then strain and keep the stock. Keep the peeled shrimp in the fridge.",
+        "Soak the vermicelli in hot water for 5 minutes, until pliable, then drain and rinse. Put one portion in a deep bowl with the bean sprouts, and keep the rest of the noodles and sprouts for tomorrow.",
+        "Blitz the shallot, lemongrass, galangal, chili, shrimp paste, turmeric and coriander with 3 tablespoons of water into a smooth paste.",
+        "Sear the tofu sticks in the oil in a hot non-stick pot for 6 to 8 minutes, turning, until golden. Lift them out.",
+        "In the same pot, spoon in the thick cream from the top of the coconut milk and fry the paste over medium heat for 5 minutes, stirring, until it darkens, smells toasty and the oil begins to separate. Add the rest of the coconut milk and the shrimp stock and simmer for 10 minutes. Season with the salt and white pepper.",
+        "Add the shrimp and the mustard greens and simmer for 2 to 3 minutes, until the shrimp are pink and curled. Taste: it should be fragrant, salty and a little hot.",
+        "Ladle the broth, shrimp and mustard greens over the noodles and sprouts in the bowl, then top with the tofu, the Thai basil and a squeeze of lime. For the second portion, keep the broth, the noodles and the raw shrimp and mustard greens separate, then add the shrimp and mustard greens to the reheated broth for 2 minutes."
+      ],
+      "prepMin": 25,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "If the paste catches, add a splash of water. The paste freezes well, so make a double batch for an even faster laksa another night. A few candlenuts or raw macadamias blitzed into the paste make it richer, if you can find them."
+    },
+    {
+      "id": "island-asia-ikan-bakar-mackerel-sambal-belacan-ulam",
+      "name": "Ikan bakar, grilled mackerel with sambal belacan and ulam",
+      "inspiredBy": "Malay and Indonesian ikan bakar, with a hot, sour sambal belacan and a plate of raw herbs and vegetables (ulam)",
+      "about": "Mackerel marinated in turmeric, garlic, tamarind and sweet soy, grilled until the skin blisters and crisps, with a fiery sambal belacan and a plate of cucumber, raw long beans and Thai basil to eat alongside. Mackerel is one of the richest sources of **omega-3** you can buy, and the sambal and lime keep it fresh and light.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "fillets with the skin on, or a butterflied whole fish"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "peeled"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 15,
+          "note": "peeled"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 3,
+          "note": "tamarind paste"
+        },
+        {
+          "food": "kecap-manis-sweet-soy-sauce-bee7ea",
+          "g": 5,
+          "note": "kecap manis"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15,
+          "note": "about 1 lime, split between marinade and sambal"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "chopped"
+        },
+        {
+          "food": "shrimp-paste-belacan-terasi-c9c4da",
+          "g": 2,
+          "note": "shrimp paste"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 90,
+          "note": "sliced"
+        },
+        {
+          "food": "thai-basil-c5f9f2",
+          "g": 6,
+          "note": "Thai basil"
+        },
+        {
+          "food": "yardlong-beans-asparagus-bean-or-cowpea-raw-bfc6f1",
+          "g": 80,
+          "note": "raw long beans, cut into 6 cm lengths"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 110,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Mash the garlic, the shallot, the turmeric, tamarind, kecap manis, half the lime juice and a pinch of the salt into a rough paste. Rub it over the fish and leave it for 15 to 20 minutes.",
+        "For the sambal, toast the shrimp paste in a dry pan for 1 minute, until crumbly and fragrant (open a window). Pound or blitz it with the chili, the tomato, the rest of the lime juice and the rest of the salt into a coarse sambal. Taste: it should be hot, salty and sour.",
+        "Heat a grill, grill pan or the broiler until very hot and brush with the oil. Cook the fish skin-side down for 4 to 5 minutes, until the skin blisters and crisps, then flip it for 3 to 4 minutes, until it just flakes with a fork.",
+        "Serve the fish with the rice, a spoonful of sambal, and the cucumber, raw long beans and Thai basil on the side. The raw vegetables and herbs (ulam) are meant to be eaten with the fish and sambal, a bite at a time."
+      ],
+      "prepMin": 20,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "spicy"
+      ],
+      "tip": "Spanish mackerel or sardines work too. On a barbecue, wrap the fish in a banana leaf for the real thing."
+    },
+    {
+      "id": "island-asia-papaya-plain",
+      "name": "Ripe papaya",
+      "about": "Sweet, soft ripe papaya eaten plain, the way it's enjoyed across the islands. It brings **vitamin C, vitamin A and folate**.",
+      "ingredients": [
+        {
+          "food": "papaya-raw-cd2cbc",
+          "g": 200,
+          "swap": "vit_c_fruit",
+          "note": "ripe, peeled and seeded"
+        }
+      ],
+      "steps": [
+        "Cut the papaya into chunks and eat it just as it is."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ],
+      "tip": "A squeeze of lime helps if the papaya isn't very sweet."
+    },
+    {
+      "id": "island-asia-kacang-hijau-mung-bean-coconut",
+      "name": "Bubur kacang hijau, sweet mung beans in ginger coconut milk",
+      "about": "Whole mung beans simmered until they burst, in a sweet, gingery coconut milk scented with pandan. It's a classic Indonesian snack that brings **fibre, folate and plant iron**, with only a spoon of coconut milk per bowl. The recipe makes 2 bowls.",
+      "ingredients": [
+        {
+          "food": "mung-beans-whole-dried-raw-784bed",
+          "g": 55,
+          "swap": "legumes",
+          "note": "whole green mung beans, rinsed"
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 15,
+          "note": "full-fat"
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 8,
+          "note": "palm sugar"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "pandan-leaves-309faf",
+          "g": 4,
+          "note": "a knotted pandan leaf"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Soak about ½ cup (110 g) of mung beans overnight if you can. Put them in a pot with about 1¾ cups (440 ml) of water, the ginger and the pandan. Bring to a boil, then simmer gently for 35 minutes if soaked, or 50 minutes if not, until most of the beans have split and the mixture is thick. Top up with a splash of hot water if it thickens before the beans split.",
+        "Fish out the ginger and pandan. Stir in the palm sugar, the coconut milk and the salt, and simmer for 5 more minutes. Serve warm, and keep the second bowl in the fridge to reheat tomorrow with a splash of water."
+      ],
+      "prepMin": 5,
+      "cookMin": 55,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "inspiredBy": "Indonesian bubur kacang hijau, lighter on coconut milk and sugar",
+      "tip": "Not eating it tomorrow? Freeze the second bowl. It reheats well."
+    },
+    {
+      "id": "island-asia-rujak-papaya-tamarind-chili-dip",
+      "name": "Rujak-style papaya with tamarind-chili dip",
+      "about": "Sweet, soft papaya with a sweet, sour and hot tamarind dip, the Indonesian fruit salad called rujak. The papaya brings **vitamin C and folate**, and the tamarind and chili wake it right up.",
+      "ingredients": [
+        {
+          "food": "papaya-raw-cd2cbc",
+          "g": 200,
+          "swap": "vit_c_fruit",
+          "note": "peeled, seeded and cut into chunks"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 4,
+          "note": "tamarind paste"
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 3,
+          "note": "palm sugar"
+        },
+        {
+          "food": "sambal-oelek-fd8b79",
+          "g": 5,
+          "note": "sambal oelek"
+        }
+      ],
+      "steps": [
+        "Stir the tamarind, palm sugar, sambal oelek and 1 tablespoon of warm water into a smooth dip.",
+        "Arrange the papaya on a plate and dip each piece."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook"
+      ],
+      "inspiredBy": "Indonesian rujak buah"
+    },
+    {
+      "id": "island-asia-kacang-goreng-chili-salt",
+      "name": "Roasted peanuts with chili salt",
+      "about": "A handful of unsalted roasted peanuts tossed with a pinch of salt and a little fresh chili, the kind of snack you'd find at any warung or sari-sari store. It brings **protein, vitamin E and magnesium**.",
+      "ingredients": [
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 35,
+          "swap": "nuts_seeds",
+          "note": "dry-roasted, unsalted"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 1,
+          "note": "finely chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toss the peanuts with the chopped chili and salt, and eat them right away while they're still crunchy."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "island-asia-tempe-goreng-sambal-kecap",
+      "name": "Tempe goreng, crisp tempeh with sambal kecap",
+      "about": "Thin slices of tempeh rubbed with garlic and coriander, pan-fried until crisp and golden, with a quick dip of sweet soy and fresh chili, a favourite Indonesian snack. Tempeh brings **plant protein, fibre and iron**.",
+      "ingredients": [
+        {
+          "food": "tempeh-b9c516",
+          "g": 80,
+          "swap": "legumes",
+          "note": "sliced thin"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "peeled"
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 0.3,
+          "note": "ground"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "kecap-manis-sweet-soy-sauce-bee7ea",
+          "g": 4,
+          "note": "kecap manis"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 3,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Crush the garlic with the salt and coriander, rub it over the slices and leave them 5 minutes.",
+        "Heat the oil in a non-stick pan over medium heat and fry the tempeh slices for 3 minutes per side, until golden and crisp.",
+        "Stir the kecap manis and chili together in a small dish and dip the tempeh in it."
+      ],
+      "prepMin": 7,
+      "cookMin": 7,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "inspiredBy": "Indonesian tempe goreng"
+    },
+    {
+      "id": "island-asia-cucumber-tomato-sambal",
+      "name": "Cucumber and tomato with sambal",
+      "about": "Cool cucumber and ripe tomato with a spoon of sambal and a squeeze of lime, a fresh, lively snack you'd eat alongside almost any Malaysian or Indonesian meal. It adds **vitamin C and potassium** for very few calories.",
+      "ingredients": [
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "sambal-oelek-fd8b79",
+          "g": 6,
+          "note": "sambal oelek"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6,
+          "note": "juice"
+        }
+      ],
+      "steps": [
+        "Stir the sambal and lime juice together. Dip the cucumber and tomato in it."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "island-asia-steamed-kalabasa-palm-sugar",
+      "name": "Steamed kalabasa with palm sugar and pandan",
+      "about": "Soft steamed squash mashed with a little palm sugar and a pinch of salt, scented with pandan, a comforting sweet snack in the Philippines and Indonesia. The squash brings **vitamin A and potassium**.",
+      "ingredients": [
+        {
+          "food": "pumpkin-raw-dd46c7",
+          "g": 250,
+          "note": "kalabasa, peeled, seeded and cut into chunks"
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 3,
+          "note": "palm sugar"
+        },
+        {
+          "food": "pandan-leaves-309faf",
+          "g": 4,
+          "note": "a knotted pandan leaf"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Steam the squash with the pandan leaf for 12 to 15 minutes, until very soft.",
+        "Discard the pandan, then mash the squash lightly with the palm sugar and the salt, and eat it warm."
+      ],
+      "prepMin": 5,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "inspiredBy": "Filipino and Indonesian steamed squash"
+    },
+    {
+      "id": "island-asia-telur-rebus-chili-vinegar",
+      "name": "Boiled egg with chili vinegar",
+      "about": "A boiled egg dipped in cane vinegar with fresh chili and a pinch of salt, the sawsawan on every Filipino table. It gives you **protein and choline**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg"
+        },
+        {
+          "food": "cane-vinegar-dced97",
+          "g": 5,
+          "note": "cane vinegar"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 2,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lower the egg into simmering water for 8 minutes, then cool it under cold water and peel it.",
+        "Stir the vinegar, chili and salt together, halve the egg and dip it."
+      ],
+      "prepMin": 2,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "inspiredBy": "Filipino sawsawan"
+    },
+    {
+      "id": "island-asia-okra-tomato-sambal-belacan",
+      "name": "Blanched okra and tomato with sambal belacan",
+      "about": "Tender blanched okra and ripe tomato with a hot, tangy sambal belacan to dip in, the way a Malaysian table serves raw and blanched vegetables (ulam). It brings **fibre, vitamin C and vitamin K** for very few calories.",
+      "ingredients": [
+        {
+          "food": "okra-gumbo-raw-424b0a",
+          "g": 120,
+          "note": "whole, stems trimmed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "shrimp-paste-belacan-terasi-c9c4da",
+          "g": 2,
+          "note": "shrimp paste"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "note": "juice"
+        }
+      ],
+      "steps": [
+        "Blanch the okra in boiling water for 3 minutes, until bright green and just tender, then drain.",
+        "Toast the shrimp paste in a dry pan for 1 minute, until crumbly and fragrant. Mash it with the chili and lime juice into a coarse sambal, then eat the okra and tomato dipped in it."
+      ],
+      "prepMin": 5,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "inspiredBy": "Malay ulam with sambal belacan"
+    },
+    {
+      "id": "island-asia-kangkong-sambal-lime",
+      "name": "Blanched kangkong with sambal and lime",
+      "about": "A big handful of blanched water spinach with a spoon of sambal and a squeeze of lime, a simple Malaysian and Filipino side that makes a fine snack. It's **rich in vitamin K and folate**, and very light.",
+      "ingredients": [
+        {
+          "food": "water-spinach-yosai-stems-and-leaves-raw-75b16b",
+          "g": 140,
+          "swap": "leafy_greens",
+          "note": "water spinach, cut into 6 cm lengths"
+        },
+        {
+          "food": "sambal-oelek-fd8b79",
+          "g": 8,
+          "note": "sambal oelek"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "note": "juice"
+        }
+      ],
+      "steps": [
+        "Blanch the kangkong stems in boiling water for 1 minute, then the leaves for 20 seconds, and drain well.",
+        "Stir the sambal and lime juice together and toss with the kangkong."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ]
+    },
+    {
+      "id": "island-asia-ginataang-kalabasa",
+      "name": "Ginataang kalabasa, squash simmered in coconut milk",
+      "about": "Soft squash simmered in a little coconut milk with garlic and ginger, a gentle Filipino merienda. The squash brings **vitamin A and potassium**, and the coconut milk is only a spoonful.",
+      "ingredients": [
+        {
+          "food": "pumpkin-raw-dd46c7",
+          "g": 200,
+          "note": "kalabasa, peeled, seeded and cut into chunks"
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 25,
+          "note": "full-fat"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Put the squash, coconut milk, garlic, ginger, salt and a splash of water in a small pot. Cover and simmer gently for 12 to 15 minutes, until the squash is very soft.",
+        "Mash a few pieces against the side of the pot to thicken the sauce, and eat it warm."
+      ],
+      "prepMin": 5,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "inspiredBy": "Filipino ginataang kalabasa"
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "island-asia-bubur-ayam-chicken-rice-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "island-asia-gado-gado-tofu-egg-peanut-sauce"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "island-asia-sinigang-mackerel-kangkong-okra"
+        },
+        {
+          "slot": "snack",
+          "recipe": "island-asia-cucumber-tomato-sambal"
+        },
+        {
+          "slot": "snack",
+          "recipe": "island-asia-papaya-plain"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "island-asia-tapsilog-garlic-rice-beef-egg-atchara"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "island-asia-pancit-bihon-pork-tofu-bok-choy"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "island-asia-chicken-adobo-mustard-greens"
+        },
+        {
+          "slot": "snack",
+          "recipe": "island-asia-kacang-hijau-mung-bean-coconut"
+        },
+        {
+          "slot": "snack",
+          "recipe": "island-asia-rujak-papaya-tamarind-chili-dip"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "island-asia-nasi-lemak-sardine-sambal-egg"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "island-asia-chicken-adobo-mustard-greens",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "island-asia-tumis-tempeh-tofu-kangkong"
+        },
+        {
+          "slot": "snack",
+          "recipe": "island-asia-telur-rebus-chili-vinegar"
+        },
+        {
+          "slot": "snack",
+          "recipe": "island-asia-kacang-hijau-mung-bean-coconut",
+          "leftover": true
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "island-asia-tapsilog-garlic-rice-beef-egg-atchara"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "island-asia-tumis-tempeh-tofu-kangkong",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "island-asia-pinakbet-pork-squash-okra-long-beans"
+        },
+        {
+          "slot": "snack",
+          "recipe": "island-asia-steamed-kalabasa-palm-sugar"
+        },
+        {
+          "slot": "snack",
+          "recipe": "island-asia-papaya-plain"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "island-asia-nasi-lemak-sardine-sambal-egg"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "island-asia-pinakbet-pork-squash-okra-long-beans",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "island-asia-lighter-beef-rendang-garlic-kangkong"
+        },
+        {
+          "slot": "snack",
+          "recipe": "island-asia-tempe-goreng-sambal-kecap"
+        },
+        {
+          "slot": "snack",
+          "recipe": "island-asia-rujak-papaya-tamarind-chili-dip"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "island-asia-bubur-ayam-chicken-rice-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "island-asia-lighter-beef-rendang-garlic-kangkong",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "island-asia-laksa-inspired-shrimp-tofu-noodle-soup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "island-asia-kacang-hijau-mung-bean-coconut"
+        },
+        {
+          "slot": "snack",
+          "recipe": "island-asia-steamed-kalabasa-palm-sugar"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "island-asia-bubur-ayam-chicken-rice-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "island-asia-laksa-inspired-shrimp-tofu-noodle-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "island-asia-ikan-bakar-mackerel-sambal-belacan-ulam"
+        },
+        {
+          "slot": "snack",
+          "recipe": "island-asia-telur-rebus-chili-vinegar"
+        },
+        {
+          "slot": "snack",
+          "recipe": "island-asia-kacang-hijau-mung-bean-coconut",
+          "leftover": true
+        }
+      ]
+    }
+  ]
+}
