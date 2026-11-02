@@ -1,0 +1,1891 @@
+{
+  "id": "maghreb",
+  "name": "North African Spice Road",
+  "style": "balanced",
+  "cuisine": "North African",
+  "regions": [
+    "Morocco",
+    "Tunisia",
+    "Algeria"
+  ],
+  "summary": "A week on the North African spice road. Chakchouka, bissara and msemen for breakfast, a chicken and apricot tagine, harira, chermoula sardines, Algerian couscous and a slow lamb and prune tagine, with ras el hanout, harissa, preserved lemon and saffron throughout.",
+  "howItWorks": "**Cook once, eat twice.** Monday's chicken tagine, Tuesday's harira, Thursday's couscous and Saturday's lamb and prune tagine each make two portions, so the next day's lunch is done. Tuesday evening's bissara pot also covers Wednesday and Thursday breakfasts. Pack the khobz or couscous separately.\n\n**Fish most days.** Fresh sardines on Wednesday and harissa mackerel on Friday are the two fish dinners. Tinned mackerel, a sardine sandwich, sardine kefta and a tuna slata mechouia turn up at lunch and snack time, as they do in Moroccan and Tunisian kitchens, for **omega-3, calcium and vitamin D**.\n\n**Legumes most days.** Fava in the bissara, lentils in the harira, and chickpeas in the tagines, couscous and snacks carry your **iron, folate and fibre**. The lemon, tomato and preserved lemon beside them help your body use the iron.\n\n**Olive oil, whole grains and nuts.** Olive oil is the only cooking fat. Whole-wheat khobz and couscous replace the white ones, with oats and barley alongside. Almonds go in the tagines, and walnuts go with the dates.\n\n**Prep ahead.** The Sunday before, toast a jar of almonds and walnuts for the porridge. Cook the bissara on Tuesday while the harira simmers, and make Saturday's zaalouk on Friday night. Saturday's lamb tagine is the slow project, and the msemen is the slow breakfast.",
+  "signature": [
+    "maghreb-chicken-apricot-almond-tagine",
+    "maghreb-harira",
+    "maghreb-chermoula-sardines-potatoes",
+    "maghreb-lamb-prune-almond-tagine"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "maghreb-dates-almonds-stuffed"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "maghreb-apricots-almonds"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "maghreb-khobz-olives-oil"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "maghreb-sardine-khobz"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "maghreb-yogurt-dates-cinnamon"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "maghreb-yogurt-honey"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "maghreb-khobz-olives-oil"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "maghreb-chakchouka",
+      "name": "Chakchouka with green pepper, harissa and two eggs",
+      "inspiredBy": "Chakchouka, the Algerian and Tunisian cousin of shakshuka",
+      "about": "Eggs poached in a thick, spicy sauce of tomato, green pepper, harissa and caraway, with warm khobz for scooping. It is the everyday breakfast across Algeria and Tunisia. The eggs add **protein and choline**, and the tomato and pepper bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 45,
+          "note": "chopped"
+        },
+        {
+          "food": "green-bell-pepper-raw-9af6da",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "harissa-hot-spicy-sauce-d3ff0a",
+          "g": 6
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "caraway-seed-020d2f",
+          "g": 0.5,
+          "note": "ground"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 130
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 45,
+          "note": "whole-wheat, as khobz"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a wide pan over medium heat. Cook the onion and green pepper until soft and just turning golden, about 8 minutes.",
+        "Stir in the garlic, harissa, cumin, paprika and caraway for a minute, until it smells toasty. Add the crushed tomato and the salt.",
+        "Simmer for 8 minutes, stirring now and then, until the sauce is thick and jammy.",
+        "Make two wells with the back of a spoon and crack an egg into each. Cover and cook for 4 to 5 minutes, until the whites are set and the yolks are still soft.",
+        "Scatter with the cilantro. Warm the pita in a dry pan and tear it up for scooping."
+      ],
+      "prepMin": 5,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Make the sauce the night before. In the morning, reheat it and crack in the eggs, which takes about 8 minutes."
+    },
+    {
+      "id": "maghreb-bissara",
+      "name": "Bissara with olive oil, cumin and olives",
+      "inspiredBy": "Moroccan bissara, made in a pot of two so the second breakfast is already waiting",
+      "about": "A thick, silky Moroccan fava bean soup, served warm with a pool of olive oil, cumin and paprika and a few olives, with khobz for dunking. It is the street breakfast of Marrakech and Fes. The fava beans bring **fibre, folate and iron**.",
+      "ingredients": [
+        {
+          "food": "broadbeans-fava-beans-dry-811d1a",
+          "g": 70,
+          "swap": "legumes",
+          "note": "dried, split and peeled if you can find them"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.2
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 20
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40,
+          "note": "whole-wheat, as khobz"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "The evening before, while another pot is simmering, rinse the dried fava beans and put them in a pot with the garlic and plenty of water, about 4 times their volume for the two portions. Use split, peeled fava, which cook in about 40 minutes. Whole ones need an overnight soak, peeling and about 1½ hours.",
+        "Simmer gently for about 40 minutes, until the beans fall apart when pressed, adding hot water if they get dry.",
+        "Blitz with a stick blender or mash well until thick and silky. Stir in half the cumin and the salt, and thin with hot water to a soupy hummus.",
+        "Ladle one portion into a bowl, make a pool in the middle for the olive oil, then dust with the paprika and the rest of the cumin and add the olives.",
+        "Warm the pita and use it to dunk. Chill the second portion, and reheat it with a splash of water when you want it."
+      ],
+      "prepMin": 10,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "A tin of fava beans in a hurry works too. Blitz about 400 g of beans and their liquid with the garlic and cumin, and heat it through for 8 minutes."
+    },
+    {
+      "id": "maghreb-oat-porridge",
+      "name": "Cinnamon oat porridge with dates, orange, almonds and walnuts",
+      "inspiredBy": "Inspired by the warm, milky cereals of the Maghreb, made here with oats",
+      "about": "Creamy oats cooked in milk with cinnamon and a whisper of orange blossom water, sweetened by soft dates and topped with orange segments and a toasted almond and walnut crunch. The milk and nuts bring **calcium, vitamin E and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 250
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 15,
+          "note": "pitted and chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "peeled, cut into pieces"
+        },
+        {
+          "food": "orange-blossom-water-9dbff0",
+          "g": 3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the almonds and walnuts in a dry pan over medium heat until golden and fragrant, about 3 minutes. Tip them out so they do not burn.",
+        "Put the oats, milk, cinnamon and salt in a small pot over medium heat. Stir often for 6 to 7 minutes, until thick and creamy.",
+        "Stir in the dates and the orange blossom water and let the dates soften for a minute.",
+        "Spoon into a bowl and top with the orange and the toasted nuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "A spoonful of honey is lovely on top if your dates are not very sweet. Toast a handful of almonds and walnuts the Sunday before so they are ready all week."
+    },
+    {
+      "id": "maghreb-msemen-eggs",
+      "name": "Whole-wheat msemen-style flatbread with fried eggs, olives and tomato",
+      "inspiredBy": "Moroccan msemen, made with whole-wheat flour and a quicker fold",
+      "about": "A flaky, pan-cooked flatbread folded around a little olive oil, served with two fried eggs, olives and juicy tomato. It is the slow weekend breakfast of Moroccan homes, in a whole-wheat version. The eggs and whole grain bring **protein, choline and fibre**.",
+      "ingredients": [
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 75,
+          "note": "whole-wheat"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils",
+          "note": "part in the dough, part for folding and the pan"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 25
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 90,
+          "note": "sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Mix the flour and half the salt with about 60 ml warm water and a teaspoon of the olive oil. Knead for 8 minutes, until smooth and soft, then cover and rest for 30 minutes.",
+        "Divide the dough into 2 balls. Oil your counter and your hands, then stretch each ball into a thin sheet about the size of a saucer. It may tear in places, so just patch the holes with a pinch of dough.",
+        "Brush each sheet with olive oil and fold it into a small square, like an envelope. Press it flat with your palm.",
+        "Cook each square in a dry non-stick pan over medium heat for 2 to 3 minutes a side, until golden with flaky layers.",
+        "Wipe the pan, add a little oil and fry the eggs with the cumin and a pinch of salt until the whites are set.",
+        "Serve the msemen with the eggs, olives, tomato and cilantro. Tear and scoop."
+      ],
+      "prepMin": 40,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Real msemen is made with white flour, semolina and butter. This version keeps the folded, flaky idea with whole-wheat flour. Skip the eggs and drizzle honey for a sweet version."
+    },
+    {
+      "id": "maghreb-carrot-orange-salad-mackerel-khobz",
+      "name": "Moroccan carrot and orange salad with tinned mackerel on khobz",
+      "inspiredBy": "Moroccan carrot and orange salad, with the tinned mackerel that North African cooks love on bread",
+      "about": "Sweet grated carrot and juicy orange dressed with lemon, cinnamon and a touch of orange blossom water, with a lemony mash of tinned mackerel spread on warm khobz. Sunny, crunchy and quick. The carrot and orange bring **vitamin A and vitamin C**, and the mackerel brings **omega-3 and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 150,
+          "note": "grated"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "peeled, cut into pieces"
+        },
+        {
+          "food": "mackerel-canned-in-water-a99e2d",
+          "g": 85,
+          "swap": "fatty_fish",
+          "note": "drained"
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 15
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "orange-blossom-water-9dbff0",
+          "g": 5
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 10,
+          "note": "finely grated"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40,
+          "note": "whole-wheat"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Whisk half the lemon juice with the olive oil, cinnamon, orange blossom water and the salt in a large bowl.",
+        "Add the grated carrot, orange pieces, olives and half the parsley and toss well.",
+        "In a small bowl, mash the mackerel with the rest of the lemon juice, the cumin, the grated onion and the rest of the parsley.",
+        "Warm the pita, spread it with the mackerel, and serve it with the salad."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "The salad keeps well for a day, so pack it for the office and keep the mackerel and pita separate."
+    },
+    {
+      "id": "maghreb-slata-mechouia-tuna",
+      "name": "Slata mechouia with tuna, egg and olives",
+      "inspiredBy": "Tunisian slata mechouia. Tuna and egg are the traditional toppings",
+      "about": "Peppers and tomatoes charred until sweet and smoky, chopped with garlic, caraway, harissa and lemon, then topped with tuna, a boiled egg and olives. It is the Tunisian salad you find on every table, served with bread. The peppers and tomato bring **vitamin C**, and the tuna and egg bring protein.",
+      "ingredients": [
+        {
+          "food": "green-bell-pepper-raw-9af6da",
+          "g": 120,
+          "note": "whole"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "whole"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "harissa-hot-spicy-sauce-d3ff0a",
+          "g": 4
+        },
+        {
+          "food": "caraway-seed-020d2f",
+          "g": 0.8,
+          "note": "ground"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "tuna-in-oil-drained-863b36",
+          "g": 70,
+          "note": "drained"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg"
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 20
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 45,
+          "note": "whole-wheat"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat your oven grill (broiler) to high. Lay the peppers and tomatoes on a tray and char them, turning now and then, until the skins blacken and blister, about 15 to 20 minutes.",
+        "Meanwhile, lower the egg into boiling water and cook for 9 minutes, then cool under cold water and peel.",
+        "Pop the peppers in a bowl, cover, and leave for 10 minutes so the skins loosen. Peel off the skins and the tomato skins, and pull out the pepper seeds.",
+        "Chop the peppers and tomatoes roughly with a knife until it is a chunky, juicy mash.",
+        "Mash the garlic with the salt and stir it in with the harissa, caraway, lemon juice and olive oil.",
+        "Spoon onto a plate, then top with the tuna, the halved egg, olives and parsley. Warm the pita and scoop."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Char the peppers and tomatoes the night before while the oven is already hot from dinner. Keep them in the fridge and dress them at lunch."
+    },
+    {
+      "id": "maghreb-sardine-kefta-zaalouk-pita",
+      "name": "Sardine kefta in khobz with warm zaalouk",
+      "inspiredBy": "Moroccan sardine balls (boulettes de sardines) simmered with zaalouk, shaped as patties for a quicker lunch",
+      "about": "Little patties of tinned sardines, parsley, cilantro and cumin, seared briefly and finished in a silky, garlicky zaalouk of eggplant and tomato, then tucked into warm khobz. Sardines with their soft bones bring **calcium, omega-3 and vitamin D**, and the eggplant brings fibre and potassium.",
+      "ingredients": [
+        {
+          "food": "sardines-canned-in-brine-drained-7cc943",
+          "g": 110,
+          "swap": "fatty_fish",
+          "note": "drained, with their bones"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "finely grated"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 20,
+          "note": "whole-wheat, to bind"
+        },
+        {
+          "food": "eggplant-raw-b8b8c1",
+          "g": 150,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 70
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 45,
+          "note": "whole-wheat, as khobz"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Put the eggplant, crushed tomato, garlic, half the olive oil, half the cumin, half the paprika and half the salt in a pan with a splash of water. Cover and simmer for 20 to 25 minutes, until the eggplant is completely soft.",
+        "Mash the zaalouk with a fork until chunky. Stir in half the lemon juice and half the cilantro.",
+        "Mash the sardines in a bowl with the onion, parsley, the rest of the cilantro, cumin, paprika, lemon juice and salt, and the flour. Chill for 15 minutes, then shape into 4 small patties.",
+        "Sear the patties in the rest of the olive oil over medium heat for 2 minutes a side, until golden. Turn them gently, since they are soft.",
+        "Slide the patties into the warm zaalouk and simmer for 3 minutes so they take on the sauce.",
+        "Warm the pita and open it. Fill it with the sardine kefta and the zaalouk."
+      ],
+      "prepMin": 20,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make the zaalouk on Friday night while the mackerel roasts. On Saturday, mix, sear and warm the kefta through the zaalouk in about 20 minutes."
+    },
+    {
+      "id": "maghreb-chicken-apricot-almond-tagine",
+      "name": "Moroccan chicken tagine with apricots, almonds and chickpeas",
+      "inspiredBy": "Moroccan chicken tagine with apricots, with chickpeas and pumpkin added for more fibre and vitamin A",
+      "about": "Tender chicken thigh simmered with onion, saffron, ginger, cinnamon and ras el hanout, with sweet dried apricots, chickpeas and golden pumpkin, and crunchy toasted almonds on top. A lemon squeeze at the end keeps it bright. The chicken and chickpeas bring **protein and iron**, and the pumpkin and apricots bring **vitamin A**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "cut into large chunks"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "apricot-dried-1d0f8b",
+          "g": 35,
+          "note": "whole"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 70,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "pumpkin-raw-dd46c7",
+          "g": 120,
+          "note": "in big chunks, butternut or kabocha squash works"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "ras-el-hanout-7dedb0",
+          "g": 1.5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.1,
+          "note": "a good pinch"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 20,
+          "note": "whole-wheat, as khobz"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Rub the chicken with the ras el hanout, ginger, pepper, half the cinnamon and the salt. Brown it in the olive oil in a wide, heavy pot over medium-high heat, about 5 minutes. Lift it out.",
+        "Crush the saffron into 2 tablespoons of warm water. Soften the onion in the same pot until golden, about 8 minutes.",
+        "Return the chicken with the chickpeas, apricots, the saffron water, the rest of the cinnamon and about 250 ml of water. Cover and simmer gently for 15 minutes.",
+        "Add the pumpkin and simmer, partly covered, for another 20 minutes, until the pumpkin is tender and the sauce is thick and glossy.",
+        "Toast the almonds in a dry pan until golden, about 3 minutes.",
+        "Stir the lemon juice and half the cilantro into the tagine. Scatter with the almonds and the rest of the cilantro and serve with warm khobz. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "No tagine pot needed. A heavy pot with a tight lid does the same job."
+    },
+    {
+      "id": "maghreb-harira",
+      "name": "Harira with lentils, chickpeas and tomato",
+      "inspiredBy": "Moroccan harira, vegetarian, with mashed lentils instead of the flour thickener",
+      "about": "The thick, fragrant Moroccan soup, with lentils, chickpeas, tomato and celery, scented with cinnamon and pepper and thickened with beaten egg, then finished with lots of cilantro and parsley and a squeeze of lemon. It is hearty enough for dinner. The lentils and chickpeas bring **iron, folate and fibre**, and the lemon helps your body absorb the iron.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "2 eggs for the pot of two, beaten"
+        },
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 55,
+          "swap": "legumes",
+          "note": "brown or green, rinsed"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 60,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 110
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "chopped"
+        },
+        {
+          "food": "celery-raw-79a241",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.8
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 10,
+          "note": "whole-wheat, as khobz"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.3
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a large pot over medium heat. Cook the onion and celery until soft, about 8 minutes.",
+        "Stir in the turmeric, ginger, cinnamon and pepper, then add the crushed tomato, the lentils, the salt and 1 litre of water for the two portions.",
+        "Bring to a boil, then simmer gently for 25 minutes, until the lentils are soft.",
+        "Add the chickpeas and simmer for 15 more minutes. Mash a ladleful against the side of the pot to thicken the soup.",
+        "Turn the heat to low. Pour in the 2 beaten eggs in a thin stream, stirring, so they set in silky threads. Stir in the cilantro, the parsley and the lemon juice, and add salt if it needs it.",
+        "Serve with warm khobz. Cool the second portion and keep it in the fridge for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Many Moroccan cooks add a few cubes of lamb too. Harira is traditionally the soup that breaks the fast in Ramadan, eaten with dates."
+    },
+    {
+      "id": "maghreb-chermoula-sardines-potatoes",
+      "name": "Chermoula sardines roasted over potatoes and carrots",
+      "inspiredBy": "Moroccan sardines mchermla, roasted rather than fried, with chermoula carrots alongside",
+      "about": "Fresh sardines rubbed with chermoula, the garlicky cilantro, cumin and preserved lemon paste of Morocco, then roasted on a tray over potato, carrot and tomato. A sizzling tray, ready in about 45 minutes, mostly in the oven. Sardines bring **omega-3 and vitamin D**, and the carrot brings vitamin A.",
+      "ingredients": [
+        {
+          "food": "sardine-raw-3ff1dd",
+          "g": 170,
+          "swap": "fatty_fish",
+          "note": "scaled and gutted, heads on"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 70,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 120,
+          "note": "in thin sticks"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 12
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "preserved-lemon-678162",
+          "g": 6,
+          "note": "rind only"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 15
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the potato slices and carrot sticks with half the olive oil and half the salt on a large baking tray. Roast for 15 minutes.",
+        "Meanwhile, make the chermoula. Mash the garlic with the rest of the salt, then chop or blitz it with the cilantro, parsley, cumin, paprika, preserved lemon rind, lemon juice and the rest of the olive oil.",
+        "Rub most of the chermoula over the sardines, inside and out, keeping a spoonful for the vegetables.",
+        "Toss the spoonful of chermoula through the vegetables, add the tomato slices, nestle the sardines on top, and roast for 10 to 12 minutes, until the skin is blistered and the flesh flakes easily.",
+        "Scatter with the olives and serve from the tray."
+      ],
+      "prepMin": 20,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Ask the fishmonger for sardines scaled and gutted, with the heads on. Frozen ones work well once thawed. Open a window, since sardines are fragrant. Mackerel works too."
+    },
+    {
+      "id": "maghreb-couscous-beef-vegetables",
+      "name": "Algerian-style couscous with beef, chickpeas and vegetables",
+      "inspiredBy": "Inspired by Algerian couscous with meat and vegetables, with whole-wheat couscous and more vegetables",
+      "about": "Fluffy whole-wheat couscous under a fragrant stew of tender beef, carrot, zucchini and chickpeas, with a dab of harissa on the side. It is the Friday-table dish of Algeria, built with extra vegetables. The chickpeas and vegetables bring **fibre and vitamin A**, and the beef brings iron and zinc.",
+      "ingredients": [
+        {
+          "food": "beef-chuck-for-stew-lean-and-fat-raw-8d6ce5",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "cut into small cubes"
+        },
+        {
+          "food": "whole-wheat-couscous-dry-2a61f5",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "whole-wheat, dry"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 70,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "in thick sticks"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 80,
+          "note": "in thick half-moons"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 80
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "ras-el-hanout-7dedb0",
+          "g": 1.5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "harissa-hot-spicy-sauce-d3ff0a",
+          "g": 5,
+          "note": "to serve"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 130,
+          "swap": "dairy_protein",
+          "note": "for a lben-style drink"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.3
+        }
+      ],
+      "steps": [
+        "Heat most of the olive oil in a large pot and brown the beef in batches, about 5 minutes. Lift it out.",
+        "Soften the onion in the same pot for 6 minutes. Stir in the cinnamon, pepper and ras el hanout until fragrant.",
+        "Return the beef with the crushed tomato, the salt and 600 ml of water for the two portions. Bring to a boil, then cover and simmer gently for 45 minutes.",
+        "Add the carrots and chickpeas and simmer for 15 minutes, then add the zucchini and simmer for 10 more minutes, until the beef is tender and everything is soft.",
+        "While it simmers, put the dry whole-wheat couscous for both portions in a bowl and pour over about 1¼ times its weight of boiling water, just enough to wet the grain. Cover and rest for 10 minutes, then rub in the rest of the olive oil and fluff with a fork.",
+        "Pile the couscous on plates, ladle the beef and vegetables over it, scatter with cilantro and serve with the harissa on the side.",
+        "Whisk the yogurt with a little cold water and a pinch of salt into a thin, cool drink, the lben-style glass that often goes with couscous.",
+        "Pack the second portion for tomorrow, with the couscous and the drink in separate containers."
+      ],
+      "prepMin": 20,
+      "cookMin": 75,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "On a weeknight, use a pressure cooker: the beef is tender in 25 minutes. Keep the stew and the couscous apart in the fridge so it does not go soggy. Buttermilk (lben) is the classic drink if you can find it."
+    },
+    {
+      "id": "maghreb-mackerel-harissa-barley",
+      "name": "Tunisian harissa mackerel with barley and chickpea salad and a chopped salad",
+      "inspiredBy": "Tunisian mackerel with harissa, a pairing that suits oily fish well",
+      "about": "Mackerel fillets rubbed with harissa, garlic, caraway and lemon and roasted until the skin crackles, with a warm barley and chickpea salad with preserved lemon, olives and lots of parsley, and a crunchy diced tomato and cucumber salad. Mackerel carries **omega-3, vitamin D and B12**, and the barley brings fibre.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 160,
+          "swap": "fatty_fish",
+          "note": "fillets, skin on"
+        },
+        {
+          "food": "harissa-hot-spicy-sauce-d3ff0a",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "caraway-seed-020d2f",
+          "g": 1,
+          "note": "ground"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 70,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "preserved-lemon-678162",
+          "g": 5,
+          "note": "rind only, finely chopped"
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 20
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 25,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Cover the barley with plenty of boiling water and simmer for 25 to 30 minutes, until tender but still a little chewy. Drain well.",
+        "Heat the oven to 220°C (425°F). Mix the harissa, garlic, caraway, half the lemon juice and a pinch of salt and rub it all over the mackerel.",
+        "Lay the fillets skin side up on a lined tray and roast for 10 to 12 minutes, until the skin is crisp and the flesh flakes.",
+        "Toss the warm barley with the chickpeas, preserved lemon, olives, most of the parsley and half the olive oil.",
+        "Toss the tomato and cucumber with the rest of the parsley, the rest of the lemon, the rest of the olive oil and a pinch of salt.",
+        "Serve the mackerel over the barley with the salad on the side."
+      ],
+      "prepMin": 20,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Cook the barley earlier in the week if you like, since it keeps 4 to 5 days in the fridge. Then Friday is just the fish and the salads."
+    },
+    {
+      "id": "maghreb-lamb-prune-almond-tagine",
+      "name": "Lamb and prune tagine with toasted almonds and a cucumber and carrot salad",
+      "inspiredBy": "Moroccan lamb tagine with prunes and almonds, the kind served at celebrations",
+      "about": "Lamb shoulder slowly braised with onion, cinnamon, ginger and pepper until it falls apart, then finished with sweet prunes, honey and toasted almonds. A lemony cucumber and carrot salad cuts the richness. The lamb brings **iron, zinc and B12**, and the prunes bring potassium.",
+      "ingredients": [
+        {
+          "food": "lamb-cubed-for-stew-or-kabob-lean-raw-e3098a",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "shoulder, trimmed, in big chunks"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "prune-dried-plum-32fd07",
+          "g": 40,
+          "note": "pitted"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1.5
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 6
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 35,
+          "note": "whole-wheat, as khobz"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "coarsely grated"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.3
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Brown the lamb in the olive oil in a heavy pot over medium-high heat, about 6 minutes. Add the onion, cinnamon, ginger, pepper and the salt.",
+        "Add 300 ml of water. Cover and simmer very gently for 1 hour 15 minutes, until the lamb is tender.",
+        "Add the prunes and honey and simmer uncovered for 15 minutes, until the sauce is thick and syrupy.",
+        "Toast the almonds in a dry pan until golden, about 3 minutes.",
+        "Toss the cucumber, grated carrot and parsley with the lemon juice, the cumin and a pinch of salt.",
+        "Spoon the tagine over the plates, scatter with the almonds and serve with the salad and warm pita. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 105,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "weekend-project"
+      ],
+      "tip": "In a pressure cooker the lamb takes 30 minutes. Finish the prunes uncovered on the stove."
+    },
+    {
+      "id": "maghreb-chicken-olive-lemon-chard",
+      "name": "Algerian chicken tajine zitoune with potatoes and chard",
+      "inspiredBy": "Algerian tajine zitoune, the chicken and green olive tagine",
+      "about": "Chicken thighs braised in a golden, gentle sauce of onion, ginger and saffron with green olives, preserved lemon, potato and wilted chard. A pot of comfort that is tangy and savoury. The chard brings **vitamins K and A**, and the chicken brings protein.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "cut into large chunks"
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 40,
+          "note": "green, rinsed"
+        },
+        {
+          "food": "preserved-lemon-678162",
+          "g": 12,
+          "note": "rind only, sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 110,
+          "note": "in thick chunks"
+        },
+        {
+          "food": "swiss-chard-raw-f646e5",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "stems and leaves chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.1,
+          "note": "a good pinch"
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Brown the chicken in the olive oil in a heavy pot over medium-high heat, about 5 minutes. Add the onion and garlic and cook for 5 minutes.",
+        "Crush the saffron into 2 tablespoons of warm water and add it with the ginger, pepper and the salt.",
+        "Add the potatoes and 250 ml of water. Cover and simmer gently for 25 minutes, until the potatoes and chicken are tender.",
+        "Stir in the olives, preserved lemon and chard stems. Simmer for 5 minutes.",
+        "Add the chard leaves until just wilted, about 2 minutes. Stir in the lemon juice and the parsley.",
+        "Serve in a shallow bowl with the sauce spooned over."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Rinse the olives if they are very salty. Add a handful of sliced mushrooms with the potatoes if you like."
+    },
+    {
+      "id": "maghreb-yogurt-apricot-honey",
+      "name": "Yogurt with dried apricots, honey and cinnamon",
+      "inspiredBy": "Inspired by the yogurt and dried fruit snacks of Algeria and Morocco",
+      "about": "Thick yogurt with chopped dried apricots, a drizzle of honey and a pinch of cinnamon. Creamy and sweet. The yogurt brings **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "apricot-dried-1d0f8b",
+          "g": 30,
+          "note": "chopped"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Stir the apricots into the yogurt, drizzle with the honey and dust with the cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "maghreb-yogurt-dates-cinnamon",
+      "name": "Yogurt with chopped dates and cinnamon",
+      "inspiredBy": "Inspired by the yogurt and dried fruit snacks of Algeria and Morocco",
+      "about": "Thick yogurt with chopped soft dates and a pinch of cinnamon, sweet enough without any honey. Creamy and a little chewy. The yogurt brings **calcium and protein**, and the dates bring potassium.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 240,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 25,
+          "note": "pitted and chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Stir the dates into the yogurt and dust with the cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "maghreb-yogurt-honey",
+      "name": "Plain yogurt with a spoon of honey",
+      "about": "Thick, cold yogurt with a spoon of honey, the simplest end to an afternoon. The yogurt brings **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 170,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 8
+        }
+      ],
+      "steps": [
+        "Spoon the honey over the yogurt and eat it straight away."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "maghreb-sardine-khobz",
+      "name": "Sardines on khobz with tomato, onion and harissa",
+      "inspiredBy": "Moroccan tinned sardine sandwich",
+      "about": "Tinned sardines on warm khobz with sliced tomato, raw onion and a smear of harissa, the street-stall sandwich of Moroccan ports. The sardines bring **omega-3, calcium and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "sardines-canned-in-brine-drained-7cc943",
+          "g": 60,
+          "swap": "fatty_fish",
+          "note": "drained, with their bones"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 35,
+          "note": "whole-wheat"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "harissa-hot-spicy-sauce-d3ff0a",
+          "g": 3
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Warm the pita in a dry pan and open it. Smear the inside with the harissa.",
+        "Fill with the sardines, tomato and onion, squeeze over the lemon juice and press closed."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "maghreb-dates-almonds-stuffed",
+      "name": "Dates stuffed with almonds",
+      "inspiredBy": "Inspired by the stuffed dates served with tea in Morocco and Algeria",
+      "about": "Soft medjool dates with a toasted almond tucked into each. A tiny sweet that goes with mint tea across the Maghreb. The almonds bring **vitamin E and magnesium**.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 30
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 6,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan until golden, about 3 minutes. Split the date, remove the pit, tuck two almonds inside and eat the rest alongside."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "maghreb-apricots-almonds",
+      "name": "Dried apricots with toasted almonds",
+      "about": "Chewy dried apricots with a handful of toasted almonds, as served with tea across Morocco. The almonds bring **vitamin E and magnesium**, and the apricots bring potassium.",
+      "ingredients": [
+        {
+          "food": "apricot-dried-1d0f8b",
+          "g": 40
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan until golden, about 3 minutes. Eat with the apricots."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "maghreb-khobz-olives-oil",
+      "name": "Khobz with olives and olive oil",
+      "about": "Warm whole-wheat khobz with salty green olives and a little olive oil for dipping and a pinch of cumin. Simple and satisfying. The whole grain brings **fibre**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 45,
+          "note": "whole-wheat"
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 30
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the pita in a dry pan. Tear it up, stir the cumin into the olive oil and dip. Eat with the olives."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "maghreb-dates-warm-milk",
+      "name": "Dates and walnuts with warm milk and cinnamon",
+      "about": "Soft dates and a few walnuts with a mug of warm milk and cinnamon. Algerian and Tunisian hosts serve dates and walnuts together, and milk is the old companion. The milk brings **calcium**, and the walnuts bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 20
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 300
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the milk in a small pot or the microwave with the cinnamon. Drink it with the dates and walnuts on the side."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "maghreb-boiled-egg-cumin",
+      "name": "Boiled egg with cumin and salt",
+      "inspiredBy": "Moroccan and Tunisian street-cart boiled egg with cumin",
+      "about": "A warm boiled egg with a little cumin and flaky salt for dipping, the street-cart snack of Morocco and Tunisia. The egg brings **protein and choline**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.7
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Lower the egg into boiling water and cook for 9 minutes, then cool it under cold water and peel.",
+        "Mix the cumin and the salt and dip the egg into it as you eat."
+      ],
+      "prepMin": 3,
+      "cookMin": 9,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "maghreb-roasted-cumin-chickpeas",
+      "name": "Roasted chickpeas with cumin and paprika",
+      "inspiredBy": "Inspired by the cumin chickpeas sold in paper cones by Moroccan street vendors",
+      "about": "Crunchy oven-roasted chickpeas with cumin, paprika and a squeeze of lemon. A savoury snack in the style of Moroccan street-cart chickpeas. The chickpeas bring **protein and fibre**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 110,
+          "swap": "legumes",
+          "note": "rinsed, patted dry"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Pat the chickpeas very dry.",
+        "Toss with the oil, cumin, paprika and salt on a tray.",
+        "Roast for 25 minutes, shaking the tray halfway, until crisp. Squeeze over the lemon juice and let them crisp more as they cool."
+      ],
+      "prepMin": 3,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "They stay crunchy for about 3 days in a jar. Roast a fresh batch the day before you want them."
+    },
+    {
+      "id": "maghreb-orange-cinnamon",
+      "name": "Orange slices with cinnamon and orange blossom",
+      "inspiredBy": "Moroccan orange with cinnamon",
+      "about": "Juicy orange slices with cinnamon and a few drops of orange blossom water, a Moroccan classic that works as a snack or dessert. The orange brings **vitamin C**.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 220,
+          "swap": "vit_c_fruit",
+          "note": "peeled and sliced into rounds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "orange-blossom-water-9dbff0",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Arrange the orange on a plate, sprinkle with the orange blossom water and dust with the cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "maghreb-chakchouka"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "maghreb-carrot-orange-salad-mackerel-khobz"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "maghreb-chicken-apricot-almond-tagine"
+        },
+        {
+          "slot": "snack",
+          "recipe": "maghreb-yogurt-honey"
+        },
+        {
+          "slot": "snack",
+          "recipe": "maghreb-roasted-cumin-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "maghreb-oat-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "maghreb-chicken-apricot-almond-tagine",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "maghreb-harira"
+        },
+        {
+          "slot": "snack",
+          "recipe": "maghreb-sardine-khobz"
+        },
+        {
+          "slot": "snack",
+          "recipe": "maghreb-yogurt-apricot-honey"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "maghreb-bissara"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "maghreb-harira",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "maghreb-chermoula-sardines-potatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "maghreb-yogurt-dates-cinnamon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "maghreb-apricots-almonds"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "maghreb-bissara",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "maghreb-slata-mechouia-tuna"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "maghreb-couscous-beef-vegetables"
+        },
+        {
+          "slot": "snack",
+          "recipe": "maghreb-dates-warm-milk"
+        },
+        {
+          "slot": "snack",
+          "recipe": "maghreb-orange-cinnamon"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "maghreb-oat-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "maghreb-couscous-beef-vegetables",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "maghreb-mackerel-harissa-barley"
+        },
+        {
+          "slot": "snack",
+          "recipe": "maghreb-boiled-egg-cumin"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "maghreb-msemen-eggs"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "maghreb-sardine-kefta-zaalouk-pita"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "maghreb-lamb-prune-almond-tagine"
+        },
+        {
+          "slot": "snack",
+          "recipe": "maghreb-orange-cinnamon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "maghreb-dates-almonds-stuffed"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "maghreb-chakchouka"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "maghreb-lamb-prune-almond-tagine",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "maghreb-chicken-olive-lemon-chard"
+        },
+        {
+          "slot": "snack",
+          "recipe": "maghreb-dates-warm-milk"
+        },
+        {
+          "slot": "snack",
+          "recipe": "maghreb-yogurt-apricot-honey"
+        }
+      ]
+    }
+  ]
+}
