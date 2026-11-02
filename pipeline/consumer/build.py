@@ -183,9 +183,13 @@ def main(argv: list[str] | None = None) -> int:
         legacy_rows.append({"old_id": old["id"], "old_name": old["name"], "new_id": m["id"], "new_name": m["name"],
                             "tier": m["tier"], **info})
     gi_table = GI.load_table(PIPE / "config" / "gi_values.json")
+    sv_path = PIPE / "config" / "servings_overrides.json"   # reviewed household measures, keyed by food id; they beat every other source
+    sv_over = {k: v for k, v in (_load_json(sv_path) if sv_path.exists() else {}).items() if not k.startswith("_")}
     for r in live:
         lg = legacy_by_new.get(r["id"])
         r["servings"], r["servings_from"] = X.pick_servings(r, hs, rule_cfg, lg)
+        if r["id"] in sv_over:
+            r["servings"], r["servings_from"] = [dict(x) for x in sv_over[r["id"]]["servings"]], "reviewed_override"
         r["gi"], r["gi_src"], r["gi_est"] = GI.pick_gi(r, gi_table, lg.get("gi") if lg else None)
         r["aliases_out"] = [a for a in r["aliases"] if a != r["name"].lower()]
         if lg:
