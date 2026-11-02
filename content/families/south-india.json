@@ -1,0 +1,2070 @@
+{
+  "id": "south-india",
+  "name": "South Indian & Sri Lankan Kitchen",
+  "style": "balanced",
+  "cuisine": "South Asian",
+  "regions": [
+    "Tamil Nadu",
+    "Kerala",
+    "Karnataka",
+    "Andhra Pradesh",
+    "Sri Lanka"
+  ],
+  "summary": "A week of Tamil, Kerala, Karnataka, Andhra and Sri Lankan home cooking: sambar, a sardine curry, a mackerel ambul thiyal, a Chettinad pepper chicken and a fish moilee, with red rice, brown rice and millet in place of white rice.",
+  "howItWorks": "**Cook once, eat twice.** Monday's sambar, Wednesday's Sri Lankan dhal, Friday's bisi bele bath and Saturday's Chettinad chicken each make two portions, so the next day's lunch is already cooked. The fish dinners are always cooked fresh.\n\n**Fish three times.** Sardines on Tuesday, mackerel on Thursday and a Spanish mackerel moilee on Sunday carry your **omega-3 fats and vitamin D**. They never fall on back-to-back days.\n\n**Coconut as a flavour.** Fresh coconut goes into sambols and thorans by the spoonful, with a little coconut milk in the dhal and the moilee. Frying is mostly canola, with coconut oil in the Kerala fry-ups, ghee in the bisi bele bath and gingelly oil in the ambul thiyal. That keeps **saturated fat under 10%**.\n\n**Eggs, dal and curd.** Eggs start four mornings, and a boiled egg snack covers the pesarattu days. Dal, chickpeas, prawns, chicken or fish anchor every lunch and dinner, with red rice, brown rice and foxtail millet in place of white rice. Curd and buttermilk bring calcium, and almonds bring **vitamin E**.\n\n**Soak ahead.** Soak the moong for the pesarattu the night before. For the hoppers, soak the rice in the morning, blend it that night and leave the batter to ferment. Cook a big batch of red rice on Sunday to save time midweek.",
+  "signature": [
+    "south-india-vegetable-sambar-brown-rice",
+    "south-india-kerala-sardine-curry-cabbage-thoran",
+    "south-india-chettinad-pepper-chicken-millet",
+    "south-india-kerala-fish-moilee-spinach-thoran"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "south-india-peanut-sundal"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "south-india-moong-kosambari"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "south-india-pepper-egg-fry"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "south-india-sweet-potato-chili-lime"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "south-india-spiced-neer-mor"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "south-india-papaya-lime"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "south-india-papaya-lime"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "south-india-chickpea-sundal",
+      "name": "Chickpea sundal",
+      "inspiredBy": "Tamil kadalai sundal",
+      "about": "Warm chickpeas tossed with mustard seed, curry leaves, green chili and fresh coconut, the way they are served as a temple snack in Tamil Nadu. It is simple and savoury, with **protein and fibre** from the chickpeas.",
+      "ingredients": [
+        {
+          "food": "chickpea-canned-drained-a7deb5",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 4
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.8
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 2
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.1,
+          "note": "a pinch"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the oil in a pan, add the mustard seeds and let them pop, then add the hing, curry leaves and finely chopped green chili for a few seconds.",
+        "Add the chickpeas and the salt and stir for 3 minutes, until hot.",
+        "Take off the heat and stir in the coconut and lemon juice. Eat warm."
+      ],
+      "prepMin": 3,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "south-india-spiced-neer-mor",
+      "name": "Spiced neer mor",
+      "inspiredBy": "Tamil neer mor, Kerala sambaram",
+      "about": "Thin, cooling spiced buttermilk made from curd, ginger, green chili and curry leaf, the drink every South Indian household has in the afternoon. It is salty, sour and refreshing, with **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 200,
+          "swap": "dairy_protein",
+          "note": "plain curd"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 1
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.1,
+          "note": "a pinch"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.5,
+          "note": "toasted and crushed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Whisk the curd with about half a cup of cold water until it is smooth and pourable.",
+        "Crush the ginger, green chili and curry leaf together in a mortar or mini blender. Stir them into the buttermilk with the hing, cumin and salt.",
+        "Chill for 10 minutes if you have time, and serve over ice."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "south-india-guava-chili-almonds",
+      "name": "Guava with chili, lemon and almonds",
+      "inspiredBy": "South Indian and Sri Lankan street-cart guava",
+      "about": "Crisp, fragrant guava wedges with a squeeze of lemon and a pinch of chili powder and salt, the way they are sold on the street from Chennai to Colombo, with a few soaked almonds for crunch. It is sweet, sour and spicy, and it gives you **more vitamin C than an orange** plus **vitamin E** from the almonds.",
+      "ingredients": [
+        {
+          "food": "guava-common-raw-a500a0",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "cut into wedges"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "soaked in water for a few hours or overnight"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.3,
+          "note": "red chili powder"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Cut the guava into wedges and put them on a plate with the drained almonds.",
+        "Squeeze the lemon over, then sprinkle with the chili powder and salt."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "south-india-sweet-potato-chili-lime",
+      "name": "Steamed sweet potato with chili and lime",
+      "inspiredBy": "Kerala and Tamil steamed kizhangu (tubers)",
+      "about": "Sweet potato steamed until tender and tossed with a squeeze of lemon, a pinch of chili powder and fresh coconut, the way tubers are eaten as a snack in Kerala and Tamil Nadu. It is soft, sweet and a little spicy, and it is loaded with **vitamin A**.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 150,
+          "swap": "low_gi_grains",
+          "note": "scrubbed and cut into chunks"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 5
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.3,
+          "note": "red chili powder"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Steam the sweet potato chunks for 12 to 15 minutes, until a knife slides in easily.",
+        "Toss with the lemon juice, chili powder, salt and coconut and eat warm."
+      ],
+      "prepMin": 3,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "south-india-pepper-egg-fry",
+      "name": "Kerala pepper egg fry",
+      "inspiredBy": "Kerala mutta pepper fry",
+      "about": "Boiled eggs tossed in a hot pan with onion, curry leaves and plenty of cracked black pepper, a tea-shop favourite in Kerala that works just as well at home. It is peppery and savoury, with **protein and choline**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 1.5,
+          "note": "freshly cracked"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.2
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Hard-boil the eggs for 9 minutes, cool them in cold water and peel. Halve them.",
+        "Warm the oil in a small pan, add the onion, the turmeric and the curry leaves (stand back, they spit) and cook until the onion is golden, about 4 minutes.",
+        "Add the pepper and salt, then the eggs, cut side down, and toss for 1 to 2 minutes, until coated and a little crisp at the edges."
+      ],
+      "prepMin": 5,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ]
+    },
+    {
+      "id": "south-india-pesarattu-ginger-chutney",
+      "name": "Pesarattu with ginger chutney and curd",
+      "inspiredBy": "Andhra pesarattu, the green moong dosa, with allam pachadi",
+      "about": "A crisp, golden dosa made from soaked whole green moong blitzed with ginger, green chili and cumin, served the Andhra way with a sharp allam pachadi (ginger chutney) and a big bowl of curd. There is no fermenting, only an overnight soak. The moong and curd give you **plenty of protein, folate and iron** before nine in the morning.",
+      "ingredients": [
+        {
+          "food": "mung-beans-whole-dried-raw-784bed",
+          "g": 75,
+          "swap": "legumes",
+          "note": "whole green moong, soaked overnight"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 15,
+          "note": "a third for the batter, the rest for the chutney"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 4
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely chopped, for sprinkling on the dosa"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 4
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.8
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "chili-pepper-red-sun-dried-d3dda3",
+          "g": 1,
+          "note": "whole dried red chili"
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.1,
+          "note": "a pinch"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 180,
+          "swap": "dairy_protein",
+          "note": "plain curd"
+        }
+      ],
+      "steps": [
+        "The night before, rinse the moong and soak it in plenty of cold water for at least 6 hours. Drain well in the morning.",
+        "Blend the moong with a third of the ginger, the green chili, the cumin, half the salt and about half a cup of water, until the batter is smooth and pourable, like thin pancake batter. It does not need to ferment.",
+        "Make the chutney: pound the rest of the ginger in a mortar with the tamarind, the rest of the salt and a splash of water until it is thick and spoonable. It should taste sharp and hot. Scrape it into a bowl.",
+        "Now the tempering, called thalippu or tadka. Warm a teaspoon of the oil in a small pan, add the mustard seeds and the dried chili and let them pop for a few seconds, then add the hing and the curry leaves (stand back, they spit). Pour the sizzling oil over the chutney. Hot oil wakes up the spices and gives the chutney its smell.",
+        "Warm a non-stick pan over medium heat and wipe it with a little oil. Pour in half the batter and spread it into a thin round with the back of the ladle. Scatter on half the onion, drizzle a few drops of oil around the edge and cook until the underside is crisp and golden and the top looks dry, about 3 minutes. You do not need to flip it. Repeat with the rest.",
+        "Serve the pesarattu hot, with the chutney and the curd."
+      ],
+      "prepMin": 10,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "A pinch of jaggery in the chutney is traditional, because allam pachadi is sweet, sour and hot. Pesarattu is often filled with a spoonful of upma, which is called an MLA pesarattu."
+    },
+    {
+      "id": "south-india-kerala-prawn-roast-bean-thoran",
+      "name": "Kerala prawn roast with green bean thoran and red rice",
+      "inspiredBy": "Kerala chemmeen roast and beans thoran, served as a home lunch plate",
+      "about": "Prawns tossed in a dark, glossy masala of slow-browned onion, tomato, ginger and black pepper, with a dry stir-fry of green beans and fresh coconut and a portion of red rice. It is the kind of plate you find at a Kerala home lunch. The prawns bring **lean protein, iodine and selenium**, and the beans and coconut bring fibre.",
+      "ingredients": [
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "peeled and deveined, raw"
+        },
+        {
+          "food": "red-rice-unenriched-dry-raw-8ce769",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "Kerala matta rice, or any red rice"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "chopped"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "finely chopped"
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 0.8
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1.3,
+          "note": "red chili powder, Kashmiri if you like it milder"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4,
+          "note": "freshly ground"
+        },
+        {
+          "food": "coconut-oil-f2d24e",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 100,
+          "note": "cut into small pieces"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 8,
+          "note": "fresh or frozen grated coconut"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Rinse the red rice and cook it in plenty of boiling water until tender, about 35 minutes, then drain. Red rice takes longer than white, so start it first.",
+        "Pat the prawns dry and toss them with the turmeric, a pinch of the salt and half the pepper.",
+        "Warm half the coconut oil in a wide pan over medium heat. Add the onion with a pinch of salt and a splash of water and cook, stirring, until deep golden brown, about 10 minutes. Add a spoonful of water whenever it starts to catch. Browning the onion well is what makes a roast taste like a roast.",
+        "Add the ginger, half the curry leaves, the chili powder and the rest of the pepper and stir for a minute. Add the tomato and a splash of water and cook until it breaks down into a thick, jammy masala, about 8 minutes.",
+        "Add the prawns and toss for 3 to 4 minutes, until they curl and turn pink and the masala clings to them. Set aside.",
+        "For the thoran, warm the rest of the coconut oil in a second pan. Add the mustard seeds and let them pop, then the rest of the curry leaves (stand back, they spit). Add the green beans, a pinch of salt and a splash of water, cover and cook for 5 minutes. Uncover, stir in the coconut, crushed with a spoonful of the onion and a pinch of turmeric, and cook for 1 minute more.",
+        "Serve the prawn roast and the thoran with the red rice."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Cook the rice and brown the onion masala on Sunday night. At lunch, the prawns and thoran take 10 minutes. Keep the pan uncovered at the end of the thoran, since it is meant to be dry."
+    },
+    {
+      "id": "south-india-vegetable-sambar-brown-rice",
+      "name": "Vegetable sambar with brown rice",
+      "inspiredBy": "Tamil sambar, the everyday lentil and vegetable stew",
+      "about": "Toor dal simmered with drumstick, pumpkin and spinach in a tangy tamarind broth, finished with a sizzling tempering of mustard seed, dried red chilies, hing and curry leaves. It is the soul of the Tamil table. The dal and vegetables bring **protein, fibre and folate** in one pot, and the second portion is tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "pigeon-peas-dahl-dried-raw-4b7ca5",
+          "g": 72,
+          "swap": "legumes",
+          "note": "toor dal"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 25,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "drumstick-pods-raw-b6ef46",
+          "g": 70,
+          "note": "cut into 5 cm lengths, frozen is fine"
+        },
+        {
+          "food": "pumpkin-raw-dd46c7",
+          "g": 120,
+          "note": "peeled and cubed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 45,
+          "note": "small shallots if you can find them, halved"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 10
+        },
+        {
+          "food": "sambar-powder-b8a581",
+          "g": 3.5,
+          "note": "sambar powder"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.5
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 0.9
+        },
+        {
+          "food": "chili-pepper-red-sun-dried-d3dda3",
+          "g": 2,
+          "note": "2 whole dried red chilies"
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.15,
+          "note": "a pinch"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.25
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "roughly chopped, as in a keerai sambar"
+        }
+      ],
+      "steps": [
+        "Rinse the dal and simmer it in a covered pot with plenty of water until completely soft, about 35 minutes (or 12 minutes in a pressure cooker). Mash it with the back of a spoon.",
+        "Meanwhile, rinse the brown rice and cook it in plenty of boiling water until tender, about 30 minutes, then drain.",
+        "In a second pot, simmer the onion, drumstick and pumpkin with the tamarind, sambar powder, salt and about 2 cups of water until the vegetables are tender but still holding their shape, about 12 minutes.",
+        "Stir the mashed dal and the spinach into the vegetables and simmer for 5 minutes, adding water as needed until the spinach has wilted and it is a pourable, soupy stew.",
+        "Now the tempering (thalippu), which gives sambar its fragrance. Warm the oil in a small pan, add the mustard seeds and let them pop, then the dried chilies, hing and curry leaves (stand back, they spit). The moment the leaves crackle, pour the sizzling oil into the sambar.",
+        "Serve the sambar over the rice. Pack the second portion, with its rice, for tomorrow's lunch. Sambar thickens overnight, so add a splash of water when you reheat."
+      ],
+      "prepMin": 20,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "freezer-friendly",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Scrape the soft flesh of the drumstick off the tough pod with your teeth, and leave the pod on your plate. A small pinch of jaggery rounds off the tamarind nicely if you keep some in the pantry."
+    },
+    {
+      "id": "south-india-kerala-sardine-curry-cabbage-thoran",
+      "name": "Kerala sardine curry with cabbage thoran and red rice",
+      "inspiredBy": "Kerala mathi (sardine) curry, a sour red tamarind curry",
+      "about": "Fresh sardines simmered in a sour, red chili and tamarind gravy with shallot, ginger and garlic, served with a dry cabbage and coconut thoran and red rice. It is a home classic of the Kerala coast. Sardines are one of the best sources of **omega-3 fats and vitamin D** you can buy.",
+      "ingredients": [
+        {
+          "food": "european-pilchard-or-sardine-raw-e12560",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "whole, cleaned and heads off, fresh or frozen"
+        },
+        {
+          "food": "red-rice-unenriched-dry-raw-8ce769",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "Kerala matta rice, or any red rice"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 45,
+          "note": "small shallots if you can find them"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 8
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1.5,
+          "note": "red chili powder, Kashmiri if you like it milder"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.6
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1.5
+        },
+        {
+          "food": "coconut-oil-f2d24e",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 120,
+          "note": "finely shredded"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 8,
+          "note": "fresh or frozen grated coconut"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Rinse the red rice and cook it in plenty of boiling water until tender, about 35 minutes, then drain.",
+        "Set aside a spoonful of the shallot, a clove of the garlic and a pinch of the turmeric for the thoran. Blitz the rest of the shallot, ginger and garlic with the chili powder, the rest of the turmeric and a splash of water into a rough red paste.",
+        "Warm half the coconut oil in a wide pan over medium heat. Add half the curry leaves, then the paste, and fry for 4 to 5 minutes, stirring, until it smells cooked and the oil begins to separate.",
+        "Stir in the tamarind, the salt and a cup of water and simmer for 5 minutes. Lay in the sardines, spoon the gravy over them, cover and cook gently for 8 minutes, until the fish is opaque and flakes easily. Shake the pan rather than stirring, so the fish stays whole.",
+        "For the thoran, warm the rest of the oil in a second pan. Add the mustard seeds and let them pop, then the rest of the curry leaves (stand back, they spit). Add the cabbage with a pinch of salt and cook for 4 to 5 minutes, until crisp-tender, then stir in the coconut, crushed with a spoonful of the shallot, a clove of the garlic and a pinch of turmeric.",
+        "Serve the fish curry and the thoran with the rice."
+      ],
+      "prepMin": 20,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "spicy"
+      ],
+      "tip": "No fresh sardines? Atlantic mackerel steaks work well, or use one 120 g tin of sardines and warm them in the gravy for just 3 minutes."
+    },
+    {
+      "id": "south-india-egg-hoppers-pol-sambol",
+      "name": "Egg hoppers with pol sambol",
+      "inspiredBy": "Sri Lankan egg hoppers (egg appa), with a fermented brown rice batter",
+      "about": "Lacy, bowl-shaped brown rice pancakes made from an overnight fermented batter, with a soft-set egg in the middle and a zingy pol sambol of fresh coconut, onion, chili and lemon. It is Sri Lanka's favourite breakfast. Two eggs bring **protein and choline** to the plate.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 25,
+          "swap": "low_gi_grains",
+          "note": "soaked in water for at least 6 hours"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 20,
+          "note": "a spoonful of cooked brown rice saved from Monday's sambar rice or Friday's kootu rice"
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 5,
+          "note": "canned, shaken well"
+        },
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 110,
+          "swap": "dairy_protein",
+          "note": "plain curd"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 12,
+          "note": "fresh or frozen grated coconut"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "finely chopped, red onion if you have it"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1.5,
+          "note": "red chili powder"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "The morning before, soak the brown rice in plenty of water for at least 6 hours. That evening, drain it and blend it with the cooked rice, coconut milk, curd, half the salt and just 2 tablespoons of water until completely smooth, like thick cream. Cover the bowl and leave it somewhere warm overnight, until the batter is bubbly and smells pleasantly sour. This is what gives hoppers their lacy edge.",
+        "In the morning, make the pol sambol: pound or pulse the coconut with the onion, chili powder, lemon juice and the rest of the salt until it is crumbly and bright red. It should be moist, not a paste.",
+        "Heat a small, deep non-stick pan (or a small wok with a lid) until it is very hot, then wipe it with a little of the oil. Pour in half the batter, then lift the pan and swirl so the batter climbs the sides and leaves a thicker pool in the middle.",
+        "Crack an egg into the middle, cover and cook over medium heat for 3 to 4 minutes, until the edge is crisp and golden, the white is set and the yolk is still jammy. Slide the hopper out and repeat with the rest.",
+        "Eat the hoppers warm, tearing off the crisp edge and scooping up the egg with the sambol."
+      ],
+      "prepMin": 15,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "A hopper pan (appachatti) makes the classic bowl shape, but a small deep non-stick pan does a fine job."
+    },
+    {
+      "id": "south-india-sri-lankan-dhal-kale-mallung",
+      "name": "Sri Lankan red lentil dhal with kale mallung and red rice",
+      "inspiredBy": "Sri Lankan parippu with a kale mallung, in place of the usual gotu kola sambol",
+      "about": "Creamy red lentils cooked with turmeric and a splash of coconut milk, finished with a mustard seed, dried chili and curry leaf tempering, alongside a quick kale mallung wilted with onion, turmeric and fresh coconut. It is Sri Lanka's everyday dhal (parippu) with a leafy side, a plate every home cook makes. The lentils bring **protein, iron and folate**, and the second portion is tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 110,
+          "swap": "legumes",
+          "note": "masoor dal"
+        },
+        {
+          "food": "red-rice-unenriched-dry-raw-8ce769",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 4,
+          "note": "canned, shaken well"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "chili-pepper-red-sun-dried-d3dda3",
+          "g": 1.5,
+          "note": "whole dried red chilies"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.6
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1.5
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 160,
+          "swap": "leafy_greens",
+          "note": "stems removed, finely shredded, standing in for gotu kola"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 5,
+          "note": "fresh or frozen grated coconut"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 12
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Rinse the red rice and cook it in plenty of boiling water until tender, about 35 minutes, then drain.",
+        "Rinse the lentils and put them in a pot with most of the turmeric, half the onion, the garlic, half the salt and about 3 cups of water. Simmer, partly covered, until completely soft, about 20 minutes.",
+        "Stir in the coconut milk and simmer for 3 minutes more. Whisk briefly so the dhal turns creamy.",
+        "Now the tempering. Warm half the oil in a small pan, add the mustard seeds and let them pop, then the dried chilies and the curry leaves (stand back, they spit). Fry for 30 seconds and pour it over the dhal.",
+        "For the mallung, warm the rest of the oil in a wide pan over high heat. Add the rest of the onion and a pinch of turmeric and cook for 2 minutes, then add the kale and the rest of the salt and toss for 2 minutes, just until it wilts and stays bright green. Take it off the heat and stir in the coconut and the lemon juice.",
+        "Serve the dhal over the rice with the mallung alongside. Pack the second portion for tomorrow's lunch, with the mallung in a small container. Keep two spoonfuls of the dhal back for Saturday's rasam."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "freezer-friendly",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Gotu kola is sold at some South Asian and Southeast Asian grocers. If you find it, make a raw sambol with it and the coconut instead of the mallung."
+    },
+    {
+      "id": "south-india-mackerel-ambul-thiyal-leek-mallung",
+      "name": "Mackerel ambul thiyal-style sour pepper fish with leek mallung and brown rice",
+      "inspiredBy": "Sri Lankan ambul thiyal, which is normally made with tuna and goraka, here with mackerel and tamarind",
+      "about": "Chunks of mackerel simmered dry in tamarind, black pepper, garlic and cinnamon until they are coated in a dark, tangy paste, with a quick leek and coconut mallung and brown rice. Ambul thiyal is a Sri Lankan southern-coast classic, normally made with tuna. Mackerel makes it a rich source of **omega-3 fats and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 125,
+          "swap": "fatty_fish",
+          "note": "steaks or fillets, cut into chunks"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 10
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 2.5,
+          "note": "coarsely ground"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        },
+        {
+          "food": "chili-pepper-red-sun-dried-d3dda3",
+          "g": 1.5,
+          "note": "whole dried red chilies"
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1.2
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 5,
+          "swap": "healthy_oils",
+          "note": "gingelly oil, as in Sri Lankan cooking"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "leek-raw-01ddc0",
+          "g": 170,
+          "note": "white and pale green parts, sliced thin"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 4,
+          "note": "fresh or frozen grated coconut"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Rinse the brown rice and cook it in plenty of boiling water until tender, about 30 minutes, then drain.",
+        "Rub the fish with the tamarind, pepper, garlic, cinnamon and half the salt, and leave it for 10 minutes. The sourness tames the strong smell of the mackerel.",
+        "Put the fish in a pan with a little of the oil, the dried chilies, half the curry leaves and a quarter cup of water. Cover and cook over medium-low heat for 8 minutes, then uncover and cook until the liquid has cooked away and the fish is coated in a dark, almost dry paste, about 5 minutes. Turn the pieces gently once.",
+        "While the fish cooks, make the mallung. Warm the rest of the oil in a second pan, add the rest of the curry leaves (stand back, they spit) and the green chili, then the leek, the turmeric and the rest of the salt. Cook for 6 to 8 minutes, stirring, until the leek is soft and sweet.",
+        "Stir in the coconut and take the pan off the heat.",
+        "Serve the fish and the mallung over the rice."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "spicy"
+      ],
+      "tip": "If goraka (a sour dried fruit) is at your grocer, soak a piece in warm water and use it in place of the tamarind."
+    },
+    {
+      "id": "south-india-bisi-bele-bath-style-lentil-rice",
+      "name": "Bisi bele bath-style lentil rice with pumpkin, spinach and peanuts",
+      "inspiredBy": "Karnataka bisi bele bath (\"hot lentil rice\"), with brown rice and more greens",
+      "about": "A one-pot Karnataka comfort dish of brown rice, toor dal, pumpkin and spinach cooked soft with tamarind and bisi bele bath spices, finished with a ghee, mustard seed and dried chili tempering and toasted peanuts. A bowl of curd on the side cools it. The dal and vegetables bring **protein and fibre**, and it makes two portions, so Saturday's lunch is done.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "pigeon-peas-dahl-dried-raw-4b7ca5",
+          "g": 70,
+          "swap": "legumes",
+          "note": "toor dal"
+        },
+        {
+          "food": "pumpkin-raw-dd46c7",
+          "g": 40,
+          "note": "peeled and diced small"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 180,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 6
+        },
+        {
+          "food": "bisi-bele-bath-powder-02416a",
+          "g": 5,
+          "note": "bisi bele bath powder"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.3
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 0.4
+        },
+        {
+          "food": "chili-pepper-red-sun-dried-d3dda3",
+          "g": 1,
+          "note": "whole dried red chili"
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.1,
+          "note": "a pinch"
+        },
+        {
+          "food": "ghee-butter-eadaa8",
+          "g": 4
+        },
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 100,
+          "swap": "dairy_protein",
+          "note": "plain curd, to serve"
+        }
+      ],
+      "steps": [
+        "Rinse the rice and the dal together. Put them in a heavy pot with about 4 cups of water and simmer, partly covered, until both are very soft and the mixture is porridge-like, about 40 minutes (15 minutes in a pressure cooker). Stir now and then so it does not stick.",
+        "Add the pumpkin, tamarind, bisi bele bath powder and salt, with another cup of water. Cook until the pumpkin is tender, about 12 minutes, then stir in the spinach and cook 3 minutes more, until everything melts together into a thick, spoonable stew.",
+        "Warm the ghee in a small pan, add the mustard seeds and let them pop, then add the peanuts and the dried chili and fry until the peanuts are golden, about 1 minute. Add the hing and the curry leaves (stand back, they spit).",
+        "Pour the tempering, peanuts and all, over the pot and stir it in.",
+        "Serve in bowls with a bowl of curd on the side. Pack the second portion for tomorrow's lunch. It thickens overnight, so loosen it with a splash of hot water when you reheat."
+      ],
+      "prepMin": 15,
+      "cookMin": 60,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "freezer-friendly",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Bisi bele bath should be loose and porridge-like, not dry, so stir in hot water until it falls off a spoon. A small pinch of jaggery is traditional if you keep some in the pantry."
+    },
+    {
+      "id": "south-india-chettinad-pepper-chicken-millet",
+      "name": "Chettinad pepper chicken with foxtail millet",
+      "inspiredBy": "Chettinad milagu kozhi (pepper chicken) from the Chettinad region of Tamil Nadu",
+      "about": "Chicken thighs slow-cooked in a freshly toasted and ground masala of black pepper, fennel, coriander seed and dried red chili with caramelized onion and a curd marinade, served over foxtail millet with a crisp onion and cucumber side. This is the peppery, fragrant cooking of the Chettinad region of Tamil Nadu, and it is worth the weekend. The chicken brings **protein, niacin and B6**, and it makes two portions, so tomorrow's lunch is done.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "skinless thighs, bone out, cut into pieces"
+        },
+        {
+          "food": "foxtail-millet-polished-grain-raw-0dfe59",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "thinai"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 90,
+          "note": "finely sliced, plus a few slices kept raw for the side"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 2.5,
+          "note": "whole peppercorns"
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.8
+        },
+        {
+          "food": "fennel-seed-8a14d7",
+          "g": 0.3
+        },
+        {
+          "food": "chili-pepper-red-sun-dried-d3dda3",
+          "g": 2,
+          "note": "2 whole dried red chilies"
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 0.4
+        },
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 70,
+          "swap": "dairy_protein",
+          "note": "plain curd, for the marinade"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "sliced, for the side"
+        }
+      ],
+      "steps": [
+        "Toast the peppercorns, coriander seed, half the fennel and the dried chilies in a dry pan over medium heat for about a minute, until they smell warm and toasty. Grind them to a fine powder in a spice grinder or mortar. This fresh masala is what makes Chettinad cooking taste the way it does.",
+        "Blitz the garlic and ginger with a splash of water into a smooth paste. Toss the chicken with half the paste, the curd and a pinch of the salt and leave it to marinate while you cook the onion.",
+        "Warm the oil in a wide, heavy pan over medium heat. Add the rest of the fennel seeds whole and let them sizzle for 10 seconds, then the curry leaves (stand back, they spit), then the onion, and cook until deep golden brown, about 12 minutes.",
+        "Stir in the rest of the garlic and ginger paste and cook for 2 minutes, until the raw smell is gone.",
+        "Add the marinated chicken, the ground masala and the rest of the salt, and stir well so every piece is coated. Pour in half a cup of water, cover and cook gently for 20 minutes, until the chicken is tender.",
+        "Meanwhile, rinse the millet and cook it in a little over twice its volume of water, covered, until fluffy, about 15 minutes. Toss the sliced cucumber with the few raw onion slices and a pinch of salt for the side.",
+        "Uncover the chicken and cook for 5 to 8 minutes more, stirring often, until the sauce clings to the chicken in a dark, almost dry masala. Serve over the millet with the cucumber and onion side. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 55,
+      "servings": 2,
+      "tags": [
+        "spicy",
+        "weekend-project",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "For the real Chettinad flavour, use gingelly (sesame) oil in place of the canola. Make the masala powder in a double batch, since it keeps a month in a jar and is lovely on roasted vegetables."
+    },
+    {
+      "id": "south-india-kerala-fish-moilee-spinach-thoran",
+      "name": "Kerala fish moilee with spinach thoran and red rice",
+      "inspiredBy": "Kerala fish molee, a Syrian Christian coconut milk curry, with Spanish mackerel for seer fish",
+      "about": "Chunks of fish in a light, gently spiced coconut gravy with ginger, green chili and curry leaves, finished with lemon and a sizzle of onion, alongside a green spinach thoran and red rice. Moilee is a mild, fragrant Kerala curry, traditionally made with seer fish. Spanish mackerel is from the same family, so it brings **omega-3 fats and B12**.",
+      "ingredients": [
+        {
+          "food": "spanish-mackerel-raw-0bc99d",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "steaks or fillets, cut into chunks, standing in for seer fish"
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 30,
+          "note": "canned, shaken well"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "cut into thin matchsticks"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 4,
+          "note": "slit"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1.5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-rice-unenriched-dry-raw-8ce769",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "Kerala matta rice, or any red rice"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "chopped, or use amaranth leaves"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 4,
+          "note": "fresh or frozen grated coconut"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        }
+      ],
+      "steps": [
+        "Rinse the red rice and cook it in plenty of boiling water until tender, about 35 minutes, then drain.",
+        "Rub the fish with the turmeric and half the salt and leave it for 10 minutes.",
+        "Warm half the oil in a wide pan over medium-low heat. Add half the curry leaves (stand back, they spit), then most of the onion, the ginger and the green chili and cook gently for 5 minutes, until soft and fragrant but not browned. Moilee is a pale curry.",
+        "Add the coconut milk and a quarter cup of water and bring to a bare simmer. Slide in the fish, cover and cook gently for 7 to 8 minutes, until it is just opaque, spooning the gravy over now and then. Do not boil hard, or the coconut milk may split. Stir in the lemon juice and take it off the heat.",
+        "For the thoran, warm the rest of the oil in a second pan. Add the mustard seeds and let them pop, then the rest of the curry leaves and the last of the onion and cook for 1 minute. Spoon a little of this sizzling onion and curry leaf over the moilee, then add the spinach and the rest of the salt to the pan and cook for 2 to 3 minutes, until wilted. Stir in the coconut.",
+        "Serve the moilee and the thoran with the red rice."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Any firm white fish also makes a lovely, lighter moilee."
+    },
+    {
+      "id": "south-india-foxtail-millet-upma-egg-podimas",
+      "name": "Foxtail millet upma with egg podimas",
+      "inspiredBy": "Tamil thinai upma, made with foxtail millet in place of the usual semolina, with muttai podimas",
+      "about": "A savoury, fluffy upma made with foxtail millet instead of semolina, with green beans and toasted peanuts, and soft onion-and-curry-leaf scrambled eggs (podimas) on the side. It is a Tamil tiffin favourite with a grain that keeps you full for hours. The millet and beans bring **fibre**, and the eggs bring **protein and choline**.",
+      "ingredients": [
+        {
+          "food": "foxtail-millet-polished-grain-raw-0dfe59",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "thinai"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 90,
+          "note": "cut into small pieces"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3,
+          "note": "slit"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "finely chopped"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 1
+        },
+        {
+          "food": "black-gram-duhli-urad-dahl-split-dried-raw-051ef9",
+          "g": 3,
+          "note": "urad dal"
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1.5
+        },
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 100,
+          "swap": "dairy_protein",
+          "note": "plain curd, to serve"
+        }
+      ],
+      "steps": [
+        "Rinse the millet well and drain it. Toast it in a dry pot over medium heat for 2 minutes, until it smells nutty, then tip it into a bowl.",
+        "Warm the oil in the same pot. Add the mustard seeds, and when they pop, add the urad dal and the peanuts. Stir for about a minute, until the dal turns golden and the peanuts smell roasted. This is the tempering (thalippu), and the urad dal is what gives upma its nutty crunch.",
+        "Add the curry leaves (stand back, they spit), the green chili, ginger and two thirds of the onion. Cook until the onion is soft and glassy, about 4 minutes. Spoon a quarter of this mixture into a small bowl for the eggs.",
+        "Stir the green beans into the pot for 1 minute. Add the toasted millet, half the salt and a little over twice as much water as millet. Bring to a boil, then cover and cook on low until the water is absorbed and the millet is tender, about 15 minutes.",
+        "While the millet cooks, make the podimas. Warm a small non-stick pan, add the spoonful of onion mixture and the rest of the raw onion and cook for a minute. Beat in the eggs with the rest of the salt and stir gently until just set and still glossy, about 2 minutes.",
+        "Rest the upma covered for 5 minutes, then fluff with a fork. Serve with the egg podimas and a bowl of curd."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make the upma the night before and reheat it with a splash of water while the eggs cook, or use a pressure cooker and have it ready in 10 minutes."
+    },
+    {
+      "id": "south-india-lemon-millet-chickpea-pachadi",
+      "name": "Lemon foxtail millet with peanuts and chickpeas, and cucumber pachadi",
+      "inspiredBy": "Karnataka chitranna (lemon rice) made with foxtail millet, with chickpeas as in a Tamil sundal",
+      "about": "Fluffy foxtail millet tossed with mustard seed, urad dal, peanuts, ginger and a good squeeze of lemon, with chickpeas folded in and a cooling cucumber pachadi on the side. It is a lunchbox favourite across Karnataka and Tamil Nadu. The chickpeas and curd make it a **filling, protein-rich** lunch.",
+      "ingredients": [
+        {
+          "food": "foxtail-millet-polished-grain-raw-0dfe59",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "thinai"
+        },
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 25,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "chickpea-canned-drained-a7deb5",
+          "g": 170,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.8
+        },
+        {
+          "food": "black-gram-duhli-urad-dahl-split-dried-raw-051ef9",
+          "g": 3,
+          "note": "urad dal"
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1.5
+        },
+        {
+          "food": "chili-pepper-red-sun-dried-d3dda3",
+          "g": 1,
+          "note": "whole dried red chili"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "grated"
+        },
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 190,
+          "swap": "dairy_protein",
+          "note": "plain curd"
+        }
+      ],
+      "steps": [
+        "Rinse the millet, drain it and cook it in a little over twice its volume of water with a pinch of the salt, covered, until tender and fluffy, about 15 minutes. Spread it on a plate for a few minutes so the grains stay separate.",
+        "Warm the oil in a wide pan. Add the mustard seeds, and when they pop, add the urad dal, the peanuts and the dried chili and fry until the dal is golden. This is the tempering (thalippu), and it is what makes lemon millet taste like lemon millet. Spoon a little of the tempering into a small cup and keep it for the pachadi.",
+        "Add the curry leaves (stand back, they spit), the ginger and turmeric to the pan and stir for 30 seconds. Add the chickpeas and warm them through for 2 minutes.",
+        "Fold in the millet and the rest of the salt, then take the pan off the heat and stir in the lemon juice. Adding the lemon off the heat keeps it fresh and bright.",
+        "Squeeze the grated cucumber dry and stir it into the curd with a pinch of salt, then stir in the reserved tempering. Serve the pachadi alongside the millet."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "south-india-moong-cabbage-kootu-carrot-poriyal",
+      "name": "Moong dal and cabbage kootu with carrot poriyal and brown rice",
+      "inspiredBy": "Tamil muttaikose kootu and carrot poriyal, the classic home lunch plate",
+      "about": "A gentle, coconut-scented kootu of split moong dal and soft cabbage, alongside a sweet carrot poriyal tempered with mustard and urad dal, with brown rice and a bowl of curd. It is the sort of plate you would be served at a Tamil home lunch. The moong brings **protein, folate and iron**, and the carrot brings **vitamin A**.",
+      "ingredients": [
+        {
+          "food": "mung-beans-dahl-dried-raw-df3628",
+          "g": 70,
+          "swap": "legumes",
+          "note": "moong dal"
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 130,
+          "note": "finely chopped"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 110,
+          "note": "grated"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 8,
+          "note": "fresh or frozen grated coconut"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.8
+        },
+        {
+          "food": "chili-pepper-red-sun-dried-d3dda3",
+          "g": 1.5,
+          "note": "whole dried red chilies"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.8
+        },
+        {
+          "food": "black-gram-duhli-urad-dahl-split-dried-raw-051ef9",
+          "g": 3,
+          "note": "urad dal"
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1.5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 120,
+          "swap": "dairy_protein",
+          "note": "plain curd, to serve"
+        }
+      ],
+      "steps": [
+        "Rinse the brown rice and cook it in plenty of boiling water until tender, about 30 minutes, then drain.",
+        "Rinse the moong dal and simmer it with the turmeric, half the salt and about 3 cups of water until soft but not mushy, about 15 minutes.",
+        "Stir the cabbage into the dal and cook until it is soft and sweet, about 6 minutes. Crush half the coconut with the cumin and one of the dried chilies in a mortar into a rough paste, stir it in and simmer for 2 minutes. This is the kootu.",
+        "Now the tempering (thalippu). Warm the oil in a small pan, add the mustard seeds and let them pop, then add the urad dal, the other dried chili and the curry leaves (stand back, they spit) and fry until the dal is golden. Pour half over the kootu.",
+        "Stir the grated carrot into the rest of the tempering with the remaining salt and a splash of water. Cover and cook for 5 to 6 minutes, until just tender, then uncover and stir in the rest of the coconut. This dry stir-fry is the poriyal.",
+        "Serve the kootu and the poriyal over the rice with the curd on the side."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Use bottle gourd, ash gourd or zucchini in place of the cabbage for a different kootu."
+    },
+    {
+      "id": "south-india-pepper-rasam-cup",
+      "name": "Pepper rasam cup",
+      "inspiredBy": "Tamil milagu rasam (pepper rasam)",
+      "about": "A thin, tangy, peppery soup of tomato, tamarind, garlic and a little dal, with a mustard, dried chili and curry leaf tempering. Rasam is the South Indian cure for everything, and a hot cup in the afternoon is lovely. It has **vitamin C and lycopene** from the tomato.",
+      "ingredients": [
+        {
+          "food": "red-lentils-split-dried-boiled-in-unsalted-water-3b201a",
+          "g": 40,
+          "swap": "legumes",
+          "note": "two spoonfuls of leftover cooked dhal, or red lentils cooked soft"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "chopped"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 1,
+          "note": "freshly cracked"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.5
+        },
+        {
+          "food": "chili-pepper-red-sun-dried-d3dda3",
+          "g": 0.5,
+          "note": "a piece of whole dried red chili"
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.1,
+          "note": "a pinch"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Mash the cooked dhal with a splash of hot water until it is smooth and thin.",
+        "Put the tomato, tamarind, half the garlic, half the pepper, half the cumin, the salt and 1 cup of water in a small pot. Simmer for 8 minutes, until the tomato has collapsed. Stir in the dhal and simmer 2 minutes.",
+        "Now the tempering. Warm the oil in a small pan, add the mustard seeds and let them pop, then the rest of the cumin, pepper and garlic, the dried chili, the hing and the curry leaves (stand back, they spit), and pour it over the rasam. Sip it hot."
+      ],
+      "prepMin": 5,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "south-india-moong-kosambari",
+      "name": "Moong kosambari",
+      "inspiredBy": "Karnataka hesaru bele kosambari",
+      "about": "A cool, crunchy Karnataka salad of soaked split moong dal, cucumber and coconut with lemon and a mustard seed tempering. It is a temple and festival favourite and it is light, with **protein and fibre**.",
+      "ingredients": [
+        {
+          "food": "mung-beans-dahl-dried-raw-df3628",
+          "g": 30,
+          "swap": "legumes",
+          "note": "moong dal, soaked in water for 1 to 2 hours and drained"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 130,
+          "note": "finely diced"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 4
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 1.5
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.5
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 0.5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toss the soaked moong dal with the cucumber, coconut and finely chopped green chili in a bowl.",
+        "Warm the oil in a small pan, add the mustard seeds and let them pop, then add the curry leaves for a few seconds and pour the sizzling oil over the salad.",
+        "Add the salt and lemon juice, toss and eat within the hour while the dal is still crunchy."
+      ],
+      "prepMin": 10,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "south-india-peanut-sundal",
+      "name": "Boiled peanut sundal",
+      "inspiredBy": "Tamil verkadalai sundal",
+      "about": "Fresh peanuts simmered until tender and tossed with mustard seed, curry leaf, green chili and fresh coconut, a favourite street snack on the Tamil coast. It is hearty, with **protein and magnesium**.",
+      "ingredients": [
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 25,
+          "swap": "nuts_seeds",
+          "note": "raw, shelled, soaked for 4 hours"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 4
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.5
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 1.5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Soak the peanuts in cold water for 4 hours, then drain. Cover them with fresh water, add a pinch of the salt and simmer until tender, about 35 minutes. Drain them.",
+        "Warm the oil in a pan, add the mustard seeds and let them pop, then the curry leaves and chopped green chili for a few seconds.",
+        "Add the peanuts and the rest of the salt and toss for 2 minutes. Off the heat, stir in the coconut and lemon juice."
+      ],
+      "prepMin": 3,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "south-india-papaya-lime",
+      "name": "Papaya with lemon",
+      "about": "Ripe papaya in bite-sized chunks with a squeeze of lemon and a pinch of black pepper, a soft, fragrant fruit snack. The papaya brings **vitamin C and vitamin A**.",
+      "ingredients": [
+        {
+          "food": "papaya-raw-cd2cbc",
+          "g": 180,
+          "swap": "vit_c_fruit",
+          "note": "seeds removed, cut into chunks"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Scoop out the seeds and cut the papaya into chunks.",
+        "Squeeze the lemon over the top and add a pinch of freshly ground pepper."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "south-india-boiled-egg-lunu-miris",
+      "name": "Boiled egg with lunu miris",
+      "inspiredBy": "Sri Lankan lunu miris",
+      "about": "A hard-boiled egg halved and topped with lunu miris, the Sri Lankan relish of onion pounded with chili, lemon and salt. It is hot, sour and savoury, and it is a very easy snack. The egg brings **protein and choline**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 10,
+          "note": "finely chopped"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.5,
+          "note": "red chili powder"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Hard-boil the egg for 9 minutes, cool it in cold water, peel and halve it.",
+        "Pound the onion with the chili powder, lemon juice and salt into a wet red relish and spoon it over the egg."
+      ],
+      "prepMin": 3,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "south-india-papaya-almonds-lemon",
+      "name": "Papaya with soaked almonds and lemon",
+      "about": "Ripe papaya in bite-sized chunks with a few soaked almonds, a squeeze of lemon and a pinch of black pepper. It is soft, sweet and a little crunchy, and it gives you **vitamin C, vitamin A and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "papaya-raw-cd2cbc",
+          "g": 180,
+          "swap": "vit_c_fruit",
+          "note": "seeds removed, cut into chunks"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "soaked in water for a few hours or overnight"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Scoop out the seeds and cut the papaya into chunks. Drain the soaked almonds.",
+        "Squeeze the lemon over the papaya, scatter the almonds on top and add a pinch of freshly ground pepper."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "south-india-badam-lassi",
+      "name": "Badam lassi",
+      "inspiredBy": "South Indian badam paal, as a lassi",
+      "about": "Cold yogurt blended with soaked almonds, a pinch of cardamom and a splash of water into a thick, cooling drink, a South Indian take on badam milk. The almonds bring **vitamin E and magnesium**, and the yogurt brings calcium.",
+      "ingredients": [
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 110,
+          "swap": "dairy_protein",
+          "note": "plain curd"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "soaked in water for a few hours or overnight and drained"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Slip the skins off the soaked almonds so the lassi blends smooth. Put the curd, the almonds, the cardamom and about a quarter cup of cold water in a blender.",
+        "Blend until completely smooth and serve over ice."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Blend in a little ripe papaya or a pinch of jaggery for a sweeter drink."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "south-india-pesarattu-ginger-chutney"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "south-india-kerala-prawn-roast-bean-thoran"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "south-india-vegetable-sambar-brown-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-india-boiled-egg-lunu-miris"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-india-guava-chili-almonds"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "south-india-foxtail-millet-upma-egg-podimas"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "south-india-vegetable-sambar-brown-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "south-india-kerala-sardine-curry-cabbage-thoran"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-india-badam-lassi"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-india-chickpea-sundal"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "south-india-egg-hoppers-pol-sambol"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "south-india-lemon-millet-chickpea-pachadi"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "south-india-sri-lankan-dhal-kale-mallung"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-india-papaya-almonds-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-india-spiced-neer-mor"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "south-india-pesarattu-ginger-chutney"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "south-india-sri-lankan-dhal-kale-mallung",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "south-india-mackerel-ambul-thiyal-leek-mallung"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-india-pepper-egg-fry"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-india-badam-lassi"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "south-india-foxtail-millet-upma-egg-podimas"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "south-india-moong-cabbage-kootu-carrot-poriyal"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "south-india-bisi-bele-bath-style-lentil-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-india-chickpea-sundal"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-india-moong-kosambari"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "south-india-egg-hoppers-pol-sambol"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "south-india-bisi-bele-bath-style-lentil-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "south-india-chettinad-pepper-chicken-millet"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-india-guava-chili-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-india-pepper-rasam-cup"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "south-india-pesarattu-ginger-chutney"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "south-india-chettinad-pepper-chicken-millet",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "south-india-kerala-fish-moilee-spinach-thoran"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-india-boiled-egg-lunu-miris"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-india-papaya-almonds-lemon"
+        }
+      ]
+    }
+  ]
+}
