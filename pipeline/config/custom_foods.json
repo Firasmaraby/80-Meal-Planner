@@ -1074,6 +1074,52 @@
    ],
    "recipe": "Filipino cane (or coconut) vinegar is a mild fermented vinegar; nutritionally it is vinegar.",
    "limits": "Same values as plain vinegar."
+  },
+  {
+   "key": "pekmez",
+   "name": "Pekmez (grape molasses)",
+   "head": "pekmez",
+   "form": "product",
+   "category": "sweet",
+   "aliases": ["grape molasses", "üzüm pekmezi", "dibs anab", "grape syrup"],
+   "servings": [{"label": "1 tbsp", "g": 20}],
+   "components": [
+    {"food": "raisin-fe075b", "g": 110, "note": "grape solids; pekmez is grape must boiled down"}
+   ],
+   "omit": ["fiber", "vitC", "folate"],
+   "kcal": "atwater",
+   "recipe": "Pekmez is grape must boiled down to a thick syrup. Values are raisins (dried grapes) with the fibre removed, which stays in the pressed skins, energy recomputed.",
+   "limits": "Minerals are assumed to pass into the syrup in full, so iron and potassium may be overstated by 10 to 30 %. Brands range in thickness."
+  },
+  {
+   "key": "biber-salcasi",
+   "name": "Biber salçası (Turkish red pepper paste)",
+   "head": "biber salcasi",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["biber salçası", "pepper paste", "turkish pepper paste", "acı biber salçası", "tatlı biber salçası"],
+   "servings": [{"label": "1 tbsp", "g": 18}],
+   "components": [
+    {"food": "red-bell-pepper-raw-42163e", "g": 600, "note": "sweet red peppers sun-reduced about six-fold"},
+    {"food": "table-salt-fdccfe", "g": 3, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"}
+   ],
+   "omit": ["vitC", "folate"],
+   "recipe": "Biber salçası is red peppers cooked and sun-dried to a thick paste with salt (about 1.2 g sodium per 100 g). Values are red bell pepper concentrated six-fold with salt.",
+   "limits": "Vitamin C and folate are left out because long cooking destroys most of them. The hot (acı) kind adds chili, nutritionally similar."
+  },
+  {
+   "key": "lavash-whole-wheat",
+   "name": "Lavash, whole wheat",
+   "head": "lavash",
+   "form": "product",
+   "category": "grain",
+   "aliases": ["lavash", "whole wheat lavash", "lavaş", "persian flatbread", "armenian flatbread"],
+   "servings": [{"label": "1 sheet", "g": 70}],
+   "components": [
+    {"food": "whole-wheat-pita-bread-9baae8", "g": 100, "note": "the same whole-wheat dough, rolled thin"}
+   ],
+   "recipe": "Whole-wheat lavash is a thin, soft flatbread of the same dough as whole-wheat pita; it takes the pita's values.",
+   "limits": "Thinner breads lose a little more moisture, so energy per 100 g may be slightly higher than listed."
   }
  ]
 }
