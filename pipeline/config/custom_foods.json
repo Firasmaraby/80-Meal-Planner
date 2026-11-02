@@ -686,6 +686,48 @@
    "fill": ["kcal", "protein", "carbs", "fat"],
    "recipe": "Orange blossom water is a steam distillate of bitter-orange flowers: water with aroma and no meaningful nutrients, so it takes the values of water.",
    "limits": "Only energy and macronutrients (all zero) are given. Used by the teaspoon for aroma."
+  },
+  {
+   "key": "thai-basil",
+   "name": "Thai basil",
+   "head": "thai basil",
+   "form": "raw",
+   "category": "vegetable",
+   "aliases": ["horapha", "bai horapha", "rau que", "anise basil", "asian basil"],
+   "servings": [{"label": "1/4 cup leaves", "g": 6}],
+   "components": [
+    {"food": "basil-green-raw-a2ab63", "g": 100}
+   ],
+   "recipe": "Thai basil (Ocimum basilicum var. thyrsiflora) takes the values of sweet basil, the same species; only the aroma (anise and clove) differs.",
+   "limits": "A same-species proxy. Used by the handful."
+  },
+  {
+   "key": "holy-basil",
+   "name": "Holy basil",
+   "head": "holy basil",
+   "form": "raw",
+   "category": "vegetable",
+   "aliases": ["kra pao", "krapao", "bai kaphrao", "tulsi", "hot basil"],
+   "servings": [{"label": "1/4 cup leaves", "g": 6}],
+   "components": [
+    {"food": "basil-green-raw-a2ab63", "g": 100}
+   ],
+   "recipe": "Holy basil (Ocimum tenuiflorum) takes the values of sweet basil, a close relative of the same genus eaten the same way.",
+   "limits": "A same-genus proxy; minerals may differ a little. Used by the handful."
+  },
+  {
+   "key": "palm-sugar",
+   "name": "Palm sugar",
+   "head": "palm sugar",
+   "form": "product",
+   "category": "sweet",
+   "aliases": ["nam tan pip", "coconut sugar", "gula melaka", "gula jawa", "jaggery palm"],
+   "servings": [{"label": "1 tsp", "g": 4}, {"label": "1 tbsp", "g": 12}],
+   "components": [
+    {"custom": "jaggery", "g": 100}
+   ],
+   "recipe": "Palm sugar is palm sap boiled down without refining, the palm counterpart of cane jaggery; it takes the jaggery estimate.",
+   "limits": "Minerals vary with the palm and the pan; treat them as a rough middle. Used by the teaspoon."
   }
  ]
 }
