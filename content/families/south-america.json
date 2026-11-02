@@ -1,0 +1,1707 @@
+{
+  "id": "south-america",
+  "name": "South American Table",
+  "style": "balanced",
+  "cuisine": "South American",
+  "regions": [
+    "Peru",
+    "Brazil",
+    "Colombia",
+    "Argentina",
+    "Chile"
+  ],
+  "summary": "A week of South American home cooking: Colombian huevos pericos and ajiaco, Brazilian cuscuz, feijoada and moqueca, Peruvian ceviche and lomo saltado, Argentine lentil guiso and chimichurri chicken, and Chilean salmon with pebre. Corn, beans, quinoa and potatoes carry the carbs, with lime, cilantro and ají in almost every dish.",
+  "howItWorks": "**Cook once, eat twice.** Monday's feijoada, Wednesday's lentil guiso, Friday's lomo saltado and Saturday's moqueca each make two portions, so the next day's lunch is done. The salmon, sardines and ajiaco are cooked fresh.\n\n**Fatty fish four times.** Salmon with pebre on Tuesday, sardines with yuca on Thursday and mackerel moqueca on Saturday (back for Sunday lunch) carry your **omega-3** and help with **vitamin D**. Sardine bones add calcium, and Monday's cod ceviche brings iodine.\n\n**Sunday pots.** Simmer about 280 g of soaked dry black beans with an onion and a bay leaf for about 1 hour, salting at the end. Monday's feijoada takes 210 g and Friday's salad 65 g (freeze that tub). Cook 90 g of dry brown rice and keep Monday's 30 g tub in the fridge and freeze two for Friday and Saturday.\n\n**Iron, calcium and eggs.** Lentils, black beans, beef, quinoa and pumpkin seeds carry **iron and zinc**. Evaporated milk, collards, queijo coalho and sardine bones carry **calcium**. Eggs at five breakfasts carry choline, and two mornings are quinoa porridge.\n\n**Brightness.** Salsa criolla, pebre, chimichurri, vinagrete and lime turn up in most meals, and the vitamin C helps you absorb the iron from the beans.",
+  "signature": [
+    "south-america-feijoada-light",
+    "south-america-moqueca-cavala",
+    "south-america-lomo-saltado",
+    "south-america-ajiaco"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "south-america-choclo-queso"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "south-america-choclo-queso"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "south-america-arepita-choclo-queso"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "south-america-arepita-choclo-queso"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "south-america-mani-limon-aji"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "south-america-cancha-limon"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "south-america-huevos-pericos-arepa-choclo",
+      "name": "Huevos pericos with arepa de choclo and hot chocolate",
+      "inspiredBy": "Colombian huevos pericos, with the arepa made from frozen corn and whole-grain cornmeal instead of precooked white flour",
+      "about": "Soft scrambled eggs cooked with tomato and scallion, the everyday Bogotá breakfast, served with a sweet, golden arepa de choclo, a few slices of avocado and a mug of hot chocolate made with evaporated milk. The arepa is blended from sweet corn and whole-grain cornmeal, so it has a soft middle and a toasty crust. The eggs and avocado bring **protein, choline and vitamin E**, and the milk adds calcium.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 90,
+          "note": "finely diced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 30,
+          "note": "white and green parts, sliced"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 60,
+          "note": "thawed"
+        },
+        {
+          "food": "cornmeal-yellow-whole-grain-2712ac",
+          "g": 25,
+          "note": "medium or fine grind"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 30,
+          "note": "sliced"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cow-milk-canned-evaporated-reduced-fat-2-f9ac15",
+          "g": 120,
+          "note": "evaporated milk, thinned with an equal amount of water"
+        },
+        {
+          "food": "cocoa-powder-7fc29d",
+          "g": 8,
+          "note": "unsweetened cocoa powder"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Blend the corn with a splash of water, about a tablespoon, until it is mostly smooth but still a little pebbly. Stir in the cornmeal and half the salt. Let the batter sit for 10 minutes while the cornmeal drinks up the corn juice and thickens to a thick pancake batter. If it looks loose, stir in another spoon of cornmeal.",
+        "Make the chocolate caliente: warm the evaporated milk with the same amount of water in a small pot, whisk in the cocoa and cinnamon, and simmer for 2 minutes until smooth. Keep it warm.",
+        "Dice the tomato and slice the scallion, keeping the white and green parts separate.",
+        "Brush a non-stick pan with a little of the oil over medium heat. Spoon in the batter in one or two mounds and flatten each to about 1 cm thick. Cook until the bottoms are golden, about 4 minutes, then flip and cook 3 to 4 minutes more, until they feel firm and smell like toasted corn.",
+        "Wipe the pan, warm the rest of the oil and soften the scallion whites and tomato with a pinch of salt until the juices mostly cook off, about 4 minutes.",
+        "Beat the eggs, pour them in and stir gently with a spatula until they are just set and still creamy, about 1 minute. Stir through the green scallion.",
+        "Serve the eggs with the arepas, the sliced avocado and the hot chocolate."
+      ],
+      "prepMin": 12,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Blend the arepa batter the night before and keep it in the fridge; stir in a spoon of water in the morning and breakfast takes 10 minutes. A few cubes of cheese inside the arepa are classic if you want them."
+    },
+    {
+      "id": "south-america-cuscuz-milho-ovo",
+      "name": "Cuscuz de milho with fried egg, grilled coalho and papaya",
+      "inspiredBy": "Cuscuz nordestino from northeast Brazil, steamed cornmeal with egg and grilled queijo coalho, made with coarse whole-grain cornmeal in place of flocão",
+      "about": "Fluffy steamed cornmeal, the breakfast of Brazil's northeast, topped with a fried egg, golden-brown queijo coalho and juicy tomato, with sweet papaya and a mug of chocolate quente made with evaporated milk on the side. It needs no flour and no tapioca, only cornmeal, water and a steamer. The whole-grain corn and egg bring **fibre, protein and choline**, and the cheese and milk bring calcium.",
+      "ingredients": [
+        {
+          "food": "cornmeal-yellow-whole-grain-2712ac",
+          "g": 35,
+          "note": "coarse grind, whole-grain"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "queijo-coalho-02fc0d",
+          "g": 18,
+          "note": "cut in two thick slices"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "papaya-raw-cd2cbc",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "cubed"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4
+        },
+        {
+          "food": "cow-milk-canned-evaporated-reduced-fat-2-f9ac15",
+          "g": 130,
+          "note": "evaporated milk, thinned with an equal amount of water"
+        },
+        {
+          "food": "cocoa-powder-7fc29d",
+          "g": 8,
+          "note": "unsweetened cocoa powder"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Stir the cornmeal with half the salt in a bowl. Sprinkle over water a spoonful at a time, tossing with a fork, until the meal looks like damp sand. Let it rest 15 minutes, so the coarse grains soften.",
+        "Make the chocolate quente: warm the evaporated milk with the same amount of water in a small pot, whisk in the cocoa, and simmer for 2 minutes until smooth. Keep it warm.",
+        "Steam the damp meal in a steamer basket or fine sieve lined with a damp cloth, set over simmering water and covered, for about 20 minutes, until tender and fluffy. Fluff it with a fork halfway through.",
+        "While it steams, slice the tomato and toss it with half the lime juice, a pinch of salt and the cilantro. Cube the papaya and squeeze the rest of the lime over it.",
+        "Brown the coalho slices in a dry non-stick pan, about 1 to 2 minutes per side, until golden and a little crusty. Lift them out.",
+        "Warm the oil in the same pan and fry the eggs, sunny side up, until the whites are set and the yolks are still soft.",
+        "Pack the cuscuz into a bowl or plate, top with the eggs and cheese, and serve with the tomato, the papaya and the hot chocolate."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Steam it the night before, then warm it covered with a spoon of water for 1 minute in the morning. Flocão (coarse flaked cornmeal) is the traditional meal and is sold at Latin and Brazilian shops. Queijo coalho grills without melting; queso panela, halloumi or paneer will do if you cannot find it."
+    },
+    {
+      "id": "south-america-quinua-con-leche",
+      "name": "Quinua con leche with banana and a little cocoa",
+      "inspiredBy": "Peruvian quinua con leche, the warm quinoa and milk breakfast drink sold from street carts, thickened into a spoonable porridge",
+      "about": "Quinoa simmered in evaporated milk with cinnamon, clove and a little cocoa until it turns creamy, then stirred with ripe banana. It is the warm, comforting breakfast of the Andes, with a chocolate hint. The quinoa brings **iron, magnesium and protein**, and the milk adds calcium.",
+      "ingredients": [
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "rinsed well"
+        },
+        {
+          "food": "cow-milk-canned-evaporated-reduced-fat-2-f9ac15",
+          "g": 150,
+          "note": "evaporated milk, thinned with an equal amount of water"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 90,
+          "note": "half mashed, half sliced"
+        },
+        {
+          "food": "cocoa-powder-7fc29d",
+          "g": 5,
+          "note": "unsweetened cocoa powder"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1.5
+        },
+        {
+          "food": "clove-ground-863cd5",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa in a fine sieve under cold running water for a full minute, until the water runs clear. This washes off the bitter coating.",
+        "Put the quinoa, the evaporated milk, about three times the quinoa's volume of water, the cocoa, the cinnamon and the clove in a small pot, and whisk so the cocoa dissolves. Bring to a gentle simmer, then cook on low, stirring now and then, until the grains are tender with a little white tail, about 18 minutes.",
+        "Mash half the banana into the porridge and cook 3 minutes more, until it is thick, glossy and creamy. The banana is the only sweetener, so add a little honey or sugar if you like.",
+        "Spoon into a bowl and top with the sliced banana. Add a splash of hot milk if you like it looser."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Cook a double batch the night before and keep it covered in the fridge for up to 3 days; reheat with a splash of water. Ripe papaya can stand in for the banana."
+    },
+    {
+      "id": "south-america-ceviche-cod-camote",
+      "name": "Ceviche-style cooked cod with camote and corn",
+      "inspiredBy": "Peruvian ceviche, with the cod lightly poached first, served with sweet potato and corn in the classic way",
+      "about": "Tender cubes of cod in a sharp lime, ají amarillo and cilantro marinade, with sweet potato, sweet corn and crisp red onion. The cod is lightly poached so it is cooked through, and the lime marinade still makes it taste like ceviche. Cod brings **lean protein and iodine**, and the lime, cilantro and onion keep it zingy.",
+      "ingredients": [
+        {
+          "food": "atlantic-cod-wild-caught-raw-8de8e0",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "skinless, cut in 2 cm cubes"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 40,
+          "note": "about 3 limes"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 40,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 10
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 12
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 90,
+          "note": "peeled, in chunks"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 70,
+          "note": "frozen kernels"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Boil the sweet potato chunks in salted water for about 8 minutes, add the corn kernels, and boil 4 minutes more, until the sweet potato is just tender when poked with a fork. Drain and let them cool.",
+        "Soak the sliced red onion in a bowl of ice-cold water for 5 minutes to take the sting out, then drain well.",
+        "Bring a small pot of salted water to a simmer, slip in the cod cubes and poach for about 90 seconds, until just opaque. Drain well, spread on a plate and chill in the fridge for 5 minutes, so they do not keep cooking.",
+        "In a bowl, stir the lime juice with the ají amarillo paste, the grated garlic, half the cilantro and the salt. Add the cod and turn it gently. Let it sit for 10 minutes, so it soaks up the marinade.",
+        "Serve the cod with its marinade, the onion, the sweet potato and the corn, with the rest of the cilantro on top. Eat right away."
+      ],
+      "prepMin": 20,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Ají amarillo paste is sold at Latin grocers and online. Use any firm, mild white fish. Poach the cod and boil the camote and corn on Sunday night, then marinate for 10 minutes at lunch."
+    },
+    {
+      "id": "south-america-solterito-quinoa",
+      "name": "Quinoa solterito with black beans, corn and queijo coalho",
+      "inspiredBy": "Peruvian and Bolivian solterito, the bean, corn and cheese salad, with quinoa and black beans making it a full meal, and red pepper in place of rocoto",
+      "about": "Fluffy quinoa tossed with black beans, sweet corn, tomato, red pepper, red onion, avocado and diced queijo coalho in a lime, oregano and olive oil dressing. It is the kind of salad that sits happily in a lunchbox. The quinoa and beans together bring **iron, folate and protein**, and the lime helps your body use that iron.",
+      "ingredients": [
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "rinsed well"
+        },
+        {
+          "food": "black-beans-dry-9f5377",
+          "g": 65,
+          "swap": "legumes",
+          "note": "cooked ahead, see the steps"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 50,
+          "note": "thawed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 30,
+          "note": "finely diced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "finely diced"
+        },
+        {
+          "food": "queijo-coalho-02fc0d",
+          "g": 20,
+          "note": "diced"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 30,
+          "note": "diced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 12
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa and simmer it in twice its volume of water with a pinch of salt until the grains are tender and have popped their little white tails, about 15 minutes. Drain if needed, fluff and let cool.",
+        "Use black beans from your Sunday pot (see the plan notes), or canned beans at about three times the dry weight, drained and rinsed.",
+        "Whisk the lime juice, olive oil, oregano and a pinch of salt in a large bowl.",
+        "Add the quinoa, beans, corn, tomato, red pepper and onion and toss well. Fold in the cilantro and top with the avocado and the diced coalho."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make a double batch of the salad base without the avocado and cheese; it keeps 3 days. Add them just before you eat."
+    },
+    {
+      "id": "south-america-pollo-chimichurri-camote",
+      "name": "Pollo a la parrilla with chimichurri, roasted sweet potato and ensalada criolla",
+      "inspiredBy": "Argentine grilled chicken with chimichurri, cooked in a grill pan, with sweet potato (batata) and a tomato and onion salad on the side",
+      "about": "Seared chicken breast, juicy inside, spooned with a sharp, garlicky parsley chimichurri, next to roasted sweet potato and a tomato and onion salad dressed with the same sauce. It tastes like a Sunday asado on a weekday. The chicken brings **protein and niacin**, and the big handful of parsley brings iron and vitamin K.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 170,
+          "note": "boneless, skinless breast"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 110,
+          "note": "scrubbed, cut in wedges"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 30
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 12
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1.2
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.3,
+          "note": "or red pepper flakes"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "in wedges"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 30,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the sweet potato wedges with a quarter of the olive oil and a pinch of salt, spread them on a tray and roast until soft inside and browned at the edges, about 30 minutes, turning once.",
+        "Chop the parsley very finely, with the garlic, and stir them in a small bowl with the oregano, cayenne, vinegar, most of the remaining olive oil and half the salt. Loosen it with 1 tablespoon of warm water, as Argentines do. That is your chimichurri. Let it sit while the chicken cooks, so the flavours settle together.",
+        "Slice the breast in half horizontally into two thin cutlets, so it cooks quickly and stays juicy. Season with the rest of the salt and a little oil. Cook in a hot cast-iron or grill pan, about 4 minutes a side, until browned and the juices run clear.",
+        "Rest the chicken for 5 minutes, then slice it.",
+        "Toss the tomato and onion with a spoon of the chimichurri. Serve the chicken with a generous spoonful of chimichurri on top, with the sweet potato and the salad."
+      ],
+      "prepMin": 15,
+      "cookMin": 32,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Chimichurri keeps 5 days in the fridge and is great on any grilled meat or fish; make a double batch. Skinless chicken thigh works too and is more forgiving, so cook it a few minutes longer. Roast the sweet potato and make the chimichurri on Tuesday night while the salmon roasts. At lunch, sear the chicken in 10 minutes."
+    },
+    {
+      "id": "south-america-feijoada-light",
+      "name": "Feijoada made light, with collards, orange and vinagrete",
+      "inspiredBy": "Brazilian feijoada completa, with lean pork and a little smoked sausage instead of the many cuts of salted and smoked meat, and brown rice",
+      "about": "A deep, smoky black bean stew with tender pork and a little smoked sausage, served over rice with garlicky collards, juicy orange slices and a sharp tomato vinagrete. Lean pork and just a little sausage keep it lighter than the Saturday classic. The black beans and collards bring **fibre, iron, folate and calcium**, and the orange and tomato help your body absorb the iron.",
+      "ingredients": [
+        {
+          "food": "black-beans-dry-9f5377",
+          "g": 105,
+          "swap": "legumes",
+          "note": "soaked overnight, or cooked beans from the Sunday pot"
+        },
+        {
+          "food": "pork-butt-portion-lean-raw-26a201",
+          "g": 110,
+          "note": "lean shoulder, trimmed and cut in 3 cm chunks"
+        },
+        {
+          "food": "chorizo-152368",
+          "g": 20,
+          "note": "smoked pork sausage (linguiça calabresa or kielbasa), in thin rounds"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 70,
+          "note": "half in the pot, the rest for the sofrito and the vinagrete"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 120,
+          "note": "stems removed"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 100,
+          "note": "peeled and sliced into rounds"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 15,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 10
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3,
+          "note": "1 leaf"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "From dry beans: drain the soaked beans and put them in a big pot with the pork, the sausage, the bay leaf, a big piece of onion and water to cover by 4 cm. Bring to a boil, skim off the foam, then simmer partly covered until the beans are very tender and the pork is falling apart, about 1 hour 15 minutes. Add the salt for the last 15 minutes.",
+        "From the Sunday pot: simmer the pork, sausage, bay leaf and onion piece alone in water for 40 minutes, until the pork is tender. Add the cooked beans with their liquid, and simmer 20 minutes more.",
+        "Soften most of the remaining onion in half the oil for about 6 minutes, then add half the garlic and the smoked paprika and cook 1 minute. Stir it all into the pot with the pepper. Mash a few spoonfuls of beans against the side of the pot and simmer 15 more minutes, until the stew is thick and glossy.",
+        "Use a tub of Sunday rice, or start the rice first: cook 30 g of dry brown rice in twice its volume of salted water, covered, until tender, about 35 minutes.",
+        "Roll up the collard leaves and slice them into very thin ribbons. Stir-fry them in the rest of the oil with the remaining garlic for 2 to 3 minutes, until bright green and just wilted.",
+        "Dice the tomato with a little raw onion and stir with the vinegar, cilantro and a pinch of salt. Let it sit 10 minutes.",
+        "Serve the beans over the rice with the collards, the orange slices and the vinagrete. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 25,
+      "cookMin": 80,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "With the Sunday beans this is a 50-minute dinner, and a pressure cooker does the soaked beans and pork in about 35 minutes. Keep the vinagrete and orange fresh for the leftover lunch, and warm the stew with a splash of water."
+    },
+    {
+      "id": "south-america-salmon-pebre-papas",
+      "name": "Baked salmon with pebre, potatoes and garlicky acelga",
+      "inspiredBy": "Chilean salmon a lo pobre, with roasted potatoes in place of the fries, the egg left off, and a fresh pebre",
+      "about": "Salmon baked on a tray with golden potatoes, with sweet caramelized onions, garlicky acelga (Swiss chard) and a spoonful of pebre, the Chilean table salsa of tomato, cilantro and chile. Chile farms much of the world's salmon, and pebre goes on everything. Salmon brings **omega-3, vitamin D and B12**, and the chard brings vitamin A and K.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "skin on, one fillet"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 110,
+          "note": "scrubbed, cut in 2 cm chunks"
+        },
+        {
+          "food": "swiss-chard-raw-f646e5",
+          "g": 100,
+          "note": "stems trimmed, sliced in ribbons"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 60,
+          "note": "half sliced for the pan, half for the pebre"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the potatoes with a third of the olive oil and a pinch of the salt. Spread them on a tray and roast for 15 minutes.",
+        "Slice half the onion and cook it slowly in a pan with a little oil and a pinch of salt, stirring now and then, until deeply golden and sweet, about 15 minutes.",
+        "Make the pebre: finely dice the tomato and the rest of the onion, chop the cilantro and stir them with the cayenne, a little of the garlic, the lime juice, most of the remaining oil and a pinch of salt. Let it sit.",
+        "Move the potatoes to one side of the tray. Rub the salmon with the last of the oil, the oregano, pepper and a pinch of salt and set it skin side down on the tray. Roast 10 to 12 minutes, until the fish flakes easily and the potatoes are golden.",
+        "Meanwhile, wilt the chard ribbons in a hot pan with a splash of water, the rest of the garlic and a pinch of salt until bright green and tender, about 4 minutes.",
+        "Plate the salmon and potatoes with the greens, top the fish with the caramelized onions and spoon over the pebre."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Pebre keeps 3 days in the fridge and is good on everything. A fried egg on top makes it a proper a lo pobre."
+    },
+    {
+      "id": "south-america-guiso-lentejas",
+      "name": "Argentine lentil guiso with chorizo and greens",
+      "inspiredBy": "Argentine guiso de lentejas, a thick stew of lentils, chorizo, potato and vegetables, with less sausage and a handful of greens",
+      "about": "A hearty, paprika-scented lentil stew with a little chorizo, potato and sweet pepper, finished with tender greens and a splash of vinegar. It is a classic cold-weather dish from Argentina and Uruguay, and it tastes even better the next day. The lentils and greens bring **iron, folate and fibre**, and the vinegar and tomato help your body absorb the iron.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 100,
+          "swap": "legumes",
+          "note": "brown or green, rinsed"
+        },
+        {
+          "food": "chorizo-152368",
+          "g": 30,
+          "note": "dry-cured chorizo, diced"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 40,
+          "note": "in 2 cm cubes"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 150,
+          "note": "chopped"
+        },
+        {
+          "food": "swiss-chard-raw-f646e5",
+          "g": 80,
+          "note": "stems chopped, leaves sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3,
+          "note": "1 leaf"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a heavy pot and brown the chorizo for 3 minutes, until it has rendered some of its red fat.",
+        "Add the onion and pepper and cook, stirring, until soft, about 8 minutes. Stir in the garlic, paprika, cumin and oregano and cook for 1 minute, until fragrant.",
+        "Add the lentils, the chopped tomatoes, the bay leaf and enough water to cover everything by about 2 cm, roughly 800 ml for two portions. Bring to a boil, then simmer partly covered for 15 minutes.",
+        "Add the potatoes and keep simmering until the lentils and potatoes are both tender and the stew is thick, about 15 minutes. Add a splash of water if it gets too thick.",
+        "Stir in the greens, the salt and the pepper and cook 4 minutes, until the greens are tender. Take off the heat and stir in the vinegar.",
+        "Ladle into bowls. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "Add the salt and vinegar near the end, since they can keep lentils firm. The guiso thickens in the fridge, so loosen it with a splash of water when you reheat."
+    },
+    {
+      "id": "south-america-sardinas-yuca-salsa-criolla",
+      "name": "Sardines with boiled yuca, salsa criolla and avocado",
+      "inspiredBy": "the Peruvian pairing of boiled yuca with salsa criolla, with canned sardines as the main",
+      "about": "Soft boiled yuca and creamy avocado with whole sardines, all topped with a sharp salsa criolla of red onion, tomato, lime, ají amarillo and cilantro. It takes about 40 minutes, or 20 with frozen yuca, and tastes like the coast. Sardines with their soft bones bring **omega-3, calcium and vitamin D**, and the lime and onion bring the brightness.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "two small tins (about 3.75 oz each), drained, with the soft bones"
+        },
+        {
+          "food": "cassava-manioc-raw-41bc74",
+          "g": 95,
+          "note": "peeled, woody core removed"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 50,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 6
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Cut the yuca into chunky pieces and boil in well-salted water until a fork goes in easily, about 20 to 25 minutes. Drain, and cut out any tough core thread you find.",
+        "Make the salsa criolla: toss the sliced onion with the lime juice, the ají amarillo paste, the oil, the tomato, most of the cilantro and a pinch of salt. Let it sit for 10 minutes, so the onion softens and turns pink.",
+        "Pile the warm yuca on a plate, set the sardines beside it and add the avocado.",
+        "Spoon the salsa criolla over the sardines and yuca and finish with the rest of the cilantro."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Frozen peeled yuca is already prepped and cooks in about 15 minutes. A boiled potato or a sweet potato works too."
+    },
+    {
+      "id": "south-america-lomo-saltado",
+      "name": "Lomo saltado with roasted potatoes and brown rice",
+      "inspiredBy": "Peruvian lomo saltado, the chifa stir-fry of beef, onion and tomato, with roasted potatoes in place of fries and brown rice",
+      "about": "Strips of sirloin seared hot with red onion, tomato and ají amarillo, splashed with soy and vinegar and tossed with golden potato wedges, over a little brown rice. It is a Lima favourite, born of Chinese-Peruvian cooking, and it cooks in minutes once the prep is done. The beef brings **iron, zinc and B12**, and the tomato and ají bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "beef-top-sirloin-steak-lean-raw-a51c2c",
+          "g": 180,
+          "swap": "lean_protein",
+          "note": "trimmed, sliced across the grain in thin strips"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 90,
+          "note": "cut in thick wedges"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 100,
+          "note": "cut in thick wedges"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "soy-sauce-shoyu-52e366",
+          "g": 12
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 10
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 15,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the potato wedges with a third of the oil and the salt and roast on a tray until golden and tender, about 30 minutes, turning once.",
+        "Use a tub of Sunday rice, or cook 30 g of dry brown rice in twice its volume of salted water, covered, until tender, about 35 minutes.",
+        "Toss the beef strips with the soy sauce, half the vinegar, the garlic, the cumin and the pepper and let them sit for 10 minutes.",
+        "Heat a large pan or wok until it is properly hot. Sear the beef in two batches in half the remaining oil, 1 to 2 minutes each, so it browns instead of stewing. Lift it out onto a plate.",
+        "Add the rest of the oil to the pan and stir-fry the onion wedges with the ají amarillo paste for 2 minutes, until they just soften but stay crisp at the edges. Add the tomato wedges for 1 minute.",
+        "Return the beef and its juices with the rest of the vinegar and toss over the highest heat for 30 seconds, so it just coats. Then fold in the roasted potatoes and the cilantro.",
+        "Serve over the rice. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Cut the beef and veg while the oven heats, and cook the stir-fry in two batches for two portions. The potatoes soften as the leftovers sit, so reheat everything in a hot pan, not the microwave."
+    },
+    {
+      "id": "south-america-moqueca-cavala",
+      "name": "Moqueca de cavala with garlicky collards and brown rice",
+      "inspiredBy": "moqueca capixaba from Espírito Santo, made with urucum, tomato and cilantro, without coconut or dendê",
+      "about": "Mackerel simmered capixaba style, layered with tomato, onion, pepper, cilantro and scallion in urucum-red olive oil, served over brown rice with a side of garlicky couve. It is a weekend dish, but it is mostly waiting while the pot does the work. The mackerel brings **omega-3, vitamin D and B12**, and the collards bring calcium.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 160,
+          "swap": "fatty_fish",
+          "note": "skin on, cut in 4 cm pieces"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "sliced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 70,
+          "note": "sliced in rings"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 90,
+          "note": "sliced in rings"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 12
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "colorau-urucum-and-corn-powder-c79a9c",
+          "g": 3,
+          "note": "urucum powder"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 15,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 140,
+          "note": "stems removed"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.3
+        }
+      ],
+      "steps": [
+        "Put the fish in a bowl with the lime juice, a third of the garlic, a third of the salt and the pepper. Let it marinate for 15 minutes.",
+        "Use a tub of Sunday rice, or start the rice first: cook 30 g of dry brown rice in twice its volume of salted water, covered, until tender, about 35 minutes.",
+        "Warm two-thirds of the oil in a wide, shallow pot over medium-low heat. Stir in the colorau for 20 seconds, until it turns the oil orange-red. Make layers of onion rings, pepper rings, the tomato slices, the scallion and half the cilantro, sprinkling in a third of the garlic and a pinch of the salt as you go.",
+        "Pour 4 tablespoons of water over the vegetables, cover and simmer on low for 10 minutes, until the vegetables begin to soften.",
+        "Nestle the fish into the sauce, spoon some of the sauce over it, cover again and simmer gently for 8 to 10 minutes, until the fish flakes easily. Shake the pot now and then rather than stirring, so the pieces stay whole.",
+        "Meanwhile, roll the collard leaves and slice them into thin ribbons. Stir-fry in the rest of the oil with the remaining garlic and salt for 3 minutes, until bright green.",
+        "Scatter the rest of the cilantro over the stew. Serve with the rice and the collards, and pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "Brazilians would use cavala (king mackerel) or any firm fish; Atlantic mackerel is richer in omega-3 and easier to find. Colorau (urucum powder) is sold at Brazilian and Latin shops. In Espírito Santo it is cooked in a clay pot. For a Bahian touch, swap a teaspoon of the oil for dendê (red palm oil) and add a spoonful of coconut milk."
+    },
+    {
+      "id": "south-america-ajiaco",
+      "name": "Ajiaco-inspired chicken and potato soup with corn and avocado",
+      "inspiredBy": "Colombian ajiaco santafereño, with a simpler mix of potatoes, with avocado as in Bogotá, and lime in place of the cream and capers",
+      "about": "A thick, golden chicken and potato soup from Bogotá, with sweet corn, plenty of cilantro and a creamy slice of avocado, brightened with a squeeze of lime at the table. It is the dish Colombians crave on cold days. The chicken brings **protein and niacin**, and the potatoes and corn bring potassium and fibre.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 180,
+          "note": "boneless, skinless breast"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 130,
+          "note": "half peeled and sliced thin, half in chunks"
+        },
+        {
+          "food": "corn-fresh-on-cob-raw-cfd009",
+          "g": 110,
+          "note": "a small cob, in 3 pieces, or the same weight of frozen kernels"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 40
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 15
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "guascas-dried-2060b3",
+          "g": 0.5,
+          "note": "a pinch"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Put the chicken, the scallion whites, the garlic, the guascas and the thin potato slices in a pot with water to cover by about 3 cm. Bring to a boil, skim, then simmer gently for 20 minutes, until the chicken is cooked through and the sliced potato has begun to dissolve into the broth.",
+        "Lift out the chicken and shred it with two forks.",
+        "Add the potato chunks and the corn to the pot and simmer until the potatoes are tender, about 15 minutes. The soup should be thick and golden.",
+        "Return the chicken to the pot with the salt, the pepper and most of the cilantro, and warm through for 3 minutes.",
+        "Ladle into a deep bowl. Top with the avocado, the green scallion, the rest of the cilantro and a squeeze of lime."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "freezer-friendly"
+      ],
+      "tip": "Make double and freeze a portion, without the avocado. Guascas are sold dried at Colombian shops; a pinch of oregano is a distant stand-in."
+    },
+    {
+      "id": "south-america-mamao-limao",
+      "name": "Mamão with lime",
+      "about": "Cool, sweet papaya with a good squeeze of lime, the way it is served at a Brazilian breakfast table. Papaya brings **vitamin C and folate**.",
+      "ingredients": [
+        {
+          "food": "papaya-raw-cd2cbc",
+          "g": 200,
+          "swap": "vit_c_fruit",
+          "note": "seeded and cubed"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        }
+      ],
+      "steps": [
+        "Scoop out the seeds and cut the papaya into cubes or wedges.",
+        "Squeeze the lime juice over the top."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "south-america-acai-tigela",
+      "name": "Açaí na tigela with banana and papaya",
+      "about": "A frozen açaí bowl blended with banana and topped with sliced banana, papaya and crushed peanuts, as served at Brazilian juice bars. It is thick and cold, and since unsweetened açaí is earthy, ripe banana is the sweetener. Açaí brings **fibre and antioxidants**, and the peanuts add vitamin E.",
+      "ingredients": [
+        {
+          "food": "acai-pulp-frozen-784f6b",
+          "g": 100,
+          "note": "frozen unsweetened pulp, a standard pack"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 90,
+          "note": "half in the blender, half sliced"
+        },
+        {
+          "food": "papaya-raw-cd2cbc",
+          "g": 60,
+          "swap": "vit_c_fruit",
+          "note": "cubed"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "roasted, crushed"
+        }
+      ],
+      "steps": [
+        "Run the frozen pulp under warm water for a few seconds to loosen it, then blend with half the banana until thick and smooth, adding a splash of water only if the blender stalls.",
+        "Spoon into a bowl and top with the sliced banana, the papaya and the crushed peanuts. Eat right away, before it melts."
+      ],
+      "prepMin": 7,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "south-america-choclo-queso",
+      "name": "Choclo con queso",
+      "about": "Warm sweet corn kernels with a slab of queijo coalho and a squeeze of lime, the street snack of the Peruvian Andes. It is salty, sweet and chewy. Corn brings **fibre**, and the cheese brings calcium.",
+      "ingredients": [
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 110,
+          "note": "frozen kernels, or fresh off the cob"
+        },
+        {
+          "food": "queijo-coalho-02fc0d",
+          "g": 25,
+          "note": "in thick slices"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Boil the corn kernels in plenty of unsalted water until tender and bright yellow, about 5 minutes. Drain.",
+        "Toss with the salt and the lime and eat warm with the queijo coalho."
+      ],
+      "prepMin": 3,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "south-america-mani-limon-aji",
+      "name": "Maní with lime and ají",
+      "about": "A small handful of roasted peanuts tossed warm with lime juice, salt and a pinch of cayenne. Peanuts bring **vitamin E, magnesium and protein**.",
+      "ingredients": [
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 25,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Warm the peanuts in a dry pan for 2 minutes, until fragrant.",
+        "Toss with the lime juice and cayenne in a bowl."
+      ],
+      "prepMin": 2,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "south-america-banana-mani",
+      "name": "Banana with peanuts and cinnamon",
+      "about": "A ripe banana sliced over a spoonful of chopped roasted peanuts, with a dusting of cinnamon. It is sweet, salty and filling. The banana brings **potassium**, and the peanuts bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Slice the banana into a bowl.",
+        "Chop the peanuts, scatter them over and dust with the cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "south-america-camote-pepitas",
+      "name": "Camote asado with toasted pepitas and lime",
+      "about": "Sweet potato roasted until its edges caramelize, with a handful of toasted pumpkin seeds (pepas de zapallo) and a squeeze of lime, a roasted snack that pairs well with a salty crunch. Sweet potato brings **vitamin A and fibre**, and the pepitas bring iron, zinc and magnesium.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 100,
+          "note": "scrubbed, in thick rounds"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the sweet potato rounds with the oil and half the salt.",
+        "Roast on a tray until soft and caramelized at the edges, about 25 minutes, turning once.",
+        "Toast the pepitas in a dry pan over medium heat until they puff and pop, about 3 minutes.",
+        "Scatter the pepitas over the sweet potato, sprinkle with the rest of the salt and squeeze over the lime."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "freezer-friendly"
+      ]
+    },
+    {
+      "id": "south-america-naranja-canela",
+      "name": "Naranja with cinnamon",
+      "about": "Juicy orange segments with a dusting of cinnamon, a simple, refreshing way to finish a meal or fill a gap. Orange brings **vitamin C and folate**.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 200,
+          "swap": "vit_c_fruit",
+          "note": "peeled and cut in rounds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Peel the oranges and cut them into rounds or segments.",
+        "Dust with the cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "south-america-pepas-zapallo",
+      "name": "Pepas de zapallo tostadas, with salt and ají",
+      "about": "A small handful of pumpkin seeds toasted in a dry pan until they puff and pop, then tossed with salt and a pinch of cayenne. They are a common snack from Peru to Chile. Pumpkin seeds bring **iron, zinc and magnesium**.",
+      "ingredients": [
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 30,
+          "swap": "nuts_seeds",
+          "note": "raw, hulled"
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the pumpkin seeds in a dry pan over medium heat, stirring, until they puff up and start to pop, about 3 minutes.",
+        "Toss with the cayenne and the salt while they are still warm."
+      ],
+      "prepMin": 1,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "south-america-camote-canela",
+      "name": "Camote asado with cinnamon and lime",
+      "about": "Sweet potato roasted until its edges caramelize, with a pinch of cinnamon and a squeeze of lime. Sweet potato brings **vitamin A and fibre**.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 100,
+          "note": "scrubbed, in thick rounds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the sweet potato rounds with the oil.",
+        "Roast on a tray until soft and caramelized at the edges, about 25 minutes, turning once.",
+        "Dust with the cinnamon and squeeze over the lime."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "freezer-friendly"
+      ]
+    },
+    {
+      "id": "south-america-arepita-choclo-queso",
+      "name": "Arepita de choclo con queso",
+      "about": "A small, sweet corn arepa with a little queijo coalho inside, cooked on a griddle until golden. It is the kind of arepa you buy hot from a Colombian street cart. Corn and cheese together bring **fibre, protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 60,
+          "note": "thawed"
+        },
+        {
+          "food": "cornmeal-yellow-whole-grain-2712ac",
+          "g": 25,
+          "note": "medium or fine grind"
+        },
+        {
+          "food": "queijo-coalho-02fc0d",
+          "g": 25,
+          "note": "in small cubes"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Blend the corn with a splash of water until mostly smooth. Stir in the cornmeal and the salt and let it sit for 10 minutes to thicken.",
+        "Fold in the cubes of queijo coalho.",
+        "Brush a non-stick pan with the oil over medium heat. Spoon in the batter and flatten to about 1 cm thick. Cook until golden, about 4 minutes a side, until the cheese is soft inside."
+      ],
+      "prepMin": 12,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "south-america-cancha-limon",
+      "name": "Toasted corn with lime and salt",
+      "about": "Corn kernels toasted in a pan until golden and blistered, then tossed with lime and salt, in the spirit of Peruvian cancha. It is toasty, sweet and a little chewy. Corn brings **fibre and B vitamins**.",
+      "ingredients": [
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 110,
+          "note": "frozen kernels, thawed and patted very dry"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Pat the corn kernels very dry with a clean towel.",
+        "Toast them in a wide pan with the oil over medium-high heat, stirring often, until golden and blistered, about 10 minutes. It spits, so keep a lid ajar.",
+        "Toss with the lime juice and the salt while still warm."
+      ],
+      "prepMin": 3,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "south-america-huevos-pericos-arepa-choclo"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "south-america-ceviche-cod-camote"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "south-america-feijoada-light"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-america-mani-limon-aji"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-america-mamao-limao"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "south-america-quinua-con-leche"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "south-america-feijoada-light",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "south-america-salmon-pebre-papas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-america-pepas-zapallo"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-america-cancha-limon"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "south-america-cuscuz-milho-ovo"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "south-america-pollo-chimichurri-camote"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "south-america-guiso-lentejas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-america-naranja-canela"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-america-banana-mani"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "south-america-huevos-pericos-arepa-choclo"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "south-america-guiso-lentejas",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "south-america-sardinas-yuca-salsa-criolla"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-america-pepas-zapallo"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-america-acai-tigela"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "south-america-cuscuz-milho-ovo"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "south-america-solterito-quinoa"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "south-america-lomo-saltado"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-america-camote-canela"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-america-banana-mani"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "south-america-quinua-con-leche"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "south-america-lomo-saltado",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "south-america-moqueca-cavala"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-america-camote-pepitas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-america-acai-tigela"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "south-america-huevos-pericos-arepa-choclo"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "south-america-moqueca-cavala",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "south-america-ajiaco"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-america-camote-pepitas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "south-america-naranja-canela"
+        }
+      ]
+    }
+  ]
+}
