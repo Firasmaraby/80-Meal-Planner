@@ -1,0 +1,1890 @@
+{
+  "id": "mexico",
+  "name": "Mexican Kitchen",
+  "style": "balanced",
+  "cuisine": "Mexican",
+  "regions": [
+    "Central Mexico",
+    "Oaxaca",
+    "Yucatán",
+    "Pacific coast",
+    "The North"
+  ],
+  "summary": "A week of Mexican home cooking: chilaquiles, huevos rancheros and huevos a la mexicana for breakfast, then tinga, caldo de res, pozole verde and a weekend cochinita pibil, all built on corn tortillas, beans and plenty of salsa. Fresh lime, cilantro and chile in almost every meal, and two fish dinners that taste like the coast.",
+  "howItWorks": "**Cook once, eat twice.** Monday's tinga, Wednesday's caldo de res, Friday's pozole and Saturday's cochinita pibil each make two portions, so the next day's lunch is already done. The salmon, sardines and frijoles charros are made fresh.\n\n**Fish twice.** Baja-style salmon tacos on Tuesday and sardine tostadas on Thursday carry your **omega-3** and help with **vitamin D**. Both are served fresh, never reheated, and the sardines bring soft bones for calcium. Chía fresca adds a little more omega-3 on a few days.\n\n**Corn, beans and salsa.** Corn is the grain here, as tortillas, hominy and corn on the cob, with beans or chickpeas on most days for **iron, folate and fibre**. Every meal gets its brightness from a salsa, pickle or lime. Cheese is used in modest amounts, and thinned yogurt stands in for crema.\n\n**Sunday beans.** Soak about 270 g of dry pinto beans and 160 g of dry black beans separately overnight. Simmer each with onion, garlic and a sprig of epazote until very tender, about 1 hour, and salt at the end. They keep 4 to 5 days in the fridge, so freeze a tub of pintos for Saturday's breakfast.\n\n**Prep ahead.** Soak the chickpeas on Tuesday night for Wednesday's caldo. Marinate the cochinita on Friday night, so Saturday is mostly baking and a good book.",
+  "signature": [
+    "mexico-pollo-tinga-frijoles-negros",
+    "mexico-salmon-tacos-baja",
+    "mexico-pozole-verde-pollo",
+    "mexico-cochinita-pibil"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "mexico-guacamole-tostadas"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "mexico-esquites"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "mexico-papaya-limon-chile"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "mexico-camote-canela"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "mexico-guacamole-tostadas"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "mexico-naranja-chile"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "mexico-esquites"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "mexico-chilaquiles-verdes",
+      "name": "Chilaquiles verdes with fried eggs and baked tortillas",
+      "inspiredBy": "Chilaquiles verdes from Mexico City and central Mexico, with the tortillas baked instead of fried and lime-thinned yogurt in place of Mexican crema",
+      "about": "Crisp baked tortilla wedges tossed in a bright, tangy tomatillo and epazote salsa, then topped with fried eggs, queso fresco, a spoon of lime-thinned yogurt and ripe avocado. Baking the tortillas instead of frying them keeps the crunch and saves most of the oil. The eggs bring protein and **choline**, and the tomatillo brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 50,
+          "note": "a day or two old is best"
+        },
+        {
+          "food": "tomatillo-raw-c18847",
+          "g": 110,
+          "note": "husked and rinsed"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 12
+        },
+        {
+          "food": "epazote-raw-f391cb",
+          "g": 3,
+          "note": "5 or 6 fresh leaves, or a pinch of dried"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 15
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 35,
+          "note": "half in the salsa, half sliced thin for the top"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 18,
+          "note": "crumbled"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 25,
+          "swap": "dairy_protein",
+          "note": "stirred with a squeeze of lime, standing in for Mexican crema"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 20,
+          "note": "sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Cut the tortillas into wedges, spread them on a tray and bake until crisp and pale gold, about 12 minutes, turning them once.",
+        "While they bake, simmer the tomatillos, jalapeño and garlic in a small pot of water until the tomatillos turn olive green and soft, about 8 minutes. Drain.",
+        "Blend them with the epazote, cilantro, half the onion and the salt until smooth and bright green.",
+        "Warm half the oil in a wide pan, pour in the salsa and let it bubble for 3 minutes, until it thickens a little. Toss in the baked tortillas for less than a minute, just until they are coated, so they keep their bite.",
+        "Fry the eggs in the rest of the oil in a second pan, with the yolks still soft.",
+        "Stir the yogurt with the lime juice to make a quick crema. Pile the chilaquiles on a plate and top with the eggs, the sliced raw onion, queso fresco, crema and avocado. Eat right away, before they go soft."
+      ],
+      "prepMin": 10,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "On Sunday, bake a double tray of tortilla wedges and blend a double batch of salsa; they keep 4 days, so Monday and Thursday take 10 minutes. Shredded chicken from the tinga is the classic add-in. Epazote is sold fresh or dried at Latin grocers; leave it out if you cannot find it. Use a mild poblano instead of the jalapeño for kids."
+    },
+    {
+      "id": "mexico-huevos-rancheros",
+      "name": "Huevos rancheros with salsa ranchera and pinto beans",
+      "inspiredBy": "Huevos rancheros, with a little oil and a side of beans instead of fried potatoes",
+      "about": "Two fried eggs on crisped corn tortillas, under a smoky roasted tomato and jalapeño salsa, with warm mashed pinto beans, a little queso fresco and avocado. It is the classic ranch breakfast, and it is filling without being heavy. The beans and eggs bring **protein, iron and folate** before the day has started.",
+      "ingredients": [
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 50
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 12
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 35
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "pinto-beans-dry-b12ff3",
+          "g": 35,
+          "swap": "legumes",
+          "note": "cooked ahead, see the steps"
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 18,
+          "note": "crumbled"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Use the beans from your Sunday pot (see the plan notes), or canned beans at about three times the dry weight, drained and rinsed. Warm them with a splash of water and mash roughly with a fork.",
+        "Set a dry skillet over high heat and char the tomato, jalapeño and onion, turning them now and then, until blistered and blackened in spots, about 8 minutes.",
+        "Blend them with the garlic, half the cilantro, the cumin, oregano and salt into a chunky salsa. Pour it back into the skillet with a splash of water and simmer for 5 minutes, until it thickens and darkens.",
+        "Heat a little of the oil in a pan and crisp the tortillas for about a minute on each side. Move them to a plate.",
+        "Fry the eggs in the rest of the oil. Set them on the tortillas, spoon the salsa around them and add the beans.",
+        "Finish with the queso fresco, avocado and the rest of the cilantro."
+      ],
+      "prepMin": 10,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "The salsa keeps for 4 days, so a double batch covers both mornings. Char and blend it the night before. Chopped serrano makes it hotter."
+    },
+    {
+      "id": "mexico-huevos-a-la-mexicana",
+      "name": "Huevos a la mexicana with pinto beans and warm tortillas",
+      "inspiredBy": "Huevos a la mexicana, the everyday scrambled eggs with tomato, onion and chile",
+      "about": "Soft scrambled eggs cooked with tomato, onion, jalapeño and tender nopalitos, the red, white and green of the Mexican flag, served with warm mashed pinto beans, avocado and warm tortillas. It is one of the most common breakfasts in the country, and it is ready in about 20 minutes. The eggs and beans bring **protein, choline and folate**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 110
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 35
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 12
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "nopales-prickly-pear-cooked-685749",
+          "g": 70,
+          "note": "jarred nopalitos, rinsed well"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "pinto-beans-dry-b12ff3",
+          "g": 45,
+          "swap": "legumes",
+          "note": "cooked ahead, see the steps"
+        },
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 50,
+          "note": "warmed"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 20,
+          "note": "sliced"
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 22,
+          "note": "crumbled"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Use the beans from your Sunday pot (see the plan notes), or canned beans at about three times the dry weight, drained and rinsed. Warm them with a splash of water and mash roughly with a fork.",
+        "Finely chop the tomato, onion and jalapeño. Warm the oil in a pan over medium heat and cook the onion and jalapeño until soft, about 3 minutes.",
+        "Rinse the nopalitos well and add them with the tomato, the oregano and a pinch of the salt. Cook until the tomato softens and the juices thicken, about 4 minutes.",
+        "Beat the eggs with the rest of the salt, pour them into the pan and stir gently until they are softly set and still glossy, about 2 minutes.",
+        "Warm the tortillas in a dry pan. Serve the eggs with the beans, tortillas, avocado, queso fresco and the cilantro."
+      ],
+      "prepMin": 10,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "A chopped serrano or a spoon of salsa makes it hotter. Leave the jalapeño out for kids."
+    },
+    {
+      "id": "mexico-ensalada-nopales-frijoles",
+      "name": "Ensalada de nopales with pinto beans, queso fresco and pepitas",
+      "inspiredBy": "Ensalada de nopales from central Mexico, with pinto beans and pepitas added to make it a full lunch",
+      "about": "Tender cactus paddles tossed with tomato, red onion, jalapeño, cilantro and lime, folded through pinto beans and finished with queso fresco, toasted pepitas and avocado. It is cool, tangy and fresh, with warm tortillas to scoop it up. The beans and cactus bring **fibre and potassium**, and the pepitas bring zinc and magnesium.",
+      "ingredients": [
+        {
+          "food": "nopales-prickly-pear-cooked-685749",
+          "g": 160,
+          "note": "jarred nopalitos, rinsed well under cold water"
+        },
+        {
+          "food": "pinto-beans-dry-b12ff3",
+          "g": 50,
+          "swap": "legumes",
+          "note": "cooked ahead, see the steps"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 25
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 8
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 30,
+          "note": "crumbled"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 35
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 18
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1,
+          "note": "ground Mexican oregano"
+        },
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 50,
+          "note": "warmed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Use the beans from your Sunday pot (see the plan notes), or canned beans at about three times the dry weight, drained and rinsed.",
+        "Rinse the nopalitos in a colander under cold water until the slippery coating is gone, then drain well.",
+        "Toast the pepitas in a dry pan for 2 to 3 minutes until they puff and pop. Tip them out to cool.",
+        "Chop the tomato, red onion and jalapeño. Toss them in a big bowl with the nopales, beans, lime juice, oil, oregano, salt and most of the cilantro.",
+        "Top with the queso fresco, pepitas, sliced avocado and the rest of the cilantro.",
+        "Warm the tortillas in a dry pan or directly over a gas flame for a few seconds a side and serve them with the salad."
+      ],
+      "prepMin": 15,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Fresh nopales are worth trying: boil the diced paddles with a piece of onion for 10 minutes, then rinse. It packs well; keep the avocado and tortillas separate."
+    },
+    {
+      "id": "mexico-quesadillas-rajas",
+      "name": "Quesadillas de rajas with corn, pinto beans and raw tomatillo salsa",
+      "inspiredBy": "Quesadillas de rajas con elote, a street and home favourite across central and southern Mexico",
+      "about": "Corn tortillas folded around melted Oaxaca cheese, charred poblano strips and sweet corn, served with warm pinto beans, a spoonful of lime crema and a sharp raw tomatillo salsa. Blackening the poblanos is what gives rajas their smoky flavour. The cheese and beans carry **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 80
+        },
+        {
+          "food": "oaxaca-cheese-solid-784527",
+          "g": 45,
+          "note": "shredded; mozzarella works"
+        },
+        {
+          "food": "poblano-pepper-seeded-raw-cbcfe7",
+          "g": 120,
+          "note": "whole, for charring"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 40,
+          "note": "frozen kernels are fine"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 30,
+          "swap": "dairy_protein",
+          "note": "stirred with a squeeze of lime, standing in for crema"
+        },
+        {
+          "food": "pinto-beans-dry-b12ff3",
+          "g": 30,
+          "swap": "legumes",
+          "note": "cooked ahead, see the steps"
+        },
+        {
+          "food": "tomatillo-raw-c18847",
+          "g": 60,
+          "note": "raw, husked and rinsed"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 8
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Use the beans from your Sunday pot (see the plan notes), or canned beans at about three times the dry weight, drained and rinsed.",
+        "Blacken the poblanos directly over a gas flame or under a very hot broiler, turning them until the skin is charred all over, about 10 minutes. Drop them into a covered bowl for 10 minutes to sweat, then peel off the skin, pull out the seeds and slice into strips (rajas).",
+        "Warm half the oil in a wide pan and cook the onion over medium-high heat until soft and speckled with brown, about 5 minutes. Add the rajas, corn and a pinch of salt and cook 2 minutes more. Tip into a bowl.",
+        "Make the salsa: blend the raw tomatillo, jalapeño, most of the cilantro, half the lime juice and a pinch of salt until almost smooth. Warm the beans with a splash of water and a pinch of salt, mashing a few as they heat.",
+        "Wipe out the pan. Lay the tortillas in it a couple at a time, scatter cheese and the filling over one half and fold them over. Cook in the rest of the oil until the cheese melts and the tortillas are golden and crisp at the edges, about 3 minutes a side.",
+        "Stir the yogurt with the rest of the lime juice to make a quick crema. Serve the quesadillas with the crema, beans and salsa, and the rest of the cilantro."
+      ],
+      "prepMin": 25,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Real Oaxaca cheese (quesillo) is stringy and mild. If you cannot find it, mozzarella is the best swap. Char, peel and cook the rajas on Tuesday night, so lunch is 15 minutes."
+    },
+    {
+      "id": "mexico-tlayuda-tasajo-frijol",
+      "name": "Tlayuda-inspired tostadas with black beans, guajillo beef and quesillo",
+      "inspiredBy": "Oaxacan tlayuda with tasajo (thin dried-style beef), usually one large toasted tortilla; this is a smaller, lighter version",
+      "about": "Crisp baked tortillas spread with garlicky black beans and topped with thin guajillo-rubbed beef in the style of Oaxacan tasajo, melted Oaxaca cheese, shredded cabbage, grated carrot, sliced tomato and avocado. A real tlayuda is one huge toasted tortilla, and this is the same idea in a smaller, lighter size. The black beans and beef bring **iron, zinc and folate**.",
+      "ingredients": [
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 80
+        },
+        {
+          "food": "black-beans-dry-9f5377",
+          "g": 35,
+          "swap": "legumes",
+          "note": "cooked ahead, see the steps"
+        },
+        {
+          "food": "beef-top-round-steak-lean-raw-19d3ab",
+          "g": 70,
+          "swap": "lean_protein",
+          "note": "round or flank steak, sliced against the grain as thin as you can"
+        },
+        {
+          "food": "oaxaca-cheese-solid-784527",
+          "g": 28,
+          "note": "shredded"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 50,
+          "note": "finely shredded"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 35
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "grated"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "guajillo-chile-dried-eb6416",
+          "g": 9,
+          "note": "1 to 2 dried guajillo chiles, stemmed and seeded"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1,
+          "note": "ground Mexican oregano"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Use the beans from your Sunday pot (see the plan notes), or canned beans at about three times the dry weight, drained and rinsed.",
+        "Soak the guajillo in hot water for 10 minutes. Blend it with half the garlic, half the lime juice, the oregano and a pinch of salt into a thick red paste, adding a spoon of the soaking water if you need it. Rub it all over the beef.",
+        "Heat the oven to 200°C (400°F). Brush the tortillas lightly with a little of the oil, lay them on a tray and bake until crisp and pale gold, about 8 minutes.",
+        "Heat the rest of the oil in a hot pan and sear the beef for about 1 minute a side, until browned at the edges. Rest it for a minute, then slice it thinner still.",
+        "Warm the beans in a small pot with the rest of the garlic, minced, the rest of the salt and a splash of water. Mash roughly.",
+        "Spread the beans over the crisp tortillas, scatter on the cheese and return the tray to the oven for 3 to 4 minutes, until it melts. Top with the beef, cabbage, grated carrot, tomato and avocado, and squeeze over the rest of the lime."
+      ],
+      "prepMin": 20,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "A large tortilla from a Latin grocery makes it closer to the real thing. A dab of salsa on top is never wrong."
+    },
+    {
+      "id": "mexico-pollo-tinga-frijoles-negros",
+      "name": "Pollo en tinga with black beans",
+      "inspiredBy": "Tinga poblana from Puebla, served with black beans on warm tortillas",
+      "about": "Shredded chicken simmered in a smoky tomato and chipotle sauce with soft onion, piled onto warm tortillas with black beans, a crunchy cabbage and carrot slaw and a sprinkle of queso fresco. It is a Puebla favourite, and it tastes even better the next day. Chicken and black beans bring **protein, folate and niacin**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "boneless, skinless thighs"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 160
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "chipotle-peppers-in-adobo-sauce-f692a1",
+          "g": 15,
+          "note": "chipotles in adobo, about 1 chile and a spoonful of sauce per portion"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1,
+          "note": "ground Mexican oregano"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.2
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "black-beans-dry-9f5377",
+          "g": 40,
+          "swap": "legumes",
+          "note": "cooked ahead, see the steps"
+        },
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 100
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 50,
+          "note": "shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "grated"
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 10,
+          "note": "crumbled"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.3
+        }
+      ],
+      "steps": [
+        "Use the beans from your Sunday pot (see the plan notes), or canned beans at about three times the dry weight, drained and rinsed.",
+        "Put the chicken in a pot with a quarter of the onion, a clove of the garlic, a pinch of salt and enough water to cover. Simmer gently until cooked through and tender, about 18 minutes. Lift it out, save a cup of the broth and shred the meat with two forks.",
+        "Blend the tomatoes, chipotles with their sauce, the rest of the garlic, the oregano, cumin, the rest of the salt and the cup of broth until smooth.",
+        "Warm the oil in a wide pan and cook the rest of the onion, sliced, until soft and golden, about 8 minutes. Pour in the sauce and simmer for 8 minutes until it thickens and darkens.",
+        "Stir in the chicken and cook for 5 minutes so it soaks up the sauce. Warm the beans with a splash of water.",
+        "Serve on warm tortillas with the beans, cabbage, carrot and queso fresco. Pack the second portion for tomorrow's lunch; tinga keeps well for 4 days."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "A small can of chipotles in adobo lasts a while: freeze the rest flat in a bag and snap off a chile when you need one. Tinga is great on a crisp tostada too."
+    },
+    {
+      "id": "mexico-salmon-tacos-baja",
+      "name": "Baja-style salmon tacos with cabbage slaw and lime crema",
+      "inspiredBy": "Tacos de pescado estilo Baja, made with salmon and a yogurt crema in place of fried fish",
+      "about": "Ancho-rubbed seared salmon flaked into warm corn tortillas with a crunchy lime cabbage and carrot slaw, cool lime crema and avocado, with a spoonful of black beans on the side. It borrows the Baja fish taco and swaps in salmon for a richer, oilier bite. One serving gives you **omega-3 and B12**, and helps with vitamin D.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 120,
+          "swap": "fatty_fish",
+          "note": "skin on or off"
+        },
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 100
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 70,
+          "note": "finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "grated"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 25
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 15
+        },
+        {
+          "food": "ancho-chile-dried-b95180",
+          "g": 12,
+          "note": "1 dried ancho chile, stemmed and seeded"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "black-beans-dry-9f5377",
+          "g": 35,
+          "swap": "legumes",
+          "note": "cooked ahead, see the steps"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Use the beans from your Sunday pot (see the plan notes), or canned beans at about three times the dry weight, drained and rinsed. Warm a spoonful per plate with a splash of water.",
+        "Soak the ancho in hot water for 10 minutes. Blend it with the garlic, half the lime juice and half the salt into a smooth red paste. Rub it over the salmon and let it sit while you make the slaw.",
+        "Toss the cabbage with the carrot, red onion, jalapeño, most of the cilantro and a pinch of salt.",
+        "Stir the yogurt with the rest of the lime juice and salt to make a thin, tangy crema.",
+        "Heat a non-stick pan over medium heat and sear the salmon, skin side down first, until the crust is deep red and it flakes easily, about 4 minutes a side. It releases its own fat, so you do not need oil.",
+        "Warm the tortillas in a dry pan. Flake the salmon into them, add the slaw, avocado and a drizzle of crema, and finish with the rest of the cilantro. Serve the warm black beans on the side."
+      ],
+      "prepMin": 20,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Not a salmon fan? Use any firm fish like cod or tilapia. A little diced mango in the slaw is lovely."
+    },
+    {
+      "id": "mexico-caldo-de-res",
+      "name": "Caldo de res with chickpeas, chayote and corn",
+      "inspiredBy": "Caldo de res from northern and central Mexico, with chickpeas the way many home cooks add them",
+      "about": "A big, comforting beef and vegetable soup made on bone-in beef short rib or shank, with cabbage, carrot, chayote, corn and potato in a clear, savoury broth and plenty of cilantro. Chickpeas are a normal addition in many homes, and a squeeze of lime goes in the bowl. It is a full meal in a bowl, rich in **zinc, iron and potassium**.",
+      "ingredients": [
+        {
+          "food": "beef-shank-crosscut-lean-raw-f78752",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "bone-in beef shank or short rib; buy about 200 g with the bone"
+        },
+        {
+          "food": "chickpeas-dry-1b10f2",
+          "g": 30,
+          "swap": "legumes",
+          "note": "dried, soaked overnight"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 110,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "cut into thick pieces"
+        },
+        {
+          "food": "chayote-fruit-raw-c78d93",
+          "g": 130,
+          "note": "peeled and cut into wedges; zucchini works"
+        },
+        {
+          "food": "corn-fresh-on-cob-raw-cfd009",
+          "g": 100,
+          "note": "about half an ear, cut into rounds"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 70,
+          "note": "in big chunks"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15,
+          "note": "in wedges, for the bowls"
+        },
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 50,
+          "note": "warmed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "The night before, cover the chickpeas with plenty of cold water and leave them to soak. Drain before using.",
+        "Put the beef and chickpeas in a large pot with the onion, garlic, tomato, salt and enough water to cover well. Bring to a boil, skim off the foam, then cover and simmer gently for 90 minutes, until the meat is nearly tender.",
+        "Add the potato, carrot and corn and simmer for 15 minutes.",
+        "Add the cabbage and chayote and simmer for 10 minutes more, until the vegetables are tender but not mushy.",
+        "Taste the broth and add salt if you need it. Stir in the cilantro.",
+        "Ladle into deep bowls with a piece of everything, with lime wedges to squeeze over and warm tortillas to dip in. Pack the second portion for tomorrow's lunch; the broth gets better overnight."
+      ],
+      "prepMin": 20,
+      "cookMin": 130,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "Most of the simmering is hands-off. In an olla exprés (pressure cooker), the beef and chickpeas take 35 minutes. A chopped serrano and a few drops of lime at the table make it feel like the real thing."
+    },
+    {
+      "id": "mexico-tostadas-de-sardina",
+      "name": "Sardine tostadas with beans, jícama slaw and salsa",
+      "inspiredBy": "Tostadas de sardina, the coastal Mexican tostada made with canned sardines, with a spread of beans added for fibre and iron",
+      "about": "Crisp baked tortillas spread with warm pinto beans, topped with flaked sardines, a crunchy jícama and carrot slaw, a spoon of fresh tomato salsa and creamy avocado. It is quick, fresh and a little spicy, in the style of seaside tostadas on the Pacific coast. The sardines bring **omega-3 and calcium from the soft bones**.",
+      "ingredients": [
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 60
+        },
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 100,
+          "swap": "fatty_fish",
+          "note": "canned in oil or water, with the bones, drained; sardines in tomato sauce are common in Mexico too"
+        },
+        {
+          "food": "pinto-beans-dry-b12ff3",
+          "g": 25,
+          "swap": "legumes",
+          "note": "cooked ahead, see the steps"
+        },
+        {
+          "food": "yambean-jicama-tuber-raw-8519ba",
+          "g": 60,
+          "note": "cut into thin sticks"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 30,
+          "note": "finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "grated"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 40,
+          "note": "finely chopped, for the salsa"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Use the beans from your Sunday pot (see the plan notes), or canned beans at about three times the dry weight, drained and rinsed.",
+        "Heat the oven to 200°C (400°F). Lay the tortillas on a tray and bake until crisp and pale gold, about 8 minutes, turning once. These are your tostadas.",
+        "Warm the beans in a small pot with a splash of water and a pinch of salt, mashing them roughly.",
+        "Toss the jícama, cabbage, carrot, red onion, half the jalapeño and half the cilantro with half the lime juice and half the salt. Stir the chopped tomato with the rest of the jalapeño, cilantro, lime juice and salt for a quick salsa.",
+        "Flake the sardines into big pieces with a fork.",
+        "Assemble right away: spread beans over each tostada, add the sardines and a pile of the slaw, then a spoon of salsa and sliced avocado. Eat them while the base is still crisp."
+      ],
+      "prepMin": 15,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Pick sardines packed in olive oil if you like a richer taste. A dash of hot sauce on top never hurts."
+    },
+    {
+      "id": "mexico-pozole-verde-pollo",
+      "name": "Pozole verde with chicken, hominy and pepitas",
+      "inspiredBy": "Pozole verde from Guerrero, made with chicken and canned hominy for a weeknight",
+      "about": "A bright green, tangy soup of chicken and chewy hominy in a tomatillo, epazote and toasted pepita sauce, topped with queso fresco, oregano and lime. It comes from Guerrero on the Pacific side, where Thursday is pozole day. The pepitas bring **magnesium and zinc**, and the tomatillo brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "boneless, skinless thighs"
+        },
+        {
+          "food": "hominy-canned-white-039c3a",
+          "g": 230,
+          "swap": "low_gi_grains",
+          "note": "canned white hominy, drained and rinsed; one large 29 oz can makes two portions"
+        },
+        {
+          "food": "tomatillo-raw-c18847",
+          "g": 150,
+          "note": "husked and rinsed"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 15
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 25
+        },
+        {
+          "food": "epazote-raw-f391cb",
+          "g": 2,
+          "note": "3 fresh leaves, or a pinch of dried"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1,
+          "note": "ground Mexican oregano"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 22,
+          "note": "crumbled, for the top"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15,
+          "note": "in wedges"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Put the chicken in a pot with half the onion, half the garlic, a pinch of salt and about 5 cups of water. Simmer gently until the chicken is cooked through, about 20 minutes. Lift it out and shred it. Keep the broth.",
+        "Toast the pepitas in a dry pan for 2 to 3 minutes until they puff and pop.",
+        "Simmer the tomatillos and jalapeño in a little of the broth for 8 minutes. Blend them with the toasted pepitas, epazote, cilantro, the rest of the onion and garlic, and a ladle of broth until smooth.",
+        "Warm the oil in the soup pot and fry the green sauce, stirring, for 5 minutes, until it darkens and thickens. Pour in the broth, add the hominy and the rest of the salt and simmer for 20 minutes.",
+        "Return the chicken to the pot and heat through for 5 minutes. Taste for salt.",
+        "Ladle into bowls and top with the queso fresco, a pinch of ground oregano and a lime wedge. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 55,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Radish slices and a few baked tortilla strips are traditional at the table. Leave the epazote out if you cannot find it and add a little more cilantro."
+    },
+    {
+      "id": "mexico-cochinita-pibil",
+      "name": "Cochinita pibil with pickled red onion",
+      "inspiredBy": "Cochinita pibil from the Yucatán, normally slow-roasted in a pit; this is the oven version with a leaner cut",
+      "about": "Pork shoulder marinated in a bright achiote, orange and lime rub, wrapped up and baked low and slow until it falls apart, then piled into warm tortillas with sharp pink pickled onion and carrot, a slice of fresh chile and avocado. It comes from the Yucatán, where it is a weekend feast. The pork is a great source of **thiamin and B12**.",
+      "ingredients": [
+        {
+          "food": "pork-butt-portion-lean-raw-26a201",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "pork shoulder, trimmed of the thick fat cap"
+        },
+        {
+          "food": "achiote-paste-recado-rojo-5f725a",
+          "g": 8,
+          "note": "achiote paste (recado rojo), about 1½ tsp"
+        },
+        {
+          "food": "orange-juice-raw-629477",
+          "g": 50
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 40
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1,
+          "note": "ground Mexican oregano"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 50,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 10,
+          "note": "sliced; a habanero is traditional"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "cut into thin matchsticks"
+        },
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 80
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 35,
+          "note": "sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.3
+        }
+      ],
+      "steps": [
+        "The night before, mash the achiote paste with the orange juice and half the lime juice until it dissolves, then blend with the garlic, oregano, pepper, cumin and most of the salt into a red marinade.",
+        "Cut the pork into big chunks. Rub the marinade all over it, cover and chill overnight, or at least 2 hours.",
+        "Heat the oven to 160°C (325°F). Put the pork and every drop of marinade on a big piece of foil or parchment, fold it into a tight parcel and set it in a baking dish. A banana leaf is traditional if you can find one.",
+        "Bake for 2½ to 3 hours, until the meat shreds easily with a fork.",
+        "While it finishes, make the pickle: cover the red onion, jalapeño and carrot with the rest of the lime juice and a pinch of salt and leave for 30 minutes, until the onion is bright pink.",
+        "Shred the pork right in its juices. Warm the tortillas in a dry pan and fill the tacos with pork, the pickle and sliced avocado. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 180,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Achiote paste (recado rojo) comes in small blocks or jars at Latin grocers and many supermarkets, and it is what gives cochinita its colour and earthy flavour. Sour orange is the usual juice; orange plus extra lime is the close swap."
+    },
+    {
+      "id": "mexico-frijoles-charros",
+      "name": "Frijoles charros with pork, tomato and jalapeño",
+      "inspiredBy": "Frijoles charros from Jalisco and the north, made with less meat and no bacon or sausage",
+      "about": "A cowboy-style pot of pinto beans simmered with a little pork, tomato, onion, ancho chile and epazote, finished with cilantro and queso fresco and served with warm tortillas. It is hearty, smoky and very much northern Mexico. The beans and pork bring **iron, thiamin and fibre**.",
+      "ingredients": [
+        {
+          "food": "pinto-beans-dry-b12ff3",
+          "g": 85,
+          "swap": "legumes",
+          "note": "dried; cooked in the pot, see the steps"
+        },
+        {
+          "food": "pork-butt-portion-lean-raw-26a201",
+          "g": 40,
+          "swap": "lean_protein",
+          "note": "small cubes"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 15
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 15,
+          "note": "crumbled"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "ancho-chile-dried-b95180",
+          "g": 12,
+          "note": "1 dried ancho or pasilla chile, stemmed and seeded"
+        },
+        {
+          "food": "epazote-raw-f391cb",
+          "g": 2,
+          "note": "a sprig, or a pinch of dried"
+        },
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 50,
+          "note": "warmed"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.1
+        }
+      ],
+      "steps": [
+        "Cover the beans with water in a pot, add a quarter of the onion and the epazote and simmer until very tender, about 1 hour 15 minutes, topping up the water if you need to. Or use about three times the dry weight in cooked Sunday beans or canned, drained, and simmer them for 20 minutes only.",
+        "Toast the ancho in a dry pan for 30 seconds a side, then soak it in hot water for 10 minutes and blend it with the tomato into a smoky sauce.",
+        "Warm the oil in a second pot and brown the pork cubes over medium-high heat, about 5 minutes, until golden at the edges.",
+        "Add most of the rest of the onion, chopped, with the jalapeño and garlic and cook, stirring, until soft and fragrant, about 4 minutes. Pour in the tomato and ancho sauce and cook until thick, about 5 minutes.",
+        "Tip in the beans with a cup of their cooking liquid and the salt. Simmer for 15 minutes, mashing a few of the beans against the side of the pot, until it is thick and stew-like.",
+        "Stir in most of the cilantro, then serve with the queso fresco, the rest of the cilantro, the last of the onion, raw, a squeeze of lime and the warm tortillas."
+      ],
+      "prepMin": 10,
+      "cookMin": 100,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Chopped chorizo or bacon are traditional; a small spoonful is plenty. Make a double pot and freeze half."
+    },
+    {
+      "id": "mexico-licuado-papaya-yogur",
+      "name": "Papaya and almond licuado with yogurt",
+      "about": "A thick, cold blend of yogurt and sweet papaya and a spoonful of almonds with a pinch of cinnamon, the way a juice stand would make it. It is creamy and refreshing, and quick. The yogurt and almonds bring **protein, calcium and vitamin E**, and the papaya brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "papaya-raw-cd2cbc",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "cubed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Blend everything with a splash of cold water and a few ice cubes until thick and smooth.",
+        "Pour into a tall glass and eat it with a spoon if it is very thick."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mexico-chia-fresca-limon",
+      "name": "Chía fresca with lime",
+      "inspiredBy": "Chía fresca, the traditional chia agua fresca of Mexico, lightly sweetened with orange juice instead of sugar",
+      "about": "Chia seeds soaked in water with lime juice and a splash of orange juice until they turn plump and jelly-like, a classic Mexican agua fresca. It is cool, tangy and slightly sweet. Chia brings **omega-3, calcium and magnesium** in a very Mexican way.",
+      "ingredients": [
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 25
+        },
+        {
+          "food": "orange-juice-raw-629477",
+          "g": 100
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Stir the chia into a tall glass of cold water (about 250 ml) and leave it for 10 minutes, stirring once or twice, until it plumps up.",
+        "Add the lime juice, orange juice, a tiny pinch of salt and ice, and stir well."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "mexico-yogur-naranja-pepitas",
+      "name": "Yogurt with orange and toasted pepitas",
+      "about": "Cold yogurt with juicy orange segments and a handful of toasted pepitas. It is simple, creamy and crunchy, and a very easy snack. The yogurt and pepitas bring **protein, calcium and zinc**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "peeled and cut into segments"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Toast the pepitas in a dry pan for 2 to 3 minutes, until they puff and pop.",
+        "Spoon the yogurt into a bowl, top with the orange segments and the pepitas."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mexico-jicama-limon-chile",
+      "name": "Jícama sticks with lime and chile",
+      "about": "Crunchy jícama sticks tossed with lime juice, ground guajillo and a pinch of salt, the way it is sold at street stalls in Mexico. It is juicy, sharp and refreshing. Jícama brings **fibre and vitamin C**, with very few calories.",
+      "ingredients": [
+        {
+          "food": "yambean-jicama-tuber-raw-8519ba",
+          "g": 150
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12
+        },
+        {
+          "food": "guajillo-chile-dried-eb6416",
+          "g": 1,
+          "note": "toasted and ground guajillo, or chile powder"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Peel the jícama and cut it into sticks. Toss with the lime juice, ground guajillo and salt, and eat it cold."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mexico-naranja-chile",
+      "name": "Orange with chile and lime",
+      "about": "Juicy orange segments sprinkled with ground guajillo, a squeeze of lime and a pinch of salt, an everyday Mexican fruit snack. It is sweet, sour and a little spicy. Orange brings **vitamin C and folate**.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 180,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "guajillo-chile-dried-eb6416",
+          "g": 0.8,
+          "note": "toasted and ground guajillo, or chile powder"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        }
+      ],
+      "steps": [
+        "Peel the orange and cut it into segments or slices.",
+        "Sprinkle with the ground guajillo and lime juice."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mexico-papaya-limon-chile",
+      "name": "Papaya with lime and chile",
+      "about": "Cold papaya cubes with a squeeze of lime and a dusting of ground guajillo, a popular fruit cup in Mexico. The lime makes the sweetness taste brighter. Papaya brings **vitamin C and vitamin A**.",
+      "ingredients": [
+        {
+          "food": "papaya-raw-cd2cbc",
+          "g": 200,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "guajillo-chile-dried-eb6416",
+          "g": 0.8,
+          "note": "toasted and ground guajillo, or chile powder"
+        }
+      ],
+      "steps": [
+        "Scoop out the seeds, peel the papaya and cut it into cubes.",
+        "Toss with the lime juice and ground guajillo."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mexico-esquites",
+      "name": "Esquites, warm corn in a cup with lime and queso fresco",
+      "inspiredBy": "Esquites, the warm corn cup sold at street stalls across central Mexico, with lime yogurt in place of mayonnaise and crema",
+      "about": "Sweet corn kernels sautéed until a little charred, tossed with lime juice, ground guajillo, queso fresco and a spoonful of lime yogurt, served in a cup. It is warm, sweet and salty, and a Mexican street classic. Corn brings **fibre and B vitamins**, and the queso fresco brings calcium.",
+      "ingredients": [
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 120,
+          "note": "frozen kernels, no need to thaw"
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 12
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 20,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "guajillo-chile-dried-eb6416",
+          "g": 0.8,
+          "note": "toasted and ground guajillo, or chile powder"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 3
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 3,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Warm the oil in a pan over high heat and cook the corn, stirring now and then, until it is hot and some kernels are browned, about 6 minutes.",
+        "Tip into a cup and stir in the yogurt, lime juice and ground guajillo. Top with queso fresco and cilantro."
+      ],
+      "prepMin": 3,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "mexico-camote-canela",
+      "name": "Baked sweet potato with cinnamon",
+      "about": "A sweet potato baked until soft and caramelized, split open and dusted with cinnamon. Camotes are sold hot by street vendors in the evening in Mexico City. Sweet potato brings **vitamin A and potassium**.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 130
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Prick the sweet potato with a fork, put it on a tray and bake until very soft and oozing, about 45 minutes.",
+        "Split it open and dust with the cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 45,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Bake two or three at once and keep them in the fridge; reheat a few minutes in a hot oven or microwave."
+    },
+    {
+      "id": "mexico-guacamole-tostadas",
+      "name": "Guacamole with baked tostadas",
+      "about": "Chunky avocado mashed with lime, red onion, cilantro and a little tomato, scooped up with crisp baked tortilla chips. It is creamy and fresh. Avocado brings **vitamin E, potassium and healthy fat**.",
+      "ingredients": [
+        {
+          "food": "avocado-raw-c06278",
+          "g": 70
+        },
+        {
+          "food": "corn-tortillas-ready-to-bake-or-fry-4ce434",
+          "g": 50,
+          "note": "cut into triangles"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 30
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 10
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Spread the tortilla triangles on a tray and bake until crisp, about 8 minutes.",
+        "Mash the avocado roughly with the lime juice and salt, then fold in the tomato, red onion and cilantro, all finely chopped.",
+        "Scoop with the warm chips."
+      ],
+      "prepMin": 8,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "mexico-chia-fresca-naranja",
+      "name": "Chía fresca with orange",
+      "inspiredBy": "Chía fresca, the traditional chia agua fresca of Mexico, made with orange instead of sugar",
+      "about": "Chia seeds plumped in cold water with fresh orange juice and a squeeze of lime, a sweeter take on the classic agua fresca. It is bright and refreshing, and the seeds give it a pearly, jelly-like texture. Chia brings **omega-3, calcium and magnesium**.",
+      "ingredients": [
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "orange-juice-raw-629477",
+          "g": 150
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        }
+      ],
+      "steps": [
+        "Stir the chia into a tall glass of cold water (about 200 ml) and leave it for 10 minutes, stirring once or twice, until it plumps up.",
+        "Add the orange juice, lime juice and ice, and stir well."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "mexico-yogur-naranja-almendras",
+      "name": "Yogurt with orange and toasted almonds",
+      "about": "Cold yogurt with juicy orange segments and a handful of toasted almonds. It is simple, creamy and crunchy, and a very easy snack. The yogurt and almonds bring **protein, calcium and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "peeled and cut into segments"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan for 4 to 5 minutes, until they smell nutty.",
+        "Spoon the yogurt into a bowl, top with the orange segments and the almonds."
+      ],
+      "prepMin": 5,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mexico-almendras-limon-chile",
+      "name": "Almonds with lime and chile",
+      "about": "Almonds toasted in a dry pan and tossed with lime juice, ground guajillo and a pinch of salt, in the style of the spiced nuts sold by Mexican street vendors. They are crunchy, warm and tangy. Almonds bring **vitamin E, magnesium and calcium**.",
+      "ingredients": [
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 25,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "guajillo-chile-dried-eb6416",
+          "g": 0.8,
+          "note": "toasted and ground guajillo, or chile powder"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan over medium heat for 4 to 5 minutes, stirring, until they smell nutty.",
+        "Toss with the lime juice, ground guajillo and salt while still warm."
+      ],
+      "prepMin": 2,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "mexico-chilaquiles-verdes"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mexico-ensalada-nopales-frijoles"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mexico-pollo-tinga-frijoles-negros"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mexico-licuado-papaya-yogur"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mexico-chia-fresca-limon"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "mexico-huevos-rancheros"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mexico-pollo-tinga-frijoles-negros",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mexico-salmon-tacos-baja"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mexico-yogur-naranja-pepitas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mexico-almendras-limon-chile"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "mexico-huevos-a-la-mexicana"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mexico-quesadillas-rajas"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mexico-caldo-de-res"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mexico-yogur-naranja-almendras"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mexico-jicama-limon-chile"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "mexico-chilaquiles-verdes"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mexico-caldo-de-res",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mexico-tostadas-de-sardina"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mexico-licuado-papaya-yogur"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mexico-naranja-chile"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "mexico-huevos-rancheros"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mexico-tlayuda-tasajo-frijol"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mexico-pozole-verde-pollo"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mexico-chia-fresca-limon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mexico-jicama-limon-chile"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "mexico-huevos-a-la-mexicana"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mexico-pozole-verde-pollo",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mexico-cochinita-pibil"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mexico-chia-fresca-naranja"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mexico-papaya-limon-chile"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "mexico-chilaquiles-verdes"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mexico-cochinita-pibil",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mexico-frijoles-charros"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mexico-yogur-naranja-almendras"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mexico-camote-canela"
+        }
+      ]
+    }
+  ]
+}
