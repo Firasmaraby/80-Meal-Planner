@@ -806,6 +806,153 @@
    ],
    "recipe": "A Jamaican and Trinidadian style curry powder: turmeric-forward, with coriander, cumin, fenugreek, mustard seed, fennel, allspice (pimento) and pepper.",
    "limits": "Brands differ; some add salt or flour, this one has neither. Used by the teaspoon."
+  },
+  {
+   "key": "barberries",
+   "name": "Barberries, dried (zereshk)",
+   "head": "barberries",
+   "form": "dried",
+   "category": "fruit",
+   "aliases": ["zereshk", "zereshk berries", "dried barberries", "berberis"],
+   "servings": [{"label": "1 tbsp", "g": 6}],
+   "components": [
+    {"food": "cranberry-dried-sweetened-00a85c", "g": 100, "note": "a tart dried red berry"}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat"],
+   "omit": ["sugar"],
+   "recipe": "No source database has dried barberries. They take the energy and macronutrients of dried cranberries, the nearest tart dried red berry.",
+   "limits": "Barberries are sold unsweetened and are sourer; sugars and micronutrients are left missing. Used by the spoonful, usually briefly fried with a pinch of sugar."
+  },
+  {
+   "key": "aleppo-pepper",
+   "name": "Aleppo pepper (pul biber)",
+   "head": "aleppo pepper",
+   "form": "dried",
+   "category": "condiment",
+   "aliases": ["pul biber", "pul biber flakes", "halaby pepper", "turkish red pepper flakes", "maras pepper", "urfa biber", "isot"],
+   "servings": [{"label": "1 tsp", "g": 2}],
+   "components": [
+    {"food": "paprika-59bfc4", "g": 70},
+    {"food": "chili-pepper-red-sun-dried-d3dda3", "g": 25},
+    {"food": "table-salt-fdccfe", "zero_if_missing": ["iodine"], "why": "plain salt, not iodised", "g": 3}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat", "sodium"],
+   "recipe": "Pul biber is coarse, mildly hot, slightly salted dried red pepper. Values are paprika and sun-dried chili with a little salt.",
+   "limits": "Only energy, macronutrients and sodium; oil content varies by brand. Used by the teaspoon."
+  },
+  {
+   "key": "dukkah",
+   "name": "Dukkah",
+   "head": "dukkah",
+   "form": "product",
+   "category": "nut_seed",
+   "aliases": ["duqqa", "dukka", "egyptian nut and spice blend"],
+   "servings": [{"label": "1 tbsp", "g": 7}],
+   "components": [
+    {"food": "hazelnuts-kernel-only-180221", "g": 40},
+    {"food": "sesame-seeds-toasted-shelled-11092e", "g": 30},
+    {"food": "coriander-seed-cilantro-973ca2", "g": 15},
+    {"food": "cumin-seed-626f82", "g": 10},
+    {"food": "black-pepper-6fd5df", "g": 2},
+    {"food": "table-salt-fdccfe", "zero_if_missing": ["iodine"], "why": "plain salt, not iodised", "g": 3}
+   ],
+   "recipe": "Egyptian dukkah: toasted hazelnuts and sesame pounded with coriander, cumin, pepper and salt.",
+   "limits": "Recipes vary (some use chickpeas or almonds). Used by the spoonful with bread and oil."
+  },
+  {
+   "key": "calamansi",
+   "name": "Calamansi",
+   "head": "calamansi",
+   "form": "raw",
+   "category": "fruit",
+   "aliases": ["kalamansi", "calamondin", "philippine lime", "limau kasturi"],
+   "servings": [{"label": "1 fruit", "g": 12}],
+   "components": [
+    {"food": "lime-raw-30841a", "g": 100, "note": "a small sour citrus used the same way"}
+   ],
+   "recipe": "Calamansi is a small sour citrus squeezed like lime in Filipino and Malaysian cooking; it takes the values of lime.",
+   "limits": "A proxy; calamansi is a little sweeter and more aromatic. Used by the squeeze."
+  },
+  {
+   "key": "sambal-oelek",
+   "name": "Sambal oelek",
+   "head": "sambal oelek",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["sambal", "sambal ulek", "chili paste indonesian", "ground chili paste"],
+   "servings": [{"label": "1 tsp", "g": 6}],
+   "components": [
+    {"food": "chili-pepper-red-raw-72faf1", "g": 85},
+    {"food": "vinegar-d9b2f1", "g": 10},
+    {"food": "table-salt-fdccfe", "zero_if_missing": ["iodine"], "why": "plain salt, not iodised", "g": 5}
+   ],
+   "omit": ["vitC"],
+   "recipe": "Sambal oelek is fresh red chili ground with a little vinegar and salt (about 2 g sodium per 100 g).",
+   "limits": "Vitamin C is left out because the paste is stored; brands vary in salt."
+  },
+  {
+   "key": "kecap-manis",
+   "name": "Kecap manis (sweet soy sauce)",
+   "head": "kecap manis",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["kecap manis", "ketjap manis", "sweet soy sauce", "indonesian sweet soy"],
+   "servings": [{"label": "1 tbsp", "g": 18}],
+   "components": [
+    {"food": "soy-sauce-shoyu-52e366", "g": 50},
+    {"custom": "palm-sugar", "g": 55}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat", "sugar", "sodium"],
+   "kcal": "atwater",
+   "recipe": "Kecap manis is soy sauce cooked down with palm sugar into a thick syrup. Values are soy sauce and palm sugar, reduced (105 g to 100 g).",
+   "limits": "Brands range in sweetness and salt; only energy, macros, sugar and sodium are given."
+  },
+  {
+   "key": "candlenut",
+   "name": "Candlenut",
+   "head": "candlenut",
+   "form": "raw",
+   "category": "nut_seed",
+   "aliases": ["kemiri", "buah keras", "kukui nut"],
+   "servings": [{"label": "1 nut", "g": 4}],
+   "components": [
+    {"food": "macadamia-raw-f09352", "g": 100, "note": "a similar oily kernel used the same way"}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat", "satFat", "mufa", "pufa"],
+   "recipe": "Candlenut is an oily kernel ground into Indonesian and Malaysian spice pastes to thicken them; it takes the macronutrients of macadamia, the usual substitute.",
+   "limits": "Candlenut is higher in polyunsaturated fat than macadamia; the fat split is a rough guide. Never eaten raw in quantity; used 2 or 3 at a time, cooked."
+  },
+  {
+   "key": "aji-amarillo-paste",
+   "name": "Ají amarillo paste",
+   "head": "aji amarillo",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["aji amarillo", "ají amarillo", "peruvian yellow chili paste", "aji amarillo paste"],
+   "servings": [{"label": "1 tbsp", "g": 15}],
+   "components": [
+    {"food": "chili-pepper-red-raw-72faf1", "g": 85},
+    {"food": "vinegar-d9b2f1", "g": 5},
+    {"food": "canola-oil-6744e1", "g": 3},
+    {"food": "table-salt-fdccfe", "zero_if_missing": ["iodine"], "why": "plain salt, not iodised", "g": 2}
+   ],
+   "omit": ["vitC"],
+   "recipe": "Ají amarillo paste is the yellow Peruvian chili blended smooth with a little oil, vinegar and salt; the chili takes the values of fresh hot chili.",
+   "limits": "Vitamin C is left out (stored paste). Brands vary in salt and oil."
+  },
+  {
+   "key": "masarepa",
+   "name": "Masarepa (precooked corn flour)",
+   "head": "masarepa",
+   "form": "product",
+   "category": "grain",
+   "aliases": ["harina pan", "p.a.n.", "arepa flour", "precooked white corn meal", "masa al instante"],
+   "servings": [{"label": "1/2 cup", "g": 60}],
+   "components": [
+    {"food": "corn-flour-white-raw-bd222c", "g": 100}
+   ],
+   "recipe": "Masarepa is white corn, degermed, cooked and milled. It takes the values of white corn flour.",
+   "limits": "Precooking changes little nutritionally. This is a refined corn flour (degermed), not whole grain."
   }
  ]
 }
