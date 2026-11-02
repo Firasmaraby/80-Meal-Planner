@@ -1389,6 +1389,52 @@
    "omit": ["vitC", "folate"],
    "recipe": "Ajvar: roasted red peppers (and a little eggplant) cooked down slowly with oil, garlic, vinegar and salt into a thick relish.",
    "limits": "Long cooking destroys much of the vitamin C; it is left out. Brands vary in oil."
+  },
+  {
+   "key": "lingonberry-jam",
+   "name": "Lingonberry jam (rårörda lingon)",
+   "head": "lingonberry jam",
+   "form": "product",
+   "category": "sweet",
+   "aliases": ["lingonberry preserves", "lingonsylt", "rårörda lingon", "tyttebærsyltetøy", "puolukkahillo"],
+   "servings": [{"label": "1 tbsp", "g": 20}],
+   "components": [
+    {"food": "cranberry-lingonberry-wild-raw-3bdee1", "g": 70},
+    {"food": "sugar-refined-552eca", "g": 30}
+   ],
+   "kcal": "atwater",
+   "recipe": "Lingonberries stirred or lightly cooked with sugar, the Nordic way (about 70 % berries, 30 % sugar); the jar sold at Nordic shops and IKEA.",
+   "limits": "Store jams range from 40 to 60 % sugar; this is the lighter, berry-forward kind. Some vitamin C is lost in cooking."
+  },
+  {
+   "key": "swedish-mustard",
+   "name": "Swedish sweet mustard",
+   "head": "swedish mustard",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["swedish mustard", "sweet brown mustard", "senap", "skånsk senap", "sweet mustard"],
+   "servings": [{"label": "1 tsp", "g": 5}, {"label": "1 tbsp", "g": 15}],
+   "components": [
+    {"food": "mustard-1fa6b6", "g": 85},
+    {"food": "sugar-refined-552eca", "g": 12}
+   ],
+   "kcal": "atwater",
+   "recipe": "Swedish sweet mustard: coarse brown mustard sweetened with sugar or syrup. Values are prepared mustard with sugar added.",
+   "limits": "Brands vary in sweetness."
+  },
+  {
+   "key": "rye-flakes",
+   "name": "Rye flakes",
+   "head": "rye flakes",
+   "form": "dried",
+   "category": "grain",
+   "aliases": ["rågflingor", "rolled rye", "rye porridge flakes", "ruishiutaleet"],
+   "servings": [{"label": "1/2 cup", "g": 40}],
+   "components": [
+    {"food": "rye-wholegrain-raw-c7c590", "g": 100, "note": "whole rye kernels, steamed and rolled"}
+   ],
+   "recipe": "Rye flakes are whole rye kernels steamed and rolled flat, cooked like oats for Nordic porridge.",
+   "limits": "Rolling changes nothing nutritionally; values are whole-grain rye."
   }
  ]
 }
