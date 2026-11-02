@@ -487,6 +487,90 @@
    "fill": ["kcal", "protein", "carbs", "fiber", "fat", "sodium"],
    "recipe": "Recado rojo: ground annatto seed with vinegar or bitter orange, garlic, cumin, oregano, pepper and salt, pressed into a paste. Annatto seed itself is not in any source database, so paprika stands in for its share.",
    "limits": "Only energy, macronutrients and sodium; annatto's micronutrients are not predicted by paprika. Used by the tablespoon for colour and flavour."
+  },
+  {
+   "key": "sambar-powder",
+   "name": "Sambar powder",
+   "head": "sambar powder",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["sambar masala", "sambhar powder", "sambar podi"],
+   "servings": [{"label": "1 tsp", "g": 2.5}, {"label": "1 tbsp", "g": 7}],
+   "components": [
+    {"food": "coriander-seed-cilantro-973ca2", "g": 38},
+    {"food": "chili-pepper-red-sun-dried-d3dda3", "g": 24},
+    {"food": "pigeon-peas-dahl-dried-raw-4b7ca5", "g": 10, "note": "toor dal, roasted"},
+    {"food": "chickpeas-dry-1b10f2", "g": 10, "note": "chana dal, roasted"},
+    {"food": "cumin-seed-626f82", "g": 6},
+    {"food": "fenugreek-seed-95f5a8", "g": 4},
+    {"food": "black-pepper-6fd5df", "g": 4},
+    {"food": "turmeric-ground-32f550", "g": 3},
+    {"food": "curry-leaves-524ebb", "g": 1}
+   ],
+   "kcal": "atwater",
+   "recipe": "A Tamil home sambar powder: coriander seed, dried red chili, roasted toor and chana dal, cumin, fenugreek, black pepper, turmeric and curry leaves, dry-roasted and ground.",
+   "limits": "Recipes vary by household; some add hing, rice or mustard seed. Used by the teaspoon."
+  },
+  {
+   "key": "bisi-bele-bath-powder",
+   "name": "Bisi bele bath powder",
+   "head": "bisi bele bath powder",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["bisibelebath powder", "bisi bele bath masala", "bisi bele huli anna powder"],
+   "servings": [{"label": "1 tsp", "g": 2.5}, {"label": "1 tbsp", "g": 7}],
+   "components": [
+    {"food": "coriander-seed-cilantro-973ca2", "g": 28},
+    {"food": "chili-pepper-red-sun-dried-d3dda3", "g": 22},
+    {"food": "chickpeas-dry-1b10f2", "g": 14, "note": "chana dal, roasted"},
+    {"food": "black-gram-duhli-urad-dahl-split-dried-raw-051ef9", "g": 10, "note": "urad dal, roasted"},
+    {"food": "coconut-meat-desiccated-unsweetened-0834ef", "g": 12, "note": "dry coconut, roasted"},
+    {"food": "cumin-seed-626f82", "g": 4},
+    {"food": "fenugreek-seed-95f5a8", "g": 3},
+    {"food": "cinnamon-ground-ed5c78", "g": 3},
+    {"food": "clove-ground-863cd5", "g": 2},
+    {"food": "black-pepper-6fd5df", "g": 2}
+   ],
+   "kcal": "atwater",
+   "recipe": "A Karnataka bisi bele bath powder: coriander seed, dried red chili, roasted chana and urad dal, dry coconut, cumin, fenugreek, cinnamon, cloves and pepper, roasted and ground.",
+   "limits": "Some recipes add poppy seeds, marathi moggu or kalpasi, which aren't in the source data. Used by the teaspoon."
+  },
+  {
+   "key": "rasam-powder",
+   "name": "Rasam powder",
+   "head": "rasam powder",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["rasam podi", "saaru pudi", "rasam masala"],
+   "servings": [{"label": "1 tsp", "g": 2.5}],
+   "components": [
+    {"food": "coriander-seed-cilantro-973ca2", "g": 40},
+    {"food": "black-pepper-6fd5df", "g": 16},
+    {"food": "cumin-seed-626f82", "g": 16},
+    {"food": "chili-pepper-red-sun-dried-d3dda3", "g": 18},
+    {"food": "pigeon-peas-dahl-dried-raw-4b7ca5", "g": 7, "note": "toor dal, roasted"},
+    {"food": "turmeric-ground-32f550", "g": 2},
+    {"food": "curry-leaves-524ebb", "g": 1}
+   ],
+   "kcal": "atwater",
+   "recipe": "A Tamil rasam powder: coriander seed, black pepper, cumin, dried red chili and a little toor dal, with turmeric and curry leaves, roasted and ground.",
+   "limits": "Recipes vary by household. Used by the teaspoon."
+  },
+  {
+   "key": "jaggery",
+   "name": "Jaggery",
+   "head": "jaggery",
+   "form": "product",
+   "category": "sweet",
+   "aliases": ["gur", "gud", "vellam", "bella", "panela", "piloncillo", "kithul jaggery", "palm jaggery"],
+   "servings": [{"label": "1 tsp, grated", "g": 4}, {"label": "1 tbsp, grated", "g": 12}],
+   "components": [
+    {"food": "sugar-refined-552eca", "g": 82},
+    {"food": "molasses-91763d", "g": 20, "note": "the cane solids refined sugar loses"}
+   ],
+   "kcal": "atwater",
+   "recipe": "Jaggery is whole cane juice boiled down without separating the molasses. Values are refined sugar with molasses added back (82 + 20 g per 100 g, the extra water boiled off), which lands on typical jaggery: about 380 kcal, a little iron, potassium and calcium.",
+   "limits": "Mineral content of real jaggery varies several-fold with the cane and the pan (iron especially); palm jaggery differs again. Treat the minerals as a rough middle."
   }
  ]
 }
