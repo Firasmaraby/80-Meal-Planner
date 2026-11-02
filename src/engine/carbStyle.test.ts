@@ -131,3 +131,11 @@ describe('whole dried maize', () => {
     expect(carbStyleOfFood({ name: 'Cornmeal, yellow, whole grain', head: 'cornmeal', category: 'grain' })).toBe('wholegrain');
   });
 });
+
+describe('flatbreads', () => {
+  it('injera is a whole-grain bread (teff flour), not an intact grain', () => {
+    expect(carbStyleOfFood(byName('Injera (teff flatbread)'))).toBe('wholegrain');
+    expect(carbStyleOfFood({ name: 'Flatbread, white', head: 'flatbread', category: 'grain' })).toBe('any');
+    expect(carbStyleOfFood(byName('Teff, cooked'))).toBe('whole');
+  });
+});

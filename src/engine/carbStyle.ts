@@ -30,7 +30,7 @@ const PASTRY =
   /\b(cakes?|cupcake|cookies?|pies?|tarts?|muffins?|pancakes?|waffles?|crepe|cr[eê]pes?|croissant|doughnut|danish|pastry|brownie|scones?|biscuit|brioche|eclair|cream puff|baklava|gingerbread|shortbread|mochi|pudding|crumpet|cinnamon roll|sweet roll|stuffing|crouton|breadcrumb|cracker meal|pretzel|crust|phyllo|dough|dumplings?|rusk|sponge|wafer|macaroon|cereal bar|fruitcake|french toast|corn ?flakes|puffed|toast, french)\b/;
 // bread, pasta, noodle, tortilla, couscous, flour and cracker products
 const PRODUCT =
-  /\b(bread|bagel|buns?|rolls?|pit+a|naan|chapati|roti|paratha|tortillas?|wraps?|taco|tostada|pasta|spaghetti|macaroni|lasagna|gnocchi|noodles?|vermicelli|couscous|flour|crackers?|crispbread|breadsticks?|baguette|ciabatta|toast|sandwich|kebab|hot dog|muffin)\b/;
+  /\b(bread|flatbreads?|injera|bagel|buns?|rolls?|pit+a|naan|chapati|roti|paratha|tortillas?|wraps?|taco|tostada|pasta|spaghetti|macaroni|lasagna|gnocchi|noodles?|vermicelli|couscous|flour|crackers?|crispbread|breadsticks?|baguette|ciabatta|toast|sandwich|kebab|hot dog|muffin)\b/;
 // what makes a product whole grain
 const WHOLE_WHEAT = /whole[ -]?(wheat|grain|meal)|wholegrain|wholemeal/;
 const WHOLEGRAIN_PRODUCT =
