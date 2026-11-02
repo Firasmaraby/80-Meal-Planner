@@ -40,7 +40,8 @@ def main(n=60, seed=7):
     wide = {(r["source_citation"], r["food_id"].split(":", 1)[-1]): r for r in csv.DictReader(WIDE.open(encoding="utf-8"))}
     dropped = dropped_outliers()
     random.seed(seed)
-    sample = random.sample([f for f in bundle["foods"] if f[9][0][1] != "gap-fill"], n)
+    # curated composites (ref "composite:<key>") have no source row of their own: every value is estimated, and their components are checked as foods
+    sample = random.sample([f for f in bundle["foods"] if f[9][0][1] != "gap-fill" and not str(f[9][0][1]).startswith("composite:")], n)
     bad = checked = 0
     for f in sample:
         row = wide.get((dbs[f[9][0][0]], f[9][0][1]))

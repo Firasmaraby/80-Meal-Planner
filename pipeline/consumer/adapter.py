@@ -168,6 +168,35 @@ def borrow_fatty_acids(n: dict[str, float], est: list[str], notes: list[str], do
     return True
 
 
+SPICE_GROUP = "herbs_spices_condiments"
+SPICE_ASH_OF_DRY = 0.07   # dried spices and herbs carry about 5-9 % ash on a dry-matter basis (cloves 5.6 g, nutmeg 2.3 g, chive 9 g per 100 g)
+
+
+def estimate_spice_energy(row: dict[str, Any], g: dict[str, float | None], n: dict[str, float], est: list[str], notes: list[str]) -> None:
+    """CoFID publishes protein, fat and water for many spices (asafoetida, cloves, turmeric, nutmeg, mustard seeds, curry blends) but no
+    carbohydrate and no energy, so the food used to be hidden as `no_kcal`. For the herbs / spices group only, energy is derived the way
+    carbohydrate-by-difference is: carbs = 100 - water - protein - fat - ash, with ash = the source's own value, else 7 % of the dry matter.
+    kcal = 4 protein + 9 fat + 4 (carbs - fibre) + 2 fibre; with fibre unknown every carbohydrate gram counts 4 kcal (a slight overestimate).
+    Both `kcal` and `carbs` are marked estimated and the rule is in the food's notes. Anything with a source energy or carbohydrate is untouched."""
+    if "kcal" in n or "carbs" in n or row.get("food_group") != SPICE_GROUP:
+        return
+    water, prot, fat = num(row.get("water_g")), g["protein_g"], g["fat_g"]
+    if water is None or prot is None or fat is None:
+        return
+    ash = num(row.get("ash_g"))
+    ash_note = "ash from the source"
+    if ash is None:
+        ash, ash_note = SPICE_ASH_OF_DRY * max(0.0, 100.0 - water), "ash assumed 7 % of dry matter"
+    carbs = max(0.0, 100.0 - water - prot - fat - ash)
+    fib = min(g["fiber_g"] or 0.0, carbs)
+    n["carbs"] = carbs
+    n["kcal"] = 4.0 * prot + 9.0 * fat + 4.0 * (carbs - fib) + 2.0 * fib
+    for k in ("kcal", "carbs"):
+        if k not in est:
+            est.append(k)
+    notes.append(f"kcal and carbs: estimated, no energy or carbohydrate in the source (carbs by difference from water, protein, fat and ash; {ash_note})")
+
+
 def map_nutrients(row: dict[str, Any], est_cols: set[str] | None = None) -> tuple[dict[str, float], list[str], list[str]]:
     """Map one foodpipe row (column -> raw value) to (n, estimated_keys, notes).
 
@@ -212,6 +241,8 @@ def map_nutrients(row: dict[str, Any], est_cols: set[str] | None = None) -> tupl
         n["carbs"] = g["carbs_available_monosaccharide_g"] / 1.05 + fib
         notes.append("carbs: available (monosaccharide) / 1.05 + fiber")
         mark("carbs", "carbs_available_monosaccharide_g", *(["fiber_g"] if g["fiber_g"] is not None else []))
+
+    estimate_spice_energy(row, g, n, est, notes)
 
     # vitamin K
     if g["vitamin_k1_ug"] is not None:

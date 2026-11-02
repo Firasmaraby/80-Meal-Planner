@@ -27,7 +27,7 @@ REPO = PIPE.parent
 if str(PIPE) not in sys.path:
     sys.path.insert(0, str(PIPE))
 
-from consumer import adapter, aliases as A, curate as C, export_app as X, gi as GI, legacy as L, names_en as N, qa as QA  # noqa: E402
+from consumer import adapter, aliases as A, curate as C, custom as CU, export_app as X, gi as GI, legacy as L, names_en as N, qa as QA  # noqa: E402
 from consumer import report as REP  # noqa: E402
 import search_check as SC  # noqa: E402
 
@@ -50,7 +50,9 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--out", default=str(PIPE / "out"))
     ap.add_argument("--app-data", default=str(REPO / "src" / "data"), help="where the app bundles are written")
     ap.add_argument("--heads", default=str(PIPE / "config" / "everyday_heads.txt"))
-    ap.add_argument("--target", type=int, default=3000, help="about how many everyday foods")
+    ap.add_argument("--target", type=int, default=3000, help="about how many everyday foods (promote-on-use foods come on top)")
+    ap.add_argument("--families", default=str(REPO / "content" / "families"), help="plan family files whose foods are promoted to everyday")
+    ap.add_argument("--custom", default=str(PIPE / "config" / "custom_foods.json"), help="curated staples (composites of existing foods)")
     ap.add_argument("--no-app-write", action="store_true", help="do not touch src/data (report/seed only)")
     args = ap.parse_args(argv)
     t0 = time.time()
@@ -95,6 +97,34 @@ def main(argv: list[str] | None = None) -> int:
     reset(records)
     cur = C.curate(records, lex, pinned=pinned, unhide_ok=waive, target=args.target)
     print(f"  collapsed {cur['collapsed']} records into their survivors (same normalised name + form + category)")
+
+    # promote on use: every food a plan family (content/families/*.json, not the `_` fixtures) uses is pinned to everyday ------------
+    ids_path = PIPE / "config" / "food_ids.json"      # issued ids never change (recipes and logs refer to them)
+    registry = _load_json(ids_path) if ids_path.exists() else {}
+    registry_before = dict(registry)
+    used = CU.used_food_ids(Path(args.families))
+    tier_of = {r["canonical_id"]: r["tier"] for r in records}
+    _, promoted, unknown_used = CU.promotions(used, {v: k for k, v in registry.items()}, tier_of)
+    pins_path = PIPE / "config" / "everyday_pins.json"            # foods that are everyday on purpose, with the reason
+    config_pins = {p["canonical_id"]: p for p in (_load_json(pins_path)["pins"] if pins_path.exists() else [])}
+    pinned_now = {c for c in config_pins if tier_of.get(c) == "extended"}
+    if promoted or pinned_now:
+        reset(records)           # same run again with those foods pinned; the target grows by their number so no other food is pushed out
+        cur = C.curate(records, lex, pinned=pinned | promoted | pinned_now, unhide_ok=waive,
+                       target=args.target + len(promoted | pinned_now))
+        for r in records:
+            if r["canonical_id"] in promoted and r["tier"] == "everyday":
+                r["why"] = "promoted_by_use"
+            elif r["canonical_id"] in pinned_now and r["tier"] == "everyday":
+                r["why"] = "pinned_in_config"
+        assert all(r["tier"] == "everyday" for r in records if r["canonical_id"] in promoted | pinned_now), "a pinned food is not everyday"
+    promo = {"files": len(CU.family_files(Path(args.families))), "names": [p.stem for p in CU.family_files(Path(args.families))],
+             "used": len(used), "unknown": unknown_used,
+             "promoted": sorted((registry[c], used[registry[c]]) for c in promoted),
+             "pins": sorted((p["canonical_id"], p["name"], p["why"], c in pinned_now) for c, p in config_pins.items())}
+    print(f"  promote on use: {promo['files']} family file(s), {len(used)} distinct foods used, {len(promoted)} extended foods promoted to everyday"
+          + (f"; {len(unknown_used)} used ids are not in the library: {', '.join(unknown_used[:6])}" if unknown_used else ""))
+    print(f"  explicit pins (config/everyday_pins.json): {len(config_pins)}, {len(pinned_now)} of them were extended")
     for r in records:
         r.pop("hidden", None)
 
@@ -104,19 +134,29 @@ def main(argv: list[str] | None = None) -> int:
           f"same head + category {fa_all['head']} ({fa_ev['head']}); still missing {fa_all['none']} ({fa_ev['none']})")
 
     live = [r for r in records if r["tier"] != "hidden"]
-    ids_path = PIPE / "config" / "food_ids.json"      # issued ids never change (recipes and logs refer to them)
-    registry = _load_json(ids_path) if ids_path.exists() else {}
     n_known = len(registry)
     X.make_ids(live, registry)
-    if not args.no_app_write:
-        ids_path.write_text(json.dumps(registry, indent=0, sort_keys=True) + "\n", encoding="utf-8")
-    print(f"  food ids: {n_known} kept from food_ids.json, {len(registry) - n_known} new")
     flags = QA.find_outliers(records)
     n_dropped = QA.apply_outliers(flags)
     print(f"  peer outliers: {len(flags)} flagged, {n_dropped} board values dropped, {len(flags) - n_dropped} listed only")
     ov_path = PIPE / "config" / "value_overrides.json"
     if ov_path.exists():
         print(f"  reviewed overrides: {QA.apply_overrides(live, _load_json(ov_path))} values")
+    # curated staples: composites of live foods (after outliers and overrides, so they use the final values) --------------------------------
+    customs: list[dict[str, Any]] = []
+    if Path(args.custom).exists():
+        try:
+            customs = CU.build_all(CU.load_specs(Path(args.custom)), {r["id"]: r for r in live})
+        except CU.CustomFoodError as e:
+            raise SystemExit(f"custom foods: {e}")
+        X.make_ids(customs, registry)
+        print(f"  curated staples: {len(customs)} composites of existing foods ({sum(len(r['estimated']) for r in customs)} estimated values)")
+    changed = sum(1 for k, v in registry_before.items() if registry.get(k) != v)
+    if changed:
+        raise SystemExit(f"food ids: {changed} issued ids changed - ids are frozen")
+    print(f"  food ids: {n_known} kept from food_ids.json, {len(registry) - len(registry_before)} new, {changed} changed")
+    if not args.no_app_write:
+        ids_path.write_text(json.dumps(registry, indent=0, sort_keys=True) + "\n", encoding="utf-8")
     kept_legacy = [L.legacy_record(old, lex) for old in legacy_foods if legacy_match[old["id"]][0] is None]
     assert not ({r["id"] for r in live} & {r["id"] for r in kept_legacy}), "legacy id collides with a generated id"
     rule_cfg = _load_json(PIPE / "config" / "servings_defaults.json")
@@ -148,7 +188,10 @@ def main(argv: list[str] | None = None) -> int:
                     r["aliases_out"].append(a.lower())
         r["aliases_out"] = r["aliases_out"][:5]
 
-    live += kept_legacy
+    for r in customs:
+        r["gi"], r["gi_src"], r["gi_est"] = GI.pick_gi(r, gi_table, None)
+    energy_est = [r for r in live if any("no energy or carbohydrate in the source" in n for n in r["notes"])]
+    live += kept_legacy + customs
     everyday = [r for r in live if r["tier"] == "everyday"]
     extended = [r for r in live if r["tier"] == "extended"]
     print(f"tiers: everyday {len(everyday)}, extended {len(extended)}, hidden {len(records) - len(live)}")
@@ -179,7 +222,7 @@ def main(argv: list[str] | None = None) -> int:
 
     # plans + swap groups (always from the pristine copies, so re-runs are idempotent) --------------------
     new_by_id = {r["id"]: r for r in live}
-    records_all = records + kept_legacy
+    records_all = records + kept_legacy + customs
     plans_old = _load_json(LEGACY_DIR / "plans.json")
     groups_old = _load_json(LEGACY_DIR / "swapGroups.json")
     plans_new = copy.deepcopy(plans_old)
@@ -245,6 +288,7 @@ def main(argv: list[str] | None = None) -> int:
     md = REP.build_report(records=records, lex=lex, astats=astats, excluded=excluded, sizes=sizes, search_res=search_res,
                           foods_for_search=foods_for_search, legacy_rows=legacy_rows, plan_check=plan_check,
                           waived=waive, plan_grades=plan_grades, prep=prep, collapsed=cur['collapsed'], unmatched=unmatched, raw_wide_names=REP.raw_preferred_names(args.input), target=args.target)
+    md += CU.report_section(customs, promo, energy_est)
     (out / "CURATION_REPORT.md").write_text(md, encoding="utf-8")
     print(f"done in {time.time() - t0:.0f}s; sizes: " + ", ".join(f"{k} {v / 1e6:.2f} MB" for k, v in sizes.items()))
     return 0

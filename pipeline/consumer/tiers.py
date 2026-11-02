@@ -85,6 +85,8 @@ def extended_reasons(rec: dict[str, Any]) -> list[str]:
     text = f"{rec['raw_name']} | {rec['name']}"
     if rec.get("branded"):
         out.append("branded")
+    if any(n.startswith("kcal and carbs: estimated") for n in rec.get("notes", [])):
+        out.append("energy_estimated")      # spices CoFID gives no energy for: searchable, but only pins / promote-on-use make them everyday
     for code, rx in EXTENDED_RULES:
         m = rx.search(text)
         if not m:

@@ -109,7 +109,7 @@ export interface FormatIssue {
 }
 
 export interface ValidateContext {
-  /** ids of the everyday tier, exactly (legacy ids are not accepted) */
+  /** ids the library accepts, exactly: the everyday tier and the extended tier (legacy ids are not accepted) */
   foodIds: Set<string>;
   /** near matches for an unknown food id */
   suggest?: (foodId: string) => string[];

@@ -222,7 +222,7 @@ already met, so the gate there is mostly protein, saturated fat and omega balanc
 
 - **Ingredient amounts are what you buy and measure, before cooking.** If the recipe cooks it, pick the *raw* or *dry* entry and its raw or dry weight: "Chicken thigh, raw", "Barley, pearled, raw", "Shrimp, raw", "Potato, raw". Use cooked entries only for things bought ready to eat: canned beans, lentils and chickpeas, canned fish, a boiled egg made ahead, leftover cooked grain. The steps then always agree with the list.
 - **Ingredient amounts** are grams for **one serving at Standard size**. The compiler sizes the other sizes with the app's own engine, then applies the `adjust` list.
-- **Foods** come only from `templates/AI_Food_List.csv`, the everyday list. Copy the `food_id` exactly. If a food you need isn't there, pick the nearest one and mention it in your hand-back.
+- **Foods** come from the food library: the everyday list (`templates/AI_Food_List.csv`) **and** the extended tier. Find them with `node scripts/find-food.mjs` (below), then copy the `food_id` exactly. If nothing fits, pick the nearest food and list the missing one in your hand-back.
 - **Snacks** that are simply a food (an apple, a handful of almonds) are still small recipes with one ingredient, a name and a one-line `about`.
 - **Tags:**
   - spice: `mild`, `medium-spicy`, `spicy`;
@@ -230,10 +230,26 @@ already met, so the gate there is mostly protein, saturated fat and omega balanc
   - keeping: `freezer-friendly`, `makes-leftovers`, `no-cook`;
   - weekday shape: `weekend-project`, `15-minute`.
 
+### Finding foods
+
+Don't grep the CSV: it only matches the exact words in a name, and it has no extended tier. Use the finder instead:
+
+```bash
+node scripts/find-food.mjs hing dahi "urad dal" gochujang sumac cardamom
+node scripts/find-food.mjs "kidney beans" --all     # every match, with the other foods of each kind listed under it
+```
+
+- It searches **everyday and extended** foods with the app's own search, in a few seconds, and prints the top 8 kinds of food per query: `food_id`, name, tier, kcal and protein per 100 g, and a note.
+- It also tries **cook's names** (hing is asafoetida, dahi is yogurt, atta is whole wheat flour, rajma is kidney beans, besan is chickpea flour, scallion is green onion, eggplant is aubergine and 60 more rows). The table is `src/engine/foodSynonyms.ts`; add a row when you meet a name it misses.
+- Cardamom, cinnamon, cloves, bay leaf, curry leaves, garam masala, harissa, teff and melon seeds are all in the library already. Kombu, urad dal, perilla seeds and fonio are extended.
+- **Extended foods are fine.** `plan-lab`, `plan-review` and `build-plans` accept them, and the next `python3 pipeline/consumer/build.py` promotes every food a family file uses to the everyday tier. Don't avoid a food because it says "extended".
+- **Curated staples** exist for foods no database has: sumac, za'atar, baharat (seven spice), chaat masala, kala namak, amchur, ajwain, kasuri methi, Kashmiri chili powder, gochugaru, gochujang, doenjang, berbere, ras el hanout, pomegranate molasses, tamarind paste and labneh. Asafoetida (hing) is in the library too. The curated ones are **Eighty composites** worked out from other foods in the library, so every value is an estimate and some nutrients are left empty (sumac and ajwain have only energy and macronutrients). Use them for flavour, not as a nutrient source. Their recipes are in `pipeline/config/custom_foods.json`.
+- **Report what is still missing** in your hand-back: the word you searched, what you used instead.
+
 ## 10. Workflow for one family
 
 1. **Read** the family's brief in `content/CATALOG.md` and this guide.
-2. **Draft** the dishes first, as names and one-line ideas for the whole week. Check that list for variety and flavour before any grams.
+2. **Draft** the dishes first, as names and one-line ideas for the whole week. Check that list for variety and flavour before any grams. Look up the spices and pastes with `find-food` while you draft, so the flavour is not limited to what you remember is in the list.
 3. **Write** the family file.
 4. **Run** `node scripts/plan-lab.mjs content/families/<id>.json` and fix what it reports. Repeat until it passes. When a nutrient falls short, fix it the culinary way (section 3), not by adding a pile of one food.
 5. **Render** with `node scripts/plan-review.mjs content/families/<id>.json` and read it as a hungry person would. Would you cook this week?

@@ -1,0 +1,302 @@
+{
+ "_comment": "Curated staples no source database has. Read pipeline/consumer/custom.py for the rules. Each food is computed per 100 g from foods that exist in the library: components[].g is grams of that component per 100 g of the FINISHED food (water lost in reducing / drying / straining is a component amount above 100; water added is not listed). A nutrient is filled only when every component has it; fill (whitelist), omit (blacklist), adjust (multiplier after the sum) and kcal=atwater are explained in custom.py. Every filled nutrient is marked estimated. Proportions are typical home / commercial recipes, not a standard. New foods get a frozen id from config/food_ids.json on the next build; an existing id never changes.",
+ "foods": [
+  {
+   "key": "sumac",
+   "name": "Sumac",
+   "head": "sumac",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["sumach", "ground sumac"],
+   "servings": [{"label": "1 tsp", "g": 2.5}],
+   "components": [
+    {"food": "allspice-ground-67abb9", "g": 50, "note": "dried berry spice"},
+    {"food": "paprika-59bfc4", "g": 50, "note": "dried fruit spice"}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat"],
+   "recipe": "No source database has sumac (dried, ground Rhus coriaria drupes). Energy, protein, carbohydrate, fibre and fat are the mean of two dried whole-fruit spices (ground allspice and paprika), the nearest data in foodpipe.",
+   "limits": "Micronutrients, fat split and sodium are left missing: the minerals and vitamins of a tannin-rich, acidic fruit are not predicted by allspice or paprika, and sold sumac is often salted. Treat the macros as a rough guide; sumac is used by the teaspoon."
+  },
+  {
+   "key": "za-atar",
+   "name": "Za'atar",
+   "head": "za'atar",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["zaatar", "zatar", "thyme and sesame blend"],
+   "servings": [{"label": "1 tsp", "g": 2.5}],
+   "components": [
+    {"food": "thyme-dried-4c6cce", "g": 35},
+    {"food": "sesame-seeds-toasted-shelled-11092e", "g": 30},
+    {"custom": "sumac", "g": 25, "zero_if_missing": ["fat", "satFat", "mufa", "pufa", "la", "ala", "epa", "dha", "sugar", "vitA", "vitC", "vitD", "vitE", "vitK", "b1", "b2", "b3", "b5", "b6", "b7", "folate", "b12", "choline", "calcium", "iron", "magnesium", "phosphorus", "potassium", "zinc", "copper", "manganese", "selenium", "iodine", "sodium"], "why": "sumac's micronutrients are unknown; counting them as zero makes every za'atar micronutrient a lower bound (never an overstatement) that understates by at most sumac's 25 % share"},
+    {"food": "table-salt-fdccfe", "g": 10, "zero_if_missing": ["iodine"], "why": "plain table salt, not iodised"}
+   ],
+   "recipe": "Dried thyme 35 %, toasted sesame seeds 30 %, sumac 25 %, salt 10 % (a typical Levantine blend by weight).",
+   "limits": "Micronutrients are lower bounds because sumac's are unknown (see the sumac entry). Sodium is dominated by the salt and is the most reliable number; real blends range from about 2 % to 12 % salt."
+  },
+  {
+   "key": "baharat",
+   "name": "Baharat (seven-spice blend)",
+   "head": "baharat",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["seven spice", "7 spice", "arabic seven spice", "lebanese seven spice"],
+   "servings": [{"label": "1 tsp", "g": 2.2}],
+   "components": [
+    {"food": "black-pepper-6fd5df", "g": 30},
+    {"food": "paprika-59bfc4", "g": 25},
+    {"food": "cumin-seed-626f82", "g": 15},
+    {"food": "coriander-seed-cilantro-973ca2", "g": 10},
+    {"food": "cinnamon-ground-ed5c78", "g": 8},
+    {"food": "clove-ground-863cd5", "g": 5},
+    {"food": "cardamom-ground-ac233b", "g": 4},
+    {"food": "nutmeg-ground-15c547", "g": 3}
+   ],
+   "recipe": "Black pepper 30 %, paprika 25 %, cumin 15 %, coriander seed 10 %, cinnamon 8 %, clove 5 %, cardamom 4 %, nutmeg 3 % (a common Lebanese / Syrian seven-spice mix; households vary).",
+   "limits": "Only nutrients present in all eight spice records are filled."
+  },
+  {
+   "key": "kala-namak",
+   "name": "Kala namak (black salt)",
+   "head": "kala namak",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["black salt", "himalayan black salt", "sanchal"],
+   "servings": [{"label": "1 tsp", "g": 5.5}],
+   "components": [
+    {"food": "table-salt-fdccfe", "g": 100}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "sugar", "fat", "sodium"],
+   "recipe": "Kala namak is sodium chloride with sodium sulfate, iron and sulfur compounds, so sodium is taken from table salt (the sodium content of both is within about 10 %) and energy and macronutrients are zero.",
+   "limits": "Its trace minerals (iron, sulfur) differ from table salt and are left missing."
+  },
+  {
+   "key": "amchur",
+   "name": "Amchur (dried green mango powder)",
+   "head": "amchur",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["amchoor", "aamchur", "mango powder", "dry mango powder"],
+   "servings": [{"label": "1 tsp", "g": 2.2}],
+   "components": [
+    {"food": "mango-unripe-green-flesh-raw-bd68ea", "g": 586, "note": "raw unripe mango at 84.3 % water, dried to 8 % water: 100 x 92 / 15.7"}
+   ],
+   "omit": ["vitA", "vitC", "vitE", "b1", "b2", "b3", "b5", "b6", "b7", "folate", "choline"],
+   "recipe": "Amchur is sun-dried unripe mango ground to a powder. Raw unripe mango (water 84.3 g per 100 g in CoFID) is concentrated to 8 % water, which is 5.86 g of raw flesh per gram of powder; macronutrients, fibre and minerals scale with the dry matter.",
+   "limits": "Vitamins are left missing: the sun-drying and storage losses of vitamin C, carotenoids and the B vitamins are large and unmeasured. The final moisture (8 %) is an assumption; commercial powders run about 5 to 10 %."
+  },
+  {
+   "key": "ajwain",
+   "name": "Ajwain (carom seeds)",
+   "head": "ajwain",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["carom seeds", "ajowan", "bishop's weed", "trachyspermum"],
+   "servings": [{"label": "1 tsp", "g": 2}],
+   "components": [
+    {"food": "cumin-seed-626f82", "g": 50},
+    {"food": "caraway-seed-020d2f", "g": 50}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fat"],
+   "recipe": "No source database has ajwain. It is a small Apiaceae seed like cumin and caraway, so energy, protein, carbohydrate and fat are the mean of cumin seed and caraway seed.",
+   "limits": "Fibre, fat split and every micronutrient are left missing: cumin and caraway differ from each other (fibre 10.5 g against 38 g) by more than the spread that would let the mean stand in for ajwain."
+  },
+  {
+   "key": "chaat-masala",
+   "name": "Chaat masala",
+   "head": "chaat masala",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["chat masala", "chaat spice"],
+   "servings": [{"label": "1 tsp", "g": 2.5}],
+   "components": [
+    {"custom": "amchur", "g": 25},
+    {"custom": "kala-namak", "g": 15},
+    {"food": "cumin-seed-626f82", "g": 22},
+    {"food": "coriander-seed-cilantro-973ca2", "g": 10},
+    {"food": "ginger-ground-648bc0", "g": 9},
+    {"food": "black-pepper-6fd5df", "g": 6},
+    {"food": "chili-pepper-red-sun-dried-d3dda3", "g": 5},
+    {"custom": "ajwain", "g": 3, "zero_if_missing": ["sodium"], "why": "ajwain's sodium is unknown; its cumin and caraway relatives carry 17 to 168 mg per 100 g, so at a 3 % share the omission is under 5 mg per 100 g of the blend and the sodium stays a lower bound"},
+    {"food": "mint-dried-3fe241", "g": 5}
+   ],
+   "recipe": "Amchur 25 %, kala namak 15 %, roasted cumin 22 %, coriander seed 10 %, dried ginger 9 %, black pepper 6 %, dried red chili 5 %, ajwain 3 %, dried mint 5 % (a typical North Indian chaat masala; asafoetida, usually about 1 %, is left out).",
+   "limits": "Because amchur, kala namak and ajwain carry few nutrients here, only energy, protein, carbohydrate, fat and sodium are filled (sodium is dominated by the kala namak)."
+  },
+  {
+   "key": "kasuri-methi",
+   "name": "Kasuri methi (dried fenugreek leaves)",
+   "head": "kasuri methi",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["dried fenugreek leaves", "dry methi", "kasoori methi", "methi leaves dried"],
+   "servings": [],
+   "components": [
+    {"food": "fenugreek-leaves-raw-bcc540", "g": 742, "note": "raw leaves at 87.6 % water, dried to 8 % water: 100 x 92 / 12.4"}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fat", "vitK", "calcium", "iron", "magnesium", "phosphorus", "potassium", "zinc", "copper", "manganese", "selenium", "sodium"],
+   "recipe": "Kasuri methi is fenugreek leaves dried to a crumbly herb. Raw leaves (water 87.6 g per 100 g in CoFID) are concentrated to 8 % water, which is 7.42 g of raw leaves per gram of dried herb; macronutrients and minerals scale with the dry matter.",
+   "limits": "Vitamins other than K (heat- and light-labile) are left missing. Fibre is not in the source. The 8 % final moisture is an assumption. Protein (34 g per 100 g) is probably 10 to 40 % high: the CoFID raw leaf is unusually protein-rich (4.6 g) and dried leafy herbs in the library sit at 20 to 22 g (dried coriander leaf, dried mint); a teaspoon of kasuri methi is about 1 g, so the effect on a recipe is under 0.4 g of protein."
+  },
+  {
+   "key": "kashmiri-chili-powder",
+   "name": "Kashmiri chili powder",
+   "head": "kashmiri chili powder",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["kashmiri chilli powder", "kashmiri mirch", "kashmiri red chilli powder", "deggi mirch"],
+   "servings": [{"label": "1 tsp", "g": 2.5}],
+   "components": [
+    {"food": "chili-pepper-red-sun-dried-d3dda3", "g": 100}
+   ],
+   "recipe": "Kashmiri chili powder is dried red chilies ground to a fine powder, so it takes the values of dried red chili pepper. The library's 'Chili powder' is a seasoning blend (cumin, garlic, oregano and salt, 2,867 mg sodium per 100 g) and would overstate sodium.",
+   "limits": "Kashmiri chilies are mild and thin-fleshed; capsaicin does not matter here but the fibre and mineral content of this generic dried chili may differ a little."
+  },
+  {
+   "key": "gochugaru",
+   "name": "Gochugaru (Korean red chili flakes)",
+   "head": "gochugaru",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["korean chili flakes", "korean red pepper flakes", "korean chili powder", "gochu garu"],
+   "servings": [{"label": "1 tbsp", "g": 5}],
+   "components": [
+    {"food": "chili-pepper-red-sun-dried-d3dda3", "g": 100}
+   ],
+   "recipe": "Gochugaru is sun-dried Korean red chilies, coarsely ground or flaked, so it takes the values of dried red chili pepper (the same record as Kashmiri chili powder).",
+   "limits": "Korean chilies are mildly hot and fleshy; the generic dried red chili stands in for them."
+  },
+  {
+   "key": "doenjang",
+   "name": "Doenjang (Korean soybean paste)",
+   "head": "doenjang",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["korean soybean paste", "korean fermented soybean paste", "soybean paste", "denjang"],
+   "tags": ["fermented"],
+   "servings": [{"label": "1 tbsp", "g": 17}],
+   "components": [
+    {"food": "miso-ea8eb5", "g": 100}
+   ],
+   "recipe": "Doenjang is a salty fermented soybean paste, the Korean counterpart of miso, so it takes the values of miso (soybeans, salt and a grain or no grain starter).",
+   "limits": "Doenjang is usually saltier and a little higher in protein than miso; sodium and protein are probably understated by 10 to 20 %. Check the label of a specific brand."
+  },
+  {
+   "key": "gochujang",
+   "name": "Gochujang (Korean chili paste)",
+   "head": "gochujang",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["korean chili paste", "korean red pepper paste", "gochujang paste"],
+   "tags": ["fermented"],
+   "servings": [{"label": "1 tbsp", "g": 18}],
+   "components": [
+    {"food": "chili-pepper-red-sun-dried-d3dda3", "g": 15},
+    {"food": "glutinous-rice-white-dry-05d49b", "g": 20},
+    {"custom": "doenjang", "g": 25},
+    {"food": "table-salt-fdccfe", "g": 4, "zero_if_missing": ["iodine"], "why": "plain table salt, not iodised"},
+    {"food": "granulated-sugar-cd7f65", "g": 6}
+   ],
+   "recipe": "Red chili 15 %, glutinous rice 20 % (dry weight; it is saccharified during fermentation, which does not change the energy), fermented soybean paste 25 %, salt 4 %, sugar 6 %, the rest (30 %) water: a typical commercial paste, about 190 kcal and 2.5 g sodium per 100 g.",
+   "limits": "Commercial pastes differ a lot in sugar, syrup and salt; read the label for a specific brand. Fermentation changes are ignored."
+  },
+  {
+   "key": "berbere",
+   "name": "Berbere (Ethiopian spice blend)",
+   "head": "berbere",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["berbere spice", "ethiopian berbere", "berebere"],
+   "servings": [{"label": "1 tsp", "g": 2.5}],
+   "components": [
+    {"food": "chili-pepper-red-sun-dried-d3dda3", "g": 40},
+    {"food": "paprika-59bfc4", "g": 25},
+    {"food": "ginger-ground-648bc0", "g": 8},
+    {"food": "garlic-powder-e81d9c", "g": 6},
+    {"food": "fenugreek-seed-95f5a8", "g": 4},
+    {"food": "coriander-seed-cilantro-973ca2", "g": 4},
+    {"food": "cardamom-ground-ac233b", "g": 2},
+    {"food": "black-pepper-6fd5df", "g": 2},
+    {"food": "clove-ground-863cd5", "g": 1},
+    {"food": "allspice-ground-67abb9", "g": 1},
+    {"food": "cinnamon-ground-ed5c78", "g": 1},
+    {"food": "nutmeg-ground-15c547", "g": 1},
+    {"food": "table-salt-fdccfe", "g": 5, "zero_if_missing": ["iodine"], "why": "plain table salt, not iodised"}
+   ],
+   "recipe": "Dried red chili 40 %, paprika 25 %, ginger 8 %, garlic powder 6 %, fenugreek 4 %, coriander 4 %, cardamom 2 %, black pepper 2 %, clove, allspice, cinnamon and nutmeg 1 % each, salt 5 % (a typical mix; Ethiopian households vary and some add korarima, ajwain or rue).",
+   "limits": "Only nutrients present in all twelve component records are filled."
+  },
+  {
+   "key": "ras-el-hanout",
+   "name": "Ras el hanout",
+   "head": "ras el hanout",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["ras al hanout", "moroccan spice blend"],
+   "servings": [{"label": "1 tsp", "g": 2.2}],
+   "components": [
+    {"food": "cumin-seed-626f82", "g": 20},
+    {"food": "coriander-seed-cilantro-973ca2", "g": 15},
+    {"food": "ginger-ground-648bc0", "g": 15},
+    {"food": "turmeric-ground-32f550", "g": 10},
+    {"food": "cinnamon-ground-ed5c78", "g": 10},
+    {"food": "paprika-59bfc4", "g": 10},
+    {"food": "black-pepper-6fd5df", "g": 8},
+    {"food": "cardamom-ground-ac233b", "g": 5},
+    {"food": "allspice-ground-67abb9", "g": 3},
+    {"food": "clove-ground-863cd5", "g": 2},
+    {"food": "nutmeg-ground-15c547", "g": 2}
+   ],
+   "recipe": "Cumin 20 %, coriander 15 %, ginger 15 %, turmeric 10 %, cinnamon 10 %, paprika 10 %, black pepper 8 %, cardamom 5 %, allspice 3 %, clove 2 %, nutmeg 2 % (the common Moroccan household mix; shop blends can carry thirty ingredients, including rose petals and lavender, which are left out).",
+   "limits": "Only nutrients present in all eleven component records are filled."
+  },
+  {
+   "key": "pomegranate-molasses",
+   "name": "Pomegranate molasses",
+   "head": "pomegranate molasses",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["pomegranate syrup", "pomegranate concentrate", "dibs rumman", "narsharab"],
+   "servings": [{"label": "1 tbsp", "g": 21}],
+   "components": [
+    {"food": "pomegranate-juice-238f76", "g": 350, "note": "reduced to 100 g, 3.5 x concentration"}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "sugar", "fat", "calcium", "iron", "magnesium", "phosphorus", "potassium", "zinc", "copper", "manganese", "selenium", "sodium"],
+   "recipe": "Pomegranate molasses is pomegranate juice boiled down; 350 g of juice makes 100 g, so sugars, energy and minerals are 3.5 times those of the juice.",
+   "limits": "Vitamins are left missing (vitamin C and folate are lost in boiling). Commercial products are often reduced further (about 65 % sugar, 4.5 to 5 x) and some add sugar or citric acid, so energy and carbohydrate here are on the low side."
+  },
+  {
+   "key": "tamarind-paste",
+   "name": "Tamarind paste",
+   "head": "tamarind paste",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["tamarind concentrate", "tamarind pulp paste", "imli paste"],
+   "servings": [{"label": "1 tbsp", "g": 16}],
+   "components": [
+    {"food": "tamarind-raw-1d238c", "g": 60, "note": "pulp; the other 40 g is water"}
+   ],
+   "omit": ["vitC", "folate"],
+   "recipe": "Tamarind paste is seedless tamarind pulp softened with water; 60 g of pulp and 40 g of water per 100 g gives a thick paste (pulp and water 3 : 2).",
+   "limits": "Commercial pastes and concentrates range from a thick pulp to a thin liquid, and some carry salt or sugar; this is the thick, unsalted kind. Vitamin C and folate are left missing."
+  },
+  {
+   "key": "labneh",
+   "name": "Labneh (strained yogurt)",
+   "head": "labneh",
+   "form": "product",
+   "category": "dairy",
+   "aliases": ["labne", "labaneh", "yogurt cheese", "strained yogurt", "greek yogurt cheese"],
+   "tags": ["fermented"],
+   "servings": [{"label": "1 tbsp", "g": 15}, {"label": "1/4 cup", "g": 60}],
+   "components": [
+    {"food": "greek-yogurt-plain-whole-milk-cee1ef", "g": 140, "note": "strained further: 140 g of Greek yogurt per 100 g of labneh"}
+   ],
+   "fill": ["kcal", "protein", "carbs", "sugar", "fat", "satFat", "mufa", "pufa", "calcium", "phosphorus", "vitA"],
+   "adjust": {"carbs": 0.65, "sugar": 0.65},
+   "kcal": "atwater",
+   "recipe": "Labneh is yogurt strained until firm. Whole-milk Greek yogurt (about 81 % water) strained to about 74 % water is 1.4 times as concentrated, so protein, fat (and its fatty-acid split), calcium, phosphorus and vitamin A are 1.4 times Greek yogurt. Lactose drains with the whey: it stays at the same concentration in a smaller water phase, so per 100 g it falls to about 0.9 of the yogurt's (0.65 of the 1.4x figure), which lowers carbohydrate and sugar. Energy is recomputed from the macros (4/9/4).",
+   "limits": "Whey-soluble nutrients (potassium, B2, B12, sodium) are left missing because how much drains varies; many labnehs also carry salt and are stored under olive oil, which this does not include."
+  }
+ ]
+}

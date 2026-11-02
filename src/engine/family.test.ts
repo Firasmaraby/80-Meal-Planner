@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from 'vitest';
 import fixtureJson from '../../content/families/_fixture-mini.json';
 import { FOODS, FOOD_INDEX, FoodIndex } from '@/state/catalog';
 import { familyDeps } from '@/state/familyDeps';
+import { LAB_FOODS } from '@/state/labCatalog';
 
 import { ingredientsTotal } from './calc';
 import {
@@ -31,7 +32,7 @@ vi.setConfig({ testTimeout: 30_000 }); // each lab run sizes 3 sizes at 6 calori
 const fixture = fixtureJson as unknown as FamilyFile;
 /** Lab mechanics tests grade the hand-made two-day fixture. With real glycaemic indices it is over the daily GL gate (103-108),
  *  so these tests grade it without GIs; the GL gate itself is covered by planStyles.test.ts and glycemicLoad.test.ts. */
-const mechanicsDeps = { ...familyDeps, foods: new FoodIndex(FOODS.map((f) => ({ ...f, gi: undefined }))) };
+const mechanicsDeps = { ...familyDeps, foods: new FoodIndex(LAB_FOODS.map((f) => ({ ...f, gi: undefined }))) };
 const clone = (): FamilyFile => structuredClone(fixture);
 const lab = (f: FamilyFile) => runLab(f, mechanicsDeps);
 /** The Standard size alone (2 calorie levels instead of 6): enough for tests that are not about sizing. */
@@ -199,6 +200,44 @@ describe('compiling a family', () => {
     expect(dietTagsOf(plan('Salmon, atlantic, farmed, baked or broiled', 'Broccoli, boiled'), FOOD_INDEX)).toEqual(['pescatarian', 'gluten-free', 'dairy-free', 'nut-free']);
     expect(dietTagsOf(plan('Chicken breast, skinless, roasted'), FOOD_INDEX)).toEqual(['gluten-free', 'dairy-free', 'nut-free']);
     expect(dietTagsOf(plan('Whole wheat bread', 'Almonds, dried', 'Egg, whole, boiled'), FOOD_INDEX)).toEqual(['vegetarian', 'pescatarian', 'dairy-free']);
+  });
+});
+
+describe('extended foods in a family', () => {
+  // a spice from the extended tier: not in the app's everyday catalog (the build promotes it to everyday once a family uses it)
+  const extended = LAB_FOODS.find((f) => f.tier === 'extended' && f.category === 'condiment' && f.n.kcal != null && !FOOD_INDEX.has(f.id))!;
+  const withExtended = () => {
+    const f = clone();
+    f.recipes[3].ingredients.push({ food: extended.id, g: 2 });
+    return f;
+  };
+
+  it('validates: an extended id is accepted, a legacy sample id and a made-up id are not', () => {
+    expect(extended).toBeDefined();
+    expect(familyDeps.validate.foodIds.has(extended.id)).toBe(true);
+    const { family, issues } = validateFamily(withExtended(), familyDeps.validate);
+    expect(family).toBeDefined();
+    expect(issues.filter((i) => i.level === 'error')).toEqual([]);
+    const bad = withExtended() as unknown as Record<string, any>;
+    bad.recipes[3].ingredients.push({ food: 'not-a-food-000000', g: 2 }, { food: 'salmon_atlantic', g: 2 });
+    expect(validateFamily(bad, familyDeps.validate).issues.filter((i) => i.level === 'error')).toHaveLength(2);
+  });
+
+  it('compiles and grades with the extended food counted in the numbers', () => {
+    const plain = compileSize(fixture, 'standard', mechanicsDeps)!.plan;
+    const withIt = compileSize(withExtended(), 'standard', mechanicsDeps)!.plan;
+    const day = (p: MealPlan) => ingredientsTotal(p.days[0].meals.concat(p.days[1].meals).flatMap((m) => m.ingredients), mechanicsDeps.foods);
+    expect(withIt.days.flatMap((d) => d.meals.flatMap((m) => m.ingredients.map((i) => i.foodId)))).toContain(extended.id);
+    expect(day(withIt).kcal).toBeGreaterThan(day(plain).kcal!);
+    const result = labStd(withExtended());
+    expect(result.formatIssues.filter((i) => i.level === 'error')).toEqual([]);
+    expect(result.sizes.length).toBeGreaterThan(0);
+    expect(result.failures.map((x) => x.message).join('\n')).not.toMatch(/unknown food/i);
+  });
+
+  it('keeps suggestions (go-to sources) to the everyday tier', () => {
+    expect(familyDeps.catalog.every((f) => f.tier === 'everyday')).toBe(true);
+    expect(familyDeps.catalog.length).toBeGreaterThan(2500);
   });
 });
 
