@@ -274,3 +274,14 @@ These are the problems that sent the pilot back. Check your week for each one be
 - **Untrue claims.** "Pearled barley is a whole grain", "salmon gives you calcium", "spinach covers your iron". Only claim what the dish really carries.
 - **Recipes that silently need another recipe.** "Hummus" with no hummus recipe. If a component is made, include how.
 - **Portions nobody eats.** 300 g of shelled mussels, or 2½ eggs. Use whole eggs and real plates.
+- **Crutches the batch 1A and 1B critics counted** (they count slots, so count yours first):
+  - **Dairy:** yogurt, laban or labneh in 15+ slots a week. Aim at about 10 or fewer, never 4 in a day, unless the cuisine truly eats it that often.
+  - **Eggs:** an egg at all 7 breakfasts, then egg snacks to patch choline. Choline also comes from fish, chicken, beef, shrimp, soy and legumes. Use eggs where the dish has them, and say so when the gate forces more.
+  - **Walnuts, almonds, chia, flax** dropped into savoury dishes or every snack for omega or vitamin E. Use them only where the cuisine does (blended soy milk, a nut snack, a sweet porridge).
+  - **One fruit or vegetable everywhere:** orange, carrot, bok choy, papaya, cucumber in 5+ recipes, or 3 times in one day.
+- **Stand-ins when the real staple exists.** Chili powder for ancho or chipotle, paprika for achiote, "curry powder" for sambar powder, sansho for Sichuan pepper, lemon for loomi. Search first with `scripts/find-food.mjs`; curated staples are added on request.
+- **Cooking that doesn't work as written:** a cup of water in a dish that needs a third; 10 minutes for congee from cooked rice; whole-wheat flour as a stir-fry thickener (up to 10 g of cornstarch is fine and doesn't change the carb style); a filling too dry to fold; a batter that needs to ferment but only rests 10 minutes.
+- **Weekday time honesty.** "15-minute" only when prep plus cook is 15 or less. A 30-minute weekday breakfast needs a make-ahead tip; a 100-minute braise needs a pressure-cooker tip.
+- **Batch staples with no recipe:** the Sunday rice or bean pot must say how much to cook (enough for the week, or twice) and how long it keeps (4 to 5 days; freeze the rest).
+- **Recipe ids are shared across the library.** Start every recipe id with your family id (`mexico-tinga`).
+
