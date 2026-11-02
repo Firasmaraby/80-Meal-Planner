@@ -1290,6 +1290,41 @@
    "omit": ["vitC", "folate"],
    "recipe": "Biltong is lean beef cured with salt, vinegar, coriander and pepper, then air-dried (230 g raw to 100 g). Unlike jerky it is not sweetened or cooked.",
    "limits": "Fattier cuts and longer drying change protein and fat by 10 to 20 %; sodium varies by maker."
+  },
+  {
+   "key": "dijon-mustard",
+   "name": "Dijon mustard",
+   "head": "dijon mustard",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["dijon", "french mustard", "moutarde de dijon"],
+   "servings": [{"label": "1 tsp", "g": 5}, {"label": "1 tbsp", "g": 15}],
+   "components": [
+    {"food": "mustard-1fa6b6", "g": 100, "note": "prepared mustard of the same kind"}
+   ],
+   "recipe": "Dijon is a prepared mustard of ground brown mustard seed, vinegar or verjuice, salt and water; it takes the values of prepared mustard.",
+   "limits": "Dijon is usually a little saltier and less sweet than the generic prepared mustard used here."
+  },
+  {
+   "key": "cajun-blackening-spice",
+   "name": "Cajun blackening spice",
+   "head": "cajun spice",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["cajun seasoning", "blackening seasoning", "creole seasoning", "cajun spice"],
+   "servings": [{"label": "1 tsp", "g": 2.5}],
+   "components": [
+    {"food": "paprika-59bfc4", "g": 35},
+    {"food": "garlic-powder-e81d9c", "g": 15},
+    {"food": "onion-powder-2b2126", "g": 12},
+    {"food": "cayenne-pepper-a95c95", "g": 8},
+    {"food": "thyme-dried-4c6cce", "g": 8},
+    {"food": "oregano-ground-ec4216", "g": 8},
+    {"food": "black-pepper-6fd5df", "g": 6},
+    {"food": "table-salt-fdccfe", "g": 8, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"}
+   ],
+   "recipe": "A Cajun blackening blend: paprika, garlic and onion powder, cayenne, thyme, oregano, black pepper and salt.",
+   "limits": "Store blends vary a lot in salt (some are half salt); this one is light on it. Used by the teaspoon."
   }
  ]
 }
