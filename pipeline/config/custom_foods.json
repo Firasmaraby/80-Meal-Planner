@@ -953,6 +953,127 @@
    ],
    "recipe": "Masarepa is white corn, degermed, cooked and milled. It takes the values of white corn flour.",
    "limits": "Precooking changes little nutritionally. This is a refined corn flour (degermed), not whole grain."
+  },
+  {
+   "key": "gebna-beida",
+   "name": "Gebna beida (Egyptian white cheese)",
+   "head": "gebna beida",
+   "form": "product",
+   "category": "dairy",
+   "aliases": ["gibna beida", "domiati cheese", "egyptian white cheese", "gebna bayda"],
+   "servings": [{"label": "1 oz", "g": 28}],
+   "components": [
+    {"food": "feta-cheese-f7c0e3", "g": 100, "note": "a brined white cheese of the same kind"}
+   ],
+   "recipe": "Gebna beida (domiati) is a soft brined white cheese; it takes the values of feta, the nearest brined white cheese in the source data.",
+   "limits": "Domiati is often saltier and a little softer than feta; sodium is probably understated by 10 to 30 %."
+  },
+  {
+   "key": "shatta",
+   "name": "Shatta (Egyptian chili sauce)",
+   "head": "shatta",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["shatta sauce", "egyptian hot sauce", "red shatta"],
+   "servings": [{"label": "1 tsp", "g": 5}],
+   "components": [
+    {"food": "chili-pepper-red-raw-72faf1", "g": 75},
+    {"food": "vinegar-d9b2f1", "g": 12},
+    {"food": "canola-oil-6744e1", "g": 8},
+    {"food": "garlic-raw-a9c6a6", "g": 2},
+    {"food": "table-salt-fdccfe", "g": 3, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"}
+   ],
+   "omit": ["vitC"],
+   "recipe": "Shatta: fresh red chilies blended with garlic, vinegar, a little oil and salt.",
+   "limits": "Vitamin C left out (stored sauce); recipes vary in oil and salt. Used by the spoonful."
+  },
+  {
+   "key": "colorau",
+   "name": "Colorau (urucum and corn powder)",
+   "head": "colorau",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["colorífico", "colorifico", "urucum powder", "annatto powder brazilian"],
+   "servings": [{"label": "1 tsp", "g": 2.5}],
+   "components": [
+    {"food": "paprika-59bfc4", "g": 25, "note": "stands in for ground annatto seed"},
+    {"food": "corn-flour-yellow-whole-grain-d8c589", "g": 75, "note": "fubá, the corn flour colorau is mixed with"}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat"],
+   "recipe": "Brazilian colorau is ground urucum (annatto) seed mixed with fine corn flour (fubá), used for colour in moquecas and stews. Annatto isn't in any source database, so paprika stands in for its share.",
+   "limits": "Only energy and macronutrients. Used by the teaspoon."
+  },
+  {
+   "key": "guascas",
+   "name": "Guascas, dried",
+   "head": "guascas",
+   "form": "dried",
+   "category": "condiment",
+   "aliases": ["guasca", "galinsoga", "gallant soldier herb"],
+   "servings": [{"label": "1 tsp", "g": 1}],
+   "components": [
+    {"food": "oregano-ground-ec4216", "g": 100, "note": "another dried leafy herb"}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat"],
+   "recipe": "Guascas (Galinsoga parviflora) is the dried herb that defines Colombian ajiaco; it takes the macronutrients of dried oregano.",
+   "limits": "Only energy and macronutrients; used by the pinch, so nutritionally negligible. Sold dried in Latin grocers."
+  },
+  {
+   "key": "queijo-coalho",
+   "name": "Queijo coalho",
+   "head": "queijo coalho",
+   "form": "product",
+   "category": "dairy",
+   "aliases": ["coalho cheese", "brazilian grilling cheese", "queso de coalho"],
+   "servings": [{"label": "1 oz", "g": 28}],
+   "components": [
+    {"food": "halloumi-cheese-ae36e5", "g": 100, "note": "a firm, high-melting grilling cheese of the same kind"}
+   ],
+   "recipe": "Queijo coalho is a firm, squeaky Brazilian cheese that browns without melting, like halloumi, whose values it takes.",
+   "limits": "Coalho is usually a little less salty than halloumi."
+  },
+  {
+   "key": "smoked-paprika",
+   "name": "Smoked paprika (pimentón)",
+   "head": "smoked paprika",
+   "form": "dried",
+   "category": "condiment",
+   "aliases": ["pimenton", "pimentón de la vera", "smoked paprika powder", "páprica defumada"],
+   "servings": [{"label": "1 tsp", "g": 2.3}],
+   "components": [
+    {"food": "paprika-59bfc4", "g": 100}
+   ],
+   "recipe": "Smoked paprika is paprika peppers smoke-dried before grinding; nutritionally it is paprika.",
+   "limits": "Same values as paprika. Used by the teaspoon."
+  },
+  {
+   "key": "pandan-leaves",
+   "name": "Pandan leaves",
+   "head": "pandan",
+   "form": "raw",
+   "category": "vegetable",
+   "aliases": ["pandan", "screwpine leaves", "daun pandan", "bai toey", "pandan leaf"],
+   "servings": [{"label": "1 leaf", "g": 3}],
+   "components": [
+    {"food": "lemon-grass-citronella-raw-517537", "g": 100, "note": "another fibrous aromatic leaf, steeped and removed"}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fiber", "fat"],
+   "recipe": "Pandan is knotted and simmered in rice, porridge and sweets for its vanilla-like aroma, then removed; it takes the macronutrients of lemongrass.",
+   "limits": "Only macronutrients; the leaf is removed before eating, so it contributes almost nothing."
+  },
+  {
+   "key": "cane-vinegar",
+   "name": "Cane vinegar",
+   "head": "cane vinegar",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["sukang iloko", "sukang maasim", "filipino cane vinegar", "coconut vinegar", "sukang tuba"],
+   "servings": [{"label": "1 tbsp", "g": 15}],
+   "components": [
+    {"food": "vinegar-d9b2f1", "g": 100}
+   ],
+   "recipe": "Filipino cane (or coconut) vinegar is a mild fermented vinegar; nutritionally it is vinegar.",
+   "limits": "Same values as plain vinegar."
   }
  ]
 }
