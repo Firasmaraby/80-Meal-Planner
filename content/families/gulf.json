@@ -1,0 +1,1763 @@
+{
+  "id": "gulf",
+  "name": "Gulf Kitchen",
+  "style": "balanced",
+  "cuisine": "Gulf Arabian",
+  "regions": [
+    "Saudi Arabia",
+    "Emirates",
+    "Oman",
+    "Kuwait",
+    "Qatar",
+    "Bahrain"
+  ],
+  "summary": "A week of Gulf home cooking: chicken machboos, lamb saloona, beef and okra marag, grilled kanaad with dakkous, roasted sardines and a slow Saturday lamb harees. Brown basmati, whole-wheat khubz and legumes, with dates, laban and nuts for snacks.",
+  "howItWorks": "**Cook once, eat twice.** Monday's machboos, Wednesday's saloona, Thursday's marag and Saturday's harees each make two portions, so the next day's lunch is already done. Pack the rice or bread with it.\n\n**Fish twice, plus shrimp.** Kanaad with dakkous on Tuesday and fresh sardines on Friday carry your **omega-3 and vitamin D**. Both are cooked fresh, three days apart, and shrimp rounds out Sunday.\n\n**Whole grains the Gulf way.** Brown basmati in the machboos, marag and shrimp, whole-wheat khubz, and cracked wheat in the harees. Dates are a small sweetness, one or two at a time, so the **glycaemic load** stays in check.\n\n**Breakfasts that rotate.** Foul, balaleet-inspired vermicelli and tomato eggs each come round two or three times, never on back-to-back mornings. The eggs and fava beans carry your **choline and a good share of your iron**, and laban or milk snacks keep **calcium** up.\n\n**Weekend project.** Saturday's harees is mostly hands-off simmering. Cooking fats are the Gulf kitchen's own, vegetable oil and a little ghee, with olive oil for salads and the nakhi.",
+  "signature": [
+    "gulf-chicken-machboos-brown-basmati",
+    "gulf-kanaad-dakkous-khubz",
+    "gulf-lamb-harees",
+    "gulf-beef-okra-marag-brown-basmati"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "gulf-dates-pistachio-bites"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "gulf-khubz-tahini-date"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "gulf-almonds-pistachios-raisins"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "gulf-khubz-tahini-date"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "gulf-orange-pistachios"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "gulf-foul-khubz",
+      "name": "Gulf foul with lemon, cumin and khubz",
+      "inspiredBy": "Saudi and Emirati foul, the fava bean breakfast every Gulf family knows, with a boiled egg",
+      "about": "Warm fava beans mashed with garlic, cumin and lemon, then piled with fresh tomato, onion, parsley and a little green chili, with a spoon of tahini, a boiled egg and hot whole-wheat khubz for scooping. A proper Gulf breakfast that keeps you going until lunch. The fava beans bring **folate, iron and fibre**, and the tahini adds calcium.",
+      "ingredients": [
+        {
+          "food": "broadbeans-fava-beans-canned-solids-and-liquid-c9fcc5",
+          "g": 200,
+          "swap": "legumes",
+          "note": "with a little of the canning liquid"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg, boiled"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 25,
+          "note": "roughly chopped"
+        },
+        {
+          "food": "serrano-pepper-raw-bcef02",
+          "g": 4,
+          "note": "finely chopped, to taste"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.2
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 25,
+          "note": "khubz"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Lower the egg into a pot of boiling water and cook it for 8 minutes, then cool it under cold water and peel. Do this first so it is ready when the beans are.",
+        "Warm half the oil in a small pan, add the garlic and cumin for 20 seconds, then tip in the fava beans with a few spoonfuls of their liquid and the salt.",
+        "Warm over medium heat for 5 minutes, then mash about half of the beans with a fork so it is chunky and creamy.",
+        "Warm the khubz in a dry pan or the toaster until it is soft with a few toasty spots.",
+        "Spoon the foul into a shallow bowl and top it with the tomato, onion, parsley and green chili.",
+        "Squeeze over the lemon, drizzle with the rest of the oil and the tahini, and serve with the halved egg and the khubz."
+      ],
+      "prepMin": 8,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Fresh chopped mint is a common addition. Foul keeps well, so a double batch of the beans makes a second breakfast quick."
+    },
+    {
+      "id": "gulf-balaleet-cardamom-omelette",
+      "name": "Balaleet-inspired saffron vermicelli with a cardamom omelette",
+      "inspiredBy": "Emirati balaleet, the sweet-savoury vermicelli with a thin omelette on top, made here with whole wheat pasta and much less sugar",
+      "about": "Thin strands of whole wheat pasta fried in a little ghee, then simmered with saffron, cardamom and a chopped date for just enough sweetness, and topped with a soft, lightly spiced omelette and toasted almonds. It's the sweet and salty breakfast of the Emirates and Qatar. The two eggs bring **protein and choline**, and the almonds add vitamin E.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "thin spaghetti, snapped into short pieces"
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 3
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 12,
+          "note": "a small date, pitted and finely chopped"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.6
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.1,
+          "note": "a good pinch"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 6,
+          "swap": "healthy_oils",
+          "note": "for the omelette"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "slivered or roughly chopped"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "in segments, on the side"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Steep the saffron in 2 tablespoons of hot water. Melt the ghee in a small pan and stir-fry the broken pasta for 2 to 3 minutes until it smells toasty and turns a shade darker.",
+        "Add about a third of a cup (80 ml) of hot water, the chopped date, half the cardamom and half the salt. Simmer, stirring now and then, adding a splash more water only if the pasta is still hard, until it is tender and has soaked up nearly all the liquid, about 8 minutes. Stir in most of the saffron water and let it finish drying.",
+        "Beat the eggs with the rest of the cardamom, a teaspoon of the saffron water and the rest of the salt. Warm the oil in a non-stick pan and pour in the eggs, tilting the pan so they spread thin. Cook until just set, about 2 minutes, then fold or roll the omelette.",
+        "Toast the almonds in a dry pan until golden. Pile the vermicelli on a plate, lay the omelette over it and scatter with the almonds. Serve with the orange segments on the side."
+      ],
+      "prepMin": 5,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Rose water is traditional if you have a bottle: a few drops in the saffron water. A little date syrup (dibs) or honey over the omelette is a common finish. On a weekday, cook the vermicelli the night before. It reheats in a minute with a splash of water while the omelette cooks."
+    },
+    {
+      "id": "gulf-beid-wa-tamatem",
+      "name": "Eggs with tomato and green chili, with cucumber and khubz",
+      "inspiredBy": "Gulf beid wa tamatem, the everyday tomato and egg skillet",
+      "about": "Eggs set gently into a juicy skillet of tomato, onion, garlic and green chili, with crunchy cucumber and warm khubz. Quick and homey, and very Gulf. The eggs bring **protein and choline**, and cooked tomato is a good source of lycopene.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 160,
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 45,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "sliced"
+        },
+        {
+          "food": "serrano-pepper-raw-bcef02",
+          "g": 5,
+          "note": "sliced, to taste"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "on the side"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40,
+          "note": "khubz"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Warm the oil in a small skillet and soften the onion with the garlic and green chili until golden at the edges, about 4 minutes. Stir in the turmeric and black pepper for a few seconds.",
+        "Add the tomato and the salt. Cook over medium heat, mashing the tomato with your spoon, until it has collapsed into a thick, jammy sauce, about 7 minutes.",
+        "Make two wells in the sauce and crack the eggs into them. Cover and cook gently for 3 to 4 minutes, until the whites are set and the yolks are still soft. If you prefer them scrambled, stir the eggs in instead.",
+        "Scatter with the cilantro. Serve straight from the pan with the cucumber and warm khubz."
+      ],
+      "prepMin": 5,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "The tomato base keeps for three days in the fridge, so cook a double batch on Wednesday and reheat it on Saturday morning."
+    },
+    {
+      "id": "gulf-shorbat-adas-khubz",
+      "name": "Gulf lentil soup with lemon and khubz",
+      "inspiredBy": "Shorbat adas, the red lentil soup of Gulf kitchens, brightened with lemon",
+      "about": "A smooth, golden red lentil soup with carrot, onion and cumin, finished with lots of lemon and fresh herbs. A crisp cucumber and khubz on the side make it a full lunch. The lentils bring **iron, folate and plenty of fibre**, and the lemon helps your body use that iron.",
+      "ingredients": [
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 30,
+          "note": "khubz"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "in wedges, on the side"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Warm the oil in a pot and soften the onion and carrot for 5 minutes. Add the garlic, cumin and turmeric and stir for 30 seconds until fragrant.",
+        "Add the lentils, the salt and about 2½ cups (600 ml) of water. Bring to a boil, then simmer gently for 20 minutes, until the lentils have fallen apart and the carrot is tender.",
+        "Blend with a stick blender until smooth, or leave it a little rustic. Add a splash of water if it is thicker than you like.",
+        "Stir in the lemon juice, taste and add more salt or lemon if it needs it.",
+        "Ladle into a bowl and scatter with the cilantro and parsley. Serve with the khubz, the cucumber and an extra squeeze of lemon."
+      ],
+      "prepMin": 8,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "Make it Sunday evening. It keeps three days and thickens as it sits, so loosen it with a splash of water. Double it and freeze a portion if you like. A pinch of chili flakes on top is common."
+    },
+    {
+      "id": "gulf-nakhi-chickpeas-labneh",
+      "name": "Spiced chickpeas (nakhi) with labneh, radish and khubz",
+      "inspiredBy": "the Gulf street-side boiled chickpeas, nakhi, here served over labneh with a fresh salad",
+      "about": "Warm chickpeas tossed with garlic, cumin and lemon, spooned over thick labneh with crunchy radish, cucumber, mint and parsley, and eaten with khubz. It comes together in 15 minutes and tastes fresh and tangy. Chickpeas and labneh together give you **protein, fibre and calcium** in one plate.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 160,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 70,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "crushed"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 40,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 6,
+          "note": "leaves torn"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40,
+          "note": "khubz"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Warm half the olive oil in a small pan, add the garlic and cumin and stir for 20 seconds, until it smells toasty.",
+        "Add the chickpeas with a splash of water and the salt. Warm them through for 4 to 5 minutes, crushing a few with the back of the spoon, then take off the heat and stir in the lemon juice.",
+        "Spread the labneh across a plate and spoon the warm chickpeas over it. Drizzle with the rest of the olive oil.",
+        "Toss the radish, cucumber, mint and parsley together and pile them on top. Dust with the sumac.",
+        "Warm the khubz and tear it up to scoop everything."
+      ],
+      "prepMin": 8,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "A teaspoon of toasted sesame seeds over the top is a nice touch. Warm the chickpeas gently so they stay soft."
+    },
+    {
+      "id": "gulf-chicken-shawarma-plate",
+      "name": "Gulf-style chicken shawarma plate with garlic labneh sauce and salata",
+      "inspiredBy": "Gulf chicken shawarma, pan-seared at home with baharat instead of on a spit",
+      "about": "Chicken marinated in labneh, garlic, lemon and baharat, seared until browned, with a cool garlic-labneh sauce, a crisp cucumber and tomato salata, quick-pickled radish and carrot and warm khubz. It tastes like a shawarma shop but sits on a plate. The chicken brings **protein and niacin**, and the carrot, herbs and tomato add vitamins A and C.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "sliced into thin strips"
+        },
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 60,
+          "swap": "dairy_protein",
+          "note": "for the marinade and the sauce"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 2.5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "crushed"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 30,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "grated"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 45,
+          "note": "khubz"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Mix half the labneh with half the garlic, half the lemon juice, the baharat, half the oil and a pinch of the salt. Toss the chicken strips in it and leave for 15 minutes, or up to a day in the fridge.",
+        "Toss the radish and grated carrot with a squeeze of lemon and a pinch of salt and leave them to pickle while the chicken marinates.",
+        "For the sauce, whisk the rest of the labneh with the remaining garlic, a squeeze of lemon and a splash of water until it pours like thick cream.",
+        "Warm the remaining oil in a heavy pan over high heat and sear the chicken in a single layer, turning once, until browned at the edges and cooked through, about 6 minutes.",
+        "Toss the cucumber, tomato and parsley with the last of the lemon juice and a pinch of salt.",
+        "Warm the khubz. Pile the chicken, salata and pickled radish and carrot on a plate or into the bread and spoon the garlic sauce over."
+      ],
+      "prepMin": 15,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Roll everything into the khubz for a handheld wrap, or use chicken breast if you prefer it leaner."
+    },
+    {
+      "id": "gulf-chicken-machboos-brown-basmati",
+      "name": "Chicken machboos with brown basmati, almonds and raisins",
+      "inspiredBy": "Kuwaiti, Emirati and Bahraini chicken machboos, made with brown basmati and less oil",
+      "about": "Chicken browned with onion and tomato, then simmered with baharat, saffron and sour dried loomi into a fragrant pot of brown basmati rice, finished with toasted almonds and sweet raisins. A Friday lunch favourite in homes across the Gulf. The brown rice and almonds add **fibre and vitamin E**, and tomorrow's lunch is already made.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "cut into large pieces"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "rinsed well"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 3
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.1,
+          "note": "a good pinch"
+        },
+        {
+          "food": "loomi-dried-black-lime-8b452f",
+          "g": 3,
+          "note": "1 whole for the pot of 2 servings, pierced"
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 3
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "slivered"
+        },
+        {
+          "food": "raisin-seedless-sultana-d04029",
+          "g": 6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Soak the rinsed rice in cold water for 20 minutes if you have time, then drain. Steep the saffron in 2 tablespoons of hot water. Pierce the loomi a few times with a knife.",
+        "Melt the ghee with the oil in a wide, heavy pot and fry the onion over medium heat until deep golden, about 10 minutes. Stir in the garlic, baharat and tomato paste for a minute.",
+        "Add the chicken and brown it for 5 minutes, turning, then add the tomato and the salt. Cook until the tomato breaks down and the pot smells rich, about 6 minutes.",
+        "Pour in enough hot water to cover the chicken by a finger, add the loomi, then bring to a boil, cover and simmer for 15 minutes.",
+        "Add the rice, pressing it just under the liquid, and top up with hot water if needed so it is covered by about 1 cm. Simmer, covered, over low heat for 30 to 35 minutes, until the rice is tender and the water is gone. Drizzle over the saffron water and rest, covered, for 10 minutes.",
+        "While the rice rests, toast the almonds in a dry pan until golden, then scatter them over the rice with the raisins.",
+        "Fluff gently and serve, nudging the loomi aside or squeezing it over your plate. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 70,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "Dried black limes (loomi) are sold whole at Middle Eastern grocers. Add a cinnamon stick and a few cardamom pods with the water for a more traditional pot, and a handful of chopped cilantro on top."
+    },
+    {
+      "id": "gulf-kanaad-dakkous-khubz",
+      "name": "Grilled kanaad (Spanish mackerel) with dakkous and khubz",
+      "inspiredBy": "Gulf samak mashwi with dakkous, the garlicky tomato and chili sauce served beside grilled fish across the Emirates, Qatar and Bahrain",
+      "about": "A thick steak of kanaad, the Spanish mackerel the Gulf loves, rubbed with turmeric and grilled, with a punchy dakkous of crushed tomato, garlic, green chili, cumin and lemon, and a crunchy cucumber and carrot salad. It gives you **omega-3, vitamin D and B12**, the carrot adds vitamin A and the sauce adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "spanish-mackerel-raw-0bc99d",
+          "g": 170,
+          "swap": "fatty_fish",
+          "note": "steaks or thick fillets"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "crushed"
+        },
+        {
+          "food": "serrano-pepper-raw-bcef02",
+          "g": 6,
+          "note": "chopped, to taste"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils",
+          "note": "for the salad"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "coarsely grated"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 25,
+          "note": "khubz"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Pat the fish dry and rub it with the turmeric and half the salt. Leave it on the counter while you make the sauce.",
+        "For the dakkous, warm half the vegetable oil in a small pan and cook the garlic and green chili for 30 seconds. Add the tomato, cumin and a pinch of salt and cook, crushing the tomato with a spoon, until thick and saucy, about 8 minutes. Off the heat, stir in half the lemon juice and the parsley.",
+        "Heat a heavy pan or a grill until very hot. Brush the fish with the rest of the vegetable oil and cook for 5 to 6 minutes on each side, until the skin is crisp and the flesh just flakes at the thickest part.",
+        "Toss the cucumber and carrot with the rest of the lemon juice, the olive oil and a pinch of salt.",
+        "Warm the khubz. Serve the fish with a generous spoonful of dakkous on top, the salad alongside and the bread for mopping."
+      ],
+      "prepMin": 12,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Frozen Spanish mackerel from an Asian or Middle Eastern market is the usual source. King mackerel, Atlantic mackerel or hammour also work if you want a milder fish. Dakkous is great on rice and eggs too, so a double batch will not go to waste."
+    },
+    {
+      "id": "gulf-lamb-saloona-khubz",
+      "name": "Lamb saloona with eggplant and pumpkin",
+      "inspiredBy": "Emirati saloona, the everyday tomato and vegetable stew eaten with rice or bread, made with extra vegetables, less meat and no potato",
+      "about": "Tender lamb simmered with tomato, onion, eggplant and sweet pumpkin in a turmeric and baharat sauce with a whole chili and a tang of loomi, thick enough to scoop with khubz. An everyday Emirati stew. The pumpkin and eggplant bring **vitamin A, potassium and fibre**, and the lamb adds iron and zinc.",
+      "ingredients": [
+        {
+          "food": "lamb-cubed-for-stew-or-kabob-lean-raw-e3098a",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "cut into small cubes"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 10
+        },
+        {
+          "food": "eggplant-raw-b8b8c1",
+          "g": 100,
+          "note": "in large cubes"
+        },
+        {
+          "food": "pumpkin-raw-dd46c7",
+          "g": 130,
+          "note": "in large cubes, butternut or kabocha squash works"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 2.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.6
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "loomi-dried-black-lime-8b452f",
+          "g": 3,
+          "note": "1 whole for the pot of 2 servings, pierced"
+        },
+        {
+          "food": "serrano-pepper-raw-bcef02",
+          "g": 5,
+          "note": "left whole and pierced"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40,
+          "note": "khubz"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Warm the oil in a heavy pot over medium-high heat. Brown the lamb in batches, about 5 minutes, then lift it out.",
+        "Soften the onion in the same pot for 6 minutes, then stir in the garlic, turmeric, half the baharat and the tomato paste until fragrant.",
+        "Return the lamb with the tomato, the loomi, the whole green chili, the salt and 2 cups of water. Bring to a boil, then cover and simmer gently for 40 minutes, until the lamb is nearly tender.",
+        "Add the eggplant and pumpkin and simmer for 20 to 25 minutes, until everything is soft and the sauce has thickened. Add a splash of water if it gets dry.",
+        "Stir in the rest of the baharat, taste and adjust the salt. Fish out the chili and loomi, or leave them in for the table.",
+        "Serve with warm khubz. Pack the second portion for tomorrow's lunch, with its bread wrapped separately."
+      ],
+      "prepMin": 20,
+      "cookMin": 70,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Saloona is even better the next day. Chicken, fish or just vegetables with chickpeas all make good saloona too."
+    },
+    {
+      "id": "gulf-beef-okra-marag-brown-basmati",
+      "name": "Beef and okra marag with chickpeas and a little brown basmati",
+      "inspiredBy": "Kuwaiti and Emirati marag bamia, the tomato and okra stew eaten over rice",
+      "about": "Beef and okra simmered in a bright, garlicky tomato broth with crushed coriander, a good squeeze of lemon and chickpeas, ladled over a small portion of brown basmati. Homely and tangy, and not slimy when the okra is cooked whole and gently. The okra and chickpeas bring **folate, fibre and vitamin K**, and it makes tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "beef-chuck-for-stew-lean-and-fat-raw-8d6ce5",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "cut into small cubes"
+        },
+        {
+          "food": "okra-gumbo-raw-424b0a",
+          "g": 150,
+          "note": "trimmed, left whole"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 60,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "crushed"
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.5,
+          "note": "crushed"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Warm the oil in a heavy pot and brown the beef in batches, about 5 minutes. Lift it out, then soften the onion in the same pot for 6 minutes.",
+        "Add the garlic, coriander and tomato paste, then the tomato. Cook for 6 minutes, until the tomato starts to break down.",
+        "Return the beef with the salt and 2 cups of water. Cover and simmer for about 1 hour and 15 minutes, until the beef is nearly tender.",
+        "Add the chickpeas and the whole okra. Simmer gently, without stirring too much, for 15 minutes, until the okra is soft but holds its shape. Stir in the lemon juice.",
+        "Meanwhile, cook the rice in plenty of boiling salted water for about 35 to 40 minutes until tender, then drain.",
+        "Serve the marag over the rice with the cilantro scattered on top. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 100,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Frozen whole okra works well and is easy to find. Trimming the cap without cutting into the pod, and adding lemon or tomato, keeps it from turning slimy."
+    },
+    {
+      "id": "gulf-sardines-cumin-sweet-potatoes",
+      "name": "Roasted sardines with cumin sweet potatoes and a cucumber and radish salata",
+      "inspiredBy": "Omani and Gulf grilled sardines with garlic and coriander, with a crisp salata in the style of salata Arabiya",
+      "about": "Fresh sardines marinated in garlic, lemon, cumin and cilantro, then roasted until the skin crackles, with cumin-roasted sweet potato wedges and a crisp salata of cucumber, radish, onion, parsley and lemon. Quick and bright. Sardines give you **omega-3, vitamin D and B12**, and the sweet potato gives you vitamin A.",
+      "ingredients": [
+        {
+          "food": "sardine-raw-3ff1dd",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "cleaned, whole or butterflied"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 85,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils",
+          "note": "for the salata"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 40,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the sweet potato wedges with half the vegetable oil, half the cumin and a pinch of salt on a baking tray and roast for 20 minutes.",
+        "Mash the garlic with a pinch of salt and mix it with the cilantro, the rest of the cumin, half the lemon juice and the rest of the vegetable oil. Rub it over the sardines inside and out.",
+        "Turn the wedges and push them to one side. Lay the sardines on the tray and roast for 8 to 10 minutes, until the skin is blistered and the flesh flakes easily.",
+        "Toss the cucumber, radish, onion and parsley with the rest of the lemon juice, the olive oil, the sumac and a pinch of salt.",
+        "Serve the sardines and sweet potatoes with the salata on the side and a lemon wedge if you like."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Frozen sardines work well once thawed. Open the window or use the exhaust fan, since sardines are fragrant. Mackerel can stand in for the sardines."
+    },
+    {
+      "id": "gulf-lamb-harees",
+      "name": "Lamb harees with ghee and cinnamon, laban and cucumber",
+      "inspiredBy": "Emirati, Qatari and Saudi harees, the slow wheat and meat porridge of Ramadan and celebrations",
+      "about": "Cracked wheat and tender lamb cooked slowly with onion and cardamom until they melt into a thick, silky porridge, finished with a spoon of melted ghee and a dusting of cinnamon. Cold laban and a cucumber, mint and parsley salad cut the richness. The cracked wheat brings **fibre, magnesium and B vitamins**, and the laban adds calcium. It makes two portions, so Sunday's lunch is done.",
+      "ingredients": [
+        {
+          "food": "bulgur-dry-raw-2980c3",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "coarse bulgur (cracked wheat)"
+        },
+        {
+          "food": "lamb-cubed-for-stew-or-kabob-lean-raw-e3098a",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "cut into chunks"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "halved"
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 4
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "buttermilk-0-25-fat-6356b4",
+          "g": 300,
+          "note": "cold, to drink"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 90,
+          "note": "diced"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        }
+      ],
+      "steps": [
+        "Rinse the cracked wheat and cover it with plenty of cold water. Leave it to soak while the lamb cooks, at least an hour.",
+        "Put the lamb, the onion, the cardamom and the salt in a heavy pot with about 5 cups of water. Bring to a boil, skim off any foam, then cover and simmer for 1 and a half hours, until the lamb is very tender.",
+        "Lift out the onion and discard it. Drain the wheat and add it to the pot with the black pepper. Simmer, covered, over the lowest heat for 1 hour, stirring from time to time and adding hot water whenever it looks dry, until the wheat is very soft and has broken down.",
+        "Take the pot off the heat and beat the porridge hard with a wooden spoon or a masher for 5 to 10 minutes, until the lamb shreds into the wheat and it turns smooth and stretchy. Add a little hot water if it is too stiff; it should fall from a spoon in a thick ribbon.",
+        "Melt the ghee in a small pan until it just starts to smell nutty.",
+        "Spoon the harees into shallow bowls and make a small well in the middle. Pour the hot ghee into the well and dust with the cinnamon.",
+        "Toss the cucumber with the mint, parsley and lemon juice and serve it alongside with a glass of cold laban. Pack the second portion for tomorrow's lunch; loosen it with a splash of water when you reheat it."
+      ],
+      "prepMin": 20,
+      "cookMin": 165,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "A drizzle of date syrup (dibs) is a real Saudi finish. Whole wheat berries soaked overnight make a more traditional, silkier harees, but they need about 2 more hours. A pressure cooker does the wheat and lamb together in about 50 minutes. Chicken works well in place of the lamb, and some families add a pinch of sugar with the ghee."
+    },
+    {
+      "id": "gulf-shrimp-tamarind-tomato-rice",
+      "name": "Shrimp with tamarind and tomato over brown basmati, with carrot salad",
+      "inspiredBy": "Kuwaiti and Bahraini robyan, the shrimp cooked in a tangy tamarind and chili sauce and served over rice",
+      "about": "Plump shrimp cooked in a sour-spicy sauce of tamarind, tomato, chili and coriander, spooned over fragrant brown basmati with a crunchy carrot salad. Quick, bright and very Gulf. The shrimp give you lean **protein, selenium and iodine**, the carrot brings vitamin A and the tomato vitamin C.",
+      "ingredients": [
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "peeled and deveined"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 140,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 8
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.5,
+          "note": "crushed"
+        },
+        {
+          "food": "chili-pepper-red-sun-dried-d3dda3",
+          "g": 0.6,
+          "note": "crumbled"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "coarsely grated"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 12
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Cook the rice in plenty of boiling salted water for about 30 minutes, until tender, then drain and keep covered.",
+        "Whisk the tamarind into 3 tablespoons of warm water until smooth.",
+        "Warm the oil in a wide pan and soften the onion for 6 minutes. Add the garlic, coriander and dried chili for 30 seconds.",
+        "Add the tomato and the salt and cook until it has broken down into a sauce, about 7 minutes. Stir in the tamarind.",
+        "Add the shrimp and cook, stirring, for 3 to 4 minutes, until they are pink and curled. Take off the heat and fold in most of the cilantro.",
+        "Toss the carrot with the lemon juice and a pinch of salt. Spoon the shrimp over the rice and serve with the carrot salad and the rest of the cilantro."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Start the rice first and the rest comes together while it cooks. Fresh lime is an easy swap for the lemon."
+    },
+    {
+      "id": "gulf-dates-laban-cardamom",
+      "name": "Dates with cold laban and cardamom",
+      "about": "A couple of soft dates with a large glass of cold, lightly salted laban and a pinch of cardamom, the way many Gulf families break a fast or end an afternoon. Dates give quick energy and the laban brings **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 20,
+          "note": "1 or 2 dates"
+        },
+        {
+          "food": "buttermilk-0-25-fat-6356b4",
+          "g": 370,
+          "swap": "dairy_protein",
+          "note": "cold"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Stir the cardamom into the cold laban and drink it with the dates on the side."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "inspiredBy": "Tamr w laban, dates with laban, a classic Gulf pairing",
+      "tip": "Khalas, sukkari or ajwa are the traditional dates and are worth looking for at a Middle Eastern grocer. Medjool works fine if that is what you can find."
+    },
+    {
+      "id": "gulf-cucumber-mint-laban",
+      "name": "Cold cucumber and mint laban",
+      "about": "Cold laban with grated cucumber, mint and a pinch of salt, a thin, sippable salad that Gulf families have with hot meals and on hot afternoons. Cooling and tangy, and the laban brings **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "buttermilk-0-25-fat-6356b4",
+          "g": 330,
+          "swap": "dairy_protein",
+          "note": "cold"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "coarsely grated"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 4,
+          "note": "finely chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Stir the cucumber, mint and salt into the cold laban.",
+        "Chill it for 10 minutes if you have time, then drink it or eat it with a spoon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "gulf-saffron-cardamom-milk",
+      "name": "Warm saffron and cardamom milk with a date and almonds",
+      "about": "Milk warmed with cardamom and a thread of saffron, with a date and a few almonds on the side instead of sugar. Soothing and fragrant. The milk adds **calcium** and the almonds add vitamin E.",
+      "ingredients": [
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 210,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.4
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.05,
+          "note": "a pinch"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 15,
+          "note": "a small date, pitted"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Warm the milk with the cardamom and saffron until steaming, about 3 minutes, and let it sit for a minute so the saffron blooms.",
+        "Pour into a glass and sip it with the date and almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "inspiredBy": "the saffron and cardamom milk of Gulf evenings, with the sugar swapped for a date"
+    },
+    {
+      "id": "gulf-orange-pistachios",
+      "name": "Orange and pistachios",
+      "about": "Juicy orange segments with a small handful of pistachios, a fresh and crunchy pairing. The orange brings **vitamin C** and the pistachios add vitamin E and B6.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "pistachio-nuts-raw-8aee8b",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "unsalted, in the shell or shelled"
+        }
+      ],
+      "steps": [
+        "Peel the orange and eat it with the pistachios."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "gulf-pomegranate-pistachios-mint",
+      "name": "Pomegranate seeds with pistachios and mint",
+      "about": "Ruby pomegranate seeds with chopped pistachios and torn mint, a juicy and crunchy bowl. Sweet, tart and refreshing. Pomegranate brings **vitamin C and potassium** and the pistachios add vitamin E.",
+      "ingredients": [
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 130,
+          "swap": "vit_c_fruit",
+          "note": "seeds only"
+        },
+        {
+          "food": "pistachio-nuts-raw-8aee8b",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "torn"
+        }
+      ],
+      "steps": [
+        "Scatter the pomegranate seeds in a bowl with the pistachios and mint and eat."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "gulf-roasted-chickpeas-lemon-cumin",
+      "name": "Roasted chickpeas with lemon and cumin",
+      "about": "Chickpeas roasted until crisp with cumin, paprika and a squeeze of lemon, a crunchy snack to nibble on. They are salty, tangy and satisfying. Chickpeas bring **protein, fibre and folate**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 100,
+          "swap": "legumes",
+          "note": "drained, rinsed and patted very dry"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 0.6
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F).",
+        "Toss the dry chickpeas with the oil, cumin, paprika and salt and spread on a tray.",
+        "Roast for 25 to 30 minutes, shaking the tray halfway, until golden and crisp. Squeeze the lemon over them and eat them warm."
+      ],
+      "prepMin": 5,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "gulf-dates-stuffed-almonds",
+      "name": "Dates stuffed with almonds",
+      "about": "A date split open and tucked with an almond and a pinch of cardamom, with a few more almonds on the side, chewy and crunchy together. A small, sweet snack for the afternoon. The almonds bring **vitamin E and magnesium**.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 25,
+          "note": "1 or 2 dates, pitted"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Split the dates and remove the pits.",
+        "Tuck one or two almonds into each date, dust with the cardamom and press closed. Eat the rest of the almonds alongside."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Khalas, sukkari or ajwa dates are traditional. Medjool works fine too."
+    },
+    {
+      "id": "gulf-dates-pistachio-bites",
+      "name": "Dates with pistachios and cardamom",
+      "about": "Chopped dates pressed with crushed pistachios and a pinch of cardamom, rolled into small bites. They are sweet and a little green. The pistachios bring **vitamin B6 and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 25,
+          "note": "pitted"
+        },
+        {
+          "food": "pistachio-nuts-raw-8aee8b",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "finely chopped"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Mash the dates with the cardamom and half the pistachios until sticky.",
+        "Roll into two small balls, then roll them in the remaining pistachios."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "gulf-almonds-pistachios-raisins",
+      "name": "Almonds, pistachios and raisins",
+      "about": "A small bowl of toasted almonds, pistachios and sweet raisins, the kind of mix that sits out for guests all over the Gulf. Salty-sweet and crunchy. The nuts bring **vitamin E and magnesium**.",
+      "ingredients": [
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "pistachio-nuts-raw-8aee8b",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "unsalted"
+        },
+        {
+          "food": "raisin-seedless-sultana-d04029",
+          "g": 25
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan for 2 minutes, then toss with the pistachios and raisins in a bowl."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "gulf-khubz-tahini-date",
+      "name": "Khubz with tahini and date",
+      "about": "A warm piece of whole-wheat khubz spread with tahini and topped with chopped date, the same sweet-and-nutty pairing as tahini with date syrup. Chewy and gently sweet. The tahini adds **calcium and copper**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 35,
+          "note": "khubz"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 15,
+          "note": "pitted and chopped"
+        }
+      ],
+      "steps": [
+        "Warm the khubz in a dry pan for a minute.",
+        "Spread with the tahini, scatter over the chopped date and fold in half."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gulf-balaleet-cardamom-omelette"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gulf-shorbat-adas-khubz"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gulf-chicken-machboos-brown-basmati"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gulf-dates-laban-cardamom"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gulf-pomegranate-pistachios-mint"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gulf-foul-khubz"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gulf-chicken-machboos-brown-basmati",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gulf-kanaad-dakkous-khubz"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gulf-cucumber-mint-laban"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gulf-dates-pistachio-bites"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gulf-beid-wa-tamatem"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gulf-nakhi-chickpeas-labneh"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gulf-lamb-saloona-khubz"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gulf-saffron-cardamom-milk"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gulf-pomegranate-pistachios-mint"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gulf-balaleet-cardamom-omelette"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gulf-lamb-saloona-khubz",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gulf-beef-okra-marag-brown-basmati"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gulf-cucumber-mint-laban"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gulf-roasted-chickpeas-lemon-cumin"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gulf-foul-khubz"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gulf-beef-okra-marag-brown-basmati",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gulf-sardines-cumin-sweet-potatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gulf-saffron-cardamom-milk"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gulf-orange-pistachios"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gulf-beid-wa-tamatem"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gulf-chicken-shawarma-plate"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gulf-lamb-harees"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gulf-dates-stuffed-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gulf-dates-laban-cardamom"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gulf-foul-khubz"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gulf-lamb-harees",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gulf-shrimp-tamarind-tomato-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gulf-dates-stuffed-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gulf-roasted-chickpeas-lemon-cumin"
+        }
+      ]
+    }
+  ]
+}
