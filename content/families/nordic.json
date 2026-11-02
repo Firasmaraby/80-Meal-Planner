@@ -1,0 +1,1483 @@
+{
+  "id": "nordic",
+  "name": "Nordic Kitchen",
+  "style": "balanced",
+  "cuisine": "Nordic",
+  "regions": [
+    "Sweden",
+    "Norway",
+    "Denmark",
+    "Finland",
+    "Iceland"
+  ],
+  "summary": "A week of Nordic home cooking: porridge and skyr for breakfast, rye with herring or egg and shrimp, Swedish meatballs, Finnish salmon soup, Swedish pea soup, Norwegian lapskaus and a gravlax-style salmon supper. Rye, barley, oats, potatoes and root vegetables carry the starch, with berries, dill and pickles for brightness.",
+  "howItWorks": "**Cook once, eat twice.** Monday's meatballs, Tuesday's lapskaus, Wednesday's salmon soup, Thursday's pea soup and Saturday's chicken soup each make two portions, so the next day's lunch is already done. Put the yellow peas to soak on Wednesday night.\n\n**Fatty fish four times.** Pickled herring on Monday, salmon soup on Wednesday and again for Thursday's lunch, and a gravlax-style salmon supper on Sunday carry your **omega-3 and vitamin D**. On other days, vitamin D mushrooms on crispbread and an egg most days help.\n\n**Rye, barley and oats.** Porridge, skyr with toasted oats, dark rye, crispbread and pearl barley carry the grains, with potatoes and root vegetables alongside. Rapeseed (canola) oil is the everyday fat, with a little butter, and hazelnuts add **vitamin E and magnesium**.\n\n**Four countries, plus Iceland.** Sweden brings the meatballs, pea soup and pytt i panna, Finland the salmon soup, Norway the lapskaus, and Denmark the open-faced rye, fishcakes and chicken soup. Icelandic skyr is the breakfast. Dill, pickled beets, horseradish and lingonberry keep the plates bright.\n\n**Weekend project.** Start the gravlax on Saturday morning: rub it, wrap it, weigh it down and leave it in the fridge. By Sunday supper it is silky, and the dill potatoes take 20 minutes. Saturday's chicken soup is the other slow pot.",
+  "signature": [
+    "nordic-lohikeitto-rye",
+    "nordic-swedish-meatballs-lingonberry",
+    "nordic-gravlax-dill-potatoes",
+    "nordic-artsoppa-pork-mustard"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "nordic-oat-porridge-lingonberry",
+      "name": "Oat and rye porridge with lingonberry jam and hazelnuts",
+      "inspiredBy": "Swedish havregrynsgröt and Finnish ruisputro, with rye flakes half and half with oats and lingonberries on top",
+      "about": "Creamy porridge of oats and rye flakes cooked in milk, with a cool spoonful of skyr, tart lingonberry jam and chopped hazelnuts on top. The oats, rye and hazelnuts bring **steady-release fibre, magnesium and vitamin E**, and the skyr adds protein.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 19,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "rye-flakes-2971fb",
+          "g": 19,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 220
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 90,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lingonberry-jam-rarorda-lingon-deecb7",
+          "g": 25,
+          "note": "the kind that is mostly berries"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Put the oats, the rye flakes, the milk and the salt in a small pot over medium heat. Stir often until it bubbles gently and turns thick and creamy, about 8 minutes. Add a splash of water only if it thickens too fast.",
+        "While it cooks, toast the hazelnuts in a small dry pan until they smell nutty, about 3 minutes, then chop them roughly.",
+        "Spoon the porridge into a bowl and top with the skyr, the lingonberry jam and a pinch of cinnamon. Scatter with the hazelnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 9,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Lingonberry jam is tart on purpose, a bit like cranberry sauce with more perfume. If you can't find it, a spoon of cranberry sauce or frozen blueberries works. No rye flakes? Use all oats."
+    },
+    {
+      "id": "nordic-skyr-blueberry-oat-crunch",
+      "name": "Skyr with blueberries, toasted oats and hazelnuts",
+      "inspiredBy": "Icelandic skyr with berries, with toasted oats and hazelnuts for crunch",
+      "about": "Thick, cool skyr with juicy blueberries and a crunchy mix of toasted oats and hazelnuts. It is an Icelandic way of eating skyr, and it is **ready in under ten minutes**. The skyr brings plenty of protein and calcium, and the hazelnuts bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 100,
+          "swap": "berries"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 25,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Toast the oats in a dry pan over medium heat, stirring, until they smell nutty and look a shade darker, about 4 minutes. Add the hazelnuts for the last minute so they warm through.",
+        "Tip both onto a plate to cool for a minute, then roughly chop the hazelnuts.",
+        "Spoon the skyr into a bowl and tumble the blueberries over it. Scatter on the oats and hazelnuts. The berries are usually sweet enough."
+      ],
+      "prepMin": 3,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Toast a whole jar of oats and hazelnuts on Sunday and it keeps all week. Loosen the skyr with a splash of milk, as Icelanders do, which matters most in a big bowl. Frozen blueberries work well too, just thaw them first."
+    },
+    {
+      "id": "nordic-open-rye-egg-shrimp",
+      "name": "Open-faced rye with egg, shrimp and dill",
+      "inspiredBy": "Danish smørrebrød with egg and shrimp, with skyr standing in for the mayonnaise",
+      "about": "Dark rye bread with butter, radishes, sliced egg and a pile of little shrimp, with a lemony skyr and dill spoonful on top. It is a Danish smørrebrød, and a breakfast to eat slowly. The shrimp and egg bring **protein, choline and iodine**, and the rye brings fibre.",
+      "ingredients": [
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 70,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "butter-63ea86",
+          "g": 2
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "shrimp-cooked-0f0407",
+          "g": 70,
+          "swap": "lean_protein",
+          "note": "small cooked and peeled shrimp"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 40,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 70
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lower the egg gently into boiling water and cook for 8 minutes. Cool it under cold water, then peel and slice it.",
+        "Stir the skyr with the lemon juice, half the dill, finely chopped, and a pinch of white pepper until it is smooth and loose enough to spoon.",
+        "Butter the rye all the way to the edges. Layer on thin slices of radish, then the egg.",
+        "Spoon over the skyr, pile on the shrimp and finish with the rest of the dill. Eat it with a knife and fork, like they do in Denmark."
+      ],
+      "prepMin": 8,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Boil the egg the night before and this takes five minutes on a weekday morning. Dense rye is closest to Danish rugbrød, so look for German-style whole rye or pumpernickel in the bakery or packaged aisle."
+    },
+    {
+      "id": "nordic-herring-rye-beet",
+      "name": "Pickled herring on rye with egg, beets and dill",
+      "inspiredBy": "Swedish sillmacka and Danish sild på rugbrød",
+      "about": "Buttered dark rye topped with sweet-sour pickled herring, ruby beets, sliced egg, thin onion and a generous spoon of skyr and dill. It is a classic Nordic lunch plate that needs **almost no cooking**. The herring brings omega-3 and vitamin D, the egg adds choline, and the beets and rye bring fibre.",
+      "ingredients": [
+        {
+          "food": "pickled-herring-atlantic-3f1974",
+          "g": 90,
+          "swap": "fatty_fish",
+          "note": "drained"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 60,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "butter-63ea86",
+          "g": 3
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "hard-boiled"
+        },
+        {
+          "food": "pickled-beet-canned-solids-and-liquid-2794c2",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "sliced very thin"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 8
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lower the egg gently into boiling water and cook for 8 minutes. Cool it under cold water, then peel and slice it.",
+        "Drain the herring and pat it dry. If the pieces are large, cut them into bite-size strips.",
+        "Slice the onion as thin as you can and let it sit in cold water for 5 minutes to take the edge off, then drain. Stir the skyr with half the dill, finely chopped, and a pinch of white pepper.",
+        "Butter the rye all the way to the edges. Lay on the beets and the egg, then the herring.",
+        "Spoon the skyr over, top with the onion and the rest of the dill, and eat it with a knife and fork."
+      ],
+      "prepMin": 10,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Boil an egg or two on Sunday night and this is a five-minute lunch. Pickled herring is salty, so a quick rinse before you pat it dry takes the edge off. Look for the plain wine or mustard kinds in the fridge section. Dense rye is closest to Danish rugbrød, so look for German-style whole rye or pumpernickel in the bakery or packaged aisle."
+    },
+    {
+      "id": "nordic-pytt-i-panna",
+      "name": "Pytt i panna with ham, a fried egg and pickled beets",
+      "about": "Crisp little cubes of potato and mushroom fried with onion and smoky ham, with a fried egg on top, pickled beets on the side and a spoon of mustard. It is the Swedish \"bits in a pan\" supper, and a fine use of a Saturday lunch hour. The egg and ham bring protein and choline, and UV-exposed mushrooms add **a good dose of vitamin D**.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 135,
+          "note": "scrubbed, cut in small cubes"
+        },
+        {
+          "food": "mushroom-white-exposed-to-ultraviolet-light-raw-0cd6fe",
+          "g": 80,
+          "note": "vitamin D mushrooms if you can find them, cut in small cubes"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "finely chopped"
+        },
+        {
+          "food": "cooked-ham-smoked-676fe4",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "from the deli counter, cut in small cubes"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "pickled-beet-canned-solids-and-liquid-2794c2",
+          "g": 60
+        },
+        {
+          "food": "swedish-sweet-mustard-1a04e8",
+          "g": 8
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 20
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Boil the potato cubes in a pot of water for 5 minutes, until they are just tender at the edges. Drain well and let them steam dry for a couple of minutes, which is what makes them crisp.",
+        "Warm most of the oil in a big non-stick pan over medium-high heat. Add the potatoes and fry, turning only now and then, until golden and crisp at the edges, about 12 minutes.",
+        "Add the mushrooms, the onion and the ham and cook until the water from the mushrooms has cooked off, the onion is soft and the ham has a few browned edges, about 6 minutes. Season with the pepper and a tiny pinch of salt, since the ham is already salty.",
+        "Push everything to one side, add the rest of the oil and fry the egg until the white is set and the yolk is still runny.",
+        "Slide the hash onto a plate with the egg on top. Serve with the pickled beets, a spoonful of mustard and a scatter of parsley."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "This is a great way to use up leftover boiled potatoes. Skip the boiling step and go straight to the pan."
+    },
+    {
+      "id": "nordic-swedish-meatballs-lingonberry",
+      "name": "Swedish-style meatballs with potatoes, creamed spinach and lingonberries",
+      "inspiredBy": "Swedish köttbullar with stuvad spenat, made lean with oats soaked in milk and a light gravy",
+      "about": "Small, tender meatballs with allspice and onion, a light creamy gravy, boiled potatoes, soft creamed spinach, a spoon of lingonberry jam and crisp cucumber. It makes two portions, so **tomorrow's lunch is done**. The beef brings iron, zinc and B12, and the spinach brings folate and vitamin K.",
+      "ingredients": [
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 110,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 15,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 160,
+          "note": "a third for soaking the oats, the rest for the gravy and the spinach"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "grated"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 110
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 120,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10
+        },
+        {
+          "food": "lingonberry-jam-rarorda-lingon-deecb7",
+          "g": 20
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 4
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.6
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.3
+        },
+        {
+          "food": "nutmeg-ground-15c547",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Stir the oats into a little of the milk, about a third of it, and leave them for 10 minutes to swell. Meanwhile, put the potatoes on to boil in lightly salted water, about 20 minutes.",
+        "Grate the onion into a bowl. Add the beef, the soaked oats, the allspice, white pepper, a little nutmeg and most of the salt. Mix with a fork until just combined, since overworking makes them tough.",
+        "With wet hands, roll the mixture into small balls, about the size of a walnut. Chill them for 10 minutes if you have time, so they hold their shape.",
+        "Warm the oil in a large non-stick skillet over medium heat. Brown the meatballs in batches, shaking the pan to roll them, until golden all over and cooked through, about 8 minutes. Lift them out.",
+        "Mash one hot boiled potato chunk into most of the remaining milk with a splash of the potato water until smooth. Leave the empty pan on the heat for a moment so the bits on the bottom turn a shade darker, then pour in the milk slowly, scraping them up so the gravy takes their colour. Simmer for 2 or 3 minutes until it coats a spoon. Season with a pinch of salt and pepper, then slide the meatballs back in.",
+        "Wilt the spinach in a dry pot over medium heat, a big handful at a time, until soft. Squeeze out the extra water, chop it, then stir in a spoon of that gravy, a pinch of nutmeg and a pinch of salt and warm through. Dress the sliced cucumber with a squeeze of lemon and a pinch of salt.",
+        "Toss the potatoes with the chopped parsley. Serve the meatballs and gravy with the potatoes, spinach, a spoon of lingonberry jam and the cucumber. Pack the second portion, with its gravy, for tomorrow's lunch."
+      ],
+      "prepMin": 25,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly",
+        "freezer-friendly"
+      ],
+      "tip": "The meatballs freeze beautifully. Cook a double batch of just the meatballs and pull a few out on a busy night. Reheat them gently in the gravy with a splash of water."
+    },
+    {
+      "id": "nordic-lapskaus-beef-barley",
+      "name": "Norwegian-style lapskaus with beef, rutabaga, barley and kale",
+      "inspiredBy": "Norwegian lapskaus and Swedish kalops, with pearl barley and kale added",
+      "about": "A thick, comforting stew of lean beef, rutabaga, carrot and potato with allspice and bay, pearl barley for chew and kale stirred in at the end. Pickled beets and a little mustard bring the acid. It makes two portions, and the **kale and carrot bring vitamins A and K** while the beef brings iron and zinc.",
+      "ingredients": [
+        {
+          "food": "beef-casserole-meat-boneless-chuck-lean-raw-b1636f",
+          "g": 95,
+          "swap": "lean_protein",
+          "note": "cut in small cubes"
+        },
+        {
+          "food": "barley-dry-69ade1",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "pearl barley"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 60
+        },
+        {
+          "food": "rutabaga-raw-d97c3d",
+          "g": 150
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50
+        },
+        {
+          "food": "curly-kale-raw-d92774",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "stems removed, torn"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "pickled-beet-canned-solids-and-liquid-2794c2",
+          "g": 50
+        },
+        {
+          "food": "swedish-sweet-mustard-1a04e8",
+          "g": 8
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 20
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 1
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "thyme-cbb9af",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Pat the beef dry. Warm half the oil in a large heavy pot over medium-high heat and brown the beef in two batches until deeply golden, about 5 minutes per batch. Lift it out.",
+        "Lower the heat, add the rest of the oil and the chopped onion and cook until soft and sweet, about 5 minutes. Stir in the allspice and thyme for a minute.",
+        "Return the beef to the pot with the barley, the bay leaves and the salt. Add enough water to cover everything by about 2 cm, bring to a boil, then turn the heat down and simmer gently, partly covered, for 40 minutes.",
+        "Add the rutabaga, carrot and potato in 2 cm cubes. Simmer for another 20 to 25 minutes, until everything is tender and the stew has thickened, since the edges of the potato melt into it. Top up with water if the barley has drunk it all.",
+        "Stir in the kale and cook for 5 minutes, until bright green and soft. Take out the bay leaves, stir in the mustard and most of the parsley, and taste for salt.",
+        "Serve with the pickled beets alongside and the rest of the parsley scattered over. Pack the second portion for tomorrow's lunch. The barley drinks up liquid overnight, so add a splash of water when you reheat it."
+      ],
+      "prepMin": 20,
+      "cookMin": 80,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "A pressure cooker makes this a 40-minute dinner: brown the beef, then cook everything but the kale for 25 minutes. It also holds well in a slow cooker while you're out."
+    },
+    {
+      "id": "nordic-lohikeitto-rye",
+      "name": "Lohikeitto, Finnish salmon and potato soup, with rye bread",
+      "inspiredBy": "Finnish lohikeitto, made with milk in place of the cream",
+      "about": "Chunks of salmon poached in a creamy, dill-flecked soup of potato and leek, with allspice and a squeeze of lemon, and buttered dark rye on the side. It is the soup Finns make on a cold night, and it makes two portions. The salmon brings **omega-3, vitamin D and B12**, and the potato and leek bring potassium.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 145,
+          "swap": "fatty_fish",
+          "note": "skinless fillet"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 130
+        },
+        {
+          "food": "leek-raw-01ddc0",
+          "g": 120,
+          "note": "white and light green, sliced"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 180
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "butter-63ea86",
+          "g": 2,
+          "note": "a little for the bread"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 30
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 20
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 1
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        }
+      ],
+      "steps": [
+        "Warm the oil in a pot over medium heat and cook the leek, stirring, until it is glossy and soft but not browned, about 5 minutes.",
+        "Add the potato in 2 cm cubes, the allspice, the bay leaves and the salt, with enough water to just cover. Bring to a boil, then simmer for 12 to 15 minutes until the potatoes are tender.",
+        "Cut the salmon into 3 cm chunks. Turn the heat to low, slip them in and poach gently for 3 to 4 minutes, until just opaque. Don't stir hard, or they'll break up.",
+        "Stir in the milk and warm it through without letting it boil. Add the dill, the lemon juice and the white pepper, and fish out the bay leaves.",
+        "Serve in wide bowls with the rye and a little butter. Pack the second portion for tomorrow's lunch, and reheat it gently so the salmon stays tender."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "A spoonful of crème fraîche on top is lovely if you have some. If you like it thicker, mash a few potato cubes against the side of the pot."
+    },
+    {
+      "id": "nordic-artsoppa-pork-mustard",
+      "name": "Ärtsoppa, Swedish yellow pea soup with pork, mustard and oat pancakes",
+      "inspiredBy": "Swedish ärtsoppa with plättar, the Thursday soup, with lean pork shoulder and pancakes made from oats",
+      "about": "A thick, savoury soup of whole yellow peas simmered with a piece of lean pork, onion, carrot and marjoram, served with a good spoon of mustard, then little oat pancakes with lingonberry jam. It is the Thursday supper of Swedish tradition and makes two portions. The peas bring **iron, folate and fibre**, and the pancakes bring an egg's worth of choline.",
+      "ingredients": [
+        {
+          "food": "pea-yellow-whole-dried-3d5a32",
+          "g": 105,
+          "swap": "legumes",
+          "note": "soaked overnight"
+        },
+        {
+          "food": "pork-shoulder-loin-lean-raw-87e84d",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "lean shoulder, in one piece"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils",
+          "note": "half for the soup, half for the pancakes"
+        },
+        {
+          "food": "swedish-sweet-mustard-1a04e8",
+          "g": 12,
+          "note": "stirred in at the table"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "for the pancakes"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains",
+          "note": "blitzed to a flour, for the pancakes"
+        },
+        {
+          "food": "lingonberry-jam-rarorda-lingon-deecb7",
+          "g": 15,
+          "note": "for the pancakes"
+        },
+        {
+          "food": "marjoram-dried-5adc61",
+          "g": 1
+        },
+        {
+          "food": "thyme-cbb9af",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "The night before, cover the yellow peas with plenty of cold water and leave them to soak. Drain and rinse them in the morning.",
+        "Warm half the oil in a big pot and soften the onion, roughly chopped, for 5 minutes. Add the drained peas and the pork in one piece, cover with fresh water by about 3 cm and bring to a boil. Skim off the foam that rises.",
+        "Turn the heat down, add the carrot in small cubes, and simmer gently, partly covered, for 1 to 1½ hours, stirring now and then and skimming off any loose pea skins that float up, until the peas have fallen apart and the pork is tender.",
+        "Lift out the pork, cut it into bite-size pieces and stir it back in. Add the marjoram, thyme and salt, and mash a few peas against the pot. Add a splash of water if it is thicker than you like.",
+        "While the soup finishes, blitz the oats to a fine flour in a blender. Add the eggs and blitz again, then blitz in water a little at a time, no more than about ⅓ cup, until the batter pours like cream. Let it rest 10 minutes.",
+        "Brush a non-stick pan with a little of the rest of the oil over medium heat. Pour in small rounds of batter and cook until golden underneath and set on top, about 1 minute on each side.",
+        "Serve the soup with a spoon of mustard stirred into each bowl and a scatter of parsley, then the pancakes with the lingonberry jam. Pack the second portion for tomorrow's lunch. The soup thickens a lot, so loosen it with water when you reheat it."
+      ],
+      "prepMin": 20,
+      "cookMin": 100,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Split yellow peas cook in 45 minutes with no soak if you cannot find whole ones. A piece of smoked pork shoulder is the classic. In a pressure cooker, soaked whole peas and pork are done in 25 minutes. The pancakes keep in the fridge a day, and are good cold, rolled up around the jam."
+    },
+    {
+      "id": "nordic-cod-fishcakes-slaw",
+      "name": "Danish-style cod fishcakes with kale and apple slaw, rye and cucumber skyr",
+      "inspiredBy": "Danish fiskefrikadeller and Norwegian fiskekaker, with a New Nordic kale slaw and a light stand-in for remoulade",
+      "about": "Light, springy fishcakes of fresh cod with onion, dill and a hint of nutmeg, pan-fried until golden and served with dark rye, a crunchy kale and apple slaw with sunflower seeds and a cool skyr and cucumber sauce. **Cod is one of the leanest proteins**, and it brings iodine and selenium.",
+      "ingredients": [
+        {
+          "food": "atlantic-cod-wild-caught-raw-8de8e0",
+          "g": 195,
+          "swap": "lean_protein",
+          "note": "skinless fillet, fresh or thawed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 70
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 10,
+          "swap": "low_gi_grains",
+          "note": "blitzed with the cod as a binder"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely grated"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 55
+        },
+        {
+          "food": "curly-kale-raw-d92774",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "stems removed, sliced very thin"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 50,
+          "note": "grated"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 40,
+          "note": "finely diced"
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.3
+        },
+        {
+          "food": "nutmeg-ground-15c547",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Cut the cod into chunks and put it in a food processor with the egg, the oats, the onion, half the dill, the salt, the white pepper and the nutmeg. Pulse into a coarse, sticky paste, then pulse in the milk a little at a time, stopping when the paste is soft but still holds its shape on a spoon. Chill it for 15 minutes so it firms up.",
+        "Massage the sliced kale with a pinch of salt for a minute until it darkens and softens. Toss it with the grated apple, half the lemon juice and a few drops of the oil, and leave it to soften while you cook. Toast the sunflower seeds in a dry pan for 2 minutes.",
+        "Stir the skyr with the diced cucumber, the rest of the dill, chopped, and the rest of the lemon juice until it makes a loose, cool sauce.",
+        "Warm the rest of the oil in a non-stick pan over medium heat. Shape the cod mixture with two wet spoons into ovals about as thick as your thumb, as the Danes do.",
+        "Fry the fishcakes for about 4 minutes on each side, until golden outside and just springy in the middle.",
+        "Scatter the sunflower seeds over the slaw and serve the fishcakes with the rye, the slaw and the cucumber skyr."
+      ],
+      "prepMin": 20,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Fresh cod is best, but thawed frozen cod or haddock works too. Pat it very dry first. Make a double batch if you like: cold fishcakes on buttered rye are a proper Danish lunch."
+    },
+    {
+      "id": "nordic-danish-chicken-root-soup",
+      "name": "Hønsekødssuppe, Danish chicken and root vegetable soup with barley and horseradish",
+      "inspiredBy": "Danish hønsekødssuppe, with pearl barley standing in for the usual small dumplings and kale and spinach for extra greens",
+      "about": "A gentle chicken soup with leek, rutabaga, carrot, pearl barley, kale and a handful of spinach, finished with parsley and a spoonful of sharp horseradish stirred in at the table, with rye bread on the side. It makes two portions, and **the chicken brings protein and niacin** while the vegetables bring vitamins A, C and K.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "boneless, skinless thighs"
+        },
+        {
+          "food": "barley-dry-69ade1",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "pearl barley"
+        },
+        {
+          "food": "rutabaga-raw-d97c3d",
+          "g": 90
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60
+        },
+        {
+          "food": "leek-raw-01ddc0",
+          "g": 80,
+          "note": "cut in thick rounds"
+        },
+        {
+          "food": "curly-kale-raw-d92774",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "stems removed, torn"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 25
+        },
+        {
+          "food": "horseradish-prepared-ec09b7",
+          "g": 8,
+          "note": "for stirring in at the table"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 50
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Warm the oil in a big pot and soften the leek for 4 minutes. Add the chicken, the bay leaves, the pepper and about 6 cups of cold water. Bring slowly to a simmer, skim off the foam, and simmer the chicken a full 30 minutes before the vegetables go in, since boneless thigh makes a thin broth.",
+        "Add the barley and the rutabaga and carrot in chunky cubes. Simmer for 30 minutes, until the barley is plump and the vegetables are tender.",
+        "Lift the chicken out, shred or cut it into bite-size pieces and stir it back into the soup.",
+        "Add the kale and spinach and cook for 4 minutes, until the kale is tender and bright, then stir in most of the parsley and fish out the bay leaves. Add the salt now and taste.",
+        "Ladle into wide bowls, stir a little horseradish into each one and scatter with the rest of the parsley. Serve with the rye. Pack the second portion for tomorrow's lunch. The barley drinks the broth overnight, so loosen it with water when you reheat it."
+      ],
+      "prepMin": 15,
+      "cookMin": 65,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "Bone-in thighs with the skin off make a richer broth. Go easy on the horseradish the first time, since a little goes a long way."
+    },
+    {
+      "id": "nordic-gravlax-dill-potatoes",
+      "name": "Gravlax-style cured salmon with dill potatoes and mustard sauce",
+      "inspiredBy": "Swedish gravlax with hovmästarsås, with a lighter cure than the traditional one",
+      "about": "Salmon given a gentle, sweet cure of salt, sugar, white pepper and plenty of dill until silky, then sliced thin and served with buttery dill potatoes, a sweet-sharp Swedish mustard and skyr sauce, cucumber and crispbread. The curing is **mostly waiting**, so it's the weekend project. Salmon brings omega-3, vitamin D and B12, and the potatoes bring potassium.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 190,
+          "swap": "fatty_fish",
+          "note": "skin-on, centre-cut piece, previously frozen, as most is"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5,
+          "note": "most for the cure, a pinch for the potatoes"
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 7,
+          "note": "most for the cure, a little for the sauce"
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.6
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 30,
+          "note": "half for the cure, half for the potatoes and sauce"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 140,
+          "note": "small new potatoes if you can find them, scrubbed"
+        },
+        {
+          "food": "butter-63ea86",
+          "g": 2
+        },
+        {
+          "food": "swedish-sweet-mustard-1a04e8",
+          "g": 12
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 40,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100
+        },
+        {
+          "food": "crispbread-rye-6f0322",
+          "g": 25
+        }
+      ],
+      "steps": [
+        "Start this the day before, ideally in the morning. Mix most of the salt (keep a pinch for the potatoes), most of the sugar (keep a little back for the sauce) and the white pepper with half the dill, chopped. Rub it all over the salmon, then lay the fish skin-side down in a dish.",
+        "Wrap the dish tightly with plastic and set something small and heavy on top, like a can of beans. Chill for 24 to 36 hours, turning the salmon once. A little liquid will collect, and that is exactly what should happen.",
+        "Unwrap the salmon, scrape off the dill and cure and pat it dry. Slice it thinly on the diagonal, working away from the skin and leaving the skin behind.",
+        "Boil the potatoes until a knife slides in, about 15 to 20 minutes. Drain, then toss with the butter, a big handful of the chopped dill and the pinch of salt you kept back.",
+        "Whisk the mustard, the skyr, the rest of the sugar, the oil, half the lemon juice and a little chopped dill into a smooth sauce. Slice the cucumber very thin and dress it with the rest of the lemon juice and a pinch of dill.",
+        "Fan the gravlax onto a plate with the potatoes, the cucumber and the sauce, with the crispbread alongside."
+      ],
+      "prepMin": 25,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "weekend-project"
+      ],
+      "tip": "This is a gentler cure than a classic gravlax, so the salmon is lightly seasoned and silky rather than firm and salty. Eat it within 2 days. Most salmon sold here has been frozen already, which is what you want for a raw cure."
+    },
+    {
+      "id": "nordic-cheese-apple-crispbread",
+      "name": "Crispbread with aged cheese and apple",
+      "about": "Thin slices of nutty aged cheese on crunchy rye crispbread, with crisp apple wedges alongside. It is the everyday Swedish **ostmacka**, with calcium from the cheese and fibre from the apple and the rye.",
+      "ingredients": [
+        {
+          "food": "crispbread-rye-6f0322",
+          "g": 20
+        },
+        {
+          "food": "gouda-cheese-d64bc0",
+          "g": 18,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 100
+        }
+      ],
+      "steps": [
+        "Slice the cheese thinly with a cheese slicer and lay it on the crispbread. Cut the apple into wedges and eat them on the side."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Jarlsberg, Herrgård or an aged gouda all work."
+    },
+    {
+      "id": "nordic-cheese-cucumber-crispbread",
+      "name": "Crispbread with aged cheese and cucumber",
+      "about": "Thin slices of nutty aged cheese on crunchy rye crispbread, with cool cucumber slices and a little dill. It is a classic Swedish **ostmacka**, with calcium from the cheese and a fresh crunch.",
+      "ingredients": [
+        {
+          "food": "crispbread-rye-6f0322",
+          "g": 20
+        },
+        {
+          "food": "gouda-cheese-d64bc0",
+          "g": 18,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Slice the cheese thinly with a cheese slicer and lay it on the crispbread.",
+        "Top with thin slices of cucumber and a little chopped dill."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Jarlsberg, Herrgård or an aged gouda all work."
+    },
+    {
+      "id": "nordic-kefir-blueberries",
+      "name": "Kefir with blueberries",
+      "inspiredBy": "Swedish filmjölk with blueberries, with kefir as the nearest thing in most shops",
+      "about": "A glass of cold, tangy kefir with a handful of blueberries stirred in. It is a Nordic cultured-milk snack in the spirit of Swedish filmjölk, with **protein, calcium and live cultures**.",
+      "ingredients": [
+        {
+          "food": "kefir-plain-low-fat-0-5-1-9-fat-630d2d",
+          "g": 220,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 80,
+          "swap": "berries"
+        }
+      ],
+      "steps": [
+        "Pour the kefir into a glass or bowl and stir in the blueberries. Eat with a spoon, or blitz it into a smoothie."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Scatter a spoon of the toasted oats and hazelnuts from the skyr jar on top for crunch."
+    },
+    {
+      "id": "nordic-carrot-sunflower-salad",
+      "name": "Carrot and sunflower seed salad with lemon and dill",
+      "about": "Shredded raw carrot with toasted sunflower seeds, lemon, a little oil and dill. It is a **crunchy, sweet-sharp snack** with beta-carotene from the carrot and vitamin E from the seeds.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 130
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the sunflower seeds in a dry pan until they smell nutty, about 2 minutes.",
+        "Grate the carrot coarsely and toss it with the lemon juice, the oil, the dill and a pinch of salt. Scatter the seeds on top."
+      ],
+      "prepMin": 5,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make a bigger bowl and it keeps two days in the fridge."
+    },
+    {
+      "id": "nordic-beet-apple-salad",
+      "name": "Pickled beet and apple salad with sunflower seeds",
+      "about": "Sweet-sour pickled beet with crisp apple, toasted sunflower seeds, lemon and a little dill. It is a **bright, crunchy snack in the Nordic pickle tradition**, with fibre from the beets and apple, and vitamin E from the seeds.",
+      "ingredients": [
+        {
+          "food": "pickled-beet-canned-solids-and-liquid-2794c2",
+          "g": 80
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 100
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Toast the sunflower seeds in a dry pan until they smell nutty, about 2 minutes.",
+        "Cut the beets and the apple into small cubes, keeping the apple's skin on for colour.",
+        "Toss them together with the lemon juice and the chopped dill, and scatter with the seeds."
+      ],
+      "prepMin": 5,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "nordic-shrimp-crispbread-dill",
+      "name": "Shrimp and dill on crispbread",
+      "inspiredBy": "Swedish räkmacka",
+      "about": "Little cooked shrimp tossed with lemon and plenty of dill, piled on crunchy rye crispbread, with peppery radish slices. It is a light take on the Swedish shrimp sandwich, and it is **high in protein, choline and iodine**.",
+      "ingredients": [
+        {
+          "food": "crispbread-rye-6f0322",
+          "g": 25
+        },
+        {
+          "food": "shrimp-cooked-0f0407",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "small cooked and peeled shrimp"
+        },
+        {
+          "food": "butter-63ea86",
+          "g": 4
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 3
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 40
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toss the shrimp with the lemon juice, the chopped dill and a pinch of white pepper.",
+        "Spread the butter on the crispbread and lay on a few thin slices of radish. Pile the shrimp on top, or serve it on the side if it will not stack, since a big spoonful of shrimp won't all fit on the crispbread."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "nordic-apple-hazelnuts",
+      "name": "Apple and hazelnuts",
+      "about": "A crisp apple with a handful of lightly toasted hazelnuts. It is a **sweet, crunchy autumn snack** in Denmark and Sweden, and the hazelnuts bring vitamin E and magnesium.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Toast the hazelnuts in a dry pan until they smell nutty, about 3 minutes, then eat them with the apple cut in wedges."
+      ],
+      "prepMin": 2,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "nordic-mushrooms-crispbread-parsley",
+      "name": "Golden mushrooms on crispbread with parsley and lemon",
+      "inspiredBy": "Swedish svampmacka, with rye crispbread in place of toasted rye bread",
+      "about": "Mushrooms fried until golden in a little rapeseed oil, piled on crunchy rye crispbread with parsley, lemon and white pepper. It is a crispbread take on the Swedish svampmacka, a savoury, meaty snack. UV-exposed mushrooms bring **most of a day's vitamin D** in one plate (check the label), along with B vitamins.",
+      "ingredients": [
+        {
+          "food": "crispbread-rye-6f0322",
+          "g": 20
+        },
+        {
+          "food": "mushroom-white-exposed-to-ultraviolet-light-raw-0cd6fe",
+          "g": 100,
+          "note": "vitamin D mushrooms if you can find them, sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 4
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the oil in a pan over medium-high heat and add the mushrooms. Cook, stirring now and then, until the water has cooked off and they are golden, about 6 minutes.",
+        "Season with the white pepper and a pinch of salt, stir in the lemon juice and most of the parsley, and scatter with the rest of the parsley. Spoon the mushrooms onto the crispbread just before eating, or the crispbread goes soft."
+      ],
+      "prepMin": 3,
+      "cookMin": 7,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Regular white or cremini mushrooms work too, but they bring almost no vitamin D. Spread sliced mushrooms in one layer in the midday sun for 15 to 30 minutes first and they make some."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "nordic-oat-porridge-lingonberry"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nordic-herring-rye-beet"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "nordic-swedish-meatballs-lingonberry"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nordic-mushrooms-crispbread-parsley"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nordic-carrot-sunflower-salad"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "nordic-skyr-blueberry-oat-crunch"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nordic-swedish-meatballs-lingonberry",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "nordic-lapskaus-beef-barley"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nordic-shrimp-crispbread-dill"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nordic-cheese-apple-crispbread"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "nordic-open-rye-egg-shrimp"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nordic-lapskaus-beef-barley",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "nordic-lohikeitto-rye"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nordic-apple-hazelnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nordic-cheese-cucumber-crispbread"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "nordic-oat-porridge-lingonberry"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nordic-lohikeitto-rye",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "nordic-artsoppa-pork-mustard"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nordic-carrot-sunflower-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nordic-beet-apple-salad"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "nordic-skyr-blueberry-oat-crunch"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nordic-artsoppa-pork-mustard",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "nordic-cod-fishcakes-slaw"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nordic-mushrooms-crispbread-parsley"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nordic-kefir-blueberries"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "nordic-oat-porridge-lingonberry"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nordic-pytt-i-panna"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "nordic-danish-chicken-root-soup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nordic-apple-hazelnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nordic-shrimp-crispbread-dill"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "nordic-open-rye-egg-shrimp"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nordic-danish-chicken-root-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "nordic-gravlax-dill-potatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nordic-kefir-blueberries"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nordic-beet-apple-salad"
+        }
+      ]
+    }
+  ]
+}
