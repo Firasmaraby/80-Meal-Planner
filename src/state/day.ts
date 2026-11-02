@@ -23,9 +23,11 @@ export function useAllPlans(): MealPlan[] {
   const local = useStore((s) => s.localPlans);
   const remote = useStore((s) => s.remotePlans);
   return useMemo(() => {
-    // newest version per id wins; remote > local > bundled on ties
+    // newest version per id wins; remote > local > library on ties.
+    // The 3 hand-made sample plans (BUNDLED_PLANS) are retired from browsing now that the built library ships; usePlan still
+    // finds them, so anyone already following one keeps their week.
     const byId = new Map<string, MealPlan>();
-    for (const p of [...BUNDLED_PLANS, ...LIBRARY_PLANS, ...local, ...remote]) {
+    for (const p of [...LIBRARY_PLANS, ...local, ...remote]) {
       const cur = byId.get(p.id);
       if (!cur || p.version >= cur.version) byId.set(p.id, p);
     }
@@ -41,7 +43,7 @@ export function usePlan(id?: string, version?: number): MealPlan | undefined {
     if (!id) return undefined;
     // an enrollment pins its version, so users aren't disrupted by a new upload
     const pinned = [...remote, ...local, ...LIBRARY_PLANS, ...BUNDLED_PLANS].find((p) => p.id === id && p.version === version);
-    return pinned ?? all.find((p) => p.id === id);
+    return pinned ?? all.find((p) => p.id === id) ?? BUNDLED_PLANS.find((p) => p.id === id);
   }, [id, version, all, local, remote]);
 }
 

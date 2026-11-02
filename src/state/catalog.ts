@@ -45,6 +45,7 @@ export const FOODS: Food[] = decodeFoods(everydayJson as unknown as FoodBundle, 
 export const FOOD_INDEX = new FoodIndex(FOODS);
 export const SWAP_GROUPS = swapGroupsJson as unknown as SwapGroup[];
 export const SWAP_INDEX = new Map(SWAP_GROUPS.map((g) => [g.key, g]));
+/** The 3 hand-made sample plans: retired from browsing (see useAllPlans), kept so existing enrolments, tests and the admin sample still work. */
 export const BUNDLED_PLANS = plansJson as unknown as MealPlan[];
 
 /**
