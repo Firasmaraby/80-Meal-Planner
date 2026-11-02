@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import { BUNDLED_PLANS, FOODS, FOOD_INDEX } from '@/state/catalog';
 
-import { REFERENCE_PANEL, RULES, bestSources, fixListForAI, gradePlan } from './planReport';
+import { REFERENCE_PANEL, RULES, bestSources, fixListForAI, gradePlan, preformedVitA } from './planReport';
 
 describe('plan grading', () => {
   it('grades the sample plans day by day with no calorie errors', () => {
@@ -56,3 +56,19 @@ describe('plan grading', () => {
     expect(lax.issues.some((i) => i.code === 'fish_low' || i.code === 'protein_low')).toBe(false);
   });
 });
+
+describe('upper limits', () => {
+  it('flags preformed vitamin A from liver, but not carotene from carrots', () => {
+    const plan = structuredClone(BUNDLED_PLANS[0]);
+    const carrots = { foodId: FOODS.find((f) => f.name === 'Carrot, raw')!.id, grams: 600 }; // lots of beta-carotene
+    plan.days[0].meals[0].ingredients.push(carrots);
+    expect(gradePlan(plan, FOOD_INDEX, FOODS).issues.some((i) => i.code === 'over_ul')).toBe(false);
+    const liver = { foodId: 'beef-liver-braised-17b44d', grams: 150 };
+    plan.days[0].meals[0].ingredients.push(liver);
+    expect(preformedVitA([liver], FOOD_INDEX)).toBeGreaterThan(3000);
+    const over = gradePlan(plan, FOOD_INDEX, FOODS).issues.filter((i) => i.code === 'over_ul');
+    expect(over.map((i) => i.nutrient)).toContain('vitA');
+    expect(over[0].level).toBe('error');
+  });
+});
+

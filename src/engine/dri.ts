@@ -50,7 +50,9 @@ export const DRI: Partial<Record<NutrientKey, DriRow>> = {
   potassium: { kind: 'ai', v: row([3000, 3400, 3400, 3400, 3400], [2300, 2600, 2600, 2600, 2600]), preg: [2600, 2900, 2900], lact: [2500, 2800, 2800] },
   zinc: { kind: 'rda', v: row(same5(11), [9, 8, 8, 8, 8]), preg: [12, 11, 11], lact: [13, 12, 12], ul: [34, 40, 40, 40] },
   copper: { kind: 'rda', v: row([0.89, 0.9, 0.9, 0.9, 0.9], [0.89, 0.9, 0.9, 0.9, 0.9]), preg: [1.0, 1.0, 1.0], lact: [1.3, 1.3, 1.3], ul: [8, 10, 10, 10] },
-  manganese: { kind: 'ai', v: row([2.2, 2.3, 2.3, 2.3, 2.3], [1.6, 1.8, 1.8, 1.8, 1.8]), preg: [2.0, 2.0, 2.0], lact: [2.6, 2.6, 2.6], ul: [9, 11, 11, 11] },
+  // no UL from food: the IOM's 11 mg was set from the top of typical Western intakes, EFSA sets none, and diets rich in whole grains,
+  // legumes, nuts and tea routinely pass 11 mg with no known harm (the supplement risk doesn't apply to food)
+  manganese: { kind: 'ai', v: row([2.2, 2.3, 2.3, 2.3, 2.3], [1.6, 1.8, 1.8, 1.8, 1.8]), preg: [2.0, 2.0, 2.0], lact: [2.6, 2.6, 2.6] },
   selenium: { kind: 'rda', v: row(same5(55), same5(55)), preg: [60, 60, 60], lact: [70, 70, 70], ul: [400, 400, 400, 400] },
   iodine: { kind: 'rda', v: row(same5(150), same5(150)), preg: [220, 220, 220], lact: [290, 290, 290], ul: [900, 1100, 1100, 1100] },
   fiber: { kind: 'ai', v: row([38, 38, 38, 30, 30], [26, 25, 25, 21, 21]), preg: [28, 28, 28], lact: [29, 29, 29] },

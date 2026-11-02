@@ -58,7 +58,8 @@ export interface ReportIssue {
     | 'omega_week_high'
     | 'gl_high'
     | 'protein_low'
-    | 'fish_low';
+    | 'fish_low'
+    | 'over_ul';
   day?: number;
   nutrient?: NutrientKey;
   message: string;
@@ -81,6 +82,19 @@ export interface DayReport {
   coverage: Partial<Record<NutrientKey, number>>;
   under80: { key: NutrientKey; pct: number }[];
   fattyFishMeals: number;
+  /** nutrients above the tolerable upper limit for someone on the panel (vitamin A counts preformed retinol only) */
+  overUL?: { key: NutrientKey; amount: number; limit: number }[];
+}
+
+/** Animal foods carry preformed vitamin A (retinol), which is what the vitamin A upper limit is about; carotenes from plants are not limited. */
+const RETINOL_CATEGORIES = new Set<Food['category']>(['meat', 'poultry', 'fish', 'egg', 'dairy', 'oil_fat']);
+export function preformedVitA(items: { foodId: string; grams: number }[], foods: FoodIndex): number {
+  let total = 0;
+  for (const i of items) {
+    const f = getFood(foods, i.foodId);
+    if (f && RETINOL_CATEGORIES.has(f.category)) total += ((f.n.vitA ?? 0) * i.grams) / 100;
+  }
+  return total;
 }
 
 export interface PlanReport {
@@ -110,10 +124,15 @@ export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []
     const protein = totals.protein ?? 0;
     const items = d.meals.flatMap((m) => m.ingredients);
     const coverage: DayReport['coverage'] = {};
+    const overUL = new Map<NutrientKey, { key: NutrientKey; amount: number; limit: number }>();
+    const retinol = preformedVitA(items, foods);
     for (const person of panel) {
       for (const p of boardProgress(totals, { ...person, energyKcal: kcal })) {
         if (p.amount == null) continue;
         coverage[p.key] = Math.min(coverage[p.key] ?? Infinity, p.pct);
+        const amount = p.key === 'vitA' ? retinol : p.amount;
+        const limit = p.req.ul;
+        if (limit != null && amount > limit && (!overUL.has(p.key) || limit < overUL.get(p.key)!.limit)) overUL.set(p.key, { key: p.key, amount, limit });
       }
     }
     const under80 = (Object.entries(coverage) as [NutrientKey, number][])
@@ -134,6 +153,7 @@ export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []
       coverage,
       under80,
       fattyFishMeals,
+      overUL: [...overUL.values()],
     };
   });
 
@@ -153,6 +173,15 @@ export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []
         day: r.day,
         message: `Day ${r.day}: ${round(r.kcal)} kcal is above the ${plan.band.min}–${plan.band.max} band.`,
         fix: `Remove about ${round(r.kcal - plan.band.max + 50)} kcal on day ${r.day}: trim grains, oils or nut portions first, never vegetables.`,
+      });
+    for (const o of r.overUL ?? [])
+      issues.push({
+        level: 'error',
+        code: 'over_ul',
+        day: r.day,
+        nutrient: o.key,
+        message: `Day ${r.day}: ${NUTRIENTS[o.key].label} at ${round(o.amount)} ${NUTRIENTS[o.key].unit}${o.key === 'vitA' ? ' from animal foods (preformed)' : ''}, above the upper limit of ${o.limit}.`,
+        fix: o.key === 'vitA' ? 'Use less liver (about 50 g is plenty once a week).' : 'Use less of the richest source of it that day.',
       });
     for (const u of r.under80) {
       const hard = HARD_NUTRIENTS.includes(u.key);
