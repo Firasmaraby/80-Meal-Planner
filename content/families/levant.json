@@ -1,0 +1,1840 @@
+{
+  "id": "levant",
+  "name": "Levantine Table",
+  "style": "balanced",
+  "cuisine": "Levantine",
+  "regions": [
+    "Lebanon",
+    "Syria",
+    "Palestine",
+    "Jordan"
+  ],
+  "summary": "A week at a Levantine table. Foul, labneh and balila for breakfast, lentils, chickpeas and bulgur on most days, lamb and chicken in moderation, and fish three times. Lebanese, Syrian, Palestinian and Jordanian dishes, with sumac, za'atar, tahini and plenty of herbs.",
+  "howItWorks": "**Cook once, eat twice.** Monday's shish tawook, Tuesday's mujadara, Thursday's adas bi hamod and Saturday's kibbeh each make two portions, so the next day's lunch is done. Saturday's ijjeh does the same for Sunday breakfast.\n\n**Fish three times.** Salmon samke harra on Wednesday, sardines on Friday and mackerel on Sunday carry your **omega-3 and vitamin D**. They are never back to back, and always cooked fresh.\n\n**Legumes most days.** Fava beans, chickpeas and lentils turn up at breakfast, lunch or dinner. With bulgur and whole-wheat pita they cover your **iron, folate and fibre**, and the lemon and tomato beside them help your body use the iron.\n\n**Calcium the Levantine way.** Tahini, labneh, halloumi, yogurt, dried figs and the soft bones of canned sardines carry your **calcium**, with parsley and chard for vitamins K and C.\n\n**Prep ahead.** The Sunday before, boil a few eggs for the week's breakfasts. On Thursday evening, while the soup simmers, make a batch of hummus for the Friday and Sunday snacks. Saturday's kibbeh is the weekend project, so soak the bulgur first and get the oven hot.",
+  "signature": [
+    "shish-tawook-tabbouleh",
+    "mujadara-bulgur",
+    "samke-harra",
+    "kibbeh-bil-sanieh"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "zaatar-pita-olives"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "pita-olives-mint"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "fig-tahini-pita"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "zaatar-pita-olives"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "fig-tahini-pita"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "labneh-olive-roll"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "pita-olives-mint"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "foul-medames",
+      "name": "Foul medames with boiled eggs, tahini, raw onion and radish",
+      "inspiredBy": "Jordanian and Palestinian foul, the breakfast of the foul stands in Amman, with a little chickpea in the pot as Lebanese cooks like it",
+      "about": "Warm, creamy fava beans and chickpeas mashed with garlic, cumin and lemon, with a swirl of tahini, two boiled eggs and a pile of raw onion, radish, tomato and parsley on top. Scoop it all up with warm whole-wheat pita. The beans bring **fibre, folate and iron**, and the eggs add choline.",
+      "ingredients": [
+        {
+          "food": "broadbeans-fava-beans-boiled-351b61",
+          "g": 70,
+          "swap": "legumes",
+          "note": "from a tin, drained and rinsed"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "boiled"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 4
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 25,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 30,
+          "note": "sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 35
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Lower the eggs gently into a small pot of boiling water and cook for 8 minutes, then cool them under cold water and peel.",
+        "Mash the garlic with the salt into a paste. Warm the fava beans and chickpeas in a small pot with the garlic, the cumin and a splash of water, stirring now and then, until they are steaming hot, about 5 minutes.",
+        "Mash roughly with a fork. You want a creamy base with some whole beans left in it. Stir in the lemon juice and half the olive oil.",
+        "Stir the tahini with a spoonful of water until it is pourable, like thin cream.",
+        "Spoon the beans into a shallow bowl, drizzle with the tahini and the rest of the olive oil, and pile the tomato, onion, radish and parsley on top. Add the halved eggs.",
+        "Warm the pita in a dry pan or the toaster, tear it up and use it to scoop."
+      ],
+      "prepMin": 5,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "A 400 g tin of foul makes two portions, so two foul mornings need only one tin. A pinch of chili flakes or a few chopped pickles on top is welcome."
+    },
+    {
+      "id": "labneh-zaatar-plate",
+      "name": "Za'atar pita with labneh, olives, egg and cucumber",
+      "inspiredBy": "the za'atar and olive oil breakfast of Jordan and Lebanon, in the style of a man'oushe",
+      "about": "Warm pita brushed with za'atar and olive oil, a swirl of labneh, a soft-boiled egg, olives, cucumber and fresh mint. It is the everyday breakfast table in one plate. The labneh and egg bring **protein, calcium and choline**.",
+      "ingredients": [
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 110,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 6
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 20
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 55
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lower the egg gently into a small pot of boiling water and cook for 7 minutes for a jammy yolk. Cool it under cold water, then peel. You can boil a few ahead and keep them in the fridge.",
+        "Stir the za'atar into most of the olive oil to make a paste. Spread it over the pita and warm it in a dry pan or a hot oven for a couple of minutes, until it smells toasty.",
+        "Stir a pinch of salt into the labneh and swirl it onto a plate. Pour the rest of the olive oil into a little well in the middle.",
+        "Halve the egg and arrange it with the olives, sliced cucumber and mint around the labneh. Tear the pita and scoop."
+      ],
+      "prepMin": 6,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "No labneh? Spoon thick Greek yogurt into a sieve lined with a clean cloth the night before, stir in a pinch of salt and let it drain in the fridge."
+    },
+    {
+      "id": "balila",
+      "name": "Balila, warm chickpeas with tahini, lemon, cumin and a boiled egg",
+      "inspiredBy": "Lebanese and Palestinian balila, the warm chickpea breakfast",
+      "about": "Warm, soft chickpeas in a little of their liquid with lemon, garlic and cumin, finished with a spoon of tahini, parsley and a good pour of olive oil, with a boiled egg alongside. It is simple, savoury and very filling. The chickpeas bring **fibre and protein** and the egg adds choline.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "boiled"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 30
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Lower the egg gently into a small pot of boiling water and cook for 8 minutes, then cool it under cold water and peel.",
+        "Mash the garlic with the salt into a paste. Warm the chickpeas in a small pot with the garlic, the cumin and a splash of water for 5 minutes, until they are very hot and soft.",
+        "Mash a few of them against the side of the pot so the liquid turns creamy, and stir in the lemon juice.",
+        "Whisk the tahini with a spoonful of water until pourable.",
+        "Spoon the chickpeas and some of their liquid into a bowl. Drizzle over the tahini and the olive oil and scatter with the parsley.",
+        "Halve the egg and lay it on top. Warm the pita and serve with the radish on the side."
+      ],
+      "prepMin": 4,
+      "cookMin": 7,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Add a pinch of chili flakes or a few drops of hot sauce, the way balila is often served in Beirut."
+    },
+    {
+      "id": "ijjeh-chard",
+      "name": "Ijjeh, a herb and chard omelette with radish and mint salad",
+      "inspiredBy": "Levantine ijjeh (eggah), with chard folded in and no flour",
+      "about": "A thick, green, herby omelette packed with parsley, chard, onion and a little grated halloumi, cut into wedges and eaten with warm pita, crunchy radishes, cucumber and mint. It makes two portions, and the cold wedge is just as good tomorrow morning. The eggs bring **protein and choline**, and the parsley and chard bring vitamin K.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "halloumi-cheese-ae36e5",
+          "g": 20,
+          "note": "grated"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "swiss-chard-raw-f646e5",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "stems and leaves, finely chopped"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "optional, roughly chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 50
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 45
+        }
+      ],
+      "steps": [
+        "Finely chop the parsley, chard and onion. Keep the chard stems, they stay pleasantly crisp.",
+        "Beat the eggs in a bowl with the baharat and half the salt, then stir in the grated halloumi, herbs, chard, onion and walnuts. It should look more green than yellow.",
+        "Heat the broiler. Warm half the oil in a medium oven-safe non-stick pan over medium-low heat. Pour in the egg mixture, cover, and cook gently until the edges are set and the top is almost firm, about 8 minutes.",
+        "Brush the top with the rest of the oil and slide the pan under the broiler for 2 minutes, until puffed and golden. Cut into wedges.",
+        "Slice the radishes and cucumber, toss with the mint, lemon juice and the rest of the salt, and serve beside a wedge with warm pita.",
+        "Wrap the second portion for tomorrow. Make a fresh salad then, and eat the wedge cold or tucked into pita."
+      ],
+      "prepMin": 12,
+      "cookMin": 14,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Leave out the walnuts if you like it softer. A pinch of cinnamon is traditional in some Syrian kitchens."
+    },
+    {
+      "id": "kafta-pita-tarator",
+      "name": "Lamb kafta pita with roasted cauliflower, tarator and tomato",
+      "inspiredBy": "Lebanese and Palestinian kafta sandwiches, made with lean lamb and finished with tahini sauce and roasted cauliflower, as karnabeet is eaten",
+      "about": "Finger-shaped patties of lean lamb, parsley and onion with baharat, tucked into warm whole-wheat pita with golden roasted cauliflower, tomato, a sumac onion salad and a lemony tahini sauce. It is street food you can make at home. The lamb brings **iron, zinc and vitamin B12**, and the tahini adds calcium.",
+      "ingredients": [
+        {
+          "food": "lamb-cubed-for-stew-or-kabob-lean-raw-e3098a",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "lean leg"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 55,
+          "note": "about half grated, half sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 35,
+          "note": "most for the kafta, a little for the salad"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 1.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 50
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 150,
+          "note": "cut in small florets"
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C. Toss the cauliflower with half the olive oil and a pinch of salt on a tray and roast until golden at the edges, about 20 minutes.",
+        "Pulse the lamb cubes in a food processor, in short bursts with a splash of ice water, until finely ground and sticky. Or ask the butcher to grind lean leg of lamb twice.",
+        "Squeeze the grated onion in your hands to get rid of the extra juice. Mix it with the lamb, most of the parsley, the baharat, black pepper and half the salt, kneading for a minute or two. Shape into 3 or 4 fingers about 8 cm long.",
+        "Warm the rest of the oil in a non-stick pan over medium-high heat and cook the kafta, turning now and then, until browned all over and cooked through, about 8 minutes.",
+        "Make the tarator. Stir the tahini with the lemon juice, the garlic (mashed to a paste), the rest of the salt and 2 to 3 tablespoons of cold water, until pale and pourable. Toss the sliced onion with the rest of the parsley and the sumac.",
+        "Warm the pita, fill it with the kafta, cauliflower, sliced tomato and sumac onions, and drizzle with the tarator."
+      ],
+      "prepMin": 15,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Roast the cauliflower and shape the kafta on Wednesday night while the oven is hot for the salmon. At lunch, fry the kafta and assemble. You can also freeze the shaped raw fingers."
+    },
+    {
+      "id": "fattoush-halloumi",
+      "name": "Fattoush with chickpeas and grilled halloumi",
+      "inspiredBy": "Lebanese fattoush, with chickpeas and halloumi to make it a meal",
+      "about": "A big, crunchy salad of romaine, radish, cucumber, tomato and mint under shards of toasted pita, with a sumac and pomegranate molasses dressing, spiced chickpeas and slices of golden halloumi. It is sharp, juicy and salty at once. The chickpeas and halloumi bring **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 130,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "halloumi-cheese-ae36e5",
+          "g": 25
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 100,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 40
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 110
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 4
+        },
+        {
+          "food": "sumac-268746",
+          "g": 2
+        },
+        {
+          "food": "pomegranate-molasses-008fae",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Split the pita, tear it into pieces, toss with a little of the oil and toast in a dry pan or a hot oven until golden and crisp, about 5 minutes.",
+        "Make the dressing. Mash the garlic with a pinch of salt and whisk it with the lemon juice, pomegranate molasses and the rest of the olive oil.",
+        "Toss the chickpeas in a bowl with half the sumac, a pinch of salt and a spoonful of the dressing so they take on some flavour.",
+        "Slice the halloumi and cook it in a dry non-stick pan over medium-high heat for about 1 minute per side, until golden.",
+        "Chop the romaine, radish, cucumber and tomato into bite-size pieces, tear in the mint and toss with most of the dressing.",
+        "Pile on a plate, top with the chickpeas and halloumi, sprinkle with the rest of the sumac and add the pita pieces just before eating."
+      ],
+      "prepMin": 15,
+      "cookMin": 7,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Grilled chicken or a handful of toasted almonds are good on top too. Use a squeeze of extra lemon if you have no pomegranate molasses."
+    },
+    {
+      "id": "musakhan-pita",
+      "name": "Musakhan-style sumac chicken and onions on pita",
+      "inspiredBy": "Palestinian musakhan, roasted sumac chicken on bread soaked in onions, made with boneless thighs and a lighter hand with the oil",
+      "about": "Chicken thighs rubbed with sumac and baharat and roasted until golden, piled on whole-wheat pita with a heap of slowly cooked sumac onions and toasted pine nuts. It is Palestine's best-loved dish, scaled down for a Saturday lunch. The chicken brings **protein and zinc**, and the onions bring plenty of flavour for very little fat.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "boneless, skinless thighs"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 160,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "sumac-268746",
+          "g": 5
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "pine-nuts-pignolia-dried-8ef6cc",
+          "g": 5,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 55
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C. Rub the chicken with half the sumac, the baharat, the black pepper, a third of the oil and half the salt. Spread it on a small tray.",
+        "Roast until golden and cooked through, 25 to 30 minutes.",
+        "Meanwhile, cook the onions in the rest of the oil with the rest of the salt in a wide pan over medium-low heat, stirring now and then, until completely soft and golden, about 20 minutes, with a splash of water if they start to stick. Stir in the rest of the sumac and the lemon juice for the last minute.",
+        "Toast the pine nuts in a dry pan for 2 minutes, until golden, and watch them closely.",
+        "Warm the pita in the oven for the last 5 minutes. Spread the onions over it, lay the chicken on top and scatter with the pine nuts and parsley. Cut it into wedges and eat with your hands."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Serve it with a spoonful of labneh or yogurt on the side if you like. Traditional musakhan is made with much more olive oil, and it is delicious."
+    },
+    {
+      "id": "adas-bi-hamod",
+      "name": "Adas bi hamod, lemony lentil and chard soup",
+      "about": "A sunny, sharp Lebanese lentil soup with plenty of chard, finished with crushed garlic and cilantro fried in olive oil and a good squeeze of lemon. It is cosy, hearty and better the next day, so it makes two portions. The lentils and chard bring **iron, folate and fibre**, and the lemon helps your body use that iron.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 70,
+          "swap": "legumes",
+          "note": "brown or green, rinsed"
+        },
+        {
+          "food": "swiss-chard-raw-f646e5",
+          "g": 120,
+          "swap": "leafy_greens",
+          "note": "stems and leaves"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 20,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 40
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 15
+        }
+      ],
+      "steps": [
+        "Soften the onion in half the olive oil in a big pot over medium heat until golden, about 8 minutes.",
+        "Add the rinsed lentils and cover with plenty of water, about 4 times their volume. Bring to a boil, then simmer gently until the lentils are nearly tender, about 20 minutes.",
+        "Slice the chard stems and add them with a little salt. Cook for 5 minutes, then stir in the leaves and cook until they wilt and soften, about 5 minutes more.",
+        "Crush the garlic with a pinch of salt and the cilantro. Warm the rest of the olive oil in a small pan and fry this paste for a minute, until it smells wonderful. Stir it into the soup with the lemon juice.",
+        "Taste and add more lemon or salt until it is properly sharp and savoury. Tear the pita into pieces, toast them in a dry pan until crisp and scatter over each bowl.",
+        "Pack the second portion for tomorrow's lunch. The soup thickens as it sits, so loosen it with a splash of water when you reheat it."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "For a creamier soup, blitz a ladleful and stir it back in."
+    },
+    {
+      "id": "shish-tawook-tabbouleh",
+      "name": "Shish tawook with parsley tabbouleh and toum-style garlic sauce",
+      "inspiredBy": "Lebanese shish tawook, with a lighter whipped garlic sauce in place of full toum and a tabbouleh that is mostly parsley",
+      "about": "Chunks of chicken marinated in yogurt, lemon and garlic and grilled until charred at the edges, with a bright tabbouleh that is mostly parsley and a sharp, punchy garlic sauce. It makes two portions, so tomorrow's lunch is covered. The chicken brings **protein and niacin**, and all that parsley brings vitamins K and C.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "boneless, skinless thighs, cut in 3 cm chunks"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 45,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 12
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 45
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 1.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 60,
+          "note": "finely chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 8,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 90,
+          "note": "finely diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 20,
+          "note": "finely chopped"
+        },
+        {
+          "food": "bulgur-dry-raw-2980c3",
+          "g": 25,
+          "swap": "low_gi_grains",
+          "note": "fine or medium"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "leaves, for scooping"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Stir the yogurt with a third of the garlic (mashed to a paste), a third of the lemon juice, the baharat, the black pepper and half the salt. Add the chicken and turn to coat. Marinate for at least 30 minutes and up to 6 hours in the fridge.",
+        "Cover the bulgur with hot water and leave it for 15 minutes, until tender, then drain well and squeeze out the water.",
+        "Mix the bulgur with the parsley, mint, onion, half the remaining lemon juice, half the olive oil and a pinch of salt. Keep the tomato aside and add it at serving, so the tabbouleh stays fresh.",
+        "Thread the chicken onto skewers, or spread it on a tray, and grill or broil on high, turning once or twice, until charred at the edges and cooked through, 10 to 12 minutes.",
+        "Make the garlic sauce. Pound the rest of the garlic with a pinch of salt, then slowly whisk in the rest of the olive oil and the last squeeze of lemon, a few drops at a time, until it turns thick and creamy. It is a quick toum.",
+        "Serve the chicken with the tabbouleh, the tomato, the sauce and the romaine leaves to scoop. Pack the second portion for tomorrow's lunch, with the tomato and sauce in separate containers."
+      ],
+      "prepMin": 25,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Chicken breast works too, but thighs stay juicier. If the garlic sauce splits, whisk in a teaspoon of cold water."
+    },
+    {
+      "id": "samke-harra",
+      "name": "Samke harra, Lebanese spicy cilantro and walnut baked salmon with tomato bulgur",
+      "inspiredBy": "Lebanese samke harra from Tripoli, with salmon in place of white fish, baked with a hot cilantro paste and topped with toasted walnuts",
+      "about": "Salmon fillet rubbed with a fiery paste of cilantro, garlic, chili, cumin and lemon and baked until it flakes, with a tomato bulgur pilaf (burghul bi banadoura) and a handful of toasted walnuts on top. It is the Lebanese coast on a plate. The salmon brings **omega-3 fats and vitamin D**, and the walnuts add crunch.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 180,
+          "swap": "fatty_fish",
+          "note": "fillet, skin on"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 30,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 4,
+          "note": "seeded if you like less heat"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "bulgur-dry-raw-2980c3",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "coarse"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "chopped, half for the pilaf and half for the salad"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 70,
+          "note": "half diced for the pilaf, half sliced for the salad"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C. Soften half the onion, diced, in a third of the olive oil in a small pot, about 5 minutes, without browning it. Add half the chopped tomato and cook for 3 minutes, then stir in the bulgur, add double its volume of water and a pinch of salt, cover and simmer on low for 12 minutes. Leave it covered.",
+        "Meanwhile, pound or blitz the cilantro, garlic, chili, all the cumin, half the lemon juice, half the remaining oil and a pinch of salt into a rough, spoonable paste.",
+        "Rub the paste all over the fish, pressing it in well. Set the fish on a lined tray and bake until it flakes easily with a fork, 12 to 15 minutes.",
+        "Toast the walnuts in a dry pan for 2 minutes, until they smell nutty, and chop them roughly.",
+        "Toss the rest of the tomato and the sliced onion with the rest of the lemon juice, the last of the oil and a pinch of salt.",
+        "Serve the fish on the bulgur, scattered with the walnuts, with the tomato salad on the side."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "spicy"
+      ],
+      "tip": "Sea bass, grouper, cod or halibut make the traditional version, and trout is lovely too. Use a smaller chili or leave out the seeds if you want less heat."
+    },
+    {
+      "id": "mujadara-bulgur",
+      "name": "Mujadara hamra, lentils and bulgur with caramelised onions and malfouf salad",
+      "inspiredBy": "Lebanese and Palestinian mujadara hamra, the version made with bulgur",
+      "about": "Brown lentils and bulgur cooked with cumin and baharat and topped with deeply browned onions, with a crunchy mint, lemon and olive oil cabbage and carrot salad on the side. It is humble, filling and very much a Levantine home dinner. The lentils and bulgur bring **iron and fibre**, the carrot brings vitamin A, and it makes two portions for tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 75,
+          "swap": "legumes",
+          "note": "brown or green, rinsed"
+        },
+        {
+          "food": "bulgur-dry-raw-2980c3",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "coarse"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 140,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 80,
+          "note": "finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "grated"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 4
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Simmer the lentils with the cumin in plenty of water for about 15 minutes, until they are almost tender but still have some bite. Drain, keeping the cooking water.",
+        "While they cook, cook the sliced onions in two-thirds of the olive oil with a pinch of salt in a wide pan over medium-low heat, stirring often, until they are deep golden brown and sweet, 30 to 35 minutes. Most of this time is hands-off. Lift out about a third for the top.",
+        "Add the lentils, bulgur, baharat and the rest of the salt to the pan with the remaining onions. Pour in enough of the lentil water to cover by about 1 cm, bring to a simmer, cover and cook on the lowest heat for 15 minutes.",
+        "Turn off the heat and leave it covered for 10 minutes so the bulgur finishes steaming, then fluff with a fork.",
+        "Make the cabbage salad, salata malfouf. Mash the garlic with a pinch of salt and toss it with the cabbage, carrot, lemon juice, mint and the rest of the olive oil.",
+        "Top the mujadara with the caramelised onions and serve with the salad. Pack the second portion for tomorrow's lunch, with the salad dressed fresh. It reheats well, or eat it at room temperature."
+      ],
+      "prepMin": 15,
+      "cookMin": 55,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Slow, patient onions are the secret. If they start to catch, add a splash of water and keep going."
+    },
+    {
+      "id": "sardine-tomato-skillet",
+      "name": "Spicy tomato sardines on toasted pita with parsley and onion salad",
+      "inspiredBy": "the chili, garlic and tomato fish dishes of the Lebanese and Palestinian coast, made with canned sardines",
+      "about": "Canned sardines warmed through in a garlicky, chili-spiked tomato sauce and spooned over toasted pita, with a sharp parsley, onion and sumac salad. It is on the table in about 35 minutes. Sardines are one of the best sources of **omega-3, calcium and vitamin D**, because you eat the soft bones.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "drained"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 75,
+          "note": "two-thirds diced, one-third sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 4,
+          "note": "finely chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 220,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 25
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 45
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a wide pan over medium heat. Cook the diced onion until soft, about 5 minutes, then add the garlic, chili and cumin and stir for a minute, until fragrant.",
+        "Add the tomatoes and half the salt. Simmer, pressing them down with the back of a spoon, until they collapse into a thick, jammy sauce, 12 to 15 minutes.",
+        "Nestle the sardines into the sauce, spoon some over the top and warm them gently for 3 to 4 minutes without stirring, so they stay in nice pieces.",
+        "Toss the sliced onion with the parsley, sumac, half the lemon juice and a pinch of salt. Toast the pita until crisp at the edges.",
+        "Squeeze the rest of the lemon over the sardines and serve with the pita and the parsley salad."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Fresh sardines or small mackerel, seared and slipped into the sauce, are the classic version if you can find them at a fishmonger or Middle Eastern market. Use about 200 g of cleaned, butterflied fish."
+    },
+    {
+      "id": "kibbeh-bil-sanieh",
+      "name": "Baked kibbeh with spiced lamb and walnut filling and tomato sumac salad",
+      "inspiredBy": "Lebanese and Syrian kibbeh bil sanieh, made with lean lamb and plenty of bulgur",
+      "about": "A tender layer of spiced lamb and bulgur dough over a savoury filling of onion, spiced lamb and walnuts, baked until the top is crisp and golden, with a tomato, onion and sumac salad. It is the weekend project dish. Lamb and bulgur bring **iron, zinc and B vitamins**, and it makes two portions.",
+      "ingredients": [
+        {
+          "food": "lamb-cubed-for-stew-or-kabob-lean-raw-e3098a",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "lean leg"
+        },
+        {
+          "food": "bulgur-dry-raw-2980c3",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "fine"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 125,
+          "note": "most for the kibbeh, a little for the salad"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.6
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        }
+      ],
+      "steps": [
+        "Rinse the bulgur, cover it with cold water and leave it for 20 minutes, then squeeze it very dry. Heat the oven to 200 C and brush a 20 cm square baking dish with a little of the oil.",
+        "Pulse the lamb cubes in a food processor, in short bursts, until finely ground. Or ask the butcher to grind lean leg of lamb twice. Set a third aside for the filling.",
+        "Make the filling. Soften half the kibbeh onion, finely chopped, in a spoonful of the oil. Add the reserved lamb and cook, breaking it up, until browned, about 5 minutes. Stir in the walnuts, a third of the baharat and a pinch of salt. Set aside to cool slightly.",
+        "Make the dough. Grate or blitz the other half of the kibbeh onion. Put the rest of the lamb, the squeezed bulgur, the grated onion, the rest of the baharat, the black pepper and the salt in the food processor and pulse in short bursts, adding a spoonful of ice water, until it is a smooth, sticky paste. Chill it for 15 minutes if it feels too soft.",
+        "With wet hands, press half the dough into the dish in a flat, even layer. Spread the filling over it, then pat the rest of the dough over the top, smoothing it to seal in the filling.",
+        "Score the top in diamonds with a wet knife, drizzle with the rest of the oil and bake until deep golden brown and crisp at the edges, 35 to 40 minutes. Rest for 10 minutes before cutting.",
+        "Meanwhile, slice the tomato and the salad onion very thinly, and toss with the parsley, sumac, lemon juice and a pinch of salt. Serve a portion with the salad.",
+        "Pack the second portion for tomorrow's lunch. Reheat the kibbeh in a hot oven and make a fresh salad."
+      ],
+      "prepMin": 40,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Keep the dough and the knife wet, it is what makes the top smooth. Kibbeh freezes very well, baked or unbaked."
+    },
+    {
+      "id": "mackerel-eggplant",
+      "name": "Baked mackerel on collapsed eggplant with tarator",
+      "inspiredBy": "the Levantine pairing of fish with tarator, the tahini and lemon sauce, served over silky roasted eggplant",
+      "about": "Mackerel fillets roasted over eggplant that has collapsed into a soft, silky bed with lemon, garlic and parsley, drizzled with a creamy tahini tarator. It is bold, rich and ready in about an hour, mostly in the oven. Mackerel is one of the richest sources of **omega-3 and vitamin D**, and the tahini adds calcium.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 180,
+          "swap": "fatty_fish",
+          "note": "fillets, skin on"
+        },
+        {
+          "food": "eggplant-raw-b8b8c1",
+          "g": 280,
+          "note": "halved lengthwise and scored"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "halved"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 40
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 20
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 12
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 30
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 230 C. Score the cut side of the eggplant halves in a diamond pattern, brush with half the olive oil and sprinkle with half the salt and the cumin. Roast cut side down on a tray until completely soft and collapsing, about 30 minutes.",
+        "Mash half the garlic with a pinch of salt. Mix it with a third of the lemon juice and a little of the olive oil, and chop most of the parsley into it.",
+        "Turn the eggplant cut side up and scoop and mash the flesh roughly with a fork on the tray. Spoon over the dressing, tuck the tomato halves around it and lay the mackerel on top, skin side up. Brush the fish with the rest of the olive oil.",
+        "Roast for 10 to 12 minutes more, until the fish flakes easily and the skin is crisp.",
+        "Make the tarator. Stir the tahini with the rest of the garlic, the rest of the lemon juice, a pinch of salt and 3 to 4 tablespoons of cold water until pale and pourable.",
+        "Serve the fish on the eggplant, drizzled with the tarator and the rest of the parsley, with warm pita."
+      ],
+      "prepMin": 12,
+      "cookMin": 45,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Any oily fish works here. The roasted eggplant keeps well, so roast extra for a baba ghanoush-style spread."
+    },
+    {
+      "id": "hummus-sticks",
+      "name": "Silky hummus with radish and cucumber sticks",
+      "about": "A proper creamy hummus made from a tin of chickpeas, with plenty of tahini and lemon, served with crunchy radishes and cucumber. Make the batch once and it covers both hummus snacks, with some left for the table. The chickpeas and tahini bring **fibre, protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 60,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 12
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 40,
+          "note": "halved"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Make a batch of 4 portions: blitz 1 tin of chickpeas (about 240 g drained) with 4 tablespoons of tahini, the juice of 1 lemon, 2 cloves of garlic, a pinch of cumin, a good pinch of salt and 4 to 6 tablespoons of ice-cold water for 3 to 4 minutes, until pale and silky. Keep it in the fridge for up to 4 days.",
+        "Spoon one portion (about a quarter of the batch) into a bowl, make a well in the middle and drizzle with the olive oil. Serve with the radish and cucumber sticks."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Ice-cold water and a long blitz are the secret to a smooth, pale hummus. Rubbing the skins off the chickpeas makes it even silkier."
+    },
+    {
+      "id": "levant-figs-almonds",
+      "name": "Dried figs and almonds",
+      "about": "Chewy dried figs and a small handful of almonds, a pairing found on every Levantine market stall. It is sweet, crunchy and easy to carry. The figs bring **calcium and fibre** and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 40
+        },
+        {
+          "food": "almonds-dried-unblanched-unroasted-94d7aa",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Put the figs and almonds in a small bowl or a bag and eat together."
+      ],
+      "prepMin": 1,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "In fig season, two or three fresh figs or a bunch of grapes are lovely in place of the dried figs."
+    },
+    {
+      "id": "levant-pomegranate-almonds",
+      "name": "Pomegranate seeds with toasted almonds",
+      "about": "Juicy pomegranate seeds with a small handful of toasted almonds, sweet-sour with a crunch. It is bright, cool and a little festive. The almonds bring **vitamin E and protein** and the pomegranate brings fibre and vitamin C.",
+      "ingredients": [
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 110,
+          "swap": "vit_c_fruit",
+          "note": "seeds"
+        },
+        {
+          "food": "almonds-dried-unblanched-unroasted-94d7aa",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Tip the pomegranate seeds into a small bowl.",
+        "Scatter with the toasted almonds and eat with a spoon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Pomegranates are in season in the fall. The rest of the year, buy a tub of seeds, or use fresh figs or grapes in season."
+    },
+    {
+      "id": "halloumi-cucumber-pita",
+      "name": "Grilled halloumi, cucumber and mint in pita",
+      "about": "A few slices of golden grilled halloumi tucked into warm whole-wheat pita with cool cucumber and fresh mint, the way it is eaten in Lebanon and Jordan. It is salty, chewy and fresh. The halloumi brings **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "halloumi-cheese-ae36e5",
+          "g": 30
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Slice the halloumi and cook it in a dry non-stick pan over medium-high heat for about 1 minute per side, until golden.",
+        "Warm the pita, tuck in the halloumi, sliced cucumber and mint, and add a squeeze of lemon."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "pomegranate-walnuts",
+      "name": "Pomegranate seeds with walnuts",
+      "inspiredBy": "the pomegranate and walnut pairing of Levantine muhammara",
+      "about": "Juicy pomegranate seeds with a handful of walnuts, sweet and sour with a crunch, like the flavours of a muhammara dip. The walnuts bring **omega-3 fats** and the pomegranate brings vitamin C and fibre.",
+      "ingredients": [
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 110,
+          "swap": "vit_c_fruit",
+          "note": "seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Tip the pomegranate seeds into a small bowl.",
+        "Scatter with the walnuts and eat with a spoon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "fig-tahini-pita",
+      "name": "Pita with tahini and dried figs",
+      "inspiredBy": "tahini with date or grape molasses, a Levantine breakfast sweet, made with figs",
+      "about": "Warm whole-wheat pita spread with tahini and topped with chopped dried figs, nutty and sweet. It is a good, filling snack. The tahini and figs bring **calcium and copper**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 50
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8
+        },
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 35,
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Warm the pita in a dry pan or the toaster.",
+        "Spread with the tahini, scatter over the chopped figs and fold."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "pomegranate-mint-bowl",
+      "name": "Pomegranate bowl with mint and lemon",
+      "about": "Juicy pomegranate seeds with torn mint and a squeeze of lemon, sweet, sour and very refreshing. It is a light bowl after a rich meal. The pomegranate brings **vitamin C and fibre**.",
+      "ingredients": [
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "seeds"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 2
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Tip the pomegranate seeds into a bowl.",
+        "Tear over the mint and squeeze over the lemon juice."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Pomegranates are in season in the fall. The rest of the year, buy a tub of seeds."
+    },
+    {
+      "id": "zaatar-pita-olives",
+      "name": "Za'atar pita with olives",
+      "inspiredBy": "the zeit w za'atar plate of Jordan and Lebanon",
+      "about": "Warm whole-wheat pita brushed with olive oil and za'atar, with a few olives on the side. It is a simple snack from a Levantine breakfast table. The whole-wheat pita brings **fibre and B vitamins**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 55
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 4
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 20
+        }
+      ],
+      "steps": [
+        "Stir the za'atar into the olive oil and brush it over the pita.",
+        "Warm the pita in a dry pan or a hot oven for 2 minutes and serve with the olives."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "figs-walnuts",
+      "name": "Dried figs stuffed with walnuts",
+      "inspiredBy": "the figs and walnuts of Levantine sweet trays",
+      "about": "Soft dried figs with a walnut half tucked into each one, chewy and nutty. They taste like a sweet from a Levantine tray but are made of just two ingredients. The walnuts bring **omega-3 fats** and the figs bring calcium and fibre.",
+      "ingredients": [
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 30
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Snip the stems off the figs and slit each one open.",
+        "Tuck a walnut half into each fig and eat the rest of the walnuts alongside."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "In fig season, use fresh figs or a bunch of grapes with the walnuts."
+    },
+    {
+      "id": "yogurt-fig-almonds",
+      "name": "Yogurt with chopped figs and toasted almonds",
+      "about": "Thick, cool yogurt with chopped dried figs for sweetness and crunchy toasted almonds on top. It is creamy, a little sweet and very quick. The yogurt brings **calcium and protein**, and the figs add more calcium.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 30,
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-unblanched-unroasted-94d7aa",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        }
+      ],
+      "steps": [
+        "Stir most of the chopped figs into the yogurt.",
+        "Spoon into a bowl and top with the rest of the figs and the almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "pita-olives-mint",
+      "name": "Pita with olives, cucumber and mint",
+      "about": "Warm whole-wheat pita with crunchy cucumber, a few olives and torn mint, the kind of plate you might pick at on a Levantine afternoon. It is fresh and filling. The cucumber and mint bring **vitamin K and potassium**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 45
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 20
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Slice the cucumber and toss it with the olives, mint, olive oil and salt.",
+        "Warm the pita and eat it with the salad, tucked inside or on the side."
+      ],
+      "prepMin": 5,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "labneh-olive-roll",
+      "name": "Labneh, olive and mint pita roll",
+      "inspiredBy": "the labneh sandwiches of Lebanese bakeries",
+      "about": "Warm whole-wheat pita spread with labneh, olive oil and chopped olives, rolled up with fresh mint. It is a quick, filling snack. The labneh brings **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 55
+        },
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 15,
+          "note": "chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Warm the pita in a dry pan or the toaster.",
+        "Spread it with the labneh, drizzle with the olive oil, scatter over the olives and mint, and roll it up."
+      ],
+      "prepMin": 4,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "foul-medames"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "fattoush-halloumi"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "shish-tawook-tabbouleh"
+        },
+        {
+          "slot": "snack",
+          "recipe": "figs-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pomegranate-mint-bowl"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "labneh-zaatar-plate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "shish-tawook-tabbouleh",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mujadara-bulgur"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pomegranate-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "levant-figs-almonds"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "balila"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mujadara-bulgur",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "samke-harra"
+        },
+        {
+          "slot": "snack",
+          "recipe": "halloumi-cucumber-pita"
+        },
+        {
+          "slot": "snack",
+          "recipe": "yogurt-fig-almonds"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "foul-medames"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "kafta-pita-tarator"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "adas-bi-hamod"
+        },
+        {
+          "slot": "snack",
+          "recipe": "figs-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "halloumi-cucumber-pita"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "labneh-zaatar-plate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "adas-bi-hamod",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "sardine-tomato-skillet"
+        },
+        {
+          "slot": "snack",
+          "recipe": "hummus-sticks"
+        },
+        {
+          "slot": "snack",
+          "recipe": "levant-pomegranate-almonds"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ijjeh-chard"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "musakhan-pita"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "kibbeh-bil-sanieh"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pomegranate-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "yogurt-fig-almonds"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ijjeh-chard",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "kibbeh-bil-sanieh",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mackerel-eggplant"
+        },
+        {
+          "slot": "snack",
+          "recipe": "hummus-sticks"
+        },
+        {
+          "slot": "snack",
+          "recipe": "levant-figs-almonds"
+        }
+      ]
+    }
+  ]
+}
