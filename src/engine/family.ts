@@ -15,6 +15,7 @@ import { carbStyleOfPlan } from './carbStyle';
 import { BOARD_KEYS } from './nutrients';
 import { personalizeDay } from './personalize';
 import { mealFrom, type CompactPlan, type Hero, type LibraryIngredient, type LibraryRecipe } from './libraryPlans';
+import { measureText } from './measure';
 import { FOOD_BANS, PLAN_STYLES, isPlanStyle } from './planStyles';
 import type { Ingredient, CalorieBand, Food, LifeStage, Meal, MealPlan, MealSlot, NutrientKey, PlanSize, PlanStyle, Profile, SwapGroup } from './types';
 
@@ -506,33 +507,8 @@ export function compactPlan(plan: MealPlan, foods: FoodIndex): CompactPlan {
 
 // ── Reading a recipe ───────────────────────────────────────────────────────
 
-const FRACTIONS: [number, string][] = [[0, ''], [0.25, '¼'], [0.5, '½'], [0.75, '¾']];
-
-function quantity(x: number): string {
-  const whole = Math.floor(x);
-  const frac = x - whole;
-  const best = [...FRACTIONS, [1, '']].reduce((a, b) => (Math.abs((b[0] as number) - frac) < Math.abs((a[0] as number) - frac) ? b : a));
-  const w = best[0] === 1 ? whole + 1 : whole;
-  const text = `${w || ''}${best[1]}`;
-  return text || '¼';
-}
-
-const PLURALS = new Set(['cup', 'slice', 'clove', 'container', 'fillet', 'piece', 'stalk', 'stem', 'bunch', 'can', 'wedge', 'sprig', 'sheet', 'spear', 'ear', 'floret']);
-
-/**
- * "about 1½ cups, chopped": a household measure for `grams` of a food that lists servings, or undefined when no serving fits
- * (between a quarter and 8 of the unit). Prefers the food's first serving.
- */
+/** "about 1½ cups, chopped": a household measure for `grams` of a food that lists servings, or undefined when no serving fits. */
 export function householdMeasure(food: Pick<Food, 'servings'>, grams: number): string | undefined {
-  for (const s of food.servings ?? []) {
-    const lead = /^(\d+(?:\.\d+)?|\d+\/\d+)\s+(.*)$/.exec(s.label);
-    const unitCount = lead ? (lead[1].includes('/') ? +lead[1].split('/')[0] / +lead[1].split('/')[1] : +lead[1]) : 1;
-    const unit = lead ? lead[2] : s.label;
-    const n = Math.round(((grams / s.g) * unitCount) * 4) / 4;
-    if (s.g <= 0 || n < 0.25 || n > 8) continue;
-    const first = unit.split(/[ ,]/)[0];
-    const text = n > 1 && PLURALS.has(first) ? unit.replace(first, `${first}s`) : unit;
-    return `about ${quantity(n)} ${text}`;
-  }
-  return undefined;
+  const t = measureText(food, grams);
+  return t ? `about ${t}` : undefined;
 }

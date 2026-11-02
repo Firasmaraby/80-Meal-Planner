@@ -96,6 +96,12 @@ def pick_servings(rec: dict[str, Any], hs: dict[tuple[str, str], list[dict[str, 
                   legacy: dict[str, Any] | None) -> tuple[list[dict[str, Any]], str]:
     if legacy and legacy.get("servings"):
         return [dict(s) for s in legacy["servings"]], "legacy"
+    # Drained canned legumes and vegetables pack like the cooked food, not like the can with its liquid
+    # ("chickpeas|canned|1 cup=240" is solids and liquid; a drained cup is about 160 g).
+    if rec["form"] == "canned" and "drained" in rec["name"].lower():
+        s = hs.get((rec["head"], "cooked"))
+        if s:
+            return [dict(x) for x in s], "common_list_cooked"
     s = hs.get((rec["head"], rec["form"]))
     if s:
         return [dict(x) for x in s], "common_list"

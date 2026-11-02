@@ -1,8 +1,9 @@
 /**
  * Kitchen helpers: the grocery list, batch-cook prep, cook-mode steps and timers,
  * and the reminder schedule. All pure (no React, no storage), so they are easy to test.
- * Amounts are always grams; the household measure ("≈ 3 medium") comes from Food.servings[0].
+ * Amounts are always grams; the household measure ("≈ 3 medium") comes from Food.servings (src/engine/measure.ts).
  */
+import { measureText } from '@/engine/measure';
 import { roundGrams } from '@/engine/calc';
 import type { Food, FoodCategory, Ingredient, MealPlan, MealSlot } from '@/engine/types';
 
@@ -73,33 +74,10 @@ export function planPreviewDays(plan: MealPlan, from: string, count = 7): Kitche
 
 export const fmtQty = (g: number) => (g >= 1000 ? `${(g / 1000).toFixed(1)} kg` : `${roundGrams(g)} g`);
 
-const fmtCount = (n: number) => {
-  if (n >= 10) return String(Math.round(n));
-  const r = Math.round(n * 2) / 2;
-  const whole = Math.floor(r);
-  const half = r - whole === 0.5;
-  if (!whole) return '½';
-  return half ? `${whole}½` : String(whole);
-};
-
-const PLURALIZE =
-  /^(cup|slice|fillet|clove|piece|stalk|head|can|stick|leaf|sprig|ear|breast|thigh|bunch|handful|serving|patty|link|wedge|spear|floret|pod|stem|tortilla|pita)\b/i;
-
-/** "≈ 3 medium" from the food's first household serving, when it has one and the amount is worth a measure. */
+/** "≈ 3 medium" from the food's household servings, when it has one and the amount is worth a measure. */
 export function householdMeasure(f: Food | undefined, grams: number): string | undefined {
-  const s = f?.servings?.[0];
-  if (!s || !s.g) return undefined;
-  const m = s.label.match(/^(\d+(?:\.\d+)?|\d+\/\d+)\s+(.*)$/);
-  let qty = 1;
-  let label = s.label;
-  if (m) {
-    qty = m[1].includes('/') ? Number(m[1].split('/')[0]) / Number(m[1].split('/')[1]) : Number(m[1]);
-    label = m[2];
-  }
-  const n = (grams / s.g) * qty;
-  if (n < 0.25) return undefined;
-  if (n > 1 && PLURALIZE.test(label)) label = label.replace(PLURALIZE, (w) => (w.toLowerCase().endsWith('s') ? w : `${w}s`));
-  return `≈ ${fmtCount(n)} ${label}`;
+  const t = measureText(f, grams, 99);
+  return t ? `≈ ${t}` : undefined;
 }
 
 /** "Lentils, boiled" → { name: "Lentils", detail: "boiled" } */

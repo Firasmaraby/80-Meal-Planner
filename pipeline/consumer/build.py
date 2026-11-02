@@ -104,20 +104,23 @@ def main(argv: list[str] | None = None) -> int:
     registry_before = dict(registry)
     used = CU.used_food_ids(Path(args.families))
     tier_of = {r["canonical_id"]: r["tier"] for r in records}
-    _, promoted, unknown_used = CU.promotions(used, {v: k for k, v in registry.items()}, tier_of)
+    used_pins, promoted, unknown_used = CU.promotions(used, {v: k for k, v in registry.items()}, tier_of)
+    # every food a family uses stays everyday, not just the ones that were extended: pinning only those lets the second
+    # ranking pass push an already-everyday used food out (corn on the cob, west-africa, Nov 2)
+    keep_used = {c for c in used_pins if tier_of.get(c) in ("everyday", "extended")}
     pins_path = PIPE / "config" / "everyday_pins.json"            # foods that are everyday on purpose, with the reason
     config_pins = {p["canonical_id"]: p for p in (_load_json(pins_path)["pins"] if pins_path.exists() else [])}
     pinned_now = {c for c in config_pins if tier_of.get(c) == "extended"}
-    if promoted or pinned_now:
+    if keep_used or pinned_now:
         reset(records)           # same run again with those foods pinned; the target grows by their number so no other food is pushed out
-        cur = C.curate(records, lex, pinned=pinned | promoted | pinned_now, unhide_ok=waive,
+        cur = C.curate(records, lex, pinned=pinned | keep_used | pinned_now, unhide_ok=waive,
                        target=args.target + len(promoted | pinned_now))
         for r in records:
             if r["canonical_id"] in promoted and r["tier"] == "everyday":
                 r["why"] = "promoted_by_use"
             elif r["canonical_id"] in pinned_now and r["tier"] == "everyday":
                 r["why"] = "pinned_in_config"
-        assert all(r["tier"] == "everyday" for r in records if r["canonical_id"] in promoted | pinned_now), "a pinned food is not everyday"
+        assert all(r["tier"] == "everyday" for r in records if r["canonical_id"] in keep_used | pinned_now), "a pinned food is not everyday"
     promo = {"files": len(CU.family_files(Path(args.families))), "names": [p.stem for p in CU.family_files(Path(args.families))],
              "used": len(used), "unknown": unknown_used,
              "promoted": sorted((registry[c], used[registry[c]]) for c in promoted),

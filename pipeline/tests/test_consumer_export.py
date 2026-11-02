@@ -104,6 +104,14 @@ class Export(unittest.TestCase):
         none = rec("Obscure tuber, raw", cid="s2")
         self.assertEqual(X.pick_servings(none, hs, cfg, None), ([], ""))
 
+    def test_drained_canned_legumes_measure_like_cooked_ones(self):
+        cfg = json.loads((helpers.PIPELINE / "config" / "servings_defaults.json").read_text(encoding="utf-8"))
+        hs = X.head_servings(LEX.entries)
+        drained = {"name": "Chickpeas, canned, drained solids", "head": "chickpeas", "form": "canned", "category": "legume"}
+        with_liquid = dict(drained, name="Chickpeas, canned, solids and liquid")
+        self.assertEqual(X.pick_servings(drained, hs, cfg, None), ([{"label": "1 cup", "g": 164}], "common_list_cooked"))
+        self.assertEqual(X.pick_servings(with_liquid, hs, cfg, None)[0][0]["g"], 240)
+
 
 class Legacy(unittest.TestCase):
     def test_match_requires_kcal_within_15_percent(self):
