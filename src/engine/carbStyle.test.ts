@@ -137,5 +137,7 @@ describe('flatbreads', () => {
     expect(carbStyleOfFood(byName('Injera (teff flatbread)'))).toBe('wholegrain');
     expect(carbStyleOfFood({ name: 'Flatbread, white', head: 'flatbread', category: 'grain' })).toBe('any');
     expect(carbStyleOfFood(byName('Teff, cooked'))).toBe('whole');
+    expect(carbStyleOfFood(byName('Lavash, whole wheat'))).toBe('wholegrain');
+    expect(carbStyleOfFood({ name: 'Lavash, white', head: 'lavash', category: 'grain' })).toBe('any');
   });
 });
