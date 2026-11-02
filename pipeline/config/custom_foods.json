@@ -1325,6 +1325,70 @@
    ],
    "recipe": "A Cajun blackening blend: paprika, garlic and onion powder, cayenne, thyme, oregano, black pepper and salt.",
    "limits": "Store blends vary a lot in salt (some are half salt); this one is light on it. Used by the teaspoon."
+  },
+  {
+   "key": "sulguni",
+   "name": "Sulguni (Georgian brined cheese)",
+   "head": "sulguni",
+   "form": "product",
+   "category": "dairy",
+   "aliases": ["suluguni", "georgian cheese", "imeruli cheese"],
+   "servings": [{"label": "1 oz", "g": 28}],
+   "components": [
+    {"food": "mozzarella-cheese-low-moisture-part-skim-fd3c3b", "g": 98, "note": "a stretched-curd cheese of the same kind"},
+    {"food": "table-salt-fdccfe", "g": 1.2, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"}
+   ],
+   "recipe": "Sulguni is a brined, stretched-curd Georgian cheese, close to a saltier low-moisture mozzarella; values are part-skim mozzarella with a little extra salt.",
+   "limits": "Sulguni fat varies (whole-milk versions are richer); sodium is a rough middle."
+  },
+  {
+   "key": "smoked-sprats",
+   "name": "Smoked sprats in oil",
+   "head": "smoked sprats",
+   "form": "canned",
+   "category": "fish",
+   "aliases": ["sprats", "shproti", "riga sprats", "baltic sprats", "szprotki"],
+   "servings": [{"label": "1 tin, drained", "g": 110}],
+   "components": [
+    {"food": "sardines-canned-in-oil-d953df", "g": 100, "note": "small oily fish canned in oil, eaten bones and all"}
+   ],
+   "recipe": "Smoked sprats are small Baltic fish, smoked and tinned in oil; they take the values of sardines canned in oil, eaten with their bones.",
+   "limits": "Sprats are a little smaller and smokier; sodium and fat vary by brand."
+  },
+  {
+   "key": "dried-porcini",
+   "name": "Porcini, dried",
+   "head": "dried porcini",
+   "form": "dried",
+   "category": "vegetable",
+   "aliases": ["dried porcini", "dried ceps", "borowiki suszone", "bily hryb", "dried boletus"],
+   "servings": [{"label": "1 tbsp, crumbled", "g": 3}, {"label": "1 small handful", "g": 10}],
+   "components": [
+    {"food": "edible-boletus-5cd768", "g": 900, "note": "fresh porcini are about 90 % water; 900 g dries to 100 g"}
+   ],
+   "omit": ["vitC", "folate"],
+   "recipe": "Dried porcini are fresh boletus mushrooms dried (about 900 g fresh to 100 g dried), used soaked, a few grams at a time, with the soaking liquid.",
+   "limits": "Water-soluble vitamins lost in drying are left out. Used by the few grams for flavour."
+  },
+  {
+   "key": "ajvar",
+   "name": "Ajvar (roasted red pepper relish)",
+   "head": "ajvar",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["ajvar relish", "ajvar sauce", "roasted pepper spread"],
+   "servings": [{"label": "1 tbsp", "g": 16}],
+   "components": [
+    {"food": "red-bell-pepper-raw-42163e", "g": 110, "note": "roasted and cooked down"},
+    {"food": "eggplant-raw-b8b8c1", "g": 20},
+    {"food": "canola-oil-6744e1", "g": 7},
+    {"food": "garlic-raw-a9c6a6", "g": 1},
+    {"food": "vinegar-d9b2f1", "g": 3},
+    {"food": "table-salt-fdccfe", "g": 1.2, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"}
+   ],
+   "omit": ["vitC", "folate"],
+   "recipe": "Ajvar: roasted red peppers (and a little eggplant) cooked down slowly with oil, garlic, vinegar and salt into a thick relish.",
+   "limits": "Long cooking destroys much of the vitamin C; it is left out. Brands vary in oil."
   }
  ]
 }
