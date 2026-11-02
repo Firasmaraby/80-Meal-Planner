@@ -1,0 +1,1852 @@
+{
+  "id": "thai-viet",
+  "name": "Thai & Vietnamese Fresh Kitchen",
+  "style": "balanced",
+  "cuisine": "Southeast Asian",
+  "regions": [
+    "Central Thailand",
+    "Isaan",
+    "Northern Vietnam",
+    "Southern Vietnam"
+  ],
+  "summary": "A week of Thai and Vietnamese home cooking: jok, Thai omelettes and xôi for breakfast, red curry, larb, caramel mackerel, lemongrass pork and a slow phở for dinner, with fresh herbs, lime and chili everywhere and mostly brown rice.",
+  "howItWorks": "**Cook once, eat twice.** Tuesday's larb, Wednesday's lemongrass pork, Thursday's red curry and Saturday's phở each make two portions, so Wednesday, Thursday, Friday and Sunday lunches are done. Saturday's xôi makes two breakfasts too, and the chè makes two bowls.\n\n**Rice batch.** The Sunday before, cook 2 cups of dry brown rice (about 6 cups cooked) for Monday to Wednesday, then 1¾ cups on Wednesday night for Thursday to Sunday. It keeps 4 or 5 days in the fridge and freezes well, and a modest scoop goes into most meals. Rice noodles show up only in the phở and the gỏi cuốn, and rice paper only in the rolls.\n\n**Fish three times.** Steamed salmon on Monday, grilled mackerel on Friday and mackerel kho on Sunday carry your **omega-3 and vitamin D**, and never fall on back-to-back days. Eggs and dried shrimp add choline and iodine.\n\n**Fish sauce, measured.** Fish sauce, dried shrimp, shrimp paste and a little iodized salt are the salt here, so each recipe uses a set amount, and lime, chili, ginger, lemongrass and herbs by the handful carry the rest of the flavour.\n\n**Calcium without dairy.** Calcium-set tofu, gai lan, water spinach, dried shrimp and fortified soy milk do the work.",
+  "signature": [
+    "thai-viet-red-curry-chicken-tofu-gai-lan",
+    "thai-viet-pho-bo-herb-plate",
+    "thai-viet-ca-thu-kho-to-caramel-mackerel-greens",
+    "thai-viet-lemongrass-mackerel-som-tam"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "thai-viet-pineapple-chili-salt"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "thai-viet-pineapple-mint-lime"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "thai-viet-papaya-lime-chili-salt"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "thai-viet-guava-lime-salt"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "thai-viet-guava-mint-lime"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "thai-viet-guava-mint-lime"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "thai-viet-pineapple-mint-lime"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "thai-viet-jok-moo-pork-ginger-egg-porridge",
+      "name": "Jok moo, Thai pork and ginger rice porridge with a soft egg",
+      "inspiredBy": "Central Thai jok moo, made from cooked brown rice",
+      "about": "A silky rice porridge with tender minced pork, ginger, a soft egg and gai lan, topped with crisp shallot, scallion and cilantro. It's a classic Bangkok breakfast, made from the brown rice you cooked on the weekend. The pork and egg bring **protein and choline**, and the dried shrimp add a little calcium and iodine.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 85,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 75,
+          "swap": "lean_protein",
+          "note": "finely chopped or minced"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg"
+        },
+        {
+          "food": "broccoli-chinese-raw-cc954c",
+          "g": 130,
+          "swap": "leafy_greens",
+          "note": "sliced"
+        },
+        {
+          "food": "dried-shrimp-c654e1",
+          "g": 10,
+          "note": "soaked and chopped"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "cut into thin matchsticks"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 15,
+          "note": "sliced into thin rings"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 3
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Soak the dried shrimp in warm water for 10 minutes, then chop them finely. Stir the pork with the fish sauce, half the ginger and a pinch of white pepper for about a minute, until it turns tacky, then roll it into marble-sized balls with wet hands.",
+        "Fry the shallot rings in the oil over medium heat until golden and crisp, about 4 minutes. Lift them out onto a paper towel.",
+        "Put the rice, the shrimp, the rest of the ginger and about 3 times as much water as rice by volume in a pot. Bring to a boil, then simmer gently, stirring now and then, for 25 to 30 minutes, until the grains have broken down. Mash about a third of the rice against the side of the pot so the porridge turns silky.",
+        "Turn the heat down until the porridge is barely simmering and drop in the pork balls. Cook for 5 minutes, until cooked through, then stir in the gai lan and the salt for 1 minute, until the greens are bright.",
+        "Ladle into a bowl and crack the egg into the middle. Spoon some of the hot porridge over it and leave it for a minute, until the white turns milky and the yolk stays soft.",
+        "Top with the crisp shallot, scallion and cilantro."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "On weekdays, make the porridge base (the rice, shrimp and ginger) the night before, and roll the pork balls and fry the shallots then too. In the morning, reheat the base with a splash of water and add the pork, greens and egg, which takes about 15 minutes. A few chili slices at the table is how most Thai cooks finish it."
+    },
+    {
+      "id": "thai-viet-khai-jiao-pork-omelette-tomato",
+      "name": "Khai jiao, Thai pork omelette with tomato and brown rice",
+      "inspiredBy": "Central Thai khai jiao moo sap, the street omelette",
+      "about": "A golden omelette with a little minced pork, crisp at the edges and seasoned with fish sauce and lime, over brown rice with juicy tomato wedges and cilantro. It's the breakfast and quick lunch of every Thai street corner. The eggs and pork bring **protein and choline**, and the tomato adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 55,
+          "swap": "lean_protein",
+          "note": "finely chopped or minced"
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 2
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils",
+          "note": "about 2 tsp"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 85,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        }
+      ],
+      "steps": [
+        "Warm the rice if it's cold. Cut the tomato into wedges and put them on a plate with the rice and cilantro.",
+        "Beat the eggs in a bowl with the fish sauce, salt, lime juice and scallion until the mixture is frothy.",
+        "Heat the oil in a non-stick wok over medium-high heat. Add the pork and cook for 2 minutes, breaking it up, until it's no longer pink. Tip the pork into the beaten egg and leave the oil in the wok.",
+        "Turn the heat to high. When a drop of egg sizzles right away, pour in the egg and leave it alone for 1 minute, until the edges bubble and turn golden and crisp.",
+        "Flip the omelette, cook for another minute, then slide it onto the rice and serve with the tomato."
+      ],
+      "prepMin": 8,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "A drizzle of sriracha on the omelette is how most people eat it."
+    },
+    {
+      "id": "thai-viet-xoi-black-rice-mung-bean",
+      "name": "Xôi black rice with mung beans, dried shrimp and peanut",
+      "inspiredBy": "Vietnamese xôi đậu xanh, with black sticky rice for the fibre and a little coconut milk",
+      "about": "Chewy black glutinous rice with soft, smooth mashed mung beans, a jammy egg, crisp fried shallot and a savoury sprinkle of crushed peanuts and dried shrimp, with a little coconut milk drizzled over. It's a slow weekend breakfast that makes two bowls, so Sunday morning is a reheat. Black rice and mung beans bring **fibre and plant protein**, and the egg and warm soy milk add **choline, calcium and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "black-rice-cooked-489f31",
+          "g": 75,
+          "swap": "low_gi_grains",
+          "note": "black glutinous rice (nếp cẩm), cooked weight, see step 2"
+        },
+        {
+          "food": "bean-mung-whole-dried-uncooked-c10d92",
+          "g": 38,
+          "swap": "legumes",
+          "note": "peeled split mung beans, rinsed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg, soft-boiled"
+        },
+        {
+          "food": "dried-shrimp-c654e1",
+          "g": 13,
+          "note": "soaked and finely chopped"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 5,
+          "swap": "nuts_seeds",
+          "note": "crushed"
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 20,
+          "note": "full-fat"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 15,
+          "note": "sliced into thin rings"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "soy-milk-all-flavors-enhanced-f9fdd1",
+          "g": 150,
+          "note": "fortified, unsweetened"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Rinse the black glutinous rice for both servings (nếp cẩm, also sold as Thai black sticky rice, which roughly triples as it cooks) along with the mung beans, and soak them in separate bowls for at least 1 hour, or Friday night if you like. Plain black rice is not sticky enough for xôi.",
+        "Drain the rice and cook it in a small pot with 1½ times its volume of water, covered, over low heat for 35 to 40 minutes, until chewy and tender. Rest it with the lid on for 10 minutes.",
+        "While the rice cooks, rinse the peeled split mung beans and simmer them in plain water for 15 to 20 minutes, with no soaking, until they fall apart. Drain, add the salt and mash until smooth.",
+        "Soak the dried shrimp in warm water for 10 minutes, then chop finely. Toast the shrimp and peanuts together in a dry pan for 2 minutes, until fragrant, and crush them lightly. Toss the carrot and cucumber sticks with the lime juice, palm sugar and a pinch of salt and leave them for 15 minutes, until they turn tangy.",
+        "Boil one egg for 7 minutes, until the white is set and the yolk is still a little soft, then cool it under cold water, peel and halve it. Fry the shallot rings in the oil until golden and crisp, about 4 minutes, and drain them on a paper towel.",
+        "Pile the rice into bowls, spoon the mung beans over it and top with the egg, the shrimp and peanut mix, the shallot and the scallion. Drizzle with the coconut milk and serve with the pickled carrot and cucumber, and a cup of warm soy milk.",
+        "Keep the second portion of rice and mung beans in the fridge. On Sunday, boil a fresh egg while the rice reheats with a splash of water, covered, until steaming."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Add a few slices of Chinese sausage or a spoon of pork floss if you have it, as many xôi stalls do."
+    },
+    {
+      "id": "thai-viet-goi-cuon-shrimp-peanut-dip",
+      "name": "Gỏi cuốn, shrimp summer rolls with a peanut dip",
+      "inspiredBy": "Southern Vietnamese gỏi cuốn, the fresh rolls eaten with a peanut dip",
+      "about": "Cool, chewy rice paper rolls packed with shrimp, seared tofu, thin rice noodles, crisp lettuce, carrot, mint and cilantro, with a smooth peanut and lime dip. Nothing here is cooked beyond the shrimp and tofu, so it's a fresh, light lunch. The shrimp and tofu bring **protein and calcium**, and the herbs add vitamin K.",
+      "ingredients": [
+        {
+          "food": "rice-paper-dried-1db878",
+          "g": 20,
+          "note": "about 5 sheets"
+        },
+        {
+          "food": "rice-noodles-pasta-dry-790ac8",
+          "g": 10,
+          "note": "thin; snapped and soaked in hot water"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 60,
+          "note": "calcium-set, check the label, cut into strips"
+        },
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "peeled and deveined"
+        },
+        {
+          "food": "lettuce-looseleaf-e71889",
+          "g": 70,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 10
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 45,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "ground to a paste with the garlic, for the dip"
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 4
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "for the dip"
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 3
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 12,
+          "note": "a spoonful, for the dip"
+        }
+      ],
+      "steps": [
+        "Soak the snapped noodles in a bowl of hot water for 10 minutes, until tender. Drain well and snip them into shorter lengths.",
+        "Poach the shrimp in simmering water for 2 to 3 minutes, until pink and curled. Drain, cool and cut each one in half lengthwise. Pat the tofu dry and sear the strips in a dry non-stick pan over medium-high heat for about 2 minutes per side, until golden. Let them cool.",
+        "Make the dip: grind the peanuts with the garlic to a rough paste in a mortar or small food processor. Stir in the lime juice, fish sauce, palm sugar, the spoonful of coconut milk and a tablespoon of warm water until smooth and spoonable.",
+        "Dip one sheet of rice paper in warm water for 10 seconds, until just pliable, and lay it on a damp towel. Lay a few shrimp halves along the lower edge, then a bed of lettuce, herbs, carrot, tofu and noodles. Fold in the sides and roll it up snugly.",
+        "Repeat with the rest to make about 5 rolls and serve with the dip. If you're taking them to work, wrap them in a damp paper towel and then in plastic so they don't dry out or stick."
+      ],
+      "prepMin": 20,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Swap the shrimp for extra tofu."
+    },
+    {
+      "id": "thai-viet-dau-phu-sot-ca-chua-tomato-tofu-rice",
+      "name": "Đậu phụ sốt cà chua, tofu simmered in tomato with brown rice",
+      "inspiredBy": "Northern Vietnamese đậu phụ sốt cà chua",
+      "about": "Golden pan-fried tofu simmered in a sweet, tangy tomato sauce with a little pork, shallot and cilantro, a staple of the northern Vietnamese family table. It's a quick, cheap lunch that tastes better than it sounds. The calcium-set tofu brings **a big share of your day's calcium**, and the tomatoes add vitamin C.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 155,
+          "swap": "lean_protein",
+          "note": "calcium-set, check the label, cut into thick slices"
+        },
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 55,
+          "swap": "lean_protein",
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 200,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 3
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 130,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        }
+      ],
+      "steps": [
+        "Pat the tofu dry. Heat half the oil in a non-stick pan over medium-high heat and fry the slices for 2 to 3 minutes per side, until golden. Lift them out.",
+        "Add the rest of the oil to the pan with the shallot and garlic and cook for 1 minute. Add the pork and cook for 2 minutes, breaking it up, until no longer pink.",
+        "Add the tomato wedges and cook, stirring, for 4 to 5 minutes, until they collapse into a thick sauce. Stir in the fish sauce, the salt and a splash of water.",
+        "Slide the tofu back into the sauce and simmer for 3 minutes, so it soaks up the flavour. The sauce should be tangy, savoury and a little sweet from the tomatoes.",
+        "Scatter on the scallion and cilantro. Serve over the brown rice with the cucumber slices on the side."
+      ],
+      "prepMin": 8,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "A pinch of black pepper over the top is the traditional finish."
+    },
+    {
+      "id": "thai-viet-red-curry-chicken-tofu-gai-lan",
+      "name": "Thai red curry with chicken, tofu and gai lan",
+      "inspiredBy": "Central Thai kaeng phet gai, with a quick fresh paste and extra vegetables",
+      "about": "A fragrant red curry with a quick fresh paste of lemongrass, galangal, garlic, chili and shrimp paste, spiced with toasted coriander and cumin, and stirred through with chicken, tofu and gai lan in a little coconut milk with Thai basil on top. It makes two servings, so tomorrow's lunch is done. The coconut milk is just enough for flavour and richness, and the calcium-set tofu and gai lan make it **a good source of calcium**.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "sliced into strips"
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 45,
+          "note": "full-fat, don't shake the can"
+        },
+        {
+          "food": "broccoli-chinese-raw-cc954c",
+          "g": 150,
+          "swap": "leafy_greens",
+          "note": "stems and leaves, cut into 4 cm pieces"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 75,
+          "swap": "lean_protein",
+          "note": "calcium-set, check the label, cut into cubes"
+        },
+        {
+          "food": "lemon-grass-citronella-raw-517537",
+          "g": 10,
+          "note": "tender white part only"
+        },
+        {
+          "food": "galangal-3d40ae",
+          "g": 6,
+          "note": "peeled and sliced"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 8,
+          "note": "red, sliced"
+        },
+        {
+          "food": "shrimp-paste-belacan-terasi-c9c4da",
+          "g": 3
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "peeled"
+        },
+        {
+          "food": "makrut-lime-leaves-e7ff35",
+          "g": 1,
+          "note": "central stem removed"
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 7
+        },
+        {
+          "food": "thai-basil-c5f9f2",
+          "g": 8
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 145,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 3
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 0.7,
+          "note": "toasted"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.3,
+          "note": "toasted"
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the coriander seed and cumin in a dry pan for 1 minute, until fragrant. Slice the lemongrass and galangal as finely as you can, tear the lime leaves, and blitz them with the garlic, chilies, shrimp paste, the toasted spices, the white pepper and 2 tablespoons of water in a mini chopper (or pound in a mortar) into a rough, fragrant paste.",
+        "Spoon the thick cream off the top of the coconut milk into a wide pot over medium heat and fry the paste for 2 minutes, until it smells wonderful and the oil starts to separate.",
+        "Pour in the rest of the coconut milk and about ½ cup (125 ml) of water for each serving. Add the tofu and the gai lan stems and simmer gently for 8 minutes.",
+        "Add the sliced chicken and simmer for 6 to 7 minutes, until it's just cooked through, then add the gai lan leaves for the last minute.",
+        "Stir in the fish sauce and palm sugar. Taste: it should be salty, a little sweet and properly hot. Take it off the heat and tear in the Thai basil.",
+        "Serve over the brown rice. Pack the second portion, with its rice, for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Swap the chicken for shrimp or extra tofu if you like. A spoon of ready-made red curry paste makes it a 20-minute dinner."
+    },
+    {
+      "id": "thai-viet-salmon-lime-garlic-chili-water-spinach",
+      "name": "Steamed salmon with lime, garlic and chili, with garlicky water spinach",
+      "inspiredBy": "Central Thai pla neung manao, usually made with sea bass, here with salmon for its omega-3 fats",
+      "about": "Salmon steamed gently over lemongrass and finished with a sharp, fiery sauce of lime, garlic, chili and cilantro, with garlicky water spinach and brown rice. It's all about the sauce, the sour, salty, sweet and hot every Thai table has. The salmon brings **omega-3 and vitamin D**, and the water spinach adds vitamin A and vitamin K.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 180,
+          "swap": "fatty_fish",
+          "note": "skinless fillet"
+        },
+        {
+          "food": "lemon-grass-citronella-raw-517537",
+          "g": 10,
+          "note": "bruised"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 10,
+          "note": "divided between the sauce and the greens"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 8,
+          "note": "red, sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 8
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 3
+        },
+        {
+          "food": "water-spinach-yosai-stems-and-leaves-raw-75b16b",
+          "g": 170,
+          "swap": "leafy_greens",
+          "note": "cut into 5 cm lengths"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 130,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        }
+      ],
+      "steps": [
+        "Bruise the lemongrass with the back of a knife and lay it in a steamer basket, or on a rack in a wide pot over 2 cm of water. Lay the salmon on top.",
+        "Cover and steam over a steady simmer for 8 to 10 minutes, until the salmon is just opaque and flakes at the thickest part.",
+        "While it steams, pound or finely chop half the garlic with the chili and the cilantro stems. Stir in the lime juice, fish sauce, palm sugar and 2 tablespoons of water until the sugar dissolves.",
+        "Heat the oil in a wok over high heat, fry the rest of the garlic for 20 seconds, then add the water spinach stems and stir-fry for 1 minute. Add the leaves and a splash of water for 1 to 2 minutes, until the leaves are wilted but the stems still snap.",
+        "Lift the salmon onto a plate, spoon the sauce over it and scatter on the cilantro leaves. Serve with the water spinach and the brown rice."
+      ],
+      "prepMin": 12,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "The sauce is also excellent on steamed sea bass or cod, or spooned over tofu."
+    },
+    {
+      "id": "thai-viet-larb-neua-beef-lettuce-cups",
+      "name": "Larb neua, Isaan beef herb salad in lettuce cups",
+      "inspiredBy": "Isaan larb neua, with brown rice standing in for sticky rice",
+      "about": "Minced lean beef cooked with only a splash of water, then tossed warm with lime, fish sauce, chili, toasted rice powder, shallot and handfuls of mint and cilantro. You scoop it into lettuce cups with raw yardlong beans and cucumber, so there's crunch in every bite. The beef brings **iron and zinc**, and the lime and the generous herbs add vitamin C and vitamin K.",
+      "ingredients": [
+        {
+          "food": "beef-arm-pot-roast-lean-raw-37c898",
+          "g": 180,
+          "swap": "lean_protein",
+          "note": "lean beef chuck, finely chopped or pulsed in a food processor"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 20,
+          "note": "sliced thin"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 12
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 25
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 8
+        },
+        {
+          "food": "chili-pepper-red-sun-dried-d3dda3",
+          "g": 1.5,
+          "note": "dried chili flakes"
+        },
+        {
+          "food": "lettuce-looseleaf-e71889",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "leaves for cups"
+        },
+        {
+          "food": "yardlong-beans-asparagus-bean-or-cowpea-raw-bfc6f1",
+          "g": 90,
+          "note": "raw, cut into 6 cm lengths"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "from your batch, with a spoonful toasted for the powder; the stand-in for sticky rice"
+        }
+      ],
+      "steps": [
+        "Spread about 2 tablespoons of the cooked brown rice in a dry pan over medium heat and stir for 8 to 10 minutes, until it's dry, golden and crunchy. Grind it to a coarse powder in a mortar or spice grinder.",
+        "Put the beef in a wide pan with a few tablespoons of water. Cook over medium heat, breaking it up with a spoon, for 6 to 7 minutes, until browned and cooked through and the pan is almost dry. Take it off the heat and let it cool for 2 minutes.",
+        "Toss the warm beef with the lime juice, fish sauce, chili flakes and half the rice powder. It should be sour first, then salty, then hot.",
+        "Stir in the shallot, scallion, mint and cilantro just before serving, so the herbs stay bright.",
+        "Spoon into lettuce cups and serve with the raw yardlong beans, cucumber and the rest of the brown rice. Scatter on the rest of the rice powder.",
+        "Pack the second portion without the herbs and lettuce, and stir in fresh herbs tomorrow."
+      ],
+      "prepMin": 15,
+      "cookMin": 10,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Use minced chicken or pork for larb gai or larb moo. Isaan cooks often add a spoon of roasted chili flakes at the table."
+    },
+    {
+      "id": "thai-viet-ca-thu-kho-to-caramel-mackerel-greens",
+      "name": "Cá thu kho tộ, caramel braised mackerel with greens",
+      "inspiredBy": "Southern Vietnamese cá kho tộ, normally catfish in a clay pot, here with mackerel and less sugar",
+      "about": "Chunks of mackerel simmered in a clay-pot style sauce of caramel, fish sauce, garlic, ginger and black pepper, with boiled water spinach and rice. It's sweet, salty and peppery, and the sauce is made for spooning over rice. The mackerel brings **omega-3 and vitamin D**, and the water spinach adds vitamin A and vitamin K.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 215,
+          "swap": "fatty_fish",
+          "note": "cut into 4 cm steaks or chunks"
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 6,
+          "note": "for the caramel"
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 8
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 5,
+          "note": "red, sliced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5,
+          "note": "freshly ground"
+        },
+        {
+          "food": "water-spinach-yosai-stems-and-leaves-raw-75b16b",
+          "g": 180,
+          "swap": "leafy_greens",
+          "note": "cut into 5 cm lengths"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 80,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        }
+      ],
+      "steps": [
+        "Toss the fish with half the garlic, the shallot and a few grinds of black pepper and leave it for 10 minutes.",
+        "Make the caramel: put the palm sugar and a tablespoon of water in a small heavy pot over medium heat. Don't stir, just swirl the pot, for 3 to 4 minutes, until it turns a deep amber. Stand back and pour in about 100 ml (⅓ cup) of water, which will spit, and stir until the caramel dissolves.",
+        "Stir in the oil, the rest of the garlic, the ginger, the fish sauce and the chili, then slide in the fish and spoon the sauce over it.",
+        "Simmer gently, partly covered, for 10 minutes, turning the fish once, then uncover for the last 5 minutes so the sauce reduces to a glaze and the fish is cooked through and tender.",
+        "While it simmers, boil the water spinach for 1 to 2 minutes, until tender but still bright. Drain well.",
+        "Serve the fish and its sauce with the water spinach and brown rice, scattered with the scallion. Spoon a little of the sauce over the greens."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Catfish or tilapia make the more traditional version."
+    },
+    {
+      "id": "thai-viet-lemongrass-pork-rice-plate-pickles",
+      "name": "Thịt nướng sả, lemongrass pork on brown rice with pickles and nước chấm",
+      "inspiredBy": "Southern Vietnamese cơm tấm thịt nướng, with whole brown rice in place of broken rice",
+      "about": "Thin slices of pork marinated in lemongrass, shallot and garlic and seared until the edges caramelize, on brown rice with quick-pickled carrot, cucumber, blanched water spinach and a spoonful of scallion oil. A small bowl of sweet, sour, salty nước chấm goes over the top. It's the classic Saigon rice plate, with less sugar and whole grain rice, and the pork brings **thiamin (B1)** while the pickles keep it fresh.",
+      "ingredients": [
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "sliced across the grain, 4 mm thick"
+        },
+        {
+          "food": "lemon-grass-citronella-raw-517537",
+          "g": 12,
+          "note": "tender white part, minced"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 12,
+          "note": "minced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced, divided"
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 8,
+          "note": "divided between the marinade and the sauce"
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 8,
+          "note": "divided between the marinade, the pickle and the sauce"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils",
+          "note": "divided between the pork and the scallion oil"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 80,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 25,
+          "note": "divided between the pickle and the sauce"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 4,
+          "note": "red, minced"
+        },
+        {
+          "food": "water-spinach-yosai-stems-and-leaves-raw-75b16b",
+          "g": 150,
+          "swap": "leafy_greens",
+          "note": "blanched for 1 minute"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced, for the scallion oil"
+        }
+      ],
+      "steps": [
+        "Slice the pork 4 mm thick. Mix it with the lemongrass, shallot, half the garlic, half the fish sauce, 4 g (about 1 tsp) of the palm sugar and a teaspoon of the oil. Leave it to marinate for at least 30 minutes, or overnight in the fridge.",
+        "Toss the carrot with a third of the lime juice, a pinch of the sugar and a tablespoon of water. Leave it for 15 minutes to turn tangy and crisp.",
+        "Make the nước chấm: whisk the rest of the lime juice, the rest of the fish sauce, about 3 g (¾ tsp) of the sugar, the rest of the garlic, the chili and 3 tablespoons of warm water until the sugar dissolves.",
+        "Make the scallion oil (mỡ hành): put the sliced scallion in a small bowl. Heat the rest of the oil until it shimmers, pour it over the scallion and let it sizzle.",
+        "Heat a cast iron or non-stick pan over high heat, or fire up the grill. Cook the pork in batches for about 2 minutes per side, until the edges are browned and sticky. Blanch the water spinach for 1 minute and drain.",
+        "Plate the rice with the pork, water spinach, pickled carrot and cucumber slices. Spoon the scallion oil over the rice and about 2 tablespoons of nước chấm over the plate, rather than drenching it.",
+        "For the second portion, keep the pork, pickles and sauce in the fridge. Blanch both portions of water spinach tonight. In the morning, reheat the pork in a hot pan and pack it with the rice, greens and pickles."
+      ],
+      "prepMin": 20,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "The marinated pork freezes well raw, so you can make a double batch."
+    },
+    {
+      "id": "thai-viet-pho-bo-herb-plate",
+      "name": "Phở bò with a slow broth, bean sprouts and a herb plate",
+      "inspiredBy": "Vietnamese phở bò, Saigon style, with a lean cut of beef and a generous herb plate",
+      "about": "Lean beef chuck simmered for a couple of hours with charred shallot and ginger, star anise, cinnamon and coriander seed until the broth is clear and fragrant, then ladled over rice noodles with a plate of bean sprouts, Thai basil, cilantro, lime and chili. It's the weekend project that makes the house smell wonderful and gives you two bowls. The beef brings **iron and zinc**, and the herb plate brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "beef-arm-pot-roast-lean-raw-37c898",
+          "g": 180,
+          "swap": "lean_protein",
+          "note": "lean beef chuck or brisket, in one or two big pieces"
+        },
+        {
+          "food": "rice-noodles-pasta-dry-790ac8",
+          "g": 50,
+          "note": "flat dried rice noodles"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 50,
+          "note": "about 2 small, unpeeled, halved"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 15,
+          "note": "about a 5 cm piece, unpeeled, halved lengthwise"
+        },
+        {
+          "food": "star-anise-02a10b",
+          "g": 0.8
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6,
+          "note": "a small cinnamon stick, or ¼ tsp ground in a tea ball"
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 8
+        },
+        {
+          "food": "mung-bean-sprouts-raw-abdb2d",
+          "g": 160,
+          "note": "for the herb plate"
+        },
+        {
+          "food": "thai-basil-c5f9f2",
+          "g": 14
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 5,
+          "note": "red, sliced"
+        }
+      ],
+      "steps": [
+        "Char the shallots and ginger, cut side down, in a dry pan or under the broiler for 8 to 10 minutes, until blackened in spots. Rinse off any burnt bits.",
+        "Put the beef (and a few beef bones from the butcher, if you want a richer broth) in a big pot, cover with cold water, bring to a boil for 5 minutes and pour off the grey water. Rinse the beef and the pot, then cover the beef with about 1½ litres (6 cups) of fresh water for two servings.",
+        "Add the charred shallots and ginger, the star anise, cinnamon and coriander seed. Bring to a boil, skim off any foam, then simmer gently, partly covered, for 1½ to 2 hours, until the beef is very tender.",
+        "Lift out the beef, let it cool a little and slice it thinly against the grain. Strain the broth, stir in the fish sauce and taste. It should be savoury and fragrant, not too salty.",
+        "Cook the noodles in boiling water as the package says, usually 4 to 5 minutes. Rinse and divide into big bowls.",
+        "Top the noodles with the beef and ladle over the boiling broth. Scatter on the scallion and cilantro.",
+        "Serve with a plate of bean sprouts, basil, lime wedges and chili for everyone to add as they like.",
+        "For tomorrow's bowl, keep the broth and sliced beef in the fridge, cook fresh noodles and bring the broth to a rolling boil."
+      ],
+      "prepMin": 20,
+      "cookMin": 140,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "In a pressure cooker the broth takes 45 minutes. Without bones the broth is lighter and cleaner, which is how a lean phở is meant to taste."
+    },
+    {
+      "id": "thai-viet-lemongrass-mackerel-som-tam",
+      "name": "Lemongrass grilled mackerel with som tam",
+      "inspiredBy": "Isaan pla ping and som tam Thai, with mackerel for the usual river fish and brown rice for sticky rice",
+      "about": "A whole mackerel stuffed with lemongrass and grilled until the skin blisters, served with a pounded green papaya salad of lime, chili, garlic, tomato, beans, carrot, dried shrimp and peanuts. It's the Isaan way to eat a grilled fish, with a fiery, sour salad on the side. The mackerel brings **omega-3 and vitamin D**, and the papaya salad adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 190,
+          "swap": "fatty_fish",
+          "note": "whole, gutted fish, listed as the edible weight, so buy one of about 300 g"
+        },
+        {
+          "food": "lemon-grass-citronella-raw-517537",
+          "g": 25,
+          "note": "bruised, for the cavity"
+        },
+        {
+          "food": "dried-shrimp-c654e1",
+          "g": 6,
+          "note": "soaked and pounded"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "divided"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 8,
+          "note": "red"
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 5
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 25
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 4
+        },
+        {
+          "food": "papaya-unripe-green-flesh-raw-346459",
+          "g": 150,
+          "note": "peeled and shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 30,
+          "note": "shredded"
+        },
+        {
+          "food": "yardlong-beans-asparagus-bean-or-cowpea-raw-bfc6f1",
+          "g": 60,
+          "note": "cut into 3 cm pieces"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "roasted"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 120,
+          "swap": "low_gi_grains",
+          "note": "from your batch, the stand-in for sticky rice"
+        }
+      ],
+      "steps": [
+        "Pat the mackerel dry and cut three slashes on each side. Stuff the cavity with the bruised lemongrass and one smashed garlic clove, and brush the skin with a little of the fish sauce. If you only find fillets, sandwich the lemongrass between two fillets and tie them with kitchen string.",
+        "Broil on a rack set close to the heat, or grill, for 7 to 8 minutes per side, until the skin is blistered and the flesh flakes easily at the thickest part. Mackerel is oily, so it needs no extra oil.",
+        "Make the som tam: soak the dried shrimp in warm water for 10 minutes. In a big bowl or mortar, pound the rest of the garlic, the chili and the shrimp to a rough paste. Add the yardlong beans and bruise them gently so they crack but keep their snap.",
+        "Add the tomato, papaya and carrot with the lime juice, the rest of the fish sauce and the palm sugar and toss, pounding lightly, until the sugar dissolves and the papaya just softens. Taste: it should be hot, sour, salty and a little sweet.",
+        "Scatter the peanuts over the salad. Serve the fish on a plate with the salad and the rice, and spoon some of the salad juices over the fish."
+      ],
+      "prepMin": 20,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Use sea bass or trout if you can't find mackerel. If green papaya is hard to find, shredded kohlrabi or cabbage works well."
+    },
+    {
+      "id": "thai-viet-pad-kra-pao-gai-fried-egg",
+      "name": "Pad kra pao gai, Thai basil chicken with a crispy fried egg",
+      "inspiredBy": "Thai pad kra pao gai, with Thai basil in place of the usual holy basil",
+      "about": "Minced chicken stir-fried hard and fast with a lot of garlic, chili, yardlong beans and a big handful of Thai basil, served over brown rice with a crispy fried egg on top. It's the dish Thai people order when they can't decide, and it takes 20 minutes. The chicken and egg bring **protein and choline**, and the Thai basil adds vitamin K.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 165,
+          "swap": "lean_protein",
+          "note": "finely chopped or minced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 10,
+          "note": "smashed"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 10,
+          "note": "red, roughly chopped"
+        },
+        {
+          "food": "yardlong-beans-asparagus-bean-or-cowpea-raw-bfc6f1",
+          "g": 140,
+          "note": "cut into 2 cm pieces"
+        },
+        {
+          "food": "thai-basil-c5f9f2",
+          "g": 30,
+          "note": "a big handful of leaves"
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 7
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 3
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils",
+          "note": "divided between the stir-fry and the egg"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 85,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        }
+      ],
+      "steps": [
+        "Pound or chop the garlic and chili into a rough, chunky paste. Stir the fish sauce, palm sugar and 2 tablespoons of water together in a small bowl.",
+        "Heat half the oil in a wok over high heat until it shimmers. Fry the garlic and chili paste for 20 seconds, until fragrant. Don't let the garlic brown.",
+        "Add the chicken and stir-fry hard for 2 minutes, breaking it up. Add the yardlong beans, the sauce and a splash of water, and cook for 2 minutes more, until the beans are bright and the chicken is cooked through but still moist.",
+        "Turn off the heat and stir in the Thai basil until it just wilts.",
+        "Heat the rest of the oil in a small non-stick pan until very hot. Crack in the egg and fry it for 1 to 2 minutes, until the white is crisp at the edges and the yolk is still runny.",
+        "Serve the chicken over the brown rice with the fried egg on top."
+      ],
+      "prepMin": 10,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "spicy"
+      ],
+      "tip": "Cut back to one chili if you want it mild. Holy basil is the traditional herb if you can find it at an Asian market."
+    },
+    {
+      "id": "thai-viet-ginger-soy-milk",
+      "name": "Warm ginger soy milk",
+      "inspiredBy": "Thai nam tao hu and Vietnamese sữa đậu nành",
+      "about": "Fortified soy milk warmed with ginger and a little palm sugar, the way it's sold at breakfast stalls in Bangkok and Hanoi. It's a calming snack with **calcium and vitamin D**, if you pick a fortified one.",
+      "ingredients": [
+        {
+          "food": "soy-milk-all-flavors-enhanced-f9fdd1",
+          "g": 180,
+          "note": "fortified, unsweetened"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Warm the soy milk with the ginger and sugar in a small pot over low heat for 5 minutes, without boiling.",
+        "Strain out the ginger, if you like, and sip warm."
+      ],
+      "prepMin": 2,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "thai-viet-papaya-peanuts",
+      "name": "Papaya with lime and roasted peanuts",
+      "about": "Soft, sweet ripe papaya with a handful of crunchy roasted peanuts and a squeeze of lime. The peanuts bring **vitamin E and protein**, and the papaya brings vitamin C and folate.",
+      "ingredients": [
+        {
+          "food": "papaya-raw-cd2cbc",
+          "g": 180
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 18,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Scoop the papaya out of its skin, cut it into chunks and squeeze the lime over it.",
+        "Eat it with the peanuts alongside."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "thai-viet-papaya-lime-chili-salt",
+      "name": "Papaya with lime and chili salt",
+      "about": "Soft ripe papaya with a squeeze of lime and a pinch of chili salt. It's sweet, sour, salty and hot, and brings **vitamin C and vitamin A**.",
+      "ingredients": [
+        {
+          "food": "papaya-raw-cd2cbc",
+          "g": 200
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "chili-pepper-red-sun-dried-d3dda3",
+          "g": 0.4,
+          "note": "dried chili flakes"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Scoop the papaya out of its skin and cut it into chunks.",
+        "Mix the chili flakes and salt, squeeze the lime over the papaya and dip each piece in the mix."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "thai-viet-guava-chili-salt",
+      "name": "Guava with chili salt",
+      "inspiredBy": "Thai prik kleua, the chili salt that comes with street fruit",
+      "about": "Crisp, fragrant guava dipped in the salty, hot mix that Thai street vendors sell with every fruit. A single guava has **more than a day's vitamin C** and plenty of fibre.",
+      "ingredients": [
+        {
+          "food": "guava-common-raw-a500a0",
+          "g": 180
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "chili-pepper-red-sun-dried-d3dda3",
+          "g": 0.4,
+          "note": "dried chili flakes"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Stir the salt and chili flakes together on a small plate.",
+        "Cut the guava into wedges, squeeze the lime over them and dip each one in the chili salt."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "thai-viet-guava-lime-salt",
+      "name": "Guava with lime and salt",
+      "about": "Crisp guava wedges with a squeeze of lime and a pinch of salt, a simple Vietnamese fruit snack. It's one of the best **vitamin C and fibre** snacks there is.",
+      "ingredients": [
+        {
+          "food": "guava-common-raw-a500a0",
+          "g": 180
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Cut the guava into wedges.",
+        "Squeeze the lime over them and add a tiny pinch of salt."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "thai-viet-pineapple-lime-salt",
+      "name": "Pineapple with lime and salt",
+      "about": "Sweet pineapple chunks with a squeeze of lime and a tiny pinch of salt, which makes the sweetness taste brighter. The pineapple brings **vitamin C and manganese**.",
+      "ingredients": [
+        {
+          "food": "pineapple-raw-7de748",
+          "g": 160
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Cut the pineapple into chunks.",
+        "Squeeze the lime over them and add a tiny pinch of salt."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "thai-viet-pineapple-chili-salt",
+      "name": "Pineapple with chili salt",
+      "about": "Sweet, tangy pineapple with the little sprinkle of salt and chili that makes it taste like a street stall. It's high in **vitamin C and manganese**.",
+      "ingredients": [
+        {
+          "food": "pineapple-raw-7de748",
+          "g": 150
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "chili-pepper-red-sun-dried-d3dda3",
+          "g": 0.4,
+          "note": "dried chili flakes"
+        }
+      ],
+      "steps": [
+        "Cut the pineapple into spears.",
+        "Mix the salt and chili flakes and sprinkle a little over the fruit."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "thai-viet-pineapple-mint-lime",
+      "name": "Pineapple with mint and lime",
+      "about": "Juicy pineapple chunks tossed with torn mint and a squeeze of lime. The mint makes it taste cool and fresh, and the pineapple brings **vitamin C and manganese**.",
+      "ingredients": [
+        {
+          "food": "pineapple-raw-7de748",
+          "g": 160
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 4
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        }
+      ],
+      "steps": [
+        "Cut the pineapple into chunks.",
+        "Toss with the torn mint and lime juice."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "thai-viet-tao-pho-ginger-tofu",
+      "name": "Tào phớ, soft tofu with ginger syrup",
+      "inspiredBy": "Vietnamese tào phớ, usually made with silken soy pudding",
+      "about": "Warm, silky tofu in a light ginger syrup, a popular snack across Vietnam. The calcium-set silken tofu brings **calcium and plant protein**, and the ginger is warming.",
+      "ingredients": [
+        {
+          "food": "vitasoy-usa-nasoya-lite-silken-tofu-bab0cb",
+          "g": 180,
+          "note": "calcium-set silken tofu, check the label"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "sliced"
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 6
+        }
+      ],
+      "steps": [
+        "Simmer the ginger, palm sugar and about 50 ml of water in a small pot for 6 to 8 minutes, until it's a light syrup that coats a spoon.",
+        "Slide the silken tofu into a bowl and warm it for about 45 seconds in the microwave, or lower it into barely simmering water for 2 minutes. Don't stir it.",
+        "Spoon the ginger syrup over the tofu."
+      ],
+      "prepMin": 3,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "thai-viet-che-dau-xanh-mung-bean-coconut",
+      "name": "Chè đậu xanh, warm mung beans with coconut milk",
+      "inspiredBy": "Vietnamese chè đậu xanh",
+      "about": "A small bowl of soft, smooth mung beans simmered with ginger and a little coconut milk, a comforting Vietnamese sweet soup. You make two bowls at once, so the second is ready for another day. It brings **fibre, iron and folate**.",
+      "ingredients": [
+        {
+          "food": "bean-mung-whole-dried-uncooked-c10d92",
+          "g": 25,
+          "swap": "legumes",
+          "note": "peeled split mung beans"
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 20
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Rinse about ¼ cup (50 g) of peeled split mung beans and simmer them with the ginger in about 6 times their volume of water for 15 to 20 minutes, with no soaking, until they fall apart.",
+        "Stir in the palm sugar and the coconut milk and warm through for 1 minute.",
+        "Serve one bowl warm. Keep the other in the fridge for up to 4 days and reheat with a splash of water."
+      ],
+      "prepMin": 3,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "thai-viet-carrot-cucumber-peanut-dip",
+      "name": "Carrot and cucumber sticks with a peanut lime dip",
+      "about": "Crunchy carrot and cucumber sticks with a smooth dip of peanut, garlic, lime and a spoonful of coconut milk, the same dip as the gỏi cuốn. It's a light snack with **fibre and vitamin A**.",
+      "ingredients": [
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "ground to a paste with the garlic"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "palm-sugar-cdec37",
+          "g": 2
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 2
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 5,
+          "note": "a spoonful"
+        }
+      ],
+      "steps": [
+        "Cut the cucumber and carrot into sticks.",
+        "Grind the peanuts with the garlic to a paste, then stir in the lime juice, palm sugar, fish sauce, coconut milk and a spoonful of water, and use it for dunking."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "thai-viet-guava-mint-lime",
+      "name": "Guava with mint and lime",
+      "about": "Crisp guava wedges tossed with torn mint and a squeeze of lime. The mint makes it taste cool and fresh, and the guava brings **vitamin C and plenty of fibre**.",
+      "ingredients": [
+        {
+          "food": "guava-common-raw-a500a0",
+          "g": 150
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 4
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        }
+      ],
+      "steps": [
+        "Cut the guava into wedges.",
+        "Toss with the torn mint and lime juice."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "thai-viet-jok-moo-pork-ginger-egg-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "thai-viet-dau-phu-sot-ca-chua-tomato-tofu-rice"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "thai-viet-salmon-lime-garlic-chili-water-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "thai-viet-carrot-cucumber-peanut-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "thai-viet-guava-chili-salt"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "thai-viet-khai-jiao-pork-omelette-tomato"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "thai-viet-goi-cuon-shrimp-peanut-dip"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "thai-viet-larb-neua-beef-lettuce-cups"
+        },
+        {
+          "slot": "snack",
+          "recipe": "thai-viet-guava-lime-salt"
+        },
+        {
+          "slot": "snack",
+          "recipe": "thai-viet-che-dau-xanh-mung-bean-coconut"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "thai-viet-jok-moo-pork-ginger-egg-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "thai-viet-larb-neua-beef-lettuce-cups",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "thai-viet-lemongrass-pork-rice-plate-pickles"
+        },
+        {
+          "slot": "snack",
+          "recipe": "thai-viet-ginger-soy-milk"
+        },
+        {
+          "slot": "snack",
+          "recipe": "thai-viet-papaya-peanuts"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "thai-viet-khai-jiao-pork-omelette-tomato"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "thai-viet-lemongrass-pork-rice-plate-pickles",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "thai-viet-red-curry-chicken-tofu-gai-lan"
+        },
+        {
+          "slot": "snack",
+          "recipe": "thai-viet-che-dau-xanh-mung-bean-coconut"
+        },
+        {
+          "slot": "snack",
+          "recipe": "thai-viet-pineapple-lime-salt"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "thai-viet-jok-moo-pork-ginger-egg-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "thai-viet-red-curry-chicken-tofu-gai-lan",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "thai-viet-lemongrass-mackerel-som-tam"
+        },
+        {
+          "slot": "snack",
+          "recipe": "thai-viet-ginger-soy-milk"
+        },
+        {
+          "slot": "snack",
+          "recipe": "thai-viet-guava-chili-salt"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "thai-viet-xoi-black-rice-mung-bean"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "thai-viet-pad-kra-pao-gai-fried-egg"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "thai-viet-pho-bo-herb-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "thai-viet-tao-pho-ginger-tofu"
+        },
+        {
+          "slot": "snack",
+          "recipe": "thai-viet-papaya-lime-chili-salt"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "thai-viet-xoi-black-rice-mung-bean",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "thai-viet-pho-bo-herb-plate",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "thai-viet-ca-thu-kho-to-caramel-mackerel-greens"
+        },
+        {
+          "slot": "snack",
+          "recipe": "thai-viet-tao-pho-ginger-tofu"
+        },
+        {
+          "slot": "snack",
+          "recipe": "thai-viet-pineapple-lime-salt"
+        }
+      ]
+    }
+  ]
+}
