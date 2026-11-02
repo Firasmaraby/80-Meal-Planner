@@ -1,0 +1,1727 @@
+{
+  "id": "east-africa",
+  "name": "East African Highlands & Coast",
+  "style": "balanced",
+  "cuisine": "East African",
+  "regions": [
+    "Ethiopia",
+    "Kenya",
+    "Somalia",
+    "Tanzania"
+  ],
+  "summary": "A week of East African home cooking: misir wot and shiro on injera, a slow Saturday doro wat, Kenyan githeri and sukuma wiki, a Swahili mackerel curry and Somali suqaar. Teff, millet, sorghum and dried maize carry the grains, with greens and tomato every day and legumes on six.",
+  "howItWorks": "**Cook once, eat twice.** Monday's misir wot, Tuesday's githeri, Thursday's shiro, Friday's suqaar and Saturday's doro wat each make two portions, so the next day's lunch is done. Tuesday's uji covers Wednesday's breakfast too.\n\n**Fatty fish four times.** Mackerel on Wednesday, sardines on Sunday and sardine snacks on Tuesday and Thursday give you most of the week's **omega-3 and B12**, and help with vitamin D. The mackerel and Sunday's sardines are never leftovers, and the soft sardine bones add calcium.\n\n**Teff, millet, sorghum and maize.** Injera is teff, rich in **iron and fibre**, so check the label for 100% teff. Millet makes the uji, sorghum goes under the suqaar and dried maize goes into the githeri. Soak the maize and beans on Monday night and pressure-cook them on Tuesday; the pot covers Tuesday's dinner and Wednesday's lunch.\n\n**Spices with purpose.** Berbere flavours the wots, and niter kibbeh adds its butter and spice in small amounts. Chicken liver in the suqaar brings **choline and iron**, and kachumbari, basbaas and lemon keep every plate bright.\n\n**Prep ahead.** Buy injera at an Ethiopian grocery and freeze it in portions. Cook Tuesday's uji on Monday evening while the misir wot simmers, boil Thursday's ful egg on Wednesday night, and roast the kolo mix on Wednesday while the sweet potato roasts. Cook the sorghum on Thursday evening while the shiro simmers.",
+  "signature": [
+    "east-africa-shiro-wot-tikil-gomen-injera",
+    "east-africa-samaki-wa-nazi-mackerel-plantain",
+    "east-africa-doro-wat-chicken-eggs-injera",
+    "east-africa-suqaar-beef-greens-sorghum"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "east-africa-maziwa-moto-cardamom"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "east-africa-maziwa-moto-cardamom"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "east-africa-karanga-lemon-chili"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "east-africa-sweet-potato-choma"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "east-africa-ndizi-choma"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "east-africa-banana-peanuts"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "east-africa-mayai-sukuma-sweet-potato",
+      "name": "Mayai na sukuma wiki, soft eggs with kale and sweet potato",
+      "inspiredBy": "Kenyan sukuma wiki cooked with eggs, with sweet potato (viazi vitamu) instead of chapati",
+      "about": "Soft eggs folded through onion, tomato and silky ribbons of kale, with sweet potato for something warm and a little sweet. It is a Kenyan home favourite and it is on the table in 15 minutes. The eggs bring **protein and choline**, and the kale adds vitamin K and calcium.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "stems removed, sliced very thin"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 4,
+          "note": "optional, minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 110,
+          "note": "cut in chunks"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Put the sweet potato chunks in a covered microwave dish with a splash of water and cook until a knife slides in easily, about 6 minutes. Or reheat sweet potato you roasted earlier in the week.",
+        "Meanwhile, roll the kale leaves up and slice them into thin ribbons. This is what makes sukuma wiki silky instead of chewy.",
+        "Warm the oil in a pan over medium heat. Cook the onion, garlic and jalapeno until the onion is soft and just golden at the edges, about 4 minutes.",
+        "Add the tomato and cook until it collapses into a thick sauce, about 3 minutes. Stir in the kale with a splash of water and half the salt, and cook until it is bright green and tender, about 3 minutes.",
+        "Beat the eggs with the rest of the salt and pour them over the greens. Stir gently until they are softly set and still glossy, about 1 minute.",
+        "Serve with the sweet potato."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Sukuma wiki means \"push the week\" in Swahili, because greens stretch a budget. Collards work just as well as kale."
+    },
+    {
+      "id": "east-africa-millet-uji-banana-peanuts",
+      "name": "Millet uji with milk, ginger, banana and peanuts",
+      "inspiredBy": "Kenyan and Tanzanian uji, the everyday millet porridge, cooked from whole millet and finished with milk",
+      "about": "A creamy, spoonable millet porridge warmed with ginger and cardamom, topped with banana and a crunch of roasted peanuts. It is gentle, filling and sweet from the banana alone. Millet is a whole grain with plenty of **magnesium**, and the milk adds calcium and protein.",
+      "ingredients": [
+        {
+          "food": "millet-dry-a10dc7",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 250
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "The evening before you want it, rinse the millet and soak it in plenty of cold water for 30 minutes or longer. It is optional, but it shortens the cooking time.",
+        "Drain the millet and tip it into a pot with three times as much fresh water, the ginger and the salt. Bring to a boil, then simmer gently, stirring often, until the grains have burst, about 20 minutes.",
+        "Stir in the milk and cardamom and simmer for 8 more minutes, stirring, until the porridge is creamy and spoonable. For a smoother uji, give it a few pulses with a stick blender, or leave it a little rustic. This makes two portions.",
+        "Chill both portions. In the morning, warm one with a splash of milk or water, then top with the banana and peanuts. Reheat the second the next morning the same way."
+      ],
+      "prepMin": 5,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Cook it in the evening while dinner simmers, so breakfast is only a reheat. On Sunday, make the batch on Saturday while the doro wat simmers, and the spare keeps three days, so have it Monday instead of eggs. Sorghum works the same way and is just as traditional."
+    },
+    {
+      "id": "east-africa-ful-medames-egg-ayib-injera",
+      "name": "Ethiopian-style ful with egg, ayib and injera",
+      "inspiredBy": "Ethiopian and Eritrean ful, spiced mashed fava beans, with fresh ayib-style cheese and injera for scooping",
+      "about": "Mashed fava beans warmed with cumin, tomato, onion and a little jalapeno, finished with lemon, crumbly fresh cheese, a boiled egg and a spoon of spiced butter. You scoop it up with torn injera. It is a very filling start with **iron, folate and fibre** from the beans.",
+      "ingredients": [
+        {
+          "food": "broadbeans-fava-beans-canned-solids-and-liquid-c9fcc5",
+          "g": 160,
+          "swap": "legumes",
+          "note": "with a splash of the liquid saved"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "hard-boiled and halved"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "niter-kibbeh-ethiopian-spiced-butter-b0d4f2",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "cottage-cheese-2-fat-49f49a",
+          "g": 55,
+          "swap": "dairy_protein",
+          "note": "for the ayib, drained and crumbled"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "injera-teff-flatbread-fc8743",
+          "g": 45,
+          "note": "torn, for scooping"
+        },
+        {
+          "food": "berbere-ethiopian-spice-blend-a8ab4f",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Hard-boil the egg for 8 minutes, then cool, peel and halve it. Boil it the night before if you like.",
+        "Warm half the niter kibbeh in a pan over medium heat. Cook the onion, garlic and jalapeno with the cumin until the onion is soft, about 3 minutes.",
+        "Add the tomato and cook until it breaks down, about 3 minutes.",
+        "Tip in the beans with a splash of their liquid and the salt. Mash them roughly with the back of a spoon and simmer for 5 minutes, until thick but still spoonable.",
+        "Stir in the lemon juice. Spoon into a bowl and top with the egg, crumbled cottage cheese and cilantro.",
+        "Spoon the rest of the niter kibbeh, melted, over the top with a pinch of berbere. Eat with the torn injera, scooping up the beans with it."
+      ],
+      "prepMin": 5,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Drain the cottage cheese on a paper towel for a drier, more ayib-like crumble. Use plain oil in place of the niter kibbeh for a fasting-day version, without the egg and cheese."
+    },
+    {
+      "id": "east-africa-azifa-lentil-salad-injera",
+      "name": "Azifa, cold green lentil salad with mustard, lemon and a little injera",
+      "inspiredBy": "Ethiopian azifa, the tangy lentil salad of the fasting days, with tomato, cucumber, spinach and avocado added for crunch and freshness",
+      "about": "A cold, punchy salad of tender green lentils, onion, jalapeno, tomato and cucumber on baby spinach, in a mustard and lemon dressing, with avocado and a little injera to scoop. It is the kind of lunch that tastes better after ten minutes in the fridge. The lentils bring **iron, folate and protein**, and the lemon helps you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "lentils-boiled-aa94b1",
+          "g": 260,
+          "swap": "legumes",
+          "note": "canned or pre-cooked, drained and rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 10,
+          "note": "minced"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "mustard-dry-powder-1623db",
+          "g": 1.5,
+          "note": "dry mustard powder"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 90,
+          "note": "diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 120,
+          "swap": "leafy_greens",
+          "note": "baby spinach, as a bed"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "injera-teff-flatbread-fc8743",
+          "g": 40,
+          "note": "torn, on the side"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Stir the mustard powder into a spoonful of cold water and leave it for 10 minutes. This is what gives azifa its sharp, clean heat.",
+        "Toss the onion and jalapeno with the lemon juice and half the salt, and leave them for 5 minutes. The acid softens their bite.",
+        "Stir the mustard paste and the oil into the onions to make a thick, tangy dressing.",
+        "Fold in the lentils and leave them to soak up the dressing while you chop the tomato and cucumber.",
+        "Pile the spinach on a plate and spoon the lentils over it. Add the tomato, cucumber and avocado, and scatter on the cilantro and the rest of the salt.",
+        "Serve with the torn injera for scooping."
+      ],
+      "prepMin": 14,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Cook dried green or brown lentils for 20 to 25 minutes if you prefer. Azifa keeps in the fridge for two days."
+    },
+    {
+      "id": "east-africa-chicken-mishkaki-roast-potatoes-kachumbari",
+      "name": "Chicken mishkaki with roast potatoes and kachumbari",
+      "inspiredBy": "Tanzanian and Kenyan mishkaki, the marinated grilled skewers of the street stall, here as an oven tray with chips-style potatoes",
+      "about": "Juicy, charred chicken in a lemon, garlic and ginger marinade with a little heat, roasted alongside crisp-edged potatoes and served with a bright kachumbari of tomato, onion, cilantro and creamy avocado. The marinade does the work while you do something else. The chicken brings **protein, niacin and B6**, and the kachumbari brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "boneless, in 3 cm cubes"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "sunflower-oil-707ea8",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 24
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 120,
+          "note": "in 2 cm chunks"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 70
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Mix the garlic, ginger, paprika, cumin, cayenne, black pepper, half the oil and two thirds of the lemon juice into a paste. Toss the chicken in it and marinate for at least 30 minutes, or overnight in the fridge.",
+        "Heat the oven to 220 C (425 F). Toss the potato chunks with the rest of the oil and a pinch of the salt, spread them on a tray and roast for 15 minutes.",
+        "Push the potatoes to one side, add the chicken to the tray and roast everything for 12 to 13 minutes more, turning the chicken once. It is done when it is browned at the edges and no longer pink in the middle.",
+        "Make the kachumbari: toss the tomato, onion and cilantro with the rest of the lemon juice and salt, and let it sit while the tray finishes. Fold in the avocado just before serving.",
+        "Serve the chicken and potatoes with the kachumbari spooned alongside."
+      ],
+      "prepMin": 10,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Marinate it on Wednesday morning and roast the tray that evening with the sweet potato, then make the kachumbari fresh at lunch. Thread the chicken on skewers and grill it for the street-stall version. Beef liver on its own skewer is the classic mishkaki ya maini, if you like liver."
+    },
+    {
+      "id": "east-africa-shiro-wot-tikil-gomen-injera",
+      "name": "Shiro wot with tikil gomen and injera",
+      "inspiredBy": "Ethiopian shiro and tikil gomen, the chickpea stew and the cabbage, carrot and potato dish served together",
+      "about": "A velvety, berbere-spiced chickpea stew beside a mild, golden pan of cabbage, carrot and potato, scooped up with soft injera and a little ayib. It is the comfort food of Ethiopian home kitchens and it tastes even better the next day. Chickpeas and cabbage bring **protein, folate and fibre**, and teff injera adds iron.",
+      "ingredients": [
+        {
+          "food": "chickpea-flour-besan-4a8aaa",
+          "g": 70,
+          "swap": "legumes",
+          "note": "the base of shiro"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 90,
+          "note": "finely chopped, divided"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 12
+        },
+        {
+          "food": "berbere-ethiopian-spice-blend-a8ab4f",
+          "g": 7
+        },
+        {
+          "food": "niter-kibbeh-ethiopian-spiced-butter-b0d4f2",
+          "g": 8,
+          "swap": "healthy_oils",
+          "note": "divided"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 160,
+          "swap": "leafy_greens",
+          "note": "sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "in half-moons"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 40,
+          "note": "in small cubes"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "injera-teff-flatbread-fc8743",
+          "g": 70
+        },
+        {
+          "food": "cottage-cheese-2-fat-49f49a",
+          "g": 70,
+          "swap": "dairy_protein",
+          "note": "for the ayib, crumbled on the side"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "For the shiro, put most of the onion in a wide pot over medium heat with no oil and a splash of water. Cook, stirring, until it is soft and starting to stick, about 8 minutes. Add a splash more water if it catches.",
+        "Stir in three quarters of the niter kibbeh, the garlic, ginger, berbere and tomato paste. Cook for 3 minutes, until the paste is deep red and smells toasty.",
+        "Whisk the chickpea flour with cold water in a bowl until it is completely smooth, enough to make about four cups for two portions. Pour it into the pot slowly, stirring all the time so it does not lump.",
+        "Simmer gently for 15 minutes, stirring and scraping the bottom often, until it is thick and glossy like a loose porridge. Add a splash of water if it gets tight, and stir in half the salt.",
+        "While the shiro simmers, make the tikil gomen. Melt the rest of the niter kibbeh in a wide pan, cook the rest of the onion with the turmeric for 2 minutes, then add the potato, carrot and cabbage with a splash of water and the rest of the salt.",
+        "Cover and steam for 12 to 15 minutes, until the potato is tender and the cabbage is silky.",
+        "Serve the shiro and tikil gomen on the injera, with a spoonful of crumbled ayib (cottage cheese) on the side. Pack the second portion for tomorrow's lunch, and warm the injera wrapped in foil or a damp cloth."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "For a fasting-day version, use oil for the niter kibbeh and skip the cheese. Shiro thickens as it sits, so loosen it with a splash of water when you reheat. An Ethiopian grocery sells ready-made shiro powder, which skips the chickpea flour and berbere steps."
+    },
+    {
+      "id": "east-africa-samaki-wa-nazi-mackerel-plantain",
+      "name": "Samaki wa nazi, mackerel in tomato and coconut curry with plantain",
+      "inspiredBy": "Swahili coast samaki wa nazi, usually kingfish in coconut sauce, with garam masala standing in for the local spice mix",
+      "about": "Meaty mackerel simmered in a golden, tangy sauce of tomato, ginger, lemon and a little coconut milk, with kale and soft green plantain to soak it up. It is the flavour of Mombasa and Zanzibar in a single pan. The mackerel brings **omega-3, vitamin D and B12**, and the sauce keeps the coconut light.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 170,
+          "swap": "fatty_fish",
+          "note": "fillets or steaks, cut in 4 pieces"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 110,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "coconut-milk-reduced-fat-93cbb3",
+          "g": 40
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.4
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 5,
+          "note": "sliced, or a pinch of cayenne"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "sunflower-oil-707ea8",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "plantain-green-raw-c9bd2d",
+          "g": 70,
+          "note": "peeled and cut in thick coins"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "stems removed, sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Score the plantain skin lengthwise, pry it off and slice the plantain into thick coins. Simmer in salted water until tender, about 20 minutes, then drain.",
+        "While it cooks, warm the oil in a wide pan and soften the onion for 4 minutes. Add the garlic, ginger, garam masala, turmeric and jalapeno and stir for 30 seconds, until fragrant.",
+        "Add the tomato and cook until it breaks down into a thick sauce, about 6 minutes.",
+        "Pour in the coconut milk with a splash of water and the salt, and bring to a gentle simmer for 5 minutes so the sauce stays thick and the coconut shows.",
+        "Nestle in the mackerel, skin side up. Cover and cook gently for 7 minutes, until the fish flakes easily. Spoon the sauce over it as it cooks.",
+        "Stir the kale into the sauce around the fish for the last 3 minutes so it wilts, then squeeze in the lemon juice, scatter on the cilantro and serve with the plantain."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Kingfish or any firm fish works too, but mackerel is the one that brings the omega-3. Frozen mackerel from an Asian or African grocer is fine."
+    },
+    {
+      "id": "east-africa-githeri-beef-carrot-spinach",
+      "name": "Githeri with beef, carrot, tomato and spinach",
+      "inspiredBy": "Kenyan githeri, the dried maize and bean stew, with beef as many families add",
+      "about": "A comforting pot of dried maize and kidney beans stewed with beef, onion, tomato and carrot, with spinach wilted in at the end. It is simple and honest and tastes even better the next day. The beans, beef and spinach bring **iron, zinc and folate**, and the tomato adds vitamin C to help you absorb it.",
+      "ingredients": [
+        {
+          "food": "corn-yellow-field-dry-76adb5",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "soaked overnight"
+        },
+        {
+          "food": "kidney-beans-dry-312b4c",
+          "g": 65,
+          "swap": "legumes",
+          "note": "soaked overnight"
+        },
+        {
+          "food": "beef-flank-steak-lean-raw-1239a6",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "cut in small cubes"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 130,
+          "swap": "leafy_greens",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 3,
+          "note": "optional, minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "The night before, cover the maize and beans with plenty of cold water and leave them to soak. This makes two portions.",
+        "Drain them, put them in a pressure cooker with fresh water to cover by 3 cm and cook for 45 minutes, then let the pressure drop naturally. Without a pressure cooker, simmer for 2½ to 3 hours, topping up the water.",
+        "While they cook, warm the oil in a wide pot over medium heat and brown the beef for 4 minutes. Add the onion, garlic and jalapeno and cook until the onion is soft and golden, about 5 minutes.",
+        "Add the carrot and tomato with a cup of water and the salt. Cover and simmer for 35 minutes, until the beef is tender.",
+        "Tip in the cooked maize and beans with a little of their cooking water. Simmer for 15 minutes, stirring now and then, mashing a few beans against the side of the pot, until the stew is thick.",
+        "Stir in the spinach and cook for 2 minutes, until it just wilts. Finish with the cilantro. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 60,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "Githeri keeps four days in the fridge and freezes well, so a double batch is no extra work. Leave the beef out for a vegetarian pot. Buy dried maize at an African grocer, or maiz mote in the Latin aisle."
+    },
+    {
+      "id": "east-africa-misir-wot-gomen-injera",
+      "name": "Misir wot with gomen and injera",
+      "inspiredBy": "Ethiopian misir wot, red lentils in berbere, and gomen, collard greens with garlic and ginger",
+      "about": "Red lentils simmered into a thick, brick-red stew with slow-cooked onion and berbere, beside a pan of garlicky collards, all scooped up with injera. It is deeply savoury, a little fiery and very filling. The lentils and collards bring **iron, folate and calcium**, and a squeeze of lemon at the end helps you absorb them.",
+      "ingredients": [
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 70,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 100,
+          "note": "finely chopped, divided"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "minced, divided"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "divided"
+        },
+        {
+          "food": "berbere-ethiopian-spice-blend-a8ab4f",
+          "g": 8
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 12
+        },
+        {
+          "food": "niter-kibbeh-ethiopian-spiced-butter-b0d4f2",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 150,
+          "swap": "leafy_greens",
+          "note": "stems removed, thinly sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "injera-teff-flatbread-fc8743",
+          "g": 85
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Put most of the onion in a wide pot over medium heat with no oil and a splash of water. Cook, stirring, until soft and sticking, about 8 minutes. Add a splash more water if it catches.",
+        "Stir in the niter kibbeh, two thirds of the garlic and ginger, the berbere and tomato paste. Cook for 3 minutes, until deep red and toasty.",
+        "Add the lentils and plenty of water, enough to cover by about 3 cm for two portions. Simmer, stirring now and then and adding water if it dries out, until the lentils have collapsed into a thick stew, about 20 minutes. Stir in half the salt and the lemon juice.",
+        "For the gomen, warm the canola oil in a pan. Cook the rest of the onion with the jalapeno and the remaining garlic and ginger for 3 minutes, then add the collards, a splash of water and the rest of the salt.",
+        "Cover and cook for 12 minutes, stirring now and then, until the collards are tender and the water has cooked off.",
+        "Serve the misir wot and gomen on the injera. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Berbere varies a lot in heat. Start with less and add more at the end. No injera nearby? Serve it with warm cooked teff or brown rice."
+    },
+    {
+      "id": "east-africa-suqaar-beef-greens-sorghum",
+      "name": "Beef and liver suqaar with collards, sorghum and basbaas",
+      "inspiredBy": "Somali suqaar, small pieces of beef sauteed with onion and spices, with xawaash, a little liver as Somali cooks add and a fresh basbaas sauce",
+      "about": "Tender small pieces of beef and a little beer (liver), quickly sauteed with onion, tomato, collard greens and warm xawaash spices, served over nutty sorghum with a zesty cilantro and lemon basbaas. It is a Somali home-kitchen staple and tastes even better the next day. The beef and liver bring **iron, zinc and B12**, and the sorghum adds fibre and magnesium.",
+      "ingredients": [
+        {
+          "food": "beef-flank-steak-lean-raw-1239a6",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "sliced thin then cut in small pieces"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 90,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 110,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "minced, divided"
+        },
+        {
+          "food": "xawaash-somali-spice-blend-d51070",
+          "g": 2.5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 6,
+          "note": "divided"
+        },
+        {
+          "food": "chicken-liver-raw-6931a6",
+          "g": 40,
+          "note": "trimmed and chopped small"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 140,
+          "swap": "leafy_greens",
+          "note": "stems removed, thinly sliced"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 16
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "sorghum-dry-4556e3",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "whole grain"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "The evening before, while dinner is on, rinse the sorghum and soak it for 30 minutes. Drain it and cook it in fresh salted water until tender but still chewy, 25 minutes under pressure or about an hour simmering. Drain and chill. This makes two portions.",
+        "Toss the beef and liver with half the xawaash and a pinch of salt.",
+        "Heat half the oil in a wide pan over high heat. Sear the beef and liver in a single layer for 2 to 3 minutes, until browned, then scoop them out.",
+        "Add the rest of the oil and the onion, most of the garlic and half the jalapeno. Cook for 5 minutes, until soft and golden. Add the rest of the xawaash and cook for 30 seconds.",
+        "Add the tomato and the collards and cook for 6 minutes, until the collards are tender. Return the meat and cook for 3 more minutes, until the sauce clings.",
+        "For the basbaas, chop the rest of the jalapeno and garlic very finely and mix with the cilantro, lemon juice and a pinch of salt.",
+        "Warm the sorghum with a splash of water. Serve the suqaar over it with the basbaas. Pack the second portion for tomorrow's lunch. Cooked sorghum keeps well for 4 days in the fridge."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Serve it with rice or canjeero, the Somali pancake bread, if you cannot find sorghum. Goat or lamb are very traditional. Leave out the liver and use 40 g more beef if you prefer."
+    },
+    {
+      "id": "east-africa-doro-wat-chicken-eggs-injera",
+      "name": "Doro wat, slow-cooked chicken and egg stew with injera",
+      "inspiredBy": "Ethiopian doro wat, the celebration stew of chicken and boiled eggs",
+      "about": "A rich, deep red stew built on mountains of slowly cooked onion and berbere, with tender chicken and a soft boiled egg in each bowl, and a pan of garlicky collards on the side. It is the Ethiopian holiday dish and the best thing to cook on a slow Saturday. The chicken and egg bring **protein, B12 and choline**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "cut in large pieces"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "hard-boiled and peeled"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 220,
+          "note": "very finely chopped or grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "berbere-ethiopian-spice-blend-a8ab4f",
+          "g": 10
+        },
+        {
+          "food": "niter-kibbeh-ethiopian-spiced-butter-b0d4f2",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 15
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "injera-teff-flatbread-fc8743",
+          "g": 80
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 140,
+          "swap": "leafy_greens",
+          "note": "stems removed, thinly sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Toss the chicken with the lemon juice and half the salt and leave it for 20 minutes or longer while you chop the onions.",
+        "Put the onions in a wide heavy pot over medium heat with no oil. Cook, stirring, for 30 to 40 minutes, until they have released their water and cooked down to a thick paste. Add a splash of water whenever they stick. This slow step is the whole dish.",
+        "Stir in the niter kibbeh, garlic, ginger, berbere and tomato paste. Cook for 10 minutes, stirring, until the colour deepens to burgundy and the stew looks glossy, adding a splash of water if it sticks.",
+        "Add the chicken, cardamom, pepper and about two cups of water for two portions. Cover and simmer for 35 minutes, stirring now and then, until the chicken is very tender and the sauce is thick.",
+        "While it simmers, hard-boil the eggs for 8 minutes, cool and peel them, and prick them all over with a fork so the sauce soaks in.",
+        "Slip the eggs into the stew for the last 10 minutes and add the rest of the salt. Taste and adjust.",
+        "In the last 15 minutes, wilt the collards in a covered pan with a splash of water, a pinch of salt and a spoonful of the stew sauce, stirring now and then, until tender. This is a quick gomen to serve beside the stew.",
+        "Serve the stew on the injera with the collards alongside. Pack the second portion for tomorrow's lunch. It keeps for 3 days in the fridge and freezes well."
+      ],
+      "prepMin": 25,
+      "cookMin": 95,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Do not rush the onions. If you cannot find injera, serve it with brown rice or boiled potatoes."
+    },
+    {
+      "id": "east-africa-somali-sardines-potatoes-tomato",
+      "name": "Somali-spiced sardines with potatoes in tomato sauce",
+      "inspiredBy": "Somali kalluun in tomato and onion sauce, with canned sardines for fresh fish and xawaash for the spice",
+      "about": "Whole sardines warmed in a thick tomato, onion and jalapeno sauce with soft potatoes and a squeeze of lemon, with a crisp cucumber salad on the side. It is quick, bright and very savoury. The sardines bring **calcium, omega-3 and vitamin D**, and their soft bones are the calcium.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 120,
+          "swap": "fatty_fish",
+          "note": "canned in oil, drained, bones in"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 115,
+          "note": "in 2 cm chunks"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "xawaash-somali-spice-blend-d51070",
+          "g": 2.5
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "sunflower-oil-707ea8",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 18
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Simmer the potato chunks in salted water until just tender, about 10 minutes. Drain.",
+        "Meanwhile, warm the oil in a wide pan and soften the onion with the garlic and jalapeno for 5 minutes. Stir in the xawaash for 30 seconds.",
+        "Add the tomato and cook until it breaks down into a thick, jammy sauce, about 7 minutes.",
+        "Stir in the potatoes with a splash of water and simmer for 4 minutes.",
+        "Lay the sardines on top and warm them through for 3 minutes without stirring, so they stay whole. Squeeze over half the lemon and scatter on the cilantro.",
+        "Toss the cucumber with the rest of the lemon juice and a pinch of salt, and serve it on the side."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Fresh sardines or mackerel work beautifully if you can get them. Drop them into the sauce raw and cook for 8 minutes."
+    },
+    {
+      "id": "east-africa-mango-lemon-chili",
+      "name": "Mango with lemon and a pinch of chili",
+      "about": "Ripe mango with a squeeze of lemon and a pinch of chili, the way street sellers serve it from Mombasa to Dar es Salaam. It is sweet, sour and a little hot. Mango brings **vitamin C and vitamin A**.",
+      "ingredients": [
+        {
+          "food": "mango-raw-80de97",
+          "g": 160,
+          "swap": "vit_c_fruit",
+          "note": "cubed"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Cube the mango and toss it with the lemon juice, chili and salt."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "east-africa-kolo-chickpea-peanut-mix",
+      "name": "Kolo-style roasted chickpea and peanut mix",
+      "inspiredBy": "Ethiopian kolo, the roasted snack mix of grains and pulses, with chickpeas and pumpkin seeds",
+      "about": "Crunchy roasted chickpeas tossed with peanuts, pumpkin seeds and a pinch of chili. It is salty, nutty and keeps you going. The seeds and chickpeas bring **magnesium, zinc and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 80,
+          "swap": "legumes",
+          "note": "canned, drained and dried well"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 C (400 F). Pat the chickpeas very dry and toss them with the oil, chili and salt.",
+        "Roast on a tray for 20 to 25 minutes, shaking once, until crisp. Add the peanuts and pumpkin seeds for the last 5 minutes.",
+        "Let it cool on the tray, where it keeps getting crisper. Then keep it in an airtight jar for up to 5 days."
+      ],
+      "prepMin": 5,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make a double batch; it stays crisp in a jar for three days."
+    },
+    {
+      "id": "east-africa-nifro-chickpeas-mitmita",
+      "name": "Nifro, warm chickpeas with mitmita and lemon",
+      "inspiredBy": "Ethiopian nifro, boiled pulses shared at home with coffee",
+      "about": "Warm chickpeas tossed with fiery mitmita, salt and lemon, the way Ethiopian families share them with coffee. They are tangy, hot and very filling. Chickpeas bring **protein, folate and magnesium**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 130,
+          "swap": "legumes",
+          "note": "canned, drained"
+        },
+        {
+          "food": "mitmita-ethiopian-chili-blend-2b8bd8",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Warm the chickpeas in a small pot with a splash of water for 3 minutes.",
+        "Drain, then toss with the mitmita, salt and lemon juice. Eat warm."
+      ],
+      "prepMin": 2,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ],
+      "tip": "Mitmita is hot. Use half for a milder bowl, or berbere if you cannot find it."
+    },
+    {
+      "id": "east-africa-ayib-tomato-injera",
+      "name": "Ayib with tomato and a little injera",
+      "inspiredBy": "Ethiopian ayib, the mild fresh cheese, with cottage cheese standing in, served with tomato and a squeeze of lemon",
+      "about": "Fresh, mild cottage cheese with juicy tomato, lemon and a pinch of mitmita, scooped up with a little torn injera. It is cool, creamy and tangy. The cheese brings **protein**, with a little calcium.",
+      "ingredients": [
+        {
+          "food": "cottage-cheese-2-fat-49f49a",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 6
+        },
+        {
+          "food": "mitmita-ethiopian-chili-blend-2b8bd8",
+          "g": 0.2
+        },
+        {
+          "food": "injera-teff-flatbread-fc8743",
+          "g": 30,
+          "note": "torn"
+        }
+      ],
+      "steps": [
+        "Spoon the cottage cheese into a bowl and top with the tomato, lemon juice and a pinch of mitmita.",
+        "Eat with the torn injera."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "east-africa-banana-peanuts",
+      "name": "Banana with roasted peanuts",
+      "about": "A ripe banana with a handful of roasted peanuts. It is simple and filling. The banana brings **potassium and vitamin B6**.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 100
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Slice the banana and eat it with the peanuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "east-africa-avocado-kachumbari",
+      "name": "Parachichi kachumbari, avocado with tomato, onion and lemon",
+      "inspiredBy": "Kenyan kachumbari, the fresh tomato and onion salad, with avocado",
+      "about": "Creamy avocado tossed with tomato, onion, cilantro and lemon, the cooling side dish of every Kenyan barbecue turned into a snack. It is fresh, rich and light. The avocado brings **vitamin E and potassium**.",
+      "ingredients": [
+        {
+          "food": "avocado-raw-c06278",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toss the onion with the lemon juice and salt and leave for 5 minutes to soften.",
+        "Add the tomato, avocado and cilantro, and fold gently."
+      ],
+      "prepMin": 7,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "east-africa-sardine-cucumber-injera",
+      "name": "Sardines with cucumber, lemon and chili on injera",
+      "inspiredBy": "A quick tinned-fish plate, the way sardines are eaten with injera or bread across the Horn",
+      "about": "A tin of sardines on torn injera with crisp cucumber, lemon and a little jalapeno. It is quick, salty and bright. The soft sardine bones bring **calcium**, and the fish brings omega-3 and vitamin D.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 120,
+          "swap": "fatty_fish",
+          "note": "canned in oil, drained, bones in"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "injera-teff-flatbread-fc8743",
+          "g": 40
+        }
+      ],
+      "steps": [
+        "Lay the injera on a plate and top with the sardines.",
+        "Scatter on the cucumber and jalapeno, and squeeze over the lemon."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "east-africa-sweet-potato-choma",
+      "name": "Viazi vitamu choma, roasted sweet potato with lemon and chili",
+      "inspiredBy": "Kenyan roadside roasted sweet potato",
+      "about": "Sweet potato roasted until the edges caramelize, with lemon and a pinch of chili. It is the street-corner snack of Nairobi and it is sweet, smoky and filling. Sweet potato brings **vitamin A and potassium**.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 150
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C (425 F). Cut the sweet potato into thick wedges and roast for 25 minutes, turning once, until soft inside and browned at the edges.",
+        "Squeeze over the lemon and sprinkle with chili and salt."
+      ],
+      "prepMin": 3,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "east-africa-karanga-lemon-chili",
+      "name": "Karanga, roasted peanuts with lemon and chili",
+      "inspiredBy": "East African karanga, the spiced roasted peanuts sold in paper cones",
+      "about": "Roasted peanuts tossed with a squeeze of lemon, a pinch of chili and salt. They are salty, crunchy and satisfying. Peanuts bring **vitamin E, magnesium and protein**.",
+      "ingredients": [
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 30,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 6
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toss the warm peanuts with the lemon juice, chili and salt.",
+        "Eat right away while they are still crunchy."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "east-africa-ndizi-choma",
+      "name": "Ndizi choma, roasted plantain with lemon and chili",
+      "inspiredBy": "Swahili coast ndizi choma, roasted plantain",
+      "about": "Plantain roasted until the edges caramelize, with lemon and a pinch of chili. It is sweet, smoky and filling, and the kind of thing sold on the roadside in Tanzania. Plantain brings **potassium and fibre**.",
+      "ingredients": [
+        {
+          "food": "plantain-green-raw-c9bd2d",
+          "g": 120
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C (425 F). Peel the plantain and cut it into thick coins or long wedges.",
+        "Roast on a tray for 25 minutes, turning once, until soft inside and browned at the edges. Squeeze over the lemon and sprinkle with the chili and salt."
+      ],
+      "prepMin": 4,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "east-africa-maziwa-moto-cardamom",
+      "name": "Maziwa moto, warm spiced milk with cardamom and ginger",
+      "inspiredBy": "Swahili and Somali spiced milk, drunk hot in the evening",
+      "about": "Milk warmed with cardamom and a little fresh ginger until it smells like a Mombasa kitchen. It is soothing and a little sweet on its own. The milk brings **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 250
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Warm the milk in a small pot with the cardamom and the sliced ginger until it steams, about 5 minutes.",
+        "Strain into a mug and sip it hot."
+      ],
+      "prepMin": 2,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "east-africa-mayai-sukuma-sweet-potato"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "east-africa-azifa-lentil-salad-injera"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "east-africa-misir-wot-gomen-injera"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-africa-ayib-tomato-injera"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-africa-mango-lemon-chili"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "east-africa-millet-uji-banana-peanuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "east-africa-misir-wot-gomen-injera",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "east-africa-githeri-beef-carrot-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-africa-sardine-cucumber-injera"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-africa-avocado-kachumbari"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "east-africa-millet-uji-banana-peanuts",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "east-africa-githeri-beef-carrot-spinach",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "east-africa-samaki-wa-nazi-mackerel-plantain"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-africa-sweet-potato-choma"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-africa-nifro-chickpeas-mitmita"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "east-africa-ful-medames-egg-ayib-injera"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "east-africa-chicken-mishkaki-roast-potatoes-kachumbari"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "east-africa-shiro-wot-tikil-gomen-injera"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-africa-sardine-cucumber-injera"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-africa-kolo-chickpea-peanut-mix"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "east-africa-mayai-sukuma-sweet-potato"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "east-africa-shiro-wot-tikil-gomen-injera",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "east-africa-suqaar-beef-greens-sorghum"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-africa-kolo-chickpea-peanut-mix"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-africa-banana-peanuts"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "east-africa-ful-medames-egg-ayib-injera"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "east-africa-suqaar-beef-greens-sorghum",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "east-africa-doro-wat-chicken-eggs-injera"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-africa-nifro-chickpeas-mitmita"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-africa-mango-lemon-chili"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "east-africa-millet-uji-banana-peanuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "east-africa-doro-wat-chicken-eggs-injera",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "east-africa-somali-sardines-potatoes-tomato"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-africa-avocado-kachumbari"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-africa-ayib-tomato-injera"
+        }
+      ]
+    }
+  ]
+}
