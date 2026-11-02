@@ -1,0 +1,2062 @@
+{
+  "id": "nile",
+  "name": "Nile Valley Kitchen",
+  "style": "balanced",
+  "cuisine": "Egyptian & Sudanese",
+  "regions": [
+    "Cairo",
+    "Alexandria",
+    "Sudan"
+  ],
+  "summary": "A week of Egyptian and Sudanese home cooking: ful, ta'meya and shakshuka for breakfast, molokhia, koshari and bamia from Cairo, grilled sardines and sayadeya from Alexandria, and a peanut mullah from Sudan. Tahini, lemon and fresh salad keep every plate bright.",
+  "howItWorks": "**Cook once, eat twice.** Monday's molokhia (300 g chicken breast, 240 g molokhia, 80 g brown rice), Tuesday's koshari, Thursday's bamia and Friday's mullah each make two portions, so the next day's lunch is done. Saturday's sayadeya and ta'meya (90 g dried fava) cover Sunday.\n\n**Fish every day.** A sardine sandwich on Monday, ful with sardines on Tuesday, grilled sardines on Wednesday, mackerel in tomato on Thursday, a sardine snack on Friday and Saturday's sayadeya (reheated on Sunday) carry your **omega-3**. Tahini, peanuts and sesame lean omega-6, and the fish keeps the balance honest.\n\n**Legumes most days.** Fava, lentils, chickpeas and lupini turn up at breakfast, lunch, dinner or snack time for **iron, folate and fibre**. The lemon, tomato and parsley beside them help your body use the iron.\n\n**Vitamins A and E.** Molokhia, spinach, carrots and sweet potato carry **vitamin A**, and a spoonful of dukkah, almonds or peanuts most days carries vitamin E. Sunday's chicken liver adds B12 and iron.\n\n**Prep ahead.** On Friday night soak 90 g of dried fava for Saturday's ta'meya. On Sunday, cook the lentil and rice base for Tuesday's koshari (120 g lentils, 25 g rice). Brown Saturday's onions the day before.",
+  "signature": [
+    "nile-molokhia-chicken-rice",
+    "nile-koshari-lentils",
+    "nile-sayadeya-mackerel",
+    "nile-mullah-dakwa-chicken-asida"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "nile-bread-dukkah-oil"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "nile-cumin-chickpeas"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "nile-dates-almonds"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "nile-gebna-olives-pita"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "nile-zabadi-cucumber"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "nile-termis-lemon"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "nile-orange-dates"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "nile-shakshuka-masri",
+      "name": "Shakshuka masri, eggs in garlicky tomato and red pepper with baladi bread",
+      "inspiredBy": "Egyptian shakshuka, the home version with plenty of sweet red pepper, garlic and cumin",
+      "about": "Two eggs set in a thick, garlicky tomato sauce with soft sweet red pepper and a pinch of chili, finished with a spoonful of nutty dukkah and served with warm bread for scooping. The eggs bring **protein and choline**, and the dukkah brings vitamin E.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 150
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.3
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "dukkah-a59af5",
+          "g": 12,
+          "note": "to finish"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 45,
+          "note": "baladi bread or whole-wheat pita"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a small, wide pan. Cook the onion and red pepper over medium heat until the onion is soft and just golden, about 6 minutes.",
+        "Add the garlic, cumin, paprika and chili and stir for 30 seconds, until it smells toasty.",
+        "Pour in the crushed tomato with the salt and a splash of water. Simmer, stirring now and then, until it turns thick and jammy, about 8 minutes.",
+        "Make two little wells with the back of a spoon and crack an egg into each. Cover and cook on low for 4 to 5 minutes, until the whites are set and the yolks are still soft.",
+        "Scatter with the parsley and finish with a spoonful of dukkah, the way Egyptians do with eggs. Warm the bread in a dry pan, tear it up and scoop."
+      ],
+      "prepMin": 6,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make the tomato sauce the night before and keep it in the fridge. In the morning, heat it, crack in the eggs and breakfast is ready in 8 minutes."
+    },
+    {
+      "id": "nile-ful-medames-sardines",
+      "name": "Ful medames with tinned sardines, tahini, lemon and cucumber",
+      "inspiredBy": "Cairo and Alexandria ful, with the tinned sardines many Egyptians keep in the cupboard for a quick plate",
+      "about": "Warm, creamy fava beans mashed with garlic, cumin and lemon, with tinned sardines broken over the top, a drizzle of tahini and a pile of cucumber, onion and parsley. The beans bring **fibre, folate and iron**, and the sardines add omega-3, B12 and calcium from their soft bones.",
+      "ingredients": [
+        {
+          "food": "broadbeans-fava-beans-canned-solids-and-liquid-c9fcc5",
+          "g": 170,
+          "swap": "legumes",
+          "note": "a tin, with a little of its liquid"
+        },
+        {
+          "food": "sardines-canned-in-brine-drained-7cc943",
+          "g": 80,
+          "swap": "fatty_fish",
+          "note": "tinned in water or brine, drained"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "finely chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15,
+          "note": "chopped"
+        },
+        {
+          "food": "shatta-egyptian-chili-sauce-0d299a",
+          "g": 8,
+          "note": "a spoonful, to taste"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 35,
+          "note": "baladi bread or whole-wheat pita"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Mash the garlic with the salt into a paste. Warm the beans with some of their liquid in a small pot with the garlic and cumin, stirring now and then, until steaming hot, about 5 minutes.",
+        "Mash roughly with a fork, leaving some whole beans. Stir in the lemon juice and most of the olive oil.",
+        "Stir the tahini with a spoonful of water until it pours like thin cream.",
+        "Spoon the ful into a shallow bowl. Break the sardines over the top, drizzle with the tahini and the rest of the oil, and pile on the cucumber, onion and parsley. Add the shatta on the side.",
+        "Warm the bread in a dry pan or the toaster, tear it up and scoop."
+      ],
+      "prepMin": 6,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ],
+      "tip": "A tin of ful makes two portions. Keep the other half for the next ful morning, or slow-cook dried fava until creamy in a slow cooker or a pressure cooker."
+    },
+    {
+      "id": "nile-ful-medames-egg",
+      "name": "Ful medames with tahini, lemon and a boiled egg",
+      "inspiredBy": "the Cairo breakfast ful, the way a home cook finishes it with tahini, lemon and an egg",
+      "about": "Warm, creamy fava beans mashed with garlic, cumin and lemon, with a boiled egg, a drizzle of tahini and a pile of tomato, onion and parsley. The beans bring **fibre, folate and iron**, and the egg adds choline.",
+      "ingredients": [
+        {
+          "food": "broadbeans-fava-beans-canned-solids-and-liquid-c9fcc5",
+          "g": 170,
+          "swap": "legumes",
+          "note": "a tin, with a little of its liquid"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg, boiled"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 10
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "finely chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15,
+          "note": "chopped"
+        },
+        {
+          "food": "shatta-egyptian-chili-sauce-0d299a",
+          "g": 8,
+          "note": "a spoonful, to taste"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 35,
+          "note": "baladi bread or whole-wheat pita"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Use an egg boiled the night before, or lower one into boiling water for 8 minutes, then cool it under cold water and peel.",
+        "Mash the garlic with the salt into a paste. Warm the beans with some of their liquid in a small pot with the garlic and cumin, stirring now and then, until steaming hot, about 5 minutes.",
+        "Mash roughly with a fork, leaving some whole beans. Stir in the lemon juice and most of the olive oil.",
+        "Stir the tahini with a spoonful of water until it pours like thin cream.",
+        "Spoon the ful into a shallow bowl. Drizzle with the tahini and the rest of the oil, pile on the tomato, onion and parsley, and set the halved egg on top. Add the shatta on the side.",
+        "Warm the bread in a dry pan or the toaster, tear it up and scoop."
+      ],
+      "prepMin": 6,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Boil Thursday's and Friday's eggs together on Wednesday night. They keep 4 days in the fridge."
+    },
+    {
+      "id": "nile-pastirma-eggs",
+      "name": "Eggs with basterma-style pastrami and tomato, with olives and baladi bread",
+      "inspiredBy": "the Cairo breakfast of eggs fried with basterma, made here with beef pastrami as the nearest widely sold cured beef",
+      "about": "Peppery, smoky cured beef crisped in the pan, then softened tomato and red pepper with two eggs cooked right on top and a spoonful of dukkah to finish. Salty and rich, so a little goes a long way. The eggs and beef bring **protein, choline and B12**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "beef-pastrami-cured-fec1b4",
+          "g": 30,
+          "note": "sliced thin, then cut in strips"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "sliced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "olive-black-91b0d7",
+          "g": 25,
+          "note": "black olives, on the side"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6
+        },
+        {
+          "food": "dukkah-a59af5",
+          "g": 12,
+          "note": "to finish"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40,
+          "note": "baladi bread or whole-wheat pita"
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a small pan. Add the pastrami strips and fry for about 2 minutes, until the edges are crisp and it smells peppery and smoky.",
+        "Add the tomato and red pepper and cook until they soften, about 4 minutes.",
+        "Crack the eggs over the top, sprinkle with the cumin and pepper, cover and cook for 3 to 4 minutes until the whites are set and the yolks still soft. The pastrami is salty, so you should not need extra salt.",
+        "Scatter with parsley and finish with a spoonful of dukkah. Serve with the olives and warm bread."
+      ],
+      "prepMin": 5,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Real basterma has a fenugreek and garlic crust. If you find it at a Middle Eastern shop or an Armenian deli, use it the same way."
+    },
+    {
+      "id": "nile-ful-sudani",
+      "name": "Sudanese-style ful with egg, white cheese, tomato, sesame and rocket",
+      "inspiredBy": "the Sudanese breakfast ful, finished with white cheese, sesame and plenty of raw rocket",
+      "about": "Fava beans mashed with garlic, lemon and chili, with a boiled egg, crumbled white cheese, tomato, onion, toasted sesame and a big handful of peppery rocket. It is a different mood from Egyptian ful. The beans and rocket bring **iron, folate and vitamin K**, and the egg and cheese add choline and calcium.",
+      "ingredients": [
+        {
+          "food": "broadbeans-fava-beans-canned-solids-and-liquid-c9fcc5",
+          "g": 170,
+          "swap": "legumes",
+          "note": "a tin, with a little of its liquid"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg, boiled"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "gebna-beida-egyptian-white-cheese-a0b30f",
+          "g": 25,
+          "note": "gebna beida, crumbled"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 5,
+          "note": "toasted"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 22
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 25,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "shatta-egyptian-chili-sauce-0d299a",
+          "g": 8,
+          "note": "a spoonful, to taste"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40,
+          "note": "baladi bread or whole-wheat pita"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Use an egg boiled the night before, or lower one into boiling water for 8 minutes, then cool it under cold water and peel.",
+        "Toast the sesame seeds in a dry pan until golden and nutty, about 2 minutes.",
+        "Mash the garlic with the salt into a paste. Warm the beans with a splash of their liquid, the garlic, cumin and the shatta, stirring, until steaming hot, about 5 minutes.",
+        "Mash with a fork until mostly creamy. Stir in the lemon juice and half the olive oil.",
+        "Spoon into a shallow bowl. Pour the rest of the olive oil over the middle and scatter on the white cheese, tomato, onion, sesame and rocket. Halve the egg and set it on top.",
+        "Warm the bread and tear it up to scoop."
+      ],
+      "prepMin": 8,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "In Sudan the oil is often toasted sesame oil. A teaspoon in place of half the olive oil is lovely. Gebna beida is salty, so taste before adding more salt."
+    },
+    {
+      "id": "nile-baked-tameya",
+      "name": "Baked green ta'meya with cucumber and rocket salad, tahini and olives",
+      "inspiredBy": "Egyptian ta'meya, the fava falafel of Cairo and Alexandria, baked instead of deep-fried",
+      "about": "Green fava patties packed with parsley and dill, crusted in sesame and baked until crisp, with a peppery cucumber and rocket salad, a lemony tahini sauce and a few black olives. The fava and herbs bring **protein, folate, iron and vitamin K**. This makes two portions, so Sunday's breakfast is done.",
+      "ingredients": [
+        {
+          "food": "broadbeans-fava-beans-dry-811d1a",
+          "g": 45,
+          "swap": "legumes",
+          "note": "dried, soaked overnight, peeled and split if you can find them"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 20
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 15
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "roughly chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 8,
+          "note": "half in the mix, half to coat"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 18
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 40,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "olive-black-91b0d7",
+          "g": 25,
+          "note": "black olives, on the side"
+        },
+        {
+          "food": "dukkah-a59af5",
+          "g": 8,
+          "note": "for dipping the bread"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 30,
+          "note": "baladi bread or whole-wheat pita"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "The night before, cover the fava with plenty of cold water and soak for at least 12 hours. Drain well. Do not cook them first, they should be raw and just soft.",
+        "Heat the oven to 220°C (425°F). Line a tray with parchment and brush it with a little of the oil.",
+        "Pulse the fava, parsley, dill, onion, garlic, half the sesame, cumin and salt in a food processor until it looks like coarse green crumbs. It should hold together when you squeeze a handful.",
+        "Shape into small flattened patties, about 6 per portion. Press the edges into the rest of the sesame seeds, set them on the tray and brush with the remaining oil.",
+        "Bake for 12 minutes, flip, and bake another 10 to 12 minutes until deep golden and crisp outside, still green inside.",
+        "While they bake, stir the tahini with half the lemon juice, a pinch of salt and enough water to make a pourable sauce. Toss the cucumber and rocket with the rest of the lemon.",
+        "Serve the ta'meya with the salad, the tahini sauce, the olives and warm bread, with a little dukkah for dipping. Keep the second portion for tomorrow's breakfast and re-crisp it in a hot oven or toaster oven for 8 minutes."
+      ],
+      "prepMin": 25,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "Peeled split dried fava from a Middle Eastern grocer gives the greenest, lightest ta'meya. Whole dried fava from the supermarket works too, but peel the skins after soaking. Canned fava will not work, the raw soaked fava is what holds the patties together."
+    },
+    {
+      "id": "nile-sardine-baladi-sandwich",
+      "name": "Sardine, tomato and rocket in baladi bread with tahini and lemon",
+      "inspiredBy": "the Egyptian tinned sardine sandwich, a lunch-hour classic in Cairo",
+      "about": "Mashed tinned sardines with onion, cumin and lemon, stuffed into a toasted pocket with tomato, rocket and a tahini and lemon sauce with a pinch of dried mint. The soft sardine bones bring **calcium and omega-3**, and it comes together in ten minutes.",
+      "ingredients": [
+        {
+          "food": "sardines-canned-in-brine-drained-7cc943",
+          "g": 100,
+          "swap": "fatty_fish",
+          "note": "tinned in water or brine, drained"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 60,
+          "note": "baladi bread or whole-wheat pita"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 22
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 25,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "mint-dried-3fe241",
+          "g": 0.3
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Mash the sardines roughly with a fork with half the lemon juice, the cumin, the chili and the onion.",
+        "Stir the tahini with the olive oil, the dried mint, the salt and a spoonful of water to make a thick sauce.",
+        "Split the pita and toast it for a minute in a dry pan or toaster.",
+        "Spread the sauce inside, then fill with the sardines, tomato, rocket and parsley. Squeeze the rest of the lemon over the top and eat it right away."
+      ],
+      "prepMin": 10,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "no-cook"
+      ],
+      "tip": "Pack the pita, filling and salad separately if you are taking it to work and assemble at lunch so the bread stays crisp."
+    },
+    {
+      "id": "nile-mackerel-tomato-salata",
+      "name": "Tinned mackerel in garlicky tomato with salata baladi and baladi bread",
+      "inspiredBy": "a cheap, quick Cairo supper of tinned fish warmed in tomato and scooped up with bread, with the everyday salad on the side",
+      "about": "Tinned mackerel warmed through in a garlicky, cumin-scented tomato sauce, scooped up with warm bread, with a crunchy salata baladi of cucumber, tomato, onion and parsley on the side. The mackerel brings **omega-3, B12 and vitamin D**, and the cooked tomato brings lycopene and vitamin C.",
+      "ingredients": [
+        {
+          "food": "mackerel-canned-in-water-a99e2d",
+          "g": 100,
+          "swap": "fatty_fish",
+          "note": "canned in water, drained"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 120
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.3
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 50,
+          "note": "baladi bread or whole-wheat pita"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Warm the olive oil with the crushed garlic in a small pan over low heat for 1 minute, without letting it brown.",
+        "Add the crushed tomato, cumin, chili, half the lemon juice and half the salt. Simmer for about 4 minutes, until it thickens.",
+        "Flake in the mackerel and warm it through for 2 minutes. Do not stir too hard, you want big flakes.",
+        "Toss the cucumber, fresh tomato, onion and parsley with the rest of the lemon juice and a pinch of salt.",
+        "Warm the bread in a dry pan. Scoop the mackerel and sauce up with the bread and eat the salad alongside."
+      ],
+      "prepMin": 10,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Tinned sardines work the same way. Mash the soft bones in with a fork for extra calcium."
+    },
+    {
+      "id": "nile-molokhia-chicken-rice",
+      "name": "Molokhia with chicken and brown rice, with garlic and coriander taqliya",
+      "inspiredBy": "Cairo molokhia, the green jute leaf soup, served over brown rice rather than white",
+      "about": "Silky, deep green jute leaves in chicken broth, finished with a sizzle of garlic and coriander, spooned over brown rice and tender chicken, with sharp onion in vinegar on the side. The jute brings **vitamins A and K, folate and calcium**, and the chicken and rice make it a full meal.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "cut in big pieces"
+        },
+        {
+          "food": "jute-potherb-raw-235de2",
+          "g": 120,
+          "note": "frozen minced molokhia, or fresh, or dried"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "quartered, plus a little thinly sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "crushed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.5,
+          "note": "ground"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 12,
+          "note": "at the table"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "distilled-vinegar-white-dd0119",
+          "g": 8
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.3
+        }
+      ],
+      "steps": [
+        "Start the brown rice first, in a pot with twice its volume of water. It needs about 40 minutes.",
+        "Put the chicken, the quartered onion, bay leaf, cardamom, pepper and half the salt in another pot with enough water to cover, about 700 ml for two portions. Simmer, covered, until the chicken is just tender, 18 to 20 minutes.",
+        "Lift out the chicken and keep it warm. Strain the broth back into the pot and bring it to a gentle simmer.",
+        "Stir in the molokhia, still frozen is fine, and the rest of the salt. Bring back to a gentle simmer, not a hard boil, and cook for 5 minutes. It should be glossy and fall off the spoon in ribbons.",
+        "Make the taqliya. Warm the olive oil in a small pan and fry the garlic with the ground coriander for 1 to 2 minutes, until the garlic is just golden. Do not let it brown. Tip it sizzling into the pot and stir once.",
+        "Toss a few thin slices of raw onion with the vinegar and a pinch of salt.",
+        "Serve the rice with the molokhia ladled over and the chicken on top, with the onions and lemon wedges on the side. Squeeze the lemon over at the table, since it dulls the green if it cooks. Pack the second portion for tomorrow's lunch, with the rice in a separate container."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Ghee is the traditional fat for the taqliya, and a teaspoon of it is delicious here if you have some. Molokhia freezes well, so a double batch makes a quick dinner later."
+    },
+    {
+      "id": "nile-koshari-lentils",
+      "name": "Koshari with lentils, chickpeas and a little pasta",
+      "inspiredBy": "Cairo koshari, reimagined with brown rice and lentils doing most of the work, and a small handful of whole-wheat pasta",
+      "about": "The Cairo street classic: lentils, rice, pasta and chickpeas under a spiced tomato sauce, crisp onions and a sharp garlic and vinegar splash. Here it leans on lentils and chickpeas for **fibre, iron and slow carbs**, with less rice and pasta than the street version.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 60,
+          "swap": "legumes",
+          "note": "brown or green"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 12,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 15,
+          "note": "whole-wheat macaroni or small shells"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 90,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 90,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 180
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "distilled-vinegar-white-dd0119",
+          "g": 12
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 2
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1
+        },
+        {
+          "food": "shatta-egyptian-chili-sauce-0d299a",
+          "g": 10,
+          "note": "at the table"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.6
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the sliced onions with most of the oil and a pinch of salt and spread them in a single layer over two trays. Roast for 25 to 30 minutes, flipping once, until deep golden. They crisp up as they cool.",
+        "Simmer the brown rice alone in plenty of water for 10 minutes. Add the lentils and half the cumin and simmer for about 22 minutes more, until both are tender. Drain and season with a pinch of salt.",
+        "Cook the pasta in boiling salted water until just al dente, then drain.",
+        "For the sauce, warm the rest of the oil and half the garlic (finely chopped) over low heat for 1 minute. Stir in the tomato paste, the crushed tomato, the rest of the cumin, the coriander, cinnamon and salt. Simmer for 12 minutes until thick, then stir in the chickpeas to warm through.",
+        "Crush the remaining garlic and stir it into the vinegar with a splash of water. This is the daqqa.",
+        "Pile the lentils and rice into bowls, top with the pasta, the saucy chickpeas and the crispy onions. Spoon over the garlic vinegar, scatter with parsley and add a spoonful of shatta at the table. Pack the second portion for tomorrow's lunch, with the onions in a separate container."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "Cook the lentil and rice base on Sunday and keep it in the fridge, then koshari is a 25-minute job. Re-crisp the leftover onions in a dry pan before you eat them."
+    },
+    {
+      "id": "nile-grilled-sardines-baladi-salad",
+      "name": "Alexandrian grilled sardines with cumin and lemon, tahini sauce and baladi salad",
+      "inspiredBy": "the grilled sardines of Alexandria's fish markets, rubbed with cumin and garlic",
+      "about": "Fresh sardines rubbed with garlic, cumin and lemon, grilled until the skin blisters, with a lemony tahini sauce, a crunchy tomato, cucumber, carrot and parsley salad and warm bread. The sardines bring **omega-3, vitamin D, B12 and calcium**.",
+      "ingredients": [
+        {
+          "food": "european-pilchard-or-sardine-raw-e12560",
+          "g": 200,
+          "swap": "fatty_fish",
+          "note": "whole, gutted, about 5 small"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.3
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 26
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 10
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "coarsely grated"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "finely chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 20
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 55,
+          "note": "baladi bread or whole-wheat pita"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Mash half the garlic with the salt, then stir in the cumin, paprika, chili, half the oil and half the lemon juice. Rub this all over the sardines, inside and out, and leave them for 15 minutes.",
+        "Heat the broiler (or a grill pan or barbecue) as hot as it goes. Cook the sardines for 3 to 4 minutes on each side, until the skin is blistered and the flesh flakes off the bone.",
+        "Make the tahini sauce. Mash the rest of the garlic, stir in the tahini and half the remaining lemon juice, and thin with water until it pours like cream.",
+        "Toss the tomato, cucumber, carrot, onion and parsley with the rest of the lemon juice and oil and a pinch of salt.",
+        "Serve the sardines hot with the salad, the tahini sauce and warm bread."
+      ],
+      "prepMin": 20,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Ask the fishmonger to gut and scale the sardines. If you cannot find fresh ones, mackerel fillets work the same way."
+    },
+    {
+      "id": "nile-bamia-beef-rice",
+      "name": "Bamia bil lahma, okra and beef in garlicky tomato, with brown rice",
+      "inspiredBy": "Egyptian bamia, the okra and meat stew every Cairo family makes, with a garlic and coriander taqliya",
+      "about": "Tender okra and small chunks of beef simmered in a thick tomato sauce, finished with a sizzle of garlic and coriander, over brown rice. Okra is **rich in fibre, folate and vitamin K**, and the garlic and tomato make it taste like Friday lunch.",
+      "ingredients": [
+        {
+          "food": "beef-chuck-for-stew-lean-and-fat-raw-8d6ce5",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "cut into 2 cm cubes"
+        },
+        {
+          "food": "okra-gumbo-raw-424b0a",
+          "g": 220,
+          "note": "small whole pods, frozen is fine"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 140
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 12
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 9
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 2,
+          "note": "ground"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 35,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Brown the beef in half the oil in a heavy pot over medium-high heat, about 5 minutes. Add the onion and cook until golden, about 5 minutes.",
+        "Add the tomato paste, the crushed tomato, the bay leaf, the pepper, half the salt and 250 ml of water. Cover and simmer gently for about 55 minutes, until the beef is nearly tender.",
+        "Start the rice in a separate pot with twice its volume of water about 35 minutes before the end, and cook until fluffy.",
+        "Add the okra whole, trimming only the stems, and simmer for another 15 minutes, until tender. Do not stir too much, it will turn slimy. Shake the pot instead.",
+        "Fry the sliced garlic with the ground coriander in the rest of the oil until golden, about 1 minute, then tip the sizzling taqliya into the pot with the lemon juice.",
+        "Serve over the rice, scattered with parsley. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 75,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "A pressure cooker cuts the beef to about 20 minutes, which makes this a weeknight dish. Cut the okra without piercing the pods and do not soak it, so it stays firm."
+    },
+    {
+      "id": "nile-mullah-dakwa-chicken-asida",
+      "name": "Sudanese chicken and peanut mullah with spinach, sorghum asida and rocket",
+      "inspiredBy": "Sudanese mullah dakwa, the peanut and tomato stew, with asida made from sorghum",
+      "about": "Chicken simmered with onion, tomato, ginger and ground roasted peanuts into a thick, rich stew with spinach folded in, mounded around a soft sorghum asida with a peppery rocket salad. The chicken, peanuts and spinach bring **protein, vitamin E, magnesium and folate**.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "cut in bite-size pieces"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 25,
+          "swap": "nuts_seeds",
+          "note": "dry roasted, unsalted"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 130
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 12
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "sorghum-flour-271a76",
+          "g": 25,
+          "note": "for tonight's asida"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 25,
+          "note": "baladi bread or whole-wheat pita, for tomorrow's portion"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 25,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 1
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Grind the peanuts with a splash of water in a mortar or small blender until they make a coarse paste. This is the dakwa.",
+        "Brown the chicken in the olive oil for 4 to 5 minutes. Lift it out. In the same pot, cook the onion until soft and golden, about 8 minutes. Add the garlic, baharat, cumin, ginger and chili and stir for 1 minute.",
+        "Stir in the tomato paste, then the crushed tomato and salt. Simmer for 5 minutes, then return the chicken with 300 ml of water. Cover and simmer for 20 minutes.",
+        "Stir a ladle of the sauce into the peanut paste to loosen it, then stir it all into the pot. Simmer uncovered for 10 minutes more, until thick and the oil shines at the edges. Fold in the spinach for the last 2 minutes and add the lemon juice.",
+        "Meanwhile, make the asida for tonight only. Whisk all the sorghum flour with twice its weight of cold water until smooth. Bring another twice its weight of salted water to a boil, pour in the paste while whisking, then switch to a wooden spoon and beat hard over low heat for 6 to 8 minutes, until stiff, smooth and glossy. Shape into a mound in a bowl and make a well.",
+        "Spoon the mullah into the well and serve the rocket dressed with a squeeze of lemon alongside. Asida is best fresh, so pack the second portion of mullah, with its rocket in a separate box, for tomorrow's lunch with warm pita or rice."
+      ],
+      "prepMin": 20,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "A tablespoon of natural peanut butter stands in for the ground peanuts. Ghee is the traditional fat in Sudan and is delicious here."
+    },
+    {
+      "id": "nile-sayadeya-mackerel",
+      "name": "Alexandrian sayadeya, spiced mackerel over caramelized onion and cumin brown rice",
+      "inspiredBy": "Alexandria's sayadeya, the fisherman's rice, made with brown rice and baked mackerel instead of fried fish",
+      "about": "Deeply caramelized onions and cumin cooked into brown rice, topped with spice-rubbed mackerel, sweet browned onions and a few toasted almonds, with a bright tomato and parsley relish. It is Alexandria's weekend dish. The mackerel brings **omega-3 and B12**, and the almonds add vitamin E.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "fillets, skin on"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 150,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 2.5
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 16
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.6
+        }
+      ],
+      "steps": [
+        "Cook the onions in half the oil in a wide, heavy pot over medium-low heat, stirring often, for 25 to 30 minutes, until deep brown and sweet. Add a splash of water if they start to catch. Set a third of them aside for the top.",
+        "Add half the garlic and most of the cumin to the pot, then the rice. Stir for 1 minute, then add about 2.2 times the rice's volume of boiling water and half the salt. Cover and cook on low for 35 to 40 minutes, until the rice is tender. Rest, covered, for 5 minutes.",
+        "Heat the oven to 230°C (450°F). Mash the rest of the garlic with the remaining cumin, the chili, a little of the lemon juice and the rest of the oil, and rub it all over the mackerel.",
+        "Roast the mackerel skin-side up for 10 to 12 minutes, until the skin crackles and the flesh flakes.",
+        "Toss the tomato with the parsley, the rest of the lemon juice and a pinch of salt.",
+        "Toast the almonds in a dry pan until golden, about 3 minutes.",
+        "Spoon the rice onto plates, top with the mackerel, the reserved onions and the almonds, and serve the relish beside it. Keep the second portion for tomorrow's lunch, with the fish, rice and relish in separate containers. Reheat the rice with a splash of water. The fish is good cold or warm."
+      ],
+      "prepMin": 20,
+      "cookMin": 70,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers"
+      ],
+      "tip": "Make the onions the day before, they are the slow part, and the whole dinner comes together in 45 minutes. Mullet or sea bass is what Alexandrians use, and either works here too."
+    },
+    {
+      "id": "nile-kebda-iskandarani",
+      "name": "Kebda Iskandarani, chicken liver with garlic, cumin and sweet pepper in baladi bread",
+      "inspiredBy": "Alexandria's street-corner liver, a favourite sandwich in Egypt's port city, made with chicken liver",
+      "about": "Quick-seared chicken liver with plenty of garlic, cumin and red pepper, finished with lemon, stuffed in warm bread with tomato and a garlicky yogurt sauce, with roasted sweet potato wedges and crisp chickpeas on the side. Liver is one of the richest foods for **iron, B12 and vitamin A**, and a small portion once a week is plenty. Skip it if you are pregnant or planning to be.",
+      "ingredients": [
+        {
+          "food": "chicken-liver-raw-6931a6",
+          "g": 45,
+          "swap": "lean_protein",
+          "note": "trimmed, cut in strips"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 7
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "shatta-egyptian-chili-sauce-0d299a",
+          "g": 8,
+          "note": "a spoonful, to taste"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 35,
+          "note": "baladi bread or whole-wheat pita"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 70,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 40,
+          "swap": "legumes",
+          "note": "rinsed, roasted with the wedges"
+        },
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 140,
+          "note": "plain, for the sauce"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the sweet potato wedges and the chickpeas with a third of the oil, half the cumin and half the salt on a tray and roast for 30 minutes, turning once, until the wedges are golden and soft and the chickpeas are a little crisp.",
+        "Stir a little crushed garlic and a pinch of salt into the yogurt and set aside. Crush the rest of the garlic with the remaining salt and cumin.",
+        "Pat the liver dry. Heat the rest of the oil in a wide pan until very hot. Add the liver in one layer, then the red pepper and the garlic mix, and cook, tossing, for about 4 minutes in all, until the liver is browned and no pink remains. Overcooked liver goes dry, so do not go much past that.",
+        "Squeeze over the lemon juice and stir in the parsley.",
+        "Split the warm bread, spread a spoonful of the garlic yogurt inside and tuck in the tomato and liver. Serve the rest of the yogurt as a dip for the wedges and chickpeas, with the shatta for those who want it."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Soaking the liver in milk or lemon water for 15 minutes mellows the flavour if you are new to liver. In Alexandria it is often served with tahini too."
+    },
+    {
+      "id": "nile-cumin-chickpeas",
+      "name": "Hummus el-sham, warm cumin chickpeas with lemon",
+      "inspiredBy": "hummus el-sham, the warm chickpeas sold in paper cups on Cairo street corners",
+      "about": "Chickpeas warmed with cumin, olive oil and a squeeze of lemon, like the cups sold at Cairo street corners. A bowl brings **plant protein and fibre**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 130,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the chickpeas with the olive oil, cumin and a splash of the tin's liquid in a small pan or the microwave for 2 to 3 minutes.",
+        "Add the lemon juice, salt and pepper, and eat warm."
+      ],
+      "prepMin": 2,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "nile-termis-lemon",
+      "name": "Termis (lupini beans) with lemon and cumin",
+      "inspiredBy": "termis, the lupini beans sold from Egyptian street carts",
+      "about": "Firm, salty lupini beans tossed with lemon and cumin, a famous Egyptian street snack. They bring **plant protein and fibre** for very few calories.",
+      "ingredients": [
+        {
+          "food": "lupin-boiled-748dba",
+          "g": 120,
+          "swap": "legumes",
+          "note": "jarred, drained and rinsed"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Rinse the lupini and toss with the lemon, cumin and salt.",
+        "Squeeze each bean out of its skin with your fingers and eat the soft inside, or eat them whole."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "nile-sardines-on-bread",
+      "name": "Sardines with tomato and shatta on baladi bread",
+      "inspiredBy": "sardin ala el-eish, tinned sardines mashed onto warm bread with a kick of shatta, a quick Cairo bite",
+      "about": "Tinned sardines mashed with lemon and a spoonful of shatta, piled onto warm bread and topped with sliced tomato. The soft sardine bones bring **calcium and omega-3**.",
+      "ingredients": [
+        {
+          "food": "sardines-canned-in-brine-drained-7cc943",
+          "g": 65,
+          "swap": "fatty_fish",
+          "note": "tinned in water or brine, drained"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 30,
+          "note": "baladi bread or whole-wheat pita"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "shatta-egyptian-chili-sauce-0d299a",
+          "g": 5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Warm the bread in a dry pan or the toaster.",
+        "Mash the sardines with the lemon, shatta and pepper, pile onto the bread and lay the tomato on top."
+      ],
+      "prepMin": 4,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "nile-carrot-orange-juice",
+      "name": "Carrot, orange and almond smoothie",
+      "inspiredBy": "carrot and orange juice from Cairo juice bars, thickened with almonds as in a koktail",
+      "about": "Carrots and an orange blended into a sweet, golden drink with a few almonds for body, like the corner juice stands in Cairo. The carrots bring **a full day of vitamin A**, and the almonds and orange bring vitamin E and vitamin C. Keep the pulp in for fibre.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 220,
+          "note": "grated"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 120,
+          "swap": "vit_c_fruit",
+          "note": "peeled"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "soaked 10 minutes"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Soak the almonds in warm water for 10 minutes, then drain. Grate the carrots.",
+        "Blend the carrots, orange, almonds and about 100 ml of cold water for 2 minutes, until as smooth as it will go.",
+        "Add the lemon juice, taste, and serve over ice. Add a little more water if it is too thick."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "nile-sweet-potato-cinnamon",
+      "name": "Roasted sweet potato with cinnamon and a squeeze of lemon",
+      "inspiredBy": "batata, the roasted sweet potato sold from carts on winter streets in Cairo",
+      "about": "A hot roasted sweet potato with a pinch of cinnamon and a squeeze of lemon, like the carts on Cairo corners in winter. It brings **vitamin A and fibre**.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 170,
+          "note": "1 large"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Prick the sweet potato and microwave it for 8 minutes, or roast at 200°C (400°F) for about 45 minutes for the best flavour, until it is soft and collapses when squeezed.",
+        "Split it open and sprinkle with the cinnamon, lemon juice and salt."
+      ],
+      "prepMin": 3,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Roast it on Tuesday next to the koshari onions, since the oven is already hot, and rewarm it on Wednesday."
+    },
+    {
+      "id": "nile-yogurt-dates-cinnamon",
+      "name": "Zabadi with chopped dates and cinnamon",
+      "inspiredBy": "plain yogurt with dates, the way a Nile Valley kitchen would sweeten it",
+      "about": "Plain yogurt with chopped dates and cinnamon, sweetened by the fruit. The yogurt brings **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 170,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 18,
+          "note": "½ medjool or 2 small dates, chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Stir the chopped date into the yogurt, then sprinkle with the cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "nile-dates-almonds",
+      "name": "Dates stuffed with almonds",
+      "inspiredBy": "the almond-stuffed dates of Egyptian and Sudanese tea tables",
+      "about": "Soft dates stuffed with whole almonds, served with tea in many Nile Valley homes. The almonds bring **vitamin E and magnesium**.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 35,
+          "note": "1½ medjool or 3 small dates, pitted"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 18,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Slit the dates and remove the pits. Tuck an almond into each date, and eat the rest of the almonds alongside."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "nile-dates-tahini",
+      "name": "Dates with tahini",
+      "inspiredBy": "dates and tahini, a sweet, nutty pairing from the Egyptian breakfast table",
+      "about": "Soft dates filled with a little tahini and a pinch of cinnamon, rich and sweet. The tahini brings **calcium, copper and vitamin E**, and the dates bring potassium.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 35,
+          "note": "1½ medjool or 3 small Egyptian dates, pitted"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8
+        }
+      ],
+      "steps": [
+        "Slit the dates and remove the pits. Spoon a little tahini into each and eat."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "nile-gebna-olives-pita",
+      "name": "Gebna beida, olives and mint in baladi bread",
+      "inspiredBy": "the Egyptian white cheese sandwich, with olives and dried mint",
+      "about": "A simple Egyptian sandwich of salty white cheese, black olives and dried mint in a small pita. It brings **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "gebna-beida-egyptian-white-cheese-a0b30f",
+          "g": 25,
+          "note": "gebna beida"
+        },
+        {
+          "food": "olive-black-91b0d7",
+          "g": 20,
+          "note": "black olives, pitted"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 35,
+          "note": "baladi bread or whole-wheat pita"
+        },
+        {
+          "food": "mint-dried-3fe241",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Split the pita and fill with the white cheese and olives. Rub the dried mint between your fingers over the top. Eat right away."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "nile-zabadi-cucumber",
+      "name": "Zabadi bil khiar, yogurt with cucumber, garlic and mint",
+      "inspiredBy": "the cool yogurt and cucumber salad on Egyptian tables, eaten with bread",
+      "about": "Cool plain yogurt with grated cucumber, a little garlic and dried mint, scooped up with a few bites of bread. The yogurt brings **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 170,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1.5
+        },
+        {
+          "food": "mint-dried-3fe241",
+          "g": 1
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 25,
+          "note": "baladi bread or whole-wheat pita, torn for scooping"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Squeeze the grated cucumber lightly in your hand. Stir it into the yogurt with the crushed garlic, dried mint and salt.",
+        "Eat with torn pieces of bread."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "nile-bread-dukkah-oil",
+      "name": "Baladi bread with olive oil and dukkah",
+      "inspiredBy": "the Egyptian snack of bread dipped in olive oil, then in dukkah",
+      "about": "Warm bread, a little olive oil and a spoon of dukkah, the Egyptian mix of toasted hazelnut, sesame, coriander and cumin. It brings **vitamin E and healthy fats**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 45,
+          "note": "baladi bread or whole-wheat pita"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "dukkah-a59af5",
+          "g": 12
+        }
+      ],
+      "steps": [
+        "Warm the bread in a dry pan. Tear it up, dip each piece in the oil and then in the dukkah."
+      ],
+      "prepMin": 2,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "nile-orange-dates",
+      "name": "Orange with dates",
+      "inspiredBy": "a Nile Valley fruit plate of oranges and dates",
+      "about": "A juicy orange with a soft date alongside. The orange brings **vitamin C**, and the date adds sweetness and potassium.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 25,
+          "note": "1 date"
+        }
+      ],
+      "steps": [
+        "Peel the orange and break it into segments. Eat it with the date."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "nile-shakshuka-masri"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nile-sardine-baladi-sandwich"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "nile-molokhia-chicken-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nile-orange-dates"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nile-cumin-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "nile-ful-medames-sardines"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nile-molokhia-chicken-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "nile-koshari-lentils"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nile-carrot-orange-juice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nile-yogurt-dates-cinnamon"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "nile-pastirma-eggs"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nile-koshari-lentils",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "nile-grilled-sardines-baladi-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nile-zabadi-cucumber"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nile-sweet-potato-cinnamon"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "nile-ful-sudani"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nile-mackerel-tomato-salata"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "nile-bamia-beef-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nile-carrot-orange-juice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nile-yogurt-dates-cinnamon"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "nile-ful-medames-egg"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nile-bamia-beef-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "nile-mullah-dakwa-chicken-asida"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nile-sardines-on-bread"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nile-dates-tahini"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "nile-baked-tameya"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nile-mullah-dakwa-chicken-asida",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "nile-sayadeya-mackerel"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nile-gebna-olives-pita"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "nile-baked-tameya",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nile-sayadeya-mackerel",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "nile-kebda-iskandarani"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nile-termis-lemon"
+        }
+      ]
+    }
+  ]
+}
