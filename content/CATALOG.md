@@ -159,6 +159,49 @@ computed for every plan, regional ones included, so the Plans filters work acros
 
 About 90 families in all, which makes the whole library about 110 families and 350+ sized plans.
 
+### Batch 2A briefs (diabetes-friendly, vegan, keto, gluten-free)
+
+Rules for each diet are in GUIDE.md §12. Ids start with the diet so the files group together.
+
+**Diabetes-friendly (`low-gi`), Light 1200-1800, Standard, Big:**
+1. **`lowgi-south-asia` · Diabetes-friendly South Asian** (North and South India, Pakistan, Sri Lanka). Top priority.
+   - **Dishes:** moong dal chilla with mint chutney; vegetable upma made with millet or broken barley; chana masala with a small brown basmati portion; palak paneer or palak tofu with one whole-wheat roti; fish curry (Kerala or Goan) with cabbage thoran; tandoori chicken with kachumber and raita; rajma; sundal snacks; methi in the dal.
+   - **Watch:** white rice and white flour only as small sides, if at all. Roti counts carefully. Dal at two meals most days.
+2. **`lowgi-middle-east` · Diabetes-friendly Middle Eastern** (Levant, Gulf, Turkey).
+   - **Dishes:** ful medames with eggs; mujaddara with bulgur and lots of salad; freekeh with chicken; fattoush with grilled fish; lentil soup; shakshuka; kofta with tabbouleh; hummus and crudités snacks.
+3. **`lowgi-med` · Diabetes-friendly Mediterranean** (Greece, Italy, Spain).
+   - **Dishes:** Greek yogurt with walnuts and berries; barley risotto with mushrooms; fasolada; sardines with white bean salad; chicken souvlaki with horiatiki; pasta e ceci with more ceci than pasta; frittata; Spanish lentil stew.
+4. **`lowgi-latin` · Diabetes-friendly Latin** (Mexico, Central America, Caribbean, South America).
+   - **Dishes:** huevos rancheros on one corn tortilla with black beans; sopa de frijoles; chicken tinga lettuce tacos plus one tortilla; ceviche with avocado; Peruvian quinoa and bean salad; pozole with lots of cabbage and radish; arroz con pollo with a modest brown rice portion and a big salad (no cauliflower rice: keep it real).
+
+**Vegan (`vegan`), Light, Standard, Big:**
+5. **`vegan-med-levant` · Vegan Mediterranean & Levant.**
+   - **Dishes:** overnight oats with soy beverage, walnuts and figs; hummus bowls with tofu; mujaddara; Greek gigantes plaki; falafel baked with tahini salad; lentil and chard soup; tofu "feta" with horiatiki; ful medames; Sicilian caponata with white beans.
+6. **`vegan-india` · Vegan Indian** (North and South).
+   - **Dishes:** besan chilla; poha with peanuts; chana masala; dal tadka with tofu; rajma; tofu tikka; sambar with idli; chole; palak tofu; coconut-light vegetable korma with cashews; soy-beverage chai.
+7. **`vegan-east-asia` · Vegan East Asian** (China, Japan, Korea, Vietnam).
+   - **Dishes:** mapo tofu with mushrooms; miso soup with tofu and wakame; tempeh and broccoli stir-fry; Korean tofu jjigae; edamame and soba salad; Vietnamese tofu bánh mì bowl; soy-beverage congee; sesame spinach.
+8. **`vegan-latin` · Vegan Latin.**
+   - **Dishes:** black bean and sweet potato tacos; tofu scramble rancheros; Peruvian quinoa stew; feijoada-style black beans with smoky tofu; Colombian bean soup; chili sin carne; arepas with black beans and avocado; pepita and lime snacks.
+
+**Keto (`keto`), Light (if it passes), Standard, Big:**
+9. **`keto-med` · Keto Mediterranean.**
+   - **Dishes:** Greek yogurt (full-fat, small) with walnuts and berries; spinach and feta omelette; salmon with lemon, zucchini and almond gremolata; Greek salad with sardines; chicken souvlaki with tzatziki and cucumber; cauliflower "rice" with shrimp and olives; chia pudding; eggplant moussaka without potato.
+10. **`keto-middle-east` · Keto Middle Eastern.**
+    - **Dishes:** shakshuka; lamb kofta with tahini and salad; chicken shawarma lettuce bowls with garlic sauce; baba ghanoush with crudités; grilled fish with tahini and herbs; fattoush without bread, with toasted almonds; cauliflower tabbouleh.
+11. **`keto-asia` · Keto Asian** (Japan, Korea, Thailand, China).
+    - **Dishes:** salmon teriyaki-style with no sugar (tamari and ginger); Thai green curry with chicken and vegetables (light coconut); Korean bulgogi lettuce wraps; egg drop soup with spinach; tofu and mushroom stir-fry; miso salmon; cucumber-sesame salad; edamame snacks.
+12. **`keto-latin` · Keto Latin.**
+    - **Dishes:** huevos a la mexicana with avocado; carne asada with nopales and salsa; ceviche; chicken fajita bowls without tortillas; Brazilian moqueca with fish (light coconut); chimichurri steak with grilled vegetables; pepita snacks.
+
+**Gluten-free (`gluten-free`), Light, Standard, Big:**
+13. **`gf-latin` · Gluten-free Latin.**
+    - **Dishes:** arepas with eggs and black beans; corn-tortilla tacos; Peruvian quinoa and chicken soup; Brazilian rice and black beans with greens; ceviche with sweet potato; tamales or pozole; Colombian ajiaco with potatoes; plantain.
+14. **`gf-south-asia` · Gluten-free South Asian.**
+    - **Dishes:** dosa and idli with sambar; besan chilla; rice and dal; ragi (finger millet) porridge; chicken curry with rice; fish moilee; chana chaat; jowar or bajra roti in place of wheat.
+15. **`gf-med` · Gluten-free Mediterranean.**
+    - **Dishes:** buckwheat porridge; polenta with mushrooms; risotto; Greek fasolada; grilled fish with lemon potatoes; Spanish tortilla; chickpea socca; lentil salads; rice-stuffed peppers (gemista).
+
 ## Not offered, and why
 - **Carnivore:** it can't reach vitamin C, folate or fibre, and contradicts the framework.
 - **Raw vegan:** can't reliably reach B12, vitamin D, iodine or zinc.

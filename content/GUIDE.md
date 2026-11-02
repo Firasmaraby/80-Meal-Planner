@@ -287,3 +287,58 @@ These are the problems that sent the pilot back. Check your week for each one be
 - **Batch staples with no recipe:** the Sunday rice or bean pot must say how much to cook (enough for the week, or twice) and how long it keeps (4 to 5 days; freeze the rest).
 - **Recipe ids are shared across the library.** Start every recipe id with your family id (`mexico-tinga`).
 
+
+## 12. Special-diet families (Wave 2)
+
+Everything above still applies: 80% of every board nutrient every day, taste first, the cuisine's own fats. A diet
+family adds its style's gates (`src/engine/planStyles.ts`) and the rules below. The diet must feel like good food that
+happens to fit the diet, never like a list of things you can't have.
+
+### Diabetes-friendly (`low-gi`)
+- **Gates:** glycaemic load at most 70 per 2,000 kcal, fibre at least 30 g a day. Light may claim 1200-1400.
+- **Carbs spread evenly** over breakfast, lunch and dinner, never a carb-only meal or snack. Every carb comes with
+  protein, fat or fibre (fruit with nuts or yogurt, not alone).
+- **Legumes are the backbone,** most days at two meals. Intact grains (barley, steel-cut oats, bulgur, whole millet,
+  brown basmati) in modest portions. No juice, little dried fruit, sweeteners only as a spoonful in a sauce.
+- **Acid and fibre first:** a salad or vegetables before the starch, lemon or vinegar on the plate.
+- **Say "diabetes-friendly",** never "diabetic diet". The plan explains the logic (steady carbs, fibre, protein) and
+  never promises results. The app adds a note for people on insulin or sulfonylureas to check with their care team.
+
+### Vegan (`vegan`)
+- **No animal foods at all,** including honey, gelatine, fish sauce and ghee. Fatty fish doesn't apply.
+- **B12 every day from a fortified food:** fortified soy beverage (at least a glass, in porridge, smoothies, sauces or
+  coffee) is the reliable one in the library. Say so in `howItWorks`, and say that many vegans also take a B12
+  supplement as insurance.
+- **Protein at 20%+** comes from tofu, tempeh, seitan, edamame, lentils, beans, chickpeas and soy beverage, at every
+  main meal. Two protein foods in a meal is normal (dal and tofu, beans and quinoa).
+- **Calcium:** calcium-set tofu, fortified soy beverage, tahini, almonds, white beans, kale, bok choy and broccoli
+  (not spinach: its calcium isn't absorbed).
+- **Iron and zinc:** legumes, tofu, pumpkin and hemp seeds, oats, with vitamin C in the same meal.
+- **Omega-3 comes from ALA only,** so walnuts, ground flax, chia and hemp hearts are welcome here every day in dishes
+  where they make sense: porridge, overnight oats, smoothies, puddings, dressings, baking. Still no flax sprinkled
+  on a curry. Use olive and canola oil; keep sunflower and corn oil out.
+- **Choline:** soy foods, legumes, quinoa, broccoli, Brussels sprouts, cauliflower, peanuts, mushrooms.
+- **Iodine:** iodized salt as the salt; nori is fine, kelp is not (it can go over the upper limit).
+
+### Keto (`keto`)
+- **Gate:** net carbs (carbs minus fibre) at most 40 g every day, at every size.
+- **Fat from plants and fish:** olive oil, avocado, olives, nuts, seeds, fatty fish. Butter, cream, cheese and
+  coconut stay modest, because saturated fat must still stay under 10%. That is what makes this keto different.
+- **Protein moderate,** 20 to 30% of calories. Fatty fish two or three times a week.
+- **Vegetables carry the micros:** leafy greens, broccoli, cauliflower, Brussels sprouts, zucchini, peppers, asparagus,
+  mushrooms, cabbage, every day and in volume. Berries in small handfuls. Onion, tomato and carrot in measured amounts.
+  No grains, potatoes, sugar or fruit beyond berries, lemon and avocado; legumes only as a spoon of edamame or black
+  soybeans.
+- **Chia and flax are keto staples** (chia pudding, flax crackers), so they're welcome where they fit.
+- **Watch thiamin, folate, potassium and magnesium,** the usual keto gaps: sunflower and pumpkin seeds, pork tenderloin,
+  salmon, avocado, spinach, asparagus, mushrooms and almonds fix them.
+- **The app notes** keto isn't for pregnancy, type 1 diabetes, kidney disease or people on SGLT2 medication. Light may
+  not reach 1400; claim only what passes.
+
+### Gluten-free (`gluten-free`)
+- **No wheat, barley, rye, spelt, bulgur, couscous, farro, semolina or seitan,** and no regular soy sauce (tamari is
+  fine). Oats only as "certified gluten-free oats", said in the ingredient note.
+- **Naturally gluten-free cooking first:** corn tortillas and arepas, rice, quinoa, buckwheat, millet, amaranth, teff,
+  potatoes, cassava, plantain, legumes. Don't lean on gluten-free bread and pasta.
+- **Hidden gluten:** stock cubes, spice blends, sausages and sauces vary. Tips say "check the label" where it matters.
+  The app adds a cross-contamination note for people with celiac disease.
