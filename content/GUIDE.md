@@ -44,7 +44,7 @@ Per recipe and per week, the cooking-sense checks:
 - 4 to 14 ingredients;
 - 3 to 9 steps;
 - no recipe more than twice a week, except breakfasts, which may rotate 2 or 3 recipes;
-- at most about 45 distinct groceries per week;
+- at most about 45 distinct groceries per week. Dried spices, dried herbs, spice blends, salt and pepper don't count: they're a pantry shelf with its own limit of 25, so season properly;
 - no em dashes or en dashes anywhere. Use a comma, a full stop, or "and".
 
 ## 3. Taste comes first: the rubric

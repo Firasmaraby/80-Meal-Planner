@@ -4,7 +4,7 @@ import fixtureJson from '../../content/families/_fixture-mini.json';
 import { FOODS, FOOD_INDEX } from '@/state/catalog';
 
 import { compileSize, type FamilyFile } from './family';
-import { FOOD_BANS, PLAN_STYLES, gradeOptionsFor, runStyleGates, styleNutrientGates, styleStructureGates } from './planStyles';
+import { FOOD_BANS, PLAN_STYLES, gradeOptionsFor, isSpiceShelf, runStyleGates, styleNutrientGates, styleStructureGates } from './planStyles';
 import { familyDeps } from '@/state/familyDeps';
 import type { MealPlan, PlanStyle } from './types';
 
@@ -206,5 +206,13 @@ describe('nutrient gates', () => {
     expect(gates).toHaveLength(1);
     expect(gates[0]).toMatchObject({ code: 'meal_protein', day: 1 });
     expect(gates[0].message).toMatch(/breakfast has \d+ g of protein \(a Healthy aging plan needs 25 g\)/);
+  });
+});
+
+describe('spice shelf', () => {
+  it('counts dried spices, blends, salt and pepper apart from the weekly groceries', () => {
+    const by = (re: RegExp) => FOODS.find((f) => re.test(f.name))!;
+    for (const re of [/^Cardamom, ground/, /^Table salt/, /^Black pepper/, /^Paprika/, /^Cumin seed/, /^Za'atar/, /^Garam masala/]) expect(isSpiceShelf(by(re)), String(re)).toBe(true);
+    for (const re of [/^Gochujang/, /^Soy sauce \(shoyu\)/, /^Rice vinegar/, /^Olives/, /^Coffee, ground/, /^Curry leaves/]) expect(isSpiceShelf(by(re)), String(re)).toBe(false);
   });
 });

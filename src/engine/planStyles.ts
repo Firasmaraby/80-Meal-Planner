@@ -293,13 +293,25 @@ const MAIN_SLOTS: MealSlot[] = ['breakfast', 'lunch', 'dinner'];
 const groceryKey = (f: Food) => f.head || f.id;
 
 /** Distinct groceries in a plan: foods counted by what you would put in the basket (the food's head), not by cooked or raw form. */
-export function distinctGroceries(plan: Pick<MealPlan, 'days'>, foods: FoodIndex): string[] {
+/**
+ * Spice-shelf items: dried spices, dried herbs, spice blends, salt and pepper. A jar lasts months, so they don't
+ * count as weekly groceries (they have their own, roomier limit). Fresh herbs, pastes and sauces are groceries.
+ */
+export function isSpiceShelf(f: Food): boolean {
+  if (f.category !== 'condiment' || /\b(?:coffee|tea|cocoa)\b/i.test(f.name)) return false;
+  if (/^(?:paprika|cayenne|smoked paprika|chili flakes|red pepper flakes)\b/i.test(f.name)) return true;
+  if (/\b(?:salt|pepper, (?:black|white)|black pepper|white pepper)\b/i.test(f.name) && !/\b(?:sauce|paste)\b/i.test(f.name)) return true;
+  if (/\b(?:paste|sauce|molasses|vinegar|juice|fresh|raw|leaves, fresh|ketchup|mustard, prepared|mayonnaise|dressing|jam)\b/i.test(f.name)) return false;
+  return f.form === 'dried' || /\b(?:ground|dried|seeds?|powder|masala|blend|spice|baharat|za'atar|sumac|berbere|ras el hanout|asafoetida|ajwain|amchur|methi|bay leaf|cinnamon|cloves?|cardamom|nutmeg|saffron|gochugaru|kala namak)\b/i.test(f.name);
+}
+
+export function distinctGroceries(plan: Pick<MealPlan, 'days'>, foods: FoodIndex, shelf = false): string[] {
   const seen = new Set<string>();
   for (const d of plan.days)
     for (const m of d.meals)
       for (const i of m.ingredients) {
         const f = getFood(foods, i.foodId);
-        if (f) seen.add(groceryKey(f));
+        if (f && isSpiceShelf(f) === shelf) seen.add(groceryKey(f));
       }
   return [...seen];
 }

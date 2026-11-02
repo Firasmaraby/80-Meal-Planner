@@ -101,6 +101,8 @@ export const LIMITS = {
   steps: [3, 9],
   repeats: 2,
   groceries: 45,
+  /** dried spices, herbs, blends, salt and pepper: a pantry shelf, counted apart from the weekly groceries */
+  spiceShelf: 25,
 } as const;
 
 const SALT = /^(table |sea |kosher )?salt\b/i;
@@ -248,7 +250,10 @@ export function weekChecks(family: FamilyFile, plan: MealPlan, foods: FoodIndex,
   const groceries = distinctGroceries(plan, foods);
   const max = PLAN_STYLES[family.style].gates.maxGroceries ?? LIMITS.groceries;
   if (groceries.length > max)
-    out.push({ kind: 'cooking', code: 'groceries', size, message: `${groceries.length} distinct groceries in the week (max ${max}).`, fix: 'Reuse ingredients across dishes so the shopping list is shorter.' });
+    out.push({ kind: 'cooking', code: 'groceries', size, message: `${groceries.length} distinct groceries in the week (max ${max}; spices and dried herbs don't count).`, fix: 'Reuse ingredients across dishes so the shopping list is shorter.' });
+  const shelf = distinctGroceries(plan, foods, true);
+  if (shelf.length > LIMITS.spiceShelf)
+    out.push({ kind: 'cooking', code: 'spice_shelf', size, message: `${shelf.length} spices, dried herbs and seasonings (max ${LIMITS.spiceShelf}).`, fix: 'Use a blend or reuse spices across dishes.' });
   return out;
 }
 

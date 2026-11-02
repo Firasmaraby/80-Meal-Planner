@@ -406,17 +406,25 @@ describe('plan lab', () => {
     expect(r.failures.some((x) => x.code === 'repeats' && x.recipe === 'veggie-egg-scramble')).toBe(false);
   });
 
-  it('counts distinct groceries and applies the budget style limit of 35', () => {
+  it('counts distinct groceries (not spices) and applies the budget style limit of 35', () => {
+    const extra = ['Banana, raw', 'Apple, raw, with skin', 'Kiwi fruit, raw', 'Raspberry, raw', 'Strawberry, raw', 'Cabbage, raw', 'Celery, raw', 'Cucumber, raw', 'Eggplant, raw', 'Zucchini, raw', 'Leek, raw', 'Mango, raw', 'Pear, raw', 'Radish, raw', 'Beet, raw', 'Cauliflower, raw', 'Asparagus, raw', 'Peach, raw', 'Plum, raw', 'Grapes, red or green (European type, such as Thompson seedless), raw', 'Cherries, sweet, raw', 'Pineapple, raw', 'Onion, raw', 'Leek, raw']
+      .map((name) => FOODS.find((x) => x.name === name)).filter((x): x is NonNullable<typeof x> => !!x);
+    const groceriesOf = (f: ReturnType<typeof clone>) => {
+      const r = labStd(f);
+      const g = r.failures.find((x) => x.code === 'groceries');
+      return { failed: !!g, message: g?.message };
+    };
+    // add new foods until the budget limit is crossed by exactly one
     const f = clone();
     f.style = 'budget';
-    expect(codes(f)).toEqual([]); // 35 groceries in Standard
-    f.recipes[3].ingredients.push({ food: FOODS.find((x) => x.name === 'Banana, raw')!.id, g: 100 });
-    const r = labStd(f);
-    expect(r.failures.filter((x) => x.code === 'groceries')).toMatchObject([{ size: 'standard', message: '36 distinct groceries in the week (max 35).' }]);
-    const g = clone(); // the default limit is 45
-    for (const name of ['Banana, raw', 'Apple, raw, with skin', 'Kiwi fruit, raw', 'Raspberry, raw', 'Strawberry, raw', 'Cabbage, raw', 'Celery, raw', 'Cucumber, raw', 'Eggplant, raw', 'Zucchini, raw', 'Leek, raw'])
-      g.recipes[3].ingredients.push({ food: FOODS.find((x) => x.name === name)!.id, g: 5 });
-    expect(codes(g)).toContain('groceries');
+    expect(codes(f)).toEqual([]);
+    let added = 0;
+    while (!groceriesOf(f).failed && added < extra.length) f.recipes[3].ingredients.push({ food: extra[added++].id, g: 5 });
+    expect(groceriesOf(f).message).toMatch(/^36 distinct groceries in the week \(max 35; spices and dried herbs don't count\)\.$/);
+    // spices never count toward it
+    const before = groceriesOf(f).message;
+    f.recipes[3].ingredients.push({ food: FOODS.find((x) => /^Cardamom, ground/.test(x.name))!.id, g: 1 });
+    expect(groceriesOf(f).message).toBe(before);
   });
 
   it('reports adjust steps that change nothing', () => {
