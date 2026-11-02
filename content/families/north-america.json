@@ -1,0 +1,1746 @@
+{
+  "id": "north-america",
+  "name": "North American Kitchen",
+  "style": "balanced",
+  "cuisine": "North American",
+  "regions": [
+    "Canada",
+    "New England",
+    "the South",
+    "the Midwest",
+    "the Pacific Northwest"
+  ],
+  "summary": "A week of North American comfort food made bright: steel-cut oats and egg muffins for breakfast, a bison burger, turkey chili, Québec split pea soup, a Minnesota wild rice hotdish, a blackened Cobb and two kinds of salmon. Familiar, filling and full of vegetables, beans and fish.",
+  "howItWorks": "**Cook once, eat twice.** Monday's sheet-pan chicken, Tuesday's turkey chili, Wednesday's hotdish, Thursday's split pea soup and Saturday's baked beans each make two portions, so the next day's lunch is done. The egg muffins cover two breakfasts. The burger, the Cobb and both salmon dinners are cooked fresh.\n\n**Fish twice.** Maritime salmon cakes on Friday and a maple-mustard salmon on Sunday carry your **omega-3** and help with **vitamin D**. They never land back to back, and both are served fresh. The canned salmon's soft bones add calcium.\n\n**Batch your breakfasts.** Bake a tin of egg muffins on Sunday for Monday and Tuesday. Cook a pot of steel-cut oats on Tuesday night for Wednesday, Friday and Saturday. Reheat the oats with a splash of milk, and the muffins in the microwave for 45 seconds.\n\n**Beans and greens.** Kidney beans in the chili, split peas on Thursday and white beans on Saturday give you **iron, folate and fibre**, with kale and spinach stirred into the pots. Bison, turkey and chicken take turns, and cider vinegar, pickled onion, apple and cranberry keep every plate bright.\n\n**Prep ahead.** On Sunday, bake the muffins, shred the cabbage for Monday's slaw and pickle the onion. Rinse and soak the wild rice on Wednesday morning, and sear the chicken and boil the egg for Saturday's Cobb on Friday night.",
+  "signature": [
+    "north-america-turkey-bean-chili-sweet-potato-spinach",
+    "north-america-quebec-split-pea-soup",
+    "north-america-maple-mustard-roasted-salmon-squash-brussels",
+    "north-america-wild-rice-mushroom-bison-hotdish"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "north-america-maple-cinnamon-sweet-potato-rounds"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "north-america-cranberry-sunflower-seed-mix"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "north-america-apple-cheddar-slices"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "north-america-baked-cinnamon-apple-walnuts"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "north-america-blueberry-spinach-milk-smoothie"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "north-america-maple-cinnamon-sweet-potato-rounds"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "north-america-blueberry-spinach-milk-smoothie"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "north-america-steel-cut-oats-blueberries-walnuts",
+      "name": "Steel-cut oats with blueberries, walnuts and maple",
+      "inspiredBy": "a Canadian and New England porridge, with steel-cut oats, blueberries and real maple",
+      "about": "Chewy, nutty steel-cut oats simmered in milk and water, then piled with juicy blueberries, toasted walnuts and sunflower seeds and a drizzle of real maple. A pot made ahead keeps for days, so weekday mornings take two minutes. The oats and blueberries bring **fibre**, and the walnuts add plant omega-3.",
+      "ingredients": [
+        {
+          "food": "steel-cut-oats-whole-grain-d4fe23",
+          "g": 60,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 80,
+          "swap": "berries"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "toasted and roughly chopped"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 10
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the oats in a dry pot over medium heat for about 2 minutes, stirring, until they smell nutty. Toast the walnuts and sunflower seeds in a small dry pan at the same time, about 3 minutes, and chop the walnuts.",
+        "Pour in the milk and about the same amount of water, add the cinnamon and salt, and bring to a boil. Turn the heat down so it just bubbles.",
+        "Cook uncovered, stirring now and then, until the oats are tender and creamy but still a little chewy, 20 to 25 minutes.",
+        "Spoon into a bowl and top with the blueberries, walnuts, sunflower seeds and maple."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Cook a pot for three mornings at once: multiply the oats and liquid, cool it, and keep it covered in the fridge for up to 5 days. Warm a portion with a splash of milk. Frozen blueberries work just as well as fresh."
+    },
+    {
+      "id": "north-america-egg-veggie-breakfast-muffins",
+      "name": "Egg and veggie breakfast muffins with whole-wheat toast and an orange",
+      "about": "Fluffy little egg muffins baked in a tin with spinach, red pepper, scallion and sharp cheddar. One tin makes breakfast for two mornings, and they reheat in 45 seconds, with toast and a juicy orange on the side. The eggs bring **protein and choline**, and the orange adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "chopped small and pressed dry in a towel"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "note": "finely diced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "sliced thin"
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 15,
+          "note": "grated"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils",
+          "note": "to grease the tin"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 50,
+          "note": "toasted"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 120,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C (350°F) and brush the cups of a muffin tin lightly with the oil.",
+        "Divide the spinach, red pepper, scallion and most of the cheddar between 4 muffin cups.",
+        "Whisk the eggs with the salt and pepper until no streaks of white are left, then pour over the vegetables, filling each cup about three quarters full. Sprinkle the last of the cheddar on top.",
+        "Bake until puffed, golden at the edges and set in the middle, about 20 minutes. Let them cool for 5 minutes, then run a knife around each one to loosen it.",
+        "Serve two warm muffins with the toast and the orange, peeled and cut into wedges.",
+        "Pack the other two muffins for tomorrow's breakfast. Cool them completely, keep them in a covered container in the fridge, and warm them in the microwave for about 45 seconds."
+      ],
+      "prepMin": 10,
+      "cookMin": 20,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Press the chopped spinach dry in a clean towel first, so the muffins don't weep. Bake a double tin on Sunday and freeze the extras, then pull a few out the night before."
+    },
+    {
+      "id": "north-america-back-bacon-egg-sandwich",
+      "name": "Egg, back bacon and cheddar breakfast sandwich on whole-wheat toast",
+      "inspiredBy": "the Canadian peameal bacon sandwich and the diner egg sandwich, on whole-wheat toast with extra spinach and tomato",
+      "about": "A proper diner-style breakfast sandwich: a soft-yolk fried egg, seared Canadian back bacon, melted sharp cheddar, ripe tomato and fresh spinach on toasted whole-wheat bread, with orange wedges on the side. It is quick enough for a weekday morning and sturdy enough to eat on the way out the door. The egg and bacon bring **protein and choline**, and the whole-wheat toast adds fibre.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 70,
+          "note": "toasted"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "fried"
+        },
+        {
+          "food": "bacon-back-536532",
+          "g": 55,
+          "note": "thin slices"
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 15,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 20,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "thick slices"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 4
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 120,
+          "swap": "vit_c_fruit",
+          "note": "cut in wedges, on the side"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Brush a nonstick pan with half the oil and sear the back bacon over medium-high heat for about 1 minute per side, until it has golden edges. It is ready to eat, so it only needs to brown. Move it to a plate.",
+        "Wipe the pan, add the rest of the oil and crack in the egg. Cook until the white is set and the yolk is still a little soft, about 3 minutes, flipping at the end if you like it over-easy.",
+        "Toast the bread. Lay the cheddar on the hot toast so it softens. Spread the other slice with the Dijon and layer on the spinach, tomato, bacon and egg. Add a grind of pepper and close the sandwich.",
+        "Peel the orange, cut it into wedges and serve it alongside."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "At the Light size, serve it open-faced on one slice. It's Canadian bacon in the US, and back bacon or peameal in Canada. Packaged back bacon is ready to eat, so 1 minute a side is plenty. Raw peameal needs 3 to 4 minutes a side. Cook the egg all the way through if you plan to wrap the sandwich for later."
+    },
+    {
+      "id": "north-america-bison-burger-whole-wheat-bun-slaw",
+      "name": "Bison burger on a whole-wheat bun with cider slaw and pickled onion",
+      "about": "A juicy, lean bison patty on a toasted whole-wheat bun with a crunchy cider slaw, ripe tomato, crisp romaine and quick-pickled onion. Bison is rich in flavour and lean, so it tastes like a great burger without the grease. The bison brings **iron, zinc and protein**, and the slaw adds crunch and vitamin C.",
+      "ingredients": [
+        {
+          "food": "bison-ground-grass-fed-raw-0e68cb",
+          "g": 140,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "rolls-for-burger-hotdog-buns-whole-wheat-a4095c",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 60,
+          "note": "shredded thin"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 45,
+          "note": "sliced"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 20,
+          "swap": "leafy_greens",
+          "note": "a leaf or two"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "sliced very thin"
+        },
+        {
+          "food": "cider-vinegar-c34faa",
+          "g": 14
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.8
+        },
+        {
+          "food": "garlic-powder-e81d9c",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Put the sliced onion in a small bowl with half the cider vinegar and a pinch of the salt, and stir now and then. It turns bright and tangy in about 15 minutes.",
+        "Toss the cabbage with the rest of the vinegar, half the Dijon, half the oil and a pinch of salt. Let it sit while you cook the burger so it softens a little.",
+        "Mix the bison gently with the smoked paprika, garlic powder, pepper and the rest of the salt, and shape it into a patty a little wider than the bun. Don't overwork it, or it turns tough.",
+        "Heat the rest of the oil in a heavy pan over medium-high heat. Cook the patty until it is browned and cooked through, about 4 minutes per side. Bison is lean and dries out fast, so don't overcook it.",
+        "Toast the bun in the same pan for a minute. Spread it with the rest of the Dijon, then build the burger with the romaine, patty, tomato, pickled onion and a pile of slaw."
+      ],
+      "prepMin": 15,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "At the Light size, serve it open-faced on one bun half. Ground turkey or lean beef works if you can't find bison. Make the slaw and pickled onion on Sunday and Monday lunch is ready in 15 minutes."
+    },
+    {
+      "id": "north-america-chopped-cobb-salad",
+      "name": "Big chopped Cobb-style salad with blackened chicken",
+      "inspiredBy": "the Brown Derby Cobb salad, with Louisiana-style blackened chicken thigh in place of poached breast, no blue cheese, and a lighter dressing",
+      "about": "Crisp chopped romaine topped with rows of juicy blackened chicken, chewy browned back bacon, a hard-boiled egg, ripe tomato and creamy avocado, in a mustardy vinaigrette. The Cajun-spiced chicken gives it a Southern kick. The chicken and egg bring **protein and choline**, and the avocado adds healthy fats and potassium.",
+      "ingredients": [
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 130,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 165,
+          "swap": "lean_protein",
+          "note": "flattened to an even thickness"
+        },
+        {
+          "food": "bacon-back-536532",
+          "g": 25,
+          "note": "browned and chopped"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "hard-boiled"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 90,
+          "note": "chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils",
+          "note": "for searing"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cider-vinegar-c34faa",
+          "g": 5
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 5
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 25,
+          "note": "toasted and cut in small croutons"
+        },
+        {
+          "food": "cajun-blackening-spice-8a7316",
+          "g": 3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Flatten the chicken with the heel of your hand or a pan, so it is an even thickness. Rub it all over with the Cajun spice and the salt.",
+        "Heat the canola oil in a heavy pan, cast iron if you have it, over medium-high heat, and turn on the fan, since the spices smoke. Sear the chicken until it is deeply browned and there is no pink in the middle, about 5 minutes per side. Let it rest for 5 minutes, then chop it. Cool it if you are making it ahead.",
+        "Lower the egg into a pot of simmering water and boil for 10 minutes. Cool it in cold water, then peel and chop.",
+        "Sear the back bacon in a dry pan over medium-high heat for about 1 minute per side, until browned and chewy. It will not go crisp, and that is fine. Chop it. Toast the bread and cut it into small croutons.",
+        "Whisk the olive oil, cider vinegar, Dijon and pepper in the bottom of a big bowl or on a platter.",
+        "Pile the romaine on top. Arrange the chicken, bacon, egg, avocado, tomato and croutons in rows. Toss it all at the table, so it stays crisp until you eat."
+      ],
+      "prepMin": 15,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Sear the chicken and boil the egg the night before and this is a 10 minute lunch. Crumbled blue cheese is the traditional topping if you have it. Use a mild blend for kids."
+    },
+    {
+      "id": "north-america-turkey-bean-chili-sweet-potato-spinach",
+      "name": "Turkey and bean chili with sweet potato and spinach",
+      "about": "A thick, smoky chili with lean ground turkey, kidney beans, sweet potato and a big handful of spinach wilted in at the end. A splash of cider vinegar at the finish keeps it bright. The beans and spinach bring **fibre and iron**, and the sweet potato adds vitamin A.",
+      "ingredients": [
+        {
+          "food": "ground-turkey-raw-52078e",
+          "g": 125,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "kidney-beans-canned-drained-solids-7e5cc7",
+          "g": 115,
+          "swap": "legumes",
+          "note": "canned, drained and rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 150
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 55,
+          "note": "diced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 100,
+          "note": "peeled, in small cubes"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cider-vinegar-c34faa",
+          "g": 5
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 8,
+          "note": "sliced, to finish"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 3
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.1
+        }
+      ],
+      "steps": [
+        "Warm the oil in a big pot over medium heat. Cook the onion and red pepper until soft, about 7 minutes. Add the garlic, chili powder, cumin, smoked paprika and oregano and stir for 30 seconds, until fragrant.",
+        "Add the turkey and break it up with a spoon. Cook until it is no longer pink, about 6 minutes.",
+        "Stir in the crushed tomatoes, sweet potato, beans, salt and about 1 cup (250 mL) of water for the two portions. Bring to a boil, then simmer partly covered, stirring now and then, until the sweet potato is tender and the chili is thick, about 25 minutes.",
+        "Stir in the spinach and cook until it wilts, about 2 minutes. Finish with the cider vinegar and taste for salt.",
+        "Ladle into bowls and scatter with the scallion. Pack the second portion for tomorrow's lunch. It thickens overnight, so loosen it with a splash of water when you reheat."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "A spoonful of Greek yogurt or a little grated cheddar on top is the classic finish. Chili freezes beautifully, so double the pot if you like."
+    },
+    {
+      "id": "north-america-sheet-pan-chicken-carrots-squash-apples",
+      "name": "Sheet-pan chicken thighs with carrots, squash and apples",
+      "inspiredBy": "a New England autumn roast, with the cider vinegar and mustard glaze that goes so well with chicken",
+      "about": "Juicy chicken thighs roasted on one pan with sweet carrots, butternut squash, onion and apple wedges, all coated in a cider vinegar and mustard glaze, with kale crisped at the end. It is a New England autumn supper with almost no cleanup. The vegetables bring **vitamin A and fibre**, and the chicken brings protein.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 175,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "butternut-squash-raw-dc25d8",
+          "g": 150,
+          "note": "peeled, in chunky pieces"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 90,
+          "note": "cut in thick batons"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 70,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "stems removed, torn"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cider-vinegar-c34faa",
+          "g": 10
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.8
+        },
+        {
+          "food": "sage-ground-eb1db2",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Line a large sheet pan, or two if it is crowded, with parchment.",
+        "Whisk the oil, cider vinegar, Dijon, garlic, thyme, sage, salt and pepper in a big bowl. Toss the squash, carrots and onion with half of it, spread them on the pan, and roast for 15 minutes on their own. They need a head start.",
+        "Toss the chicken in the rest of the glaze and nestle it in among the vegetables. Roast for 7 minutes.",
+        "Tuck the apple wedges in among everything, stir once, and roast another 10 minutes. Scatter the kale on top and roast the last 5 minutes, until the chicken is cooked through and the vegetables are browned at the edges.",
+        "Spoon the pan juices over everything. Pack the second portion for tomorrow's lunch. It reheats well in a hot oven, a skillet or the microwave."
+      ],
+      "prepMin": 15,
+      "cookMin": 37,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Parsnips or small potatoes can replace the squash. If you only have bone-in thighs, give them 10 more minutes."
+    },
+    {
+      "id": "north-america-quebec-split-pea-soup",
+      "name": "Québec-style split pea soup with back bacon and whole-wheat toast",
+      "inspiredBy": "Québec soupe aux pois, with lean back bacon in place of a ham hock and kale stirred in",
+      "about": "A thick, comforting split pea soup, the soupe aux pois of Québec kitchens, with carrot, celery, onion, a little smoky back bacon and the summer savory Québec cooks love, finished with kale and a splash of cider vinegar. Split peas need no soaking and melt into a spoon-coating soup. The peas bring **fibre, iron and folate**, and the kale adds calcium and vitamin C.",
+      "ingredients": [
+        {
+          "food": "split-peas-dry-6b69b1",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "celery-raw-79a241",
+          "g": 35,
+          "note": "diced"
+        },
+        {
+          "food": "bacon-back-536532",
+          "g": 45,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "stems removed, chopped small"
+        },
+        {
+          "food": "cider-vinegar-c34faa",
+          "g": 8
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 35,
+          "note": "toasted"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.6
+        },
+        {
+          "food": "savory-ground-7ef03f",
+          "g": 0.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.1
+        }
+      ],
+      "steps": [
+        "Warm the oil in a big pot over medium heat. Cook the onion, carrot and celery until the onion is soft and starting to colour, about 8 minutes. Add the bacon and garlic and cook 2 more minutes.",
+        "Add the split peas, thyme, summer savory, bay leaf and pepper, and pour in about 5 cups (1.25 L) of water for the two portions. Bring to a boil, then turn it down to a gentle simmer.",
+        "Cook partly covered, stirring now and then so nothing sticks, until the peas have broken down into a thick soup, 50 to 60 minutes. Add a splash of water if it gets too thick.",
+        "Fish out the bay leaf. Press a few spoonfuls of the soup against the side of the pot to thicken it, then stir in the kale, cider vinegar and salt. Cook about 5 minutes, until the kale is tender.",
+        "Serve with the toast. Pack the second portion for tomorrow's lunch. It thickens in the fridge, so loosen it with water when you reheat."
+      ],
+      "prepMin": 15,
+      "cookMin": 65,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Yellow split peas are traditional in Québec, and green ones work too. Short on time? A pressure cooker does it in 15 minutes at high pressure. A dash of hot sauce at the table is very good."
+    },
+    {
+      "id": "north-america-wild-rice-mushroom-bison-hotdish",
+      "name": "Wild rice and mushroom hotdish with bison, cranberries and walnuts",
+      "inspiredBy": "Midwestern hotdish, made with wild rice, mushrooms and bison, with no canned soup and no tater tots",
+      "about": "A Minnesota-style hotdish built on nutty wild rice, a creamy mushroom sauce, lean ground bison, onion and celery, with a handful of spinach, tart cranberries and crunchy toasted walnuts on top. Wild rice, the manoomin that Ojibwe families have harvested for centuries, and cranberries are Great Lakes classics, and the oven does most of the work. The bison and mushrooms bring **B vitamins and iron**, and UV-treated mushrooms, if you can find them, add some vitamin D.",
+      "ingredients": [
+        {
+          "food": "wild-rice-dry-39fb8e",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "bison-ground-grass-fed-raw-0e68cb",
+          "g": 140,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "mushroom-white-exposed-to-ultraviolet-light-raw-0cd6fe",
+          "g": 150,
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 45,
+          "note": "diced"
+        },
+        {
+          "food": "celery-raw-79a241",
+          "g": 35,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cider-vinegar-c34faa",
+          "g": 6
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "cranberry-dried-sweetened-00a85c",
+          "g": 15
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped, for crunch on top"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.8
+        },
+        {
+          "food": "sage-ground-eb1db2",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.1
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C (350°F). Rinse the wild rice in a sieve.",
+        "Warm the oil in a large ovenproof pot over medium-high heat. Brown the bison, breaking it into crumbles, about 5 minutes. Add the onion and celery and cook until soft, about 5 minutes.",
+        "Add the mushrooms and cook, stirring now and then, until their water has cooked off and they are golden, about 8 minutes. Splash in the cider vinegar and scrape up the browned bits from the bottom of the pot. Stir in the garlic, thyme, sage and pepper.",
+        "Scoop about a third of the mushrooms into a blender with a ladle of hot water and blend until smooth and creamy. Stir it back into the pot with the wild rice, the salt, and about 2 cups (500 mL) of hot water for the two portions.",
+        "Cover and bake until the rice has split open and is tender and the sauce is thick, 60 to 70 minutes, or about 40 minutes if you soaked the rice in the morning.",
+        "Stir in the spinach and cranberries, cover again for 5 minutes, then taste for salt. Toast the walnuts in a dry pan until they smell nutty, about 3 minutes, and scatter them on top. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 80,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Rinse and soak the wild rice in the morning and it cooks in about 40 minutes. Ground turkey or lean beef works in place of the bison."
+    },
+    {
+      "id": "north-america-maritime-salmon-cakes-sweet-potato-slaw",
+      "name": "Maritime salmon cakes with sweet potato wedges and dill slaw",
+      "inspiredBy": "Maritime salmon cakes, made from a tin of salmon and bound here with breadcrumbs instead of mashed potato, with sweet potato wedges on the side",
+      "about": "Golden pan-seared salmon cakes made with canned pink salmon, egg, scallion and celery, with sweet potato wedges and a crunchy dill slaw. Mashing in the soft canned salmon bones is where the calcium comes from, and you will never notice them. The salmon brings **omega-3 and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+          "g": 160,
+          "swap": "fatty_fish",
+          "note": "with the soft bones"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 25,
+          "note": "toasted and crumbed"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced thin"
+        },
+        {
+          "food": "celery-raw-79a241",
+          "g": 20,
+          "note": "finely diced"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 6
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 150,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 50,
+          "note": "shredded"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "stems removed, sliced very thin"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 25,
+          "note": "grated"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 13,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cider-vinegar-c34faa",
+          "g": 12
+        },
+        {
+          "food": "dill-weed-dried-d92fd8",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the sweet potato wedges with a quarter of the oil and a pinch of the salt, spread them on a tray, and roast until browned and tender, about 30 minutes, turning once.",
+        "Drain the salmon into a bowl and flake it with a fork, mashing in the soft bones. Add the egg, scallion, celery, half the Dijon, half the dill, the pepper and the breadcrumbs, and mix until it holds together when squeezed. Shape into two plump patties and chill them for 10 minutes.",
+        "Toss the cabbage, kale and carrot with the cider vinegar, a drizzle of the oil, the rest of the Dijon and dill, and a pinch of salt for the slaw. Let it sit while the cakes cook.",
+        "Heat the rest of the oil in a nonstick pan over medium heat. Cook the cakes until deeply golden and hot through, about 4 minutes per side.",
+        "Serve the cakes on the slaw with the sweet potato wedges on the side."
+      ],
+      "prepMin": 20,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make the patties in the morning and keep them chilled, and dinner is 10 minutes. A squeeze of lemon, if you have one, finishes them nicely."
+    },
+    {
+      "id": "north-america-maple-baked-beans-kale-toast",
+      "name": "Maple baked beans with wilted kale on whole-wheat toast",
+      "inspiredBy": "Québec fèves au lard and Boston baked beans, simmered on the stove with maple and smoked paprika in place of salt pork",
+      "about": "Creamy white beans simmered on the stove in a sweet and tangy tomato, maple and mustard sauce with smoked paprika, piled on whole-wheat toast with kale wilted in at the end. It tastes like a Saturday supper in a Maritime kitchen, with a fraction of the sugar. The beans bring **fibre, iron and folate**, and the kale adds calcium.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-solids-and-liquid-4c3a17",
+          "g": 230,
+          "swap": "legumes",
+          "note": "canned, drained and rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 100
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "finely diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 14
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 8
+        },
+        {
+          "food": "cider-vinegar-c34faa",
+          "g": 12
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "stems removed, chopped small"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 50,
+          "note": "toasted"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 2
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Warm the oil in a saucepan over medium heat. Cook the onion until soft and golden, about 6 minutes. Stir in the garlic, smoked paprika and thyme for 30 seconds.",
+        "Add the beans, crushed tomatoes, maple, Dijon, half the cider vinegar, pepper, salt and about 1 cup (250 mL) of water. Bring to a boil, then simmer uncovered, stirring now and then and mashing a few beans against the pan, until the sauce is thick and glossy, about 25 minutes.",
+        "Stir in the kale for the last 5 minutes, until it wilts and turns bright green. Finish with the rest of the vinegar.",
+        "Toast the bread and pile the beans on top. Pack the second portion for tomorrow's lunch. The flavour deepens overnight."
+      ],
+      "prepMin": 10,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "For the classic smoky taste, stir a few chopped slices of back bacon in with the onion. The beans keep 5 days in the fridge."
+    },
+    {
+      "id": "north-america-maple-mustard-roasted-salmon-squash-brussels",
+      "name": "Maple-mustard roasted salmon with squash and Brussels sprouts",
+      "inspiredBy": "Pacific Northwest cedar-plank salmon, roasted here on a sheet pan, with a plank if you own one",
+      "about": "A tender salmon fillet glazed with maple and Dijon, roasted until just flaking, with caramelized butternut squash, crisp Brussels sprouts and quick-pickled onion on top. It is the weekend dinner that tastes like the Pacific Northwest. The salmon brings **omega-3 and vitamin D**, and the squash and Brussels sprouts add vitamins A and C.",
+      "ingredients": [
+        {
+          "food": "salmon-sockeye-red-raw-728ce6",
+          "g": 170,
+          "swap": "fatty_fish",
+          "note": "skin on if you can"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 12
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 14
+        },
+        {
+          "food": "cider-vinegar-c34faa",
+          "g": 20
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "butternut-squash-raw-dc25d8",
+          "g": 130,
+          "note": "peeled, in chunky pieces"
+        },
+        {
+          "food": "brussels-sprouts-raw-88a873",
+          "g": 160,
+          "note": "trimmed and halved"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "sliced very thin"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the squash and Brussels sprouts with the oil and half the salt on a large sheet pan. Roast for 20 minutes, until the squash is starting to brown.",
+        "While they roast, make the quick pickle: pack the sliced onion into a small bowl with half the cider vinegar, a little of the maple and a pinch of salt. Stir now and then, and leave it for at least 20 minutes.",
+        "Stir together the rest of the maple and vinegar with the Dijon, garlic, pepper and the rest of the salt for the glaze.",
+        "Push the vegetables to one side of the pan. Lay the salmon skin side down on a sheet of parchment, or on a soaked cedar plank, and brush it generously with the glaze. Roast until the salmon just flakes in the thickest part, 10 to 12 minutes.",
+        "Pile the pickled onion on the salmon and serve with the roasted vegetables, spooning any glaze left on the parchment over the salmon."
+      ],
+      "prepMin": 20,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "weekend-project"
+      ],
+      "tip": "Atlantic or coho salmon work as well as sockeye. Add about 2 minutes for a thicker, fattier fillet. For the full cedar-plank effect, soak a plank in water for an hour, set the salmon on it and roast it on the oven rack, or grill it with the lid closed."
+    },
+    {
+      "id": "north-america-blueberry-yogurt-parfait",
+      "name": "Blueberry yogurt parfait with sunflower seeds and maple",
+      "about": "Thick Greek yogurt layered with juicy blueberries, crunchy sunflower seeds and a drizzle of maple. It is a snack that tastes like dessert and keeps you full. The yogurt brings **protein and calcium**, and the sunflower seeds add vitamin E.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 180,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 70,
+          "swap": "berries"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Spoon half the yogurt into a glass or jar and top with half the blueberries.",
+        "Add the rest of the yogurt and blueberries, then finish with the sunflower seeds, maple and a pinch of cinnamon."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "north-america-cranberry-sunflower-seed-mix",
+      "name": "Cranberry and toasted sunflower seed mix",
+      "about": "A handful of tart dried cranberries and crunchy toasted sunflower seeds. It fits in a pocket and is just right for a fall walk. The sunflower seeds bring **vitamin E and magnesium**.",
+      "ingredients": [
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 22,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cranberry-dried-sweetened-00a85c",
+          "g": 22
+        }
+      ],
+      "steps": [
+        "Toast the sunflower seeds in a dry pan for 3 minutes, until they smell nutty, and let them cool.",
+        "Toss them with the cranberries in a small bowl or a bag."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "north-america-veggie-sticks-yogurt-ranch-dip",
+      "name": "Veggie sticks with yogurt ranch dip",
+      "inspiredBy": "ranch dip, made with Greek yogurt in place of mayonnaise and buttermilk",
+      "about": "Crunchy carrot, celery and red pepper sticks with a creamy dill and garlic yogurt dip that tastes like ranch. It is a good-for-you snack that is genuinely fun to eat. The vegetables bring **vitamins A and C**.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70
+        },
+        {
+          "food": "celery-raw-79a241",
+          "g": 45
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 70,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "dill-weed-dried-d92fd8",
+          "g": 0.4
+        },
+        {
+          "food": "garlic-powder-e81d9c",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Stir the yogurt with the dill, garlic powder, salt and pepper, and let it sit for a few minutes.",
+        "Cut the carrot, celery and red pepper into sticks and serve them with the dip."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "north-america-avocado-tomato-toast",
+      "name": "Avocado and tomato toast",
+      "about": "Creamy avocado mashed onto crunchy whole-wheat toast with juicy tomato, black pepper and a pinch of smoked paprika. It is a snack that is somewhere between breakfast and lunch. The avocado brings **healthy fats and potassium**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "note": "toasted"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 60
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the bread until golden and crisp.",
+        "Mash the avocado with the salt and pepper and spread it on the toast. Top with the tomato slices, a pinch of smoked paprika and another grind of pepper."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "north-america-baked-cinnamon-apple-walnuts",
+      "name": "Baked cinnamon apple with walnuts and maple",
+      "about": "A warm apple with the core scooped out, filled with chopped walnuts, maple and cinnamon and baked until soft. It tastes like apple pie without the crust. The apple and walnuts bring **fibre and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 170
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190°C (375°F). Scoop the core out of the apple, leaving the bottom intact, and set it in a small baking dish.",
+        "Mix the walnuts, maple and cinnamon and spoon the mixture into the apple.",
+        "Pour a splash of water around the apple and bake until it is soft but still holding its shape, about 25 minutes. Eat it warm."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "No oven? Microwave it for 3 to 4 minutes, until soft."
+    },
+    {
+      "id": "north-america-orange-wedges",
+      "name": "Juicy orange wedges",
+      "about": "A big, juicy orange cut into wedges. It is the simplest snack there is, and it keeps in a lunch bag. The orange brings **vitamin C** and a little fibre.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 200,
+          "swap": "vit_c_fruit"
+        }
+      ],
+      "steps": [
+        "Peel the orange and break it into segments, or cut it into wedges with the peel on and eat them straight off the rind."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "north-america-blueberry-spinach-milk-smoothie",
+      "name": "Blueberry and spinach milk smoothie",
+      "about": "A cold blender smoothie of milk, blueberries and a handful of spinach with a touch of maple. You taste the blueberries, not the spinach. The milk brings **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 250,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 90,
+          "swap": "berries"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Put the milk, blueberries, spinach and maple in a blender.",
+        "Blend until completely smooth, about 1 minute, and drink right away."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "north-america-apple-cheddar-slices",
+      "name": "Apple slices with sharp cheddar",
+      "about": "Crisp apple slices with a few slabs of sharp cheddar. It is a New England classic, sweet, salty, crunchy and creamy in one bite. The cheddar brings **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 160
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 25
+        }
+      ],
+      "steps": [
+        "Slice the apple into wedges.",
+        "Cut the cheddar into slabs and eat them together."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "north-america-crispy-roasted-white-beans",
+      "name": "Crispy roasted white beans with smoked paprika",
+      "about": "White beans roasted until crunchy outside and creamy inside, tossed with olive oil, smoked paprika and salt. It is a high-protein snack you can eat by the handful. The beans bring **protein, fibre and iron**.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-solids-and-liquid-4c3a17",
+          "g": 130,
+          "swap": "legumes",
+          "note": "canned, drained, rinsed and patted very dry"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Pat the beans very dry with a clean towel, so they crisp instead of steaming.",
+        "Toss them with the olive oil, smoked paprika and salt, and spread them on a tray in a single layer.",
+        "Roast, shaking the tray every 10 minutes, until the beans are crisp and golden, 30 to 35 minutes. Let them cool for 5 minutes, since they crisp up more as they cool."
+      ],
+      "prepMin": 5,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "They are best the day they are made. Roast them on a lower rack alongside Monday's chicken or Friday's sweet potato wedges, since the oven is already at 220°C. A double batch keeps in an open container at room temperature for a day."
+    },
+    {
+      "id": "north-america-greek-yogurt-apple-walnuts-cinnamon",
+      "name": "Greek yogurt with apple, toasted walnuts and cinnamon",
+      "about": "Thick Greek yogurt topped with diced apple, warm toasted walnuts and a dusting of cinnamon. It is a creamy, crunchy snack that feels like a treat. The yogurt brings **protein and calcium**, and the walnuts add plant omega-3.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 80,
+          "note": "diced, with the skin"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan over medium heat until they smell nutty, about 3 minutes, and chop them roughly.",
+        "Spoon the yogurt into a bowl and top with the diced apple, the walnuts and the cinnamon."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "north-america-maple-cinnamon-sweet-potato-rounds",
+      "name": "Maple-cinnamon roasted sweet potato rounds",
+      "about": "Thick rounds of sweet potato roasted until caramelized at the edges, with a little maple and cinnamon. They are soft inside, sweet, and easy to eat with your hands. The sweet potato brings **vitamin A and potassium**.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 150
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Cut the sweet potato into rounds about 1 centimetre thick and toss them with the oil and salt.",
+        "Spread them on a tray and roast, turning once, until soft and browned at the edges, about 25 minutes.",
+        "Drizzle with the maple, dust with the cinnamon and eat warm."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "north-america-egg-veggie-breakfast-muffins"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "north-america-bison-burger-whole-wheat-bun-slaw"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "north-america-sheet-pan-chicken-carrots-squash-apples"
+        },
+        {
+          "slot": "snack",
+          "recipe": "north-america-blueberry-yogurt-parfait"
+        },
+        {
+          "slot": "snack",
+          "recipe": "north-america-crispy-roasted-white-beans"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "north-america-egg-veggie-breakfast-muffins",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "north-america-sheet-pan-chicken-carrots-squash-apples",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "north-america-turkey-bean-chili-sweet-potato-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "north-america-avocado-tomato-toast"
+        },
+        {
+          "slot": "snack",
+          "recipe": "north-america-orange-wedges"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "north-america-steel-cut-oats-blueberries-walnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "north-america-turkey-bean-chili-sweet-potato-spinach",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "north-america-wild-rice-mushroom-bison-hotdish"
+        },
+        {
+          "slot": "snack",
+          "recipe": "north-america-veggie-sticks-yogurt-ranch-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "north-america-avocado-tomato-toast"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "north-america-back-bacon-egg-sandwich"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "north-america-wild-rice-mushroom-bison-hotdish",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "north-america-quebec-split-pea-soup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "north-america-blueberry-yogurt-parfait"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "north-america-steel-cut-oats-blueberries-walnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "north-america-quebec-split-pea-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "north-america-maritime-salmon-cakes-sweet-potato-slaw"
+        },
+        {
+          "slot": "snack",
+          "recipe": "north-america-crispy-roasted-white-beans"
+        },
+        {
+          "slot": "snack",
+          "recipe": "north-america-cranberry-sunflower-seed-mix"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "north-america-steel-cut-oats-blueberries-walnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "north-america-chopped-cobb-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "north-america-maple-baked-beans-kale-toast"
+        },
+        {
+          "slot": "snack",
+          "recipe": "north-america-veggie-sticks-yogurt-ranch-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "north-america-greek-yogurt-apple-walnuts-cinnamon"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "north-america-back-bacon-egg-sandwich"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "north-america-maple-baked-beans-kale-toast",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "north-america-maple-mustard-roasted-salmon-squash-brussels"
+        },
+        {
+          "slot": "snack",
+          "recipe": "north-america-greek-yogurt-apple-walnuts-cinnamon"
+        }
+      ]
+    }
+  ]
+}
