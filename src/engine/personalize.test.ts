@@ -127,3 +127,23 @@ describe('starchy vegetables', () => {
     expect(k.grams).toBe(100);
   });
 });
+
+describe('seasonings follow the dish', () => {
+  it('a curry sized up keeps its spice-to-plate ratio, because vegetables stay fixed', () => {
+    const curry = [
+      { foodId: FOODS.find((f) => f.name === 'Broccoli, raw')!.id, grams: 200 },
+      { foodId: FOODS.find((f) => f.name === 'Lentils, boiled')!.id, grams: 150 },
+      { foodId: FOODS.find((f) => f.name.startsWith('Brown rice') && /cooked/.test(f.name))!.id, grams: 150 },
+      { foodId: FOODS.find((f) => f.name === 'Sambar powder')!.id, grams: 4 },
+      { foodId: FOODS.find((f) => /^Table salt$/.test(f.name))!.id, grams: 1 },
+    ];
+    const big = scaleIngredients(curry, 0.6, FOOD_INDEX);
+    const isSeasoning = (id: string) => FOOD_INDEX.get(id)!.category === 'condiment';
+    const ratio = (ings: typeof curry) =>
+      ings.filter((i) => isSeasoning(i.foodId)).reduce((n, i) => n + i.grams, 0) / ings.filter((i) => !isSeasoning(i.foodId)).reduce((n, i) => n + i.grams, 0);
+    expect(big.find((i) => i.foodId === curry[0].foodId)!.grams).toBe(200); // vegetables fixed
+    expect(big[3].grams).toBeGreaterThan(4); // more spice for more food
+    expect(big[3].grams).toBeLessThan(4 * 1.6); // but not the full factor
+    expect(ratio(big)).toBeCloseTo(ratio(curry), 2);
+  });
+});

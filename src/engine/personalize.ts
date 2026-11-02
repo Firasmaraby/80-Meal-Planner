@@ -184,12 +184,27 @@ export function dayScaleFactor(meals: Ingredient[][], targetKcal: number, foods:
   return before ? after / before : 1;
 }
 
+/**
+ * Scale one meal by the day's sizing factor. Seasonings (the condiment shelf: salt, spices, pastes, sauces) follow the dish,
+ * not the factor: they grow by the meal's own mass ratio, so a Big curry tastes like the Standard one. With vegetables held
+ * fixed, scaling spice by the full factor would make the bigger plate more heavily spiced than the recipe as written.
+ */
 export function scaleIngredients(ings: Ingredient[], t: number, foods: FoodIndex): Ingredient[] {
   if (Math.abs(t) < 0.005) return ings;
-  return ings.map((ing) => {
+  let massBefore = 0;
+  let massAfter = 0;
+  const out = ings.map((ing) => {
     const f = getFood(foods, ing.foodId);
+    if (f?.category === 'condiment') return ing;
     const m = multiplier(f, t);
+    massBefore += ing.grams;
+    massAfter += ing.grams * m;
     return m === 1 ? ing : { ...ing, grams: roundGrams(ing.grams * m) };
+  });
+  const dish = massBefore > 0 ? Math.min(MAX_MULT, Math.max(MIN_MULT, massAfter / massBefore)) : multiplier(undefined, t);
+  return out.map((ing) => {
+    if (getFood(foods, ing.foodId)?.category !== 'condiment' || Math.abs(dish - 1) < 0.005) return ing;
+    return { ...ing, grams: roundGrams(ing.grams * dish) };
   });
 }
 
