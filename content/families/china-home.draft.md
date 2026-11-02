@@ -25,7 +25,7 @@ Oil: one neutral wok oil (canola, which is what "vegetable oil" is in Canada) fo
 7. Sun (Canton): Whole steamed sea bass over tofu with ginger and scallion, gai lan and mixed rice. 1 serving.
 
 ## Lunches
-- Mon: Tomato and egg stir-fry with tofu over brown rice.
+- Mon: Plain tomato and egg stir-fry (three eggs, no tofu) over mixed rice.
 - Wed: Egg fried brown rice with tofu and edamame (cold batch rice is what makes fried rice good).
 - Fri: Zhajiangmian-inspired whole-wheat noodles with pork and mushroom sauce, cucumber, carrot and daikon.
 - Tue, Thu, Sat, Sun: leftovers.
