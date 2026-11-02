@@ -1,0 +1,1658 @@
+{
+  "id": "west-africa",
+  "name": "West African Pot",
+  "style": "balanced",
+  "cuisine": "West African",
+  "regions": [
+    "Nigeria",
+    "Ghana",
+    "Senegal",
+    "Côte d'Ivoire"
+  ],
+  "summary": "A week of West African home cooking: egusi with smoked fish, groundnut stew, red-red, chicken yassa and a Saturday fish and rice pot, built on millet, yam, sweet potato, plantain and black-eyed peas. Real palm oil for flavour, greens and groundnuts most days, and snacks you would find at a roadside stall.",
+  "howItWorks": "**Cook once, eat twice.** Monday's egusi, Tuesday's yassa, Wednesday's groundnut stew, Friday's red-red and Saturday's fish and rice each make two portions, so the next day's lunch is done. Sunday's moi moi covers two breakfasts, and Friday's koko covers Saturday's.\n\n**Oily fish.** Smoked mackerel goes into Monday's egusi, and canned sardines with their soft bones sit on warm yam on Friday and Sunday. They carry your omega-3, B12 and **vitamin D**. Thursday's tilapia is grilled fresh, and Saturday's haddock is seared fresh on both days.\n\n**Palm oil with a purpose.** Red palm oil gives the egusi, moi moi and red-red their colour and flavour, and a lighter vegetable oil does the rest. Groundnuts (peanuts) and melon seeds bring **vitamin E and magnesium**; sardine bones, yogurt, sesame and collards keep your **calcium** up.\n\n**Whole-food starches.** Millet, yam, sweet potato, plantain and black-eyed peas do the work, with a little brown rice in Saturday's thieb. No African grocery nearby? Mustard greens, canned or smoked fish and a hot red chili cover most of what it sells.\n\n**Prep ahead.** Soak peas on Saturday night for Sunday's moi moi, and cook a pot for Monday's salad. On Thursday, soak millet and peas and cook the koko that evening. Make the egg sauce base on Sunday and Wednesday.",
+  "signature": [
+    "egusi-smoked-mackerel",
+    "chicken-yassa-millet",
+    "red-red-plantain",
+    "groundnut-stew-beef-sweet-potato"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "egg-tomato-pepper"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "banana-groundnuts"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "groundnut-sesame-bites"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "banana-groundnuts"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "egg-tomato-pepper"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "salted-groundnuts"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "coconut-groundnuts"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "egg-sauce-plantain",
+      "name": "Egg sauce with greens and pan-grilled ripe plantain",
+      "inspiredBy": "Nigerian egg sauce, with collards folded in and the plantain cooked in very little oil",
+      "about": "Soft eggs stirred through a thick tomato, onion and pepper sauce with a little collard greens, served with golden slices of ripe plantain. It is savoury and sweet on one plate, and quick when the sauce base is made ahead. The eggs bring protein and **choline**, and the plantain adds potassium and vitamin A.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "plantain-yellow-raw-9ae3b5",
+          "g": 70,
+          "note": "ripe, with dark spots"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "swap": "vit_c_fruit",
+          "note": "chopped"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 3,
+          "note": "scotch bonnet or habanero (produce aisle), or another hot red chili"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "stems removed, finely sliced"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Make the sauce base up to two days ahead. Warm half the oil in a pan, soften the onion and pepper for 4 minutes, then add the tomato and chili. Cook, stirring now and then, until the tomato has broken down into a thick, jammy sauce, about 8 minutes. Chill it.",
+        "On the day, peel the plantain and slice it on an angle into thick coins. Brush a non-stick pan with a little of the remaining oil and cook the plantain over medium heat until deep golden and soft, about 3 minutes on each side. Set it aside.",
+        "Add the rest of the oil to the pan and warm the sauce through. Stir in the collards with a splash of water and cook until tender, about 3 minutes.",
+        "Beat the eggs with the salt, pour them over the sauce and stir gently until they are softly set and still glossy, about 2 minutes. Serve right away with the plantain."
+      ],
+      "prepMin": 5,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "The sauce base keeps for two days in the fridge, so a double batch covers two mornings. Boiled yam is the other classic partner for egg sauce, and ground crayfish is a traditional addition if you have it. Leave out the chili for a mild version."
+    },
+    {
+      "id": "moi-moi",
+      "name": "Moi moi, steamed black-eyed pea pudding, with avocado and orange",
+      "inspiredBy": "Nigerian moi moi, steamed in ramekins instead of leaves",
+      "about": "A soft, savoury pudding of black-eyed peas blended with sweet peppers and onion, with half a boiled egg tucked in the middle, served with creamy avocado and a few orange segments. It makes two portions, and the second is just as good reheated the next morning. The peas bring **iron, folate and fibre**, and the avocado brings vitamin E.",
+      "ingredients": [
+        {
+          "food": "black-eyed-peas-common-dry-acb618",
+          "g": 70,
+          "swap": "legumes"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 90,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 40
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 3,
+          "note": "scotch bonnet or habanero (produce aisle), or another hot red chili"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "hard-boiled"
+        },
+        {
+          "food": "dried-shrimp-c654e1",
+          "g": 6,
+          "note": "ground, or use crayfish"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "palm-oil-bfe6af",
+          "g": 3,
+          "note": "for colour and flavour"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "sliced, on the side"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "in segments, on the side"
+        }
+      ],
+      "steps": [
+        "On Saturday night, cover the peas with plenty of cold water and leave them to soak overnight.",
+        "On Sunday evening, drain the peas and rub handfuls between your palms under water to loosen the skins. Pour off the skins as they float up and repeat until most are gone. It takes about 10 minutes and gives the pale, smooth moi moi you are after.",
+        "Hard-boil the eggs for 8 minutes, then cool, peel and halve them.",
+        "Blend the peas with the pepper, tomato, onion, chili, dried shrimp and a splash of water until you have a thick batter that drops off the spoon in a slow ribbon. Stir in the vegetable oil, palm oil and salt.",
+        "Ladle the batter into lightly oiled ramekins or foil cups, filling them about three quarters full, and press half an egg into the middle of each. For two portions that is four ramekins. Cover tightly with foil.",
+        "Stand the cups on a rack in a wide pot with a finger of simmering water, put the lid on and steam for about 40 minutes, topping up the water if it runs low. It is done when it is firm like set custard and a knife comes out clean. Cool and chill.",
+        "On Tuesday morning, reheat two ramekins for 2 minutes in the microwave or 10 minutes in a steamer and serve with the avocado and orange. Keep the other two for Wednesday. Moi moi keeps for three days in the fridge."
+      ],
+      "prepMin": 25,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Skins-on moi moi is darker, grittier and firmer, so it is worth the ten minutes to rub them off. A spoon of fresh pepper sauce or a little millet pap (ogi) on the side is the traditional partner. Foil cups or a muffin tin work if you do not have ramekins."
+    },
+    {
+      "id": "millet-koko-groundnut",
+      "name": "Spiced millet koko with yogurt, banana and groundnuts",
+      "inspiredBy": "Hausa koko, the ginger and clove millet porridge of northern Nigeria and Ghana, with yogurt in the spirit of nono, the fermented milk",
+      "about": "A thick, creamy millet porridge warmed with fresh ginger, clove and black pepper, topped with a big spoonful of cool yogurt, sliced banana and a crunch of chopped roasted groundnuts. It is gentle, a little sweet and keeps you full all morning. Millet is a whole grain with plenty of **magnesium and fibre**, and the yogurt adds protein and calcium.",
+      "ingredients": [
+        {
+          "food": "millet-dry-a10dc7",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 110,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "clove-ground-863cd5",
+          "g": 0.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "The evening before, rinse the millet and leave it to soak in plenty of cold water. This is optional, but it cuts the cooking time nearly in half.",
+        "Drain the millet and tip it into a pot with about three times as much fresh water, the grated ginger, clove, black pepper and salt. Bring to a boil, then simmer gently, stirring often so it does not catch.",
+        "Cook until the grains have burst and the porridge is thick and creamy, about 15 minutes after soaking, or 25 if you skipped it. Add a splash of water if it gets stiff.",
+        "For a smoother, more traditional pap, mash it hard with the back of a spoon or give it a few pulses with a stick blender.",
+        "Cook the porridge the evening before and chill it, so breakfast is only a reheat. In the morning, warm one portion with a splash of water and spoon it into a bowl. Top with the cool yogurt, the sliced banana and the chopped groundnuts.",
+        "Reheat the second portion the next morning in the same way and add the toppings fresh."
+      ],
+      "prepMin": 5,
+      "cookMin": 20,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Koko is often eaten with akara or bread. For more kick, add extra ginger. Groundnuts are what West Africans call peanuts."
+    },
+    {
+      "id": "nigerian-salad-black-eyed-peas",
+      "name": "Nigerian-style salad with black-eyed peas, corn and avocado",
+      "inspiredBy": "Nigerian party salad, with black-eyed peas in place of baked beans and a lime and mustard dressing in place of salad cream",
+      "about": "A big, crunchy bowl of shredded cabbage, tomato, carrot and sweet corn with seasoned black-eyed peas and ripe avocado, in a tangy lime and mustard dressing. It is cool, filling and needs almost no cooking. The peas bring protein, **iron and fibre**, and the raw vegetables bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "black-eyed-peas-common-dry-acb618",
+          "g": 100,
+          "swap": "legumes",
+          "note": "soaked and boiled until tender (or about three times the dry weight in canned)"
+        },
+        {
+          "food": "corn-on-the-cob-cooked-3f1e91",
+          "g": 60,
+          "note": "kernels cut from the cob, or canned"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 130,
+          "note": "finely shredded"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "grated"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "yellow-mustard-prepared-f7e307",
+          "g": 5
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "If you are starting from dried peas, soak them overnight, then simmer in unsalted water until tender but not mushy, about 40 minutes. Cook a big batch on Sunday and they keep for four days. Drain well.",
+        "While the peas are still warm, toss them with a third of the onion, half the lime juice and the salt so they take on the flavour. Let them cool.",
+        "Shred the cabbage very finely, chop the tomato and grate the carrot. Slice the rest of the onion into thin rings.",
+        "Whisk the rest of the lime juice with the mustard and oil until creamy.",
+        "Toss the peas with the cabbage, tomato, carrot, corn and onion in a big bowl. Top with the avocado and spoon the dressing over just before eating."
+      ],
+      "prepMin": 15,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Canned sardines or a boiled egg are popular additions in Nigeria. Pack the dressing separately if you take it to work."
+    },
+    {
+      "id": "suya-beef-sweet-potato",
+      "name": "Suya-spiced beef with cucumber and collard slaw and sweet potato",
+      "inspiredBy": "Hausa suya, the peppery peanut-spiced grilled beef of northern Nigeria, with sweet potato in place of bread",
+      "about": "Thin strips of beef rubbed with a warm, nutty yaji spice mix of ground groundnuts, paprika, cayenne, ginger, garlic and onion, grilled until the edges char, and served with a crunchy cucumber and collard slaw and soft sweet potato. It is hot, savoury and bright with lime. The beef brings **iron and zinc**, and the sweet potato brings vitamin A.",
+      "ingredients": [
+        {
+          "food": "beef-flank-steak-lean-raw-1239a6",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "flank steak, cut as thin as you can"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "for the yaji spice mix"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.6,
+          "note": "to taste"
+        },
+        {
+          "food": "garlic-powder-e81d9c",
+          "g": 0.5
+        },
+        {
+          "food": "onion-powder-2b2126",
+          "g": 0.5
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.5
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 130,
+          "note": "peeled, cut in wedges"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "stems removed, shredded very finely"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12
+        }
+      ],
+      "steps": [
+        "Put the flank steak in the freezer for 20 minutes so it firms up, then cut it across the grain into very thin strips.",
+        "Grind the groundnuts to a coarse powder with the paprika, cayenne, garlic powder, onion powder and ground ginger, in a spice grinder or with a mortar. This is your yaji.",
+        "Toss the beef in the oil. Add about two thirds of the yaji, mix well and leave for 15 minutes while you cook the sweet potato.",
+        "Boil the sweet potato wedges in salted water until just tender, about 12 minutes, and drain well.",
+        "Heat a heavy pan over medium-high heat, or heat the broiler. Cook the beef in a single layer for 2 to 3 minutes on each side, until browned at the edges and just cooked through. Do not crowd the pan or it will steam, and watch the peanut coating, which scorches fast.",
+        "Slice the cucumber, collards and onion as thinly as you can, chop the tomato and toss with the lime juice. Let it sit for a few minutes so the collards soften.",
+        "Serve the beef on the slaw with the sweet potato and a sprinkle of the remaining yaji."
+      ],
+      "prepMin": 20,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Slice and season the beef the night before and boil the sweet potato with another meal, and lunch is a 10-minute job. Skewers are lovely if you have them. Use less cayenne for a milder version."
+    },
+    {
+      "id": "egusi-smoked-mackerel",
+      "name": "Egusi soup with smoked mackerel and bitter greens, with boiled yam",
+      "inspiredBy": "Nigerian egusi soup, with collards and mustard greens standing in for bitterleaf or ugwu, and smoked mackerel for smoked fish",
+      "about": "A thick, nutty soup of ground melon seeds cooked in red palm oil with onion, chili and dried shrimp, loaded with collards and mustard greens and finished with flakes of smoked mackerel, served with soft boiled yam. It makes two portions and reheats well. The mackerel brings **omega-3 and B12**, the melon seeds bring magnesium and zinc, and the collards bring calcium.",
+      "ingredients": [
+        {
+          "food": "mackerel-flesh-only-smoked-02ab15",
+          "g": 90,
+          "swap": "fatty_fish",
+          "note": "hot-smoked, skin and bones removed"
+        },
+        {
+          "food": "melon-seeds-c8b198",
+          "g": 24,
+          "swap": "nuts_seeds",
+          "note": "ground, for egusi"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "stems removed, sliced"
+        },
+        {
+          "food": "mustard-greens-raw-d4b57b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 5,
+          "note": "scotch bonnet or habanero (produce aisle), or another hot red chili"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "dried-shrimp-c654e1",
+          "g": 8,
+          "note": "ground, or use crayfish"
+        },
+        {
+          "food": "palm-oil-bfe6af",
+          "g": 5
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 8
+        },
+        {
+          "food": "yam-raw-e950f3",
+          "g": 150,
+          "note": "peeled"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2,
+          "note": "only if needed, the fish is salty"
+        }
+      ],
+      "steps": [
+        "Peel the yam, cut it into chunks and boil in salted water until tender, 15 to 20 minutes. Drain.",
+        "Warm the palm oil in a wide pot over medium heat. Add the chopped onion and cook for 4 minutes, then stir in the garlic, chili and the ground dried shrimp. Let the shrimp sizzle in the oil for a minute so it loses its raw smell.",
+        "Stir in the tomato paste and half a cup of water and bring it to a simmer. Grind the melon seeds to a fine powder (or use pre-ground egusi from an African grocery) and stir them with a few spoonfuls of water to a thick paste. Spoon lumps of it into the pot, cover and cook on low for 8 minutes, until it sets into soft curds.",
+        "Pour in about another cup of water for two portions, stir gently and simmer for 8 minutes. It should be a thick soup, not a thin one.",
+        "Stir in the collards and mustard greens and cook until tender, 8 to 10 minutes.",
+        "Flake in the smoked mackerel and warm it through for 2 minutes. Taste before adding any salt.",
+        "Serve with the yam, mashed with a fork if you like. Pack the second portion for tomorrow and loosen it with a splash of water when you reheat it."
+      ],
+      "prepMin": 20,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Pumpkin leaves (ugwu) or frozen bitterleaf are the traditional greens if you can find them at an African grocery, and the same trip will find ground crayfish, ground egusi and iru. Without them, mustard greens give the bitter edge."
+    },
+    {
+      "id": "chicken-yassa-millet",
+      "name": "Chicken yassa with steamed millet",
+      "inspiredBy": "Senegalese yassa poulet, with millet in place of the usual white rice",
+      "about": "Chicken thighs marinated in lime juice, mustard and a mountain of onions, grilled for char, then simmered in the onions until they melt into a sweet and tangy sauce, over fluffy millet. It makes two portions, and the tangy onions taste even better on the second day. The onions and lime bring **vitamin C**, and the millet adds magnesium and fibre.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 180,
+          "swap": "lean_protein",
+          "note": "boneless"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 190,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 40
+        },
+        {
+          "food": "yellow-mustard-prepared-f7e307",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 4,
+          "note": "scotch bonnet or habanero (produce aisle), or another hot red chili"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "distilled-vinegar-white-dd0119",
+          "g": 8
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "millet-dry-a10dc7",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped, to finish"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "The night before or that morning, slice the onions. Set aside a small handful of the sliced onion in the fridge for the top, away from the chicken. Mix the rest with the lime juice, vinegar, mustard, crushed garlic, chili, black pepper and half the salt, add the chicken, turn to coat and leave it in the fridge for at least 30 minutes and no more than 12 hours.",
+        "Lift the chicken out of the marinade, keeping the onions, and pat it dry. Broil it on a tray for about 4 minutes on each side, until it is nicely charred at the edges. It does not need to be cooked through.",
+        "Warm the oil in a wide pan over medium heat. Add the marinated onions and the carrot and cook them, stirring often, until soft, golden and jammy, about 15 minutes.",
+        "Nestle the chicken into the onions with a splash of water, cover and simmer gently until it is cooked through and the sauce is thick, about 15 minutes.",
+        "Meanwhile, rinse the millet and simmer it in about two and a half times as much salted water, covered, until the water is absorbed and the grains are tender, 15 to 20 minutes. Rest it for 5 minutes, then fluff with a fork.",
+        "Serve the chicken and onion sauce over the millet, topped with the raw onion you set aside and the parsley. Pack the second portion for tomorrow's lunch. Millet turns stiff in the fridge, so add a splash of water and a squeeze of lime when you reheat it."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Marinate the night before or that morning, since much longer in lime and the chicken goes soft. Dijon mustard is the traditional choice. In Senegal yassa is often served with rice, and fish yassa made with a firm white fish is just as good."
+    },
+    {
+      "id": "groundnut-stew-beef-sweet-potato",
+      "name": "Groundnut stew with beef, sweet potato and collards",
+      "inspiredBy": "Senegalese mafe and Ghanaian groundnut soup, with collards for the greens",
+      "about": "Tender beef and soft sweet potato in a thick, savoury groundnut and tomato sauce with ginger, garlic and chili, with collards stirred in at the end and a squeeze of lime to cut the richness. It is rich without needing much oil, and it makes two portions. Groundnuts are a great source of **vitamin E**, and the sweet potato and collards add vitamin A, calcium and vitamin K.",
+      "ingredients": [
+        {
+          "food": "beef-flank-steak-lean-raw-1239a6",
+          "g": 115,
+          "swap": "lean_protein",
+          "note": "flank steak, cut in bite-size pieces"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 28,
+          "swap": "nuts_seeds",
+          "note": "unsalted if you can"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 15
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 4,
+          "note": "scotch bonnet or habanero (produce aisle), or another hot red chili"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 150,
+          "note": "peeled, in chunks"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 150,
+          "swap": "leafy_greens",
+          "note": "stems removed, sliced"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Heat the oil in a heavy pot over medium-high heat and brown the beef in batches until well coloured on all sides. Set it aside.",
+        "Lower the heat and soften the chopped onion with the ginger, garlic and chili for 5 minutes. Stir in the tomato paste for a minute, then the chopped tomato, and cook until it darkens and thickens, about 8 minutes.",
+        "Return the beef to the pot with a mug of water and the salt. Cover and simmer gently until the beef is tender, about 60 minutes (or 25 minutes in a pressure cooker).",
+        "Add the sweet potato and enough water to nearly cover. Simmer for 12 minutes, until it is soft.",
+        "Blend the groundnuts with a ladle of the hot broth until completely smooth, then stir it into the pot along with the collards. Simmer very gently for 10 more minutes, stirring now and then, until the sauce is thick and glossy. Do not let it boil hard or the groundnuts can catch.",
+        "Stir in the lime juice and taste for salt. Pack the second portion for tomorrow's lunch. The stew thickens in the fridge, so loosen it with a splash of water."
+      ],
+      "prepMin": 20,
+      "cookMin": 75,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Cassava is the other classic here. Natural peanut butter, stirred in with the broth, is a fine shortcut for the blended groundnuts, and chicken thighs cook in half the time."
+    },
+    {
+      "id": "braised-tilapia-onion-sauce",
+      "name": "Grilled tilapia with onion and chili sauce, boiled cassava and stewed greens",
+      "inspiredBy": "Ivorian poisson braisé, grilled fish with an onion, tomato and chili sauce, with cassava in place of attiéké and Sierra Leone-style stewed greens",
+      "about": "Tilapia fillets rubbed with ginger and garlic and broiled until golden, with a tangy raw onion, tomato and chili sauce, soft boiled cassava and collards and mustard greens stewed with a little palm oil and dried shrimp. It is simple, bold and quick to put together. The fish brings lean protein, B12 and selenium, and the greens bring **calcium and vitamin K**.",
+      "ingredients": [
+        {
+          "food": "tilapia-raw-aab275",
+          "g": 180,
+          "swap": "lean_protein",
+          "note": "fillets"
+        },
+        {
+          "food": "cassava-manioc-raw-41bc74",
+          "g": 100,
+          "note": "peeled"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "stems removed, sliced into ribbons"
+        },
+        {
+          "food": "mustard-greens-raw-d4b57b",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 90
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 4,
+          "note": "scotch bonnet or habanero (produce aisle), or another hot red chili"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "palm-oil-bfe6af",
+          "g": 3,
+          "note": "for the greens"
+        },
+        {
+          "food": "dried-shrimp-c654e1",
+          "g": 8,
+          "note": "ground, or use crayfish"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Peel the cassava, cut it into chunks and cut out the woody core. Boil in salted water until completely soft, about 20 minutes, then drain.",
+        "For the sauce, slice half the onion very thinly and chop the tomato and chili. Toss with the lime juice and a pinch of salt and let it sit while you cook. It should be sharp, juicy and fresh.",
+        "Grate the garlic and half the ginger and rub them over the tilapia with the vegetable oil and a pinch of salt. Lay the fillets on a tray lined with oiled foil.",
+        "Heat the broiler to high. Broil the fish for about 4 minutes without turning, until it is opaque and flakes easily. Thin fillets cook fast, so watch them.",
+        "Meanwhile warm the palm oil in a pan, chop the rest of the onion and soften it with the rest of the ginger and the ground dried shrimp for 3 minutes, letting the shrimp sizzle. Add the collards and mustard greens with a splash of water, cover and cook until tender and glossy, about 8 minutes.",
+        "Serve the fish with the cassava, the greens and a big spoonful of the onion sauce."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Boiled yam or plantain are the other classic partners. A whole fish grilled over charcoal is the real thing, and you would need about 450 g for one portion. Leave the chili out of the sauce for a mild version."
+    },
+    {
+      "id": "red-red-plantain",
+      "name": "Red-red, black-eyed pea stew with pan-fried ripe plantain and egg",
+      "inspiredBy": "Ghanaian red-red, with the plantain pan-fried in very little oil instead of deep-fried",
+      "about": "Black-eyed peas simmered until creamy in a deep red palm oil, tomato, onion and ginger sauce, with sweet pan-fried plantain and a boiled egg on the side. It is the classic Ghanaian comfort plate, and it makes two portions. The peas are a great source of **folate, iron and fibre**.",
+      "ingredients": [
+        {
+          "food": "black-eyed-peas-common-dry-acb618",
+          "g": 75,
+          "swap": "legumes"
+        },
+        {
+          "food": "plantain-yellow-raw-9ae3b5",
+          "g": 60,
+          "note": "ripe, with dark spots"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "hard-boiled"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "sliced, on the side"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 10
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 3,
+          "note": "scotch bonnet or habanero (produce aisle), or another hot red chili"
+        },
+        {
+          "food": "palm-oil-bfe6af",
+          "g": 9,
+          "note": "for the colour and flavour"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 3,
+          "swap": "healthy_oils",
+          "note": "for the plantain"
+        },
+        {
+          "food": "dried-shrimp-c654e1",
+          "g": 6,
+          "note": "ground, or use crayfish"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Soak the peas overnight in plenty of cold water. Drain, cover with fresh water and simmer until completely soft, about 45 minutes (or 15 in a pressure cooker). Do not salt them until they are tender. Keep a mug of the cooking water.",
+        "Blend the pepper with half the onion and the tomato. Chop the rest of the onion finely.",
+        "Warm the palm oil gently in a wide pot, then soften the chopped onion with the ginger, chili and the ground dried shrimp for about 5 minutes. Add the tomato paste and cook for a minute, then the blended tomato mixture.",
+        "Cook, stirring, until the sauce turns a deep red and the oil starts to separate, about 12 minutes. This is where the name comes from.",
+        "Stir in the drained peas, the salt and a good splash of the cooking water. Simmer for 15 minutes, mashing a few peas against the side of the pot to thicken the stew.",
+        "While it simmers, hard-boil the eggs for 8 minutes. Slice the plantain into thick coins, toss with the vegetable oil and a pinch of salt and cook in a non-stick pan over medium heat for about 4 minutes on each side, until caramelized at the edges.",
+        "Serve the peas with the plantain, a halved egg and a few slices of avocado. Pack the second portion of stew for tomorrow. At lunch, pan-sear fresh plantain for 8 minutes while you reheat the stew, as plantain is never as good reheated."
+      ],
+      "prepMin": 20,
+      "cookMin": 65,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Many cooks add a little fried fish on top. A spoonful of gari is the other traditional topping. Two cans of drained black-eyed peas will save you the simmering time."
+    },
+    {
+      "id": "thieb-fish-brown-rice",
+      "name": "Thieboudienne-inspired fish and vegetable rice",
+      "inspiredBy": "Senegalese thieboudienne, with brown rice cooked in the fish and vegetable broth",
+      "about": "Fish seasoned with a parsley, garlic, chili and lime paste, laid over brown rice cooked in a rich tomato broth with sweet potato and cabbage. It is Senegal's national dish, simplified for a home kitchen, and it makes two portions. The sweet potato and cabbage add **vitamin A and fibre**, and the fish brings lean protein.",
+      "ingredients": [
+        {
+          "food": "haddock-raw-492803",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "fillets, or snapper"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 40
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 50,
+          "note": "peeled, in chunks"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "chopped"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 120,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 20
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 4,
+          "note": "scotch bonnet or habanero (produce aisle), or another hot red chili"
+        },
+        {
+          "food": "dried-shrimp-c654e1",
+          "g": 9,
+          "note": "ground, or use crayfish"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Rinse the rice and soak it in cold water for 30 minutes. Brown rice is chewier than the broken rice used in Senegal, so the soak helps.",
+        "Make the paste (called rof): crush or blitz the parsley, garlic, half the onion, the chili, half the lime juice and a pinch of salt into a rough paste.",
+        "Cut a few slashes in each fish fillet and press about half of the paste into them. Let the fish sit in the fridge while you start the sauce.",
+        "Heat half the oil in a large, heavy pot and soften the remaining onion for 5 minutes, along with the ground dried shrimp. Stir in the tomato paste and fry until it darkens to brick red, about 4 minutes. Add the rest of the paste and about 3 cups of water for the two portions, bring to a boil and simmer for 10 minutes.",
+        "Add the sweet potato, tomato and cabbage and simmer for 15 minutes, until the sweet potato is tender. Lift the vegetables out onto a plate and keep them warm.",
+        "Ladle off all but about 1½ cups of the broth for the two portions and keep it hot to spoon over at the table. Drain the rice and stir it into the broth left in the pot. Cover and cook very gently, stirring once or twice, until the rice is tender and has soaked up the broth, 35 to 40 minutes.",
+        "While the rice finishes, warm the rest of the oil in a pan and sear one fillet for 3 minutes on each side. Lay it on the rice with half the vegetables and finish with the rest of the lime juice and some of the hot broth.",
+        "Pack the second portion of rice and vegetables for tomorrow's lunch and keep the second fillet raw in the fridge. Tomorrow, sear it fresh for 3 minutes a side while you reheat the rice with a splash of water."
+      ],
+      "prepMin": 30,
+      "cookMin": 80,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "weekend-project",
+        "makes-leftovers"
+      ],
+      "tip": "White rice or broken rice gives the soft, broth-soaked texture and the crispy bottom. Snapper or cod work as well as haddock, and mackerel makes a richer pot. Cassava and eggplant are classic additions."
+    },
+    {
+      "id": "goat-yam-pepper-soup",
+      "name": "Goat and yam pepper soup with collards",
+      "inspiredBy": "Nigerian goat pepper soup, a clear, fiery broth with ginger and warm spices, with yam and collards added to make it a meal",
+      "about": "A clear, peppery goat broth warmed with ginger, garlic, scotch bonnet, black pepper, nutmeg, clove and allspice, with soft chunks of yam and collards added at the end. It is light, spicy and deeply comforting. The goat brings protein, iron and zinc, the collards bring **calcium and vitamin K**, and the yam brings potassium.",
+      "ingredients": [
+        {
+          "food": "goat-lean-raw-67f543",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "boneless goat, bite-size pieces"
+        },
+        {
+          "food": "yam-raw-e950f3",
+          "g": 100,
+          "note": "peeled, in chunks"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 8,
+          "note": "about ½ scotch bonnet or habanero, or another hot red chili"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "nutmeg-ground-15c547",
+          "g": 0.3
+        },
+        {
+          "food": "clove-ground-863cd5",
+          "g": 0.2
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.2
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "stems removed, sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Blend the onion, ginger, garlic and chili with a splash of water into a rough paste.",
+        "Put the goat in a pot with the paste, black pepper, nutmeg, clove, allspice and salt and cover with water by a few centimetres. Bring to a boil, skim off the foam and simmer gently until the goat is tender, about 60 minutes (or 25 in a pressure cooker), skimming off any fat that rises.",
+        "Add the yam and simmer for another 15 minutes, until the yam is tender and the broth has thickened slightly.",
+        "Stir in the collards and simmer for 6 minutes, until tender. Squeeze in the lime juice and taste for salt and heat.",
+        "Serve very hot, in a big bowl."
+      ],
+      "prepMin": 10,
+      "cookMin": 85,
+      "servings": 1,
+      "tags": [
+        "spicy"
+      ],
+      "tip": "The weight is for boneless goat. If you buy it on the bone, as most cooks do, buy about 250 g and take the bones into the pot. Look for goat at a halal butcher or a Caribbean or African market, and use lamb or chicken thighs if you cannot find it. A teaspoon of ready-made pepper soup spice from the African grocery can replace the ground spices, and a few basil leaves stand in for scent leaf. Goat comes in bigger packs, so make a double pot and freeze the second bowl."
+    },
+    {
+      "id": "groundnut-sesame-bites",
+      "name": "Groundnut and sesame bites",
+      "inspiredBy": "Hausa kuli-kuli, the crunchy groundnut snack, here with sesame and without the pressing and frying",
+      "about": "Roasted groundnuts pounded with toasted sesame (benne) seeds, fresh ginger and a little chili into nutty, crumbly little balls with a crunch of sesame. The sesame brings **calcium** and the groundnuts bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 20,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 2
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 0.3,
+          "note": "finely chopped, optional"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the sesame seeds in a dry pan over medium heat until golden and fragrant, about 2 minutes.",
+        "Grind half the groundnuts in a spice grinder or mortar until they turn oily and start to clump. Roughly crush the other half so some pieces stay coarse.",
+        "Mix both with the sesame seeds, ginger, chili and salt, squeeze into small balls and press firmly so they hold together. Eat right away or keep for a day."
+      ],
+      "prepMin": 5,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "orange-groundnuts",
+      "name": "Orange and roasted groundnuts",
+      "about": "A juicy orange with a handful of roasted groundnuts, the street snack you will find all over Accra and Lagos. Sweet, salty and crunchy. The orange brings **vitamin C** and the groundnuts bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 25,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Peel the orange, break it into segments and eat it with the groundnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "orange-yogurt-sesame",
+      "name": "Orange yogurt with toasted sesame",
+      "about": "Thick yogurt with juicy orange segments and a spoonful of toasted sesame (benne) seeds. Cool, sweet and crunchy. The yogurt and sesame together bring **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 160,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 120,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 8,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Toast the sesame seeds in a dry pan until golden, about 2 minutes.",
+        "Spoon the yogurt into a bowl, top with the orange segments and scatter the sesame seeds over."
+      ],
+      "prepMin": 4,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "roasted-corn-coconut",
+      "name": "Roasted corn with fresh coconut",
+      "about": "A large cob of corn roasted until charred in spots, eaten with chunks of fresh coconut, the pairing sold from roadside stalls in Ghana and Nigeria. Sweet, smoky and chewy. Corn brings fibre and B vitamins, and the coconut brings **crunch and fibre**.",
+      "ingredients": [
+        {
+          "food": "corn-on-the-cob-cooked-3f1e91",
+          "g": 150,
+          "note": "1 large cob"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 15,
+          "note": "fresh, in chunks"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Roast the cob over a gas flame, on a hot grill or in a dry heavy pan, turning often, for about 10 minutes, until charred in spots. Sprinkle with the salt and eat it with the coconut chunks."
+      ],
+      "prepMin": 3,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "avocado-tomato-lime",
+      "name": "Avocado with tomato and lime",
+      "about": "Half a ripe avocado with chopped tomato, a squeeze of lime and a pinch of salt. It is creamy, juicy and sharp, the way avocado is eaten across Ghana and Nigeria. Avocado brings **vitamin E**, fibre and potassium.",
+      "ingredients": [
+        {
+          "food": "avocado-raw-c06278",
+          "g": 90
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Halve the avocado and chop the tomato. Spoon the tomato over the avocado, squeeze over the lime juice and sprinkle with the salt."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "sardines-tomato-yam",
+      "name": "Sardines and tomato on warm yam slices",
+      "about": "Warm slices of boiled yam topped with canned sardines, chopped tomato, a little onion and chili. Canned sardines are a staple pantry food across West Africa. Sardines eaten with their soft bones bring omega-3, **calcium and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 65,
+          "swap": "fatty_fish",
+          "note": "canned in oil, drained, with the soft bones"
+        },
+        {
+          "food": "yam-raw-e950f3",
+          "g": 70,
+          "note": "peeled"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 0.5,
+          "note": "scotch bonnet or habanero (produce aisle), or another hot red chili"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Slice the yam into thick rounds and boil in salted water until tender, about 12 minutes. Drain. If you have leftover boiled yam, just warm it.",
+        "Chop the tomato, onion and chili and mix with the lime juice. Top the warm yam with the sardines, broken into chunks, and the tomato mixture."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ]
+    },
+    {
+      "id": "salted-groundnuts",
+      "name": "Roasted groundnuts",
+      "about": "A handful of roasted groundnuts, the simplest snack in West Africa, sold in little twists of paper on every corner. Crunchy and satisfying, with protein and plenty of **vitamin E**.",
+      "ingredients": [
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 30,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Sprinkle the groundnuts with a pinch of salt if they are unsalted, and eat them as they are."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "banana-groundnuts",
+      "name": "Ripe banana and roasted groundnuts",
+      "about": "A ripe banana with a handful of roasted groundnuts, a simple, filling pairing sold at roadsides across Ghana. The banana brings **potassium** and the groundnuts bring protein and vitamin E.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 110
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 25,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Peel the banana and eat it with the groundnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "coconut-groundnuts",
+      "name": "Fresh coconut and roasted groundnuts",
+      "about": "Chunks of fresh coconut with a handful of roasted groundnuts, a roadside favourite in Ghana. Sweet, crunchy and filling. The groundnuts bring protein and **vitamin E**.",
+      "ingredients": [
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 20,
+          "note": "fresh, in chunks"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Crack the coconut, pry out the flesh and cut it into chunks. Eat it with the groundnuts."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "egg-tomato-pepper",
+      "name": "Boiled egg with tomato and fresh pepper",
+      "about": "A hard-boiled egg with juicy tomato, a little thinly sliced onion and chopped chili and salt. Fresh, hot and simple, and a good source of protein and **choline**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "hard-boiled"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 1,
+          "note": "scotch bonnet or habanero (produce aisle), or another hot red chili"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Hard-boil the egg for 8 minutes, then cool and peel it.",
+        "Slice the egg and tomato onto a plate, scatter with the onion and chili and sprinkle with the salt."
+      ],
+      "prepMin": 5,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ]
+    },
+    {
+      "id": "akara-bites",
+      "name": "Akara, black-eyed pea fritters, pan-fried",
+      "inspiredBy": "Nigerian akara, pan-fried in a little oil instead of deep-fried",
+      "about": "Little golden fritters of blended black-eyed peas, onion and chili, pan-fried in just a little oil until crisp outside and fluffy inside. Akara is eaten for breakfast and as a snack across Nigeria and Ghana. The peas bring **iron, folate and fibre**.",
+      "ingredients": [
+        {
+          "food": "black-eyed-peas-common-dry-acb618",
+          "g": 50,
+          "swap": "legumes"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 2,
+          "note": "scotch bonnet or habanero (produce aisle), or another hot red chili"
+        },
+        {
+          "food": "vegetable-oil-936bdc",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Soak the peas in plenty of cold water for at least 4 hours, or overnight. Rub them between your palms to loosen the skins and rinse most of them away.",
+        "Blend the peas with the onion, chili, salt and just enough cold water to make a thick, fluffy batter. Beat it hard with a spoon for a minute to add air.",
+        "Warm the oil in a non-stick pan over medium heat. Drop in spoonfuls of batter and fry for 2 to 3 minutes on each side, until deep golden and crisp. Drain on paper and eat warm."
+      ],
+      "prepMin": 15,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "egg-sauce-plantain"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "nigerian-salad-black-eyed-peas"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "egusi-smoked-mackerel"
+        },
+        {
+          "slot": "snack",
+          "recipe": "orange-yogurt-sesame"
+        },
+        {
+          "slot": "snack",
+          "recipe": "salted-groundnuts"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "moi-moi"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "egusi-smoked-mackerel",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "chicken-yassa-millet"
+        },
+        {
+          "slot": "snack",
+          "recipe": "groundnut-sesame-bites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "avocado-tomato-lime"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "moi-moi",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "chicken-yassa-millet",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "groundnut-stew-beef-sweet-potato"
+        },
+        {
+          "slot": "snack",
+          "recipe": "orange-groundnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "roasted-corn-coconut"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "egg-sauce-plantain"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "groundnut-stew-beef-sweet-potato",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "braised-tilapia-onion-sauce"
+        },
+        {
+          "slot": "snack",
+          "recipe": "akara-bites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "roasted-corn-coconut"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "millet-koko-groundnut"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "suya-beef-sweet-potato"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "red-red-plantain"
+        },
+        {
+          "slot": "snack",
+          "recipe": "sardines-tomato-yam"
+        },
+        {
+          "slot": "snack",
+          "recipe": "avocado-tomato-lime"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "millet-koko-groundnut",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "red-red-plantain",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "thieb-fish-brown-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "orange-yogurt-sesame"
+        },
+        {
+          "slot": "snack",
+          "recipe": "orange-groundnuts"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "egg-sauce-plantain"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "thieb-fish-brown-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "goat-yam-pepper-soup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "sardines-tomato-yam"
+        },
+        {
+          "slot": "snack",
+          "recipe": "akara-bites"
+        }
+      ]
+    }
+  ]
+}
