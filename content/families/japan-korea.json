@@ -1,0 +1,1838 @@
+{
+  "id": "japan-korea",
+  "name": "Japanese & Korean Home Table",
+  "style": "balanced",
+  "cuisine": "East Asian",
+  "regions": [
+    "Japan",
+    "Korea"
+  ],
+  "summary": "A week at the Japanese and Korean home table: miso soup, grilled fish, soba, rice bowls, namul and a hot pot, with brown rice and barley, tofu and plenty of vegetables.",
+  "howItWorks": "**Cook once, eat twice.** Monday's teriyaki, Wednesday's jjigae and Saturday's bibimbap each make two portions, so Tuesday, Thursday and Sunday lunches are done. The banchan and the dak-juk are also made once for two breakfasts.\n\n**Sunday prep.** Cook a big pot of brown rice and pearl barley, portion it, and cook a second batch on Wednesday night. It keeps four days, so every rice meal is a quick reheat. Roast a tray of sweet potatoes and make a jar of nut jorim too.\n\n**Fish three times.** Salmon on Tuesday, mackerel on Thursday and a quick salmon soba on Saturday bring your **omega-3 and vitamin D**, never two days in a row. Walnuts in the snacks and the porridge add more.\n\n**Soy, seaweed and noodles.** Tofu, natto, edamame and the bean pastes carry protein, and calcium-set tofu carries calcium. Nori and wakame add iodine. Soba and udon take turns with the rice so the week never turns into a rice wall.\n\n**Saturday is the long day.** Dak-juk in the morning and bibimbap at night take the most time, so weeknights stay quick. Miso, tamari and kimchi bring the salt, so each recipe measures them and lets ginger, vinegar and mandarin add the brightness.",
+  "signature": [
+    "miso-salmon-gomae",
+    "beef-bibimbap-namul",
+    "saba-shioyaki-daikon",
+    "beef-tofu-doenjang-jjigae"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "hiyayakko"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "mandarin-walnuts"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "nori-soft-egg"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "hiyayakko"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "edamame-sea-salt"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "mandarin-almonds"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "mandarin-walnuts"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "japanese-breakfast-set",
+      "name": "Japanese breakfast set: tofu and wakame miso soup, tamagoyaki and brown rice",
+      "inspiredBy": "a classic Japanese asa-gohan breakfast, with brown rice and a walnut furikake on top",
+      "about": "A proper Japanese morning: miso soup with tofu and wakame, a rolled omelette (tamagoyaki), warm brown rice under a sprinkle of toasted sesame, nori, bonito and walnuts, and a quick cucumber pickle. With rice from your batch it is about 15 minutes. The **eggs bring protein and choline**, and the soup is warm and easy on the stomach.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 130,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 60,
+          "swap": "lean_protein",
+          "note": "cubed"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 10
+        },
+        {
+          "food": "wakame-dried-247e05",
+          "g": 1
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 3,
+          "note": "flakes"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 5
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 3
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 3
+        },
+        {
+          "food": "nori-pyropia-laver-toasted-yakinori-7f29ab",
+          "g": 1
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Reheat a portion of your batch rice with a splash of water, covered, until steaming. A couple of minutes in the microwave is fine.",
+        "Slice the cucumber thinly and toss it with a few drops of the tamari and half the sesame seeds. Leave it to soften while you cook.",
+        "Bring about 220 ml (a scant cup) of water to a gentle simmer, add the bonito flakes and steep for 2 minutes, then strain them out and squeeze them dry. Add the wakame (a pinch swells into a lot) and the tofu to the broth, and simmer for 2 minutes.",
+        "Turn off the heat. Whisk the miso with a ladle of the broth until smooth, then stir it back in. Don't boil it once the miso is in, which keeps the flavour mellow. Sprinkle with half the scallion.",
+        "Start the eggs while the dashi steeps. Beat the eggs with the mirin, the rest of the tamari and the rest of the scallion, finely sliced. Warm the oil in a small non-stick pan over medium-low heat, pour in a thin layer of egg, and roll it up when it has just set. Push the roll to one side, pour in more egg under it, and roll again until the egg is used up.",
+        "Toast the squeezed bonito flakes in a dry pan with the chopped walnuts and the rest of the sesame seeds until the flakes are dry and crisp, about 2 minutes. Take the pan off the heat and crumble in the nori. Sprinkle over the rice, and serve with the sliced tamagoyaki, the soup and the pickle."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Short on time? Scramble the eggs softly with the mirin and tamari instead of rolling them. Same flavour, half the fuss."
+    },
+    {
+      "id": "banchan-breakfast",
+      "name": "Korean banchan breakfast: soy-braised tofu, soybean sprouts, kimchi, fried egg and rice",
+      "inspiredBy": "Korean dubu-jorim and kongnamul-muchim, set out the way a home breakfast table has a few small side dishes",
+      "about": "Golden pan-seared tofu in a garlicky soy, gochujang and gochugaru glaze, with sesame soybean sprouts, a little kimchi, a crisp-edged fried egg and brown rice. The tofu and sprouts are made once and last two mornings, so each breakfast takes about 10 minutes. The **tofu and sprouts bring plant protein and folate**.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 70,
+          "swap": "lean_protein",
+          "note": "calcium-set, check the label for calcium sulfate"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 80,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "barley-pearled-cooked-84df02",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "soybean-sprouted-bean-sprouts-raw-000dd4",
+          "g": 70,
+          "note": "soybean sprouts"
+        },
+        {
+          "food": "kimchi-1371a8",
+          "g": 30
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 5
+        },
+        {
+          "food": "gochujang-korean-chili-paste-843f28",
+          "g": 5
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 1
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "The evening before, make the banchan for two mornings (cook double the amounts for 2 portions). Cut the tofu into slabs about 1 cm (½ inch) thick and pat them dry. Warm half the canola oil in a non-stick pan over medium heat and sear the tofu until golden, about 3 minutes a side.",
+        "Mince the garlic and scallion. Stir most of them into the tamari, gochujang, gochugaru and a splash of water, pour it over the tofu, and simmer, spooning the sauce over, until it is thick and glossy, about 3 minutes.",
+        "Boil the soybean sprouts, covered, in a little water for 5 minutes, until they no longer taste raw. Drain, and toss with the rest of the garlic and scallion, the sesame oil and the sesame seeds.",
+        "Cool the tofu and the sprouts and keep them in separate containers in the fridge. They keep for 3 days.",
+        "In the morning, reheat the rice and barley with a splash of water, and warm the tofu in the microwave or a small pan for a minute.",
+        "Fry the egg in the rest of the canola oil until the white is set and crisp at the edges and the yolk is still soft.",
+        "Serve the rice with the tofu and its sauce, the sprouts, the egg and the kimchi."
+      ],
+      "prepMin": 3,
+      "cookMin": 7,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "The evening batch takes about 20 minutes once, and you get two quick mornings out of it."
+    },
+    {
+      "id": "dak-juk",
+      "name": "Dak-juk, Korean chicken and vegetable rice porridge with walnuts",
+      "inspiredBy": "Korean dak-juk, made from cooked rice and barley, with walnuts on top like hodu-juk",
+      "about": "A silky, gently savoury porridge of rice and barley with tender chicken, carrot and zucchini, finished with toasted sesame oil, nori, scallion and crunchy walnuts. It is slow weekend comfort food that makes two bowls, so Sunday's breakfast is already done. The **chicken and barley keep you full** for hours, and the walnuts add plant omega-3.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "barley-pearled-cooked-84df02",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "cut into small pieces"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "finely diced"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 90,
+          "note": "finely diced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 6
+        },
+        {
+          "food": "nori-pyropia-laver-toasted-yakinori-7f29ab",
+          "g": 1
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Mince the ginger and garlic, dice the carrot and zucchini, slice the scallion, and cut the chicken into small pieces.",
+        "Warm half the sesame oil in a heavy pot over medium heat. Cook the chicken with the ginger and garlic until it turns white, about 3 minutes.",
+        "Add the carrot and the cooked rice and barley, and pour in water to cover the grains by about 3 cm (1 inch). That is roughly 3 parts water to 1 part cooked grain.",
+        "Bring to a boil, then simmer over low heat, stirring often and pressing some of the grains against the side of the pot, for about 20 minutes. Add water as it thickens, until the porridge is thick and creamy. Stir in the zucchini and tamari for the last 5 minutes.",
+        "Toast the walnuts in a dry pan for 2 minutes, then chop them roughly.",
+        "Ladle one portion into a bowl and finish with the sesame oil, scallion, walnuts and crumbled nori. Chill the second portion of porridge on its own, and keep its walnuts and nori separate so they stay crisp. Loosen it with a splash of water when you reheat it."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "A spoonful of kimchi on the side is very Korean, and wakes the porridge up."
+    },
+    {
+      "id": "cold-soba-tofu-edamame",
+      "name": "Cold soba with chilled tofu and edamame, with a ginger dipping sauce",
+      "inspiredBy": "Japanese zaru soba, turned into a fuller lunch bowl",
+      "about": "Chilled buckwheat noodles with cool tofu, edamame and crisp cucumber, dunked in a light, gingery bonito and soy sauce and finished with shredded nori. It is fresh, filling and ready in about 20 minutes. The **tofu and edamame carry the protein**, and the buckwheat gives it a nutty flavour and a little extra fibre.",
+      "ingredients": [
+        {
+          "food": "soba-noodles-dry-2dc785",
+          "g": 90,
+          "swap": "low_gi_grains",
+          "note": "dried"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "calcium-set, check the label for calcium sulfate, chilled, cubed"
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 90,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 120
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10
+        },
+        {
+          "food": "nori-pyropia-laver-toasted-yakinori-7f29ab",
+          "g": 2
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 2
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 7
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 8
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 4
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 4,
+          "note": "flakes"
+        }
+      ],
+      "steps": [
+        "Make the dipping sauce first so it can chill. Simmer about 60 ml (¼ cup) of water with the bonito flakes, tamari and mirin for 2 minutes, then strain. Stir in the vinegar and half the grated ginger, and cool it quickly in a bowl set over ice, or the night before in the fridge.",
+        "Boil the edamame for 3 to 4 minutes, drain and cool them under cold water.",
+        "Cook the soba in plenty of boiling water for the time on the package, usually 4 to 5 minutes. Drain, then rinse really well under cold running water, rubbing gently, until the noodles are chilled and no longer slippery.",
+        "Pile the noodles on a plate with the tofu, the cucumber cut into matchsticks and the edamame. Scatter over the sesame seeds, the sliced scallion and the nori cut into thin strips with scissors.",
+        "Serve with the sauce and the rest of the ginger for dunking."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Stir a little hot noodle water into the leftover sauce and drink it at the end, the Japanese way."
+    },
+    {
+      "id": "tofu-steak-onigiri-bento",
+      "name": "Tofu steak and onigiri bento with broccoli goma-ae and carrot-daikon pickle",
+      "inspiredBy": "a Japanese bento of onigiri and kohaku namasu, with a soy-glazed tofu steak for the protein",
+      "about": "Two small rice balls seasoned with bonito flakes and sesame, wrapped in crisp nori, with a sweet-soy tofu steak, broccoli in a sesame dressing and a bright carrot and daikon pickle. It is the lunchbox you can eat cold at your desk. The **tofu brings plant protein**, the broccoli adds vitamin C and folate, and the pickle adds crunch.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "barley-pearled-cooked-84df02",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 6,
+          "note": "flakes"
+        },
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "firm"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 8
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 10
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 2
+        },
+        {
+          "food": "nori-pyropia-laver-toasted-yakinori-7f29ab",
+          "g": 2
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 100
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 100
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 12
+        }
+      ],
+      "steps": [
+        "The night before, make the tofu, the broccoli and the pickle. Peel the carrot and daikon and cut them into thin matchsticks. Toss with the vinegar and half the mirin, squeeze lightly, and leave to pickle.",
+        "In the morning, reheat the rice and barley until steaming hot. The barley makes it sticky enough to shape.",
+        "Pat the tofu dry and cut it into two slabs. Sear it in the oil over medium heat until golden, about 3 minutes a side. Add most of the tamari and most of the remaining mirin to the pan and turn the tofu in the sizzling glaze for a minute, until it is sticky and dark.",
+        "Cut the broccoli into small florets and boil for 2 minutes, then drain and cool under cold water. Toss with a few drops of the tamari, a drop of the mirin and half the sesame seeds, to make the goma-ae.",
+        "Stir the bonito flakes with the last of the tamari until damp, and mix them into the warm rice with the rest of the sesame seeds. Wet your hands and press the rice firmly into 2 triangles or balls, or press it in plastic wrap and twist.",
+        "Pack the onigiri with the tofu, broccoli and pickle, and keep the nori separate. Wrap each onigiri in a strip of nori just before eating so it stays crisp."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Everything except the onigiri can be made the night before. Shape the rice in the morning and wrap the balls in plastic wrap."
+    },
+    {
+      "id": "natto-soba",
+      "name": "Natto soba with grated daikon, scallion, nori and kimchi, with bok choy ohitashi",
+      "inspiredBy": "Japanese natto soba, with kimchi for crunch and a simple ohitashi side",
+      "about": "Cold buckwheat noodles topped with sticky, savoury natto, sharp grated daikon, scallion and nori, with a spoonful of kimchi for crunch and bok choy dressed in soy and sesame on the side. It is a fast, very Japanese lunch if you like natto. **Natto is rich in iron and fibre**, and the bok choy adds calcium.",
+      "ingredients": [
+        {
+          "food": "soba-noodles-dry-2dc785",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "dried"
+        },
+        {
+          "food": "natto-86df6e",
+          "g": 80,
+          "swap": "legumes"
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 80
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12
+        },
+        {
+          "food": "nori-pyropia-laver-toasted-yakinori-7f29ab",
+          "g": 1.5
+        },
+        {
+          "food": "kimchi-1371a8",
+          "g": 30,
+          "note": "chopped"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 150,
+          "swap": "leafy_greens",
+          "note": "halved lengthwise"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 6
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 6
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 4,
+          "note": "flakes"
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Simmer about 50 ml (3 tbsp) of water with the bonito flakes, half the tamari and the mirin for 2 minutes, then strain and cool it in the fridge or over ice. This is the noodle sauce.",
+        "Boil the bok choy for 1 to 2 minutes, until just tender and still bright green. Drain, cool under cold water, squeeze lightly and cut into chunks. Toss with a few drops of the tamari and the sesame seeds.",
+        "Cook the soba in plenty of boiling water for the time on the package, then drain and rinse well under cold running water until chilled.",
+        "Grate the daikon and let it drain a little. Stir the natto briskly with chopsticks about 30 times, until it turns pale and stringy, then stir in the rest of the tamari and most of the scallion.",
+        "Put the noodles in a bowl and top with the natto, the grated daikon and the kimchi. Crumble the nori over, add the last of the scallion, pour the cold sauce around the noodles, and serve with the bok choy."
+      ],
+      "prepMin": 10,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Natto keeps well in the freezer, so buy a few packs on your next trip to an Asian grocery. Not a natto fan yet? Stir in extra grated daikon and a splash of vinegar. Both calm the smell and the stickiness."
+    },
+    {
+      "id": "hot-soba-salmon",
+      "name": "Hot soba in ginger broth with salmon, bok choy and a soft egg",
+      "inspiredBy": "Japanese hot kake soba and tsukimi soba, with canned salmon as a quick topping",
+      "about": "Hot buckwheat noodles in a savoury bonito and soy broth with flaked salmon, bok choy, ginger and a soft egg that poaches in the broth. It is a warming Saturday lunch that takes about 20 minutes. The **canned salmon brings omega-3 and vitamin D**, plus calcium from its soft bones.",
+      "ingredients": [
+        {
+          "food": "soba-noodles-dry-2dc785",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "dried"
+        },
+        {
+          "food": "salmon-canned-drained-9cea4e",
+          "g": 110,
+          "swap": "fatty_fish",
+          "note": "with the soft bones"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 200,
+          "swap": "leafy_greens",
+          "note": "sliced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 6,
+          "note": "flakes"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 8
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 6
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "nori-pyropia-laver-toasted-yakinori-7f29ab",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Simmer about 300 ml (1¼ cups) of water with the bonito flakes for 3 minutes, then strain it back into the pot. Add the tamari, mirin and half the ginger, cut into thin matchsticks, and keep it at a gentle simmer.",
+        "Add the bok choy to the broth and simmer for 2 minutes, until the stems are just tender. Add the salmon in chunks. Crack the egg into the broth, cover, and let it poach for 2 minutes.",
+        "While the egg poaches, cook the soba in plenty of boiling water for the time on the package. Drain it and rinse briefly so it does not clump.",
+        "Put the noodles in a deep bowl and ladle over the broth, salmon, bok choy and egg. Top with the scallion, the rest of the ginger and the crumbled nori."
+      ],
+      "prepMin": 6,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "A shake of shichimi togarashi on top is a good finish, if you have it."
+    },
+    {
+      "id": "chicken-teriyaki-bokchoy",
+      "name": "Chicken teriyaki with bok choy, carrots and brown rice",
+      "inspiredBy": "Japanese teriyaki, with mirin and no added sugar in the sauce",
+      "about": "Juicy pan-seared chicken thigh glazed in a glossy ginger and soy sauce, with tender bok choy, carrots and chewy brown rice and barley. The sauce is just tamari, mirin, ginger and garlic, so it is far less sweet and less salty than the bottled kind. It makes two portions, so tomorrow's **lunch is already packed**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "boneless, skinless"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 150,
+          "swap": "leafy_greens",
+          "note": "cut into chunks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "barley-pearled-cooked-84df02",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 8
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 15
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 3
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 2
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10
+        }
+      ],
+      "steps": [
+        "Stir the tamari, mirin, grated ginger, grated garlic and a splash of water together in a small bowl.",
+        "Pat the chicken dry and cut it into broad strips. Warm the oil in a wide non-stick pan over medium-high heat (use two batches if the pan is crowded) and sear the chicken for 2 to 3 minutes a side, until golden. Move it to a plate.",
+        "Add the carrot, sliced into thin coins, and a splash of water to the pan, cover and steam for 2 minutes. Add the bok choy and steam 2 minutes more, until the stems are just tender.",
+        "Return the chicken to the pan and pour in the sauce. Simmer, stirring, until it turns glossy and clings to the chicken, about 2 minutes. The chicken should be cooked all the way through with no pink.",
+        "Reheat the rice and barley. Serve the chicken and vegetables over the rice with a few drops of the vinegar over the bok choy, then the sesame seeds and sliced scallion.",
+        "Pack the second portion, rice and all, for tomorrow's lunch."
+      ],
+      "prepMin": 12,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Cold teriyaki chicken is just as good in a bento. Pack some cucumber slices on the side."
+    },
+    {
+      "id": "miso-salmon-gomae",
+      "name": "Miso-glazed salmon with sesame spinach, grilled mushrooms and brown rice",
+      "inspiredBy": "Japanese miso salmon and spinach gomae",
+      "about": "A salmon fillet broiled until nearly done, then brushed with a thin miso, mirin and ginger glaze so it caramelizes without scorching, with grilled king oyster mushrooms, spinach in a nutty sesame dressing and brown rice and barley. Salmon brings **omega-3 fats and vitamin D**, and the sesame spinach adds folate and vitamin K.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "skin on if you like"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 10
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 8
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3
+        },
+        {
+          "food": "king-oyster-mushroom-eringi-raw-6127f7",
+          "g": 80,
+          "note": "halved lengthwise"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 150,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 5
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 4
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 4
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 110,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "barley-pearled-cooked-84df02",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10
+        }
+      ],
+      "steps": [
+        "Heat the broiler to high and line a tray with foil. Stir the miso, mirin and grated ginger together into a thick paste.",
+        "Pat the salmon dry and put it on the tray. Toss the mushrooms with the oil and a few drops of the tamari and set them alongside. Broil about 15 cm (6 inches) from the heat for 5 minutes.",
+        "Spread the paste thinly over the salmon and broil 3 to 4 minutes more, until the glaze browns in spots and the salmon flakes easily. The mushrooms should be golden and tender.",
+        "Meanwhile, boil the spinach for 30 seconds, then drain, rinse under cold water and squeeze it very dry. Cut it into chunks.",
+        "Crush the sesame seeds in a mortar, or in a bowl with the back of a spoon, until about half are ground. Stir in the rest of the tamari, the vinegar and a teaspoon of water, then toss the spinach through it.",
+        "Reheat the rice and barley. Serve the salmon and mushrooms with the sesame spinach and the rice, with sliced scallion on top."
+      ],
+      "prepMin": 12,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "No broiler? Bake at 220°C (425°F) for 8 minutes, glaze, then 3 to 4 minutes more."
+    },
+    {
+      "id": "beef-tofu-doenjang-jjigae",
+      "name": "Doenjang jjigae with beef, tofu, zucchini and mushrooms, over barley rice",
+      "inspiredBy": "Korean doenjang jjigae, with a bonito broth in place of dried anchovy",
+      "about": "A bubbling, savoury Korean stew of thin beef, tofu, zucchini and king oyster mushrooms in a garlicky doenjang broth with a little gochujang and gochugaru, served over barley rice (boribap). It is rustic family food, and it tastes even better the next day. The **tofu and vegetables do most of the work**, with just a little beef for iron and zinc.",
+      "ingredients": [
+        {
+          "food": "beef-top-sirloin-steak-lean-raw-a51c2c",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "sliced very thin"
+        },
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "firm"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 160
+        },
+        {
+          "food": "king-oyster-mushroom-eringi-raw-6127f7",
+          "g": 80
+        },
+        {
+          "food": "doenjang-korean-soybean-paste-d8757f",
+          "g": 15
+        },
+        {
+          "food": "gochujang-korean-chili-paste-843f28",
+          "g": 4
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 1.5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 5,
+          "note": "flakes"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "barley-pearled-cooked-84df02",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        }
+      ],
+      "steps": [
+        "Simmer about 350 ml (1½ cups) of water per portion with the bonito flakes for 3 minutes, then strain the broth.",
+        "Warm the sesame oil in a medium pot over medium heat. Cook the beef with the minced garlic for 2 minutes, until it has lost its pink colour.",
+        "Pour in the broth and bring it to a simmer. Whisk the doenjang with a ladle of the hot broth until smooth, then stir it into the pot with the gochujang and gochugaru.",
+        "Add the zucchini and mushrooms, cut into chunky pieces, and simmer for 6 minutes. Add the tofu in big cubes and the scallion cut into lengths, and simmer gently for 3 minutes more.",
+        "Taste the broth: it should be savoury and a little earthy, not too salty. Add a splash of water if it is.",
+        "Reheat the rice and barley, and serve the stew over or beside it in deep bowls. Pack the second portion, with its rice, for tomorrow's lunch and reheat it gently so the tofu stays tender."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Add an extra spoon of gochujang for a spicier bowl. Barley is about half the grain here, the way Korean boribap is."
+    },
+    {
+      "id": "saba-shioyaki-daikon",
+      "name": "Salt-grilled mackerel with grated daikon, spinach ohitashi and wakame cucumber",
+      "inspiredBy": "Japanese saba shioyaki, set out as a teishoku with ohitashi and a vinegared side",
+      "about": "A mackerel fillet salted and grilled until the skin is crisp and blistered, with a mound of grated daikon and a splash of soy, spinach in a light soy dressing and a sharp wakame and cucumber salad. It is a simple, honest Japanese dinner. Mackerel is one of the best sources of **omega-3 fats**, and the daikon cuts right through its richness.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "skin on"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 150
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 6
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 120,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "wakame-dried-247e05",
+          "g": 2
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 120
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 10
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 2
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 90,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "barley-pearled-cooked-84df02",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        }
+      ],
+      "steps": [
+        "Sprinkle the mackerel with most of the salt on both sides and leave it for 20 minutes, then pat it dry with paper towel.",
+        "Boil the spinach for 30 seconds, then drain, rinse under cold water and squeeze it very dry. Cut it into chunks and toss with a few drops of the tamari and half the sesame seeds.",
+        "Slice the cucumber thinly and toss it with a pinch of the salt. After 10 minutes, squeeze out the water. Soak the wakame in cold water for 5 minutes, then drain and squeeze it, and toss both with the vinegar and a few drops of the tamari.",
+        "Heat the broiler to high. Broil the mackerel skin side up on a foil-lined tray for 8 to 10 minutes, until the skin is blistered and the flesh is opaque all the way through. No flipping needed.",
+        "Grate the daikon and drain it lightly. Reheat the rice and barley. Serve the mackerel with the daikon and the rest of the tamari dribbled over, with the spinach, the salad and the rice."
+      ],
+      "prepMin": 12,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Open a window and turn on the fan. Grilled mackerel smells like a Japanese izakaya, which is not bad at all."
+    },
+    {
+      "id": "dubu-kimchi-pork",
+      "name": "Dubu-kimchi, stir-fried pork and kimchi with seared tofu and rice",
+      "inspiredBy": "Korean dubu-kimchi, with a little mirin to balance sour kimchi",
+      "about": "Tender pork, carrot and mushrooms stir-fried with tangy, spicy kimchi, piled beside slabs of golden seared tofu with brown rice and barley. It is fast, punchy and deeply savoury, and a favourite at Korean tables. **Kimchi is already salty and sour**, so the sauce needs very little extra, and the tofu adds plant protein.",
+      "ingredients": [
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "sliced thin"
+        },
+        {
+          "food": "kimchi-1371a8",
+          "g": 90
+        },
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "firm"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "king-oyster-mushroom-eringi-raw-6127f7",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 30
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 4
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 5
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 2
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 80,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "barley-pearled-cooked-84df02",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        }
+      ],
+      "steps": [
+        "Pat the tofu dry and cut it into slabs about 1 cm (½ inch) thick. Warm half the canola oil in a large non-stick pan over medium heat and sear the tofu until golden, about 3 minutes a side. Move it to a plate.",
+        "Add the rest of the canola oil to the same pan. Stir-fry the carrot, mushrooms and pork over high heat for 3 minutes, until the pork has lost its pink colour.",
+        "Add the garlic and kimchi and stir-fry for 4 to 5 minutes, until the carrot is tender and the kimchi smells toasty and its edges caramelize.",
+        "Stir in the tamari, the mirin and a splash of water, and cook 1 minute more. Take it off the heat and stir through the sesame oil.",
+        "Reheat the rice and barley. Serve the kimchi and pork beside the warm tofu and the rice, with the scallion and sesame seeds on top."
+      ],
+      "prepMin": 10,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Older, sour kimchi is best for cooking. Fresh kimchi works too, but add a splash of vinegar."
+    },
+    {
+      "id": "beef-bibimbap-namul",
+      "name": "Bibimbap with beef, four namul and a fried egg",
+      "inspiredBy": "Korean bibimbap, with brown rice and less oil",
+      "about": "A big bowl of brown rice topped in sections with sesame spinach, soybean sprouts, carrot and shiitake namul, marinated beef and a crisp-edged fried egg, all mixed together with a tangy gochujang sauce. It is the weekend project: lots of small steps, none of them hard, and it makes two portions. The colourful vegetables carry **folate, vitamin A and vitamin K**.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "barley-pearled-cooked-84df02",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "beef-top-sirloin-steak-lean-raw-a51c2c",
+          "g": 70,
+          "swap": "lean_protein",
+          "note": "sliced very thin"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "soybean-sprouted-bean-sprouts-raw-000dd4",
+          "g": 60,
+          "note": "soybean sprouts"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 60
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 5
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "gochujang-korean-chili-paste-843f28",
+          "g": 15
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 3
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Make the sauce. Stir the gochujang with the vinegar, about a third of the sesame oil, a little of the garlic and a splash of water into a thick, spoonable paste.",
+        "Toss the thinly sliced beef with a little tamari, garlic and a few drops of sesame oil, and leave it to marinate while you do the vegetables.",
+        "Blanch the spinach for 30 seconds, drain, rinse cold and squeeze dry. Toss it with garlic, a few drops of sesame oil and a few drops of tamari. Boil the soybean sprouts, covered, in a little water for 5 minutes until they no longer taste raw, then drain and season the same way.",
+        "Cut the carrot into matchsticks and slice the shiitake. Stir-fry the carrot in a little sesame oil for 2 minutes, then the shiitake for 3 minutes until golden, seasoning each with a few drops of tamari. Keep the vegetables in separate piles.",
+        "Cook the beef in a hot pan for 2 minutes, until it is browned and there is no pink left.",
+        "In the same pan, with a little more sesame oil, fry an egg, sunny side up, until the white is crisp at the edges and the yolk is still runny.",
+        "Reheat the rice and barley with a splash of water. Divide the rice, namul and beef in half. Put one half in a wide bowl, arranged in sections around the edge, with the egg in the middle, a spoonful of the sauce on top and a pinch of sesame seeds. Mix everything together before you eat.",
+        "Pack the other half of the rice, namul and beef in a container for tomorrow's lunch, with the sauce on the side. Reheat the beef and rice, and fry a fresh egg then."
+      ],
+      "prepMin": 25,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "weekend-project",
+        "makes-leftovers"
+      ],
+      "tip": "Spinach, sprouts, carrot and shiitake can be swapped for any four vegetables you like."
+    },
+    {
+      "id": "chicken-tofu-nabe",
+      "name": "Chicken and tofu nabe with napa cabbage and mushrooms, finished with udon",
+      "inspiredBy": "Japanese mizutaki, finished with udon instead of the usual rice",
+      "about": "A pot of bonito broth simmered with chicken thigh, tofu, napa cabbage, daikon, king oyster mushrooms and spinach, dipped in a bright soy and mandarin ponzu, then finished with udon noodles and a swirl of egg in the leftover broth. It is a relaxed Sunday supper you can cook right at the table, with **plenty of vegetables in a light broth** and chicken and tofu for protein.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "boneless, skinless, cut into bite-size pieces"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "calcium-set, check the label for calcium sulfate"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 250,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 120
+        },
+        {
+          "food": "king-oyster-mushroom-eringi-raw-6127f7",
+          "g": 60
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 6,
+          "note": "flakes"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 8
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 8
+        },
+        {
+          "food": "tangerine-mandarin-raw-2373b1",
+          "g": 40,
+          "note": "juiced"
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 8
+        },
+        {
+          "food": "udon-wheat-noodles-boiled-e3345d",
+          "g": 220,
+          "swap": "low_gi_grains",
+          "note": "pre-cooked, vacuum-packed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        }
+      ],
+      "steps": [
+        "Make the ponzu. Squeeze the mandarin juice into a small bowl and stir in two-thirds of the tamari and the vinegar. Grate a little of the daikon and slice some of the scallion into it, and set it out for dipping.",
+        "Simmer about 600 ml (2½ cups) of water with the bonito flakes and the mirin for 3 minutes in a wide, shallow pot, then strain and return the broth to the pot.",
+        "Add the chicken, thin rounds of daikon and the white stems of the napa cabbage. Simmer gently for 8 minutes, skimming any foam.",
+        "Add the mushrooms (halved lengthwise) and the tofu cubes and simmer for 4 minutes. Add the napa leaves, spinach and scallion for the last minute. The chicken should be cooked through with no pink.",
+        "Eat from the pot, dipping everything in the sharp ponzu.",
+        "For the finish, add the udon (rinsed under hot water to loosen it) to the remaining broth with the rest of the tamari. Simmer for 2 minutes, then pour in the beaten egg in a slow spiral, cover, and turn off the heat for a minute. Spoon into a bowl with a little scallion."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Any firm white fish works in place of the chicken, and it cooks in about 4 minutes. Fresh or frozen udon is fine too."
+    },
+    {
+      "id": "edamame-sea-salt",
+      "name": "Warm edamame with sea salt",
+      "inspiredBy": "Japanese izakaya edamame",
+      "about": "A bowl of warm shelled edamame with a pinch of salt, the izakaya classic. It is a snack with real staying power. The **edamame bring protein, folate and fibre**.",
+      "ingredients": [
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 120,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Boil the edamame for 3 to 4 minutes, or as the package says, then drain well.",
+        "Sprinkle with a pinch of salt and eat warm."
+      ],
+      "prepMin": 3,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "mandarin-walnuts",
+      "name": "Mandarin and walnuts",
+      "about": "A juicy mandarin with a handful of walnuts, the way Jeju mandarins are enjoyed in Korea. It is sweet, crunchy and easy to carry. **Walnuts add plant omega-3 fats**, and the mandarin adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "tangerine-mandarin-raw-2373b1",
+          "g": 130,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Peel the mandarin and eat it with the walnuts."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "mandarin-almonds",
+      "name": "Mandarin and toasted almonds",
+      "about": "A juicy mandarin with a small handful of warm toasted almonds. It is sweet, crunchy and keeps you going. The **almonds bring vitamin E** and calcium, and the mandarin adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "tangerine-mandarin-raw-2373b1",
+          "g": 130,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 18,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan over medium heat for 3 minutes, until golden and fragrant. Peel the mandarin and eat it with the warm almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "mandarin-nuts",
+      "name": "Mandarin with almonds and walnuts",
+      "about": "A juicy mandarin with a small handful of almonds and walnuts. It is sweet, crunchy and easy to carry. The **almonds bring vitamin E**, the walnuts bring plant omega-3 fats, and the mandarin adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "tangerine-mandarin-raw-2373b1",
+          "g": 130,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 16,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Peel the mandarin and eat it with the almonds and walnuts. Toast the nuts in a dry pan for 2 minutes first if you like."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "pear-walnuts",
+      "name": "Asian pear and walnuts",
+      "inspiredBy": "Korean fruit and nuts after a meal",
+      "about": "Cold, crisp, juicy Asian pear slices with a handful of walnuts, a very Korean way to end a meal. It is sweet and crunchy. **Walnuts add plant omega-3 fats** and the pear adds fibre.",
+      "ingredients": [
+        {
+          "food": "pear-asian-raw-2202f6",
+          "g": 160
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Slice the pear and eat it with the walnuts."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "pear-almonds",
+      "name": "Asian pear and toasted almonds",
+      "inspiredBy": "Korean fruit and nuts after a meal",
+      "about": "Cold, crisp, juicy Asian pear slices with a small handful of warm toasted almonds. It is sweet and crunchy, and a very Korean way to end a meal. The **almonds bring vitamin E**, and the pear adds fibre.",
+      "ingredients": [
+        {
+          "food": "pear-asian-raw-2202f6",
+          "g": 160
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 16,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan over medium heat for 3 minutes, until golden and fragrant. Slice the pear and eat it with the warm almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "hiyayakko",
+      "name": "Hiyayakko, chilled tofu with ginger and bonito",
+      "inspiredBy": "Japanese hiyayakko",
+      "about": "A block of chilled tofu topped with grated ginger, scallion, bonito flakes and a dash of tamari. It is cool, silky and savoury, and takes two minutes. It adds **plant protein and a little calcium**.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "firm"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 8
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 2
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 4
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Pat the tofu dry and set it on a plate.",
+        "Grate the ginger over the top, then add the sliced scallion, bonito flakes and sesame seeds. Dribble with the tamari."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "yaki-imo",
+      "name": "Roasted sweet potato (yaki-imo)",
+      "inspiredBy": "Japanese and Korean street-cart roasted sweet potato",
+      "about": "A whole sweet potato roasted until the skin crackles and the inside turns jammy and caramelized, the way it is sold from street carts in Japan and Korea in winter. It is naturally sweet with nothing added. It is rich in **vitamin A and fibre**.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 130
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Pierce the sweet potato a few times with a fork, set it on a tray and roast for 45 to 50 minutes, until it feels very soft and some syrup oozes from the skin.",
+        "Let it cool for a few minutes and eat it with the skin on."
+      ],
+      "prepMin": 3,
+      "cookMin": 50,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Roast a whole tray on Sunday and rewarm one in a toaster oven. They keep for 4 days in the fridge."
+    },
+    {
+      "id": "veg-sticks-miso-dip",
+      "name": "Cucumber and carrot sticks with miso and sesame dip",
+      "inspiredBy": "Japanese moro-kyu, cucumber with miso",
+      "about": "Crunchy cucumber and carrot sticks with a savoury miso and sesame dip, a very Japanese snack that is often served with beer or tea. It is light, crisp and low in calories. The carrot adds **vitamin A**, and the dip brings a little sesame for minerals.",
+      "ingredients": [
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 6
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 3
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Cut the cucumber and carrot into sticks. Stir the miso, mirin, sesame seeds and a few drops of water into a thick dip, and use it for dunking."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "nori-soft-egg",
+      "name": "Soft-boiled egg with toasted nori",
+      "inspiredBy": "Korean gim and eggs",
+      "about": "A soft-boiled egg with crisp toasted nori to tear and wrap around bites of the egg. It is a small, savoury snack with a lot of protein. The egg brings **protein and choline**, and the nori adds iodine.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "nori-pyropia-laver-toasted-yakinori-7f29ab",
+          "g": 2
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Boil the egg for 6½ minutes, cool it under cold water and peel it. Dribble with a few drops of tamari and eat it with torn pieces of nori."
+      ],
+      "prepMin": 3,
+      "cookMin": 7,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "gyeongwa-jorim",
+      "name": "Soy-glazed almonds and walnuts (nut jorim)",
+      "inspiredBy": "Korean nut jorim (gyeongwa-jorim)",
+      "about": "Almonds and walnuts toasted in a pan and glazed with a little tamari and mirin until sticky, like the Korean nut jorim side dish. They are savoury, a little sweet and very crunchy. The **almonds bring vitamin E**, and the walnuts bring plant omega-3 fats.",
+      "ingredients": [
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 17,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 3
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Toast the almonds and walnuts in a dry pan over medium heat for 3 minutes, until they smell nutty.",
+        "Add the tamari and mirin and stir for about a minute, until the glaze is sticky and coats the nuts. Cool on a plate so they crisp up."
+      ],
+      "prepMin": 3,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make a jar on Sunday. They keep for a week."
+    },
+    {
+      "id": "oi-muchim",
+      "name": "Korean spicy cucumber salad (oi-muchim)",
+      "inspiredBy": "Korean oi-muchim",
+      "about": "Crunchy cucumber in a quick sesame, garlic, vinegar and gochugaru dressing, a Korean side dish you can snack on. It is cool, tangy and a little spicy, and mostly water and crunch, with **almost no calories**.",
+      "ingredients": [
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 150
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 8
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 1
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Slice the cucumber and squeeze it lightly to push out some of the water.",
+        "Toss with the sliced scallion, minced garlic, vinegar, gochugaru and sesame seeds, and eat right away."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "japanese-breakfast-set"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "cold-soba-tofu-edamame"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "chicken-teriyaki-bokchoy"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mandarin-nuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "yaki-imo"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "banchan-breakfast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "chicken-teriyaki-bokchoy",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "miso-salmon-gomae"
+        },
+        {
+          "slot": "snack",
+          "recipe": "nori-soft-egg"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-sticks-miso-dip"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "japanese-breakfast-set"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "tofu-steak-onigiri-bento"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "beef-tofu-doenjang-jjigae"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gyeongwa-jorim"
+        },
+        {
+          "slot": "snack",
+          "recipe": "yaki-imo"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "banchan-breakfast",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "beef-tofu-doenjang-jjigae",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "saba-shioyaki-daikon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mandarin-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-sticks-miso-dip"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "japanese-breakfast-set"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "natto-soba"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "dubu-kimchi-pork"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gyeongwa-jorim"
+        },
+        {
+          "slot": "snack",
+          "recipe": "oi-muchim"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "dak-juk"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "hot-soba-salmon"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "beef-bibimbap-namul"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pear-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "edamame-sea-salt"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "dak-juk",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "beef-bibimbap-namul",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "chicken-tofu-nabe"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mandarin-nuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pear-walnuts"
+        }
+      ]
+    }
+  ]
+}
