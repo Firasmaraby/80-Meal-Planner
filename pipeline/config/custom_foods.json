@@ -657,6 +657,35 @@
    ],
    "recipe": "Shrimp paste is tiny shrimp or krill salted, fermented and pressed. Values are dried shrimp (70 g), salt (15 g) and moisture (15 g) per 100 g, about 6 g sodium.",
    "limits": "Brands range widely in salt and moisture; Filipino bagoong is wetter. Used by the teaspoon, and toasted before use."
+  },
+  {
+   "key": "whole-wheat-couscous-dry",
+   "name": "Whole-wheat couscous, dry",
+   "head": "whole-wheat couscous",
+   "form": "dried",
+   "category": "grain",
+   "aliases": ["whole wheat couscous", "wholewheat couscous", "wholemeal couscous", "couscous complet"],
+   "servings": [{"label": "1/4 cup, dry", "g": 45}, {"label": "1 cup, dry", "g": 175}],
+   "components": [
+    {"food": "couscous-grain-wholewheat-cooked-no-added-salt-1e317d", "g": 250, "note": "cooked couscous is about 60 % water; 250 g cooked comes from 100 g dry"}
+   ],
+   "recipe": "Dry whole-wheat couscous is the cooked whole-wheat couscous in the source data with its cooking water taken back out (100 g dry swells to about 250 g cooked).",
+   "limits": "Any salt or fat added in the source's cooking method would be concentrated too; the source is the no-added-salt version. Water-soluble vitamins lost in cooking are not added back, so B vitamins are slightly understated."
+  },
+  {
+   "key": "orange-blossom-water",
+   "name": "Orange blossom water",
+   "head": "orange blossom water",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["orange flower water", "mazaher", "zhaar", "ma zahr"],
+   "servings": [{"label": "1 tsp", "g": 5}],
+   "components": [
+    {"food": "water-municipal-95c157", "g": 100}
+   ],
+   "fill": ["kcal", "protein", "carbs", "fat"],
+   "recipe": "Orange blossom water is a steam distillate of bitter-orange flowers: water with aroma and no meaningful nutrients, so it takes the values of water.",
+   "limits": "Only energy and macronutrients (all zero) are given. Used by the teaspoon for aroma."
   }
  ]
 }
