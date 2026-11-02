@@ -39,7 +39,7 @@ const RICE = /\brice\b|risotto|pilaf|pilau|paella|biryani|congee|sushi|dolma/;
 const COLOURED_RICE = /\b(brown|red|black) rice\b|\brice,? (brown|red|black)\b/;
 // intact grains and the bran or germ of a grain
 const INTACT =
-  /\b(oats?|oatmeal|porridge|quinoa|buckwheat|barley|millet|freekeh|amaranth|teff|spelt|farro|kamut|khorasan|sorghum|rye|wild rice|chia|bran|germ)\b|steel[ -]cut|wheat berr/;
+  /\b(oats?|oatmeal|porridge|quinoa|buckwheat|barley|millet|freekeh|amaranth|teff|spelt|farro|kamut|khorasan|sorghum|rye|wild rice|chia|bran|germ)\b|steel[ -]cut|wheat berr|\bcorn, (yellow|white), field\b|\bfield corn\b|\bdried (maize|corn) kernels\b/;
 
 /** The carb style of a single food. */
 export function carbStyleOfFood(food: Pick<Food, 'name' | 'head' | 'category'>): CarbStyle {

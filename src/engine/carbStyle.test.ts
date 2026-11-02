@@ -124,3 +124,10 @@ describe('thickeners', () => {
     expect(carbStyleOfIngredient(FOODS.find((f) => f.name.startsWith('Flour tortilla'))!, 5)).toBe('any');
   });
 });
+
+describe('whole dried maize', () => {
+  it('field corn kernels (githeri, samp) are an intact grain; cornmeal and corn flour are not', () => {
+    expect(carbStyleOfFood({ name: 'Corn, yellow, field, dry', head: 'corn', category: 'grain' })).toBe('whole'); // extended tier
+    expect(carbStyleOfFood({ name: 'Cornmeal, yellow, whole grain', head: 'cornmeal', category: 'grain' })).toBe('wholegrain');
+  });
+});

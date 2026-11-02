@@ -728,6 +728,84 @@
    ],
    "recipe": "Palm sugar is palm sap boiled down without refining, the palm counterpart of cane jaggery; it takes the jaggery estimate.",
    "limits": "Minerals vary with the palm and the pan; treat them as a rough middle. Used by the teaspoon."
+  },
+  {
+   "key": "niter-kibbeh",
+   "name": "Niter kibbeh (Ethiopian spiced butter)",
+   "head": "niter kibbeh",
+   "form": "product",
+   "category": "oil_fat",
+   "aliases": ["niter kebbeh", "nit'ir qibe", "spiced clarified butter", "tesmi"],
+   "servings": [{"label": "1 tsp", "g": 4.5}, {"label": "1 tbsp", "g": 13}],
+   "components": [
+    {"food": "clarified-butter-ghee-529962", "g": 96},
+    {"food": "garlic-raw-a9c6a6", "g": 1.5},
+    {"food": "ginger-root-raw-da2481", "g": 1},
+    {"food": "fenugreek-seed-95f5a8", "g": 0.5},
+    {"food": "cardamom-ground-ac233b", "g": 0.5},
+    {"food": "turmeric-ground-32f550", "g": 0.3},
+    {"food": "black-pepper-6fd5df", "g": 0.2}
+   ],
+   "recipe": "Butter clarified slowly with onion, garlic, ginger, fenugreek, cardamom (korerima), turmeric and pepper, then strained. Values are ghee with the strained-out aromatics' small share.",
+   "limits": "The aromatics are strained off, so their share is a rough guess; nutritionally this is ghee. Used by the teaspoon."
+  },
+  {
+   "key": "mitmita",
+   "name": "Mitmita (Ethiopian chili blend)",
+   "head": "mitmita",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["mitmitta", "ethiopian hot chili powder"],
+   "servings": [{"label": "1 tsp", "g": 2.5}],
+   "components": [
+    {"food": "chili-pepper-red-sun-dried-d3dda3", "g": 70},
+    {"food": "cardamom-ground-ac233b", "g": 10},
+    {"food": "clove-ground-863cd5", "g": 5},
+    {"food": "table-salt-fdccfe", "g": 15, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"}
+   ],
+   "recipe": "Mitmita: very hot dried bird's eye chili ground with korerima (Ethiopian cardamom), cloves and salt.",
+   "limits": "Very hot; used by the pinch. Household recipes vary in salt."
+  },
+  {
+   "key": "xawaash",
+   "name": "Xawaash (Somali spice blend)",
+   "head": "xawaash",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["hawaash", "somali spice mix", "xawaash spice"],
+   "servings": [{"label": "1 tsp", "g": 2.5}],
+   "components": [
+    {"food": "cumin-seed-626f82", "g": 35},
+    {"food": "coriander-seed-cilantro-973ca2", "g": 25},
+    {"food": "black-pepper-6fd5df", "g": 15},
+    {"food": "cardamom-ground-ac233b", "g": 10},
+    {"food": "cinnamon-ground-ed5c78", "g": 8},
+    {"food": "clove-ground-863cd5", "g": 4},
+    {"food": "turmeric-ground-32f550", "g": 3}
+   ],
+   "recipe": "A common Somali xawaash: cumin, coriander, black pepper, cardamom, cinnamon, cloves and turmeric, toasted and ground.",
+   "limits": "Recipes vary by household. Used by the teaspoon."
+  },
+  {
+   "key": "west-indian-curry-powder",
+   "name": "West Indian curry powder",
+   "head": "west indian curry powder",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["caribbean curry powder", "jamaican curry powder", "trinidad curry powder", "chief curry powder"],
+   "servings": [{"label": "1 tsp", "g": 2.5}, {"label": "1 tbsp", "g": 7}],
+   "components": [
+    {"food": "turmeric-ground-32f550", "g": 30},
+    {"food": "coriander-seed-cilantro-973ca2", "g": 25},
+    {"food": "cumin-seed-626f82", "g": 15},
+    {"food": "fenugreek-seed-95f5a8", "g": 8},
+    {"food": "mustard-seed-yellow-cf19a3", "g": 6},
+    {"food": "fennel-seed-8a14d7", "g": 5},
+    {"food": "allspice-ground-67abb9", "g": 6},
+    {"food": "black-pepper-6fd5df", "g": 5}
+   ],
+   "recipe": "A Jamaican and Trinidadian style curry powder: turmeric-forward, with coriander, cumin, fenugreek, mustard seed, fennel, allspice (pimento) and pepper.",
+   "limits": "Brands differ; some add salt or flour, this one has neither. Used by the teaspoon."
   }
  ]
 }
