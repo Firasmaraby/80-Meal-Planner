@@ -21,7 +21,7 @@ import {
   type FamilyFile,
 } from './family';
 import { buildFamily, mergeRecipes, verifiedBands } from './familyBuild';
-import { LIMITS, countSentences, runLab, writingChecks } from './familyLab';
+import { LIMITS, countSentences, runLab, spiceLimit, writingChecks } from './familyLab';
 import { renderReview } from './familyReview';
 import { expandPlans } from './libraryPlans';
 import { BOARD_KEYS } from './nutrients';
@@ -291,7 +291,7 @@ describe('plan lab', () => {
     const f = clone();
     const stew = f.recipes.find((r) => r.id === 'chicken-chickpea-stew')!;
     stew.ingredients.find((i) => i.food.startsWith('olive-oil'))!.g = 24; // sizing up to Big makes it more
-    stew.ingredients.find((i) => i.food.startsWith('paprika'))!.g = 9;
+    stew.ingredients.find((i) => i.food.startsWith('paprika'))!.g = 14;
     f.recipes[0].ingredients.find((i) => i.food.startsWith('table-salt'))!.g = 3;
     const found = lab(f).failures.filter((x) => x.kind === 'cooking' && x.size === 'big' && x.kcal === 2800);
     expect(found.map((x) => `${x.code}:${x.recipe}`).sort()).toEqual(['oil:chicken-chickpea-stew', 'salt:veggie-egg-scramble', 'spice:chicken-chickpea-stew']);
@@ -299,6 +299,12 @@ describe('plan lab', () => {
     expect(found.find((x) => x.code === 'oil')!.message).toMatch(/^Day 2: Chicken and chickpea stew with spinach: \d\d g of oil per serving \(max 27 g, 2 tbsp\)/);
     expect(found.find((x) => x.code === 'salt')!.message).toMatch(/^Days 1, 2: Spinach and mushroom egg scramble on toast: \d\.\d g of salt per serving \(max 2\.5 g\)/);
     expect(LIMITS).toMatchObject({ oilG: 27, saltG: 2.5, spiceG: 8, proteinSourceG: 15 });
+  });
+
+  it('lets a bigger plate carry proportionally more spice', () => {
+    expect(spiceLimit(500)).toBe(8);
+    expect(spiceLimit(700)).toBe(8);
+    expect(spiceLimit(1050)).toBeCloseTo(12);
   });
 
   it('wants a real protein source of 15 g at lunch and dinner', () => {

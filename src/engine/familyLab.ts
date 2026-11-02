@@ -95,6 +95,7 @@ export interface LabDeps extends CompileContext {
 export const LIMITS = {
   oilG: 27,
   saltG: 2.5,
+  /** per serving of a ~700 kcal meal; a bigger plate carries proportionally more (a 1,050 kcal curry may hold 12 g) */
   spiceG: 8,
   proteinSourceG: 15,
   ingredients: [4, 14],
@@ -115,6 +116,9 @@ export const isOil = (f: Food) => f.category === 'oil_fat' && /\boil\b/i.test(f.
 export const isSalt = (f: Food) => f.category === 'condiment' && SALT.test(f.name);
 export const isDriedSpice = (f: Food) => f.category === 'condiment' && !SALT.test(f.name) && DRIED_SPICE.test(f.name) && !NOT_A_SPICE.test(f.name);
 
+/** The dried-spice ceiling for one serving: 8 g up to a 700 kcal plate, then in proportion (seasoning grows with the pot). */
+export const spiceLimit = (mealKcal: number) => LIMITS.spiceG * Math.max(1, mealKcal / 700);
+
 export const countSentences = (text: string) => text.split(/[.!?]+(?:\s+|$)/).filter((s) => s.trim().length > 1).length;
 
 /** Per-serving amount checks on a sized plan, grouped by recipe so a dish used on 3 days is one line. */
@@ -133,9 +137,11 @@ export function cookingSenseChecks(plan: MealPlan, foods: FoodIndex, size: PlanS
       let salt = 0;
       let spice = 0;
       let protein = 0;
+      let mealKcal = 0;
       for (const i of m.ingredients) {
         const f = getFood(foods, i.foodId);
         if (!f) continue;
+        mealKcal += ((f.n.kcal ?? 0) * i.grams) / 100;
         if (isOil(f)) oil += i.grams;
         else if (isSalt(f)) salt += i.grams;
         else if (isDriedSpice(f)) spice += i.grams;
@@ -143,7 +149,8 @@ export function cookingSenseChecks(plan: MealPlan, foods: FoodIndex, size: PlanS
       }
       if (oil > LIMITS.oilG) add('oil', recipe, d.day, `${m.name}: ${Math.round(oil)} g of oil per serving (max ${LIMITS.oilG} g, 2 tbsp).`, 'Cut the oil, or move some of the fat to nuts, avocado or fish.');
       if (salt > LIMITS.saltG) add('salt', recipe, d.day, `${m.name}: ${salt.toFixed(1)} g of salt per serving (max ${LIMITS.saltG} g).`, 'Use less salt and add acid, herbs or spices for flavour.');
-      if (spice > LIMITS.spiceG) add('spice', recipe, d.day, `${m.name}: ${spice.toFixed(1)} g of dried spices or herbs per serving (max ${LIMITS.spiceG} g).`, 'Use less of the dried spice, or switch to fresh herbs.');
+      const spiceMax = spiceLimit(mealKcal);
+      if (spice > spiceMax) add('spice', recipe, d.day, `${m.name}: ${spice.toFixed(1)} g of dried spices or herbs per serving (max ${spiceMax.toFixed(1)} g for a ${Math.round(mealKcal)} kcal plate).`, 'Use less of the dried spice, or switch to fresh herbs.');
       if ((m.slot === 'lunch' || m.slot === 'dinner') && protein < LIMITS.proteinSourceG)
         add('protein_source', recipe, d.day, `${m.name}: only ${protein.toFixed(1)} g of protein from a real protein source (a ${m.slot} needs ${LIMITS.proteinSourceG} g).`, 'Add fish, poultry, meat, eggs, tofu, yogurt or legumes.');
     }
