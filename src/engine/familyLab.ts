@@ -28,7 +28,7 @@ import {
 import { boldStats, markerCount, paragraphWords, parseRich } from './richText';
 import { HARD_NUTRIENTS, fixListForAI, gradePlan, type DayReport } from './planReport';
 import { PROTEIN_SOURCES, SIZING_TOLERANCE, sizingAdvice } from './personalize';
-import { PLAN_STYLES, distinctGroceries, gradeOptionsFor, styleNutrientGates, styleStructureGates } from './planStyles';
+import { PLAN_STYLES, distinctGroceries, gradeOptionsFor, isSpiceShelf, styleNutrientGates, styleStructureGates } from './planStyles';
 import type { CalorieBand, Food, MealPlan, NutrientKey, PlanSize } from './types';
 
 export interface LabFailure {
@@ -212,7 +212,7 @@ function richChecks(family: FamilyFile, raw: unknown, fail: (code: string, messa
     fail('howItWorks_paragraphs', `howItWorks: ${paragraphs} paragraph (min ${RICH_LIMITS.howItWorksMinParagraphs}).`, 'Split it into short paragraphs with a blank line, each opening with a bolded key phrase.');
 }
 
-export function writingChecks(family: FamilyFile, raw: unknown): LabFailure[] {
+export function writingChecks(family: FamilyFile, raw: unknown, foods?: FoodIndex): LabFailure[] {
   const out: LabFailure[] = [];
   const fail = (code: string, message: string, fix: string, recipe?: string, kind: LabFailure['kind'] = 'writing') => out.push({ kind, code, message, fix, recipe });
   const used = usage(family);
@@ -231,8 +231,10 @@ export function writingChecks(family: FamilyFile, raw: unknown): LabFailure[] {
     const single = r.ingredients.length === 1;
     const [minI, maxI] = LIMITS.ingredients;
     const [minS, maxS] = LIMITS.steps;
+    // the cap is on things to buy and prep: dried spices, blends and salt don't count (a tagine needs its cinnamon)
+    const counted = foods ? r.ingredients.filter((i) => { const f = getFood(foods, i.food); return !f || !isSpiceShelf(f); }).length : r.ingredients.length;
     if (!where) fail('unused', `${r.name}: is not used in the week.`, 'Add it to the week or remove it.', r.id, 'cooking');
-    if (r.ingredients.length > maxI) fail('ingredients', `${r.name}: ${r.ingredients.length} ingredients (max ${maxI}).`, 'Simplify the dish.', r.id, 'cooking');
+    if (counted > maxI) fail('ingredients', `${r.name}: ${counted} ingredients besides spices and salt (max ${maxI}).`, 'Simplify the dish.', r.id, 'cooking');
     if (r.ingredients.length < minI && !snack && !single) fail('ingredients', `${r.name}: ${r.ingredients.length} ingredients (min ${minI}; snacks and single foods are exempt).`, 'Build more flavour and nutrition into the dish.', r.id, 'cooking');
     const steps = r.steps?.length ?? 0;
     if (!steps && !(snack && single)) fail('steps', `${r.name}: has no steps.`, 'Write 3 to 9 steps.', r.id);
@@ -318,7 +320,7 @@ export function runLab(raw: unknown, deps: LabDeps): LabResult {
   const { family, issues } = validateFamily(raw, deps.validate);
   if (!family) return { exitCode: 1, formatIssues: issues, writing: [], sizes: [], failures: [], fixList: '' };
 
-  const writing = writingChecks(family, raw);
+  const writing = writingChecks(family, raw, deps.foods);
   const failures: LabFailure[] = [...writing];
   const reports = [];
   const sizes: LabSize[] = [];

@@ -326,8 +326,15 @@ describe('plan lab', () => {
     const found = labStd(f).failures.filter((x) => x.kind === 'cooking' && !x.size).map((x) => `${x.code}:${x.recipe}`);
     expect(found).toEqual(['ingredients:veggie-egg-scramble', 'steps:lentil-kale-soup', 'steps:salmon-potatoes-broccoli']);
     const g = clone();
-    g.recipes[2].ingredients.push(...Array.from({ length: 4 }, () => ({ food: g.recipes[2].ingredients[0].food, g: 5 })));
+    g.recipes[2].ingredients.push(...Array.from({ length: 8 }, () => ({ food: g.recipes[2].ingredients[0].food, g: 5 })));
     expect(lab(g).failures.some((x) => x.code === 'ingredients' && x.recipe === 'salmon-potatoes-broccoli')).toBe(true);
+    // dried spices and salt don't count toward the cap: a dish can carry its cinnamon and cumin
+    const h = clone();
+    const spices = ['cinnamon-ground-ed5c78', 'cumin-seed-626f82', 'turmeric-ground-32f550', 'clove-ground-863cd5', 'cardamom-ground-ac233b', 'black-pepper-6fd5df'];
+    const base = h.recipes[2].ingredients.length;
+    h.recipes[2].ingredients.push(...spices.slice(0, Math.max(0, 15 - base)).map((food) => ({ food, g: 0.3 })));
+    expect(h.recipes[2].ingredients.length).toBeGreaterThan(14);
+    expect(lab(h).failures.some((x) => x.code === 'ingredients' && x.recipe === 'salmon-potatoes-broccoli')).toBe(false);
   });
 
   it('checks the writing: about with 2 sentences, steps, summary and howItWorks', () => {
