@@ -1,0 +1,1690 @@
+{
+  "id": "east-europe",
+  "name": "Eastern European & Georgian Table",
+  "style": "balanced",
+  "cuisine": "Eastern European & Georgian",
+  "regions": [
+    "Poland",
+    "Ukraine",
+    "Georgia",
+    "the Balkans"
+  ],
+  "summary": "A week at an Eastern European and Georgian table: kasha with mushrooms, borscht, gołąbki, lobio and a weekend satsivi, with herring, smoked sprats and trout for the fish, plus rye bread, kefir, pickles and herbs by the handful.",
+  "howItWorks": "**Cook once, eat twice.** Monday's borscht, Tuesday's lobio, Wednesday's gołąbki, Thursday's chicken with kasha, Friday's pasulj and Saturday's satsivi each make two portions, so the next day's lunch is already cooked. Saturday's syrniki do the same for Sunday breakfast.\n\n**Fish four times.** Pickled herring on Monday, smoked sprats on rye on Wednesday and Friday, and baked trout on Sunday carry your **omega-3 and B12**, and the herring and trout bring most of the week's vitamin D. The walnuts in the lobio, satsivi and pkhali add plant omega-3. Fish is always fresh or opened that day, never a leftover.\n\n**Beans, buckwheat and rye.** White and red beans turn up in the borscht, lobio and pasulj, with buckwheat, barley and rye alongside. Together they **carry** your iron, folate, magnesium and fibre, and the peppers, cabbage and pomegranate bring vitamin C to help your body use the iron.\n\n**Calcium, choline and a little liver.** Kefir, tvorog, sulguni, poppy seeds and the soft bones in sprats bring the **calcium**. Eggs in the kasha mornings and the borscht, plus one small chicken liver pâté on Thursday, bring the choline and B12 that are hard to reach otherwise.\n\n**Prep ahead.** Stir the buckwheat into the kefir the night before each kefir breakfast. Cook a double batch of kasha on Monday night for Tuesday's and Wednesday's breakfasts, and roll the gołąbki on Tuesday while the lobio simmers. Saturday's satsivi is the weekend project: poach the chicken first and let the sauce settle while you make the salad.",
+  "signature": [
+    "east-europe-borscht-white-beans",
+    "east-europe-satsivi-chicken",
+    "east-europe-lobio-walnuts",
+    "east-europe-golabki-barley"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "east-europe-apple-sunflower-seeds"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "east-europe-kefir-raspberries"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "east-europe-tvorog-apple-poppy"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "east-europe-pkhali-lavash"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "east-europe-baked-apple-walnuts"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "east-europe-sauerkraut-carrot-slaw"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "east-europe-kefir-raspberries"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "east-europe-kasha-mushrooms-egg",
+      "name": "Kasha with mushrooms and a fried egg",
+      "inspiredBy": "Ukrainian and Polish buckwheat with mushrooms (hrechka z hrybamy, kasza gryczana z grzybami)",
+      "about": "Toasty buckwheat kasha folded through browned mushrooms and onion, with a fried egg on top and a crunchy dill pickle on the side. It is the breakfast of a thousand Ukrainian and Polish kitchens. The egg and mushrooms bring **protein, choline and B vitamins**, and the buckwheat adds magnesium.",
+      "ingredients": [
+        {
+          "food": "buckwheat-groats-roasted-dry-03d573",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "toasted buckwheat groats, dry"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 90,
+          "note": "sliced"
+        },
+        {
+          "food": "porcini-dried-9e8ea1",
+          "g": 5,
+          "note": "dried porcini (soaked in hot water for 10 minutes, then chopped, with the soaking liquid kept)"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils",
+          "note": "rapeseed oil"
+        },
+        {
+          "food": "sunflower-oil-707ea8",
+          "g": 4,
+          "note": "unrefined sunflower oil, to drizzle"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "one egg"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "shelled, toasted, to scatter"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "pickles-cucumber-dill-4ea7a6",
+          "g": 40,
+          "note": "sliced, on the side"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Tip the kasha into a small pot with twice its volume of boiling water and a pinch of salt. Cover and simmer very gently until the water is absorbed, about 12 minutes, then take it off the heat and keep the lid on.",
+        "While it cooks, cover the dried porcini with a few spoonfuls of hot water and leave them for 10 minutes. Warm half the rapeseed oil in a wide pan over medium-high heat. Cook the onion for 3 minutes, then add the fresh mushrooms in a single layer. Leave them alone for a few minutes so they brown, then add the chopped porcini and their soaking liquid and keep going until it has cooked off, about 8 minutes. Season with salt and pepper.",
+        "Fluff the kasha with a fork and fold it into the mushrooms with half the dill.",
+        "Push the kasha to one side, add the rest of the rapeseed oil and fry the egg until the white is set and the yolk is still runny, about 3 minutes.",
+        "Toast the sunflower seeds in a dry pan for 2 minutes, until golden. Drizzle the kasha with the sunflower oil, which gives it that nutty, toasted-seed flavour. Serve with the egg on top, scattered with the seeds and the rest of the dill, with the pickle on the side for a sharp, crunchy bite."
+      ],
+      "prepMin": 5,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook a double batch of kasha the night before. It warms through in the pan in two minutes, which makes this about a 15-minute breakfast."
+    },
+    {
+      "id": "east-europe-kefir-buckwheat-apple",
+      "name": "Kefir with soaked buckwheat, apple and raspberries",
+      "inspiredBy": "Ukrainian and Polish kefir with soaked buckwheat (hrechka z kefirom, kasza gryczana z kefirem)",
+      "about": "Toasted buckwheat groats soaked overnight in cold kefir until they turn tender and nutty, then topped with grated apple, raspberries, toasted sunflower seeds and a sprinkle of poppy seeds. It is a classic cool, sour-sweet breakfast across Ukraine and Poland. The kefir and poppy seeds bring **calcium**, and the sunflower seeds add **vitamin E**.",
+      "ingredients": [
+        {
+          "food": "buckwheat-groats-roasted-dry-03d573",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "toasted buckwheat groats (kasha), rinsed"
+        },
+        {
+          "food": "kefir-plain-low-fat-0-5-1-9-fat-630d2d",
+          "g": 250,
+          "swap": "dairy_protein",
+          "note": "low-fat kefir"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 90,
+          "note": "grated, with the skin"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 60,
+          "swap": "berries",
+          "note": "fresh or frozen"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "shelled"
+        },
+        {
+          "food": "poppy-seed-c84162",
+          "g": 4,
+          "note": "poppy seeds (mak)"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "The night before, rinse the buckwheat in a sieve and stir it into the kefir in a jar or bowl with a pinch of cinnamon. Cover and refrigerate for at least 10 hours, until the groats are tender with a little nutty chew.",
+        "In the morning, toast the sunflower seeds in a dry pan for 2 minutes, until golden and fragrant.",
+        "Grate the apple straight into the bowl and stir it through.",
+        "Top with the raspberries, the warm sunflower seeds and a sprinkle of poppy seeds."
+      ],
+      "prepMin": 5,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Use pear or whatever berries are in season."
+    },
+    {
+      "id": "east-europe-syrniki-baked-oats",
+      "name": "Baked tvorog and oat syrniki with raspberries",
+      "inspiredBy": "Ukrainian syrnyky and Polish placuszki z twarogu, baked and made with oats",
+      "about": "Little golden tvorog cakes, bound with oats instead of flour and baked instead of fried, served with a spoonful of sour cream and crushed raspberries. It is a slow Saturday morning breakfast that makes the next morning's too. The tvorog and oats give you **protein, calcium and slow carbohydrate**.",
+      "ingredients": [
+        {
+          "food": "tvorog-quark-farmers-cheese-b0a505",
+          "g": 130,
+          "swap": "dairy_protein",
+          "note": "farmer's cheese. If you use cottage cheese, drain it in a sieve for 10 minutes first"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "rolled oats"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "two eggs for two portions"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 30,
+          "note": "grated, for sweetness"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5,
+          "note": "in the dough"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 4
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils",
+          "note": "rapeseed oil, for the tray and the tops"
+        },
+        {
+          "food": "sour-cream-15-fat-4bb18c",
+          "g": 12,
+          "note": "to serve"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 80,
+          "swap": "berries",
+          "note": "fresh or frozen, thawed"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "shelled, to scatter"
+        },
+        {
+          "food": "poppy-seed-c84162",
+          "g": 4,
+          "note": "poppy seeds (mak), to scatter"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 C and line a tray with parchment. Whizz the oats in a blender for a few seconds, until they look like a coarse flour.",
+        "Mash the tvorog with the egg, grated apple, cinnamon, lemon juice and salt until mostly smooth, then stir in the ground oats. Let the dough rest for 10 minutes so the oats swell and it firms up. If it is too soft to shape, spoon it onto the tray in rounds.",
+        "With wet hands, shape it into 8 small, thick rounds and set them on the tray. Brush the tops with half of the oil.",
+        "Bake for 12 minutes, flip them, brush with the rest of the oil and bake another 8 minutes, until golden and set.",
+        "While they bake, toast the sunflower seeds in a dry pan for 2 minutes. Crush half the raspberries with a fork to make a quick sauce and keep the rest whole.",
+        "Serve 4 syrniki per person with the raspberries, a spoonful of sour cream and a scatter of sunflower and poppy seeds. Keep the second portion in the fridge and warm it in the oven or a dry pan on Sunday morning."
+      ],
+      "prepMin": 15,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "If the dough feels soft, chill it for 20 minutes before shaping. Frozen raspberries are fine."
+    },
+    {
+      "id": "east-europe-herring-rye-sandwiches",
+      "name": "Open rye sandwiches with pickled herring, onion and dill",
+      "inspiredBy": "Polish and Baltic herring on rye (śledź na chlebie)",
+      "about": "Dark rye topped with pickled herring, thin onion and dill, with sauerkraut and a dill pickle on the side. It is the plate you would be served at a Polish or Baltic lunch table. The herring brings **omega-3, vitamin D and B12**, and the rye keeps you full.",
+      "ingredients": [
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 60,
+          "note": "dark rye"
+        },
+        {
+          "food": "pickled-herring-atlantic-3f1974",
+          "g": 120,
+          "swap": "fatty_fish",
+          "note": "pickled, drained"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 25,
+          "note": "sliced very thin"
+        },
+        {
+          "food": "sauerkraut-canned-solids-and-liquid-a11869",
+          "g": 50,
+          "note": "drained, on the side"
+        },
+        {
+          "food": "pickles-cucumber-dill-4ea7a6",
+          "g": 50,
+          "note": "whole dill pickle, sliced"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 8,
+          "note": "fronds"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Slice the onion very thin and rinse it under cold water for a minute to take off the sharpest bite. Drain the herring, pat it dry and cut it into bite-size pieces.",
+        "Lay the herring on the rye and scatter the onion rings on top.",
+        "Finish with dill and a grind of black pepper. Serve the sauerkraut and pickle alongside for crunch and extra tang."
+      ],
+      "prepMin": 10,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "If pickled herring is too salty for you, rinse the pieces for a minute and pat them dry. Rollmops work too, and a spoonful of sour cream is a lovely addition."
+    },
+    {
+      "id": "east-europe-borscht-white-beans",
+      "name": "Ukrainian borscht with white beans and beef, with rye bread",
+      "inspiredBy": "Ukrainian borscht with beans, as cooked in Kyiv and Chernihiv homes",
+      "about": "A ruby-red Ukrainian borscht with beets, cabbage, carrot and white beans, built on a little beef and finished with garlic, dill and a spoonful of sour cream, with dark rye alongside. Frying the beets with tomato paste and vinegar first keeps their colour. It makes two portions and it is even better tomorrow, with **iron, folate and potassium** in every bowl, and half a boiled egg adds choline.",
+      "ingredients": [
+        {
+          "food": "beef-chuck-for-stew-lean-and-fat-raw-8d6ce5",
+          "g": 90,
+          "swap": "lean_protein",
+          "note": "cut in small 1 cm cubes"
+        },
+        {
+          "food": "white-beans-boiled-c7bc32",
+          "g": 100,
+          "swap": "legumes",
+          "note": "from a tin, drained and rinsed"
+        },
+        {
+          "food": "beet-raw-4df109",
+          "g": 120,
+          "note": "peeled and coarsely grated"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 80,
+          "note": "thinly shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "coarsely grated"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 15
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 8,
+          "note": "red wine vinegar"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "sour-cream-15-fat-4bb18c",
+          "g": 20,
+          "note": "to serve"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 25,
+          "note": "half a hard-boiled egg per bowl, so one egg for two portions"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 30,
+          "note": "dark rye, to serve"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put the beef in a large pot with the bay leaf, allspice and a pinch of salt. Cover with cold water by about 3 cm, bring to a boil, skim off any foam and simmer gently, partly covered, for 40 minutes.",
+        "While the beef simmers, boil the egg for 9 minutes, cool it under cold water, then peel and halve it. Warm the oil in a wide pan over medium heat. Cook the onion until soft and golden, about 6 minutes. Add the carrot and beets, the tomato paste and the vinegar and cook, stirring, until they have softened and the pan smells sweet and sharp, about 10 minutes.",
+        "Add the cabbage to the beef pot and simmer for 10 minutes.",
+        "Stir in the beet mixture and the beans and simmer 10 minutes more, until the cabbage is soft and the beef is falling apart. Taste, and add salt or a splash of vinegar until it is pleasantly sweet and sour.",
+        "Stir in the garlic and half the dill. Ladle into bowls with half an egg each, a spoonful of sour cream and the rest of the dill, and serve with the rye.",
+        "Cool the second portion and pack it for tomorrow's lunch. Reheat it gently, since boiling hard dulls the colour."
+      ],
+      "prepMin": 25,
+      "cookMin": 65,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "In a pressure cooker, simmer the beef for 15 minutes, then add everything else and cook 5 more."
+    },
+    {
+      "id": "east-europe-lobio-walnuts",
+      "name": "Georgian lobio, red bean stew with walnuts and herbs, with warm cheese and lavash",
+      "inspiredBy": "Georgian lobio, with canned beans and lavash for shoti and mchadi",
+      "about": "Soft red kidney beans in a golden onion and garlic base, scented with khmeli-suneli and thickened with a paste of ground walnuts, cilantro and vinegar. Georgians eat it with a slice of soft sulguni cheese and flatbread. The beans, walnuts and cheese bring **iron, folate, calcium and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "kidney-beans-canned-drained-solids-7e5cc7",
+          "g": 180,
+          "swap": "legumes",
+          "note": "canned, drained and rinsed"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 70,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 25,
+          "swap": "nuts_seeds",
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 20,
+          "note": "chopped"
+        },
+        {
+          "food": "khmeli-suneli-georgian-spice-blend-f675f0",
+          "g": 2
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 8,
+          "note": "red wine vinegar"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 30,
+          "note": "seeds, to finish"
+        },
+        {
+          "food": "sulguni-georgian-brined-cheese-4564de",
+          "g": 50,
+          "swap": "dairy_protein",
+          "note": "sliced"
+        },
+        {
+          "food": "lavash-whole-wheat-244146",
+          "g": 40,
+          "note": "warmed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the oil in a pot over medium heat. Cook the onion until deeply golden, about 10 minutes, stirring now and then.",
+        "Add the garlic and khmeli-suneli and stir for a minute, until it smells fragrant.",
+        "Tip in the beans with a good splash of water and simmer for 10 minutes. Mash about a quarter of the beans against the side of the pot so the stew turns creamy.",
+        "Mix the walnuts with half the cilantro, the vinegar and a ladle of the bean liquid to make a rough paste. Stir it in and simmer 3 more minutes. Season with salt and pepper.",
+        "Lay tonight's cheese slices over the hot lobio for the last 2 minutes, lid on, until soft. Keep the rest of the cheese to warm over tomorrow's portion.",
+        "Finish the lobio with the rest of the cilantro and the pomegranate seeds. Serve with warm lavash.",
+        "Pack the second portion for tomorrow's lunch. It firms up in the fridge, so loosen it with a splash of water when you warm it."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Georgians eat lobio with pickled vegetables too, and with a spoonful of adjika for heat. Sulguni is salty, so taste before you add more salt to the pot."
+    },
+    {
+      "id": "east-europe-golabki-barley",
+      "name": "Gołąbki, Polish cabbage rolls with barley and pork in tomato sauce",
+      "inspiredBy": "Polish gołąbki, with barley as in the old village version",
+      "about": "Tender cabbage leaves rolled around lean pork, barley and onion, then braised in a tomato and dill sauce until sweet and soft. Barley, kasza jęczmienna, is the old village filling, with rice a later arrival. The cabbage and tomato bring **vitamin C and K**, and the barley adds slow fibre.",
+      "ingredients": [
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 250,
+          "note": "one small green cabbage, about 4 big outer leaves per portion, the rest shredded for the pot"
+        },
+        {
+          "food": "ground-pork-96-lean-4-fat-raw-efd870",
+          "g": 115,
+          "swap": "lean_protein",
+          "note": "very lean"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 25,
+          "note": "one egg for two portions, to bind the filling"
+        },
+        {
+          "food": "pearl-barley-raw-07771a",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "pearl barley, dry"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "finely grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 30
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2
+        },
+        {
+          "food": "marjoram-dried-5adc61",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Simmer the barley in salted water until just tender, about 30 minutes, then drain, keeping a few spoonfuls of the cooking water. While it cooks, cut out the core of the cabbage and put the whole head in a big pot of boiling water for a few minutes, peeling off the outer leaves as they soften.",
+        "Warm half the oil in a pan and cook the onion and carrot until soft, about 6 minutes. Cool for a few minutes.",
+        "Mix the pork, egg, barley, onion mixture, garlic, half the dill, the paprika, marjoram, salt, pepper and 3 tablespoons of the barley's cooking water with your hands, so the filling stays moist.",
+        "Shave down the thick rib on each cabbage leaf. Put a spoonful of filling at the base, fold in the sides and roll up tightly.",
+        "Shred the remaining cabbage into a wide oven dish or pot. Whisk the tomato paste with about 2 cups of hot water (for two portions) and the rest of the oil, season it with a pinch of salt, and pour about half over the cabbage. Set the rolls on top, seam side down, and pour over the rest.",
+        "Cover and bake at 180 C for 45 minutes, then uncover for the last 15 so the sauce thickens, until the cabbage is soft. Stir in the lemon juice and the rest of the dill.",
+        "Serve the rolls with plenty of sauce. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 35,
+      "cookMin": 60,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Roll the cabbage on Tuesday night while the lobio simmers, then keep the rolls covered in the fridge and bake them on Wednesday. Freezing the whole cabbage head overnight and thawing it also makes the leaves peel off soft with no blanching."
+    },
+    {
+      "id": "east-europe-chicken-kasha-mushrooms-mizeria",
+      "name": "Chicken with kasha and mushrooms, with mizeria",
+      "inspiredBy": "Polish and Ukrainian chicken with kasha and mushrooms, with Polish mizeria made lighter with kefir",
+      "about": "Browned chicken thighs cooked on a bed of toasted kasha and mushrooms with plenty of dill, and a cool, tangy cucumber mizeria on the side. The kasha soaks up all the juices, so it is one pan with no rice or potatoes. The chicken and mushrooms bring **protein, niacin and B vitamins**, and the buckwheat adds magnesium.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "boneless, skinless thighs"
+        },
+        {
+          "food": "buckwheat-groats-roasted-dry-03d573",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "toasted buckwheat, dry"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 25,
+          "note": "one egg for two portions, to keep the kasha fluffy"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "porcini-dried-9e8ea1",
+          "g": 5,
+          "note": "dried porcini (soaked in hot water for 10 minutes, then chopped, with the soaking liquid kept)"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 110,
+          "note": "thinly sliced, for the mizeria"
+        },
+        {
+          "food": "kefir-plain-low-fat-0-5-1-9-fat-630d2d",
+          "g": 90,
+          "swap": "dairy_protein",
+          "note": "for the mizeria"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Season the chicken with half the salt, the pepper and the paprika. Warm the oil in a wide pan with a lid over medium-high heat and brown the thighs for about 4 minutes a side. Set them on a plate.",
+        "Meanwhile, cover the dried porcini with a few spoonfuls of hot water. In the same pan, cook the onion and fresh mushrooms until the mushrooms are browned, about 6 minutes, then add the chopped porcini and keep the soaking liquid. Add the garlic for the last minute.",
+        "Beat the egg in a bowl, stir in the kasha until every grain is coated, then push the mushrooms aside and toast it in the clear space for 2 minutes, stirring, until the grains separate and smell nutty. This is the old trick for fluffy, crumbly kasha. Pour in the porcini soaking liquid and enough hot water to make about 1¼ cups (300 ml) in all for both portions, roughly twice the volume of the kasha. Nestle the chicken on top, cover and simmer gently for 15 minutes without stirring, until the water is absorbed and the chicken is cooked through with no pink.",
+        "Scatter over half the dill and leave the pan covered, off the heat, for 5 minutes.",
+        "For the mizeria, toss the cucumber with a pinch of salt and let it sit for 10 minutes, then squeeze out the water. Stir in the kefir, lemon juice and the rest of the dill.",
+        "Serve the chicken and kasha with the mizeria on the side. Pack the second portion for tomorrow's lunch, and dress its cucumber just before eating so it stays crisp."
+      ],
+      "prepMin": 20,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Do not stir once it is covered, or the grains go sticky. Slice and salt the cucumber for the second portion only on the day."
+    },
+    {
+      "id": "east-europe-pasulj-peppers",
+      "name": "Balkan white bean and sweet pepper stew with beef",
+      "inspiredBy": "Serbian pasulj and Bosnian grah, with smoked paprika in place of smoked meat, and sweet pepper and spinach added",
+      "about": "A thick Balkan-style white bean stew with sweet red pepper, carrot and tender beef, scented with smoked paprika and bay, and finished with a splash of vinegar and dill. It is honest, filling cold-weather food that you eat with rye bread and a pickle. The beans, spinach and peppers bring **iron, folate and vitamin C**.",
+      "ingredients": [
+        {
+          "food": "white-beans-boiled-c7bc32",
+          "g": 190,
+          "swap": "legumes",
+          "note": "from a tin, drained and rinsed"
+        },
+        {
+          "food": "beef-chuck-for-stew-lean-and-fat-raw-8d6ce5",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "cut in small cubes"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 120,
+          "note": "diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 10
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 3
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 6,
+          "note": "red wine vinegar"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 30,
+          "note": "to serve"
+        },
+        {
+          "food": "pickles-cucumber-dill-4ea7a6",
+          "g": 40,
+          "note": "sliced, to serve"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the oil in a heavy pot over medium-high heat and brown the beef for 5 minutes. Take it out.",
+        "Lower the heat, add the onion, carrot and red pepper and cook until soft and sweet, about 8 minutes. Stir in the garlic and tomato paste for a minute.",
+        "Take the pot off the heat for a moment, stir in both paprikas and then return it to the heat. This keeps the paprika sweet instead of bitter.",
+        "Return the beef with the bay leaf, salt, pepper and enough water to just cover. Simmer, partly covered, for 40 minutes, then add the beans and simmer 20 minutes more, until the beef is tender and the stew is thick. Mash a few beans against the pot to thicken it.",
+        "Stir in the spinach, vinegar and dill and cook for 2 minutes, until the spinach wilts. Serve with rye bread and sliced pickle.",
+        "Pack the second portion for tomorrow's lunch. It tastes even better after a night in the fridge."
+      ],
+      "prepMin": 15,
+      "cookMin": 70,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "A pressure cooker does the beef in 25 minutes. With dried beans (soaked overnight) the broth gets thicker, so use about a third of a cup of dry beans per portion."
+    },
+    {
+      "id": "east-europe-satsivi-chicken",
+      "name": "Satsivi, Georgian chicken in walnut sauce, with cucumber and herb salad",
+      "inspiredBy": "Georgian satsivi, with chicken thighs and a lighter sauce",
+      "about": "Poached chicken under a rich, silky sauce of ground walnuts, garlic, onion and warm spices, traditionally served at room temperature at feasts. The sauce is thickened only by walnuts, with a splash of vinegar for sparkle. The chicken and walnuts bring **protein, plant omega-3 and magnesium**, and it gets better as it sits.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 200,
+          "swap": "lean_protein",
+          "note": "boneless, skinless thighs"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 36,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60,
+          "note": "half in two pieces for the pot, the rest finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8
+        },
+        {
+          "food": "khmeli-suneli-georgian-spice-blend-f675f0",
+          "g": 3
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1,
+          "note": "ground"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "clove-ground-863cd5",
+          "g": 0.1
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 10,
+          "note": "red wine vinegar"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 20,
+          "note": "chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 30,
+          "note": "seeds, to finish"
+        },
+        {
+          "food": "lavash-whole-wheat-244146",
+          "g": 30,
+          "note": "to serve"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "for the salad"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Put the chicken in a pot with the halved onion, the bay leaf, a pinch of salt and enough water to cover. Bring to a gentle simmer and cook for 25 minutes, until cooked through. Leave it in the broth for 10 minutes, then lift it out.",
+        "Warm the oil in a small pan and cook the chopped onion until golden, about 8 minutes. Stir in the khmeli-suneli, coriander, cinnamon, turmeric and clove for a minute, until fragrant.",
+        "Grind the walnuts and garlic in a food processor to a fine paste. Add the onion and spices, then slowly blend in about a cup of the warm broth (for two portions) until the sauce is the thickness of heavy cream. Stir in most of the vinegar and season.",
+        "Warm the sauce in a small pot for 5 minutes. Do not let it boil, or it can split and turn bitter.",
+        "Slice or shred the chicken, spoon over the sauce and leave it for 20 minutes so the flavours settle. Garnish with the pomegranate seeds and half the cilantro.",
+        "Toss the cucumber with the rest of the cilantro, a pinch of salt and a splash of vinegar. Serve alongside the chicken, with lavash for scooping.",
+        "Pack the second portion for tomorrow. It is best at room temperature, and the sauce thickens in the fridge, so loosen it with a spoonful of water."
+      ],
+      "prepMin": 25,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers"
+      ],
+      "tip": "Georgian cooks often add a pinch of dried marigold petals (Imeretian saffron) and a little blue fenugreek (utskho suneli). If you can find them at a Georgian or Eastern European shop, they are worth a try."
+    },
+    {
+      "id": "east-europe-trout-dill-potatoes",
+      "name": "Baked trout with dill potatoes and sauerkraut salad",
+      "inspiredBy": "Baltic and Carpathian baked trout with dill potatoes",
+      "about": "A plump trout fillet baked with garlic and lemon, served with hot potatoes tossed in butter and dill, with a glass of cold kefir alongside, and a crunchy sauerkraut and carrot salad. It is the simple supper of the Carpathians and the Baltics. The trout brings **omega-3, vitamin D and B12**, and the sauerkraut adds a tangy crunch.",
+      "ingredients": [
+        {
+          "food": "rainbow-trout-farmed-raw-0cc800",
+          "g": 170,
+          "swap": "fatty_fish",
+          "note": "fillet with skin"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 220,
+          "note": "scrubbed, halved or quartered so the pieces match"
+        },
+        {
+          "food": "unsalted-butter-9a1175",
+          "g": 3
+        },
+        {
+          "food": "kefir-plain-low-fat-0-5-1-9-fat-630d2d",
+          "g": 120,
+          "swap": "dairy_protein",
+          "note": "cold, to serve with the potatoes"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 15,
+          "note": "chopped, plus a few stems for the pot"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "sliced"
+        },
+        {
+          "food": "sauerkraut-canned-solids-and-liquid-a11869",
+          "g": 80,
+          "note": "drained, squeezed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "grated"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "sunflower-oil-707ea8",
+          "g": 4,
+          "note": "unrefined sunflower oil, to drizzle on the salad"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 C. Put the potatoes in a pot of cold salted water with a few dill stems, bring to a boil and cook until tender, about 15 minutes.",
+        "While they cook, make the salad. Squeeze the sauerkraut dry (rinse it first if it is very sour) and mix with the carrot and onion. Drizzle with the sunflower oil and a grind of pepper.",
+        "Set the trout skin-side down on a piece of parchment on a tray. Scatter over the garlic, lemon juice, a pinch of salt and half the butter in small pieces. Bake for 12 to 15 minutes, until the flesh turns opaque and flakes with a fork.",
+        "Drain the potatoes and toss them with the rest of the butter and most of the dill. Serve the cold kefir in a glass alongside, or pour some over, the way Polish cooks eat new potatoes with dill.",
+        "Serve the trout on the potatoes with the sauerkraut salad and the rest of the dill."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Salmon or mackerel fillets work the same way. A whole gutted trout takes about 25 minutes."
+    },
+    {
+      "id": "east-europe-pkhali-lavash",
+      "name": "Spinach pkhali with pomegranate and lavash",
+      "inspiredBy": "Georgian spinach pkhali",
+      "about": "Georgian spinach and walnut pâté, bright with garlic, cilantro and a little vinegar, shaped into small balls and topped with ruby pomegranate seeds. Scoop it up with warm flatbread. The spinach and walnuts bring **folate, iron and vitamin K**.",
+      "ingredients": [
+        {
+          "food": "spinach-raw-17845b",
+          "g": 150,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 4,
+          "note": "red wine vinegar"
+        },
+        {
+          "food": "khmeli-suneli-georgian-spice-blend-f675f0",
+          "g": 1
+        },
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 20,
+          "note": "seeds"
+        },
+        {
+          "food": "lavash-whole-wheat-244146",
+          "g": 30,
+          "note": "to scoop"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Drop the spinach into boiling water for 1 minute, then cool it under cold water and squeeze out as much water as you can with your hands. Chop it finely.",
+        "Pound or blitz the walnuts with the garlic and salt to a thick paste.",
+        "Mix the spinach with the walnut paste, cilantro, vinegar and khmeli-suneli. Taste for salt and a little more vinegar.",
+        "Shape into 4 small balls, top with the pomegranate seeds and serve with warm lavash."
+      ],
+      "prepMin": 12,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make it a day ahead if you like: the flavours settle, and it keeps 3 days in the fridge. Beets, cabbage and green beans make good pkhali too."
+    },
+    {
+      "id": "east-europe-apple-sunflower-seeds",
+      "name": "Apple with toasted sunflower seeds",
+      "about": "Crisp apple wedges with a handful of warm, toasted sunflower seeds, the semechki that Ukrainians crack and munch all year round. The seeds bring **vitamin E and magnesium**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "shelled"
+        }
+      ],
+      "steps": [
+        "Toast the sunflower seeds in a dry pan for 2 to 3 minutes, until golden and fragrant. Eat them with the apple wedges."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "east-europe-smoked-sprats-rye",
+      "name": "Smoked sprats on rye with dill pickle and lemon",
+      "inspiredBy": "Baltic and Ukrainian smoked sprats on rye (shproty na chornomu khlibi)",
+      "about": "Smoked sprats from the tin laid on a slice of dark rye with sliced dill pickle, fresh dill and a squeeze of lemon, the classic Baltic and Ukrainian zakuska. Sprats are eaten whole, bones and all, so they bring **omega-3 and calcium**.",
+      "ingredients": [
+        {
+          "food": "smoked-sprats-in-oil-8ee54e",
+          "g": 90,
+          "swap": "fatty_fish",
+          "note": "smoked, drained"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 40,
+          "note": "dark rye"
+        },
+        {
+          "food": "pickles-cucumber-dill-4ea7a6",
+          "g": 30,
+          "note": "sliced"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "fronds"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lay the sprats on the rye. Top with the pickle slices and dill, squeeze over the lemon and finish with black pepper."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "east-europe-tvorog-dill-rye",
+      "name": "Tvorog with dill and cucumber on rye",
+      "inspiredBy": "Polish twarożek with dill and cucumber on rye (twarożek z koperkiem i ogórkiem)",
+      "about": "Fresh tvorog mixed with chopped dill and cucumber and spread on dark rye, a Polish twaróg sandwich that makes a good afternoon snack. The tvorog brings **protein, calcium and B12**.",
+      "ingredients": [
+        {
+          "food": "tvorog-quark-farmers-cheese-b0a505",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 35,
+          "note": "dark rye"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Mix the tvorog with the cucumber, dill, salt and pepper. Spread it on the rye."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "east-europe-kefir-raspberries",
+      "name": "Kefir with raspberries",
+      "about": "A glass of cold kefir with crushed raspberries and a pinch of cinnamon, a classic Slavic afternoon drink. The kefir brings **calcium and B12**.",
+      "ingredients": [
+        {
+          "food": "kefir-plain-low-fat-0-5-1-9-fat-630d2d",
+          "g": 200,
+          "swap": "dairy_protein",
+          "note": "low-fat kefir"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 80,
+          "swap": "berries",
+          "note": "fresh or frozen"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Pour the kefir into a glass or bowl, crush half the raspberries into it and top with the rest, with a pinch of cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "east-europe-baked-apple-walnuts",
+      "name": "Baked apple with walnuts and honey",
+      "inspiredBy": "Polish and Ukrainian baked apples (pieczone jabłka)",
+      "about": "A soft baked apple filled with chopped walnuts and cinnamon, a cosy Polish and Ukrainian winter treat. The apple adds fibre and the walnuts bring **plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 180,
+          "note": "one medium apple, cored"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190 C. Core the apple, leaving the bottom intact, and stand it in a small dish.",
+        "Mix the walnuts with the cinnamon and spoon them into the apple. Add a splash of water to the dish.",
+        "Bake for 25 minutes, until the apple is soft and the skin starts to wrinkle."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "east-europe-liver-pate-rye",
+      "name": "Chicken liver pâté on rye with pickle",
+      "inspiredBy": "Polish and Ukrainian chicken liver pâté (pasta z wątróbki, pechinkovyi pashtet)",
+      "about": "Chicken livers cooked with plenty of onion until just done, mashed into a rough pâté and piled on dark rye with a slice of dill pickle. It is a Polish and Ukrainian classic that tastes like home. A little liver goes a long way: it brings **iron, B12, folate and choline** in one small snack.",
+      "ingredients": [
+        {
+          "food": "chicken-liver-raw-6931a6",
+          "g": 45,
+          "note": "trimmed, cut in small pieces"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "unsalted-butter-9a1175",
+          "g": 3
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils",
+          "note": "rapeseed oil"
+        },
+        {
+          "food": "marjoram-dried-5adc61",
+          "g": 0.3
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 40,
+          "note": "dark rye"
+        },
+        {
+          "food": "pickles-cucumber-dill-4ea7a6",
+          "g": 25,
+          "note": "sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Melt the butter with the rapeseed oil in a small pan over medium heat and cook the onion until soft and golden, about 5 minutes.",
+        "Add the liver and marjoram and cook, stirring, until the liver is browned outside and just cooked through with no pink inside, about 5 minutes. Season with salt and pepper.",
+        "Mash with a fork, or pulse a few times, to a rough pâté. Spread it on the rye and top with the pickle."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Once a week is plenty of liver."
+    },
+    {
+      "id": "east-europe-tvorog-apple-poppy",
+      "name": "Tvorog with apple and poppy seeds",
+      "inspiredBy": "Polish and Ukrainian twaróg and poppy seed sweets (twaróg z makiem)",
+      "about": "Fresh tvorog with grated apple, a pinch of cinnamon and a spoonful of poppy seeds, a Polish and Ukrainian sweet snack that tastes like a cheesecake. The tvorog brings **protein and calcium** and the poppy seeds add a little extra **calcium**.",
+      "ingredients": [
+        {
+          "food": "tvorog-quark-farmers-cheese-b0a505",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 100,
+          "note": "grated, with the skin"
+        },
+        {
+          "food": "poppy-seed-c84162",
+          "g": 4,
+          "note": "poppy seeds (mak)"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Spoon the tvorog into a bowl and grate the apple over it. Stir in the cinnamon and let it sit for 5 minutes so the apple softens.",
+        "Sprinkle over the poppy seeds and eat right away."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "east-europe-baked-apple-poppy",
+      "name": "Baked apple with poppy seeds and cinnamon",
+      "inspiredBy": "Polish and Ukrainian baked apples with poppy seeds (pieczone jabłka z makiem)",
+      "about": "A soft baked apple filled with poppy seeds and cinnamon, a Polish and Ukrainian winter treat that tastes a bit like makowiec. The apple adds fibre and the poppy seeds add a little **calcium**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "one medium apple, cored"
+        },
+        {
+          "food": "poppy-seed-c84162",
+          "g": 6.5,
+          "note": "poppy seeds (mak)"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180 C. Core the apple, leaving the bottom intact, and stand it in a small dish.",
+        "Mix the poppy seeds with the cinnamon and spoon them into the apple. Add a splash of water to the dish.",
+        "Bake for 25 minutes, until the apple is soft and the skin starts to wrinkle."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "east-europe-sauerkraut-carrot-slaw",
+      "name": "Sauerkraut and carrot slaw",
+      "inspiredBy": "Polish sauerkraut surówka (surówka z kapusty kiszonej)",
+      "about": "A crisp, sharp Polish surówka of sauerkraut and grated carrot with a little sunflower oil. It cuts through a rich meal as well as it makes a snack. The sauerkraut brings **fibre and vitamin C**, and the carrot adds vitamin A.",
+      "ingredients": [
+        {
+          "food": "sauerkraut-canned-solids-and-liquid-a11869",
+          "g": 100,
+          "note": "drained, squeezed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 90,
+          "note": "grated"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 15,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "sunflower-oil-707ea8",
+          "g": 4,
+          "note": "unrefined sunflower oil"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Squeeze the sauerkraut dry (rinse it first if it is very sour) and put it in a bowl.",
+        "Add the carrot and onion, then dress with the sunflower oil and a grind of pepper. Toss and eat right away, or chill it for 20 minutes."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "east-europe-kefir-buckwheat-apple"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "east-europe-herring-rye-sandwiches"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "east-europe-borscht-white-beans"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-europe-tvorog-dill-rye"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "east-europe-kasha-mushrooms-egg"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "east-europe-borscht-white-beans",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "east-europe-lobio-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-europe-tvorog-apple-poppy"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "east-europe-kasha-mushrooms-egg"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "east-europe-lobio-walnuts",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "east-europe-golabki-barley"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-europe-smoked-sprats-rye"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "east-europe-kefir-buckwheat-apple"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "east-europe-golabki-barley",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "east-europe-chicken-kasha-mushrooms-mizeria"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-europe-liver-pate-rye"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "east-europe-kefir-buckwheat-apple"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "east-europe-chicken-kasha-mushrooms-mizeria",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "east-europe-pasulj-peppers"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-europe-smoked-sprats-rye"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "east-europe-syrniki-baked-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "east-europe-pasulj-peppers",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "east-europe-satsivi-chicken"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-europe-baked-apple-poppy"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "east-europe-syrniki-baked-oats",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "east-europe-satsivi-chicken",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "east-europe-trout-dill-potatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "east-europe-pkhali-lavash"
+        }
+      ]
+    }
+  ]
+}
