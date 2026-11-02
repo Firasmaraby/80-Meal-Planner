@@ -1211,6 +1211,85 @@
    "omit": ["vitC"],
    "recipe": "Red adjika: hot and sweet red peppers ground with garlic, coriander, fenugreek and salt into a fiery paste.",
    "limits": "Vitamin C left out (stored paste); salt varies by maker."
+  },
+  {
+   "key": "cape-malay-curry-masala",
+   "name": "Cape Malay curry masala",
+   "head": "cape malay curry masala",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["cape malay masala", "cape malay curry powder", "roasted masala"],
+   "servings": [{"label": "1 tsp", "g": 2.5}],
+   "components": [
+    {"food": "coriander-seed-cilantro-973ca2", "g": 25},
+    {"food": "cumin-seed-626f82", "g": 18},
+    {"food": "turmeric-ground-32f550", "g": 15},
+    {"food": "chili-pepper-red-sun-dried-d3dda3", "g": 12},
+    {"food": "fennel-seed-8a14d7", "g": 8},
+    {"food": "cinnamon-ground-ed5c78", "g": 8},
+    {"food": "cardamom-ground-ac233b", "g": 5},
+    {"food": "fenugreek-seed-95f5a8", "g": 5},
+    {"food": "clove-ground-863cd5", "g": 4}
+   ],
+   "recipe": "A Cape Malay masala: coriander, cumin, turmeric, chili, fennel, cinnamon, cardamom, fenugreek and cloves, roasted and ground. Warm and fragrant rather than fiery.",
+   "limits": "Household blends vary. Used by the teaspoon."
+  },
+  {
+   "key": "chakalaka-spice",
+   "name": "Chakalaka spice",
+   "head": "chakalaka spice",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["chakalaka seasoning", "chakalaka spice mix"],
+   "servings": [{"label": "1 tsp", "g": 2.5}],
+   "components": [
+    {"food": "curry-powder-55e9c6", "g": 40},
+    {"food": "paprika-59bfc4", "g": 25},
+    {"food": "garlic-powder-e81d9c", "g": 12},
+    {"food": "chili-pepper-red-sun-dried-d3dda3", "g": 10},
+    {"food": "coriander-seed-cilantro-973ca2", "g": 8},
+    {"food": "table-salt-fdccfe", "g": 5, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"}
+   ],
+   "recipe": "A chakalaka mix: mild curry powder with paprika, garlic, chili, coriander and a little salt.",
+   "limits": "Store mixes vary in salt and heat. Used by the teaspoon."
+  },
+  {
+   "key": "boerewors-spice",
+   "name": "Boerewors spice",
+   "head": "boerewors spice",
+   "form": "product",
+   "category": "condiment",
+   "aliases": ["boerewors seasoning", "boerewors spice mix", "wors spice"],
+   "servings": [{"label": "1 tsp", "g": 2.5}],
+   "components": [
+    {"food": "coriander-seed-cilantro-973ca2", "g": 55},
+    {"food": "black-pepper-6fd5df", "g": 12},
+    {"food": "clove-ground-863cd5", "g": 5},
+    {"food": "nutmeg-ground-15c547", "g": 5},
+    {"food": "allspice-ground-67abb9", "g": 5},
+    {"food": "table-salt-fdccfe", "g": 18, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"}
+   ],
+   "recipe": "Boerewors spice: toasted, coarsely ground coriander with pepper, cloves, nutmeg, allspice and salt.",
+   "limits": "Recipes vary; used at about 1 tsp per 100 g of mince."
+  },
+  {
+   "key": "biltong",
+   "name": "Biltong (dried beef)",
+   "head": "biltong",
+   "form": "dried",
+   "category": "meat",
+   "aliases": ["beef biltong", "south african dried beef", "droë wors"],
+   "servings": [{"label": "1 oz", "g": 28}],
+   "components": [
+    {"food": "beef-eye-of-round-roast-lean-raw-936a85", "g": 230, "note": "lean raw beef loses about 55 % of its weight as it air-dries"},
+    {"food": "coriander-seed-cilantro-973ca2", "g": 1, "zero_if_missing": ["vitE"], "why": "a coating, too little to matter"},
+    {"food": "black-pepper-6fd5df", "g": 0.5},
+    {"food": "table-salt-fdccfe", "g": 4, "zero_if_missing": ["iodine"], "why": "plain salt, not iodised"},
+    {"food": "vinegar-d9b2f1", "g": 2}
+   ],
+   "omit": ["vitC", "folate"],
+   "recipe": "Biltong is lean beef cured with salt, vinegar, coriander and pepper, then air-dried (230 g raw to 100 g). Unlike jerky it is not sweetened or cooked.",
+   "limits": "Fattier cuts and longer drying change protein and fat by 10 to 20 %; sodium varies by maker."
   }
  ]
 }

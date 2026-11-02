@@ -1,7 +1,7 @@
 {
   "_comment": "Individual source values reviewed by hand and found wrong. Keyed by food id; a nutrient set to null is dropped (missing beats wrong). Every entry says why. Applied after the automatic peer-outlier check (consumer/qa.py).",
   "greek-yogurt-2-fat-plain-3b5a16": {
-    "calcium": null,
-    "_why": "CNF 7469 lists 282.9 mg calcium per 100 g. Every other plain Greek yogurt across the 9 sources is 100-126 mg (strained yogurt loses calcium with the whey); likely a per-serving or entry error."
+    "calcium": 115,
+    "_why": "CNF 7469 lists 282.9 mg calcium per 100 g, likely a per-serving or entry error. Every other plain Greek yogurt across the 9 sources is 100-126 mg (strained yogurt loses calcium with the whey); set to the peer median, 115 mg, so the food doesn't count as zero."
   }
 }
