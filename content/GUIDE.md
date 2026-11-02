@@ -317,7 +317,8 @@ happens to fit the diet, never like a list of things you can't have.
 - **Omega-3 comes from ALA only,** so walnuts, ground flax, chia and hemp hearts are welcome here every day in dishes
   where they make sense: porridge, overnight oats, smoothies, puddings, dressings, baking. Still no flax sprinkled
   on a curry. Use olive and canola oil; keep sunflower and corn oil out.
-- **Choline:** soy foods, legumes, quinoa, broccoli, Brussels sprouts, cauliflower, peanuts, mushrooms.
+- **Choline:** soy foods, legumes, quinoa, broccoli, Brussels sprouts, cauliflower, peanuts, mushrooms. Plain pulses (dals, lentils, beans, besan, tempeh) carry
+  choline estimated from their protein where the source had no value, so a dal-based week no longer needs eggs for it.
 - **Iodine:** iodized salt as the salt; nori is fine, kelp is not (it can go over the upper limit).
 
 ### Keto (`keto`)

@@ -250,7 +250,9 @@ def borrow_fatty_acids_by_head(records: list[dict[str, Any]]) -> dict[str, int]:
 # unless they leaned on eggs. In muscle meat, fish and legumes choline tracks protein closely (lentils: 3.9 mg per g protein dry,
 # 3.6 boiled; chickpeas 4.85 and 4.83), so a missing value is estimated from a measured donor's choline per gram of protein.
 CHOLINE_CATS = ("meat", "poultry", "fish", "legume", "egg", "dairy")
-CHOLINE_FALLBACK_CATS = ("meat", "poultry", "fish")      # muscle tissue: a category median is defensible; dairy and legumes vary too much
+CHOLINE_FALLBACK_CATS = ("meat", "poultry", "fish", "legume")  # muscle tissue and plain pulses: mg per g protein is tight (pulses: IQR 3.2-4.7); dairy varies too much
+# legume foods that aren't plain pulses: sweet pastes and jellies, fried mixes, pulp, pods eaten as vegetables
+LEGUME_NOT_PLAIN_RX = re.compile(r"\b(?:sweet\w*|jelly|yokan|paste|an|falafel|okara|green beans?|french beans?|yardlong|winged)\b", re.I)
 ORGAN_RX = re.compile(r"\b(?:liver|kidney|heart|giblets?|brain|tongue|tripe|offal|sweetbread|gizzard|roe|caviar|marrow|blood|skin|fat)\b", re.I)
 PROCESSED_RX = re.compile(r"\b(?:sausage|salami|bologna|frankfurter|hot dog|nugget|breaded|battered|patty|loaf|spread|pate|pâté|jerky|"
                           r"bacon|ham|luncheon|canned with|in sauce|salad|soup|stew|curry|with)\b", re.I)
@@ -265,10 +267,19 @@ def _choline_ratio(r: dict[str, Any]) -> float | None:
     return n["choline"] / n["protein"]
 
 
+def _plain(r: dict[str, Any]) -> bool:
+    """A plain muscle food or a plain pulse, the only kind a category median speaks for."""
+    name = r["name"]
+    if ORGAN_RX.search(name) or PROCESSED_RX.search(name):
+        return False
+    return not (r["category"] == "legume" and LEGUME_NOT_PLAIN_RX.search(name))
+
+
 def borrow_choline(records: list[dict[str, Any]]) -> dict[str, int]:
     """Fill a missing choline value on live meat, poultry, fish, egg, dairy and legume records (protein >= 2 g):
     1. same head and category: the highest-ranked measured donor, preferring the same form; choline = donor mg per g protein x own protein;
-    2. otherwise, for plain muscle meat, poultry and fish only (no organ meat, no processed food): the category's median ratio over
+    2. otherwise, for plain muscle meat, poultry, fish and plain pulses only (no organ meat, no processed food, no sweet bean
+       pastes): the category's median ratio over
        its measured plain foods (at least 10 of them).
     The value is marked estimated with a note naming the donor. Returns counts per route."""
     live = [r for r in records if r.get("tier") not in (None, "hidden")]
@@ -279,7 +290,7 @@ def borrow_choline(records: list[dict[str, Any]]) -> dict[str, int]:
         if ratio is None or r["category"] not in CHOLINE_CATS:
             continue
         donors[(r["head"], r["category"])].append(r)
-        if r["category"] in CHOLINE_FALLBACK_CATS and not ORGAN_RX.search(r["name"]) and not PROCESSED_RX.search(r["name"]):
+        if r["category"] in CHOLINE_FALLBACK_CATS and _plain(r):
             plain[r["category"]].append(ratio)
     medians = {c: sorted(v)[len(v) // 2] for c, v in plain.items() if len(v) >= CHOLINE_FALLBACK_MIN_DONORS}
     out = {"head": 0, "category": 0, "none": 0}
@@ -293,7 +304,7 @@ def borrow_choline(records: list[dict[str, Any]]) -> dict[str, int]:
             d = cands[0]
             ratio, why = _choline_ratio(d), f"{d['name']} [{d['canonical_id']}]"
             route = "head"
-        elif r["category"] in medians and not ORGAN_RX.search(r["name"]) and not PROCESSED_RX.search(r["name"]):
+        elif r["category"] in medians and _plain(r):
             ratio, why = medians[r["category"]], f"the median of measured plain {r['category']} foods"
             route = "category"
         else:

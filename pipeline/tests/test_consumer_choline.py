@@ -40,14 +40,16 @@ class Choline(unittest.TestCase):
         self.assertNotIn("choline", liver["n"])                            # organ meat never takes a muscle median
         self.assertEqual((stats["category"], stats["none"]), (1, 1))
 
-    def test_no_fallback_for_legumes_or_dairy_and_estimated_donors_are_ignored(self):
+    def test_plain_pulses_take_the_legume_median_but_not_dairy_or_bean_pastes(self):
         beans = [rec(f"b{i}", f"bean{i}", "legume", 20.0, 80.0) for i in range(12)]
         odd = rec("o", "lupin", "legume", 30.0)
+        paste = rec("p", "adzuki bean paste, sweetened", "legume", 9.0)
         est = rec("e", "skyr", "dairy", 11.0, 50.0, estimated=["choline"])
         skyr = rec("s", "skyr", "dairy", 11.0)
-        C.borrow_choline(beans + [odd, est, skyr])
-        self.assertNotIn("choline", odd["n"])
-        self.assertNotIn("choline", skyr["n"])
+        C.borrow_choline(beans + [odd, paste, est, skyr])
+        self.assertAlmostEqual(odd["n"]["choline"], 120.0)                # 4 mg per g protein x 30 g
+        self.assertNotIn("choline", paste["n"])
+        self.assertNotIn("choline", skyr["n"])                            # dairy never takes a median, and estimated donors don't count
 
     def test_low_protein_and_other_categories_and_hidden_are_left_alone(self):
         d = rec("d", "spinach", "vegetable", 2.9, 19.3)
