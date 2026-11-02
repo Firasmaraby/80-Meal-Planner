@@ -851,7 +851,7 @@
    "components": [
     {"food": "hazelnuts-kernel-only-180221", "g": 40},
     {"food": "sesame-seeds-toasted-shelled-11092e", "g": 30},
-    {"food": "coriander-seed-cilantro-973ca2", "g": 15},
+    {"food": "coriander-seed-cilantro-973ca2", "g": 15, "zero_if_missing": ["vitE"], "why": "not measured for coriander seed; the hazelnuts carry nearly all the vitamin E, so counting it as zero only slightly understates the blend"},
     {"food": "cumin-seed-626f82", "g": 10},
     {"food": "black-pepper-6fd5df", "g": 2},
     {"food": "table-salt-fdccfe", "zero_if_missing": ["iodine"], "why": "plain salt, not iodised", "g": 3}
