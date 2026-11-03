@@ -132,7 +132,7 @@ describe('plan styles', () => {
     const ban = FOOD_BANS.gluten;
     for (const n of ['Whole wheat bread', 'Pasta, cooked', 'Couscous, cooked', 'Bulgur, cooked', 'Rye bread', 'Pearl barley, boiled', 'Soy sauce (shoyu)', 'Farro, pearled, dry, raw'])
       expect(ban(FOODS.find((f) => f.name === n)!), n).toBeTruthy();
-    for (const n of ['Soy sauce, tamari', 'Corn tortilla', 'Brown rice, cooked', 'Quinoa, cooked', 'Gluten-free bread, white', 'Oats, dry', 'Buckwheat groats, roasted'])
+    for (const n of ['Soy sauce, tamari', 'Corn tortilla', 'Brown rice, cooked', 'Quinoa, cooked', 'Gluten-free bread, white', 'Buckwheat groats, roasted'])
       expect(ban(FOODS.find((f) => f.name === n)!), n).toBeUndefined();
     expect(styleStructureGates('gluten-free', standard(fixture), FOOD_INDEX).some((g) => /Whole wheat bread/.test(g.message))).toBe(true);
   });
@@ -143,6 +143,8 @@ describe('plan styles', () => {
       expect(FOOD_BANS.gluten(food(n)), n).toMatch(/usually has wheat/);
     expect(FOOD_BANS.gluten(food('Gochujang, gluten-free'))).toBeUndefined();
     expect(FOOD_BANS.gluten(food('Miso'))).toBeUndefined();
+    expect(FOOD_BANS.gluten(food('Oats, rolled'))).toMatch(/oats/);
+    expect(FOOD_BANS.gluten(food('Oats, certified gluten-free, rolled'))).toBeUndefined();
   });
 
   it('dairy-free bans the dairy category, ghee and butter; paleo bans grains, legumes, dairy and added sugar', () => {

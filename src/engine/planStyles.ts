@@ -69,6 +69,8 @@ function glutenReason(f: Food): string | undefined {
   const paste = t.match(/\b(doubanjiang|chili bean paste|gochujang|ssamjang|doenjang|hoisin|teriyaki|oyster sauce|black bean sauce)\b/);
   if (paste && !/gluten[- ]free/.test(t)) return `${paste[1]} (usually has wheat)`;
   if (/\bwheat\b/.test(t) && !/gluten[- ]free|wheat[- ]free/.test(t)) return 'wheat';
+  // oats are usually cross-contaminated with wheat; only oats sold as gluten-free are safe for celiac disease
+  if (/\boats?\b|\boatmeal\b/.test(t) && !/gluten[- ]free/.test(t)) return 'oats (not certified gluten-free)';
   if (GLUTEN_GRAINS.test(t) && !GLUTEN_SAFE.test(t)) return t.match(GLUTEN_GRAINS)![1];
   if (['grain', 'prepared', 'sweet', 'other'].includes(f.category) && GLUTEN_PRODUCTS.test(t) && !GLUTEN_SAFE.test(t) && !/^(\w+ ){0,2}sauce/.test(t))
     return t.match(GLUTEN_PRODUCTS)![1];
