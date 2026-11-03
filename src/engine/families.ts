@@ -193,3 +193,13 @@ export function recipeMinutes(meal: Pick<Meal, 'prepMinutes' | 'cookMinutes'>): 
 
 /** The time to show on a plan row: a leftover meal is not cooked again, so it has none. */
 export const rowMinutes = (meal: Pick<Meal, 'prepMinutes' | 'cookMinutes' | 'leftover'>) => (meal.leftover ? undefined : recipeMinutes(meal));
+
+/** Tags worth showing next to a plan's style: drop the ones the style or a stronger tag already says (vegan says vegetarian). */
+const IMPLIED_BY: Record<string, string[]> = {
+  vegan: ['vegetarian', 'pescatarian', 'dairy-free'],
+  vegetarian: ['pescatarian'],
+};
+export function displayTags(tags: readonly string[], style?: string): string[] {
+  const implied = new Set(tags.flatMap((t) => IMPLIED_BY[t] ?? []));
+  return tags.filter((t) => t !== style && !implied.has(t));
+}

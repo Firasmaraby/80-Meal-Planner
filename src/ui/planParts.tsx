@@ -41,6 +41,8 @@ export function dietMatches(plan: Pick<MealPlan, 'tags'>, diet: string[]): boole
   return diet.every((d) => (SATISFIED_BY[d] ?? [d]).some((t) => tags.includes(t)));
 }
 
+export { displayTags } from '@/engine/families';
+
 export const tagLabel = (t: string) => {
   const known = DIET_OPTIONS.find((d) => d.key === t);
   if (known) return known.label;

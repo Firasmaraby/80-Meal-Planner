@@ -22,7 +22,7 @@ import { useFamilies } from '@/state/families';
 import { useStore } from '@/state/store';
 import { CARB_NEEDS, CarbFilter } from '@/ui/carbParts';
 import { Button, Card, Chip, Icon, I, Row, Screen, Txt } from '@/ui/primitives';
-import { ChipRow, Fingerprint, FingerprintLegend, MealThumb, Pill, DIET_OPTIONS, bandKey, dietMatches, planStats, tagLabel, useWho } from '@/ui/planParts';
+import { ChipRow, Fingerprint, FingerprintLegend, MealThumb, Pill, DIET_OPTIONS, bandKey, displayTags, dietMatches, planStats, tagLabel, useWho } from '@/ui/planParts';
 import { space, useTheme } from '@/ui/theme';
 
 const fmtN = (n: number) => Math.round(n).toLocaleString();
@@ -231,7 +231,7 @@ function PlanCard({ entry, carbStyle, yourBand }: { entry: Entry; carbStyle: Car
   const stats = useMemo(() => planStats(plan, who), [plan, who]);
   const dishes = useMemo(() => (family.isLibrary ? signatureNames(plan, 3) : []), [family.isLibrary, plan]);
   const n = plan.days.length || 1;
-  const tags = family.tags.slice(0, 3);
+  const tags = displayTags(family.tags, family.style).slice(0, 3);
   const styleLabel = family.style ? PLAN_STYLES[family.style].label : undefined;
   const where = family.regions.length ? family.regions.join(', ') : undefined;
   const sizedKcal = roundTo50(stats.avg.kcal ?? 0);

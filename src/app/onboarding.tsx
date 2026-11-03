@@ -13,7 +13,7 @@ import { useFamilies } from '@/state/families';
 import { useStore } from '@/state/store';
 import { CARB_QUESTION, CarbChoices } from '@/ui/carbParts';
 import { Choice } from '@/ui/Choice';
-import { BAR_CLEARANCE, BottomBar, DIET_OPTIONS, Fingerprint, Pill, dietMatches, planStats, tagLabel, useWho } from '@/ui/planParts';
+import { BAR_CLEARANCE, BottomBar, DIET_OPTIONS, Fingerprint, displayTags, Pill, dietMatches, planStats, tagLabel, useWho } from '@/ui/planParts';
 import { Button, Card, Chip, Icon, I, Row, Screen, Txt, tap, type IconName } from '@/ui/primitives';
 import { MAX_WIDTH, font, radius, space, useTheme } from '@/ui/theme';
 import { NutrientTile } from '@/ui/viz';
@@ -524,7 +524,7 @@ function Numbers({ onStart }: { onStart: (plan: MealPlan) => void }) {
                 <Row gap={6} style={{ flexWrap: 'wrap', marginTop: space.sm }}>
                   <Pill label={`${bandLabel(p.band)} kcal`} color={same ? c.bg : c.ink2} bg={same ? c.ink : c.surface2} />
                   {family.style ? <Pill label={PLAN_STYLES[family.style].label} /> : null}
-                  {family.tags.slice(0, family.style ? 2 : 3).map((t) => (
+                  {displayTags(family.tags, family.style).slice(0, family.style ? 2 : 3).map((t) => (
                     <Pill key={t} label={tagLabel(t)} />
                   ))}
                 </Row>

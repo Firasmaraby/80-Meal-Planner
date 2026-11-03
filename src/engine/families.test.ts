@@ -6,7 +6,7 @@ import { familyDeps } from '@/state/familyDeps';
 import { buildLibrary, libraryKey } from '@/state/library';
 
 import { carbStyleOfPlan } from './carbStyle';
-import { SIZE_LABEL, bandKeyOf, carbVisible, coversOf, familyBands, familyCarbStyle, familyVisible, groupFamilies, mealCarbStyle, pickSize, planCarbStyle, planFamilyName, recipeMinutes, rowMinutes, signatureNames } from './families';
+import { SIZE_LABEL, bandKeyOf, displayTags, carbVisible, coversOf, familyBands, familyCarbStyle, familyVisible, groupFamilies, mealCarbStyle, pickSize, planCarbStyle, planFamilyName, recipeMinutes, rowMinutes, signatureNames } from './families';
 import { compactPlan, compileFamily, recipesOf, type FamilyFile } from './family';
 import { expandPlans } from './libraryPlans';
 import type { MealPlan } from './types';
@@ -278,5 +278,14 @@ describe('plan card helpers', () => {
     expect(recipeMinutes({})).toBeUndefined();
     expect(rowMinutes({ prepMinutes: 10, cookMinutes: 30 })).toBe(40);
     expect(rowMinutes({ prepMinutes: 10, cookMinutes: 30, leftover: true })).toBeUndefined();
+  });
+});
+
+describe('displayTags', () => {
+  it('drops tags the style or a stronger tag already says', () => {
+    expect(displayTags(['vegan', 'vegetarian', 'pescatarian', 'dairy-free'], 'vegan')).toEqual([]);
+    expect(displayTags(['vegetarian', 'pescatarian', 'nut-free'])).toEqual(['vegetarian', 'nut-free']);
+    expect(displayTags(['gluten-free', 'nut-free', 'omega-balanced'], 'gluten-free')).toEqual(['nut-free', 'omega-balanced']);
+    expect(displayTags(['gluten-free', 'omega-balanced'], 'keto')).toEqual(['gluten-free', 'omega-balanced']);
   });
 });

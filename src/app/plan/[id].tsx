@@ -29,6 +29,7 @@ import {
   SLOT_PLURAL,
   openLibraryMeal,
   planStats,
+  displayTags,
   tagLabel,
   topMicros,
   useWho,
@@ -149,7 +150,7 @@ export default function PlanDetail() {
           {plan.style ? <Pill label={PLAN_STYLES[plan.style].label} color={c.bg} bg={c.ink} /> : null}
           <Pill label={`${bandLabel(plan.band)} kcal`} color={plan.style ? undefined : c.bg} bg={plan.style ? undefined : c.ink} />
           <Pill label={`${days.length} ${days.length === 1 ? 'day' : 'days'}`} />
-          {plan.tags.map((t) => (
+          {displayTags(plan.tags, plan.style).map((t) => (
             <Pill key={t} label={tagLabel(t)} />
           ))}
         </Row>
