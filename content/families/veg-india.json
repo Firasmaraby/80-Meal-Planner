@@ -1,0 +1,2213 @@
+{
+  "id": "veg-india",
+  "name": "Indian Lacto-vegetarian",
+  "style": "vegetarian",
+  "cuisine": "Indian",
+  "regions": [
+    "Gujarat",
+    "Punjab",
+    "Rajasthan",
+    "Tamil Nadu",
+    "Karnataka"
+  ],
+  "summary": "A week of lacto-vegetarian home cooking from Gujarat, Punjab, Rajasthan, Tamil Nadu and Karnataka, with no eggs and no fish. Dals, rajma, kala chana, paneer and dahi carry the protein, and milk and dahi every day carry the B12 and calcium.",
+  "howItWorks": "**Protein from dal and dahi.** Moong, toor, chana dal, urad, rajma, kala chana and besan carry the lunches and dinners, with paneer, dahi and soya chunks in support. No dish leans on one food, and every day gets at least a fifth of its calories from protein.\n\n**B12 and calcium from dairy.** With no eggs, **B12** comes from milk and dahi every day: chai with most breakfasts, a dahi dish at lunch or dinner, and a cup of haldi doodh, a bowl of kheer or a glass of chaas on some days. Paneer, sesame and almonds add to the calcium.\n\n**Iron with vitamin C.** Rajma, kala chana and the dals bring the iron, and tomato in the masalas, lemon on the plate and pomegranate in the chaats help you absorb it.\n\n**Plant omega-3.** Ground flax goes into the idli podi, the til-alsi laddoo and the chikki, and walnuts into the fruit chaat and the laddoo. Canola oil does the everyday cooking, with a little ghee for flavour.\n\n**Cook once, eat twice.** Each dinner from Monday to Saturday makes the next day's lunch. Soak the rajma and kala chana the night before, and start the idli batter on Friday. Light holds 1600 to 1800 kcal only: it drops a snack on two days and trims the rice, roti, paneer, oil, nuts and jaggery.",
+  "signature": [
+    "veg-india-rajma-masala-brown-basmati-kachumber",
+    "veg-india-palak-paneer-missi-roti",
+    "veg-india-gujarati-kadhi-moong-khichdi-sambharo",
+    "veg-india-bisibele-bath-ghee-cashews"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-india-masala-chaas-roasted-cumin-mint"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-india-khaman-dhokla-green-chutney"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-india-cucumber-mint-raita-roasted-cumin"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-india-cucumber-mint-raita-roasted-cumin"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-india-soya-chunk-tikka-bites-lemon"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-india-khaman-dhokla-green-chutney"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-india-moong-sprouts-chaat-peanuts"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "veg-india-chilla-mint-flax-chutney-chai",
+      "name": "Moong and besan chilla with mint-peanut chutney and masala chai",
+      "inspiredBy": "Punjabi and Gujarati besan chilla, with moong dal for more protein",
+      "about": "Savoury lentil pancakes with spinach and onion, crisp at the edges and soft in the middle, with a sharp mint chutney thickened with roasted peanuts, a few soaked almonds on the side and a cup of cardamom chai. The **moong dal and besan together** bring plenty of protein, the milk in the chai brings calcium and vitamin B12, and the peanuts and almonds add vitamin E.",
+      "ingredients": [
+        {
+          "food": "chickpea-flour-besan-4a8aaa",
+          "g": 30
+        },
+        {
+          "food": "mung-beans-dahl-dried-raw-df3628",
+          "g": 38,
+          "swap": "legumes",
+          "note": "split and skinned, soaked overnight"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "finely chopped"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 12
+        },
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "dry-roasted, for the chutney"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 280
+        },
+        {
+          "food": "black-tea-infusion-5c7333",
+          "g": 70,
+          "note": "brewed strong, Assam or CTC if you can find it"
+        },
+        {
+          "food": "jaggery-577e2a",
+          "g": 3,
+          "note": "a little, for the chai"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "soaked overnight with the moong and peeled, to eat on the side"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.5
+        },
+        {
+          "food": "ajwain-carom-seeds-cac919",
+          "g": 0.5
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "The night before, rinse the moong dal and soak it in plenty of water for at least 4 hours, or overnight. Soak the almonds in a little water beside it.",
+        "Drain the dal and blitz it with the besan, half the lemon juice and enough water to make a pourable batter a little thicker than pancake batter. Stir in the onion, spinach, half the green chili, turmeric, chili powder, ajwain, cumin and salt.",
+        "For the chutney, dry-roast the peanuts until they smell nutty, then blitz them with the mint, the rest of the green chili and lemon juice and a splash of water until smooth and thick.",
+        "Heat a non-stick pan over medium heat and brush it with a little oil. Pour in a ladleful of batter and spread it thin and round. Cook until the underside is golden and the edges lift, about 3 minutes.",
+        "Brush a touch of oil on top, flip, and cook 2 minutes more until speckled brown. Repeat with the rest of the batter and keep the finished chillas warm under a plate.",
+        "For the chai, simmer the milk with the strong tea and cardamom for 3 or 4 minutes until it smells spicy and turns the colour of a caramel, then strain it into a mug and stir in the jaggery.",
+        "Serve the chillas with the chutney for dunking, the soaked almonds on the side and the chai alongside."
+      ],
+      "prepMin": 15,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Blend the dal and besan the night before and stir in the chopped vegetables in the morning, and breakfast takes 15 minutes. The plain batter keeps 2 days in the fridge and the chutney keeps 3."
+    },
+    {
+      "id": "veg-india-kanda-poha-peanuts-peas-chai",
+      "name": "Kanda poha with peanuts and peas, and a cup of masala chai",
+      "inspiredBy": "Maharashtrian kanda poha, a breakfast Gujarat loves too, with the classic chai alongside",
+      "about": "Fluffy flattened rice tossed with onion, turmeric, curry leaves, crunchy peanuts and sweet peas, finished with lemon, with a small bowl of thick dahi and a cup of ginger and cardamom chai alongside. The milk and dahi bring **calcium, vitamin B12** and protein, and the peanuts add a little vitamin E.",
+      "ingredients": [
+        {
+          "food": "poha-flattened-rice-thick-3e2722",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "jada poha, from any Indian grocer"
+        },
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "green-peas-raw-867b3e",
+          "g": 85,
+          "note": "fresh or frozen"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 120,
+          "note": "chopped"
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 2
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 4,
+          "note": "slit"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 70,
+          "note": "thick, strained dahi (hung curd), on the side"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 280
+        },
+        {
+          "food": "black-tea-infusion-5c7333",
+          "g": 70,
+          "note": "brewed strong, Assam or CTC if you can find it"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "jaggery-577e2a",
+          "g": 4,
+          "note": "a pinch goes in the poha, the rest in the chai"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 1.2
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.6
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Rinse the poha in a colander under cold water for a few seconds, just until it softens, then leave it to drain and puff for 10 minutes. Toss it gently with the turmeric, a pinch of salt and a pinch of the jaggery.",
+        "Heat the oil in a wide pan and add the mustard seeds. When they pop, add the peanuts and fry until golden, about 2 minutes.",
+        "Add the curry leaves and green chili, then the onion, and cook until soft and just turning golden, about 5 minutes. Add the peas and cook 2 minutes more.",
+        "Fold in the poha gently, so the flakes stay whole, and warm it through for 2 or 3 minutes. Finish with the lemon juice.",
+        "For the chai, simmer the milk with the strong tea, ginger and cardamom for 3 or 4 minutes, then strain it into a mug and stir in the rest of the jaggery. Serve the poha hot with the dahi and the chai."
+      ],
+      "prepMin": 8,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Rinse and drain the poha while the kettle boils and breakfast is on the table in 15 minutes."
+    },
+    {
+      "id": "veg-india-idli-sambar-flax-peanut-podi",
+      "name": "Idli with sambar and flax-peanut-sunflower chutney powder",
+      "inspiredBy": "Tamil and Karnataka tiffin: idli, sambar and agase (flax) chutney powder",
+      "about": "Soft steamed rice-and-urad idlis with a tangy sambar full of tomato and spinach and a spoonful of nutty seed and peanut chutney powder. It is a weekend project that makes two mornings, and the **toor, urad and flax together** bring protein, iron and plant omega-3 in a breakfast that tastes like a Chennai tiffin stop.",
+      "ingredients": [
+        {
+          "food": "rice-white-parboiled-raw-9b2567",
+          "g": 28,
+          "swap": "low_gi_grains",
+          "note": "idli rice is ideal"
+        },
+        {
+          "food": "black-gram-duhli-urad-dahl-split-dried-raw-051ef9",
+          "g": 14,
+          "swap": "legumes"
+        },
+        {
+          "food": "pigeon-peas-dahl-dried-raw-4b7ca5",
+          "g": 48,
+          "swap": "legumes"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "chopped"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 8
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 8
+        },
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 6
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "for the podi"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 4
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sambar-powder-b8a581",
+          "g": 3.5
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.8
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.2
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.4
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.8
+        },
+        {
+          "food": "fenugreek-seed-95f5a8",
+          "g": 0.3,
+          "note": "added to the urad soak"
+        }
+      ],
+      "steps": [
+        "The day before, soak the urad dal with the fenugreek seeds in one bowl and the rice in another, each in plenty of water, for 5 to 6 hours. Drain them and grind the urad to a fluffy, airy batter, then grind the rice coarse, like fine semolina.",
+        "Mix the two batters with your hand with half the salt, cover loosely and leave somewhere warm for 8 to 10 hours, until the batter has risen and smells pleasantly sour. In a cold kitchen, an oven with just the light on works.",
+        "Rinse the toor dal and cook it with the turmeric and plenty of water until completely soft, about 20 minutes in a pressure cooker or 45 in a covered pot. Mash it smooth.",
+        "For the sambar, heat half the oil in a pot, pop the mustard seeds, then add the hing, curry leaves and onion and cook until soft. Add the tomato, tamarind and sambar powder with enough water to make a loose, soupy sambar, and simmer until the tomato has broken down, about 12 minutes. Stir in the dal and the spinach, season with salt and simmer 5 minutes more, until the spinach is wilted and soft.",
+        "For the podi, dry-roast the flax, peanuts, sunflower seeds and sesame in a pan until the sesame turns golden and the nuts smell toasty, then cool and grind to a coarse powder with the chili powder and a pinch of salt. Loosen a spoonful with the rest of the oil when you serve, the way a Chennai tiffin shop does.",
+        "Steam the batter in an oiled idli mould for 12 minutes, until a toothpick comes out clean.",
+        "Serve the idlis with the sambar and the podi. Pack the second portion for tomorrow, and re-steam the idlis for 3 minutes."
+      ],
+      "prepMin": 40,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "weekend-project",
+        "makes-leftovers",
+        "mild"
+      ],
+      "tip": "At a lighter size you get about two idlis, and the sambar fills the bowl. A blender grinds a bigger batch better, so double it: the batter keeps 3 days in the fridge. No idli stand? Steam it in small oiled bowls."
+    },
+    {
+      "id": "veg-india-thayir-sadam-chana-dal-kosambari",
+      "name": "Curd rice with chana dal kosambari and pomegranate",
+      "inspiredBy": "Tamil thayir sadam with a Karnataka kosambari on the side",
+      "about": "Soft, cool curd rice tempered with mustard, ginger and curry leaves, with a crunchy salad of soaked chana dal, carrot and coconut, and a few pomegranate seeds on top. The **dahi and chana dal together** bring about 30 g of protein, and the dahi brings calcium and vitamin B12.",
+      "ingredients": [
+        {
+          "food": "rice-white-parboiled-raw-9b2567",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "ponni-style rice is ideal"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 180,
+          "note": "thick, strained dahi (hung curd), loosened with a splash of milk"
+        },
+        {
+          "food": "chana-dal-split-desi-chickpeas-dried-8aa3f1",
+          "g": 40,
+          "swap": "legumes",
+          "note": "soaked 2 hours"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "grated"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 35,
+          "note": "seeds"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 8,
+          "note": "grated"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "finely grated"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 1
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Soak the chana dal in water for 2 hours, then drain. Cook the rice with extra water until it is very soft and just breaking down, about 25 minutes, then mash it lightly and leave it to cool until warm.",
+        "Stir the dahi into the warm rice with a little salt, a splash of cold water to loosen it, and the ginger. It should be creamy, not stiff.",
+        "Heat the oil, pop the mustard seeds, then add the hing, half the green chili and half the curry leaves for 20 seconds. Pour the tempering over the curd rice.",
+        "For the kosambari, toss the drained chana dal with the carrot, onion, coconut, cilantro, lemon juice, the rest of the green chili and a pinch of salt.",
+        "Spoon the curd rice into a bowl, scatter the pomegranate over it and serve the kosambari alongside."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Soak the dal that morning and cook the rice the night before. Curd rice turns sour fast, so eat it the day you make it."
+    },
+    {
+      "id": "veg-india-rajma-masala-brown-basmati-kachumber",
+      "name": "Rajma masala with brown basmati and kachumber",
+      "inspiredBy": "Punjabi rajma chawal, finished with a little ghee",
+      "about": "Kidney beans simmered in a thick onion and tomato masala until the gravy clings, with brown basmati and a crunchy cucumber and onion kachumber. Rajma is a **great iron source**, and the tomato in the masala and the lemon on the salad bring vitamin C that helps you absorb it. It is even better tomorrow, so lunch is made.",
+      "ingredients": [
+        {
+          "food": "kidney-beans-dry-312b4c",
+          "g": 85,
+          "swap": "legumes",
+          "note": "soaked overnight"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 26,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 130,
+          "note": "finely chopped, some set aside raw for the kachumber"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 140,
+          "note": "chopped"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3,
+          "note": "slit"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 3,
+          "note": "to finish"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "diced, for the kachumber"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1.2
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.5,
+          "note": "ground"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.6
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1.2
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1
+        },
+        {
+          "food": "kasuri-methi-dried-fenugreek-leaves-6f4317",
+          "g": 0.6
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Soak the rajma in plenty of water overnight, at least 8 hours. Drain, cover with fresh water and cook with a pinch of salt until completely soft, about 25 minutes in a pressure cooker or 75 in a covered pot.",
+        "Rinse the brown basmati and cook it with a bay leaf in plenty of salted water until tender, about 25 minutes, then drain.",
+        "Heat the oil in a wide pot and sizzle the cumin. Add most of the onion and cook until deep golden, about 10 minutes, stirring so it does not catch.",
+        "Add the ginger, garlic and green chili and cook for a minute, then the tomato, turmeric, Kashmiri chili and ground coriander. Cook until the tomato collapses and the oil starts to separate at the edges, about 8 minutes.",
+        "Tip in the rajma with a ladle of its cooking water. Simmer 15 minutes, mashing a few beans against the side of the pot so the gravy thickens, then stir in the garam masala, crushed kasuri methi, ghee and half the cilantro.",
+        "Toss the cucumber and the raw onion with the lemon juice, a pinch of salt and the rest of the cilantro. Serve the rajma over the rice with the kachumber alongside, and pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Cook the soaked rajma in the pressure cooker the night before and the masala takes 30 minutes. At a lighter size, serve it with a few spoonfuls of rice, or a small roti instead."
+    },
+    {
+      "id": "veg-india-palak-paneer-missi-roti",
+      "name": "Palak paneer with missi roti",
+      "inspiredBy": "Punjabi palak paneer, with almond paste instead of cream, and Rajasthani missi roti",
+      "about": "Soft cubes of paneer in a silky spinach gravy with ginger, garlic and a little almond for richness, scooped up with warm missi roti, a whole-wheat and besan flatbread. The paneer, dahi and besan bring good **protein and calcium**, and the spinach brings folate and vitamin K. Tomorrow's lunch is cooked too.",
+      "ingredients": [
+        {
+          "food": "paneer-cheese-ecacc1",
+          "g": 50,
+          "note": "cut into small cubes"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 45,
+          "note": "thick, strained dahi (hung curd), whisked smooth"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 160,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 90,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "soaked in hot water for 10 minutes, then peeled"
+        },
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 24,
+          "swap": "low_gi_grains",
+          "note": "atta, for the missi rotis"
+        },
+        {
+          "food": "chickpea-flour-besan-4a8aaa",
+          "g": 18,
+          "note": "for the missi rotis"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 2,
+          "note": "for the rotis"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.5,
+          "note": "ground"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1
+        },
+        {
+          "food": "kasuri-methi-dried-fenugreek-leaves-6f4317",
+          "g": 0.6
+        },
+        {
+          "food": "ajwain-carom-seeds-cac919",
+          "g": 0.5,
+          "note": "in the missi roti dough"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Blanch the spinach in boiling water for 1 minute, then plunge it into cold water and drain. Blitz it smooth with the green chili and the soaked almonds, using a splash of water.",
+        "Heat the oil in a pan and sizzle the cumin. Add the onion and cook until soft and golden, about 8 minutes, then add the ginger and garlic for a minute.",
+        "Stir in the tomato, turmeric, Kashmiri chili and ground coriander and cook until it breaks down into a jammy masala, about 6 minutes.",
+        "Pour in the spinach puree and simmer gently for 5 minutes. Do not boil it hard, or the green turns dull. Slide in the paneer cubes and warm them through for 3 minutes, then take the pan off the heat and stir in the whisked dahi, garam masala, crushed kasuri methi and salt.",
+        "For the missi rotis, mix the atta and besan with the ajwain, a pinch of salt and warm water into a soft dough, rest it 10 minutes, roll thin rounds and cook them on a hot dry pan until they puff and show brown spots. Brush with the ghee.",
+        "Serve the palak paneer with the hot missi rotis, and pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 25,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "The dough keeps a day in the fridge, so you can roll it fresh for tomorrow's lunch."
+    },
+    {
+      "id": "veg-india-gujarati-kadhi-moong-khichdi-sambharo",
+      "name": "Gujarati kadhi with moong khichdi and carrot-bean sambharo",
+      "inspiredBy": "Gujarati kadhi khichdi with a warm sambharo of carrot and beans",
+      "about": "A comforting plate of soft moong dal and rice khichdi, a tangy-sweet besan and dahi kadhi tempered with curry leaves, and a quick mustard-seed stir-fry of carrot and green beans with crushed peanuts. The moong, besan and dahi together give you **about 40 g of protein**, and it tastes even better the second day.",
+      "ingredients": [
+        {
+          "food": "mung-beans-dahl-dried-raw-df3628",
+          "g": 58,
+          "swap": "legumes",
+          "note": "split and skinned"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 24,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "note": "thick, strained dahi (hung curd), for the kadhi"
+        },
+        {
+          "food": "chickpea-flour-besan-4a8aaa",
+          "g": 18
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 80,
+          "note": "cut into thin slices"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "grated"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "grated"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1.2
+        },
+        {
+          "food": "jaggery-577e2a",
+          "g": 4
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5,
+          "note": "stirred into the kadhi at the end"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "dry-roasted and crushed, for the sambharo"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1.2
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 1.2
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 1
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.2
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.7
+        }
+      ],
+      "steps": [
+        "Rinse the rice and soak it in water for 30 minutes, then drain. Cook it with the rinsed moong dal, half the turmeric, a pinch of salt and plenty of water until soft and porridge-like, about 35 minutes in a pot or 15 in a pressure cooker.",
+        "Whisk the dahi with the besan, the rest of the turmeric, half the ginger, half the green chili, the jaggery, salt and enough water to make a thin, pourable batter, until completely smooth. Heat it slowly, stirring, and simmer for 15 minutes until it thickens and the raw besan taste is gone.",
+        "For the kadhi tadka, heat half the oil, pop half the mustard seeds, then add the cumin, hing, curry leaves and Kashmiri chili for 20 seconds. Pour it into the kadhi and stir in half the cilantro and the lemon juice at the end.",
+        "For the sambharo, heat the rest of the oil in a pan, pop the remaining mustard seeds, then add the rest of the green chili and ginger. Toss in the green beans and carrot over high heat for 4 to 5 minutes, so they stay a little crunchy, then season with salt and scatter the crushed roasted peanuts over the top.",
+        "Serve the khichdi with the hot kadhi poured over, the sambharo alongside and the rest of the cilantro on top. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Day-old sour dahi makes a better kadhi. Keep the khichdi and the kadhi in separate containers, then warm the kadhi with a splash of water, because it thickens overnight."
+    },
+    {
+      "id": "veg-india-rajasthani-mixed-dal-baati",
+      "name": "Rajasthani mixed dal with spinach and baked whole-wheat baati",
+      "inspiredBy": "Rajasthani dal baati, with a lighter hand on the ghee and a Maharashtrian peanut-garlic chutney",
+      "about": "Four lentils simmered together with spinach and a garlic and chili tadka, with golden whole-wheat baatis baked until crusty outside and tender inside, and a peanut-garlic chutney on the side. The mixed dals and spinach bring **protein, iron and folate**, and the squeeze of lemon helps you absorb the iron. It reheats well for tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "pigeon-peas-dahl-dried-raw-4b7ca5",
+          "g": 30,
+          "swap": "legumes"
+        },
+        {
+          "food": "chana-dal-split-desi-chickpeas-dried-8aa3f1",
+          "g": 22,
+          "swap": "legumes"
+        },
+        {
+          "food": "mung-beans-dahl-dried-raw-df3628",
+          "g": 26,
+          "swap": "legumes",
+          "note": "split and skinned"
+        },
+        {
+          "food": "black-gram-duhli-urad-dahl-split-dried-raw-051ef9",
+          "g": 22,
+          "swap": "legumes"
+        },
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 28,
+          "swap": "low_gi_grains",
+          "note": "atta, for the baatis"
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 7,
+          "note": "most in the baati dough, the rest for the tadka"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 140,
+          "note": "chopped, a handful kept raw as rings to serve"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 12,
+          "note": "sliced, a few cloves kept for the chutney"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3
+        },
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "dry-roasted, for the chutney"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1.2
+        },
+        {
+          "food": "ajwain-carom-seeds-cac919",
+          "g": 0.8,
+          "note": "in the baati dough"
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.2
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1.5
+        },
+        {
+          "food": "amchur-dried-green-mango-powder-59b304",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        }
+      ],
+      "steps": [
+        "Rinse the four dals together and cook them with the turmeric, half the tomato and plenty of water until completely soft, about 25 minutes in a pressure cooker or 50 in a covered pot. Stir in the spinach for the last 3 minutes, then whisk everything smooth and season with salt and amchur.",
+        "Heat the oven to 200 C (400 F). Rub most of the ghee and the ajwain, with a pinch of salt, into the atta until it looks like damp crumbs and just holds when you squeeze a handful, then add just enough warm water to bring it to a firm dough. Shape it into tight balls, flatten the tops slightly and press a dent in the middle with your thumb.",
+        "Bake the baatis on a tray for about 25 minutes, turning them once halfway, until they are deep golden and sound hollow when tapped.",
+        "For the tadka, heat the oil and the rest of the ghee, sizzle the cumin, then add the garlic and green chili until the garlic is golden. Add the hing, the onion and the Kashmiri chili, cook until the onion is soft, about 6 minutes, then add the rest of the tomato for 2 minutes.",
+        "For the chutney, pound or blitz the roasted peanuts with the reserved garlic, a pinch of salt and a little of the lemon juice and water until it is a thick paste. Pour the tadka over the dal and squeeze in the rest of the lemon juice.",
+        "Break each hot baati in half, spoon plenty of dal over it and eat with the peanut-garlic chutney and the raw onion rings. Pack the second portion for tomorrow's lunch, and re-warm the baatis in a hot oven or a dry pan."
+      ],
+      "prepMin": 20,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Cook the dal in the pressure cooker while the baatis bake, and nothing needs watching."
+    },
+    {
+      "id": "veg-india-kala-chana-masala-roti-raita",
+      "name": "Kala chana masala with whole-wheat roti and carrot-mint raita",
+      "inspiredBy": "Punjabi and Rajasthani black chickpea curry",
+      "about": "Nutty black chickpeas in a dark, tangy onion and tomato masala with a hint of amchur, with warm whole-wheat roti and a cooling carrot and mint raita. Kala chana is rich in **protein, iron and fibre**, and the raita brings calcium and vitamin B12. It reheats beautifully.",
+      "ingredients": [
+        {
+          "food": "kala-chana-black-chickpeas-dried-64bbd0",
+          "g": 62,
+          "swap": "legumes",
+          "note": "soaked overnight"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 110,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "chopped"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 24,
+          "swap": "low_gi_grains",
+          "note": "atta, for the rotis"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 220,
+          "note": "thick, strained dahi (hung curd), for the raita"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "grated"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 6
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1.2
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.5,
+          "note": "ground"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1.2
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1
+        },
+        {
+          "food": "amchur-dried-green-mango-powder-59b304",
+          "g": 0.8
+        },
+        {
+          "food": "kala-namak-black-salt-6e28ca",
+          "g": 0.3,
+          "note": "for the raita"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Soak the kala chana in plenty of water overnight, at least 8 hours. Drain, cover with fresh water and cook with a pinch of salt until very tender, about 30 minutes in a pressure cooker or 90 in a covered pot. Keep the cooking water.",
+        "Heat the oil in a wide pan and sizzle the cumin. Add the onion and cook until deep golden, about 10 minutes, then add the ginger, garlic and green chili for a minute.",
+        "Stir in the tomato, turmeric, Kashmiri chili and ground coriander, and cook until the oil separates at the edges, about 8 minutes.",
+        "Add the chickpeas and a ladle of their water. Simmer 15 minutes, mashing a few against the side of the pan to thicken the gravy, then stir in the garam masala, amchur, salt and cilantro.",
+        "For the raita, whisk the dahi with the carrot, mint, kala namak and a pinch of salt.",
+        "For the rotis, mix the atta with warm water and a pinch of salt into a soft dough, rest it 10 minutes, roll thin rounds and cook them on a hot dry pan until they puff and show brown spots.",
+        "Serve the chana with the rotis and raita, and pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "At a lighter size, make one small, palm-sized roti. Soak the kala chana the night before and the pressure cooker does the rest."
+    },
+    {
+      "id": "veg-india-bisibele-bath-ghee-cashews",
+      "name": "Bisibele bath with ghee-fried cashews and coconut",
+      "inspiredBy": "Karnataka bisibele bath, the hot lentil rice from Mysuru, made with more dal than rice",
+      "about": "A Karnataka weekend special: toor and moong dal and rice cooked soft with carrot, beans, peas and tamarind, spiced with sambar powder, a pinch of cinnamon and clove, and topped with ghee-fried cashews and curry leaves. The dals and rice together bring **protein, iron and fibre**, and the tamarind and tomato give it a bright, sour edge. Lunch tomorrow is done.",
+      "ingredients": [
+        {
+          "food": "pigeon-peas-dahl-dried-raw-4b7ca5",
+          "g": 38,
+          "swap": "legumes"
+        },
+        {
+          "food": "mung-beans-dahl-dried-raw-df3628",
+          "g": 30,
+          "swap": "legumes",
+          "note": "split and skinned"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 28,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 80,
+          "note": "cut into short lengths"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "green-peas-raw-867b3e",
+          "g": 50,
+          "note": "fresh or frozen"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 90,
+          "note": "chopped"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 8
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "cashew-nuts-raw-e5f0d8",
+          "g": 8,
+          "note": "broken"
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 3
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1.5
+        },
+        {
+          "food": "sambar-powder-b8a581",
+          "g": 4
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "clove-ground-863cd5",
+          "g": 0.15
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 1
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.2
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        }
+      ],
+      "steps": [
+        "Rinse the toor and moong dal and the brown rice and cook them together with the turmeric and plenty of water until completely soft, about 30 minutes in a pressure cooker or 60 in a covered pot. Mash them together with the back of a ladle.",
+        "In a big pot, simmer the carrot, beans, peas, onion and tomato with the tamarind, sambar powder, cinnamon, cloves, half the grated coconut and a little salt in about a cup of water until the vegetables are tender, about 15 minutes.",
+        "Fold the dal and rice into the vegetables with enough hot water to make a thick, porridge-like consistency, and simmer for 10 minutes, stirring so it does not stick. It should flow slowly when you tilt the pot.",
+        "Heat the ghee in a small pan, pop the mustard seeds, then fry the cashews until golden. Add the curry leaves and hing for 10 seconds and pour it sizzling over the bath.",
+        "Serve the bisibele bath hot, with the rest of the coconut scattered over it. Pack the second portion for tomorrow, and loosen it with a splash of hot water when you reheat it."
+      ],
+      "prepMin": 25,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "weekend-project",
+        "makes-leftovers"
+      ],
+      "tip": "Use bisibele bath powder if you find it, and skip the cinnamon and cloves. Cook the dal and rice in the pressure cooker while the vegetables simmer, so it all comes together at once."
+    },
+    {
+      "id": "veg-india-matar-paneer-missi-roti",
+      "name": "Matar paneer in an almond-tomato gravy with missi roti",
+      "inspiredBy": "Punjabi matar paneer, with an almond and tomato gravy",
+      "about": "Soft paneer and sweet peas in a velvety onion, tomato and almond gravy finished with kasuri methi, with warm besan and whole-wheat missi roti. It is a slow-Sunday dinner, and the paneer and almonds bring **protein, calcium and vitamin E**, while the tomato brings vitamin C and lycopene.",
+      "ingredients": [
+        {
+          "food": "paneer-cheese-ecacc1",
+          "g": 54,
+          "note": "cut into cubes"
+        },
+        {
+          "food": "green-peas-raw-867b3e",
+          "g": 90,
+          "note": "fresh or frozen"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 110,
+          "note": "roughly chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 150,
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "soaked in hot water for 15 minutes, then peeled"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 3
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 50,
+          "note": "thick, strained dahi (hung curd), whisked smooth"
+        },
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 24,
+          "swap": "low_gi_grains",
+          "note": "atta, for the missi rotis"
+        },
+        {
+          "food": "chickpea-flour-besan-4a8aaa",
+          "g": 14,
+          "note": "for the missi rotis"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.5,
+          "note": "ground"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1.4
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1
+        },
+        {
+          "food": "kasuri-methi-dried-fenugreek-leaves-6f4317",
+          "g": 0.8
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Heat the oil and half the ghee in a heavy pan and sizzle the cumin. Add the onion and cook gently until soft and pale golden, about 8 minutes, then add the ginger, garlic and green chili for a minute.",
+        "Add the tomato, turmeric, Kashmiri chili and ground coriander, cover and cook until completely soft, about 10 minutes.",
+        "Let the masala cool a little, then blitz it with the drained almonds and a splash of water until silky smooth. Pour it back into the pan and simmer 5 minutes.",
+        "Add the peas and simmer 4 minutes. Slide in the paneer cubes and warm them through for 3 minutes, then take the pan off the heat and stir in the whisked dahi, garam masala, cardamom, crushed kasuri methi, the rest of the ghee and half the cilantro. Season with salt.",
+        "For the missi rotis, mix the atta and besan with a pinch of salt and warm water into a soft dough, rest it 10 minutes, roll thin rounds and cook them on a hot dry pan until they puff and show brown spots.",
+        "Serve the matar paneer hot with the missi rotis and the rest of the cilantro on top."
+      ],
+      "prepMin": 25,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "kid-friendly"
+      ],
+      "tip": "Make the gravy a day ahead, then warm it and add the paneer just before you eat. At a lighter size, one small, palm-sized roti is plenty."
+    },
+    {
+      "id": "veg-india-masala-chaas-roasted-cumin-mint",
+      "name": "Masala chaas with roasted cumin and mint",
+      "inspiredBy": "Gujarati and Rajasthani masala chaas",
+      "about": "Thin, cold spiced buttermilk with roasted cumin, mint, green chili and a pinch of black salt, the drink that rescues a hot afternoon all over western India. It is light and salty-sour, and the dahi brings **calcium and vitamin B12**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 165,
+          "note": "thick, strained dahi (hung curd), whisked with cold water until pourable"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 8,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 1,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1,
+          "note": "dry-roasted and crushed"
+        },
+        {
+          "food": "kala-namak-black-salt-6e28ca",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Dry-roast the cumin seeds in a small pan for 30 seconds until they smell toasty, then crush them.",
+        "Whisk the dahi with plenty of cold water until it is thin and pourable, like a smoothie.",
+        "Stir in the cumin, mint, cilantro, green chili, ginger, kala namak and salt. Pour over ice, or chill it for 15 minutes first."
+      ],
+      "prepMin": 5,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "veg-india-haldi-doodh-almonds",
+      "name": "Haldi doodh with almonds",
+      "inspiredBy": "haldi doodh, the turmeric milk many homes serve in the evening",
+      "about": "Golden milk simmered with turmeric, ginger and black pepper, blended with a few almonds for a creamy finish and sweetened with a little jaggery. A warm evening cup with **calcium, vitamin B12** and a little vitamin E from the almonds.",
+      "ingredients": [
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 300
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "soaked in hot water for 10 minutes, then peeled"
+        },
+        {
+          "food": "jaggery-577e2a",
+          "g": 6
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Blitz the peeled almonds with a third of the milk until smooth.",
+        "Warm the rest of the milk in a small pot with the turmeric, ginger, black pepper, cardamom and the almond paste. Simmer gently for 4 or 5 minutes and stir the pot often so the milk does not catch.",
+        "Stir in the jaggery until it melts, then pour into a mug and drink it warm."
+      ],
+      "prepMin": 5,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "veg-india-moong-sprouts-chaat-peanuts",
+      "name": "Moong sprouts chaat with tomato, onion and peanuts",
+      "inspiredBy": "Delhi and Gujarati sprout chaat",
+      "about": "Fresh moong sprouts tossed with tomato and onion, with lemon, chaat masala and a crunch of roasted peanuts. It is crunchy, tangy and cooling, with **protein and folate** from the sprouts and vitamin C from the lemon and tomato.",
+      "ingredients": [
+        {
+          "food": "mung-beans-sprouted-bean-sprouts-raw-b40acb",
+          "g": 120,
+          "swap": "legumes",
+          "note": "moong sprouts, from the store or sprouted at home"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "finely chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "dry-roasted and coarsely crushed"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 1.5,
+          "note": "minced"
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 1.5
+        },
+        {
+          "food": "kala-namak-black-salt-6e28ca",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Blanch the sprouts in boiling water for 30 to 60 seconds so they are tender but still crisp, then drain and cool under cold water.",
+        "Dry-roast the peanuts in a pan until they smell nutty, cool them and crush them coarsely.",
+        "Toss the sprouts with the tomato, onion, green chili, cilantro, lemon juice, chaat masala and kala namak.",
+        "Top with the peanuts just before you eat, so they stay crunchy."
+      ],
+      "prepMin": 10,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Cooking for small children, a pregnancy or anyone with a weaker immune system? Steam the sprouts for 4 or 5 minutes until hot right through, as Health Canada advises for them."
+    },
+    {
+      "id": "veg-india-apple-pomegranate-chaat-walnuts",
+      "name": "Apple and pomegranate chaat with almonds and walnuts",
+      "inspiredBy": "Delhi fruit chaat, with walnuts for crunch",
+      "about": "Crisp apple and ruby pomegranate seeds tossed with lemon, chaat masala and black salt, with toasted almonds and walnuts on top. It is sweet, sour and salty all at once, and the almonds bring **vitamin E** and the walnuts a little plant omega-3.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 90,
+          "note": "diced, skin on"
+        },
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 50,
+          "swap": "vit_c_fruit",
+          "note": "seeds"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 1
+        },
+        {
+          "food": "kala-namak-black-salt-6e28ca",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the almonds and walnuts in a dry pan until they smell nutty, then chop them.",
+        "Toss the apple and pomegranate with the lemon juice, chaat masala and kala namak.",
+        "Scatter the nuts on top and eat straight away."
+      ],
+      "prepMin": 8,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "veg-india-til-alsi-laddoo-walnuts",
+      "name": "Til-alsi laddoo with almonds and walnuts",
+      "inspiredBy": "North Indian winter til-alsi laddoo, bound with jaggery and a little ghee",
+      "about": "Toasted sesame, sunflower seeds, flax, almonds and walnuts, ground coarse and bound with melted jaggery and a little ghee into two small laddoos, in the style of the North Indian winter til-alsi laddoo. The sunflower seeds and almonds bring **vitamin E**, the sesame adds calcium and iron, and the flax and walnuts bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 5
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 8
+        },
+        {
+          "food": "jaggery-577e2a",
+          "g": 16
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 11,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 3
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Dry-roast the sesame and sunflower seeds in a pan until golden, then the ground flax for 1 minute until it smells nutty. Let everything cool, then pulse the seeds with the almonds and walnuts in a grinder a few times, to a coarse, slightly oily crumb.",
+        "Melt the jaggery and ghee together with no water and simmer until it foams, about 2 minutes.",
+        "Take the pan off the heat, stir in the crumb and the cardamom, and press it into two tight balls with oiled palms while it is still hot. If it won't hold, sprinkle in a teaspoon of warm milk and press again. They firm up as they cool."
+      ],
+      "prepMin": 10,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "veg-india-khaman-dhokla-green-chutney",
+      "name": "Khaman dhokla with green chutney",
+      "inspiredBy": "Gujarati khaman dhokla",
+      "about": "Soft, spongy steamed besan cakes with a sizzling mustard and sesame tadka, with a cilantro and mint chutney on the side. It is a classic Gujarati snack with about **14 g of protein**, and a little dahi in the batter keeps it tender.",
+      "ingredients": [
+        {
+          "food": "chickpea-flour-besan-4a8aaa",
+          "g": 34,
+          "note": "sifted"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 50,
+          "note": "thick, strained dahi (hung curd)"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 15
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 2
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 0.8
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.6
+        },
+        {
+          "food": "baking-soda-b09cc8",
+          "g": 0.5
+        },
+        {
+          "food": "jaggery-577e2a",
+          "g": 2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Whisk the besan with the dahi, half the lemon juice, the ginger, half the green chili, salt and enough water to make a smooth, thick batter that falls off the spoon in a ribbon. Rest it for 10 minutes.",
+        "Stir the baking soda into the batter just before steaming, then pour it into a greased dish and steam it for 12 to 15 minutes, until a toothpick comes out clean.",
+        "Blitz the cilantro and mint with the rest of the lemon juice, the rest of the green chili, the jaggery and a splash of water into a bright chutney.",
+        "Heat the oil, pop the mustard seeds, then add the sesame and curry leaves for 20 seconds and pour over the dhokla. Cut into squares and serve with the chutney."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "veg-india-rice-kheer-almonds",
+      "name": "Rice kheer with milk and almonds",
+      "inspiredBy": "North Indian chawal ki kheer",
+      "about": "Creamy rice pudding simmered slowly in milk with cardamom, jaggery and a few almonds. It is a gentle sweet treat that brings **calcium and vitamin B12**, and it feels like a festival day.",
+      "ingredients": [
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 300
+        },
+        {
+          "food": "rice-white-parboiled-raw-9b2567",
+          "g": 10,
+          "swap": "low_gi_grains",
+          "note": "soaked for 30 minutes"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "jaggery-577e2a",
+          "g": 5
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Drain the soaked rice and crush it lightly with your fingers.",
+        "Simmer the rice in the milk over low heat, stirring often so it does not catch, until the grains are very soft and the kheer is creamy, about 35 minutes.",
+        "Stir in the jaggery off the heat, then the cardamom and almonds. Serve warm, or chill it. It thickens as it cools."
+      ],
+      "prepMin": 5,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "At a lighter size it's a thinner, sippable kheer. Simmer it a few minutes longer if you like it thick."
+    },
+    {
+      "id": "veg-india-soya-chunk-tikka-bites-lemon",
+      "name": "Soya chunk tikka bites with lemon and onion rings",
+      "inspiredBy": "North Indian soya chunk tikka, seared in a hot pan instead of a tandoor",
+      "about": "Soya chunks marinated in lemon, ginger, garlic, ajwain and tikka spices, then seared until charred at the edges, with lemon and raw onion on the side. A high-protein snack with tikka-house flavour from a hot pan and **about 17 g of protein**, plus iron.",
+      "ingredients": [
+        {
+          "food": "soya-chunks-textured-soy-protein-dried-746293",
+          "g": 30,
+          "note": "boiled 8 minutes and squeezed dry"
+        },
+        {
+          "food": "chickpea-flour-besan-4a8aaa",
+          "g": 4,
+          "note": "to help the marinade cling"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "sliced into thin rings, for serving"
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 0.8
+        },
+        {
+          "food": "ajwain-carom-seeds-cac919",
+          "g": 0.4
+        },
+        {
+          "food": "amchur-dried-green-mango-powder-59b304",
+          "g": 0.4
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.5
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Boil the soya chunks in plenty of water for 8 minutes until soft, then drain, rinse and squeeze out every drop of water. Tear any big ones in half.",
+        "Toss the chunks with the besan, half the lemon juice, the ginger, garlic, Kashmiri chili, ajwain, amchur, cumin, garam masala and salt. Leave them to marinate for at least 15 minutes.",
+        "Heat the oil in a heavy pan over medium-high heat and sear the chunks, turning now and then, until golden and charred at the edges, about 8 minutes.",
+        "Serve hot with the onion rings and the rest of the lemon juice squeezed over."
+      ],
+      "prepMin": 20,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ]
+    },
+    {
+      "id": "veg-india-moong-kosambari",
+      "name": "Moong dal kosambari",
+      "inspiredBy": "Karnataka kosambari, the temple-festival salad",
+      "about": "A fresh salad of soaked moong dal with cucumber, coconut and lemon, tempered with mustard and curry leaves. It is light, crunchy and cooling, with a surprising amount of **protein and folate** for a snack.",
+      "ingredients": [
+        {
+          "food": "mung-beans-dahl-dried-raw-df3628",
+          "g": 32,
+          "swap": "legumes",
+          "note": "split and skinned, soaked 2 hours"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 8,
+          "note": "grated"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 6
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 2,
+          "note": "minced"
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Soak the moong dal in water for 2 hours until it swells and softens a little but still has a bite, then drain it well.",
+        "Toss the dal with the cucumber, coconut, cilantro, lemon juice, green chili and salt.",
+        "Heat the oil in a small pan, pop the mustard seeds, then add the curry leaves for 10 seconds and pour the tempering over the salad. Serve it the same day."
+      ],
+      "prepMin": 10,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "veg-india-cucumber-mint-raita-roasted-cumin",
+      "name": "Cucumber and mint raita with roasted cumin",
+      "inspiredBy": "North Indian raita, eaten by the bowl",
+      "about": "A big, cooling bowl of thick dahi with grated cucumber, mint, roasted cumin and a pinch of black salt, eaten with a spoon. It is simple, tangy and **cooling**, and it brings protein, calcium and vitamin B12.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "note": "thick, strained dahi (hung curd)"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "grated, with the extra water squeezed out"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 6
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1,
+          "note": "dry-roasted and crushed"
+        },
+        {
+          "food": "kala-namak-black-salt-6e28ca",
+          "g": 0.4
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Dry-roast the cumin seeds in a small pan for 30 seconds until they smell toasty, then crush them.",
+        "Whisk the dahi until smooth, then stir in the cucumber, mint, half the cumin and the kala namak.",
+        "Dust the top with the rest of the cumin and the chili powder, and eat it cold."
+      ],
+      "prepMin": 5,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "veg-india-peanut-seed-chikki",
+      "name": "Peanut, sunflower and flax chikki bites",
+      "inspiredBy": "Gujarati and Lonavala peanut chikki, made as small bites with sunflower seeds and alsi (flax)",
+      "about": "Roasted peanuts, sunflower seeds, sesame and ground flax tossed in hot jaggery and set into crisp little bites. It is crunchy and not too sweet, and the peanuts and sunflower seeds bring **vitamin E and niacin**, with plant omega-3 from the flax.",
+      "ingredients": [
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "dry-roasted and roughly chopped"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 5
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 6
+        },
+        {
+          "food": "jaggery-577e2a",
+          "g": 14
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Dry-roast the peanuts, sunflower seeds and sesame in a pan for a few minutes until they smell toasty, then stir in the ground flax for 30 seconds and tip everything into a bowl.",
+        "Melt the jaggery and ghee together in a small heavy pan over medium heat, stirring, until it bubbles, darkens a shade and a drop in cold water snaps, about 3 minutes. Watch it, because a small amount catches fast.",
+        "Take the pan off the heat, tip in the nuts and seeds and stir quickly until everything is coated. Drop small spoonfuls onto an oiled plate and leave them to cool and crisp, about 10 minutes."
+      ],
+      "prepMin": 10,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make four or five servings at once. A bigger pan of jaggery is easier to cook, and the bites keep 2 weeks in a tin."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-india-chilla-mint-flax-chutney-chai"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-india-thayir-sadam-chana-dal-kosambari"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-india-rajma-masala-brown-basmati-kachumber"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-india-moong-sprouts-chaat-peanuts"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-india-kanda-poha-peanuts-peas-chai"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-india-rajma-masala-brown-basmati-kachumber",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-india-palak-paneer-missi-roti"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-india-haldi-doodh-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-india-soya-chunk-tikka-bites-lemon"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-india-chilla-mint-flax-chutney-chai"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-india-palak-paneer-missi-roti",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-india-gujarati-kadhi-moong-khichdi-sambharo"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-india-moong-kosambari"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-india-apple-pomegranate-chaat-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-india-kanda-poha-peanuts-peas-chai"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-india-gujarati-kadhi-moong-khichdi-sambharo",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-india-rajasthani-mixed-dal-baati"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-india-til-alsi-laddoo-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-india-kanda-poha-peanuts-peas-chai"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-india-rajasthani-mixed-dal-baati",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-india-kala-chana-masala-roti-raita"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-india-peanut-seed-chikki"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-india-idli-sambar-flax-peanut-podi"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-india-kala-chana-masala-roti-raita",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-india-bisibele-bath-ghee-cashews"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-india-rice-kheer-almonds"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-india-idli-sambar-flax-peanut-podi",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-india-bisibele-bath-ghee-cashews",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-india-masala-chaas-roasted-cumin-mint"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-india-matar-paneer-missi-roti"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-india-haldi-doodh-almonds"
+        }
+      ]
+    }
+  ]
+}
