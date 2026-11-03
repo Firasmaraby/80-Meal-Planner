@@ -6,7 +6,7 @@ import { FOODS, FOOD_INDEX } from '@/state/catalog';
 import { compileSize, type FamilyFile } from './family';
 import { FOOD_BANS, PLAN_STYLES, gradeOptionsFor, isSpiceShelf, runStyleGates, styleNutrientGates, styleStructureGates } from './planStyles';
 import { familyDeps } from '@/state/familyDeps';
-import type { MealPlan, PlanStyle } from './types';
+import type { Food, MealPlan, PlanStyle } from './types';
 
 const fixture = fixtureJson as unknown as FamilyFile;
 const clone = (): FamilyFile => structuredClone(fixture);
@@ -135,6 +135,14 @@ describe('plan styles', () => {
     for (const n of ['Soy sauce, tamari', 'Corn tortilla', 'Brown rice, cooked', 'Quinoa, cooked', 'Gluten-free bread, white', 'Oats, dry', 'Buckwheat groats, roasted'])
       expect(ban(FOODS.find((f) => f.name === n)!), n).toBeUndefined();
     expect(styleStructureGates('gluten-free', standard(fixture), FOOD_INDEX).some((g) => /Whole wheat bread/.test(g.message))).toBe(true);
+  });
+
+  it('gluten-free flags Asian pastes and sauces that usually carry wheat', () => {
+    const food = (name: string) => ({ id: name, name, category: 'condiment', n: {}, servings: [] }) as unknown as Food;
+    for (const n of ['Doubanjiang (chili bean paste)', 'Gochujang', 'Hoisin sauce', 'Oyster sauce', 'Doenjang (Korean soybean paste)'])
+      expect(FOOD_BANS.gluten(food(n)), n).toMatch(/usually has wheat/);
+    expect(FOOD_BANS.gluten(food('Gochujang, gluten-free'))).toBeUndefined();
+    expect(FOOD_BANS.gluten(food('Miso'))).toBeUndefined();
   });
 
   it('dairy-free bans the dairy category, ghee and butter; paleo bans grains, legumes, dairy and added sugar', () => {

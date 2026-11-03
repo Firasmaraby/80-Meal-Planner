@@ -65,6 +65,9 @@ const NUT_WORDS = /\b(almonds?|walnuts?|pecans?|cashews?|pistachios?|hazelnuts?|
 function glutenReason(f: Food): string | undefined {
   const t = lower(f);
   if (/\bsoy sauce\b|shoyu/.test(t)) return /tamari|gluten[- ]free/.test(t) ? undefined : 'soy sauce (use tamari)';
+  // Asian pastes and sauces that are usually made with wheat flour or barley
+  const paste = t.match(/\b(doubanjiang|chili bean paste|gochujang|ssamjang|doenjang|hoisin|teriyaki|oyster sauce|black bean sauce)\b/);
+  if (paste && !/gluten[- ]free/.test(t)) return `${paste[1]} (usually has wheat)`;
   if (/\bwheat\b/.test(t) && !/gluten[- ]free|wheat[- ]free/.test(t)) return 'wheat';
   if (GLUTEN_GRAINS.test(t) && !GLUTEN_SAFE.test(t)) return t.match(GLUTEN_GRAINS)![1];
   if (['grain', 'prepared', 'sweet', 'other'].includes(f.category) && GLUTEN_PRODUCTS.test(t) && !GLUTEN_SAFE.test(t) && !/^(\w+ ){0,2}sauce/.test(t))
