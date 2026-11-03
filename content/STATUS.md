@@ -33,7 +33,6 @@ Every family in CATALOG.md moves through these steps:
 | nordic | 1E | shipped | Light 1600-1800 only (1400 can't be trimmed on four days), Standard, Big. Rye and oat porridge, gravlax, Danish fishcakes, lohikeitto, ärtsoppa, meatballs with lingonberry. Great omega balance. 20 recipes. |
 | east-europe | 1E | shipped | Light, Standard, Big (1400-3200). Kasha with porcini, borscht, gołąbki, lobio with sulguni, satsivi, pkhali, smoked sprats on rye, syrniki. Fatty fish four times. 21 recipes. |
 | north-america | 1E | shipped | Light, Standard, Big (1400-3200). Maple-mustard salmon, split pea soup with summer savory, blackened chicken Cobb, wild rice hotdish, chili, back bacon sandwich. 23 recipes. |
-
 | gf-latin | 2A | shipped | Gluten-free. Light 1600-1800 only, Standard, Big. Arepas, tapioca crepes, causa, galinhada, moqueca capixaba, tamales, ajiaco. Hidden-gluten tips on tortillas, masa, tapioca, stock. |
 | lowgi-south-asia | 2A | shipped | Diabetes-friendly (GL ≤70/2000 kcal, fibre ≥30 g). Light, Standard, Big (1400-3200); 1200-1400 can't trim. Moong cheela, thepla, millet upma, rajma, Kerala mackerel, barley haleem. Sunday brown basmati batch; honest small rice and roti. |
 | keto-med | 2A | shipped | Keto (net carbs ≤40 g). Light, Standard, Big (1400-3200). Souvlaki, trout plaki, cacciatore, moussaka without potato, gambas. No cheese (sat fat). Chia pudding on 4 breakfasts (every alternative broke sat fat or calcium). Sodium about 3,000 mg: watch. |
