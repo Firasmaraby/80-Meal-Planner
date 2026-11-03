@@ -196,7 +196,7 @@ export const rowMinutes = (meal: Pick<Meal, 'prepMinutes' | 'cookMinutes' | 'lef
 
 /** Tags worth showing next to a plan's style: drop the ones the style or a stronger tag already says (vegan says vegetarian). */
 const IMPLIED_BY: Record<string, string[]> = {
-  vegan: ['vegetarian', 'pescatarian', 'dairy-free'],
+  vegan: ['vegetarian', 'pescatarian', 'dairy-free', 'egg-free'],
   vegetarian: ['pescatarian'],
 };
 export function displayTags(tags: readonly string[], style?: string): string[] {

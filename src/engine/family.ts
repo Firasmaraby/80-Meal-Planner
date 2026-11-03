@@ -353,7 +353,7 @@ export function planFromWeek(family: FamilyFile, week: WeekDay[], size: PlanSize
   return plan;
 }
 
-/** The diet labels a plan earns from its foods: vegan, vegetarian, pescatarian, gluten-free, dairy-free, nut-free. */
+/** The diet labels a plan earns from its foods: vegan, vegetarian, pescatarian, gluten-free, dairy-free, egg-free, nut-free. */
 export function dietTagsOf(plan: Pick<MealPlan, 'days'>, foods: FoodIndex): string[] {
   const tags: [string, keyof typeof FOOD_BANS][] = [
     ['vegan', 'animal'],
@@ -361,6 +361,7 @@ export function dietTagsOf(plan: Pick<MealPlan, 'days'>, foods: FoodIndex): stri
     ['pescatarian', 'meat-poultry'],
     ['gluten-free', 'gluten'],
     ['dairy-free', 'dairy'],
+    ['egg-free', 'egg'],
     ['nut-free', 'nuts'],
   ];
   const ok = new Map(tags.map(([t]) => [t, true]));

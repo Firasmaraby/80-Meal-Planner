@@ -107,7 +107,7 @@ function paleoReason(f: Food): string | undefined {
   return undefined;
 }
 
-export type BanId = 'animal' | 'flesh' | 'meat-poultry' | 'dairy' | 'gluten' | 'nuts' | 'prenatal' | 'paleo';
+export type BanId = 'animal' | 'flesh' | 'meat-poultry' | 'dairy' | 'egg' | 'gluten' | 'nuts' | 'prenatal' | 'paleo';
 
 /** Each ban answers with the reason a food is out, or undefined when it is fine. */
 export const FOOD_BANS: Record<BanId, (f: Food) => string | undefined> = {
@@ -120,6 +120,7 @@ export const FOOD_BANS: Record<BanId, (f: Food) => string | undefined> = {
       : undefined;
   },
   dairy: (f) => animalReason(f, { dairy: true, egg: false, flesh: false, other: false }),
+  egg: (f) => animalReason(f, { dairy: false, egg: true, flesh: false, other: false }),
   gluten: glutenReason,
   nuts: (f) => (NUT_WORDS.test(lower(f).replace(/without nuts?|water chestnuts?/g, ' ')) ? 'nuts' : undefined),
   prenatal: prenatalReason,

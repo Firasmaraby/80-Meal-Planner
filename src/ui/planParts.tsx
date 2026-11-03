@@ -24,6 +24,7 @@ export const DIET_OPTIONS = [
   { key: 'vegan', label: 'Vegan' },
   { key: 'pescatarian', label: 'Pescatarian' },
   { key: 'dairy-free', label: 'Dairy-free' },
+  { key: 'egg-free', label: 'Egg-free' },
   { key: 'gluten-free', label: 'Gluten-free' },
 ] as const;
 
@@ -33,6 +34,7 @@ const SATISFIED_BY: Record<string, string[]> = {
   vegan: ['vegan'],
   pescatarian: ['pescatarian', 'vegetarian', 'vegan'],
   'dairy-free': ['dairy-free', 'vegan'],
+  'egg-free': ['egg-free', 'vegan'],
   'gluten-free': ['gluten-free'],
 };
 

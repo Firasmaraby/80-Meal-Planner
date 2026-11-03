@@ -61,3 +61,13 @@ describe('isProteinSource', () => {
     expect(isProteinSource(food('Plant-based burger from wheat seitan', 'prepared'))).toBe(false);
   });
 });
+
+describe('egg ban', () => {
+  it('catches eggs and mayonnaise but not eggplant or egg-free foods', () => {
+    expect(FOOD_BANS.egg(food('Egg, whole, boiled', 'egg'))).toBe('egg');
+    expect(FOOD_BANS.egg(food('Mayonnaise, regular', 'other'))).toBe('egg');
+    expect(FOOD_BANS.egg(food('Eggplant, raw', 'vegetable'))).toBeUndefined();
+    expect(FOOD_BANS.egg(food('Paneer cheese', 'dairy'))).toBeUndefined();
+    expect(FOOD_BANS.egg(food('Noodles, egg-free', 'grain'))).toBeUndefined();
+  });
+});

@@ -285,6 +285,7 @@ describe('displayTags', () => {
   it('drops tags the style or a stronger tag already says', () => {
     expect(displayTags(['vegan', 'vegetarian', 'pescatarian', 'dairy-free'], 'vegan')).toEqual([]);
     expect(displayTags(['vegetarian', 'pescatarian', 'nut-free'])).toEqual(['vegetarian', 'nut-free']);
+    expect(displayTags(['vegan', 'vegetarian', 'dairy-free', 'egg-free'], 'vegan')).toEqual([]);
     expect(displayTags(['gluten-free', 'nut-free', 'omega-balanced'], 'gluten-free')).toEqual(['nut-free', 'omega-balanced']);
     expect(displayTags(['gluten-free', 'omega-balanced'], 'keto')).toEqual(['gluten-free', 'omega-balanced']);
   });

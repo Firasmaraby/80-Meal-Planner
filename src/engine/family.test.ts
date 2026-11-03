@@ -194,11 +194,11 @@ describe('compiling a family', () => {
 
   it('diet tags come from the foods', () => {
     const plan = (...names: string[]) => ({ days: [{ day: 1, meals: [{ id: 'm', slot: 'dinner' as const, name: 'x', ingredients: names.map((n) => ({ foodId: FOODS.find((f) => f.name === n)!.id, grams: 100 })) }] }] });
-    const all = ['vegan', 'vegetarian', 'pescatarian', 'gluten-free', 'dairy-free', 'nut-free'];
+    const all = ['vegan', 'vegetarian', 'pescatarian', 'gluten-free', 'dairy-free', 'egg-free', 'nut-free'];
     expect(dietTagsOf(plan('Lentils, boiled', 'Kale, raw', 'Olive oil'), FOOD_INDEX)).toEqual(all);
-    expect(dietTagsOf(plan('Lentils, boiled', 'Greek yogurt, plain, low-fat'), FOOD_INDEX)).toEqual(['vegetarian', 'pescatarian', 'gluten-free', 'nut-free']);
-    expect(dietTagsOf(plan('Salmon, atlantic, farmed, baked or broiled', 'Broccoli, boiled'), FOOD_INDEX)).toEqual(['pescatarian', 'gluten-free', 'dairy-free', 'nut-free']);
-    expect(dietTagsOf(plan('Chicken breast, skinless, roasted'), FOOD_INDEX)).toEqual(['gluten-free', 'dairy-free', 'nut-free']);
+    expect(dietTagsOf(plan('Lentils, boiled', 'Greek yogurt, plain, low-fat'), FOOD_INDEX)).toEqual(['vegetarian', 'pescatarian', 'gluten-free', 'egg-free', 'nut-free']);
+    expect(dietTagsOf(plan('Salmon, atlantic, farmed, baked or broiled', 'Broccoli, boiled'), FOOD_INDEX)).toEqual(['pescatarian', 'gluten-free', 'dairy-free', 'egg-free', 'nut-free']);
+    expect(dietTagsOf(plan('Chicken breast, skinless, roasted'), FOOD_INDEX)).toEqual(['gluten-free', 'dairy-free', 'egg-free', 'nut-free']);
     expect(dietTagsOf(plan('Whole wheat bread', 'Almonds, dried', 'Egg, whole, boiled'), FOOD_INDEX)).toEqual(['vegetarian', 'pescatarian', 'dairy-free']);
   });
 });
