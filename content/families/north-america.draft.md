@@ -17,7 +17,7 @@ Fish: Friday Maritime salmon cakes (canned salmon with bones) and Sunday maple-m
 1. Mon: Sheet-pan chicken thighs with carrots, squash, apples and kale. Makes 2, so Tuesday lunch.
 2. Tue: Turkey and bean chili with sweet potato and spinach. Makes 2, so Wednesday lunch.
 3. Wed: Wild rice and mushroom hotdish with bison, cranberries and walnuts. Makes 2, so Thursday lunch.
-4. Thu: Québec-style split pea soup with back bacon, kale and toast. Makes 2, so Friday lunch.
+4. Thu: Québec-style split pea soup with back bacon, kale, spinach and toast. Makes 2, so Friday lunch.
 5. Fri: Maritime salmon cakes with sweet potato wedges and dill slaw. 1 serving.
 6. Sat: Maple baked beans with wilted kale on toast. Makes 2, so Sunday lunch.
 7. Sun (weekend project): Maple-mustard roasted salmon (cedar plank optional), squash, Brussels sprouts, quick-pickled onion. 1 serving.
