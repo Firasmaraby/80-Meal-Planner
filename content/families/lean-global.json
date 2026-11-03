@@ -1,0 +1,1475 @@
+{
+  "id": "lean-global",
+  "name": "Lean Global Kitchen",
+  "style": "fat-loss",
+  "cuisine": "Global",
+  "regions": [
+    "Mexico",
+    "Japan",
+    "China",
+    "the US",
+    "Italy"
+  ],
+  "summary": "Big, bright plates from Mexico, Japan, China, the US and Italy: turkey chili, burrito bowls on greens, miso soup with tofu, shrimp and soba, and a shrimp stir-fry piled with vegetables. It is real home cooking, built to keep you full on fewer calories.",
+  "howItWorks": "**Protein at every meal.** Turkey, chicken, pork, shrimp, tofu, yogurt, cottage cheese and eggs carry real protein, and fish three times (canned salmon Monday, salmon Wednesday, sardines Sunday) adds omega-3 and helps with vitamin D. Protein is the most filling thing on the plate, so a smaller meal still feels like a proper one.\n\n**Volume and fibre first.** Big salads, crunchy cabbage, a bowl of miso soup, greens and a pot of chili with mushrooms stirred in fill the plate. Beans, edamame or chickpeas turn up every day, with a little hominy, so you get **plenty of fibre** and feel full before the food runs out.\n\n**Cook once, eat twice.** Monday's chili, Tuesday's miso soup, Thursday's burrito bowls, Friday's stir-fry and Saturday's pork pozole each make two portions, so the next day's lunch is already done.\n\n**Flavour without fuss.** Lime, smoked paprika, ginger, miso, soy, lemon and oregano do the work, so nothing tastes like diet food.\n\n**What Light changes.** Vegetables never shrink, and the turkey, pork, shrimp, fish, eggs and breakfast yogurt barely move. Light trims the rice, soba, hominy, toast, oil and almonds, and some of the chicken, tofu, beans and cottage cheese. It keeps one snack a day.",
+  "signature": [
+    "lean-global-turkey-chili-black-beans",
+    "lean-global-chicken-burrito-bowl-greens",
+    "lean-global-miso-soup-tofu-shrimp-soba",
+    "lean-global-shrimp-vegetable-ginger-stir-fry"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2000,
+      "covers": [
+        "1800-2000",
+        "2000-2200"
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "lean-global-yogurt-blueberry-almond-crunch",
+      "name": "Greek yogurt bowl with blueberries and toasted almonds",
+      "inspiredBy": "Inspired by the North American yogurt parfait",
+      "about": "Thick nonfat Greek yogurt with juicy blueberries, a scatter of warm toasted almonds and a dusting of cinnamon. It gives you **over 30 g of protein** and a little crunch, so it keeps you going well past mid-morning.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 330,
+          "swap": "dairy_protein",
+          "note": "thick"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 120,
+          "swap": "berries",
+          "note": "fresh or thawed frozen"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan over medium heat for 3 to 4 minutes, shaking often, until they smell nutty. Tip them onto a plate.",
+        "Spoon the yogurt into a bowl and top with the blueberries.",
+        "Scatter on the warm almonds and dust with cinnamon."
+      ],
+      "prepMin": 5,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Toast a jar of almonds on Sunday and breakfast takes two minutes. Frozen blueberries work well: they thaw into a purple syrup while you make coffee."
+    },
+    {
+      "id": "lean-global-mushroom-spinach-scramble-toast",
+      "name": "Mushroom and spinach scramble on whole-wheat toast",
+      "inspiredBy": "Inspired by the American diner scramble",
+      "about": "A diner-style scramble of well-browned mushrooms, wilted spinach and scallion, soft-set and piled on hot toast. It is a filling plate with **plenty of protein and greens** before 9 a.m.",
+      "ingredients": [
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 150,
+          "note": "beaten"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 50,
+          "note": "toasted"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the oil in a non-stick pan over medium-high heat. Add the mushrooms in a single layer and leave them alone for 3 minutes, then stir and cook for another 3 minutes until browned and their juices have cooked off.",
+        "Add the onion and cook for 2 minutes until soft, then add the spinach by the handful and stir until it just wilts.",
+        "Beat the eggs with the salt and pepper. Pour them over the vegetables, turn the heat to low and fold gently for 2 to 3 minutes, until softly set and still glossy.",
+        "Scatter on the scallion and serve on the hot toast."
+      ],
+      "prepMin": 5,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Brown a double batch of mushrooms on Wednesday and keep half in the fridge for Friday, and that breakfast takes 8 minutes. A splash of hot sauce at the table is very good here."
+    },
+    {
+      "id": "lean-global-cottage-cheese-pineapple-almonds",
+      "name": "Cottage cheese with pineapple, lime and toasted almonds",
+      "about": "Creamy cottage cheese under juicy pineapple chunks, with warm toasted almonds and a squeeze of lime. It brings **a big helping of protein** and plenty of vitamin C, and takes ten minutes, or five with almonds toasted ahead.",
+      "ingredients": [
+        {
+          "food": "cottage-cheese-2-fat-49f49a",
+          "g": 230,
+          "swap": "dairy_protein",
+          "note": "plain"
+        },
+        {
+          "food": "pineapple-raw-7de748",
+          "g": 200,
+          "swap": "vit_c_fruit",
+          "note": "cut into chunks"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6,
+          "note": "from a lime"
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan over medium heat for 3 to 4 minutes, shaking often, until they smell nutty. Tip them onto a plate.",
+        "Spoon the cottage cheese into a bowl and top with the pineapple.",
+        "Squeeze over the lime and scatter on the warm almonds."
+      ],
+      "prepMin": 5,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Peaches, mango or a handful of berries work in place of pineapple."
+    },
+    {
+      "id": "lean-global-salmon-chickpea-tomato-lemon-salad",
+      "name": "Salmon, chickpea and tomato salad with lemon and oregano",
+      "inspiredBy": "Inspired by Tuscan tonno e fagioli, with canned salmon and chickpeas",
+      "about": "Flaked canned salmon over baby spinach with chickpeas, sweet cherry tomatoes and paper-thin onion, tossed in a bright olive oil and lemon dressing, with a slice of garlic toast. It is a quick cousin of Tuscan tuna and beans, and the salmon and chickpeas give you **omega-3, protein and fibre** on one big plate.",
+      "ingredients": [
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 14,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "bones and all"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 30,
+          "note": "from a lemon"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 7,
+          "note": "minced, with a little kept back to rub on the toast"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.4
+        },
+        {
+          "food": "chickpea-canned-drained-a7deb5",
+          "g": 110,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 110,
+          "note": "halved"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 140,
+          "swap": "leafy_greens",
+          "note": "baby spinach"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "sliced paper thin"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 45,
+          "note": "toasted"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Soak the onion slices in half the lemon juice for 5 minutes while you prep. It softens the bite.",
+        "Whisk the rest of the lemon juice with the minced garlic, oregano, Aleppo pepper, olive oil, salt and pepper.",
+        "Toss the chickpeas and tomatoes with most of the dressing and the onion with its juices.",
+        "Pile the spinach on a plate, spoon over the chickpea salad and flake the salmon on top. Drizzle with the last of the dressing.",
+        "Toast the bread, rub it with the garlic you kept back while it is hot, and serve alongside."
+      ],
+      "prepMin": 15,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Choose canned salmon with the bones in. They mash into the fish and are a good source of calcium."
+    },
+    {
+      "id": "lean-global-sesame-chicken-cabbage-crunch-salad",
+      "name": "Sesame-ginger chicken and cabbage crunch salad",
+      "inspiredBy": "Inspired by the Chinese-American chicken salad",
+      "about": "Poached chicken shredded over a mountain of crunchy cabbage, spinach, carrot and edamame, in a gingery rice vinegar, soy and lime dressing with a little toasted sesame oil. It is the **big crunchy bowl** of a Californian Chinese chicken salad, with a spoonful of mashed pineapple in place of the usual sugar.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "poached and shredded"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 150,
+          "note": "finely shredded"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "baby spinach, torn"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 60,
+          "swap": "legumes",
+          "note": "shelled, thawed"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20,
+          "note": "sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "leaves, roughly chopped"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2,
+          "swap": "healthy_oils",
+          "note": "toasted"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "pineapple-raw-7de748",
+          "g": 15,
+          "note": "mashed into the dressing"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 15
+        },
+        {
+          "food": "soy-sauce-shoyu-52e366",
+          "g": 8
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "finely grated"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10,
+          "note": "from a lime"
+        }
+      ],
+      "steps": [
+        "Cover the chicken with cold water in a small pot, add a slice of the ginger and the scallion tops, bring to a gentle simmer and cook for 12 to 15 minutes, until it is white all the way through. Lift it out, let it cool a few minutes, then shred it with two forks.",
+        "Whisk the rice vinegar, soy sauce, both oils, ginger, lime juice and the mashed pineapple into a dressing.",
+        "Toss the cabbage, spinach, carrot, edamame, scallion and cilantro with most of the dressing.",
+        "Pile onto a plate, top with the chicken, spoon over the rest of the dressing and finish with a few more cilantro leaves."
+      ],
+      "prepMin": 15,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Poach the chicken the night before and the salad takes five minutes at lunch. Keep the dressing separate until you eat."
+    },
+    {
+      "id": "lean-global-turkey-chili-black-beans",
+      "name": "Turkey chili with black beans, mushrooms and avocado",
+      "inspiredBy": "Inspired by American weeknight chili, with lean turkey and black beans",
+      "about": "A thick, smoky chili made with very lean ground turkey, black beans and tomatoes, with finely chopped mushrooms stirred in for extra volume and a meaty bite. Topped with avocado and cilantro, with lime stirred through. The **beans, turkey and vegetables together** make a bowl high in protein and fibre, and it makes tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "ground-turkey-fat-free-raw-604508",
+          "g": 180,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80,
+          "note": "chopped"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 110,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "minced"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 2.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 2
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 200
+        },
+        {
+          "food": "black-beans-canned-solids-and-liquid-reduced-sodium-d2c4b7",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 60,
+          "note": "diced, to serve"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "chopped, to serve"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "note": "from a lime"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Warm the oil in a large pot over medium heat. Cook the onion and mushrooms for 8 to 9 minutes, until soft and the mushroom juices have cooked off.",
+        "Add the turkey and break it up with a spoon. Cook for 5 to 6 minutes, until no pink is left.",
+        "Stir in the garlic, chili powder, cumin, smoked paprika, cayenne and oregano and cook for 30 seconds, until it smells toasty.",
+        "Add the crushed tomatoes, the beans, the salt and a splash of water. Simmer, partly covered, for 25 minutes, stirring now and then, until thick and the flavours have come together.",
+        "Stir in the spinach and let it wilt for a minute, then the lime juice. Divide into two portions. Top one with the avocado and cilantro and eat it now.",
+        "Cool the second portion, cover and refrigerate for tomorrow's lunch. Add its toppings fresh when you reheat it."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "This freezes well for up to 3 months, so doubling it is an easy way to bank two more lunches."
+    },
+    {
+      "id": "lean-global-miso-soup-tofu-shrimp-soba",
+      "name": "Miso soup with tofu, shrimp, edamame and soba",
+      "inspiredBy": "Inspired by Japanese miso shiru, with shrimp and soba added to make it a meal",
+      "about": "A big, comforting bowl of mushroom-ginger miso soup with soft tofu, shrimp, edamame, cabbage, carrot and a little soba, so it eats like a noodle-shop dinner. The tofu and shrimp give you **plenty of lean protein**, and it comes together in about 40 minutes. It makes two portions, so lunch tomorrow is ready.",
+      "ingredients": [
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 110,
+          "note": "sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "cut into thin matchsticks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 160,
+          "swap": "leafy_greens",
+          "note": "finely sliced"
+        },
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 300,
+          "swap": "lean_protein",
+          "note": "cut into cubes, handled gently"
+        },
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "peeled and deveined"
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 60,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "soba-noodles-dry-2dc785",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "buckwheat"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 15
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 25,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 3,
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Warm the oil in a big pot over medium-high heat. Brown the mushrooms for 4 to 5 minutes until golden, then add the ginger, garlic and carrot for a minute.",
+        "Pour in about 400 ml of water per portion (800 ml for both), or 300 ml per portion if your list shows less than a tablespoon of miso, so the broth stays full-flavoured. Bring to a simmer and cook for 10 minutes, until the mushrooms have flavoured the broth.",
+        "Meanwhile, cook the soba in a separate pot of boiling water for the time on the packet, usually 4 to 5 minutes. Drain and rinse under cold water so the noodles do not turn gummy.",
+        "Add the cabbage and edamame to the broth and simmer for 2 minutes, then slide in the tofu and shrimp and cook for 2 to 3 minutes more, until the shrimp are pink and curled. Turn the heat to low.",
+        "Ladle a little hot broth into a small bowl, stir the miso into it until smooth, then stir it back into the pot. Do not boil the soup after the miso goes in, or it loses its flavour.",
+        "Divide the soba into two bowls and ladle the soup over. Finish with the scallion and sesame seeds, and eat one now. Cool the second portion of soup separately from its noodles, cover and refrigerate for tomorrow."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Keep the soba separate from the soup in the fridge and combine them when you reheat, so the noodles stay springy. Do not boil the soup again, or the miso goes dull."
+    },
+    {
+      "id": "lean-global-chicken-burrito-bowl-greens",
+      "name": "Smoky lime chicken burrito bowl on crisp greens",
+      "inspiredBy": "Inspired by the Tex-Mex burrito bowl, with greens in place of most of the rice",
+      "about": "Smoky lime chicken, black beans and a small scoop of brown rice on a big bed of romaine, with crunchy cabbage, fresh pico de gallo and avocado. It has **all the burrito-bowl flavour** with the greens doing most of the filling. Makes two portions, so the second is tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 170,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15,
+          "note": "from a lime"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1.5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "black-beans-canned-solids-and-liquid-reduced-sodium-d2c4b7",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 110,
+          "swap": "leafy_greens",
+          "note": "shredded"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 40,
+          "note": "finely shredded"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 110,
+          "note": "diced, for the pico"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely diced, for the pico"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Mix half the lime juice with the garlic, chili powder, smoked paprika, cumin and a pinch of the salt, and coat the chicken in it. Leave for 15 minutes or up to 8 hours in the fridge.",
+        "Cook the brown rice in plenty of simmering water for about 30 minutes until tender, then drain. Make enough for both portions.",
+        "Stir the tomato, onion and cilantro with the rest of the lime juice, a pinch of cayenne and the rest of the salt to make a quick pico de gallo.",
+        "Warm the oil in a skillet over medium-high heat and cook the chicken for 5 to 6 minutes a side, until browned and cooked through. Rest it for 5 minutes, then slice. Warm the beans in the same pan for a minute.",
+        "Build the bowls on a bed of romaine and cabbage with the rice, beans, chicken, pico and avocado.",
+        "Pack the second portion for tomorrow, keeping the greens and pico in a separate container from the warm parts so nothing goes soggy."
+      ],
+      "prepMin": 25,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Marinate the chicken in the morning and dinner takes 20 minutes."
+    },
+    {
+      "id": "lean-global-shrimp-vegetable-ginger-stir-fry",
+      "name": "Shrimp and vegetable stir-fry with ginger, garlic and brown rice",
+      "inspiredBy": "Inspired by Cantonese-style shrimp and vegetable stir-fry",
+      "about": "Plump shrimp tossed in a hot pan with broccoli, spinach and mushrooms in a savoury ginger-garlic sauce, over a modest scoop of brown rice. The shrimp bring **lean protein for very few calories**, and the heap of vegetables keeps the plate big. The second portion is tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "peeled and deveined"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 170,
+          "note": "small florets"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 120,
+          "swap": "leafy_greens",
+          "note": "mature or baby spinach, washed"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 80,
+          "note": "quartered"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20,
+          "note": "cut into lengths"
+        },
+        {
+          "food": "soy-sauce-shoyu-52e366",
+          "g": 8
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 6
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 3,
+          "note": "toasted"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2,
+          "swap": "healthy_oils",
+          "note": "toasted"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        }
+      ],
+      "steps": [
+        "Cook the brown rice in plenty of simmering water for about 30 minutes until tender, then drain. Make enough for both portions.",
+        "Stir the soy sauce and rice vinegar with a tablespoon of cold water in a small bowl. Pat the shrimp dry.",
+        "Heat a large wok or skillet over high heat until it is properly hot. Add half the oil and the shrimp, in two batches if your pan is small, and cook for about 90 seconds a side until just pink. Tip them out.",
+        "Add the remaining oil and the broccoli and mushrooms. Stir-fry for 3 to 4 minutes, until the broccoli is bright green and still has bite. Add the garlic, ginger, scallion and spinach for the last minute, stirring until the spinach just wilts.",
+        "Return the shrimp, pour in the sauce and toss over high heat for 30 seconds, until it bubbles. The spinach adds its juices, so you get a light, savoury pan sauce that soaks into the rice. Finish with the sesame oil and scatter with the sesame seeds.",
+        "Serve one portion over the rice. Cool the second portion with its rice, cover and refrigerate for tomorrow."
+      ],
+      "prepMin": 20,
+      "cookMin": 20,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Reheat the leftovers in a hot pan for 2 minutes rather than the microwave, so the shrimp stay tender. Many frozen shrimp are brined, so look for a bag with no added salt or phosphates."
+    },
+    {
+      "id": "lean-global-sardine-chickpea-tomato-stew-toast",
+      "name": "Sicilian-style sardine, chickpea and tomato stew with garlic toast",
+      "inspiredBy": "Inspired by Sicilian pasta con le sarde and Tuscan chickpea stews",
+      "about": "Canned sardines folded into a garlicky tomato and chickpea stew with carrot, fennel seed and spinach, finished with lemon and served with garlic toast. Sardines and fennel are the classic Sicilian pair, and because you eat the soft bones it carries **omega-3 and calcium**, with some vitamin D.",
+      "ingredients": [
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "finely chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "finely diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "sliced, with a little kept back to rub on the toast"
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "fennel-seed-8a14d7",
+          "g": 1
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 180
+        },
+        {
+          "food": "chickpea-canned-drained-a7deb5",
+          "g": 130,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 100,
+          "swap": "fatty_fish",
+          "note": "bones and all"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "note": "from a lemon"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 50,
+          "note": "toasted"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the oil in a wide pot over medium heat. Cook the onion and carrot for 7 to 8 minutes, until soft and starting to turn golden. Add most of the garlic, the fennel seed and the Aleppo pepper and cook for 30 seconds, until fragrant.",
+        "Add the oregano, crushed tomatoes, chickpeas, salt and a splash of water. Simmer for 15 minutes, until thick and glossy.",
+        "Stir in the spinach by the handful until it wilts, then break the sardines into big pieces and fold them in gently. Warm through for 2 minutes and finish with the lemon juice and pepper.",
+        "Toast the bread and rub it with the reserved garlic while it is hot. Serve the stew in a wide bowl with the toast."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Choose sardines packed in olive oil, and keep the bones in: they melt in the stew and carry the calcium."
+    },
+    {
+      "id": "lean-global-pork-pozole-rojo",
+      "name": "Pork pozole rojo with cabbage, lime and avocado",
+      "inspiredBy": "Inspired by Jalisco-style pozole rojo, with lean pork tenderloin in place of shoulder",
+      "about": "A deep red guajillo chile broth with tender lean pork and white hominy, finished with a big pile of crunchy cabbage, cilantro, lime and a little avocado. It is **lean, filling and high in protein**, and the toppings make it feel like a feast. It is the weekend project, and the second portion is Sunday's lunch.",
+      "ingredients": [
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "trimmed, cut into bite-size chunks"
+        },
+        {
+          "food": "guajillo-chile-dried-eb6416",
+          "g": 10,
+          "note": "stemmed and seeded"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80,
+          "note": "quartered"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "peeled"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1.5
+        },
+        {
+          "food": "hominy-canned-white-039c3a",
+          "g": 160,
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 80,
+          "note": "finely shredded, to serve"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped, to serve"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12,
+          "note": "from a lime"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "diced, to serve"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Put half the onion, half the garlic and a pinch of the cumin in a large pot with about 1 litre of water. Bring to a simmer and cook for 20 minutes to make a quick broth.",
+        "Meanwhile, toast the guajillo chiles in a dry pan over medium heat for about 30 seconds a side, until fragrant. Do not let them blacken. Soak them in hot water for 15 minutes.",
+        "Blend the soaked chiles with the rest of the onion and garlic, the rest of the cumin, the oregano, half the salt and a cup or so of their soaking water until smooth.",
+        "Lift the onion out of the broth. Strain the chile sauce into the pot, add the hominy and simmer for 20 minutes, until the broth is deep red and tastes rich.",
+        "Add the pork and the rest of the salt and keep the pot at a bare simmer for 10 to 12 minutes, until the pork is just cooked through and still juicy. Stir in half the lime juice.",
+        "Ladle into big bowls and pile on the cabbage, cilantro and avocado, with the rest of the lime. Cool the second portion without its toppings and refrigerate for tomorrow."
+      ],
+      "prepMin": 25,
+      "cookMin": 55,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "weekend-project",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Tenderloin stays juicy only if it never boils, so keep the pot barely trembling once the pork goes in, and warm the leftover gently. Make the chile sauce a day ahead and the project is half done."
+    },
+    {
+      "id": "lean-global-blackened-salmon-garlicky-greens",
+      "name": "Blackened salmon with garlicky greens, lemon and brown rice",
+      "inspiredBy": "Inspired by Louisiana blackened fish",
+      "about": "Sockeye salmon with a smoky, peppery Cajun crust, seared in a hot pan and served with garlicky broccoli and spinach, a squeeze of lemon and a small scoop of brown rice. The salmon gives you **omega-3 and vitamin D**, and the crust makes a lean fillet taste rich.",
+      "ingredients": [
+        {
+          "food": "salmon-sockeye-red-raw-728ce6",
+          "g": 205,
+          "swap": "fatty_fish",
+          "note": "skin-on fillet"
+        },
+        {
+          "food": "cajun-blackening-spice-8a7316",
+          "g": 5,
+          "note": "check the label for salt"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "sliced"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 130,
+          "note": "small florets"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 130,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "note": "from a lemon"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        }
+      ],
+      "steps": [
+        "Start the rice first: simmer the brown rice in plenty of water for about 30 minutes until tender, then drain.",
+        "Pat the salmon dry, rub it all over with most of the oil and press the Cajun seasoning firmly onto the flesh side.",
+        "Heat a heavy skillet, cast iron if you have one, over medium-high heat for about 3 minutes until very hot, and turn the fan on, because blackening smokes a little. Lay the salmon in flesh side down and cook for about 3 minutes, until a dark crust forms. Flip it and cook the skin side for 2 to 4 minutes more, until the centre is just opaque. A little translucent in the middle is fine. Move the salmon to a plate.",
+        "Turn the heat to medium. Add the rest of the oil and the garlic to the same skillet for 20 seconds, then the broccoli and a splash of water, cover and steam for 3 minutes. Add the spinach by the handful and stir until just wilted, about 2 minutes.",
+        "Season the greens with half the lemon juice and the pepper. Serve the salmon over the rice with the greens alongside and the rest of the lemon squeezed over the fish."
+      ],
+      "prepMin": 10,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Oiling the fish rather than the pan is the classic blackening trick: the crust sets without sticking. If the blend is very salty, use a little less."
+    },
+    {
+      "id": "lean-global-edamame-sea-salt-chili",
+      "name": "Warm edamame with lemon and Aleppo pepper",
+      "inspiredBy": "Inspired by Japanese izakaya edamame",
+      "about": "A bowl of warm shelled edamame with a little salt, a squeeze of lemon and a pinch of Aleppo pepper. It is **plant protein and fibre** in a snack that takes five minutes.",
+      "ingredients": [
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 120,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 4,
+          "note": "from a lemon"
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Simmer the edamame in a small pot of water with a pinch of the salt for 3 to 4 minutes, until bright green and tender. Drain well.",
+        "Toss with the lemon juice, the rest of the salt and the Aleppo pepper and eat warm."
+      ],
+      "prepMin": 1,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lean-global-apple-almonds",
+      "name": "Apple slices with almonds",
+      "about": "Crisp apple slices with some almonds, toasted if you have a minute. The apple brings **fibre and crunch**, and the almonds make it last.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 180,
+          "note": "cored and sliced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "toasted if you like"
+        }
+      ],
+      "steps": [
+        "Slice the apple into wedges and fan them on a plate.",
+        "Serve with the almonds alongside, warm from a dry pan if you have a minute."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lean-global-smoky-roasted-chickpeas",
+      "name": "Smoky roasted chickpeas",
+      "inspiredBy": "Inspired by Spanish garbanzos fritos",
+      "about": "Canned chickpeas roasted until crisp with smoked paprika, cumin and a little salt. They give you **fibre and plant protein** in something that crunches like chips.",
+      "ingredients": [
+        {
+          "food": "chickpea-canned-drained-a7deb5",
+          "g": 130,
+          "swap": "legumes",
+          "note": "rinsed and dried well"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C. Pat the chickpeas very dry with a clean towel, which is the secret to crunch.",
+        "Toss with the olive oil, paprika, cumin and salt on a baking tray in one layer.",
+        "Roast for 20 to 25 minutes, shaking the tray halfway, until golden and crisp. They crisp up more as they cool."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Keep leftovers in an open container, not a sealed one, so they stay crisp for a day."
+    },
+    {
+      "id": "lean-global-lemony-chickpea-hummus-veg-sticks",
+      "name": "Lemony sesame chickpea hummus with carrot and broccoli sticks",
+      "inspiredBy": "Inspired by Levantine hummus, with toasted sesame seeds in place of tahini",
+      "about": "A quick, smooth hummus made from chickpeas, toasted sesame seeds, lemon, garlic and a little cumin, with raw carrot and broccoli sticks for scooping. The vegetables bring **crunch, fibre and vitamin A**, and it takes ten minutes.",
+      "ingredients": [
+        {
+          "food": "chickpea-canned-drained-a7deb5",
+          "g": 110,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 8,
+          "note": "toasted"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 18,
+          "note": "from a lemon"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "peeled"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 80,
+          "note": "cut into small florets"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Toast the sesame seeds in a dry pan over medium heat for 2 minutes, until golden and fragrant. Crush them in a mortar or whizz them in a spice grinder until sandy. A spoonful of seeds just spins around in a food processor.",
+        "Put the ground sesame in a small food processor with the chickpeas, lemon juice, garlic, oil, cumin, salt and a splash of cold water. Blitz until smooth, adding water a spoonful at a time until it is creamy and spoonable, scraping down the sides once or twice.",
+        "Serve with the carrot sticks and broccoli florets."
+      ],
+      "prepMin": 10,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Double the hummus. It keeps for 4 days in the fridge, and a few ice cubes in the blender make it extra creamy."
+    },
+    {
+      "id": "lean-global-cottage-cheese-tomatoes-pepper",
+      "name": "Cottage cheese with cherry tomatoes and cracked pepper",
+      "about": "Cool, creamy cottage cheese with sweet halved cherry tomatoes, a squeeze of lemon and lots of black pepper. It is a savoury, **very high-protein snack** that takes two minutes.",
+      "ingredients": [
+        {
+          "food": "cottage-cheese-2-fat-49f49a",
+          "g": 160,
+          "swap": "dairy_protein",
+          "note": "plain"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100,
+          "note": "halved"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "note": "from a lemon"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Spoon the cottage cheese into a bowl.",
+        "Pile the tomatoes on top, squeeze over the lemon and finish with a pinch of salt and plenty of cracked pepper."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lean-global-pineapple-lime-chili",
+      "name": "Pineapple with lime and chili",
+      "inspiredBy": "Inspired by Mexican fruta con limón y chile",
+      "about": "Juicy pineapple chunks with a squeeze of lime and a dusting of cayenne, the way Mexican street carts serve it. It is **sweet, sharp and big on volume** for very few calories.",
+      "ingredients": [
+        {
+          "food": "pineapple-raw-7de748",
+          "g": 220,
+          "swap": "vit_c_fruit",
+          "note": "cut into chunks"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6,
+          "note": "from a lime"
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Toss the pineapple chunks with the lime juice.",
+        "Dust with the cayenne and a tiny pinch of salt, and eat right away."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lean-global-cottage-cheese-pineapple-almonds"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lean-global-salmon-chickpea-tomato-lemon-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lean-global-turkey-chili-black-beans"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-global-edamame-sea-salt-chili"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lean-global-yogurt-blueberry-almond-crunch"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lean-global-turkey-chili-black-beans",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lean-global-miso-soup-tofu-shrimp-soba"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-global-apple-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-global-pineapple-lime-chili"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lean-global-mushroom-spinach-scramble-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lean-global-miso-soup-tofu-shrimp-soba",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lean-global-blackened-salmon-garlicky-greens"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-global-edamame-sea-salt-chili"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lean-global-yogurt-blueberry-almond-crunch"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lean-global-sesame-chicken-cabbage-crunch-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lean-global-chicken-burrito-bowl-greens"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-global-lemony-chickpea-hummus-veg-sticks"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-global-cottage-cheese-tomatoes-pepper"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lean-global-mushroom-spinach-scramble-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lean-global-chicken-burrito-bowl-greens",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lean-global-shrimp-vegetable-ginger-stir-fry"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-global-cottage-cheese-tomatoes-pepper"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lean-global-yogurt-blueberry-almond-crunch"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lean-global-shrimp-vegetable-ginger-stir-fry",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lean-global-pork-pozole-rojo"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-global-smoky-roasted-chickpeas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-global-apple-almonds"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lean-global-yogurt-blueberry-almond-crunch"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lean-global-pork-pozole-rojo",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lean-global-sardine-chickpea-tomato-stew-toast"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-global-smoky-roasted-chickpeas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-global-pineapple-lime-chili"
+        }
+      ]
+    }
+  ]
+}
