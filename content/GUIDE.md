@@ -39,11 +39,11 @@ Each day, at every band the family claims (checked at the band's lowest and high
 - **Sodium** at most 3,000 mg a day up to 2,000 kcal, then in proportion to calories (about 4,800 mg at 3,200 kcal).
   Heart-healthy families keep their own 2,000 mg. The bar is **defensible, not strict**: about what an average Canadian
   eats, so food can be properly seasoned. When a day is over, trim in this order, least taste lost first:
-  1. no-salt-added canned beans (`chickpeas-canned-nsa`, `black-beans-canned-nsa`, `kidney-beans-canned-nsa`,
-     `white-beans-canned-nsa`, `pinto-beans-canned-nsa`, `lentils-canned-nsa`), or rinse regular cans and say so;
+  1. no-salt-added canned beans and lentils (`chickpeas-canned-no-salt-added-drained-742cc3`, `black-beans-canned-no-salt-added-drained-33bee5`, `kidney-beans-canned-no-salt-added-drained-89a75f`,
+     `white-beans-canned-no-salt-added-drained-65e6ca`, `pinto-beans-canned-no-salt-added-drained-0b80db`, `lentils-canned-no-salt-added-drained-c1edbd`), or rinse regular cans and say so;
   2. trim, don't remove, the added salt, and finish with lemon, vinegar, herbs, garlic or chili;
   3. cheese as a garnish, not a layer;
-  4. soy sauce (or `soy-sauce-reduced-sodium`) and miso to taste, in teaspoons;
+  4. soy sauce (or `soy-sauce-reduced-sodium-de4ba7`) and miso to taste, in teaspoons;
   5. one bread or tortilla portion a meal.
 
   Less salt means less iodine from iodized salt; iodine is already "hard from food", so keep iodized salt as the salt.
