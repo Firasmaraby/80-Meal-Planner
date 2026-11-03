@@ -1,0 +1,1958 @@
+{
+  "id": "muscle-middle-east",
+  "name": "Build Muscle Middle Eastern",
+  "style": "muscle",
+  "cuisine": "Middle Eastern",
+  "regions": [
+    "Lebanon",
+    "Syria",
+    "Egypt",
+    "Turkey",
+    "the Gulf"
+  ],
+  "summary": "A week of real Middle Eastern home cooking for people who train hard: ful, shakshuka and yogurt with dates for breakfast, then shish tawook, kofta, grilled mackerel and salmon, and a Saturday maqluba. Rice, bulgur, pita and chickpeas carry the training fuel, with protein at every meal and snack.",
+  "howItWorks": "**Protein all day.** Every breakfast, lunch, dinner and snack carries real protein: eggs, ful or yogurt in the morning, chicken, beef, lamb or fish at lunch and dinner, and yogurt, lupini beans, eggs or hummus with chicken in between. Five or six eating moments keep your muscles supplied all day.\n\n**Rice and bread are there for training.** Rice, bulgur, pita and chickpeas sit at lunch and dinner because they refill your energy for the next session. It is how the region has always built a big plate, with the protein beside the grain, never instead of it.\n\n**Cook once, eat twice.** Monday's shish tawook, Tuesday's kofta, Thursday's beef and okra stew and Saturday's maqluba each make two portions, so the next day's lunch is done. The fish is always cooked fresh.\n\n**Fish and lean meat.** Mackerel on Wednesday and salmon on Friday carry your **omega-3 and vitamin D**, with sardines on pita on Monday and Sunday. The kofta mixes lean beef with lean lamb, and kuru fasulye is the only other lamb dish, so saturated fat stays low.\n\n**Bigger sizes add food, not powder.** Big and XL add a third snack on some days and grow the whole plate: more chicken, beef, lamb, fish, eggs and yogurt, and more rice, bulgur, pita and beans, which grow fastest. Vegetables stay as written. XL plates are big, so use a wider pan and a deep bowl.",
+  "signature": [
+    "muscle-middle-east-shish-tawook-garlic-rice-salad",
+    "muscle-middle-east-grilled-mackerel-sumac-onions-herb-bulgur-pilaf",
+    "muscle-middle-east-maqluba-chicken-rice-cauliflower-eggplant",
+    "muscle-middle-east-ful-medames-boiled-eggs-pita"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2400,
+      "covers": [
+        "2200-2400",
+        "2400-2800"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-middle-east-white-cheese-tomato-olives-mint"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-middle-east-herb-eggah-egg-whites-tomato-pita"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-middle-east-tuna-red-pepper-parsley-pita-pocket"
+          }
+        }
+      ]
+    },
+    "xl": {
+      "kcal": 3500,
+      "covers": [
+        "3200-3700"
+      ],
+      "adjust": [
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-middle-east-white-cheese-tomato-olives-mint"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-middle-east-herb-eggah-egg-whites-tomato-pita"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-middle-east-tuna-red-pepper-parsley-pita-pocket"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "muscle-middle-east-ful-medames-boiled-eggs-pita",
+      "name": "Ful medames with boiled eggs, tomato and warm pita",
+      "inspiredBy": "Egyptian ful medames",
+      "about": "Egypt's breakfast of creamy fava beans, warmed with garlic and cumin, mashed a little and finished with lemon, a spoonful of tahini and a little olive oil. Boiled eggs and warm pita make it a proper plate. The beans and eggs together give you **plenty of protein and fibre** before the day starts.",
+      "ingredients": [
+        {
+          "food": "broadbeans-fava-beans-canned-solids-and-liquid-c9fcc5",
+          "g": 190,
+          "swap": "legumes",
+          "note": "liquid reserved"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "boiled"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 90,
+          "note": "diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15,
+          "note": "from a lemon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Lower the eggs into a small pot of boiling water and simmer for 8 minutes, then cool them under cold water and peel.",
+        "Warm the olive oil in a saucepan, add the garlic and cumin and stir for 30 seconds until it smells toasty.",
+        "Tip in the fava beans with a splash of their liquid, add the salt and simmer for 5 minutes, mashing about a third of the beans with a fork so it goes thick and creamy. Stir in the tahini and half the lemon juice.",
+        "Toss the tomato and parsley with the rest of the lemon juice and a pinch of Aleppo pepper.",
+        "Spoon the ful into a bowl, top with the halved eggs and the tomato salad, and serve with warm pita."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Canned ful medames is what many Egyptian homes use. Boil the eggs the night before and breakfast takes about 6 minutes."
+    },
+    {
+      "id": "muscle-middle-east-shakshuka-chickpeas-pita",
+      "name": "Shakshuka with chickpeas and warm pita",
+      "inspiredBy": "Egyptian and Levantine shakshuka",
+      "about": "Eggs baked in a bubbling pan of tomato, red pepper and cumin, with chickpeas for body and warm pita for scooping up every last bit. The peppers and tomato bring plenty of vitamin C, and the eggs and chickpeas give it **a solid dose of protein** before the day gets going.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 150
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 300,
+          "note": "grated or finely chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 90,
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 80,
+          "swap": "legumes"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Warm the oil in a wide, deep pan over medium heat and cook the onion and pepper until soft, about 8 minutes.",
+        "Stir in the garlic, paprika, cumin and Aleppo pepper and cook for a minute until fragrant.",
+        "Add the grated tomatoes, chickpeas and salt and simmer for 12 to 15 minutes, until the sauce is thick enough to hold a dent.",
+        "Make little wells with a spoon, crack the eggs in, cover and cook on low for 5 to 6 minutes, until the whites are set and the yolks still wobble.",
+        "Scatter the parsley over the top and eat straight from the pan with warm pita."
+      ],
+      "prepMin": 8,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make the sauce the night before and keep it 2 days. Warm it, then crack in the eggs."
+    },
+    {
+      "id": "muscle-middle-east-yogurt-dates-walnuts-oats-bowl",
+      "name": "Thick yogurt bowl with dates, walnuts and toasted oats",
+      "inspiredBy": "Gulf and Levantine yogurt with dates",
+      "about": "Thick, tangy yogurt topped with chewy chopped dates, toasted walnuts and oats, with a hint of cardamom. Dates, yogurt and walnuts are an old Levantine and Gulf combination. The yogurt brings **a big dose of protein and calcium**, and the walnuts add omega-3.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 320,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 40,
+          "note": "pitted and chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 22,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the oats and walnuts in a dry pan over medium heat for 3 minutes, until they smell nutty. Tip them onto a plate to cool.",
+        "Mash the dates into the yogurt with the cardamom so the sweetness runs through, then spoon it into a bowl.",
+        "Top with the toasted oats and walnuts and a pinch of cinnamon."
+      ],
+      "prepMin": 4,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "At larger sizes, use a deep bowl. Toast a few days' worth of oats and walnuts at once and keep them in a jar."
+    },
+    {
+      "id": "muscle-middle-east-chicken-fatteh-chickpeas-garlic-yogurt",
+      "name": "Chicken and chickpea fatteh with garlic yogurt",
+      "inspiredBy": "Syrian and Lebanese fatteh",
+      "about": "A Levantine layered dish: crisp toasted pita, warm spiced chickpeas and shredded chicken, all under a cool garlicky yogurt and tahini sauce with toasted almonds. It is crunchy, creamy and lemony all at once. The chicken and yogurt give you **plenty of protein for the afternoon**.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 130,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 110,
+          "swap": "legumes"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 90,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 6
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15,
+          "note": "from a lemon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "slivered"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 2
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 C. Tear the pita into bite-size pieces, toss with half the oil and bake for 8 minutes, until golden and crisp.",
+        "Cover the chicken with water in a small pot, add a pinch of salt and simmer gently for 14 minutes, until cooked through. Lift it out and shred it with two forks.",
+        "Warm the chickpeas in a little of the chicken cooking water with the cumin, cinnamon and paprika until hot.",
+        "Stir the yogurt with the tahini, garlic, lemon juice and a pinch of salt.",
+        "Toast the almonds in the rest of the oil in a small pan until golden. Pile the crisp pita in a shallow bowl, top with the chickpeas and chicken, spoon over the yogurt and finish with the almonds and parsley."
+      ],
+      "prepMin": 12,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Bake the pita bits ahead and assemble just before eating, so they stay crisp."
+    },
+    {
+      "id": "muscle-middle-east-shish-tawook-garlic-rice-salad",
+      "name": "Shish tawook with garlicky rice and tomato cucumber salad",
+      "inspiredBy": "Lebanese and Turkish chicken skewers",
+      "about": "Chicken breast marinated in lemon, garlic, tomato paste and warm spices, grilled until browned at the edges, with fluffy garlicky rice and a crisp tomato, cucumber and carrot salad. A little olive oil and a good marinade keep lean chicken juicy. It makes **two big, high-protein portions**, so tomorrow's lunch is done.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 205,
+          "swap": "lean_protein",
+          "note": "cut into chunks"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 12
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20,
+          "note": "from a lemon"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "crushed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 60,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "coarsely grated"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "finely sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        }
+      ],
+      "steps": [
+        "Mix the tomato paste, half the lemon juice, half the garlic, the paprika, baharat, pepper, a little salt and half the oil in a bowl. Add the chicken, turn to coat and marinate for at least 30 minutes.",
+        "Rinse the rice. Warm the remaining oil in a pot, stir in the rest of the garlic for 30 seconds, add the rice, a pinch of salt and a little less than twice its volume of water. Bring to a boil, cover and simmer on low for about 15 minutes, until the water is absorbed. Rest it, covered, for 5 minutes.",
+        "Thread the chicken onto skewers, or spread it on a tray. Grill or broil on high for 12 to 14 minutes, turning once, until browned in places and cooked through.",
+        "Toss the tomato, cucumber, carrot, onion and parsley with the remaining lemon juice and a pinch of salt.",
+        "Serve the chicken over the rice with the salad. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Marinate 30 minutes to 8 hours. Longer and the lemon turns breast chalky. Cook enough rice for two portions and the leftover lunch is ready."
+    },
+    {
+      "id": "muscle-middle-east-lean-beef-lamb-kofta-tomato-pepper-sauce-pita",
+      "name": "Lean beef and lamb kofta in tomato and pepper sauce with pita",
+      "inspiredBy": "Egyptian kofta bil salsa and Lebanese kafta bi banadoura",
+      "about": "Little kofta made with lean beef and a smaller share of lean lamb, grated onion, parsley and baharat, simmered in a garlicky tomato and pepper sauce and served with warm pita. Mixing the two meats keeps the flavour but **keeps saturated fat low**. It makes two portions, so tomorrow's lunch is done.",
+      "ingredients": [
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 120,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "lamb-leg-roast-lean-raw-02b927",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "ask the butcher to mince lean leg, or use the leanest ground lamb"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "half grated, half diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 20,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 280,
+          "note": "grated or finely chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 90,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 6
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 45
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 2
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.6
+        }
+      ],
+      "steps": [
+        "Squeeze the grated onion over a bowl and keep the juice. Mix the beef, lamb, squeezed onion, half the parsley, half the garlic, the baharat, cinnamon, a little salt and a spoonful of the onion juice with your hands, squeezing until it holds together. Shape into small ovals and chill them for 20 minutes so they hold.",
+        "Warm the oil in a wide, deep pan and brown the kofta for about 6 minutes, turning, then lift them out.",
+        "In the same pan, soften the diced onion and pepper for 6 minutes. Stir in the rest of the garlic, the cumin and the tomato paste for a minute.",
+        "Add the grated tomatoes and a pinch of salt, return the kofta and simmer gently for 15 to 20 minutes, until the sauce is thick and the kofta are cooked through. Add a splash of water only if the sauce catches.",
+        "Scatter the sumac and the rest of the parsley over the top and serve with warm pita. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Shape the kofta the night before. They hold together better after a night in the fridge."
+    },
+    {
+      "id": "muscle-middle-east-grilled-mackerel-sumac-onions-herb-bulgur-pilaf",
+      "name": "Grilled mackerel with sumac onions and herby bulgur pilaf",
+      "inspiredBy": "Turkish uskumru izgara with pilav",
+      "about": "Rich, oily mackerel fillets, broiled until the skin crackles, with a sharp pile of sumac onions and a Turkish-style bulgur pilaf with chickpeas, lots of parsley and a squeeze of lemon. The acid cuts the richness beautifully. Mackerel is a big source of **omega-3 and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 200,
+          "swap": "fatty_fish",
+          "note": "skin on"
+        },
+        {
+          "food": "bulgur-dry-raw-2980c3",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "coarse"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 50,
+          "swap": "legumes"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 40,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 25,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25,
+          "note": "from a lemon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sumac-268746",
+          "g": 2
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.7
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Toss the red onion with the sumac, a squeeze of the lemon juice, half the parsley and a pinch of salt. Set it aside so it softens.",
+        "Warm half the oil in a pot and cook the diced onion until soft and golden, about 6 minutes. Stir in the cinnamon and Aleppo pepper for 30 seconds.",
+        "Add the bulgur, chickpeas, salt and a little over its volume of water, bring to a boil, cover and simmer on low for 12 minutes. Rest, covered, for 5 minutes, then fluff and fold in the rest of the parsley.",
+        "Heat the broiler to high. Rub the mackerel with the rest of the oil and a pinch of salt, lay it skin side up on a tray and broil for 5 to 6 minutes, until the skin blisters and the flesh flakes.",
+        "Serve the fish over the pilaf with the sumac onions and the rest of the lemon juice squeezed over."
+      ],
+      "prepMin": 15,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Ask the fishmonger to fillet the mackerel and pull out the pin bones."
+    },
+    {
+      "id": "muscle-middle-east-tuna-white-bean-piyaz-egg-pita",
+      "name": "Turkish tuna and white bean piyaz with boiled egg",
+      "inspiredBy": "Turkish piyaz, with tuna",
+      "about": "A cool Turkish bean salad with sumac-bright red onion, grated carrot, tomato, plenty of parsley and chunks of tuna and boiled egg, dressed with lemon and olive oil. Warm pita is on the side. It is easy, filling and **high in protein and fibre** with nothing to cook but an egg.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-solids-and-liquid-4c3a17",
+          "g": 170,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 100,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "boiled"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "coarsely grated"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 30,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20,
+          "note": "from a lemon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Boil the egg, or eggs, for 8 minutes, cool under cold water and peel.",
+        "Rub the red onion with the sumac and a pinch of salt for a minute to soften and sharpen it.",
+        "Toss the beans with the onion, carrot, parsley, tomato, lemon juice, olive oil and Aleppo pepper, and season to taste.",
+        "Flake the tuna over the top, add the egg, cut into quarters, and eat with warm pita."
+      ],
+      "prepMin": 7,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Boil the egg, or eggs, the night before and the whole lunch comes together in 5 minutes."
+    },
+    {
+      "id": "muscle-middle-east-beef-okra-stew-bamia-rice",
+      "name": "Beef and okra stew (bamia) with rice",
+      "inspiredBy": "Egyptian bamia",
+      "about": "A tomatoey Egyptian and Levantine stew of tender lean beef and okra with garlic and parsley, spooned over rice. Lemon at the end keeps it bright. Beef and okra together bring **iron, magnesium and a lot of fibre**, and it tastes even better the next day.",
+      "ingredients": [
+        {
+          "food": "beef-steak-boneless-round-lean-raw-64d7dd",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "cut into small cubes"
+        },
+        {
+          "food": "okra-gumbo-raw-424b0a",
+          "g": 200,
+          "note": "trimmed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 160
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "crushed"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15,
+          "note": "from a lemon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 60,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 2,
+          "note": "ground"
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.8
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Warm most of the oil in a heavy pot and brown the beef in two batches, about 5 minutes a batch. Lift it out.",
+        "Cook the onion in the same pot until soft and golden, about 6 minutes. Stir in half the garlic, the allspice, cinnamon and tomato paste for a minute.",
+        "Return the beef, add the crushed tomatoes, some water to just cover, the salt and pepper. Cover and simmer gently for 45 minutes, until the beef is nearly tender.",
+        "Add the okra whole, cover again and cook for 15 minutes more, until the okra is soft but not falling apart. Stir as little as you can.",
+        "Meanwhile, cook the rice with a pinch of salt and a little less than twice its volume of water, covered, on low for 15 minutes.",
+        "Warm the last of the oil in a small pan and fry the rest of the garlic with the ground coriander for a minute, until fragrant. Stir this ta'leya into the stew with the lemon juice and parsley, and serve over the rice. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 80,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Frozen whole okra works, straight from the freezer. A pressure cooker does the beef in 20 minutes; add the okra after pressure is released."
+    },
+    {
+      "id": "muscle-middle-east-baharat-salmon-saffron-rice-lemon-tahini-cauliflower",
+      "name": "Baharat salmon with saffron rice, roasted cauliflower and carrots, and lemon tahini",
+      "inspiredBy": "Gulf spiced fish and rice",
+      "about": "Salmon rubbed with baharat and roasted until just flaking, on saffron-scented rice with charred cauliflower, carrots and tomatoes and a lemony tahini drizzle. It borrows the spices and the fish-and-rice idea of Gulf kitchens. Salmon delivers **omega-3, vitamin D and B12**.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 190,
+          "swap": "fatty_fish",
+          "note": "fillet, skin on"
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 42,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 150,
+          "note": "cut into florets"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "sliced into thick coins"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "halved"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely diced"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25,
+          "note": "from a lemon"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 2
+        },
+        {
+          "food": "loomi-dried-black-lime-8b452f",
+          "g": 0.5,
+          "note": "ground"
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.1
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C. Toss the cauliflower, carrots and tomatoes with half the oil, the cumin and a pinch of salt on a tray and roast for 15 minutes.",
+        "Steep the saffron in a few spoonfuls of hot water. Warm the rest of the oil in a pot and soften the onion for 5 minutes. Add the rinsed rice, stir for a minute, then pour in a little less than twice its volume of water with the saffron and a pinch of salt. Cover and cook on low for 15 minutes, then rest for 5.",
+        "Rub the salmon with the baharat and ground dried lime. Nestle it among the vegetables and roast for 10 to 12 minutes more, until it just flakes.",
+        "Whisk the tahini with half the lemon juice, the garlic and a pinch of salt, adding only a spoonful of cold water until it pours like thick cream. Squeeze the rest of the lemon over the salmon.",
+        "Toast the almonds in a dry pan. Fluff the rice, fold in the parsley, and serve with the salmon, vegetables, the almonds and a big drizzle of tahini."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "If you can't find dried lime, use a little extra lemon and a pinch of sumac."
+    },
+    {
+      "id": "muscle-middle-east-hummus-bil-lahme-spiced-beef-pita",
+      "name": "Hummus with warm spiced beef and almonds",
+      "inspiredBy": "Lebanese hummus bil lahme",
+      "about": "A big swoop of creamy, lemony hummus topped with sizzling lean beef spiced with allspice and cinnamon, toasted almonds and parsley, with pita and cucumber to scoop. It is a Levantine mezze turned into a proper lunch. The beef and chickpeas together give you **protein and iron**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 130,
+          "swap": "legumes"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20,
+          "note": "from a lemon"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 140,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely diced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 4,
+          "swap": "nuts_seeds",
+          "note": "slivered"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 1
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Blend the chickpeas with the tahini, lemon juice, garlic, cumin, a pinch of salt and 3 or 4 spoonfuls of ice-cold water until smooth and fluffy. Taste and add more lemon or salt if it needs it.",
+        "Toast the almonds in a dry pan until golden, then set them aside.",
+        "Warm the oil in the same pan and cook the onion for 3 minutes. Add the beef, allspice, cinnamon and a pinch of salt and cook for 6 to 7 minutes, breaking it up, until browned and crumbly. Add a splash of water and let it bubble for a minute so the beef stays juicy.",
+        "Swoop the hummus into a wide bowl, pile the warm beef on top and scatter the almonds and parsley.",
+        "Serve with warm pita and cucumber."
+      ],
+      "prepMin": 15,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Hummus is best made fresh, but it keeps 3 days in a covered container in the fridge."
+    },
+    {
+      "id": "muscle-middle-east-maqluba-chicken-rice-cauliflower-eggplant",
+      "name": "Maqluba-style chicken and rice with cauliflower and eggplant",
+      "inspiredBy": "Palestinian and Syrian maqluba",
+      "about": "The upside-down pot of Palestine, Jordan and Syria: spiced chicken, roasted eggplant, cauliflower, carrot and tomato layered under rice, then turned out like a cake. It is the weekend project, with a cool cucumber yogurt on the side. The chicken and yogurt carry **plenty of protein**, and it makes two portions.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 200,
+          "swap": "lean_protein",
+          "note": "cut into large pieces"
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 55,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 100,
+          "note": "cut into florets"
+        },
+        {
+          "food": "eggplant-raw-b8b8c1",
+          "g": 110,
+          "note": "sliced into rounds"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "sliced into thick coins"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "slivered"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 2.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 1
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C. Toss the eggplant, cauliflower and carrot coins with half the oil and a pinch of salt on a tray and roast for 20 minutes, until browned at the edges.",
+        "Rub the chicken with the baharat, turmeric, cinnamon, allspice and a little salt. Brown it in the rest of the oil in a wide, heavy pot for 3 to 4 minutes a side, then lift it out. Soften the onion and garlic in the same pot for 3 minutes and scoop them onto a plate.",
+        "Rinse the rice until the water runs clear. Layer the tomato slices and the softened onion on the bottom of the pot, then the chicken, then the roasted vegetables and the bay leaf. Pour the rice over the top and press it down.",
+        "Pour in enough hot water to cover the rice by about a finger's width, add a pinch of salt, bring to a boil, then cover and cook on the lowest heat for 30 minutes. Rest for 10 minutes, covered.",
+        "Toast the almonds in a dry pan. Run a knife around the pot, put a large plate on top and flip it in one confident move. Scatter with almonds.",
+        "Stir the yogurt with the cucumber and a pinch of salt and serve alongside. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 30,
+      "cookMin": 65,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "Cut the chicken in thick pieces and tuck it under the vegetables so it stays moist. If flipping the pot feels scary, serve it straight from the pot."
+    },
+    {
+      "id": "muscle-middle-east-lean-lamb-white-bean-stew-kuru-fasulye-bulgur",
+      "name": "Lean lamb and white bean stew (kuru fasulye) with bulgur pilaf",
+      "inspiredBy": "Turkish kuru fasulye with pilav",
+      "about": "A Turkish favourite: creamy white beans simmered with lean lamb, tomato and a spoonful of paprika-spiked tomato paste, served over a bulgur pilaf with a sharp parsley and onion salad. The beans and lamb give you **iron, zinc and slow-burning fuel** for training.",
+      "ingredients": [
+        {
+          "food": "lamb-leg-roast-lean-raw-02b927",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "cut into small cubes"
+        },
+        {
+          "food": "white-beans-canned-solids-and-liquid-4c3a17",
+          "g": 140,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 12
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 100
+        },
+        {
+          "food": "bulgur-dry-raw-2980c3",
+          "g": 48,
+          "swap": "low_gi_grains",
+          "note": "coarse"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 30,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Warm half the oil in a pot and brown the lamb for about 5 minutes. Add the onion and cook until soft, about 5 minutes.",
+        "Stir in the garlic, tomato paste, paprika and Aleppo pepper for a minute, then add the crushed tomatoes, salt, pepper and enough water to just cover.",
+        "Cover and simmer for 40 minutes, until the lamb is tender. Add the beans and cook for 10 more minutes so the sauce goes thick.",
+        "Meanwhile, warm the rest of the oil in a small pot, stir in the bulgur for a minute, then add a little over its volume of water and a pinch of salt. Cover and simmer for 12 minutes, then rest for 5.",
+        "Toss the red onion with the sumac and parsley.",
+        "Spoon the stew over the bulgur and pile the onion salad on top."
+      ],
+      "prepMin": 15,
+      "cookMin": 60,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "freezer-friendly"
+      ],
+      "tip": "Canned beans keep this quick. Make a double pot and freeze the second portion; it keeps 3 months."
+    },
+    {
+      "id": "muscle-middle-east-lupini-lemon-cumin-tomato",
+      "name": "Lupini beans with lemon, cumin and tomato",
+      "inspiredBy": "Egyptian termis",
+      "about": "Egypt's street snack: firm, nutty lupini beans tossed with lemon, cumin and olive oil, with juicy tomato wedges. Squeeze each bean out of its thin skin, as people do in Egypt. They are a surprisingly **high-protein, high-fibre** bean you can eat with your fingers.",
+      "ingredients": [
+        {
+          "food": "lupin-boiled-748dba",
+          "g": 160,
+          "swap": "legumes",
+          "note": "jarred"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the lupini beans well under cold water, because they are salty.",
+        "Toss them with the lemon juice, olive oil, cumin and Aleppo pepper.",
+        "Serve with the tomato wedges. Squeeze each bean out of its thin skin and eat the inside."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-middle-east-yogurt-walnuts-pomegranate-mint",
+      "name": "Thick yogurt with walnuts, pomegranate and mint",
+      "inspiredBy": "Levantine yogurt",
+      "about": "Cool, thick yogurt scattered with juicy pomegranate seeds, toasted walnuts and a pinch of dried mint. Sweet, sharp and crunchy, and **a quick hit of protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 28,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 50,
+          "note": "seeds"
+        },
+        {
+          "food": "mint-dried-3fe241",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl.",
+        "Toast the walnuts in a dry pan for 2 minutes until they smell nutty.",
+        "Scatter the pomegranate seeds and walnuts over the yogurt and finish with the dried mint."
+      ],
+      "prepMin": 4,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-middle-east-eggs-dukkah-tomato",
+      "name": "Boiled eggs with dukkah, tomato and warm pita",
+      "inspiredBy": "Egyptian eggs and dukkah",
+      "about": "Jammy boiled eggs, split and dusted with dukkah, with sweet ripe tomato, a squeeze of lemon and a little warm pita. The nuts and spices make plain eggs taste like an Egyptian breakfast mezze, and it is **an easy, high-protein snack**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "boiled"
+        },
+        {
+          "food": "dukkah-a59af5",
+          "g": 8
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 35
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5,
+          "note": "from a lemon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 2,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Lower the eggs into boiling water and simmer for 7 minutes, then cool under cold water and peel.",
+        "Arrange the tomato wedges on a plate, squeeze over the lemon and drizzle with the olive oil.",
+        "Halve the eggs, dip the cut sides in the dukkah and eat with the tomato and warm pita."
+      ],
+      "prepMin": 5,
+      "cookMin": 7,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-middle-east-hummus-garlic-lemon-chicken-strips",
+      "name": "Hummus with garlic lemon chicken strips and carrot sticks",
+      "inspiredBy": "Levantine hummus with shawarma-style chicken",
+      "about": "Quick hummus with strips of garlicky, lemony chicken breast seared in a hot pan, and crunchy carrot sticks to scoop. It is like a shawarma plate in snack form, and **keeps your protein topped up through the afternoon**.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 90,
+          "swap": "lean_protein",
+          "note": "cut into strips"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 45,
+          "swap": "legumes"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 12,
+          "note": "from a lemon"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "crushed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Blend the chickpeas with the tahini, half the lemon juice, half the garlic, half the cumin, a pinch of salt and a few spoonfuls of cold water until smooth, using a stick blender in a tall jar, or mash very well with a fork for a rustic hummus.",
+        "Toss the chicken with the rest of the garlic and cumin, the paprika and a pinch of salt.",
+        "Heat the oil in a pan over high heat and sear the chicken for 4 to 5 minutes, until golden and cooked through. Squeeze over the rest of the lemon.",
+        "Spoon the hummus into a bowl, lay the chicken on top and serve with the carrot sticks."
+      ],
+      "prepMin": 8,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "muscle-middle-east-labneh-zaatar-cucumber-carrot",
+      "name": "Labneh with za'atar, cucumber, mint and carrot sticks",
+      "inspiredBy": "Levantine labneh and za'atar",
+      "about": "Thick, tangy labneh swirled with olive oil and za'atar, with cool cucumber, mint and carrot sticks to scoop it up. A classic Levantine breakfast, brought in as a snack, with **protein and a little calcium** in a few minutes.",
+      "ingredients": [
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 3
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "torn"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Spread the labneh in a shallow bowl and make a swirl with the back of a spoon.",
+        "Drizzle with the olive oil and sprinkle with the za'atar.",
+        "Scatter the cucumber and mint over the top and scoop it up with the carrot sticks."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-middle-east-white-cheese-tomato-olives-mint",
+      "name": "White cheese with tomato, olives and mint",
+      "inspiredBy": "Egyptian gebna beida",
+      "about": "Salty, creamy Egyptian-style white cheese with ripe tomato, a few olives and fresh mint. It is the sort of plate you'd find on the table at any meal, and it gives you **protein and calcium** with very little effort.",
+      "ingredients": [
+        {
+          "food": "gebna-beida-egyptian-white-cheese-a0b30f",
+          "g": 32,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 15,
+          "note": "rinsed"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 4,
+          "note": "torn"
+        }
+      ],
+      "steps": [
+        "Slice the cheese and lay it on a plate with the tomato.",
+        "Scatter the olives and mint over the top and eat with a fork."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "No gebna beida nearby? Any mild white brined cheese works, such as Bulgarian white cheese or a mild feta. Rinse it if it tastes very salty."
+    },
+    {
+      "id": "muscle-middle-east-sardines-tomato-pita-lemon",
+      "name": "Smashed sardines on toasted pita with sumac onion and tomato",
+      "inspiredBy": "Egyptian sardine sandwich",
+      "about": "Oily sardines smashed with lemon and sumac onto crisp toasted pita, with sweet tomato and a pile of fresh parsley. It is a classic Egyptian and Mediterranean quick bite, sharp and crunchy. Sardines bring **omega-3 and calcium from the soft bones**.",
+      "ingredients": [
+        {
+          "food": "sardines-canned-in-brine-drained-7cc943",
+          "g": 50,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the pita until crisp and golden. Rub the red onion with the sumac and a squeeze of the lemon juice and let it sit for a few minutes.",
+        "Mash the sardines roughly with the rest of the lemon juice and the olive oil.",
+        "Pile the tomato and the sardines on the pita and top with the sumac onion, the parsley and a pinch of Aleppo pepper."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Opened sardines keep 2 days in a covered container in the fridge. Mash the rest with lemon and parsley for tomorrow's toast."
+    },
+    {
+      "id": "muscle-middle-east-tuna-red-pepper-parsley-pita-pocket",
+      "name": "Tuna, red pepper and parsley pita pocket",
+      "inspiredBy": "Egyptian and Levantine tuna sandwich",
+      "about": "Flaked tuna with crunchy red pepper, tomato, parsley, lemon and cumin stuffed into a warm pita pocket. It is a light bite you can eat on the go, with **lean protein** and not much else to wash up.",
+      "ingredients": [
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 90,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 50
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 50,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Flake the tuna into a bowl with the lemon juice, olive oil and cumin.",
+        "Warm the pita and open the pocket.",
+        "Stuff it with the red pepper, tomato, parsley and tuna."
+      ],
+      "prepMin": 5,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-middle-east-thick-yogurt-cacik-cucumber-mint",
+      "name": "Thick cacik with cucumber, garlic and mint",
+      "inspiredBy": "Turkish cacik",
+      "about": "Turkish cacik made thick enough to eat with a spoon: strained-style Greek yogurt with grated cucumber, garlic, mint and a thread of olive oil. It is cool and sharp, and a big bowl is **a lean, calcium-rich hit of protein**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 160,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "grated and squeezed dry"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "crushed to a paste"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "mint-dried-3fe241",
+          "g": 0.5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5,
+          "note": "from a lemon"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Squeeze the grated cucumber in your hands to get rid of the extra water.",
+        "Stir it into the yogurt with the garlic, fresh mint, lemon juice and salt.",
+        "Spoon into a bowl, drizzle with the olive oil and rub the dried mint over the top."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-middle-east-herb-eggah-egg-whites-tomato-pita",
+      "name": "Herb eggah with extra egg whites, tomato and pita",
+      "inspiredBy": "Egyptian eggah and Levantine ijjeh",
+      "about": "Eggah, called ijjeh in Lebanon and Syria, is a thick, herby omelette cut into wedges. This one leans on egg whites so it stays light and high in protein, with a whole egg for flavour and colour. Parsley, onion and a pinch of baharat do the work, and it gives you **25 to 30 g of protein**, warm or cold.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "egg-white-raw-b17726",
+          "g": 150,
+          "note": "a carton is easiest"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 35
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Warm the oil in a small non-stick pan over medium heat and soften the onion for 3 minutes.",
+        "Beat the whole egg and the egg whites with the parsley, baharat, pepper and salt.",
+        "Pour the eggs into the pan, cover and cook on low for 6 to 7 minutes, until the top is just set. Slide it onto a plate and cut into wedges.",
+        "Serve warm or cold with the tomato and warm pita."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-middle-east-shakshuka-chickpeas-pita"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-middle-east-chicken-fatteh-chickpeas-garlic-yogurt"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-middle-east-shish-tawook-garlic-rice-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-middle-east-sardines-tomato-pita-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-middle-east-thick-yogurt-cacik-cucumber-mint"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-middle-east-yogurt-dates-walnuts-oats-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-middle-east-shish-tawook-garlic-rice-salad",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-middle-east-lean-beef-lamb-kofta-tomato-pepper-sauce-pita"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-middle-east-eggs-dukkah-tomato"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-middle-east-white-cheese-tomato-olives-mint"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-middle-east-ful-medames-boiled-eggs-pita"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-middle-east-lean-beef-lamb-kofta-tomato-pepper-sauce-pita",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-middle-east-grilled-mackerel-sumac-onions-herb-bulgur-pilaf"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-middle-east-hummus-garlic-lemon-chicken-strips"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-middle-east-thick-yogurt-cacik-cucumber-mint"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-middle-east-yogurt-dates-walnuts-oats-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-middle-east-tuna-white-bean-piyaz-egg-pita"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-middle-east-beef-okra-stew-bamia-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-middle-east-labneh-zaatar-cucumber-carrot"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-middle-east-lupini-lemon-cumin-tomato"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-middle-east-yogurt-dates-walnuts-oats-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-middle-east-beef-okra-stew-bamia-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-middle-east-baharat-salmon-saffron-rice-lemon-tahini-cauliflower"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-middle-east-tuna-red-pepper-parsley-pita-pocket"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-middle-east-hummus-garlic-lemon-chicken-strips"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-middle-east-shakshuka-chickpeas-pita"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-middle-east-hummus-bil-lahme-spiced-beef-pita"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-middle-east-maqluba-chicken-rice-cauliflower-eggplant"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-middle-east-yogurt-walnuts-pomegranate-mint"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-middle-east-lupini-lemon-cumin-tomato"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-middle-east-ful-medames-boiled-eggs-pita"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-middle-east-maqluba-chicken-rice-cauliflower-eggplant",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-middle-east-lean-lamb-white-bean-stew-kuru-fasulye-bulgur"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-middle-east-sardines-tomato-pita-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-middle-east-herb-eggah-egg-whites-tomato-pita"
+        }
+      ]
+    }
+  ]
+}
