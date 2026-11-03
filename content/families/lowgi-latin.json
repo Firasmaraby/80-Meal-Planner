@@ -1,0 +1,2069 @@
+{
+  "id": "lowgi-latin",
+  "name": "Diabetes-friendly Latin",
+  "style": "low-gi",
+  "cuisine": "Latin American",
+  "regions": [
+    "Mexico",
+    "Central America",
+    "Peru",
+    "Colombia",
+    "the Caribbean"
+  ],
+  "summary": "Diabetes-friendly Latin home cooking from Mexico, Central America, Peru, Colombia and the Caribbean: beans at most meals, one honest tortilla, arepa or spoonful of rice at a time, big salads and slaws, and fish or shrimp most days.",
+  "howItWorks": "**Steady carbs, three times a day.** Lunch and dinner each get one honest portion of starch, and most breakfasts do too: a corn tortilla, a small arepa, a little brown rice, quinoa, camote or plantain. It always sits beside beans, eggs, fish or chicken, so the starch digests more slowly.\n\n**Beans and vegetables with every carb.** Black and pinto beans and chickpeas turn up at two meals on most days and carry the **fibre and protein**. Cabbage, radish, jícama, tomato and lettuce come with the plate, so the crunch comes first and the starch last.\n\n**Why the tortillas are counted.** One tortilla is a real part of the day, so it is written into each recipe. On the Light size the tortillas, arepa, some of the chicken and a few bean portions get smaller, while the vegetables and salsa stay as written.\n\n**Lime, salsa and fish.** Lime, vinegar and fresh salsas finish every plate, and a sour, spicy bite makes a small portion of starch feel complete. Mackerel on Tuesday and salmon on Friday bring **omega-3**, and canned sardines on Tuesday, Thursday and Saturday add calcium.\n\n**Cook once, eat twice.** Tinga, arroz con pollo, ropa vieja and Saturday's pozole each make two portions, so the next lunch is done. On Sunday, cook the quinoa, toast a jar of almonds and pepitas, and make the curtido.",
+  "signature": [
+    "lowgi-latin-pozole-rojo-repollo-rabano",
+    "lowgi-latin-pollo-tinga-lechuga",
+    "lowgi-latin-ceviche-camaron-aguacate",
+    "lowgi-latin-arroz-con-pollo-ensalada"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "lowgi-latin-camote-limon-chile"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "lowgi-latin-huevo-duro-limon-chile"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "lowgi-latin-pepitas-tostadas"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "lowgi-latin-huevo-duro-limon-chile"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "lowgi-latin-garbanzos-tostados"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "lowgi-latin-guacamole-crudites"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "lowgi-latin-pico-queso-fresco"
+          }
+        }
+      ]
+    }
+  },
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lowgi-latin-huevos-rancheros-pinto"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lowgi-latin-ensalada-quinua-garbanzos"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lowgi-latin-pollo-tinga-lechuga"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-latin-salpicon-pollo-pepino"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-latin-coctel-camaron-pepino"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lowgi-latin-papaya-yogur-pepitas"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lowgi-latin-pollo-tinga-lechuga",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lowgi-latin-caballa-escabeche-camote"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-latin-sardina-tostada"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-latin-garbanzos-tostados"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lowgi-latin-arepa-frijol-queso-aguacate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lowgi-latin-sopa-frijol-negro"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lowgi-latin-arroz-con-pollo-ensalada"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-latin-coctel-camaron-pepino"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-latin-jicama-limon-pepitas"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lowgi-latin-huevos-rancheros-pinto"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lowgi-latin-arroz-con-pollo-ensalada",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lowgi-latin-ropa-vieja-frijoles-maduros"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-latin-sardina-lechuga"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-latin-jicama-limon-pepitas"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lowgi-latin-papaya-yogur-pepitas"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lowgi-latin-ropa-vieja-frijoles-maduros",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lowgi-latin-salmon-verde-curtido-frijoles"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-latin-pepitas-tostadas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-latin-salpicon-pollo-pepino"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lowgi-latin-arepa-frijol-queso-aguacate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lowgi-latin-ceviche-camaron-aguacate"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lowgi-latin-pozole-rojo-repollo-rabano"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-latin-sardina-lechuga"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-latin-almendras-limon-chile"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lowgi-latin-huevos-rancheros-pinto"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lowgi-latin-pozole-rojo-repollo-rabano",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lowgi-latin-habichuelas-camarones-ajillo"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-latin-almendras-limon-chile"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-latin-guacamole-crudites"
+        }
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "lowgi-latin-huevos-rancheros-pinto",
+      "name": "Huevos rancheros on one tortilla with pinto beans",
+      "inspiredBy": "Mexican huevos rancheros, with one tortilla and the beans doing more of the work",
+      "about": "Fried eggs on a single warm corn tortilla, with a quick tomato and serrano salsa, creamy pinto beans, a little queso fresco and a few slices of avocado. The tortilla is counted, and the **beans and eggs slow the starch down** so the plate keeps you full until lunch.",
+      "ingredients": [
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "warmed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "large"
+        },
+        {
+          "food": "pinto-beans-canned-drained-and-rinsed-f4190a",
+          "g": 110,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 25,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "ripe, chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "serrano-pepper-raw-bcef02",
+          "g": 6,
+          "note": "seeded for less heat"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "one small clove"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 35,
+          "note": "sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Make the salsa first. Warm half the oil in a small pan, then cook the tomato, onion, serrano and garlic for about 8 minutes, until the tomato has broken down and smells sweet. Mash it a little with the back of a spoon, stir in the lime juice and the salt, and keep it warm.",
+        "Tip the beans into a second small pot with a splash of water and a spoon of the salsa, mash about half of them, and warm them for 3 to 4 minutes until creamy.",
+        "Warm the tortilla in a dry skillet for about 30 seconds a side, until it is soft and has a few toasty freckles.",
+        "Fry the eggs in the rest of the oil over medium heat until the whites are set and the yolks are still runny, about 3 minutes.",
+        "Put the tortilla on a plate, set the eggs on top, spoon the beans beside them and cover everything with the warm salsa. Finish with the queso fresco, avocado and cilantro."
+      ],
+      "prepMin": 8,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Make the salsa the night before and the plate comes together in about 10 minutes. Leave out the serrano seeds for a milder version."
+    },
+    {
+      "id": "lowgi-latin-arepa-frijol-queso-aguacate",
+      "name": "Arepa with pinto beans, queso fresco and avocado",
+      "inspiredBy": "Colombian breakfast arepas, with a bowl of frijoles alongside as in a calentado",
+      "about": "A crisp-edged arepa filled with crumbly queso fresco and avocado, next to a bowl of warm mashed pinto beans with a fresh tomato topping. Beans beside the arepa is a very Colombian way to start the day, and the **beans and cheese give the corn staying power**.",
+      "ingredients": [
+        {
+          "food": "masarepa-precooked-corn-flour-b58618",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "makes one arepa"
+        },
+        {
+          "food": "pinto-beans-canned-drained-and-rinsed-f4190a",
+          "g": 225,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 45,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 45,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Mix the masarepa with a pinch of the salt and just enough warm water to make a soft, damp dough, about 1 minute of kneading. Let it rest for 5 minutes, then shape it into a round about 1 cm thick. It is palm-sized at the Standard size and a small arepita at the Light size.",
+        "Heat the oil in a skillet over medium heat and cook the arepa for 5 to 6 minutes a side, until the outside is golden and crisp and it sounds hollow when you tap it.",
+        "While it cooks, warm the beans with the cumin and a splash of water for 4 minutes, then mash them roughly with a fork.",
+        "Toss the tomato, onion and cilantro with the lime juice and the rest of the salt.",
+        "Split the arepa and fill it with half the queso fresco and the avocado. Spoon the beans into a bowl, top them with the rest of the cheese and the tomato mixture, and eat them with the arepa."
+      ],
+      "prepMin": 12,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook a few arepas at once and freeze them. They reheat from frozen in a toaster or a dry pan in about 8 minutes. Choose no-salt-added beans and rinse them well; if yours are salted, skip the pinch of salt."
+    },
+    {
+      "id": "lowgi-latin-papaya-yogur-pepitas",
+      "name": "Papaya with Greek yogurt, lime, almonds and pepitas",
+      "inspiredBy": "Mexican papaya with lime and chile, turned into a breakfast with yogurt, almonds and pepitas",
+      "about": "Cold, thick yogurt with ripe papaya, a squeeze of lime and a handful of toasted almonds and pepitas, finished with a pinch of chile. It is a Mexican fruit-and-lime breakfast with **more protein from the yogurt and nuts**, so the fruit never arrives alone.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 220,
+          "swap": "dairy_protein",
+          "note": "plain, thick"
+        },
+        {
+          "food": "papaya-raw-cd2cbc",
+          "g": 180,
+          "swap": "vit_c_fruit",
+          "note": "cubed"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "raw, to toast"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "whole, raw, to toast"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.5,
+          "note": "a pinch"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Toast the almonds and pepitas in a dry skillet over medium heat for 3 to 4 minutes, shaking often, until the pepitas puff and pop and the almonds smell nutty. Tip them onto a plate to cool, then roughly chop the almonds.",
+        "Spoon the yogurt into a bowl and pile the papaya on top.",
+        "Squeeze over the lime, scatter on the nuts and seeds, and finish with a pinch of chile and a tiny pinch of salt."
+      ],
+      "prepMin": 8,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Toast a jar of almonds and pepitas on Sunday. Not a papaya fan? Cubed mango or a small orange does the same job."
+    },
+    {
+      "id": "lowgi-latin-ensalada-quinua-garbanzos",
+      "name": "Quinoa and chickpea salad with queso fresco and ají amarillo",
+      "inspiredBy": "Peruvian quinoa salads and solterito, with chickpeas and hominy in place of fava beans and choclo",
+      "about": "Fluffy quinoa tossed with chickpeas, tomato, hominy, onion and queso fresco in a lime and ají amarillo dressing. It borrows from the quinoa and queso fresco salads of Peru, and the **chickpeas and quinoa bring fibre and protein** for a modest spoonful of grain.",
+      "ingredients": [
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "rinsed well"
+        },
+        {
+          "food": "chickpeas-canned-drained-rinsed-211d8c",
+          "g": 130,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 35,
+          "swap": "dairy_protein",
+          "note": "cubed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "diced"
+        },
+        {
+          "food": "hominy-canned-white-039c3a",
+          "g": 40,
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 10,
+          "note": "paste"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 25
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa, then simmer it with twice its volume of water and a pinch of salt for about 14 minutes, until the little tails pop out. Fluff it, spread it on a plate and let it cool for 10 minutes.",
+        "Whisk the ají amarillo paste with the lime juice, oil and the rest of the salt.",
+        "Put the cooled quinoa, chickpeas, tomato, hominy and onion in a bowl, pour over the dressing and toss.",
+        "Fold in the cilantro and queso fresco just before serving."
+      ],
+      "prepMin": 15,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook the quinoa on Sunday and this lunch takes 5 minutes. Rinse it really well so it is not bitter. Freeze the rest of the hominy tin for Saturday's pozole."
+    },
+    {
+      "id": "lowgi-latin-sopa-frijol-negro",
+      "name": "Black bean soup with a poached egg, tortilla strips and radish",
+      "inspiredBy": "Cuban sopa de frijoles negros, finished with Mexican-style toppings: tortilla strips, queso fresco and crema",
+      "about": "A smoky, garlicky black bean soup built on a Cuban-style sofrito, with a poached egg, crisp baked tortilla strips, radish, a little queso fresco and a spoon of yogurt crema. The beans are the star, so it is **mostly fibre and protein** with just one tortilla for crunch.",
+      "ingredients": [
+        {
+          "food": "black-beans-canned-sodium-added-drained-and-rinsed-8ec5bd",
+          "g": 230,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "finely chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "two cloves"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "one egg"
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 30,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 40,
+          "swap": "dairy_protein",
+          "note": "plain Greek, as crema"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "cut into strips"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 40,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "distilled-vinegar-white-dd0119",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Toss the tortilla strips with a few drops of the oil and bake on a tray for 6 to 8 minutes, until crisp and golden.",
+        "Warm the rest of the oil in a pot and cook the onion and red pepper over medium heat for about 6 minutes, until soft. Add the garlic, cumin and oregano and stir for 30 seconds, until you can smell them.",
+        "Add the beans, the bay leaf and enough water to just cover, then simmer for 12 minutes. Mash about a third of the beans against the side of the pot to thicken the soup.",
+        "Take out the bay leaf and stir in the vinegar, lime juice and salt. Taste it, because it should be bright.",
+        "Crack the egg into the simmering soup, put the lid on, and poach it for about 3 minutes, until the white is set and the yolk is still soft.",
+        "Ladle into a bowl with the egg on top, then add the tortilla strips, radish, queso fresco, cilantro and a spoon of yogurt mixed with a squeeze of lime, as crema."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "freezer-friendly"
+      ],
+      "tip": "Double the soup and freeze a portion without the toppings. It thaws well and the beans stay creamy. Choose no-salt-added beans and rinse them well; if yours are salted, skip the pinch of salt."
+    },
+    {
+      "id": "lowgi-latin-ceviche-camaron-aguacate",
+      "name": "Shrimp ceviche with avocado on a baked tostada",
+      "inspiredBy": "Mexican ceviche de camarón, with the shrimp briefly cooked first, one tostada and crunchy jícama",
+      "about": "Shrimp quickly poached, then cured in lime juice with onion, tomato, cucumber, serrano and cilantro, and spooned over one crisp baked tostada with avocado. It is bright, cold and filling, and the **shrimp carry almost all the protein** with hardly any starch.",
+      "ingredients": [
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "peeled and deveined"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 60
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 90,
+          "note": "seeded and diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "serrano-pepper-raw-bcef02",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 80,
+          "note": "cubed"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "baked until crisp"
+        },
+        {
+          "food": "yambean-jicama-tuber-raw-8519ba",
+          "g": 50,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Bring a pot of salted water to a boil and drop in the shrimp for 1 to 2 minutes, just until pink and curled. Drain, cool in cold water, then chop into bite-sized pieces.",
+        "Toss the shrimp with the lime juice and the onion and chill for 15 minutes. The lime will turn the onion pink and take the edge off it.",
+        "Meanwhile, heat the oven to 200°C (400°F) and bake the tortilla on a rack for 8 to 10 minutes, until crisp like a tostada.",
+        "Stir the tomato, cucumber, serrano, cilantro and salt into the shrimp, then fold in the avocado gently at the last minute.",
+        "Spoon the ceviche over the tostada and serve with the jícama and carrot sticks."
+      ],
+      "prepMin": 20,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "You can use cooked, peeled shrimp from the fish counter and skip step one. Fresh tomatoes and lime make all the difference, so don't rush those."
+    },
+    {
+      "id": "lowgi-latin-pollo-tinga-lechuga",
+      "name": "Chicken tinga lettuce tacos with one tortilla and black beans",
+      "inspiredBy": "Mexican tinga de pollo, usually served on tostadas, here in lettuce cups with one tortilla",
+      "about": "Shredded chicken simmered in a smoky chipotle and tomato sauce, piled into crisp lettuce cups, with one warm corn tortilla and a bowl of black beans on the side. The **lettuce and beans stretch the meal**, so you get tacos without a stack of tortillas.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "boneless, skinless"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 90,
+          "note": "a small chunk for the pot, the rest thinly sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 160,
+          "note": "ripe, chopped"
+        },
+        {
+          "food": "chipotle-peppers-in-adobo-sauce-f692a1",
+          "g": 14,
+          "note": "minced, with some adobo sauce"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "two cloves"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "separated into cups"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "warmed"
+        },
+        {
+          "food": "black-beans-canned-sodium-added-drained-and-rinsed-8ec5bd",
+          "g": 110,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Put the chicken in a pot with water to cover, the chunk of onion, the bay leaf and a pinch of the salt. Bring to a simmer and cook gently for 15 to 18 minutes, until the chicken is cooked through and pulls apart.",
+        "Lift the chicken out, keep a cup of the broth, and shred the meat with two forks.",
+        "Warm the oil in a wide pan and cook the sliced onion for 5 minutes, until soft. Add the garlic, oregano and cumin, then the tomato and chipotle, and cook for about 8 minutes, until the sauce thickens and darkens.",
+        "Stir in the shredded chicken with a splash of the broth and simmer for 5 minutes. Add the lime juice and the rest of the salt.",
+        "Warm the black beans with a little of the broth, and warm the tortilla in a dry skillet.",
+        "Fill the lettuce cups with the tinga and scatter the cilantro on top. Serve the beans and the tortilla on the side. This makes two portions, so pack the second one for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Chipotles in adobo vary in heat. Start with half and add more at the end. The tinga freezes well for a month. Choose no-salt-added beans and rinse them well; if yours are salted, skip the pinch of salt."
+    },
+    {
+      "id": "lowgi-latin-caballa-escabeche-camote",
+      "name": "Mackerel escabeche with ají amarillo, camote and chickpeas",
+      "inspiredBy": "Peruvian pescado en escabeche, with mackerel, chickpeas and the usual camote kept small",
+      "about": "Seared mackerel under a warm, tangy pile of onion and ají amarillo cooked with vinegar, served with a few slices of roasted sweet potato and warm chickpeas. The **mackerel is a rich source of omega-3**, and the vinegar keeps the whole plate bright.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "fillets, skin on"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 90,
+          "note": "cut in thick slices"
+        },
+        {
+          "food": "chickpeas-canned-drained-rinsed-211d8c",
+          "g": 120,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80,
+          "note": "sliced into half moons"
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 14,
+          "note": "paste"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "two cloves"
+        },
+        {
+          "food": "distilled-vinegar-white-dd0119",
+          "g": 25
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the sweet potato with a little of the oil and half the salt and roast on a tray for 20 to 25 minutes, turning once, until soft and browned at the edges.",
+        "Warm half the remaining oil in a skillet and cook the onion with the bay leaf for about 6 minutes, until soft. Add the garlic, ají amarillo paste and cumin, stir for 1 minute, then pour in the vinegar and a splash of water and simmer for 3 minutes. Take out the bay leaf.",
+        "Pat the mackerel dry and season with the rest of the salt. Sear it skin side down in a hot pan with the last of the oil for about 4 minutes, until the skin is crisp, then flip for 1 minute.",
+        "Warm the chickpeas with a spoonful of the onion sauce and the lime juice.",
+        "Lay the tomato slices on a plate, set the chickpeas and sweet potato beside them, put the mackerel on top and spoon the warm onion sauce over. Finish with the cilantro."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Escabeche is just as good cold. Double the onion sauce and keep it for 3 days in the fridge. No Atlantic mackerel? Salmon or trout fillet works in the same sauce."
+    },
+    {
+      "id": "lowgi-latin-arroz-con-pollo-ensalada",
+      "name": "Arroz con pollo with brown rice and a big salad",
+      "inspiredBy": "Caribbean and Colombian arroz con pollo, with brown rice and a lot more vegetables",
+      "about": "Chicken thighs and brown rice simmered together with sofrito, achiote and carrot, served next to a big, lime-dressed cabbage, lettuce and tomato salad. The rice is a **modest portion that stays tender in the pot**, and the salad does the filling.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "boneless, skinless, cut in chunks"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "long-grain, rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "finely chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "two cloves"
+        },
+        {
+          "food": "achiote-paste-recado-rojo-5f725a",
+          "g": 5,
+          "note": "paste"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 12
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "diced small"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 100,
+          "note": "finely shredded"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "shredded"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.7
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Season the chicken with half the salt and the cumin. Warm the oil in a wide, heavy pot and brown the chicken for about 5 minutes, then move it to a plate.",
+        "In the same pot, cook the onion and red pepper for 5 minutes. Add the garlic, achiote paste, tomato paste and oregano and stir for 1 minute, until the pastes melt and the pot turns a deep orange.",
+        "Stir in the rice, return the chicken, and add water to cover the rice by about a finger. Bring to a boil, cover, and cook on the lowest heat for 35 minutes.",
+        "Scatter the carrot over the top, cover again, and cook for 10 more minutes, until the rice is tender and the liquid is gone. Rest it, covered, for 5 minutes, then fold in half the cilantro.",
+        "Toss the cabbage, lettuce and tomato with the lime juice, the rest of the cilantro and the rest of the salt.",
+        "Serve the rice and chicken with a big pile of salad. This makes two portions, so pack the second one for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 60,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Use a 3 litre lidded pot. The rice is mostly hands-off, so make the salad while it cooks. Add a splash of water when you reheat the leftovers."
+    },
+    {
+      "id": "lowgi-latin-ropa-vieja-frijoles-maduros",
+      "name": "Ropa vieja with black beans and baked plantain",
+      "inspiredBy": "Cuban ropa vieja, with more beans and vegetables and a small portion of ripe plantain",
+      "about": "Cuban shredded flank steak simmered with peppers, tomato and a splash of vinegar, served with black beans, a few slices of baked ripe plantain and a crunchy slaw. It is rich, and the **beans and slaw come alongside the plantain** so the sweetness is not alone.",
+      "ingredients": [
+        {
+          "food": "beef-flank-steak-lean-raw-1239a6",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "cut in 4 pieces"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "two cloves"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 150,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 12
+        },
+        {
+          "food": "distilled-vinegar-white-dd0119",
+          "g": 10
+        },
+        {
+          "food": "black-beans-canned-sodium-added-drained-and-rinsed-8ec5bd",
+          "g": 120,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "plantain-ripe-raw-c315a0",
+          "g": 50,
+          "note": "very ripe, in thick slices"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 90,
+          "note": "finely shredded"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Season the beef with the cumin and half the salt. Warm half the oil in a heavy pot and brown the pieces for about 3 minutes a side. Add water just to cover and the bay leaf, bring to a simmer, cover, and cook for about 90 minutes, until a fork pulls it apart.",
+        "Meanwhile, heat the oven to 200°C (400°F) and bake the plantain slices on a tray for 20 minutes, turning once, until soft and caramelized at the edges.",
+        "Lift the beef out and shred it along the grain with two forks. Pour off most of the broth, keeping about half a cup.",
+        "Warm the rest of the oil in the pot and cook the onion and red pepper for 6 minutes. Add the garlic, oregano and tomato paste, stir for a minute, then add the tomato and the reserved broth and simmer for 8 minutes.",
+        "Return the beef to the sauce and simmer for 8 to 10 minutes. Stir in the vinegar and the rest of the salt. Warm the beans with a splash of water.",
+        "Toss the cabbage with the lime juice and cilantro. Serve the ropa vieja with the beans, plantain and slaw. This makes two portions, so pack the second one for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 110,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "weekend-project"
+      ],
+      "tip": "A pressure cooker does the beef in about 50 minutes. Braise it on Sunday and Thursday's dinner takes 30 minutes. Choose no-salt-added beans and rinse them well; if yours are salted, skip the pinch of salt."
+    },
+    {
+      "id": "lowgi-latin-salmon-verde-curtido-frijoles",
+      "name": "Salmon with salsa verde, curtido and pinto beans",
+      "inspiredBy": "Mexican salsa verde and Salvadoran curtido, here with salmon",
+      "about": "Pan-seared salmon on a bright tomatillo and serrano salsa, with a crunchy Salvadoran-style curtido and warm pinto beans. The **salmon brings omega-3 and vitamin D**, and the tangy curtido and beans keep the plate balanced.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 125,
+          "swap": "fatty_fish",
+          "note": "skin-on fillet"
+        },
+        {
+          "food": "tomatillo-raw-c18847",
+          "g": 110,
+          "note": "husked, halved"
+        },
+        {
+          "food": "serrano-pepper-raw-bcef02",
+          "g": 6,
+          "note": "stemmed"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "two cloves"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 90,
+          "note": "finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 30,
+          "note": "grated"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "distilled-vinegar-white-dd0119",
+          "g": 15
+        },
+        {
+          "food": "pinto-beans-canned-drained-and-rinsed-f4190a",
+          "g": 130,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 20,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "warmed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.7
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Make the curtido first. Toss the cabbage, carrot and onion with the vinegar, oregano and a pinch of the salt, and squeeze it with your hands for a minute until it starts to soften. Leave it for at least 15 minutes.",
+        "Broil or pan-roast the tomatillos, serrano and garlic for about 8 minutes, until blistered and soft. Blend them with the cilantro, lime juice and a pinch of salt into a loose salsa.",
+        "Warm the beans in a small pot with a splash of water and mash them lightly. Warm the tortilla in a dry skillet.",
+        "Pat the salmon dry and season it with the remaining salt. Sear it skin side down in the oil over medium-high heat for 4 to 5 minutes, until the skin is crisp, then flip for 1 to 2 minutes.",
+        "Spoon some salsa onto a plate, set the salmon on top, and serve with the curtido, the beans topped with queso fresco, and the tortilla."
+      ],
+      "prepMin": 20,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Make the curtido on Sunday. It keeps 5 days and is great on anything with beans. Drained canned tomatillos work out of season."
+    },
+    {
+      "id": "lowgi-latin-pozole-rojo-repollo-rabano",
+      "name": "Pozole rojo with lots of cabbage and radish",
+      "inspiredBy": "Mexican pozole rojo, with a lot more cabbage and radish and a smaller scoop of hominy",
+      "about": "The big weekend pot: pork simmered with hominy in a rich guajillo broth, then piled with shredded cabbage, radish, onion and lime. It is warming and festive, and the **mountain of cabbage and radish** keeps the hominy portion modest.",
+      "ingredients": [
+        {
+          "food": "pork-butt-portion-lean-raw-26a201",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "lean pork shoulder, in big chunks"
+        },
+        {
+          "food": "hominy-canned-white-039c3a",
+          "g": 110,
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "guajillo-chile-dried-eb6416",
+          "g": 38,
+          "note": "dried, stemmed and seeded"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "half in the pot, half to serve"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "three cloves"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 160,
+          "note": "finely shredded"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 70,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 25,
+          "note": "for squeezing over"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 3,
+          "note": "dried leaf, Mexican oregano if you have it"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Put the pork in a big pot with half the onion, half the garlic, the bay leaf and enough water to cover by a few finger-widths. Bring to a boil, skim off the foam, then simmer gently for about 75 minutes, until the pork is tender.",
+        "Toast the guajillo in a dry pan for about 30 seconds a side until fragrant, then cover with hot water and soak for 15 minutes.",
+        "Blend the soaked chiles with about a cup of fresh water (the soaking water can taste bitter), the rest of the garlic and half the oregano until completely smooth. It is a lot of chile, and that is what makes the broth deep and brick red. Fry the paste in the oil for 3 to 4 minutes in a small pan, until it darkens and smells rich, then scrape it into the pot.",
+        "Add the hominy and salt and simmer for 25 minutes, until the broth is deep red and the pork falls apart. Shred the pork a bit in the pot. Add a cup of hot water if it is thicker than you like.",
+        "Ladle into big bowls and let everyone top their own with cabbage, radish, chopped raw onion, the rest of the oregano rubbed between your fingers, and a squeeze of lime. This makes two portions, so pack the second for tomorrow's lunch, with its toppings in a separate container."
+      ],
+      "prepMin": 25,
+      "cookMin": 110,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "A pressure cooker takes the pork to tender in 35 minutes. Chop the toppings while it simmers, and keep them cold."
+    },
+    {
+      "id": "lowgi-latin-habichuelas-camarones-ajillo",
+      "name": "Stewed pinto beans with garlic shrimp and a little rice",
+      "inspiredBy": "Dominican habichuelas guisadas, usually served over white rice, with a much smaller rice portion",
+      "about": "Dominican-style habichuelas guisadas, beans stewed with carrot, sofrito and cilantro, with garlicky shrimp and a small spoonful of brown rice on the side. The **beans do most of the filling**, and the shrimp add protein and iodine.",
+      "ingredients": [
+        {
+          "food": "pinto-beans-canned-drained-and-rinsed-f4190a",
+          "g": 140,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "peeled, cubed small"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "three cloves"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 12
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "peeled and deveined"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 25,
+          "swap": "low_gi_grains",
+          "note": "long-grain"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "shredded"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.4,
+          "note": "a pinch"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Start the rice first. Boil it in a small pot of plenty of salted water, like pasta, for about 30 minutes until tender, then drain. It makes about a third of a cup cooked.",
+        "Warm half the oil in a pot and cook the onion, red pepper and half the garlic for 6 minutes. Stir in the tomato paste and oregano for 1 minute.",
+        "Add the beans, carrot and enough water to just cover. Simmer for 15 to 18 minutes, until the carrot is soft, then mash some of the beans against the side of the pot so the stew turns thick and creamy. Stir in the cilantro and half the salt.",
+        "Warm the remaining oil in a skillet over medium-high heat. Add the shrimp with the rest of the garlic and a pinch of chile, and cook for 2 to 3 minutes, until pink and curled. Finish with half the lime juice.",
+        "Toss the lettuce and tomato with the remaining lime juice and salt.",
+        "Serve the beans over or beside the rice, with the shrimp on top and the salad alongside."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "A microwave pouch of brown rice works too. Dominican cooks use auyama here; a few cubes of butternut squash work in place of the carrot. Choose no-salt-added beans and rinse them well; if yours are salted, skip the pinch of salt."
+    },
+    {
+      "id": "lowgi-latin-sardina-tostada",
+      "name": "Sardines on a baked tostada with lime and tomato",
+      "inspiredBy": "Mexican tostadas de sardina, with one small tostada",
+      "about": "Canned sardines mashed with lime, tomato, onion and cilantro on one crisp baked tostada. It is a simple Mexican-style tostada de sardina, and the **sardine bones bring calcium** along with B12 and omega-3.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 60,
+          "swap": "fatty_fish",
+          "note": "drained, bones in"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 20,
+          "swap": "low_gi_grains",
+          "note": "baked until crisp"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "finely diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "serrano-pepper-raw-bcef02",
+          "g": 2,
+          "note": "minced, optional"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F) and bake the tortilla on a rack for 8 to 10 minutes, until crisp.",
+        "Mash the sardines with the lime juice, tomato, onion, cilantro and serrano.",
+        "Pile the mixture on the tostada and eat right away so it stays crunchy."
+      ],
+      "prepMin": 8,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Bake a few tostadas ahead of time and keep them in a tin for the week."
+    },
+    {
+      "id": "lowgi-latin-garbanzos-tostados",
+      "name": "Garbanzos tostados with lime and chile",
+      "inspiredBy": "Mexican garbanzos tostados, the roasted chickpeas sold on the street with lime and chile",
+      "about": "Chickpeas roasted until crisp and dusted with chile, cumin, lime and salt. It is a crunchy, handful-at-a-time snack, and the **chickpeas give fibre and protein** instead of an empty bag of chips.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-rinsed-211d8c",
+          "g": 120,
+          "swap": "legumes",
+          "note": "drained, rinsed and patted very dry"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Pat the chickpeas as dry as you can with a clean towel.",
+        "Toss them with the oil, chile, cumin and half the salt, then roast on a tray for 25 to 30 minutes, shaking the tray halfway, until crisp and golden.",
+        "Toss with the lime juice and the rest of the salt while they are still warm."
+      ],
+      "prepMin": 5,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Roast a double batch on Sunday. They are best on the first day, but still good for 3 days in a jar."
+    },
+    {
+      "id": "lowgi-latin-jicama-limon-pepitas",
+      "name": "Jícama with lime, chile and pepitas",
+      "inspiredBy": "Mexican jícama con limón y chile, with pepitas added",
+      "about": "Crunchy jícama sticks with lime juice and chile powder, plus a small handful of toasted pepitas. It is the classic Mexican street snack, and the **pepitas make it filling** rather than a bite of nothing.",
+      "ingredients": [
+        {
+          "food": "yambean-jicama-tuber-raw-8519ba",
+          "g": 160,
+          "note": "peeled, in sticks"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the pepitas in a dry pan for 2 to 3 minutes, until they puff and pop.",
+        "Peel the jícama and cut it into sticks about the size of your finger.",
+        "Toss with the lime juice, chile powder and salt, and eat with the warm pepitas on the side."
+      ],
+      "prepMin": 8,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Cucumber sticks are lovely in here too."
+    },
+    {
+      "id": "lowgi-latin-guacamole-crudites",
+      "name": "Chunky guacamole with cucumber and radish",
+      "inspiredBy": "Mexican guacamole, scooped up with vegetables",
+      "about": "Chunky guacamole with lime, onion, serrano and cilantro, scooped up with cucumber and radish rounds. The avocado brings **fibre and good fat**, and the crunch comes from the vegetables instead of chips.",
+      "ingredients": [
+        {
+          "food": "avocado-raw-c06278",
+          "g": 70,
+          "note": "ripe"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 12,
+          "note": "finely diced"
+        },
+        {
+          "food": "serrano-pepper-raw-bcef02",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "sliced in rounds"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Mash the avocado roughly with a fork, leaving some chunks.",
+        "Stir in the lime juice, onion, serrano, cilantro, tomato and salt.",
+        "Serve with the cucumber and radish rounds for scooping."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Press a piece of plastic wrap right onto the surface to keep it green for a day."
+    },
+    {
+      "id": "lowgi-latin-pepitas-tostadas",
+      "name": "Spiced pepitas with lime and chile",
+      "inspiredBy": "Mexican pepitas con limón y chile",
+      "about": "Toasted pumpkin seeds with lime, chile and salt. They are crunchy, a little smoky, and the **seeds bring magnesium, zinc and protein** in a small handful.",
+      "ingredients": [
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 30,
+          "swap": "nuts_seeds",
+          "note": "raw"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the pepitas in a dry skillet over medium heat for 3 to 4 minutes, shaking often, until they puff and crackle.",
+        "Tip into a bowl and toss with the chile and salt while they are warm, then squeeze over the lime just before eating."
+      ],
+      "prepMin": 2,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ],
+      "tip": "Toast a jar on Sunday and keep it for 5 days. Add the lime only when you eat them."
+    },
+    {
+      "id": "lowgi-latin-huevo-duro-limon-chile",
+      "name": "Boiled egg with lime and chile",
+      "inspiredBy": "Mexican huevo duro con limón y chile",
+      "about": "A hard-boiled egg with a squeeze of lime, chile and salt, the way it is sold on the street. A tidy, protein-led snack that brings **choline** to the day.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "one egg"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Lower the egg into boiling water and cook for 9 minutes, then cool it in cold water.",
+        "Peel, halve, and top with the lime juice, chile and salt."
+      ],
+      "prepMin": 2,
+      "cookMin": 9,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ],
+      "tip": "Boil several on Sunday and keep them in the fridge, unpeeled."
+    },
+    {
+      "id": "lowgi-latin-coctel-camaron-pepino",
+      "name": "Shrimp and cucumber lime cocktail",
+      "inspiredBy": "Mexican coctel de camarón, with a fresh tomato and lime sauce in place of ketchup",
+      "about": "A small glass of poached shrimp with cucumber, onion and cilantro in a quick, tangy tomato and lime sauce. It is a light, cold coctel de camarón, and the **shrimp add lean protein** without any starch.",
+      "ingredients": [
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "peeled and deveined"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 12,
+          "note": "finely diced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.3,
+          "note": "a pinch"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Drop the shrimp in a pot of boiling salted water for 1 to 2 minutes, until pink and curled. Drain, cool and chop.",
+        "Mash or blend half the tomato with the lime juice, chile and salt into a loose red sauce. Stir in the shrimp, the rest of the tomato, the cucumber, onion and cilantro, and chill for 10 minutes. Eat it from a glass with a spoon, coctel-style."
+      ],
+      "prepMin": 10,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ],
+      "tip": "Use cooked, peeled shrimp from the fish counter to skip the first step."
+    },
+    {
+      "id": "lowgi-latin-camote-limon-chile",
+      "name": "Roasted camote with lime and chile",
+      "inspiredBy": "Mexican camote asado, finished with lime and chile",
+      "about": "Sweet potato wedges roasted until soft, then finished with lime and chile. It is a street-food classic, and the **lime and chile** make a small portion feel like a treat.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 110,
+          "note": "scrubbed, in wedges"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the camote with the oil and the salt and roast for 25 minutes, turning once, until soft inside and browned outside.",
+        "Squeeze over the lime and dust with chile powder."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Roast a tray on Sunday and reheat it in a toaster oven."
+    },
+    {
+      "id": "lowgi-latin-salpicon-pollo-pepino",
+      "name": "Chicken and lime salpicón on jícama",
+      "inspiredBy": "Mexican salpicón, usually made with beef, here with chicken on jícama",
+      "about": "Shredded chicken tossed with lime, onion, radish and cilantro and piled on crisp jícama slices. It is a cool, savoury bite, and the **chicken adds lean protein** to a snack.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "boneless, skinless"
+        },
+        {
+          "food": "yambean-jicama-tuber-raw-8519ba",
+          "g": 100,
+          "note": "sliced thin"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 30,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 12,
+          "note": "finely diced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Simmer the chicken in salted water for 12 to 15 minutes, until cooked through. Cool it, then shred it finely.",
+        "Toss with the lime juice, onion, radish, cilantro and salt.",
+        "Pile onto the jícama slices."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Poach the chicken for the tinga at the same time and keep a little aside."
+    },
+    {
+      "id": "lowgi-latin-almendras-limon-chile",
+      "name": "Toasted almonds with lime and chile",
+      "inspiredBy": "Mexican almendras con limón y chile",
+      "about": "Almonds toasted in a dry pan and tossed with lime juice, chile and a pinch of salt. It is a common Mexican snack, and a small handful brings **vitamin E and healthy fat** to a day of beans and tortillas.",
+      "ingredients": [
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 25,
+          "swap": "nuts_seeds",
+          "note": "whole, raw"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry skillet over medium heat for 4 to 5 minutes, shaking often, until they smell nutty and darken a shade.",
+        "Tip into a bowl and toss with the chile and salt while they are warm, then squeeze over the lime just before eating."
+      ],
+      "prepMin": 2,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ],
+      "tip": "Toast a jar on Sunday and keep it for the week."
+    },
+    {
+      "id": "lowgi-latin-sardina-lechuga",
+      "name": "Sardine lettuce cups with lime, ají amarillo and radish",
+      "inspiredBy": "Mexican-style sardines with lime, with a Peruvian ají amarillo twist, in lettuce cups instead of a tostada",
+      "about": "Canned sardines mashed with lime and ají amarillo, stirred with radish and cilantro and spooned into crisp romaine leaves. It is a no-starch cousin of the sardine tostada, and the **soft sardine bones bring calcium** along with B12 and omega-3.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 60,
+          "swap": "fatty_fish",
+          "note": "drained, bones in"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "separated into cups"
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 5,
+          "note": "paste"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 20,
+          "note": "finely diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 12,
+          "note": "finely diced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "serrano-pepper-raw-bcef02",
+          "g": 2,
+          "note": "minced, optional"
+        }
+      ],
+      "steps": [
+        "Mash the sardines roughly with the lime juice and ají amarillo paste.",
+        "Stir in the radish, onion, cilantro and serrano.",
+        "Spoon into the romaine leaves and eat right away so they stay crisp."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Keep the leaves cold in the fridge and the whole snack takes 5 minutes."
+    },
+    {
+      "id": "lowgi-latin-pico-queso-fresco",
+      "name": "Pico de gallo with queso fresco",
+      "inspiredBy": "Mexican pico de gallo, with queso fresco folded in",
+      "about": "A small cup of chopped tomato, onion, serrano and cilantro with cubes of queso fresco and lots of lime. It is a fresh, salty bite, and the **queso fresco adds protein and calcium** to a snack that is mostly tomato.",
+      "ingredients": [
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 110,
+          "note": "ripe, diced"
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 35,
+          "swap": "dairy_protein",
+          "note": "cubed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "serrano-pepper-raw-bcef02",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toss the tomato, onion, serrano and cilantro with the lime juice and salt.",
+        "Let it sit for 5 minutes so the juices run.",
+        "Fold in the queso fresco and eat with a spoon."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Make it just before eating, so the cheese stays firm."
+    }
+  ]
+}
