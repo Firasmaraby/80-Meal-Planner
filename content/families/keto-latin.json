@@ -1,0 +1,1789 @@
+{
+  "id": "keto-latin",
+  "name": "Keto Latin",
+  "style": "keto",
+  "cuisine": "Latin American",
+  "regions": [
+    "Mexico",
+    "Peru",
+    "Brazil",
+    "Argentina"
+  ],
+  "summary": "Carne asada with nopales, Peruvian ceviche and trout, chicken fajita bowls, camarones a la diabla, a weekend steak with chimichurri and a Brazilian moqueca, all very low in carbs. Avocado, nuts and seeds, olive oil and fish carry the fat, and salsas and vegetables carry the vitamins.",
+  "howItWorks": "**Avocado, nuts, seeds and fish carry the fat.** Avocado at most meals, pecans, almonds and toasted pepitas, olive oil in the chimichurri, and trout and sardines do the work. There is no cheese or cream, and the coconut milk is light, so saturated fat stays under 10%.\n\n**Where the carbs went.** No tortillas, rice, beans, corn or plantain. Lettuce cups and cucumber do the scooping, cauliflower stands in for rice, and onion, tomato and lime are measured like seasoning. Net carbs stay under the keto limit every day, at every size.\n\n**Salsas and vegetables carry the vitamins.** Nopales, tomatillo salsa verde, peppers, spinach and collards bring **vitamin A, vitamin C, folate and calcium**. Pepitas and chia add magnesium, pork tenderloin brings thiamin, and sardines with their soft bones add more calcium.\n\n**Cook once, eat twice.** Monday's carne asada, Wednesday's fajita bowls, Friday's achiote pork and Saturday's steak each make two portions, so the next day's lunch is done. Soak two chia jars on Sunday and blend Monday's ancho paste the night before, then rub it on the steak when you get home.\n\n**Fatty fish twice.** Trout on Tuesday and sardines on Friday carry the omega-3 and **vitamin D**, never back to back. Chia pudding and chía fresca add plant omega-3 on the other days.",
+  "signature": [
+    "keto-latin-carne-asada-nopales-guacamole",
+    "keto-latin-sea-bass-ceviche-aguacate",
+    "keto-latin-bife-chimichurri-parrilla",
+    "keto-latin-moqueca-robalo-couve"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800"
+      ],
+      "adjust": [
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "keto-latin-aguacate-limon-chile"
+          }
+        },
+        {
+          "day": 6,
+          "swap": {
+            "from": "keto-latin-ceviche-camaron-vasitos",
+            "to": "keto-latin-pepitas-chile-limon"
+          }
+        }
+      ]
+    }
+  },
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-latin-chia-cinnamon-pecanas"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-latin-sea-bass-ceviche-aguacate"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-latin-carne-asada-nopales-guacamole"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-latin-pepino-chile-pecanas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-latin-ensalada-nopales-vasito"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-latin-huevos-salsa-verde-pepitas"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-latin-carne-asada-nopales-guacamole",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-latin-trucha-aji-amarillo-coliflor"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-latin-almendras-chile-limon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-latin-pecanas-chipotle-limon"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-latin-chia-cinnamon-pecanas"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-latin-palta-rellena-atun"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-latin-fajitas-pollo-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-latin-ensalada-nopales-vasito"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-latin-pepino-chile-pecanas"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-latin-huevos-mexicana-aguacate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-latin-fajitas-pollo-bowl",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-latin-camarones-diabla-chayote"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-latin-chia-fresca-pepino"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-latin-pecanas-chipotle-limon"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-latin-huevos-salsa-verde-pepitas"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-latin-sardinas-tostada-pepino"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-latin-cochinita-lomo-cerdo-repollo"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-latin-almendras-chile-limon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-latin-chia-fresca-pepino"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-latin-chia-cacao-pecanas"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-latin-cochinita-lomo-cerdo-repollo",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-latin-bife-chimichurri-parrilla"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-latin-ceviche-camaron-vasitos"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-latin-aguacate-limon-chile"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-latin-chia-cinnamon-pecanas"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-latin-bife-chimichurri-parrilla",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-latin-moqueca-robalo-couve"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-latin-guacamole-pepino"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-latin-pepitas-chile-limon"
+        }
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "keto-latin-huevos-mexicana-aguacate",
+      "name": "Huevos a la mexicana with nopales and avocado",
+      "about": "Eggs scrambled soft with tomato, onion, jalapeño and tender diced nopales, the red, white and green of the Mexican flag, with sliced avocado and a squeeze of lime. It is the classic home breakfast, and the nopales, tomato and avocado bring **calcium, folate and potassium** along with the eggs.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 35,
+          "note": "diced small"
+        },
+        {
+          "food": "white-onion-raw-281824",
+          "g": 8,
+          "note": "finely diced"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 6,
+          "note": "minced, seeds out for milder"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "nopales-prickly-pear-raw-d61a14",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "cleaned, diced small"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 90,
+          "note": "sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 3,
+          "note": "a squeeze"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat the olive oil in a nonstick pan over medium heat. Cook the onion and jalapeño until soft and glossy, about 3 minutes.",
+        "Add the tomato and a pinch of the salt. Cook until it breaks down and most of the liquid is gone, 3 to 4 minutes.",
+        "Stir in the nopales and cook until they turn olive green and the sticky liquid cooks off, about 4 minutes.",
+        "Beat the eggs with the rest of the salt and pour them in. Stir slowly with a spatula until just set and still a little creamy, about 2 minutes.",
+        "Slide onto a plate, fan the avocado beside it, and finish with the cilantro and a squeeze of lime."
+      ],
+      "prepMin": 10,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Rinsed jarred nopalitos work, or cook a few extra when you make Wednesday's nopales salad. No ripe avocado? Spoon on a little guacamole instead."
+    },
+    {
+      "id": "keto-latin-huevos-salsa-verde-pepitas",
+      "name": "Eggs in salsa verde with spinach, avocado and toasted pepitas",
+      "inspiredBy": "Mexican huevos en salsa verde, with pepitas for the crunch",
+      "about": "Eggs poached right in a tangy, roasted tomatillo salsa with a handful of wilted spinach, then topped with sliced avocado and a crunch of toasted pepitas. It is huevos en salsa verde, the cousin of chilaquiles verdes without the tortilla chips, and the tomatillo salsa and spinach bring **vitamin C, vitamin A and fibre** early in the day.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "tomatillo-raw-c18847",
+          "g": 65,
+          "note": "husked and rinsed"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 8,
+          "note": "stem removed"
+        },
+        {
+          "food": "white-onion-raw-281824",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "raw, to toast"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Set the tomatillos, jalapeño, onion and garlic in a dry skillet over medium-high heat. Turn them until the tomatillos are blistered and soft, about 8 minutes.",
+        "Toast the pepitas in a dry pan until they pop and smell nutty, about 2 minutes. Tip them out.",
+        "Blend the roasted vegetables with the cilantro, the salt and a splash of water until it is a pourable salsa.",
+        "Heat the olive oil in a small pan and pour in the salsa. Simmer for 3 minutes, until it darkens and thickens a little, then stir in the spinach until it wilts.",
+        "Make a well for each egg and crack them in. Cover and cook 4 to 5 minutes, until the whites are set and the yolks still jiggle.",
+        "Top with the avocado and pepitas and eat straight from the pan."
+      ],
+      "prepMin": 10,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Roast a double batch of the tomatillo salsa on Monday night and keep half in the fridge for Friday."
+    },
+    {
+      "id": "keto-latin-chia-cinnamon-pecanas",
+      "name": "Cinnamon and lime chia pudding with chile pecans",
+      "inspiredBy": "Mexican chía fresca, the lime and chia drink, set into a pudding",
+      "about": "Chia soaked overnight with lime and cinnamon, topped with pecans toasted with a pinch of chili. It borrows the lime and chia of a Mexican chía fresca and sets it into a spoonable breakfast with **omega-3, calcium and plenty of fibre**.",
+      "ingredients": [
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 34,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "almond-milk-unsweetened-shelf-stable-b6bfac",
+          "g": 110,
+          "note": "fortified"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 2,
+          "note": "juice, plus a little grated zest"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1.5
+        },
+        {
+          "food": "pecans-dried-0ce754",
+          "g": 34,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "The night before, stir the chia, almond milk, lime juice, a little grated lime zest and the cinnamon together in a jar with about the same amount of cold water as almond milk. Wait 5 minutes, stir again so nothing clumps, then cover and chill overnight.",
+        "In the morning, toast the pecans in a dry pan over medium heat until they smell nutty, about 3 minutes. Toss with the chili powder.",
+        "Stir the pudding. It should be thick and spoonable, like a loose rice pudding, so add a splash more almond milk if it has set firm. Top with the spicy pecans."
+      ],
+      "prepMin": 6,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make two jars on Sunday night for Monday and Wednesday. On Friday night, make Saturday's chocolate jar and one more plain jar for Sunday. They keep 3 days in the fridge."
+    },
+    {
+      "id": "keto-latin-sea-bass-ceviche-aguacate",
+      "name": "Peruvian sea bass ceviche in lettuce cups with avocado and pepita crunch",
+      "inspiredBy": "Peruvian ceviche clásico, with pepitas in place of the toasted corn, lettuce in place of sweet potato",
+      "about": "Very fresh sea bass cut in cubes and cured in lime juice with red onion, ají amarillo and plenty of cilantro, the way a Lima cevichería does it, spooned into crisp romaine cups. Avocado makes it rich, toasted pepitas stand in for the crunchy cancha corn, and it brings **vitamin C, vitamin A and lean protein** with almost no carbs.",
+      "ingredients": [
+        {
+          "food": "sea-bass-raw-b59bda",
+          "g": 172,
+          "swap": "lean_protein",
+          "note": "very fresh, skinless, cut in 2 cm cubes"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 40,
+          "note": "juice of about 1½ limes"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 6,
+          "note": "sliced thin"
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 8
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 10,
+          "swap": "leafy_greens",
+          "note": "diced"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "whole leaves, for cups"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 140,
+          "note": "cubed"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 26,
+          "swap": "nuts_seeds",
+          "note": "raw, to toast"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Rinse the sliced red onion in cold water for a minute, then drain. This takes the harsh edge off.",
+        "Toast the pepitas in a dry pan over medium heat until they pop and smell nutty, about 2 minutes. Cool them on a plate.",
+        "Stir the lime juice, ají amarillo paste, jalapeño and the salt together in a bowl. This is the leche de tigre, so taste it: it should be sharp, a little hot and well seasoned.",
+        "Add the fish and stir to coat. Let it sit for 8 to 10 minutes, just until the outside turns opaque and the middle is still tender.",
+        "Fold in the onion, cilantro and cucumber. Set the romaine leaves on a plate, spoon the ceviche into them, and top with the avocado and pepitas. Drink the leftover leche de tigre from the bowl."
+      ],
+      "prepMin": 15,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook"
+      ],
+      "tip": "Ask for corvina or sea bass, or any very fresh firm white fish, previously frozen if you are unsure. Eat it the same day."
+    },
+    {
+      "id": "keto-latin-carne-asada-nopales-guacamole",
+      "name": "Carne asada with grilled nopales, cebollitas, garlicky collards and guacamole",
+      "inspiredBy": "Northern Mexican carne asada with grilled nopales",
+      "about": "Lean beef marinated in lime, garlic and ancho and seared hot, then sliced thin, with charred nopales and scallions, a roasted salsa roja, collard greens sautéed with garlic and a scoop of guacamole. Nopales and collards are the quiet stars here, with **fibre, calcium and vitamin C** for almost no carbs. This makes two portions, so tomorrow's lunch is done.",
+      "ingredients": [
+        {
+          "food": "beef-eye-of-round-roast-lean-raw-936a85",
+          "g": 208,
+          "swap": "lean_protein",
+          "note": "thin-cut, about 1 cm"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12,
+          "note": "juice, divided between marinade and guacamole"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "ancho-chile-dried-b95180",
+          "g": 3,
+          "note": "stemmed and seeded"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "nopales-prickly-pear-raw-d61a14",
+          "g": 115,
+          "swap": "leafy_greens",
+          "note": "cleaned paddles, sliced in strips"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20,
+          "note": "whole, trimmed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 20
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 8
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 90,
+          "note": "ripe"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "stems out, cut in thin ribbons"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.1
+        }
+      ],
+      "steps": [
+        "Cover the ancho with hot water and let it soften for 15 minutes. Drain, then blend it with the vinegar, half the lime juice, most of the garlic, the cumin, oregano and half the salt into a paste.",
+        "Pound the steak to an even thickness with a mallet or a heavy pan, then rub the paste over it. Marinate 30 minutes to 4 hours, no longer, or the acid turns lean beef chalky.",
+        "Char the tomato and jalapeño in a hot dry skillet until blackened in spots, about 8 minutes. Chop them with half the cilantro for a chunky salsa roja.",
+        "Mash the avocado with the remaining lime juice, the remaining cilantro and a pinch of salt for a quick guacamole.",
+        "Heat a cast iron pan or grill until very hot. Brush the nopales and scallions with most of the olive oil and cook 4 to 5 minutes a side, until browned and tender. The nopales go from bright to olive green and lose their slime.",
+        "Sear the steak 1½ to 2 minutes a side, so it stays pink in the middle, then rest it 5 minutes and slice it thin against the grain. Lean beef gets tough past medium.",
+        "In the hot pan, warm the last of the olive oil with the last of the garlic, sliced, and toss in the collard ribbons with a splash of water for 3 to 4 minutes, until bright green and tender.",
+        "Plate the steak with the nopales, scallions, collard, salsa and guacamole. Pack the second portion for tomorrow's lunch and keep the guacamole separate so it stays green."
+      ],
+      "prepMin": 20,
+      "cookMin": 20,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Rinsed jarred nopalitos work if you cannot find fresh paddles, or use thick zucchini planks. Eat tomorrow's beef cold or warm it in a hot pan for 30 seconds, because lean beef toughens when it is reheated."
+    },
+    {
+      "id": "keto-latin-trucha-aji-amarillo-coliflor",
+      "name": "Trout in ají amarillo and pecan sauce with salsa criolla and green cauliflower rice",
+      "inspiredBy": "Peruvian trucha with ají amarillo and arroz verde, with the pecans many Peruvian cooks use in ají de gallina, and cauliflower for the rice",
+      "about": "Trout fillet seared skin side down until crisp, on a pool of creamy ají amarillo and pecan sauce, a nod to ají de gallina, with a sharp Peruvian salsa criolla of red onion and lime. The cauliflower rice is cooked with spinach and cilantro like an arroz verde, and the trout brings **omega-3, vitamin D and B12**.",
+      "ingredients": [
+        {
+          "food": "trout-raw-f3ae43",
+          "g": 200,
+          "swap": "fatty_fish",
+          "note": "fillet, skin on"
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 14
+        },
+        {
+          "food": "pecans-dried-0ce754",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "toasted, for the sauce"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10,
+          "note": "juice, all for the salsa criolla"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 60,
+          "note": "grated or pulsed to rice"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 12,
+          "note": "sliced thin"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 20
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Toast the pecans in a dry pan until they smell nutty, about 3 minutes. Blend them with the ají amarillo paste, the garlic, a spoonful of the olive oil, a tablespoon of water and a pinch of salt, adding more water a little at a time until it blends smooth, then simmer in a small pan for 2 minutes until it thickens like thin cream.",
+        "Make the salsa criolla: toss the red onion and tomato with the lime juice and a pinch of salt. Let it sit and soften. Season the trout with a pinch of salt.",
+        "Heat half of the remaining olive oil in a nonstick pan over medium-high. Cook the trout skin side down for 4 minutes without moving it, until the skin is crisp, then flip for 1 to 2 minutes.",
+        "Wipe the pan, add the remaining oil, and warm it for 30 seconds. Add the cauliflower rice and stir for 3 minutes.",
+        "Stir in the spinach and most of the cilantro and cook until the spinach wilts and the rice is tender but not mushy, 2 to 3 minutes. Add a pinch of salt.",
+        "Spoon the ají and pecan sauce around the trout, not over the crisp skin. Serve it with the green rice and the salsa criolla, with the last of the cilantro on top."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ]
+    },
+    {
+      "id": "keto-latin-fajitas-pollo-bowl",
+      "name": "Chicken fajita bowls with cauliflower rice, peppers, spinach and guacamole",
+      "inspiredBy": "Tex-Mex fajitas, served over cauliflower rice and greens instead of tortillas",
+      "about": "Chicken breast sliced thin and seared with chili, cumin and smoked paprika, piled over cauliflower rice and a bed of baby spinach with sizzling peppers, poblano and onion, then topped with guacamole. The peppers and spinach bring **vitamin C, vitamin A and iron**, and the leftovers taste just as good cold or reheated for tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 200,
+          "swap": "lean_protein",
+          "note": "sliced in thin strips"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "note": "in strips"
+        },
+        {
+          "food": "poblano-pepper-seeded-raw-cbcfe7",
+          "g": 55,
+          "note": "in strips"
+        },
+        {
+          "food": "white-onion-raw-281824",
+          "g": 20,
+          "note": "in half moons"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 60,
+          "note": "riced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "baby spinach"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6,
+          "note": "juice"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 80,
+          "note": "for the guacamole"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 2.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Toss the chicken with the chili powder, cumin, smoked paprika, garlic, half the lime juice and half the salt. Leave it 15 minutes.",
+        "Heat half the olive oil in a big skillet over high heat. Cook the chicken in a single layer, in batches if the pan is crowded, 3 to 4 minutes, turning once, until browned and just cooked through. Move it to a plate. Breast dries out fast, so do not go past that.",
+        "In the same pan, cook the peppers, poblano and onion for 6 to 7 minutes, until charred at the edges and still a bit crisp.",
+        "Heat the remaining oil in a second pan and cook the cauliflower rice with a pinch of salt for 4 to 5 minutes, until tender.",
+        "Mash the avocado with the remaining lime juice, the cilantro and a pinch of salt.",
+        "Build the bowls on the baby spinach, which wilts a little under the hot food: cauliflower rice, chicken, peppers, then guacamole. Pack the second portion for tomorrow's lunch, with the guacamole in a separate container."
+      ],
+      "prepMin": 15,
+      "cookMin": 20,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Reheat the chicken in a pan with a splash of water, and keep the spinach cold."
+    },
+    {
+      "id": "keto-latin-camarones-diabla-chayote",
+      "name": "Camarones a la diabla with garlicky zucchini and spinach",
+      "inspiredBy": "Mexican camarones a la diabla, with zucchini instead of rice",
+      "about": "Shrimp in a smoky, brick-red sauce of guajillo, chipotle and tomato, the devilled shrimp of Mexican seaside restaurants, with garlicky zucchini, wilted spinach and avocado to cool it down. The sauce and spinach bring **vitamin A, vitamin C and potassium**, and the shrimp bring lean protein and iodine.",
+      "ingredients": [
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "peeled and deveined"
+        },
+        {
+          "food": "guajillo-chile-dried-eb6416",
+          "g": 3,
+          "note": "stemmed and seeded"
+        },
+        {
+          "food": "chipotle-peppers-in-adobo-sauce-f692a1",
+          "g": 8,
+          "note": "with its sauce"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 30
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "white-onion-raw-281824",
+          "g": 6
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 4,
+          "note": "juice"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "raw, to toast"
+        }
+      ],
+      "steps": [
+        "Cover the guajillo with hot water and soften 10 minutes. Drain, keeping the soaking water, then blend the chile with the tomato, chipotle, half the garlic, half the onion and about 3 tablespoons of the soaking water, enough for a smooth, pourable sauce.",
+        "Heat half the olive oil in a skillet and cook the zucchini with the remaining onion and garlic for 8 to 10 minutes, until tender and lightly golden. Stir in the spinach for the last minute, until wilted. Move to a plate.",
+        "Wipe out the pan and toast the pepitas in it, dry, until they pop, about 2 minutes. Tip them out.",
+        "Add the remaining oil to the pan, pour in the sauce and let it fry and bubble 3 to 4 minutes, stirring, until it darkens. Add a splash of the soaking water if it gets thicker than ketchup. The chipotle is salty, so taste before adding any salt.",
+        "Slide in the shrimp and cook 2 to 3 minutes, until pink and curled. Squeeze in the lime and take the pan off the heat so they do not turn rubbery.",
+        "Serve the shrimp over or beside the zucchini and spinach with the avocado, pepitas and cilantro."
+      ],
+      "prepMin": 15,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "spicy"
+      ]
+    },
+    {
+      "id": "keto-latin-cochinita-lomo-cerdo-repollo",
+      "name": "Achiote pork tenderloin with pickled red onion and lime slaw",
+      "inspiredBy": "Yucatecan cochinita pibil, with lean tenderloin roasted instead of slow-cooked shoulder",
+      "about": "Pork tenderloin marinated in achiote, lime and oregano, the flavours of Yucatán cochinita pibil, then roasted and sliced over a crunchy cabbage and romaine slaw with quick pickled red onion. Pork tenderloin is a good source of **thiamin**, one of the vitamins keto eating tends to miss. This makes two portions, so tomorrow's lunch is done.",
+      "ingredients": [
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 205,
+          "swap": "lean_protein",
+          "note": "trimmed"
+        },
+        {
+          "food": "achiote-paste-recado-rojo-5f725a",
+          "g": 10
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10,
+          "note": "juice, divided"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2.5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 10,
+          "note": "sliced thin"
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 30,
+          "note": "shredded fine"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "shredded"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 12
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "raw, to toast"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Whisk the achiote paste with half the lime juice, half the vinegar, the garlic, oregano and cumin. Coat the pork in it and marinate at least 30 minutes, or overnight.",
+        "Make the pickle: cover the red onion with the remaining lime juice and vinegar and a pinch of salt. Squeeze it with your fingers and leave it until it turns bright pink.",
+        "Heat the oven to 200°C (400°F). Sear the pork in a hot oven-safe pan with most of the olive oil, 2 minutes per side, until deeply red-brown.",
+        "Roast the pork 12 to 15 minutes, until it reaches 63°C (145°F) in the thickest part. Rest 5 minutes.",
+        "Toast the pepitas in a dry pan until they pop. Toss the cabbage and romaine with the cilantro, a spoonful of the pickling liquid, a little olive oil, the pepitas and a pinch of salt.",
+        "Slice the pork. Serve it on the slaw with the pickled onion and avocado. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Dress the slaw only when you eat it, so the lunch portion stays crisp."
+    },
+    {
+      "id": "keto-latin-bife-chimichurri-parrilla",
+      "name": "Argentine grilled steak with chimichurri, grilled vegetables and green salad",
+      "inspiredBy": "Argentine bife a la parrilla with chimichurri, made with lean peceto (eye of round), pounded so it grills fast",
+      "about": "Lean steak grilled hot and rested, sliced thin and spooned with a garlicky parsley and red wine vinegar chimichurri, with a tray of grilled peppers, zucchini and red onion and a peppery arugula and lettuce salad. It eats like a weekend parrilla plate, and the parsley, greens and peppers bring **vitamin K, vitamin C and vitamin A**. This makes two portions, so tomorrow's lunch is done.",
+      "ingredients": [
+        {
+          "food": "beef-eye-of-round-roast-lean-raw-936a85",
+          "g": 195,
+          "swap": "lean_protein",
+          "note": "thin-cut, about 1.5 cm"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 28,
+          "note": "leaves and tender stems"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 9
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 14,
+          "swap": "healthy_oils",
+          "note": "divided, chimichurri and vegetables"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 100,
+          "note": "in thick planks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 20,
+          "note": "in wide strips"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 12,
+          "note": "in thick wedges"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 40,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "torn"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 25
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.3,
+          "note": "or a pinch of chili flakes, ají molido"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.1
+        }
+      ],
+      "steps": [
+        "Make the chimichurri first so it can sit: chop the parsley and garlic very fine and stir them with most of the olive oil, the vinegar, oregano, cayenne, smoked paprika and half the salt. Leave it 20 minutes at least.",
+        "Heat a grill or a large cast iron pan to high. Toss the zucchini, pepper and onion with the rest of the olive oil and a pinch of salt.",
+        "Grill the vegetables 4 to 5 minutes a side, until charred and tender but not collapsing. Move them to a platter.",
+        "Pound the steak to about 1.5 cm and season it with the rest of the salt. Grill it hot, 2 minutes a side, until deeply browned outside and still pink in the middle. Rest it 5 minutes, then slice thin against the grain.",
+        "Toss half the arugula, romaine and tomato with a spoonful of the chimichurri oil and a pinch of salt. Keep the other half undressed for tomorrow.",
+        "Spoon the chimichurri over the steak and vegetables and serve with the salad. Pack the second portion, with its sauce and the undressed greens, for tomorrow's lunch."
+      ],
+      "prepMin": 25,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers"
+      ],
+      "tip": "Eat the second portion cold, sliced over the salad, not reheated. The chimichurri is better after a night in the fridge. Make it on Friday if you want to start the weekend ahead."
+    },
+    {
+      "id": "keto-latin-moqueca-robalo-couve",
+      "name": "Brazilian fish moqueca with garlicky couve and pecan farofa",
+      "inspiredBy": "Moqueca capixaba, the coconut-free Espírito Santo style, with a little light coconut milk borrowed from Bahia and pecans in place of the cassava farofa",
+      "about": "A bright, gently spiced fish stew in the Espírito Santo style, of sea bass, tomato, pepper and onion simmered in light coconut milk with colorau and plenty of cilantro and lime, with garlicky collard greens and a crunchy toasted pecan farofa on top. The light coconut milk keeps saturated fat low, and the stew and couve bring **vitamin A, vitamin C, folate and calcium**.",
+      "ingredients": [
+        {
+          "food": "sea-bass-raw-b59bda",
+          "g": 215,
+          "swap": "lean_protein",
+          "note": "skinless fillet in big chunks"
+        },
+        {
+          "food": "coconut-milk-reduced-fat-93cbb3",
+          "g": 35,
+          "note": "the light kind"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 55
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 25
+        },
+        {
+          "food": "white-onion-raw-281824",
+          "g": 20
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "colorau-urucum-and-corn-powder-c79a9c",
+          "g": 2,
+          "note": "or sweet paprika"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 7,
+          "note": "juice"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 130,
+          "swap": "leafy_greens",
+          "note": "stems out, rolled up and sliced into very thin ribbons"
+        },
+        {
+          "food": "pecans-dried-0ce754",
+          "g": 30,
+          "swap": "nuts_seeds",
+          "note": "chopped fine, for the farofa"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.1
+        }
+      ],
+      "steps": [
+        "Make the farofa: toast the pecans in a teaspoon of the olive oil in a small pan until they smell nutty, about 3 minutes. Tip them out, then toss with a pinch of salt and a pinch of the colorau. Chopped fine, they stand in for the toasted cassava flour.",
+        "Toss the fish with half the lime juice, a little of the garlic and a pinch of the salt, and leave it while you make the sauce. Heat half the olive oil in a wide pan over medium heat. Soften the onion and pepper for 5 minutes, then add half the garlic and the colorau and stir for 30 seconds.",
+        "Add the tomato and cook 3 to 4 minutes, until it collapses into a sauce. Pour in the coconut milk and enough water to make a loose sauce that will half cover the fish, about 120 ml, season with half the salt, and simmer 5 minutes until it tastes like a proper broth.",
+        "Nestle the fish into the sauce, cover, and cook on low for 6 to 8 minutes, until it just flakes. Do not stir hard.",
+        "Meanwhile, heat the remaining oil in a second pan. Add the remaining garlic and the collard and toss for 2 to 3 minutes, until bright green and just tender, with a pinch of salt.",
+        "Finish the stew with the rest of the lime juice and most of the cilantro. Serve with the collard alongside, and scatter the farofa and the last of the cilantro over everything."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cod, halibut or snapper work as well as sea bass."
+    },
+    {
+      "id": "keto-latin-palta-rellena-atun",
+      "name": "Palta rellena with tuna, egg and lime on romaine",
+      "inspiredBy": "Peruvian palta rellena",
+      "about": "A ripe avocado piled with tuna, chopped boiled egg, cucumber, red pepper and red onion in a lime and olive oil dressing, the Peruvian palta rellena found in every lunch spot in Lima, on a bed of crisp romaine. It is cool, creamy and crunchy, and brings **potassium, choline and B vitamins**.",
+      "ingredients": [
+        {
+          "food": "avocado-raw-c06278",
+          "g": 150,
+          "note": "ripe, halved and pitted"
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 100,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 20,
+          "swap": "leafy_greens",
+          "note": "finely diced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "note": "juice"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "shredded"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Boil the egg (or eggs) for 9 minutes, cool under cold water, then peel and chop.",
+        "Whisk the olive oil, lime juice, salt and pepper into a loose dressing.",
+        "Flake the tuna into a bowl and fold in the egg, cucumber, red pepper, red onion, cilantro and dressing.",
+        "Toss the shredded romaine with a spoonful of the dressing and spread it on a plate. Set the avocado halves on top.",
+        "Mound the tuna salad into the avocado halves and over the top. Eat it with a spoon, scooping avocado with each bite."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Boil a few eggs on Sunday and keep them in the shell in the fridge, so this takes 10 minutes."
+    },
+    {
+      "id": "keto-latin-sardinas-tostada-pepino",
+      "name": "Sardine and avocado romaine boats with jalapeño salsa",
+      "inspiredBy": "Mexican tostadas de sardina, with lettuce instead of the fried tortilla",
+      "about": "Canned sardines with their soft bones, lime, tomato and onion piled into crisp romaine boats that stand in for the tostada, the way Mexican seaside tostadas de sardina are topped. It takes 10 minutes with no cooking, and the sardines, soft bones and all, bring **calcium, omega-3 and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 120,
+          "swap": "fatty_fish",
+          "note": "drained, bones in"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "whole leaves or hearts"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 35,
+          "note": "diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 6,
+          "note": "minced"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 9,
+          "note": "juice"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the romaine and pat the leaves dry. Lay the biggest, crispest ones on a plate, like boats.",
+        "Mix the tomato, red onion, jalapeño, half the lime juice, the cilantro and a pinch of salt for a quick salsa.",
+        "Lay a few slices of avocado in each boat, then mash the sardines roughly with the olive oil and the remaining lime juice and spoon them on top.",
+        "Finish each boat with a spoonful of the salsa and eat them right away while the lettuce is still crisp."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-latin-guacamole-pepino",
+      "name": "Guacamole with cucumber sticks",
+      "about": "Chunky guacamole with lime, onion, jalapeño and cilantro, scooped up with cool, crunchy cucumber sticks instead of chips. Avocado gives you **potassium and healthy fat**, and the vegetable sticks give the crunch.",
+      "ingredients": [
+        {
+          "food": "avocado-raw-c06278",
+          "g": 120,
+          "note": "ripe"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5,
+          "note": "juice"
+        },
+        {
+          "food": "white-onion-raw-281824",
+          "g": 6,
+          "note": "minced"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "cut in sticks"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Mash the avocado roughly with a fork, leaving it chunky.",
+        "Stir in the lime juice, onion, jalapeño, cilantro and salt. Taste and add more lime if it needs it.",
+        "Serve with the cucumber sticks for scooping."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-latin-pepitas-chile-limon",
+      "name": "Chile and lime pepitas",
+      "about": "Pumpkin seeds toasted in a dry pan until they puff and pop, then tossed with lime juice, chili and salt. They are crunchy, a little sour and a little hot, and a good handful gives you **magnesium, zinc and iron**.",
+      "ingredients": [
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 30,
+          "swap": "nuts_seeds",
+          "note": "raw"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 4,
+          "note": "juice"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the pepitas in a dry pan over medium heat, shaking often, until they puff and pop, about 3 minutes.",
+        "Take them off the heat, add the lime juice, chili powder and salt, and toss. They will sizzle and dry in a few seconds."
+      ],
+      "prepMin": 2,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ],
+      "tip": "Toast a bigger batch and keep it in a jar for a week."
+    },
+    {
+      "id": "keto-latin-ensalada-nopales-vasito",
+      "name": "Nopales salad with tomato, cilantro and toasted pepitas",
+      "inspiredBy": "Mexican ensalada de nopales",
+      "about": "Tender cooked nopales tossed with tomato, onion, cilantro and lime, the ensalada de nopales you find at every Mexican market, with toasted pepitas for crunch. Nopales are low in carbs and give you **fibre, calcium and vitamin C**.",
+      "ingredients": [
+        {
+          "food": "nopales-prickly-pear-raw-d61a14",
+          "g": 110,
+          "swap": "leafy_greens",
+          "note": "cleaned paddles, diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 15,
+          "note": "diced"
+        },
+        {
+          "food": "white-onion-raw-281824",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5,
+          "note": "juice"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 24,
+          "swap": "nuts_seeds",
+          "note": "raw, to toast"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Boil the diced nopales in salted water for 6 to 8 minutes, until tender and a darker olive green. Drain and rinse well under cold water to wash off the slime.",
+        "Toast the pepitas in a dry pan until they pop, about 2 minutes.",
+        "Toss the nopales with the tomato, onion, cilantro, lime juice, olive oil and a pinch of salt.",
+        "Spoon into a bowl and top with the pepitas."
+      ],
+      "prepMin": 8,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Rinsed jarred nopalitos work too, or cook a double batch of fresh ones and keep half in the fridge for 3 days."
+    },
+    {
+      "id": "keto-latin-aguacate-limon-chile",
+      "name": "Avocado with lime, chile and salt",
+      "about": "A whole ripe avocado, halved, with a squeeze of lime, a dusting of chili and a pinch of salt, eaten with a spoon, the way you would at a Mexican market stall. Simple, creamy and filling, with **potassium and folate**.",
+      "ingredients": [
+        {
+          "food": "avocado-raw-c06278",
+          "g": 130,
+          "note": "ripe, halved and pitted"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5,
+          "note": "juice"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Halve the avocado and remove the pit.",
+        "Squeeze the lime into each half and sprinkle with the chili powder and salt.",
+        "Eat it straight from the skin with a spoon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-latin-ceviche-camaron-vasitos",
+      "name": "Shrimp ceviche cups with cucumber and avocado",
+      "inspiredBy": "Mexican coctel and ceviche de camarón, with the shrimp poached first",
+      "about": "Shrimp poached for a minute, then chilled in lime juice with tomato, cucumber, red onion and cilantro, spooned into small cups with a little avocado on top. It is light, tangy and fresh, and the shrimp bring lean protein and **iodine and B12**.",
+      "ingredients": [
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 90,
+          "swap": "lean_protein",
+          "note": "peeled and deveined"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12,
+          "note": "juice"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 15,
+          "note": "diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 15,
+          "swap": "leafy_greens",
+          "note": "diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 70,
+          "note": "cubed"
+        }
+      ],
+      "steps": [
+        "Drop the shrimp into a small pot of simmering water for 1 to 2 minutes, until pink and curled. Drain, chill under cold water, then chop into small pieces.",
+        "Stir the shrimp into the lime juice with the tomato, cucumber, red onion, jalapeño and cilantro. Let it sit 10 to 15 minutes in the fridge.",
+        "Spoon into two small cups and top with the avocado just before eating."
+      ],
+      "prepMin": 10,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "You can make the shrimp mix in the morning. Add the avocado when you eat it."
+    },
+    {
+      "id": "keto-latin-pecanas-chipotle-limon",
+      "name": "Chipotle and lime pecans",
+      "about": "Pecans toasted in a dry pan and tossed with a little chipotle, lime and salt, a smoky, crunchy snack that is very Northern Mexico, where pecans grow. They are a good source of **thiamin, manganese and healthy fat**.",
+      "ingredients": [
+        {
+          "food": "pecans-dried-0ce754",
+          "g": 45,
+          "swap": "nuts_seeds",
+          "note": "halves"
+        },
+        {
+          "food": "chipotle-peppers-in-adobo-sauce-f692a1",
+          "g": 4,
+          "note": "minced, with its sauce"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 3,
+          "note": "juice"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Toast the pecans in a dry pan over medium heat, shaking often, until they smell nutty, about 3 minutes.",
+        "Stir the minced chipotle and its sauce with the lime juice, then toss the hot pecans in it until coated.",
+        "Spread them out for a few minutes so the coating dries a little. Eat warm or cool."
+      ],
+      "prepMin": 3,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-latin-chia-fresca-pepino",
+      "name": "Chía fresca with cucumber and lime",
+      "inspiredBy": "Mexican agua de chía, without the sugar",
+      "about": "The Mexican street drink of chia seeds in lime water, made with cucumber and no sugar, a cold, sour drink with seeds floating in it. It is an easy way to get **omega-3 and fibre** from the chia.",
+      "ingredients": [
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 25,
+          "swap": "leafy_greens",
+          "note": "blended"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "note": "juice"
+        },
+        {
+          "food": "almond-milk-unsweetened-shelf-stable-b6bfac",
+          "g": 100,
+          "note": "optional"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Blend the cucumber, lime juice and a pinch of salt with the almond milk and about one and a half times as much cold water (all water is fine if you skip the almond milk) until smooth. Pour it over the chia in a glass.",
+        "Stir well, wait 5 minutes, and stir again so the seeds do not clump.",
+        "Chill 15 minutes, until the seeds swell into little pearls, and serve over ice. It should drink like a thick agua fresca, not a pudding."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-latin-almendras-chile-limon",
+      "name": "Chile and lime almonds",
+      "about": "Almonds toasted in a dry pan and tossed with lime juice, chili and a pinch of salt, the kind of spiced nut you find in a Mexican market. They are crunchy and savoury, and a handful gives you **vitamin E, magnesium and fibre**.",
+      "ingredients": [
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 42,
+          "swap": "nuts_seeds",
+          "note": "whole, raw"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 4,
+          "note": "juice"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan over medium heat, shaking often, until they smell nutty and darken a shade, about 4 minutes.",
+        "Take them off the heat, add the lime juice, chili powder and salt, and toss. The lime will dry onto the nuts in a few seconds."
+      ],
+      "prepMin": 2,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-latin-pepino-chile-pecanas",
+      "name": "Cucumber spears with lime, chile and toasted pecans",
+      "inspiredBy": "Mexican pepino con limón y chile, with toasted pecans from the North",
+      "about": "Cold cucumber spears with a squeeze of lime and a dusting of chili, the pepino con limón y chile you see at every Mexican street cart, with toasted pecans for something to chew on. It is cool, sour and hot at once, and the pecans bring **manganese** and make it filling.",
+      "ingredients": [
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "peeled in stripes, cut in spears"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6,
+          "note": "juice"
+        },
+        {
+          "food": "pecans-dried-0ce754",
+          "g": 24,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the pecans in a dry pan over medium heat until they smell nutty, about 3 minutes.",
+        "Arrange the cucumber spears on a plate, squeeze the lime over them, and dust with the chili powder and salt.",
+        "Eat with the toasted pecans on the side, or scatter them over the top."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-latin-chia-cacao-pecanas",
+      "name": "Mexican chocolate chia pudding with cinnamon and chile pecans",
+      "inspiredBy": "Mexican hot chocolate, set into a chia pudding",
+      "about": "Chia soaked overnight with unsweetened cocoa, cinnamon and a pinch of salt, like a cup of Mexican hot chocolate set into a pudding, topped with chile pecans. It is deep, a little bitter and warming, and brings **magnesium, calcium and plenty of fibre**.",
+      "ingredients": [
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 34,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "almond-milk-unsweetened-shelf-stable-b6bfac",
+          "g": 110,
+          "note": "fortified"
+        },
+        {
+          "food": "cocoa-powder-unsweetened-f976ae",
+          "g": 6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1.5
+        },
+        {
+          "food": "pecans-dried-0ce754",
+          "g": 34,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "The night before, whisk the cocoa, cinnamon and salt into the almond milk with about the same amount of cold water until smooth, then stir in the chia. Wait 5 minutes, stir again so nothing clumps, then cover and chill overnight.",
+        "In the morning, toast the pecans in a dry pan over medium heat until they smell nutty, about 3 minutes. Toss with the chili powder.",
+        "Stir the pudding. It should be thick and spoonable, so add a splash more almond milk if it has set firm. Top with the spicy pecans."
+      ],
+      "prepMin": 6,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make it the night before. It keeps 3 days in the fridge."
+    }
+  ]
+}
