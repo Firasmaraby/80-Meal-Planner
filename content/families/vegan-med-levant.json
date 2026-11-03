@@ -1,0 +1,1878 @@
+{
+  "id": "vegan-med-levant",
+  "name": "Vegan Mediterranean & Levant",
+  "style": "vegan",
+  "cuisine": "Mediterranean & Levant",
+  "regions": [
+    "Lebanon",
+    "Syria",
+    "Greece",
+    "Egypt",
+    "Sicily"
+  ],
+  "summary": "A fully plant-based week from Lebanon, Syria, Greece, Egypt and Sicily. Lentils, beans, tofu and a little seitan carry the protein, fortified soy beverage carries the B12, and tahini, walnuts and olive oil carry the flavour.",
+  "howItWorks": "**Protein from beans and soy.** Lentils, white beans, chickpeas and fava anchor most meals, with calcium-set tofu, seitan, lupini, edamame and plain soy yogurt in the mix so no single food carries the week. Every lunch and dinner has a real protein, and every day reaches at least a fifth of calories from protein.\n\n**B12 is fortified on purpose.** Plants do not make vitamin B12, so every day has a glass of **fortified soy beverage**: in the oats, the fig shake or beside the fatteh. Check the carton for about 1 µg of B12 per cup. Many Canadian cartons carry less, so a B12 supplement is the safe bet for most vegans.\n\n**Calcium, iron and the hard ones.** Calcium-set tofu, fortified soy beverage, soy yogurt, tahini, almonds and white beans carry the calcium; the chard is there for vitamins A and K. Lentils and beans carry iron, with lemon, tomato and parsley in the same meal to help absorb it. Use iodized salt, and the vitamin D mushrooms and fortified soy help with **vitamin D**.\n\n**Omega-3 from plants.** Ground flax, walnuts and hemp hearts turn up where they belong: the oats, the shake, the muhammara and the fatteh sauce. Canola oil handles the neutral cooking and olive oil is for flavour, which keeps the omega balance in range.\n\n**Cook once, eat twice.** Monday's mujaddara, Tuesday's gigantes, Thursday's soup, Friday's falafel and Saturday's pie each make two portions, so the next day's lunch is done. On Thursday night, soak the chickpeas and fava for Friday. On Friday night, move the phyllo from the freezer to the fridge to thaw for Saturday's pie.",
+  "signature": [
+    "vegan-med-levant-mujaddara-hamra-malfouf",
+    "vegan-med-levant-gigantes-plaki",
+    "vegan-med-levant-seitan-cauliflower-shawarma-plate",
+    "vegan-med-levant-lenten-spanakopita-tofu-feta"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "swap": {
+            "from": "vegan-med-levant-overnight-oats-flax-walnuts-figs",
+            "to": "vegan-med-levant-fig-flax-wheat-germ-shake"
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "swap": {
+            "from": "vegan-med-levant-overnight-oats-flax-walnuts-figs",
+            "to": "vegan-med-levant-fig-flax-wheat-germ-shake"
+          }
+        },
+        {
+          "day": 6,
+          "swap": {
+            "from": "vegan-med-levant-ful-medames-tomato-parsley",
+            "to": "vegan-med-levant-overnight-oats-flax-walnuts-figs"
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-med-levant-seitan-lemon-parsley-bites"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-med-levant-seitan-tawook-skewers"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-med-levant-figs-almonds"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-med-levant-seitan-lemon-parsley-bites"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-med-levant-lupini-lemon-mint"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-med-levant-hummus-carrot-cucumber"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-med-levant-hummus-carrot-cucumber"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "vegan-med-levant-overnight-oats-flax-walnuts-figs",
+      "name": "Overnight oats with soy beverage, ground flax, walnuts and figs",
+      "inspiredBy": "Greek and Levantine fig and walnut breakfasts, as an overnight jar",
+      "about": "Rolled oats soaked overnight in cinnamon soy beverage with chopped dried figs, ground flax and wheat germ, then topped with toasted walnuts for crunch. The figs melt into the oats and sweeten them, so you need no sugar. The fortified soy beverage brings **vitamin B12 and calcium**, and the flax and walnuts bring plant omega-3. Wheat germ adds **vitamin E and choline**.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 330,
+          "note": "fortified with B12 and calcium (check the carton); about ¾ cup in the jar, the rest to drink alongside"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 12
+        },
+        {
+          "food": "wheat-germ-2e7e8d",
+          "g": 22
+        },
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 16,
+          "note": "chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "The night before, chop the figs and stir them into a jar with the oats, ground flax, wheat germ, cinnamon, salt and about ¾ cup of the soy beverage. It should look a little runny, since the oats, flax and wheat germ drink it up.",
+        "Cover and refrigerate overnight so the oats turn thick and creamy.",
+        "In the morning, give it a stir. It should be thick and spoonable, and a splash more soy beverage loosens it if it has gone stiff.",
+        "Toast the walnuts in a dry pan for 3 minutes, until you can smell them, then chop roughly.",
+        "Top the oats with the walnuts and drink the rest of the soy beverage alongside."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Toast a week of walnuts on Sunday and keep them in a jar. Mix two oat jars at once, they keep for 3 days in the fridge."
+    },
+    {
+      "id": "vegan-med-levant-ful-medames-tomato-parsley",
+      "name": "Ful medames with lemon, tomato and parsley",
+      "inspiredBy": "Egyptian ful medames and the Lebanese ful that mixes in a few chickpeas",
+      "about": "Warm, garlicky fava beans and a few chickpeas mashed roughly with cumin and lemon, then topped with chopped tomato, onion and parsley and a good drizzle of olive oil, the way it is eaten in Cairo. You scoop it up with warm pita. The beans bring **iron and folate**, and the tomato and lemon help you absorb that iron.",
+      "ingredients": [
+        {
+          "food": "broadbeans-fava-beans-boiled-351b61",
+          "g": 170,
+          "swap": "legumes",
+          "note": "from a tin, with a little of the liquid"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 60,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 20,
+          "note": "finely chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 20
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Mash the garlic with the salt into a paste. Warm the fava beans and chickpeas in a small pot with a splash of their liquid, the garlic and the cumin, stirring now and then, until steaming hot, about 5 minutes.",
+        "Mash roughly with a fork, leaving some whole beans for texture. Stir in the lemon juice and half the olive oil.",
+        "Spoon the beans into a shallow bowl. Drizzle with the rest of the olive oil, then pile on the tomato, onion and parsley and dust with Aleppo pepper.",
+        "Warm the pita in a dry pan or the toaster and tear it up to scoop."
+      ],
+      "prepMin": 5,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "A pinch of chili flakes or a few chopped pickles on top is very welcome."
+    },
+    {
+      "id": "vegan-med-levant-chickpea-fatteh-tahini",
+      "name": "Chickpea fatteh with garlicky soy yogurt, tahini and toasted walnuts",
+      "inspiredBy": "Lebanese and Syrian fattet hummus, with plain soy yogurt in place of the usual dairy yogurt",
+      "about": "Warm chickpeas piled over crisp toasted pita, drenched in a cool, garlicky sauce of plain soy yogurt, tahini and lemon, and finished with sizzled walnuts and parsley. It is the traditional yogurt fatteh made plant-based, with hemp hearts blended into the sauce. The chickpeas and soy yogurt bring **protein and calcium**, the walnuts and hemp bring plant omega-3, and the glass of fortified soy beverage alongside adds **vitamin B12**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 170,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 25
+        },
+        {
+          "food": "soy-yogurt-plain-345e92",
+          "g": 120,
+          "note": "plain, unsweetened"
+        },
+        {
+          "food": "sesame-butter-tahini-roasted-and-toasted-kernels-574c41",
+          "g": 6
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 7,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "hemp-seeds-hulled-0bc4a6",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 300,
+          "note": "fortified with B12 and calcium (check the carton), a glass, warmed, to drink alongside"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "sumac-268746",
+          "g": 0.5
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        }
+      ],
+      "steps": [
+        "Tear the pita into bite-size pieces and toast them in a dry pan or a hot oven until golden and crisp, about 5 minutes.",
+        "Warm the chickpeas in a small pot with the cumin and a splash of water until steaming, about 5 minutes.",
+        "Mash the garlic with the salt, then blend or whisk it with the soy yogurt, tahini, hemp hearts and lemon juice until smooth. Thin with a spoonful of cold water if it is stiff.",
+        "Sizzle the walnuts in the olive oil for 1 to 2 minutes, until they smell toasty. Watch them, they scorch quickly.",
+        "Layer the pita in a bowl, spoon the chickpeas and a splash of the warm cooking water over it, pour on the yogurt sauce and finish with the hot walnuts and oil, the parsley, sumac and Aleppo pepper. Warm the soy beverage with a pinch of cinnamon and drink it alongside."
+      ],
+      "prepMin": 10,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "On a weekday, toast the pita and make the sauce the night before. In the morning it takes 10 minutes."
+    },
+    {
+      "id": "vegan-med-levant-hummus-roasted-tofu-bowl",
+      "name": "Hummus bowl with roasted baharat tofu and seitan, cauliflower and tomato",
+      "inspiredBy": "Lebanese hummus plates, with spiced roasted tofu and seitan where the meat would go",
+      "about": "Thick, lemony hummus spread in a bowl and topped with crisp-edged tofu and seitan roasted with baharat, roasted cauliflower, a chopped cucumber and tomato salad and toasted almonds. Think of the hummus plates in Beirut, with tofu and seitan where the spiced meat would be. The calcium-set tofu and chickpeas bring **protein, iron and calcium**, and the cauliflower adds choline.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 120,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "sesame-butter-tahini-roasted-and-toasted-kernels-574c41",
+          "g": 10
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 30
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 100,
+          "note": "pressed, cut in cubes"
+        },
+        {
+          "food": "seitan-508e8a",
+          "g": 65,
+          "note": "cut in small cubes"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 2
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 1.5
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 200,
+          "note": "cut in small florets"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C. Pat the tofu dry, cut it and the seitan into cubes and toss with half the canola oil, the baharat and a pinch of salt. Toss the cauliflower florets with the rest of the canola oil and a pinch of salt. Roast both on a tray for 20 minutes, turning once, until the tofu and seitan edges are crisp and the cauliflower is browned.",
+        "Warm the chickpeas in a small pot with a splash of water for 3 minutes. Blend them with the tahini, half the lemon juice, the garlic, cumin and a few spoonfuls of ice water, in a mini processor if you have one, for a full 2 minutes until very smooth and creamy.",
+        "Chop the cucumber, tomato and parsley and toss with the rest of the lemon juice and a pinch of salt. Toast the almonds in a dry pan for 3 minutes.",
+        "Spread the hummus in a wide bowl, make a dip in the middle and drizzle in the olive oil.",
+        "Pile the tofu, seitan, cauliflower and salad on top, scatter over the almonds and dust with za'atar. Warm pita on the side is welcome."
+      ],
+      "prepMin": 15,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Monday's lunch is easiest made on Sunday: roast the tofu, seitan and cauliflower and blend the hummus, then pack them separately. A double batch of hummus blends smoother and keeps 4 days in the fridge."
+    },
+    {
+      "id": "vegan-med-levant-horiatiki-tofu-feta",
+      "name": "Horiatiki with marinated tofu \"feta\" and white beans",
+      "inspiredBy": "Greek horiatiki, as it is eaten on fasting days, with tofu in place of feta",
+      "about": "A Greek village salad of ripe tomato, cucumber, pepper, olives and capers under a slab of lemony oregano tofu, with white beans and pita to make it a meal. It is the kind of thing Greek cooks put together on fasting days, when there is no cheese. The tofu brings **calcium and protein**, and the white beans bring iron and fibre.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 110,
+          "note": "pressed, cut in a thick slab"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1.2
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 200,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 20
+        },
+        {
+          "food": "capers-pickled-in-vinegar-da8b2a",
+          "g": 8
+        },
+        {
+          "food": "cannellini-beans-canned-re-heated-drained-4380d5",
+          "g": 230,
+          "swap": "legumes",
+          "note": "from a tin, rinsed"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 6
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 20
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Press the tofu between towels for 10 minutes, then lay the slab in a shallow dish and spoon over half the lemon juice, half the vinegar, half the oregano and a good pinch of salt. Marinate for at least 30 minutes, or leave it in the fridge in the morning or overnight.",
+        "Cut the tomato into wedges, the cucumber into thick half-moons and the pepper into rings, and slice the onion thinly.",
+        "Toss the vegetables with the white beans, olives, capers, the rest of the lemon juice and vinegar and most of the olive oil.",
+        "Spoon the salad onto a plate and set the tofu on top like a slab of feta. Drizzle with the last of the oil, the marinade and the rest of the oregano.",
+        "Toast the pita and tear it up to mop the juices."
+      ],
+      "prepMin": 15,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Marinate the tofu the night before or in the morning, it tastes much better after a few hours. Crumble it with your hands if you want it to look more like feta."
+    },
+    {
+      "id": "vegan-med-levant-mujaddara-hamra-malfouf",
+      "name": "Mujaddara hamra with caramelized onions and lemony cabbage salad",
+      "inspiredBy": "Lebanese mujaddara hamra, the bulgur version, with malfouf salad",
+      "about": "Brown lentils and bulgur cooked together with cumin, topped with deep golden onions, and served with a crunchy lemon, garlic and mint cabbage and carrot salad. It is the Lebanese Lenten classic, plain food done properly. The lentils and bulgur together bring **protein, iron and fibre**, and the lemony salad helps you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 95,
+          "swap": "legumes"
+        },
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "coarse, number 3"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 90
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 1.5
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 140
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "grated"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.8
+        }
+      ],
+      "steps": [
+        "Rinse the lentils, cover with plenty of water and simmer for 12 to 15 minutes, until nearly tender but still holding their shape. Drain, saving the cooking water.",
+        "While the lentils simmer, slice the onions thin. Cook them in the canola oil over medium heat, stirring every few minutes and adding a splash of water if they catch, for 25 minutes, until deep golden and sweet. Take out a third and keep it for the top.",
+        "Stir the cumin and baharat into the onions left in the pot for 30 seconds, then add the bulgur, the lentils, the salt and enough of the lentil water to cover by about 2 cm.",
+        "Cover and simmer gently for 15 minutes, until the water is gone. Rest off the heat for 10 minutes, then fluff with a fork.",
+        "Shred the cabbage finely and grate the carrot. Mash the garlic with a pinch of salt and toss it with the cabbage, carrot, lemon juice, olive oil and torn mint.",
+        "Serve the mujaddara topped with the reserved onions, with the cabbage salad on the side. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 10,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Keep the cabbage salad in a separate container so it stays crunchy for tomorrow."
+    },
+    {
+      "id": "vegan-med-levant-gigantes-plaki",
+      "name": "Gigantes plaki, giant white beans baked in tomato, dill and parsley",
+      "inspiredBy": "Greek gigantes plaki, made with canned beans so it works on a weeknight",
+      "about": "Creamy white beans baked in a sweet-sharp tomato sauce with celery, carrot and dill until the edges blister. It is Greek Lenten cooking at its best, and it tastes even better the next day. The beans bring **iron, calcium and fibre**, and a squeeze of lemon at the end helps you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "cannellini-beans-canned-re-heated-drained-4380d5",
+          "g": 270,
+          "swap": "legumes",
+          "note": "from a tin, rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 160
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 80
+        },
+        {
+          "food": "celery-raw-79a241",
+          "g": 40
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 6
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 C. Warm the olive oil in a wide ovenproof pan and cook the chopped onion, celery and diced carrot for 8 minutes, until soft.",
+        "Stir in the garlic, paprika and oregano for 30 seconds, then add the crushed tomato, bay leaf, salt and a splash of water. Simmer for 10 minutes, until the sauce thickens.",
+        "Fold in the white beans, half the dill and half the parsley, and slide the pan into the oven for 20 to 25 minutes, until the sauce is bubbling and the edges are browned.",
+        "Finish with the lemon juice and the rest of the herbs. Serve with crusty bread or warm pita if you like. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 10,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Cannellini work well here, and canned giant beans from a Greek grocer are even better. If you cook dried giant beans, soak them overnight and simmer them for about an hour before they go into the sauce."
+    },
+    {
+      "id": "vegan-med-levant-seitan-cauliflower-shawarma-plate",
+      "name": "Seitan, mushroom and cauliflower shawarma plate with garlic sauce and pickled carrot",
+      "inspiredBy": "Lebanese shawarma, with seitan, mushrooms and cauliflower for the meat and a tofu garlic sauce for the toum",
+      "about": "Baharat-spiced seitan, mushrooms and cauliflower roasted on one tray until the edges crisp, piled on a plate with a fluffy tofu garlic sauce, tomato, parsley and tangy pickled carrot, with warm pita on the side to scoop. It has the smoky, garlicky shawarma-stand flavour without the spit. The seitan and tofu together bring **protein, selenium and calcium**, and the vitamin D mushrooms add **vitamin D**.",
+      "ingredients": [
+        {
+          "food": "seitan-508e8a",
+          "g": 115
+        },
+        {
+          "food": "mushroom-common-vitamin-d-enhanced-raw-0abbc8",
+          "g": 80,
+          "note": "sliced; sold as vitamin D mushrooms. Plain white mushrooms work, with less vitamin D"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 120,
+          "note": "cut in small florets"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 60,
+          "note": "for the sauce"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 3
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 10
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "cut in thin ribbons"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 230 C. Cut the seitan into thin strips. Toss them with the baharat, paprika, cumin, half the lemon juice, half the garlic (mashed), half the canola oil and a good pinch of salt. Let them sit while the oven heats.",
+        "Meanwhile, toss the carrot ribbons with the vinegar and a pinch of salt and leave them to pickle.",
+        "Blend the tofu with the rest of the garlic, the rest of the lemon juice, a pinch of salt and a splash of cold water until fluffy and white, like toum.",
+        "Spread the seitan, mushrooms and cauliflower on one big tray (two if they crowd), drizzle the mushrooms and cauliflower with the rest of the oil, season them with a pinch of salt and roast for 20 to 25 minutes, turning once, until browned and crisp at the edges.",
+        "Warm the pita in a dry pan or the toaster.",
+        "Pile the seitan, mushrooms and cauliflower on a plate with the garlic sauce, tomato, parsley and the drained pickled carrot, and eat with the warm pita."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Double the tofu garlic sauce, it keeps 4 days in the fridge and is good on the falafel too."
+    },
+    {
+      "id": "vegan-med-levant-baked-falafel-cauliflower-pita",
+      "name": "Baked chickpea and fava falafel in pita with roasted cauliflower and tahini sauce",
+      "inspiredBy": "Lebanese and Egyptian falafel and ta'ameya, made with chickpeas and fava and baked instead of fried",
+      "about": "Green, herby chickpea and fava falafel baked until crisp outside and fluffy inside, with warm pita, tahini sauce, a fresh tomato, cucumber and carrot salad and a side of roasted cauliflower. It has all the flavour of the street-stall version with a lot less oil. The chickpeas and fava beans bring **protein, iron and zinc**, and the cauliflower adds choline and vitamin C.",
+      "ingredients": [
+        {
+          "food": "chickpeas-dry-1b10f2",
+          "g": 50,
+          "swap": "legumes",
+          "note": "soaked overnight"
+        },
+        {
+          "food": "broadbeans-fava-beans-dry-811d1a",
+          "g": 45,
+          "swap": "legumes",
+          "note": "dried fava beans, peeled if you can find them, soaked overnight"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 30
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 25
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 2
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-butter-tahini-roasted-and-toasted-kernels-574c41",
+          "g": 7
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 150
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "grated"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 25
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.8
+        }
+      ],
+      "steps": [
+        "The night before, cover the dried chickpeas and fava beans with plenty of cold water and soak for 12 hours. Drain well and, if you used whole fava beans, slip off the skins. Split, peeled fava beans skip this step.",
+        "Heat the oven to 220 C. Pulse the soaked chickpeas and fava beans (double the amount for two portions) in a food processor with the onion, garlic, parsley, cumin, coriander and most of the salt until it looks like coarse couscous, not paste. Rest for 15 minutes so the beans bind.",
+        "Shape the mixture into 12 small patties (6 per portion). Toss the cauliflower florets with a third of the canola oil and a pinch of salt and spread them on a big tray. Put a second tray in the oven to preheat, then brush it with the remaining oil, set the falafel on it and brush the tops too.",
+        "Bake both trays for 25 minutes, turning the falafel once, until the falafel are deep golden and the cauliflower is browned at the edges.",
+        "Whisk the tahini with the lemon juice and enough cold water to make a pourable sauce.",
+        "Dice the tomato and cucumber and toss with the grated carrot. Warm the pita, open it and tuck in a few falafel with some salad and tahini sauce. Eat the rest of the falafel, salad and cauliflower on the plate with the remaining sauce. Pack the second portion and the sauce for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "The beans must be soaked from dry. Canned ones turn to mush and the falafel fall apart. Leftover falafel are not good cold: reheat them for 8 minutes at 200 C and pack the tahini sauce separately."
+    },
+    {
+      "id": "vegan-med-levant-lentil-chard-soup-lemon",
+      "name": "Adas bi hamod, lemony lentil and chard soup with toasted pita",
+      "inspiredBy": "Lebanese adas bi hamod, the lentil soup with chard and lemon",
+      "about": "A thick Lebanese lentil soup with silky chard, garlic and plenty of lemon, topped with crisp toasted pita and a swirl of olive oil. It is bright, sour and deeply comforting, and a Lenten favourite. The lentils bring **protein, iron and folate**, and the chard adds vitamins A and K.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 110,
+          "swap": "legumes"
+        },
+        {
+          "food": "swiss-chard-raw-f646e5",
+          "g": 150,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 80
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 45
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 25
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Rinse the lentils. Warm the canola oil in a big pot and cook the chopped onion for 6 to 8 minutes, until soft and golden. Add the garlic, cumin and coriander and stir for 30 seconds.",
+        "Add the lentils and plenty of water, enough to cover them by about 5 cm. Bring to a boil, then simmer for 25 to 30 minutes, until the lentils are completely soft and falling apart.",
+        "Slice the chard stems thin and chop the leaves. Add the stems and cook for 5 minutes, then add the leaves for 3 minutes more, until silky.",
+        "Mash some of the soup against the side of the pot with a spoon, or give it a few pulses with a stick blender, so it is thick but still has texture. Add the salt and the lemon juice. It should taste distinctly sour.",
+        "Tear the pita into pieces and toast in a dry pan until golden and crisp, about 4 minutes.",
+        "Ladle the soup into bowls and top with the pita, the parsley, a drizzle of the olive oil and a pinch of Aleppo pepper. Pack the second portion for tomorrow's lunch, with the pita in a separate bag."
+      ],
+      "prepMin": 10,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "Thin the leftovers with a splash of water when you reheat them. The soup thickens overnight."
+    },
+    {
+      "id": "vegan-med-levant-lenten-spanakopita-tofu-feta",
+      "name": "Lenten chard and mushroom pie with tofu \"feta\"",
+      "inspiredBy": "Greek hortopita and manitaropita, the Lenten (nistisimi) pies made with oil and no dairy",
+      "about": "Crisp layers of oil-brushed phyllo around a lemony filling of chard, mushrooms, dill and herby crumbled tofu. It is the kind of fasting-season pie Greek families bake with no cheese or egg. The tofu brings **calcium and protein**, and the vitamin D mushrooms add **vitamin D** and niacin.",
+      "ingredients": [
+        {
+          "food": "khatfa-phyllo-or-filo-pastry-sheets-8a18c4",
+          "g": 45,
+          "note": "thawed"
+        },
+        {
+          "food": "swiss-chard-raw-f646e5",
+          "g": 200,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 90,
+          "note": "pressed, crumbled"
+        },
+        {
+          "food": "mushroom-common-vitamin-d-enhanced-raw-0abbc8",
+          "g": 100,
+          "note": "finely chopped; sold as vitamin D mushrooms. Plain white mushrooms work, with less vitamin D"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 8
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "nutmeg-ground-15c547",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190 C. Chop the chard, stems and all, and cook it in a dry pot over medium heat for 5 to 6 minutes, until wilted. Tip it into a colander, cool for a few minutes, then squeeze out as much water as you can.",
+        "Cook the chopped onion and mushrooms in the olive oil for 8 minutes, until soft and the liquid has cooked off. Crumble the tofu into a big bowl with the lemon juice, oregano and most of the salt and let it stand while the chard drains.",
+        "Mix the chard, onion and mushrooms into the tofu with the dill, parsley, nutmeg, pepper and the rest of the salt. Taste, it should be bright and well seasoned.",
+        "Brush a baking dish with some of the canola oil. Lay in half the phyllo sheets, brushing each one lightly with oil, then spread the filling over.",
+        "Cover with the remaining phyllo, again brushing each sheet. Tuck in the edges, brush the top generously, and score the top layers into squares with a sharp knife.",
+        "Bake for 35 to 40 minutes, until deep golden and crisp. Rest for 10 minutes before cutting. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 35,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "Thaw frozen phyllo in the fridge overnight, so move the box from the freezer on Friday night. Keep the sheets under a damp towel while you work so they do not dry out and crack. Short on sheets? Skip the bottom layer and scrunch all the phyllo loosely over the filling, brushing as you go. Leftovers crisp up in a hot oven."
+    },
+    {
+      "id": "vegan-med-levant-caponata-white-beans-pita",
+      "name": "Sicilian caponata with white beans and chickpeas",
+      "inspiredBy": "Sicilian caponata with a Levantine pomegranate molasses twist, served warm over white beans as a main",
+      "about": "A sweet-sharp Sicilian eggplant stew with celery, olives, capers and toasted almonds, spooned warm over creamy white beans and chickpeas. It is Sicily's answer to ratatouille, with a bit of agrodolce bite. The beans and almonds bring **protein and calcium**, and the eggplant adds fibre.",
+      "ingredients": [
+        {
+          "food": "eggplant-raw-b8b8c1",
+          "g": 220,
+          "note": "cut in 2 cm cubes"
+        },
+        {
+          "food": "celery-raw-79a241",
+          "g": 40
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 100
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 15
+        },
+        {
+          "food": "capers-pickled-in-vinegar-da8b2a",
+          "g": 8
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 12
+        },
+        {
+          "food": "pomegranate-molasses-008fae",
+          "g": 7
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cannellini-beans-canned-re-heated-drained-4380d5",
+          "g": 180,
+          "swap": "legumes",
+          "note": "from a tin, rinsed"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 140,
+          "swap": "legumes",
+          "note": "from a tin, rinsed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Toss the eggplant cubes with the canola oil and a pinch of salt, spread them on a tray and cover with foil. Roast at 220 C for 10 minutes, then take off the foil and roast 15 minutes more, until browned and soft. Toast the almonds in a dry pan for 3 minutes and chop.",
+        "Meanwhile, warm the olive oil in a wide pan and cook the onion, celery and pepper for 8 minutes, until soft.",
+        "Add the crushed tomato, olives and capers and simmer for 10 minutes.",
+        "Stir in the roasted eggplant, the vinegar and the pomegranate molasses and simmer for 5 minutes, until glossy. It should taste sweet and sharp at once.",
+        "Warm the white beans and chickpeas in a small pot with a splash of water and a pinch of salt.",
+        "Spoon the beans into a bowl, top with the caponata and the almonds, and serve with toasted bread if you like."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Caponata tastes even better made ahead. It keeps 4 days in the fridge, so you can cook it on Saturday and just warm the beans on Sunday."
+    },
+    {
+      "id": "vegan-med-levant-muhammara-cucumber-pita",
+      "name": "Muhammara with cucumber sticks and pita",
+      "inspiredBy": "Aleppo muhammara, the Syrian walnut and pepper dip",
+      "about": "A smoky, tangy red pepper and walnut dip from Aleppo, with a hit of pomegranate molasses and Aleppo pepper, scooped up with cool cucumber and crisp pita. The walnuts bring **plant omega-3 and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 100,
+          "note": "roasted"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 12
+        },
+        {
+          "food": "pomegranate-molasses-008fae",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Roast the pepper under a hot grill or over a flame for 10 to 15 minutes, turning, until the skin is blackened. Peel, seed and chop.",
+        "Toast the pita until dry and crisp, then break up half of it. Toast the walnuts in a dry pan for 3 minutes. (Double the amounts for two portions.)",
+        "Blitz the pepper, walnuts, the broken pita, garlic, cumin, Aleppo pepper, lemon juice, pomegranate molasses and half the olive oil to a thick, rough paste. Season with the salt.",
+        "Spoon into a bowl, drizzle with the rest of the oil and serve with the cucumber sticks and the rest of the pita."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "This makes two portions, one for Monday and one for Thursday. Drained jarred roasted red peppers skip the first step."
+    },
+    {
+      "id": "vegan-med-levant-fig-flax-wheat-germ-shake",
+      "name": "Fig, flax and wheat germ shake with soy beverage",
+      "inspiredBy": "the fig and date milk shakes of Egypt and the Levant",
+      "about": "A thick, creamy shake of soft dried figs, fortified soy beverage, ground flax and wheat germ, spiced with cinnamon. Fig and date milk shakes are a classic cooler in Egypt and the Levant. A glass brings **vitamin B12, calcium and plant omega-3**, with vitamin E and selenium from the wheat germ.",
+      "ingredients": [
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 300,
+          "note": "fortified with B12 and calcium (check the carton)"
+        },
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 16
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 10
+        },
+        {
+          "food": "wheat-germ-2e7e8d",
+          "g": 22
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Soak the figs in a little hot water for 10 minutes if they are firm, then snip off the stems.",
+        "Blend the soy beverage, figs, ground flax, wheat germ and half the cinnamon until completely smooth, 1 to 2 minutes.",
+        "Pour into a tall glass and dust with the rest of the cinnamon."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "vegan-med-levant-lupini-lemon-mint",
+      "name": "Lupini beans with lemon, mint and Aleppo pepper",
+      "inspiredBy": "Egyptian and Levantine termis, the lupini bean snack",
+      "about": "Plump, salty-sharp lupini beans, tossed with lemon, olive oil, fresh mint and a pinch of chili. They are a street snack from Cairo to Beirut. A bowl is one of the most **protein-rich** snacks you can eat.",
+      "ingredients": [
+        {
+          "food": "lupin-boiled-748dba",
+          "g": 130,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Drain the lupini and soak them in fresh cold water for 10 minutes to take the edge off the brine, then drain again.",
+        "Toss with the lemon juice, olive oil, torn mint and Aleppo pepper.",
+        "Serve with a lemon wedge. Squeeze each bean out of its skin with your teeth."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Look for jarred lupini at Italian or Middle Eastern grocers, or at Costco."
+    },
+    {
+      "id": "vegan-med-levant-edamame-lemon-sumac",
+      "name": "Warm edamame with lemon and sumac",
+      "inspiredBy": "warm green fava beans (ful akhdar) with lemon, as sold in spring across the Levant",
+      "about": "Warm shelled green soybeans tossed with lemon, a pinch of sumac and a little salt, the way fresh green fava beans are eaten across the Levant in spring. A big bowl is a very **protein-rich** snack, with fibre and folate too.",
+      "ingredients": [
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 150,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Simmer the frozen edamame in salted water for 3 to 4 minutes, until tender, then drain well.",
+        "Toss with the lemon juice, olive oil and sumac while still warm."
+      ],
+      "prepMin": 2,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "vegan-med-levant-peanuts-cumin-lemon",
+      "name": "Roasted peanuts with cumin and lemon",
+      "inspiredBy": "the roasted peanuts sold from carts in Cairo and Beirut",
+      "about": "Warm dry-roasted peanuts tossed with cumin, a squeeze of lemon and a pinch of Aleppo pepper. Roasted peanuts are a favourite nibble all over the Levant and Egypt. The peanuts bring **protein, niacin and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 22,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 6
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the peanuts in a dry pan for 2 minutes until fragrant.",
+        "Toss with the lemon juice, cumin and Aleppo pepper and eat warm."
+      ],
+      "prepMin": 2,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "vegan-med-levant-figs-almonds",
+      "name": "Dried figs with toasted almonds",
+      "inspiredBy": "the figs and nuts plate of Syria and Greece",
+      "about": "Chewy, jammy dried figs with a handful of warm toasted almonds and a pinch of cinnamon. A figs-and-nuts plate is the simplest sweet in Syria and Greece. The almonds bring **vitamin E and calcium**, and the figs bring potassium and fibre.",
+      "ingredients": [
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 40
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan for 3 minutes, until fragrant.",
+        "Serve with the figs and a pinch of cinnamon."
+      ],
+      "prepMin": 2,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "vegan-med-levant-seitan-lemon-parsley-bites",
+      "name": "Spiced seitan bites with lemon and parsley",
+      "inspiredBy": "the crispy shawarma-pan bits of Lebanon, made with seitan",
+      "about": "Little cubes of baharat-spiced seitan seared until crisp at the edges, tossed with lemon, parsley and a drizzle of tahini. Think of the crispy bits at the bottom of the shawarma pan. A serving brings **plenty of protein and selenium**.",
+      "ingredients": [
+        {
+          "food": "seitan-508e8a",
+          "g": 100
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 2
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "sesame-butter-tahini-roasted-and-toasted-kernels-574c41",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Cut the seitan into small cubes and toss with the baharat.",
+        "Sear in the canola oil over high heat for 5 to 6 minutes, turning, until browned and crisp at the edges.",
+        "Toss with the lemon juice, parsley and a drizzle of tahini loosened with a spoonful of water."
+      ],
+      "prepMin": 5,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "vegan-med-levant-seitan-tawook-skewers",
+      "name": "Garlicky seitan tawook skewers with tomato",
+      "inspiredBy": "Lebanese shish tawook, with seitan in place of chicken",
+      "about": "Seitan cubes marinated in lemon, garlic and paprika, threaded on skewers and seared until golden, with a juicy tomato on the side. It is the shish tawook marinade on a plant-based protein. Seitan is a very **protein-dense** snack, and it brings selenium and niacin too.",
+      "ingredients": [
+        {
+          "food": "seitan-508e8a",
+          "g": 100
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 12
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Cut the seitan into cubes and toss with the lemon juice, mashed garlic, paprika, salt and a spoonful of the canola oil. Leave for 10 minutes.",
+        "Thread onto skewers and sear in a hot pan with the rest of the oil for 6 to 8 minutes, turning, until golden on all sides.",
+        "Serve with the tomato cut in wedges and a scatter of parsley."
+      ],
+      "prepMin": 5,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "vegan-med-levant-seitan-kafta-skewers",
+      "name": "Seitan skewers with kafta spices, onion and parsley",
+      "inspiredBy": "the flavours of Lebanese and Syrian kafta (grated onion, parsley and baharat) on seitan",
+      "about": "Seitan cubes rubbed with grated onion, parsley and baharat, threaded on skewers and seared until golden. It has the flavours of the kafta grilled all over Lebanon and Syria. Seitan is a very **protein-dense** snack, with selenium and niacin too.",
+      "ingredients": [
+        {
+          "food": "seitan-508e8a",
+          "g": 100
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 25
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 2
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Cut the seitan into bite-size cubes. Grate the onion and mix the pulp and juice with the chopped parsley, baharat and salt, then rub it all over the seitan and leave for 10 minutes.",
+        "Thread onto skewers.",
+        "Sear in the canola oil over medium-high heat for 6 to 8 minutes, turning, until golden and the onion catches at the edges. Squeeze over the lemon."
+      ],
+      "prepMin": 10,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "vegan-med-levant-hummus-carrot-cucumber",
+      "name": "Hummus with carrot and cucumber sticks",
+      "inspiredBy": "Lebanese hummus bil tahini, the everyday mezze",
+      "about": "Creamy, lemony chickpea hummus with a swirl of olive oil, scooped up with crunchy carrot and cucumber sticks. It is the everyday mezze snack of Lebanon. The chickpeas and tahini bring **protein, iron and calcium**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "sesame-butter-tahini-roasted-and-toasted-kernels-574c41",
+          "g": 12
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Blend the chickpeas with the tahini, lemon juice, garlic, cumin, salt and a few spoonfuls of cold water until very smooth.",
+        "Spoon into a bowl, make a dip in the middle and drizzle in the olive oil.",
+        "Cut the carrot and cucumber into sticks and serve alongside."
+      ],
+      "prepMin": 10,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "vegan-med-levant-roasted-chickpeas-zaatar",
+      "name": "Roasted chickpeas with cumin and za'atar",
+      "inspiredBy": "leblebi, the roasted chickpeas sold across the eastern Mediterranean",
+      "about": "Crisp, crunchy chickpeas roasted with cumin and za'atar until they rattle. A snack bowl with the tangy, herby bite of za'atar. The chickpeas bring **protein and iron**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 120,
+          "swap": "legumes",
+          "note": "rinsed and dried well"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C. Dry the chickpeas very well in a clean towel.",
+        "Toss with the canola oil, cumin and salt and roast for 25 minutes, shaking the tray twice, until crisp.",
+        "Toss with the za'atar while still warm."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-med-levant-overnight-oats-flax-walnuts-figs"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-med-levant-hummus-roasted-tofu-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-med-levant-mujaddara-hamra-malfouf"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-med-levant-muhammara-cucumber-pita"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-med-levant-chickpea-fatteh-tahini"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-med-levant-mujaddara-hamra-malfouf",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-med-levant-gigantes-plaki"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-med-levant-edamame-lemon-sumac"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-med-levant-ful-medames-tomato-parsley"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-med-levant-gigantes-plaki",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-med-levant-seitan-cauliflower-shawarma-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-med-levant-fig-flax-wheat-germ-shake"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-med-levant-roasted-chickpeas-zaatar"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-med-levant-overnight-oats-flax-walnuts-figs"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-med-levant-horiatiki-tofu-feta"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-med-levant-lentil-chard-soup-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-med-levant-muhammara-cucumber-pita"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-med-levant-peanuts-cumin-lemon"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-med-levant-overnight-oats-flax-walnuts-figs"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-med-levant-lentil-chard-soup-lemon",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-med-levant-baked-falafel-cauliflower-pita"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-med-levant-seitan-tawook-skewers"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-med-levant-ful-medames-tomato-parsley"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-med-levant-baked-falafel-cauliflower-pita",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-med-levant-lenten-spanakopita-tofu-feta"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-med-levant-fig-flax-wheat-germ-shake"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-med-levant-lupini-lemon-mint"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-med-levant-chickpea-fatteh-tahini"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-med-levant-lenten-spanakopita-tofu-feta",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-med-levant-caponata-white-beans-pita"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-med-levant-edamame-lemon-sumac"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-med-levant-seitan-kafta-skewers"
+        }
+      ]
+    }
+  ]
+}
