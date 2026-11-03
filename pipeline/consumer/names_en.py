@@ -636,7 +636,24 @@ def tidy_parts(raw: str, source: str = "") -> list[str]:
             continue
         kept.append(p.strip(" ."))
     kept = _cook_states(kept)
-    return kept
+    return _reheat_parts(kept)
+
+
+_REHEAT_RX = re.compile(r"^re-?heated$", re.I)
+_READY_RX = re.compile(r"\bcanned\b|\bready[- ]cooked\b|\bpre-?cooked\b", re.I)
+
+
+def _reheat_parts(parts: list[str]) -> list[str]:
+    """UK names say "re-heated" for canned and ready-cooked foods (heated as you'd eat them) and "to be reheated" for
+    chilled ready meals. Neither tells a home cook anything: drop the first beside canned or ready-cooked, and call the
+    second ready-made."""
+    ready = any(_READY_RX.search(p) for p in parts)
+    out = []
+    for p in parts:
+        if ready and _REHEAT_RX.match(p.strip()):
+            continue
+        out.append("ready-made" if re.fullmatch(r"to be re-?heated", p.strip(), re.I) else p)
+    return out
 
 
 def _word_count(p: str) -> int:

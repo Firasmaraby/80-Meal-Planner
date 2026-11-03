@@ -75,6 +75,16 @@ class RealNames(unittest.TestCase):
         # keep the failure message useful but allow at most a handful of cosmetic differences to be tuned in one place
         self.assertEqual(bad, [], "\n" + "\n".join(map(str, bad)))
 
+    def test_reheated_drops_beside_canned_and_ready_meals_read_ready_made(self):
+        cases = {
+            "Cannellini beans, canned, re-heated, drained": "Cannellini beans, canned, drained",
+            "Mushy peas, canned, re-heated": "Mushy peas, canned",
+            "Pumpkin soup, to be reheated": "Pumpkin soup, ready-made",
+            "Moussaka, reheated": "Moussaka, reheated",
+        }
+        for raw, name in cases.items():
+            self.assertEqual(N.build_name(raw, "", LEX).name, name, raw)
+
     def test_boilerplate_never_leaks(self):
         for raw, _, _ in REAL:
             n = N.build_name(raw, "", LEX).name
