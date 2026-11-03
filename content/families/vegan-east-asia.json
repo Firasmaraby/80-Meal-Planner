@@ -1,0 +1,1703 @@
+{
+  "id": "vegan-east-asia",
+  "name": "Vegan East Asian",
+  "style": "vegan",
+  "cuisine": "East Asian",
+  "regions": [
+    "China",
+    "Japan",
+    "Korea",
+    "Vietnam"
+  ],
+  "summary": "A fully plant-based week of Chinese, Japanese, Korean and Vietnamese home cooking: mapo tofu, sundubu jjigae, bibimbap, a creamy soy milk hot pot and soy milk congee. Tofu, tempeh, natto, edamame, seitan and soya chunks carry the protein, and fortified soy milk every day carries the B12.",
+  "howItWorks": "**Soy, in many forms.** Soy carries this week the way it does in Buddhist and Taiwanese vegetarian kitchens: soft and firm tofu, tempeh, natto, edamame, soya chunks and soy milk, with mung beans and seitan for a change. Every lunch and dinner has a real protein, and every day reaches at least a fifth of its calories from protein.\n\n**B12 is fortified on purpose.** Plants don't make vitamin B12, so every day has a glass or more of **fortified soy milk**. The numbers assume about 2 µg of B12 per cup, a common US level. Many Canadian cartons carry about half that, so a daily B12 supplement is the safe bet for most vegans.\n\n**Calcium, iron and the hard ones.** Calcium-set tofu, fortified soy milk, almonds, sesame and bok choy carry the calcium. Natto, tofu, tempeh, soya chunks and mung beans carry the iron, with vitamin C from broccoli, napa and mandarins alongside. Use iodized salt.\n\n**Omega-3 from plants.** Ground flax goes into the congee and the warm soy milk drinks, and canola oil does most of the cooking, which keeps the omega balance in range. Sesame oil is the finishing flavour, and it also fries the kimchi for the jjigae.\n\n**Cook once, eat twice.** The mapo tofu, bún chay, jjigae, tempeh, teriyaki and bibimbap each make two portions, so the next day's lunch is done. Saturday's congee makes Sunday's breakfast too. On Sunday, cook about 2½ cups of dry brown rice for the week, keep it in the fridge for 4 or 5 days and freeze the rest in portions.",
+  "signature": [
+    "vegan-east-asia-mapo-tofu-shiitake-soy-mince",
+    "vegan-east-asia-sundubu-jjigae-vegan-kimchi",
+    "vegan-east-asia-bibimbap-crispy-tofu-namul",
+    "vegan-east-asia-tonyu-nabe-soy-milk-hot-pot"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-east-asia-edamame-tofu-sesame-plate"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-east-asia-edamame-tofu-sesame-plate"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-east-asia-sweet-mung-bean-soup"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-east-asia-salted-edamame"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-east-asia-salted-edamame"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-east-asia-hiyayakko-chilled-tofu-ginger"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-east-asia-sweet-mung-bean-soup"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "vegan-east-asia-xian-dou-jiang-tofu-peanuts",
+      "name": "Savoury hot soy milk (xian dou jiang) with tofu, peanuts and toast",
+      "inspiredBy": "Taiwanese xian dou jiang, with toasted bread cubes in place of fried dough (youtiao) and dried shrimp",
+      "about": "Warm soy milk curdles into soft, tangy clouds in a bowl of rice vinegar, tamari and scallion, with a few cubes of tofu, crushed peanuts and a little chili crisp. It's the Taiwanese breakfast-shop bowl, with toast in place of youtiao. The **fortified soy milk brings B12 and calcium** before you have left the house.",
+      "ingredients": [
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 220,
+          "note": "unsweetened, fortified with B12 and calcium (check the carton)"
+        },
+        {
+          "food": "soft-tofu-raw-f1113b",
+          "g": 40,
+          "swap": "lean_protein",
+          "note": "calcium-set (check the label), a few cubes"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "toasted, cut into small cubes"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "roughly crushed"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "sliced"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 10
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils",
+          "note": "for the chili crisp"
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 1.5,
+          "note": "or a pinch of any chili flakes"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 1
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Put the rice vinegar, tamari and a pinch of white pepper in the bottom of a wide bowl. Slice the scallion and crush the peanuts.",
+        "Toast the bread until properly crisp and cut it into small cubes.",
+        "Warm the canola oil in a tiny pan until it shimmers, take it off the heat and stir in the chili flakes. This is a quick chili crisp, and it should sizzle and smell toasty.",
+        "Warm the soy milk in a small pot over medium heat, stirring now and then, until it is steaming and just about to bubble. Don't let it boil hard or it will foam over. Drop the tofu cubes into the pot for the last minute so they warm through.",
+        "Pour the hot soy milk into the bowl in one go, from a little height, and do not stir. Leave it for a minute and it will thicken into soft, tangy curds.",
+        "Add the scallion, peanuts, chili crisp and sesame oil. Eat it right away with a spoon, and drop the bread cubes on last so they stay crisp."
+      ],
+      "prepMin": 5,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "15-minute",
+        "mild"
+      ],
+      "tip": "Use plain unsweetened soy milk. Sweetened cartons curdle badly and taste wrong here. A spoonful of pickled mustard greens (zha cai) is the real topping, if you have it. Pick a carton with soybeans and water at the top of the list and at least 7 g of protein a cup; thin cartons won't set."
+    },
+    {
+      "id": "vegan-east-asia-japanese-breakfast-natto-miso-soup",
+      "name": "Japanese-style breakfast: natto, miso soup with tofu and shiitake, brown rice and sesame spinach",
+      "inspiredBy": "the Japanese ichiju-sansai breakfast (one soup, three sides), with shiitake dashi in place of bonito",
+      "about": "A proper small Japanese breakfast: miso soup with tofu and shiitake, sticky natto over warm rice, and spinach with sesame. It's savoury, quick and light. The **natto and tofu bring protein and iron**.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 120,
+          "swap": "low_gi_grains",
+          "note": "reheated"
+        },
+        {
+          "food": "natto-86df6e",
+          "g": 40,
+          "swap": "legumes",
+          "note": "one small pack"
+        },
+        {
+          "food": "soft-tofu-raw-f1113b",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "cubed"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 16
+        },
+        {
+          "food": "shiitake-mushroom-dried-8f0e00",
+          "g": 10,
+          "note": "for the dashi, sliced after soaking"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "black-sesame-seeds-81ca9e",
+          "g": 3
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "The night before, put the dried shiitake in a cup and a half of cold water in the fridge. In a hurry, simmer them in the same water with the lid on for 12 minutes instead. Either way, you get a deep, savoury dashi with no fish.",
+        "Blanch the spinach in boiling water for 1 minute, cool it under cold water, squeeze it dry and cut it into short lengths. Toss with half the tamari and the sesame seeds.",
+        "Warm the rice. Stir the natto with the rest of the tamari and half the scallion for about 20 turns, until it is stringy and pale.",
+        "Lift out the shiitake, slice it and return it to the pot with the dashi. Warm the dashi, add the tofu and heat for 2 minutes. Turn the heat to low, mash the miso with a ladleful of the broth, stir it in and take the pot off before it boils.",
+        "Serve the rice with the natto on top, the spinach alongside and the soup scattered with the rest of the scallion."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "15-minute",
+        "mild"
+      ],
+      "tip": "Natto comes frozen from an Asian grocer, and one small pack is plenty. Too sticky or strong? Stir in a few drops of rice vinegar and the little mustard packet, and start with half."
+    },
+    {
+      "id": "vegan-east-asia-soy-milk-congee-mung-bean-shiitake",
+      "name": "Soy milk and mung bean congee with shiitake, edamame and almonds",
+      "inspiredBy": "Chinese zhou (rice porridge) and lu dou zhou (mung bean porridge), finished with soy milk",
+      "about": "A silky porridge of brown rice and split mung beans, finished with soy milk and topped with browned shiitake, edamame and toasted almonds. It's the slow, comforting weekend breakfast, and it makes two portions. The **mung beans and soy milk add protein**, and a spoonful of ground flax adds plant omega-3.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "mung-beans-dahl-dried-raw-df3628",
+          "g": 30,
+          "swap": "legumes",
+          "note": "split yellow (moong dal)"
+        },
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 250,
+          "note": "unsweetened, fortified with B12 and calcium (check the carton)"
+        },
+        {
+          "food": "shiitake-mushroom-dried-8f0e00",
+          "g": 16,
+          "note": "soaked until soft, then sliced"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 80,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted and roughly chopped"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 10,
+          "note": "stirred in at the end"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "cut into thin matchsticks"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 7
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 1.5
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Put the dried shiitake in a cup of hot water to soak. Rinse the rice and mung beans together and put them in a large pot with plenty of water, about eight times their volume, and half the ginger. Bring to a boil, then turn it down to a gentle simmer, partly covered.",
+        "Cook, stirring every 10 minutes and scraping the bottom so it doesn't catch, for about 70 minutes, until the brown rice has split and the porridge is thick. Add a splash more hot water if it gets too thick.",
+        "Pour in the soy milk and simmer very gently for 10 minutes more. Never boil soy milk hard, and keep stirring the bottom.",
+        "While it simmers, slice the soaked shiitake and fry it in a dry non-stick pan until browned and a little crisp at the edges. Splash in the tamari and take it off the heat. Boil the edamame for 3 minutes and drain, and toast the almonds in a dry pan for 2 minutes.",
+        "Stir the ground flax into the congee, then ladle it into bowls. Top with the shiitake, the edamame, the rest of the ginger, the scallion and the almonds, and finish with a pinch of white pepper and the sesame oil.",
+        "Cool the second portion and keep it in the fridge. Tomorrow, loosen it with a splash of soy milk or water over low heat."
+      ],
+      "prepMin": 15,
+      "cookMin": 80,
+      "servings": 2,
+      "tags": [
+        "weekend-project",
+        "makes-leftovers",
+        "mild"
+      ],
+      "tip": "In a pressure cooker, cook the rice and mung for 35 minutes, then simmer the soy milk in for 10. Start the rice the night before in a slow cooker and breakfast takes 15 minutes."
+    },
+    {
+      "id": "vegan-east-asia-edamame-soba-salad-sesame-miso",
+      "name": "Edamame and soba salad with sesame-miso dressing",
+      "inspiredBy": "Japanese cold soba and goma-ae style sesame dressing, with edamame carrying the protein",
+      "about": "Chewy buckwheat noodles with plenty of edamame and fine napa and carrot in a nutty goma-ae style sesame and miso dressing. It packs well and is fine at room temperature. The **edamame carry the protein**, with buckwheat for extra fibre.",
+      "ingredients": [
+        {
+          "food": "soba-buckwheat-noodles-dried-5f616a",
+          "g": 55,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 150,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 70,
+          "note": "finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "shredded"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10
+        },
+        {
+          "food": "black-sesame-seeds-81ca9e",
+          "g": 10,
+          "note": "toasted, ground in a mortar"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 10
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 8
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 5
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 2
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Boil the edamame for 3 to 4 minutes, drain and cool them under cold water.",
+        "Cook the soba in plenty of boiling water for the time on the package. Drain, rinse under cold running water, rubbing gently, until the noodles are cold and no longer slippery. Drain well.",
+        "Grind the sesame seeds in a mortar or the bottom of a bowl with the back of a spoon until it is a chunky paste. Whisk in the miso, rice vinegar, tamari, sugar, ginger and a splash of water until smooth and pourable.",
+        "Shred the napa and carrot finely and slice the scallion.",
+        "Toss the noodles, edamame and vegetables with the dressing and scatter over the scallion."
+      ],
+      "prepMin": 15,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Keep the dressing in a jar and toss it in just before eating if you are packing this for work."
+    },
+    {
+      "id": "vegan-east-asia-mapo-tofu-shiitake-soy-mince",
+      "name": "Mapo tofu with mushrooms and soy mince, garlicky cauliflower and brown rice",
+      "inspiredBy": "Sichuan mapo doufu, with mushrooms and soy mince doing the job of the pork, and garlicky stir-fried cauliflower, Sichuan-house style",
+      "about": "Silky tofu in a brick-red, tingly sauce of fermented chili bean paste, garlic and Sichuan peppercorn, with browned mushrooms and soy mince for a meaty bite. A side of garlicky cauliflower makes it a full plate. The **calcium-set tofu is a big calcium source**.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-coagulated-with-calcium-sulfate-raw-d34852",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "calcium-set, in 2 cm cubes"
+        },
+        {
+          "food": "soya-chunks-textured-soy-protein-dried-746293",
+          "g": 20,
+          "note": "the small mince or granule size"
+        },
+        {
+          "food": "shiitake-mushroom-dried-8f0e00",
+          "g": 20,
+          "note": "soaked, then finely diced"
+        },
+        {
+          "food": "oyster-mushroom-raw-5bd267",
+          "g": 80,
+          "note": "finely diced"
+        },
+        {
+          "food": "doubanjiang-chili-bean-paste-ba0ec4",
+          "g": 10,
+          "note": "Pixian style if you can find it"
+        },
+        {
+          "food": "fermented-black-beans-douchi-f09d2e",
+          "g": 3,
+          "note": "rinsed and chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 10
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 6
+        },
+        {
+          "food": "cornstarch-65288a",
+          "g": 5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 150,
+          "note": "cut into small florets"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 100,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "sichuan-peppercorn-bb776d",
+          "g": 1,
+          "note": "toasted and ground"
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Cover the soy mince and the dried shiitake with hot water and leave them 10 minutes. Squeeze the mince dry and dice the shiitake. Simmer the tofu cubes in just-boiled water with the salt and a pinch of white pepper for 3 minutes to firm them up, then drain gently.",
+        "Heat about two thirds of the canola oil in a wok or wide pan over medium-high heat. Fry the soy mince, shiitake and oyster mushrooms until they are browned and a bit crispy at the edges, about 5 minutes.",
+        "Push them aside, add the doubanjiang and black beans and fry for a minute until the oil turns red and smells rich. Stir in half the garlic and the ginger for 30 seconds.",
+        "Pour in the tamari and a mug of water, bring to a simmer and slide in the tofu. Nudge it gently so the cubes stay whole and simmer 5 minutes.",
+        "Stir the cornstarch with a splash of cold water, drizzle it in and cook until the sauce turns glossy. Toast the Sichuan peppercorns in a dry pan for a minute, grind them, and scatter over the dish with most of the scallion.",
+        "For the cauliflower, heat the last of the oil in a separate pan over high heat and fry the florets for 3 to 4 minutes, until browned in spots. Add the rest of the garlic for 30 seconds, then a splash of water, cover and steam 2 minutes until just tender.",
+        "Serve the tofu over the rice with the cauliflower alongside. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 20,
+      "servings": 2,
+      "tags": [
+        "spicy",
+        "makes-leftovers"
+      ],
+      "tip": "The tingle comes from the Sichuan pepper. Use less if you are new to it, and more doubanjiang if you want more heat."
+    },
+    {
+      "id": "vegan-east-asia-lemongrass-soya-chunk-tofu-bun-chay",
+      "name": "Lemongrass soya chunk and tofu bún chay with herbs and peanuts",
+      "inspiredBy": "Vietnamese bún chay, the vegetarian noodle bowl of Buddhist kitchens, with a tamari-based nước chấm in place of fish sauce",
+      "about": "Cool rice vermicelli with lemongrass-seared soya chunks, golden tofu and mushrooms, mint, quick-pickled carrot, crisp napa and crushed peanuts, under a sweet-sour tamari nước chấm. It's cool, herby and packs well for tomorrow. The **soya chunks and tofu bring plenty of protein**.",
+      "ingredients": [
+        {
+          "food": "soya-chunks-textured-soy-protein-dried-746293",
+          "g": 30
+        },
+        {
+          "food": "firm-tofu-coagulated-with-calcium-sulfate-raw-d34852",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "calcium-set, patted dry and cubed"
+        },
+        {
+          "food": "oyster-mushroom-raw-5bd267",
+          "g": 100,
+          "note": "torn into strips"
+        },
+        {
+          "food": "rice-vermicelli-dry-raw-363c6b",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 80,
+          "note": "finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 10
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "crushed"
+        },
+        {
+          "food": "lemon-grass-citronella-raw-517537",
+          "g": 10,
+          "note": "the tender bottom, finely minced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 14
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 16
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 10
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 0.8,
+          "note": "or a fresh chili, minced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Cover the soya chunks with hot water for 10 minutes, squeeze them dry and tear them into bite-size pieces. Toss them with the torn mushrooms, the lemongrass, half the garlic, a little of the tamari and a pinch of the sugar. Leave to marinate while you do the rest.",
+        "Make the sauce by stirring the rest of the tamari, garlic and sugar with the chili, most of the rice vinegar and a few spoonfuls of water until the sugar dissolves.",
+        "Toss the carrot with a little rice vinegar, a pinch of sugar and the salt and leave it to pickle for 10 minutes.",
+        "Cook the vermicelli in boiling water for the time on the package, usually 3 to 5 minutes. Drain, rinse under cold water and drain again.",
+        "Heat half the canola oil in a hot non-stick pan and sear the tofu for about 6 minutes, turning, until golden on every side. Lift it out. Add the rest of the oil and sear the soya chunks and mushrooms in two batches, about 4 minutes each, so they brown instead of steaming.",
+        "Build the bowls with the shredded napa, noodles, pickled carrot and the seared tofu, soya and mushrooms. Add the mint and peanuts and spoon the sauce over.",
+        "Pack the second portion for tomorrow, with the sauce, herbs and noodles kept in separate containers."
+      ],
+      "prepMin": 25,
+      "cookMin": 20,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Thai basil or perilla, if the grocer has them, is lovely in place of the mint. At the lighter size the noodle nest is small, so pile on the napa, carrot and herbs. The sauce keeps in a jar for up to 4 days."
+    },
+    {
+      "id": "vegan-east-asia-sundubu-jjigae-vegan-kimchi",
+      "name": "Soft tofu stew (sundubu jjigae) with vegan kimchi and mushrooms",
+      "inspiredBy": "Korean sundubu jjigae, with a shiitake broth and kimchi in place of the seafood",
+      "about": "A bubbling, red, chili-spiked stew of soft tofu, kimchi, bok choy and soybean sprouts, finished with ground toasted sesame. It's warming, fast and savoury. The **tofu and sprouts carry the protein**.",
+      "ingredients": [
+        {
+          "food": "soft-tofu-raw-f1113b",
+          "g": 250,
+          "swap": "lean_protein",
+          "note": "1 tube of soft (silken) tofu, calcium-set if you can find it"
+        },
+        {
+          "food": "kimchi-1371a8",
+          "g": 50,
+          "note": "vegan, with no fish sauce or shrimp (check the label)"
+        },
+        {
+          "food": "shiitake-mushroom-dried-8f0e00",
+          "g": 24,
+          "note": "for the broth"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "stems and leaves, cut into chunks"
+        },
+        {
+          "food": "soybean-sprouted-bean-sprouts-raw-000dd4",
+          "g": 60,
+          "swap": "legumes",
+          "note": "kongnamul"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 90,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 6
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3
+        },
+        {
+          "food": "black-sesame-seeds-81ca9e",
+          "g": 4,
+          "note": "ground"
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 4
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 70,
+          "swap": "low_gi_grains"
+        }
+      ],
+      "steps": [
+        "Soak the dried shiitake in about two and a half cups of hot water for 15 minutes, then lift them out, slice them and keep the soaking water as your stock.",
+        "Toast the sesame seeds in a dry pan for a minute and grind them to a rough powder. Cut the bok choy into chunks.",
+        "Heat the sesame oil in a pot over medium heat. Add the garlic, kimchi and gochugaru and stir for 2 minutes until the kimchi smells toasty.",
+        "Pour in the shiitake stock and simmer the kimchi, shiitake, sprouts, frozen edamame and bok choy for 8 minutes.",
+        "Spoon in the soft tofu in big chunks, season with the tamari and simmer 4 minutes more, without stirring too much so the tofu stays in clouds.",
+        "Stir in the ground sesame and the scallion, and serve bubbling hot with the rice. Cool the second portion for tomorrow's lunch and reheat gently."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Most jarred kimchi is made with fish sauce or salted shrimp. Look for one labelled vegan, or leave it out and add a splash more tamari and a pinch of chili. If the tofu breaks up when you reheat it, that's the style. Medium-firm tofu also works, but it is less custardy."
+    },
+    {
+      "id": "vegan-east-asia-tempeh-broccoli-black-bean-stir-fry",
+      "name": "Tempeh and broccoli stir-fry with black bean sauce and brown rice",
+      "inspiredBy": "Cantonese broccoli in black bean sauce, usually made with beef, here with tempeh",
+      "about": "Golden pan-fried tempeh with broccoli and cauliflower in a glossy, garlicky sauce of fermented black beans and ginger. It comes together in one pan in about 30 minutes. The **tempeh brings about 22 g of protein**, and the broccoli covers vitamin C.",
+      "ingredients": [
+        {
+          "food": "tempeh-b9c516",
+          "g": 110,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "cut into small florets, stems peeled and sliced"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 130,
+          "note": "small florets"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "sliced thin"
+        },
+        {
+          "food": "fermented-black-beans-douchi-f09d2e",
+          "g": 8,
+          "note": "rinsed and roughly chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 7
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 3
+        },
+        {
+          "food": "cornstarch-65288a",
+          "g": 4
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 90,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 1,
+          "note": "or any chili flakes"
+        }
+      ],
+      "steps": [
+        "Simmer the tempeh in a pan of water for 5 minutes to soften it and mellow its flavour. Drain, pat dry and cut it into thin slabs.",
+        "Heat half the canola oil in a wok or large non-stick pan over medium-high heat and fry the tempeh until golden on both sides, about 6 minutes. Lift it out.",
+        "Add the rest of the oil, then the garlic, ginger, black beans and chili, and stir for 30 seconds until fragrant.",
+        "Add the cauliflower, carrot and a splash of water, cover and steam for 2 minutes, then add the broccoli, cover again and steam 3 minutes more, until the cauliflower is tender and the broccoli is bright green.",
+        "Stir the tamari, sugar and cornstarch with a few spoonfuls of cold water and stir it in at the end. Cook until glossy, then return the tempeh to the pan and toss to coat.",
+        "Finish with the scallion and serve over the rice. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 20,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Rinse the black beans so the dish isn't too salty. They are the whole flavour of the sauce, so don't skip them."
+    },
+    {
+      "id": "vegan-east-asia-seitan-edamame-teriyaki-sweet-potato",
+      "name": "Seitan teriyaki with edamame, simmered sweet potato and bok choy",
+      "inspiredBy": "Japanese teriyaki with satsuma-imo no nimono (simmered sweet potato), with seitan as the protein",
+      "about": "Seared seitan and oyster mushrooms in a glossy ginger-teriyaki glaze, with soft simmered sweet potato, edamame and bok choy on brown rice. It's sticky, sweet and savoury in all the right places. The **seitan and edamame** together bring over 30 g of protein.",
+      "ingredients": [
+        {
+          "food": "seitan-508e8a",
+          "g": 100,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "oyster-mushroom-raw-5bd267",
+          "g": 80,
+          "note": "torn into strips"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 110,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 70,
+          "note": "in 3 cm chunks"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 140,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 14
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 10
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "black-sesame-seeds-81ca9e",
+          "g": 4
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 70,
+          "swap": "low_gi_grains"
+        }
+      ],
+      "steps": [
+        "Put the sweet potato in a pot with a cup of water, a third of the sugar and a splash of the tamari. Simmer, covered, for 12 to 15 minutes until a knife slides in easily, then uncover and let the liquid cook down to a glaze.",
+        "Mix the rest of the tamari and sugar with the ginger and a splash of water to make the teriyaki sauce.",
+        "Slice the seitan into thick pieces and tear the mushrooms into strips. Heat the canola oil in a non-stick pan over medium-high heat and sear the seitan and mushrooms for 5 to 6 minutes, until browned on the edges.",
+        "Pour in the sauce and let it bubble and thicken for 2 minutes, turning the seitan so it is coated and glossy.",
+        "Drop the frozen edamame and the bok choy into the sweet potato pot for the last 3 minutes of cooking, until the edamame is hot and the bok choy is bright and just tender.",
+        "Serve the seitan over the rice with the sweet potato, edamame and bok choy, and scatter over the sesame seeds and scallion. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Buy plain seitan, not the flavoured kinds, so the teriyaki can do the flavouring. Pan-seared firm tofu works in place of seitan if you don't want the gluten."
+    },
+    {
+      "id": "vegan-east-asia-bibimbap-crispy-tofu-namul",
+      "name": "Vegan bibimbap with crispy tofu, tempeh bulgogi and four namul",
+      "inspiredBy": "Korean bibimbap, with pan-crisped tofu and bulgogi-style tempeh in place of the beef and egg",
+      "about": "A big bowl of brown rice topped with crisp-edged tofu, savoury tempeh bulgogi and colourful sautéed vegetables, with a spoonful of gochujang sauce to stir through. It's a weekend project that makes two bowls. The **tofu and tempeh bring plenty of protein**, with calcium from the tofu.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 80,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "firm-tofu-coagulated-with-calcium-sulfate-raw-d34852",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "calcium-set, patted dry and sliced"
+        },
+        {
+          "food": "tempeh-b9c516",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "soybean-sprouted-bean-sprouts-raw-000dd4",
+          "g": 70,
+          "swap": "legumes",
+          "note": "kongnamul"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "shiitake-mushroom-dried-8f0e00",
+          "g": 18,
+          "note": "soaked until soft, then sliced"
+        },
+        {
+          "food": "gochujang-korean-chili-paste-843f28",
+          "g": 18
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 6
+        },
+        {
+          "food": "black-sesame-seeds-81ca9e",
+          "g": 4
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 12
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Soak the dried shiitake in hot water for 15 minutes, squeeze it dry and slice it. Crumble the tempeh into small pieces and toss it with half the tamari, the sugar, half the sesame oil and a little of the garlic. Leave it to marinate.",
+        "Boil the soybean sprouts in a covered pot with a splash of water for 5 minutes, drain and toss with a little garlic, a few drops of the sesame oil and a pinch of the salt. Blanch the spinach for 1 minute, squeeze it dry and season it the same way.",
+        "Heat a little of the canola oil in a non-stick pan and, one vegetable at a time, sauté the carrot, then the shiitake, each for 2 to 3 minutes with a pinch of salt and a little garlic. Keep each pile separate on a big plate.",
+        "Brown the tofu slices in some of the remaining oil for about 3 minutes a side until crisp at the edges. Then sear the marinated tempeh in the same pan until sticky and browned, about 4 minutes.",
+        "Make the sauce by stirring the gochujang with the rest of the sesame oil and tamari, a spoonful of water and most of the sesame seeds. The gochujang is for the sauce, not the marinade.",
+        "Warm the rice and divide it between two bowls. Arrange the tofu, the tempeh bulgogi and the namul in neat piles on top, scatter over the rest of the sesame seeds, and add the sauce.",
+        "Mix everything together at the table. Keep the second portion's toppings and rice in separate containers for tomorrow."
+      ],
+      "prepMin": 30,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "weekend-project",
+        "makes-leftovers",
+        "medium-spicy"
+      ],
+      "tip": "Tomorrow, re-crisp the tofu in a hot pan for 2 minutes and eat the rest at room temperature, like a dosirak lunchbox. For the crispy rice base you get at restaurants, press the rice into an oiled hot skillet for a couple of minutes before piling the toppings on."
+    },
+    {
+      "id": "vegan-east-asia-tonyu-nabe-soy-milk-hot-pot",
+      "name": "Soy milk hot pot (tonyu nabe) with tofu, edamame and napa cabbage",
+      "inspiredBy": "Japanese tonyu nabe, the creamy soy milk hot pot, with a goma dare (sesame) dip",
+      "about": "A pot of gently simmering, creamy soy milk broth with tofu, edamame, napa cabbage, carrot and shiitake, and a nutty sesame dipping sauce. It's an easy, relaxed Sunday supper. The **soy milk and tofu bring protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 250,
+          "note": "unsweetened, fortified with B12 and calcium (check the carton)"
+        },
+        {
+          "food": "shiitake-mushroom-dried-8f0e00",
+          "g": 12
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 200,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "soft-tofu-raw-f1113b",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "calcium-set, in cubes"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 90,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "sliced into thin coins"
+        },
+        {
+          "food": "rice-vermicelli-dry-raw-363c6b",
+          "g": 30,
+          "note": "added at the end"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 20
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 10
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 8
+        },
+        {
+          "food": "black-sesame-seeds-81ca9e",
+          "g": 8,
+          "note": "toasted and ground to a paste"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "sliced into thin coins"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12
+        }
+      ],
+      "steps": [
+        "Soak the dried shiitake in a cup of hot water for 15 minutes. Soak the vermicelli in warm water for 5 minutes and drain it. Chop the napa, separating the white stems from the leaves.",
+        "For the dipping sauce (goma dare), stir the tamari, rice vinegar, ground sesame paste and half the scallion with a spoonful of hot water, until it is thick and nutty.",
+        "Slice the soaked shiitake. Pour the shiitake soaking water and an equal amount of fresh water into a wide pot, add the ginger and carrot, and simmer for 5 minutes.",
+        "Add the napa stems and simmer 5 minutes, then turn the heat to low and pour in the soy milk. Keep it at a gentle simmer, never a hard boil, or it will split.",
+        "Whisk the miso with a ladleful of the broth and stir it back in. Add the tofu, frozen edamame, shiitake and napa leaves and cook for 5 minutes, until everything is hot through. Stir in the noodles for the last 2 minutes.",
+        "Serve straight from the pot with the dipping sauce and the rest of the scallion."
+      ],
+      "prepMin": 20,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "End the pot the Japanese way: skip the noodles, stir a scoop of leftover brown rice into the last of the broth and simmer it for a few minutes as zosui. Double it for company and set the pot in the middle of the table."
+    },
+    {
+      "id": "vegan-east-asia-black-sesame-almond-soy-milk",
+      "name": "Warm black sesame and almond soy milk",
+      "inspiredBy": "Chinese black sesame and almond paste (zhi ma xing ren hu) and Japanese kuro goma kinako milk, loosened with soy milk and thickened with a little ground flax",
+      "about": "A nutty, toasty drink of blended black sesame, almonds and kinako, warmed with fortified soy milk and thickened with a little ground flax, like a thin hu. It feels like a treat and takes five minutes. It brings **B12, calcium, vitamin E and plant omega-3** in one cup.",
+      "ingredients": [
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 200,
+          "note": "unsweetened, fortified with B12 and calcium (check the carton)"
+        },
+        {
+          "food": "black-sesame-seeds-81ca9e",
+          "g": 10,
+          "note": "toasted"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 20,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "kinako-roasted-soybean-flour-green-seeded-whole-soybean-c23526",
+          "g": 20
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 10
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Toast the black sesame and almonds in a dry pan for 2 minutes until they smell nutty.",
+        "Blend them with the kinako, ground flax, sugar and the cold soy milk until completely smooth, about a minute.",
+        "Pour into a small pot and warm gently for a couple of minutes, stirring the bottom, until steaming. Don't boil it, or the flax turns gluey."
+      ],
+      "prepMin": 3,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "vegan-east-asia-roasted-soybean-almond-soy-latte",
+      "name": "Warm kinako soy latte",
+      "inspiredBy": "Japanese kinako (roasted soybean flour) milk, with almonds",
+      "about": "A toasty, nutty mug of kinako (roasted soybean flour) and ground almonds whisked into warm fortified soy milk, with a little ground flax for body. It tastes like the best part of a peanut butter cookie. It brings **B12, calcium, vitamin E and plant protein**.",
+      "ingredients": [
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 250,
+          "note": "unsweetened, fortified with B12 and calcium (check the carton)"
+        },
+        {
+          "food": "kinako-roasted-soybean-flour-green-seeded-whole-soybean-c23526",
+          "g": 20
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "ground fine in a blender or mortar"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 8
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Grind the almonds to a fine powder in a blender or spice grinder.",
+        "Whisk the kinako, ground almonds, ground flax and sugar into a splash of the cold soy milk until it makes a smooth paste.",
+        "Warm the rest of the soy milk until steaming, whisk in the paste and heat for a minute more, stirring. Pour into a mug and drink warm."
+      ],
+      "prepMin": 3,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Look for kinako at a Japanese grocer, or konggaru (Korean roasted soybean powder) at H Mart or T&T. They are the same thing. At a pinch, grind roasted soy nuts as fine as you can."
+    },
+    {
+      "id": "vegan-east-asia-ginger-almond-flax-soy-milk",
+      "name": "Warm ginger soy milk with almonds",
+      "inspiredBy": "Japanese shoga tonyu (hot ginger soy milk), blended with almonds",
+      "about": "A cosy cup of ginger soy milk blended with almonds, sweet but not too sweet and gently warming. It takes five minutes. It brings **B12, calcium and vitamin E** in one mug.",
+      "ingredients": [
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 300,
+          "note": "unsweetened, fortified with B12 and calcium (check the carton)"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 30,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 10
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Blend the almonds, ground flax and sugar with about a third of the cold soy milk until smooth, about a minute.",
+        "Simmer the ginger slices in the rest of the soy milk for 3 minutes, gently, without boiling hard. Lift out the ginger.",
+        "Whisk in the almond mix and warm for a minute more, stirring, until steaming. Pour into a mug and drink warm."
+      ],
+      "prepMin": 3,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "vegan-east-asia-goguma-latte-sweet-potato-soy",
+      "name": "Warm sweet potato soy latte (goguma latte)",
+      "inspiredBy": "the Korean cafe goguma latte, made with soy milk and almonds, with a spoonful of konggaru (roasted soybean powder) for an injeolmi note",
+      "about": "A creamy, naturally sweet Korean cafe drink of blended sweet potato, almonds, a spoonful of roasted soybean powder (kinako or konggaru) and soy milk, with a dusting of cinnamon. The sweet potato makes it taste like dessert. It brings **B12, calcium and vitamin A**.",
+      "ingredients": [
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 250,
+          "note": "unsweetened, fortified with B12 and calcium (check the carton)"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 80,
+          "note": "roasted or steamed until very soft, skin removed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 20,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "kinako-roasted-soybean-flour-green-seeded-whole-soybean-c23526",
+          "g": 24
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 10
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Roast or steam the sweet potato until very soft (or use one from the fridge) and peel it. Blend it with the almonds, kinako, flax, the cold soy milk, ginger and cinnamon until completely smooth.",
+        "Warm in a small pot for 3 minutes, stirring the bottom, until steaming. Drink it warm."
+      ],
+      "prepMin": 3,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Roast or steam a few sweet potatoes at once and keep them in the fridge for 4 days."
+    },
+    {
+      "id": "vegan-east-asia-roasted-soybeans-mandarin",
+      "name": "Roasted soybeans with a mandarin",
+      "inspiredBy": "Japanese irimame (roasted soybeans), eaten with winter citrus",
+      "about": "A handful of crunchy roasted soybeans and a juicy mandarin. It's a quick, no-cook snack. The **soybeans bring about 13 g of protein**, and the mandarin brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "soybean-dry-roasted-bb3701",
+          "g": 30,
+          "swap": "legumes",
+          "note": "unsalted"
+        },
+        {
+          "food": "mandarin-seedless-peeled-raw-8ed240",
+          "g": 130,
+          "swap": "vit_c_fruit"
+        }
+      ],
+      "steps": [
+        "Tip the roasted soybeans into a small bowl.",
+        "Peel the mandarin and eat it alongside, a segment between handfuls."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "no-cook",
+        "15-minute",
+        "mild"
+      ],
+      "tip": "Look for them as soy nuts in the bulk or snack aisle. Unsalted is best."
+    },
+    {
+      "id": "vegan-east-asia-chili-garlic-edamame",
+      "name": "Warm chili-garlic edamame with a mandarin",
+      "inspiredBy": "Japanese edamame with salt, with a Korean-style chili and garlic kick",
+      "about": "Warm, salty edamame tossed with garlic, a little tamari and chili, with a mandarin on the side. It takes about five minutes. The **edamame bring protein, fibre and folate**, and the mandarin adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 90,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "finely grated"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 3
+        },
+        {
+          "food": "mandarin-seedless-peeled-raw-8ed240",
+          "g": 130,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Boil the edamame for 3 to 4 minutes and drain well.",
+        "Toss with the garlic, tamari and chili while still warm, then eat them right away with the mandarin."
+      ],
+      "prepMin": 2,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "15-minute",
+        "mild"
+      ]
+    },
+    {
+      "id": "vegan-east-asia-hiyayakko-chilled-tofu-ginger",
+      "name": "Chilled tofu (hiyayakko) with ginger, scallion and tamari",
+      "inspiredBy": "Japanese hiyayakko, the simplest cold tofu plate",
+      "about": "A block of cool tofu with grated ginger, scallion, toasted sesame and a splash of tamari. It's the simplest Japanese cold plate and takes two minutes. The **tofu brings calcium and protein** in a clean, fresh snack.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-coagulated-with-calcium-sulfate-raw-d34852",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "calcium-set, chilled"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 8,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 5
+        },
+        {
+          "food": "black-sesame-seeds-81ca9e",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Drain the tofu, pat it dry and cut it into big squares on a small plate.",
+        "Top with the ginger, scallion and sesame and spoon the tamari over just before eating."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "no-cook",
+        "15-minute",
+        "mild"
+      ]
+    },
+    {
+      "id": "vegan-east-asia-salted-edamame",
+      "name": "Warm salted edamame",
+      "inspiredBy": "Japanese edamame with sea salt, the classic izakaya snack",
+      "about": "A bowl of warm, lightly salted edamame, the classic izakaya snack. They take five minutes. The **edamame bring protein, fibre and folate**.",
+      "ingredients": [
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 150,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Boil the edamame for 3 to 4 minutes and drain well.",
+        "Toss with a pinch of salt and eat them warm."
+      ],
+      "prepMin": 1,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "15-minute",
+        "mild"
+      ]
+    },
+    {
+      "id": "vegan-east-asia-soy-glazed-almonds",
+      "name": "Soy-glazed toasted almonds",
+      "inspiredBy": "Japanese and Korean tamari-glazed nuts",
+      "about": "Almonds toasted in a dry pan and glazed with a splash of tamari and a pinch of sugar until they're dark, salty and a bit sticky. A small handful is plenty. The **almonds are rich in vitamin E**.",
+      "ingredients": [
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 30,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 4
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry non-stick pan over medium heat for 3 minutes, shaking often, until they smell nutty.",
+        "Stir the tamari and sugar with a spoonful of water, pour it into the pan and stir for about a minute, until the glaze has cooked on and the pan is dry.",
+        "Tip onto a plate to cool and crisp up."
+      ],
+      "prepMin": 2,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "vegan-east-asia-sweet-mung-bean-soup",
+      "name": "Sweet mung bean soup (lu dou sha)",
+      "inspiredBy": "Cantonese lu dou sha, the smooth sweet soup of hulled mung beans",
+      "about": "A soft, lightly sweet soup of split mung beans simmered with a little ginger. It's lovely warm or chilled. The **mung beans bring plant protein and folate**.",
+      "ingredients": [
+        {
+          "food": "mung-beans-dahl-dried-raw-df3628",
+          "g": 35,
+          "swap": "legumes",
+          "note": "split yellow (moong dal)"
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 8
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "sliced into thin coins"
+        }
+      ],
+      "steps": [
+        "Rinse the mung beans and put them in a small pot with about five times their volume of water and the ginger.",
+        "Simmer gently, partly covered, for about 20 minutes, until the beans have broken down into a thick, soft soup.",
+        "Stir in the sugar, simmer 2 minutes more, and serve warm or chilled."
+      ],
+      "prepMin": 3,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild"
+      ],
+      "tip": "It makes two bowls. Keep the second in the fridge for up to 4 days and eat it warm or chilled."
+    },
+    {
+      "id": "vegan-east-asia-edamame-tofu-sesame-plate",
+      "name": "Chilled tofu and edamame plate with sesame and ginger",
+      "inspiredBy": "a Japanese izakaya cold plate of tofu and edamame",
+      "about": "Soft cool tofu and warm edamame with grated ginger, toasted black sesame and a splash of tamari. It takes five minutes. It's a **protein-rich snack with calcium and folate**.",
+      "ingredients": [
+        {
+          "food": "soft-tofu-raw-f1113b",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "calcium-set, chilled"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 100,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "black-sesame-seeds-81ca9e",
+          "g": 3
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Boil the edamame for 3 to 4 minutes, drain and let them cool a little.",
+        "Cut the tofu into squares on a small plate, add the ginger, sesame and the warm edamame, and spoon the tamari over."
+      ],
+      "prepMin": 3,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "15-minute",
+        "mild"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-east-asia-xian-dou-jiang-tofu-peanuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-east-asia-edamame-soba-salad-sesame-miso"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-east-asia-mapo-tofu-shiitake-soy-mince"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-east-asia-black-sesame-almond-soy-milk"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-east-asia-roasted-soybeans-mandarin"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-east-asia-japanese-breakfast-natto-miso-soup"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-east-asia-mapo-tofu-shiitake-soy-mince",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-east-asia-lemongrass-soya-chunk-tofu-bun-chay"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-east-asia-roasted-soybean-almond-soy-latte"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-east-asia-soy-glazed-almonds"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-east-asia-xian-dou-jiang-tofu-peanuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-east-asia-lemongrass-soya-chunk-tofu-bun-chay",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-east-asia-sundubu-jjigae-vegan-kimchi"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-east-asia-goguma-latte-sweet-potato-soy"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-east-asia-chili-garlic-edamame"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-east-asia-japanese-breakfast-natto-miso-soup"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-east-asia-sundubu-jjigae-vegan-kimchi",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-east-asia-tempeh-broccoli-black-bean-stir-fry"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-east-asia-ginger-almond-flax-soy-milk"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-east-asia-roasted-soybeans-mandarin"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-east-asia-xian-dou-jiang-tofu-peanuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-east-asia-tempeh-broccoli-black-bean-stir-fry",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-east-asia-seitan-edamame-teriyaki-sweet-potato"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-east-asia-black-sesame-almond-soy-milk"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-east-asia-hiyayakko-chilled-tofu-ginger"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-east-asia-soy-milk-congee-mung-bean-shiitake"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-east-asia-seitan-edamame-teriyaki-sweet-potato",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-east-asia-bibimbap-crispy-tofu-namul"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-east-asia-roasted-soybean-almond-soy-latte"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-east-asia-soy-milk-congee-mung-bean-shiitake",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-east-asia-bibimbap-crispy-tofu-namul",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-east-asia-tonyu-nabe-soy-milk-hot-pot"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-east-asia-soy-glazed-almonds"
+        }
+      ]
+    }
+  ]
+}
