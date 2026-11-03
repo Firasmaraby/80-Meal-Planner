@@ -25,7 +25,7 @@ Fish: Monday (pickled herring on rye), Wednesday and Friday (smoked sprats on ry
 7. Sun: Baked trout with dill potatoes, kefir and a sauerkraut and carrot salad. 1 serving.
 
 ## Standalone lunch
-- Mon: Open rye sandwiches with pickled herring, onion and dill, with sauerkraut and a pickle.
+- Mon: Open rye sandwiches with pickled herring, a sliced egg, onion and dill, with a few slices of pickle.
 
 ## Snacks (one a day; Big adds one)
 Tvorog with dill and cucumber on rye (Mon), tvorog with apple and poppy seeds (Tue), sardines on rye (Wed, Fri), chicken liver pâté on rye (Thu), spinach pkhali with lavash (Sun). Big adds an apple with sunflower seeds, a kefir with raspberries, a baked apple with walnuts and a second tvorog or pkhali.

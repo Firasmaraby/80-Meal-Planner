@@ -42,4 +42,4 @@ Index 0 carries the nutrient that matters: chè đậu xanh (iron and fibre), t�
 - Weird breakfasts: none. Rice porridge, a Thai omelette and xôi are all breakfasts at home.
 - Lists match steps: raw weights for anything cooked, the black rice and brown rice are the only cooked grains, the whole mackerel is listed at its edible weight and says so.
 - Silent sub-recipes: the curry paste, nam jim, nước chấm, pickle, caramel, toasted rice powder and ginger syrup are all made inside the steps.
-- Fish sauce is measured in every recipe (2 to 8 g per serving), iodized salt replaces some of it in the breakfasts and tofu dish, and lime, chili, ginger, lemongrass and herbs carry the rest of the flavour.
+- Fish sauce is measured in every recipe (1 to 6 g per serving), iodized salt replaces some of it in the breakfasts and tofu dish, and lime, chili, ginger, lemongrass and herbs carry the rest of the flavour.

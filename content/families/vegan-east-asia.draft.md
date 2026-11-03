@@ -51,7 +51,7 @@ Deviations to keep the gate: canola in the mapo is 12 g (14 g breaks the 27 g oi
 - Fortified soy milk: 12 slots, every day, at most 2 in a day. No soy yogurt, dairy, eggs, honey, fish sauce, oyster sauce or bonito.
 - Nuts and seeds (almond, peanut, flax, kinako, black sesame): 25 slots, mostly inside the soy milk drinks and the congee.
 - Groceries: 45 at Standard and Big, 44 at Light.
-- Missing staples: mushroom oyster sauce and vegan fish sauce are not in the library (tamari, rice vinegar, sugar and lemongrass stand in); tteok, dried tangerine peel and zha cai (dropped for the grocery cap) are not used.
+- Missing staples: mushroom oyster sauce and vegan fish sauce are not in the library (reduced-sodium soy sauce, rice vinegar, sugar and lemongrass stand in); tteok, dried tangerine peel and zha cai (dropped for the grocery cap) are not used.
 
 ## Final review round
 Applied: dried shiitake out of the tempeh stir-fry and teriyaki (oyster mushroom in the teriyaki), bibimbap renamed without "Big", kinako latte and ginger and goguma drinks rewritten (flax blended into cold milk), black sesame drink credited to kuro goma kinako, `howItWorks` paragraphs 1, 4 and 5, natto breakfast cook time 10, mapo cauliflower fried then steamed with 3 g douchi added, nabe zosui tip, mung soup renamed lu dou sha with a tip, label stutters, dou jiang tofu added at the end, Friday snack is chilled tofu (Big adds salted edamame). Sundubu shiitake stays at 24 g. Edamame is now 9 Standard slots.
