@@ -1,0 +1,1859 @@
+{
+  "id": "heart-med",
+  "name": "Heart-healthy Mediterranean",
+  "style": "heart",
+  "cuisine": "Mediterranean",
+  "regions": [
+    "Greece",
+    "Italy",
+    "Spain",
+    "the Levant"
+  ],
+  "summary": "A week of bright, lemony Mediterranean cooking built to stay low in sodium and saturated fat: oats and walnuts, beans and lentils, oily fish three times, and olive oil everywhere. The flavour comes from lemon, vinegar, garlic, herbs and spice, not the salt shaker.",
+  "howItWorks": "**Flavour without the salt.** Lemon, red wine and sherry vinegar, garlic, oregano, sumac, smoked paprika and fresh herbs do the seasoning, and a splash of acid at the end is what makes a dish taste finished. Salt is only a pinch, in the soup, stews, chicken and fish.\n\n**Fish, beans, oats and olive oil.** Salmon on Tuesday, fresh sardines on Thursday and trout on Sunday bring omega-3, and they're never leftovers. Legumes turn up most days, oats and walnuts start three mornings, and olive oil is the main fat.\n\n**Cook once, eat twice.** Monday's lemon chicken, Wednesday's lentil soup, Friday's chickpea and spinach stew and Saturday's stuffed peppers each make two portions, so the next day's lunch is done.\n\n**Pick no-salt-added cans.** Check the label for \"no salt added\" on beans, chickpeas, lentils, tomatoes and tuna, and rinse beans anyway. Buy unsalted nuts, and keep feta to a sprinkle.\n\n**A note on your care team.** If you take blood-pressure or heart medication, follow your care team's advice. This plan is just built to be low in sodium and saturated fat.",
+  "signature": [
+    "heart-med-fakes-lentil-soup",
+    "heart-med-sumac-trout-tahini",
+    "heart-med-turkey-gemista",
+    "heart-med-sardines-fennel-beans"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "heart-med-orange-walnuts"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "heart-med-tomato-toast-walnuts"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "heart-med-hummus-crudites"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "heart-med-paprika-chickpeas"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "heart-med-tomato-toast-walnuts"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "heart-med-tuna-cucumber-lemon"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "heart-med-walnut-apple-oats",
+      "name": "Cinnamon apple oats with toasted walnuts",
+      "inspiredBy": "Greek breakfast habits: honey, walnuts and fruit",
+      "about": "Creamy oats simmered with cinnamon and swirled with Greek yogurt, topped with a sweet-tart chopped apple, a little honey and walnuts toasted until they smell nutty. It's a bowl that tastes like dessert but sticks with you all morning. The **oats give slow-burning fibre** and the walnuts bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 50,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein",
+          "note": "stirred in at the end"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 120,
+          "note": "diced, skin on"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "unsalted, roughly chopped"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 4
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan over medium heat for about 3 minutes, until they smell nutty. Tip them onto a plate to cool.",
+        "Put the oats, cinnamon and about three times their volume of water in a small pot. Cook over medium heat, stirring, until creamy and thick, about 5 minutes.",
+        "Take the pot off the heat and stir in the yogurt. Fold half the diced apple through so it softens a little.",
+        "Spoon into a bowl and top with the rest of the apple, the walnuts and a drizzle of honey."
+      ],
+      "prepMin": 3,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Make a double batch of the oats and reheat a portion tomorrow with a splash of water."
+    },
+    {
+      "id": "heart-med-orange-yogurt-honey",
+      "name": "Greek yogurt with orange, tahini-honey and toasted walnuts",
+      "inspiredBy": "Greek yogurt with honey and walnuts, the classic",
+      "about": "Thick Greek yogurt with juicy orange segments, a swirl of tahini and honey and a crunchy topping of toasted oats and walnuts, finished with a pinch of cinnamon. **Orange gives you vitamin C** for the morning, and the yogurt carries most of the protein.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "peeled and cut into segments"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "unsalted, chopped"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8,
+          "note": "swirled in with the honey"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 6
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the oats and walnuts together in a dry pan over medium heat for 3 to 4 minutes, until golden and fragrant. Let them cool.",
+        "Spoon the yogurt into a bowl and tuck the orange segments around it.",
+        "Whisk the tahini and honey together with a spoonful of water and swirl it through the yogurt. Scatter the toasted oats and walnuts on top and dust with cinnamon."
+      ],
+      "prepMin": 5,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Squeeze any juice left in the orange over the yogurt."
+    },
+    {
+      "id": "heart-med-tomato-herb-omelette",
+      "name": "Greek-style tomato and spinach omelette with toast",
+      "inspiredBy": "Greek strapatsada, the tomato scramble, without the feta",
+      "about": "A soft, folded omelette with juicy tomato, wilted spinach and plenty of parsley and oregano, with a slice of whole-wheat toast. It's a no-salt breakfast that tastes **bright and savoury** thanks to the herbs and a squeeze of lemon.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "one whole egg"
+        },
+        {
+          "food": "egg-white-raw-b17726",
+          "g": 70,
+          "note": "about two egg whites"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "finely chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 32,
+          "swap": "low_gi_grains",
+          "note": "a small, thin slice, toasted"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a nonstick pan over medium heat and soften the onion for 2 minutes.",
+        "Add the tomato and cook until it collapses and the pan is nearly dry, about 3 minutes. Stir in the spinach until it wilts.",
+        "Beat the egg and egg whites with the oregano and pepper, pour them over the vegetables and stir gently, folding as it sets. Cook until just set but still glossy, about 2 minutes.",
+        "Fold the omelette onto a plate, scatter with parsley and add a squeeze of lemon. Serve with the toast."
+      ],
+      "prepMin": 5,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "A spoonful of crumbled feta on top is traditional and adds about 110 mg of sodium. Save it for Sunday."
+    },
+    {
+      "id": "heart-med-tuna-white-bean-salad",
+      "name": "Tuscan-style white bean and tuna salad with lemon and parsley",
+      "inspiredBy": "Tuscan tonno e fagioli",
+      "about": "Creamy white beans tossed with unsalted tuna and a boiled egg (a modern addition), sweet red onion, ripe tomato and a big handful of parsley in a sharp lemon and red wine vinegar dressing. **Beans and tuna** make it a filling lunch with no salt needed, because the acid does the seasoning.",
+      "ingredients": [
+        {
+          "food": "white-beans-boiled-c7bc32",
+          "g": 150,
+          "swap": "legumes",
+          "note": "no-salt-added canned, drained and rinsed"
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 60,
+          "swap": "lean_protein",
+          "note": "drained and flaked"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 30,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "one boiled egg, quartered"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Put the egg on to boil for 9 minutes. Rinse the beans well and let them drain. Slice the onion as thin as you can and let it sit in the lemon juice and vinegar for 5 minutes to soften and mellow.",
+        "Whisk the olive oil and garlic into the onion mixture to make the dressing.",
+        "Fold in the beans, tomato, flaked tuna and most of the parsley. Add plenty of black pepper.",
+        "Cool the egg under cold water, peel and quarter it.",
+        "Pile the salad onto a plate, tuck in the egg and scatter with the last of the parsley."
+      ],
+      "prepMin": 10,
+      "cookMin": 9,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Taste before serving. If it seems flat, it needs more lemon, not more salt. No unsalted tuna? Rinse a regular can well and use a little less."
+    },
+    {
+      "id": "heart-med-chickpea-village-salad",
+      "name": "Greek village salad with chickpeas, tuna and a little feta",
+      "inspiredBy": "Greek horiatiki",
+      "about": "The classic tomato, cucumber and red onion salad, bulked up with chickpeas and flaked unsalted tuna and finished with oregano, a few rinsed Kalamata olives, a drizzle of good olive oil and just a spoonful of crumbled feta. It's crunchy, juicy and **full of potassium and fibre**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-boiled-b3c2d8",
+          "g": 100,
+          "swap": "legumes",
+          "note": "no-salt-added canned, drained and rinsed"
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "drained and flaked"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "chunked"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 30,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 10,
+          "note": "crumbled"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 10,
+          "note": "Kalamata, rinsed and halved"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 10
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1.2
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 15,
+          "swap": "low_gi_grains",
+          "note": "a small piece, torn"
+        }
+      ],
+      "steps": [
+        "Rinse and drain the chickpeas really well. Put them in a bowl with the cucumber, tomato, red onion and flaked tuna.",
+        "Whisk the olive oil with the vinegar and oregano, and pour it over. Toss and let it sit for 5 minutes so the tomatoes give up their juice.",
+        "Crumble the feta over the salad, scatter with the rinsed olives and the parsley.",
+        "Tear the bread over the salad or serve it alongside to mop up the juices."
+      ],
+      "prepMin": 10,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Rinse the feta under cold water for a few seconds first to wash off some of the surface salt. Mopping up the tomato juices with the bread is the best part."
+    },
+    {
+      "id": "heart-med-lentil-tabbouleh",
+      "name": "Parsley tabbouleh with lentils and tuna",
+      "inspiredBy": "Lebanese tabbouleh, with lentils and tuna added for a full meal",
+      "about": "A parsley-heavy Levantine tabbouleh with a little bulgur, lentils and flaked unsalted tuna for substance, mint, lemon and a drizzle of pomegranate molasses. It's **lemony, herby and very green**, and it eats like a full meal.",
+      "ingredients": [
+        {
+          "food": "parsley-38257b",
+          "g": 45,
+          "note": "finely chopped, the bulk of the salad"
+        },
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 28,
+          "swap": "low_gi_grains",
+          "note": "fine, just a few spoonfuls"
+        },
+        {
+          "food": "lentils-boiled-aa94b1",
+          "g": 80,
+          "swap": "legumes",
+          "note": "no-salt-added canned or cooked from dry, drained"
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 75,
+          "swap": "lean_protein",
+          "note": "drained and flaked"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "finely diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "finely diced"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 25
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "pomegranate-molasses-008fae",
+          "g": 5
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Cover the bulgur with boiling water, about double its volume, and let it sit for 15 minutes until tender. Drain well and squeeze out any extra water.",
+        "Toss the bulgur with the parsley, mint, tomato, cucumber, lentils and flaked tuna.",
+        "Whisk the lemon juice with the olive oil, allspice and pomegranate molasses, then toss it through. It should taste sharp and fresh.",
+        "Add a crack of pepper and serve."
+      ],
+      "prepMin": 20,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Chop the parsley dry. Wet parsley turns the salad soggy."
+    },
+    {
+      "id": "heart-med-lemon-oregano-chicken",
+      "name": "Greek lemon and oregano chicken with roast potatoes and tomatoes",
+      "inspiredBy": "Greek kotopoulo lemonato me patates",
+      "about": "Skinless chicken breast, potato wedges and carrots roasted on one tray with garlic, lots of lemon and oregano, with red onion and tomatoes that collapse into a sauce. It makes **two portions**, so tomorrow's lunch is already cooked.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 145,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 150,
+          "note": "cut into wedges, skin on"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "cut in chunky sticks"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 60,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "cut in chunks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "smashed"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 40
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 2
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220C (425F). Toss the potato wedges and carrot with half the olive oil, half the lemon juice and half the oregano on a large tray. Roast for 15 minutes.",
+        "Rub the chicken with the rest of the oil, the garlic, the pepper, the salt and the rest of the oregano. Slice thick breasts in half so they cook evenly.",
+        "Add the chicken, onion and tomato to the tray and pour over the rest of the lemon juice and a splash of water. Roast for 20 to 25 minutes, checking the chicken at 20, until it is cooked through and the potatoes are golden at the edges.",
+        "Spoon the pan juices over everything, and finish with parsley.",
+        "Pack the second portion for tomorrow's lunch. Slice the chicken and eat it cold or warm it gently."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Reheat the leftover gently with a squeeze of lemon, or eat it cold, sliced thin, over salad."
+    },
+    {
+      "id": "heart-med-salmon-kale-pasta",
+      "name": "Roasted salmon with lemony whole-wheat pasta, tomato and kale",
+      "inspiredBy": "Southern Italian pasta with cavolo nero and roasted tomatoes",
+      "about": "A salmon fillet roasted with tomatoes, garlic and thyme, served over whole-wheat pasta tossed with garlicky kale, lemon juice and good olive oil. **Salmon is the omega-3 star**, and the tomato juices make the sauce.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-wild-raw-aac832",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "skinless fillet"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 85,
+          "swap": "low_gi_grains",
+          "note": "whole-wheat spaghetti or penne"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 130,
+          "swap": "leafy_greens",
+          "note": "stems removed, leaves sliced thin"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 150,
+          "note": "cut in chunks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 25,
+          "note": "from a lemon; zest it before you squeeze it"
+        },
+        {
+          "food": "thyme-cbb9af",
+          "g": 0.6
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200C (400F). Put the tomato, half the garlic and the thyme on a small tray with half the oil and roast for 10 minutes.",
+        "Nestle the salmon into the tomatoes, season with pepper and roast for 10 to 12 minutes, until it flakes but is still a little translucent in the middle.",
+        "Boil the pasta in plenty of unsalted water until al dente. Scoop out a mugful of the cooking water before draining.",
+        "While it cooks, warm the rest of the oil in a pan with the remaining garlic and the Aleppo pepper for 30 seconds. Add the kale, the lemon zest, the salt and a splash of water and cook until tender and glossy, about 6 minutes.",
+        "Toss the pasta with the kale, the lemon juice and a splash of pasta water until glossy.",
+        "Serve the pasta with the salmon and roasted tomatoes on top, scattered with parsley."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Pasta cooked in unsalted water is fine here because the kale and lemon carry the flavour."
+    },
+    {
+      "id": "heart-med-fakes-lentil-soup",
+      "name": "Fakes, Greek lentil soup with greens and a splash of vinegar",
+      "inspiredBy": "Greek fakes, the everyday lentil soup",
+      "about": "A thick, comforting Greek lentil soup with carrot, tomato, bay and oregano, with spinach stirred in and a splash of red wine vinegar and a raw drizzle of olive oil at the end. **The vinegar is the secret**, since it wakes up every spoonful. It makes two bowls and tastes better tomorrow.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 110,
+          "swap": "legumes",
+          "note": "dried brown lentils, rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 100,
+          "note": "diced small"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 100,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3,
+          "note": "a bay leaf or two for the pot"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 12
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Warm half the olive oil in a large pot and soften the onion, carrot and potato over medium heat until sweet, about 8 minutes.",
+        "Add the garlic, oregano and bay for a minute, until fragrant.",
+        "Stir in the lentils, the tomato and about three and a half times as much water as lentils. Bring to a boil, then simmer gently, partly covered, until the lentils are completely soft and the soup is thick, 30 to 35 minutes.",
+        "Stir in the spinach until it wilts, then take the pot off the heat.",
+        "Add the vinegar, salt and pepper, and taste. It should be bright and a bit sharp.",
+        "Ladle into bowls, scatter with parsley and finish with a drizzle of the remaining olive oil. Pack the second portion for tomorrow's lunch. It thickens overnight, so loosen it with water and add a fresh splash of vinegar when you reheat it."
+      ],
+      "prepMin": 10,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "In a hurry? Use no-salt-added canned lentils and simmer for 15 minutes."
+    },
+    {
+      "id": "heart-med-sardines-fennel-beans",
+      "name": "Grilled sardines with fennel, tomato and white beans",
+      "inspiredBy": "Italian pesce azzurro with fennel and beans",
+      "about": "Fresh sardines roasted until their skin crisps, laid over white beans simmered with sweet fennel, tomato, garlic and lemon. **Fresh sardines are rich in omega-3**, with far less salt than the canned kind.",
+      "ingredients": [
+        {
+          "food": "european-pilchard-or-sardine-raw-e12560",
+          "g": 135,
+          "swap": "fatty_fish",
+          "note": "fresh, scaled and gutted"
+        },
+        {
+          "food": "white-beans-boiled-c7bc32",
+          "g": 110,
+          "swap": "legumes",
+          "note": "no-salt-added canned, drained and rinsed"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 120,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 25
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.6
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "one thin slice, toasted"
+        }
+      ],
+      "steps": [
+        "Heat the broiler. Pat the sardines dry and rub them with a little of the oil, the oregano, the salt and a squeeze of lemon.",
+        "Warm the rest of the oil in a pan and cook the fennel and garlic over medium heat until soft and just golden, about 8 minutes.",
+        "Add the tomato and Aleppo pepper and cook until jammy, about 4 minutes. Stir in the beans with a splash of water and simmer for 5 minutes.",
+        "Broil the sardines on the top rack for 3 to 4 minutes per side, until the skin is blistered and the flesh flakes easily.",
+        "Spoon the beans onto a plate, top with the sardines and finish with lemon juice and parsley. Serve with the toast."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Can't find fresh sardines? Use two small mackerel fillets instead. Chili flakes work if you can't find Aleppo pepper."
+    },
+    {
+      "id": "heart-med-espinacas-garbanzos",
+      "name": "Espinacas con garbanzos, Spanish chickpeas and spinach",
+      "inspiredBy": "Andalusian espinacas con garbanzos",
+      "about": "A smoky, garlicky Seville tapas classic of chickpeas and spinach, thickened with ground almonds, brightened with sherry vinegar and topped with a chopped egg. It's a **chickpea and spinach feast** for folate and fibre, and it makes two portions.",
+      "ingredients": [
+        {
+          "food": "chickpeas-boiled-b3c2d8",
+          "g": 190,
+          "swap": "legumes",
+          "note": "no-salt-added canned, drained and rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 170,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "unsalted, ground or finely chopped"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 12,
+          "swap": "low_gi_grains",
+          "note": "a small piece, torn"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 80,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.2
+        },
+        {
+          "food": "sherry-vinegar-af00be",
+          "g": 10
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "one hard-boiled egg, chopped"
+        }
+      ],
+      "steps": [
+        "Put the eggs on to boil for 10 minutes, then cool them in cold water and peel them. Meanwhile, warm the olive oil in a wide pan over medium heat and fry the torn bread until golden, 2 to 3 minutes. Lift it out and set aside.",
+        "In the same oil, soften the onion for 5 minutes, then add the garlic, paprika and cumin for 30 seconds, until it smells smoky.",
+        "Add the tomato and cook for 4 minutes until thick.",
+        "Pound or blitz the fried bread with the almonds and a splash of water to a rough paste. Stir it in with the chickpeas and a splash more water. Simmer for 8 minutes.",
+        "Add the spinach in handfuls and stir until wilted. Take the pan off the heat and stir in the sherry vinegar and salt. It should taste warm and tangy.",
+        "Chop an egg over your bowl. Pack the second portion for tomorrow's lunch with its egg whole on the side, and chop it over just before you eat. The stew reheats well with a splash of water."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Hard-boiled egg is the classic finish for the Lenten chickpea and spinach potaje, and it adds protein and choline. The stew freezes well, but freeze it without the egg."
+    },
+    {
+      "id": "heart-med-turkey-gemista",
+      "name": "Gemista, Greek stuffed peppers with lean turkey and bulgur",
+      "inspiredBy": "Greek gemista, normally made with rice",
+      "about": "Sweet red peppers stuffed with lean turkey, bulgur, a few chickpeas, onion, tomato, mint and parsley, scented with cinnamon and allspice and baked with potato wedges until they collapse into their own sauce. It's the **weekend project**, and it makes two big portions so Sunday's lunch is sorted.",
+      "ingredients": [
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 200,
+          "note": "whole, tops cut off and kept"
+        },
+        {
+          "food": "ground-turkey-fat-free-raw-604508",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "extra-lean"
+        },
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "coarse"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 60,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 120,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "grated, skins discarded"
+        },
+        {
+          "food": "chickpeas-boiled-b3c2d8",
+          "g": 50,
+          "swap": "legumes",
+          "note": "no-salt-added canned, drained and rinsed"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 120,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190C (375F). Slice the tops off the peppers and scoop out any seeds. Stand them in a snug baking dish with the potato wedges around them.",
+        "Warm half the olive oil in a pan and soften the onion for 6 minutes. Add the garlic and turkey and cook, breaking it up, until no pink remains, about 6 minutes.",
+        "Stir in the bulgur, the crushed tomato, the grated fresh tomato, the chickpeas, cinnamon, allspice and pepper. Simmer for 5 minutes, then stir in the mint and most of the parsley.",
+        "Spoon the filling into the peppers without packing it tight, because the bulgur will swell. Put the tops back on.",
+        "Drizzle everything with the remaining olive oil and add a splash of water to the dish. Cover with foil and bake for 40 minutes. Uncover and bake for 20 minutes more, until the peppers are soft and the potatoes are golden.",
+        "Finish with the lemon juice and the last of the parsley. Let the peppers rest for 10 minutes before serving, and pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 30,
+      "cookMin": 65,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Eat the potatoes with the juices."
+    },
+    {
+      "id": "heart-med-sumac-trout-tahini",
+      "name": "Sumac roasted trout with tahini sauce, bulgur and lemony kale",
+      "inspiredBy": "Levantine samke with tahini, and a pomegranate-tart greens salad",
+      "about": "A trout fillet roasted with sumac, garlic and lemon, with a nutty lemon-tahini sauce, fluffy bulgur and garlicky kale with fresh tomato, finished with pomegranate molasses. **Trout is an oily fish** that cooks in minutes, and the sumac gives it a lemony zing with no salt.",
+      "ingredients": [
+        {
+          "food": "trout-raw-f3ae43",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "skin-on fillet"
+        },
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "medium"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 35
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "sumac-268746",
+          "g": 2
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "stems removed, leaves sliced thin"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 90,
+          "note": "diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "pomegranate-molasses-008fae",
+          "g": 5
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.4
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "finely sliced"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200C (400F). Rub the trout with half the olive oil, the sumac, half the garlic and a squeeze of lemon. Lay it on a lined tray.",
+        "Cover the bulgur with boiling water, about double its volume, cover and let it sit for 20 minutes, until tender and fluffy.",
+        "Roast the trout for 10 to 12 minutes, until it flakes easily.",
+        "Whisk the tahini with the rest of the garlic, the rest of the lemon juice and about 3 tablespoons of cold water until pale and pourable.",
+        "Warm the kale in a pan with the rest of the oil and a splash of water until tender, about 5 minutes. Toss it with the tomato, onion, parsley and the pomegranate molasses.",
+        "Serve the trout over the bulgur with the kale and tomato alongside, drizzled with tahini and a pinch of Aleppo pepper."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Swap in a salmon fillet if trout is hard to find."
+    },
+    {
+      "id": "heart-med-orange-walnuts",
+      "name": "Orange and unsalted walnuts",
+      "about": "A juicy orange and a small handful of unsalted walnuts. **Sweet, crunchy and quick**, with vitamin C and plant omega-3.",
+      "ingredients": [
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "unsalted"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit"
+        }
+      ],
+      "steps": [
+        "Peel the orange and split it into segments.",
+        "Eat it with the walnuts, a few at a time."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "heart-med-hummus-crudites",
+      "name": "No-salt hummus with carrot and cucumber",
+      "inspiredBy": "Levantine hummus bi tahini, without the salt",
+      "about": "A lemony, garlicky homemade hummus made with no added salt, with crunchy carrot and cucumber sticks to dip. The **tahini and lemon** carry the flavour.",
+      "ingredients": [
+        {
+          "food": "chickpeas-boiled-b3c2d8",
+          "g": 70,
+          "swap": "legumes",
+          "note": "no-salt-added canned, drained and rinsed"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.4
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "cut in sticks"
+        }
+      ],
+      "steps": [
+        "Make the hummus as a batch of two portions, about 140 g of chickpeas and double the tahini, lemon juice, garlic and cumin, so the blender can catch it. Blitz with a few tablespoons of cold water until smooth and creamy, adding more if it's stiff.",
+        "Spoon half into a bowl, make a well, pour in the olive oil and dust with sumac or smoked paprika.",
+        "Dip the carrot and cucumber sticks in it. Keep the other half covered in the fridge for up to 4 days, for another snack or spread thick on toast."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "heart-med-yogurt-dates-walnuts",
+      "name": "Greek yogurt with chopped dates and toasted walnuts",
+      "about": "Thick yogurt with sticky chopped Medjool dates and toasted walnuts, a little like a Greek dessert. The **dates sweeten it**, so no honey is needed.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 25,
+          "note": "pitted and chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "unsalted, toasted"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan for 2 to 3 minutes, then chop them.",
+        "Spoon the yogurt into a bowl and stir in most of the dates.",
+        "Top with the walnuts and the remaining dates and dust with cinnamon."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "heart-med-yogurt-dates-almonds",
+      "name": "Greek yogurt with chopped dates and toasted almonds",
+      "about": "Thick yogurt with sticky chopped Medjool dates and toasted almonds, a little like a Greek dessert. The **dates sweeten it**, so no honey is needed.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 140,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 15,
+          "note": "pitted and chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "unsalted, toasted"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan for 2 to 3 minutes, then chop them.",
+        "Spoon the yogurt into a bowl and stir in most of the dates.",
+        "Top with the almonds and the remaining dates and dust with cinnamon."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "heart-med-apple-walnuts",
+      "name": "Apple slices with walnuts and cinnamon",
+      "about": "Crisp apple slices with a handful of unsalted walnuts and a dusting of cinnamon. **A sweet, crunchy snack** with plant omega-3.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "unsalted"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Slice the apple and toss it with a little lemon juice so it stays bright.",
+        "Dust with cinnamon and eat with the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "heart-med-dates-almonds",
+      "name": "Medjool dates stuffed with almonds and a dab of tahini",
+      "inspiredBy": "Middle Eastern stuffed dates",
+      "about": "Soft Medjool dates stuffed with almonds and a dab of tahini, with a few more almonds on the side. It's a **chewy, caramel-like treat** with no added sugar.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 50,
+          "note": "about two dates"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "unsalted"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Slit the dates open and remove the pits.",
+        "Tuck two or three almonds into each date with a little dab of tahini and press it closed. Eat the rest of the almonds alongside."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "heart-med-paprika-chickpeas",
+      "name": "Crunchy smoked paprika chickpeas",
+      "inspiredBy": "Spanish tapas",
+      "about": "Chickpeas roasted until crisp with smoked paprika, garlic and a squeeze of lemon, like a Spanish tapas nibble. **Crunchy and savoury** with no salt.",
+      "ingredients": [
+        {
+          "food": "chickpeas-boiled-b3c2d8",
+          "g": 100,
+          "swap": "legumes",
+          "note": "no-salt-added canned, drained, rinsed and dried well"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        }
+      ],
+      "steps": [
+        "Heat the oven to 210C (410F). Pat the chickpeas completely dry with a clean towel. This is what makes them crisp.",
+        "Toss them with the olive oil, paprika, cumin and garlic, and spread them on a tray in one layer.",
+        "Roast for 25 to 30 minutes, shaking the tray halfway, until crisp and deep red.",
+        "Squeeze over the lemon and let them cool a few minutes. They'll crisp up as they cool."
+      ],
+      "prepMin": 5,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Roast a double batch if you like: they keep for a day or two in an open container, since a sealed lid softens them."
+    },
+    {
+      "id": "heart-med-tuna-cucumber-lemon",
+      "name": "Cucumber rounds with lemony tuna and parsley",
+      "inspiredBy": "Italian tonno al limone",
+      "about": "Thick cucumber rounds piled with flaked unsalted tuna, lemon, parsley and a little olive oil and black pepper. It's **cool, sharp and protein-rich**, a bit like a tiny salad you eat with your hands.",
+      "ingredients": [
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 60,
+          "swap": "lean_protein",
+          "note": "drained and flaked"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 120,
+          "note": "cut in thick rounds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Flake the tuna into a small bowl and stir in the lemon juice, parsley, olive oil and pepper.",
+        "Spoon it onto the cucumber rounds and eat right away."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "heart-med-tzatziki-carrot",
+      "name": "Garlicky yogurt and cucumber dip with carrot sticks",
+      "inspiredBy": "Greek tzatziki",
+      "about": "A quick tzatziki of thick yogurt, grated cucumber, garlic, mint and lemon, for dipping carrot sticks. **Cooling and garlicky**, and it counts as calcium and protein too.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50,
+          "note": "grated and squeezed dry"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "cut in sticks"
+        }
+      ],
+      "steps": [
+        "Squeeze the grated cucumber in a clean towel until it's quite dry.",
+        "Stir it into the yogurt with the garlic, mint and lemon juice.",
+        "Dip the carrot sticks. It's even better after 20 minutes in the fridge."
+      ],
+      "prepMin": 6,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "heart-med-white-bean-lemon-dip",
+      "name": "Lemony white bean dip with cucumber and carrot",
+      "inspiredBy": "Tuscan white bean purée",
+      "about": "A creamy Tuscan-style white bean dip with garlic, lemon, olive oil and parsley, for dipping cucumber and carrot. **Beans make it filling**, and it's as good as hummus.",
+      "ingredients": [
+        {
+          "food": "white-beans-boiled-c7bc32",
+          "g": 100,
+          "swap": "legumes",
+          "note": "no-salt-added canned, drained and rinsed"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Mash or blitz the beans with the lemon juice, garlic, most of the olive oil and a few spoonfuls of cold water until creamy.",
+        "Spoon into a bowl, drizzle with the last of the oil and scatter with parsley and pepper.",
+        "Dip the vegetable sticks."
+      ],
+      "prepMin": 6,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "heart-med-tomato-toast-walnuts",
+      "name": "Pan con tomate with garlic and walnuts",
+      "inspiredBy": "Catalan pa amb tomàquet",
+      "about": "Toasted whole-wheat bread rubbed with garlic and ripe tomato, with a drizzle of olive oil and a few walnuts on the side. **Simple Spanish tapas** that tastes like summer.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "one thick slice"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "very ripe, halved"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "one clove, halved"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "unsalted"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the bread until crisp and golden.",
+        "Rub the cut side of the garlic over the hot toast, then rub with the cut tomato until the bread is pink and the skin is left behind.",
+        "Drizzle with olive oil, sprinkle with oregano and eat with the walnuts."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "heart-med-yogurt-orange-walnuts",
+      "name": "Greek yogurt with orange segments and toasted walnuts",
+      "about": "Thick yogurt topped with juicy orange segments and toasted walnuts, with a pinch of cinnamon. **Cool, sweet and crunchy**, and the yogurt brings calcium and protein.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 190,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 120,
+          "swap": "vit_c_fruit",
+          "note": "peeled and cut into segments"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "unsalted, toasted"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan for 2 to 3 minutes, then chop them.",
+        "Spoon the yogurt into a bowl and tuck in the orange segments.",
+        "Scatter with the walnuts and dust with cinnamon."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "heart-med-walnut-apple-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "heart-med-tuna-white-bean-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "heart-med-lemon-oregano-chicken"
+        },
+        {
+          "slot": "snack",
+          "recipe": "heart-med-yogurt-dates-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "heart-med-hummus-crudites"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "heart-med-tomato-herb-omelette"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "heart-med-lemon-oregano-chicken",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "heart-med-salmon-kale-pasta"
+        },
+        {
+          "slot": "snack",
+          "recipe": "heart-med-white-bean-lemon-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "heart-med-paprika-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "heart-med-tomato-herb-omelette"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "heart-med-chickpea-village-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "heart-med-fakes-lentil-soup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "heart-med-yogurt-orange-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "heart-med-apple-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "heart-med-tomato-herb-omelette"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "heart-med-fakes-lentil-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "heart-med-sardines-fennel-beans"
+        },
+        {
+          "slot": "snack",
+          "recipe": "heart-med-tzatziki-carrot"
+        },
+        {
+          "slot": "snack",
+          "recipe": "heart-med-dates-almonds"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "heart-med-orange-yogurt-honey"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "heart-med-lentil-tabbouleh"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "heart-med-espinacas-garbanzos"
+        },
+        {
+          "slot": "snack",
+          "recipe": "heart-med-white-bean-lemon-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "heart-med-yogurt-dates-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "heart-med-walnut-apple-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "heart-med-espinacas-garbanzos",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "heart-med-turkey-gemista"
+        },
+        {
+          "slot": "snack",
+          "recipe": "heart-med-yogurt-dates-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "heart-med-orange-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "heart-med-tomato-herb-omelette"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "heart-med-turkey-gemista",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "heart-med-sumac-trout-tahini"
+        },
+        {
+          "slot": "snack",
+          "recipe": "heart-med-tzatziki-carrot"
+        },
+        {
+          "slot": "snack",
+          "recipe": "heart-med-dates-almonds"
+        }
+      ]
+    }
+  ]
+}
