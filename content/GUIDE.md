@@ -361,3 +361,35 @@ happens to fit the diet, never like a list of things you can't have.
 - **Seeds and wheat germ** belong where they make sense (porridge, shakes, sauces), never sprinkled on top for numbers.
 - **Diabetes-friendly framing:** "keeps the plate steady", "the starch digests more slowly"; never "gentle on blood
   sugar", never a promise.
+
+### Vegetarian (`vegetarian`)
+- **No meat, poultry or fish** (fish sauce, anchovies and gelatine included); eggs and dairy are welcome. Fatty fish
+  doesn't apply.
+- **B12 from dairy and eggs:** milk, yogurt, cheese and eggs most days. A lacto-vegetarian (no egg) family leans on
+  milk, yogurt and paneer daily.
+- **Protein 20%+** from legumes, dairy, eggs, tofu and tempeh; two protein foods per main meal is normal.
+- **Omega-3 is ALA only,** so walnuts, ground flax, chia and hemp are welcome where they make sense (porridge, raita,
+  chutney, baking), as in vegan families.
+- **Iron and zinc** from legumes, tofu, seeds and whole grains with vitamin C; dairy at the iron-heavy meal sparingly.
+
+### Muscle gain (`muscle`)
+- **Gate:** protein at least 30% of calories, every day. Sizes Standard (about 2,400), Big (about 3,000) and XL (about
+  3,800), covering 2400-4200. No Light.
+- **The 400 g raw meat per serving cap still holds:** carry the calories with starch (rice, potatoes, oats, pasta),
+  dairy (Greek yogurt, skyr, cottage cheese, milk), legumes and eggs, spread over three meals and two or three snacks.
+- **Protein at every meal and snack,** about 30 to 50 g per main meal. Real food, never powders.
+- **Saturated fat still under 10%:** lean meat, skinless poultry, fish, low-fat dairy.
+
+### Lean / cut (`fat-loss`)
+- **Gates:** protein at least 30% and fibre at least 30 g. Sizes Light (1200-1400 where it passes, 1400-1800),
+  Standard (1800-2200). No Big.
+- **Volume first:** big salads, soups, roasted vegetables and fruit fill the plate; lean protein at every meal.
+- **No promises.** Say "built to keep you full on fewer calories", never a weight-loss figure.
+
+### Heart-healthy (`heart`)
+- **Gates:** sodium at most 2,000 mg a day and saturated fat under 7%.
+- **Low sodium is the hard part:** no added salt in most dishes (lemon, vinegar, herbs, garlic and spice instead),
+  no-salt-added canned beans and tomatoes, unsalted nuts, little cheese, no cured meat. Write "no-salt-added" in the
+  ingredient note where it matters.
+- **Fish two or three times,** legumes most days, oats, nuts, olive or canola oil; skinless poultry, very little red meat.
+- **The app adds a note** that people on blood-pressure or heart medication should follow their care team's advice.

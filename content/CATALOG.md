@@ -202,6 +202,31 @@ Rules for each diet are in GUIDE.md §12. Ids start with the diet so the files g
 15. **`gf-med` · Gluten-free Mediterranean.**
     - **Dishes:** buckwheat porridge; polenta with mushrooms; risotto; Greek fasolada; grilled fish with lemon potatoes; Spanish tortilla; chickpea socca; lentil salads; rice-stuffed peppers (gemista).
 
+### Batch 2B briefs (vegetarian, muscle gain, lean, heart-healthy)
+
+Rules for each diet are in GUIDE.md §12.
+
+**Vegetarian (`vegetarian`), Light, Standard, Big:**
+1. **`veg-med` · Vegetarian Mediterranean.** Shakshuka, spanakopita-style pie, gigantes, Greek yogurt bowls, halloumi and lentil salads, pasta e fagioli, ricotta and spinach frittata, falafel with tahini.
+2. **`veg-global` · Vegetarian Global Kitchen.** Mexican bean enchiladas, Japanese tamago and tofu bowls, Italian minestrone, Indian dal, Middle Eastern labneh plates, Ethiopian misir wat, a cheese and lentil shepherd's pie.
+3. **`veg-india` · Indian Lacto-vegetarian (no eggs).** Paneer, dahi, chaas and milk carry B12 and calcium; dal, rajma, chole, sambar, palak paneer, poha, upma, idli, kadhi.
+
+**Muscle gain (`muscle`), Standard 2400, Big 3000, XL 3800 (2400-4200):**
+4. **`muscle-global` · Build Muscle Global.** Oats with skyr and berries, chicken and rice bowls, salmon with potatoes, lean beef chili, cottage cheese snacks, egg scrambles, pasta with turkey ragù.
+5. **`muscle-middle-east` · Build Muscle Middle Eastern.** Shish tawook with rice and salad, ful with eggs, lentil and lamb kofta, labneh and eggs, grilled fish with freekeh, hummus with chicken.
+6. **`muscle-asia` · Build Muscle Asian.** Chicken teriyaki rice bowls (little sugar), bibimbap with beef and egg, tofu and edamame stir-fries, salmon onigiri, Thai basil chicken with rice, congee with egg and fish.
+7. **`muscle-latin` · Build Muscle Latin.** Huevos rancheros with beans, burrito bowls, Peruvian lomo saltado with potatoes, arroz con pollo, ceviche with sweet potato, Brazilian rice, beans and grilled chicken.
+
+**Lean / cut (`fat-loss`), Light 1200-1800, Standard 1800-2200:**
+8. **`lean-med` · Lean Mediterranean.** Big Greek salads with chicken, lentil soups, grilled fish with vegetables, Greek yogurt bowls, egg-white frittata with feta.
+9. **`lean-global` · Lean Global Kitchen.** Turkey chili, chicken burrito bowls on greens, miso soup with tofu and soba, shrimp stir-fry with lots of vegetables, cottage cheese and fruit.
+10. **`lean-asia` · Lean Asian.** Vietnamese chicken pho with lots of herbs, Japanese grilled fish set meals, Korean tofu soups, Thai larb lettuce cups, Chinese steamed fish and greens.
+
+**Heart-healthy (`heart`), Light, Standard, Big:**
+11. **`heart-med` · Heart-healthy Mediterranean.** Oats with walnuts, sardines and white bean salad, lentil soup, baked salmon with greens, chickpea stews, olive oil and lemon everywhere, no-salt-added tomatoes.
+12. **`heart-dash` · DASH North American.** Overnight oats, turkey and bean chili (no-salt-added), baked trout, big salads, sweet potatoes, low-fat yogurt, unsalted nuts, fruit with every breakfast.
+13. **`heart-asia` · Heart-healthy Asian.** Brown rice and steamed fish, tofu and vegetable stir-fries with low-sodium tamari in small amounts, edamame, miso in small amounts, ginger-scallion salmon.
+
 ## Not offered, and why
 - **Carnivore:** it can't reach vitamin C, folate or fibre, and contradicts the framework.
 - **Raw vegan:** can't reliably reach B12, vitamin D, iodine or zinc.
