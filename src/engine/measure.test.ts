@@ -11,7 +11,11 @@ describe('measureText', () => {
     expect(measureText(walnut, 20)).toBe('10 halves');
     expect(measureText(walnut, 2)).toBe('1 half');
   });
-  it('rounds counted things to whole numbers from 2, halves below', () => {
+  it('rounds counted things to whole numbers from 2, quarters below', () => {
+    const avocado = { servings: [{ label: '1/2 avocado', g: 100 }] };
+    expect(measureText(avocado, 150)).toBe('¾ avocado');
+    expect(measureText(avocado, 100)).toBe('½ avocado');
+    expect(measureText(avocado, 50)).toBe('¼ avocado');
     expect(measureText(radish, 30)).toBe('7 medium');
     expect(measureText(fig, 30)).toBe('1½ figs');
     expect(measureText(fig, 40)).toBe('2 figs');

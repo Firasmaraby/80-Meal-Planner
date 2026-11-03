@@ -9,7 +9,9 @@ const SPOON_RX = /^(tbsp|tsp|tablespoons?|teaspoons?)\b/i;
 const SIZE_RX = /^(medium|large|small|extra|mini|jumbo|whole|baby)\b/i;
 
 const VOLUME_FRACTIONS: [number, string][] = [[0, ''], [0.25, '¼'], [1 / 3, '⅓'], [0.5, '½'], [2 / 3, '⅔'], [0.75, '¾'], [1, '']];
-const COUNT_FRACTIONS: [number, string][] = [[0, ''], [0.5, '½'], [1, '']];
+const HALVES: [number, string][] = [[0, ''], [0.5, '½'], [1, '']];
+/** A counted thing under 2 reads in quarters: "¾ avocado", "¼ onion". */
+const COUNT_FRACTIONS: [number, string][] = [[0, ''], [0.25, '¼'], [0.5, '½'], [0.75, '¾'], [1, '']];
 
 function nearest(x: number, table: [number, string][]): { value: number; text: string } {
   const whole = Math.floor(x);
@@ -51,7 +53,7 @@ function parseLabel(label: string): { qty: number; unit: string } {
 /**
  * "1½ cups, chopped" for `grams` of a food, from the first serving that gives a sensible amount, or undefined.
  * - "1 oz (14 halves)" counts the halves: 20 g → "10 halves".
- * - Counted things round to halves below 2 and to whole numbers from 2 ("7 medium", not "6¾ medium").
+ * - Counted things round to quarters below 2 and to whole numbers from 2 ("7 medium", not "6¾ medium").
  * - Volumes use kitchen fractions, ⅓ and ⅔ included.
  */
 export function measureText(food: Pick<Food, 'servings'> | undefined, grams: number, maxCount = 8): string | undefined {
@@ -68,7 +70,7 @@ export function measureText(food: Pick<Food, 'servings'> | undefined, grams: num
     const volume = MEASURE_RX.test(unit);
     const whole = { value: Math.round(raw), text: String(Math.round(raw)) };
     const r = volume
-      ? raw >= 4 ? whole : nearest(raw, raw >= 2 ? COUNT_FRACTIONS : VOLUME_FRACTIONS)
+      ? raw >= 4 ? whole : nearest(raw, raw >= 2 ? HALVES : VOLUME_FRACTIONS)
       : raw >= 2 ? whole : nearest(raw, COUNT_FRACTIONS);
     // spoons stop at 8 (nobody measures 70 tbsp), counts at 40; the next serving (a cup, a bunch) usually reads better
     const cap = SPOON_RX.test(unit) ? 8 : volume ? maxCount : Math.min(maxCount, 40);
