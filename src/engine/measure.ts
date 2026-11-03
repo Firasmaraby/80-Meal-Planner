@@ -4,6 +4,8 @@ import type { Food } from './types';
 
 /** Volume and weight words: these take kitchen fractions (¼ ⅓ ½ ⅔ ¾). Anything else is a countable thing. */
 const MEASURE_RX = /^(cups?|tbsp|tsp|tablespoons?|teaspoons?|oz|fl|ml|g|pints?|quarts?|inch(es)?|pinch(es)?|dash(es)?)\b/i;
+/** Size words inside a label's brackets: "1 tortilla (6 inch)" is one tortilla, not six inches. */
+const SIZE_UNIT_RX = /^(inch(es)?|in|cm|mm|g|grams?|oz|ounces?|ml|lb|pounds?|diameter|dia|long|wide|thick)$/i;
 const SPOON_RX = /^(tbsp|tsp|tablespoons?|teaspoons?)\b/i;
 /** Size words in front of a count ("1 medium", "1 large, whole"): never pluralised. */
 const SIZE_RX = /^(medium|large|small|extra|mini|jumbo|whole|baby)\b/i;
@@ -61,7 +63,8 @@ export function measureText(food: Pick<Food, 'servings'> | undefined, grams: num
     if (!(s.g > 0)) continue;
     const { qty, unit } = parseLabel(s.label);
     const pieces = /^[^(]*\((\d+)\s+([A-Za-z]+)\)\s*$/.exec(unit);
-    if (pieces) {
+    // "(6 inch)" or "(30 g)" describe the size of one piece, not how many pieces it holds
+    if (pieces && !SIZE_UNIT_RX.test(pieces[2])) {
       const n = Math.round((grams / s.g) * qty * +pieces[1]);
       if (n >= 1 && n <= 40) return `${n} ${agree(pieces[2], n)}`;
       continue;

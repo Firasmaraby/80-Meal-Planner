@@ -7,6 +7,13 @@ const fig = { servings: [{ label: '1 fig', g: 19 }] };
 const lentils = { servings: [{ label: '1 cup', g: 192 }] };
 
 describe('measureText', () => {
+  it('reads a size in brackets as one piece, not a count', () => {
+    const tortilla = { servings: [{ label: '1 tortilla (6 inch)', g: 26 }] };
+    expect(measureText(tortilla, 26)).toBe('1 tortilla (6 inch)');
+    expect(measureText(tortilla, 55)).toBe('2 tortillas (6 inch)');
+    expect(measureText(tortilla, 13)).toBe('½ tortilla (6 inch)');
+  });
+
   it('counts the pieces in a parenthesised serving', () => {
     expect(measureText(walnut, 20)).toBe('10 halves');
     expect(measureText(walnut, 2)).toBe('1 half');
