@@ -42,6 +42,13 @@
           }
         },
         {
+          "day": 2,
+          "swap": {
+            "from": "vegan-med-levant-chickpea-fatteh-tahini",
+            "to": "vegan-med-levant-overnight-oats-flax-walnuts-figs"
+          }
+        },
+        {
           "day": 3,
           "drop": {
             "slot": "snack",
@@ -78,6 +85,13 @@
         },
         {
           "day": 7,
+          "swap": {
+            "from": "vegan-med-levant-chickpea-fatteh-tahini",
+            "to": "vegan-med-levant-overnight-oats-flax-walnuts-figs"
+          }
+        },
+        {
+          "day": 7,
           "drop": {
             "slot": "snack",
             "index": 1
@@ -110,7 +124,7 @@
           "day": 3,
           "add": {
             "slot": "snack",
-            "recipe": "vegan-med-levant-figs-almonds"
+            "recipe": "vegan-med-levant-roasted-chickpeas-zaatar"
           }
         },
         {
@@ -124,7 +138,7 @@
           "day": 5,
           "add": {
             "slot": "snack",
-            "recipe": "vegan-med-levant-lupini-lemon-mint"
+            "recipe": "vegan-med-levant-figs-almonds"
           }
         },
         {
@@ -287,7 +301,7 @@
       "id": "vegan-med-levant-chickpea-fatteh-tahini",
       "name": "Chickpea fatteh with garlicky soy yogurt, tahini and toasted walnuts",
       "inspiredBy": "Lebanese and Syrian fattet hummus, with plain soy yogurt in place of the usual dairy yogurt",
-      "about": "Warm chickpeas piled over crisp toasted pita, drenched in a cool, garlicky sauce of plain soy yogurt, tahini and lemon, and finished with sizzled walnuts and parsley. It is the traditional yogurt fatteh made plant-based, with hemp hearts blended into the sauce. The chickpeas and soy yogurt bring **protein and calcium**, the walnuts and hemp bring plant omega-3, and the glass of fortified soy beverage alongside adds **vitamin B12**.",
+      "about": "Warm chickpeas piled over crisp toasted pita, drenched in a cool, garlicky sauce of plain soy yogurt, tahini and lemon, and finished with sizzled walnuts, almonds and parsley. It is the traditional yogurt fatteh made plant-based, with hemp hearts blended into the sauce. The chickpeas and soy yogurt bring **protein and calcium**, the walnuts and hemp bring plant omega-3, and the glass of fortified soy beverage alongside adds **vitamin B12**.",
       "ingredients": [
         {
           "food": "chickpeas-canned-drained-solids-b576a9",
@@ -297,7 +311,7 @@
         },
         {
           "food": "whole-wheat-pita-bread-9baae8",
-          "g": 25
+          "g": 18
         },
         {
           "food": "soy-yogurt-plain-345e92",
@@ -331,6 +345,12 @@
           "g": 7,
           "swap": "nuts_seeds",
           "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 3,
+          "swap": "nuts_seeds",
+          "note": "sliced"
         },
         {
           "food": "hemp-seeds-hulled-0bc4a6",
@@ -367,8 +387,8 @@
         "Tear the pita into bite-size pieces and toast them in a dry pan or a hot oven until golden and crisp, about 5 minutes.",
         "Warm the chickpeas in a small pot with the cumin and a splash of water until steaming, about 5 minutes.",
         "Mash the garlic with the salt, then blend or whisk it with the soy yogurt, tahini, hemp hearts and lemon juice until smooth. Thin with a spoonful of cold water if it is stiff.",
-        "Sizzle the walnuts in the olive oil for 1 to 2 minutes, until they smell toasty. Watch them, they scorch quickly.",
-        "Layer the pita in a bowl, spoon the chickpeas and a splash of the warm cooking water over it, pour on the yogurt sauce and finish with the hot walnuts and oil, the parsley, sumac and Aleppo pepper. Warm the soy beverage with a pinch of cinnamon and drink it alongside."
+        "Sizzle the walnuts and almonds in the olive oil for 1 to 2 minutes, until they smell toasty. Watch them, they scorch quickly.",
+        "Layer the pita in a bowl, spoon the chickpeas and a splash of the warm cooking water over it, pour on the yogurt sauce and finish with the hot nuts and oil, the parsley, sumac and Aleppo pepper. Warm the soy beverage with a pinch of cinnamon and drink it alongside."
       ],
       "prepMin": 10,
       "cookMin": 10,
@@ -576,7 +596,7 @@
         },
         {
           "food": "bulgur-dry-8ee6ab",
-          "g": 40,
+          "g": 32,
           "swap": "low_gi_grains",
           "note": "coarse, number 3"
         },
@@ -624,6 +644,12 @@
           "swap": "healthy_oils"
         },
         {
+          "food": "almonds-dried-39a9af",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "sliced"
+        },
+        {
           "food": "table-salt-iodized-052851",
           "g": 1.8
         }
@@ -634,7 +660,7 @@
         "Stir the cumin and baharat into the onions left in the pot for 30 seconds, then add the bulgur, the lentils, the salt and enough of the lentil water to cover by about 2 cm.",
         "Cover and simmer gently for 15 minutes, until the water is gone. Rest off the heat for 10 minutes, then fluff with a fork.",
         "Shred the cabbage finely and grate the carrot. Mash the garlic with a pinch of salt and toss it with the cabbage, carrot, lemon juice, olive oil and torn mint.",
-        "Serve the mujaddara topped with the reserved onions, with the cabbage salad on the side. Pack the second portion for tomorrow's lunch."
+        "Toast the almonds in a dry pan for 3 minutes. Serve the mujaddara topped with the reserved onions and the almonds, with the cabbage salad on the side. Pack the second portion for tomorrow's lunch."
       ],
       "prepMin": 10,
       "cookMin": 50,
@@ -650,7 +676,7 @@
       "id": "vegan-med-levant-gigantes-plaki",
       "name": "Gigantes plaki, giant white beans baked in tomato, dill and parsley",
       "inspiredBy": "Greek gigantes plaki, made with canned beans so it works on a weeknight",
-      "about": "Creamy white beans baked in a sweet-sharp tomato sauce with celery, carrot and dill until the edges blister. It is Greek Lenten cooking at its best, and it tastes even better the next day. The beans bring **iron, calcium and fibre**, and a squeeze of lemon at the end helps you absorb the iron.",
+      "about": "Creamy white beans baked in a sweet-sharp tomato sauce with celery, carrot, red pepper, chard and dill until the edges blister. It is Greek Lenten cooking at its best, and it tastes even better the next day. The beans bring **iron, calcium and fibre**, and a squeeze of lemon at the end helps you absorb the iron.",
       "ingredients": [
         {
           "food": "cannellini-beans-canned-re-heated-drained-4380d5",
@@ -672,6 +698,15 @@
         },
         {
           "food": "carrot-raw-f79846",
+          "g": 80
+        },
+        {
+          "food": "swiss-chard-raw-f646e5",
+          "g": 60,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
           "g": 80
         },
         {
@@ -713,9 +748,9 @@
         }
       ],
       "steps": [
-        "Heat the oven to 200 C. Warm the olive oil in a wide ovenproof pan and cook the chopped onion, celery and diced carrot for 8 minutes, until soft.",
+        "Heat the oven to 200 C. Warm the olive oil in a wide ovenproof pan and cook the chopped onion, celery, pepper and diced carrot for 8 minutes, until soft.",
         "Stir in the garlic, paprika and oregano for 30 seconds, then add the crushed tomato, bay leaf, salt and a splash of water. Simmer for 10 minutes, until the sauce thickens.",
-        "Fold in the white beans, half the dill and half the parsley, and slide the pan into the oven for 20 to 25 minutes, until the sauce is bubbling and the edges are browned.",
+        "Fold in the white beans, the chopped chard, half the dill and half the parsley, and slide the pan into the oven for 20 to 25 minutes, until the sauce is bubbling and the edges are browned.",
         "Finish with the lemon juice and the rest of the herbs. Serve with crusty bread or warm pita if you like. Pack the second portion for tomorrow's lunch."
       ],
       "prepMin": 10,

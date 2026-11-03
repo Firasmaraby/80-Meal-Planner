@@ -3,5 +3,10 @@
   "greek-yogurt-2-fat-plain-3b5a16": {
     "calcium": 115,
     "_why": "CNF 7469 lists 282.9 mg calcium per 100 g, likely a per-serving or entry error. Every other plain Greek yogurt across the 9 sources is 100-126 mg (strained yogurt loses calcium with the whey); set to the peer median, 115 mg, so the food doesn't count as zero."
+  },
+  "soy-yogurt-plain-345e92": {
+    "vitE": 0.3,
+    "vitC": 0,
+    "_why": "CNF 6987 lists 9.73 mg vitamin E and 45 mg vitamin C per 100 g. Every other soy yogurt across the sources is 0.2-0.3 mg vitamin E (CNF's own fruit and vanilla soy yogurts are 0.31) and 0-1 mg vitamin C unless fruit is added; set to the peer values so plain soy yogurt can't carry a day's vitamin E."
   }
 }
