@@ -14,6 +14,6 @@ Breakfasts (3 rotating): Greek yogurt bowl with blueberries and a peanut butter 
 
 Snacks (7 recipes, 1 or 2 a day): edamame, lemony hummus with carrot and broccoli, cottage cheese and cherry tomatoes, pineapple with lime and chili, smoky roasted chickpeas, apple and peanut butter.
 
-GUIDE 11 and 12 checks: fish on Mon, Wed, Sun (non-adjacent pairs); eggs only in 2 breakfasts; dairy in 7 slots; no chia, flax or walnut crutches; carrot in 4 recipes only; Mexican flavours kept off the same day as each other except Sat/Sun pozole leftovers; Light drops the second snack on the three days with two; all four bands claimed (1400-1600, 1600-1800, 1800-2000, 2000-2200); 1200-1400 not claimed (calcium and choline, as lean-med found; also Day 2 will not size below about 1550).
+GUIDE 11 and 12 checks: fish on Mon, Wed, Sun (non-adjacent pairs); eggs only in 2 breakfasts; dairy in 7 slots; no chia, flax or walnut crutches; carrot in 4 recipes only; Mexican flavours kept off the same day as each other except Sat/Sun pozole leftovers; Light drops one snack on the days with two (the hummus on Thursday, so the cottage cheese keeps its choline); all four bands claimed (1400-1600, 1600-1800, 1800-2000, 2000-2200); 1200-1400 not claimed (calcium and choline, as lean-med found; also Day 2 will not size below about 1550).
 
 Revision after critic: pozole is now pork tenderloin; peanut butter dropped for almonds; sesame oil added; Tue and Wed breakfasts swapped.
