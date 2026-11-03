@@ -1,0 +1,1911 @@
+{
+  "id": "lowgi-med",
+  "name": "Diabetes-friendly Mediterranean",
+  "style": "low-gi",
+  "cuisine": "Mediterranean",
+  "regions": [
+    "Greece",
+    "southern Italy",
+    "Spain",
+    "Crete"
+  ],
+  "summary": "Diabetes-friendly home cooking from Greece, southern Italy, Spain and Crete: beans, lentils and chickpeas every day, big salads first, small portions of barley, farro, pasta and rye, and fresh or canned fish most days.",
+  "howItWorks": "**Steady carbs, three times a day.** Breakfast, lunch and dinner each get a small, honest portion of starch: a thin slice of rye, a few spoonfuls of barley or farro, a handful of whole-wheat pasta. It always sits next to beans, lentils, eggs, fish or chicken, so the starch digests more slowly.\n\n**Legumes at most meals.** Lentils, chickpeas, white beans and lupini turn up at two meals on most days and carry the **fibre and protein**. Pasta e ceci has far more chickpea than pasta, and the orzotto is mostly chicken, mushrooms, broccoli and beans.\n\n**Salad and vegetables first.** Arugula, tomato, cucumber and big trays of vegetables come with the meal, with lemon, red wine or sherry vinegar for the sour. Eat the crunch first and the starch last.\n\n**Fish most days.** Sardines on Tuesday, salmon on Friday and mackerel on Sunday bring **omega-3**, cooked the day they are bought or thawed. Canned mussels and sardines on rye add B12 and iron on other days, and the soft sardine bones bring calcium.\n\n**Cook once, eat twice.** Orzotto, souvlaki, lentejas, fasolada and the frittata each make two portions, so the next meal is already done. On Sunday, simmer the lentils for Monday's salad, and grate the tomato for the tostadas the night before. Soak the beans on Friday night for Saturday's fasolada.",
+  "signature": [
+    "lowgi-med-fasolada-white-beans",
+    "lowgi-med-sardines-white-bean-salad",
+    "lowgi-med-pasta-e-ceci",
+    "lowgi-med-chicken-souvlaki-horiatiki"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "lowgi-med-olives-almonds"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "lowgi-med-olives-almonds"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "lowgi-med-cannellini-rye-crostini"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "lowgi-med-orange-walnuts"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "lowgi-med-strawberries-walnuts"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "lowgi-med-cannellini-rye-crostini"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "lowgi-med-strawberries-walnuts"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "lowgi-med-yogurt-strawberries-walnuts",
+      "name": "Greek yogurt with strawberries, walnuts and toasted oats",
+      "inspiredBy": "Greek yiaourti me karydia, the everyday bowl of thick yogurt and walnuts, without the honey",
+      "about": "Thick Greek yogurt with sliced strawberries, chopped walnuts and a crunch of toasted oats. It is how plenty of Greek kitchens start the day, minus the honey. The **protein, fibre and walnut fat** all arrive together, so the fruit digests more slowly.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 190,
+          "swap": "dairy_protein",
+          "note": "plain, thick"
+        },
+        {
+          "food": "strawberry-raw-fc000f",
+          "g": 140,
+          "swap": "berries",
+          "note": "sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "rolled oats"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Toast the oats in a dry pan over medium heat for 3 to 4 minutes, shaking now and then, until they smell nutty. Tip them onto a plate to cool.",
+        "Spoon the yogurt into a bowl and pile the strawberries on top.",
+        "Scatter on the walnuts and the warm oats, then dust with cinnamon."
+      ],
+      "prepMin": 5,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Toast a jar of oats on Sunday and breakfast takes two minutes. In winter, frozen berries thawed overnight in the fridge work well and leave a lovely juice to swirl through."
+    },
+    {
+      "id": "lowgi-med-tostada-tomate-huevos",
+      "name": "Tostada con tomate and soft eggs with an orange",
+      "inspiredBy": "Spanish tostada con tomate, the garlic and tomato toast every bar serves in the morning",
+      "about": "Rye toast rubbed with garlic and ripe grated tomato, topped with two soft eggs, with an orange on the side. It is a thin slice of bread and mostly tomato and egg. The **eggs bring protein and choline**, and the orange adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 38,
+          "swap": "low_gi_grains",
+          "note": "a small, thin slice"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "ripe, for grating"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "1 clove, halved"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "two eggs"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 140,
+          "swap": "vit_c_fruit",
+          "note": "peeled and sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Cut the tomato in half and grate it on the large holes of a box grater into a bowl, leaving the skin behind. Stir in a pinch of salt and half the olive oil.",
+        "Toast the rye until crisp and rub the cut side of the garlic over it.",
+        "Fry the eggs in the rest of the olive oil in a nonstick pan over medium heat for about 3 minutes, until the whites are set and the yolks are still soft.",
+        "Spoon the tomato onto the toast, top with the eggs and a pinch of salt, and serve with the orange."
+      ],
+      "prepMin": 8,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Grate the tomato the night before and keep it in a jar in the fridge, and breakfast takes 5 minutes. Rubbing a little garlic on the toast is the whole secret."
+    },
+    {
+      "id": "lowgi-med-frittata-spinach-herbs",
+      "name": "Spinach, mushroom and red pepper frittata with a slice of rye",
+      "inspiredBy": "Italian frittata di spinaci, the thick open omelette that is just as good cold",
+      "about": "A thick, golden frittata with spinach, mushrooms, soft onion and sweet red pepper, with a handful of parsley and a slice of rye. It makes two portions, and the second is a fine cold breakfast the next morning. The **eggs and spinach** bring protein, choline and folate with very little starch.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 150,
+          "note": "three eggs"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 100,
+          "note": "cut in thin strips"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 120,
+          "note": "sliced"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "a small, thin slice"
+        },
+        {
+          "food": "nutmeg-ground-15c547",
+          "g": 0.2,
+          "note": "a pinch"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Warm the olive oil in an ovenproof nonstick pan over medium heat and cook the onion, pepper strips and mushrooms until soft and the pan is dry, about 8 minutes.",
+        "Add the spinach and stir until it has wilted and the pan is nearly dry, about 2 minutes.",
+        "Beat the eggs with the salt, pepper, nutmeg and parsley. Pour them over the spinach and cook without stirring for 3 minutes, until the edges are set.",
+        "Slide the pan into the oven for about 8 minutes, until the top is set and lightly golden. Let it rest for 5 minutes, then cut it in half.",
+        "Serve one half with the rye, toasted. Pack the other half for tomorrow morning, cold or warmed."
+      ],
+      "prepMin": 10,
+      "cookMin": 18,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "The frittata is happy cold, so slip a wedge into a lunchbox. A spoonful of crumbled feta on top before it goes in the oven is lovely too."
+    },
+    {
+      "id": "lowgi-med-fakes-lentil-salad-feta",
+      "name": "Fakes salata: Greek lentil salad with feta, cucumber and olives",
+      "inspiredBy": "the lentil salads of Greek tavernas, with the lentils dressed while they are still warm",
+      "about": "Green lentils tossed warm with red wine vinegar and olive oil, then cooled and mixed with carrot, cucumber, tomato, red onion and parsley, over a bed of arugula and topped with feta and olives. It is a cold salad you would find on a Greek table. The lentils carry plenty of **fibre and slow-digesting protein**, so this is a lunch that holds you.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 55,
+          "swap": "legumes",
+          "note": "green or brown, dry"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "coarsely grated"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 30,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 10,
+          "note": "red wine vinegar"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 15,
+          "note": "Kalamata, pitted and halved"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 30,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "dill-weed-dried-d92fd8",
+          "g": 0.4,
+          "note": "dried dill"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3,
+          "note": "1 small leaf"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the lentils and simmer them with the bay leaf in plenty of unsalted water for about 20 minutes, until tender but still holding their shape. Drain well.",
+        "While they are still warm, toss the lentils with the vinegar, half the olive oil and the salt, and let them cool for 10 minutes.",
+        "Fold in the carrot, cucumber, tomato, onion, parsley and dried dill.",
+        "Pile the arugula on a plate, spoon the lentils over it, and finish with the feta, olives, oregano, pepper and the rest of the olive oil."
+      ],
+      "prepMin": 12,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook the lentils on Sunday evening and keep them in the fridge (they last 4 days), and this lunch takes 10 minutes. Fold the cucumber in just before eating so it stays crisp."
+    },
+    {
+      "id": "lowgi-med-pasta-e-ceci",
+      "name": "Pasta e ceci with more ceci than pasta",
+      "inspiredBy": "Roman and southern Italian pasta e ceci, with the chickpeas doing most of the work",
+      "about": "A thick, rosemary-scented chickpea and tomato soup with a little whole-wheat pasta and plenty of broccoli cooked soft right in the pot, in the southern Italian way. There is far more chickpea than pasta. The **chickpeas bring fibre and protein** so the little bit of pasta digests more slowly.",
+      "ingredients": [
+        {
+          "food": "chickpea-canned-drained-a7deb5",
+          "g": 210,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 28,
+          "swap": "low_gi_grains",
+          "note": "whole-wheat, broken spaghetti or any small shape"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 45,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 80,
+          "note": "crushed tomatoes"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 250,
+          "note": "small florets, plus the peeled stalk, chopped (about half a head)"
+        },
+        {
+          "food": "parmesan-cheese-hard-78ce3e",
+          "g": 12,
+          "swap": "dairy_protein",
+          "note": "finely grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils",
+          "note": "plus a drizzle to finish"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm most of the olive oil in a pot over medium heat and cook the onion and carrot for about 7 minutes, until soft and sweet. Add the garlic and rosemary and stir for 1 minute.",
+        "Add the crushed tomatoes and the chickpeas with enough water to just cover them. Simmer for 10 minutes, then mash about a third of the chickpeas against the side of the pot so the soup turns creamy.",
+        "Add the broccoli with enough hot water to just cover it and simmer for 5 minutes. Add the pasta and cook for 8 to 10 minutes more, stirring often, until the pasta is tender with a little bite and the broccoli is soft enough to break up into the soup. Add water a splash at a time if it gets too thick.",
+        "Season with salt and pepper, and finish with the Parmesan, parsley and a drizzle of olive oil."
+      ],
+      "prepMin": 10,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "To make it a quick lunch, cook the soup base (steps 1 and 2) on Sunday and keep it in the fridge. On the day, add the pasta and broccoli, and it is ready in about 20 minutes. It thickens as it sits, so loosen it with a splash of water."
+    },
+    {
+      "id": "lowgi-med-dakos-chickpeas-feta",
+      "name": "Cretan dakos-style salad with chickpeas, tomato and feta",
+      "inspiredBy": "Cretan dakos, where a barley rusk is topped with grated tomato and soft cheese, here with rye toast and chickpeas",
+      "about": "Crisp rye toast pieces topped with juicy grated tomato, cucumber, chickpeas, feta and olives, finished with a few walnuts, oregano and olive oil. It is inspired by the dakos of Crete, with chickpeas for protein and just a thin slice of bread. The **chickpeas and feta** make it a full lunch, and the tomato juice softens the toast just enough.",
+      "ingredients": [
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "a small, thin slice, toasted hard"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 160,
+          "note": "grated"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "chickpea-canned-drained-a7deb5",
+          "g": 210,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 45,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 15,
+          "note": "Kalamata, pitted and chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Toast the rye until it is dry and crisp, then break it into rough pieces and put them in a shallow bowl.",
+        "Grate the tomato on a box grater, leaving the skin behind, and stir in the salt. Spoon it over the toast pieces and let them soak for a minute.",
+        "Toss the chickpeas with the cucumber and onion and spoon them over the top.",
+        "Crumble on the feta, scatter on the olives, walnuts and oregano, and finish with the olive oil."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Toast the bread until it is really dry, like a rusk. If your toast is soft, leave it in a 160°C (325°F) oven for 10 minutes first."
+    },
+    {
+      "id": "lowgi-med-orzotto-mushrooms-cannellini",
+      "name": "Barley risotto with chicken, mushrooms, broccoli and cannellini",
+      "inspiredBy": "Italian orzotto from Friuli and Veneto, where pearl barley is cooked the way risotto is",
+      "about": "Pearl barley simmered slowly with onion and garlic until creamy, with broccoli cooked right in the pot, then stirred together with browned chicken and mushrooms, cannellini beans and spinach. Parmesan goes in at the end and toasted hazelnuts on top. A small portion of barley goes a long way when the **chicken, beans and vegetables** do most of the work, and a lemony arugula salad sits beside it.",
+      "ingredients": [
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "pearl barley, dry"
+        },
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "boneless skinless thighs, in small pieces"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 150,
+          "note": "sliced"
+        },
+        {
+          "food": "cannellini-beans-canned-re-heated-drained-4380d5",
+          "g": 90,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 150,
+          "note": "small florets"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "parmesan-cheese-hard-78ce3e",
+          "g": 18,
+          "swap": "dairy_protein",
+          "note": "finely grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils",
+          "note": "divided"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20,
+          "note": "divided"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "for the side salad"
+        },
+        {
+          "food": "filberts-or-hazelnuts-dried-5baf48",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the hazelnuts in a dry pan for 3 minutes and chop them roughly. Warm a third of the olive oil in a wide pot over medium heat and cook the onion for about 5 minutes, until soft. Stir in the garlic and thyme for 1 minute.",
+        "Stir in the barley for a minute, then add hot water a ladleful at a time, keeping the barley just covered. Simmer, stirring now and then, for 25 minutes, then drop the broccoli florets on top and keep simmering for 8 to 10 minutes, until the barley is tender with a little bite, the broccoli is soft and the pot is creamy.",
+        "While the barley simmers, warm another third of the olive oil in a wide pan over medium-high heat and brown the chicken for 4 to 5 minutes. Add the mushrooms in a single layer and cook for 7 to 8 minutes more, stirring only now and then, until they are golden and the liquid has cooked off.",
+        "Stir the chicken and mushrooms into the barley with the beans and spinach, and cook for 2 minutes, until the spinach has wilted and the chicken is cooked through. Stir in the Parmesan, half the lemon juice, salt, pepper and the parsley, and scatter the toasted hazelnuts on top.",
+        "Toss the arugula with the rest of the lemon juice, the last of the olive oil and a pinch of salt, and serve it beside the orzotto. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 10,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "It thickens as it sits, so loosen the leftover portion with a splash of water or stock when you reheat it."
+    },
+    {
+      "id": "lowgi-med-sardines-white-bean-salad",
+      "name": "Grilled sardines on a white bean, tomato and arugula salad",
+      "inspiredBy": "Italian sarde alla griglia, served the Tuscan way on a lemony white bean salad",
+      "about": "Fresh sardines grilled until the skin blisters, laid over cannellini beans tossed with tomato, grated carrot, onion, parsley and red wine vinegar, on a bed of arugula. It is simple, bright and ready in about 25 minutes. The sardines are the **omega-3 and calcium** hero of the week, and the soft bones are edible.",
+      "ingredients": [
+        {
+          "food": "european-pilchard-or-sardine-raw-e12560",
+          "g": 165,
+          "swap": "fatty_fish",
+          "note": "whole, scaled and gutted"
+        },
+        {
+          "food": "cannellini-beans-canned-re-heated-drained-4380d5",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "coarsely grated"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 30,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25,
+          "note": "plus lemon wedges"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 6,
+          "note": "red wine vinegar"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils",
+          "note": "divided"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toss the beans with the tomato, carrot, onion, parsley, garlic, vinegar, half the olive oil and a pinch of salt. Let them sit for 10 minutes so the flavours settle.",
+        "Heat the broiler on high and line a tray with foil. Pat the sardines dry and rub them with a little olive oil, salt, pepper and oregano.",
+        "Broil the sardines on the tray for 3 to 4 minutes a side, until the skin is blistered and the flesh flakes easily.",
+        "Spread the arugula on a plate, spoon the beans over it and lay the sardines on top. Squeeze over the lemon juice and drizzle with the rest of the olive oil."
+      ],
+      "prepMin": 15,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "A grill pan works too but it smokes, so open a window. Ask the fishmonger to scale and gut the sardines and you save 10 minutes. Frozen sardines work well: thaw them in the fridge overnight, and cook them the same day."
+    },
+    {
+      "id": "lowgi-med-chicken-souvlaki-horiatiki",
+      "name": "Chicken souvlaki with horiatiki salad and tzatziki",
+      "inspiredBy": "Greek souvlaki with the village salad, the plate a taverna brings without asking",
+      "about": "Lemony, oregano-scented chicken skewers with a chunky village salad of tomato, cucumber, pepper, olives and feta, a spoonful of garlicky tzatziki and a few bites of warm pita. The salad is half the plate and goes first. The **chicken and yogurt carry the protein**, so the pita can stay small.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 200,
+          "swap": "lean_protein",
+          "note": "boneless skinless thighs, cut in 3 cm cubes"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils",
+          "note": "divided"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "divided"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 60,
+          "swap": "dairy_protein",
+          "note": "plain, for the tzatziki"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 120,
+          "note": "divided"
+        },
+        {
+          "food": "dill-weed-dried-d92fd8",
+          "g": 0.5,
+          "note": "dried dill"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 150,
+          "note": "in wedges"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 15,
+          "note": "Kalamata, pitted"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 20,
+          "swap": "dairy_protein",
+          "note": "a thin slab"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 12,
+          "swap": "low_gi_grains",
+          "note": "whole-wheat, a few bites"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Mix the chicken with the lemon juice, half the garlic, a little of the olive oil, half the oregano, salt and pepper. Marinate for at least 20 minutes, or a few hours in the fridge.",
+        "Make the tzatziki: grate a third of the cucumber, squeeze out the water and stir it into the yogurt with the rest of the garlic, the dried dill and a pinch of salt.",
+        "Thread the chicken onto skewers, or leave it loose for a pan. Cook in a hot grill pan or skillet for 10 to 12 minutes, turning, until browned at the edges and cooked through.",
+        "Toss the tomato, the rest of the cucumber, the pepper, onion and olives with a little salt. Set the feta on top and drizzle with the rest of the olive oil and the remaining oregano.",
+        "Warm the pita in the pan for a minute. Eat the salad first, then the chicken with the tzatziki and a few bites of pita. Pack the second portion, with the salad and tzatziki in separate containers, for tomorrow's lunch."
+      ],
+      "prepMin": 25,
+      "cookMin": 12,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "For the leftover lunch, eat the chicken cold on the salad, or warm it for a minute and tuck it into the pita."
+    },
+    {
+      "id": "lowgi-med-lentejas-chorizo-spinach",
+      "name": "Spanish lentil stew with chorizo, carrot and spinach",
+      "inspiredBy": "Spanish lentejas estofadas, the lentil pot that turns up in homes across Spain",
+      "about": "A thick lentil stew with smoky paprika, a little chorizo, carrot and a whole bag of spinach wilted in, brightened with a splash of vinegar at the end. A small amount of chorizo flavours the whole pot. The **lentils bring iron, folate and fibre**, so it is a full bowl on its own.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 100,
+          "swap": "legumes",
+          "note": "green or brown, dry"
+        },
+        {
+          "food": "chorizo-152368",
+          "g": 12,
+          "note": "Spanish cured chorizo (the hard kind, not fresh Mexican), diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 120,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 80,
+          "note": "crushed tomatoes"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 160,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sherry-vinegar-af00be",
+          "g": 8,
+          "note": "sherry vinegar, divided"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 2
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.5,
+          "note": "1 leaf"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a pot over medium heat and cook the chorizo for 3 minutes, until it has given up its orange oil. Add the onion and carrot and cook for 7 minutes, until soft.",
+        "Stir in the garlic and smoked paprika for 30 seconds, then add the crushed tomatoes, lentils, bay leaf and enough water to cover everything by about 3 cm.",
+        "Bring to a boil, then simmer gently for 30 to 35 minutes, until the lentils are tender and the stew is thick. Add a splash of water if it gets dry.",
+        "Stir in the spinach a few handfuls at a time, letting each lot wilt before adding the next, then add half the vinegar, and season with salt and pepper. Take out the bay leaf.",
+        "Serve the stew in bowls with the parsley and a splash of the rest of the vinegar. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 12,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Lentejas are even better the next day. Swap the chorizo for a spoonful of extra smoked paprika for a fully vegetarian pot."
+    },
+    {
+      "id": "lowgi-med-salmon-plaki-farro",
+      "name": "Baked salmon with tomatoes, broccoli, zucchini and olives over a little farro",
+      "inspiredBy": "Greek psari plaki, fish baked with tomato, onion and garlic, here as a tray bake with a spoonful of farro",
+      "about": "Salmon baked on a tray with juicy tomatoes, broccoli, zucchini, onion and olives, then spooned over a small portion of nutty farro. It is a Greek-style tray bake in the spirit of psari plaki: one tray, no fuss. The **salmon brings omega-3 and vitamin D**, and the vegetables take up most of the plate.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 175,
+          "swap": "fatty_fish",
+          "note": "skin on or off"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 100,
+          "note": "in half-moons"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 150,
+          "note": "in wedges"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 170,
+          "note": "small florets"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "in wedges"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 20,
+          "note": "Kalamata, pitted and halved"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "farro-pearled-dry-raw-11ee05",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "pearled farro, dry"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20,
+          "note": "plus wedges"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the tomato, broccoli, onion, olives and zucchini on a baking tray with half the olive oil, the oregano and a pinch of salt. Roast for 15 minutes.",
+        "Meanwhile, simmer the farro in plenty of salted water for 15 to 20 minutes, until tender but chewy. Drain.",
+        "Nestle the salmon among the vegetables, scatter the garlic over the tray, and drizzle with the rest of the olive oil and the lemon juice, and season with salt and pepper. Roast for 10 to 12 minutes, until the salmon flakes easily.",
+        "Spoon the farro onto a plate, top with the vegetables and salmon, and finish with the parsley and a lemon wedge."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook a little extra farro on Sunday and use it here to skip step two. Fresh salmon is best on the day, so buy it that morning or thaw it overnight. On the Light size the farro is a couple of spoonfuls, enough to catch the juices."
+    },
+    {
+      "id": "lowgi-med-fasolada-white-beans",
+      "name": "Fasolada, the Greek white bean soup",
+      "inspiredBy": "Greek fasolada, often called the national dish of Greece",
+      "about": "A slow-simmered white bean soup with carrot, tomato, a warm pinch of Aleppo pepper and a finish of good olive oil, served with olives and a lemony arugula salad. It is the everyday soup of Greek homes, and the weekend project dish of the week. The **beans are the fibre and protein**, and the soup tastes even better on day two.",
+      "ingredients": [
+        {
+          "food": "white-beans-dry-4b906c",
+          "g": 105,
+          "swap": "legumes",
+          "note": "dry white beans, soaked overnight"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 60,
+          "note": "crushed tomatoes"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils",
+          "note": "divided"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20,
+          "note": "divided"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "for the salad"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 15,
+          "note": "Kalamata, pitted"
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.3,
+          "note": "a pinch"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.5,
+          "note": "1 leaf"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "The night before, cover the beans with plenty of cold water and soak them overnight.",
+        "Drain the beans, put them in a large pot, cover with fresh water and bring to a boil. Boil for 10 minutes, then drain. This takes away the foam and makes them easier to digest.",
+        "Return the beans to the pot with fresh water to cover by 3 cm. Add the onion, carrot, garlic and bay leaf, and simmer gently for about 45 minutes, until the beans are almost tender.",
+        "Stir in the crushed tomatoes, most of the olive oil and the Aleppo pepper. Simmer for 20 to 25 minutes more, until the beans are very soft and the soup is thick and creamy, adding a splash of hot water if it gets too thick. Season with salt near the end.",
+        "Finish with the parsley and half the lemon juice. Toss the arugula with the rest of the lemon, a little olive oil and salt.",
+        "Serve the soup in a deep bowl with the olives and the salad on the side. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 105,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "In a pressure cooker the soaked beans take about 12 minutes, which turns this into a weeknight soup. It keeps 4 days in the fridge and freezes for 3 months. Greek cooks use boukovo flakes here, if you can find them."
+    },
+    {
+      "id": "lowgi-med-mackerel-pisto-chickpeas",
+      "name": "Seared mackerel on pisto with chickpeas",
+      "inspiredBy": "Spanish caballa a la plancha served on pisto manchego, the La Mancha vegetable stew",
+      "about": "Crisp-skinned mackerel served on a soft stew of zucchini, red pepper and tomato with a few chickpeas, finished with lemon and parsley and a piece of rye toast to mop up the juices. It is a Spanish fish-and-vegetables plate that is mostly vegetables. The **mackerel brings plenty of omega-3**.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "fillets, skin on"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 100,
+          "note": "crushed tomatoes"
+        },
+        {
+          "food": "chickpea-canned-drained-a7deb5",
+          "g": 110,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "sherry-vinegar-af00be",
+          "g": 4,
+          "note": "sherry vinegar"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils",
+          "note": "divided"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "a small, thin slice, toasted"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm half the olive oil in a wide pan over medium heat and cook the onion and pepper for 6 minutes, until soft. Add the zucchini and cook for 5 minutes more.",
+        "Stir in the garlic and smoked paprika for 30 seconds, then add the crushed tomatoes and a pinch of salt. Simmer for 12 minutes, until thick, then stir in the chickpeas and the sherry vinegar for the last 3 minutes.",
+        "Pat the mackerel dry and season the skin with salt. Heat the rest of the oil in a nonstick pan over medium-high heat and press the fillets down, skin side down. Cook for 3 to 4 minutes, until the skin is crisp.",
+        "Flip and cook for 1 to 2 minutes more. Spoon the pisto onto a plate, lay the mackerel on top, squeeze over the lemon and scatter on the parsley. Serve with the toast."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Ask for the pin bones to be removed, and the fillets cook in minutes. Make a double batch of pisto if you like: it is excellent cold the next day."
+    },
+    {
+      "id": "lowgi-med-strawberries-walnuts",
+      "name": "Strawberries with walnuts",
+      "about": "Sweet strawberries with a small handful of walnuts. The **walnuts add omega-3 and protein**, so the fruit does not stand alone.",
+      "ingredients": [
+        {
+          "food": "strawberry-raw-fc000f",
+          "g": 150,
+          "swap": "berries",
+          "note": "halved"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Halve the strawberries and eat them with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lowgi-med-strawberries-almonds",
+      "name": "Strawberries with almonds",
+      "about": "A bowl of sweet strawberries with a small handful of almonds. The **almonds add protein and fibre**, so the fruit does not stand alone.",
+      "ingredients": [
+        {
+          "food": "strawberry-raw-fc000f",
+          "g": 150,
+          "swap": "berries",
+          "note": "halved"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 18,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Halve the strawberries and eat them with the almonds, which can be toasted in a dry pan for 3 minutes if you like."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lowgi-med-lupini-lemon-parsley",
+      "name": "Lupini beans with lemon and parsley",
+      "inspiredBy": "Spanish and Italian bar snacks, where lupini come in a little dish with a drink",
+      "about": "Tender lupini beans tossed with lemon, olive oil and parsley, the little tapas dish you find in bars across southern Italy and Spain. They are a surprisingly **high-protein, high-fibre** snack with very little starch.",
+      "ingredients": [
+        {
+          "food": "lupin-boiled-748dba",
+          "g": 100,
+          "swap": "legumes",
+          "note": "jarred, rinsed and drained"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Rinse the lupini well. The skin is edible, so eat them skin and all, or pop each bean out of its skin as you go, the way bars serve them.",
+        "Toss with the lemon juice, olive oil, parsley and oregano, with salt to taste."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Buy jarred lupini in brine at an Italian or Portuguese shop, or in the international aisle, and rinse them well."
+    },
+    {
+      "id": "lowgi-med-roasted-chickpeas-paprika",
+      "name": "Roasted chickpeas with smoked paprika",
+      "inspiredBy": "Spanish garbanzos fritos, baked instead of fried",
+      "about": "Crisp roasted chickpeas with smoked paprika and a pinch of salt, the baked version of Spain's fried garbanzos. They are crunchy, savoury and full of **fibre and plant protein**.",
+      "ingredients": [
+        {
+          "food": "chickpea-canned-drained-a7deb5",
+          "g": 120,
+          "swap": "legumes",
+          "note": "rinsed and patted very dry"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Rinse the chickpeas and pat them very dry with a clean towel.",
+        "Toss them with the olive oil, smoked paprika and salt, and spread them on a baking tray.",
+        "Roast for 25 to 30 minutes, shaking the tray halfway through, until crisp. Eat them the same day while they are crunchy."
+      ],
+      "prepMin": 3,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "They soften as they sit, so make them fresh. For a quick fix, toss them in a hot pan with the paprika for 5 minutes."
+    },
+    {
+      "id": "lowgi-med-sardines-rye-lemon",
+      "name": "Sardines on rye toast with lemon and onion",
+      "inspiredBy": "Spanish tosta de sardinas, the bar snack of canned sardines on good bread",
+      "about": "A slice of toasted rye piled with canned sardines, thin red onion, lemon and parsley, the way Spanish bars serve it. The little soft bones in canned sardines bring **calcium and omega-3**, and the whole snack takes 5 minutes.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 90,
+          "swap": "fatty_fish",
+          "note": "canned in olive oil, drained"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "a small, thin slice"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the rye until crisp.",
+        "Drain the sardines and mash them roughly with the lemon juice and pepper.",
+        "Pile them on the toast and top with the onion and parsley."
+      ],
+      "prepMin": 5,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Look for sardines packed in olive oil, and keep a tin or two in the pantry for the days you need a fast, filling snack."
+    },
+    {
+      "id": "lowgi-med-yogurt-hazelnuts-cinnamon",
+      "name": "Greek yogurt with hazelnuts and cinnamon",
+      "inspiredBy": "Greek yiaourti with a handful of nuts, the simplest dessert in a Greek home",
+      "about": "A bowl of thick Greek yogurt with chopped toasted hazelnuts and a dusting of cinnamon, without the honey. It is the kind of thing you might be served after a meal in a Greek home. The **yogurt brings protein and calcium**, and the hazelnuts add crunch and vitamin E.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 220,
+          "swap": "dairy_protein",
+          "note": "plain, thick"
+        },
+        {
+          "food": "filberts-or-hazelnuts-dried-5baf48",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Toast the hazelnuts in a dry pan for 3 minutes and chop them roughly.",
+        "Spoon the yogurt into a small bowl, scatter on the hazelnuts and dust with the cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lowgi-med-mussels-tomato-rye",
+      "name": "Mussels on rye with onion, sherry vinegar and lemon",
+      "inspiredBy": "Spanish tapas of mejillones en escabeche, served on a slice of good bread",
+      "about": "A thin slice of rye toast topped with canned mussels dressed in sherry vinegar and olive oil, with thin onion, lemon and parsley. It is the kind of tin-on-toast snack Spanish bars serve with a drink, and a quiet **powerhouse of protein, iron and vitamin B12**.",
+      "ingredients": [
+        {
+          "food": "mussel-canned-in-brine-drained-9a3d73",
+          "g": 100,
+          "note": "a large tin, or a tin and a half, in escabeche or natural, drained"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 22,
+          "swap": "low_gi_grains",
+          "note": "a small, thin slice"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "sherry-vinegar-af00be",
+          "g": 6,
+          "note": "sherry vinegar"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.3,
+          "note": "a pinch"
+        }
+      ],
+      "steps": [
+        "Toast the rye until crisp.",
+        "Toss the onion with the sherry vinegar, olive oil and paprika, and leave it for a few minutes to soften.",
+        "Pile the mussels on the toast, spoon the onion and its dressing over them, and finish with the lemon and parsley."
+      ],
+      "prepMin": 6,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Look for mussels in escabeche or natural at a Spanish or Portuguese shop. Smoked mussels also work: drain them well. Mussels in escabeche are already dressed, so use just a few drops of vinegar on the onion."
+    },
+    {
+      "id": "lowgi-med-olives-almonds",
+      "name": "Olives with lemon, oregano and almonds",
+      "inspiredBy": "a Spanish bar plate of olives and almonds",
+      "about": "A small dish of olives with a few almonds and a squeeze of lemon, the way Spanish bars set it down with a drink. The **almonds add protein and vitamin E**, and the olives bring the salty, savoury bite.",
+      "ingredients": [
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 30,
+          "note": "Kalamata, pitted, rinsed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 20,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the olives to wash off some of the brine and pat them dry.",
+        "Toss with the lemon juice and oregano and serve with the almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lowgi-med-cannellini-rye-crostini",
+      "name": "Cannellini crostini with lemon and olive oil",
+      "inspiredBy": "Tuscan fettunta, bread with beans, minus the garlic rub",
+      "about": "A thin slice of toasted rye topped with warm, lemony cannellini beans, parsley and a drizzle of olive oil, a simple Tuscan snack. The **beans carry the protein and fibre**, and the bread is just the base.",
+      "ingredients": [
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 25,
+          "swap": "low_gi_grains",
+          "note": "a thin slice"
+        },
+        {
+          "food": "cannellini-beans-canned-re-heated-drained-4380d5",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Warm the beans in a small pan with a splash of water for 2 minutes, then crush about half of them with a fork.",
+        "Toast the rye and spoon the beans on top.",
+        "Finish with the lemon juice, olive oil, parsley, salt and pepper."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lowgi-med-orange-walnuts",
+      "name": "Orange with walnuts",
+      "about": "Juicy orange segments with a small handful of walnuts. The **walnuts add omega-3 and protein**, and the orange adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "peeled, in segments"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Peel the orange and break it into segments, and eat them with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lowgi-med-cannellini-lemon-dip-veg",
+      "name": "Cannellini and lemon dip with vegetable sticks",
+      "inspiredBy": "a Tuscan white bean puree, the cousin of hummus",
+      "about": "A creamy puree of cannellini beans, garlic, lemon and olive oil with crunchy cucumber and carrot sticks. It is the Tuscan answer to hummus. The beans give you **fibre and protein**, and the raw vegetables add crunch.",
+      "ingredients": [
+        {
+          "food": "cannellini-beans-canned-re-heated-drained-4380d5",
+          "g": 90,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "1 small clove"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 12
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "sticks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "sticks"
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Mash or blend the beans with the garlic, lemon juice, half the olive oil, the rosemary and salt, adding a splash of water until it is soft and creamy.",
+        "Spoon the dip into a small bowl, drizzle with the rest of the olive oil, and serve with the cucumber and carrot sticks."
+      ],
+      "prepMin": 6,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Make a double batch midweek: it keeps for 4 days in a jar in the fridge, so the second one is ready for Saturday."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lowgi-med-tostada-tomate-huevos"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lowgi-med-fakes-lentil-salad-feta"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lowgi-med-orzotto-mushrooms-cannellini"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-med-mussels-tomato-rye"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-med-lupini-lemon-parsley"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lowgi-med-tostada-tomate-huevos"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lowgi-med-orzotto-mushrooms-cannellini",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lowgi-med-sardines-white-bean-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-med-roasted-chickpeas-paprika"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-med-strawberries-almonds"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lowgi-med-yogurt-strawberries-walnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lowgi-med-pasta-e-ceci"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lowgi-med-chicken-souvlaki-horiatiki"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-med-mussels-tomato-rye"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-med-orange-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lowgi-med-tostada-tomate-huevos"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lowgi-med-chicken-souvlaki-horiatiki",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lowgi-med-lentejas-chorizo-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-med-sardines-rye-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-med-cannellini-lemon-dip-veg"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lowgi-med-yogurt-strawberries-walnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lowgi-med-lentejas-chorizo-spinach",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lowgi-med-salmon-plaki-farro"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-med-yogurt-hazelnuts-cinnamon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-med-roasted-chickpeas-paprika"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lowgi-med-frittata-spinach-herbs"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lowgi-med-dakos-chickpeas-feta"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lowgi-med-fasolada-white-beans"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-med-cannellini-lemon-dip-veg"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-med-yogurt-hazelnuts-cinnamon"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lowgi-med-frittata-spinach-herbs",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lowgi-med-fasolada-white-beans",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lowgi-med-mackerel-pisto-chickpeas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-med-lupini-lemon-parsley"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lowgi-med-strawberries-almonds"
+        }
+      ]
+    }
+  ]
+}
