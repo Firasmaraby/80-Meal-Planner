@@ -1,0 +1,1753 @@
+{
+  "id": "veg-med",
+  "name": "Vegetarian Mediterranean",
+  "style": "vegetarian",
+  "cuisine": "Mediterranean",
+  "regions": [
+    "Greece",
+    "Italy",
+    "Spain",
+    "the Levant"
+  ],
+  "summary": "A week of meatless Mediterranean home cooking from Greece, Italy, Spain and the Levant. Beans, lentils and chickpeas lead, with eggs, yogurt and cheese in support, plus plenty of vegetables, olive oil and herbs.",
+  "howItWorks": "**Protein from beans first.** Cannellini, lentils, chickpeas, fava and lupini carry most meals, with eggs, yogurt, labneh, feta and halloumi in support. Every lunch and dinner has a real protein, and every day gets at least a fifth of its calories from protein.\n\n**B12, calcium and iron.** Plants don't make **B12**, so it comes from the eggs and dairy that turn up every day, and the eggs bring choline too. Yogurt, labneh, feta, tahini and white beans cover calcium. Lentils, chickpeas, fava and chard carry the iron, with lemon, tomato and parsley alongside to help you absorb it.\n\n**Omega-3 from plants.** With no fish, the omega-3 is plant ALA, and **walnuts and ground flax** bring most of it. The walnuts go in the yogurt bowls, the lentil salad and three of the snacks. A spoonful of flax goes in each yogurt bowl and in the falafel, where it also helps bind. Olive oil stays the main fat.\n\n**Cook once, eat twice.** Monday's fasolakia, Tuesday's frittata, Wednesday's falafel, Friday's pasta e fagioli and Saturday's spanakopita each make two portions, so the next day's lunch is done. Soak the chickpeas on Tuesday night, and thaw the phyllo in the fridge on Friday.\n\n**What Light changes.** The vegetables, eggs and breakfast yogurt stay as they are. Light trims the oil, cheese, labneh, walnuts and phyllo and a little of the beans and pita, and keeps one snack a day, with none on Tuesday.",
+  "signature": [
+    "veg-med-spanakopita-pie",
+    "veg-med-baked-falafel-tahini-plate",
+    "veg-med-pasta-e-fagioli",
+    "veg-med-shakshuka-feta"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-med-pan-con-tomate"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-med-white-bean-dip-celery"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-med-white-bean-dip-celery"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-med-lupini-olives-oregano"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-med-lupini-olives-oregano"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-med-pan-con-tomate"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-med-eggs-zaatar-cucumber"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "veg-med-yogurt-walnuts-figs",
+      "name": "Thick yogurt with honey, walnuts and figs",
+      "inspiredBy": "Greek yogurt with honey and walnuts, the taverna dessert that makes a fine breakfast",
+      "about": "Thick yogurt with a drizzle of honey, toasted walnuts, chewy dried figs and a little ground flax, finished with a pinch of cinnamon. It takes five minutes, and the yogurt brings **protein, calcium and B12** while the walnuts and flax add plant omega-3.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 300,
+          "swap": "dairy_protein",
+          "note": "thick"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 8
+        },
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 30,
+          "note": "stems trimmed, chopped"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan over medium heat until they smell nutty, about 3 minutes. Tip them onto a board and chop roughly.",
+        "Trim the stems off the figs and chop them small.",
+        "Spoon the yogurt into a bowl and stir in the ground flax.",
+        "Scatter over the figs and walnuts, drizzle with the honey and finish with a pinch of cinnamon."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Toast a handful of walnuts on Sunday night and keep them in a jar, so weekday mornings are just spooning and drizzling."
+    },
+    {
+      "id": "veg-med-strapatsada-toast",
+      "name": "Strapatsada, Greek tomato eggs, on toast",
+      "inspiredBy": "Greek strapatsada, the tomato and egg scramble from the islands",
+      "about": "Ripe tomatoes cooked down in olive oil until jammy, then softly scrambled with eggs and oregano and piled on toasted whole-wheat bread. **The eggs and the toast** make a proper protein breakfast, and the tomatoes bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 230,
+          "note": "coarsely grated, skins left behind"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 60
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a wide pan over medium heat and soften the onion until translucent, about 3 minutes.",
+        "Add the grated tomato with a pinch of salt and cook, stirring now and then, until the juices have cooked off and it looks thick and jammy, about 7 minutes. Put the bread in the toaster while it bubbles.",
+        "Pour the beaten eggs into the pan and stir gently for a minute or two, until they form soft, creamy curds. Take the pan off the heat while the eggs still look a little glossy.",
+        "Stir in the oregano and Aleppo pepper, spoon over the toast and finish with black pepper."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Stir in a few crumbles of feta at the end if you like. That is how many Greek cooks make it."
+    },
+    {
+      "id": "veg-med-ful-egg-tomato-tahini",
+      "name": "Ful medames with a boiled egg, tomato and tahini",
+      "inspiredBy": "Levantine and Egyptian ful medames, the fava bean breakfast sold from carts across the region",
+      "about": "Warm, half-mashed fava beans with garlic, lemon and cumin, topped with a halved boiled egg, chopped tomato, parsley and a swirl of tahini, with warm pita for scooping. Fava beans bring **iron, folate and plant protein**, and the lemon helps your body absorb the iron.",
+      "ingredients": [
+        {
+          "food": "broadbeans-fava-beans-canned-solids-and-liquid-c9fcc5",
+          "g": 190,
+          "swap": "legumes",
+          "note": "with a splash of their liquid"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed to a paste"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 18
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Lower the egg into a small pot of boiling water and simmer for 9 minutes for a firm yolk. Cool it under cold running water, then peel and halve.",
+        "Meanwhile, tip the fava beans into another small pot with a few spoonfuls of their liquid, the garlic and the cumin. Warm gently, mashing about half the beans with a fork, until thick and steaming, about 5 minutes.",
+        "Take off the heat and stir in half the lemon juice, half the olive oil and the salt. Warm the pita in a dry pan or the toaster.",
+        "Spoon the ful into a shallow bowl and top with the egg, tomato and parsley. Drizzle with the tahini loosened with the rest of the lemon juice and a spoonful of water.",
+        "Finish with the rest of the olive oil and a pinch of Aleppo pepper, and serve with the warm pita."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Boil a few eggs on Sunday night, and the egg is already waiting for you."
+    },
+    {
+      "id": "veg-med-lentil-halloumi-salad",
+      "name": "Warm lentil salad with halloumi, blistered pepper and mint",
+      "inspiredBy": "Greek and Cypriot lentil salads and grilled halloumi, with Levantine pomegranate molasses",
+      "about": "Green lentils tossed warm with soft red pepper, mint, parsley and a tangy pomegranate dressing, topped with golden seared halloumi and toasted walnuts. The lentils carry the **protein and iron**, the halloumi adds more protein, and the lemon and pepper bring vitamin C to help you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 70,
+          "swap": "legumes",
+          "note": "green or brown, rinsed"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 100,
+          "note": "cut in strips"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "halloumi-cheese-ae36e5",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 20,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 8,
+          "note": "leaves, torn"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "pomegranate-molasses-008fae",
+          "g": 8
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted, chopped"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 50
+        }
+      ],
+      "steps": [
+        "Simmer the lentils in plenty of unsalted water until just tender but still holding their shape, about 20 minutes. Drain well.",
+        "While they cook, warm half the olive oil in a pan over medium-high heat and cook the pepper strips until soft and blistered at the edges, about 8 minutes.",
+        "Whisk the lemon juice, pomegranate molasses, salt and the rest of the olive oil in a bowl. Toss the warm lentils with the dressing, onion, mint and parsley.",
+        "Sear the halloumi in a dry non-stick pan until golden, about 2 minutes a side. It is salty, so there is no need for more salt.",
+        "Pile the lentils on a plate, top with the pepper, halloumi and toasted walnuts, and serve with the warm pita."
+      ],
+      "prepMin": 10,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Simmer the lentils and blister the pepper on Sunday night. Both keep 4 days in the fridge, so on Monday you only warm the lentils, sear the halloumi and toss it all together."
+    },
+    {
+      "id": "veg-med-tabbouleh-chickpeas-labneh",
+      "name": "Parsley tabbouleh with chickpeas and labneh",
+      "inspiredBy": "Lebanese tabbouleh, with chickpeas and a side of garlicky labneh, as on a mezze table",
+      "about": "A very green, lemony salad that is mostly parsley and mint with a little bulgur and tomato, as it is made in Lebanon. Chickpeas and a scoop of garlicky labneh on the side make it a meal, and the herbs are a big hit of **vitamin K and C**.",
+      "ingredients": [
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "fine or medium"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 60,
+          "note": "leaves and tender stems, very finely chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 12,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "small dice"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 20,
+          "note": "finely chopped"
+        },
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 28
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Put the bulgur in a bowl, cover with just-boiled water by about a centimetre, cover and leave until chewy, about 15 minutes. Drain well and press out the extra water.",
+        "Wash and dry the parsley and mint very thoroughly, then chop them as fine as you can. Dry herbs keep the salad from going soggy.",
+        "Stir the grated garlic and a squeeze of the lemon juice into the labneh.",
+        "Toss the bulgur with the herbs, tomato, onion and chickpeas. Dress with the rest of the lemon juice, the olive oil and salt, and taste for lemon.",
+        "Spoon the tabbouleh onto a plate with the garlicky labneh alongside, as on a mezze table, and finish with a pinch of sumac."
+      ],
+      "prepMin": 20,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Dress it just before you eat. It is at its best the same day."
+    },
+    {
+      "id": "veg-med-fasolakia-cannellini",
+      "name": "Fasolakia, Greek green beans and potatoes braised with white beans",
+      "inspiredBy": "Greek fasolakia lathera, the olive oil braise of green beans, potato and tomato, with white beans added for protein",
+      "about": "Green beans, potato and carrot braised until silky in tomato and olive oil, with white beans stirred in so it works as a main course. It is **even better the next day**, and the beans bring protein, iron and folate while the lemon and tomato help you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 250,
+          "note": "trimmed"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 100,
+          "note": "cut in chunks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "sliced in rounds"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 150
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cannellini-beans-canned-sodium-added-drained-and-rinsed-54b75c",
+          "g": 290,
+          "swap": "legumes"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a wide, deep pan over medium heat. Soften the onion with a pinch of salt until golden at the edges, about 8 minutes, adding the garlic for the last minute.",
+        "Add the potatoes, carrots and green beans and turn them in the oil for 2 minutes.",
+        "Stir in the crushed tomatoes and oregano, then add enough water to come about halfway up the vegetables. Bring to a simmer, cover and cook gently until the beans are very tender and the potatoes are soft, about 35 minutes, stirring once or twice.",
+        "Add the cannellini and cook uncovered for 5 minutes, until the sauce is glossy and the oil has pooled on top.",
+        "Stir in the dill, parsley and lemon juice, and taste for salt. Serve warm, not piping hot, which is how it is eaten in Greece.",
+        "Pack the second portion for tomorrow's lunch. It reheats well and tastes even better."
+      ],
+      "prepMin": 15,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Long, slow cooking is the point here, so this is a good pot to leave simmering while you do something else."
+    },
+    {
+      "id": "veg-med-zucchini-frittata",
+      "name": "Zucchini, mushroom and feta frittata with a tomato salad",
+      "inspiredBy": "Italian frittata di zucchine, with feta and mint in the Greek way",
+      "about": "A thick, golden frittata of soft zucchini, mushrooms, mint and parsley, with crumbled feta, served with ripe tomatoes and olives. Eggs bring **protein, choline and B12**, and it is just as good cold. The second half makes tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 150,
+          "note": "coarsely grated"
+        },
+        {
+          "food": "mushroom-common-vitamin-d-enhanced-raw-0abbc8",
+          "g": 100,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "feta-cheese-light-564a33",
+          "g": 55,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "sliced, for the side"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 15,
+          "note": "for the side"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 30
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the broiler to high. Toss the grated zucchini with a pinch of salt, leave for 10 minutes, then squeeze out as much water as you can in a clean tea towel.",
+        "Warm the olive oil in a 20 cm ovenproof frying pan over medium heat. Cook the onion and mushrooms until the mushrooms are golden, about 7 minutes, then add the garlic and zucchini and cook until the zucchini is tender and the pan is dry, about 7 minutes.",
+        "Beat the eggs with the feta, mint, parsley and pepper. Pour them over the vegetables, stir once, and cook over low heat until the edges are set and the middle is still a little wobbly, about 8 minutes.",
+        "Slide the pan under the broiler for 2 to 3 minutes, until the top is set and golden. Let it rest for 5 minutes, then slide it out and cut into wedges.",
+        "Dress the sliced tomatoes with oregano, a pinch of salt and the olives. Serve a wedge of frittata with the tomatoes and the bread.",
+        "Wrap the second portion for tomorrow's lunch. Cold frittata is excellent."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "No ovenproof pan? Cover the pan with a lid for the last few minutes on the stove instead of using the broiler."
+    },
+    {
+      "id": "veg-med-baked-falafel-tahini-plate",
+      "name": "Baked falafel with tahini sauce, carrot and cucumber salad and pita",
+      "inspiredBy": "Levantine falafel, baked on a hot tray instead of deep-fried",
+      "about": "Herby chickpea patties, crisp outside and green inside, baked with a little olive oil and served with lemony tahini, a crunchy carrot and cucumber salad and warm pita. Dried chickpeas, sesame and parsley bring **protein, iron, calcium and folate**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-dry-1b10f2",
+          "g": 95,
+          "swap": "legumes",
+          "note": "soaked overnight, drained"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 35,
+          "note": "leaves and tender stems"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 25,
+          "note": "roughly chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.2
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1,
+          "note": "ground"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "as a binder"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 12
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "coarsely grated"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "The night before, soak the chickpeas in plenty of cold water. They will roughly double in size. Drain well and pat dry. Do not cook them, as raw soaked chickpeas are what make falafel crisp.",
+        "Heat the oven to 220°C (425°F) and slide a baking tray in to heat up.",
+        "Pulse the chickpeas, onion, most of the garlic, most of the parsley, cumin, coriander, ground flax and salt in a food processor until coarse and crumbly, like couscous. It should hold together when you squeeze it. Shape into small patties and chill for 15 minutes.",
+        "Brush the hot tray with some of the olive oil, lay on the patties and brush the tops. Bake until deep golden and crisp, about 25 minutes, flipping halfway.",
+        "Whisk the tahini with the lemon juice, the last of the garlic, a pinch of salt and a splash of cold water until smooth and pourable.",
+        "Toss the cucumber and carrot with the remaining parsley and olive oil and a squeeze of lemon. Warm the pita.",
+        "Serve the falafel with the salad, tahini sauce and pita. Bake all the patties, keep the second portion in the fridge and re-crisp it on a hot tray for 8 minutes tomorrow."
+      ],
+      "prepMin": 25,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "No food processor? Mash the soaked chickpeas well with a fork or potato masher and mix in finely chopped herbs."
+    },
+    {
+      "id": "veg-med-shakshuka-feta",
+      "name": "Shakshuka with red pepper, feta and warm bread",
+      "inspiredBy": "shakshuka as it is cooked from Tunisia to the Levant, with feta in the Greek and Israeli way",
+      "about": "Eggs poached right in a spiced sauce of tomato and red pepper, with crumbled feta on top and bread for mopping. The **eggs and feta** carry the protein, and the tomato and pepper bring plenty of vitamin C.",
+      "ingredients": [
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 220
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "feta-cheese-light-564a33",
+          "g": 60,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a wide pan over medium heat. Soften the onion and red pepper with a pinch of salt until sweet, about 10 minutes. Add the garlic, paprika, cumin and Aleppo pepper and stir for 1 minute until fragrant.",
+        "Pour in the crushed tomatoes and simmer, stirring now and then, until thick and jammy, about 12 minutes. Taste for salt.",
+        "Make a well in the sauce for each egg and crack them in. Cover and cook gently until the whites are set and the yolks are still runny, 6 to 8 minutes.",
+        "Crumble the feta over the top and scatter with the parsley.",
+        "Warm the bread and serve straight from the pan."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Cook the sauce on Sunday night and it only needs reheating and the eggs on the day."
+    },
+    {
+      "id": "veg-med-pasta-e-fagioli",
+      "name": "Pasta e fagioli with rosemary, carrot and celery",
+      "inspiredBy": "Italian pasta e fagioli, the thick bean and pasta soup of Tuscany and the south, with a few mushrooms in the soffritto",
+      "about": "A thick, rosemary-scented soup of white beans and small whole-wheat pasta on a classic onion, carrot and celery base with a few mushrooms for depth, with some of the beans mashed so the broth turns creamy. The beans bring **protein, iron and folate**, and the carrot adds vitamin A.",
+      "ingredients": [
+        {
+          "food": "cannellini-beans-canned-sodium-added-drained-and-rinsed-54b75c",
+          "g": 230,
+          "swap": "legumes"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "short, such as ditalini, small shells or broken spaghetti"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "celery-raw-79a241",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "mushroom-common-vitamin-d-enhanced-raw-0abbc8",
+          "g": 50,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 1
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Warm most of the olive oil in a heavy pot over medium heat. Cook the onion, carrot, celery and mushrooms with a pinch of salt until soft and sweet, about 10 minutes. Add the garlic, rosemary and Aleppo pepper for the last minute.",
+        "Stir in the beans and enough water to cover them by about 2 cm. Simmer for 10 minutes.",
+        "Mash about a third of the beans against the side of the pot with the back of a spoon, so the broth turns thick and creamy.",
+        "Stir in the pasta, adding a splash of water if it gets too thick, and simmer until the pasta is tender, about 10 minutes. Stir often, as pasta likes to stick.",
+        "Turn off the heat and rest for 5 minutes. Ladle into bowls, drizzle with the rest of the olive oil and finish with black pepper.",
+        "Pack the second portion for tomorrow's lunch. The pasta soaks up broth overnight, so loosen it with a splash of water when you reheat."
+      ],
+      "prepMin": 10,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Cook the pasta separately if you want the leftovers to keep their bite."
+    },
+    {
+      "id": "veg-med-spanakopita-pie",
+      "name": "Spanakopita-style spinach, mushroom and feta pie",
+      "inspiredBy": "Greek spanakopita and manitaropita, the spinach and mushroom pies made in every village, with a quick ruffled phyllo top",
+      "about": "A crisp, ruffled phyllo top over a filling of spinach, mushrooms, feta, eggs and lots of dill, cut into squares and served with tomatoes and oregano. Spinach, feta and egg bring **protein, calcium and vitamin A**, and the mushrooms add B vitamins. It is a weekend project, and the second half is Sunday's lunch.",
+      "ingredients": [
+        {
+          "food": "khatfa-phyllo-or-filo-pastry-sheets-8a18c4",
+          "g": 50,
+          "note": "thawed overnight in the fridge"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 250,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "mushroom-common-vitamin-d-enhanced-raw-0abbc8",
+          "g": 80,
+          "note": "finely chopped"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60,
+          "note": "finely chopped"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "feta-cheese-light-564a33",
+          "g": 70,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 14,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "nutmeg-ground-15c547",
+          "g": 0.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "sliced, for the side"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190°C (375°F) and brush a 20 cm square baking dish with olive oil. Keep the phyllo under a damp tea towel so it does not dry out.",
+        "Wilt the spinach in a large pot over medium heat in batches, then tip it into a colander. When cool enough to handle, squeeze out as much water as you can with your hands, then chop. This keeps the filling from going watery.",
+        "Cook the mushrooms and onion in a spoonful of the olive oil until the mushrooms are golden and the liquid has cooked off, about 10 minutes.",
+        "Mix the spinach, mushrooms, onion, feta, eggs, dill, parsley, lemon juice, nutmeg and pepper. Taste it: it should be well seasoned, because the phyllo is mild.",
+        "Spread the filling in the dish. Brush a sheet of phyllo lightly with oil, scrunch it up loosely like a ruffled cloth and set it on the filling. Repeat until the top is covered, tearing the sheets if you need to, then brush the ruffles with the last of the oil.",
+        "Bake until the top is deep golden and crisp, about 35 minutes. Rest for 10 minutes, then cut into squares.",
+        "Serve with sliced tomatoes dressed with a little oil and oregano. Cover the other half and keep it for tomorrow's lunch. Re-crisp in a 180°C (350°F) oven for 10 minutes."
+      ],
+      "prepMin": 40,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers"
+      ],
+      "tip": "Frozen chopped spinach works too: thaw it and squeeze it very dry."
+    },
+    {
+      "id": "veg-med-lentejas-chard-sherry",
+      "name": "Lentejas with chard, smoked paprika and sherry vinegar",
+      "inspiredBy": "Spanish lentejas estofadas, the everyday lentil stew, with chard",
+      "about": "A smoky Spanish lentil stew with carrot, potato and chard, brightened at the end with a splash of sherry vinegar. The lentils bring **protein, iron and folate**, and the chard and carrot add vitamins A and K.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 145,
+          "swap": "legumes",
+          "note": "brown or green, rinsed"
+        },
+        {
+          "food": "swiss-chard-raw-f646e5",
+          "g": 150,
+          "swap": "leafy_greens",
+          "note": "stems sliced, leaves chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 60,
+          "note": "cut in chunks"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 3
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "sherry-vinegar-af00be",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a heavy pot over medium heat and soften the onion with a pinch of salt, about 8 minutes. Add the carrot, garlic and chard stems and cook for 3 minutes. Take the pot off the heat and stir in the smoked paprika for a few seconds, so it blooms in the oil without scorching.",
+        "Straight away, stir in the lentils, potatoes and bay leaf, and add enough water to cover by about 3 cm. Bring to a simmer and cook gently, partly covered, until the lentils are tender and the potatoes are soft, about 25 minutes. Add a splash of water if it gets too thick.",
+        "Stir in the chard leaves and cook until wilted, about 4 minutes.",
+        "Take the pot off the heat, stir in the sherry vinegar and taste for salt.",
+        "Ladle into a bowl and serve."
+      ],
+      "prepMin": 10,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "freezer-friendly"
+      ],
+      "tip": "Make a double batch and freeze a portion for a lazy night."
+    },
+    {
+      "id": "veg-med-cucumber-yogurt-walnuts",
+      "name": "Cucumber yogurt with mint and walnuts",
+      "inspiredBy": "Greek tzatziki and Levantine khiyar bi laban, with walnuts as in the Balkans",
+      "about": "Thick yogurt with grated cucumber, garlic, mint and a few walnuts, eaten with a spoon or with cucumber sticks. It is **cool and creamy**, with plenty of protein, calcium and a little plant omega-3.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "half grated, half cut in sticks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1.5,
+          "note": "grated"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Squeeze the grated cucumber dry and stir it into the yogurt with the garlic, mint and salt. Spoon into a bowl, top with the walnuts and olive oil, and eat with the cucumber sticks."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "veg-med-figs-walnuts",
+      "name": "Dried figs and toasted walnuts",
+      "inspiredBy": "Greek and Italian snacking, a handful of nuts and dried fruit",
+      "about": "Chewy dried figs with warm toasted walnuts. The walnuts bring **plant omega-3** and the figs add fibre and a little calcium.",
+      "ingredients": [
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 40
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan for 3 minutes until fragrant and eat them with the figs."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "veg-med-lupini-lemon-parsley",
+      "name": "Lupini beans with lemon and parsley",
+      "inspiredBy": "Italian and Egyptian lupini, the salty bar snack",
+      "about": "Tender brined lupini beans tossed with lemon, olive oil and parsley. Lupini are one of the most protein-rich beans there are, so this snack brings **protein and fibre** with very few calories.",
+      "ingredients": [
+        {
+          "food": "lupin-boiled-748dba",
+          "g": 120,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toss the lupini with the lemon juice, olive oil, parsley and a pinch of Aleppo pepper. Squeeze each bean out of its skin with your teeth, as you would an edamame."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Rinse the very salty brine well."
+    },
+    {
+      "id": "veg-med-pear-walnuts",
+      "name": "Pear with toasted walnuts",
+      "inspiredBy": "Italian and Greek fruit and nut plates",
+      "about": "A ripe pear with warm toasted walnuts. The walnuts bring **plant omega-3** and a good crunch against the juicy fruit.",
+      "ingredients": [
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 170
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan for 3 minutes. Slice the pear and eat it with the walnuts."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "veg-med-labneh-cucumber-olives",
+      "name": "Labneh with cucumber, olives and za'atar",
+      "inspiredBy": "a Levantine breakfast spread, served as a snack",
+      "about": "Thick, tangy labneh swirled with olive oil and za'atar, with cucumber and Kalamata olives. Labneh is strained yogurt, so you get **protein and calcium** in a few spoonfuls.",
+      "ingredients": [
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Spread the labneh on a small plate, make a shallow well and drizzle with the olive oil. Sprinkle with za'atar and serve with the cucumber and olives."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "veg-med-white-bean-dip-celery",
+      "name": "White bean dip with celery",
+      "inspiredBy": "Italian and Spanish white bean spreads",
+      "about": "A creamy, garlicky white bean dip with lemon and olive oil, scooped up with crunchy celery. The beans bring **protein, iron and fibre**.",
+      "ingredients": [
+        {
+          "food": "cannellini-beans-canned-sodium-added-drained-and-rinsed-54b75c",
+          "g": 100,
+          "swap": "legumes"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "celery-raw-79a241",
+          "g": 100,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Mash or blitz the beans with the garlic, lemon juice, most of the olive oil, rosemary and salt until creamy, adding a spoonful of water if it is stiff. Spoon into a bowl, drizzle with the rest of the oil and serve with the celery."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "veg-med-dukkah-olive-oil-pita",
+      "name": "Dukkah, olive oil and warm pita",
+      "inspiredBy": "Egyptian dukkah, dipped in olive oil with bread",
+      "about": "Warm pita torn into pieces, dipped first in olive oil and then in dukkah, a crunchy Egyptian mix of nuts, seeds and spices. It is a **savoury, crunchy** snack with a little protein.",
+      "ingredients": [
+        {
+          "food": "dukkah-a59af5",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 25
+        }
+      ],
+      "steps": [
+        "Warm the pita in a dry pan or toaster and tear it into pieces. Pour the olive oil into a small dish, spoon the dukkah into another, and dip the bread in the oil and then the dukkah."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "No dukkah? Toast sesame, coriander seeds and chopped nuts with salt."
+    },
+    {
+      "id": "veg-med-pan-con-tomate",
+      "name": "Pan con tomate",
+      "inspiredBy": "Catalan pa amb tomàquet",
+      "about": "Toasted whole-wheat bread rubbed with garlic and ripe tomato, with a drizzle of olive oil and salt. It is **simple and crunchy**, with the tomato bringing vitamin C.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 50
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "very ripe, halved"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "a clove, halved"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the bread until crisp. Rub with the cut garlic, then rub a tomato half over the bread so the pulp soaks in. Drizzle with olive oil and sprinkle with salt."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "veg-med-hummus-carrot",
+      "name": "Hummus with carrot sticks",
+      "inspiredBy": "Levantine hummus",
+      "about": "Creamy lemony hummus with crunchy carrot sticks to dip. The chickpeas and tahini bring **protein, iron and calcium**, and the carrots add vitamin A.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-drained-solids-b576a9",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Blitz the chickpeas with the tahini, lemon juice, garlic, salt and a few spoonfuls of cold water until silky. Spoon into a bowl, drizzle with olive oil, sprinkle with cumin and serve with the carrot sticks."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "A single serving is hard to blitz, so make a double batch and keep the rest in the fridge for up to 4 days."
+    },
+    {
+      "id": "veg-med-garlic-mushrooms-lemon",
+      "name": "Garlicky mushrooms with parsley and lemon",
+      "inspiredBy": "Spanish champiñones al ajillo",
+      "about": "Mushrooms pan-cooked until golden with lots of garlic, finished with parsley and a squeeze of lemon, as in a tapas bar. Mushrooms bring **B vitamins**, and UV-treated ones (the pack says vitamin D) add vitamin D too.",
+      "ingredients": [
+        {
+          "food": "mushroom-common-vitamin-d-enhanced-raw-0abbc8",
+          "g": 150,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 20,
+          "note": "toasted, to serve"
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a wide pan over medium-high heat. Cook the mushrooms without stirring too much until golden and the liquid has cooked off, about 7 minutes. Add the garlic for the last minute.",
+        "Finish with the parsley, lemon juice and salt and serve on the toast."
+      ],
+      "prepMin": 8,
+      "cookMin": 7,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "veg-med-lupini-olives-oregano",
+      "name": "Lupini beans with olives and oregano",
+      "inspiredBy": "Italian and Egyptian lupini, the salty bar snack",
+      "about": "Tender brined lupini beans with Kalamata olives, olive oil and a pinch of oregano. Lupini are one of the most protein-rich beans there are, so this snack brings **protein and fibre** with very few calories.",
+      "ingredients": [
+        {
+          "food": "lupin-boiled-748dba",
+          "g": 120,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.3
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Toss the lupini with the olives, olive oil, lemon juice and oregano. Squeeze each bean out of its skin with your teeth."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Rinse the very salty brine well."
+    },
+    {
+      "id": "veg-med-eggs-zaatar-cucumber",
+      "name": "Boiled eggs with za'atar and cucumber",
+      "inspiredBy": "a Levantine breakfast plate, served as a snack",
+      "about": "Two boiled eggs sprinkled with za'atar and a little salt, with cucumber on the side. It is **simple protein and choline** to tide you over.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 1.5
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Lower the eggs into boiling water and simmer for 9 minutes, then cool under cold running water and peel. Halve them, sprinkle with za'atar and salt, and serve with the cucumber."
+      ],
+      "prepMin": 3,
+      "cookMin": 9,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Boil a few extra eggs on Sunday for the week."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-med-strapatsada-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-med-lentil-halloumi-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-med-fasolakia-cannellini"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-med-cucumber-yogurt-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-med-lupini-lemon-parsley"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-med-yogurt-walnuts-figs"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-med-fasolakia-cannellini",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-med-zucchini-frittata"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-med-pear-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-med-hummus-carrot"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-med-ful-egg-tomato-tahini"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-med-zucchini-frittata",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-med-baked-falafel-tahini-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-med-garlic-mushrooms-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-med-lupini-lemon-parsley"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-med-yogurt-walnuts-figs"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-med-baked-falafel-tahini-plate",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-med-shakshuka-feta"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-med-garlic-mushrooms-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-med-pear-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-med-strapatsada-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-med-tabbouleh-chickpeas-labneh"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-med-pasta-e-fagioli"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-med-cucumber-yogurt-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-med-labneh-cucumber-olives"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-med-yogurt-walnuts-figs"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-med-pasta-e-fagioli",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-med-spanakopita-pie"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-med-hummus-carrot"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-med-dukkah-olive-oil-pita"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-med-ful-egg-tomato-tahini"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-med-spanakopita-pie",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-med-lentejas-chard-sherry"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-med-figs-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-med-labneh-cucumber-olives"
+        }
+      ]
+    }
+  ]
+}
