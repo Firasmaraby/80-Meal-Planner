@@ -36,5 +36,5 @@ Yogurt with honey, figs and toasted almonds; orange and toasted almonds; tzatzik
 - Raw buying weights: chicken, potatoes, salmon, shrimp, barley and lentils use raw or dry entries. Canned beans, chickpeas, fava beans, lentils, sardines and anchovies use canned entries.
 - Eggs are whole eggs (50 g each).
 - Mushrooms are only in two Spanish tapa snacks (for niacin), which work as a small savoury snack or a starter, not in the fakes or espinacas.
-- The hummus batch is a whole can of chickpeas (about 240 g drained) with 1 tbsp tahini, made Sunday night. The meze plate and the Thursday snack use portions of it.
+- The hummus batch is a whole can of no-salt-added chickpeas with 1 tbsp tahini, made Sunday night. The meze plate and the Thursday snack use portions of it.
 - Pantry is 45 groceries, so bay leaf, cinnamon, dill, capers and carrot were dropped.
