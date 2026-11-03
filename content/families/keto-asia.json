@@ -1,0 +1,1715 @@
+{
+  "id": "keto-asia",
+  "name": "Keto Asian",
+  "style": "keto",
+  "cuisine": "Asian",
+  "regions": [
+    "Japan",
+    "Korea",
+    "Thailand",
+    "China"
+  ],
+  "summary": "A week of grilled fish, stir-fries, a green curry, a Korean lettuce-wrap spread and a hot pot, with no rice, noodles or sugar. Net carbs stay at 40 g or less every day, and the fat comes from fish, avocado, nuts, sesame and a little coconut.",
+  "howItWorks": "**Where the carbs went.** There is no rice, noodle or sugar here. Cauliflower rice stands in once, lettuce wraps the beef, and with no sugar the flavour comes from garlic, chili, sesame and fermented pastes. Greens, mushrooms and tofu fill the plate, so net carbs stay under the keto ceiling every day.\n\n**Fat from fish, nuts and avocado.** Salmon, mackerel, avocado, walnuts, pumpkin seeds and sesame carry the calories. Canola does the frying, with perilla or sesame oil to finish. Coconut is light and shows up only in the green curry and the tom yum, so saturated fat stays under 10%.\n\n**Fatty fish three times.** Salmon on Tuesday and Saturday mornings and mackerel on Thursday night bring **omega-3 and vitamin D**, never on back-to-back days. Sea bass in Friday's tom yum and Sunday's hot pot is the lean fish. Perilla oil, walnuts and fish carry the omega-3 that balances the sesame.\n\n**Greens carry the vitamins.** Spinach, bok choy, gai lan or lettuce is at nearly every meal for **folate, vitamin C, vitamin K and potassium**. Calcium-set tofu, gai lan and bok choy do the calcium work without dairy, pumpkin seeds add magnesium, pork brings thiamin, and a few clams in Monday's stew add a big hit of B12.\n\n**Cook once, eat twice.** The curry, mapo tofu, ginger chicken, bulgogi wraps and krapow each make two portions, so the next day's lunch is done. Sunday's hot pot is a one-pot finish. Doubanjiang, gochujang and doenjang usually contain wheat, so anyone avoiding gluten should look for gluten-free versions, and check the miso and kimchi labels too.",
+  "signature": [
+    "keto-asia-korean-bbq-beef-lettuce-wrap-spread",
+    "keto-asia-thai-green-curry-chicken-bok-choy",
+    "keto-asia-saba-shioyaki-daikon-walnut-spinach",
+    "keto-asia-mapo-style-tofu-pork-spinach"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "keto-asia-pumpkin-seeds-lime-chili-salt"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "keto-asia-walnut-pumpkin-seed-chili-mix"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "keto-asia-avocado-kimchi-sesame"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "keto-asia-avocado-kimchi-sesame"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "keto-asia-tofu-scramble-mushroom-bok-choy",
+      "name": "Savoury tofu scramble with mushrooms, greens and kimchi",
+      "inspiredBy": "Japanese iri-dofu and Chinese home-style scrambles, with no egg",
+      "about": "Crumbled calcium-set tofu browned until golden with king oyster mushrooms, ginger and scallion, then folded with bok choy and spinach, with a spoon of kimchi on the side. A finish of perilla oil and crumbled nori gives it a Korean note, and the tofu and greens bring **calcium and plant protein** before you leave the house.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 90,
+          "note": "patted dry and crumbled"
+        },
+        {
+          "food": "king-oyster-mushroom-eringi-raw-6127f7",
+          "g": 35,
+          "note": "sliced"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 90,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 8,
+          "note": "sliced, whites and greens separated"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1.5,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "perilla-egoma-oil-7638e7",
+          "g": 8,
+          "swap": "healthy_oils",
+          "note": "off the heat, or sesame oil"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 4
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "nori-pyropia-laver-dried-hoshinori-ab6541",
+          "g": 3,
+          "note": "toasted, crumbled"
+        },
+        {
+          "food": "kimchi-1371a8",
+          "g": 15,
+          "note": "on the side"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the canola oil in a wide non-stick pan over medium-high heat. Add the mushrooms and leave them alone for 3 minutes, until they are browned on one side.",
+        "Add the scallion whites, ginger and garlic and stir for 30 seconds, until it smells good.",
+        "Crumble in the tofu with your hands, add the turmeric and cook for 5 minutes, stirring now and then, until the tofu is golden at the edges. Do not add the greens until it is.",
+        "Add the bok choy and the tamari and toss for 2 minutes. Fold in the spinach and take the pan off the heat as soon as it wilts.",
+        "Drizzle with the perilla oil and finish with the white pepper, scallion greens, sesame seeds and crumbled nori. Serve with the kimchi."
+      ],
+      "prepMin": 5,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Crumble the tofu the night before and keep it in the fridge. In the morning it is a 10 minute breakfast."
+    },
+    {
+      "id": "keto-asia-salmon-miso-soup-spinach-ohitashi",
+      "name": "Japanese-style grilled salmon with miso soup and sesame spinach",
+      "inspiredBy": "the Japanese asa-gohan breakfast of grilled fish, miso soup and ohitashi, with no rice",
+      "about": "A Japanese breakfast tray: salmon grilled until the skin crackles, a bowl of miso soup with tofu and wakame, and spinach dressed with sesame and tamari. Grated daikon with a squeeze of lime cuts through the richness, and the salmon is your **omega-3 and vitamin D** for the day.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 135,
+          "swap": "fatty_fish",
+          "note": "skin on"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 40,
+          "note": "cubed"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 6
+        },
+        {
+          "food": "wakame-dried-247e05",
+          "g": 0.8
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 2
+        },
+        {
+          "food": "perilla-egoma-oil-7638e7",
+          "g": 6,
+          "swap": "healthy_oils",
+          "note": "or sesame oil"
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 40,
+          "note": "finely grated"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils",
+          "note": "to rub on the skin"
+        },
+        {
+          "food": "nori-pyropia-laver-dried-hoshinori-ab6541",
+          "g": 2,
+          "note": "toasted, crumbled"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the grill (broiler) to high. Pat the salmon dry, rub the skin with the canola oil and a pinch of salt and grill skin side up for 6 to 8 minutes, until the skin is crisp and the flesh flakes.",
+        "While it cooks, bring a small pot of water to a boil. Drop in the spinach for 40 seconds, then lift it into cold water, squeeze it dry and cut it into short lengths.",
+        "Toss the spinach with the tamari, perilla oil, sesame seeds and crumbled nori.",
+        "Simmer a small bowl of fresh water (about 150 ml) with the wakame and tofu for 2 minutes. Take it off the heat, whisk the miso in through a sieve or with a spoon and add the scallion. Do not boil it after the miso goes in.",
+        "Serve the salmon with the grated daikon and lime, the spinach and the soup."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Short on time? Grill the salmon the night before and eat it cold or warmed for 30 seconds. Miso soup takes 5 minutes."
+    },
+    {
+      "id": "keto-asia-gyeran-jjim-spinach-namul",
+      "name": "Korean steamed egg (gyeran-jjim) with spinach namul and kimchi",
+      "inspiredBy": "Korean gyeran-jjim, made with water rather than anchovy stock, and served with spinach namul, kimchi and avocado",
+      "about": "A silky, custardy steamed egg with shiitake and scallion, served the Korean way with garlicky sesame spinach and plenty of kimchi, plus creamy avocado alongside. It is gentle and savoury, and the eggs and spinach together carry **choline and folate**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "perilla-egoma-oil-7638e7",
+          "g": 10,
+          "swap": "healthy_oils",
+          "note": "or sesame oil"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 130,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1.5,
+          "note": "grated"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 3
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "nori-pyropia-laver-dried-hoshinori-ab6541",
+          "g": 2,
+          "note": "toasted, crumbled"
+        },
+        {
+          "food": "kimchi-1371a8",
+          "g": 30
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 80,
+          "note": "ripe, sliced, on the side"
+        }
+      ],
+      "steps": [
+        "Blanch the spinach in a pot of boiling water for 40 seconds, cool it under cold water and squeeze it dry. Chop it roughly and toss with the garlic, half the tamari, half the perilla oil and half the sesame seeds.",
+        "Beat the eggs with a little more water than the volume of the eggs, about 60 ml for each egg, until completely smooth. Stir in the shiitake and most of the scallion.",
+        "Pour the egg into a small heatproof bowl, then set it in a pot with 3 cm of simmering water. Cover with a lid slightly ajar and steam on low for 12 to 14 minutes (a few minutes more for a big bowl), until it is set and wobbles like custard.",
+        "Drizzle the egg with the rest of the tamari and the perilla oil, and scatter with the rest of the scallion, the sesame seeds and the crumbled nori.",
+        "Serve with the spinach, kimchi and sliced avocado."
+      ],
+      "prepMin": 8,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Weekday shortcut: dress the spinach the night before, and cook the egg in the microwave instead, covered, on medium power for 3 to 4 minutes, checking every minute. Low heat either way, because a hard boil makes it rubbery."
+    },
+    {
+      "id": "keto-asia-sundubu-clam-tofu-stew",
+      "name": "Korean tofu and clam stew (sundubu-jjigae style)",
+      "inspiredBy": "Korean sundubu-jjigae, usually made with uncurdled soft tofu",
+      "about": "A bubbling red stew of tofu, sweet clams, bok choy and a soft egg cracked in at the end, built on gochugaru bloomed in oil, garlic and a little doenjang. It is warming and spicy, and the clams are a huge source of **vitamin B12 and iron**.",
+      "ingredients": [
+        {
+          "food": "clam-raw-ac0496",
+          "g": 45,
+          "swap": "lean_protein",
+          "note": "shucked, fresh or frozen"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 55,
+          "note": "in large chunks"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "cut in wide strips"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "whites and greens separated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "doenjang-korean-soybean-paste-d8757f",
+          "g": 4
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 2
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 3
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the canola oil in a small pot (or a Korean earthenware ttukbaegi, if you have one) over medium heat. Add the gochugaru, garlic and scallion whites and stir for 30 seconds, until the oil turns red and smells toasty. Do not let the chili scorch.",
+        "Add the clams and the doenjang and fry for 30 seconds, until the clams smell sweet.",
+        "Pour in 300 ml of water and the fish sauce and bring to a boil. Add the bok choy and simmer for 3 minutes, until it softens.",
+        "Slide in the tofu in big chunks and simmer gently for 3 to 4 minutes, until the tofu is hot through.",
+        "Crack the egg (or eggs) into the middle, put a lid on and cook for 1 to 2 minutes, until the whites are set and the yolks still soft.",
+        "Take it off the heat, drizzle with the sesame oil and finish with the white pepper and scallion greens. Eat it while it is still bubbling."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "spicy"
+      ],
+      "tip": "At a Korean grocery, buy the tube of sundubu (uncurdled tofu) and spoon it in. Stir gently either way."
+    },
+    {
+      "id": "keto-asia-tom-yum-sea-bass-mushroom-soup",
+      "name": "Thai tom yum with sea bass, mushrooms and a little coconut",
+      "inspiredBy": "Thai tom yum pla nam khon, with extra vegetables and tofu",
+      "about": "Hot, sour and fragrant with lemongrass, ginger, makrut lime and plenty of chili, made creamy with just a splash of light coconut milk. The sea bass is quick and tender, the mushrooms soak up the broth, and the lime and bok choy keep this one high in **vitamin C**.",
+      "ingredients": [
+        {
+          "food": "sea-bass-raw-b59bda",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "skinless fillet, cut in 3 cm chunks"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-grass-citronella-raw-517537",
+          "g": 10,
+          "note": "bruised and cut in 3 pieces"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "sliced, in place of galangal"
+        },
+        {
+          "food": "makrut-lime-leaves-e7ff35",
+          "g": 1.5
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 8,
+          "note": "sliced"
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 5
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 14
+        },
+        {
+          "food": "coconut-milk-reduced-fat-93cbb3",
+          "g": 20
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 14,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 70,
+          "note": "cubed"
+        },
+        {
+          "food": "thai-basil-c5f9f2",
+          "g": 5,
+          "note": "torn"
+        }
+      ],
+      "steps": [
+        "Warm the canola oil in a pot and cook the lemongrass, ginger, makrut lime leaf and half the chili for 2 minutes, until it smells like a Thai kitchen.",
+        "Add 400 ml of water and simmer the aromatics for 4 minutes, so the broth tastes of them. Add the mushrooms and simmer for 5 minutes more.",
+        "Add the tofu and bok choy and simmer for 2 minutes. Stir in the coconut milk.",
+        "Lay in the sea bass and poach it gently for 3 to 4 minutes, until it turns opaque and flakes.",
+        "Turn off the heat. Stir in the fish sauce and lime juice, taste and add more lime if it needs more sourness.",
+        "Ladle into a bowl and top with the basil and the rest of the chili. Fish out the lemongrass, ginger and lime leaves as you eat. They are for flavour only."
+      ],
+      "prepMin": 10,
+      "cookMin": 17,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Galangal (Thai or Chinese grocers, often frozen) is the real thing here if you have it. Use it in place of the ginger. For a Friday lunch at home, make the broth (steps 1 and 2) the night before, and at noon it is 8 minutes to the table."
+    },
+    {
+      "id": "keto-asia-thai-green-curry-chicken-bok-choy",
+      "name": "Thai green curry with chicken, green beans and bok choy",
+      "inspiredBy": "Thai gaeng keow wan gai, with less coconut and more vegetables",
+      "about": "A light, fragrant green curry with tender chicken breast, crunchy green beans, bok choy and cauliflower. A little of the cauliflower is mashed back in to thicken the sauce, so it clings without much coconut. The greens carry **vitamin C and vitamin K**.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 180,
+          "swap": "lean_protein",
+          "note": "cut in bite-size pieces"
+        },
+        {
+          "food": "coconut-milk-reduced-fat-93cbb3",
+          "g": 25
+        },
+        {
+          "food": "paste-green-curry-d6374a",
+          "g": 12
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 2
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 40,
+          "note": "cut in 4 cm lengths"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 70,
+          "note": "small florets"
+        },
+        {
+          "food": "thai-basil-c5f9f2",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 13,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "makrut-lime-leaves-e7ff35",
+          "g": 0.5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "minced"
+        }
+      ],
+      "steps": [
+        "Heat the canola oil in a wide pot or deep pan over medium heat. Add the curry paste, garlic and a spoonful of the coconut milk and fry for 1 to 2 minutes, until the oil turns green and it smells amazing.",
+        "Pour in the rest of the coconut milk, about 120 ml of water (a little more if the pot is very full) and the makrut lime leaf and bring to a simmer.",
+        "Add the cauliflower and simmer for 5 minutes, until soft. Scoop out a third of it, mash it with a fork and stir it back in to thicken the sauce.",
+        "Add the chicken and green beans and simmer for 6 to 8 minutes, until the chicken is just cooked and the beans are tender but still crisp.",
+        "Stir in the bok choy for 2 minutes, then take it off the heat. Season with the fish sauce and lime juice, and tear in most of the Thai basil.",
+        "Serve in bowls topped with the rest of the basil. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Reheat gently with a splash of water, because chicken breast tightens overnight. Want it hotter? Add a sliced red chili with the curry paste."
+    },
+    {
+      "id": "keto-asia-mapo-style-tofu-pork-spinach",
+      "name": "Mapo-style tofu with minced pork, mushrooms and garlicky spinach",
+      "inspiredBy": "Sichuan mapo doufu, with a little pork and shiitake and less oil",
+      "about": "Silky tofu in a numbing, chili-spiked sauce built on doubanjiang, garlic and Sichuan pepper, with a little minced pork and shiitake for the savoury depth. It is the kind of weeknight dish that is even better the next day, and the tofu and spinach bring **calcium, iron and folate**.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 120,
+          "note": "cut in 2 cm cubes"
+        },
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "finely chopped"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "doubanjiang-chili-bean-paste-ba0ec4",
+          "g": 7
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 2
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced, a little kept back for the spinach"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "sliced"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 2
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sichuan-peppercorn-bb776d",
+          "g": 0.8
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "for the side"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Bring a pot of water to a simmer with a pinch of salt and slip in the tofu cubes for 3 minutes, to firm them up. Lift out and drain.",
+        "Toast the Sichuan peppercorns in a dry pan until fragrant, about 1 minute, then crush them.",
+        "Heat two thirds of the canola oil in a wide pan over medium-high heat. Brown the pork and mushrooms for 5 minutes, until deeply golden, then add the garlic, ginger, doubanjiang and gochugaru and stir for 1 minute.",
+        "Add 120 ml of water and the tamari. Slide in the tofu and simmer gently, uncovered, for 6 minutes, pushing it around rather than stirring so it stays whole and the sauce clings.",
+        "Cook the spinach in a separate pan with the rest of the canola oil, the garlic you kept back and the rice vinegar for 2 minutes, until just wilted.",
+        "Finish the tofu with the scallions, the sesame oil and the crushed Sichuan pepper, which should go in last because the numbing tingle is the point. Serve with the spinach. Keep the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 12,
+      "cookMin": 20,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Doubanjiang (fermented chili bean paste) is at any Asian grocery and keeps for months in the fridge. It usually contains wheat, so anyone avoiding gluten should look for a gluten-free version."
+    },
+    {
+      "id": "keto-asia-ginger-scallion-chicken-gai-lan",
+      "name": "Ginger and scallion chicken with gai lan and walnuts",
+      "inspiredBy": "Cantonese ginger and scallion stir-fries, and the walnuts of Cantonese walnut chicken, with gai lan and no oyster sauce",
+      "about": "A Cantonese-style stir-fry: bright, snappy gai lan (Chinese broccoli), sliced chicken breast, shiitake and toasted walnuts in a punchy ginger and scallion sauce. It is quick, it keeps well for lunch, and the gai lan and walnuts bring **calcium, vitamin K and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "thinly sliced across the grain"
+        },
+        {
+          "food": "broccoli-chinese-raw-cc954c",
+          "g": 130,
+          "swap": "leafy_greens",
+          "note": "stems sliced, leaves left whole"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 20,
+          "note": "sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 10,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2.5,
+          "note": "sliced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 25,
+          "note": "cut in 4 cm pieces"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 5
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 4
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toss the chicken with half the tamari, a few drops of the canola oil and the white pepper and leave it for 10 minutes while you prep the rest. Toast the walnuts in a dry wok or pan for 3 minutes, until they smell nutty, then tip them out.",
+        "Heat half the canola oil in a wide pan or wok over high heat. Cook the chicken for 3 minutes, until golden and about 90% cooked, then slide it onto a plate.",
+        "Add the rest of the canola oil, then the ginger, garlic and mushrooms and stir-fry for 2 to 3 minutes.",
+        "Add the gai lan stems with a splash of water and cook for 2 minutes, then the leaves for 1 minute more, until bright green and still crisp.",
+        "Return the chicken with the walnuts, the scallion, the rest of the tamari, the rice vinegar and a splash (about 60 ml) of water. Toss for 1 minute, until the chicken is cooked through and the sauce coats everything.",
+        "Take it off the heat and drizzle with the sesame oil. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Reheat leftovers in a pan with a splash of water."
+    },
+    {
+      "id": "keto-asia-saba-shioyaki-daikon-walnut-spinach",
+      "name": "Salt-grilled mackerel (saba shioyaki) with grated daikon and walnut spinach",
+      "inspiredBy": "Japanese saba shioyaki and spinach kurumi-ae (walnut dressing), as served in home kitchens",
+      "about": "Mackerel grilled until the skin blisters, with a pile of grated daikon and a squeeze of lime, spinach in a ground walnut dressing (kurumi-ae) and golden king oyster mushrooms. It is the simplest Japanese dinner there is, and the mackerel is a big hit of **omega-3, vitamin D and B12**.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 190,
+          "swap": "fatty_fish",
+          "note": "fillets, skin on"
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 50,
+          "note": "finely grated"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 120,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "toasted and ground"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 4
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 3
+        },
+        {
+          "food": "perilla-egoma-oil-7638e7",
+          "g": 6,
+          "swap": "healthy_oils",
+          "note": "or sesame oil"
+        },
+        {
+          "food": "king-oyster-mushroom-eringi-raw-6127f7",
+          "g": 60,
+          "note": "sliced thick"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Heat the grill (broiler) to high. Pat the mackerel dry, rub the skin and flesh with the salt and let it sit for 10 minutes.",
+        "Grill the mackerel skin side up for 7 to 9 minutes, until the skin is blistered and the flesh flakes. No need to turn it.",
+        "Meanwhile, blanch the spinach in boiling water for 40 seconds, cool it under cold water and squeeze it dry.",
+        "Toast the walnuts in a dry pan for 3 minutes, then grind them in a mortar until sandy. Mix with the tamari, rice vinegar and perilla oil and toss with the spinach.",
+        "Sear the mushrooms in the canola oil in a hot pan for 4 minutes, until browned and glossy.",
+        "Serve the mackerel with the grated daikon and lime, the spinach and the mushrooms."
+      ],
+      "prepMin": 12,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "keto-asia-thai-basil-pork-cauliflower-rice",
+      "name": "Thai holy basil-style pork (pad krapow) with green beans and cauliflower rice",
+      "inspiredBy": "Thai pad krapow moo, with cauliflower rice in place of jasmine rice and no sugar",
+      "about": "Hot, garlicky minced pork tenderloin stir-fried hard with plenty of chilies, green beans and a big handful of Thai basil, spooned over dry, lightly seasoned cauliflower rice. It is the Thai street-food favourite, made at home in 30 minutes, and the pork brings **thiamin**, which keto menus often run short of.",
+      "ingredients": [
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "finely chopped or minced"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 55,
+          "note": "sliced thin"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 70,
+          "note": "grated or riced"
+        },
+        {
+          "food": "thai-basil-c5f9f2",
+          "g": 20
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 4
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 4
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 14,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        }
+      ],
+      "steps": [
+        "Pound the garlic and chilies together in a mortar or chop them to a rough paste.",
+        "Heat a third of the canola oil in a pan, add the cauliflower and cook for 6 minutes with the lime juice, until tender and dry, not wet. Keep it warm on a plate.",
+        "Wipe the pan, add the rest of the canola oil and get it very hot. Fry the garlic and chili paste for 20 seconds.",
+        "Add the pork and stir-fry for 4 to 5 minutes, breaking it up, until browned and crisp at the edges.",
+        "Add the green beans, tamari and fish sauce with 2 tablespoons of water. Cook for 3 minutes until the beans are crisp-tender.",
+        "Take the pan off the heat and fold in the Thai basil so it wilts. Finish with the scallion and serve over the cauliflower rice. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 12,
+      "cookMin": 18,
+      "servings": 2,
+      "tags": [
+        "spicy",
+        "makes-leftovers"
+      ],
+      "tip": "A fried egg on top is the classic. Add one if you have room in the day."
+    },
+    {
+      "id": "keto-asia-korean-bbq-beef-lettuce-wrap-spread",
+      "name": "Korean beef bulgogi lettuce wraps with ssamjang, grilled mushrooms and kimchi",
+      "inspiredBy": "Korean bulgogi and ssam, with no sugar or pear in the marinade",
+      "about": "Garlicky, sesame-scented beef seared hot and tucked into crisp lettuce leaves with a dab of doenjang ssamjang, grilled king oyster mushrooms and tangy kimchi. With no sugar it is savoury, not sweet, and the kimchi's acid is the contrast. A pile of greens carries **vitamin K and folate**.",
+      "ingredients": [
+        {
+          "food": "beef-top-sirloin-steak-lean-raw-a51c2c",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "sliced very thin against the grain"
+        },
+        {
+          "food": "lettuce-looseleaf-e71889",
+          "g": 70,
+          "note": "whole leaves"
+        },
+        {
+          "food": "king-oyster-mushroom-eringi-raw-6127f7",
+          "g": 60,
+          "note": "sliced lengthwise"
+        },
+        {
+          "food": "kimchi-1371a8",
+          "g": 25
+        },
+        {
+          "food": "doenjang-korean-soybean-paste-d8757f",
+          "g": 5
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 4
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5.5,
+          "note": "3 g minced for the marinade, the rest raw and minced for the ssamjang"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 8,
+          "note": "sliced"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 3
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 2
+        }
+      ],
+      "steps": [
+        "Mix the beef with the tamari, the minced garlic for the marinade, ginger, rice vinegar and all the sesame oil. Leave it for 30 minutes, or up to a day in the fridge.",
+        "Make the ssamjang by stirring together the doenjang, the raw garlic, gochugaru, half the sesame seeds and half the scallion with a splash of water.",
+        "Heat half the canola oil in a heavy pan over high heat. Sear the king oyster slices for 3 to 4 minutes, until deeply browned, and set aside.",
+        "Add the rest of the oil and cook the beef in two batches for 1 to 2 minutes each, until browned at the edges. Do not crowd the pan.",
+        "Pile the beef, mushrooms and kimchi on a platter with the lettuce and ssamjang. To eat, tuck a bit of beef, mushroom and kimchi in a leaf with a dab of ssamjang and fold it up.",
+        "Scatter the rest of the scallion and sesame seeds over the top. Keep the second portion, already cooked, for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Lunch tomorrow: reheat the beef in a hot pan for 2 minutes and eat it in fresh lettuce."
+    },
+    {
+      "id": "keto-asia-sea-bass-tofu-bok-choy-hot-pot-sesame-lime",
+      "name": "Sea bass, tofu and bok choy hot pot with sesame-lime dipping sauce",
+      "inspiredBy": "Japanese nabemono and Korean jeongol, with a lighter sesame dipping sauce",
+      "about": "A pot of ginger, shiitake and miso broth at the table, with sea bass, tofu, bok choy and spinach cooked in it a few bites at a time. A dip of ground sesame and walnut with lime, tamari and grated daikon sits alongside. It is light, warming and slow to eat, with **calcium and folate**.",
+      "ingredients": [
+        {
+          "food": "sea-bass-raw-b59bda",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "skinless fillet, cut in large chunks"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 45,
+          "note": "cut in cubes"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "halved lengthwise"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 25,
+          "note": "whole caps"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 90,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 10,
+          "note": "grated, for the dip"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 7
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "sliced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "cut in 4 cm lengths"
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 4,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 3
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "perilla-egoma-oil-7638e7",
+          "g": 12,
+          "swap": "healthy_oils",
+          "note": "or sesame oil"
+        }
+      ],
+      "steps": [
+        "Grind the sesame seeds and walnuts in a mortar until sandy. Stir in the tamari, lime juice, perilla oil and a spoon of water, then fold in the grated daikon. Spoon into a small dipping bowl.",
+        "Put about 400 ml of water in a wide pot with the ginger and shiitake and simmer for 12 minutes, until the broth smells deeply savoury.",
+        "Whisk the miso into a ladle of the broth, then stir it back into the pot. Do not let it boil hard after this.",
+        "Add the bok choy stems and tofu and simmer for 4 minutes, then the sea bass for 3 to 4 minutes, until opaque and flaking.",
+        "Add the spinach, bok choy leaves and scallion and cook for 1 minute more.",
+        "Eat straight from the pot, dipping each piece in the sesame-lime sauce, and sip the broth at the end."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "weekend-project"
+      ],
+      "tip": "In North America \"sea bass\" means different fish in different shops. Branzino, black sea bass or cod all work; Chilean sea bass is pricey and fatty."
+    },
+    {
+      "id": "keto-asia-pumpkin-seeds-gochugaru-tamari",
+      "name": "Pan-roasted pumpkin seeds with gochugaru and tamari",
+      "inspiredBy": "Korean and Japanese seasoned roasted seeds",
+      "about": "A palmful of pumpkin seeds toasted until they pop, then tossed with a little tamari and chili. They are crunchy and savoury, and one handful brings **magnesium, zinc and iron**.",
+      "ingredients": [
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 42,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 2.5
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Toast the pumpkin seeds in a dry pan over medium heat for 3 to 4 minutes, shaking the pan, until they puff and pop.",
+        "Take the pan off the heat, add the tamari and gochugaru and stir until it dries onto the seeds."
+      ],
+      "prepMin": 1,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-asia-hiyayakko-ginger-scallion-sesame",
+      "name": "Chilled tofu (hiyayakko) with ginger, scallion and perilla oil",
+      "inspiredBy": "Japanese hiyayakko, the summer cold tofu, with the Korean touch of perilla oil",
+      "about": "A block of cold, firm tofu with grated ginger, scallion, tamari and a drizzle of perilla oil. It is clean, cool and filling, and the tofu gives you **calcium**.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 100
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 6,
+          "note": "sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 4
+        },
+        {
+          "food": "perilla-egoma-oil-7638e7",
+          "g": 8,
+          "swap": "healthy_oils",
+          "note": "or sesame oil"
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 5,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Drain the tofu and pat it dry. Cut it in 4 slabs and put it on a plate.",
+        "Top with the ginger and scallion, then spoon over the tamari and perilla oil and scatter with the sesame seeds."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Keep perilla oil in the fridge, because it goes rancid fast. Sesame oil works for flavour if you cannot find it, but perilla is what brings the omega-3."
+    },
+    {
+      "id": "keto-asia-avocado-tamari-sesame-lime",
+      "name": "Avocado with tamari, sesame and lime",
+      "inspiredBy": "the Japanese way with avocado, dressed with soy sauce",
+      "about": "A ripe avocado with a splash of tamari, lime and toasted sesame seeds, eaten with a spoon. It is creamy, salty and zingy, and gives you **potassium and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "avocado-raw-c06278",
+          "g": 150,
+          "note": "ripe, 1 medium avocado"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 2.5
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 4
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 4,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Cut the avocado in half and twist out the stone.",
+        "Splash the tamari and lime into the hollow and sprinkle with the sesame seeds and gochugaru. Eat it with a spoon."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "keto-asia-five-spice-walnuts-tamari",
+      "name": "Pan-toasted five-spice walnuts with tamari",
+      "inspiredBy": "Chinese spiced and glazed walnuts, with no sugar",
+      "about": "Walnuts toasted in a dry pan and glazed with a splash of tamari and a pinch of Chinese five-spice. They are crunchy, savoury and a bit smoky, and walnuts are one of the few nuts with real **plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 32,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 2
+        },
+        {
+          "food": "chinese-five-spice-powder-c5ab99",
+          "g": 0.5
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan over medium heat for 3 to 4 minutes, shaking the pan, until they smell nutty and darken a shade.",
+        "Take the pan off the heat, add the tamari, five-spice and gochugaru and stir until the glaze dries onto the nuts. Let them cool and crisp up for a few minutes."
+      ],
+      "prepMin": 1,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Toast a jar of them on Sunday. They keep for a week."
+    },
+    {
+      "id": "keto-asia-avocado-wakame-cucumber-sunomono",
+      "name": "Avocado, wakame and cucumber sunomono",
+      "inspiredBy": "Japanese sunomono, vinegared salads, with avocado added and no sugar",
+      "about": "Cool cucumber ribbons, soft wakame and creamy avocado in a light rice vinegar dressing, a Japanese vinegared salad without the sugar. The avocado and wakame give you **fibre and potassium**.",
+      "ingredients": [
+        {
+          "food": "avocado-raw-c06278",
+          "g": 130,
+          "note": "ripe, cubed, 1 small avocado"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "sliced very thin"
+        },
+        {
+          "food": "wakame-dried-247e05",
+          "g": 0.8
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 5
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 2
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 3,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Soak the wakame in cold water for 5 minutes, until soft. Drain, squeeze out the water and chop.",
+        "Whisk the rice vinegar and tamari together and toss with the cucumber and wakame.",
+        "Fold in the avocado and scatter with the sesame seeds."
+      ],
+      "prepMin": 7,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "keto-asia-garlic-soy-king-oyster-banchan",
+      "name": "Soy-garlic king oyster mushrooms",
+      "inspiredBy": "Korean saesongi beoseot bokkeum, the stir-fried king oyster mushroom banchan",
+      "about": "King oyster mushrooms seared until golden and tossed with garlic, tamari and a splash of vinegar. Meaty and savoury, they are a bit like mushroom jerky and add **B vitamins and potassium**.",
+      "ingredients": [
+        {
+          "food": "king-oyster-mushroom-eringi-raw-6127f7",
+          "g": 110,
+          "note": "sliced thick"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "perilla-egoma-oil-7638e7",
+          "g": 3,
+          "swap": "healthy_oils",
+          "note": "or sesame oil"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 4
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 3
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1,
+          "note": "sliced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 5,
+          "note": "sliced"
+        }
+      ],
+      "steps": [
+        "Heat the canola oil in a pan over medium-high heat. Add the mushrooms in one layer and cook without stirring for 3 minutes, until browned.",
+        "Add the garlic, tamari and vinegar and cook for 1 more minute, until it clings.",
+        "Finish with the perilla oil and scallion. Good warm or cold."
+      ],
+      "prepMin": 3,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "keto-asia-soy-garlic-egg-banchan",
+      "name": "Soy-garlic marinated egg",
+      "inspiredBy": "Korean mayak-style marinated eggs and Japanese ajitama, made without sugar",
+      "about": "A soft-boiled egg steeped in tamari, rice vinegar, garlic and a little chili until the white turns glossy and savoury, then sprinkled with sesame. It is the Korean lunchbox egg without the sugar, and a good source of **choline**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 large egg"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 6
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1,
+          "note": "smashed"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 5,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Lower the egg into boiling water and cook for 7 minutes for a soft yolk, then cool it in ice water for 5 minutes and peel.",
+        "Stir the tamari, vinegar, garlic, scallion and gochugaru with 2 tablespoons of water in a snug bag or small jar and add the egg. Marinate in the fridge for at least 4 hours or overnight, turning once.",
+        "Halve the egg and sprinkle with the sesame seeds."
+      ],
+      "prepMin": 8,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make two on Wednesday night, one for Thursday and one for Sunday. After a day, lift them out of the marinade so they do not get too salty. They keep 4 days in the fridge."
+    },
+    {
+      "id": "keto-asia-avocado-kimchi-sesame",
+      "name": "Avocado with kimchi and sesame",
+      "inspiredBy": "the Korean habit of pairing creamy things with kimchi",
+      "about": "Creamy avocado topped with a spoon of chopped kimchi, a few drops of perilla oil and toasted sesame seeds. The cool, fatty avocado and the sour, spicy kimchi are made for each other, and you get **fibre and potassium** in one bowl.",
+      "ingredients": [
+        {
+          "food": "avocado-raw-c06278",
+          "g": 120,
+          "note": "ripe, sliced"
+        },
+        {
+          "food": "kimchi-1371a8",
+          "g": 20,
+          "note": "chopped"
+        },
+        {
+          "food": "perilla-egoma-oil-7638e7",
+          "g": 4,
+          "swap": "healthy_oils",
+          "note": "or sesame oil"
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 4,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Slice the avocado and fan it out on a small plate.",
+        "Spoon the chopped kimchi over the top, drizzle with the perilla oil and sprinkle with the sesame seeds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "keto-asia-walnut-pumpkin-seed-chili-mix",
+      "name": "Toasted walnut and pumpkin seed mix with chili and tamari",
+      "inspiredBy": "Chinese and Korean seasoned nuts and seeds, with no sugar",
+      "about": "Walnuts and pumpkin seeds toasted together in a dry pan, then tossed with tamari, gochugaru and a pinch of five-spice. A handful is crunchy, savoury and filling, and it brings **magnesium, zinc and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 25,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 20,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "soy-sauce-tamari-681016",
+          "g": 3
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 0.5
+        },
+        {
+          "food": "chinese-five-spice-powder-c5ab99",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the walnuts and pumpkin seeds in a dry pan over medium heat for 4 minutes, shaking the pan, until the seeds pop and the walnuts smell nutty.",
+        "Take the pan off the heat, add the tamari, gochugaru and five-spice and stir until it dries onto the nuts."
+      ],
+      "prepMin": 1,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-asia-pumpkin-seeds-lime-chili-salt",
+      "name": "Pumpkin seeds with lime and chili salt",
+      "inspiredBy": "Thai and Korean seasoned seed snacks, with no sugar",
+      "about": "Pumpkin seeds toasted until they pop, then tossed with lime juice, a pinch of salt and gochugaru so the flavour sticks. It is a crunchy, tangy handful with **magnesium, zinc and iron**.",
+      "ingredients": [
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 25,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 4
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the pumpkin seeds in a dry pan over medium heat for 3 to 4 minutes, shaking the pan, until they start to pop.",
+        "Take the pan off the heat and toss with the lime juice, gochugaru and salt until it dries onto the seeds."
+      ],
+      "prepMin": 1,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-asia-tofu-scramble-mushroom-bok-choy"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-asia-sundubu-clam-tofu-stew"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-asia-thai-green-curry-chicken-bok-choy"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-asia-five-spice-walnuts-tamari"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-asia-avocado-tamari-sesame-lime"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-asia-salmon-miso-soup-spinach-ohitashi"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-asia-thai-green-curry-chicken-bok-choy",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-asia-mapo-style-tofu-pork-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-asia-avocado-tamari-sesame-lime"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-asia-pumpkin-seeds-gochugaru-tamari"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-asia-gyeran-jjim-spinach-namul"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-asia-mapo-style-tofu-pork-spinach",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-asia-ginger-scallion-chicken-gai-lan"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-asia-five-spice-walnuts-tamari"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-asia-garlic-soy-king-oyster-banchan"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-asia-tofu-scramble-mushroom-bok-choy"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-asia-ginger-scallion-chicken-gai-lan",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-asia-saba-shioyaki-daikon-walnut-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-asia-soy-garlic-egg-banchan"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-asia-avocado-wakame-cucumber-sunomono"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-asia-gyeran-jjim-spinach-namul"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-asia-tom-yum-sea-bass-mushroom-soup"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-asia-korean-bbq-beef-lettuce-wrap-spread"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-asia-garlic-soy-king-oyster-banchan"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-asia-hiyayakko-ginger-scallion-sesame"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-asia-salmon-miso-soup-spinach-ohitashi"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-asia-korean-bbq-beef-lettuce-wrap-spread",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-asia-thai-basil-pork-cauliflower-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-asia-hiyayakko-ginger-scallion-sesame"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-asia-avocado-wakame-cucumber-sunomono"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-asia-tofu-scramble-mushroom-bok-choy"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-asia-thai-basil-pork-cauliflower-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-asia-sea-bass-tofu-bok-choy-hot-pot-sesame-lime"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-asia-pumpkin-seeds-gochugaru-tamari"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-asia-soy-garlic-egg-banchan"
+        }
+      ]
+    }
+  ]
+}
