@@ -1,0 +1,2001 @@
+{
+  "id": "vegan-latin",
+  "name": "Vegan Latin Kitchen",
+  "style": "vegan",
+  "cuisine": "Latin American",
+  "regions": [
+    "Mexico",
+    "Peru",
+    "Colombia",
+    "Brazil",
+    "Cuba"
+  ],
+  "summary": "A fully plant-based week of Mexican, Peruvian, Colombian, Brazilian and Cuban home cooking. Beans, lentils, tofu, tempeh and soya carry the protein, and a daily glass of fortified soy beverage carries the B12.",
+  "howItWorks": "**Protein from beans, soy and seeds.** Black beans, pintos, white beans and lentils take turns with calcium-set tofu, tempeh and soya chunks, with oyster mushrooms for a meaty bite. Every lunch and dinner has a real protein, and every day reaches at least a fifth of its calories from protein.\n\n**B12 is fortified on purpose.** Plants don't make vitamin B12, so every day has **fortified soy beverage**. The numbers assume a carton with about 2 µg of B12 per cup. Many Canadian cartons carry about half that, so a daily B12 supplement is the safe bet for most vegans.\n\n**Calcium, iron and the hard ones.** Soy beverage, calcium-set tofu, collards and chia carry the calcium. Beans, lentils, tempeh and pepitas carry the iron, with tomato, tomatillo, lime and orange on the plate to help you absorb it. Oyster mushrooms bring niacin and choline, and almonds bring vitamin E.\n\n**Omega-3 from plants.** Chia turns up in the chía fresca, the avena, the licuado and the yogurt cup. Canola oil handles the everyday cooking, which keeps the omega balance in range.\n\n**Cook once, eat twice.** Monday's tinga, Tuesday's chupe, Wednesday's frijoles, Thursday's pozole, Friday's picadillo and Saturday's feijoada each make two portions, so the next day's lunch is done. On Wednesday, cook one small pot of brown rice for the frijoles, the picadillo and the feijoada. The feijoada uses canned beans, or soak dry ones on Friday night for a weekend project.",
+  "signature": [
+    "vegan-latin-tinga-de-soya-y-hongos-tacos",
+    "vegan-latin-feijoada-tofu-defumado-couve-laranja",
+    "vegan-latin-chupe-de-quinua-frijoles-blancos",
+    "vegan-latin-pozole-verde-frijoles-blancos-pepitas"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-latin-tempeh-chicharron-lima-chile"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-latin-dip-frijol-negro-chipotle"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-latin-tostadas-soya-chipotle"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-latin-tostadas-frijol-aguacate"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-latin-tostadas-soya-chipotle"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-latin-pepitas-lima-chile"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "vegan-latin-pepitas-lima-chile"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "vegan-latin-avena-canela-platano-chia",
+      "name": "Avena with cinnamon, banana and chia, cooked in soy beverage",
+      "inspiredBy": "Colombian and Mexican avena, the warm, creamy oat breakfast, made here with fortified soy beverage",
+      "about": "Rolled oats simmered in soy beverage with cinnamon until thick and creamy, then topped with sliced banana and toasted almonds for crunch. The soy beverage brings your **vitamin B12 and calcium** for the day, and the chia adds plant omega-3.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 36,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 280,
+          "note": "fortified with B12 and calcium (check the carton)"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 90,
+          "note": "sliced"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "sliced, toasted"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Pour the soy beverage into a small pot, add the cinnamon and a pinch of salt, and warm it over medium heat until it just starts to steam. Keep an eye on it, because soy beverage foams up fast if it boils.",
+        "Stir in the oats and the chia. Cook over medium-low heat, stirring often, until the avena is thick and creamy, about 6 minutes.",
+        "While it cooks, toast the sliced almonds in a dry pan over medium heat until golden and fragrant, about 2 minutes.",
+        "Stir half the banana into the avena and cook for 1 minute more, until the banana softens and sweetens the porridge.",
+        "Spoon into a bowl and top with the rest of the banana and the toasted almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "The night before, stir the oats, chia, cinnamon and soy beverage together in a jar. In the morning just warm it through, and breakfast is ready in 3 minutes."
+    },
+    {
+      "id": "vegan-latin-arepas-frijoles-negros-aguacate",
+      "name": "Arepas with black beans, tempeh chorizo, avocado and café con leche",
+      "inspiredBy": "Venezuelan and Colombian breakfast arepas, split and stuffed, with a vegan café con leche made with soy beverage",
+      "about": "Golden, crisp-edged arepas split and piled with warm black beans, smoky tempeh chorizo, avocado and a spoonful of tangy soy crema. The café con leche is made with fortified soy beverage, so this breakfast quietly covers your **vitamin B12 and a good share of calcium**.",
+      "ingredients": [
+        {
+          "food": "masarepa-precooked-corn-flour-b58618",
+          "g": 28
+        },
+        {
+          "food": "black-beans-boiled-377477",
+          "g": 90,
+          "swap": "legumes",
+          "note": "canned, drained and rinsed"
+        },
+        {
+          "food": "tempeh-b9c516",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 28,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10,
+          "note": "half for the pico, half for the crema"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5
+        },
+        {
+          "food": "soy-yogurt-plain-345e92",
+          "g": 35,
+          "note": "stirred with a squeeze of lime for crema"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "minced"
+        },
+        {
+          "food": "coffee-brewed-prepared-with-tap-water-601e58",
+          "g": 70,
+          "note": "strong, freshly brewed"
+        },
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 250,
+          "note": "fortified with B12 and calcium (check the carton)"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Mix the masarepa with a pinch of the salt and a little more warm water than masarepa, by volume, then let it sit for 3 minutes. Knead it into a soft, smooth dough that doesn't crack when you press it, adding a splash more water if it does.",
+        "Shape the dough into small patties, about 6 cm wide and 1.5 cm thick. Brush a non-stick pan with half the oil and cook the arepas over medium heat until golden with a crisp crust and they sound hollow when you tap them, 5 to 6 minutes per side.",
+        "Meanwhile, warm the rest of the oil in a small pan and crumble in the tempeh. Cook until it starts to brown, about 4 minutes, then stir in the garlic, smoked paprika and cumin and cook 1 minute more. Add the black beans and a splash of water and warm through, mashing a few beans to make it saucy. Finish with a squeeze of lime.",
+        "Toss the tomato, onion, half the lime and the cilantro together for a quick pico.",
+        "Split the arepas open and fill with the beans and tempeh, avocado and pico. Stir the rest of the lime into the soy yogurt and spoon it over the top.",
+        "Warm the soy beverage in a small pot until it steams, without letting it boil. Pour the coffee into a mug first, then add the warm soy beverage slowly, so it doesn't split."
+      ],
+      "prepMin": 10,
+      "cookMin": 16,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Shape the patties the night before and cook them straight from the fridge. For a Venezuelan dominó arepa, fill with just the black beans and crumbled tofu like queso blanco. At Light you get one small arepa."
+    },
+    {
+      "id": "vegan-latin-tofu-scramble-rancheros",
+      "name": "Tofu scramble rancheros with pinto beans on a corn tortilla",
+      "inspiredBy": "Huevos rancheros, with an achiote-spiced tofu scramble standing in for the eggs",
+      "about": "Crumbled tofu browned with achiote and cumin, served on a warm corn tortilla with pinto beans and a bright, chunky salsa ranchera. The tofu and the beans give you **about 25 g of protein**, and the tomato and lime help you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 68,
+          "swap": "lean_protein",
+          "note": "calcium-set (check the label), pressed and crumbled"
+        },
+        {
+          "food": "pinto-beans-boiled-daf6f9",
+          "g": 90,
+          "swap": "legumes",
+          "note": "canned, drained and rinsed"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 26
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "diced"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "achiote-paste-recado-rojo-5f725a",
+          "g": 4
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 25,
+          "note": "sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "For the salsa ranchera, warm half the oil in a small pan over medium heat. Cook the onion, jalapeño and garlic until soft, about 4 minutes. Add the tomato and a pinch of salt and simmer until jammy, about 8 minutes.",
+        "Stir the pinto beans into the salsa and let them warm through, mashing a few to thicken it.",
+        "In a skillet, warm the rest of the oil over medium-high heat. Crumble in the tofu with your fingers and cook, stirring now and then, until it starts to colour, about 4 minutes.",
+        "Dissolve the achiote paste in a splash of water and stir it into the tofu with the cumin and the rest of the salt. Cook until the scramble is golden and a bit dry, about 4 minutes more.",
+        "Warm the tortilla in a dry pan, 30 seconds per side, until soft and a little toasty.",
+        "Lay the tortilla on a plate, spoon the tofu scramble on top, then the beans in salsa. Finish with avocado, cilantro and a squeeze of lime."
+      ],
+      "prepMin": 12,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Make the salsa ranchera the night before and the scramble comes together in 10 minutes. At Light, toast the half tortilla crisp as a tostada."
+    },
+    {
+      "id": "vegan-latin-bowl-frijoles-negros-camote",
+      "name": "Black bean bowl with roasted sweet potato and cauliflower",
+      "inspiredBy": "Mexican black bean and sweet potato tacos, rebuilt as a bowl that packs well",
+      "about": "Chili-roasted sweet potato and cauliflower, black beans and quinoa under a pile of lime cabbage, pico de gallo and a pepita-lime crema. The beans, quinoa and pepita crema bring **close to 30 g of protein**, and the lime and tomato help your body take up the iron.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 60,
+          "note": "cut in 2 cm cubes"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 200,
+          "note": "cut in small florets"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1.0
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 18,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "black-beans-boiled-377477",
+          "g": 175,
+          "swap": "legumes",
+          "note": "canned, drained and rinsed"
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 50,
+          "note": "finely shredded"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 25,
+          "note": "for the cabbage and the crema"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "finely diced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "raw, for toasting"
+        },
+        {
+          "food": "soy-yogurt-plain-345e92",
+          "g": 40
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the sweet potato and cauliflower with the oil, chili powder, cumin and a pinch of salt on a tray, and roast until tender and browned at the edges, about 25 minutes.",
+        "Meanwhile, cook the quinoa in twice its volume of lightly salted water, covered, for 15 minutes. Fluff it with a fork and let it steam off the heat for 5 minutes.",
+        "Toss the cabbage with a squeeze of lime and a pinch of salt. Mix the tomato, onion and half the cilantro into a quick pico de gallo, with a pinch of chili powder.",
+        "Toast the pepitas in a dry pan until they pop. Blend half of them with the soy yogurt, a squeeze of lime and the rest of the cilantro into a green crema, and keep the rest whole for crunch.",
+        "Warm the beans with a splash of water. Build the bowl: quinoa, beans, sweet potato and cauliflower, cabbage and pico, then spoon the crema over the top and scatter with pepitas."
+      ],
+      "prepMin": 20,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Roast the sweet potato and cauliflower and cook the quinoa on Sunday, and the bowl takes 10 minutes to build. Keep the crema separate until you eat."
+    },
+    {
+      "id": "vegan-latin-tinga-de-soya-y-hongos-tacos",
+      "name": "Soya and mushroom tinga tacos with chipotle, avocado and cabbage",
+      "inspiredBy": "Tinga poblana, where soya chunks and oyster mushrooms stand in for the shredded chicken",
+      "about": "A smoky, tangy tomato and chipotle sauce clinging to tender strips of soya chunks and oyster mushrooms, piled into warm corn tortillas with crunchy cabbage and creamy avocado. The soya and mushrooms bring **about 40 g of protein** and plenty of niacin and choline, and the lime and tomato help you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "soya-chunks-textured-soy-protein-dried-746293",
+          "g": 52,
+          "note": "dry"
+        },
+        {
+          "food": "oyster-mushroom-raw-5bd267",
+          "g": 160,
+          "note": "torn into strips"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 90,
+          "note": "half sliced into thin half-moons, half chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 200,
+          "note": "ripe, halved"
+        },
+        {
+          "food": "chipotle-peppers-in-adobo-sauce-f692a1",
+          "g": 18,
+          "note": "with a little of the adobo sauce"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.3
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 52
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 50,
+          "note": "finely shredded"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 30,
+          "note": "sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20,
+          "note": "a little in the sauce, the rest on the cabbage"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Cover the soya chunks with boiling water and let them soak for 10 minutes, or until they are soft all the way through. Drain, squeeze out the water, and tear them into rough shreds.",
+        "Blend the tomatoes, chopped onion, garlic, chipotle with its sauce, a squeeze of the lime, oregano, cumin and allspice until smooth.",
+        "Warm the oil in a wide pan over medium heat and cook the sliced onion until soft and starting to brown, about 8 minutes. Add the shredded soya and the mushrooms and cook for 6 minutes, until the mushrooms have given off their water and start to brown.",
+        "Pour in the blended sauce, add the bay leaf and the salt, and simmer, stirring now and then, until the sauce is thick and clings to the soya and mushrooms, about 15 minutes. Taste and add more chipotle if you want more heat.",
+        "Toss the cabbage with the rest of the lime juice and the cilantro. Warm the tortillas in a dry pan, about 30 seconds per side.",
+        "Pile the tinga into the warm tortillas with cabbage and avocado, and eat any extra filling with a fork, or serve it over rice. Pack the second portion of tinga (not the cabbage or avocado) for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "The tinga freezes beautifully and tastes better the next day. Spoon it over rice or a baked potato if you run out of tortillas."
+    },
+    {
+      "id": "vegan-latin-chupe-de-quinua-frijoles-blancos",
+      "name": "Peruvian quinoa chupe with white beans, camote and cancha-style hominy",
+      "inspiredBy": "Peruvian chupe, a thick, creamy soup flavoured with ají amarillo, with quinoa and white beans in place of the usual egg and cheese",
+      "about": "A thick, golden soup of quinoa, white beans, mushrooms and sweet potato, spiced with ají amarillo and finished with a splash of soy beverage the way chupe gets its evaporated milk. A scatter of crunchy toasted hominy on top does the work of cancha, and the beans and quinoa bring **plenty of protein, iron and folate**.",
+      "ingredients": [
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 20,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "oyster-mushroom-raw-5bd267",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 22,
+          "swap": "lean_protein",
+          "note": "calcium-set, in small cubes, like queso fresco"
+        },
+        {
+          "food": "white-beans-boiled-c7bc32",
+          "g": 170,
+          "swap": "legumes",
+          "note": "canned, drained and rinsed"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 45,
+          "note": "in 1.5 cm cubes"
+        },
+        {
+          "food": "hominy-canned-yellow-fd8e84",
+          "g": 15,
+          "note": "canned, drained, all of it toasted for the topping"
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 18
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "finely diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "grated or finely chopped"
+        },
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 100,
+          "note": "fortified with B12 and calcium (check the carton)"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.6
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Warm the oil in a heavy pot over medium heat. Cook the onion until soft and golden, about 6 minutes, then stir in the mushrooms, garlic, ají amarillo paste, cumin and oregano and cook for 3 minutes, until the mushrooms soften and it smells sweet and fruity.",
+        "Add the tomato and cook until it melts into the sauce, about 4 minutes.",
+        "Stir in the quinoa and sweet potato, then pour in enough water to cover everything by about 2 cm. Add the salt, bring to a boil, then simmer, covered, until the quinoa is cooked and the sweet potato is tender, about 15 minutes.",
+        "Add the white beans and the tofu cubes and simmer 5 more minutes. Mash a few beans against the side of the pot to thicken the soup.",
+        "Meanwhile, pat the hominy very dry and toast it in a dry pan over medium-high heat until golden and popping, 8 to 10 minutes, shaking the pan.",
+        "Turn the heat to low, stir in the soy beverage and warm it through without letting it boil. Finish with the lime juice and cilantro, and top your bowl with half the crunchy hominy. Save the second portion for tomorrow's lunch, with the rest of the hominy in a jar so it stays crunchy."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Hominy is the closest stand-in for Peruvian choclo. Frozen choclo from a Latin grocer is better still. At Light, the topping is a spoonful of toasted hominy."
+    },
+    {
+      "id": "vegan-latin-frijoles-hogao-tempeh-tajadas",
+      "name": "Colombian-style beans with hogao, seared tempeh and roasted plantain",
+      "inspiredBy": "Colombian frijoles with hogao and tajadas, a plant-based plate in the spirit of the bandeja",
+      "about": "Creamy beans simmered in a tomato and onion hogao, served with garlicky seared tempeh, a small scoop of brown rice, a few slices of roasted plantain and sweet potato, and a few slices of avocado. The beans and tempeh bring **about 40 g of protein**, and the plantain adds the sweet note that makes the whole plate sing.",
+      "ingredients": [
+        {
+          "food": "pinto-beans-boiled-daf6f9",
+          "g": 140,
+          "swap": "legumes",
+          "note": "canned, drained and rinsed"
+        },
+        {
+          "food": "tempeh-b9c516",
+          "g": 125,
+          "swap": "lean_protein",
+          "note": "cut in 1 cm slabs"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "finely diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "achiote-paste-recado-rojo-5f725a",
+          "g": 3
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 15,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "plantain-ripe-raw-c315a0",
+          "g": 30,
+          "note": "very ripe, peeled and sliced on the diagonal"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 40,
+          "note": "in 2 cm wedges"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 20,
+          "note": "sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the plantain slices and the sweet potato wedges with a third of the oil and bake on a tray until caramelized and soft, about 25 minutes, flipping once.",
+        "Rinse the brown rice, then cook it in about twice its volume of lightly salted water, covered, for 35 to 40 minutes.",
+        "For the hogao, warm a third of the oil in a pot over medium heat. Cook the onion until soft, about 5 minutes. Add half the garlic, the cumin and the tomato and simmer until it breaks down into a thick, jammy sauce, about 10 minutes.",
+        "Add the beans and a splash of water, mash a few to thicken, and simmer for 10 minutes. Taste for salt and stir in the cilantro.",
+        "Meanwhile, stir the achiote paste into a splash of water with the rest of the garlic and a squeeze of lime. Rub it over the tempeh slices.",
+        "Warm the rest of the oil in a skillet and sear the tempeh until deep golden and crisp at the edges, about 3 minutes per side.",
+        "Serve the beans alongside a small scoop of rice with the tempeh, plantain, sweet potato and avocado on the side, and a squeeze of lime. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Colombian cooks use red cargamanto beans, but pintos or any red or pink bean work well. Cook about ½ cup of dry brown rice tonight and it covers this plate, Friday's picadillo and Saturday's feijoada. It keeps 4 days in the fridge. At Light, the rice is a spoonful or two."
+    },
+    {
+      "id": "vegan-latin-picadillo-lentejas-soya-arroz",
+      "name": "Lentil, soya and mushroom picadillo with olives and raisins, brown rice and maduros",
+      "inspiredBy": "Cuban picadillo, the sweet, salty, tangy ground-meat hash, with lentils and soya in place of the beef",
+      "about": "Earthy lentils, soya and chopped mushrooms simmered with sweet potato, tomato, olives and raisins until it tastes like the sweet-and-salty picadillo you get in a Cuban kitchen. It brings **over 30 g of protein** and a big dose of iron, with the lime and tomato helping you absorb it.",
+      "ingredients": [
+        {
+          "food": "green-and-brown-lentils-whole-dried-raw-f67c80",
+          "g": 22,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "soya-chunks-textured-soy-protein-dried-746293",
+          "g": 34,
+          "note": "dry, small chunks or granules"
+        },
+        {
+          "food": "oyster-mushroom-raw-5bd267",
+          "g": 160,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 140,
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "finely diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 80,
+          "note": "in 1 cm cubes"
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 15,
+          "note": "green, chopped"
+        },
+        {
+          "food": "raisin-fe075b",
+          "g": 12
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.6
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.3
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 15,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "plantain-ripe-raw-c315a0",
+          "g": 40,
+          "note": "very ripe, peeled and sliced on the diagonal"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the plantain with a third of the oil and a pinch of salt and bake on a tray until caramelized and soft, about 20 minutes, flipping once.",
+        "Cover the soya with boiling water and leave it to soak. Simmer the lentils in plenty of water until just tender, about 20 minutes, and drain. Warm the rice from Wednesday, or cook it in twice its volume of lightly salted water, covered, for 35 to 40 minutes.",
+        "Warm two thirds of the oil in a wide pan over medium heat and cook the onion and sweet potato until the onion is soft, about 6 minutes. Add the garlic, cumin, oregano and allspice and cook for 1 minute, until fragrant.",
+        "Squeeze the soya dry and add it to the pan with the mushrooms and cook with the onions until the mushrooms give off their water and everything starts to colour, about 6 minutes.",
+        "Add the tomato and cook until it breaks down, about 8 minutes. Stir in the lentils, olives, raisins, bay leaf, salt and a splash of water, and simmer for 10 minutes, until thick and glossy but still a bit saucy. Finish with the lime juice.",
+        "Serve the picadillo alongside a small scoop of rice, with the maduros on the side. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Use the brown rice from Wednesday. With the lentils cooked the night before, dinner takes 20 minutes. At Light, the rice is a spoonful or two."
+    },
+    {
+      "id": "vegan-latin-pozole-verde-frijoles-blancos-pepitas",
+      "name": "Pozole verde with white beans, hominy and a pepita salsa verde",
+      "inspiredBy": "Mexican pozole verde from Guerrero, with white beans and oyster mushrooms doing the work of the usual pork",
+      "about": "Hominy, white beans and oyster mushrooms in a bright, green broth made from tomatillo, jalapeño, cilantro and toasted pepitas, with collards in place of the wild greens and crunchy cabbage and lime on top. The beans, mushrooms and pepitas bring **plenty of protein, iron and zinc**, and the lime and tomatillo help you absorb them.",
+      "ingredients": [
+        {
+          "food": "tomatillo-raw-c18847",
+          "g": 170,
+          "note": "husked and rinsed"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 12
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "half in the sauce, half diced for the garnish"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 20
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "raw, for toasting"
+        },
+        {
+          "food": "oyster-mushroom-raw-5bd267",
+          "g": 110,
+          "note": "torn into strips"
+        },
+        {
+          "food": "hominy-canned-yellow-fd8e84",
+          "g": 80,
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "white-beans-boiled-c7bc32",
+          "g": 165,
+          "swap": "legumes",
+          "note": "canned, drained and rinsed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "stems removed, sliced into thin ribbons"
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 40,
+          "note": "finely shredded"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        }
+      ],
+      "steps": [
+        "Simmer the tomatillos and jalapeño in a pot of water for 5 to 7 minutes, until they turn olive green and soft. Drain, saving a cup of the cooking water.",
+        "Toast the pepitas in a dry pan over medium heat until they puff up and pop, about 3 minutes. Set a spoonful aside for the top.",
+        "Blend the tomatillos, jalapeño, half the onion, garlic, most of the cilantro and the toasted pepitas with a splash of the cooking water until completely smooth.",
+        "Warm the oil in a pot over medium-high heat. Pour in the green sauce (it will spit) and fry for 5 minutes, stirring, until it darkens and thickens.",
+        "Add the hominy, white beans, mushrooms, collards, half the oregano, cumin, salt and about 500 ml of water. Simmer for 25 minutes, until the mushrooms and collards are tender and the broth is rich and slightly thickened.",
+        "Meanwhile, toss the cabbage with the diced onion and half the lime.",
+        "Ladle into bowls and top with the cabbage, reserved pepitas, the rest of the cilantro and a squeeze of lime. Sprinkle the rest of the oregano over each bowl. Pack the second portion (without the toppings) for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Reheat it with a splash of water, since the hominy drinks up the broth overnight. Add fresh cabbage and lime when you eat it."
+    },
+    {
+      "id": "vegan-latin-feijoada-tofu-defumado-couve-laranja",
+      "name": "Feijoada-style black beans with smoky tofu, garlicky couve, orange and farofa",
+      "inspiredBy": "Brazilian feijoada, with seared smoky tofu and soya \"carne seca\" in place of the pork and sausage",
+      "about": "A deep, rich pot of black beans simmered until silky, served with smoky seared tofu, garlicky collards, sweet orange slices to cut the richness, and a toasty corn and Brazil nut farofa. The beans, tofu and soya bring **about 40 g of protein**, and the orange and collards help your body use the iron.",
+      "ingredients": [
+        {
+          "food": "black-beans-boiled-377477",
+          "g": 130,
+          "swap": "legumes",
+          "note": "canned, drained and rinsed"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 48,
+          "swap": "lean_protein",
+          "note": "calcium-set, pressed and cut in 2 cm slabs"
+        },
+        {
+          "food": "soya-chunks-textured-soy-protein-dried-746293",
+          "g": 25,
+          "note": "dry"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 90,
+          "note": "half for the beans, half for the farofa"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "for the beans, the tofu and the couve"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 2.0
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "stems removed, sliced into thin ribbons"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 90,
+          "swap": "vit_c_fruit",
+          "note": "peeled and sliced into rounds"
+        },
+        {
+          "food": "masarepa-precooked-corn-flour-b58618",
+          "g": 10,
+          "note": "for the farofa"
+        },
+        {
+          "food": "brazil-nuts-raw-e9305e",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped, for the farofa"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 12,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 14
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        }
+      ],
+      "steps": [
+        "Warm the brown rice from Wednesday, or rinse it and cook it in twice its volume of lightly salted water, covered, for 35 to 40 minutes, while you start the beans.",
+        "Cover the soya chunks with boiling water and soak for 10 minutes, until soft all the way through. Drain, squeeze dry and tear into small, rough shreds.",
+        "Warm a third of the oil in a heavy pot over medium heat and cook half the onion until soft, about 5 minutes. Add half the garlic, the tomato, the bay leaf, cumin, pepper and the soya shreds and cook for 3 minutes, until the tomato melts.",
+        "Add the black beans and enough water to cover them by about 2 cm. Bring to a boil, then simmer, partly covered, for 45 minutes, until the broth is dark and thick. Mash about a quarter of the beans against the side of the pot to make it silky, and add the salt.",
+        "Meanwhile, rub the tofu with the smoked paprika, a clove of garlic, a squeeze of lime and a pinch of salt and let it sit for 15 minutes. Sear it in a third of the oil over medium-high heat until deep golden and crusty, about 4 minutes per side. Keep it warm and lay it on top of the beans when you serve, so the crust stays crisp.",
+        "For the couve, warm half the remaining oil in a wide pan over high heat. Add the garlic and cook for 30 seconds, then add the collards and a pinch of salt and toss until bright green and just tender, about 4 minutes. Finish with the rest of the lime.",
+        "For the farofa, cook the remaining onion in the rest of the oil until golden, about 5 minutes. Add the masarepa and chopped Brazil nuts and stir over medium heat until it smells toasty and looks like sandy crumbs, about 3 minutes. Season with a pinch of salt.",
+        "Serve the feijoada alongside a small scoop of rice, with the tofu on top, the couve, orange slices and farofa. Pack the second portion of beans, tofu and couve for tomorrow's lunch, with the farofa in a jar so it stays crisp, and slice a fresh orange tomorrow."
+      ],
+      "prepMin": 30,
+      "cookMin": 70,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "weekend-project"
+      ],
+      "tip": "Classic farofa uses manioc flour, but toasted masarepa gives you the same sandy crunch. At Light the farofa is a spoonful. If you have time, soak and cook 70 g of dry black beans per serving instead of using canned: soak overnight, then simmer for 1 hour."
+    },
+    {
+      "id": "vegan-latin-enchiladas-rojas-frijol-chorizo-tempeh",
+      "name": "Enchiladas rojas with pinto beans, tempeh chorizo and collards",
+      "inspiredBy": "Mexican enchiladas rojas, made as enchiladas montadas (layered) with pintos and a tempeh chorizo",
+      "about": "Corn tortillas dipped in red sauce and layered with pinto beans, collard greens, mushrooms and spicy tempeh chorizo, baked under a deep red guajillo sauce and finished with a cool soy crema and crunchy pepitas. The pintos, tempeh and mushrooms bring **about 40 g of protein**, and the collards bring a good dose of calcium.",
+      "ingredients": [
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 52
+        },
+        {
+          "food": "pinto-beans-boiled-daf6f9",
+          "g": 100,
+          "swap": "legumes",
+          "note": "canned, drained and rinsed"
+        },
+        {
+          "food": "tempeh-b9c516",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "oyster-mushroom-raw-5bd267",
+          "g": 80,
+          "note": "finely chopped"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "stems removed, finely chopped"
+        },
+        {
+          "food": "guajillo-chile-dried-eb6416",
+          "g": 8,
+          "note": "stems and seeds removed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "half in the sauce, half in the filling"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.0
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "soy-yogurt-plain-345e92",
+          "g": 30,
+          "note": "stirred with a squeeze of lime for crema"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 16,
+          "note": "in the sauce, the chorizo and the crema"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "raw, for toasting"
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 40,
+          "note": "finely shredded"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Toast the guajillo chiles in a dry pan for 20 seconds per side, until fragrant, then soak them in hot water for 10 minutes.",
+        "Blend the soaked chiles with the tomato, half the onion, most of the garlic, half the cumin, half the oregano, a squeeze of the lime and a splash of the soaking water until smooth. Fry the sauce in a little of the oil for 5 minutes, until it darkens, and season with salt.",
+        "For the chorizo, warm the rest of the oil in a pan and crumble in the tempeh. Cook until it starts to brown, about 4 minutes. Add the rest of the onion and garlic, the smoked paprika, a spoonful of the red sauce, the rest of the cumin and oregano, and the rest of the lime juice, and cook for 3 more minutes, until it clings together.",
+        "Stir in the mushrooms and collards and cook until the mushrooms release their water and the collards wilt, about 6 minutes. Add the pinto beans and mash roughly with the back of the spoon.",
+        "Warm the tortillas in a dry pan until pliable, dip each in the red sauce and tear it in half. Spread a little sauce in a baking dish, then layer half the tortillas, half the filling, the rest of the tortillas and the rest of the filling. Pour the remaining sauce over the top.",
+        "Bake for 15 minutes, until bubbling at the edges. Top with the soy crema, toasted pepitas and cabbage."
+      ],
+      "prepMin": 25,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Make the sauce and the filling on Saturday and Sunday dinner is 20 minutes of layering and baking. For rolled enchiladas, make 4 small ones and serve the extra filling on the side. At Light there is only about one tortilla, so layer it thin and serve the rest as a bean bowl."
+    },
+    {
+      "id": "vegan-latin-jicama-naranja-lima-chile",
+      "name": "Jícama and orange cup with pepitas, lime and chile",
+      "inspiredBy": "Mexican street fruit and jícama cups with lime and chile",
+      "about": "Crunchy jícama sticks and juicy orange segments, tossed with lime and chile, with a handful of toasted pepitas for crunch and protein. It brings **most of a day's vitamin C**, plus a good bit of fibre and magnesium.",
+      "ingredients": [
+        {
+          "food": "yambean-jicama-tuber-raw-8519ba",
+          "g": 110,
+          "note": "peeled and cut in sticks"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 110,
+          "swap": "vit_c_fruit",
+          "note": "peeled and cut in segments"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "raw, for toasting"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the pepitas in a dry pan over medium heat until they puff up and start to pop, about 2 minutes.",
+        "Peel the jícama and cut it into thin sticks. Peel the orange and break it into segments.",
+        "Toss the jícama and orange with the lime juice, a dusting of chili powder and a pinch of salt. Scatter with the pepitas and eat right away."
+      ],
+      "prepMin": 6,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "vegan-latin-almendras-lima-chile",
+      "name": "Toasted almonds with lime and chile",
+      "inspiredBy": "Mexican cacahuates con limón y chile, made here with almonds",
+      "about": "Almonds toasted until golden and fragrant, then tossed with lime and chile. A small handful is one of the best everyday sources of **vitamin E**, with calcium and magnesium too.",
+      "ingredients": [
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 25,
+          "swap": "nuts_seeds",
+          "note": "raw, whole"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan over medium heat, shaking often, until golden and fragrant, about 4 minutes.",
+        "Toss with the chili powder and salt while still warm, and let them cool a few minutes to crisp up. Add the lime just before you eat."
+      ],
+      "prepMin": 2,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "vegan-latin-chia-fresca-lima",
+      "name": "Chía fresca with lime and pineapple",
+      "inspiredBy": "Mexican agua de chía, a cool lime drink thickened with chia",
+      "about": "Chia seeds soaked in cold water with lots of lime and a little fresh pineapple until they plump up into little pearls. It is a very Mexican way to get **plant omega-3, calcium and fibre**, and it is wonderfully refreshing.",
+      "ingredients": [
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20,
+          "note": "freshly squeezed"
+        },
+        {
+          "food": "pineapple-raw-7de748",
+          "g": 60,
+          "note": "blended with the water until smooth"
+        }
+      ],
+      "steps": [
+        "Use a ripe, sweet pineapple, since it is the only sweetener. Blend it with about 300 ml of cold water until smooth, and strain it if you like it clear.",
+        "Stir in the chia and let it sit for 5 minutes, then stir again so it doesn't clump. Add the lime juice and a few ice cubes. Let it stand for 10 more minutes, until the seeds are plump and the drink is slightly thick, and stir before you drink it."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Taste before adding the chia, and add more pineapple if it is tart. A jug keeps 2 days in the fridge."
+    },
+    {
+      "id": "vegan-latin-tofu-al-pastor-pina",
+      "name": "Tofu al pastor bites with pineapple",
+      "inspiredBy": "Tacos al pastor, with achiote-marinated tofu and seared pineapple in place of the pork",
+      "about": "Cubes of tofu marinated in achiote, guajillo and pineapple, then seared until the edges caramelize, with sweet seared pineapple on the side. It is a snack you can build a meal around, with **about 15 g of protein** and plenty of calcium from the calcium-set tofu.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "calcium-set, pressed and cut in 2 cm cubes"
+        },
+        {
+          "food": "pineapple-raw-7de748",
+          "g": 120,
+          "note": "half blended into the marinade, half seared"
+        },
+        {
+          "food": "achiote-paste-recado-rojo-5f725a",
+          "g": 4
+        },
+        {
+          "food": "guajillo-chile-dried-eb6416",
+          "g": 3,
+          "note": "stem and seeds removed, soaked in hot water for 10 minutes"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.4
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.4
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Blend half the pineapple with the achiote paste, the soaked guajillo, garlic, half the lime juice, cumin, oregano and salt until smooth. Toss the tofu cubes in the marinade and leave them for at least 15 minutes, or overnight in the fridge.",
+        "Warm the oil in a non-stick pan over medium-high heat. Lift the tofu from the marinade and sear it, turning now and then, until the edges are dark and sticky, about 8 minutes. Add the leftover marinade for the last minute so it glazes.",
+        "Sear the rest of the pineapple, cut in chunks, in the same pan for 2 minutes per side, until caramelized.",
+        "Pile the tofu and pineapple on a plate and scatter with the onion, cilantro and the rest of the lime juice."
+      ],
+      "prepMin": 20,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Marinate the tofu the night before and it takes 15 minutes. The tofu is great cold on a tortilla the next day."
+    },
+    {
+      "id": "vegan-latin-licuado-platano-avena-canela",
+      "name": "Licuado de plátano with oats, almonds and cinnamon",
+      "inspiredBy": "Mexican licuado de avena con plátano, the blender shake sold at every market stall",
+      "about": "A thick banana licuado blended with oats, almonds, chia and cinnamon, made with a big glass of fortified soy beverage. It carries your **vitamin B12 and calcium** along with about 13 g of protein, and it tastes like a milkshake.",
+      "ingredients": [
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 250,
+          "note": "fortified with B12 and calcium (check the carton)"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 60,
+          "note": "ripe, peeled"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 10,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "raw"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Add the soy beverage, banana, oats, almonds, chia and cinnamon to a blender with a few ice cubes.",
+        "Blend until completely smooth, about 1 minute. Drink right away, or let it sit 5 minutes so the oats and chia thicken it a bit."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "vegan-latin-yogur-soya-naranja-nueces-chia",
+      "name": "Soy yogurt with orange, almonds, Brazil nuts and chia",
+      "inspiredBy": "the fruit-and-yogurt cups at Mexican markets",
+      "about": "Plain soy yogurt topped with juicy orange segments, toasted almonds, a chopped Brazil nut and a spoonful of chia. It is cool and tangy with a good crunch, and it gives you **about 9 g of protein** and a good dose of selenium.",
+      "ingredients": [
+        {
+          "food": "soy-yogurt-plain-345e92",
+          "g": 140,
+          "note": "unsweetened"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 120,
+          "swap": "vit_c_fruit",
+          "note": "peeled and cut in segments"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "sliced, toasted"
+        },
+        {
+          "food": "brazil-nuts-raw-e9305e",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the sliced almonds and the chopped Brazil nuts in a dry pan over medium heat until golden, about 2 minutes.",
+        "Stir the chia and cinnamon into the soy yogurt. Let it sit for 5 minutes so the chia softens.",
+        "Spoon into a bowl, top with the orange segments and the toasted nuts."
+      ],
+      "prepMin": 6,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "vegan-latin-tostadas-soya-chipotle",
+      "name": "Chipotle soya tostadas with cabbage",
+      "inspiredBy": "Mexican tostadas de tinga, crisp tortillas under smoky chipotle soya",
+      "about": "Crisp baked corn tortillas topped with a quick smoky chipotle and tomato soya, crunchy cabbage and a squeeze of lime. It is a snack with **about 17 g of protein**, so it makes a hungry afternoon feel properly handled.",
+      "ingredients": [
+        {
+          "food": "soya-chunks-textured-soy-protein-dried-746293",
+          "g": 25,
+          "note": "dry, small chunks or granules"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 40,
+          "note": "baked crisp"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "finely diced"
+        },
+        {
+          "food": "chipotle-peppers-in-adobo-sauce-f692a1",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 30,
+          "note": "finely shredded"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.4
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Cover the soya with boiling water and soak for 10 minutes. Drain, squeeze dry and tear into small shreds.",
+        "Heat the oven to 200°C (400°F). Lay the tortillas on a tray and bake until crisp and golden, about 8 minutes, flipping once.",
+        "Warm the oil in a small pan and cook the onion and garlic until soft, about 4 minutes. Add the soya, tomato, chipotle, oregano, cumin and salt and simmer until thick and saucy, about 8 minutes.",
+        "Spoon the soya onto the tostadas and top with the cabbage and a squeeze of lime."
+      ],
+      "prepMin": 10,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ]
+    },
+    {
+      "id": "vegan-latin-tempeh-chicharron-lima-chile",
+      "name": "Crispy tempeh with lime and chile",
+      "inspiredBy": "Mexican chicharrón, the crunchy, salty, chile-and-lime snack, made here with tempeh",
+      "about": "Tempeh cut into thin strips and pan-fried until crunchy at the edges, then tossed with lime, chile and garlic. It is salty and crisp like chicharrón, with **about 14 g of protein** and a good dose of iron.",
+      "ingredients": [
+        {
+          "food": "tempeh-b9c516",
+          "g": 65,
+          "swap": "lean_protein",
+          "note": "cut in thin strips"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "minced"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.8
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "thinly sliced, for serving"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Warm the oil in a non-stick pan over medium-high heat. Add the tempeh strips in a single layer and cook, turning now and then, until deep golden and crisp at the edges, about 8 minutes.",
+        "Add the garlic for the last 30 seconds, then take the pan off the heat and toss with the lime juice, chili powder and salt.",
+        "Pile on a plate with the onion and cilantro and eat while still warm."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ]
+    },
+    {
+      "id": "vegan-latin-tostadas-frijol-aguacate",
+      "name": "Black bean and avocado tostadas with lime",
+      "inspiredBy": "Mexican tostadas de frijol, crisp corn tortillas piled with refried beans and avocado",
+      "about": "Crisp baked corn tortillas topped with warm mashed black beans, creamy avocado and a squeeze of lime. They are crunchy, creamy and satisfying, with **about 12 g of protein** and plenty of fibre.",
+      "ingredients": [
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 40,
+          "note": "baked crisp"
+        },
+        {
+          "food": "black-beans-boiled-377477",
+          "g": 110,
+          "swap": "legumes",
+          "note": "canned, drained and rinsed"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1,
+          "note": "minced"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.3
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Lay the tortillas on a tray and bake until crisp and golden, about 8 minutes, flipping once.",
+        "Warm the oil in a small pan and cook the garlic for 30 seconds. Add the beans, cumin, chili powder, salt and a splash of water, and mash until thick and creamy, about 4 minutes.",
+        "Spread the beans on the warm tostadas, top with the avocado, cilantro and a squeeze of lime."
+      ],
+      "prepMin": 5,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "vegan-latin-dip-frijol-negro-chipotle",
+      "name": "Chipotle black bean dip with jícama and tortilla wedges",
+      "inspiredBy": "Mexican frijoles negros refritos, blended into a dip",
+      "about": "A smoky, creamy black bean dip with a little chipotle and lime, scooped with crunchy jícama sticks and baked corn tortilla wedges. It is a snack that actually fills you up, with **11 g of protein** and lots of fibre.",
+      "ingredients": [
+        {
+          "food": "black-beans-boiled-377477",
+          "g": 100,
+          "swap": "legumes",
+          "note": "canned, drained and rinsed"
+        },
+        {
+          "food": "chipotle-peppers-in-adobo-sauce-f692a1",
+          "g": 6
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.4
+        },
+        {
+          "food": "yambean-jicama-tuber-raw-8519ba",
+          "g": 110,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 25,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Cut the tortilla into wedges, spread them on a tray and bake until crisp, about 8 minutes.",
+        "Blend the beans, chipotle, lime juice, garlic, oil, cumin and salt with a splash of water until smooth and creamy.",
+        "Serve the dip with the jícama sticks and the warm tortilla wedges."
+      ],
+      "prepMin": 5,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "The dip keeps 4 days in the fridge, so make a bigger batch and snack from it."
+    },
+    {
+      "id": "vegan-latin-pepitas-lima-chile",
+      "name": "Toasted pepitas with lime and chile",
+      "inspiredBy": "Mexican pepitas tostadas con limón y chile, a snack bag staple from Oaxaca to Mexico City",
+      "about": "Pepitas toasted until they puff and pop, then tossed with lime and chile. A handful brings **magnesium, zinc and iron**, and the crunch hits the spot when you want something salty.",
+      "ingredients": [
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 25,
+          "swap": "nuts_seeds",
+          "note": "raw"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the pepitas in a dry pan over medium heat, shaking often, until they puff up and start to pop, about 3 minutes.",
+        "Toss with the lime juice, chili powder and salt while still warm. Let them cool and crisp up for a few minutes before eating."
+      ],
+      "prepMin": 2,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-latin-avena-canela-platano-chia"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-latin-bowl-frijoles-negros-camote"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-latin-tinga-de-soya-y-hongos-tacos"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-latin-jicama-naranja-lima-chile"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-latin-tofu-al-pastor-pina"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-latin-arepas-frijoles-negros-aguacate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-latin-tinga-de-soya-y-hongos-tacos",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-latin-chupe-de-quinua-frijoles-blancos"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-latin-yogur-soya-naranja-nueces-chia"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-latin-chia-fresca-lima"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-latin-avena-canela-platano-chia"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-latin-chupe-de-quinua-frijoles-blancos",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-latin-frijoles-hogao-tempeh-tajadas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-latin-licuado-platano-avena-canela"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-latin-tempeh-chicharron-lima-chile"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-latin-arepas-frijoles-negros-aguacate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-latin-frijoles-hogao-tempeh-tajadas",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-latin-pozole-verde-frijoles-blancos-pepitas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-latin-yogur-soya-naranja-nueces-chia"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-latin-tofu-scramble-rancheros"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-latin-pozole-verde-frijoles-blancos-pepitas",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-latin-picadillo-lentejas-soya-arroz"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-latin-licuado-platano-avena-canela"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-latin-almendras-lima-chile"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-latin-arepas-frijoles-negros-aguacate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-latin-picadillo-lentejas-soya-arroz",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-latin-feijoada-tofu-defumado-couve-laranja"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-latin-chia-fresca-lima"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "vegan-latin-avena-canela-platano-chia"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "vegan-latin-feijoada-tofu-defumado-couve-laranja",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "vegan-latin-enchiladas-rojas-frijol-chorizo-tempeh"
+        },
+        {
+          "slot": "snack",
+          "recipe": "vegan-latin-jicama-naranja-lima-chile"
+        }
+      ]
+    }
+  ]
+}
