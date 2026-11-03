@@ -345,3 +345,18 @@ happens to fit the diet, never like a list of things you can't have.
   potatoes, cassava, plantain, legumes. Don't lean on gluten-free bread and pasta.
 - **Hidden gluten:** stock cubes, spice blends, sausages and sauces vary. Tips say "check the label" where it matters.
   The app adds a cross-contamination note for people with celiac disease.
+
+### Lessons from batch 2A (apply to every diet family)
+- **Write the week near its label.** A Standard week written at 1,600 kcal forces the sizer to grow meat to silly
+  portions at Big (the 400 g gate catches it). Aim for written Standard days within about 10% of 2,100.
+- **At Light, never serve a crumb.** If sizing shrinks pita, rice or roti below about 12 g, say "a spoonful or two" or
+  "a small, palm-sized roti" honestly, or drop the bread from that Light meal with a swap. Never pretend it's a portion.
+- **Keto fat:** olive oil is about 14% saturated, so it raises the saturated-fat share, not lowers it, and the 27 g
+  oil cap binds at Big. Carry keto calories with nuts, avocado, olives and fatty fish as well as oil. Rinse olives and
+  capers, and keep olives to about 100 g a day (sodium).
+- **Vegan B12:** say it plainly. B12 comes from a fortified soy beverage every day; check the carton for about 1 µg per
+  cup; many Canadian cartons carry less, so a B12 supplement is the safe bet. Plain soy yogurt (`soy-yogurt-plain`)
+  and seitan now count as vegan protein; calcium-set tofu is the only tofu worth buying.
+- **Seeds and wheat germ** belong where they make sense (porridge, shakes, sauces), never sprinkled on top for numbers.
+- **Diabetes-friendly framing:** "keeps the plate steady", "the starch digests more slowly"; never "gentle on blood
+  sugar", never a promise.
