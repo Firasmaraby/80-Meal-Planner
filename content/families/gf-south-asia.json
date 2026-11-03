@@ -1,0 +1,2302 @@
+{
+  "id": "gf-south-asia",
+  "name": "Gluten-free South Asian",
+  "style": "gluten-free",
+  "cuisine": "South Asian",
+  "regions": [
+    "Tamil Nadu",
+    "Kerala",
+    "Karnataka",
+    "Gujarat",
+    "Maharashtra",
+    "Sri Lanka"
+  ],
+  "summary": "A week of South Asian home cooking that is gluten-free because the cuisine is: idli and sambar, besan chilla, jowar bhakri, Kerala fish and a weekend chicken biryani. Rice, millets, dals and coconut take turns, with fish three times.",
+  "howItWorks": "**Gluten-free by its ingredients.** Rice, besan, jowar, millet, cassava and dal do the work, so the week is mostly naturally gluten-free. If you have celiac disease, buy besan, jowar flour, rice flour and millets in sealed gluten-free-marked packs. Check the label on hing (usually cut with wheat), sambar powder, chaat masala, garam masala, ground chili and turmeric.\n\n**Cook once, eat twice.** Monday's Kolhapuri chicken, Wednesday's kadhi khichdi, Friday's kadala curry and Saturday's biryani each make two portions, so the next day's lunch is done. Saturday's idlis cover Sunday breakfast too.\n\n**Fish three times.** Goan mackerel on Tuesday, Kerala sardines on Thursday and Sri Lankan salmon on Sunday carry your **omega-3 fats and vitamin D**. None are back to back, and all are cooked fresh.\n\n**Prep ahead.** On Thursday night, soak about 1¼ cups of kala chana (brown chickpeas). Cook them all on Friday for the kadala curry and keep the rest for the weekend's sundal and roasted chickpeas. On Friday morning, soak the rice and urad for Saturday's idlis and grind them that evening.\n\n**Eggs, dairy and greens.** Eggs turn up every day, boiled as a snack, in the egg roast and bhurji and on the biryani, and with dal, moong, chicken and fish they carry **choline**. Milk, yogurt and chaas carry calcium, with sesame in the chutneys and bhakri. Kale, peas and chickpeas bring iron and folate. Coconut is used by the spoonful, so saturated fat stays within 10%.",
+  "signature": [
+    "gf-south-asia-idli-sambar-chutney",
+    "gf-south-asia-kolhapuri-chicken-jowar-bhakri",
+    "gf-south-asia-kerala-kadala-curry-puttu",
+    "gf-south-asia-chicken-dum-biryani-raita"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "swap": {
+            "from": "gf-south-asia-chickpea-sundal",
+            "to": "gf-south-asia-haldi-doodh-badam"
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-south-asia-tandoori-chicken-bites"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-south-asia-guava-pomegranate-chaat"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-south-asia-masala-boiled-eggs"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-south-asia-cucumber-carrot-peanut-salad"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-south-asia-peanut-sundal"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-south-asia-masala-chaas"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-south-asia-chickpea-sundal"
+          }
+        }
+      ]
+    }
+  },
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-south-asia-besan-chilla-palak"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-south-asia-tuvar-dal-sambharo-chaas"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-south-asia-kolhapuri-chicken-jowar-bhakri"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-south-asia-masala-boiled-eggs"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-south-asia-guava-pomegranate-chaat"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-south-asia-ven-pongal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-south-asia-kolhapuri-chicken-jowar-bhakri",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-south-asia-goan-mackerel-curry-okra"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-south-asia-egg-chaat"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-south-asia-haldi-doodh-badam"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-south-asia-besan-chilla-palak"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-south-asia-neer-dosa-egg-roast"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-south-asia-kadhi-millet-moong-khichdi"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-south-asia-peanut-sundal"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-south-asia-ven-pongal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-south-asia-kadhi-millet-moong-khichdi",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-south-asia-kerala-sardine-roast-kappa-thoran"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-south-asia-egg-chaat"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-south-asia-haldi-doodh-badam"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-south-asia-besan-chilla-palak"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-south-asia-egg-bhurji-jowar-bhakri"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-south-asia-kerala-kadala-curry-puttu"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-south-asia-tandoori-chicken-bites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-south-asia-shrikhand-pomegranate"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-south-asia-idli-sambar-chutney"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-south-asia-kerala-kadala-curry-puttu",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-south-asia-chicken-dum-biryani-raita"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-south-asia-chickpea-sundal"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-south-asia-cucumber-carrot-peanut-salad"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-south-asia-idli-sambar-chutney",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-south-asia-chicken-dum-biryani-raita",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-south-asia-sri-lankan-salmon-curry-beetroot"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-south-asia-masala-chaas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-south-asia-masala-roasted-chickpeas"
+        }
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "gf-south-asia-besan-chilla-palak",
+      "name": "Besan chilla with kale, tomato and green chutney yogurt",
+      "inspiredBy": "Gujarati and Maharashtrian besan puda (chilla), the everyday chickpea-flour pancake, with kale in place of the usual spinach or methi",
+      "about": "Savoury chickpea-flour pancakes, golden and a little crisp at the edges, with finely chopped kale, onion and green chili folded into the batter. They come with a cool cilantro and lemon chutney yogurt and fresh tomato on top. The besan and yogurt together bring **a good dose of protein** to the first meal of the day, and the kale adds calcium and folate.",
+      "ingredients": [
+        {
+          "food": "chickpea-flour-besan-4a8aaa",
+          "g": 50,
+          "note": "chickpea flour, labelled 100% chickpea"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "stems out, about 2 big handfuls, chopped very fine"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "half in the batter, half chopped on top"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3,
+          "note": "finely chopped, a little saved for the chutney"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 12,
+          "note": "half in the batter, half in the chutney yogurt"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 120,
+          "swap": "dairy_protein",
+          "note": "plain, for the green chutney yogurt"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "ajwain-carom-seeds-cac919",
+          "g": 0.5
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 4,
+          "note": "white sesame, stirred into the batter"
+        }
+      ],
+      "steps": [
+        "Whisk the besan with the turmeric, ajwain, Kashmiri chili and about half the salt. Pour in enough cold water, a little at a time, to make a smooth batter about as thick as thin pancake batter. Leave it for 10 minutes so the flour swells.",
+        "Stir the sesame seeds, kale, onion, green chili, ginger, half the cilantro and half the tomato into the batter. It looks like a lot of kale, but it wilts into the batter; chop it very fine so the chillas hold together when you flip them.",
+        "Make the chutney yogurt by blitzing the rest of the cilantro with a little green chili, the lemon juice, the cumin and the remaining salt and a splash of water, then stirring it into the yogurt.",
+        "Heat a nonstick pan over medium heat and brush it lightly with oil. Pour in a ladle of batter and spread it into a round about 15 cm wide. Cook for 2 to 3 minutes, until the edges lift and the underside is golden and speckled.",
+        "Drizzle a little oil around the edge, flip, and cook for 1 to 2 minutes more, until cooked through with no raw patches. Repeat to use all the batter (you will get 2 or 3 chillas).",
+        "Pile the rest of the tomato on the chillas and serve them with the chutney yogurt."
+      ],
+      "prepMin": 15,
+      "cookMin": 12,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Whisk the batter the night before and keep it in the fridge, and breakfast takes 10 minutes: stir in the kale just before you cook. Kale stands in for the fenugreek (methi) leaves that are traditional. Buy besan that lists only chickpeas on the label, and a gluten-free line if you are celiac, since some mills share equipment with wheat."
+    },
+    {
+      "id": "gf-south-asia-ven-pongal",
+      "name": "Vegetable ven pongal with pepper, cashews and peanut-sesame chutney",
+      "inspiredBy": "Tamil ven pongal, the temple and tiffin-shop breakfast of rice and moong dal, made here with whole green moong and grated carrot, so it is heartier and a little greener than the white original",
+      "about": "A soft, ghee-scented pot of rice, whole moong and grated carrot cooked down until creamy, then crowned with a sizzling tempering of black pepper, cumin, cashews and curry leaves. The coconut, peanut and sesame chutney gives it a bright, nutty edge. The moong, peanuts and sesame make it a **breakfast with protein that lasts** to lunch.",
+      "ingredients": [
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 30,
+          "note": "short or long grain white rice"
+        },
+        {
+          "food": "mung-beans-whole-dried-raw-784bed",
+          "g": 40,
+          "swap": "legumes",
+          "note": "whole green moong, soaked if you can"
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 3
+        },
+        {
+          "food": "cashew-nuts-raw-e5f0d8",
+          "g": 4,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "grated"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "grated"
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 0.8
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 4,
+          "note": "fresh or frozen, for the chutney"
+        },
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 16,
+          "note": "dry-roasted in a pan, for the chutney"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 4
+        },
+        {
+          "food": "milk-nonfat-37ddd7",
+          "g": 150,
+          "note": "skim milk, stirred in at the end"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 1.5,
+          "note": "coarsely crushed"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 10,
+          "note": "toasted, for the chutney"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 6,
+          "note": "slivered"
+        }
+      ],
+      "steps": [
+        "Dry-roast the moong in the dry pot for 2 minutes, until it smells nutty (skip this if you soaked it overnight), then rinse it with the rice until the water runs mostly clear.",
+        "Add the carrot, the ginger, half the salt and about 3 times as much water as rice and moong. Pressure cook for 4 whistles, or simmer covered for about 40 minutes, until everything is soft. Stir in the milk and simmer for 3 minutes, mashing lightly with the back of a spoon, until creamy and porridge-like. Loosen with hot water if it feels stiff.",
+        "While it cooks, dry-roast the peanuts and the sesame seeds in a small pan until they smell toasty. Blitz them with the coconut, green chili, lemon juice, the rest of the salt and a splash of water into a coarse chutney.",
+        "Warm the ghee in your smallest pan or a tadka ladle over medium-low heat and fry the cashews and almonds until golden. Add the pepper, cumin and curry leaves and let them sizzle for 20 seconds, then pour the whole thing over the pongal.",
+        "Serve the pongal hot, with the chutney."
+      ],
+      "prepMin": 8,
+      "cookMin": 40,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Soak the moong and cook the rice and dal in a pressure cooker or rice cooker the night before, then warm it with a splash of water while you make the tempering, and breakfast takes 10 minutes. Traditional ven pongal often has a pinch of hing; if you want it, buy a gluten-free brand, since most hing is cut with wheat flour."
+    },
+    {
+      "id": "gf-south-asia-idli-sambar-chutney",
+      "name": "Idli with vegetable sambar and coconut-sesame chutney",
+      "inspiredBy": "Tamil idli with sambar and chutney, the weekend tiffin",
+      "about": "Soft, steamed idlis from a fermented rice and urad batter, with a tangy, spiced sambar full of carrot, kale and tomato and a green coconut and sesame chutney. This is the classic Tamil tiffin and naturally gluten-free; kale stands in for the greens many families add to sambar. The urad and toor dal bring **protein, folate and iron**, and the long fermentation makes the idlis light.",
+      "ingredients": [
+        {
+          "food": "rice-white-parboiled-raw-9b2567",
+          "g": 32,
+          "note": "parboiled rice (idli rice), rinsed"
+        },
+        {
+          "food": "black-gram-duhli-urad-dahl-split-dried-raw-051ef9",
+          "g": 14,
+          "note": "whole or split white urad dal"
+        },
+        {
+          "food": "pigeon-peas-dahl-dried-raw-4b7ca5",
+          "g": 30,
+          "swap": "legumes",
+          "note": "toor dal, for the sambar"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "stems out, chopped fine"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 40
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 6
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 8,
+          "note": "for the chutney"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 4,
+          "note": "toasted, for the chutney"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sambar-powder-b8a581",
+          "g": 3,
+          "note": "sambar powder, check the label for wheat"
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.1,
+          "note": "gluten-free hing (check the label)"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.5
+        },
+        {
+          "food": "fenugreek-seed-95f5a8",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.8
+        }
+      ],
+      "steps": [
+        "Start the batter the day before. Rinse the rice with the fenugreek seeds and soak it in plenty of water for 4 to 6 hours. Soak the urad dal separately for the same time.",
+        "Drain and grind the urad dal with a little cold water until it is light, fluffy and pale. Grind the rice a little coarser, so it feels slightly gritty between your fingers. Mix the two with half the salt, cover loosely and leave in a warm spot for 8 to 12 hours (in a cool kitchen allow 18 to 24 hours, or put it in the oven with only the light on), until the batter has risen, smells pleasantly sour and is full of bubbles.",
+        "Meanwhile, cook the toor dal with plenty of water until completely soft, about 12 minutes in a pressure cooker or 35 minutes in a pot, and mash it.",
+        "Simmer the carrot, kale, onion and tomato with the tamarind, sambar powder, the remaining salt and about 2 cups of water for 12 minutes, until the vegetables are tender. Stir in the mashed dal and simmer for 5 more minutes.",
+        "Warm the oil in a small pan. Add the mustard seeds and let them pop, then the hing and curry leaves, and pour the sizzling oil into the sambar.",
+        "Toast the sesame seeds in a dry pan until they smell nutty. Blend them with the coconut, green chili, cilantro, a pinch of salt and a splash of water into a smooth chutney.",
+        "Lightly grease the idli moulds, fill them with batter (do not stir the batter first, or you will lose the air) and steam for 12 minutes, until a toothpick comes out clean. Rest for 2 minutes before unmoulding.",
+        "Serve the idlis with the sambar and chutney. Keep the second portion of idlis, sambar and chutney for tomorrow: re-steam the idlis for 3 minutes and loosen the sambar with a splash of water."
+      ],
+      "prepMin": 25,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "weekend-project"
+      ],
+      "tip": "Make two or three times the batter: a single batch is too little for most blenders and ferments less reliably. Soak the rice and urad on Friday morning, grind them after work and leave the batter in the oven with the light on overnight. Cooked idlis freeze well for a month. Check the label on the sambar powder and the hing, since both can be cut with wheat flour; skip the hing if you are unsure, and the sambar is still good."
+    },
+    {
+      "id": "gf-south-asia-tuvar-dal-sambharo-chaas",
+      "name": "Gujarati tuvar dal with brown basmati, cabbage-carrot sambharo and chaas",
+      "inspiredBy": "a Gujarati dal-bhat plate, with tuvar dal, sambharo and chaas",
+      "about": "A tangy Gujarati dal with tomato and peanuts, spooned over nutty brown basmati and served with a quick, crunchy cabbage and carrot sambharo and a glass of spiced chaas. The sambharo is lightly sizzled in a mustard seed tempering and finished with lemon. The dal and chaas together bring **protein, folate and calcium** in one plate.",
+      "ingredients": [
+        {
+          "food": "pigeon-peas-dahl-dried-raw-4b7ca5",
+          "g": 60,
+          "swap": "legumes",
+          "note": "toor dal"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "brown basmati"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60
+        },
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 70,
+          "note": "shredded thin"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 35,
+          "note": "grated"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 150,
+          "swap": "dairy_protein",
+          "note": "plain, for the chaas"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.7
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.7
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.7
+        },
+        {
+          "food": "clove-cb7cf1",
+          "g": 0.2
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 0.5
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.1,
+          "note": "gluten-free hing (check the label)"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Rinse the dal and simmer it with the turmeric, the tomato, the peanuts and plenty of water until completely soft, about 12 minutes in a pressure cooker or 35 minutes in a pot. Whisk it smooth.",
+        "Cook the brown basmati in plenty of salted water until tender, about 25 minutes, then drain.",
+        "Return the dal to a low heat. Stir in half the lemon juice, half the salt and a splash of water if it is too thick. Simmer for 5 minutes.",
+        "Warm half the oil in a small pan. Add the cumin, cloves, cinnamon, Kashmiri chili, hing and curry leaves, let them sizzle for 20 seconds and pour over the dal.",
+        "For the sambharo, warm the rest of the oil, add the mustard seeds and the green chili and let them pop. Toss in the cabbage and carrot for 1 to 2 minutes, only until the colour brightens and they are still crunchy. Season with the rest of the lemon juice and a pinch of salt.",
+        "Whisk the yogurt with a glass of cold water, a pinch of salt and the cilantro to make the chaas.",
+        "Serve the dal over the rice, with the sambharo alongside and the chaas to drink."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Use a pressure cooker and the dal takes 12 minutes. A pinch of jaggery gives the Gujarati sweet and sour. Hing is often cut with wheat flour, so buy a gluten-free brand or leave it out of the tempering; add a little more cumin instead."
+    },
+    {
+      "id": "gf-south-asia-neer-dosa-egg-roast",
+      "name": "Neer dosa with Kerala egg roast",
+      "inspiredBy": "Mangalorean neer dosa, served with a Kerala-style egg roast",
+      "about": "Paper-thin, lacy rice crepes that need no fermenting, with a dark, glossy Kerala egg roast of onion, tomato, pepper and curry leaves. The dosas are soft and a little chewy, ideal for mopping up the masala. The eggs bring **protein and choline**.",
+      "ingredients": [
+        {
+          "food": "rice-flour-white-177d1b",
+          "g": 50,
+          "note": "fine white rice flour"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 5,
+          "note": "for the batter"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 150,
+          "note": "3 eggs"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "sliced thin"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1.5
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.8
+        },
+        {
+          "food": "fennel-seed-8a14d7",
+          "g": 0.3
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.4
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 0.5,
+          "note": "garam masala, check the label"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.6
+        }
+      ],
+      "steps": [
+        "Hard-boil the eggs for 9 minutes, cool them in cold water and peel. Cut a few shallow slits in each so the masala gets in.",
+        "Blitz the coconut with a little water, then whisk it into the rice flour with a pinch of salt and enough water to make a very thin batter, like milk. Rest it for 15 minutes.",
+        "For the roast, warm the oil in a wide pan and fry the onion with a pinch of salt for 8 to 10 minutes, until deep golden. Add the garlic, ginger, green chili and curry leaves for a minute.",
+        "Stir in the Kashmiri chili, coriander, pepper, fennel, turmeric and garam masala, then the tomato. Cook for 6 to 8 minutes, until it breaks down into a thick, dark masala and the oil shows at the edges.",
+        "Add the eggs, turn them in the masala for 2 minutes and finish with the cilantro and a grind of pepper.",
+        "Heat a nonstick pan over medium heat. Stir the batter (it settles) and pour a ladle in a thin swirl, tilting the pan to coat it. Cover for about 1 minute, until the dosa is set and lacy. Do not flip. Fold it and repeat to make 3 or 4.",
+        "Serve the dosas hot, with the egg roast."
+      ],
+      "prepMin": 20,
+      "cookMin": 25,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "The batter should pour like milk: if the first dosa tears, whisk in a spoonful more water. Check the label on the garam masala, or use a pinch each of cinnamon and black pepper instead. Make the egg roast the night before (it tastes better the next day), and lunch is just the dosas, about 10 minutes."
+    },
+    {
+      "id": "gf-south-asia-egg-bhurji-jowar-bhakri",
+      "name": "Maharashtrian egg bhurji with jowar bhakri",
+      "inspiredBy": "Maharashtrian anda bhurji with jowar bhakri",
+      "about": "Soft scrambled eggs with onion, tomato, green peas and ginger in the Maharashtrian dhaba style, scooped up with a hot, rustic til-flecked jowar bhakri, a crunchy peanut chutney and a squeeze of lemon. Jowar is a naturally gluten-free millet with a sweet, nutty flavour. The eggs, peas and peanuts bring **protein, choline and fibre**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 150,
+          "note": "3 eggs"
+        },
+        {
+          "food": "sorghum-wholegrain-raw-8fd377",
+          "g": 50,
+          "note": "jowar flour (whole sorghum, ground), certified gluten-free if you are celiac"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80,
+          "note": "two thirds finely chopped, the rest sliced raw for serving"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "chopped"
+        },
+        {
+          "food": "green-peas-raw-867b3e",
+          "g": 40
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 4
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 12,
+          "note": "dry-roasted, for the chutney"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "in wedges, for serving"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.6
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.7
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 6,
+          "note": "white sesame, kneaded into the dough"
+        }
+      ],
+      "steps": [
+        "Make the bhakri dough first. Stir the jowar flour with the sesame seeds and a pinch of salt and pour in just-boiled water a little at a time, stirring with a spoon, until it comes together. Cover for 5 minutes, then knead with wet hands until smooth and soft. Divide into 2 balls.",
+        "Crush the peanuts coarsely with the garlic, a little of the Kashmiri chili and a pinch of salt in a mortar or blender for a quick shenga chutney, and set it aside.",
+        "Pat each ball into a thin round about 12 cm wide, with wet fingers on a sheet of parchment or a damp cloth. Cook on a hot dry pan for 1 minute, flip, sprinkle the top with a few drops of water, flip again and cook until the bhakri puffs in places and is speckled. Wrap in a clean towel to keep soft.",
+        "Warm the oil in a pan and add the cumin. When it sizzles, add the onion, green chili and ginger and cook for 5 minutes, until the onion is soft and golden.",
+        "Stir in the turmeric, Kashmiri chili, tomato and peas. Cook for 4 minutes, until the tomato softens and the peas are tender.",
+        "Beat the eggs with the rest of the salt, pour them in and stir slowly until just set but still soft and glossy, about 2 minutes. Fold in the cilantro.",
+        "Serve the bhurji with the bhakri, the chutney, the raw onion slices and the lemon wedges."
+      ],
+      "prepMin": 20,
+      "cookMin": 20,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Bhakri is best fresh, but it keeps wrapped in a towel for a few hours, and you can re-crisp it on a dry pan. If your bhakri cracks at the edges, the dough was too dry: add a splash of hot water and knead again."
+    },
+    {
+      "id": "gf-south-asia-kolhapuri-chicken-jowar-bhakri",
+      "name": "Kolhapuri-style chicken with jowar bhakri and onion-cucumber salad",
+      "inspiredBy": "Kolhapuri tambda rassa, the red chicken curry of southern Maharashtra, with a lighter masala",
+      "about": "A red, fragrant chicken curry in the Kolhapuri style, with roasted coconut, onion and a toasted spice paste, eaten the Maharashtrian way with a hot jowar bhakri and a cool salad of raw onion, cucumber and lemon. The chicken and jowar bring **protein, iron and B vitamins**, and the second portion is tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 190,
+          "note": "skinless thigh, cut into pieces"
+        },
+        {
+          "food": "sorghum-wholegrain-raw-8fd377",
+          "g": 55,
+          "note": "jowar flour (whole sorghum, ground), certified gluten-free if you are celiac"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 90,
+          "note": "a handful sliced raw for serving"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 4,
+          "note": "fresh or frozen, grated"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 10,
+          "note": "white sesame seeds"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "sliced, for the salad"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 2
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.8
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.7
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.7
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "clove-cb7cf1",
+          "g": 0.2
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.6
+        }
+      ],
+      "steps": [
+        "Toss the chicken with the turmeric, half the lemon juice, a pinch of salt and half the ginger and garlic. Leave it for 15 minutes.",
+        "Toast the coconut in a dry pan for 2 minutes, until it browns at the edges. Add the sesame seeds, Kashmiri chili, coriander, cumin, pepper, cinnamon and cloves for 1 minute more, until fragrant, then tip it all into a blender with a third of the onion and a splash of water and blend into a thick, red paste.",
+        "Warm the oil in a heavy pot and cook most of the rest of the onion, keeping a handful for serving, for 8 to 10 minutes, until deeply golden. Add the remaining ginger and garlic for a minute, then the paste. Cook for 4 to 5 minutes, stirring, until the oil separates and it smells toasted.",
+        "Add the tomato and cook for 5 minutes, then the chicken. Brown it for 3 minutes, pour in about 2 cups of hot water and the rest of the salt, cover and simmer for 20 to 25 minutes, until the chicken is tender and the gravy is thin, red and glossy.",
+        "While it simmers, stir the jowar flour with a pinch of salt, add just-boiled water a little at a time until a dough forms, cover for 5 minutes, then knead with wet hands until smooth. Divide into 4 balls (2 per portion). Press each ball into a thin round between oiled sheets of plastic, or use a tortilla press, cook on a hot dry pan for 1 minute, flip, sprinkle with water, flip again and cook until it puffs in places. Wrap in a towel.",
+        "Toss the cucumber and the raw sliced onion with the remaining lemon juice, a pinch of salt and half the cilantro. Finish the chicken with the rest of the cilantro.",
+        "Serve the chicken with 2 bhakri and the salad. Pack the second portion, with its bhakri, for tomorrow: warm the curry, and re-crisp the bhakri on a dry pan with a sprinkle of water."
+      ],
+      "prepMin": 25,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Toast and blend the spice paste on Sunday and it keeps 3 days in the fridge, which takes about 10 minutes off a weeknight. Kashmiri chili gives the red colour more than heat; for real Kolhapuri fire, add a fresh green chili or a pinch of hot red chili powder. If you are celiac, buy jowar flour from a gluten-free line and check any ready-made Kolhapuri masala for wheat fillers."
+    },
+    {
+      "id": "gf-south-asia-goan-mackerel-curry-okra",
+      "name": "Goan-style mackerel curry with brown basmati and okra",
+      "inspiredBy": "Goan xitt kodi (fish curry rice), with brown rice and okra",
+      "about": "Mackerel pieces gently poached in a tangy Goan curry with a little coconut with Kashmiri chili, tamarind and okra, over nutty brown basmati. It is bright, red and well balanced, and the fish stays soft because it only simmers for a few minutes. The mackerel carries **omega-3 fats, vitamin D and B12**.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "fillets or steaks, bones out, cut in pieces"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "brown basmati"
+        },
+        {
+          "food": "okra-gumbo-raw-424b0a",
+          "g": 90,
+          "note": "trimmed, cut in 2 cm pieces"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 8,
+          "note": "fresh or frozen"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 8
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 2.2
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 2
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.7
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.7
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.6
+        }
+      ],
+      "steps": [
+        "Rinse the brown basmati and cook it in plenty of salted water until tender, about 25 minutes. Drain and keep warm.",
+        "Blend the coconut, half the onion, the garlic, ginger, Kashmiri chili, coriander, cumin, turmeric and pepper with a splash of water into a smooth red paste.",
+        "Warm the oil in a wide pan and cook the rest of the onion for 6 minutes until golden. Add the okra and cook it on medium-high heat for 5 minutes, stirring now and then, until the stickiness cooks off.",
+        "Stir in the paste and cook for 4 minutes, until it deepens in colour. Add the tomato, the tamarind and about a cup and a half of water and simmer for 8 minutes.",
+        "Season the fish with the salt and lower the pieces into the gravy. Cover and simmer very gently for 6 to 8 minutes, until the fish is just opaque. Shake the pan instead of stirring, so the pieces do not break.",
+        "Let it rest for 5 minutes, scatter the cilantro on top and serve with the rice."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Goan curry tastes better after a rest, so you can make it before you shower. Any firm fish works if you cannot find mackerel, but you lose the omega-3."
+    },
+    {
+      "id": "gf-south-asia-kadhi-millet-moong-khichdi",
+      "name": "Gujarati kadhi with foxtail millet and moong khichdi",
+      "inspiredBy": "Gujarati kadhi khichdi, the Sunday-supper comfort bowl, with foxtail millet in place of some of the rice",
+      "about": "A soft, comforting pot of foxtail millet and moong dal khichdi with peas and carrot, under a tangy, silky Gujarati kadhi of yogurt and besan tempered with mustard, cumin and curry leaves. A few drops of ghee on top is how it is eaten. The moong and yogurt bring **protein, folate and calcium**, and the second portion is tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "foxtail-millet-polished-grain-raw-0dfe59",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "foxtail millet"
+        },
+        {
+          "food": "mung-beans-whole-dried-raw-784bed",
+          "g": 40,
+          "swap": "legumes",
+          "note": "whole green moong"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 150,
+          "swap": "dairy_protein",
+          "note": "plain"
+        },
+        {
+          "food": "chickpea-flour-besan-4a8aaa",
+          "g": 20,
+          "note": "chickpea flour"
+        },
+        {
+          "food": "green-peas-raw-867b3e",
+          "g": 60
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 35,
+          "note": "diced"
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 1
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.7
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1
+        },
+        {
+          "food": "clove-cb7cf1",
+          "g": 0.2
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "fenugreek-seed-95f5a8",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.6
+        }
+      ],
+      "steps": [
+        "Rinse the millet and moong together (soak the moong overnight if you can). Put them in a pot with the peas, carrot, half the turmeric, half the salt and about 4 cups of water per cup of grain. Pressure cook for 3 whistles (5 or 6 if the moong was not soaked), or simmer covered for 35 to 40 minutes, stirring now and then, until everything is soft and porridge-like.",
+        "For the kadhi, whisk the yogurt, besan, the rest of the turmeric, the rest of the salt and about 2 cups of water in a pot until completely smooth, with no lumps of besan.",
+        "Warm the oil and half the ghee in a small pan. Add the mustard seeds, cumin, cloves, cinnamon, fenugreek, ginger, green chili and curry leaves and let them sizzle for 30 seconds.",
+        "Stir the tempering into the kadhi and heat gently over medium-low heat, stirring often, for 15 to 20 minutes, until it thickens slightly and loses its raw besan smell. Do not boil hard or it can split.",
+        "Spoon the khichdi into bowls, ladle the kadhi over, add the remaining ghee and the cilantro. Pack the second portion for tomorrow: the kadhi thickens in the fridge, so loosen it with a splash of water when you reheat."
+      ],
+      "prepMin": 12,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "A pinch of jaggery and a squeeze of lemon at the end gives the sweet and sour balance that Gujarati kadhi is known for. Whisk the besan into cold yogurt before it ever goes near the heat. The khichdi simmers while you make the kadhi, so both are ready together."
+    },
+    {
+      "id": "gf-south-asia-kerala-kadala-curry-puttu",
+      "name": "Kerala kadala curry with puttu",
+      "inspiredBy": "Kerala puttu and kadala curry, the classic Kerala breakfast, made as a dinner",
+      "about": "Chickpeas simmered in a roasted-coconut gravy with fennel, pepper and curry leaves, served with a little puttu, steamed rice flour and coconut that soaks up every drop. The chickpeas bring **protein, fibre, iron and folate**, and the second portion is tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "kala-chana-black-chickpeas-dried-64bbd0",
+          "g": 76,
+          "swap": "legumes",
+          "note": "soaked overnight and cooked (see the steps)"
+        },
+        {
+          "food": "rice-flour-white-177d1b",
+          "g": 22,
+          "note": "fine white rice flour, for the puttu"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 16,
+          "note": "fresh or frozen, most for the gravy, a little for the puttu"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 0.7
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 2
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 2
+        },
+        {
+          "food": "fennel-seed-8a14d7",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.7
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.2
+        },
+        {
+          "food": "clove-cb7cf1",
+          "g": 0.1
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.8
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 40,
+          "note": "stems out, shredded fine"
+        }
+      ],
+      "steps": [
+        "Soak the kala chana overnight, then pressure cook them with a little salt until completely tender, about 30 minutes under pressure or 1 to 1½ hours in a pot. If you soaked the week's batch, cook it all now and keep the rest in the fridge for the sundal and roasted chickpeas. Canned chickpeas work too, though they are softer, at about 2.5 times the dry weight, drained and rinsed. Keep a cup of the cooking water, or use plain water.",
+        "Toast most of the coconut in a dry pan for 4 to 5 minutes, until golden brown and fragrant. Add the Kashmiri chili, coriander, fennel, pepper, cinnamon and clove for the last minute. Blend with the ginger, garlic and a splash of water into a thick, dark paste.",
+        "Warm half the oil in a pot and cook the onion for 8 minutes until golden. Add the turmeric and the tomato and cook for 5 minutes, until the tomato breaks down.",
+        "Stir in the paste, the chickpeas, the salt and the reserved cooking water. Simmer for 15 minutes, until the gravy is thick and clings to the chickpeas, mashing a few against the pot to thicken it. Stir in the kale for the last 3 minutes, until just wilted.",
+        "Warm the rest of the oil in a small pan. Add the mustard seeds and curry leaves, let them crackle for 20 seconds and pour over the curry.",
+        "For the puttu, dry-roast the rice flour in a pan for 5 minutes, stirring, until it smells nutty and feels dry, then cool it and rub in a pinch of salt and just enough water, sprinkled in a little at a time, to make damp, crumbly flour that holds together when squeezed. Rub it through a sieve. Layer the flour and the last of the coconut in a puttu maker, or a small steaming basket lined with a clean cloth, and steam for 8 to 10 minutes.",
+        "Serve the puttu with the kadala curry. Pack the second portion for tomorrow: re-steam the puttu for 3 minutes and warm the curry with a splash of water."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "The puttu is a small side here and the kala chana are the meal; at the Light size it is a few spoonfuls, so steam it in a cup. Kala chana (brown chickpeas) is the traditional bean; soak it overnight, since it takes a little longer than the pale kind. No puttu maker? Press the damp flour and coconut into a heatproof cup and steam it in a large pot with a lid."
+    },
+    {
+      "id": "gf-south-asia-kerala-sardine-roast-kappa-thoran",
+      "name": "Kerala sardine roast with kappa and kale thoran",
+      "inspiredBy": "Kerala mathi fry with kappa, the toddy-shop pairing, with a kale thoran in place of cheera (amaranth leaves)",
+      "about": "Fresh sardines marinated in tamarind, pepper and Kashmiri chili and roasted until crisp at the edges, with kappa (mashed cassava) and a quick kale thoran with coconut. It is robust and sour-hot, the kind of plate eaten in toddy shops. The sardines bring **omega-3 fats, vitamin D and B12**.",
+      "ingredients": [
+        {
+          "food": "european-pilchard-or-sardine-raw-e12560",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "whole, cleaned and gutted by your fishmonger"
+        },
+        {
+          "food": "cassava-manioc-raw-41bc74",
+          "g": 130,
+          "note": "peeled"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 8,
+          "note": "fresh or frozen"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "stems out, shredded fine"
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 6
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 2
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 2.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.8
+        },
+        {
+          "food": "fennel-seed-8a14d7",
+          "g": 0.4
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.6
+        }
+      ],
+      "steps": [
+        "Peel the cassava, cut it into chunks and cut out the woody core. Boil in salted water for 15 to 20 minutes, until a fork goes in easily. Drain well.",
+        "Mash the garlic, ginger, tamarind, Kashmiri chili, turmeric, pepper, fennel and half the salt with a teaspoon of the oil into a paste. Rub it over the sardines, inside and out, and leave for 15 minutes.",
+        "Heat the oven to 220 C (425 F). Lay the sardines on a lined tray, brush them with a little more of the oil and roast for 10 to 12 minutes, turning once, until the skin is browned and the flesh flakes. Or pan-fry them in a hot pan for 3 minutes a side.",
+        "Crush the hot cassava coarsely with a fork, with a quarter of the coconut, a pinch of salt and the green chili, finely chopped, until it is rough and fluffy rather than smooth.",
+        "For the thoran, warm the rest of the oil, add the mustard seeds and let them pop, then the onion and curry leaves for 4 minutes. Add the kale and stir for 3 to 4 minutes, until just tender and still bright green. Stir in the rest of the coconut and a pinch of salt.",
+        "Serve the sardines with the kappa, the thoran and a squeeze of lemon."
+      ],
+      "prepMin": 20,
+      "cookMin": 25,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Cassava is sold peeled and frozen in many supermarkets, which saves the work. Frozen whole sardines from a Portuguese, Italian or Asian grocer work well; allow 4 to 6 small ones. If you cannot find sardines, mackerel works with a little more roasting time."
+    },
+    {
+      "id": "gf-south-asia-chicken-dum-biryani-raita",
+      "name": "Chicken dum biryani with brown basmati, egg and cucumber raita",
+      "inspiredBy": "Hyderabadi dum biryani, with brown basmati and a lighter hand with the ghee",
+      "about": "Marinated chicken layered with brown basmati, golden fried onion, almonds, mint and saffron, sealed and steamed on the lowest heat until the grains drink up the juices. It is the weekend showpiece, fragrant with whole spices, with a cooling cucumber raita on the side. The chicken, egg and yogurt bring **protein, choline and B vitamins**, and the second portion is tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 135,
+          "note": "skinless thigh, cut into pieces"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 36,
+          "swap": "low_gi_grains",
+          "note": "brown basmati"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 150,
+          "swap": "dairy_protein",
+          "note": "plain, about two thirds for the marinade, the rest for the raita"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80,
+          "note": "sliced thin"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "one hard-boiled egg per portion, for the top"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 7,
+          "note": "grated"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8,
+          "note": "sliced or slivered"
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 3
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50,
+          "note": "grated, for the raita"
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 2,
+          "note": "garam masala, check the label"
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3,
+          "note": "about 3 green pods"
+        },
+        {
+          "food": "clove-cb7cf1",
+          "g": 0.3,
+          "note": "about 3 whole cloves"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5,
+          "note": "a small stick"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.7
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.05
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 6,
+          "note": "fresh, torn, for the top"
+        }
+      ],
+      "steps": [
+        "Mix the chicken with most of the yogurt, the ginger, garlic, lemon juice, Kashmiri chili, turmeric, garam masala and half the salt. Leave it for at least 30 minutes, or overnight in the fridge.",
+        "Hard-boil the eggs for 9 minutes, cool and peel them. Soak the saffron in 2 tablespoons of warm water. Rinse the rice and parboil it in a large pot of salted water with the bay leaf, cardamom, cloves and cinnamon for 18 to 20 minutes, until it is about three-quarters cooked and still has a firm bite. Drain.",
+        "Warm the ghee and oil in a heavy pot and cook the onion over medium heat for about 20 minutes, with a splash of water if it catches, until deep golden and soft. Lift half of it out, along with the almonds fried for the last minute, and set aside for the top.",
+        "Add the chicken and its marinade to the pot and cook for 8 to 10 minutes, until the chicken is half cooked and the sauce has thickened.",
+        "Spread the parboiled rice over the chicken. Top with the reserved onion and almonds, the cilantro and mint and the saffron water, then sprinkle 3 tablespoons of hot water over the rice. Cover with foil and a tight lid and cook on the lowest heat for 25 minutes, then rest off the heat for 10 minutes without opening.",
+        "Meanwhile, stir the grated cucumber, the last of the yogurt, the cumin and a pinch of salt together for the raita.",
+        "Fold the rice up from the bottom to mix the layers, halve the eggs and set them on top, and serve with the raita. Pack the second portion for tomorrow: biryani reheats well in a covered pan or the microwave with a splash of water."
+      ],
+      "prepMin": 30,
+      "cookMin": 70,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "This is a chicken-forward biryani, so the raita and egg complete the plate. Use whole spices rather than a packet biryani masala if you can, since masala mixes sometimes carry wheat fillers. Parboil the brown basmati until it is just firm; it finishes in the steam. A flat pan or tawa under the pot keeps the bottom from catching during the dum."
+    },
+    {
+      "id": "gf-south-asia-sri-lankan-salmon-curry-beetroot",
+      "name": "Salmon curry with beetroot curry, kale mallung and pol sambol",
+      "inspiredBy": "a Sri Lankan rice and curry plate: a mild fish curry in coconut milk, beetroot curry, kale mallung and pol sambol",
+      "about": "A gently spiced Sri Lankan-style coconut curry with tamarind and curry leaves, here with salmon in place of the usual tuna or white fish, beside a deep-pink beetroot curry, a quick kale mallung and a punchy fresh coconut sambol. A small plate of rice soaks up the gravy. The salmon brings **omega-3 fats, vitamin D and B12**, and the beets and kale add folate.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 120,
+          "swap": "fatty_fish",
+          "note": "skinless fillet, cut in large chunks"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "brown basmati, a small portion"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "stems out, shredded very fine, for the mallung"
+        },
+        {
+          "food": "beet-raw-4df109",
+          "g": 120,
+          "note": "peeled and diced small"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 13,
+          "note": "fresh or frozen, a spoonful for the sambol, the rest blended into coconut milk"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "sliced, about a third kept raw for the sambol"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 1
+        },
+        {
+          "food": "tamarind-paste-484d0c",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.8
+        },
+        {
+          "food": "fennel-seed-8a14d7",
+          "g": 0.4
+        },
+        {
+          "food": "fenugreek-seed-95f5a8",
+          "g": 0.2
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1.0
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.2
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.2
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.8
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook it in plenty of salted water until tender, about 25 minutes, then drain.",
+        "Toast the coriander, cumin, fennel and fenugreek in a dry pan for a minute, then grind with the pepper, cinnamon and cardamom into a rough curry powder. Blitz most of the coconut with half a cup of warm water, then strain or leave as is, for a quick coconut milk.",
+        "For the beetroot curry, warm half the oil in a small pot and add the mustard seeds. When they pop, add half the curry leaves and a third of the onion, then the beet, a pinch of turmeric, a pinch of salt and about half of the coconut milk with a splash of water. Simmer, covered, for 15 to 18 minutes, until the beet is tender and the sauce is thick and pink.",
+        "For the pol sambol, a small, fiery condiment for the rice, mash the coconut with the raw onion you set aside, half the green chili, the lemon juice, the Kashmiri chili and a pinch of salt using your fingers until it is crumbly and rust-red.",
+        "For the fish curry, warm the rest of the oil in a wide pan and cook the remaining onion, garlic and curry leaves for 5 minutes. Stir in the ground spices, the turmeric and the tamarind, then add the rest of the coconut milk, the rest of the chili and about half a cup of water. Simmer for 5 minutes.",
+        "Slip in the salmon, season with the salt, cover and cook gently for 6 to 8 minutes, until just opaque. Do not stir; tilt the pan to baste.",
+        "For the kale mallung, toss the kale in a hot dry pan with a pinch of salt, a pinch of turmeric and the rest of the green chili for 2 minutes, until bright and just wilted, then fold in a spoonful of the sambol.",
+        "Serve the fish curry with the rice, the beetroot curry, the mallung and the rest of the sambol."
+      ],
+      "prepMin": 20,
+      "cookMin": 40,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Salmon is not a traditional Sri Lankan fish, so treat this as a friendly twist: skipjack or mackerel are the usual choices. A sprig of pandan, if you find it, makes the curry smell like home. Eat the sambol the day it is made."
+    },
+    {
+      "id": "gf-south-asia-guava-pomegranate-chaat",
+      "name": "Guava and pomegranate chaat",
+      "inspiredBy": "Indian street-cart guava chaat, with pomegranate",
+      "about": "Crisp guava chunks and ruby pomegranate seeds tossed with lemon, chaat masala and a little roasted peanut for crunch. It is sweet, sour, salty and hot in one bite. Guava brings **more than a day of vitamin C** in one bowl.",
+      "ingredients": [
+        {
+          "food": "guava-common-raw-a500a0",
+          "g": 120,
+          "note": "cut in small chunks"
+        },
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 50,
+          "note": "seeds"
+        },
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 10,
+          "note": "roughly crushed"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 3
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 1.5,
+          "note": "chaat masala, check the label"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toss the guava and pomegranate seeds with the lemon juice, the chaat masala and a pinch of salt.",
+        "If your peanuts are raw, toast them in a dry pan for 3 to 4 minutes. Scatter the peanuts and cilantro over the top just before eating, so they stay crunchy."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Check the label on the chaat masala, or make your own with a pinch of ground cumin, black salt and a little amchur."
+    },
+    {
+      "id": "gf-south-asia-peanut-sundal",
+      "name": "Boiled peanut sundal with coconut",
+      "inspiredBy": "Tamil sundal, the temple and beach-stall snack of boiled legumes",
+      "about": "Warm boiled peanuts tempered with mustard seeds, curry leaves and green chili, with fresh coconut and a squeeze of lemon. It is the Chennai beach snack, soft and savoury and surprisingly filling. The peanuts bring **protein and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 32,
+          "note": "raw, shelled"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 3,
+          "note": "fresh or frozen, grated"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 2
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 0.8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Soak the peanuts overnight in water. Drain, then pressure cook with salted water for 3 whistles, or simmer for 40 to 45 minutes, until tender with no raw bite, and drain.",
+        "Warm the oil, add the mustard seeds and let them pop, then the green chili and curry leaves for 20 seconds.",
+        "Toss the peanuts in the tempering with the coconut and lemon juice."
+      ],
+      "prepMin": 5,
+      "cookMin": 45,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Soak and boil the peanuts the night before; they keep 4 to 5 days in the fridge. Temper them fresh."
+    },
+    {
+      "id": "gf-south-asia-masala-roasted-chickpeas",
+      "name": "Oven-roasted masala chickpeas",
+      "inspiredBy": "roasted chana, the everyday crunchy snack of North and West India",
+      "about": "Chickpeas roasted in the oven until crisp outside and soft inside, tossed with chaat masala, Kashmiri chili and lemon. They are the crunchy snack that stands in for packaged namkeen. The chickpeas bring **protein, fibre and iron**.",
+      "ingredients": [
+        {
+          "food": "kala-chana-black-chickpeas-dried-64bbd0",
+          "g": 35,
+          "swap": "legumes",
+          "note": "cooked ahead (see the steps)"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 3
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 1.5,
+          "note": "chaat masala, check the label"
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 0.5
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Use the kala chana you cooked for Friday's kadala curry, or canned chickpeas at about 2.5 times the dry weight, drained, rinsed and patted very dry.",
+        "Toss them with the oil, the Kashmiri chili, the cumin and a pinch of salt and spread them on a tray in a single layer.",
+        "Roast at 220 C (425 F) for 25 to 30 minutes, shaking the tray halfway, until crisp and golden. Toss with the chaat masala and the lemon juice while still warm."
+      ],
+      "prepMin": 5,
+      "cookMin": 30,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "They are crispest on the day. Dry the chickpeas well before roasting, and leave them in the turned-off oven for 10 minutes for extra crunch."
+    },
+    {
+      "id": "gf-south-asia-masala-chaas",
+      "name": "Masala chaas",
+      "inspiredBy": "Gujarati chaas and South Indian neer mor",
+      "about": "Thin, cooling buttermilk-style yogurt whisked with roasted cumin, ginger, curry leaves and cilantro. It is the Gujarati and South Indian answer to a heavy meal. The yogurt brings **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 120,
+          "swap": "dairy_protein",
+          "note": "plain"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 3
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 0.5
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 1
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.5,
+          "note": "toasted and crushed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Whisk the yogurt with about a cup of cold water until smooth and pourable.",
+        "Stir in the ginger, green chili, cilantro, cumin and salt.",
+        "Tear in the curry leaves and serve very cold."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Add a squeeze of lemon in summer, or a pinch of black salt for a stronger, funkier finish."
+    },
+    {
+      "id": "gf-south-asia-shrikhand-pomegranate",
+      "name": "Saffron and cardamom shrikhand with papaya and pomegranate",
+      "inspiredBy": "Gujarati and Maharashtrian shrikhand, lighter and sweetened with fruit",
+      "about": "Thick Greek yogurt sweetened with ripe papaya, scented with saffron and cardamom and topped with ruby pomegranate seeds. It is the Gujarati and Maharashtrian dessert, lightened. The yogurt brings **protein and calcium**, and the almonds add a little crunch.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 180,
+          "swap": "dairy_protein",
+          "note": "plain, thick Greek-style"
+        },
+        {
+          "food": "papaya-raw-cd2cbc",
+          "g": 50,
+          "note": "very ripe, mashed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8,
+          "note": "slivered"
+        },
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 40,
+          "note": "seeds"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.05
+        }
+      ],
+      "steps": [
+        "Soak the saffron in a spoonful of warm water.",
+        "Whisk the yogurt with the mashed papaya, cardamom and saffron water until smooth and creamy.",
+        "Spoon into a bowl and top with the pomegranate seeds and almonds."
+      ],
+      "prepMin": 6,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Sweeten with a teaspoon of honey or jaggery if the papaya is not very ripe."
+    },
+    {
+      "id": "gf-south-asia-masala-boiled-eggs",
+      "name": "Masala boiled eggs",
+      "inspiredBy": "Indian street-stall masala eggs",
+      "about": "Hard-boiled eggs halved and dusted with Kashmiri chili, black pepper and a few drops of lemon, with cilantro on top. It is the simplest road-side snack, and it keeps you full. The eggs bring **protein and choline**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 3
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 3
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 9 minutes, cool them in cold water and peel.",
+        "Halve the eggs and sprinkle with the Kashmiri chili, pepper, salt and lemon juice, then top with cilantro."
+      ],
+      "prepMin": 3,
+      "cookMin": 10,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Boil a few on Sunday; they keep 5 days in the shell."
+    },
+    {
+      "id": "gf-south-asia-cucumber-carrot-peanut-salad",
+      "name": "Cabbage and carrot kosambari with toasted sesame",
+      "inspiredBy": "Karnataka kosambari, here made with sesame instead of soaked dal",
+      "about": "Crisp shredded cabbage and sweet grated carrot tossed with lemon, mustard seeds and toasted sesame, in the spirit of a Karnataka kosambari. It is crunchy, tangy and refreshing. The carrot brings **plenty of vitamin A**, and the toasted sesame adds crunch.",
+      "ingredients": [
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 100,
+          "note": "shredded thin"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "grated"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 6,
+          "note": "toasted"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 1
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toss the cabbage, carrot and green chili with the lemon juice and salt.",
+        "Dry-roast the sesame seeds in a small pan, then dry-fry the mustard seeds for 20 seconds until they pop.",
+        "Fold the sesame, mustard seeds and cilantro into the salad just before serving."
+      ],
+      "prepMin": 8,
+      "cookMin": 5,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Dress it just before serving so the cabbage stays crunchy."
+    },
+    {
+      "id": "gf-south-asia-tandoori-chicken-bites",
+      "name": "Tandoori-style chicken bites",
+      "inspiredBy": "North Indian chicken tikka",
+      "about": "Little chunks of chicken thigh marinated in yogurt, lemon, ginger, garlic and Kashmiri chili, roasted until browned at the edges. They are the high-protein snack for a hungrier day. The chicken brings **protein, zinc and B6**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 90,
+          "note": "skinless thigh, cut in small chunks"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 40,
+          "swap": "dairy_protein",
+          "note": "plain, about 3 tbsp"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1.2
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.3
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Mix the chicken with the yogurt, ginger, garlic, lemon juice, Kashmiri chili, turmeric, cumin, salt and oil and leave it for at least 20 minutes.",
+        "Thread onto skewers or spread on a tray and roast at 230 C (450 F) for 15 to 18 minutes, turning once, until browned and cooked through.",
+        "Rest for 3 minutes and serve warm."
+      ],
+      "prepMin": 10,
+      "cookMin": 18,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Marinate in the morning and it takes 15 minutes in the oven at snack time."
+    },
+    {
+      "id": "gf-south-asia-chickpea-sundal",
+      "name": "Chickpea sundal",
+      "inspiredBy": "Tamil sundal",
+      "about": "Soft chickpeas tempered with mustard seeds, curry leaves and green chili, with fresh coconut and lemon. It is the humble protein snack of Tamil festivals. The chickpeas bring **protein, fibre and iron**.",
+      "ingredients": [
+        {
+          "food": "kala-chana-black-chickpeas-dried-64bbd0",
+          "g": 40,
+          "swap": "legumes",
+          "note": "cooked ahead (see the steps)"
+        },
+        {
+          "food": "coconut-meat-raw-8214ee",
+          "g": 5,
+          "note": "fresh or frozen, grated"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 2
+        },
+        {
+          "food": "curry-leaves-524ebb",
+          "g": 0.8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Use the kala chana you cooked for Friday's kadala curry, or canned, drained and rinsed.",
+        "Warm the oil, add the mustard seeds and let them pop, then the green chili and curry leaves.",
+        "Toss the chickpeas through the tempering with the coconut and lemon juice."
+      ],
+      "prepMin": 4,
+      "cookMin": 5,
+      "tags": [
+        "mild"
+      ],
+      "tip": "A pinch of black pepper wakes it up."
+    },
+    {
+      "id": "gf-south-asia-haldi-doodh-badam",
+      "name": "Haldi doodh with almonds and cardamom",
+      "inspiredBy": "North Indian and Gujarati haldi doodh, with ground almonds as in badam doodh",
+      "about": "Warm milk simmered with turmeric, black pepper and cardamom and whisked with finely ground almonds until it is silky. It is the Gujarati and Maharashtrian bedtime cup, and a snack that feels like a hug. The milk brings **calcium and B12** to the day, and the almonds add a little vitamin E.",
+      "ingredients": [
+        {
+          "food": "milk-nonfat-37ddd7",
+          "g": 250,
+          "note": "skim milk"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "note": "ground fine"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Grind the almonds as fine as you can, with a spoonful of the milk, into a smooth paste.",
+        "Warm the rest of the milk with the turmeric, pepper and cardamom over medium-low heat for about 5 minutes, until steaming, without letting it boil over.",
+        "Whisk in the almond paste and heat for 1 more minute. Pour into a mug."
+      ],
+      "prepMin": 4,
+      "cookMin": 6,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Stir in a teaspoon of jaggery or honey if you like it sweet. Skip the pepper for children."
+    },
+    {
+      "id": "gf-south-asia-egg-chaat",
+      "name": "Egg chaat with onion, tomato and lemon",
+      "inspiredBy": "Indian street-stall anda chaat",
+      "about": "Chopped hard-boiled eggs tossed with red onion, tomato, cilantro, lemon and chaat masala, with a few roasted peanuts for crunch. It is tangy, salty and fresh, and it takes ten minutes. The eggs bring **protein and choline**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "peanuts-raw-badfa2",
+          "g": 8,
+          "note": "crushed"
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 1,
+          "note": "chaat masala, check the label"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 9 minutes, cool them in cold water, peel and chop roughly.",
+        "Toss the eggs gently with the onion, tomato, cilantro, lemon juice, chaat masala, pepper and salt.",
+        "Scatter the peanuts (toasted in a dry pan if raw) on top just before eating."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Boil the eggs a day or two ahead and the chaat takes 3 minutes."
+    }
+  ]
+}
