@@ -1436,6 +1436,62 @@
    ],
    "recipe": "Rye flakes are whole rye kernels steamed and rolled flat, cooked like oats for Nordic porridge.",
    "limits": "Rolling changes nothing nutritionally; values are whole-grain rye."
+  },
+  {
+   "key": "poha",
+   "name": "Poha (flattened rice), thick",
+   "head": "poha",
+   "form": "dried",
+   "category": "grain",
+   "aliases": ["poha", "jada poha", "thick poha", "flattened rice", "beaten rice", "aval", "avalakki", "chira", "chiwda rice"],
+   "servings": [{"label": "1 cup", "g": 60}],
+   "components": [
+    {"food": "rice-white-parboiled-raw-9b2567", "g": 100, "note": "poha is parboiled rice, flattened between rollers"}
+   ],
+   "recipe": "Poha is parboiled rice pressed flat and dried; rinsed and softened, it cooks in minutes. Values are raw parboiled white rice.",
+   "limits": "Red poha keeps some bran and carries a little more fibre and iron; some brands are iron-fortified. Claims here use plain parboiled rice."
+  },
+  {
+   "key": "soya-chunks",
+   "name": "Soya chunks (textured soy protein), dried",
+   "head": "soya chunks",
+   "form": "dried",
+   "category": "legume",
+   "aliases": ["soya chunks", "soy chunks", "soya nuggets", "meal maker", "nutrela", "soya badi", "tvp chunks"],
+   "servings": [{"label": "1 cup", "g": 50}],
+   "components": [
+    {"food": "textured-vegetable-protein-soy-granule-fe2afb", "g": 100, "note": "the same defatted soy, pressed into chunks instead of granules"}
+   ],
+   "recipe": "Soya chunks are defatted soy flour extruded into chunks; boiled and squeezed, they soak up a curry like meat. Values are textured soy protein.",
+   "limits": "Chunks and granules are the same food in a different shape."
+  },
+  {
+   "key": "kala-chana",
+   "name": "Kala chana (black chickpeas), dried",
+   "head": "kala chana",
+   "form": "dried",
+   "category": "legume",
+   "aliases": ["kala chana", "black chickpeas", "brown chickpeas", "desi chickpeas", "bengal gram", "kadala", "kondakadalai"],
+   "servings": [{"label": "1/4 cup", "g": 50}],
+   "components": [
+    {"food": "chickpeas-dry-1b10f2", "g": 100, "note": "desi chickpeas: the small, dark-skinned kind"}
+   ],
+   "recipe": "Kala chana are the small, dark desi chickpeas used in kadala curry, sundal and chaat. Values are dried chickpeas.",
+   "limits": "Desi chickpeas carry a little more fibre and a lower glycaemic index than the large kabuli kind; values here don't claim it."
+  },
+  {
+   "key": "chana-dal",
+   "name": "Chana dal (split desi chickpeas), dried",
+   "head": "chana dal",
+   "form": "dried",
+   "category": "legume",
+   "aliases": ["chana dal", "chana daal", "split bengal gram", "split chickpeas", "kadalai paruppu", "harbara dal"],
+   "servings": [{"label": "1/4 cup", "g": 50}],
+   "components": [
+    {"food": "chickpeas-dry-1b10f2", "g": 100, "note": "desi chickpeas, hulled and split"}
+   ],
+   "recipe": "Chana dal is desi chickpeas with the skin removed and split; it cooks faster and stays nutty. Values are dried chickpeas.",
+   "limits": "Hulling removes some fibre, so fibre is a little overstated (by about a fifth)."
   }
  ]
 }
