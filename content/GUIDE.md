@@ -354,9 +354,10 @@ happens to fit the diet, never like a list of things you can't have.
 - **Keto fat:** olive oil is about 14% saturated, so it raises the saturated-fat share, not lowers it, and the 27 g
   oil cap binds at Big. Carry keto calories with nuts, avocado, olives and fatty fish as well as oil. Rinse olives and
   capers, and keep olives to about 100 g a day (sodium).
-- **Vegan B12:** say it plainly. B12 comes from a fortified soy beverage every day; check the carton for about 1 µg per
-  cup; many Canadian cartons carry less, so a B12 supplement is the safe bet. Plain soy yogurt (`soy-yogurt-plain`)
-  and seitan now count as vegan protein; calcium-set tofu is the only tofu worth buying.
+- **Vegan B12:** say it plainly. B12 comes from a fortified soy beverage every day. The library's carton carries about
+  2 µg per cup (US-style fortification); many Canadian cartons carry about half that, so a daily B12 supplement is the
+  safe bet. Plain soy yogurt (`soy-yogurt-plain`), seitan and soya chunks count as vegan protein; calcium-set tofu is
+  the only tofu worth buying. Soy yogurt is not a vitamin E or C source (its old 9.7 mg vitamin E was a data error).
 - **Seeds and wheat germ** belong where they make sense (porridge, shakes, sauces), never sprinkled on top for numbers.
 - **Diabetes-friendly framing:** "keeps the plate steady", "the starch digests more slowly"; never "gentle on blood
   sugar", never a promise.
