@@ -28,7 +28,7 @@ import {
 import { boldStats, markerCount, paragraphWords, parseRich } from './richText';
 import { HARD_NUTRIENTS, fixListForAI, gradePlan, type DayReport } from './planReport';
 import { SIZING_TOLERANCE, sizingAdvice } from './personalize';
-import { isProteinSource } from './foodRoles';
+import { isHighMercuryFish, isLiver, isProteinSource } from './foodRoles';
 import { PLAN_STYLES, distinctGroceries, gradeOptionsFor, isSpiceShelf, styleNutrientGates, styleStructureGates } from './planStyles';
 import type { CalorieBand, Food, MealPlan, NutrientKey, PlanSize } from './types';
 
@@ -107,6 +107,10 @@ export const LIMITS = {
   groceries: 45,
   /** dried spices, herbs, blends, salt and pepper: a pantry shelf, counted apart from the weekly groceries */
   spiceShelf: 25,
+  /** do no harm: Health Canada's weekly limit for fresh tuna, shark, swordfish, marlin, escolar and orange roughy */
+  highMercuryFishGWeek: 150,
+  /** do no harm: liver is very high in vitamin A; a generous serving a week at most (each day's upper limit is gated too) */
+  liverGWeek: 150,
 } as const;
 
 const SALT = /^(table |sea |kosher )?salt\b/i;
@@ -161,7 +165,50 @@ export function cookingSenseChecks(plan: MealPlan, foods: FoodIndex, size: PlanS
       if ((m.slot === 'lunch' || m.slot === 'dinner') && protein < LIMITS.proteinSourceG)
         add('protein_source', recipe, d.day, `${m.name}: only ${protein.toFixed(1)} g of protein from a real protein source (a ${m.slot} needs ${LIMITS.proteinSourceG} g).`, 'Add fish, poultry, meat, eggs, tofu, seitan, yogurt or legumes.');
     }
-  return [...groups.values()].map((g) => ({ ...g, message: g.days!.length > 1 ? `Days ${g.days!.join(', ')}: ${g.message}` : `Day ${g.day}: ${g.message}` }));
+  const perServing = [...groups.values()].map((g) => ({ ...g, message: g.days!.length > 1 ? `Days ${g.days!.join(', ')}: ${g.message}` : `Day ${g.day}: ${g.message}` }));
+  return [...perServing, ...harmChecks(plan, foods, size, kcal)];
+}
+
+/** Week-level do-no-harm checks: high-mercury fish and liver are fine in moderation, never as a habit. */
+export function harmChecks(plan: MealPlan, foods: FoodIndex, size: PlanSize, kcal: number): LabFailure[] {
+  let mercuryG = 0;
+  let liverG = 0;
+  const liverDays = new Set<number>();
+  for (const d of plan.days)
+    for (const m of d.meals)
+      for (const i of m.ingredients) {
+        const f = getFood(foods, i.foodId);
+        if (!f) continue;
+        if (isHighMercuryFish(f)) mercuryG += i.grams;
+        if (isLiver(f)) {
+          liverG += i.grams;
+          liverDays.add(d.day);
+        }
+      }
+  const out: LabFailure[] = [];
+  if (mercuryG > LIMITS.highMercuryFishGWeek)
+    out.push({
+      kind: 'cooking',
+      code: 'mercury',
+      size,
+      kcal,
+      message: `${Math.round(mercuryG)} g of fresh tuna, swordfish, shark, marlin or similar this week (Health Canada advises at most ${LIMITS.highMercuryFishGWeek} g a week).`,
+      fix: 'Use salmon, trout, sardines, mackerel (not king) or canned light tuna instead on some days.',
+    });
+  if (liverG > LIMITS.liverGWeek) {
+    const days = [...liverDays];
+    out.push({
+      kind: 'cooking',
+      code: 'liver',
+      size,
+      kcal,
+      day: days[0],
+      days,
+      message: `Days ${days.join(', ')}: ${Math.round(liverG)} g of liver this week (at most ${LIMITS.liverGWeek} g; it is very high in vitamin A).`,
+      fix: 'Use a little less liver in the dish, or keep it to one dish a week; beef, lentils or eggs carry the iron elsewhere.',
+    });
+  }
+  return out;
 }
 
 /** Slots each recipe is used in, to tell snacks and breakfasts from the rest. */

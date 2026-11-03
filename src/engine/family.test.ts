@@ -312,6 +312,18 @@ describe('plan lab', () => {
     expect(LIMITS.fleshG).toBe(400);
   });
 
+  it('flags more than 150 g of liver in a week', () => {
+    const f = clone();
+    const fish = f.recipes.find((r) => r.id === 'salmon-potatoes-broccoli')!; // dinner on day 1, leftover lunch on day 2
+    const salmon = fish.ingredients.find((i) => i.food.startsWith('salmon'))!;
+    salmon.food = 'chicken-liver-raw-6931a6';
+    salmon.g = 100; // twice in the week: 200 g
+    const found = labStd(f).failures.filter((x) => x.code === 'liver');
+    expect(found.length).toBeGreaterThan(0);
+    expect(found[0].message).toMatch(/\d+ g of liver this week \(at most 150 g/);
+    expect(LIMITS).toMatchObject({ highMercuryFishGWeek: 150, liverGWeek: 150 });
+  });
+
   it('lets a bigger plate carry proportionally more spice', () => {
     expect(spiceLimit(500)).toBe(8);
     expect(spiceLimit(700)).toBe(8);

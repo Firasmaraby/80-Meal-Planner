@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { isPlantDairy, isProteinSource } from './foodRoles';
+import { isHighMercuryFish, isLiver, isPlantDairy, isProteinSource } from './foodRoles';
 import { FOOD_BANS } from './planStyles';
 import type { Food } from './types';
 
@@ -69,5 +69,20 @@ describe('egg ban', () => {
     expect(FOOD_BANS.egg(food('Eggplant, raw', 'vegetable'))).toBeUndefined();
     expect(FOOD_BANS.egg(food('Paneer cheese', 'dairy'))).toBeUndefined();
     expect(FOOD_BANS.egg(food('Noodles, egg-free', 'grain'))).toBeUndefined();
+  });
+});
+
+describe('do-no-harm foods', () => {
+  it('knows high-mercury fish from the low-mercury ones', () => {
+    for (const n of ['Swordfish, raw', 'Shark, raw', 'Tuna, fresh, bluefin, raw', 'Fish, mackerel, king, raw', 'Orange roughy, raw'])
+      expect(isHighMercuryFish(food(n, 'fish')), n).toBe(true);
+    for (const n of ['Light tuna, canned in water, drained solids', 'Tuna in oil, drained', 'Skipjack tuna, katsuobushi (dried bonito)', 'Salmon, Atlantic, raw', 'Mackerel, Atlantic, raw'])
+      expect(isHighMercuryFish(food(n, 'fish')), n).toBe(false);
+  });
+
+  it('knows liver, but not cod liver oil', () => {
+    expect(isLiver(food('Chicken liver, raw', 'poultry'))).toBe(true);
+    expect(isLiver(food('Beef liver, braised', 'meat'))).toBe(true);
+    expect(isLiver(food('Cod liver oil', 'oil_fat'))).toBe(false);
   });
 });

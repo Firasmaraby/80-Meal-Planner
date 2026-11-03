@@ -35,7 +35,13 @@ export const RULES = {
   /** protein as % of the day's calories */
   proteinMinPctKcal: 20,
   fattyFishPerWeek: 2,
+  /** sodium ceiling (mg) up to 2,000 kcal, then in proportion to the day's calories. Defensible, not strict: about the
+   *  average Canadian intake and below the US average, so food can be properly seasoned. Heart-healthy plans go lower. */
+  sodiumMaxMg: 3000,
 } as const;
+
+/** The sodium ceiling for a day: `max` mg up to 2,000 kcal, growing with calories above that (bigger eaters, more food). */
+export const sodiumCeiling = (kcal: number, max: number = RULES.sodiumMaxMg) => Math.round((max * Math.max(kcal, 2000)) / 2000);
 
 export type Rules = Record<keyof typeof RULES, number>;
 
@@ -59,6 +65,7 @@ export interface ReportIssue {
     | 'gl_high'
     | 'protein_low'
     | 'fish_low'
+    | 'sodium_high'
     | 'over_ul';
   day?: number;
   nutrient?: NutrientKey;
@@ -73,6 +80,8 @@ export interface DayReport {
   protein: number;
   proteinPctKcal: number;
   satFatPct?: number;
+  /** mg */
+  sodium?: number;
   omegaRatio?: number;
   /** omega-6 (la) and omega-3 grams, for the weekly ratio */
   omega6?: number;
@@ -146,6 +155,7 @@ export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []
       protein,
       proteinPctKcal: kcal ? ((protein * 4) / kcal) * 100 : 0,
       satFatPct: satFatPctOfKcal(totals),
+      sodium: totals.sodium ?? undefined,
       omegaRatio: omegaRatio(totals),
       omega6: totals.la ?? undefined,
       omega3: omega3(totals),
@@ -202,6 +212,15 @@ export function gradePlan(plan: MealPlan, foods: FoodIndex, catalog: Food[] = []
         day: r.day,
         message: `Day ${r.day}: saturated fat is ${r.satFatPct.toFixed(1)}% of calories (max ${rules.satFatMaxPct}%).`,
         fix: 'Swap butter, cheese, coconut or fatty meat for olive oil, fish, legumes or lean poultry.',
+      });
+    const sodiumMax = sodiumCeiling(r.kcal, rules.sodiumMaxMg);
+    if (r.sodium != null && r.sodium > sodiumMax)
+      issues.push({
+        level: 'warning',
+        code: 'sodium_high',
+        day: r.day,
+        message: `Day ${r.day}: sodium is ${round(r.sodium)} mg (aim ≤${sodiumMax} mg at ${round(r.kcal)} kcal).`,
+        fix: 'Rinse canned beans or use no-salt-added ones, trim the added salt, soy sauce or miso, use cheese as a garnish, and keep bread to one portion a meal. Finish with lemon, vinegar, herbs or spice.',
       });
     if (r.omegaRatio != null && r.omegaRatio > rules.omegaDayMaxRatio)
       issues.push({

@@ -24,6 +24,19 @@ const WHEAT_PROTEIN_RX =
 /** Foods that mention a protein but aren't one: lecithin, bars with protein added, sausages and burgers (prepared). */
 const NOT_A_PROTEIN_RX = /gluten[- ]free|lecithin|\bbar\b|added/i;
 
+/**
+ * Fish Health Canada asks everyone to limit to 150 g a week for mercury: fresh or frozen tuna, shark, swordfish, marlin,
+ * escolar and orange roughy (plus king mackerel and tilefish, which US advice adds). Canned light tuna and skipjack are low.
+ */
+const HIGH_MERCURY_RX = /\b(shark|swordfish|marlin|escolar|orange roughy|king mackerel|mackerel, king|tilefish)\b/i;
+const LOW_MERCURY_TUNA_RX = /canned|\blight\b|skipjack|katsuobushi|bonito|in oil|in water/i;
+export const isHighMercuryFish = (f: Pick<Food, 'name' | 'category'>): boolean =>
+  f.category === 'fish' && (HIGH_MERCURY_RX.test(f.name) || (/\btuna\b/i.test(f.name) && !LOW_MERCURY_TUNA_RX.test(f.name)));
+
+/** Liver of any animal (not cod liver oil): rich in preformed vitamin A, so once a week is plenty. */
+export const isLiver = (f: Pick<Food, 'name' | 'category'>): boolean =>
+  (f.category === 'meat' || f.category === 'poultry' || f.category === 'prepared') && /\bliver\b|liverwurst|p[âa]t[ée]/i.test(f.name) && !/\boil\b/i.test(f.name);
+
 /** Categories that count as a meal's real protein. */
 const PROTEIN_CATEGORIES = new Set<Food['category']>(['meat', 'poultry', 'fish', 'egg', 'legume', 'dairy']);
 

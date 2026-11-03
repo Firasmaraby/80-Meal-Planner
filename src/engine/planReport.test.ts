@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import { BUNDLED_PLANS, FOODS, FOOD_INDEX } from '@/state/catalog';
 
-import { REFERENCE_PANEL, RULES, bestSources, fixListForAI, gradePlan, preformedVitA } from './planReport';
+import { REFERENCE_PANEL, RULES, bestSources, fixListForAI, gradePlan, preformedVitA, sodiumCeiling } from './planReport';
 
 describe('plan grading', () => {
   it('grades the sample plans day by day with no calorie errors', () => {
@@ -72,3 +72,23 @@ describe('upper limits', () => {
   });
 });
 
+describe('sodium ceiling', () => {
+  it('allows 3,000 mg up to 2,000 kcal, then grows with calories', () => {
+    expect(sodiumCeiling(1400)).toBe(3000);
+    expect(sodiumCeiling(2000)).toBe(3000);
+    expect(sodiumCeiling(3200)).toBe(4800);
+    expect(sodiumCeiling(2000, 2000)).toBe(2000);
+  });
+
+  it('flags a day over the ceiling, and a rules override moves it', () => {
+    const plan = structuredClone(BUNDLED_PLANS[0]);
+    const salt = FOODS.find((f) => /^table salt/i.test(f.name))!;
+    plan.days[0].meals[0].ingredients.push({ foodId: salt.id, grams: 12 }); // about 4.6 g of sodium
+    const flagged = gradePlan(plan, FOOD_INDEX, FOODS).issues.filter((i) => i.code === 'sodium_high');
+    expect(flagged.map((i) => i.day)).toContain(plan.days[0].day);
+    expect(flagged[0].level).toBe('warning');
+    expect(flagged[0].message).toMatch(/sodium is \d+ mg \(aim ≤\d+ mg at \d+ kcal\)/);
+    const lax = gradePlan(plan, FOOD_INDEX, FOODS, { rules: { sodiumMaxMg: 99999 } });
+    expect(lax.issues.some((i) => i.code === 'sodium_high')).toBe(false);
+  });
+});

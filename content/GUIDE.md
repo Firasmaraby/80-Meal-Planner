@@ -36,6 +36,24 @@ Each day, at every band the family claims (checked at the band's lowest and high
   25 g at every main meal.
 - **Fatty fish** twice a week (salmon, sardines, mackerel, trout, herring, anchovies), unless the family is vegetarian
   or vegan.
+- **Sodium** at most 3,000 mg a day up to 2,000 kcal, then in proportion to calories (about 4,800 mg at 3,200 kcal).
+  Heart-healthy families keep their own 2,000 mg. The bar is **defensible, not strict**: about what an average Canadian
+  eats, so food can be properly seasoned. When a day is over, trim in this order, least taste lost first:
+  1. no-salt-added canned beans (`chickpeas-canned-nsa`, `black-beans-canned-nsa`, `kidney-beans-canned-nsa`,
+     `white-beans-canned-nsa`, `pinto-beans-canned-nsa`, `lentils-canned-nsa`), or rinse regular cans and say so;
+  2. trim, don't remove, the added salt, and finish with lemon, vinegar, herbs, garlic or chili;
+  3. cheese as a garnish, not a layer;
+  4. soy sauce (or `soy-sauce-reduced-sodium`) and miso to taste, in teaspoons;
+  5. one bread or tortilla portion a meal.
+
+  Less salt means less iodine from iodized salt; iodine is already "hard from food", so keep iodized salt as the salt.
+
+Every family must be **defensible and do no harm**: a dietitian reading the week should find nothing to object to.
+That doesn't mean bland or fussy food. Two week-level checks guard the rest:
+
+- **High-mercury fish** (fresh or frozen tuna, swordfish, shark, marlin, escolar, orange roughy, king mackerel) at most
+  150 g a week, Health Canada's advice for everyone. Canned light tuna is fine.
+- **Liver** at most 150 g a week, in total (it's very high in vitamin A). A little chicken liver in a dish eaten twice is fine.
 
 Per recipe and per week, the cooking-sense checks:
 
