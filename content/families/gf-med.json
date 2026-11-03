@@ -1,0 +1,1920 @@
+{
+  "id": "gf-med",
+  "name": "Gluten-free Mediterranean",
+  "style": "gluten-free",
+  "cuisine": "Mediterranean",
+  "regions": [
+    "Italy",
+    "Greece",
+    "Spain",
+    "Provence"
+  ],
+  "summary": "A week of Mediterranean home cooking that is gluten-free by its ingredients: Greek fasolada and gemista, Spanish tortilla and lentejas, Provençal socca and pistou, and a weekend saffron risotto and polenta. Buckwheat, potatoes, rice, polenta, chickpea flour and beans take turns, with olive oil, lemon and fresh herbs throughout.",
+  "howItWorks": "**Gluten-free by its ingredients.** Buckwheat, potatoes, rice, cornmeal, chickpea flour and beans have always carried this cuisine, so most of it needs no substitute. Stock, chorizo, polenta, chickpea flour, buckwheat and spice blends can hide wheat or share a mill, so if you have celiac disease, buy sealed packs marked gluten-free.\n\n**Cook once, eat twice.** Monday's fasolada, Tuesday's gemista and Thursday's lentejas each make two portions, so the next day's lunch is done. Saturday's tortilla also gives you Sunday's breakfast.\n\n**Oily fish four times.** Salmon on Wednesday and mackerel on Friday help with **omega-3, vitamin D and B12**, with canned sardines on Thursday and Sunday. Tuna in Monday's niçoise and a snack or two, plus Saturday's shrimp and mussels, add protein, iodine and zinc.\n\n**A different starch most nights.** Beans on Monday, rice on Tuesday, potatoes on Wednesday, lentils on Thursday, chickpea flour on Friday, rice again in Saturday's risotto and polenta on Sunday. Buckwheat is at breakfast.\n\n**Prep ahead.** Soak the cannellini for Monday's fasolada on Sunday night, and for Saturday's soupe au pistou on Thursday or Friday. Toast a jar of buckwheat for the yogurt mornings, and boil a few eggs.",
+  "signature": [
+    "gf-med-gemista-rice-beef",
+    "gf-med-socca-mackerel-tomato",
+    "gf-med-risotto-seafood-saffron",
+    "gf-med-fasolada"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-med-sardines-cucumber-lemon"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-med-gambas-ajillo-limon"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-med-roasted-chickpeas-pimenton"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-med-tomato-parmesan-basil"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-med-gambas-ajillo-limon"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-med-pear-walnuts-honey"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "gf-med-tomato-parmesan-basil"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "servings": 1,
+      "id": "gf-med-buckwheat-porridge-pear",
+      "name": "Buckwheat porridge with cinnamon pear, walnuts and yogurt",
+      "inspiredBy": "Northern Italian grano saraceno, the buckwheat of Valtellina, here cooked as a creamy porridge with pear and walnuts, the way buckwheat is eaten in colder places",
+      "about": "Toasted buckwheat simmered in milk until it turns soft and nutty, with sliced pear, a spoon of Greek yogurt, a drizzle of honey and toasted walnuts. Buckwheat is not wheat at all, so it is **naturally gluten-free**, and it gives you magnesium and fibre while the walnuts add omega-3.",
+      "ingredients": [
+        {
+          "food": "buckwheat-groats-80619e",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "toasted (kasha) or plain, certified gluten-free if you are celiac"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 220
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 80,
+          "swap": "dairy_protein",
+          "note": "a big spoonful on top"
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 130,
+          "note": "sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 8
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the buckwheat in a sieve. Tip it into a small dry pot and toast over medium heat for 2 minutes, until it smells nutty.",
+        "Pour in the milk, add the cinnamon and salt, and bring to a gentle simmer.",
+        "Cook uncovered on low heat for 12 to 15 minutes, stirring now and then, until the groats are tender and the porridge is thick and creamy. If it gets stodgy before the groats are soft, add a splash of water; if it is still loose, give it a few minutes more.",
+        "Meanwhile, toast the walnuts in a dry pan for a couple of minutes, until golden and fragrant.",
+        "Spoon the porridge into a bowl, fan the pear on top, add the yogurt and walnuts and drizzle with honey."
+      ],
+      "prepMin": 4,
+      "cookMin": 16,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook a double batch on Sunday night and it keeps 3 days in the fridge. Loosen it with a splash of milk and reheat for 2 minutes."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-yogurt-orange-walnuts-buckwheat",
+      "name": "Greek yogurt with orange, walnuts and crunchy buckwheat",
+      "inspiredBy": "Greek yogurt with honey and walnuts (yiaourti me meli), a favourite breakfast and dessert, with orange and toasted buckwheat for crunch",
+      "about": "Thick Greek yogurt topped with juicy orange segments, toasted walnuts and a spoon of crunchy toasted buckwheat, finished with honey and a pinch of cinnamon. It takes five minutes, and the yogurt and walnuts bring **protein, calcium and omega-3**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 180,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "peeled and cut into segments"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "buckwheat-groats-80619e",
+          "g": 15,
+          "swap": "low_gi_grains",
+          "note": "from the Sunday jar (step 1)"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 8
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan for a couple of minutes, until fragrant. Use buckwheat from your Sunday jar, or make it now: soak the groats in cold water for 15 minutes, drain well and toast them in a dry pan over medium heat for 6 to 8 minutes, until dry and crisp.",
+        "Peel the orange, cut away the white pith, and slice it into segments, saving the juice.",
+        "Spoon the yogurt into a bowl, arrange the orange on top and pour over the juice.",
+        "Scatter the toasted buckwheat and walnuts, drizzle with honey and finish with the cinnamon."
+      ],
+      "prepMin": 8,
+      "cookMin": 4,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Toast a jar of buckwheat on Sunday as in step 1; it keeps 5 days in a sealed jar, and breakfast takes 5 minutes. For a change, swap the orange for pomegranate seeds or a chopped pear."
+    },
+    {
+      "servings": 2,
+      "id": "gf-med-tortilla-patatas-tomate",
+      "name": "Tortilla de patatas with spinach and lemon",
+      "inspiredBy": "Spanish tortilla española, the thick potato and onion omelette, with spinach folded in as in tortilla de espinacas",
+      "about": "A thick, soft Spanish omelette of slowly cooked potato, sweet onion and a handful of spinach, held together with eggs and sliced like a cake. It is **gluten-free by nature**, and the eggs bring protein and choline while the potato adds potassium. It is just as good cold, so one pan covers two breakfasts.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 160,
+          "note": "peeled and sliced thin"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "sliced thin"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "2 eggs"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "washed and roughly chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Warm most of the olive oil in a 22 cm nonstick frying pan over medium-low heat. Add the potato and onion with a pinch of the salt, cover with a lid and cook gently for 15 to 18 minutes, with a splash of water if they stick, turning now and then, until soft. Stir in the chopped spinach for the last 2 minutes, until it wilts.",
+        "Beat the eggs in a big bowl with the rest of the salt. Tip the potato, onion and spinach into the eggs and let it sit for 5 minutes.",
+        "Wipe the pan, warm the last of the oil over medium heat and pour in the mixture. Cook for 6 to 8 minutes, shaking the pan now and then, until the edges are set and the underside is golden.",
+        "Put a large plate over the pan, flip the whole thing over, then slide it back and cook for another 4 minutes. The middle should stay a little creamy.",
+        "Serve a wedge of tortilla with the lemon squeezed over it and a scatter of parsley.",
+        "This makes two portions. Keep the second wedge for tomorrow; it is lovely cold or warmed for a minute."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Slide a thin spatula around the edge before you flip. For a juicier tortilla, leave it a little soft in the middle."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-salade-nicoise",
+      "name": "Salade niçoise with tuna, potatoes and green beans",
+      "inspiredBy": "Salade niçoise from Nice, here in the home version with warm potatoes and green beans",
+      "about": "Warm new potatoes, crisp green beans, ripe tomato, tuna, a boiled egg and olives, all tossed in a sharp lemon and sherry vinaigrette scented with basil. The tuna and egg bring **plenty of protein**, and the potatoes and beans carry the potassium.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 170,
+          "note": "small waxy potatoes"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 140,
+          "note": "trimmed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg"
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-solids-53349b",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "drained"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 150,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 25
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "sliced very thin"
+        },
+        {
+          "food": "basil-green-raw-a2ab63",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sherry-vinegar-af00be",
+          "g": 10
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "herbes-de-provence-dried-5b3263",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Put the potatoes in a pot of cold salted water, bring to the boil and cook for 12 to 15 minutes, until a knife slips in easily. Add the green beans for the last 4 minutes and the egg for the last 9 minutes.",
+        "Drain everything. Run the beans and egg under cold water to stop the cooking, then peel and quarter the egg.",
+        "Whisk the olive oil, vinegar, lemon juice, herbes de Provence and a pinch of salt in a big bowl. Toss the warm potatoes (halved or thickly sliced) in it so they soak up the dressing.",
+        "Add the beans, tomato, onion and olives and toss gently. Tear in the basil.",
+        "Flake the tuna over the top, arrange the egg on the side and finish with a grind of pepper."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Cook the potatoes, beans and egg the night before and lunch is a 5 minute assembly. Oil-packed tuna is more traditional and keeps better; drained, it fits the numbers. Check the label on the tuna: plain is fine, but some flavoured cans contain hydrolyzed wheat protein."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-greek-chicken-potato-salad",
+      "name": "Lemon-oregano chicken with potatoes and Greek salad",
+      "inspiredBy": "Greek chicken souvlaki with potatoes and horiatiki salad",
+      "about": "Chicken thigh marinated in lemon, garlic and oregano and seared until golden, piled onto a crunchy tomato, cucumber and olive salad with a warm parsley potato salad, chickpeas and a crumble of feta. The chicken and feta make it **high in protein**, and the lemon helps you absorb the iron in the chickpeas.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 175,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 170,
+          "note": "cut in chunks"
+        },
+        {
+          "food": "chickpea-canned-drained-a7deb5",
+          "g": 70,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "cut in chunks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 110,
+          "note": "cut in chunks"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "sliced thin"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 20
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 28
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1.2
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Slice the chicken into chunky strips. Toss with half the lemon juice, the crushed garlic, half the oregano, a little of the olive oil and a pinch of salt. Leave it to marinate while you do the rest, or for up to a few hours in the fridge.",
+        "Boil the potato chunks in salted water for 12 to 15 minutes, until tender. Drain, then toss with a few slices of the onion, half the parsley and a little of the olive oil while they are still warm, like a Greek patatosalata.",
+        "Mix the tomato, cucumber, onion, olives, chickpeas and parsley in a bowl. Dress with the rest of the lemon juice, oregano and olive oil.",
+        "Heat a heavy pan over medium-high heat and sear the chicken for 3 to 4 minutes a side, until golden and cooked through. Rest it for a minute.",
+        "Spoon the potatoes into a bowl, pile on the salad and chicken, and crumble the feta over the top."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Marinate the chicken in the morning and it takes 15 minutes at lunch. For a packed lunch, cook it the night before; it is good cold."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-soupe-au-pistou",
+      "name": "Soupe au pistou with white beans and summer vegetables",
+      "inspiredBy": "Provençal soupe au pistou, finished with a basil, garlic and cheese paste; the pasta is left out and the beans carry the soup",
+      "about": "A thick, fragrant soup of white beans, zucchini and green beans, finished with a spoon of fresh basil, garlic and parmesan pounded into olive oil. The beans give you **protein, fibre and folate**, and the basil swirled in at the end is what makes it smell like Provence.",
+      "ingredients": [
+        {
+          "food": "cannellini-beans-dry-18222d",
+          "g": 120,
+          "swap": "legumes",
+          "note": "soaked overnight"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 160,
+          "note": "diced"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 120,
+          "note": "cut in short lengths"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "chopped"
+        },
+        {
+          "food": "basil-green-raw-a2ab63",
+          "g": 20
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "parmesan-cheese-hard-78ce3e",
+          "g": 30,
+          "note": "finely grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Drain the soaked beans and put them in a pot with the bay leaf and enough fresh water to cover by 5 cm. Simmer gently for 45 to 60 minutes, until tender. Salt them near the end.",
+        "In a large pot, warm a little of the olive oil and soften the onion for 5 minutes. Add the tomato and cook for 3 minutes more.",
+        "Add the beans with their cooking water, plus enough water to make it soupy. Simmer for 10 minutes, then add the zucchini and green beans and cook for 8 to 10 minutes, until just tender.",
+        "Make the pistou: pound the basil, garlic and a pinch of salt in a mortar (or blitz briefly), then work in the parmesan and the rest of the olive oil until you have a loose green paste.",
+        "Ladle the soup into a bowl and stir a big spoonful of pistou in at the table, so the basil stays bright."
+      ],
+      "prepMin": 15,
+      "cookMin": 70,
+      "tags": [
+        "mild",
+        "freezer-friendly"
+      ],
+      "tip": "Soak the beans Thursday night, simmer them on Friday evening and keep them in their water; Saturday's soup then takes 25 minutes. Short on time? Use canned white beans, drained, about two and a half times the dry weight in the list. The soup freezes well, but stir in the pistou fresh."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-escalivada-chickpeas-sardines",
+      "name": "Escalivada with chickpeas and sardines",
+      "inspiredBy": "Catalan escalivada, eggplant, red pepper and onion roasted until smoky and silky, here with chickpeas and sardines to make a full lunch",
+      "about": "Eggplant, red pepper and onion roasted until soft and slightly charred, then dressed with garlic, sherry vinegar and olive oil. Chickpeas and sardines turn this smoky Catalan side into a lunch with **protein, fibre and plenty of vitamin C**.",
+      "ingredients": [
+        {
+          "food": "eggplant-raw-b8b8c1",
+          "g": 200,
+          "note": "cut in thick wedges"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 130,
+          "note": "cut in wide strips"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "chickpea-canned-drained-a7deb5",
+          "g": 120,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 70,
+          "swap": "fatty_fish",
+          "note": "most of a small can, drained, bones and all"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sherry-vinegar-af00be",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the eggplant, pepper and onion with most of the olive oil and a pinch of salt on a large tray, in a single layer.",
+        "Roast for 30 to 35 minutes, turning once, until the eggplant is soft and golden and the edges of the pepper and onion are charred.",
+        "Whisk the vinegar, lemon juice, crushed garlic, smoked paprika and the last of the olive oil in a bowl.",
+        "Toss the vegetables and the chickpeas in the dressing while still warm and let them sit for 5 minutes so they soak it up.",
+        "Spoon onto a plate, break the sardines into big pieces over the top and scatter with parsley."
+      ],
+      "prepMin": 12,
+      "cookMin": 35,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "The vegetables are just as good cold the next day, so roast a double tray and keep half in the fridge for up to 3 days. Sherry vinegar is the classic choice. Buy sardines in oil or water, not in a sauce."
+    },
+    {
+      "servings": 2,
+      "id": "gf-med-fasolada",
+      "name": "Fasolada, Greek white bean soup with spinach and olives",
+      "inspiredBy": "Greek fasolada, the everyday bean soup often called the national dish, with a handful of greens added",
+      "about": "Creamy white beans simmered with carrot, onion and tomato until the broth turns velvety, with spinach wilted in at the end and lemon, Kalamata olives and a drizzle of olive oil on top. The beans cover **lots of fibre, iron and folate**, and the lemon helps you absorb that iron.",
+      "ingredients": [
+        {
+          "food": "cannellini-beans-dry-18222d",
+          "g": 110,
+          "swap": "legumes",
+          "note": "soaked overnight"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 16
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 150,
+          "swap": "leafy_greens",
+          "note": "washed, roughly chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 14
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Drain the soaked beans, cover with fresh water in a large pot, bring to the boil and boil hard for 5 minutes. Drain and rinse. This keeps the soup clean tasting.",
+        "Return the beans to the pot with the bay leaf and fresh water to cover by 5 cm. Simmer gently for 30 minutes.",
+        "In a pan, warm most of the olive oil and soften the onion and carrot for 6 minutes. Stir in the tomato paste for 1 minute, then tip everything into the beans.",
+        "Simmer for another 30 to 40 minutes, until the beans are very soft and the broth has thickened. Mash a few beans against the side of the pot to make it creamy. Salt at the end.",
+        "Stir in the spinach and cook for 2 to 3 minutes, until wilted. Take off the heat and add the lemon juice, oregano and parsley.",
+        "Ladle into bowls and top with the olives and the last of the olive oil. This makes two portions, so pack the second for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 80,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Soak the beans on Sunday night. In a pressure cooker the beans take 20 minutes. In a hurry, use canned white beans, drained, about two and a half times the dry weight in the list, and simmer for 25 minutes. It freezes well for 3 months."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-salmon-lemon-potatoes-fennel",
+      "name": "Roast salmon with lemon-oregano potatoes and shaved fennel",
+      "inspiredBy": "Greek patates lemonates, potatoes roasted in lemon and oregano, with fish in the Aegean style",
+      "about": "Tender roast salmon over golden potatoes soaked in lemon, garlic and oregano, with a crisp shaved fennel salad on the side. The salmon brings **omega-3 and vitamin D**, and the potatoes bring a good hit of potassium.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 170,
+          "swap": "fatty_fish",
+          "note": "skin on, 1 fillet"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 200,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 120,
+          "note": "shaved very thin"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 30
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the potato wedges on a tray with half the olive oil, half the lemon juice, the crushed garlic, the oregano, a splash of water and half the salt. Roast for 25 minutes, turning once.",
+        "Meanwhile, shave the fennel as thin as you can and toss with parsley, a spoon of lemon juice, a drizzle of olive oil and a pinch of salt. Leave it to soften slightly.",
+        "Rub the salmon with the last of the olive oil and a pinch of salt. Push the potatoes to one side, put the salmon on the tray skin side down and roast for 10 to 12 minutes, until it just flakes and is still a little translucent in the middle.",
+        "Squeeze the last of the lemon over the salmon and potatoes, and serve with the fennel salad."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook the salmon fresh rather than keeping it as leftovers. Wedges pale a little with so little oil; the lemon and a hot oven give them their crust. Mackerel or trout work the same way."
+    },
+    {
+      "servings": 2,
+      "id": "gf-med-gemista-rice-beef",
+      "name": "Gemista, peppers and tomatoes stuffed with herby rice and beef",
+      "inspiredBy": "Greek gemista, summer vegetables stuffed with rice and herbs, in the version with minced meat (gemista me kima)",
+      "about": "Sweet peppers and tomatoes baked until soft around a filling of rice, beef, almonds, parsley and cinnamon that soaks up the tomato juices, with spinach folded into the filling. It is **gluten-free by nature**: the beef brings iron and zinc, and the peppers a good dose of vitamin C. Even better the next day.",
+      "ingredients": [
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 150,
+          "note": "1 large, tops cut off and saved"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 220,
+          "note": "2 medium, tops cut off and saved"
+        },
+        {
+          "food": "rice-white-italian-arborio-risotto-raw-6cdf8c",
+          "g": 55
+        },
+        {
+          "food": "ground-beef-93-lean-raw-8d6017",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "minced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 120,
+          "swap": "leafy_greens",
+          "note": "washed and chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190°C (375°F). Cut the tops off the peppers and tomatoes and keep them as lids. Scoop the tomato flesh into a bowl and chop it roughly, leaving a sturdy shell.",
+        "Toast the almonds in a dry pan for 2 minutes and chop them. Warm half the olive oil in a pan and cook the onion for 5 minutes. Add the beef and garlic and brown for 5 minutes, breaking it up. Stir in the tomato paste, cinnamon, oregano and the chopped tomato flesh and cook for 3 minutes, then fold in the chopped spinach for the last 2 minutes, until wilted, as in Greek spanakorizo.",
+        "Off the heat, stir in the raw rice, toasted almonds, parsley, lemon juice and salt. The rice cooks in the oven, so leave it raw.",
+        "Stand the peppers and tomatoes close together in a deep baking dish. Fill each about three quarters full, because the rice swells. Put the lids on and pour 200 ml of water around them, with a drizzle of the last of the olive oil.",
+        "Cover with foil and bake for 40 minutes, then uncover and bake for 20 minutes more, until the rice is tender and the tops are blistered.",
+        "This makes two portions. Pack the second for tomorrow's lunch, because gemista tastes better the next day."
+      ],
+      "prepMin": 30,
+      "cookMin": 65,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "To keep a weeknight easy, stuff the vegetables in the morning and keep them covered in the fridge, then just bake. Pine nuts are the classic crunch, and almonds do the same job. For a vegetarian version, swap the beef for a can of drained chickpeas."
+    },
+    {
+      "servings": 2,
+      "id": "gf-med-lentejas-pimenton",
+      "name": "Lentejas, Spanish lentil stew with carrots, spinach and smoked paprika",
+      "inspiredBy": "Spanish lentejas, the everyday lentil stew, here built on pimentón and a splash of vinegar rather than chorizo",
+      "about": "A comforting pot of brown lentils stewed with carrot, onion, garlic and plenty of smoked paprika, finished with wilted spinach, a splash of sherry vinegar and a runny egg. The lentils and egg carry **protein, iron and folate**, and the vinegar at the end lifts the whole pot.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 85,
+          "swap": "legumes",
+          "note": "brown or green lentils, no need to soak"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 12
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed, roughly chopped"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg"
+        },
+        {
+          "food": "sherry-vinegar-af00be",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 3
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Warm most of the olive oil in a pot over medium heat and soften the onion and carrot for 7 minutes, until the onion is translucent.",
+        "Stir in the garlic, tomato paste and smoked paprika for 1 minute, until the oil turns red and smells smoky. Do not let the paprika scorch.",
+        "Add the rinsed lentils, the bay leaf and enough water to cover by 3 cm. Bring to the boil, then simmer gently for 25 to 30 minutes, until the lentils are tender but not falling apart. Top up with water if it gets dry.",
+        "Stir in the spinach and the salt and cook for 2 to 3 minutes, until wilted.",
+        "Finish with the vinegar and taste. Fry an egg in a little olive oil until the white is set and the yolk is still runny, and set it on top of tonight's bowl.",
+        "This makes two portions. Pack the second for tomorrow's lunch, and fry its egg fresh when you reheat it, or boil one the night before and halve it on top."
+      ],
+      "prepMin": 12,
+      "cookMin": 40,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Use pimentón de la Vera if you can find it. A slice of chorizo is the traditional add-in: check the label for wheat, since some brands add it. The stew freezes well for 3 months."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-socca-mackerel-tomato",
+      "name": "Socca with roasted mackerel and a tomato, olive and parsley salad",
+      "inspiredBy": "Niçoise socca, the thin chickpea flour pancake baked in a very hot oven, with fish in the Provençal style",
+      "about": "A golden, crisp-edged chickpea flour flatbread (socca) topped with roasted mackerel and a bright tomato, olive and parsley salad. The chickpea flour is **naturally gluten-free** and high in protein, and the mackerel adds omega-3, vitamin D and B12.",
+      "ingredients": [
+        {
+          "food": "chickpea-flour-besan-4a8aaa",
+          "g": 50
+        },
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "1 or 2 fillets"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "diced"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 20
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "sliced very thin"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.6
+        },
+        {
+          "food": "herbes-de-provence-dried-5b3263",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Whisk the chickpea flour with water, about twice the flour's weight, a pinch of salt, black pepper and a spoon of the olive oil until completely smooth. It should be thin, like pouring cream. Let it rest for at least 20 minutes, or all day in the fridge, skimming off any foam.",
+        "Heat the oven to 240°C (475°F) with a heavy 25 cm ovenproof pan or a baking tray inside. Mix the tomato, cucumber, olives, onion, parsley, oregano, half the lemon juice and a spoon of olive oil in a bowl.",
+        "Rub the mackerel with a little olive oil and the herbes de Provence. Take the pan out, add a spoon of olive oil and swirl it, then pour in the batter (it should be thin, 3 to 4 mm). Bake for 10 to 12 minutes, until the top is spotted brown and the edges are crisp.",
+        "While the socca bakes, lay the mackerel skin side up on a small oiled tray and roast it on the shelf below for 6 to 8 minutes, until it just flakes. Squeeze over the rest of the lemon.",
+        "Slide the socca out, break it into pieces, and serve with the mackerel and the salad piled on top."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Mix the batter in the morning and the evening is 20 minutes. Socca is best eaten hot and crisp, so bake it right before you sit down. Buy chickpea flour from a gluten-free line if you are celiac, since cross-contact with wheat flour is common in bulk bins."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-risotto-seafood-saffron",
+      "name": "Saffron risotto with shrimp and mussels",
+      "inspiredBy": "Italian risotto ai frutti di mare, a weekend risotto of the Adriatic and Ligurian coasts",
+      "about": "Creamy arborio rice stirred slowly in a saffron and mussel broth, finished with sweet shrimp, tender mussels, tomato, lemon and parsley. It is a **weekend dish worth the stirring**, and the shellfish bring zinc, iodine and B12.",
+      "ingredients": [
+        {
+          "food": "rice-white-italian-arborio-risotto-raw-6cdf8c",
+          "g": 80
+        },
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "peeled"
+        },
+        {
+          "food": "mussel-blue-raw-29212c",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "meat only, about 500 g in the shell"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 170,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Scrub the mussels and pull off any beards. Put them in a wide pot with 150 ml of water, cover and steam over high heat for 3 to 4 minutes, until they open (throw away any that stay shut). Strain the liquid through a fine sieve into a jug, top it up with hot water to about four times the volume of the rice, and keep it warm. Pick the meat from the shells.",
+        "Steep the saffron in a few spoons of the hot broth.",
+        "Warm half the olive oil in a wide pan and soften the onion and garlic for 5 minutes. Add the rice and stir for 2 minutes, until the grains turn translucent at the edges.",
+        "Add the saffron broth, then the hot liquid a ladle at a time, stirring often and letting each addition mostly absorb. Keep going for 18 to 20 minutes in all, until the rice is tender with a little bite and loose and creamy like a thick soup. Stir in the diced tomato for the last 5 minutes, for a sweet, fresh note.",
+        "In a hot pan, sear the shrimp in the last of the olive oil for 1 to 2 minutes a side, until pink. Fold the shrimp and mussel meat into the risotto for the last minute.",
+        "Take off the heat, stir in the lemon juice, salt to taste and parsley, and let it rest for 1 minute. Serve right away, because risotto does not wait."
+      ],
+      "prepMin": 20,
+      "cookMin": 30,
+      "tags": [
+        "mild",
+        "weekend-project"
+      ],
+      "tip": "Risotto is naturally gluten-free, but check the label if you use boxed fish or seafood stock, since many contain wheat. The mussel broth is plenty here. No fresh mussels? Use clams or a larger handful of shrimp."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-polenta-chicken-mushroom-ragu",
+      "name": "Soft polenta with chicken and mushroom ragù and garlicky spinach",
+      "inspiredBy": "Northern Italian polenta poured onto a wooden board (polenta sulla spianatora), here with a quick ragù of chicken and mushrooms",
+      "about": "Creamy cornmeal polenta stirred with parmesan and spread under a rich ragù of chicken thigh and mushrooms, with garlicky spinach alongside. It is **comfort food that is gluten-free by tradition**, and the spinach and mushrooms add folate, vitamin K and B vitamins.",
+      "ingredients": [
+        {
+          "food": "cornmeal-yellow-whole-grain-2712ac",
+          "g": 70,
+          "note": "medium-grind, not instant"
+        },
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "cut in chunks"
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 150,
+          "note": "sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 120,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "parmesan-cheese-hard-78ce3e",
+          "g": 20,
+          "note": "finely grated"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 12
+        },
+        {
+          "food": "sherry-vinegar-af00be",
+          "g": 5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "herbes-de-provence-dried-5b3263",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Season the chicken with a pinch of salt, pepper and half the herbes de Provence. Brown it in half the olive oil in a wide pan over medium-high heat for 5 minutes, then lift it out.",
+        "In the same pan, cook the mushrooms in a single layer until the liquid cooks off and they turn golden, about 8 minutes. Add half the garlic and the tomato paste and cook for 1 minute.",
+        "Return the chicken, add 150 ml of water and simmer, covered, for 20 minutes, until the chicken is tender and the sauce is thick and glossy. Finish with a splash of sherry vinegar and taste.",
+        "Meanwhile, bring about 4 times the cornmeal's volume of salted water to the boil. Pour the cornmeal in a thin stream, whisking constantly. Turn the heat to low and cook for 30 to 40 minutes, stirring every few minutes and adding a splash of water if it tightens, until thick and creamy. Stir in the parmesan.",
+        "Wilt the spinach in a pan with the last of the olive oil and the rest of the garlic for 2 to 3 minutes, until it collapses.",
+        "Spread the polenta on a warm plate or board, spoon the ragù over, add the spinach on the side and finish with parsley."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Polenta that is left over sets firm, so slice it and pan-fry in olive oil the next day. Check the label on the cornmeal (buy a gluten-free line if you are celiac). Pre-cooked tube polenta is a fine shortcut, but check its label too."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-orange-almonds",
+      "name": "Orange and toasted almonds",
+      "inspiredBy": "Spanish oranges with almonds, a simple end-of-meal plate",
+      "about": "A juicy orange and a small handful of toasted almonds. The vitamin C in the orange and the **vitamin E and magnesium** in the almonds make it a snack that really works.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 180,
+          "swap": "vit_c_fruit",
+          "note": "1 large orange, peeled and cut in wedges"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan for 2 to 3 minutes, until fragrant, then let them cool.",
+        "Peel the orange, cut it into wedges and eat with the almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-tzatziki-carrot-sticks",
+      "name": "Tzatziki with carrot and cucumber sticks",
+      "inspiredBy": "Greek tzatziki, the garlicky cucumber and yogurt dip",
+      "about": "Thick yogurt with grated cucumber, garlic, lemon and olive oil, scooped up with crunchy carrot and cucumber sticks. The yogurt brings **calcium and protein**, and the vegetables give you something to crunch.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 110,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 130,
+          "note": "half grated and squeezed dry, half cut in sticks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Grate half the cucumber and squeeze it hard in a clean tea towel to get rid of the water.",
+        "Stir it into the yogurt with the crushed garlic, lemon juice, olive oil and salt.",
+        "Cut the rest of the cucumber and the carrot into sticks and serve with the dip."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-roasted-chickpeas-pimenton",
+      "name": "Crunchy roasted chickpeas with cumin and lemon",
+      "inspiredBy": "Spanish bar snacks, garbanzos fritos, baked rather than fried",
+      "about": "Canned chickpeas dried and roasted until crisp, tossed in olive oil, cumin and a little lemon. They give you **fibre and plant protein** in a crunchy bite.",
+      "ingredients": [
+        {
+          "food": "chickpea-canned-drained-a7deb5",
+          "g": 130,
+          "swap": "legumes",
+          "note": "rinsed and dried"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Drain the chickpeas and pat them very dry with a towel, because dry chickpeas get crunchy.",
+        "Toss with the olive oil, cumin and salt on a tray and roast for 25 to 30 minutes, shaking the tray halfway, until golden and crisp.",
+        "Squeeze over the lemon while they are warm. They are best the same day, and keep crisp for 2 days in a jar left open a crack."
+      ],
+      "prepMin": 5,
+      "cookMin": 28,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Roast a double batch and eat them over two days."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-tapenade-veg-sticks",
+      "name": "Olive tapenade with fennel and carrot sticks",
+      "inspiredBy": "Provençal tapenade, the olive paste from Provence",
+      "about": "A quick tapenade of Kalamata olives, garlic, lemon and olive oil, spooned onto crunchy vegetable sticks. It tastes of Provence, and the olives and oil bring **vitamin E**.",
+      "ingredients": [
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 50,
+          "note": "pitted"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 120,
+          "note": "cut in thick strips"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 90,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Blitz the olives with the garlic, lemon juice, olive oil and parsley into a rough paste, or chop everything finely by hand.",
+        "Spoon into a small bowl and serve with the fennel and carrot sticks."
+      ],
+      "prepMin": 7,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Use pitted Kalamata or Niçoise olives, rinsed, rather than canned ripe olives. A teaspoon of capers is traditional if you have a jar. Make a small jar on Sunday, it keeps a week in the fridge."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-yogurt-honey-walnuts",
+      "name": "Greek yogurt with honey and walnuts",
+      "inspiredBy": "Greek yiaourti me meli, thick yogurt with honey and walnuts",
+      "about": "Thick yogurt with a drizzle of honey and crunchy toasted walnuts. The yogurt brings **calcium and protein** and the walnuts bring omega-3.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 140,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "toasted and roughly chopped"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan for 2 minutes and chop them roughly.",
+        "Spoon the yogurt into a bowl, drizzle with honey, scatter over the walnuts and dust with cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-romesco-veg-sticks",
+      "name": "Quick romesco with cucumber and zucchini sticks",
+      "inspiredBy": "Catalan romesco, the red pepper and almond sauce, made here without the usual bread",
+      "about": "Roasted red pepper blitzed with almonds, garlic, smoked paprika and vinegar into a smoky dip for crisp vegetable sticks. The pepper brings **vitamin C** and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 100,
+          "note": "halved and seeded"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 100,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "sherry-vinegar-af00be",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Roast the pepper halves under a hot grill or at 230°C (450°F) for about 20 minutes, until blackened in places. Cover for 5 minutes, then peel off the worst of the skin. Toast the almonds in a dry pan for 2 minutes.",
+        "Blitz the pepper with the almonds, garlic, vinegar, olive oil, paprika, salt and a splash of water to loosen it into a thick, rough sauce.",
+        "Serve with the cucumber and zucchini sticks."
+      ],
+      "prepMin": 8,
+      "cookMin": 20,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Roast a few extra peppers on Sunday. The sauce keeps 4 days in the fridge."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-egg-olives-pimenton",
+      "name": "Boiled egg with olives, tomato and smoked paprika",
+      "inspiredBy": "Spanish tapas, huevo duro with olives",
+      "about": "A boiled egg dusted with smoked paprika, with olives and tomato wedges on the side. The egg brings **protein and choline**, in a snack you can make ahead.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "1 egg"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 25
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lower the egg into boiling water and cook for 9 minutes. Chill in cold water, then peel.",
+        "Halve the egg and dust with smoked paprika and salt, then serve with the olives and tomato."
+      ],
+      "prepMin": 3,
+      "cookMin": 10,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Boil a few eggs on Sunday; they keep 5 days in the shell."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-sardines-cucumber-lemon",
+      "name": "Sardines with shaved fennel, lemon and parsley",
+      "inspiredBy": "Spanish and Portuguese tinned sardine tapas",
+      "about": "Good canned sardines laid over crisp shaved fennel with lemon, parsley and a drizzle of olive oil. The soft bones are edible and a real source of **calcium, omega-3 and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 65,
+          "swap": "fatty_fish",
+          "note": "drained, bones and all"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 110,
+          "note": "shaved very thin"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Shave the fennel as thin as you can and pile it on a plate.",
+        "Lay the sardines on top, then squeeze over the lemon, drizzle with olive oil and add parsley and a grind of pepper."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Buy sardines in oil or water rather than a flavoured sauce. Not a sardine fan? Mackerel or anchovies from a tin work too."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-tomato-parmesan-basil",
+      "name": "Tomato with parmesan and basil",
+      "inspiredBy": "Italian tomato and cheese plates, like a caprese with parmesan",
+      "about": "Ripe tomato slices with shavings of parmesan, torn basil and olive oil. It tastes like summer, and the parmesan brings **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 200,
+          "note": "sliced"
+        },
+        {
+          "food": "parmesan-cheese-hard-78ce3e",
+          "g": 20,
+          "note": "shaved with a peeler"
+        },
+        {
+          "food": "basil-green-raw-a2ab63",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lay the tomato slices on a plate and sprinkle with a pinch of salt.",
+        "Shave the parmesan over the top, tear on the basil and drizzle with olive oil."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-tuna-chickpea-lemon",
+      "name": "Tuna and chickpea salad with lemon and parsley",
+      "inspiredBy": "Italian tonno e ceci, a quick pantry salad",
+      "about": "Canned tuna and chickpeas tossed with red onion, parsley, lemon and olive oil. It is a small, savoury snack with **plenty of protein and fibre**.",
+      "ingredients": [
+        {
+          "food": "light-tuna-canned-in-water-drained-solids-53349b",
+          "g": 60,
+          "swap": "lean_protein",
+          "note": "drained"
+        },
+        {
+          "food": "chickpea-canned-drained-a7deb5",
+          "g": 90,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "diced very small"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Tip the chickpeas into a bowl and mash a few with a fork so the dressing clings.",
+        "Add the tuna, onion and parsley, then dress with the lemon juice, olive oil, salt and pepper and toss gently."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "It keeps a day in the fridge."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-gambas-ajillo-limon",
+      "name": "Garlic shrimp with lemon (gambas al ajillo)",
+      "inspiredBy": "Spanish gambas al ajillo, sizzling garlic shrimp from the tapas bar",
+      "about": "Shrimp seared in a little olive oil with plenty of garlic, smoked paprika and parsley, finished with lemon. They are quick, low in saturated fat and full of **protein, iodine and selenium**.",
+      "ingredients": [
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "peeled, raw"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced thin"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.5
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a small pan over medium heat and soften the garlic for 1 minute, until fragrant but not brown.",
+        "Add the shrimp and the paprika and cook for 2 to 3 minutes, turning once, until pink and curled.",
+        "Take off the heat, squeeze over the lemon, add the parsley and salt, and eat straight away."
+      ],
+      "prepMin": 4,
+      "cookMin": 5,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Keep a bag of frozen peeled shrimp and thaw it in cold water for 10 minutes."
+    },
+    {
+      "servings": 1,
+      "id": "gf-med-pear-walnuts-honey",
+      "name": "Pear with walnuts and honey",
+      "inspiredBy": "Italian and Greek fruit and nut plates",
+      "about": "A ripe pear cut in wedges with toasted walnuts, a drizzle of honey and a pinch of cinnamon. Simple, sweet and crunchy, with **fibre and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 170,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan for 2 minutes, until they smell nutty.",
+        "Fan the pear wedges on a plate, scatter the walnuts, drizzle with honey and dust with cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-med-buckwheat-porridge-pear"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-med-salade-nicoise"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-med-fasolada"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-med-orange-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-med-tzatziki-carrot-sticks"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-med-yogurt-orange-walnuts-buckwheat"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-med-fasolada",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-med-gemista-rice-beef"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-med-egg-olives-pimenton"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-med-roasted-chickpeas-pimenton"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-med-buckwheat-porridge-pear"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-med-gemista-rice-beef",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-med-salmon-lemon-potatoes-fennel"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-med-egg-olives-pimenton"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-med-tzatziki-carrot-sticks"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-med-yogurt-orange-walnuts-buckwheat"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-med-greek-chicken-potato-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-med-lentejas-pimenton"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-med-sardines-cucumber-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-med-romesco-veg-sticks"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-med-buckwheat-porridge-pear"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-med-lentejas-pimenton",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-med-socca-mackerel-tomato"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-med-orange-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-med-tuna-chickpea-lemon"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-med-tortilla-patatas-tomate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-med-soupe-au-pistou"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-med-risotto-seafood-saffron"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-med-tuna-chickpea-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-med-romesco-veg-sticks"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gf-med-tortilla-patatas-tomate",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gf-med-escalivada-chickpeas-sardines"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gf-med-polenta-chicken-mushroom-ragu"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-med-yogurt-honey-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gf-med-tapenade-veg-sticks"
+        }
+      ]
+    }
+  ]
+}
