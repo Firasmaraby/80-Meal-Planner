@@ -46,6 +46,11 @@ describe('isProteinSource', () => {
     expect(isProteinSource(food('Seitan', 'other'))).toBe(true);
     expect(isProteinSource(food('Wheat, vital wheat gluten', 'grain'))).toBe(true);
     expect(isProteinSource(food('Fu (wheat gluten cake), raw', 'grain'))).toBe(true);
+    expect(isProteinSource(food('Textured vegetable protein, soy granule', 'other'))).toBe(true);
+    expect(isProteinSource(food('Soya, textured, dried', 'other'))).toBe(true);
+    expect(isProteinSource(food('Soy protein, textured, rehydrated', 'other'))).toBe(true);
+    expect(isProteinSource(food('Lecithin, soy granules', 'other'))).toBe(false);
+    expect(isProteinSource(food('Chewy granola bar, fruit flavor, soy protein added', 'grain'))).toBe(false);
   });
 
   it('keeps the protein categories and leaves other foods out', () => {

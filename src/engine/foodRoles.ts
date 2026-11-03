@@ -15,12 +15,18 @@ const STILL_DAIRY_RX = /creamer|whitener|topping|whipped|imitation|prepared with
 export const isPlantDairy = (f: Pick<Food, 'name' | 'category'>): boolean =>
   f.category === 'dairy' && PLANT_DAIRY_RX.test(f.name) && !STILL_DAIRY_RX.test(f.name);
 
-/** Wheat-gluten proteins live under "grain" or "other" in the sources but are a meal's protein, like tofu. */
-const WHEAT_PROTEIN_RX = /\bseitan\b|\b(vital )?wheat gluten\b|\bwheat[- ]gluten cake\b|\bfu\b.*\bgluten\b/i;
+/**
+ * Wheat-gluten and textured-soy proteins live under "grain" or "other" in the sources but are a meal's protein,
+ * like tofu: seitan, vital wheat gluten, fu, textured vegetable protein, soya chunks and granules.
+ */
+const WHEAT_PROTEIN_RX =
+  /\bseitan\b|\b(vital )?wheat gluten\b|\bwheat[- ]gluten cake\b|\bfu\b.*\bgluten\b|\btextured (vegetable|soy) protein\b|\bsoya?,? textured\b|\bsoy protein,? (textured|granular)\b/i;
+/** Foods that mention a protein but aren't one: lecithin, bars with protein added, sausages and burgers (prepared). */
+const NOT_A_PROTEIN_RX = /gluten[- ]free|lecithin|\bbar\b|added/i;
 
 /** Categories that count as a meal's real protein. */
 const PROTEIN_CATEGORIES = new Set<Food['category']>(['meat', 'poultry', 'fish', 'egg', 'legume', 'dairy']);
 
 /** A food that counts as a meal's real protein (the plan lab's check and the sizer's protein floor). */
 export const isProteinSource = (f: Pick<Food, 'name' | 'category'>): boolean =>
-  PROTEIN_CATEGORIES.has(f.category) || (f.category !== 'prepared' && f.category !== 'sweet' && WHEAT_PROTEIN_RX.test(f.name) && !/gluten[- ]free/i.test(f.name));
+  PROTEIN_CATEGORIES.has(f.category) || (f.category !== 'prepared' && f.category !== 'sweet' && WHEAT_PROTEIN_RX.test(f.name) && !NOT_A_PROTEIN_RX.test(f.name));
