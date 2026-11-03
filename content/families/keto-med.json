@@ -1,0 +1,1790 @@
+{
+  "id": "keto-med",
+  "name": "Keto Mediterranean",
+  "style": "keto",
+  "cuisine": "Mediterranean",
+  "regions": [
+    "Greece",
+    "Italy",
+    "Spain",
+    "the Greek islands"
+  ],
+  "summary": "A week of Greek, Italian and Spanish food that happens to be very low in carbs: roast trout and sardines, souvlaki, a weekend moussaka, big salads and plenty of olive oil, olives, avocado and nuts. Net carbs stay at 40 g or less every day, with leafy greens and vegetables doing the vitamin work.",
+  "howItWorks": "**Fat from the Mediterranean pantry.** Most of the fat comes from olive oil, olives, avocado, hazelnuts, almonds, walnuts and chia, with trout, sardines and shrimp for the protein. Butter, cream and bacon never appear. There is no cheese, and Greek yogurt is the only dairy, so saturated fat stays low.\n\n**Where the carbs went.** There are no grains, potatoes, sugar or beans here. Fruit is a few raspberries, lemon and avocado, and onion, tomato and garlic are measured like seasoning. Every day stays under the keto ceiling for net carbs, whatever size you eat.\n\n**Vegetables carry the vitamins.** Leafy greens fill every day, with rapini, zucchini, mushrooms and eggplant on the days they suit. They bring **folate, vitamin A, potassium and calcium**, and chia, hazelnuts and sardines with their soft bones help with magnesium and calcium.\n\n**Cook once, eat twice.** Monday's souvlaki, Wednesday's pork, Friday's cacciatore and Saturday's moussaka each make two portions, so the next day's lunch is done. **Fish** lands on Tuesday, Friday and Sunday, always cooked or opened fresh.\n\n**Sunday prep.** Make one jar of chia pudding for Monday, and three more on Thursday night for Friday to Sunday. Cube and marinate the souvlaki pork on Monday morning, so dinner is quick.",
+  "signature": [
+    "keto-med-roast-trout-zucchini-gremolata",
+    "keto-med-pork-souvlaki-tzatziki",
+    "keto-med-eggplant-lamb-moussaka",
+    "keto-med-greek-salad-sardines"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "keto-med-marinated-olives-herbs"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "keto-med-avocado-tuna-lemon"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "keto-med-olive-tapenade-dippers"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "keto-med-avocado-tuna-lemon"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "keto-med-chia-pudding-hazelnuts",
+      "name": "Lemony chia pudding with raspberries and toasted hazelnuts",
+      "inspiredBy": "Greek rizogalo, the rice pudding scented with cinnamon and lemon peel, made keto with chia",
+      "about": "Chia soaked overnight in almond milk with cinnamon and lemon zest until it sets like a soft rice pudding, then topped with a few raspberries and toasted hazelnuts. It is ready when you wake up, and one jar gives you **calcium, magnesium and plenty of fibre**.",
+      "ingredients": [
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 28,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "almond-milk-unsweetened-shelf-stable-b6bfac",
+          "g": 125,
+          "note": "unsweetened, fortified with calcium and vitamin D"
+        },
+        {
+          "food": "lemon-peel-raw-d60963",
+          "g": 1
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 8,
+          "swap": "berries",
+          "note": "2 or 3 berries"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 32,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        }
+      ],
+      "steps": [
+        "The night before, stir the chia, almond milk, cinnamon and lemon zest together in a jar or bowl.",
+        "Leave it for 5 minutes, then stir again so the seeds do not clump at the bottom.",
+        "Cover and chill overnight. By morning it should be thick and spoonable, like a loose rice pudding.",
+        "Toast the hazelnuts in a dry pan over medium heat until they smell nutty, about 2 minutes. Tip them out to cool, then roughly chop them.",
+        "Spoon the pudding into a bowl and top with the raspberries and hazelnuts. Add a splash more almond milk if it has set too firm."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Make one jar on Sunday night for Monday, and three on Thursday night for Friday to Sunday. They keep for 3 days in the fridge."
+    },
+    {
+      "id": "keto-med-yogurt-walnuts-raspberries",
+      "name": "Greek yogurt with walnuts, raspberries and olive oil",
+      "inspiredBy": "Greek strained yogurt with walnuts and fruit, without the honey",
+      "about": "Thick, full-fat Greek yogurt with crunchy toasted walnuts and hazelnuts, a few raspberries, a dusting of cinnamon and a drizzle of good olive oil, the way a savoury-sweet Greek breakfast tastes. It is ready in five minutes, and the yogurt, walnuts and flax give you **protein, calcium, fibre and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-whole-milk-cee1ef",
+          "g": 90,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 22,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 40,
+          "swap": "berries"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "lemon-peel-raw-d60963",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Toast the walnuts and hazelnuts in a dry pan over medium heat until fragrant, about 2 minutes.",
+        "Spoon the yogurt into a bowl, stir in the ground flax and grate a little lemon zest over it.",
+        "Add the raspberries and warm nuts, dust with cinnamon and drizzle with the olive oil."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Squash the raspberries into the yogurt with a fork if you like a pink swirl."
+    },
+    {
+      "id": "keto-med-spinach-dill-omelette",
+      "name": "Spinach and dill omelette with olives and avocado",
+      "inspiredBy": "Greek spanakopita filling in an omelette, with no pastry",
+      "about": "A soft, golden omelette folded around wilted spinach, chopped olives and a good pinch of dill, with sliced avocado on the side. It tastes like the filling of a spanakopita without the pastry, and the eggs and spinach bring **choline, folate and vitamin K** first thing.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 90,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "olives-black-salt-cured-5ce851",
+          "g": 18,
+          "note": "pitted and chopped"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 6,
+          "note": "finely chopped"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 80
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm half the olive oil in a non-stick frying pan over medium heat. Soften the onion for 2 minutes.",
+        "Add the spinach and cook, stirring, until it wilts completely and the pan looks nearly dry, about 2 minutes. Tip it onto a plate.",
+        "Beat the eggs with a pinch of salt and plenty of pepper.",
+        "Wipe the pan, add the rest of the oil and pour in the eggs. Stir gently for 20 seconds, then let them set into a soft omelette, about 1 minute, a little longer for a bigger omelette.",
+        "Scatter the spinach, olives and dill over one half and fold the other half over. Slide it onto a plate.",
+        "Slice the avocado alongside and squeeze a little lemon over it."
+      ],
+      "prepMin": 5,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "The olives are salty, so go easy on the salt in the eggs."
+    },
+    {
+      "id": "keto-med-garlic-shrimp-avocado-fennel-salad",
+      "name": "Garlic shrimp, avocado and fennel salad",
+      "inspiredBy": "Spanish gambas al ajillo with an almond-garlic dressing",
+      "about": "Quickly seared garlicky shrimp over crisp romaine, ripe avocado and shaved fennel, dressed with a creamy almond, garlic and lemon sauce. It is bright, rich and ready in 15 minutes, and the avocado and romaine bring **potassium and folate**.",
+      "ingredients": [
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 150,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 130
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "torn"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 40,
+          "note": "shaved very thin"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 25,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1.5,
+          "note": "minced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Pat the shrimp dry and toss them with the paprika, garlic and a pinch of salt.",
+        "Shave the fennel as thin as you can with a sharp knife or peeler, and toss it with half the lemon juice. This takes the raw edge off while it stays crisp.",
+        "Warm a third of the olive oil in a frying pan over medium-high heat. Cook the shrimp until they curl and turn pink, about 2 minutes a side.",
+        "Pound the almonds to a coarse paste with the rest of the garlic and a pinch of salt in a mortar, or blitz them in a mini chopper. Stir in the remaining lemon juice, the rest of the olive oil, the pepper and a splash of water until it pours like thick cream, in the style of ajo blanco.",
+        "Pile the romaine, fennel and avocado slices on a plate, top with the warm shrimp and spoon the dressing over. Scatter with dill."
+      ],
+      "prepMin": 10,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Look for shrimp with no added salt or phosphate."
+    },
+    {
+      "id": "keto-med-tuna-egg-pepper-olive-salad",
+      "name": "Spanish tuna, egg and red pepper salad with olives",
+      "inspiredBy": "Spanish ensalada de atún with boiled egg, with no potato",
+      "about": "Tinned tuna and a boiled egg on crisp romaine with red pepper, tomato, creamy avocado, salty olives and capers in a sharp vinegar dressing. It is a very Spanish lunch that needs almost no cooking, and the parsley and pepper bring plenty of **vitamin C**.",
+      "ingredients": [
+        {
+          "food": "light-tuna-canned-in-water-drained-solids-53349b",
+          "g": 100,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "torn"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "note": "thin strips"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 35,
+          "note": "halved"
+        },
+        {
+          "food": "olives-black-salt-cured-5ce851",
+          "g": 30
+        },
+        {
+          "food": "capers-pickled-in-vinegar-da8b2a",
+          "g": 6
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 8,
+          "note": "very thin slices"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Lower the egg into boiling water and cook for 9 minutes. Cool it under cold water, then peel and quarter it.",
+        "Rinse the olives and capers under cold water and pat them dry. Tear the romaine into a wide bowl and add the red pepper, tomatoes, onion, olives and capers.",
+        "Drain the tuna and flake it into big pieces.",
+        "Whisk the olive oil with the vinegar, salt and pepper, and toss with the salad.",
+        "Top with the tuna, egg, avocado slices and a generous handful of chopped parsley."
+      ],
+      "prepMin": 15,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Buy tuna with no salt added."
+    },
+    {
+      "id": "keto-med-greek-salad-sardines",
+      "name": "Greek salad with sardines",
+      "inspiredBy": "Greek horiatiki, with sardines in place of the feta",
+      "about": "A Greek village salad of juicy tomatoes, crunchy cucumber, red pepper, olives and capers, with sardines laid on top in place of the feta and a splash of vinegar. The soft sardine bones give you **calcium and omega-3**, and the salad keeps the carbs tiny.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 120,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 90,
+          "note": "chunky half-moons"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 60,
+          "note": "halved"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 30,
+          "note": "thin strips"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 12,
+          "note": "thin slices"
+        },
+        {
+          "food": "olives-black-salt-cured-5ce851",
+          "g": 35
+        },
+        {
+          "food": "capers-pickled-in-vinegar-da8b2a",
+          "g": 5
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 8
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the olives and capers under cold water and pat them dry. Put them in a wide bowl with the cucumber, tomatoes, red pepper and onion.",
+        "Whisk the olive oil with the vinegar, oregano and pepper, and pour it over. Toss lightly and let it sit for 5 minutes so the juices mingle.",
+        "Drain the sardines, break them into large pieces and lay them on top.",
+        "Scatter with parsley and finish with a little more oregano."
+      ],
+      "prepMin": 10,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Spoon the juices over the sardines and use a fork, since there is no bread."
+    },
+    {
+      "id": "keto-med-pork-souvlaki-tzatziki",
+      "name": "Pork souvlaki with tzatziki and Greek romaine salad",
+      "inspiredBy": "Greek pork souvlaki with tzatziki, without the pita",
+      "about": "Lemony, oregano-marinated pork on skewers, served with thick garlicky tzatziki and a crunchy Greek romaine salad with dill and olives. It is the taverna plate without the pita, and the pork brings **thiamin**. The second portion makes tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 190,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2.5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1.5
+        },
+        {
+          "food": "greek-yogurt-plain-whole-milk-cee1ef",
+          "g": 35,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 25
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 170,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 10
+        },
+        {
+          "food": "olives-black-salt-cured-5ce851",
+          "g": 20
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Cut the pork into bite-size cubes. Mix them with half the olive oil, half the lemon juice, most of the garlic, the oregano, a pinch of salt and pepper. Marinate for at least an hour in the fridge (a few hours is even better).",
+        "Make the tzatziki. Grate the cucumber and squeeze it dry with your hands. Stir it into the yogurt with a little grated garlic, half the dill, a drizzle of olive oil and a pinch of salt.",
+        "Shred the romaine and slice the onion very thin. Rinse the olives under cold water and pat them dry. Toss everything together with the olives, the rest of the dill, a squeeze of lemon, the last of the olive oil and a pinch of salt.",
+        "Thread the pork onto skewers. Cook under a hot grill, on a grill pan or on the barbecue, turning now and then, until golden at the edges and just cooked through, about 8 minutes. Pork tenderloin dries out fast, so do not overdo it.",
+        "Serve the skewers with the salad and a big spoonful of tzatziki.",
+        "Pack the second portion for tomorrow's lunch, with the tzatziki and salad in separate containers. Eat the pork cold, sliced, with the tzatziki, since reheating dries tenderloin out."
+      ],
+      "prepMin": 25,
+      "cookMin": 10,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Soak wooden skewers for 20 minutes, or just cook the pork as flat kebabs under the grill."
+    },
+    {
+      "id": "keto-med-roast-trout-zucchini-gremolata",
+      "name": "Roast trout with zucchini, spinach and almond gremolata",
+      "inspiredBy": "Italian gremolata, with toasted almonds, over roast trout",
+      "about": "A crisp-skinned trout fillet roasted on a tray with lemony zucchini, then set on garlicky wilted spinach and finished with a bright gremolata of toasted almonds, parsley, lemon zest and raw garlic. It is **omega-3 and vitamin D** in one pan, and the spinach and zucchini bring folate and potassium.",
+      "ingredients": [
+        {
+          "food": "trout-raw-f3ae43",
+          "g": 185,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 100,
+          "note": "cut into half-moons"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 120,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 20,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12
+        },
+        {
+          "food": "lemon-peel-raw-d60963",
+          "g": 1.5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the zucchini on a tray with about a third of the olive oil, a pinch of salt and the Aleppo pepper.",
+        "Roast the zucchini for 8 minutes, then push it to the side and add the trout, skin side down. Rub it with a little olive oil, salt and pepper.",
+        "Roast another 8 to 10 minutes, until the trout flakes easily but is still a little translucent in the middle and the zucchini has browned edges.",
+        "Meanwhile, toast the almonds in a dry pan until golden, about 3 minutes, then chop them roughly.",
+        "Make the gremolata. Mix the almonds with the finely chopped parsley, lemon zest and the garlic, minced as fine as you can.",
+        "Wilt the spinach in a hot pan with a little olive oil and a pinch of salt, about 1 minute. Pile it on a plate with the zucchini and the trout on top, then squeeze over the lemon and spoon the gremolata over the fish."
+      ],
+      "prepMin": 15,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "keto-med-porchetta-pork-rapini",
+      "name": "Fennel and rosemary pork tenderloin with garlicky rapini and hazelnut salsa verde",
+      "inspiredBy": "Tuscan porchetta flavours (fennel, garlic, rosemary) on lean pork tenderloin, with Puglian rapini",
+      "about": "Lean pork tenderloin rubbed with garlic, fennel seed and rosemary, roasted until blushing and served with garlicky rapini and a punchy parsley, caper and toasted hazelnut salsa verde. It gives you the flavour of Tuscan porchetta in 35 minutes, and the pork and rapini bring **thiamin, folate and iron**. The second portion becomes tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 180,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "broccoli-raab-rapini-raw-763a71",
+          "g": 220,
+          "note": "tough stems trimmed"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "fennel-seed-8a14d7",
+          "g": 1.5
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 35
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 34,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "capers-pickled-in-vinegar-da8b2a",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Crush the fennel seeds and rosemary with the back of a spoon and mix them with a little of the minced garlic, a teaspoon of the olive oil, salt and pepper.",
+        "Rub this paste all over the pork. Put the onion wedges on a tray, make a gap for the pork, and roast for 10 minutes.",
+        "Turn the pork and stir the onion. Roast another 12 to 15 minutes, until the pork is just a little pink inside. Rest it for 5 minutes, then slice it thickly.",
+        "Meanwhile, toast the hazelnuts in a dry pan until golden, about 3 minutes, and chop them roughly. Chop the parsley and capers together and stir in the hazelnuts, half the lemon juice and enough olive oil to make the salsa spoonable, about 1 tablespoon for the two portions.",
+        "Blanch the rapini in boiling salted water for 2 minutes, drain well, then toss in a hot pan with the remaining olive oil and garlic until tender and fragrant, about 2 minutes.",
+        "Plate the rapini and onion, lay the pork slices on top and spoon over the salsa verde and the rest of the lemon juice.",
+        "Pack the second portion for tomorrow's lunch, with the salsa verde in its own container. Eat the pork cold, sliced, or warm it very gently so it stays juicy."
+      ],
+      "prepMin": 20,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Do not overcook tenderloin. It is best at 63°C (145°F), then rested."
+    },
+    {
+      "id": "keto-med-garlic-shrimp-cauliflower-rice",
+      "name": "Garlic shrimp on cauliflower rice with olives and zucchini",
+      "inspiredBy": "Spanish gambas al ajillo, over cauliflower rice instead of bread",
+      "about": "Sizzling garlic shrimp with smoked paprika spooned over lemony cauliflower rice, with olives, golden zucchini, silky kale and creamy avocado. It is a quick Spanish-style supper, and the shrimp, cauliflower and kale bring **choline, vitamin C and calcium**.",
+      "ingredients": [
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 160,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 70,
+          "note": "grated or pulsed into rice-size pieces"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 90,
+          "note": "cut into half-moons"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "stems removed, sliced"
+        },
+        {
+          "food": "olives-black-salt-cured-5ce851",
+          "g": 20,
+          "note": "halved"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 90
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "sliced thin"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Pulse the cauliflower in a food processor, or grate it on the coarse side of a box grater, until it looks like rice.",
+        "Warm a third of the olive oil in a wide pan over medium heat. Add the cauliflower with a pinch of salt and cook, stirring, until just tender, about 5 minutes. Stir in the rinsed olives and half the lemon juice and move it to a plate.",
+        "Add a little more oil and the zucchini to the pan. Cook until golden at the edges and tender, about 4 minutes. Add the kale with a splash of water and cook until silky, about 3 minutes, then put the vegetables with the rice.",
+        "Add the rest of the olive oil and the garlic to the pan and let it sizzle for 30 seconds, until fragrant but not brown.",
+        "Add the shrimp, paprika, Aleppo pepper and a pinch of salt. Cook until pink and curled, about 2 minutes a side.",
+        "Spoon the shrimp and the garlicky oil over the rice. Add sliced avocado, parsley and the remaining lemon juice."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Look for shrimp with no added salt or phosphate."
+    },
+    {
+      "id": "keto-med-chicken-cacciatore-mushrooms",
+      "name": "Chicken cacciatore with mushrooms, peppers and olives",
+      "inspiredBy": "Italian pollo alla cacciatora, with no pasta or bread alongside",
+      "about": "Chicken thighs braised with plenty of mushrooms, a little red pepper, black olives and capers in a light tomato and herb sauce, a hunter-style stew from Italy. It is even better the next day, and the mushrooms bring **B vitamins and potassium** while the spinach stirred in at the end adds folate.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 190,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 155,
+          "note": "quartered"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 20,
+          "note": "strips"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 25
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2.5
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 140,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "olives-black-salt-cured-5ce851",
+          "g": 25
+        },
+        {
+          "food": "capers-pickled-in-vinegar-da8b2a",
+          "g": 5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 8
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.8
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Pat the chicken dry and season with salt and pepper. Warm half the olive oil in a wide pan or Dutch oven over medium-high heat and brown the chicken well on both sides, about 8 minutes. Set it aside.",
+        "Add the rest of the olive oil, the mushrooms and a pinch of salt. Cook until they lose their water and turn golden, about 6 minutes.",
+        "Add the onion, red pepper and garlic and cook until soft, about 4 minutes.",
+        "Stir in the vinegar, scraping up the browned bits, then add the crushed tomatoes, thyme, rosemary and about ⅓ cup (80 ml) of water.",
+        "Return the chicken to the pan, cover and simmer gently for 20 minutes, then take the lid off for the last 5 minutes so the sauce thickens.",
+        "Stir in the rinsed olives and capers and the spinach, and cook 2 more minutes, until the spinach wilts.",
+        "Pack the second portion for tomorrow's lunch. It reheats well and keeps for 3 days in the fridge."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Bone-in thighs make an even richer sauce. Brown them the same way and simmer 35 minutes instead of 20."
+    },
+    {
+      "id": "keto-med-eggplant-lamb-moussaka",
+      "name": "Eggplant and lamb moussaka with zucchini and a yogurt topping",
+      "inspiredBy": "Greek moussaka, with zucchini for the potatoes and a yogurt and egg topping in place of flour béchamel",
+      "about": "Layers of roasted eggplant and zucchini under a cinnamon-scented lamb and tomato sauce, finished with a golden yogurt and egg topping. It is the Greek weekend classic with no potato or flour, and the second portion is even better tomorrow. The eggplant brings **fibre and potassium** for very few carbs.",
+      "ingredients": [
+        {
+          "food": "lamb-leg-roast-lean-raw-02b927",
+          "g": 150,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "eggplant-raw-b8b8c1",
+          "g": 85,
+          "note": "sliced into rounds"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 40,
+          "note": "sliced into thin rounds"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 8,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 25
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-whole-milk-cee1ef",
+          "g": 20,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 34,
+          "note": "for the two portions, 1 jumbo egg"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 14
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.8
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "nutmeg-ground-15c547",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Lay the eggplant and zucchini on lined trays, brush both sides with about half the olive oil (a thin coat is enough on a lined tray), season with salt and roast until soft and golden, about 25 minutes, turning once.",
+        "Meanwhile, warm the remaining oil in a large pan. Cook the onion until soft, about 5 minutes, then add the garlic and lamb. Break the lamb up and brown it well, about 8 minutes.",
+        "Stir in the cinnamon, oregano, bay leaf, crushed tomatoes, about ½ cup (125 ml) of water for the dish, salt and pepper. Simmer for about 20 minutes, until thick but still saucy. Discard the bay leaf and stir in the parsley.",
+        "Lower the oven to 190°C (375°F). In a baking dish, layer half the eggplant and zucchini, then all the meat sauce, then the rest of the vegetables.",
+        "Whisk the yogurt with the egg, nutmeg and a pinch of salt. Spread it over the top.",
+        "Bake until set and golden in patches, about 30 minutes. Let it rest for 10 minutes before cutting, or it will slump.",
+        "Cut it into two portions. Keep the second for tomorrow's lunch; it reheats well and keeps for 3 days."
+      ],
+      "prepMin": 35,
+      "cookMin": 70,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "weekend-project",
+        "freezer-friendly"
+      ],
+      "tip": "Ask the butcher to mince a lean leg of lamb. It keeps the moussaka light and not greasy."
+    },
+    {
+      "id": "keto-med-trout-plaki-tomatoes-greens",
+      "name": "Roast trout with tomatoes, olives and lemony greens",
+      "inspiredBy": "Greek plaki, fish baked with tomato, garlic and olive oil",
+      "about": "Trout fillets roasted on a bed of cherry tomatoes, olives, capers and garlic, served with kale braised until silky in lemon and olive oil, the way Greek horta are served. It is a Greek-island plaki dinner, and the trout brings **omega-3 and vitamin D** while the kale adds calcium and vitamin C.",
+      "ingredients": [
+        {
+          "food": "trout-raw-f3ae43",
+          "g": 175,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 60,
+          "note": "halved"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 8,
+          "note": "thin slices"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "olives-black-salt-cured-5ce851",
+          "g": 35
+        },
+        {
+          "food": "capers-pickled-in-vinegar-da8b2a",
+          "g": 5
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 175,
+          "swap": "leafy_greens",
+          "note": "leaves only, most of a small bunch"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Rinse the olives and capers under cold water and pat them dry. Toss the tomatoes, onion, sliced garlic, olives and capers on a tray with about half the olive oil, the oregano and a pinch of salt.",
+        "Roast for 10 minutes, until the tomatoes start to burst.",
+        "Pat the trout dry, rub it with a little olive oil, salt and pepper, and lay the fillets skin side up on the tomatoes.",
+        "Roast another 8 to 10 minutes, until the skin is blistered and the flesh flakes easily.",
+        "While it cooks, strip the kale from its stems and chop it. Warm a little olive oil in a pan with a splash of water and cook the kale with a pinch of salt until silky, about 6 minutes. Take it off the heat and dress with half the lemon juice and the rest of the olive oil.",
+        "Plate the kale, then the trout and tomatoes, and spoon the tomato juices over the fish. Finish with parsley and the remaining lemon."
+      ],
+      "prepMin": 10,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "keto-med-warm-olives-hazelnuts",
+      "name": "Warm olives with rosemary and hazelnuts",
+      "inspiredBy": "Spanish tapas bar olives and nuts",
+      "about": "Black olives and whole hazelnuts warmed in olive oil with rosemary and a squeeze of lemon, which makes them taste like a bar snack in Catalonia. The hazelnuts give you **vitamin E and magnesium** with very few carbs.",
+      "ingredients": [
+        {
+          "food": "olives-black-salt-cured-5ce851",
+          "g": 40
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 40,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 4
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a small pan over medium heat. Add the hazelnuts and rosemary and toast for 2 minutes, stirring, until the hazelnuts smell nutty.",
+        "Add the rinsed olives and warm through for 1 minute.",
+        "Tip into a bowl and squeeze a little lemon over the top."
+      ],
+      "prepMin": 2,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-med-garlic-mushrooms-ajillo",
+      "name": "Garlic mushrooms with parsley and lemon",
+      "inspiredBy": "Spanish champiñones al ajillo",
+      "about": "Mushrooms sautéed hard in olive oil until golden, then tossed with sizzling garlic, parsley and a squeeze of lemon. It is a classic Spanish tapa, and mushrooms are a surprisingly good source of **B vitamins and potassium**.",
+      "ingredients": [
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 130,
+          "note": "halved"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the olive oil in a wide frying pan over medium-high heat. Add the mushrooms in one layer with a pinch of salt and cook, without stirring too much, until golden, about 6 minutes.",
+        "Add the garlic and Aleppo pepper and cook for 30 seconds, just until fragrant.",
+        "Take the pan off the heat and toss with parsley and a squeeze of lemon."
+      ],
+      "prepMin": 3,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-med-avocado-lemon-oregano",
+      "name": "Avocado with lemon, olive oil and oregano",
+      "inspiredBy": "Spanish and Greek avocado with lemon, olive oil and herbs",
+      "about": "A whole ripe avocado, halved and dressed with generous olive oil, lemon, oregano and Aleppo pepper. It is simple and creamy, and avocado is a great source of **potassium, folate and fibre**.",
+      "ingredients": [
+        {
+          "food": "avocado-raw-c06278",
+          "g": 165
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.6
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Halve the avocado and remove the stone.",
+        "Drizzle with the lemon juice and olive oil, then sprinkle over the oregano, Aleppo pepper and a pinch of salt.",
+        "Eat it straight from the skin with a spoon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-med-olive-tapenade-dippers",
+      "name": "Olive and caper tapenade with cucumber dippers",
+      "inspiredBy": "Provençal and Ligurian olive tapenade",
+      "about": "A coarse tapenade of black olives, capers, garlic and lemon, scooped up with crunchy cucumber. The olives and olive oil are the Mediterranean fats at their purest, and they bring **vitamin E**.",
+      "ingredients": [
+        {
+          "food": "olives-black-salt-cured-5ce851",
+          "g": 40
+        },
+        {
+          "food": "capers-pickled-in-vinegar-da8b2a",
+          "g": 5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Rinse the olives and capers under cold water and pat them dry. Chop them with the garlic and parsley until they make a coarse paste, or pulse them a few times in a food processor.",
+        "Stir in the lemon juice, olive oil and pepper.",
+        "Cut the cucumber into dippers and serve with the tapenade."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-med-raspberries-walnuts",
+      "name": "Raspberries and walnuts with cinnamon",
+      "inspiredBy": "Greek fruit and walnuts, without the honey",
+      "about": "Juicy raspberries with a handful of toasted walnuts and a pinch of cinnamon. It is sweet-tart and crunchy, with plant omega-3 from the walnuts and plenty of **fibre** from the berries.",
+      "ingredients": [
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 50,
+          "swap": "berries"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 30,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan over medium heat until fragrant, about 2 minutes.",
+        "Put the raspberries in a bowl, add the warm walnuts and dust with cinnamon."
+      ],
+      "prepMin": 2,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-med-toasted-hazelnuts-rosemary",
+      "name": "Toasted hazelnuts with rosemary and lemon",
+      "inspiredBy": "Spanish and Piedmontese toasted hazelnuts",
+      "about": "Whole hazelnuts toasted in a dry pan until golden and fragrant, then tossed with rosemary, a pinch of salt and a squeeze of lemon. Hazelnuts are grown across Spain and Italy, and a small handful gives you **vitamin E, magnesium and healthy fats** with hardly any carbs.",
+      "ingredients": [
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 40,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.4
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 1,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Toast the hazelnuts in a dry pan over medium heat, shaking now and then, until golden and fragrant, about 4 minutes.",
+        "Take the pan off the heat and toss with the olive oil, rosemary and salt.",
+        "Add a squeeze of lemon and let them cool for a couple of minutes so they crunch."
+      ],
+      "prepMin": 1,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-med-avocado-tuna-lemon",
+      "name": "Avocado filled with tuna and lemon",
+      "inspiredBy": "Spanish and Italian tuna with avocado and lemon",
+      "about": "A ripe avocado half filled with flaked tuna, lemon, parsley and a drizzle of olive oil. It is rich, creamy and filling, with **protein and potassium** in one easy bite.",
+      "ingredients": [
+        {
+          "food": "avocado-raw-c06278",
+          "g": 110
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-solids-53349b",
+          "g": 60,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Halve the avocado and remove the stone.",
+        "Flake the tuna with the lemon juice, chopped parsley, olive oil, pepper and a pinch of salt.",
+        "Pile the tuna into the hollow of the avocado and eat with a spoon."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-med-lemon-paprika-shrimp-snack",
+      "name": "Poached shrimp with lemon and smoked paprika",
+      "inspiredBy": "Spanish gambas cocidas",
+      "about": "Shrimp poached in a pot of lemony water for a couple of minutes, then tossed with olive oil, smoked paprika and parsley and eaten cold, like a plate of Spanish gambas cocidas. It is a cold plate of shrimp to pick at, with plenty of **protein** for almost no carbs.",
+      "ingredients": [
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 150,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.6
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Bring a small pot of salted water to a boil with a squeeze of the lemon.",
+        "Add the shrimp and cook until pink and curled, about 2 minutes. Drain and cool under cold water.",
+        "Toss with the olive oil, paprika, parsley and the rest of the lemon juice."
+      ],
+      "prepMin": 3,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Look for shrimp with no added salt or phosphate."
+    },
+    {
+      "id": "keto-med-tuna-stuffed-eggs",
+      "name": "Tuna-stuffed eggs with capers and parsley",
+      "inspiredBy": "Spanish huevos rellenos de atún",
+      "about": "Hard-boiled egg halves filled with a creamy mash of the yolk, flaked tuna, capers, parsley and lemon, a classic Spanish tapa. It is a small, salty, filling snack, and the egg and tuna bring **choline and protein**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-solids-53349b",
+          "g": 35,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "capers-pickled-in-vinegar-da8b2a",
+          "g": 3
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 3
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Lower the egg into boiling water and cook for 9 minutes. Cool it under cold water, then peel and halve lengthwise.",
+        "Pop out the yolk and mash it with the drained tuna, chopped capers, parsley, lemon juice and olive oil until creamy.",
+        "Spoon the filling back into the whites and dust with the paprika."
+      ],
+      "prepMin": 10,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "keto-med-marinated-olives-herbs",
+      "name": "Marinated olives with oregano, garlic and lemon",
+      "inspiredBy": "Greek meze marinated olives",
+      "about": "Black olives tossed with olive oil, a little garlic, oregano and lemon and left to sit for a few minutes, the way every meze table in Greece starts. They are salty, fruity and satisfying, and a handful of olives is a classic Mediterranean source of **healthy fats and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "olives-black-salt-cured-5ce851",
+          "g": 60
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 4
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Rinse the olives under cold water, pat them dry and put them in a small bowl.",
+        "Add the olive oil, lemon juice, finely grated garlic, oregano and chopped parsley, and toss well.",
+        "Leave them to marinate for 10 minutes if you can, then eat with a fork or toothpicks."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "keto-med-fried-almonds-pimenton",
+      "name": "Almonds fried in olive oil with pimentón",
+      "inspiredBy": "Spanish almendras fritas",
+      "about": "Whole almonds fried in olive oil until golden, then tossed with smoked paprika and a pinch of salt, the kind of snack a Spanish bar puts out with a glass of sherry. They are warm, crunchy and rich, and bring **vitamin E and magnesium**.",
+      "ingredients": [
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 34,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a small frying pan over medium heat.",
+        "Add the almonds and fry, stirring, for about 3 minutes, until they are golden and smell toasty.",
+        "Tip them and the oil onto a plate, toss with the pimentón and salt, and let them cool for a couple of minutes so they crisp up."
+      ],
+      "prepMin": 1,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-med-chia-pudding-hazelnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-med-tuna-egg-pepper-olive-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-med-pork-souvlaki-tzatziki"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-med-warm-olives-hazelnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-med-garlic-mushrooms-ajillo"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-med-yogurt-walnuts-raspberries"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-med-pork-souvlaki-tzatziki",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-med-trout-plaki-tomatoes-greens"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-med-lemon-paprika-shrimp-snack"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-med-toasted-hazelnuts-rosemary"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-med-spinach-dill-omelette"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-med-garlic-shrimp-avocado-fennel-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-med-porchetta-pork-rapini"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-med-lemon-paprika-shrimp-snack"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-med-raspberries-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-med-spinach-dill-omelette"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-med-porchetta-pork-rapini",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-med-garlic-shrimp-cauliflower-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-med-raspberries-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-med-toasted-hazelnuts-rosemary"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-med-chia-pudding-hazelnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-med-greek-salad-sardines"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-med-chicken-cacciatore-mushrooms"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-med-tuna-stuffed-eggs"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-med-avocado-lemon-oregano"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-med-chia-pudding-hazelnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-med-chicken-cacciatore-mushrooms",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-med-eggplant-lamb-moussaka"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-med-avocado-lemon-oregano"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-med-marinated-olives-herbs"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "keto-med-chia-pudding-hazelnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "keto-med-eggplant-lamb-moussaka",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "keto-med-roast-trout-zucchini-gremolata"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-med-tuna-stuffed-eggs"
+        },
+        {
+          "slot": "snack",
+          "recipe": "keto-med-fried-almonds-pimenton"
+        }
+      ]
+    }
+  ]
+}
