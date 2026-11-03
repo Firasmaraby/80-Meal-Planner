@@ -374,7 +374,7 @@ happens to fit the diet, never like a list of things you can't have.
 
 ### Muscle gain (`muscle`)
 - **Gate:** protein at least 30% of calories, every day. Sizes Standard (about 2,400), Big (about 3,000) and XL (about
-  3,800), covering 2400-4200. No Light.
+  3,500), covering 2200-3700 where it passes. No Light.
 - **The 400 g raw meat per serving cap still holds:** carry the calories with starch (rice, potatoes, oats, pasta),
   dairy (Greek yogurt, skyr, cottage cheese, milk), legumes and eggs, spread over three meals and two or three snacks.
 - **Protein at every meal and snack,** about 30 to 50 g per main meal. Real food, never powders.
@@ -393,3 +393,19 @@ happens to fit the diet, never like a list of things you can't have.
   ingredient note where it matters.
 - **Fish two or three times,** legumes most days, oats, nuts, olive or canola oil; skinless poultry, very little red meat.
 - **The app adds a note** that people on blood-pressure or heart medication should follow their care team's advice.
+
+### Lessons from batch 2B part 1 (apply to every diet family)
+- **Bands that didn't pass, so don't fight them:** vegetarian and heart-healthy Light usually hold 1600-1800 only;
+  lean Light 1200-1400 can't hold calcium and choline; muscle XL stops at 3200-3700, because 30% protein from food
+  above that pushes phosphorus, selenium and zinc over their upper limits. Claim what passes and say why in the draft.
+- **Ingredient notes never state a count or amount** ("3 eggs", "one thin slice"): the note prints at every size, and
+  the sizer changes the amount. Say what the thing is or how to prep it ("beaten", "from a lemon; zest it first").
+  Don't repeat the library name in the note either; the app prints the name, then the note.
+- **The text must own what's in the list.** If the soffritto has mushrooms, the `about` says so; if a step salts the
+  pickles, salt is in the list; if `about` claims iron, the dish really carries it. Reviewers check every claim.
+- **Technique has to be right:** pimentón blooms in the hot sofrito, not in a finished stew; medium bulgur needs
+  cooking, not soaking; a hard-boiled egg needs a boiling step. Write the step the way the home cook in that region does.
+- **No flavour runs:** the same fruit, nut and spice combination (pear, walnuts, cinnamon) at breakfast and snack on
+  the same day, or four days running, reads as lazy. Check across slots, not just within a recipe.
+- **Tags are checked:** `15-minute` only when prep plus cook is 15 or less.
+- **`howItWorks` is honest about Light:** one plain sentence on what gets smaller or drops away at Light.
