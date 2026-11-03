@@ -16,7 +16,7 @@ Size notes: Light drops the second snack each day. Big adds a vegetable snack (g
 
 ## GUIDE section 11 check (after the chef critic's fixes)
 
-- Ingredients not of the cuisine: none added for a number. No flax, chia, walnuts, almonds, yogurt or kale. Peanuts are a staple of all three cuisines. Chicken liver is only in the bubur ayam (ati, as in Jakarta), 30 g.
+- Ingredients not of the cuisine: none added for a number. No flax, chia, walnuts, almonds, yogurt or kale. Peanuts are a staple of all three cuisines. Chicken liver is only in the bubur ayam (ati, as in Jakarta), 27 g.
 - Honest names: nasi lemak, tapsilog, rendang (cooked to the kalio stage) and laksa are all "inspired" and say how they differ. Pinakbet uses shrimp paste for bagoong, and mackerel stands in for bangus in the sinigang.
 - Protein crutches: eggs only where the dish has them (tapsilog x2, nasi lemak x2, gado-gado x1) plus two boiled-egg snacks (days 3 and 7) that the gate forced for choline at Light. 7 egg slots in total.
 - Same flavour base twice a day: calamansi is now only in tapsilog and pancit; lime in bubur, laksa and ikan bakar; tamarind in gado-gado and nasi lemak sambal. The tempeh stir-fry uses fresh chili, not sambal.
