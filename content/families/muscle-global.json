@@ -1,0 +1,1698 @@
+{
+  "id": "muscle-global",
+  "name": "Build Muscle Global",
+  "style": "muscle",
+  "cuisine": "Global",
+  "regions": [
+    "Canada",
+    "the US",
+    "Italy",
+    "Mexico",
+    "Japan",
+    "Greece"
+  ],
+  "summary": "A week of real meals for people who train hard: skyr oats, chicken tinga, maple Dijon salmon, beef chili, turkey ragù and a Sunday cottage pie. Every meal and snack carries protein, with plenty of rice, potatoes, oats and pasta to fuel the next session.",
+  "howItWorks": "**Protein all day, not just at dinner.** Every meal and snack carries protein, and there are two protein snacks a day, three on some Big and XL days. Spreading it over five or six eating moments gives your muscles a steady supply instead of one big hit at night.\n\n**Carbs for the training.** Oats, rice, sweet potato, potatoes, pasta and tortillas are on the plate because they refill your energy for the next session. They sit at breakfast, lunch and dinner, so you have fuel before and after you train.\n\n**Cook once, eat twice.** Monday's chicken tinga, Wednesday's chili, Thursday's turkey ragù and Saturday's souvlaki each make two portions, so the next day's lunch is already done. The salmon dinners are always cooked fresh.\n\n**Fish twice.** Sockeye salmon on Tuesday and a ginger soy salmon bowl on Friday carry your **omega-3 and vitamin D**, and they never land back to back. Walnuts in the oats and cottage cheese bowls help the omega balance too.\n\n**Bigger sizes add food, not powder.** Big and XL add a third snack on some days and grow the whole plate: more chicken, beef, fish, skyr and cottage cheese, and more rice, potatoes, oats and pasta, which carry the biggest share of the extra calories. Vegetables stay as written. XL plates are big, so use a wider pan and a bigger baking dish.",
+  "signature": [
+    "muscle-global-lean-beef-bean-chili-sweet-potato",
+    "muscle-global-turkey-white-bean-ragu-rigatoni",
+    "muscle-global-maple-dijon-sockeye-sweet-potatoes",
+    "muscle-global-chicken-tinga-rice-bowl"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2400,
+      "covers": [
+        "2200-2400",
+        "2400-2800"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-global-blueberry-maple-skyr-walnuts"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-global-shrimp-cocktail-lime-avocado"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-global-chicken-salad-cucumber-boats"
+          }
+        }
+      ]
+    },
+    "xl": {
+      "kcal": 3500,
+      "covers": [
+        "3200-3700"
+      ],
+      "adjust": [
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-global-blueberry-maple-skyr-walnuts"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-global-shrimp-cocktail-lime-avocado"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-global-chicken-salad-cucumber-boats"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "muscle-global-skyr-oats-blueberries",
+      "name": "Overnight skyr oats with blueberries and walnuts",
+      "about": "Thick, creamy overnight oats made with skyr, so a jar is more like a custard than a porridge. Blueberries bring brightness and walnuts bring crunch. The skyr gives you **a real protein head start** before the day has begun.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "rolled oats"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 250,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 100,
+          "swap": "berries"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Stir the oats, skyr, cinnamon and a good splash of water together in a jar or bowl until smooth and thick.",
+        "Fold in half the blueberries, cover and chill overnight, or at least 4 hours.",
+        "In the morning, loosen with a splash of water or milk if it has set too firm, then top with the rest of the blueberries, the chopped walnuts and a thin drizzle of maple syrup."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Mix a jar the night before. They keep 3 days, so you can mix Monday's on Sunday night, then Thursday's and Saturday's together on Wednesday night."
+    },
+    {
+      "id": "muscle-global-cottage-cheese-scramble-toast",
+      "name": "Creamy cottage cheese scramble with spinach, tomato and toast",
+      "about": "Eggs and egg whites scrambled with a scoop of cottage cheese turn out soft, creamy and extra filling, with wilted spinach, sweet cherry tomatoes and a little cheddar on toast. It takes 10 minutes and gives you **a big hit of protein** with plenty of vitamin K and folate.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "egg-white-raw-b17726",
+          "g": 150,
+          "note": "a carton is easiest"
+        },
+        {
+          "food": "cottage-cheese-2-fat-49f49a",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80
+        },
+        {
+          "food": "cheddar-cheese-reduced-fat-a0786c",
+          "g": 12
+        },
+        {
+          "food": "white-bread-0fccb7",
+          "g": 35,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Put the bread in the toaster. Warm the olive oil in a non-stick pan over medium heat.",
+        "Cook the cherry tomatoes until they just start to burst, about 2 minutes, then add the spinach and cook until the pan is nearly dry.",
+        "Beat the eggs and egg whites with the pepper and salt, pour them in and stir slowly with a spatula until just set. Take the pan off the heat and fold in the cottage cheese so it stays creamy.",
+        "Scatter over the grated cheddar and sliced scallion, and serve on the toast."
+      ],
+      "prepMin": 4,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Carton egg whites work well here."
+    },
+    {
+      "id": "muscle-global-blueberry-cottage-cheese-bowl",
+      "name": "Blueberry walnut cottage cheese bowl with toasted oats",
+      "about": "Cool, creamy cottage cheese with blueberries, a little maple syrup and a toasted oat and walnut crunch, like a quick granola bowl. It is sweet, tangy and ready in minutes, and the cottage cheese gives you **a slow-digesting protein** to carry you through the morning.",
+      "ingredients": [
+        {
+          "food": "cottage-cheese-2-fat-49f49a",
+          "g": 145,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 110,
+          "swap": "berries"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the oats and chopped walnuts in a dry pan over medium heat until they smell nutty, about 3 minutes. Shake the pan so they do not catch.",
+        "Spoon the cottage cheese into a bowl and pile on the blueberries.",
+        "Scatter over the toasted oats and walnuts, drizzle with the maple syrup and finish with a pinch of cinnamon."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-global-tuscan-tuna-white-bean-salad",
+      "name": "Tuscan tuna and white bean salad with garlic toast",
+      "inspiredBy": "Inspired by Tuscan tonno e fagioli",
+      "about": "A classic Tuscan pairing: tender white beans, flaked tuna, baby spinach and sweet tomatoes in a lemony olive oil dressing, with garlic-rubbed toast on the side. It needs no cooking and is **packed with protein, fibre and folate**.",
+      "ingredients": [
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 70,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "white-beans-canned-solids-and-liquid-4c3a17",
+          "g": 170,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40
+        },
+        {
+          "food": "white-bread-0fccb7",
+          "g": 50,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Slice the red onion very thin and let it sit in the lemon juice while you get everything else ready. It softens and loses its bite.",
+        "Drain and rinse the beans and tip them into a bowl with the olive oil, halved tomatoes, diced avocado, chopped parsley, pepper and the salt, then season to taste.",
+        "Drain the tuna, flake it in with the onion and its lemony juices, and fold everything together gently.",
+        "Toast the bread and rub it with the cut side of the garlic clove. Serve the salad over the spinach with the toast on the side."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-global-chicken-egg-rice-bowl",
+      "name": "Chicken and egg rice bowl with spinach and scallion",
+      "inspiredBy": "Inspired by Japanese oyakodon, with chicken breast and maple in place of thigh and mirin",
+      "about": "A quick, savoury Japanese-style donburi: chicken and onion simmered in a gingery soy broth, set with a soft egg and piled over rice with wilted spinach. It is cosy and fast, and the chicken and egg together give you **plenty of protein** in one bowl.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 140,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "egg-white-raw-b17726",
+          "g": 60,
+          "note": "a carton is easiest"
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 55,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 50
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 90,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "soy-sauce-shoyu-52e366",
+          "g": 20
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 5
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook it in a covered pot with about one and a half times its volume of water until tender, about 15 minutes. Start this first.",
+        "Slice the onion thin and the chicken into thin strips. Stir the soy sauce, maple syrup, grated ginger and enough water to come halfway up the chicken together in a wide frying pan with a lid and bring it to a simmer.",
+        "Add the onion and chicken and cook gently for about 6 minutes, until the chicken is cooked through and the onion is soft.",
+        "Add the spinach and let it wilt. Beat the eggs and egg whites lightly and pour them over in a thin stream, then cover and cook for about a minute, until just set and still a bit soft.",
+        "Spoon the rice into a bowl, slide the chicken and egg on top with all the juices, and finish with the sliced scallion."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook the rice a night ahead and the bowl takes 15 minutes."
+    },
+    {
+      "id": "muscle-global-turkey-bean-breakfast-burritos",
+      "name": "Turkey, black bean and egg brunch burritos",
+      "inspiredBy": "Inspired by a Tex-Mex breakfast burrito, with turkey instead of chorizo",
+      "about": "Smoky, spiced ground turkey with black beans, spinach and soft scrambled eggs, rolled into warm flour tortillas with a little melted cheddar. It is a proper weekend brunch with **eggs, turkey and beans in every bite**, and it goes together in about 25 minutes.",
+      "ingredients": [
+        {
+          "food": "flour-tortilla-ready-to-bake-fry-plain-0002ff",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "two small tortillas"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 30
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "egg-white-raw-b17726",
+          "g": 100,
+          "note": "a carton is easiest"
+        },
+        {
+          "food": "ground-turkey-fat-free-raw-604508",
+          "g": 90,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "black-beans-canned-solids-and-liquid-reduced-sodium-d2c4b7",
+          "g": 70,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "cheddar-cheese-reduced-fat-a0786c",
+          "g": 20
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 30
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 60
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Warm the tortillas wrapped in a damp towel in the microwave, then keep them covered.",
+        "Soften the finely chopped onion in the oil for 3 minutes. Add the turkey, smoked paprika and cumin and cook, breaking it up, until no pink remains and it smells toasty.",
+        "Stir in the black beans, halved tomatoes and spinach and cook until the spinach wilts.",
+        "Pour in the beaten eggs and egg whites and stir gently until just set.",
+        "Fill two small tortillas loosely with the eggs, cheddar, cilantro and sliced avocado, fold in the sides and roll up. Spoon any extra filling beside them. For a crisp outside, toast the burritos seam-side down in the pan for a minute or two."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "To get ahead, cook a double batch of the turkey and bean filling and freeze half. Add the eggs, cheddar and avocado fresh."
+    },
+    {
+      "id": "muscle-global-chicken-tinga-rice-bowl",
+      "name": "Chicken tinga rice bowls with black beans and avocado",
+      "inspiredBy": "Inspired by Mexican tinga de pollo",
+      "about": "Shredded chicken simmered in smoky chipotle tomato sauce, served over rice and black beans with creamy avocado and lime. It is smoky, a little spicy and tangy, and it **makes two portions**, so tomorrow's lunch is ready. The chicken and beans together carry a big protein load.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 190,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 100
+        },
+        {
+          "food": "chipotle-peppers-in-adobo-sauce-f692a1",
+          "g": 12
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 50
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 55,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "black-beans-canned-solids-and-liquid-reduced-sodium-d2c4b7",
+          "g": 80,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook it in a covered pot with about one and a half times its volume of water until tender, about 15 minutes. Cook enough for both portions.",
+        "Meanwhile, simmer the chicken breasts in lightly salted water for 15 to 18 minutes, until cooked through. Lift out and shred with two forks. Keep a mug of the poaching water.",
+        "Soften the chopped onion in the oil for about 6 minutes, until golden. Add the garlic, cumin and oregano and stir for a minute.",
+        "Pour in the crushed tomatoes and finely chopped chipotle with a spoonful of its sauce. Simmer for 8 minutes, until thick, then stir in the chicken with a good splash of the poaching water, more at bigger sizes, so the sauce stays saucy.",
+        "Warm the black beans in a small pan. Build bowls with rice, beans and tinga, then top with sliced avocado, cilantro and a squeeze of lime.",
+        "Pack the second portion, kept separate from the avocado, for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Reheat day 2 with a splash of water."
+    },
+    {
+      "id": "muscle-global-maple-dijon-sockeye-sweet-potatoes",
+      "name": "Maple Dijon sockeye salmon with roasted sweet potatoes and garlic spinach",
+      "inspiredBy": "Inspired by West Coast maple-glazed salmon",
+      "about": "Sockeye is the deep red salmon of the Pacific coast, lean and full-flavoured, and it loves a sweet and tangy maple Dijon glaze. Caramelized roasted sweet potatoes and garlicky spinach make it a full plate. It is a great source of **omega-3 and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "salmon-sockeye-red-raw-728ce6",
+          "g": 190,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 220,
+          "note": "cut into chunks"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 10
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the sweet potatoes with half the olive oil and a pinch of the salt, and roast on a tray for about 25 minutes.",
+        "Whisk the Dijon, maple syrup, lemon juice and pepper together.",
+        "Push the sweet potatoes over, add the salmon to the tray, season it with the rest of the salt, brush it with the glaze and roast for 8 to 10 minutes, until it just flakes. Sockeye is lean, so do not overcook it.",
+        "Meanwhile, warm the rest of the oil in a pan with the sliced garlic until it smells sweet, then add the spinach and cook for about 2 minutes, until wilted.",
+        "Scatter the parsley over everything and squeeze over any leftover lemon."
+      ],
+      "prepMin": 10,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "muscle-global-lean-beef-bean-chili-sweet-potato",
+      "name": "Lean beef and kidney bean chili over a baked sweet potato",
+      "inspiredBy": "Inspired by American beef and bean chili",
+      "about": "A thick, smoky chili with lean beef, kidney beans and sweet red pepper, spooned over a split baked sweet potato with a squeeze of lime. It is the kind of bowl that **makes a perfect next-day lunch**, because the flavour deepens overnight. Beans and beef give you iron, zinc and fibre in one pot, and the sweet potato adds vitamin A.",
+      "ingredients": [
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 175,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "kidney-beans-canned-drained-solids-7e5cc7",
+          "g": 100,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 130
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 60
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 50
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 240
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 3
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Prick the sweet potatoes and bake them for 45 to 50 minutes, until soft all the way through.",
+        "Warm the oil in a heavy pot and soften the chopped onion, grated carrot and pepper for 6 minutes. Add the garlic and cook for a minute.",
+        "Add the beef and break it up, cooking until no pink remains. Stir in the chili powder, cumin, smoked paprika and oregano for a minute so they bloom in the fat.",
+        "Add the crushed tomatoes and a splash of water, then the beans. Simmer for 20 to 25 minutes, until thick, and season with the salt.",
+        "Split the sweet potatoes, spoon the chili over and finish with cilantro and lime. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Microwave the sweet potatoes for 8 minutes, then crisp them in the oven for 10."
+    },
+    {
+      "id": "muscle-global-turkey-white-bean-ragu-rigatoni",
+      "name": "Turkey and white bean ragù with rigatoni",
+      "inspiredBy": "Inspired by Bolognese ragù",
+      "about": "A simmered Italian-style ragù made with very lean turkey and creamy white beans, with finely chopped carrot and onion and plenty of garlic. Tossed with chewy rigatoni and finished with parmesan and parsley, it is real comfort food with **a big dose of protein and fibre** on every plate.",
+      "ingredients": [
+        {
+          "food": "ground-turkey-fat-free-raw-604508",
+          "g": 160,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "white-beans-canned-solids-and-liquid-4c3a17",
+          "g": 70,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 60
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 160
+        },
+        {
+          "food": "pasta-dry-e5bb80",
+          "g": 50,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "parmesan-cheese-hard-78ce3e",
+          "g": 15
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "fennel-seed-8a14d7",
+          "g": 0.5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Finely chop the carrot and onion. Soften them in the olive oil over medium heat for about 8 minutes, until sweet and golden. Add the garlic for the last minute.",
+        "Add the turkey, let it sit for 3 to 4 minutes so it browns, then break it up and cook until no pink remains. Stir in the fennel seed and oregano and cook for 2 minutes.",
+        "Add the crushed tomatoes, the beans and a splash of water. Simmer gently for 25 minutes, stirring now and then and crushing a few of the beans against the side, until thick and glossy.",
+        "Boil enough rigatoni for both portions in salted water until just al dente, reserving a cup of the cooking water, then drain.",
+        "Toss the pasta with the ragù, loosening with a splash of the pasta water, and finish with the grated parmesan and chopped parsley.",
+        "Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "Reheat the leftover with a splash of water or pasta water."
+    },
+    {
+      "id": "muscle-global-ginger-soy-sockeye-rice-bowl",
+      "name": "Ginger soy salmon rice bowl with spinach and quick pickles",
+      "inspiredBy": "Inspired by Japanese salmon teriyaki, with little sugar",
+      "about": "Pan-seared salmon glazed with ginger and soy, over rice with wilted spinach and cucumber and carrot pickled in rice vinegar. Salty, sharp and rich in all the right places, it is a Friday-night bowl with **omega-3 and plenty of protein**.",
+      "ingredients": [
+        {
+          "food": "salmon-sockeye-red-raw-728ce6",
+          "g": 155,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 65,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12
+        },
+        {
+          "food": "soy-sauce-shoyu-52e366",
+          "g": 14
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 6
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 12
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook it in a covered pot with about one and a half times its volume of water until tender, about 15 minutes, then keep it warm.",
+        "Slice the cucumber and carrot very thin and toss with the rice vinegar, a pinch of salt and a pinch of ginger. Leave them for 10 minutes, then squeeze them dry.",
+        "Mix the soy sauce, maple syrup and the rest of the finely grated ginger. Sear the salmon in a hot non-stick pan for 3 minutes, flip, then pour in the glaze off the heat, return the pan and cook for another 2 to 3 minutes, spooning it over and watching it so it does not scorch, until the fish just flakes.",
+        "Wilt the spinach in the same pan with a splash of water and a drop of soy sauce, about 1 minute.",
+        "Build bowls with rice, salmon, spinach, sliced avocado and the pickles, and scatter with sliced scallion."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "muscle-global-chicken-souvlaki-wraps-lemon-potatoes",
+      "name": "Chicken souvlaki wraps with lemon potatoes and skyr tzatziki",
+      "inspiredBy": "Inspired by Greek souvlaki",
+      "about": "Lemony, garlicky chicken skewers with oregano, roasted lemon potatoes, a cool cucumber tzatziki made with skyr, and warm wraps. It is a relaxed weekend cook, and the second portion makes **a very good wrap** the next day.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 180,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 25
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 180
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20
+        },
+        {
+          "food": "flour-tortilla-ready-to-bake-fry-plain-0002ff",
+          "g": 50,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Cut the chicken into chunks. Mix half the lemon juice with half the oil, half the garlic and the oregano, and toss the chicken in it. Marinate for 1 to 4 hours, no longer.",
+        "Heat the oven to 220°C (425°F). Cut the potatoes into wedges, toss with the rest of the oil, lemon juice and a little salt, and roast for 35 to 40 minutes, turning once, until golden at the edges.",
+        "For the tzatziki, grate the cucumber and squeeze out the water. Stir it into the skyr with the rest of the garlic, chopped parsley and a pinch of salt.",
+        "Thread the chicken on skewers and grill or broil for 10 to 12 minutes, turning, until browned and cooked through.",
+        "Halve the tomatoes and slice the red onion for a quick salad. Warm the wraps and fill them with chicken, tzatziki and salad, with the potatoes on the side.",
+        "Pack the second portion for tomorrow's lunch, with the tzatziki kept separate. Eat it cold, sliced into the wrap, or warm it for 30 seconds."
+      ],
+      "prepMin": 25,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "weekend-project"
+      ]
+    },
+    {
+      "id": "muscle-global-lean-beef-cottage-pie",
+      "name": "Lean beef cottage pie with olive oil mash, spinach and carrots",
+      "inspiredBy": "Inspired by British cottage pie and Québec pâté chinois",
+      "about": "A proper weekend comfort dish: lean beef, carrots, red pepper, kidney beans and spinach in a rich tomato gravy, under a golden olive oil mash with no butter or cream needed. It is hearty, deeply savoury and **packed with iron, zinc and protein**.",
+      "ingredients": [
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 225,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "kidney-beans-canned-drained-solids-7e5cc7",
+          "g": 70,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 80
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 60
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 100
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 270
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Peel the potatoes if you like, cut them into chunks and boil in salted water until a knife slips in easily, about 15 minutes.",
+        "Meanwhile, warm half the olive oil in a wide pan and soften the chopped onion, diced carrot and pepper for about 8 minutes. Add the garlic and thyme for the last minute.",
+        "Add the beef and break it up, cooking until no pink remains. Stir in the crushed tomatoes, the beans and a splash of water and simmer for 12 minutes, until thick. Stir in the spinach until it wilts, then tip the filling into a baking dish.",
+        "Drain the potatoes and mash them with the rest of the olive oil, the pepper and a splash of the cooking water until smooth and creamy.",
+        "Heat the broiler. Spoon the mash over the filling in the baking dish, rough it up with a fork so the peaks catch, and broil for 5 to 8 minutes, until golden at the edges."
+      ],
+      "prepMin": 20,
+      "cookMin": 45,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "weekend-project"
+      ],
+      "tip": "Double it and freeze the second pie. It reheats well in the oven."
+    },
+    {
+      "id": "muscle-global-blueberry-maple-skyr-walnuts",
+      "name": "Blueberry maple skyr with walnuts",
+      "about": "Thick skyr with blueberries, a drizzle of maple syrup and a few crunchy walnuts. It is cool, a little sweet and **a serious protein hit** for a few minutes of effort.",
+      "ingredients": [
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 160,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 100,
+          "swap": "berries"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Spoon the skyr into a bowl and top with the blueberries, chopped walnuts and maple syrup."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-global-spinach-cheddar-egg-white-cups",
+      "name": "Spinach and cheddar egg white cups",
+      "about": "Little baked egg cups made mostly with egg whites, spinach, tomato and a bit of sharp cheddar. They are fluffy, savoury and **very lean protein**, and they reheat in the microwave in under a minute.",
+      "ingredients": [
+        {
+          "food": "egg-white-raw-b17726",
+          "g": 230,
+          "note": "a carton is easiest"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 40
+        },
+        {
+          "food": "cheddar-cheese-reduced-fat-a0786c",
+          "g": 15
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190°C (375°F) and use a silicone muffin tin or line a few cups with parchment cases.",
+        "Beat the egg whites and egg with the pepper and salt, and season to taste. Divide the chopped spinach, tomatoes and scallion between the cups, pour in the eggs and top with the cheddar.",
+        "Bake for about 15 minutes, until puffed and set in the middle."
+      ],
+      "prepMin": 8,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Bake a fresh tin on Wednesday night for Thursday, and another on Saturday for Sunday."
+    },
+    {
+      "id": "muscle-global-tuna-cucumber-toast",
+      "name": "Tuna and white bean toast with cucumber",
+      "about": "Crisp toast piled with a lemony Dijon tuna and white bean mash and cool cucumber slices. It is light, crunchy and gives you **protein and fibre** for few calories.",
+      "ingredients": [
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 50,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "white-beans-canned-solids-and-liquid-4c3a17",
+          "g": 70,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "white-bread-0fccb7",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the bread. Mash the tuna and beans together with the lemon juice, Dijon, pepper and salt, and season to taste.",
+        "Spread over the toast and top with thin cucumber slices."
+      ],
+      "prepMin": 4,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-global-cottage-cheese-tomato-parsley-toast",
+      "name": "Cottage cheese, tomato and parsley toast",
+      "inspiredBy": "Inspired by Italian bruschetta",
+      "about": "Creamy cottage cheese on toast with sweet cherry tomatoes, fresh parsley and a thread of olive oil, like a bruschetta that actually fills you up. It brings **a good dose of protein**.",
+      "ingredients": [
+        {
+          "food": "cottage-cheese-2-fat-49f49a",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "white-bread-0fccb7",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the bread and rub it with the cut side of the garlic. Halve the tomatoes and toss with the olive oil, chopped parsley and pepper.",
+        "Spread the cottage cheese on the toast and pile the tomatoes on top. At bigger sizes, serve the cottage cheese in a bowl with the toast on the side."
+      ],
+      "prepMin": 5,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-global-skyr-herb-dip-raw-veg",
+      "name": "Skyr herb dip with crunchy vegetables",
+      "about": "A cool, garlicky dip of skyr, lemon and parsley with carrot, cucumber and sweet pepper sticks. It is crisp and fresh, and **very high in protein for the calories**.",
+      "ingredients": [
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Stir the skyr with the lemon juice, chopped parsley, finely grated garlic and the salt, and season to taste.",
+        "Cut the carrot, cucumber and pepper into sticks and serve with the dip."
+      ],
+      "prepMin": 6,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-global-chicken-salad-cucumber-boats",
+      "name": "Lemon Dijon chicken salad cucumber boats",
+      "about": "Shredded poached chicken folded with Dijon, lemon, olive oil and parsley, spooned into crisp cucumber halves. It is fresh and zingy, and **lean protein with almost no starch**.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 80,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 120
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Simmer the chicken in lightly salted water for 12 to 15 minutes, until cooked through. Cool a little and shred.",
+        "Stir the Dijon, lemon juice, olive oil and chopped parsley together and fold in the chicken.",
+        "Halve the cucumber lengthwise, scoop out the seeds with a spoon and fill the hollows with the chicken salad."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Poach the chicken when you cook dinner and the snack takes 5 minutes."
+    },
+    {
+      "id": "muscle-global-mini-turkey-meatballs-tomato",
+      "name": "Mini turkey meatballs with tomato dip",
+      "inspiredBy": "Inspired by Italian polpette",
+      "about": "Little baked meatballs of lean turkey with parmesan, parsley and garlic, served with warm crushed tomato for dipping. They are tender, savoury and **a lean protein snack that reheats well**.",
+      "ingredients": [
+        {
+          "food": "ground-turkey-fat-free-raw-604508",
+          "g": 95,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 8,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "parmesan-cheese-hard-78ce3e",
+          "g": 8
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 50
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Soak the oats in half the crushed tomato for 5 minutes, then mix in the turkey, parmesan, chopped parsley, finely grated garlic, oregano and salt, and roll into small balls.",
+        "Bake on a lined tray for 12 to 14 minutes, until browned and cooked through.",
+        "Warm the rest of the crushed tomato with the olive oil in a small pan and serve alongside for dipping."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Ground turkey breast (99% lean) or extra lean ground turkey both work. Bake a double batch and they keep for 4 days."
+    },
+    {
+      "id": "muscle-global-black-bean-cheddar-tortilla-wedges",
+      "name": "Black bean and cheddar tortilla wedges with fresh tomato salsa",
+      "inspiredBy": "Inspired by Mexican quesadillas",
+      "about": "Crisp pan-toasted tortilla folded around black beans and melted cheddar, cut into wedges and served with a quick lime and cilantro tomato salsa. It is **a filling snack with protein and fibre**.",
+      "ingredients": [
+        {
+          "food": "flour-tortilla-ready-to-bake-fry-plain-0002ff",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "black-beans-canned-solids-and-liquid-reduced-sodium-d2c4b7",
+          "g": 100,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "cheddar-cheese-reduced-fat-a0786c",
+          "g": 25
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 60
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Mash the beans roughly with a fork. Spread them over one half of the tortilla (at bigger sizes use a large tortilla, or two small ones), scatter over the cheddar and fold it over.",
+        "Toast in a dry pan over medium heat for 2 minutes a side, until golden and the cheese has melted. Cut into wedges.",
+        "Chop the tomatoes and toss with the lime juice and cilantro for a quick salsa to spoon over."
+      ],
+      "prepMin": 5,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-global-shrimp-cocktail-lime-avocado",
+      "name": "Mexican shrimp cocktail with lime and avocado",
+      "inspiredBy": "Inspired by Mexican coctel de camarón",
+      "about": "Chilled poached shrimp with tomato, cucumber, red onion, lime and cilantro, in the style of a coctel de camarón. It is bright and refreshing and **one of the leanest protein snacks there is**.",
+      "ingredients": [
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 85,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 20
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Simmer the shrimp in lightly salted water for 2 to 3 minutes, until pink and curled. Drain, rinse in cold water and chill.",
+        "Dice the tomatoes, cucumber and red onion and toss with the lime juice, cilantro and a pinch of salt.",
+        "Fold in the shrimp so it picks up all the lime and tomato juices in the bowl, then top with diced avocado."
+      ],
+      "prepMin": 10,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-global-skyr-oats-blueberries"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-global-tuscan-tuna-white-bean-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-global-chicken-tinga-rice-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-global-skyr-herb-dip-raw-veg"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-global-mini-turkey-meatballs-tomato"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-global-cottage-cheese-scramble-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-global-chicken-tinga-rice-bowl",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-global-maple-dijon-sockeye-sweet-potatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-global-skyr-herb-dip-raw-veg"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-global-tuna-cucumber-toast"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-global-blueberry-cottage-cheese-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-global-chicken-egg-rice-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-global-lean-beef-bean-chili-sweet-potato"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-global-shrimp-cocktail-lime-avocado"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-global-mini-turkey-meatballs-tomato"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-global-skyr-oats-blueberries"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-global-lean-beef-bean-chili-sweet-potato",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-global-turkey-white-bean-ragu-rigatoni"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-global-cottage-cheese-tomato-parsley-toast"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-global-spinach-cheddar-egg-white-cups"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-global-cottage-cheese-scramble-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-global-turkey-white-bean-ragu-rigatoni",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-global-ginger-soy-sockeye-rice-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-global-black-bean-cheddar-tortilla-wedges"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-global-blueberry-maple-skyr-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-global-skyr-oats-blueberries"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-global-turkey-bean-breakfast-burritos"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-global-chicken-souvlaki-wraps-lemon-potatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-global-cottage-cheese-tomato-parsley-toast"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-global-tuna-cucumber-toast"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-global-blueberry-cottage-cheese-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-global-chicken-souvlaki-wraps-lemon-potatoes",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-global-lean-beef-cottage-pie"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-global-spinach-cheddar-egg-white-cups"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-global-black-bean-cheddar-tortilla-wedges"
+        }
+      ]
+    }
+  ]
+}
