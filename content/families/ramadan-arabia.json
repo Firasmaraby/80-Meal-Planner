@@ -1,0 +1,2006 @@
+{
+  "id": "ramadan-arabia",
+  "name": "Ramadan Arabian",
+  "style": "ramadan",
+  "cuisine": "Middle Eastern",
+  "regions": [
+    "the Gulf",
+    "the Levant",
+    "Egypt"
+  ],
+  "summary": "A week of Arabian Ramadan home cooking in two main meals: a slow, salt-light suhoor of ful, oats or eggah, and an iftar that opens with dates, water and a soup before a lighter kabsa, baked fish, kofta, sambousek or sayadiyah-style trout. Laban, fruit, a little mahalabia and nuts fill the evenings.",
+  "howItWorks": "**Two meals, two snacks.** Suhoor before dawn and iftar at sunset carry the day, with a snack or two between iftar and bedtime. Iftar opens the traditional way, with dates and a glass of water, then a soup, then a short pause, often for the sunset prayer, before the main plate. The plan works just as well on days you are not fasting.\n\n**A slow, salt-light suhoor.** Ful, oats with milk and a boiled egg, and a herb eggah with labneh all digest slowly, and each comes with cucumber, tomato or watermelon for fluids. Salt is kept low on purpose, to help with thirst. Spread your water through the evening, a glass with each snack.\n\n**Soups and leftovers carry iftar.** Monday's lentil soup and kabsa, Wednesday's chicken and cracked wheat soup and Friday's harira-style soup each make two portions, so Tuesday, Thursday and Saturday need little cooking. Wednesday's eggah also covers Thursday's suhoor. Pack the second portions before you sit down, and have them in the fridge before you head out for taraweeh.\n\n**Fish three times.** Salmon on Wednesday, mackerel on Friday and trout on Sunday carry your **omega-3 and vitamin D**, always cooked fresh. Sambousek is baked, not fried. The sweet is a date-sweetened mahalabia, and Big adds stuffed dates. Drinks are water, milk and laban.\n\n**At the other sizes.** Light drops one snack each evening, so the mahalabia comes once; the meals stay close to Standard, with a little less oil, bread and lamb on some days. Big adds a third snack on four evenings and gives you more rice, bread, meat, fish, beans and a bigger bowl of soup.",
+  "signature": [
+    "ramadan-arabia-chicken-kabsa-lighter",
+    "ramadan-arabia-dates-lentil-soup",
+    "ramadan-arabia-baked-salmon-tahini-fattoush",
+    "ramadan-arabia-beef-kofta-tabbouleh"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 2800,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "ramadan-arabia-dates-stuffed-walnuts"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "ramadan-arabia-watermelon-white-cheese-walnuts"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "ramadan-arabia-hummus-pepper-carrot-sticks"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "ramadan-arabia-khubz-labneh-tomato-mint"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "ramadan-arabia-ful-suhoor-bowl",
+      "name": "Suhoor ful with tahini, lemon and cucumber",
+      "inspiredBy": "Egyptian and Gulf ful medames, kept low in salt for suhoor",
+      "about": "Warm, lightly mashed fava beans with garlic, cumin and lemon, a boiled egg, a drizzle of tahini, and a plate of cucumber and tomato to scoop up with warm whole-wheat khubz. The beans digest slowly, and the cucumber and tomato bring water to the plate. The fava beans carry **iron, folate and fibre**, and the salt is held low on purpose for suhoor.",
+      "ingredients": [
+        {
+          "food": "broadbeans-fava-beans-boiled-351b61",
+          "g": 160,
+          "swap": "legumes",
+          "note": "cooked from dried, or tinned and rinsed well (no salt added if you can find it)"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "boiled until the yolk is set"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 18
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.2
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 32,
+          "note": "khubz"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the tomato, cucumber and parsley. Lower the egg into a small pot of boiling water and cook it for 10 minutes so the yolk is set, then cool it under cold water and peel it.",
+        "Warm half the oil in a small pan, stir in the garlic and cumin for 20 seconds, then add the fava beans, a splash of water and the salt.",
+        "Warm over medium heat for 5 minutes, then mash about half the beans with a fork so the ful is chunky and creamy. Take it off the heat and stir in half the lemon juice.",
+        "Warm the khubz in a dry pan until it is soft with a few toasty spots.",
+        "Spoon the ful into a shallow bowl and drizzle with the tahini, the rest of the oil and the rest of the lemon juice. Scatter over the parsley.",
+        "Serve with the halved egg, the tomato and cucumber, and the khubz for scooping. Drink a big glass of water with it."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "To cook from dried, soak about 250 g fava beans overnight, then simmer for 1½ to 2 hours (30 minutes in a pressure cooker). That makes about four portions. Keep what you will eat in the next 3 days in a shallow container in the fridge, and freeze the rest in single portions. Thaw them in the fridge, use within 2 days and reheat until steaming hot (74 °C). With regular tinned fava, rinse well and leave out the added salt. If anyone at your table has G6PD deficiency (favism), use chickpeas or white beans instead of fava."
+    },
+    {
+      "id": "ramadan-arabia-cardamom-oats-walnuts-watermelon",
+      "name": "Cardamom oats with walnuts, a boiled egg and watermelon",
+      "inspiredBy": "Ramadan suhoor porridge, with the Gulf's cardamom and a wedge of watermelon for water",
+      "about": "Rolled oats simmered in milk with cardamom and cinnamon until creamy, topped with toasted walnuts and almonds and soft dried apricot, with a boiled egg and cold watermelon on the side. Oats and egg digest slowly, so this is a steady start before the fast. The oats and nuts bring **magnesium, fibre and vitamin E**, and the egg brings choline.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 240,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "boiled until the yolk is set"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "apricot-dried-1d0f8b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "watermelon-raw-36cca1",
+          "g": 80,
+          "note": "cut in wedges and chilled"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.8
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the outside of the watermelon before you cut it, then cut it into wedges and chill them. Lower the egg into a small pot of boiling water, cook it for 10 minutes so the yolk is set, then cool it under cold water and peel it.",
+        "Heat the milk with the cardamom, cinnamon and salt in a small pot over medium heat until it just begins to steam. Keep an eye on it so it does not boil over.",
+        "Stir in the oats and cook for about 6 minutes, stirring often, until the porridge is thick and creamy.",
+        "Stir in the apricot for the last minute so it plumps up.",
+        "Spoon into a bowl and scatter over the walnuts and almonds.",
+        "Serve with the halved egg, the watermelon and a big glass of water."
+      ],
+      "prepMin": 5,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Prefer no cooking before dawn? Stir the oats into the milk the night before, keep it in the fridge, and eat it cold with the nuts. The egg can be boiled ahead and kept in its shell in the fridge."
+    },
+    {
+      "id": "ramadan-arabia-zucchini-herb-eggah",
+      "name": "Zucchini and herb eggah with labneh and khubz",
+      "inspiredBy": "Levantine ijjeh and Egyptian eggah, a thick herb omelette set in the pan",
+      "about": "A thick, green omelette of grated zucchini, parsley and mint, set in the pan and cut into wedges, with a spoonful of cool labneh, cucumber and warm khubz. It is easy on the stomach and low in salt, and the second portion is good cold tomorrow. The eggs bring **protein and choline**, and the labneh adds calcium.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 100,
+          "note": "grated"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 20,
+          "note": "chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 8,
+          "note": "whole-wheat"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 40,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 50,
+          "note": "khubz"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Wash the zucchini, cucumber and herbs. Grate the zucchini, sprinkle it with a pinch of the salt, leave it for 5 minutes, then squeeze out the water with your hands.",
+        "Beat the eggs with the flour, cumin, pepper and the rest of the salt, then stir in the zucchini, parsley and mint.",
+        "Warm the oil in a non-stick pan with a lid. Soften the onion for 3 minutes, then pour in the egg mixture.",
+        "Cover and cook over low heat for about 10 minutes, until the top is mostly set with no runny egg left.",
+        "Finish under a hot broiler for 2 minutes until golden, or flip it with a plate. The centre should be firm and reach 74 °C.",
+        "Cut into wedges and serve with the labneh, cucumber and warm khubz.",
+        "Before you eat, put the second portion in a shallow container, cool it, and refrigerate it within 2 hours. Eat it within 3 days, cold or reheated until steaming hot (74 °C)."
+      ],
+      "prepMin": 12,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Short on time before dawn? Cook it after iftar the night before and chill it within 2 hours. Eaten cold, tucked into khubz with the labneh, it is a good suhoor in a hurry."
+    },
+    {
+      "id": "ramadan-arabia-dates-lentil-soup",
+      "name": "Dates, water and Gulf lentil soup (shorbat adas)",
+      "inspiredBy": "shorbat adas, the lentil soup on iftar tables from the Gulf to the Levant, with chickpeas for body",
+      "about": "Break the fast with dates and water, then a bowl of silky red lentil soup scented with cumin and turmeric, blended halfway so it stays thick, and finished with lemon and fresh parsley. It is gentle after a day without food. The lentils and chickpeas bring **iron, folate and protein**, and the lemon helps your body use that iron.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 48,
+          "note": "to open the fast"
+        },
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 50,
+          "swap": "legumes"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 40,
+          "swap": "legumes",
+          "note": "no salt added, drained"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 10
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the lentils until the water runs clear. Wash and dice the carrot and onion, and wash and chop the parsley.",
+        "Warm the oil in a pot and soften the onion and carrot for about 6 minutes. Add the garlic, cumin and turmeric and stir for 30 seconds, then stir in the tomato paste for a minute.",
+        "Add the lentils, the chickpeas and enough water to cover by about 4 cm. Bring to a boil, then simmer for 20 to 25 minutes, until the lentils have fallen apart.",
+        "Blend about half the soup with an immersion blender, then season with the salt, pepper and half the lemon juice.",
+        "Before you sit down, pour the second portion into a shallow container, cool it, and get it into the fridge within 2 hours. Tomorrow, reheat it once, until steaming hot at 74 °C. It keeps up to 3 days.",
+        "To open the fast, eat the dates with a glass of water first, then ladle out the soup. Take a short pause before the main plate. Finish each bowl with the rest of the lemon and the parsley."
+      ],
+      "prepMin": 12,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "A spoonful of cumin-toasted chickpeas on top gives it crunch."
+    },
+    {
+      "id": "ramadan-arabia-dates-chicken-wheat-soup",
+      "name": "Dates, water and chicken and cracked wheat soup",
+      "inspiredBy": "Levantine shorbat freekeh, made with coarse bulgur because freekeh is hard to find",
+      "about": "Break the fast with dates and water, then a warm, brothy soup of chicken, carrot and cracked wheat, fragrant with cinnamon, cardamom and a little baharat. The wheat swells to a hearty, nutty bowl that feels like a meal. The chicken brings **protein and niacin**, and the bulgur adds fibre.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 48,
+          "note": "to open the fast"
+        },
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "cut in small pieces"
+        },
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 25,
+          "swap": "low_gi_grains",
+          "note": "coarse"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 1.5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the carrot and parsley, then dice the carrot. Wash your hands, knife and board after handling the raw chicken.",
+        "Warm the oil in a pot and brown the chicken pieces for 4 minutes. Add the onion and carrot and cook for 6 minutes, until the onion is soft.",
+        "Stir in the garlic, baharat, cinnamon, cardamom and tomato paste for 1 minute, then add enough water to cover by about 5 cm.",
+        "Simmer for 15 minutes, then stir in the bulgur and simmer another 15 minutes, until the wheat is tender and the chicken reaches 74 °C.",
+        "Season with the salt, pepper and lemon juice, and stir in the parsley.",
+        "Before you sit down, pour the second portion into a shallow container, cool it, and get it into the fridge within 2 hours. Tomorrow, reheat it once, until steaming hot at 74 °C. It keeps up to 3 days.",
+        "To open the fast, eat the dates with a glass of water first, then ladle out the soup. Take a short pause before the main plate."
+      ],
+      "prepMin": 12,
+      "cookMin": 38,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Real freekeh works the same way if you can find it; cook it until tender, about 25 minutes."
+    },
+    {
+      "id": "ramadan-arabia-dates-harira-soup",
+      "name": "Dates, water and harira-style tomato, lentil and chickpea soup",
+      "inspiredBy": "Moroccan harira, the soup that opens the fast across North Africa, with a swirl of beaten egg",
+      "about": "Break the fast with dates and water, then a tomato soup thick with lentils and chickpeas, parsley and a ribbon of beaten egg stirred in at the end. A squeeze of lemon makes it bright. The legumes and egg bring **iron, folate and protein**, and the tomato and lemon add vitamin C.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 48,
+          "note": "to open the fast"
+        },
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 45,
+          "swap": "legumes"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 50,
+          "swap": "legumes",
+          "note": "no salt added, drained"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "grated"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 8
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 20,
+          "note": "chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.8
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the lentils. Wash the tomatoes, carrot and parsley. Grate the tomatoes, dice the carrot and chop the parsley.",
+        "Warm the oil in a pot and soften the onion and carrot for 6 minutes. Stir in the turmeric, ginger, cinnamon and tomato paste for 1 minute.",
+        "Add the grated tomato, lentils, chickpeas and enough water to cover by about 5 cm. Bring to a boil, then simmer for 25 minutes, until the lentils are tender.",
+        "Turn the heat to low. Pour the beaten egg in a thin stream while stirring, so it sets in ribbons, and cook for 1 minute until no runny egg remains. Stir in the salt, pepper, lemon juice and parsley.",
+        "Before you sit down, pour the second portion into a shallow container, cool it, and get it into the fridge within 2 hours. Tomorrow, reheat it once, until steaming hot at 74 °C. It keeps up to 3 days.",
+        "To open the fast, eat the dates with a glass of water first, then ladle out the soup. Take a short pause before the main plate."
+      ],
+      "prepMin": 12,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Leave the egg out of the portion you keep for tomorrow if you like, and stir a fresh egg into it when you reheat."
+    },
+    {
+      "id": "ramadan-arabia-dates-barley-soup",
+      "name": "Dates, water and Saudi-style barley soup with lean beef",
+      "inspiredBy": "shorbat shaeer, the barley soup on many Saudi iftar tables",
+      "about": "Break the fast with dates and water, then a comforting barley soup with lean ground beef, carrot, tomato paste and lots of parsley, finished with lemon. The pearled barley softens into the broth and makes it thick and satisfying. The beef brings **iron and zinc**, and the barley adds fibre.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 48,
+          "note": "to open the fast"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 35,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "ground-beef-93-lean-raw-8d6017",
+          "g": 90,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the barley. Wash and dice the carrot, and wash and chop the parsley. Wash your hands and board after handling the raw beef.",
+        "Warm the oil in a pot and cook the onion for 5 minutes. Add the beef and break it up with a spoon, cooking until no pink remains and it reaches 71 °C.",
+        "Stir in the garlic, cumin, cardamom and tomato paste for 1 minute, then add the carrot, barley and enough water to cover by about 5 cm.",
+        "Simmer for 35 to 40 minutes, until the barley is tender and the soup is thick. Add water if it gets too thick.",
+        "Season with the salt, pepper and lemon juice, and stir in the parsley.",
+        "To open the fast, eat the dates with a glass of water first, then ladle out the soup. Take a short pause before the main plate."
+      ],
+      "prepMin": 12,
+      "cookMin": 50,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make a double batch on a quiet day. Before you sit down, pour half into a shallow container, cool it and freeze it within 2 hours. Thaw it in the fridge, use it within 2 days and reheat until steaming hot (74 °C)."
+    },
+    {
+      "id": "ramadan-arabia-chicken-kabsa-lighter",
+      "name": "Lighter chicken kabsa with brown basmati and cucumber salad",
+      "inspiredBy": "Saudi and Gulf chicken kabsa and machboos, with more vegetables and less rice and fat",
+      "about": "Chicken simmered with tomato, loomi and warm spices, with brown basmati rice cooked in the same pot and topped with toasted almonds. A cool cucumber and parsley salad with lemon sits beside it. It is the full, fragrant Gulf iftar plate with the rice portion trimmed and the carrot and tomato doing more of the work, and the brown basmati brings **fibre and B vitamins**.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "cut in large pieces"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "grated"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "in batons"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 10
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "flaked or chopped"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "loomi-dried-black-lime-8b452f",
+          "g": 1.5,
+          "note": "pierced with a fork"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 3
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.6
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Wash the carrot, tomato, cucumber and parsley. Pat the chicken dry and rub it with half the baharat, the turmeric and a splash of the lemon juice. Cover and keep it in the fridge while you make the base. Wash your hands, knife and board after handling the raw chicken, and do not reuse that rub.",
+        "Warm the oil in a wide, heavy pot and soften the onion for 6 minutes. Stir in the garlic, the rest of the baharat, the cinnamon and cardamom for 30 seconds, then add the tomato paste and grated tomato and cook for 5 minutes until jammy.",
+        "Add the loomi, the carrot, the salt and enough hot water to cover the rice by about 1.5 cm once it goes in. Stir in the rinsed rice, cover and cook on low.",
+        "After about 10 minutes, lay the chicken on top of the rice, cover again and keep cooking on low for another 25 minutes, until the rice is tender and the chicken reaches 74 °C. Added late, the chicken stays juicy instead of drying out.",
+        "Toast the almonds in a dry pan until golden, scatter them over the rice and let it rest, covered, for 10 minutes.",
+        "Toss half the cucumber and parsley with half the remaining lemon juice and a pinch of salt. Keep the other half undressed in the fridge and dress it tomorrow.",
+        "Before you sit down to eat, spoon the second portion into a shallow container and get it into the fridge within 1 hour, since rice does not wait. Eat it within 3 days and reheat it once, until steaming hot at 74 °C. Then serve the kabsa with the salad."
+      ],
+      "prepMin": 15,
+      "cookMin": 60,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "A pressure cooker makes the brown rice ready in about 20 minutes. A spoonful of chopped green chili with tomato is the traditional daqoos on the side."
+    },
+    {
+      "id": "ramadan-arabia-baked-salmon-tahini-fattoush",
+      "name": "Baked salmon with lemon tahini and fattoush",
+      "inspiredBy": "Gulf and Levantine baked fish with tarator, and a classic fattoush",
+      "about": "Salmon baked with cumin and garlic and finished with a lemony tahini sauce, beside a big fattoush of romaine, cucumber, tomato and herbs with toasted khubz and a dusting of sumac. The salmon is rich and the salad is sharp and crunchy. The salmon brings **omega-3 and vitamin D**, and the peppers and tomato bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "skinless fillet"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "torn"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40,
+          "note": "khubz"
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Wash the romaine, cucumber, tomato, pepper and herbs. If the salmon was frozen, thaw it in the fridge and cook it within 2 days.",
+        "Rub the salmon with a third of the oil, the garlic, cumin, paprika and a pinch of the salt, and lay it on a lined tray. Wash your hands after touching the raw fish.",
+        "Tear the khubz into pieces, toss with a teaspoon of the oil and bake beside the salmon for 6 to 8 minutes until crisp.",
+        "Bake the salmon for 12 to 15 minutes, until it flakes easily and reaches 70 °C.",
+        "Whisk the tahini with half the lemon juice and a splash of water until it pours like cream.",
+        "Toss the romaine, cucumber, tomato, pepper, parsley and mint with the rest of the lemon juice and oil, the sumac and the remaining salt. Add the khubz chips just before serving so they stay crunchy.",
+        "Serve the salmon with the tahini spooned over and the fattoush on the side."
+      ],
+      "prepMin": 20,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Trout works the same way if you prefer it."
+    },
+    {
+      "id": "ramadan-arabia-beef-kofta-tabbouleh",
+      "name": "Grilled beef kofta with tabbouleh and lemon tahini",
+      "inspiredBy": "Levantine kofta with tabbouleh, with a little bulgur and plenty of parsley and mint",
+      "about": "Herby lean beef kofta shaped on skewers and grilled until browned, with a bright tabbouleh of parsley, tomato, mint and a little bulgur, and a lemony tahini sauce. It is smoky, fresh and light. The beef brings **iron, zinc and B12**, and the tabbouleh brings vitamins C and K.",
+      "ingredients": [
+        {
+          "food": "ground-beef-93-lean-raw-8d6017",
+          "g": 150,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "grated"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "fine"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 90,
+          "note": "finely diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "finely diced"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 8,
+          "note": "finely chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 30
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 2
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Wash the tomato, cucumber, parsley and mint. Cover the bulgur with boiling water by 2 cm and leave it for 15 minutes, then drain well and press out the extra water.",
+        "Mix the beef with the onion, half the parsley, the baharat, cinnamon, pepper and half the salt. Mix with your hands until it holds together, then shape it into long ovals on skewers. Wash your hands, board and bowl afterwards.",
+        "Whisk the tahini with half the lemon juice, the garlic and a splash of water until smooth and pourable.",
+        "Brush a grill pan or skillet with half the oil and cook the kofta over medium-high heat for 8 to 10 minutes, turning, until browned and the centre reaches 71 °C.",
+        "Toss the bulgur with the tomato, cucumber, the rest of the parsley, the mint, the rest of the lemon juice and oil, and the remaining salt.",
+        "Serve the kofta over the tabbouleh with the tahini sauce spooned on top."
+      ],
+      "prepMin": 25,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Chilling the shaped kofta for 15 minutes helps it hold on the skewer. Buy halal meat if that matters at your table."
+    },
+    {
+      "id": "ramadan-arabia-baked-mackerel-cumin-potatoes",
+      "name": "Baked mackerel with cumin potatoes, chickpeas and red pepper",
+      "inspiredBy": "spice-rubbed baked fish from Egypt and the Gulf coast",
+      "about": "Atlantic mackerel rubbed with cumin, garlic, paprika and lemon, baked over potatoes, chickpeas, tomato and red pepper until the juices turn into a sauce, with a crunchy cucumber salad and khubz. It is rich, tangy and quick to put together. The mackerel brings **omega-3, vitamin D and B12**, and the potatoes bring potassium.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "Atlantic, fillets"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 90,
+          "note": "in thin slices"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 40,
+          "swap": "legumes",
+          "note": "no salt added, drained"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 35,
+          "note": "khubz"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Wash the potato, tomato, red pepper, cucumber and parsley. If the fish was frozen, thaw it in the fridge and cook it within 2 days.",
+        "Toss the potatoes, chickpeas, onion, pepper and half the oil with half the cumin and paprika and half the salt, and spread them in a baking dish. Roast for 20 minutes.",
+        "Mix the garlic, half the lemon juice, the remaining oil, cumin, paprika and a pinch of salt into a paste and rub it over the mackerel. Wash your hands and the board afterwards, and do not reuse anything that touched the raw fish.",
+        "Lay the tomato slices over the potatoes and set the mackerel on top. Bake for 12 to 15 minutes, until the fish flakes and reaches 70 °C.",
+        "Toss the cucumber with the parsley, the rest of the lemon juice, a pinch of black pepper and a pinch of salt. Warm the khubz.",
+        "Spoon the pan juices over the fish and potatoes and serve with the salad and khubz."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Sardine fillets or trout are good in the same dish."
+    },
+    {
+      "id": "ramadan-arabia-baked-lamb-sambousek-fattoush",
+      "name": "Baked lamb sambousek with fattoush",
+      "inspiredBy": "Levantine and Egyptian meat sambousek, baked on a tray instead of deep-fried",
+      "about": "Half-moon pastries of whole-wheat dough around spiced lamb and onion, brushed with a little oil and baked until golden and crisp, with a big lemony fattoush on the side. You get the Ramadan favourite without a pan of frying oil. The lamb brings **iron and zinc**, and the vitamin C in the salad helps you absorb that iron.",
+      "ingredients": [
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "whole-wheat"
+        },
+        {
+          "food": "lamb-ground-lamb-new-zealand-raw-474cec",
+          "g": 120,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "torn"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15,
+          "note": "chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.8
+        },
+        {
+          "food": "baharat-seven-spice-blend-8b222c",
+          "g": 1.5
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Mix the flour with a pinch of the salt, a third of the oil and enough warm water to make a soft, smooth dough. Knead for 5 minutes, then cover and rest for 20 minutes.",
+        "Soften the onion in a teaspoon of the oil for 4 minutes. Add the lamb, cumin, cinnamon, baharat and half the remaining salt and cook, breaking it up, until no pink remains and it reaches 71 °C. Stir in a squeeze of the lemon juice and let it cool. Wash your hands, board and spoon after handling the raw lamb.",
+        "Heat the oven to 220 °C (425 °F). Roll the dough thin, cut circles about 10 cm wide, fill each with a spoonful of lamb, fold into half-moons and press the edges closed with a fork.",
+        "Arrange on a lined tray, brush with the remaining oil and bake for 15 to 18 minutes, until golden and crisp.",
+        "Wash the romaine, cucumber, tomato and herbs. Toss them with the rest of the lemon juice, the sumac and a pinch of salt.",
+        "Serve the hot sambousek with the fattoush."
+      ],
+      "prepMin": 30,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "freezer-friendly"
+      ],
+      "tip": "A serving makes about five pastries at Standard, a few fewer at Light and more at Big. Freeze extra unbaked pastries on a tray, then bake straight from frozen, adding about 6 minutes, until golden and hot all the way through (74 °C). Keep this a once-a-week treat."
+    },
+    {
+      "id": "ramadan-arabia-trout-sayadiyah-brown-rice",
+      "name": "Baked trout over caramelized onion and cumin brown rice",
+      "inspiredBy": "sayadiyah, the fisherman's rice of the Levant and Egypt, with baked trout",
+      "about": "Trout fillets baked with lemon and garlic, over brown basmati cooked in a deep, sweet base of slowly browned onions and cumin, with a fresh tomato and cucumber salad. It is fragrant, savoury and complete on one plate. The trout brings **omega-3 and vitamin D**, and the onions and cumin give the rice its colour and flavour.",
+      "ingredients": [
+        {
+          "food": "rainbow-trout-farmed-raw-0cc800",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "fillets"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 90,
+          "note": "sliced thin"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "flaked"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 2
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.1
+        }
+      ],
+      "steps": [
+        "Wash the tomato, cucumber and parsley. If the trout was frozen, thaw it in the fridge and cook it within 2 days.",
+        "Warm most of the oil in a wide pot and cook the onions over medium-low heat for 15 to 20 minutes, stirring now and then, until deep golden brown. Take out about a third for the top.",
+        "Stir the cumin and turmeric into the pot for 20 seconds, add the rinsed rice, half the salt and enough hot water to cover the rice by 1.5 cm. Cover and cook on low for about 35 minutes, until the rice is tender.",
+        "When the rice has about 15 minutes left, heat the oven to 200 °C (400 °F). Rub the trout with the garlic, half the lemon juice and the rest of the oil, season with the pepper and a pinch of salt, and bake for 10 to 12 minutes, until it flakes and reaches 70 °C. Wash your hands after handling the raw fish.",
+        "Toast the almonds in a dry pan until golden.",
+        "Toss the tomato and cucumber with the parsley, the rest of the lemon juice and the remaining salt.",
+        "Serve the trout over the rice, topped with the reserved onions and the almonds, with the salad alongside."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "weekend-project"
+      ],
+      "tip": "If you cook extra rice, spread it in a shallow container so it cools within 1 hour, refrigerate it within 2 hours and use it within 3 days."
+    },
+    {
+      "id": "ramadan-arabia-watermelon-white-cheese-walnuts",
+      "name": "Watermelon with white cheese and mint",
+      "inspiredBy": "the Egyptian summer pairing of watermelon and white cheese",
+      "about": "Cold watermelon cubes with crumbled feta and fresh mint, a favourite Egyptian pairing. Sweet, salty and cooling. The watermelon is mostly water, and the cheese brings a little **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "watermelon-raw-36cca1",
+          "g": 150,
+          "note": "cubed and chilled"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 25,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "torn"
+        }
+      ],
+      "steps": [
+        "Wash the outside of the watermelon before cutting. Cut it into cubes and chill them.",
+        "Scatter over the feta and mint just before serving."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "ramadan-arabia-pomegranate-yogurt-walnuts",
+      "name": "Pomegranate yogurt with walnuts and cinnamon",
+      "about": "Thick plain yogurt topped with ruby pomegranate seeds, toasted walnuts and a pinch of cinnamon. Creamy, tart and crunchy. The yogurt brings **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 180,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 60,
+          "note": "seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the pomegranate before cutting, then pop out the seeds.",
+        "Spoon the yogurt into a bowl and top with the seeds, walnuts and cinnamon."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "ramadan-arabia-saffron-cardamom-milk-nuts",
+      "name": "Warm saffron and cardamom milk with almonds and walnuts",
+      "inspiredBy": "Gulf spiced milk, unsweetened",
+      "about": "A mug of warm milk steeped with saffron and cardamom, with a handful of almonds and walnuts on the side. Soothing before bed, with no added sugar. The milk brings **calcium and B12**, and the nuts bring vitamin E and plant omega-3.",
+      "ingredients": [
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 250,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.5
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Warm the milk with the cardamom and saffron in a small pot over low heat for 4 minutes, until steaming. Watch it so it does not boil over.",
+        "Pour into a mug and serve with the almonds and walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "ramadan-arabia-cumin-roasted-chickpeas",
+      "name": "Cumin and lemon roasted chickpeas",
+      "about": "Chickpeas roasted until crisp with a little oil, cumin and paprika, then squeezed with lemon. A salty-crunchy snack with real staying power. The chickpeas bring **fibre, folate and plant protein**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 110,
+          "swap": "legumes",
+          "note": "no salt added, drained and patted very dry"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Pat the chickpeas very dry with a towel.",
+        "Toss with the oil, cumin, paprika and salt and spread on a tray.",
+        "Roast for 25 to 30 minutes, shaking once, until crisp. Squeeze over the lemon juice and eat the same day."
+      ],
+      "prepMin": 5,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "ramadan-arabia-apricot-laban-cooler",
+      "name": "Dried apricot and laban cooler, qamar al-din style",
+      "inspiredBy": "qamar al-din, the apricot drink of Ramadan, with no added sugar",
+      "about": "Dried apricots soaked and blended with yogurt and cardamom into a thick, tangy, fruity cooler, with no sugar added. A treat for the evening that still carries some protein. The apricots bring **fibre and vitamin A**, and the yogurt brings calcium.",
+      "ingredients": [
+        {
+          "food": "apricot-dried-1d0f8b",
+          "g": 35,
+          "note": "unsulphured if you can find them"
+        },
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Soak the apricots in warm water for 20 minutes, then drain.",
+        "Blend the apricots with the yogurt, cardamom and a splash of cold water until smooth. Chill and serve cold."
+      ],
+      "prepMin": 25,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "A treat, not a daily habit, because dried fruit is concentrated sugar."
+    },
+    {
+      "id": "ramadan-arabia-yogurt-figs-nuts",
+      "name": "Yogurt with fresh figs, walnuts and almonds",
+      "about": "Thick plain yogurt topped with split fresh figs, chopped walnuts and almonds and a pinch of cinnamon. Creamy, sweet and nutty. The yogurt brings **protein and calcium**, and the nuts bring vitamin E and plant omega-3.",
+      "ingredients": [
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 140,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "fig-raw-2c6ad4",
+          "g": 70,
+          "note": "halved"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the figs and cut them in half.",
+        "Spoon the yogurt into a bowl and top with the figs, walnuts, almonds and cinnamon."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Fresh figs, watermelon and pomegranate are seasonal: use dried figs or whatever fruit is good where you live."
+    },
+    {
+      "id": "ramadan-arabia-hummus-pepper-carrot-sticks",
+      "name": "Hummus with red pepper and carrot sticks",
+      "about": "Creamy homemade hummus with lemon, garlic and a little tahini, scooped up with crunchy red pepper and carrot sticks. Fresh and filling. The chickpeas bring **fibre, folate and plant protein**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "no salt added, drained"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "crushed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the pepper and carrot and cut them into sticks.",
+        "Blend the chickpeas with the tahini, lemon juice, garlic, cumin, salt and a splash of cold water until very smooth.",
+        "Spoon into a bowl, drizzle with the oil and serve with the sticks. The hummus keeps up to 3 days in the fridge."
+      ],
+      "prepMin": 10,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "ramadan-arabia-minted-laban",
+      "name": "Minted laban",
+      "inspiredBy": "Gulf and Levantine laban, a cool thinned yogurt drink",
+      "about": "Plain yogurt whisked with cold water, dried and fresh mint and a pinch of salt until it pours like a thick drink, served over ice. It is cooling, tangy and the classic way to end a fast. The yogurt brings **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash and chop the mint.",
+        "Whisk the yogurt with cold water, the mint and the salt until smooth and pourable. Serve over ice."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Drink a glass of water with every snack to spread your fluids between iftar and suhoor."
+    },
+    {
+      "id": "ramadan-arabia-orange-almonds-mint",
+      "name": "Orange segments with roasted almonds and mint",
+      "about": "Juicy orange segments with a handful of almonds and a little torn mint. Fresh and light, with a crunch. The orange brings **vitamin C**, and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 200,
+          "swap": "vit_c_fruit",
+          "note": "peeled and cut in segments"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "torn"
+        }
+      ],
+      "steps": [
+        "Wash the orange, then peel it and cut it into segments over a bowl to keep the juice.",
+        "Scatter over the almonds and mint and serve."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "ramadan-arabia-mahalabia-cardamom-almonds",
+      "name": "Date-sweetened mahalabia with cardamom and almonds",
+      "inspiredBy": "mahalabia, the Arab milk pudding of the Ramadan table, lightened and sweetened with a date",
+      "about": "A soft, silky milk pudding scented with cardamom, set with a little cornstarch and sweetened with mashed date instead of sugar syrup, topped with chopped almonds. It is the gentle sweet to end the evening. The milk brings **calcium and B12**, and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 260,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cornstarch-65288a",
+          "g": 12
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 25,
+          "note": "pitted and mashed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Whisk the cornstarch into a few spoonfuls of the cold milk until smooth.",
+        "Heat the rest of the milk with the mashed date and cardamom in a small pot over medium heat, stirring, until it steams. Watch it so it does not boil over.",
+        "Stir in the cornstarch mixture and cook for 2 to 3 minutes, stirring, until it thickens enough to coat the back of a spoon; it sets a little more as it cools.",
+        "Pour into a bowl, top with the almonds and eat warm, or chill it in the fridge for up to 2 days."
+      ],
+      "prepMin": 5,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Tea and coffee are fine after iftar; keep them light at suhoor, since they make you pass more water."
+    },
+    {
+      "id": "ramadan-arabia-khubz-labneh-tomato-mint",
+      "name": "Whole-wheat khubz with labneh, tomato and mint",
+      "about": "Warm whole-wheat khubz spread with thick labneh and topped with sliced tomato and fresh mint. Cool, tangy and filling. The labneh brings **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "khubz"
+        },
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "sliced thin"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "torn"
+        }
+      ],
+      "steps": [
+        "Wash the tomato and mint. Warm the khubz in a dry pan until soft.",
+        "Spread with the labneh, then top with the tomato and mint. Fold and eat."
+      ],
+      "prepMin": 4,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "ramadan-arabia-dates-stuffed-walnuts",
+      "name": "Dates stuffed with walnuts",
+      "about": "Soft medjool dates filled with walnut, with the rest of the walnuts alongside. A classic Ramadan sweet bite with a little crunch. The dates bring **potassium and fibre**, and the walnuts bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 48,
+          "note": "pitted"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "halves"
+        }
+      ],
+      "steps": [
+        "Split the dates and take out the pits.",
+        "Tuck a walnut half inside each date, press closed, and eat the rest of the walnuts alongside."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-arabia-ful-suhoor-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-arabia-dates-lentil-soup"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-arabia-chicken-kabsa-lighter"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-arabia-minted-laban"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-arabia-apricot-laban-cooler"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-arabia-cardamom-oats-walnuts-watermelon"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-arabia-dates-lentil-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-arabia-chicken-kabsa-lighter",
+          "leftover": true
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-arabia-orange-almonds-mint"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-arabia-saffron-cardamom-milk-nuts"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-arabia-zucchini-herb-eggah"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-arabia-dates-chicken-wheat-soup"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-arabia-baked-salmon-tahini-fattoush"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-arabia-mahalabia-cardamom-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-arabia-cumin-roasted-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-arabia-zucchini-herb-eggah",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-arabia-dates-chicken-wheat-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-arabia-beef-kofta-tabbouleh"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-arabia-yogurt-figs-nuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-arabia-mahalabia-cardamom-almonds"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-arabia-ful-suhoor-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-arabia-dates-harira-soup"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-arabia-baked-mackerel-cumin-potatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-arabia-yogurt-figs-nuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-arabia-minted-laban"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-arabia-cardamom-oats-walnuts-watermelon"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-arabia-dates-harira-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-arabia-baked-lamb-sambousek-fattoush"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-arabia-pomegranate-yogurt-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-arabia-saffron-cardamom-milk-nuts"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-arabia-ful-suhoor-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-arabia-dates-barley-soup"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-arabia-trout-sayadiyah-brown-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-arabia-orange-almonds-mint"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-arabia-pomegranate-yogurt-walnuts"
+        }
+      ]
+    }
+  ]
+}
