@@ -242,6 +242,7 @@ export default function Meals() {
       <Row style={{ justifyContent: 'space-between', marginTop: space.md }}>
         <Txt v="caption" dim={2} accessibilityLiveRegion="polite">
           {shown.length} {shown.length === 1 ? 'meal' : 'meals'}
+          {nutrientQuery ? `, most ${nutrientQuery.label.toLowerCase()} first` : ''}
         </Txt>
         <Chip
           label={favoriteMeals.length ? `Saved · ${favoriteMeals.length}` : 'Saved'}

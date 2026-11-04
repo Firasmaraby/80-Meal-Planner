@@ -104,12 +104,13 @@ export default function Plans() {
 
   const defaultBand = bands.some((b) => bandKeyOf(b) === mineKey) ? mineKey : 'all';
   const [bandSel, setBandSel] = useState<string | null>(null);
-  const band = bandSel ?? defaultBand;
+  const [query, setQuery] = useState('');
+  // a search looks past the default calorie band; a band the person picked still applies
+  const band = bandSel ?? (query.trim() ? 'all' : defaultBand);
   const [cuisine, setCuisine] = useState<string | null>(null);
   const [style, setStyle] = useState<PlanStyle | null>(null);
   const [showMore, setShowMore] = useState(false);
   const [diet, setDiet] = useState<string[]>(() => profile.diet);
-  const [query, setQuery] = useState('');
   // open on the view that holds the person's plan, otherwise Everyday
   const [viewSel, setViewSel] = useState<PlanCollection | null>(null);
   const enrolledFamily = families.find((f) => f.sizes.some((p) => p.id === enrollment?.planId));
@@ -189,7 +190,7 @@ export default function Plans() {
       });
   }, [matching, picks, enrollment?.planId, carbStyle, showMore, amounts, relevance]);
 
-  const filtered = band !== defaultBand || cuisine != null || style != null || diet.length > 0 || searching;
+  const filtered = (bandSel != null && bandSel !== defaultBand) || cuisine != null || style != null || diet.length > 0 || searching;
   const clear = () => {
     setQuery('');
     setBandSel('all');
@@ -241,6 +242,7 @@ export default function Plans() {
         <Txt v="caption" dim={1} style={{ marginTop: space.sm }} accessibilityLiveRegion="polite">
           {shown.length} {shown.length === 1 ? 'plan' : 'plans'} across every view
           {nutrientQuery ? `, most ${nutrientQuery.label.toLowerCase()} first` : ''}
+          {!showMore && hiddenCount > 0 ? `. ${hiddenCount} more ${hiddenCount === 1 ? 'uses' : 'use'} grains, rice or bread.` : ''}
         </Txt>
       )}
       <ChipRow label="Calories">
@@ -285,7 +287,7 @@ export default function Plans() {
 
       <View style={{ marginTop: space.lg, gap: 6 }}>
         <Txt v="caption" dim={1} style={{ lineHeight: 18 }}>
-          Each square is a vitamin, mineral or fiber. Filled means the plan’s average day reaches 80% of <Txt v="caption" style={{ fontWeight: '700' }}>your</Txt> daily need.
+          Each square is a vitamin, mineral or fibre. Filled means the plan’s average day reaches 80% of <Txt v="caption" style={{ fontWeight: '700' }}>your</Txt> daily need.
         </Txt>
         <FingerprintLegend />
       </View>

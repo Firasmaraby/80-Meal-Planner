@@ -187,7 +187,7 @@ export interface TrendBucket {
   /** first and last date in the bucket, inclusive */
   start: string;
   end: string;
-  /** short axis label: "Mon", "14", "Nov" */
+  /** short axis label: "Mon" (week), "Nov 14" (month), "Nov" (year) */
   label: string;
   /** averages of the check-ins in the bucket; null when there were none */
   energy: number | null;
@@ -230,7 +230,7 @@ export function trendBuckets(checkins: CheckinLike[], eighty: Map<string, boolea
     for (let i = n - 1; i >= 0; i--) {
       const d = shiftDay(end, -i);
       const [y, m, day] = parts(d);
-      spans.push({ start: d, end: d, label: range === 'week' ? WEEKDAY[new Date(y, m - 1, day).getDay()] : String(day) });
+      spans.push({ start: d, end: d, label: range === 'week' ? WEEKDAY[new Date(y, m - 1, day).getDay()] : `${MONTH[m - 1]} ${day}` });
     }
   }
   return spans.map((sp) => {

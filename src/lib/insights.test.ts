@@ -297,11 +297,11 @@ describe('trendBuckets', () => {
     expect(b[6]).toMatchObject({ start: '2026-02-10', end: '2026-02-10' });
   });
 
-  it('month gives 30 daily buckets labelled by day of month', () => {
+  it('month gives 30 daily buckets labelled by month and day', () => {
     const b = trendBuckets([], new Map(), '2026-03-05', 'month');
     expect(b).toHaveLength(30);
-    expect(b[29].label).toBe('5');
-    expect(b[0]).toMatchObject({ start: '2026-02-04', label: '4' });
+    expect(b[29].label).toBe('Mar 5');
+    expect(b[0]).toMatchObject({ start: '2026-02-04', label: 'Feb 4' });
   });
 
   it('year gives 12 month buckets, the last cut off at `end`, across a year boundary', () => {
