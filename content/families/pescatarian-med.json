@@ -1,0 +1,1743 @@
+{
+  "id": "pescatarian-med",
+  "name": "Pescatarian Mediterranean",
+  "style": "pescatarian",
+  "cuisine": "Mediterranean",
+  "regions": [
+    "Greece",
+    "Italy",
+    "Spain",
+    "Portugal"
+  ],
+  "summary": "A Greek, Italian, Spanish and Portuguese coastal week with one fish or seafood main meal a day, and beans, lentils, eggs and vegetables at the other. Grilled sardines, shrimp saganaki, baked cod with chickpeas and a Saturday fish stew, with no meat or poultry.",
+  "howItWorks": "**One fish main meal a day.** Shrimp on Monday, sardines on Tuesday, tuna on Wednesday, cod on Thursday and a shellfish stew on Saturday, with the leftovers on Friday and Sunday. The other main meal is beans, lentils, eggs or vegetables, so it is never fish at two main meals. Sardines on toast turn up as a snack on Thursday and Friday.\n\n**Omega-3 and iodine.** Sardines and the salmon in Saturday's stew bring **omega-3 and vitamin D**, with a few walnuts where the cuisine already uses them. Vitamin D is hard to get from food in any week, and this one gets you part of the way with sardines, salmon and eggs. Cod, shrimp, eggs, yogurt and iodized salt bring **iodine**.\n\n**Iron and zinc without meat.** Lentils, chickpeas and white beans do the heavy lifting, with mussels, clams, eggs and leafy greens beside them. Tomato, pepper, lemon and a splash of vinegar share the plate, which helps your body absorb the iron.\n\n**Cook once, eat twice.** Monday's pasta e fagioli, Wednesday's lentils, Thursday's cod, Friday's briam and Saturday's stew each make two portions, so the next day's lunch is already cooked. Saturday's stew is the **weekend project**.\n\n**At the other sizes.** Light has one snack and trims the oil, cheese, nuts and oats. Big adds a snack every day and bigger portions of fish, pasta, potatoes, beans and bread.",
+  "signature": [
+    "pescatarian-med-grilled-sardines-lemon-potatoes",
+    "pescatarian-med-shrimp-saganaki",
+    "pescatarian-med-baked-cod-chickpeas-spinach",
+    "pescatarian-med-portuguese-fish-stew"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1600,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "pescatarian-med-tzatziki-cucumber-toast"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "pescatarian-med-tomato-bean-toast"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "pescatarian-med-tomato-bean-toast"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "pescatarian-med-dates-almonds"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "pescatarian-med-egg-tomato-oregano"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "pescatarian-med-tzatziki-cucumber-toast"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "pescatarian-med-chickpea-tomato-cup"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "pescatarian-med-yogurt-oats-fig-almond",
+      "name": "Overnight oats with Greek yogurt, figs and almonds",
+      "inspiredBy": "Greek yogurt with dried fruit and nuts, turned into make-ahead oats",
+      "about": "Rolled oats soaked overnight in thick Greek yogurt with chopped dried figs and a pinch of cinnamon, finished with chopped almonds. It is **ready when you wake up**, creamy and a little sweet, with a crunch on top.\n\nThe oats bring fibre, the yogurt brings calcium and protein, and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 30,
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "The night before, stir the oats, yogurt, chopped figs and cinnamon together in a jar with a splash of milk or water. It should look a little too loose, since the oats will drink it up.",
+        "Cover and chill overnight, and eat within 2 days. The figs soften and sweeten the oats as they sit.",
+        "In the morning, give it a good stir. It should be thick and spoonable. A splash more milk or water loosens it if it has gone stiff.",
+        "Scatter the chopped almonds on top just before eating, so they stay crunchy."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Mix two jars at a time to save effort; they keep up to 2 days in the fridge. A chopped orange works in place of the figs in season."
+    },
+    {
+      "id": "pescatarian-med-eggs-tomato-pepper",
+      "name": "Baked eggs in tomato and pepper with toast",
+      "inspiredBy": "Spanish huevos a la flamenca, without the chorizo and with a smoky paprika base",
+      "about": "Eggs set in a bubbling sofrito of sweet pepper, onion, tomato and a handful of spinach, with smoky paprika standing in for chorizo. Eat it with toast to mop up the sauce. It is a **proper hot breakfast**, rich in eggs for choline, with vitamin C from the pepper and tomato.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 140,
+          "note": "with its juice"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Rinse the pepper, then dice it. Warm the olive oil in a small non-stick frying pan over medium heat and cook the onion and pepper with a pinch of the salt until soft, about 6 minutes.",
+        "Add the garlic and smoked paprika and stir for 30 seconds, until fragrant. The paprika blooms in the hot oil, so don't let it scorch.",
+        "Tip in the tomatoes, breaking them up with a spoon. Simmer until the sauce is thick and jammy, about 8 minutes, then stir in the spinach until it wilts.",
+        "Make two wells in the sauce and crack in the eggs. Cover and cook over low heat until the whites are set and the yolks are firm, about 7 minutes.",
+        "Scatter with parsley and serve with the toast. Wash your hands after cracking the eggs."
+      ],
+      "prepMin": 5,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "A pinch of chili flakes with the paprika gives it a gentle kick."
+    },
+    {
+      "id": "pescatarian-med-ricotta-apple-walnut-toast",
+      "name": "Ricotta toast with apple, walnuts and honey",
+      "inspiredBy": "Italian ricotta and honey on toast",
+      "about": "Thick whole-wheat toast spread with creamy ricotta, topped with sliced crisp apple, toasted walnuts and a drizzle of honey. It takes **five minutes** and feels like a treat. Ricotta brings calcium and protein, and the walnuts bring omega-3 and vitamin E.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 60,
+          "note": "toasted"
+        },
+        {
+          "food": "ricotta-cheese-59ce6c",
+          "g": 75,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 120,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "toasted and roughly chopped"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 8
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan over medium heat until they smell nutty, about 3 minutes, then chop them roughly.",
+        "Toast the bread until golden and crisp. Spread the ricotta over it right away.",
+        "Lay the apple slices on top, scatter with the walnuts and a pinch of cinnamon, and finish with a drizzle of honey."
+      ],
+      "prepMin": 5,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "A ripe pear or a few fresh figs in season work just as well as the apple. Little ones under 4 do better with the walnuts finely chopped. Do not give honey to a child under 1 year."
+    },
+    {
+      "id": "pescatarian-med-shrimp-saganaki",
+      "name": "Shrimp saganaki with feta, tomato and crusty bread",
+      "inspiredBy": "Greek shrimp saganaki, with a little less feta and a cucumber salad on the side",
+      "about": "Plump shrimp in a quick tomato sauce with garlic, oregano and a hint of chili, topped with a crumble of salty feta and served with whole-wheat bread and a crisp cucumber salad. It's a **quick lunch**, on the table in about 25 minutes. The shrimp bring selenium and iodine and the tomato brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 170,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 200,
+          "note": "with its juice"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 20,
+          "note": "crumbled"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "sliced"
+        }
+      ],
+      "steps": [
+        "If the shrimp are frozen, thaw them overnight in the fridge and cook them within 2 days. Rinse them and pat them dry. Keep them in the fridge until the sauce is ready, and wash your hands and the board after handling them.",
+        "Warm the olive oil in a wide pan over medium heat. Cook the onion until soft and glossy, about 5 minutes. Stir in the garlic, oregano and chili for 30 seconds.",
+        "Add the tomatoes, breaking them up with a spoon, with the salt. Simmer until the sauce is thick, about 8 minutes.",
+        "Nestle the shrimp into the sauce and cook, turning once, until they are pink, curled and opaque all the way through (74 °C), about 3 to 4 minutes. Don't overcook them, or they turn rubbery.",
+        "Take the pan off the heat, crumble the feta over the top and let it soften for a minute. Finish with the parsley and lemon juice.",
+        "Serve with the bread for mopping and the cucumber dressed with lemon, a pinch of oregano and a few drops of the olive oil."
+      ],
+      "prepMin": 8,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "If you like it hot, add more chili at the table, not in the pot."
+    },
+    {
+      "id": "pescatarian-med-pasta-e-fagioli",
+      "name": "Pasta e fagioli with kale and a little anchovy",
+      "inspiredBy": "Italian pasta e fagioli, with whole-wheat pasta and a melted anchovy in the soffritto",
+      "about": "A thick, comforting Italian bean and pasta soup built on a soffritto of onion and carrot, with white beans, tomato, rosemary and kale. A single anchovy melts into the oil and adds **deep savoury flavour** without tasting fishy. Beans and kale bring iron and folate, and the tomato and lemon help you absorb it.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 55,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 185,
+          "swap": "legumes"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "finely diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "finely diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "anchovy-european-canned-with-olive-oil-drained-solids-737656",
+          "g": 6,
+          "note": "drained"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 15
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 80,
+          "note": "with its juice"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "stems removed, torn"
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "from a lemon"
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a large pot over medium heat. Cook the onion and carrot with a pinch of the salt until soft and sweet, about 8 minutes. Add the garlic, anchovy, rosemary and bay and stir until the anchovy melts away, about 2 minutes.",
+        "Stir in the tomato paste and cook for 2 minutes, until it darkens a shade. Add the tomatoes and break them up with a spoon.",
+        "Add the white beans and enough water to cover everything by about 3 cm. Bring to a simmer and cook for 10 minutes. Mash a few spoonfuls of the beans against the side of the pot to thicken the broth.",
+        "Add the pasta (short tubes like ditalini, or broken spaghetti) and the kale with a little more water if it looks dry. Cook until the pasta is tender, about 10 minutes, stirring often so it doesn't catch. It should be thick enough to hold a spoon upright.",
+        "Season with the remaining salt, a squeeze of lemon and plenty of black pepper. Serve in wide bowls with a thread of olive oil.",
+        "Pasta is a cooked grain, so cool the second portion in a shallow container and refrigerate within 1 hour. Tomorrow, loosen it with a splash of water, since the pasta drinks the broth, and reheat it to 74 °C."
+      ],
+      "prepMin": 12,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly",
+        "freezer-friendly"
+      ],
+      "tip": "Leave the anchovy out and add an extra squeeze of lemon for a fish-free version. New to this many beans? Build up over the week and drink plenty of water."
+    },
+    {
+      "id": "pescatarian-med-grilled-sardines-lemon-potatoes",
+      "name": "Grilled sardines with lemon potatoes and wild greens",
+      "inspiredBy": "Greek and Portuguese grilled sardines, with horta-style greens",
+      "about": "Whole sardines grilled until the skin blisters, served with tender lemony potatoes and a pile of olive-oil-dressed spinach, the way you'd eat horta by the sea. Sardines are one of the **best fish sources of omega-3 and vitamin D**, and their soft bones add calcium.",
+      "ingredients": [
+        {
+          "food": "european-pilchard-or-sardine-raw-e12560",
+          "g": 190,
+          "swap": "fatty_fish",
+          "note": "cleaned and gutted, heads on or off"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 200,
+          "note": "scrubbed and cut into chunks"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 120,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 25,
+          "note": "from a lemon"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Put the potatoes in a pot of cold water with a pinch of the salt. Bring to a boil and cook until just tender, about 15 minutes. Drain and let the steam escape.",
+        "Rinse the sardines and pat them dry. Brush with a little of the olive oil and sprinkle with salt and pepper. Wash your hands, the board and the plate after handling raw fish.",
+        "Heat a grill or a cast-iron pan until very hot. Grill the sardines about 3 to 4 minutes a side, until the skin is blistered and the flesh is opaque and flakes at the spine (70 °C inside).",
+        "While the fish cooks, boil the spinach in salted water for 2 minutes, until tender. Drain well and dress with olive oil, the garlic and a squeeze of lemon.",
+        "Toss the warm potatoes with the oregano, remaining olive oil and most of the lemon juice. Slice the tomato and onion into a quick salad with the parsley.",
+        "Serve the sardines with a squeeze of lemon over the top, alongside the potatoes, greens and salad."
+      ],
+      "prepMin": 20,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "No grill? Roast the sardines on a very hot tray, 8 minutes, until opaque. Ask the fishmonger to clean them, or use a pan and open the window."
+    },
+    {
+      "id": "pescatarian-med-smoky-lentils-chard",
+      "name": "Smoky lentils with Swiss chard and a spoon of yogurt",
+      "inspiredBy": "Spanish lentejas, with smoked paprika and no chorizo",
+      "about": "A cosy Spanish-style pot of green lentils with potato, carrot and plenty of smoked paprika, which gives the chorizo flavour without any meat. Swiss chard goes in at the end and a spoon of cool yogurt balances the smoke. **Lentils bring a big share of your iron**, and the vinegar at the end helps you absorb it.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 85,
+          "swap": "legumes"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 3
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 15
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.4
+        },
+        {
+          "food": "swiss-chard-raw-f646e5",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "stems sliced, leaves torn"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Rinse the lentils and pick through for any stones. Warm the olive oil in a heavy pot over medium heat and soften the onion and carrot for 8 minutes.",
+        "Add the garlic and tomato paste and stir for a minute. Add the smoked paprika and stir for 20 seconds, until it smells deeply smoky. It scorches fast, so keep the heat gentle.",
+        "Add the lentils, potato, bay leaf and enough water to cover by about 3 cm. Bring to a boil, then simmer gently until the lentils and potato are tender, about 30 minutes. Top up with water if it gets dry.",
+        "Stir in the salt and the chard and cook until tender, 4 minutes. Remove the bay leaf and finish with the vinegar. Taste, since it should be smoky, savoury and a little sharp.",
+        "Serve in bowls with a spoon of yogurt and the parsley. Cool the second portion within 1 hour in a shallow container, refrigerate within 2 hours and reheat to 74 °C tomorrow."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Stir a spoon of the pot into a little yogurt for the kids. It freezes well in single portions."
+    },
+    {
+      "id": "pescatarian-med-portuguese-chickpea-tuna-salad",
+      "name": "Portuguese chickpea and tuna salad with tomato and parsley",
+      "inspiredBy": "Portuguese salada de grao com atum",
+      "about": "A bright Portuguese-style salad of chickpeas, flaked light tuna, ripe tomato, onion and lots of parsley, dressed with olive oil and red wine vinegar. It's a **quick lunch** that tastes better after the chickpeas soak up the dressing. Chickpeas bring iron and zinc, the tuna brings protein, niacin and B12, and the tomato helps you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 160,
+          "swap": "legumes"
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 85,
+          "note": "drained and flaked"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 150,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15,
+          "note": "chopped"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "minced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 15,
+          "note": "pitted and halved"
+        }
+      ],
+      "steps": [
+        "Rinse the tomato, cucumber and parsley, then dice the tomato and cucumber. Soak the sliced onion in cold water for 5 minutes to soften its bite, then drain well.",
+        "Whisk the olive oil, vinegar, garlic and salt in a bowl. Add the chickpeas, tuna, onion, tomato, cucumber and olives and toss.",
+        "Let the salad sit for 5 minutes so the chickpeas drink in the dressing. Stir in most of the parsley.",
+        "Scatter with the remaining parsley and serve."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make the salad without the tomato the night before and add it fresh. Keep it cold and eat it within 1 day. Keep the rest of the opened tin in a lidded container in the fridge and use it within 2 days, flaked into a sandwich or on toast."
+    },
+    {
+      "id": "pescatarian-med-baked-cod-chickpeas-spinach",
+      "name": "Baked cod with chickpeas, spinach and tomato",
+      "inspiredBy": "Portuguese and Spanish baked cod and chickpeas, with fresh cod in place of salt cod",
+      "about": "Fresh cod baked on a bed of chickpeas, spinach and tomato, scented with smoked paprika, lemon and olives. The chickpeas soak up the juices and the cod stays tender on top. It's a **one-dish dinner that makes tomorrow's lunch**. Cod is a lean protein with iodine, and the chickpeas add fibre, iron and zinc.",
+      "ingredients": [
+        {
+          "food": "atlantic-cod-wild-caught-raw-8de8e0",
+          "g": 165,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 150,
+          "swap": "legumes"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 150,
+          "note": "with its juice"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 10,
+          "note": "pitted"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "note": "from a lemon"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Warm half of the olive oil in an ovenproof skillet or wide pan and cook the onion with a pinch of salt until softened, about 6 minutes. Add the garlic and smoked paprika and stir for 30 seconds.",
+        "Add the tomatoes, breaking them up, then the chickpeas and olives. Simmer for 5 minutes, then stir in the spinach until it wilts.",
+        "Rinse the cod, pat it dry, and season with salt and a little pepper. Wash your hands and the board after handling raw fish. Nestle the fillets into the chickpeas and drizzle with the remaining olive oil.",
+        "Bake until the cod is opaque and flakes easily, about 12 to 15 minutes, with an internal temperature of 70 °C (158 °F).",
+        "Finish with the lemon juice and parsley and serve in wide bowls. Cool the second portion quickly, refrigerate within 2 hours, and reheat it tomorrow until steaming hot (74 °C)."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Hake or pollock work the same way. If your fillets are thin, add them for the last 8 minutes. Frozen fillets are fine: thaw them in the fridge overnight and cook them within 2 days."
+    },
+    {
+      "id": "pescatarian-med-briam-white-beans-feta",
+      "name": "Greek briam with white beans and feta",
+      "inspiredBy": "Greek briam, the roasted summer vegetable tray, with white beans for a full dinner",
+      "about": "A tray of potatoes, zucchini, eggplant, red pepper and tomatoes roasted slowly in olive oil and oregano, with white beans tucked in and a little feta on top. It's **meat-free comfort food** that tastes even better the next day. Beans bring iron and fibre, and the feta brings calcium.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 120,
+          "note": "sliced into thin rounds"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "eggplant-raw-b8b8c1",
+          "g": 100,
+          "note": "cubed"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "cut into strips"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 150,
+          "note": "with its juice"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 170,
+          "swap": "legumes"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1.5
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 15,
+          "note": "crumbled"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Wash all the vegetables before cutting them.",
+        "Toss the potatoes, zucchini, eggplant, red pepper, onion and garlic in a roasting dish with the olive oil, oregano and salt. Pour the tomatoes and their juice over the top and add a splash of water.",
+        "Roast, stirring once, for 35 minutes, until the potatoes are nearly tender and the juices have thickened.",
+        "Tuck the white beans into the vegetables, crumble the feta over the top and roast for 10 minutes more, until the edges are caramelized and the potatoes are completely soft.",
+        "Finish with the parsley and a squeeze of lemon, and add a spoonful of yogurt to each bowl. Refrigerate the second portion within 2 hours and reheat it to 74 °C tomorrow."
+      ],
+      "prepMin": 20,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly",
+        "freezer-friendly"
+      ],
+      "tip": "It roasts hands-off while you do other things, and takes closer to 45 minutes if you slice the potatoes thin. Cut the vegetables in similar sizes so everything is tender together. Add a handful of olives if you like."
+    },
+    {
+      "id": "pescatarian-med-portuguese-fish-stew",
+      "name": "Portuguese fish and shellfish stew with potatoes and peppers",
+      "inspiredBy": "Portuguese caldeirada, lightened with more vegetables and less oil",
+      "about": "A big, fragrant Portuguese-style fish stew of cod, salmon, mussels, clams and shrimp on a base of potatoes, red pepper, tomato and onion, with paprika, saffron and a bay leaf. It's the **weekend project**: layer the pot, simmer gently and eat it from deep bowls. The seafood brings iron, zinc and B12, and the salmon brings omega-3.",
+      "ingredients": [
+        {
+          "food": "atlantic-cod-wild-caught-raw-8de8e0",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "in chunks"
+        },
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 60,
+          "swap": "fatty_fish",
+          "note": "skinless, in chunks"
+        },
+        {
+          "food": "mussel-blue-raw-29212c",
+          "g": 70,
+          "note": "weighed without shells, so buy about four times as much in the shell"
+        },
+        {
+          "food": "clam-raw-ac0496",
+          "g": 40,
+          "note": "weighed without shells, so buy about five times as much in the shell"
+        },
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 40,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 130,
+          "note": "sliced into thick rounds"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 150,
+          "note": "with its juice"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.1
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.4
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Soak the clams in a bowl of cold water with about 2 tbsp of salt per litre for 20 minutes, then lift them out and rinse. Scrub the mussels and clams under cold running water, and pull the beards off the mussels just before cooking. Throw out any with cracked shells, and tap any that are open: if they stay open, throw them out.",
+        "Until you cook them, keep the shellfish in the fridge in an open bowl under a damp cloth, never in a sealed bag or fresh water, and cook them the day you buy them. If the shrimp are frozen, thaw them overnight in the fridge. Wash your hands, boards and knives well after handling raw fish and shellfish.",
+        "Warm the olive oil in a wide, heavy pot over medium heat. Cook the onion, carrot and red pepper with a pinch of salt for 8 minutes, until soft. Add the garlic, paprika and saffron and stir for 30 seconds.",
+        "Add the tomatoes, bay leaf and the potatoes with enough water to nearly cover them. Bring to a simmer and cook until the potatoes are just tender, about 15 minutes.",
+        "Lay the cod and salmon on top of the potatoes and season with the remaining salt. Cover and simmer gently for 5 minutes.",
+        "Scatter the mussels and clams over the fish, cover tightly and cook until the shells open, about 5 minutes. Add the shrimp for the last 3 minutes, until pink and opaque. The fish should flake easily and be 70 °C (158 °F) inside, and the shellfish steaming hot right through (74 °C).",
+        "Throw away any mussels or clams that haven't opened after cooking. Stir in the parsley and lemon juice and serve in deep bowls.",
+        "For tomorrow's lunch, take the shellfish out of their shells, cool the second portion in a shallow container, refrigerate within 2 hours, eat it tomorrow and reheat it once to 74 °C."
+      ],
+      "prepMin": 30,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers"
+      ],
+      "tip": "A splash of fish stock in place of some of the water gives a deeper broth. Hake, pollock or haddock work in place of the cod. Mussels and clams are weighed without their shells, so shop for roughly four times that weight of mussels and five times that of clams in the shell."
+    },
+    {
+      "id": "pescatarian-med-potato-zucchini-ricotta-frittata",
+      "name": "Zucchini, potato and ricotta frittata with a tomato salad",
+      "inspiredBy": "Italian frittata, with potato and zucchini and a little ricotta for softness",
+      "about": "A thick, golden Italian frittata of sweet onion, tender potato, zucchini and ricotta, set gently and finished under the grill, served with a juicy tomato and oregano salad. It's an **easy, satisfying meat-free dinner** that's also lovely cold. Eggs bring protein and choline, and the potato brings potassium.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 120
+        },
+        {
+          "food": "ricotta-cheese-59ce6c",
+          "g": 55,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 110,
+          "note": "scrubbed and thinly sliced"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 100,
+          "note": "grated"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "finely sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 130,
+          "note": "sliced"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Wash the zucchini and potato. Warm half of the olive oil in an ovenproof non-stick pan over medium-low heat. Cook the potato and onion with a pinch of salt, covered, stirring now and then, until the potato is tender, about 15 minutes.",
+        "Stir in the grated zucchini for the last 3 minutes. Tip the vegetables into a bowl and let them cool for a few minutes.",
+        "Beat the eggs with the ricotta, parsley and the remaining salt, then fold in the vegetables.",
+        "Heat the remaining oil in the pan, pour in the mixture and cook over low heat until the edges are set, about 8 minutes. Meanwhile, heat the grill.",
+        "Finish under the grill until the top is set and lightly golden and the centre is firm, about 3 minutes (the centre reads 74 °C, or 165 °F).",
+        "Toss the tomatoes with the oregano, vinegar and a pinch of salt. Serve the frittata in wedges with the tomato salad."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "It's lovely cold too: make it in a bigger pan, refrigerate the extra wedges within 2 hours and pack one in tomorrow's sandwich. Wash your hands after cracking eggs."
+    },
+    {
+      "id": "pescatarian-med-yogurt-fig-walnut",
+      "name": "Greek yogurt with dried figs and walnuts",
+      "about": "Thick Greek yogurt with chopped dried figs and toasted walnuts. It's a **calcium and omega-3 snack** that feels like dessert.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 30,
+          "note": "chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan until fragrant, about 3 minutes, then chop them.",
+        "Spoon the yogurt into a bowl and top with the figs and walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "pescatarian-med-orange-almonds",
+      "name": "Orange and almonds",
+      "about": "A juicy orange with a small handful of almonds. The orange brings **vitamin C** and the almonds bring vitamin E and magnesium.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "peeled and segmented"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the orange before peeling it. Peel and segment it, and eat with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Chop the almonds for children under 4."
+    },
+    {
+      "id": "pescatarian-med-paprika-roasted-chickpeas",
+      "name": "Smoky roasted chickpeas",
+      "inspiredBy": "Spanish-style smoked paprika chickpeas",
+      "about": "Crunchy oven-roasted chickpeas tossed with smoked paprika. A **crisp, high-fibre snack** that also brings plant protein and iron.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed and patted very dry"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "note": "from a lemon"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Dry the chickpeas very well with a towel, since dry means crisp.",
+        "Toss with the olive oil, smoked paprika and salt on a tray. Roast for 25 minutes, shaking the tray halfway, until golden and crunchy.",
+        "Toss with a squeeze of lemon. Eat the same day, since they soften as they sit."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "pescatarian-med-sardine-lemon-toast",
+      "name": "Sardines on toast with tomato and lemon",
+      "inspiredBy": "Portuguese tosta de sardinhas",
+      "about": "Canned sardines mashed onto crisp whole-wheat toast with sliced tomato and lemon. A **small fish snack** with omega-3, vitamin D and calcium from the soft bones.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 70,
+          "swap": "fatty_fish",
+          "note": "drained"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "note": "toasted"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "from a lemon"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 3,
+          "note": "chopped"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the bread until crisp.",
+        "Lay the tomato slices on the toast and top with the sardines, mashing them gently with a fork.",
+        "Finish with lemon juice, parsley and a grind of pepper."
+      ],
+      "prepMin": 4,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Keep the rest of the opened tin in a lidded container in the fridge and use it within 2 days."
+    },
+    {
+      "id": "pescatarian-med-white-bean-dip-veg",
+      "name": "Tuscan white bean dip with carrot and cucumber",
+      "inspiredBy": "Tuscan cannellini bean dip with rosemary",
+      "about": "A quick garlicky white bean dip with rosemary and lemon, served with crunchy carrot and cucumber sticks. A **fibre-rich snack** with plant protein and iron.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 80,
+          "swap": "legumes"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "minced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "cut into sticks"
+        }
+      ],
+      "steps": [
+        "Wash the carrot and cucumber, then cut into sticks.",
+        "Blitz the beans, olive oil, garlic, lemon, rosemary and salt with a splash of water until smooth.",
+        "Serve the dip with the sticks. Keep leftover dip in the fridge up to 3 days."
+      ],
+      "prepMin": 6,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "pescatarian-med-apple-walnut-cinnamon",
+      "name": "Apple with walnuts and cinnamon",
+      "about": "Crisp apple slices with toasted walnuts and a pinch of cinnamon. A **crunchy snack** with fibre and a little omega-3.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash and slice the apple.",
+        "Toast the walnuts in a dry pan until fragrant, about 3 minutes.",
+        "Serve together with a dusting of cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Chop the walnuts for children under 4."
+    },
+    {
+      "id": "pescatarian-med-dates-almonds",
+      "name": "Medjool dates stuffed with almonds",
+      "about": "Soft dates stuffed with whole almonds. A **sweet, quick snack** with potassium and vitamin E.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 40,
+          "note": "pitted"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Slit the dates open, pull out the pits, and tuck an almond into each."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Chop the almonds for young children."
+    },
+    {
+      "id": "pescatarian-med-tzatziki-cucumber-toast",
+      "name": "Tzatziki with cucumber and toasted bread",
+      "inspiredBy": "Greek tzatziki",
+      "about": "Cool garlicky Greek yogurt with grated cucumber, lemon and a little olive oil, scooped up with cucumber slices and a piece of toasted whole-wheat bread. A **cooling, high-protein snack**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "half grated and squeezed dry, half sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "finely grated"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "note": "from a lemon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 30,
+          "note": "toasted"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the cucumber. Grate half of it and squeeze it dry in a clean towel, then slice the rest.",
+        "Stir the grated cucumber into the yogurt with the garlic, lemon, olive oil and salt.",
+        "Serve with the cucumber slices and toast. It keeps in the fridge up to 3 days."
+      ],
+      "prepMin": 6,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "pescatarian-med-egg-tomato-oregano",
+      "name": "Boiled egg with tomato and oregano",
+      "about": "A boiled egg with sliced tomato, olive oil and a dusting of oregano. A **simple protein snack** with choline and vitamin C.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 55
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Put the egg in a small pot of cold water, bring to a boil, then simmer 10 minutes, until the yolk is firm. Cool under cold water and peel.",
+        "Slice the egg and tomato, drizzle with olive oil and dust with oregano, black pepper and salt."
+      ],
+      "prepMin": 3,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "pescatarian-med-tomato-bean-toast",
+      "name": "Tuscan white bean toast with tomato",
+      "inspiredBy": "Tuscan fettunta with beans",
+      "about": "Crisp whole-wheat toast piled with mashed white beans, sliced tomato, a little garlic and olive oil. A **filling snack** with plant protein, fibre and iron.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "note": "toasted"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 80,
+          "swap": "legumes"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "halved"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 3,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the bread and rub it with the cut side of the garlic.",
+        "Mash the beans with a fork, olive oil and salt, and spread over the toast.",
+        "Top with the tomato and parsley."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "pescatarian-med-chickpea-tomato-cup",
+      "name": "Chickpea, tomato and cucumber cup",
+      "inspiredBy": "Greek and Portuguese chickpea salads",
+      "about": "A small cup of chickpeas with chopped tomato, cucumber, oregano, lemon and olive oil. A **fresh, filling snack** with plant protein, fibre and iron.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6,
+          "note": "from a lemon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the tomato and cucumber, then dice them.",
+        "Toss everything together in a small bowl.",
+        "Let it sit for 5 minutes so the chickpeas soak up the dressing."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pescatarian-med-eggs-tomato-pepper"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pescatarian-med-shrimp-saganaki"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pescatarian-med-pasta-e-fagioli"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-med-apple-walnut-cinnamon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-med-orange-almonds"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pescatarian-med-yogurt-oats-fig-almond"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pescatarian-med-pasta-e-fagioli",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pescatarian-med-grilled-sardines-lemon-potatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-med-egg-tomato-oregano"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-med-paprika-roasted-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pescatarian-med-eggs-tomato-pepper"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pescatarian-med-portuguese-chickpea-tuna-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pescatarian-med-smoky-lentils-chard"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-med-yogurt-fig-walnut"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-med-orange-almonds"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pescatarian-med-yogurt-oats-fig-almond"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pescatarian-med-smoky-lentils-chard",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pescatarian-med-baked-cod-chickpeas-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-med-sardine-lemon-toast"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-med-apple-walnut-cinnamon"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pescatarian-med-eggs-tomato-pepper"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pescatarian-med-baked-cod-chickpeas-spinach",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pescatarian-med-briam-white-beans-feta"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-med-sardine-lemon-toast"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-med-white-bean-dip-veg"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pescatarian-med-ricotta-apple-walnut-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pescatarian-med-briam-white-beans-feta",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pescatarian-med-portuguese-fish-stew"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-med-paprika-roasted-chickpeas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-med-dates-almonds"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pescatarian-med-yogurt-oats-fig-almond"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pescatarian-med-portuguese-fish-stew",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pescatarian-med-potato-zucchini-ricotta-frittata"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-med-yogurt-fig-walnut"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-med-white-bean-dip-veg"
+        }
+      ]
+    }
+  ]
+}
