@@ -78,6 +78,18 @@ export const coversOf = (plan: Pick<MealPlan, 'covers' | 'band'>): CalorieBand[]
 
 export const bandKeyOf = (b: CalorieBand) => `${b.min}-${b.max}`;
 
+/**
+ * The calorie level to size a plan to: the person's target, kept inside the bands the plan lab checked. A plan is only
+ * proven at its covered edges (a pregnancy plan's iron cap, a muscle plan's upper limits), so the app never stretches
+ * it past them; the sizing note then tells the person a higher- or lower-calorie plan fits them better.
+ */
+export function sizingTargetFor(plan: Pick<MealPlan, 'covers' | 'band'>, target: number): number {
+  const bands = coversOf(plan);
+  const lo = Math.min(...bands.map((b) => b.min));
+  const hi = Math.max(...bands.map((b) => b.max));
+  return Math.min(hi, Math.max(lo, target));
+}
+
 /** Every band any size of the family covers, lowest first. */
 export function familyBands(family: PlanFamily): CalorieBand[] {
   const byKey = new Map<string, CalorieBand>();

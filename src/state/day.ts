@@ -14,6 +14,7 @@ import {
 import type { Ingredient, Meal, MealPlan, MealSlot, NutrientVector, PlanDay } from '@/engine/types';
 
 import { personalizeDay, sizingAdvice } from '@/engine/personalize';
+import { sizingTargetFor } from '@/engine/families';
 
 import { BUNDLED_PLANS, FOODS, FOOD_INDEX, LIBRARY_PLANS, SWAP_GROUPS, isFattyFish } from './catalog';
 import { addDays, daysBetween, useStore, type Log } from './store';
@@ -95,7 +96,7 @@ export function useDay(date: string) {
           foods: FOOD_INDEX,
           catalog: FOODS,
           groups: SWAP_GROUPS,
-          targetKcal: profile.sizeToMe ? target : undefined,
+          targetKcal: profile.sizeToMe && plan ? sizingTargetFor(plan, target) : profile.sizeToMe ? target : undefined,
         })
       : undefined;
     const fromPlan: DayMeal[] = (planDay?.meals ?? [])

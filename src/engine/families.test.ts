@@ -6,7 +6,7 @@ import { familyDeps } from '@/state/familyDeps';
 import { buildLibrary, libraryKey } from '@/state/library';
 
 import { carbStyleOfPlan } from './carbStyle';
-import { SIZE_LABEL, bandKeyOf, displayTags, carbVisible, coversOf, familyBands, familyCarbStyle, familyVisible, groupFamilies, mealCarbStyle, pickSize, planCarbStyle, planFamilyName, recipeMinutes, rowMinutes, signatureNames } from './families';
+import { SIZE_LABEL, bandKeyOf, displayTags, carbVisible, coversOf, familyBands, familyCarbStyle, familyVisible, groupFamilies, mealCarbStyle, pickSize, planCarbStyle, planFamilyName, recipeMinutes, rowMinutes, signatureNames, sizingTargetFor } from './families';
 import { compactPlan, compileFamily, recipesOf, type FamilyFile } from './family';
 import { expandPlans } from './libraryPlans';
 import type { MealPlan } from './types';
@@ -290,3 +290,14 @@ describe('displayTags', () => {
     expect(displayTags(['gluten-free', 'omega-balanced'], 'keto')).toEqual(['gluten-free', 'omega-balanced']);
   });
 });
+
+describe('sizingTargetFor', () => {
+  const plan = { band: { min: 1800, max: 2400 }, covers: [{ min: 1800, max: 2000 }, { min: 2000, max: 2400 }] };
+  it('keeps the person\'s target inside the bands the lab checked', () => {
+    expect(sizingTargetFor(plan, 2100)).toBe(2100);
+    expect(sizingTargetFor(plan, 2800)).toBe(2400);
+    expect(sizingTargetFor(plan, 1500)).toBe(1800);
+    expect(sizingTargetFor({ band: { min: 1600, max: 1800 } }, 2000)).toBe(1800);
+  });
+});
+
