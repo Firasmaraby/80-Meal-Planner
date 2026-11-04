@@ -1,0 +1,2018 @@
+{
+  "id": "muscle-plant",
+  "name": "Build Muscle Plant-based",
+  "style": "muscle-plant",
+  "cuisine": "Global",
+  "regions": [
+    "East Asia",
+    "India",
+    "Mexico",
+    "the Mediterranean"
+  ],
+  "summary": "A week of tofu scrambles, tempeh stir-fries, seitan, red lentil dals and bean chilis that gets 30% of calories from protein with no powders. Fortified soy drink brings B12 and calcium, tofu adds more calcium, and plant omega-3 keeps the omega balance.",
+  "howItWorks": "**Thirty per cent protein, all from food.** Seitan (wheat gluten), tofu, tempeh and edamame do the heavy lifting, with lentils and beans alongside. Silken tofu blends invisibly into oats, smoothies and puddings, and every snack is protein-first. Skip seitan with coeliac disease or a wheat allergy, and choose a lower-sodium brand, because seitan labels vary a lot.\n\n**B12, calcium, iron and zinc.** Fortified soy drink brings B12 and calcium most days; check the carton, and many vegans also take a B12 supplement as insurance. Tofu, tempeh, lentils and beans bring iron and zinc. Buy a regular firm tofu, about 10% of the daily value for calcium per serving, and skip extra calcium or iron supplements unless your care provider says so.\n\n**Beans and soy, gently.** Beans are portioned modestly and always rinsed. If beans are new to you, start with half portions for a week or two, drink plenty of water, and build up. This week is rich in soy and low in iodine and vitamin D from food. Use iodized salt, ask your care provider about both, and mention the soy if you take thyroid medicine.\n\n**Cook once, eat twice.** Monday to Saturday dinners make two portions, so tomorrow's lunch is cooked. Sunday's baked rigatoni is the weekend project, and its second portion freezes. Wash all vegetables, herbs and fruit before cutting.\n\n**What grows at Big.** Big adds a third snack every day and grows the tofu, tempeh, seitan, lentils, rice and pasta. Vegetables stay about the same, apart from a bigger sweet potato. There is no XL, because above 3,200 calories the iron and calcium would pass their upper limits. If you are over 50, ask your care provider before using the Big size.",
+  "signature": [
+    "muscle-plant-red-lentil-dal-tikka-seitan-tempeh-brown-basmati",
+    "muscle-plant-mapo-style-tofu-soy-mince-bok-choy",
+    "muscle-plant-smoky-bean-tempeh-seitan-chili-sweet-potato",
+    "muscle-plant-lemon-oregano-seitan-chickpea-salad-lemon-rice"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2400,
+      "covers": [
+        "2200-2400",
+        "2400-2800"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-plant-sticky-sesame-baked-tofu-bites"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-plant-soy-glazed-seitan-bites-cucumber"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-plant-mango-chia-silken-tofu-pudding"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-plant-soy-yogurt-cup-cinnamon-walnuts"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-plant-smoky-tempeh-strips-lime-yogurt-dip"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-plant-chilled-silken-tofu-ginger-scallion"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-plant-chilled-silken-tofu-ginger-scallion"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "muscle-plant-blueberry-silken-tofu-overnight-oats",
+      "name": "Blueberry overnight oats with soy drink, silken tofu and hemp",
+      "about": "Creamy overnight oats where silken tofu is blended into fortified soy drink, so the jar is creamy and loose, a porridge you can spoon or sip, with no tofu taste at all. Blueberries, walnuts, almonds, chia and hemp hearts add colour, crunch and plant omega-3. It brings **at least 28 g of protein** and a glass of fortified soy drink before you leave the house.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 25,
+          "swap": "low_gi_grains",
+          "note": "old-fashioned"
+        },
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 160,
+          "note": "blended smooth"
+        },
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 230,
+          "note": "fortified"
+        },
+        {
+          "food": "hemp-seeds-hulled-0bc4a6",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "sliced"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 60,
+          "swap": "berries"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Blend the silken tofu with the soy drink and the cinnamon for about 30 seconds, until completely smooth and pourable.",
+        "In a jar or bowl, stir together the oats, chia and hemp hearts. Pour the blended tofu drink over and stir well, so no dry pockets are left.",
+        "Rinse the blueberries and fold in about half. Cover and refrigerate overnight, or at least 4 hours. The jar keeps up to 2 days in the fridge.",
+        "In the morning, loosen with a splash of soy drink if it has set too firm. Top with the rest of the blueberries, the chopped walnuts and the sliced almonds."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Mix one jar on Sunday night and one on Thursday night, and breakfast is done. Once opened, keep silken tofu covered in the fridge and use it within 2 days. Swap in thawed frozen blueberries when fresh are out of season."
+    },
+    {
+      "id": "muscle-plant-tofu-scramble-black-beans-peppers",
+      "name": "Tofu scramble with black beans, peppers and a warm corn tortilla",
+      "inspiredBy": "Inspired by Mexican huevos a la mexicana, with tofu in place of the eggs",
+      "about": "Golden crumbled tofu scrambled with onion, red pepper and spinach, with black beans stirred in and a warm corn tortilla and avocado on the side. Turmeric gives the colour, cumin and smoked paprika the savoury depth, and a squeeze of lime lifts it. The tofu and soy drink bring **about 25 g of protein**, and the beans add fibre.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "drained and pressed"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 25,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 90,
+          "note": "diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 10,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 24,
+          "note": "warmed"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 25
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 215,
+          "note": "a glass of fortified soy drink on the side"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.4
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.3
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Rinse the pepper, spinach and cilantro under cold water before cutting. Press the tofu between clean towels for a few minutes, then crumble it into small pieces with your hands.",
+        "Warm the oil in a wide non-stick pan over medium heat. Cook the onion and pepper for 4 minutes, until soft.",
+        "Add the crumbled tofu, cumin, turmeric, smoked paprika and salt. Stir and cook for 5 minutes, until the tofu is hot and golden at the edges.",
+        "Fold in the black beans and spinach and warm through for 2 minutes, until the spinach wilts. Squeeze in the lime juice and stir through the cilantro.",
+        "Warm the tortilla in a dry pan for 20 seconds a side. Serve the scramble with the tortilla and sliced avocado, and a glass of cold soy drink."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Add a pinch of chili flakes for heat, and rinse canned beans well; it washes away much of what causes gas. Buy a regular firm tofu with about 10% of the daily value for calcium per serving on the label; a high-calcium (calcium-set) tofu would add more calcium than this week needs."
+    },
+    {
+      "id": "muscle-plant-soy-yogurt-hemp-soybean-blueberry-bowl",
+      "name": "Soy yogurt bowl with blueberries, hemp and crunchy roasted soybeans",
+      "about": "Cool, tangy soy yogurt with a handful of crushed roasted soybeans and toasted almonds for crunch, hemp hearts, chia and blueberries, with a glass of fortified soy drink on the side. It is the quick breakfast for mornings with no time, and it brings **protein from soy and hemp** with plant omega-3 from the chia.",
+      "ingredients": [
+        {
+          "food": "soy-yogurt-plain-345e92",
+          "g": 120,
+          "note": "unsweetened"
+        },
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 160,
+          "note": "whisked into the yogurt"
+        },
+        {
+          "food": "hemp-seeds-hulled-0bc4a6",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "sliced and toasted"
+        },
+        {
+          "food": "soybean-dry-roasted-bb3701",
+          "g": 25,
+          "note": "ready-to-eat roasted soy nuts, never raw dried soybeans"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 70,
+          "swap": "berries"
+        },
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 225,
+          "note": "a glass of fortified soy drink on the side"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 2
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Whisk the silken tofu into the soy yogurt in a bowl until smooth, then stir in the chia, maple syrup and cinnamon. Let it sit for 5 minutes so the chia swells a little.",
+        "Rinse the blueberries and scatter most of them over the top.",
+        "Sprinkle with the hemp hearts, toasted almonds and crushed roasted soybeans just before eating, so they stay crunchy.",
+        "Finish with the last blueberries and pour a glass of cold soy drink to go with it. Use soy yogurt by the date on the tub, and silken tofu within 2 days of opening."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Crush the soybeans with the bottom of a glass in a zip bag. Frozen blueberries thaw in the bowl while you stir."
+    },
+    {
+      "id": "muscle-plant-smoky-tempeh-sweet-potato-spinach-hash",
+      "name": "Spiced tempeh and sweet potato hash with spinach and lime",
+      "about": "A weekend skillet of crisp-edged tempeh and sweet potato with onion, red pepper and spinach, warmed with garam masala and cumin and finished with lime and a handful of walnuts. It is slow enough to enjoy and hearty enough to carry a training day, with a glass of fortified soy drink alongside. The breakfast brings **about 35 g of protein**, and the sweet potato adds vitamin A.",
+      "ingredients": [
+        {
+          "food": "tempeh-b9c516",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "cut into small cubes"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 100,
+          "note": "small cubes"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 20,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 45,
+          "note": "diced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 35,
+          "note": "diced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 150,
+          "note": "a glass of fortified soy drink on the side"
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Rinse the spinach, pepper and sweet potato, then chop everything before you light the stove. Scrub the sweet potato; the skin can stay on.",
+        "Steam the tempeh cubes over simmering water for 8 minutes. This softens the flavour and helps them brown.",
+        "Heat half the oil in a large non-stick pan over medium heat and cook the sweet potato, covered, for 10 minutes, stirring now and then, until tender.",
+        "Push the sweet potato aside, add the remaining oil and the tempeh, and cook for 5 minutes, until golden. Add the onion, pepper, garlic, garam masala, cumin and salt and cook for 4 minutes.",
+        "Stir in the spinach and cook for 1 to 2 minutes, until wilted. Finish with the lime juice and the toasted walnuts, and serve with a glass of cold soy drink."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "weekend-project"
+      ],
+      "tip": "Cube the sweet potato smaller to cut the cooking time. Keep tempeh in the fridge and cook it until hot all the way through. Throw it away if it is slimy or smells of ammonia."
+    },
+    {
+      "id": "muscle-plant-black-bean-edamame-taco-crumble-bowl",
+      "name": "Black bean and edamame bowl with taco-spiced tempeh crumble",
+      "inspiredBy": "Inspired by Mexican burrito bowls",
+      "about": "A colourful bowl of black beans and edamame over a small scoop of brown rice, topped with a chili-cumin tempeh crumble, tomato, red pepper, carrot, avocado and lime. It is crunchy, fresh and a little smoky. The beans, edamame and tempeh crumble together bring **plenty of protein and iron**, and the lime helps you absorb it.",
+      "ingredients": [
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 40,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 50
+        },
+        {
+          "food": "tempeh-b9c516",
+          "g": 75,
+          "swap": "lean_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 25,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 90,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "coarsely grated"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 25,
+          "note": "finely diced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 14
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.7
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the brown rice, then simmer it covered in plenty of water for about 30 minutes, until tender. Drain and keep warm. Boil the edamame in unsalted water for 4 minutes, drain, and rinse the black beans well.",
+        "Rinse the tomato, pepper, carrot and cilantro, then dice, grate or chop them. Toss the onion with half the lime juice and the salt, and set aside for the flavours to mingle.",
+        "Heat the oil in a pan, add the crumbled tempeh, chili powder, cumin and smoked paprika, and cook for 6 minutes, stirring, until browned and crisp at the edges. Add the soy sauce and cook for 30 seconds.",
+        "Warm the black beans for 2 minutes with a splash of water. Build the bowl with rice, beans, edamame, tomato, pepper and carrot, spoon the crumble on top, and finish with the onion, avocado, cilantro and the rest of the lime."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Cook the rice a day ahead: spread it on a tray, cool it within 1 hour and refrigerate. Start with a smaller scoop of beans if you are building up to this size."
+    },
+    {
+      "id": "muscle-plant-red-lentil-dal-tikka-seitan-tempeh-brown-basmati",
+      "name": "Red lentil dal tadka with spinach, spiced seitan, tempeh and brown basmati",
+      "inspiredBy": "Inspired by North Indian masoor dal tadka",
+      "about": "Soft red lentils, cauliflower and spinach finished with a sizzling cumin, garlic and chili tadka, served with pan-seared seitan and tempeh in a tikka-style spice rub and a little brown basmati. It is cozy, bright with lemon, and **makes two portions**, so tomorrow's lunch is ready. The lentils, seitan and tempeh together carry the protein, and the lemon helps you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 20,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "seitan-508e8a",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "cut into cubes"
+        },
+        {
+          "food": "tempeh-b9c516",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "cut into cubes"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 80,
+          "note": "small florets"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "finely diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 12
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 15,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.6
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.5
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 2
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1.5
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Rinse the brown basmati and simmer it covered in plenty of water for 30 to 35 minutes, until tender. Cook enough for both portions. Drain.",
+        "Rinse the lentils and put them in a pot with 4 times their volume of water, the turmeric, the ginger, the cauliflower florets and half the onion. Simmer for 15 to 18 minutes, skimming any foam, until the lentils and cauliflower are completely soft.",
+        "Meanwhile, rinse the spinach, tomato, cauliflower and cilantro. Pat the seitan and tempeh dry so they brown instead of steaming, then toss the cubes with half the garam masala, half the Kashmiri chili and a pinch of salt. Sear them in a non-stick pan with a third of the oil for 8 minutes, turning, until golden on all sides.",
+        "Stir the chopped tomato and spinach into the dal and cook 4 minutes, until the spinach is wilted. Season with the salt and the lemon juice.",
+        "For the tadka, heat the rest of the oil in a small pan. Add the cumin seeds, then the remaining onion, the garlic and the asafoetida (hing). Cook for 3 minutes, until golden, then stir in the rest of the garam masala and Kashmiri chili. Pour it, sizzling, over the dal.",
+        "Serve the dal with the seitan and tempeh, rice and a handful of cilantro. Cool the second portion, rice included, in a shallow container within 1 hour and refrigerate. It keeps up to 3 days; reheat it once until steaming hot, 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Soak the lentils for 30 minutes first and discard the water; the dal is gentler on the stomach and cooks faster. Thaw a frozen portion overnight in the fridge, eat it within 2 days and reheat to 74 °C (165 °F)."
+    },
+    {
+      "id": "muscle-plant-gochujang-tempeh-seitan-edamame-stir-fry",
+      "name": "Gochujang tempeh, seitan and edamame stir-fry with bok choy",
+      "inspiredBy": "Inspired by Korean tempeh and vegetable bokkeum",
+      "about": "Seared tempeh, seitan and edamame tossed with bok choy and carrot in a sticky gochujang, soy and ginger sauce, over a small bed of brown rice. It is spicy-sweet and savoury, and it **makes two portions**. Tempeh, seitan and edamame together give over 50 g of protein, and the bok choy adds calcium.",
+      "ingredients": [
+        {
+          "food": "tempeh-b9c516",
+          "g": 90,
+          "swap": "lean_protein",
+          "note": "sliced into thin strips"
+        },
+        {
+          "food": "seitan-508e8a",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "sliced into strips"
+        },
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 80
+        },
+        {
+          "food": "bok-choy-raw-591207",
+          "g": 115,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "cut into thin matchsticks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "gochujang-korean-chili-paste-843f28",
+          "g": 11
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 4
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 40,
+          "swap": "low_gi_grains"
+        }
+      ],
+      "steps": [
+        "Rinse the brown rice and simmer it covered for about 30 minutes, until tender. Cook enough for both portions.",
+        "Rinse the bok choy, carrot and scallions, then chop or cut into matchsticks. Steam the tempeh strips over simmering water for 8 minutes. Boil the edamame in unsalted water for 4 minutes, then drain.",
+        "Stir the gochujang, soy sauce and lemon juice with a splash of water into a smooth sauce.",
+        "Pat the seitan dry so it browns instead of steaming. Heat the canola oil in a wide pan or wok over medium-high heat and sear the tempeh and seitan for 5 minutes, until golden. Add the carrot and stir-fry for 3 minutes.",
+        "Add the garlic, ginger, bok choy and edamame and stir-fry for 2 minutes, until the bok choy is just wilted. Pour in the sauce and toss for 1 minute, until glossy and coating everything.",
+        "Finish with the sesame oil and scallions and serve over the rice. Cool the second portion, rice included, in a shallow container within 1 hour and refrigerate. It keeps up to 3 days; reheat it once until steaming hot, 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Gochujang varies in heat. Start with a little less and add more at the end. Pick a seitan near 450 mg sodium per 100 g; brands vary a lot."
+    },
+    {
+      "id": "muscle-plant-lemon-oregano-seitan-chickpea-salad-lemon-rice",
+      "name": "Lemon-oregano seitan with chickpea Greek salad, soy tzatziki and lemon rice",
+      "inspiredBy": "Inspired by Greek souvlaki and horiatiki, with seitan and chickpeas",
+      "about": "Golden strips of seitan marinated in lemon, garlic and oregano, served with a chunky salad of chickpeas, tomato, cucumber, pepper and onion, a cool soy-yogurt tzatziki and a little lemony rice. It is bright, fresh and satisfying, and it **makes two portions**. Seitan brings a lot of protein, and the chickpeas add folate and iron.",
+      "ingredients": [
+        {
+          "food": "seitan-508e8a",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "sliced into strips"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 60,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "grated for the sauce and diced for the salad"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 85,
+          "note": "diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 30,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 20,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "soy-yogurt-plain-345e92",
+          "g": 55,
+          "note": "unsweetened"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Stir half the lemon juice, half the olive oil, the garlic, oregano and a pinch of salt in a bowl. Add the seitan strips and marinate in the fridge for at least 20 minutes. Do not reuse the marinade as a sauce.",
+        "Rinse the brown rice and simmer it covered for about 30 minutes, until tender. Cook enough for both portions, then stir in a spoonful of the lemon juice. Rinse the cucumber, tomato, pepper and parsley.",
+        "Make the tzatziki by squeezing the grated cucumber dry, then stirring it with the soy yogurt, a squeeze of lemon juice, a little chopped parsley, a little garlic and a pinch of salt.",
+        "Toss the chickpeas, diced cucumber, tomato, pepper, onion and parsley with the remaining lemon juice and olive oil.",
+        "Lift the seitan from the marinade and pat it dry. Sear it hard in a hot non-stick pan for 3 to 4 minutes a side, until golden and hot all the way through.",
+        "Serve the seitan over the rice and salad with the tzatziki. Keep the second portion of seitan, the rice and the salad in separate shallow containers, in the fridge within 1 hour. They keep up to 3 days, but eat the salad within 2 days; reheat the seitan and rice once to 74 °C (165 °F) and eat the salad cold."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Pack the seitan cold into a wrap or a pita for lunch. It is good that way too. Pick a seitan near 450 mg sodium per 100 g; brands vary a lot."
+    },
+    {
+      "id": "muscle-plant-chickpea-cauliflower-curry-tofu-seitan",
+      "name": "Chickpea, cauliflower and spinach curry with seared tofu and seitan",
+      "inspiredBy": "Inspired by North Indian chana saag, with tofu in place of paneer",
+      "about": "A thick, tangy curry of chickpeas, cauliflower and spinach in an onion, tomato and ginger masala, with golden seared tofu and chewy seitan that soak up the sauce. A squeeze of lemon and a little brown basmati round it out. It **makes two portions** and tastes even better the next day, and the tofu and seitan keep the protein high.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 35,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 95,
+          "swap": "lean_protein",
+          "note": "pressed, cut into cubes"
+        },
+        {
+          "food": "seitan-508e8a",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "cut into small chunks"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 15,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 185,
+          "note": "small florets"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 170,
+          "note": "chopped"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 65,
+          "note": "finely diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 12
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 15,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.5
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.2,
+          "note": "ground"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1.2
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1.2
+        },
+        {
+          "food": "amchur-dried-green-mango-powder-59b304",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Rinse the brown basmati and simmer it covered for 30 to 35 minutes, until tender. Cook enough for both portions. Drain.",
+        "Rinse the spinach, tomatoes, cauliflower and cilantro, and pat the seitan dry, then cut it into small chunks.",
+        "Sear the tofu cubes in a non-stick pan with a third of the oil for 8 minutes, until golden on most sides. Set aside.",
+        "Heat the rest of the oil in a wide pot. Add the cumin seeds for 20 seconds, then the onion and cook 8 minutes, until golden. Add the garlic, ginger, coriander, turmeric and Kashmiri chili and stir for 1 minute.",
+        "Add the chopped tomatoes and cook for 8 minutes, until they break down into a thick sauce. Add the cauliflower, chickpeas, seitan and 100 ml of water and simmer, covered, for 12 minutes, until the cauliflower is tender and the sauce is thick.",
+        "Stir in the spinach, garam masala, amchur, salt and the seared tofu for 3 minutes, until the spinach wilts. Finish with the lemon juice and cilantro and serve with the rice.",
+        "Cool the second portion, rice included, in a shallow container within 1 hour and refrigerate. It keeps up to 3 days; reheat it once until steaming hot, 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Use a pressure cooker for dried chickpeas, or stay with rinsed canned chickpeas for speed. If your stomach is still getting used to beans, start with fewer chickpeas and more tofu. Thaw a frozen portion overnight in the fridge, eat it within 2 days and reheat to 74 °C (165 °F). Do not simmer seitan longer than the recipe says; it turns spongy. Buy a regular firm tofu with about 10% of the daily value for calcium per serving on the label; a high-calcium (calcium-set) tofu would add more calcium than this week needs."
+    },
+    {
+      "id": "muscle-plant-smoky-bean-tempeh-seitan-chili-sweet-potato",
+      "name": "Smoky black bean, tempeh and seitan chili over baked sweet potato",
+      "inspiredBy": "Inspired by Tex-Mex bean chili",
+      "about": "A thick, smoky chili of crumbled tempeh, chopped seitan, black beans, red pepper and tomato, spooned over a split baked sweet potato with lime and cilantro. The chili is **even better on day two**, so this makes two portions. Tempeh and seitan give it a meaty bite, and the beans add iron, folate and fibre.",
+      "ingredients": [
+        {
+          "food": "tempeh-b9c516",
+          "g": 75,
+          "swap": "lean_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "seitan-508e8a",
+          "g": 95,
+          "swap": "lean_protein",
+          "note": "finely chopped"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 50,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 220,
+          "note": "chopped"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 70,
+          "note": "scrubbed"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 2.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 2
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Scrub and prick the sweet potatoes and bake for 45 to 50 minutes, until soft right through.",
+        "Rinse the pepper, tomatoes and cilantro, and rinse the beans well.",
+        "Warm the oil in a heavy pot and soften the onion and pepper for 6 minutes. Add the garlic and cook for a minute. Crumble in the tempeh and add the seitan and cook for 5 minutes, until browned.",
+        "Stir in the chili powder, cumin, smoked paprika and oregano for 30 seconds so they bloom in the hot pot. Add the chopped tomatoes and 100 ml of water.",
+        "Add the beans and simmer, partly covered, for 25 minutes, until thick and saucy. Season with the salt and lime juice.",
+        "Split the sweet potatoes, spoon the chili over and top with cilantro. Cool the second portion in a shallow container within 1 hour and refrigerate. It keeps up to 3 days; reheat it once until steaming hot, 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Microwave the sweet potatoes for 8 minutes, then crisp them in the oven for 10. The chili freezes well for up to 3 months. Thaw a frozen portion overnight in the fridge, eat it within 2 days and reheat to 74 °C (165 °F). Rather skip the seitan tonight? Use half as much again tempeh and a few more beans; the day's protein dips just under 30%."
+    },
+    {
+      "id": "muscle-plant-mapo-style-tofu-soy-mince-bok-choy",
+      "name": "Mapo-style tofu with seitan mince, bok choy and brown rice",
+      "inspiredBy": "Inspired by Sichuan mapo doufu, with seitan mince instead of pork",
+      "about": "Soft cubes of tofu and savoury seitan mince in a glossy, numbing-and-spicy sauce of doubanjiang, garlic and Sichuan pepper, with bok choy and a little brown rice. It is the comfort dish of a cold night and **makes two portions**. Tofu and seitan mince bring a large dose of protein, and the bok choy adds calcium.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "cut into cubes"
+        },
+        {
+          "food": "seitan-508e8a",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "finely minced"
+        },
+        {
+          "food": "bok-choy-raw-591207",
+          "g": 105,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "doubanjiang-chili-bean-paste-ba0ec4",
+          "g": 7
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 24,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "sichuan-peppercorn-bb776d",
+          "g": 1,
+          "note": "toasted and ground"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Rinse the brown rice and simmer it covered for about 30 minutes. Cook enough for both portions.",
+        "Mince the seitan finely with a knife, or pulse it in a food processor, so it looks like ground meat. Bring a pot of lightly salted water to a gentle simmer and slip the tofu cubes in for 3 minutes; this firms them so they hold together. Lift out gently.",
+        "Rinse the bok choy and scallions, then chop. Heat the canola oil in a wok or wide pan over medium heat. Fry the minced seitan for 4 minutes, until browned. Add the doubanjiang, garlic and ginger and stir for 1 minute, until the oil turns red.",
+        "Add 200 ml of water and simmer for 3 minutes. Add the bok choy and tofu and nudge gently so the cubes stay whole. Simmer uncovered for 4 minutes, until the sauce reduces by about a third and turns glossy.",
+        "Finish with the ground Sichuan pepper, black pepper, sesame oil and scallions and serve over the rice. Cool the second portion, rice included, in a shallow container within 1 hour and refrigerate. It keeps up to 3 days; reheat it once until steaming hot, 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Doubanjiang is salty and hot, so taste the sauce before adding more. Skip the Sichuan pepper for a milder plate. Buy a regular firm tofu with about 10% of the daily value for calcium per serving on the label; a high-calcium (calcium-set) tofu would add more calcium than this week needs."
+    },
+    {
+      "id": "muscle-plant-baked-rigatoni-lentil-ragu-silken-tofu-ricotta",
+      "name": "Baked whole wheat rigatoni with tempeh and lentil ragù and herby tofu ricotta",
+      "inspiredBy": "Inspired by Italian baked pasta with ricotta",
+      "about": "A weekend bake of whole wheat rigatoni in a rich red lentil, tempeh and spinach ragù, topped with lemony whipped tofu ricotta and baked until golden at the edges. It is the project dish of the week and it **makes two portions**, with the second one fitting the freezer. Lentils, tempeh and tofu together make a proper high-protein dinner.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 35,
+          "note": "whole wheat rigatoni"
+        },
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 12,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tempeh-b9c516",
+          "g": 90,
+          "swap": "lean_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 210,
+          "note": "for the ricotta"
+        },
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 30,
+          "swap": "lean_protein",
+          "note": "crumbled into the ricotta"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 250,
+          "note": "chopped"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 55,
+          "note": "diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 10,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.7
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190 °C (375 °F). Crumble the tempeh into small pieces. Rinse the tomatoes, spinach and parsley.",
+        "Warm half the olive oil in a large pan and cook the onion for 6 minutes. Add the garlic and oregano for a minute, then the chopped tomatoes. Cook for 10 minutes, until they break down.",
+        "Stir in the lentils, tempeh and 200 ml of water. Simmer for 20 minutes, until the lentils are soft and the ragù is thick, then stir in the spinach until wilted and season with half the salt.",
+        "Boil the rigatoni in salted water for 2 minutes less than the packet says. Drain.",
+        "For the ricotta, drain the silken tofu on a clean towel for 15 minutes, then mash it with the crumbled firm tofu, the lemon juice, the remaining oil, the remaining salt and half the parsley, until thick and slightly rough.",
+        "Toast the walnuts in a dry pan for 3 minutes. Toss the pasta with the ragù in a baking dish. Dot with spoonfuls of the tofu ricotta. Bake uncovered for 25 minutes, until the ricotta looks set at the edges. Scatter with the toasted walnuts and the remaining parsley.",
+        "Cool the second portion in a shallow container within 1 hour. Refrigerate up to 2 days (silken tofu keeps no longer once opened) or freeze for up to 3 months. Reheat once until steaming hot, 74 °C (165 °F), covered."
+      ],
+      "prepMin": 25,
+      "cookMin": 55,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "weekend-project"
+      ],
+      "tip": "Make the ragù on Saturday and assemble Sunday. Freeze the second portion for a lunch next week; thaw it overnight in the fridge, eat it within 2 days and reheat to 74 °C (165 °F)."
+    },
+    {
+      "id": "muscle-plant-blueberry-hemp-silken-tofu-smoothie",
+      "name": "Blueberry hemp smoothie with silken tofu and soy drink",
+      "about": "A thick, purple smoothie made with silken tofu and fortified soy drink, blueberries and hemp hearts. You cannot taste the tofu, only the berries. It is a **over 20 g of protein** and a glass of fortified soy drink.",
+      "ingredients": [
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 180,
+          "note": "fortified"
+        },
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 200
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 80,
+          "swap": "berries"
+        },
+        {
+          "food": "hemp-seeds-hulled-0bc4a6",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 7,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Rinse fresh blueberries, then put the soy drink, silken tofu, blueberries, hemp hearts, chia and cinnamon in a blender.",
+        "Blend for 45 seconds, until completely smooth and thick. Add a splash of soy drink if it is too thick, or an ice cube if you would like it colder.",
+        "Pour and drink right away, or keep it in a sealed jar in the fridge for up to 24 hours and shake well."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Use frozen blueberries and it turns into a thicker, shake-like drink. On a day you also had blueberry oats, blend frozen mango in place of the blueberries."
+    },
+    {
+      "id": "muscle-plant-maple-cinnamon-soybean-walnut-crunch",
+      "name": "Maple cinnamon roasted soybean, walnut and almond crunch",
+      "about": "A crunchy mix of roasted soybeans, walnuts and almonds tossed with a little maple and cinnamon and baked until glossy. It is sweet, salty and satisfying and gives you **protein and plant omega-3 in a handful**.",
+      "ingredients": [
+        {
+          "food": "soybean-dry-roasted-bb3701",
+          "g": 45,
+          "note": "ready-to-eat roasted soy nuts, never raw dried soybeans"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 4
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160 °C (325 °F). Toss the roasted soybeans, walnuts and almonds with the maple syrup, cinnamon and salt.",
+        "Spread on a lined tray and bake for 8 to 10 minutes, stirring once, until glossy and fragrant. Watch the nuts so they do not burn.",
+        "Cool completely on the tray; the nuts crisp as they cool. Keep in an airtight container for up to a week."
+      ],
+      "prepMin": 3,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make a batch of four portions on Sunday and the snack is ready for the week."
+    },
+    {
+      "id": "muscle-plant-edamame-guacamole-tortilla-wedges",
+      "name": "Edamame guacamole with baked tortilla wedges and cucumber",
+      "inspiredBy": "Inspired by Mexican guacamole",
+      "about": "A bright green guacamole where half the avocado is swapped for edamame, with lime, cilantro and a little onion, scooped up with crisp baked corn tortilla wedges and cucumber. It is creamy, fresh and limey, and the edamame bring **protein and iron** to a classic snack.",
+      "ingredients": [
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 95
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 25,
+          "note": "ripe"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 20,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 14
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Place the tortilla wedges on a tray and bake for 8 to 10 minutes, until crisp.",
+        "Boil the edamame in unsalted water for 4 minutes, then drain and cool.",
+        "Rinse the cilantro and cucumber, and wash the avocado skin before cutting. Mash the edamame and avocado with a fork or pulse them in a food processor, then stir in the lime juice, cilantro, onion, cumin and salt.",
+        "Serve with the tortilla wedges and cucumber slices. Press plastic wrap onto the surface of leftover guacamole, refrigerate, and eat within 2 days."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "A little jalapeño gives it a kick. Keep the stone in the guacamole to slow browning."
+    },
+    {
+      "id": "muscle-plant-mango-cardamom-soy-lassi",
+      "name": "Mango cardamom soy lassi with silken tofu",
+      "inspiredBy": "Inspired by Indian mango lassi",
+      "about": "A creamy mango lassi made with soy yogurt, silken tofu and fortified soy drink, scented with cardamom. It is cool and a little sweet and **refreshing after a workout**, and it brings protein and a glass of fortified soy drink.",
+      "ingredients": [
+        {
+          "food": "soy-yogurt-plain-345e92",
+          "g": 120,
+          "note": "unsweetened"
+        },
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 240
+        },
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 100,
+          "note": "fortified"
+        },
+        {
+          "food": "mango-peeled-frozen-a464dd",
+          "g": 60
+        },
+        {
+          "food": "hemp-seeds-hulled-0bc4a6",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Put the soy yogurt, silken tofu, soy drink, frozen mango, hemp hearts and cardamom in a blender.",
+        "Blend for 45 seconds, until thick and smooth. Add a splash of soy drink if it is stiff.",
+        "Pour and drink right away, or keep in a sealed jar in the fridge for up to 24 hours."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "A squeeze of lime brightens it."
+    },
+    {
+      "id": "muscle-plant-soy-glazed-seitan-bites-cucumber",
+      "name": "Soy-glazed seitan bites with cucumber and sesame oil",
+      "inspiredBy": "Inspired by Japanese teriyaki",
+      "about": "Chewy seitan cubes seared in a sticky soy, ginger and maple glaze, with cool cucumber. They are salty-sweet and savoury, and they pack **over 20 g of protein** into a small plate.",
+      "ingredients": [
+        {
+          "food": "seitan-508e8a",
+          "g": 105,
+          "swap": "lean_protein",
+          "note": "cubed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 4
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "minced"
+        }
+      ],
+      "steps": [
+        "Rinse the cucumber and slice it. Whisk the soy sauce, maple syrup, lemon juice, ginger and garlic in a small bowl.",
+        "Pat the seitan dry. Heat the sesame oil in a non-stick pan over medium-high heat and sear the seitan cubes for 4 minutes, turning, until golden and hot all the way through.",
+        "Pour in the glaze and toss for 1 minute, until sticky and glossy.",
+        "Serve over the cucumber. Keep leftovers in the fridge up to 3 days and reheat once to 74 °C (165 °F)."
+      ],
+      "prepMin": 8,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook a double batch and eat the second portion cold in a wrap."
+    },
+    {
+      "id": "muscle-plant-mango-chia-silken-tofu-pudding",
+      "name": "Mango chia pudding with silken tofu and soy drink",
+      "about": "A spoonable chia pudding thickened overnight in soy drink and blended silken tofu, topped with mango. It is lightly sweet, cool and creamy, with **plant omega-3 from the chia** and a boost of protein from the tofu and soy drink.",
+      "ingredients": [
+        {
+          "food": "soy-milk-original-and-vanilla-vitamins-a-and-d-0e1d34",
+          "g": 80,
+          "note": "fortified"
+        },
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 230
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "mango-peeled-frozen-a464dd",
+          "g": 60,
+          "note": "thawed, diced"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 3
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Blend the soy drink, silken tofu, maple syrup and cardamom until completely smooth.",
+        "Stir in the chia seeds, then stir again after 5 minutes so they do not clump. Cover and refrigerate for at least 4 hours or overnight. It keeps up to 2 days.",
+        "Spoon the mango on top just before eating."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Make it the night before, and make a fresh jar each time. Once opened, keep silken tofu covered in the fridge and use it within 2 days."
+    },
+    {
+      "id": "muscle-plant-sticky-sesame-baked-tofu-bites",
+      "name": "Sticky baked tofu bites with soy and ginger",
+      "about": "Cubes of firm tofu baked until golden and tossed in a sticky soy, ginger and lemon glaze. They are chewy outside and soft inside, and give **about 14 g of protein**.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 155,
+          "swap": "lean_protein",
+          "note": "pressed, cut into cubes"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 4
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Press the tofu between clean towels for 10 minutes, then cut it into cubes.",
+        "Toss the tofu with the canola oil, spread on a lined tray and bake for 25 minutes, turning once, until golden and crisp at the edges.",
+        "Warm the soy sauce, lemon juice, maple syrup and ginger in a small pan for 2 minutes, until slightly syrupy. Toss the hot tofu in the glaze.",
+        "Scatter with the scallions. Eat warm. Keep leftovers in the fridge up to 3 days and reheat once to 74 °C (165 °F)."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Bake a double batch for the week; they re-crisp in a hot oven. Buy a regular firm tofu with about 10% of the daily value for calcium per serving on the label; a high-calcium (calcium-set) tofu would add more calcium than this week needs."
+    },
+    {
+      "id": "muscle-plant-smoky-tempeh-strips-lime-yogurt-dip",
+      "name": "Smoky maple tempeh strips with lime soy-yogurt dip and cucumber",
+      "about": "Thin tempeh strips seared in smoked paprika and maple until crisp at the edges, with a cool lime and cilantro soy-yogurt dip and cucumber. It tastes smoky-sweet and gives **about 23 g of protein**.",
+      "ingredients": [
+        {
+          "food": "tempeh-b9c516",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "sliced into thin strips"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60
+        },
+        {
+          "food": "soy-yogurt-plain-345e92",
+          "g": 50,
+          "note": "unsweetened"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 4
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Steam the tempeh strips over simmering water for 8 minutes, then pat dry.",
+        "Stir the maple syrup, soy sauce and smoked paprika together and brush over the strips.",
+        "Heat the oil in a non-stick pan over medium heat and sear the strips for 3 to 4 minutes a side, until crisp.",
+        "Stir the soy yogurt with the lime juice and chopped cilantro for the dip, rinse and slice the cucumber, and serve."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "These make a good sandwich filling too. Tuck them into a tortilla with cucumber."
+    },
+    {
+      "id": "muscle-plant-chaat-masala-roasted-edamame",
+      "name": "Chaat masala roasted edamame with lime",
+      "inspiredBy": "Inspired by Indian chaat",
+      "about": "Edamame roasted until lightly blistered, then tossed with tangy chaat masala, chili and lime. It is salty, sour and a little spicy, and a bowl brings **about 18 g of protein plus iron**.",
+      "ingredients": [
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 155
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 2
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Boil the edamame in unsalted water for 3 minutes, drain well and pat dry.",
+        "Toss with the canola oil, spread on a tray and roast for 12 minutes, shaking once, until lightly blistered.",
+        "Toss with the chaat masala, Kashmiri chili, salt and lime juice. Eat warm."
+      ],
+      "prepMin": 5,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Roast the edamame in the pod for a chewier snack; shell and discard the pods as you eat."
+    },
+    {
+      "id": "muscle-plant-soy-yogurt-cup-cinnamon-walnuts",
+      "name": "Soy yogurt cup with silken tofu, cinnamon and walnuts",
+      "about": "Thick soy yogurt whisked with silken tofu, hemp hearts and cinnamon, topped with toasted walnuts. It is cool, nutty and simple, and gives you **protein plus plant omega-3** from the walnuts.",
+      "ingredients": [
+        {
+          "food": "soy-yogurt-plain-345e92",
+          "g": 75,
+          "note": "unsweetened"
+        },
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 155,
+          "note": "whisked into the yogurt"
+        },
+        {
+          "food": "hemp-seeds-hulled-0bc4a6",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 3
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Whisk the silken tofu into the soy yogurt until smooth, then stir in the hemp hearts, maple syrup and cinnamon.",
+        "Top with the toasted walnuts just before eating, so they stay crunchy. Use soy yogurt by the date on the tub, and silken tofu within 2 days of opening."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Toast the walnuts in a dry pan for 2 minutes until fragrant."
+    },
+    {
+      "id": "muscle-plant-silken-tofu-herb-dip-crunchy-vegetables",
+      "name": "Lemony silken tofu and herb dip with crunchy vegetables",
+      "about": "A cool, creamy dip of silken tofu blended with lemon, garlic, parsley and a little olive oil, scooped up with cucumber and carrot sticks. It is a light, fresh snack with **over 20 g of protein**.",
+      "ingredients": [
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 285
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 65,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 12
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the cucumber, carrot and parsley, then cut the cucumber and carrot into sticks and chop the parsley.",
+        "Drain any liquid from the silken tofu, then blend it with the lemon juice, garlic, olive oil, salt and pepper until completely smooth and thick.",
+        "Stir in most of the parsley and spoon the dip into a bowl. Serve with the vegetable sticks and the rest of the parsley on top.",
+        "Keep the dip covered in the fridge and eat it within 2 days."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Add a pinch of smoked paprika or a few chopped chives if you like."
+    },
+    {
+      "id": "muscle-plant-chilled-silken-tofu-ginger-scallion",
+      "name": "Chilled silken tofu with ginger, scallion and soy",
+      "inspiredBy": "Inspired by Japanese hiyayakko",
+      "about": "A block of cold silken tofu with a drizzle of soy sauce and sesame oil, fresh ginger, scallion and a squeeze of lemon. It is cool, silky and savoury, and it gives you **about 20 g of protein** for very little effort.",
+      "ingredients": [
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 215,
+          "note": "drained"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        }
+      ],
+      "steps": [
+        "Rinse the scallion, then slice it thinly. Open the silken tofu and drain off the liquid, then pat the block dry with a clean towel.",
+        "Slide the tofu onto a plate and leave it whole, or cut it into cubes. Stir the soy sauce, sesame oil, ginger and lemon juice together and spoon it over.",
+        "Scatter with the scallion and eat it cold. Keep any unused silken tofu covered in the fridge and use it within 2 days."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Add a few drops of chili oil or a pinch of chili flakes if you like heat."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-plant-blueberry-silken-tofu-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-plant-black-bean-edamame-taco-crumble-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-plant-red-lentil-dal-tikka-seitan-tempeh-brown-basmati"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-plant-soy-glazed-seitan-bites-cucumber"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-plant-silken-tofu-herb-dip-crunchy-vegetables"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-plant-soy-yogurt-hemp-soybean-blueberry-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-plant-red-lentil-dal-tikka-seitan-tempeh-brown-basmati",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-plant-gochujang-tempeh-seitan-edamame-stir-fry"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-plant-smoky-tempeh-strips-lime-yogurt-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-plant-chaat-masala-roasted-edamame"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-plant-tofu-scramble-black-beans-peppers"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-plant-gochujang-tempeh-seitan-edamame-stir-fry",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-plant-lemon-oregano-seitan-chickpea-salad-lemon-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-plant-blueberry-hemp-silken-tofu-smoothie"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-plant-maple-cinnamon-soybean-walnut-crunch"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-plant-tofu-scramble-black-beans-peppers"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-plant-lemon-oregano-seitan-chickpea-salad-lemon-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-plant-chickpea-cauliflower-curry-tofu-seitan"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-plant-sticky-sesame-baked-tofu-bites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-plant-edamame-guacamole-tortilla-wedges"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-plant-blueberry-silken-tofu-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-plant-chickpea-cauliflower-curry-tofu-seitan",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-plant-smoky-bean-tempeh-seitan-chili-sweet-potato"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-plant-maple-cinnamon-soybean-walnut-crunch"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-plant-mango-cardamom-soy-lassi"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-plant-smoky-tempeh-sweet-potato-spinach-hash"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-plant-smoky-bean-tempeh-seitan-chili-sweet-potato",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-plant-mapo-style-tofu-soy-mince-bok-choy"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-plant-mango-cardamom-soy-lassi"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-plant-chaat-masala-roasted-edamame"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-plant-soy-yogurt-hemp-soybean-blueberry-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-plant-mapo-style-tofu-soy-mince-bok-choy",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-plant-baked-rigatoni-lentil-ragu-silken-tofu-ricotta"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-plant-silken-tofu-herb-dip-crunchy-vegetables"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-plant-edamame-guacamole-tortilla-wedges"
+        }
+      ]
+    }
+  ]
+}
