@@ -1,0 +1,1661 @@
+{
+  "id": "quick-global",
+  "name": "20-minute Global",
+  "style": "quick",
+  "cuisine": "Global",
+  "regions": [
+    "Canada",
+    "Mexico",
+    "Italy",
+    "India",
+    "Japan"
+  ],
+  "summary": "Weeknight dinners from Canada, Japan, India, Italy and Mexico that are on the table in 20 minutes or less: broiled ginger-soy salmon, a skillet chana masala, one-pan sardine spaghetti and salmon tacos. Real flavour, with the micronutrients covered.",
+  "howItWorks": "**Twenty minutes, honestly counted.** Every meal from Monday to Friday is 20 minutes or less of chopping plus cooking. The week leans on frozen edamame and berries, canned no-salt-added beans, tuna and sardines, bagged spinach, ready-cooked brown rice pouches, rice noodles, thin spaghetti and thin cuts like chicken cutlets and salmon fillets.\n\n**Cook once, eat twice.** Every weeknight dinner makes two portions, and the second is the next day's lunch, which counts as zero minutes. Breakfasts are overnight oats made the night before, quick eggs or a yogurt bowl.\n\n**Vitamin D is the hard one.** Salmon on Tuesday (and Wednesday's lunch), sardines on Friday and salmon tacos on Sunday bring omega-3 and some **vitamin D**, which is hard to get from food alone, so Health Canada advises a supplement for some people. Chickpeas and white beans bring fibre, iron and folate most days, and eggs, yogurt and milk cover choline and calcium.\n\n**Safety stays on.** Wash all produce before cutting, lemons, limes and avocados too. Use a hot pan, thin cuts and a thermometer: 74 °C for chicken and 70 °C for fish. If you're cooking for someone who is pregnant, 60 or older, 5 or under, or has a weak immune system, boil frozen berries and mango for 1 minute and cool them, or use fresh.\n\n**Weekend and sizes.** Saturday has huevos rancheros (25 minutes) and the cacciatore (about 55), which makes Sunday's lunch. Light (1600 to 1800) keeps the fish and most of the chicken full size and trims the rice, noodles, bread, tortillas and oil, with fewer snacks. At Big, use two skillets side by side so the times hold. Two batches add about 5 minutes.",
+  "signature": [
+    "quick-global-broiled-ginger-maple-salmon-peppers-rice",
+    "quick-global-chana-masala-spinach-brown-rice",
+    "quick-global-one-pan-sardine-tomato-spaghetti",
+    "quick-global-chicken-vegetable-rice-noodle-stir-fry"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1600,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "quick-global-avocado-tomato-toast"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "quick-global-avocado-tomato-toast"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "quick-global-banana-peanut-butter-cinnamon"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "quick-global-banana-oat-milk-smoothie"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "quick-global-peanut-butter-banana-toast"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "quick-global-overnight-oats-berries-walnuts",
+      "name": "Overnight oats with berries and walnuts",
+      "inspiredBy": "Inspired by Swiss bircher muesli, made the Canadian way with oats and milk",
+      "about": "Rolled oats soaked overnight in milk and yogurt until creamy, with frozen berries that thaw into a jammy swirl and a crunch of walnuts and pumpkin seeds. Made in five minutes the night before, it gives you **fibre, protein and a little omega-3** with nothing to cook in the morning.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 50,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 170,
+          "swap": "dairy_protein",
+          "note": "or any milk you like"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 160,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mixed-berry-frozen-9f87f1",
+          "g": 100,
+          "swap": "berries",
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash your hands, then stir the oats, milk, yogurt and cinnamon together in a jar until no dry oats are left.",
+        "Spoon the frozen berries on top (see the tip about frozen fruit), put the lid on and refrigerate overnight. The berries thaw and bleed into the oats, which is exactly what you want.",
+        "In the morning, stir it up. If it is thick, loosen it with a splash of milk. Scatter on the walnuts and pumpkin seeds so they stay crisp.",
+        "Eat within 2 days of making it, and keep it in the fridge until you do."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Make it the night before, Monday for Tuesday and Thursday for Friday, and eat each jar within 2 days. If you are cooking for someone who is pregnant, 60 or older, 5 or under, or has a weak immune system, boil the frozen berries for 1 minute and cool them before they go in the jar, or use fresh."
+    },
+    {
+      "id": "quick-global-spinach-tomato-scramble-toast",
+      "name": "Spinach and tomato scrambled eggs on toast",
+      "inspiredBy": "Inspired by a Canadian diner scramble",
+      "about": "Soft scrambled eggs with wilted spinach and cherry tomatoes, on whole-wheat toast with orange wedges on the side. The eggs bring **protein, choline and a little vitamin D**, and the orange helps your body absorb the iron in the spinach.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "beaten"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 60,
+          "note": "halved"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 130,
+          "swap": "vit_c_fruit",
+          "note": "in wedges"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the spinach, tomatoes and orange. Halve the tomatoes and beat the eggs with the salt and pepper. Put the bread in the toaster.",
+        "Warm the oil in a nonstick pan over medium heat. Add the tomatoes and cook about 1 minute, until they start to soften.",
+        "Add the spinach and stir until it wilts, about 30 seconds. Pour in the eggs and keep folding gently until they are set with no runny egg left, about 2 minutes. They should be firm, not wet, and reach 71 °C (160 °F).",
+        "Pile the eggs on the toast and serve with the orange wedges."
+      ],
+      "prepMin": 5,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Pull the pan off the heat just as the eggs look almost done. They finish cooking in their own heat."
+    },
+    {
+      "id": "quick-global-mango-yogurt-bowl-oat-crunch",
+      "name": "Mango yogurt bowl with toasted oat crunch",
+      "inspiredBy": "Inspired by the North American yogurt parfait",
+      "about": "Thick Greek yogurt with frozen mango and a warm crunch of toasted oats and pumpkin seeds. It has **plenty of protein**, plus a little **iron and zinc** from the seeds, and takes under 10 minutes.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mango-peeled-frozen-a464dd",
+          "g": 130,
+          "swap": "vit_c_fruit",
+          "note": "in chunks"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5,
+          "swap": "vit_c_fruit",
+          "note": "from a lime"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the oats and pumpkin seeds in a dry pan over medium heat, stirring, until they smell nutty, about 3 minutes. Tip them onto a plate to cool.",
+        "Meanwhile, microwave the frozen mango in 30-second bursts until just thawed, about 1½ minutes, or thaw it overnight in the fridge.",
+        "Spoon the yogurt into a bowl, top with the mango, squeeze over the lime, and scatter on the crunch and cinnamon."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Toast a big batch of the oats and pumpkin seeds on Sunday and keep it in a jar for the week. If you are cooking for someone who is pregnant, 60 or older, 5 or under, or has a weak immune system, boil the frozen mango for 1 minute and cool it, or use fresh."
+    },
+    {
+      "id": "quick-global-huevos-rancheros-black-beans",
+      "name": "Huevos rancheros with black beans",
+      "inspiredBy": "Inspired by the Mexican ranch-style breakfast, with beans on the side",
+      "about": "Two eggs on warm corn tortillas with a quick chili-spiced tomato salsa, creamy black beans and avocado. A slower weekend breakfast with **protein, fibre and folate**, ready in about 25 minutes.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "warmed"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 100
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "swap": "vit_c_fruit",
+          "note": "from a lime"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the cilantro, lime and avocado. Warm half the oil in a small pan over medium heat and soften the onion and garlic for 3 minutes. Stir in the cumin and chili powder and cook 30 seconds, then add the tomatoes and simmer about 5 minutes, until thick. Add the lime juice, cilantro and half the salt.",
+        "Stir the black beans into a little of the salsa in a small pot and warm through over low heat, about 3 minutes.",
+        "Warm the tortillas in a dry pan, about 30 seconds a side, and set them on a plate.",
+        "Fry the eggs in the rest of the oil over medium heat with a lid on, until the whites are firm and the yolks are set, about 4 minutes. Cook the yolks firm, not runny.",
+        "Set the eggs on the tortillas, spoon over the salsa, and serve with the beans and avocado."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "weekend-project"
+      ],
+      "tip": "Add a minced fresh jalapeño to the salsa if you like it hotter. At smaller sizes use one tortilla, with the beans and both eggs on top."
+    },
+    {
+      "id": "quick-global-tuscan-tuna-chickpea-spinach-salad",
+      "name": "Tuscan tuna and chickpea salad on baby spinach",
+      "inspiredBy": "Inspired by Tuscan tonno e ceci",
+      "about": "Flaked light tuna and chickpeas with cherry tomatoes, onion and baby spinach, dressed with lemon and olive oil and served with toast. It packs **protein, fibre and iron**, and the lemon and tomatoes help you absorb that iron.",
+      "ingredients": [
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 85,
+          "swap": "lean_protein",
+          "note": "flaked"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 120,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "halved"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "swap": "vit_c_fruit",
+          "note": "from a lemon"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the spinach, tomatoes and parsley. Halve the tomatoes, slice the onion very thin and chop the parsley. Put the bread in the toaster.",
+        "Whisk the olive oil, lemon juice, salt and pepper in a bowl. Add the beans, tomatoes, onion and parsley and toss gently.",
+        "Flake in the tuna and fold once so the pieces stay chunky.",
+        "Pile the salad over the spinach and serve with the toast. Keep any leftovers in the fridge and eat them within 2 days."
+      ],
+      "prepMin": 10,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Soak the sliced onion in cold water for 5 minutes if you find raw onion sharp. Keep the other half of the can in a lidded container, not the open tin, and use it within 2 days, for example on toast."
+    },
+    {
+      "id": "quick-global-maple-dijon-chicken-cutlets-white-beans-carrots",
+      "name": "Maple-Dijon chicken cutlets with white beans, carrots and spinach",
+      "inspiredBy": "Inspired by Canadian maple-mustard chicken",
+      "about": "Thin chicken cutlets seared hot and glazed with maple syrup and Dijon, over warm white beans, tender carrots and wilted spinach. It makes **two portions, so tomorrow's lunch is done**, and the beans and spinach bring iron and folate while the carrots bring vitamin A.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "sliced horizontally into thin cutlets"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 155,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 110,
+          "note": "cut in thin sticks"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 120,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 12
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit",
+          "note": "from a lemon"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the carrots, spinach and parsley. Cut the carrots into thin sticks and microwave them in a covered bowl with a splash of water until tender, about 6 minutes. Add the beans for the last 2 minutes.",
+        "Meanwhile, slice each chicken breast in half horizontally into thin cutlets about 1 cm (3/8 inch) thick. Wash your hands, the knife and the board straight away. Season the cutlets with half the salt and the pepper.",
+        "Heat the oil in a large skillet over medium-high heat until it shimmers. Cook the cutlets about 3 minutes a side, until golden, using two pans or two batches if they do not fit in one layer. Stir the Dijon, maple syrup, garlic and lemon juice together, pour it over, and turn the cutlets in the glaze for 1 minute. Check that the thickest piece reaches 74 °C (165 °F).",
+        "Drain the carrots and beans and toss them with the spinach, the rest of the salt and the parsley so the spinach wilts in the heat. Serve beside the chicken with the pan juices spooned over.",
+        "Pack the second portion into a shallow container and refrigerate within 2 hours. Eat it within 3 days, reheated once until steaming, 74 °C (165 °F)."
+      ],
+      "prepMin": 8,
+      "cookMin": 11,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Cutlets this thin cook in minutes, so start the carrots first and the rest lines up. Thin-sliced chicken breast from the store skips the slicing."
+    },
+    {
+      "id": "quick-global-broiled-ginger-maple-salmon-peppers-rice",
+      "name": "Broiled ginger-soy salmon with peppers and brown rice",
+      "inspiredBy": "Inspired by Japanese teriyaki-style salmon",
+      "about": "A salmon fillet brushed with soy, ginger, garlic and a touch of maple, broiled on one tray with sweet red pepper strips and served on ready-cooked brown rice. It brings **omega-3, vitamin D and B12**, and it takes about 18 minutes. The second portion makes tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 145,
+          "swap": "fatty_fish",
+          "note": "skin-on or skinless fillets, about 2 cm thick"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 12
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 5
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "finely grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10,
+          "swap": "vit_c_fruit",
+          "note": "from a lime"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "cut in strips"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 4
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 130,
+          "swap": "low_gi_grains",
+          "note": "ready-cooked pouch"
+        },
+        {
+          "food": "edamame-immature-soy-bean-shelled-frozen-9c2350",
+          "g": 90,
+          "swap": "legumes"
+        }
+      ],
+      "steps": [
+        "Set an oven rack about 15 cm (6 inches) under the broiler and heat it on high. Line a sheet pan with foil.",
+        "Whisk the soy sauce, maple syrup, ginger, garlic and half the lime juice together, then pour half into a clean small bowl for the plate. Wash the peppers, cut them into thin strips and toss them on the pan with the olive oil.",
+        "Set the salmon on the pan and brush the other half of the glaze over the top, then throw away what is left in the brushing bowl. Wash your hands, the brush and the board after touching the raw fish.",
+        "Broil 9 to 11 minutes, until the salmon flakes and reaches 70 °C (158 °F) and the pepper edges are charred. For the last 4 minutes, microwave the rice and frozen edamame in a covered bowl with a splash of water, stirring once, until steaming hot, and refrigerate the rest of an opened pouch within 1 hour to use within 1 day.",
+        "Divide the rice and edamame onto plates, add the salmon and peppers, drizzle with the sesame oil, the clean glaze from the small bowl and the rest of the lime juice.",
+        "Pack the second portion into a shallow container before you sit down, and refrigerate it within 1 hour. Eat it within 2 days, cold or reheated once until steaming, 74 °C (165 °F)."
+      ],
+      "prepMin": 7,
+      "cookMin": 11,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Thicker fillets need a minute or two more. Check the middle with a thermometer."
+    },
+    {
+      "id": "quick-global-chana-masala-spinach-brown-rice",
+      "name": "Quick chana masala with spinach and brown rice",
+      "inspiredBy": "Inspired by North Indian chana masala, done in a skillet in minutes",
+      "about": "Canned chickpeas simmered in a tomato sauce with onion, garlic, ginger, toasted cumin and garam masala, then wilted spinach and lemon. It has **plant protein, iron and folate**, with lemon to help absorb the iron. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 150
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "finely grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.5,
+          "note": "ground"
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.8
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "swap": "vit_c_fruit",
+          "note": "from a lemon"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 110,
+          "swap": "low_gi_grains",
+          "note": "ready-cooked pouch"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Wash the spinach and cilantro. Heat the oil in a wide skillet over medium-high heat. Cook the onion until soft and starting to colour, about 4 minutes. While it cooks, mince the garlic, grate the ginger and rinse the chickpeas.",
+        "Stir in the garlic, ginger, cumin, coriander, turmeric and chili and cook 30 seconds, until fragrant.",
+        "Add the crushed tomatoes, the chickpeas, the salt and a splash of water. Simmer, mashing a few chickpeas with the spoon, about 6 minutes, until thick. Microwave the rice pouch meanwhile, and refrigerate the rest of an opened pouch within 1 hour to use within 1 day.",
+        "Stir in the spinach until wilted, then the garam masala and lemon juice.",
+        "Serve over the rice with a spoonful of yogurt and the cilantro.",
+        "Pack the second portion into a shallow container before you sit down, and refrigerate it within 1 hour. Eat it within 3 days, reheated once until steaming, 74 °C (165 °F)."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Mash more of the chickpeas for a thicker sauce. Jarred ginger-garlic paste, the Indian home cook's shortcut, saves a few minutes: use as much as the garlic and ginger together."
+    },
+    {
+      "id": "quick-global-chicken-vegetable-rice-noodle-stir-fry",
+      "name": "Chicken and vegetable rice noodle stir-fry with ginger",
+      "inspiredBy": "Inspired by Japanese yakisoba, with ginger and lime and rice noodles for speed",
+      "about": "Quick-cooking rice noodles tossed with thin strips of chicken, cabbage, carrot, red pepper and edamame in a ginger, garlic and soy sauce. It brings **protein, niacin and a big pile of vegetables**. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "sliced into thin strips"
+        },
+        {
+          "food": "rice-noodles-pasta-dry-790ac8",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "thin"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "from a bag of coleslaw mix, or finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "from the coleslaw mix, or coarsely grated"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "swap": "vit_c_fruit",
+          "note": "thin strips"
+        },
+        {
+          "food": "edamame-immature-soy-bean-shelled-frozen-9c2350",
+          "g": 70,
+          "swap": "legumes"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 14
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12,
+          "swap": "vit_c_fruit",
+          "note": "from a lime"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "finely grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils",
+          "note": "light or regular"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Boil the kettle and pour the very hot water over the rice noodles. Let them soak until tender, about 8 minutes. Drain and rinse under cold water.",
+        "Meanwhile, wash and slice the pepper, and rinse the coleslaw mix unless the bag says it is washed and ready to eat. Slice the chicken into thin strips and wash your hands, the knife and the board straight away. Stir the soy sauce, lime juice, ginger and garlic together in a small bowl.",
+        "Heat the olive oil in a large skillet or wok over medium-high heat. Add the chicken in one layer (use two pans, or two batches, if it does not fit) and stir-fry about 4 minutes, until no pink is left and the thickest strip reaches 74 °C (165 °F). Tip the chicken onto a plate.",
+        "Add the cabbage, carrot, pepper and edamame to the hot pan and stir-fry about 3 minutes, until crisp-tender and the edamame are hot through.",
+        "Return the chicken, add the noodles and sauce, and toss about 1 minute until hot. Drizzle with the sesame oil and chili flakes.",
+        "Pack the second portion into a shallow container before you sit down, and refrigerate it within 1 hour. Eat it within 3 days, reheated once until steaming, 74 °C (165 °F)."
+      ],
+      "prepMin": 10,
+      "cookMin": 9,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "A bag of frozen stir-fry vegetables works in place of the fresh ones, straight from the freezer. Reheat leftovers with a splash of water so the noodles loosen."
+    },
+    {
+      "id": "quick-global-one-pan-sardine-tomato-spaghetti",
+      "name": "One-pan sardine and tomato spaghetti with lemon",
+      "inspiredBy": "Inspired by Sicilian pasta con le sarde, simplified for a weeknight",
+      "about": "Whole-wheat spaghetti cooked in the same wide pan as cherry tomatoes, garlic and chili, then folded with canned sardines, spinach, lemon and parsley. The sardines give you **omega-3, calcium and vitamin D**, and there is only one pan to wash. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 75,
+          "swap": "low_gi_grains",
+          "note": "thin spaghetti or spaghettini, 7 to 8 minutes on the package"
+        },
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 85,
+          "swap": "fatty_fish",
+          "note": "broken into chunks"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 130,
+          "note": "left whole"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.4
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "swap": "vit_c_fruit",
+          "note": "from a lemon; zest it first"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Put the kettle on. Wash the tomatoes, spinach, parsley and lemon, then slice the garlic.",
+        "Warm the oil in your widest, deepest skillet over medium heat. Cook the garlic and chili flakes for 30 seconds, until fragrant. Add the whole tomatoes and salt and cook about 3 minutes, until they start to burst, then crush about half of them with the spoon.",
+        "Break the pasta in half if it will not lie flat, then add it with enough water from a just-boiled kettle to just cover it. Bring back to a boil, then cook, stirring often, until the pasta is tender and most of the water has become a light sauce, about 7 minutes. Add a splash more water if it dries out. While it cooks, zest and juice the lemon, chop the parsley and open the sardines.",
+        "Fold in the spinach until it wilts. Break the sardines into big chunks and fold them in gently with the lemon juice and zest.",
+        "Serve topped with the parsley.",
+        "Pack the second portion into a shallow container before you sit down, and refrigerate it within 1 hour. Eat it within 3 days, reheated once until steaming, 74 °C (165 °F)."
+      ],
+      "prepMin": 5,
+      "cookMin": 14,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "No thin spaghetti? Regular whole-wheat spaghetti works too, but it adds about 4 minutes."
+    },
+    {
+      "id": "quick-global-chicken-cacciatore-white-beans-spinach",
+      "name": "Chicken cacciatore with white beans and spinach",
+      "inspiredBy": "Inspired by Italian pollo alla cacciatora, with beans and greens for a one-pot supper",
+      "about": "Chicken thighs simmered with peppers, tomatoes and oregano, then white beans and spinach stirred in at the end and a squeeze of lemon, with toast to mop up the sauce. It is the **weekend's slow simmer**, and the leftovers are even better the next day. It brings protein, iron and folate.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 180,
+          "swap": "lean_protein",
+          "note": "cut into big chunks"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 80,
+          "swap": "vit_c_fruit",
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 200
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "swap": "vit_c_fruit",
+          "note": "from a lemon"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Wash the pepper, spinach and parsley before cutting. Pat the chicken dry and season with half the salt and the pepper. Wash your hands and the board after the raw chicken.",
+        "Heat half the oil in a large, heavy pot over medium-high heat. Brown the chicken on all sides, about 6 minutes, and set it aside.",
+        "Add the onion and pepper to the pot with the rest of the oil and cook until soft and golden, about 8 minutes. Add the garlic, oregano and thyme and cook 1 minute.",
+        "Return the chicken, add the tomatoes and the rest of the salt, and simmer partly covered for 20 minutes. Stir in the beans and spinach and simmer 5 minutes more. Check that the thickest piece of chicken reaches 74 °C (165 °F).",
+        "Finish with the lemon juice and parsley and serve with the toast.",
+        "Pack the second portion into a shallow container and refrigerate within 2 hours. Eat it within 3 days, reheated once until steaming, 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Toast fresh bread for the second portion. Freeze it instead if you will not eat it within 3 days, thaw it in the fridge and use it within 2 days."
+    },
+    {
+      "id": "quick-global-salmon-black-bean-tacos-crunchy-slaw",
+      "name": "Salmon and black bean tacos with crunchy slaw",
+      "inspiredBy": "Inspired by Baja-style fish tacos, with salmon and beans",
+      "about": "Strips of salmon seared with chili and cumin, black beans and corn tortillas, with a lime-dressed cabbage and carrot slaw, avocado and a yogurt crema. The salmon brings **omega-3, vitamin D and B12**, the beans add fibre, and it takes about 20 minutes.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "skinless, cut into strips about 2 cm wide"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 72,
+          "swap": "low_gi_grains",
+          "note": "warmed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 30,
+          "note": "shredded"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15,
+          "swap": "vit_c_fruit",
+          "note": "from a lime"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 30,
+          "swap": "dairy_protein"
+        }
+      ],
+      "steps": [
+        "Wash the cabbage, carrot, cilantro, lime and avocado. Toss the cabbage, carrot and cilantro with half the lime juice and a pinch of the salt. Stir the rest of the lime juice into the yogurt for the crema.",
+        "Toss the salmon strips with the chili, cumin, garlic and the rest of the salt. Wash your hands and the board after the raw fish.",
+        "Heat the oil in a skillet over medium-high heat. Cook the salmon strips 2 to 3 minutes a side, until browned and 70 °C (158 °F) inside. Push them aside, add the black beans and a splash of water and warm 2 minutes.",
+        "Warm the tortillas in a dry pan, about 30 seconds a side.",
+        "Fill the tortillas with the salmon and beans, then the slaw, avocado and a spoonful of crema."
+      ],
+      "prepMin": 10,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Break the salmon into big flakes as you fill the tortillas. At smaller sizes you get fewer tortillas, so fill one and a half or use two small ones."
+    },
+    {
+      "id": "quick-global-banana-peanut-butter-cinnamon",
+      "name": "Banana with peanut butter and cinnamon",
+      "about": "A banana split lengthwise, spread with peanut butter and dusted with cinnamon. It is a snack with **potassium, fibre and a little vitamin E** that takes two minutes.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 110,
+          "note": "peeled"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 20,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Split the banana lengthwise and spread the cut sides with the peanut butter.",
+        "Dust with cinnamon and eat right away."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "quick-global-veggie-sticks-lemon-yogurt-dip",
+      "name": "Carrot and pepper sticks with lemony yogurt dip",
+      "inspiredBy": "Inspired by Middle Eastern yogurt dips",
+      "about": "Crunchy carrot and red pepper sticks with a thick, lemony yogurt dip. It brings **vitamin A, vitamin C and calcium** and some protein from the yogurt.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 80,
+          "swap": "vit_c_fruit",
+          "note": "cut in strips"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 110,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "swap": "vit_c_fruit",
+          "note": "from a lemon"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1,
+          "note": "grated to a paste"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the carrot and pepper, then cut them into sticks.",
+        "Stir the yogurt, lemon juice, garlic and salt together.",
+        "Serve the vegetables with the dip."
+      ],
+      "prepMin": 6,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "quick-global-greek-yogurt-berries-walnuts",
+      "name": "Greek yogurt with berries and walnuts",
+      "about": "Thick Greek yogurt with thawed mixed berries and a few chopped walnuts. It gives you **protein, calcium and a little plant omega-3** in two minutes.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 170,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mixed-berry-frozen-9f87f1",
+          "g": 80,
+          "swap": "berries",
+          "note": "thawed overnight in the fridge, or fresh"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl.",
+        "Top with the berries and walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "If you are cooking for someone who is pregnant, 60 or older, 5 or under, or has a weak immune system, boil frozen berries for 1 minute and cool them, or use fresh."
+    },
+    {
+      "id": "quick-global-peanut-butter-banana-toast",
+      "name": "Peanut butter banana toast",
+      "about": "Whole-wheat toast with peanut butter, banana and cinnamon. A snack for **steady energy and fibre** that takes five minutes.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the bread.",
+        "Spread with the peanut butter, top with the banana and dust with cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "quick-global-boiled-eggs-tomatoes-paprika",
+      "name": "Boiled eggs with cherry tomatoes and paprika",
+      "about": "Hard-boiled eggs with sweet cherry tomatoes and a dusting of smoked paprika. You get **protein and choline** from a snack you can make ahead.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "in the shell"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "halved"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Boil water in the kettle, pour it into a small pot over high heat and lower in the eggs. Cook 10 minutes, then cool them in cold water for a few minutes and peel.",
+        "Wash and halve the tomatoes. Halve the eggs, sprinkle with the salt and paprika and serve with the tomatoes. Refrigerate any extra boiled eggs in the shell and eat them within 7 days."
+      ],
+      "prepMin": 2,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Boil 6 eggs together on Monday night, cool them in cold water and keep them in the shell in the fridge for the week. Then the snack takes 2 minutes."
+    },
+    {
+      "id": "quick-global-banana-oat-milk-smoothie",
+      "name": "Banana oat smoothie",
+      "about": "Banana, oats, milk and a spoonful of peanut butter blended smooth. It gives you **calcium, protein and slow-burning energy**.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 90
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 180,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 25,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 12,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Blend everything until smooth, about 1 minute, adding a few ice cubes if you like it cold."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "quick-global-avocado-tomato-toast",
+      "name": "Avocado and tomato toast with lime",
+      "about": "Mashed avocado and juicy cherry tomatoes on whole-wheat toast with a squeeze of lime. A snack with **healthy fats, potassium and fibre**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 60,
+          "note": "mashed"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 60,
+          "note": "halved"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6,
+          "swap": "vit_c_fruit",
+          "note": "from a lime"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the bread. Wash the tomatoes, avocado and lime, then halve the tomatoes.",
+        "Mash the avocado with the lime juice and salt, spread it on the toast and top with the tomatoes."
+      ],
+      "prepMin": 4,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "quick-global-orange-yogurt-pumpkin-seeds",
+      "name": "Orange segments with yogurt and pumpkin seeds",
+      "about": "Juicy orange segments over cool Greek yogurt with pumpkin seeds for crunch. It brings **vitamin C, calcium and zinc**.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "peeled and segmented"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the orange, then peel and segment it.",
+        "Spoon the yogurt into a bowl, top with the orange and pumpkin seeds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "quick-global-egg-avocado-toast-lime",
+      "name": "Boiled egg and avocado toast with lime",
+      "about": "Whole-wheat toast with mashed avocado, a sliced boiled egg and cherry tomatoes, finished with lime. A snack with **protein, choline and healthy fats**. At smaller sizes it is an open half-slice.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "in the shell"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "mashed"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 50,
+          "note": "halved"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5,
+          "swap": "vit_c_fruit",
+          "note": "from a lime"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Boil water in the kettle, pour it into a small pot over high heat and lower in the egg. Cook 10 minutes, then cool it in cold water for a few minutes and peel. Toast the bread. Wash the tomatoes, avocado and lime, then halve the tomatoes.",
+        "Mash the avocado with the lime juice and salt and spread it on the toast. Slice the egg over the top and add the tomatoes. Refrigerate any extra boiled eggs in the shell and eat them within 7 days."
+      ],
+      "prepMin": 4,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Boiled a batch on Monday night? Use one of those eggs and this takes 5 minutes."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "quick-global-spinach-tomato-scramble-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "quick-global-tuscan-tuna-chickpea-spinach-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "quick-global-maple-dijon-chicken-cutlets-white-beans-carrots"
+        },
+        {
+          "slot": "snack",
+          "recipe": "quick-global-greek-yogurt-berries-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "quick-global-banana-peanut-butter-cinnamon"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "quick-global-overnight-oats-berries-walnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "quick-global-maple-dijon-chicken-cutlets-white-beans-carrots",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "quick-global-broiled-ginger-maple-salmon-peppers-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "quick-global-veggie-sticks-lemon-yogurt-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "quick-global-boiled-eggs-tomatoes-paprika"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "quick-global-mango-yogurt-bowl-oat-crunch"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "quick-global-broiled-ginger-maple-salmon-peppers-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "quick-global-chana-masala-spinach-brown-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "quick-global-banana-oat-milk-smoothie"
+        },
+        {
+          "slot": "snack",
+          "recipe": "quick-global-egg-avocado-toast-lime"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "quick-global-spinach-tomato-scramble-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "quick-global-chana-masala-spinach-brown-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "quick-global-chicken-vegetable-rice-noodle-stir-fry"
+        },
+        {
+          "slot": "snack",
+          "recipe": "quick-global-greek-yogurt-berries-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "quick-global-boiled-eggs-tomatoes-paprika"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "quick-global-overnight-oats-berries-walnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "quick-global-chicken-vegetable-rice-noodle-stir-fry",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "quick-global-one-pan-sardine-tomato-spaghetti"
+        },
+        {
+          "slot": "snack",
+          "recipe": "quick-global-veggie-sticks-lemon-yogurt-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "quick-global-egg-avocado-toast-lime"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "quick-global-huevos-rancheros-black-beans"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "quick-global-one-pan-sardine-tomato-spaghetti",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "quick-global-chicken-cacciatore-white-beans-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "quick-global-orange-yogurt-pumpkin-seeds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "quick-global-peanut-butter-banana-toast"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "quick-global-spinach-tomato-scramble-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "quick-global-chicken-cacciatore-white-beans-spinach",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "quick-global-salmon-black-bean-tacos-crunchy-slaw"
+        },
+        {
+          "slot": "snack",
+          "recipe": "quick-global-orange-yogurt-pumpkin-seeds"
+        }
+      ]
+    }
+  ]
+}
