@@ -1,0 +1,1548 @@
+{
+  "id": "budget-global",
+  "name": "Budget Kitchen",
+  "style": "budget",
+  "cuisine": "Global",
+  "regions": [
+    "Canada",
+    "Mexico",
+    "India",
+    "Italy"
+  ],
+  "summary": "A week of beans, lentils, eggs, canned fish, chicken thighs, frozen vegetables and oats, cooked the way Mexico, India, Italy and Canada do it: smoky pinto chili, red lentil dal, sardine pasta and salmon patties. Big pots and planned leftovers keep the shopping list short, and nothing goes to waste.",
+  "howItWorks": "**One pot, then leftovers.** Monday's pinto bean chili makes three portions: dinner Monday, lunch Tuesday and a frozen portion for Sunday night. Every other dinner makes two, so each cook feeds two meals. Sunday prep: soak the pinto beans, and cook and chill the brown rice for Monday's fried rice.\n\n**Canned fish and pantry protein.** Canned salmon with its soft bones on Wednesday and sardines on Friday bring omega-3, calcium and vitamin D, and each becomes the next day's lunch. Beans, lentils, eggs and chicken thighs carry the rest of the protein and iron.\n\n**Frozen veg, nothing wasted.** Frozen peas, corn, spinach, broccoli and berries keep for months and cover vitamin C, vitamin K and folate. Cabbage, carrots, potatoes, onions, bananas and yogurt each turn up in several dishes, so nothing is left to wilt in the fridge.\n\n**Every nutrient still lands.** Milk and yogurt carry the calcium alongside the canned fish. Spinach, lentils and beans bring iron, peanut butter and canola oil bring vitamin E, canola and canned fish bring omega-3, and eggs, chicken and milk bring choline. Oats, beans and whole grains keep the fibre high and the glycaemic load steady.\n\n**What changes with size.** Light trims the oats, rice, lentils, oil and chicken, and keeps one snack on six days (none on Wednesday). Big grows those portions and adds a snack on four days. Big is rich in calcium already, so ask your care provider before adding a calcium supplement on top.",
+  "signature": [
+    "budget-global-smoky-pinto-bean-chili-baked-potato",
+    "budget-global-salmon-patties-cabbage-slaw",
+    "budget-global-sardine-broccoli-pasta-toasted-crumbs",
+    "budget-global-egg-fried-rice-peas"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1600,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "budget-global-carrot-sticks-garlic-yogurt-dip"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "budget-global-banana-oat-milk-smoothie"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "budget-global-warm-cinnamon-milk"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "budget-global-banana-oat-milk-smoothie"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "budget-global-peanut-butter-banana-oatmeal",
+      "name": "Peanut butter and banana oatmeal",
+      "inspiredBy": "Inspired by the everyday North American bowl of oatmeal",
+      "about": "Creamy oats simmered in milk with a swirl of peanut butter, sliced banana and cinnamon. It is warm, creamy and filling, and the oats and banana bring **fibre and potassium** while the peanut butter adds vitamin E.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 220,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 22,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put the oats, milk, cinnamon and salt in a small pot. Bring to a boil over medium heat, stirring.",
+        "Turn the heat down and simmer, stirring often, until the oats are thick and creamy, about 5 minutes. Add a splash of water if it gets too thick.",
+        "Stir half the peanut butter into the oats until it melts into ribbons.",
+        "Spoon into a bowl, then top with the sliced banana and the rest of the peanut butter."
+      ],
+      "prepMin": 3,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Cook a double pot of the oats on Monday and keep the second portion in the fridge for Thursday, no longer than 3 days. Reheat it with a splash of milk until it is steaming hot, 74 C (165 F), then add the banana and peanut butter."
+    },
+    {
+      "id": "budget-global-berry-yogurt-oatmeal",
+      "name": "Berry oatmeal with yogurt",
+      "inspiredBy": "Inspired by the North American berry porridge",
+      "about": "Oats simmered with frozen mixed berries until they bleed purple, swirled with peanut butter and topped with cool Greek yogurt. The berries bring **vitamin C and fibre**, and the yogurt adds protein and calcium.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 230,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mixed-berry-frozen-9f87f1",
+          "g": 100,
+          "swap": "berries",
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 16,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put the oats, milk, frozen berries and salt in a small pot, with a splash of water. Bring to a boil over medium heat, stirring.",
+        "Simmer, stirring often, until the oats are thick and the berries have broken down into a purple swirl, about 6 minutes.",
+        "Swirl the peanut butter into the oats, then spoon into a bowl. Add the yogurt on top and dust with a little cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 7,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Frozen berries are as good as fresh here and keep for months, so this breakfast never goes to waste."
+    },
+    {
+      "id": "budget-global-spinach-onion-scramble-toast",
+      "name": "Scrambled eggs with spinach and onion on toast",
+      "inspiredBy": "Inspired by the classic diner scramble",
+      "about": "Gently scrambled eggs with sweet browned onion and wilted spinach, piled on hot toast. It is a proper breakfast with **protein, choline and iron**, and the spinach is frozen so nothing wilts in the fridge.",
+      "ingredients": [
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "spinach-frozen-boiled-4493fe",
+          "g": 120,
+          "swap": "leafy_greens",
+          "note": "thawed and squeezed dry"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten with a splash of water"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 35,
+          "note": "toasted"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Microwave the frozen spinach for 1 to 2 minutes, or leave it in the fridge overnight, then squeeze out the water with your hands.",
+        "Warm the oil in a non-stick pan over medium heat. Cook the onion until soft and golden, about 6 minutes.",
+        "Stir in the spinach and cook for 1 minute until hot.",
+        "Pour in the beaten eggs with the salt and pepper. Stir gently until the eggs are set with no liquid egg left, about 3 minutes. They will still look soft and glossy.",
+        "Pile onto the hot toast."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "budget-global-egg-fried-rice-peas",
+      "name": "Egg-fried rice with chicken, peas and cabbage",
+      "inspiredBy": "Inspired by Chinese-Canadian egg fried rice",
+      "about": "Fluffy egg and diced chicken thigh folded through brown rice, sweet peas and corn, carrot and shredded cabbage, with garlic, ginger, a little soy sauce and a crunch of peanuts. It is the best way to use up a pot of day-old rice, and the eggs, chicken and peas make it a **filling meal with protein and fibre**.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "diced small"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 80,
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 20,
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped, for crunch"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "finely diced"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 50,
+          "note": "thinly shredded"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook it in a pot with about two and a half times its volume of water until tender, 40 to 45 minutes. Spread it on a tray to cool and steam off, and get it into the fridge within 1 hour if you are not frying right away. Rice that is cooled quickly and fried hot also gives separate grains.",
+        "Wash the carrot, cabbage and onion, then dice and shred them. Heat a third of the oil in a wide pan over high heat and scramble the eggs until fully set, with no runny parts. Tip them onto a plate.",
+        "Add another third of the oil and the diced chicken, and stir-fry until browned and cooked through, 5 to 6 minutes, to 74 C (165 F). Move it to the plate with the eggs. Wash your hands and the board after handling the raw chicken.",
+        "Add the rest of the oil, then the onion, carrot and cabbage. Stir-fry until the cabbage starts to brown at the edges, about 4 minutes. Add the garlic and ginger for 30 seconds.",
+        "Add the cooled rice, the frozen peas and the frozen corn. Press and toss for 3 to 4 minutes until the rice is steaming hot, 74 C (165 F), and the peas and corn are cooked.",
+        "Fold the eggs and chicken back in with the soy sauce, then scatter the chopped peanuts on top. Taste and add pepper if you like."
+      ],
+      "prepMin": 10,
+      "cookMin": 50,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Day 1 lunch needs rice from the night before, so cook it on Sunday evening: spread it on a tray, get it into the fridge within 1 hour and use it the next day. Day-old rice fries up fluffier."
+    },
+    {
+      "id": "budget-global-smoky-pinto-bean-chili-baked-potato",
+      "name": "Smoky pinto bean chili on a baked potato",
+      "inspiredBy": "Inspired by Tex-Mex chili and Mexican frijoles",
+      "about": "A big pot of slow-simmered pinto beans, tomatoes, corn and spinach with chili, cumin and smoked paprika, with a little red lentil to thicken it, ladled over a fluffy baked potato with a spoonful of yogurt. The beans bring **fibre, iron and folate**, and the potato carries the potassium. The pot makes three portions: one tonight, one for tomorrow and one for the freezer.",
+      "ingredients": [
+        {
+          "food": "pinto-beans-dry-b12ff3",
+          "g": 80,
+          "swap": "legumes",
+          "note": "soaked overnight"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 150,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 30,
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "lentil-red-hulled-dry-d3e937",
+          "g": 15,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 2.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.2
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.2
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.4
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        },
+        {
+          "food": "cider-vinegar-c34faa",
+          "g": 5,
+          "note": "to finish"
+        },
+        {
+          "food": "spinach-frozen-boiled-4493fe",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 75,
+          "swap": "low_gi_grains",
+          "note": "scrubbed"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 50,
+          "swap": "dairy_protein",
+          "note": "for serving"
+        }
+      ],
+      "steps": [
+        "The night before, rinse the dry pinto beans, pick out any stones and cover with plenty of cold water. Soak at least 8 hours. Drain and rinse. In a hurry, boil 2 minutes, turn off the heat, cover for 1 hour, then drain.",
+        "Put the soaked beans in a big pot, cover with fresh water by about 5 cm and bring to a hard boil for 10 minutes. Then turn the heat down and simmer until nearly tender, 45 to 60 minutes.",
+        "Meanwhile, wash the onion. Warm the oil in a second pot, cook the onion until soft, about 6 minutes, then add the garlic, chili powder, cumin, smoked paprika and oregano and stir for 30 seconds until fragrant.",
+        "Add the tomatoes, the drained beans, the red lentils, the soy sauce, the bay leaf and a cup of the cooking water. Simmer uncovered, stirring now and then, until the beans are tender and the chili is thick, 25 to 30 minutes. Stir in the corn, spinach and salt for the last 5 minutes, then the vinegar.",
+        "While it simmers, prick the potatoes and bake at 200 C (400 F) for about 55 minutes, or microwave for 8 to 10 minutes, until soft in the middle.",
+        "Split the potato, ladle over the chili and add a spoonful of yogurt.",
+        "Cool the leftover chili in shallow containers and get it into the fridge within 2 hours. Keep tomorrow's portion in the fridge and freeze the third portion once it is cold. Move the frozen portion to the fridge on day 6, use it within 2 days and never refreeze it. Reheat each portion once, stirring halfway in the microwave, until it is 74 C (165 F) all the way through, and cook a fresh potato each time."
+      ],
+      "prepMin": 20,
+      "cookMin": 110,
+      "servings": 3,
+      "tags": [
+        "medium-spicy",
+        "freezer-friendly",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "Short on time? A pressure cooker cooks soaked pinto beans in about 12 minutes. Pull the bay leaf out before serving."
+    },
+    {
+      "id": "budget-global-chicken-thigh-potato-carrot-traybake",
+      "name": "Chicken thigh traybake with potatoes and carrots",
+      "inspiredBy": "Inspired by an everyday roast chicken and potato tray",
+      "about": "Juicy chicken thighs roasted on one tray with potato wedges, carrots, onion and broccoli, with garlic, paprika, turmeric and lemon. It is a one-tray dinner that makes two portions, and the chicken brings **protein and zinc** with carrots for vitamin A. Tomorrow's lunch is done.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 200,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 110,
+          "swap": "low_gi_grains",
+          "note": "scrubbed, cut into wedges"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 120,
+          "note": "cut in chunks"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "in wedges"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "smashed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 2
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "broccoli-frozen-chopped-boiled-2da9cd",
+          "g": 100,
+          "note": "straight from the freezer"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C (425 F). Wash the potatoes, carrots and onion before cutting. Toss the potatoes, carrots, onion and garlic on a big tray with half the oil, half the salt and the pepper.",
+        "Roast the vegetables for 15 minutes. Meanwhile, toss the chicken thighs with the rest of the oil, the paprika, turmeric and the rest of the salt. Wash your hands and the board after handling the raw chicken.",
+        "Push the vegetables aside and add the chicken to the tray. Roast for 20 minutes, then scatter the frozen broccoli over the tray in a single layer, pushing the vegetables apart so it can brown, and roast 10 to 12 minutes more, until the edges are browned.",
+        "Check that the chicken reaches 74 C (165 F) in the thickest part and the potatoes are golden and tender.",
+        "Squeeze the lemon juice over everything and toss to catch the pan juices.",
+        "Pack the second portion into a shallow container within 2 hours and refrigerate. Eat it within 3 days, reheated once until steaming, 74 C (165 F)."
+      ],
+      "prepMin": 20,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Cut the potato wedges thin so they crisp. The leftover chicken also makes a good hot sandwich: reheat it until steaming, 74 C (165 F), then shred it onto toast."
+    },
+    {
+      "id": "budget-global-salmon-patties-cabbage-slaw",
+      "name": "Salmon patties with crunchy cabbage slaw",
+      "inspiredBy": "Inspired by Maritime Canadian salmon cakes",
+      "about": "Golden patties of canned salmon, oats, spinach and onion with a bright, mustardy cabbage and carrot slaw. Canned salmon with the soft bones is a rich source of **omega-3, vitamin D and calcium**, and the slaw adds vitamin C. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+          "g": 110,
+          "swap": "fatty_fish",
+          "note": "soft bones mashed in"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "grated"
+        },
+        {
+          "food": "yellow-mustard-prepared-f7e307",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "spinach-frozen-boiled-4493fe",
+          "g": 85,
+          "swap": "leafy_greens",
+          "note": "thawed and squeezed dry"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 100,
+          "note": "thinly shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "grated"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 30,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cider-vinegar-c34faa",
+          "g": 8
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 30,
+          "note": "toasted, to serve"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Whisk the yogurt with the vinegar, half the mustard and a pinch of the salt. Wash and shred the cabbage and carrot, toss with the dressing and leave to soften while you make the patties.",
+        "In a bowl, flake the drained salmon and mash in the soft bones with a fork. Mix in the egg, oats, grated onion, the spinach (thawed and squeezed dry), the rest of the mustard, the lemon juice, pepper and the rest of the salt. Let it stand for 5 minutes so the oats swell.",
+        "Shape into patties, two per portion, about 2 cm thick.",
+        "Heat the oil in a non-stick pan over medium heat. Cook the patties until deep golden and hot through, 4 to 5 minutes per side. The middle should reach 74 C (165 F) because there is raw egg in the mix.",
+        "Serve the patties with the slaw and hot toast.",
+        "Put the second portion of patties and slaw in separate shallow containers within 2 hours and refrigerate. Eat within 2 days, reheating the patties once to 74 C (165 F)."
+      ],
+      "prepMin": 20,
+      "cookMin": 12,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Buy one 418 g can or two 213 g cans for the pot of two, and keep any extra in a lidded container in the fridge for a sandwich within 2 days. The patties also freeze well raw: shape them, freeze on a tray, bag them, and cook from frozen until the middle is 74 C (165 F)."
+    },
+    {
+      "id": "budget-global-red-lentil-dal-spinach-rice",
+      "name": "Red lentil dal with spinach and rice",
+      "inspiredBy": "Inspired by North Indian masoor dal",
+      "about": "A thick, golden dal of red lentils, tomato, garlic and ginger, spiced with cumin, turmeric and chili, stirred with spinach and served over rice with lemon. Lentils bring **iron and folate**, and the lemon helps your body absorb that iron. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "lentil-red-hulled-dry-d3e937",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 80,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 1.5
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "spinach-frozen-boiled-4493fe",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 35,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 70,
+          "swap": "dairy_protein",
+          "note": "for serving"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.3
+        }
+      ],
+      "steps": [
+        "Rinse the lentils in a sieve until the water runs mostly clear. Rinse the rice too.",
+        "Start the rice: put it in a pot with about two and a half times its volume of water, bring to a boil, cover and simmer until tender, 40 to 45 minutes. Meanwhile, warm the oil in another pot over medium heat. Cook the onion until golden, about 8 minutes. Add the garlic, ginger, turmeric, chili powder, red pepper flakes and cumin and stir for 30 seconds until the spices smell toasty.",
+        "Add the tomatoes and lentils with enough water to cover them by about a finger, and add more as they cook if it gets too thick. Bring to a boil, then simmer partly covered, stirring now and then, until the lentils fall apart, about 20 minutes.",
+        "Stir the frozen spinach and the salt into the dal and cook 3 minutes until hot. Finish with the lemon juice.",
+        "Serve over rice with a spoonful of yogurt. Cool the second portion of dal and the rice separately in shallow containers, with the rice in the fridge within 1 hour. Keep up to 3 days and reheat once to 74 C (165 F)."
+      ],
+      "prepMin": 10,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "The dal freezes well for a month. Freeze it without the rice."
+    },
+    {
+      "id": "budget-global-sardine-broccoli-pasta-toasted-crumbs",
+      "name": "Sardine pasta with broccoli, tomato and toasted crumbs",
+      "inspiredBy": "Inspired by Sicilian pasta con le sarde and its toasted breadcrumbs",
+      "about": "Whole wheat pasta tossed with canned sardines melted into garlicky tomato, tender broccoli and peas and a squeeze of lemon, finished with crunchy toasted breadcrumbs. Sardines with the soft bones bring **omega-3, calcium and vitamin D**, and the lemon and tomato keep it bright.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 55,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 105,
+          "swap": "fatty_fish",
+          "note": "soft bones included"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 120,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "broccoli-frozen-chopped-boiled-2da9cd",
+          "g": 100,
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 50,
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 15,
+          "note": "torn into small crumbs"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.1
+        }
+      ],
+      "steps": [
+        "Bring a big pot of water to a boil. Warm half the oil in a wide pan and toast the bread crumbs with a pinch of the salt over medium heat, stirring, until crisp and golden, about 3 minutes. Tip them out.",
+        "In the same pan, add the rest of the oil, then the onion. Cook until soft, about 5 minutes, then add the garlic, chili flakes and oregano for 30 seconds.",
+        "Add the tomatoes and the rest of the salt and simmer 8 minutes until saucy. Break in the sardines and stir gently so they melt in.",
+        "Cook the pasta in the boiling water for the time on the pack, adding the frozen broccoli and peas for the last 3 minutes. Reserve a cup of the water, then drain.",
+        "Toss the pasta and broccoli through the sauce with a splash of the pasta water until glossy. Check the sauce is steaming hot, at least 70 C (158 F), then add the lemon juice.",
+        "Top with the crisp crumbs. Pack the second portion without the crumbs in a shallow container, refrigerate within 1 hour (cooked pasta is a cooked grain), and reheat once to 74 C (165 F)."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Keep the crumbs in a jar and sprinkle them on the leftovers to bring back the crunch. Three 106 g cans cover the pot of two; keep any left in a lidded container in the fridge and use it within 2 days."
+    },
+    {
+      "id": "budget-global-mustard-chicken-potato-cabbage-skillet",
+      "name": "Mustardy chicken, potato, carrot and cabbage skillet",
+      "inspiredBy": "Inspired by Ukrainian-Canadian braised chicken and cabbage",
+      "about": "Browned chicken thighs with potato, carrot and cabbage braised in one pan with onion, mustard, a splash of vinegar and a little spinach, so the cabbage turns sweet and silky. It is one-pan comfort food with **protein, vitamin A and vitamin C**, and it makes two portions.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "cut in large pieces"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 150,
+          "swap": "low_gi_grains",
+          "note": "scrubbed, in small chunks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 90,
+          "note": "cut in half-moons"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 150,
+          "note": "cut in wedges then slices"
+        },
+        {
+          "food": "spinach-frozen-boiled-4493fe",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "yellow-mustard-prepared-f7e307",
+          "g": 10
+        },
+        {
+          "food": "cider-vinegar-c34faa",
+          "g": 10
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the potatoes, carrot and cabbage. Season the chicken with half the salt, the pepper and the paprika. Wash your hands and the board after handling the raw chicken.",
+        "Heat the oil in a wide pan with a lid over medium-high heat. Brown the chicken on both sides, about 5 minutes. Move it to a plate.",
+        "Cook the onion in the same pan until soft, about 5 minutes. Add the garlic, potato, carrot, bay leaf and about half a cup of water, and scrape up the brown bits.",
+        "Pile the cabbage on top, sprinkle with the rest of the salt, cover and cook over medium-low heat for 15 minutes, until the cabbage wilts.",
+        "Stir in the mustard, vinegar and frozen spinach, tuck the chicken back in and cover again. Cook 12 to 15 minutes until the potatoes are tender and the chicken reaches 74 C (165 F) in the thickest part.",
+        "Pack the second portion in a shallow container within 2 hours and refrigerate. Eat within 3 days and reheat once to 74 C (165 F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "A spoonful of yogurt on top mellows the mustard."
+    },
+    {
+      "id": "budget-global-peanut-butter-banana-toast",
+      "name": "Peanut butter and banana toast with cinnamon",
+      "about": "Warm toast with peanut butter, sliced banana and a shake of cinnamon. It is quick and gives a little **protein, fibre and vitamin E** to bridge the afternoon.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 25,
+          "note": "toasted"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 16,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Toast the bread.",
+        "Spread with peanut butter and top with the banana slices, then shake over the cinnamon."
+      ],
+      "prepMin": 2,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "budget-global-berry-yogurt-cup",
+      "name": "Greek yogurt with berries",
+      "about": "Thick plain Greek yogurt over frozen mixed berries that thaw into a juicy sauce. It brings **protein and calcium** with vitamin C from the berries.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 170,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mixed-berry-frozen-9f87f1",
+          "g": 80,
+          "swap": "berries",
+          "note": "thaw in the bowl"
+        }
+      ],
+      "steps": [
+        "Put the frozen berries in a bowl 10 minutes before eating so they thaw into a juicy sauce.",
+        "Spoon the yogurt over the berries."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute",
+        "no-cook"
+      ],
+      "tip": "Frozen berries have been linked to hepatitis A and norovirus. If anyone eating is pregnant, elderly, a young child or has a weak immune system, bring the berries to a boil for 1 minute and let them cool first."
+    },
+    {
+      "id": "budget-global-carrot-sticks-garlic-yogurt-dip",
+      "name": "Carrot sticks with spiced yogurt dip",
+      "about": "Crunchy carrot sticks with a cool, cumin-and-smoked-paprika dip of yogurt, lemon and garlic. The carrots bring **vitamin A** and the dip adds protein.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 120,
+          "note": "washed, cut into sticks"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "finely grated"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the carrots, then peel if you like and cut into sticks.",
+        "Stir the yogurt with the lemon juice, grated garlic, cumin, smoked paprika and salt.",
+        "Dip and crunch."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "budget-global-yogurt-deviled-eggs",
+      "name": "Yogurt deviled eggs",
+      "inspiredBy": "Inspired by the North American deviled egg",
+      "about": "Hard-boiled eggs halved and filled with a creamy mash of yolk, yogurt and mustard, with a dusting of paprika. They give **protein and choline** and keep well in the fridge for a grab-and-go snack.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "in the shell"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 30,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "yellow-mustard-prepared-f7e307",
+          "g": 5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lower the eggs into a pot of boiling water and cook 10 minutes until the yolks are fully set. Cool under cold water, then peel. Wash your hands after handling the raw eggs.",
+        "Halve the eggs, scoop out the yolks and mash them with the yogurt, mustard and salt until creamy.",
+        "Spoon the filling back into the whites and dust with paprika. Eat within 2 days, keep them cold, in a bag with an ice pack if you take them out, and no more than 2 hours at room temperature."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "budget-global-cinnamon-peanut-yogurt",
+      "name": "Cinnamon yogurt with peanuts",
+      "about": "Thick Greek yogurt with a dusting of cinnamon and a handful of crunchy peanuts. It gives **protein, calcium and vitamin E** with no cooking.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl.",
+        "Top with the chopped peanuts and a dusting of cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "budget-global-spiced-roasted-chickpeas",
+      "name": "Spiced roasted chickpeas",
+      "inspiredBy": "Inspired by North African and Indian roasted chickpea snacks",
+      "about": "Crunchy oven-roasted chickpeas tossed with cumin, smoked paprika and a squeeze of lemon. They are a salty-crisp snack with **fibre, folate and plant protein**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "drained, rinsed and patted dry"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "swap": "vit_c_fruit"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 C (425 F). Pat the chickpeas very dry with a clean towel so they crisp.",
+        "Toss with the oil, cumin, smoked paprika and salt on a tray and spread in a single layer.",
+        "Roast, shaking the tray halfway, until golden and crunchy, 25 to 30 minutes.",
+        "Squeeze over the lemon juice. They are crispest warm. If you roast a double batch, cool the rest, keep it covered in the fridge and eat it within 2 days; crisp it again in a hot dry pan for 2 to 3 minutes."
+      ],
+      "prepMin": 5,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Roast them while the oven is already hot for the traybake."
+    },
+    {
+      "id": "budget-global-banana-oat-milk-smoothie",
+      "name": "Banana oat smoothie",
+      "about": "Milk blended with banana, oats and a spoonful of peanut butter into a thick, filling shake. It is an easy way to add **energy and protein** on bigger days.",
+      "ingredients": [
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 250,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 100
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 25,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put everything in a blender and blend until smooth, about 1 minute.",
+        "Pour into a glass and drink right away."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "budget-global-peanut-butter-oat-bites",
+      "name": "Peanut butter oat bites",
+      "inspiredBy": "Inspired by North American no-bake oat bites",
+      "about": "No-bake bites of oats, peanut butter and mashed banana, rolled and chilled. They are chewy, lightly sweet and give **fibre and vitamin E** in a hand-held snack.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 16,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 40,
+          "note": "very ripe, mashed"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Mash the banana in a bowl and stir in the peanut butter, oats and cinnamon until it holds together.",
+        "Roll into small balls and chill for 15 minutes. Keep in a covered container in the fridge up to 3 days."
+      ],
+      "prepMin": 10,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "budget-global-yogurt-toasted-oat-berry-bowl",
+      "name": "Yogurt bowl with toasted oats, berries and peanut butter",
+      "about": "Thick yogurt topped with crunchy toasted oats, warm jammy berries and a drizzle of peanut butter. It is a satisfying bowl with **protein, fibre and calcium**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains",
+          "note": "for toasting"
+        },
+        {
+          "food": "mixed-berry-frozen-9f87f1",
+          "g": 60,
+          "swap": "berries",
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "warmed so it drizzles"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the oats in a dry pan over medium heat for 3 to 4 minutes, stirring, until golden and nutty.",
+        "Bring the frozen berries to a boil in a small pot and let them bubble for 1 minute, until hot and syrupy.",
+        "Spoon the yogurt into a bowl, top with the berries and oats, then drizzle with the warmed peanut butter and dust with cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "budget-global-warm-cinnamon-milk",
+      "name": "Warm cinnamon milk",
+      "about": "A mug of warm milk with a shake of cinnamon. It is soothing and gives **calcium, protein and B12** with almost no effort.",
+      "ingredients": [
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 250,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Heat the milk in a small pot or the microwave until steaming, not boiling. Stir in the cinnamon and pour into a mug."
+      ],
+      "prepMin": 1,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "budget-global-peanut-butter-banana-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "budget-global-egg-fried-rice-peas"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "budget-global-smoky-pinto-bean-chili-baked-potato"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-global-peanut-butter-banana-toast"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-global-berry-yogurt-cup"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "budget-global-berry-yogurt-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "budget-global-smoky-pinto-bean-chili-baked-potato",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "budget-global-chicken-thigh-potato-carrot-traybake"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-global-yogurt-deviled-eggs"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-global-spiced-roasted-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "budget-global-spinach-onion-scramble-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "budget-global-chicken-thigh-potato-carrot-traybake",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "budget-global-salmon-patties-cabbage-slaw"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-global-peanut-butter-oat-bites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-global-cinnamon-peanut-yogurt"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "budget-global-peanut-butter-banana-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "budget-global-salmon-patties-cabbage-slaw",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "budget-global-red-lentil-dal-spinach-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-global-spiced-roasted-chickpeas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-global-carrot-sticks-garlic-yogurt-dip"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "budget-global-spinach-onion-scramble-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "budget-global-red-lentil-dal-spinach-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "budget-global-sardine-broccoli-pasta-toasted-crumbs"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-global-yogurt-toasted-oat-berry-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-global-peanut-butter-oat-bites"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "budget-global-berry-yogurt-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "budget-global-sardine-broccoli-pasta-toasted-crumbs",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "budget-global-mustard-chicken-potato-cabbage-skillet"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-global-yogurt-deviled-eggs"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-global-cinnamon-peanut-yogurt"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "budget-global-spinach-onion-scramble-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "budget-global-mustard-chicken-potato-cabbage-skillet",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "budget-global-smoky-pinto-bean-chili-baked-potato",
+          "leftover": true
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-global-berry-yogurt-cup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-global-warm-cinnamon-milk"
+        }
+      ]
+    }
+  ]
+}
