@@ -307,7 +307,7 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
     label: 'Menopause',
     blurb: 'Graded for women over 50: more calcium, and protein at every meal.',
     gates: { femalePanelAge: 55, proteinPerMainMealG: 25 },
-    note: 'Built for women over 50: more calcium, protein at every meal and soy foods as food. Vitamin D is hard to get from food, and Health Canada advises adults over 50 to take 400 IU a day. If you take a calcium supplement, count the food first: food and pills together should stay under 2,000 mg a day, so ask your pharmacist how much you still need, and when to take thyroid or bone medicines apart from calcium-rich food. It doesn\'t replace your care provider\'s advice on symptoms or bone health.',
+    note: 'Built for women over 50: more calcium, protein at every meal and soy foods as food. Vitamin D is hard to get from food, and Health Canada advises adults over 50 to take 400 IU a day. If you take a calcium supplement, count the food first: food and pills together should stay under 2,000 mg a day, so ask your pharmacist how much you still need, and when to take thyroid or bone medicines apart from calcium-rich food. If you take warfarin, keep leafy greens and other vitamin K foods steady from week to week. It doesn\'t replace your care provider\'s advice on symptoms or bone health.',
   },
   'healthy-aging': {
     label: 'Healthy aging',

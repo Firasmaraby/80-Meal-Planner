@@ -1,0 +1,1618 @@
+{
+  "id": "menopause-med",
+  "name": "Menopause Mediterranean",
+  "style": "menopause",
+  "cuisine": "Mediterranean",
+  "regions": [
+    "Greece",
+    "Italy",
+    "Spain"
+  ],
+  "summary": "A week of Greek, Italian and Spanish home cooking built for women over 50: calcium from yogurt, sardines and salmon with the bones, white beans, greens and tofu, and 25 g or more of protein at every meal.",
+  "howItWorks": "**Calcium all day.** Greek yogurt starts three mornings, and sardines and canned salmon (soft bones and all), white beans, kale, calcium-set tofu and fortified soy drink add more through the day. Food alone brings about **1,000 to 1,850 mg** a day here, so read the note before adding a calcium pill.\n\n**Protein at every meal.** Eggs, yogurt, fish, chicken, turkey, beans and tofu give breakfast, lunch and dinner a solid protein portion, which helps look after muscle. Monday's soup and the Tuesday, Thursday and Saturday dinners each make an extra portion for the next day's lunch.\n\n**Fish and vitamin D.** Salmon, sardines, mackerel and trout appear on most days, always made the day you eat them and never saved as a leftover, and bring omega-3 and a little vitamin D. Vitamin D is hard to get from food, so see the note about the daily supplement.\n\n**Fibre and a heart-friendly plate.** Beans, lentils, chickpeas, whole grains, vegetables and fruit bring the fibre, and olive oil is the main fat. Lemon, herbs and garlic season the food, so salt can stay low. Rinse all fresh produce, even what you peel.\n\n**Coffee, and Light size.** There is one coffee on two days (decaf works the same) and no alcohol anywhere. At Light size the second snack drops away, the olive oil is trimmed and a few plates, like the garlic chicken, get smaller, while every main meal keeps a solid protein portion.",
+  "signature": [
+    "menopause-med-salmon-keftedes-tzatziki",
+    "menopause-med-pasta-con-sarde-lemon-fennel",
+    "menopause-med-spanakopita-tofu-bake",
+    "menopause-med-tuscan-bean-kale-soup"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2000,
+      "covers": [
+        "1800-2000",
+        "2000-2200"
+      ]
+    },
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "menopause-med-yogurt-almond-fig-bowl",
+      "name": "Greek yogurt with almonds, walnuts and figs",
+      "inspiredBy": "Greek breakfast yogurt with honey and nuts",
+      "about": "Thick Greek yogurt with chopped dried figs, toasted almonds, walnuts and oats, and a drizzle of honey. It is creamy with a good crunch, and the **yogurt and almonds bring calcium** and plenty of protein to start the day.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 220,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "unsalted, roughly chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "note": "unsalted, roughly chopped"
+        },
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 30,
+          "note": "stems removed, chopped"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the oats, almonds and walnuts together in a dry pan over medium heat, stirring, until they smell nutty and the oats turn pale gold, about 3 minutes. Tip them onto a plate to cool.",
+        "Spoon the yogurt into a bowl and scatter the chopped figs over it.",
+        "Top with the toasted oats and nuts, drizzle with honey and dust with cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Toast a few days of oats and almonds at once and keep them in a jar."
+    },
+    {
+      "id": "menopause-med-flamenca-eggs-white-beans",
+      "name": "Baked eggs with white beans, tomato and spinach",
+      "inspiredBy": "Spanish huevos a la flamenca",
+      "about": "Eggs set in a bubbling tomato, pepper and white bean sauce with a little spinach, finished with smoked paprika and parsley, with toast for the sauce. The **eggs and beans together bring plenty of protein**, and the tomato and pepper add vitamin C.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 195,
+          "swap": "legumes"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 120,
+          "note": "crushed by hand with its juice"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and herbs under running water.",
+        "Warm the olive oil in a small skillet over medium heat. Cook the onion and pepper until soft, about 6 minutes, adding the garlic for the last minute.",
+        "Stir in the paprika, then the tomato and the beans. Simmer until thick, about 6 minutes.",
+        "Fold in the spinach until it wilts. Make two wells and crack in the eggs. Season with a pinch of iodized salt.",
+        "Cover and cook gently for 6 to 8 minutes, until the whites are firm and the yolks are set, not runny.",
+        "Scatter with parsley and serve with the toast."
+      ],
+      "prepMin": 8,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook the sauce the night before and just add the eggs in the morning."
+    },
+    {
+      "id": "menopause-med-sardine-tomato-tostada",
+      "name": "Tomato tostada with sardines and lemon",
+      "inspiredBy": "Spanish pan con tomate with sardines",
+      "about": "Crisp toast rubbed with garlic and ripe tomato, piled with canned sardines, red onion, parsley and lemon. Eating the soft sardine bones gives you **calcium and vitamin D** in one quick breakfast.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 90,
+          "swap": "fatty_fish",
+          "note": "with bones, drained"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "halved"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "peeled"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and herbs under running water.",
+        "Toast the bread until crisp. Rub one side with the garlic clove while it is hot.",
+        "Rub the cut side of the tomato over the toast, squeezing so the pulp soaks in, and discard the skin.",
+        "Break the sardines into big pieces and lay them on the toast with the onion.",
+        "Drizzle with olive oil and lemon, scatter with parsley and pepper."
+      ],
+      "prepMin": 6,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Rinse the onion slices under cold water for a milder bite."
+    },
+    {
+      "id": "menopause-med-tuscan-beans-greens-toast",
+      "name": "Tuscan white beans and garlicky greens on toast",
+      "inspiredBy": "Tuscan fettunta with cannellini and cavolo nero",
+      "about": "Soft white beans and kale cooked in garlic and rosemary, spooned over thick toast with fried eggs, a little Parmesan and lemon. A slower Sunday breakfast where **white beans and greens carry calcium and fibre**.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 210,
+          "swap": "legumes"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "stems removed, chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "a thick slice, toasted"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "fried until the whites and yolks are set"
+        },
+        {
+          "food": "parmesan-cheese-hard-78ce3e",
+          "g": 8,
+          "note": "finely grated"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.5
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and herbs under running water.",
+        "Warm the oil with the garlic, rosemary and chili flakes over medium heat until the garlic smells sweet, about 1 minute.",
+        "Add the kale with a splash of water and cook, covered, until tender, about 5 minutes.",
+        "Add the beans and crush a few against the pan. Heat through for 3 minutes. Add a pinch of iodized salt.",
+        "Fry the eggs in a nonstick pan with a few drops of oil, covered, until the whites and yolks are set, about 3 minutes.",
+        "Pile the beans onto the toast, top with the eggs, then add the lemon and Parmesan."
+      ],
+      "prepMin": 5,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "weekend-project"
+      ],
+      "tip": "Swap the kale for chard or spinach."
+    },
+    {
+      "id": "menopause-med-tuscan-bean-kale-soup",
+      "name": "Tuscan white bean and kale soup with Parmesan toast",
+      "inspiredBy": "Tuscan ribollita",
+      "about": "A thick, soft soup of white beans, kale and tomato with rosemary, ladled over a slice of toast with Parmesan. **White beans, kale and Parmesan all bring calcium**, and the beans give plenty of protein. Made for two, so tomorrow's lunch is done.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 200,
+          "swap": "legumes"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 85,
+          "swap": "leafy_greens",
+          "note": "stems removed, chopped"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 80,
+          "note": "crushed"
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 200
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "parmesan-cheese-hard-78ce3e",
+          "g": 5,
+          "note": "finely grated"
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and herbs under running water.",
+        "Warm the olive oil in a large pot over medium heat. Cook the onion until soft, about 8 minutes, adding the garlic and rosemary for the last minute.",
+        "Add the tomato, broth, beans and enough water to cover the beans by a finger. Simmer for 15 minutes. Season with iodized salt.",
+        "Stir in the kale and simmer until tender, about 8 minutes. Crush some beans against the pot to thicken the soup.",
+        "Put the toast in a bowl, ladle the soup over it and top with Parmesan.",
+        "Cool the second portion within 2 hours in a shallow container, refrigerate it and eat it tomorrow, or freeze it (thaw it in the fridge and eat it within 2 days). Reheat until steaming hot all through, 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Make it the evening before. 50 minutes is a lot at lunch. A pinch of chili and a squeeze of lemon wake it up when reheated."
+    },
+    {
+      "id": "menopause-med-pollo-ajillo-chickpeas-kale",
+      "name": "Garlic chicken with chickpeas and kale",
+      "inspiredBy": "Spanish pollo al ajillo, without the wine",
+      "about": "Chicken thighs browned with plenty of garlic and smoked paprika, then simmered in lemon and broth with potatoes, chickpeas and kale. It is a one-pot supper with **iron from the chickpeas and kale**, and the lemon helps you absorb it.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "trimmed of fat, cut into large pieces"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "stems removed, torn"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 100,
+          "note": "cut in chunks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "sliced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "chopped"
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 150
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 2
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and herbs under running water. Use a separate board for the raw chicken, and wash your hands, the board and the knife in hot soapy water before moving on to the vegetables.",
+        "Warm the oil in a wide pot over medium-high heat and brown the chicken on both sides, about 6 minutes. Move it to a plate.",
+        "Lower the heat. Cook the onion and garlic until soft and just golden, about 5 minutes. Stir in the paprika. Season with iodized salt.",
+        "Add the potato, broth and a splash of water. Return the chicken, cover and simmer for 15 minutes.",
+        "Add the chickpeas and kale. Simmer until the kale is tender, about 8 minutes.",
+        "Check that the chicken is cooked through with no pink, 74 °C (165 °F). Finish with lemon and parsley.",
+        "Cool the second portion within 2 hours in a shallow container, refrigerate it and eat it tomorrow, or freeze it (thaw it in the fridge and eat it within 2 days). Reheat until steaming hot all through, 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Brown the chicken without moving it so the crust builds."
+    },
+    {
+      "id": "menopause-med-salmon-keftedes-tzatziki",
+      "name": "Salmon keftedes with tzatziki and a lemony tomato and spinach salad",
+      "inspiredBy": "Greek keftedes, made with canned salmon",
+      "about": "Crisp-edged patties of canned salmon, oats, dill and lemon, with a cool tzatziki and a fresh tomato and spinach salad. Canned salmon is mashed with its soft bones, so you get **calcium and vitamin D** as well as omega-3.",
+      "ingredients": [
+        {
+          "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+          "g": 120,
+          "swap": "fatty_fish",
+          "note": "with bones, drained"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 15,
+          "swap": "low_gi_grains",
+          "note": "quick or rolled"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "note": "scrubbed, then zested before juicing"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 55,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "grated and squeezed dry"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "note": "washed baby spinach"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 35,
+          "note": "warmed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and herbs under running water.",
+        "Mash the salmon with its bones in a bowl. Mix in the egg, oats, onion, half the dill, the lemon zest, half the lemon juice and a pinch of iodized salt. Shape into patties and rest 5 minutes.",
+        "Stir the yogurt with the cucumber, garlic, remaining dill and a little lemon juice for the tzatziki.",
+        "Warm the oil in a nonstick pan over medium heat. Fry the patties until golden and hot through to 74 °C (165 °F), because of the raw egg, about 4 minutes a side.",
+        "Toss the spinach and tomatoes with the last of the lemon juice. Serve the patties with the salad, tzatziki and warm pita."
+      ],
+      "prepMin": 15,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Chill the patties for 20 minutes first if you want them to hold their shape better."
+    },
+    {
+      "id": "menopause-med-pasta-con-sarde-lemon-fennel",
+      "name": "Whole-wheat pasta with sardines, fennel and lemon",
+      "inspiredBy": "Sicilian pasta con le sarde",
+      "about": "Whole-wheat spaghetti with canned sardines, softened fennel, dried fig and toasted almonds, with a handful of spinach and crisp breadcrumbs. It follows the Sicilian classic, with figs in place of raisins, and the **sardine bones bring calcium and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 60,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 90,
+          "swap": "fatty_fish",
+          "note": "with bones, drained"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 100,
+          "note": "thinly sliced, fronds saved"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "sliced"
+        },
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 15,
+          "note": "torn into crumbs"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and herbs under running water.",
+        "Toast the breadcrumbs and almonds in a dry pan until golden, 2 to 3 minutes. Set aside.",
+        "Warm the oil and soften the fennel and onion over medium heat until sweet and golden, about 10 minutes. Add the garlic, fig and chili flakes for 1 minute.",
+        "Cook the pasta in plenty of boiling water with the pinch of iodized salt until al dente. Save a mug of cooking water and drain.",
+        "Add the sardines to the pan, breaking them up, with the pasta, spinach and a splash of cooking water. Toss until the spinach wilts and the sardines are hot.",
+        "Finish with lemon, parsley and fennel fronds, and scatter the crumbs and almonds over."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Season at the table with a little black pepper rather than salt, because sardines are already savoury."
+    },
+    {
+      "id": "menopause-med-mackerel-lentil-salad-sherry",
+      "name": "Spanish lentil and mackerel salad with sherry vinegar",
+      "inspiredBy": "Spanish ensalada de lentejas con caballa",
+      "about": "Tender lentils tossed with canned mackerel, sweet peppers, onion, tomatoes and parsley in a sherry vinegar dressing, with toast on the side. The **lentils bring iron and fibre** and the mackerel brings protein and omega-3, and the lentils taste even better after an hour in the fridge.",
+      "ingredients": [
+        {
+          "food": "lentils-canned-no-salt-added-drained-c1edbd",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "mackerel-canned-in-water-a99e2d",
+          "g": 80,
+          "swap": "fatty_fish",
+          "note": "Atlantic or chub, with soft bones (not king mackerel, which is high in mercury)"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "finely diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "sherry-vinegar-af00be",
+          "g": 12
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "note": "baby spinach"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and herbs under running water.",
+        "Whisk the sherry vinegar, olive oil and pepper in a bowl. Add a pinch of iodized salt.",
+        "Add the lentils, pepper, onion and tomatoes and toss. Let it sit for 10 minutes so the onion mellows.",
+        "Fold in the mackerel and parsley gently so the pieces stay whole.",
+        "Pile onto the spinach and serve with the toast."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Mix the lentil salad the night before and fold in the mackerel in the morning. Pack it with an ice pack, or keep it in a fridge at work, and don't leave it out of the cold for more than 2 hours."
+    },
+    {
+      "id": "menopause-med-albondigas-turkey-chickpeas-spinach",
+      "name": "Turkey albondigas in tomato sauce with chickpeas and spinach",
+      "inspiredBy": "Spanish albondigas en salsa",
+      "about": "Turkey meatballs with garlic, parsley and cumin, simmered in a smoky tomato sauce with chickpeas and wilted spinach. Very **high in protein, with iron and folate** from the chickpeas and spinach. Makes two portions.",
+      "ingredients": [
+        {
+          "food": "ground-turkey-fat-free-raw-604508",
+          "g": 150,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 15,
+          "swap": "low_gi_grains",
+          "note": "quick or rolled"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 25,
+          "note": "beaten"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 2
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 150,
+          "note": "crushed with its juice"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 80,
+          "swap": "legumes"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and herbs under running water. Use a separate board for the raw turkey, and wash your hands, the board and the knife in hot soapy water before moving on to the vegetables.",
+        "Soak the oats in 2 tablespoons of water for 5 minutes first. Mix the turkey, soaked oats, egg, half the onion, half the garlic, the parsley, the cumin and a little iodized salt. Shape into small meatballs.",
+        "Warm the oil in a wide pan over medium heat and brown the meatballs all over, about 6 minutes. Move them to a plate.",
+        "In the same pan soften the rest of the onion and garlic, then stir in the paprika and tomato. Simmer for 8 minutes.",
+        "Return the meatballs with the chickpeas and a splash of water. Cover and simmer gently, never boiling hard, for 15 minutes, until no pink remains and they reach 74 °C (165 °F) in the centre.",
+        "Stir in the spinach until wilted.",
+        "Cool the second portion within 2 hours in a shallow container, refrigerate it and eat it tomorrow, or freeze it (thaw it in the fridge and eat it within 2 days). Reheat until steaming hot all through, 74 °C (165 °F)."
+      ],
+      "prepMin": 20,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Finish with a squeeze of lemon."
+    },
+    {
+      "id": "menopause-med-shrimp-saganaki-pita",
+      "name": "Shrimp saganaki with tomato, feta and warm pita",
+      "inspiredBy": "Greek garides saganaki, without the ouzo",
+      "about": "Shrimp simmered in a rich tomato and garlic sauce with a little oregano and chili, finished with crumbled feta and lemon, with warm pita for scooping. A fast supper where the shrimp bring **lean protein and iodine**.",
+      "ingredients": [
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 180,
+          "swap": "lean_protein",
+          "note": "peeled, deveined"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 150,
+          "note": "crushed"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 25,
+          "note": "crumbled"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "warmed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and herbs under running water. Use a separate board for the raw shrimp, and wash your hands, the board and the knife in hot soapy water before moving on to the vegetables.",
+        "Warm the oil and soften the onion for 5 minutes. Add the garlic, oregano and chili for 1 minute.",
+        "Add the tomato and simmer until it thickens, about 8 minutes.",
+        "Add the shrimp and cook until pink and opaque all the way through, 3 to 4 minutes. Season with a pinch of iodized salt.",
+        "Take off the heat, sprinkle with feta, parsley and lemon, and serve with the warm pita for scooping."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Using frozen shrimp? Thaw them in the fridge overnight and cook them within 2 days. Heat the feta in the sauce for a minute if you like it creamy."
+    },
+    {
+      "id": "menopause-med-trout-pita-tzatziki",
+      "name": "Lemon-oregano trout pita with tzatziki and tomato",
+      "inspiredBy": "Greek grilled fish, souvlaki style",
+      "about": "Trout fillet marinated in lemon, oregano and garlic, grilled until it flakes and tucked into a warm whole-wheat pita with tzatziki, tomato and onion. **Trout brings omega-3 and vitamin D**, and the yogurt sauce adds calcium.",
+      "ingredients": [
+        {
+          "food": "rainbow-trout-farmed-raw-0cc800",
+          "g": 170,
+          "swap": "fatty_fish",
+          "note": "skinless fillet, cut in large pieces"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 70,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "grated"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1.5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "warmed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "half diced, half grated for the sauce"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 3,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and herbs under running water. Use a separate board for the raw trout, and wash your hands, the board and the knife in hot soapy water before moving on to the vegetables.",
+        "Toss the trout with the lemon juice, half the garlic, the oregano, the oil and a pinch of iodized salt. Marinate in the fridge for 15 minutes.",
+        "Stir the yogurt with the grated cucumber, remaining garlic and dill for the tzatziki.",
+        "Cook the trout in a hot nonstick pan or under the broiler, about 4 minutes a side, until it flakes easily and is opaque, 70 °C (158 °F).",
+        "Fill the warm pita with the trout, tomato, diced cucumber and onion, and top with tzatziki."
+      ],
+      "prepMin": 20,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Salmon works the same way if trout is hard to find."
+    },
+    {
+      "id": "menopause-med-spanakopita-tofu-bake",
+      "name": "Crustless spinach, tofu and feta bake",
+      "inspiredBy": "Greek spanakopita, with calcium-set tofu",
+      "about": "A golden spinach pie in the spirit of spanakopita, with onion, dill, a little feta and crumbled tofu set with calcium, and a crunchy breadcrumb top instead of pastry. Each portion brings **plenty of calcium** with more than 25 g of protein. Cook once, eat twice.",
+      "ingredients": [
+        {
+          "food": "spinach-raw-17845b",
+          "g": 180,
+          "swap": "leafy_greens",
+          "note": "washed, roughly chopped"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "set with calcium sulfate (check the label), crumbled"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 15,
+          "note": "crumbled"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "mushroom-white-exposed-to-ultraviolet-light-raw-0cd6fe",
+          "g": 60,
+          "note": "sliced; labelled high in vitamin D (UV-exposed), ordinary mushrooms work but give less vitamin D"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 20,
+          "note": "torn into crumbs"
+        },
+        {
+          "food": "nutmeg-ground-15c547",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and herbs under running water.",
+        "Heat the oven to 190 °C (375 °F). Oil a small baking dish.",
+        "Warm half the oil and cook the onion and mushrooms until soft, about 8 minutes. Add the spinach in handfuls until wilted, 3 minutes. Tip into a colander and press out the liquid.",
+        "Mix the spinach with the tofu, feta, egg, dill, parsley, lemon, nutmeg and a pinch of iodized salt. Spread in the dish.",
+        "Toss the crumbs with the remaining oil and scatter over the top.",
+        "Bake 35 to 40 minutes until golden and set in the centre, 74 °C (165 °F).",
+        "Cool the second portion within 2 hours in a shallow container, refrigerate it and eat it tomorrow, or freeze it (thaw it in the fridge and eat it within 2 days). Reheat until steaming hot all through, 74 °C (165 °F)."
+      ],
+      "prepMin": 20,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "A salad of tomato and cucumber with lemon is all it needs."
+    },
+    {
+      "id": "menopause-med-salmon-lemon-potatoes-green-beans",
+      "name": "Lemon salmon with oregano potatoes and green beans",
+      "inspiredBy": "Greek psari lemonato with patates lemonates",
+      "about": "Salmon fillet baked on lemony oregano potatoes with tender green beans. It is a Sunday dinner with **omega-3 and vitamin D from the salmon**, and the potatoes soak up all the juices.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 160,
+          "swap": "fatty_fish",
+          "note": "skinless fillet"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 220,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 100,
+          "note": "trimmed"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and herbs under running water. Use a separate board for the raw salmon, and wash your hands, the board and the knife in hot soapy water before moving on to the vegetables.",
+        "Heat the oven to 220 °C (425 °F). Toss the potatoes with half the oil, half the lemon juice, the garlic, oregano, pepper and a pinch of iodized salt, and add a splash of water. Roast for 25 minutes.",
+        "Add the green beans to the tray and roast for 10 more minutes.",
+        "Rub the salmon with the remaining oil and lemon. Nestle it on the tray and bake for about 10 minutes, until it flakes easily and is opaque, 70 °C (158 °F).",
+        "Scatter with parsley and serve from the tray."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "A squeeze of fresh lemon at the table finishes it."
+    },
+    {
+      "id": "menopause-med-soy-cafe-con-leche-orange",
+      "name": "Soy café con leche with an orange and almonds",
+      "inspiredBy": "Spanish café con leche",
+      "about": "Strong coffee with warm fortified soy drink, with a juicy orange and a few almonds on the side. The **fortified soy drink brings calcium and vitamin D**. This is the day's one cup of coffee.",
+      "ingredients": [
+        {
+          "food": "coffee-brewed-prepared-with-tap-water-601e58",
+          "g": 120,
+          "note": "brewed strong"
+        },
+        {
+          "food": "soy-milk-all-flavors-enhanced-f9fdd1",
+          "g": 120,
+          "swap": "dairy_protein",
+          "note": "fortified, warmed"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 130,
+          "swap": "vit_c_fruit",
+          "note": "peeled and segmented"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "note": "unsalted"
+        }
+      ],
+      "steps": [
+        "Brew the coffee strong, and rinse the orange before peeling it.",
+        "Warm the soy drink gently in a small pot or microwave until steaming, and whisk until foamy.",
+        "Pour the coffee into a mug, add the soy drink and serve with the orange and almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Use decaf and the plan stays the same."
+    },
+    {
+      "id": "menopause-med-hummus-crudites",
+      "name": "Hummus with pepper and cucumber sticks",
+      "inspiredBy": "Greek-Levantine hummus",
+      "about": "Creamy hummus blended with tahini, lemon and garlic, with crunchy vegetables for dipping. The **chickpeas and tahini bring fibre and protein**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 20
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 80,
+          "note": "cut in strips"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and herbs under running water.",
+        "Blend the chickpeas with the tahini, lemon, garlic, a spoonful of water and half the oil until smooth. Add water if it is too thick. Add a pinch of iodized salt.",
+        "Spoon into a bowl, drizzle with the rest of the oil and dust with paprika.",
+        "Serve with the vegetables."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Make a bigger batch and keep it in the fridge up to 3 days."
+    },
+    {
+      "id": "menopause-med-white-bean-rosemary-crostini",
+      "name": "White bean and rosemary crostini",
+      "inspiredBy": "Tuscan crostini di fagioli",
+      "about": "Whole-wheat toast with a smashed white bean spread scented with garlic, rosemary and lemon. **White beans bring fibre and protein**.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 80,
+          "swap": "legumes"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        }
+      ],
+      "steps": [
+        "Toast the bread until crisp.",
+        "Mash the beans with the garlic, rosemary, lemon and oil, adding water for a spreadable texture.",
+        "Spread the mash on the toast."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "menopause-med-egg-tomato-oregano-plate",
+      "name": "Egg, tomato and oregano plate",
+      "inspiredBy": "Spanish huevo duro with tomato",
+      "about": "Hard-boiled eggs with sweet tomato wedges, lemon and oregano. An easy savoury snack with **protein and choline**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "hard-boiled in the shell"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Boil the eggs in the shell for 10 minutes, until the yolks are fully set. Cool in cold water and peel.",
+        "Rinse the tomato, cut it in wedges and arrange it on a plate with the eggs.",
+        "Drizzle with olive oil and lemon and sprinkle with oregano."
+      ],
+      "prepMin": 3,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Boil several eggs at once and keep them in the fridge in the shell for up to 1 week."
+    },
+    {
+      "id": "menopause-med-yogurt-walnut-honey",
+      "name": "Greek yogurt with walnuts and honey",
+      "inspiredBy": "Greek yogurt with honey and walnuts, the classic",
+      "about": "Thick yogurt with crunchy toasted walnuts, a drizzle of honey and a pinch of cinnamon. A classic Greek sweet with **yogurt calcium and walnut omega-3**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "note": "unsalted, toasted and chopped"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan for 2 to 3 minutes, until they smell nutty.",
+        "Spoon the yogurt into a bowl and top with the walnuts.",
+        "Drizzle with honey and dust with cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "menopause-med-warm-cinnamon-soy-figs",
+      "name": "Warm cinnamon soy drink with figs",
+      "inspiredBy": "Greek warm milk with honey",
+      "about": "A cosy bedtime mug in the spirit of Greek warm milk with honey: fortified soy drink with cinnamon, chopped dried figs and a few walnuts. The **soy drink brings calcium and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "soy-milk-all-flavors-enhanced-f9fdd1",
+          "g": 200,
+          "swap": "dairy_protein",
+          "note": "fortified"
+        },
+        {
+          "food": "fig-dried-b8d8fe",
+          "g": 30,
+          "note": "chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8,
+          "note": "unsalted, chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Warm the soy drink with the cinnamon until steaming; do not boil.",
+        "Whisk to a froth and pour into a mug.",
+        "Stir in the chopped figs and scatter the walnuts on top."
+      ],
+      "prepMin": 2,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "menopause-med-yogurt-almond-fig-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "menopause-med-tuscan-bean-kale-soup"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "menopause-med-salmon-keftedes-tzatziki"
+        },
+        {
+          "slot": "snack",
+          "recipe": "menopause-med-soy-cafe-con-leche-orange"
+        },
+        {
+          "slot": "snack",
+          "recipe": "menopause-med-white-bean-rosemary-crostini"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "menopause-med-flamenca-eggs-white-beans"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "menopause-med-tuscan-bean-kale-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "menopause-med-pollo-ajillo-chickpeas-kale"
+        },
+        {
+          "slot": "snack",
+          "recipe": "menopause-med-yogurt-walnut-honey"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "menopause-med-yogurt-almond-fig-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "menopause-med-pollo-ajillo-chickpeas-kale",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "menopause-med-pasta-con-sarde-lemon-fennel"
+        },
+        {
+          "slot": "snack",
+          "recipe": "menopause-med-egg-tomato-oregano-plate"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "menopause-med-flamenca-eggs-white-beans"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "menopause-med-mackerel-lentil-salad-sherry"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "menopause-med-albondigas-turkey-chickpeas-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "menopause-med-soy-cafe-con-leche-orange"
+        },
+        {
+          "slot": "snack",
+          "recipe": "menopause-med-yogurt-walnut-honey"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "menopause-med-sardine-tomato-tostada"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "menopause-med-albondigas-turkey-chickpeas-spinach",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "menopause-med-shrimp-saganaki-pita"
+        },
+        {
+          "slot": "snack",
+          "recipe": "menopause-med-warm-cinnamon-soy-figs"
+        },
+        {
+          "slot": "snack",
+          "recipe": "menopause-med-hummus-crudites"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "menopause-med-yogurt-almond-fig-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "menopause-med-trout-pita-tzatziki"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "menopause-med-spanakopita-tofu-bake"
+        },
+        {
+          "slot": "snack",
+          "recipe": "menopause-med-egg-tomato-oregano-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "menopause-med-hummus-crudites"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "menopause-med-tuscan-beans-greens-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "menopause-med-spanakopita-tofu-bake",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "menopause-med-salmon-lemon-potatoes-green-beans"
+        },
+        {
+          "slot": "snack",
+          "recipe": "menopause-med-warm-cinnamon-soy-figs"
+        }
+      ]
+    }
+  ]
+}
