@@ -1,14 +1,16 @@
-import { useEffect, useMemo, useState } from 'react';
-import { Pressable, TextInput, View } from 'react-native';
+import { useMemo, useState } from 'react';
+import { Pressable, View } from 'react-native';
 
+import { KCAL_BUCKETS, kcalBucketOf, type KcalBucket } from '@/engine/browse';
 import { rowMinutes } from '@/engine/families';
 import { COMPLETE_AT, NUTRIENTS } from '@/engine/nutrients';
 import { PLAN_STYLES } from '@/engine/planStyles';
 import { carbStyleFits } from '@/engine/carbStyle';
-import type { CarbStyle, MealSlot, NutrientKey, PlanStyle } from '@/engine/types';
+import { TextIndex, nutrientAmount, parseNutrientQuery, type NutrientQuery } from '@/engine/textSearch';
+import type { CarbStyle, MealSlot, NutrientKey, NutrientVector, PlanStyle } from '@/engine/types';
 import { food } from '@/state/catalog';
 import { useDay } from '@/state/day';
-import { useMealLibrary, type LibraryMeal } from '@/state/library';
+import { useMealLibrary, useSizedTotals, type LibraryMeal } from '@/state/library';
 import { today, useStore } from '@/state/store';
 import { CARB_NEEDS, CarbFilter } from '@/ui/carbParts';
 import {
@@ -16,6 +18,8 @@ import {
   DIET_OPTIONS,
   MacroLine,
   MealThumb,
+  NutrientLine,
+  SearchField,
   Segmented,
   SLOT_LABEL,
   SLOT_ORDER,
@@ -27,7 +31,7 @@ import {
 } from '@/ui/planParts';
 import { Button, Card, Chip, Icon, I, Row, Screen, Txt } from '@/ui/primitives';
 import { slotLabelOf } from '@/ui/recipeParts';
-import { radius, space, useTheme } from '@/ui/theme';
+import { space, useTheme } from '@/ui/theme';
 import { MicroChip } from '@/ui/viz';
 
 type Sort = 'today' | 'protein' | 'light';
@@ -38,6 +42,8 @@ const short = (k: NutrientKey) => NUTRIENTS[k].short;
 
 interface Ranked {
   lm: LibraryMeal;
+  /** the meal at the person's size */
+  totals: NutrientVector;
   /** open nutrients this meal would push past 80% if added on top of today's plan */
   closes: NutrientKey[];
   /** open nutrients it moves a good way toward 80% without finishing them */
@@ -61,10 +67,13 @@ export default function Meals() {
   const carbStyle: CarbStyle = profile.carbStyle ?? 'whole';
   const [sort, setSort] = useState<Sort>('today');
   const [saved, setSaved] = useState(false);
-  const [limit, setLimit] = useState(PAGE);
+  const [kcal, setKcal] = useState<KcalBucket | null>(null);
+  const sized = useSizedTotals(library);
 
   // a new search or filter starts back at the top of the list
-  useEffect(() => setLimit(PAGE), [query, slot, cuisine, style, diet, saved, sort, showMore, carbStyle]);
+  const filterKey = JSON.stringify([query, slot, cuisine, style, diet, saved, sort, showMore, carbStyle, kcal]);
+  const [paged, setPaged] = useState({ key: filterKey, limit: PAGE });
+  const limit = paged.key === filterKey ? paged.limit : PAGE;
 
   const cuisines = useMemo(() => [...new Set(library.map((m) => m.cuisine))].sort(), [library]);
   // only the styles the library really has, in the order the app lists them
@@ -90,48 +99,71 @@ export default function Meals() {
     [day.projectedProgress],
   );
 
-  const haystack = useMemo(
-    () => new Map(library.map((m) => [m.key, [m.meal.name, ...(m.meal.tags ?? []), ...m.meal.ingredients.map((i) => food(i.foodId)?.name ?? '')].join(' ').toLowerCase()])),
+  // forgiving search: names, plans, cuisines and every ingredient, plurals and typos included
+  const index = useMemo(
+    () =>
+      new TextIndex(
+        library.map((m) => ({
+          key: m.key,
+          fields: [
+            { text: m.meal.name, weight: 3 },
+            { text: [m.planName, m.cuisine, ...(m.meal.tags ?? []), ...m.tags].join(' '), weight: 1.5 },
+            { text: m.meal.ingredients.map((i) => { const f = food(i.foodId); return f ? `${f.name} ${f.head ?? ''}` : ''; }).join(' '), weight: 1 },
+          ],
+        })),
+      ),
     [library],
   );
+  // "high iron", "calcium": rank by that nutrient per serving
+  const nutrientQuery = useMemo(() => parseNutrientQuery(query), [query]);
+  const relevance = useMemo(() => index.search(nutrientQuery ? nutrientQuery.rest : query), [index, nutrientQuery, query]);
 
   const ranked = useMemo<Ranked[]>(
     () =>
       library.map((lm) => {
-        const hits = gaps.map((g) => ({ key: g.key, share: (lm.totals[g.key] ?? 0) / g.need }));
+        const totals = sized.get(lm.key) ?? lm.totals;
+        const hits = gaps.map((g) => ({ key: g.key, share: (totals[g.key] ?? 0) / g.need }));
         const closes = hits.filter((h) => h.share >= 1).sort((a, b) => b.share - a.share).map((h) => h.key);
         const moves = hits.filter((h) => h.share >= 0.3 && h.share < 1).sort((a, b) => b.share - a.share).map((h) => h.key);
-        return { lm, closes, moves, score: hits.reduce((s, h) => s + Math.min(1, h.share), 0) };
+        return { lm, totals, closes, moves, score: hits.reduce((s, h) => s + Math.min(1, h.share), 0) };
       }),
-    [library, gaps],
+    [library, gaps, sized],
   );
 
   // everything but the carb choice, so we can say how many it hides
-  const matching = useMemo(() => {
-    const tokens = query.toLowerCase().split(/\s+/).filter(Boolean);
-    return ranked
-      .filter((r) => slot === 'all' || r.lm.meal.slot === slot)
-      .filter((r) => !cuisine || r.lm.cuisine === cuisine)
-      .filter((r) => !style || r.lm.style === style)
-      .filter((r) => dietMatches(r.lm, diet))
-      .filter((r) => !saved || favoriteMeals.includes(r.lm.key))
-      .filter((r) => tokens.every((t) => haystack.get(r.lm.key)?.includes(t)));
-  }, [ranked, slot, cuisine, style, diet, saved, favoriteMeals, query, haystack]);
+  const matching = useMemo(
+    () =>
+      ranked
+        .filter((r) => slot === 'all' || r.lm.meal.slot === slot)
+        .filter((r) => !cuisine || r.lm.cuisine === cuisine)
+        .filter((r) => !style || r.lm.style === style)
+        .filter((r) => dietMatches(r.lm, diet))
+        .filter((r) => !saved || favoriteMeals.includes(r.lm.key))
+        .filter((r) => !kcal || kcalBucketOf(r.totals.kcal ?? 0) === kcal)
+        .filter((r) => !relevance || relevance.has(r.lm.key))
+        .filter((r) => !nutrientQuery || (nutrientAmount(r.totals, nutrientQuery.keys) ?? 0) > 0),
+    [ranked, slot, cuisine, style, diet, saved, favoriteMeals, kcal, relevance, nutrientQuery],
+  );
   const hiddenCount = useMemo(() => matching.filter((r) => over.has(r.lm.key)).length, [matching, over]);
 
   const shown = useMemo(() => {
     const list = matching.filter((r) => showMore || !over.has(r.lm.key));
-    const kcal = (r: Ranked) => r.lm.totals.kcal ?? 0;
+    const kcalOf = (r: Ranked) => r.totals.kcal ?? 0;
     const byName = (a: Ranked, b: Ranked) => a.lm.meal.name.localeCompare(b.lm.meal.name);
+    const amount = (r: Ranked) => (nutrientQuery ? (nutrientAmount(r.totals, nutrientQuery.keys) ?? 0) : 0);
+    const rel = (r: Ranked) => relevance?.get(r.lm.key) ?? 0;
     return list.sort((a, b) => {
-      if (sort === 'protein') return (b.lm.totals.protein ?? 0) - (a.lm.totals.protein ?? 0) || byName(a, b);
-      if (sort === 'light') return kcal(a) - kcal(b) || byName(a, b);
+      if (nutrientQuery) return amount(b) - amount(a) || byName(a, b);
+      if (sort === 'protein') return (b.totals.protein ?? 0) - (a.totals.protein ?? 0) || byName(a, b);
+      if (sort === 'light') return kcalOf(a) - kcalOf(b) || byName(a, b);
+      if (relevance) return rel(b) - rel(a) || b.score - a.score || byName(a, b);
       return b.score - a.score || b.closes.length - a.closes.length || byName(a, b);
     });
-  }, [matching, showMore, over, sort]);
+  }, [matching, showMore, over, sort, nutrientQuery, relevance]);
 
-  const filtered = slot !== 'all' || cuisine != null || style != null || diet.length > 0 || saved || query.trim().length > 0;
+  const filtered = slot !== 'all' || cuisine != null || style != null || diet.length > 0 || saved || kcal != null || query.trim().length > 0;
   const clear = () => {
+    setKcal(null);
     setSlot('all');
     setCuisine(null);
     setStyle(null);
@@ -154,12 +186,18 @@ export default function Meals() {
           </Txt>
         </View>
       }>
-      <SearchField value={query} onChange={setQuery} />
+      <SearchField value={query} onChange={setQuery} label="Search meals" placeholder="Salmon, lentils, high iron" />
 
       <ChipRow>
         <Chip label="All" active={slot === 'all'} onPress={() => setSlot('all')} />
         {SLOT_ORDER.map((s) => (
           <Chip key={s} label={SLOT_LABEL[s]} active={slot === s} onPress={() => setSlot(slot === s ? 'all' : s)} />
+        ))}
+      </ChipRow>
+      <ChipRow label="Calories at your size">
+        <Chip label="Any" accessibilityLabel="Any calories" active={kcal == null} onPress={() => setKcal(null)} />
+        {KCAL_BUCKETS.map((b) => (
+          <Chip key={b.key} label={b.label} accessibilityLabel={`${b.label} calories`} active={kcal === b.key} onPress={() => setKcal(kcal === b.key ? null : b.key)} />
         ))}
       </ChipRow>
       <ChipRow label="Cuisine">
@@ -224,11 +262,11 @@ export default function Meals() {
           </Card>
         ) : (
           visible.map((r) => (
-            <MealResult key={r.lm.key} r={r} showFit={sort === 'today'} saved={favoriteMeals.includes(r.lm.key)} beyond={overCarbs(r.lm)} />
+            <MealResult key={r.lm.key} r={r} showFit={sort === 'today' && !nutrientQuery} saved={favoriteMeals.includes(r.lm.key)} beyond={overCarbs(r.lm)} nutrientQuery={nutrientQuery} />
           ))
         )}
         {shown.length > visible.length && (
-          <Button kind="secondary" label={`Show ${Math.min(PAGE, shown.length - visible.length)} more`} onPress={() => setLimit((n) => n + PAGE)} />
+          <Button kind="secondary" label={`Show ${Math.min(PAGE, shown.length - visible.length)} more`} onPress={() => setPaged({ key: filterKey, limit: limit + PAGE })} />
         )}
         {filtered && shown.length > 0 && (
           <Pressable accessibilityRole="button" accessibilityLabel="Clear filters" onPress={clear} style={{ alignSelf: 'center', padding: space.sm }}>
@@ -242,48 +280,12 @@ export default function Meals() {
   );
 }
 
-function SearchField({ value, onChange }: { value: string; onChange: (v: string) => void }) {
-  const c = useTheme();
-  return (
-    <View
-      style={{
-        flexDirection: 'row',
-        alignItems: 'center',
-        gap: space.sm,
-        height: 48,
-        paddingHorizontal: space.md,
-        borderRadius: radius.pill,
-        backgroundColor: c.surface,
-        borderWidth: 1,
-        borderColor: c.line,
-      }}>
-      <Icon name={I.search} size={17} color={c.ink3} />
-      <TextInput
-        value={value}
-        onChangeText={onChange}
-        placeholder="Search meals or ingredients: salmon, lentils…"
-        placeholderTextColor={c.ink3}
-        accessibilityLabel="Search meals"
-        autoCapitalize="none"
-        autoCorrect={false}
-        returnKeyType="search"
-        style={{ flex: 1, height: 48, color: c.ink, fontSize: 16, outlineStyle: 'none' } as never}
-      />
-      {value.length > 0 && (
-        <Pressable accessibilityRole="button" accessibilityLabel="Clear search" hitSlop={10} onPress={() => onChange('')}>
-          <Icon name={I.close} size={14} color={c.ink3} />
-        </Pressable>
-      )}
-    </View>
-  );
-}
-
-function MealResult({ r, showFit, saved, beyond }: { r: Ranked; showFit: boolean; saved: boolean; beyond: boolean }) {
+function MealResult({ r, showFit, saved, beyond, nutrientQuery }: { r: Ranked; showFit: boolean; saved: boolean; beyond: boolean; nutrientQuery: NutrientQuery | null }) {
   const c = useTheme();
   const profile = useStore((s) => s.profile);
   const who = useWho(profile);
   const { lm } = r;
-  const top = useMemo(() => topMicros(lm.totals, who), [lm.totals, who]);
+  const top = useMemo(() => topMicros(r.totals, who), [r.totals, who]);
   const slotName = slotLabelOf(lm.meal.slot, lm.slotNames, SLOT_LABEL);
   const minutes = rowMinutes(lm.meal);
   const inPlans = lm.planCount > 1 ? ` · in ${lm.planCount} plans` : '';
@@ -306,7 +308,7 @@ function MealResult({ r, showFit, saved, beyond }: { r: Ranked; showFit: boolean
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${slotName}: ${lm.meal.name}, from ${lm.planName}${lm.planCount > 1 ? `, in ${lm.planCount} plans` : ''}. ${Math.round(lm.totals.kcal ?? 0)} kilocalories${beyond ? `. Beyond your carb choice: ${CARB_NEEDS[lm.carbStyle]}` : ''}${saved ? '. Saved' : ''}. Open meal`}
+      accessibilityLabel={`${slotName}: ${lm.meal.name}, from ${lm.planName}${lm.planCount > 1 ? `, in ${lm.planCount} plans` : ''}. ${Math.round(r.totals.kcal ?? 0)} kilocalories at your size${beyond ? `. Beyond your carb choice: ${CARB_NEEDS[lm.carbStyle]}` : ''}${saved ? '. Saved' : ''}. Open meal`}
       onPress={() => openLibraryMeal(lm.key)}
       style={({ pressed }) => ({ opacity: pressed ? 0.85 : 1, transform: [{ scale: pressed ? 0.99 : 1 }] })}>
       <Card>
@@ -328,7 +330,7 @@ function MealResult({ r, showFit, saved, beyond }: { r: Ranked; showFit: boolean
               {inPlans}
             </Txt>
             <View style={{ marginTop: 2 }}>
-              <MacroLine totals={lm.totals} />
+              <MacroLine totals={r.totals} />
             </View>
           </View>
         </Row>
@@ -337,6 +339,11 @@ function MealResult({ r, showFit, saved, beyond }: { r: Ranked; showFit: boolean
             <MicroChip key={t.key} k={t.key} pct={t.pct} />
           ))}
         </Row>
+        {nutrientQuery && (
+          <View style={{ marginTop: space.sm }}>
+            <NutrientLine query={nutrientQuery} totals={r.totals} who={who} />
+          </View>
+        )}
         {fit && <View style={{ marginTop: space.sm }}>{fit}</View>}
         {beyond && (
           <Row gap={4} style={{ marginTop: space.sm }}>

@@ -5,16 +5,18 @@
 import { Image } from 'expo-image';
 import { router } from 'expo-router';
 import { useMemo, type ReactNode } from 'react';
-import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { boardProgress, dayPlanTotal, sum, type NutrientProgress } from '@/engine/calc';
+import { requirement } from '@/engine/dri';
 import { BOARD_KEYS, NUTRIENTS } from '@/engine/nutrients';
+import { nutrientAmount, type NutrientQuery } from '@/engine/textSearch';
 import type { Meal, MealPlan, MealSlot, NutrientKey, NutrientVector, Profile } from '@/engine/types';
 import { FOOD_INDEX } from '@/state/catalog';
 
 import { MealArt } from './MealArt';
-import { Icon, Row, Txt, tap, type IconName } from './primitives';
+import { I, Icon, Row, Txt, tap, type IconName } from './primitives';
 import { groupColor, MAX_WIDTH, radius, space, useTheme } from './theme';
 
 // ── Diet filters ───────────────────────────────────────────────────────────
@@ -368,3 +370,61 @@ export function Segmented<T extends string>({
 
 /** Wide enough for the bottom bar, so scrolling content clears it. */
 export const BAR_CLEARANCE = 150;
+
+/** The rounded search box at the top of the Plans and Meals tabs. */
+export function SearchField({ value, onChange, placeholder, label }: { value: string; onChange: (v: string) => void; placeholder: string; label: string }) {
+  const c = useTheme();
+  return (
+    <View
+      style={{
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: space.sm,
+        height: 48,
+        paddingHorizontal: space.md,
+        borderRadius: radius.pill,
+        backgroundColor: c.surface,
+        borderWidth: 1,
+        borderColor: c.line,
+      }}>
+      <Icon name={I.search} size={17} color={c.ink3} />
+      <TextInput
+        value={value}
+        onChangeText={onChange}
+        placeholder={placeholder}
+        placeholderTextColor={c.ink3}
+        accessibilityLabel={label}
+        autoCapitalize="none"
+        autoCorrect={false}
+        returnKeyType="search"
+        style={{ flex: 1, height: 48, color: c.ink, fontSize: 16, outlineStyle: 'none' } as never}
+      />
+      {value.length > 0 && (
+        <Pressable accessibilityRole="button" accessibilityLabel="Clear search" hitSlop={10} onPress={() => onChange('')}>
+          <Icon name={I.close} size={14} color={c.ink3} />
+        </Pressable>
+      )}
+    </View>
+  );
+}
+
+const fmtAmount = (v: number) => (v >= 100 ? Math.round(v).toLocaleString() : v >= 10 ? String(Math.round(v)) : String(Math.round(v * 10) / 10));
+
+/** "Iron 6.1 mg, 34% of your day": the nutrient someone searched for, in a meal or a plan's average day. */
+export function NutrientLine({ query, totals, who, prefix }: { query: NutrientQuery; totals: NutrientVector; who: Who; prefix?: string }) {
+  const c = useTheme();
+  const amount = nutrientAmount(totals, query.keys);
+  if (amount == null) return null;
+  const key = query.keys[0];
+  const req = query.keys.length === 1 ? requirement(key, who) : undefined;
+  const pct = req && req.rda > 0 ? Math.round((amount / req.rda) * 100) : undefined;
+  const text = `${prefix ? `${prefix} ` : ''}${query.label} ${fmtAmount(amount)} ${NUTRIENTS[key].unit}${pct != null ? `, ${pct}% of your day` : ''}`;
+  return (
+    <View accessible accessibilityLabel={text} style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+      <Icon name={I.target} size={12} color={c.accent} />
+      <Txt v="caption" color={c.accent} style={{ fontWeight: '700', flexShrink: 1 }}>
+        {text}
+      </Txt>
+    </View>
+  );
+}

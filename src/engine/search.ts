@@ -43,7 +43,7 @@ function singular(t: string): string {
 }
 
 /** true if a and b differ by at most one edit (insert, delete, substitute or swap two neighbours) */
-function withinOneEdit(a: string, b: string): boolean {
+export function withinOneEdit(a: string, b: string): boolean {
   if (Math.abs(a.length - b.length) > 1) return false;
   let i = 0;
   let j = 0;
@@ -155,10 +155,12 @@ export class FoodSearch {
   }
 }
 
-const TYPO = 0.7;
-const TYPO_PREFIX = 0.55;
+/** scores tokenMatch gives a match that needed a typo */
+export const TYPO = 0.7;
+export const TYPO_PREFIX = 0.55;
 
-function tokenMatch(qt: string, cands: string[]): number {
+/** How well query token `qt` matches the best of `cands`: 1 exact, 0.85 / 0.6 prefix, TYPO or TYPO_PREFIX one edit away, 0 none. */
+export function tokenMatch(qt: string, cands: string[]): number {
   let best = 0;
   for (const c of cands) {
     if (c === qt) return 1;

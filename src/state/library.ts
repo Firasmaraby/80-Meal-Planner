@@ -7,13 +7,15 @@
  */
 import { useMemo } from 'react';
 
-import { ingredientsTotal } from '@/engine/calc';
-import { SIZE_ORDER, mealCarbStyle, planFamilyName } from '@/engine/families';
+import { calorieTarget, ingredientsTotal } from '@/engine/calc';
+import { SIZE_ORDER, mealCarbStyle, pickSize, planFamilyName, type PlanFamily } from '@/engine/families';
 import { splitSteps } from '@/lib/kitchen';
 import type { CalorieBand, CarbStyle, Meal, MealPlan, NutrientVector, PlanSize, PlanStyle } from '@/engine/types';
 
 import { FOOD_INDEX } from './catalog';
 import { useAllPlans } from './day';
+import { useFamilies } from './families';
+import { useStore } from './store';
 
 export interface LibraryMeal {
   key: string; // `${planId}~${mealId}`
@@ -38,6 +40,8 @@ export interface LibraryMeal {
   carbStyle: CarbStyle;
   /** true for meals from the built-in plan library, the only ones the carb choice hides */
   fromLibrary: boolean;
+  /** the plan family it came from (library plans only) */
+  familyId?: string;
 }
 
 export const libraryKey = (planId: string, mealId: string) => `${planId}~${mealId}`;
@@ -72,6 +76,7 @@ export function libraryMealFrom(plan: MealPlan, meal: Meal): LibraryMeal {
     size: plan.size,
     carbStyle: mealCarbStyle(meal, FOOD_INDEX),
     fromLibrary: !!plan.familyId,
+    familyId: plan.familyId,
   };
 }
 
@@ -117,6 +122,47 @@ export function buildLibrary(plans: MealPlan[]): LibraryMeal[] {
 export function useMealLibrary(): LibraryMeal[] {
   const plans = useAllPlans();
   return useMemo(() => buildLibrary(plans), [plans]);
+}
+
+/**
+ * Each library meal's totals at the person's size: the same recipe in the size of its family that fits their calorie
+ * target (pickSize), the size the Plans tab offers them. Meals from samples and uploads keep their own totals, so they
+ * are left out of the map.
+ */
+export function sizedTotalsFor(library: LibraryMeal[], families: PlanFamily[], target: number): Map<string, NutrientVector> {
+  const byId = new Map(families.map((f) => [f.id, f]));
+  const recipes = new Map<string, Map<string, Meal>>();
+  const out = new Map<string, NutrientVector>();
+  for (const lm of library) {
+    const rid = lm.meal.recipeId;
+    if (!lm.familyId || !rid) continue;
+    let idx = recipes.get(lm.familyId);
+    if (!idx) {
+      const fam = byId.get(lm.familyId);
+      if (!fam) continue;
+      idx = new Map();
+      // the cooked copy, not the leftover that reheats it
+      for (const d of [...pickSize(fam, target).plan.days].sort((a, b) => a.day - b.day)) {
+        for (const m of d.meals) {
+          if (!m.recipeId) continue;
+          const had = idx.get(m.recipeId);
+          if (!had || (had.leftover && !m.leftover)) idx.set(m.recipeId, m);
+        }
+      }
+      recipes.set(lm.familyId, idx);
+    }
+    const m = idx.get(rid);
+    if (m) out.set(lm.key, m === lm.meal ? lm.totals : ingredientsTotal(m.ingredients, FOOD_INDEX));
+  }
+  return out;
+}
+
+/** library key -> totals at the person's size; see sizedTotalsFor */
+export function useSizedTotals(library: LibraryMeal[]): Map<string, NutrientVector> {
+  const families = useFamilies();
+  const profile = useStore((s) => s.profile);
+  const target = useMemo(() => calorieTarget(profile), [profile]);
+  return useMemo(() => sizedTotalsFor(library, families, target), [library, families, target]);
 }
 
 export function useLibraryMeal(key?: string): LibraryMeal | undefined {

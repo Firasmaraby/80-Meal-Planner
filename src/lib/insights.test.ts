@@ -21,6 +21,7 @@ import {
   settleToday,
   supplementCautions,
   topFoodSources,
+  trendBuckets,
   weightSeries,
   type DayTotals,
 } from './insights';
@@ -281,5 +282,67 @@ describe('supplement and eating-out data', () => {
       expect(f.n.vitC ?? null).toBeNull();
       expect(f.n.iron ?? null).toBeNull();
     }
+  });
+});
+
+describe('trendBuckets', () => {
+  const ck = (date: string, energy: number, sleep: number, mood: number, weightKg?: number) => ({ date, energy, sleep, mood, digestion: 3, weightKg });
+
+  it('week gives 7 daily buckets ending at `end`, labelled by weekday', () => {
+    // 2026-02-10 is a Tuesday
+    const b = trendBuckets([], new Map(), '2026-02-10', 'week');
+    expect(b).toHaveLength(7);
+    expect(b.map((x) => x.label)).toEqual(['Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'Mon', 'Tue']);
+    expect(b[0]).toMatchObject({ start: '2026-02-04', end: '2026-02-04' });
+    expect(b[6]).toMatchObject({ start: '2026-02-10', end: '2026-02-10' });
+  });
+
+  it('month gives 30 daily buckets labelled by day of month', () => {
+    const b = trendBuckets([], new Map(), '2026-03-05', 'month');
+    expect(b).toHaveLength(30);
+    expect(b[29].label).toBe('5');
+    expect(b[0]).toMatchObject({ start: '2026-02-04', label: '4' });
+  });
+
+  it('year gives 12 month buckets, the last cut off at `end`, across a year boundary', () => {
+    const b = trendBuckets([], new Map(), '2026-02-10', 'year');
+    expect(b).toHaveLength(12);
+    expect(b[11]).toMatchObject({ start: '2026-02-01', end: '2026-02-10', label: 'Feb' });
+    expect(b[0]).toMatchObject({ start: '2025-03-01', end: '2025-03-31', label: 'Mar' });
+    expect(b.map((x) => x.label)).toEqual(['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb']);
+    expect(b[9]).toMatchObject({ start: '2025-12-01', end: '2025-12-31' });
+    expect(b[10]).toMatchObject({ start: '2026-01-01', end: '2026-01-31' });
+  });
+
+  it('averages check-ins within a bucket and leaves null where there are none', () => {
+    const rows = [ck('2026-02-10', 4, 2, 5, 80), ck('2026-02-10', 2, 4, 3, 82), ck('2026-02-09', 3, 3, 3)];
+    const b = trendBuckets(rows, new Map(), '2026-02-10', 'week');
+    expect(b[6]).toMatchObject({ energy: 3, sleep: 3, mood: 4, weightKg: 81 });
+    expect(b[5]).toMatchObject({ energy: 3, sleep: 3, mood: 3, weightKg: null });
+    expect(b[0]).toMatchObject({ energy: null, sleep: null, mood: null, weightKg: null });
+  });
+
+  it('averages a whole month in year view', () => {
+    const rows = [ck('2026-01-05', 5, 5, 5), ck('2026-01-25', 3, 3, 3), ck('2026-02-11', 1, 1, 1)];
+    const b = trendBuckets(rows, new Map(), '2026-02-10', 'year');
+    expect(b[10]).toMatchObject({ energy: 4, sleep: 4, mood: 4 });
+    expect(b[11].energy).toBeNull(); // the 11th is after `end`
+  });
+
+  it('counts Eighty and logged days per bucket, ignoring dates outside the range', () => {
+    const eighty = new Map([
+      ['2026-02-10', true],
+      ['2026-02-09', false],
+      ['2026-02-08', true],
+      ['2026-02-03', true], // before the week
+      ['2026-02-11', true], // after the end
+    ]);
+    const w = trendBuckets([], eighty, '2026-02-10', 'week');
+    expect(w.reduce((a, x) => a + x.loggedDays, 0)).toBe(3);
+    expect(w.reduce((a, x) => a + x.eightyDays, 0)).toBe(2);
+    expect(w[6]).toMatchObject({ eightyDays: 1, loggedDays: 1 });
+    expect(w[5]).toMatchObject({ eightyDays: 0, loggedDays: 1 });
+    const y = trendBuckets([], eighty, '2026-02-10', 'year');
+    expect(y[11]).toMatchObject({ eightyDays: 3, loggedDays: 4 });
   });
 });

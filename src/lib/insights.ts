@@ -176,6 +176,84 @@ export function weightSeries(checkins: CheckinLike[], since: string): WeightPoin
     .sort((a, b) => a.date.localeCompare(b.date));
 }
 
+// ── Trends ─────────────────────────────────────────────────────────────────
+
+export type TrendRange = 'week' | 'month' | 'year';
+
+/** How many days each range looks back over, today included. */
+export const RANGE_DAYS: Record<TrendRange, number> = { week: 7, month: 30, year: 365 };
+
+export interface TrendBucket {
+  /** first and last date in the bucket, inclusive */
+  start: string;
+  end: string;
+  /** short axis label: "Mon", "14", "Nov" */
+  label: string;
+  /** averages of the check-ins in the bucket; null when there were none */
+  energy: number | null;
+  sleep: number | null;
+  mood: number | null;
+  weightKg: number | null;
+  eightyDays: number;
+  loggedDays: number;
+}
+
+const WEEKDAY = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const MONTH = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const parts = (d: string) => d.split('-').map(Number) as [number, number, number];
+const ymd = (y: number, m: number, d: number) => `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+const shiftDay = (date: string, n: number) => {
+  const [y, m, d] = parts(date);
+  const t = new Date(y, m - 1, d + n);
+  return ymd(t.getFullYear(), t.getMonth() + 1, t.getDate());
+};
+const mean = (xs: number[]) => (xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : null);
+
+/**
+ * Check-ins and Eighty days over a range, oldest bucket first: a bucket per day for Week (7) and Month (30), a
+ * bucket per calendar month for Year (12, the current month last and cut off at `end`).
+ * `eighty` holds every logged day (true for an Eighty day), as eightyStats().byDate does.
+ */
+export function trendBuckets(checkins: CheckinLike[], eighty: Map<string, boolean>, end: string, range: TrendRange): TrendBucket[] {
+  const spans: { start: string; end: string; label: string }[] = [];
+  if (range === 'year') {
+    const [y, m] = parts(end);
+    for (let i = 11; i >= 0; i--) {
+      const first = new Date(y, m - 1 - i, 1);
+      const last = new Date(first.getFullYear(), first.getMonth() + 1, 0);
+      const s = ymd(first.getFullYear(), first.getMonth() + 1, 1);
+      const e = ymd(last.getFullYear(), last.getMonth() + 1, last.getDate());
+      spans.push({ start: s, end: e < end ? e : end, label: MONTH[first.getMonth()] });
+    }
+  } else {
+    const n = RANGE_DAYS[range];
+    for (let i = n - 1; i >= 0; i--) {
+      const d = shiftDay(end, -i);
+      const [y, m, day] = parts(d);
+      spans.push({ start: d, end: d, label: range === 'week' ? WEEKDAY[new Date(y, m - 1, day).getDay()] : String(day) });
+    }
+  }
+  return spans.map((sp) => {
+    const cks = checkins.filter((c) => c.date >= sp.start && c.date <= sp.end);
+    let eightyDays = 0;
+    let loggedDays = 0;
+    for (const [date, is80] of eighty) {
+      if (date < sp.start || date > sp.end) continue;
+      loggedDays++;
+      if (is80) eightyDays++;
+    }
+    return {
+      ...sp,
+      energy: mean(cks.map((c) => c.energy)),
+      sleep: mean(cks.map((c) => c.sleep)),
+      mood: mean(cks.map((c) => c.mood)),
+      weightKg: mean(cks.filter((c) => c.weightKg != null).map((c) => c.weightKg!)),
+      eightyDays,
+      loggedDays,
+    };
+  });
+}
+
 // ── Food sources ───────────────────────────────────────────────────────────
 
 export interface FoodSource {
