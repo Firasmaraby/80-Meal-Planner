@@ -1,0 +1,1897 @@
+{
+  "id": "ramadan-south-asia",
+  "name": "Ramadan South Asian",
+  "style": "ramadan",
+  "cuisine": "South Asian",
+  "regions": [
+    "Pakistan",
+    "North India",
+    "Bangladesh"
+  ],
+  "summary": "A week of South Asian Ramadan home cooking in two main meals: a slow, salt-light suhoor of bhurji paratha, daliya or masala oats, and an iftar that opens with dates and water, a lighter chaat or baked pakora, then haleem, karahi, dal or fish curry. Lassi, milk, fruit and a little kheer in the bigger sizes fill the evenings.",
+  "howItWorks": "**Two meals, two snacks.** Suhoor before dawn and iftar at sunset carry the day, with a snack or two before bed. Iftar opens the traditional way, with a date, or about three small dates, and a glass of water, then a lighter chaat or baked pakora, then the main plate: haleem, karahi, dal or fish curry. It works just as well on days you are not fasting.\n\n**A slow, salt-light suhoor.** Bhurji with a lighter paratha, palak daliya with moong and masala oats with a firm egg all digest slowly, and each comes with dahi and fruit for fluids. Salt is kept low on purpose, to help with thirst. Have a glass of water with every snack.\n\n**Dal, haleem and leftovers carry iftar.** Day 1's haleem (start it by mid-afternoon) and Day 4's dal with pulao each make two portions, so Day 2 and Day 5 need little cooking. Chill the second portion within the hour, and eat it within 3 days. The haleem also freezes in single portions.\n\n**Fish twice.** Salmon on Day 3 and mackerel on Day 6 carry your **omega-3 and vitamin D**, always cooked fresh. The pakora are baked, not fried, and the one sweet is a small daliya kheer with less sugar, twice at Standard and Big. Drinks are water, milk and lassi.\n\n**At the other sizes.** Light drops the second snack each evening, so the kheer drops out, and the meals stay close to Standard. Big adds a third snack on four evenings and gives you more roti, rice, meat, fish and dal.",
+  "signature": [
+    "ramadan-south-asia-mutton-haleem-barley-dals",
+    "ramadan-south-asia-chicken-karahi-lighter-kachumber",
+    "ramadan-south-asia-bengali-salmon-mustard-jhol-spinach",
+    "ramadan-south-asia-masoor-palak-dal-pulao-raita"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 2800,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "ramadan-south-asia-shakarkandi-chaat"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "ramadan-south-asia-masala-peanuts-carrot-sticks"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "ramadan-south-asia-papaya-almonds-lemon"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "ramadan-south-asia-shakarkandi-chaat"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "ramadan-south-asia-anda-bhurji-paratha-dahi",
+      "name": "Palak anda bhurji with a lighter whole-wheat paratha, dahi and apple",
+      "inspiredBy": "Pakistani and North Indian anda bhurji, with a paratha roasted in a spoonful of oil instead of fried",
+      "about": "Soft, fully set scrambled eggs with spinach, onion, tomato, green chili and cilantro, a whole-wheat paratha roasted on a dry pan with only a brush of oil, cool dahi and a crisp apple. It is slow and filling before the fast, and the salt is held low on purpose. The eggs and whole wheat bring **protein, choline and fibre**, the spinach adds vitamin K and folate, and the dahi adds calcium.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 2,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 50,
+          "note": "whole-wheat atta"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "finely chopped"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.4
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the tomato, spinach, cilantro and apple. Knead the flour with a splash of warm water into a soft dough, cover it and rest it for 15 minutes.",
+        "Roll the dough into a round about 18 cm across, brush the top with a little of the oil, fold it in half and in half again, then roll it out again into a small triangle or round, so it has soft layers.",
+        "Roast the paratha on a hot dry pan for about 1 minute a side, brushing a few drops of oil on each side, until it has golden spots and puffs a little. Keep it warm under a clean cloth.",
+        "Warm the rest of the oil in a small non-stick pan and soften the onion with the turmeric and cumin for 3 minutes. Add the tomato, chili and spinach and cook until the tomato breaks down and the spinach wilts, about 3 minutes.",
+        "Pour in the beaten eggs with the salt and stir gently over medium heat for 3 to 4 minutes, until there is no runny egg left and the eggs are firm and reach 74 °C. Fold in the cilantro.",
+        "Serve the bhurji with the paratha, a bowl of dahi and the sliced apple, and a big glass of water."
+      ],
+      "prepMin": 12,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Knead the dough after iftar and keep it covered in the fridge overnight, so suhoor is only the rolling and the pan. Dough keeps for 2 days in the fridge. Plain Greek-style yogurt or hung curd gives the thick dahi these dishes want."
+    },
+    {
+      "id": "ramadan-south-asia-vegetable-daliya-moong",
+      "name": "Palak daliya with moong, peanuts, dahi and an orange",
+      "inspiredBy": "North Indian and Pakistani daliya khichdi, broken wheat cooked with moong dal and vegetables",
+      "about": "Cracked wheat simmered with moong dal, carrot, peas, spinach, onion and ginger until soft and porridge-like, tempered with cumin and topped with roasted peanuts like an upma, with a bowl of dahi and an orange on the side. It digests slowly and stays gentle on a dry mouth, with almost no added salt. The wheat and moong bring **fibre, folate and plant protein**, and the dahi adds calcium.",
+      "ingredients": [
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "cracked wheat (daliya), rinsed"
+        },
+        {
+          "food": "mung-beans-whole-dried-raw-784bed",
+          "g": 32,
+          "swap": "legumes",
+          "note": "whole green moong, soaked in the fridge overnight or for at least 4 hours and drained"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 45,
+          "note": "finely diced"
+        },
+        {
+          "food": "green-peas-raw-867b3e",
+          "g": 35,
+          "note": "fresh or frozen"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "grated"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 130,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.8
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the carrot, spinach, cilantro and orange. Drain the moong you soaked in the fridge, and rinse the daliya.",
+        "Warm the oil in a small pressure cooker or heavy pot, add the cumin seeds and let them sizzle for 10 seconds. Add the onion and ginger and cook for 3 minutes until soft.",
+        "Stir in the turmeric, moong, daliya, carrot and peas, then add about four times their volume in water and the salt.",
+        "Pressure cook for 3 whistles, about 12 minutes, or cover and simmer on low for 30 to 35 minutes, stirring now and then, until the moong and wheat are soft and the porridge is thick. Add a splash of hot water if it gets stiff.",
+        "Stir in the spinach and cilantro for the last 2 minutes. Serve warm topped with the peanuts, with the dahi, the peeled orange and a big glass of water."
+      ],
+      "prepMin": 12,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Soak the moong in the fridge after iftar and make the whole pot before dawn in a pressure cooker, or cook it the evening before, chill it in a shallow container within 1 hour and reheat it until steaming hot (74 °C) for suhoor. Keeps up to 3 days."
+    },
+    {
+      "id": "ramadan-south-asia-masala-oats-egg-orange",
+      "name": "Masala oats with a firm boiled egg and apple",
+      "inspiredBy": "Indian masala oats, cooked like a savoury upma with tomato, peas and spinach",
+      "about": "Rolled oats cooked with onion, tomato, peas, spinach, ginger and cumin into a warm, savoury porridge, finished with roasted peanuts, with a firm boiled egg, a bowl of dahi and a crisp apple on the side. Oats are slow to digest, so this is a steady start to the fast with very little salt. The oats, egg and dahi bring **fibre, protein and choline**, and the oats and egg bring iron, which the tomato helps you absorb.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "boiled until the yolk is firm"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "finely chopped"
+        },
+        {
+          "food": "green-peas-raw-867b3e",
+          "g": 30,
+          "note": "fresh or frozen"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 2,
+          "note": "finely chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "unsalted if you can, roughly chopped"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 130,
+          "note": "sliced"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.8
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the tomato, spinach and apple. Lower the egg into a small pot of boiling water, cook it for 10 minutes so the yolk is firm, then cool it under cold water and peel it.",
+        "Warm the oil in a pan, add the cumin seeds for 10 seconds, then the onion, ginger and chili and cook for 3 minutes until the onion is soft.",
+        "Add the tomato, turmeric and peas and cook for 3 minutes, until the tomato breaks down.",
+        "Stir in the oats, salt and about 300 ml hot water. Cook for 5 to 6 minutes, stirring, until the oats are soft and the mixture is a thick upma, not a wet porridge. Fold in the spinach for the last minute until it wilts, then rest it for 1 minute under a lid.",
+        "Top with the peanuts. Serve with the halved egg, the dahi, the sliced apple and a big glass of water."
+      ],
+      "prepMin": 8,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "This is a modern, home-style take on masala oats. The egg can be boiled after iftar and kept in its shell in the fridge for up to 3 days. Short on time? Skip the cooking: soak the oats overnight in a little water in the fridge, then warm them through with the cooked tomato mixture until steaming."
+    },
+    {
+      "id": "ramadan-south-asia-dates-dahi-fruit-chaat",
+      "name": "Dates, water and a dahi fruit chaat",
+      "inspiredBy": "Pakistani iftar fruit chaat, with thick dahi and no sugar syrup",
+      "about": "The traditional opening, a date, or about three small dates (30 g), and a glass of water, then a bowl of orange, ripe pear and pomegranate folded through thick dahi with lemon, chaat masala and black pepper, and roasted peanuts for crunch. It is the sweet-and-sour fruit chaat of every Pakistani iftar table without the added sugar. The dahi and peanuts bring **protein**, the fruit brings vitamin C and potassium, and the dates bring quick energy.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 30,
+          "note": "one large, or a few small ones"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 130,
+          "swap": "vit_c_fruit",
+          "note": "segmented"
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 60,
+          "note": "ripe, diced"
+        },
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 20,
+          "note": "seeds"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "crushed"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the orange, pear and pomegranate well before cutting.",
+        "Dice the pear, segment the orange, and take the seeds from the pomegranate.",
+        "Fold the fruit through the dahi with the lemon juice, chaat masala and black pepper, and chill it for 10 minutes so the flavours come together. Keep cut fruit and chaat chilled until you eat.",
+        "Break your fast with a date, or about three small dates, and a glass of water. Then eat the chaat, topped with the crushed peanuts just before serving so they stay crisp."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Plain Greek-style yogurt or hung curd gives the thick dahi these dishes want. Cut the fruit just before iftar and keep it chilled."
+    },
+    {
+      "id": "ramadan-south-asia-dates-chana-chaat",
+      "name": "Dates, water and a chana chaat",
+      "inspiredBy": "Pakistani and North Indian chana chaat, with no fried papri or sweet chutney",
+      "about": "A date, or about three small dates (30 g), and a glass of water to open the fast, then a big bowl of chickpeas tossed with onion, tomato, cucumber, mint, pomegranate, roasted peanuts and chaat masala. It is the zesty chickpea chaat of the Lahore iftar table without the fried papri or sweet chutney. The chickpeas bring **fibre, folate and plant protein**.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 30,
+          "note": "one large, or a few small ones"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 180,
+          "swap": "legumes",
+          "note": "no salt added, drained and rinsed"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "crushed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 20,
+          "note": "seeds"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 12
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 2,
+          "note": "finely chopped"
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the tomato, cucumber, herbs and pomegranate. Drain and rinse the chickpeas.",
+        "Chop the onion, tomato, cucumber, chili, cilantro and mint small, and take the seeds from the pomegranate.",
+        "Toss everything except the peanuts in a bowl with the lemon juice, chaat masala, cumin and salt. Taste, and add lemon if it is not sharp enough.",
+        "Let it stand for 5 minutes. Break your fast with a date, or about three small dates, and a glass of water, then eat the chaat topped with the peanuts."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Cook dried chickpeas if you prefer. Soak about 250 g overnight in the fridge, then boil until tender (about 1 hour, or 15 minutes in a pressure cooker). That makes about three portions. Cool them in a shallow container within 1 hour and keep them in the fridge for up to 3 days."
+    },
+    {
+      "id": "ramadan-south-asia-dates-baked-besan-pakora-chutney",
+      "name": "Dates, water and baked onion pakora with mint dahi",
+      "inspiredBy": "Pakistani and North Indian iftar pakora, baked on a tray in a little oil instead of deep fried",
+      "about": "Crisp besan fritters of thinly sliced onion, green chili, cilantro and ajwain, baked on a tray with only a brush of oil, with a thick mint and dahi chutney. You still get the crunch of the iftar piyaz pakora, and a date, or about three small dates (30 g), and a glass of water start the meal. The chickpea flour and dahi bring **protein and folate**.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 30,
+          "note": "one large, or a few small ones"
+        },
+        {
+          "food": "chickpea-flour-besan-4a8aaa",
+          "g": 50,
+          "note": "sifted"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 95,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 2,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 90,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 8,
+          "note": "leaves"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "ajwain-carom-seeds-cac919",
+          "g": 0.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 0.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F) and line a baking tray with parchment. Wash the chili, cilantro and mint.",
+        "Toss the onion with the salt and leave it for 5 minutes, so it softens and lets out a little juice. Whisk the besan with the ajwain, cumin, kashmiri chili and turmeric, then stir in the onion and its juice, the chili and cilantro. Add water a spoonful at a time, about 2 to 3 tablespoons, until every slice is coated in a thick batter.",
+        "Brush the parchment with half the oil. Drop spoonfuls of the mixture onto the tray, flatten them slightly, and brush the tops with the rest of the oil.",
+        "Bake for 12 minutes, turn them over and bake for 8 to 10 minutes more, until golden and crisp at the edges.",
+        "Blend or finely chop the mint with the dahi and lemon juice for the chutney.",
+        "Break your fast with a date, or about three small dates, and a glass of water. Serve the pakora hot with the chutney."
+      ],
+      "prepMin": 15,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "No oven? Shallow-fry the spoonfuls in a non-stick pan with a spoonful of oil, 3 minutes a side, and drain them well on paper towel. Pakora are best eaten the same day."
+    },
+    {
+      "id": "ramadan-south-asia-dates-sprouted-moong-egg-chaat",
+      "name": "Dates, water and a sprouted moong and egg chaat",
+      "inspiredBy": "Pakistani and Bengali sprouted moong chaat, boiled, with chickpeas and egg",
+      "about": "A date, or about three small dates (30 g), and a glass of water, then a bowl of boiled moong sprouts and chickpeas with a firm chopped egg, cucumber, tomato, onion and pomegranate, folded through thick dahi, finished with lemon, chaat masala and a few roasted peanuts. The sprouts are boiled for a full 4 minutes, so they are cooked through but keep a little bite. The egg, chickpeas and dahi bring **protein, choline and calcium**, and the sprouts add folate.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 30,
+          "note": "one large, or a few small ones"
+        },
+        {
+          "food": "mung-beans-sprouted-bean-sprouts-raw-b40acb",
+          "g": 80,
+          "swap": "legumes",
+          "note": "moong sprouts"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "no salt added, drained and rinsed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "boiled until the yolk is firm"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 70,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "finely chopped"
+        },
+        {
+          "food": "pomegranate-raw-b27779",
+          "g": 20,
+          "note": "seeds"
+        },
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "crushed"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 12
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 2,
+          "note": "finely chopped"
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the tomato, cucumber, cilantro and pomegranate, and rinse the sprouts. Raw sprouts can carry bacteria, so boil them in a pot of water for a full 4 minutes until steaming and tender with a little bite, drain and cool them under cold water.",
+        "Lower the egg into boiling water, cook it for 10 minutes so the yolk is firm, then cool it under cold water, peel it and chop it.",
+        "Chop the cucumber, tomato, onion, chili and cilantro, and take the seeds from the pomegranate.",
+        "Toss the sprouts, chickpeas, egg and vegetables with the dahi, lemon juice, chaat masala and salt. Eat within 1 hour, or keep it chilled and eat the same day.",
+        "Break your fast with a date, or about three small dates, and a glass of water. Eat the chaat topped with the crushed peanuts."
+      ],
+      "prepMin": 15,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Buy ready-to-use sprouts from the fridge section, fresh and cold, and keep them in the fridge; don't sprout them at home for this. Never eat them raw, and do not keep the finished chaat for tomorrow."
+    },
+    {
+      "id": "ramadan-south-asia-mutton-haleem-barley-dals",
+      "name": "Lighter goat haleem with barley, cracked wheat and lentils",
+      "inspiredBy": "Hyderabadi and Pakistani haleem, with more grain and dal and less meat, and a little ghee",
+      "about": "Lean goat slow-cooked until it shreds, with cracked wheat, barley, moong and red lentils into a thick, savoury porridge, finished with browned onion, ginger, cilantro and a squeeze of lemon, and served with a warm whole-wheat roti and a quick carrot salad. It is the Ramadan classic, a project that makes two portions and feeds tomorrow. The goat brings **iron and zinc**, the moong and lentils bring folate and fibre, the carrot brings vitamin A, and the lemon helps your body absorb the iron.",
+      "ingredients": [
+        {
+          "food": "goat-lean-raw-67f543",
+          "g": 90,
+          "swap": "lean_protein",
+          "note": "boneless, cut in small pieces"
+        },
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 28,
+          "swap": "low_gi_grains",
+          "note": "cracked wheat (daliya), rinsed"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 14,
+          "swap": "low_gi_grains",
+          "note": "pearl barley, rinsed"
+        },
+        {
+          "food": "mung-beans-whole-dried-raw-784bed",
+          "g": 14,
+          "swap": "legumes",
+          "note": "whole green moong, rinsed"
+        },
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 14,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "half grated, half in thin matchsticks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "crushed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 2
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "grated"
+        },
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 25,
+          "note": "whole-wheat atta"
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1.5
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.2,
+          "note": "ground"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 2.0
+        }
+      ],
+      "steps": [
+        "Rinse the cracked wheat, barley, moong and lentils together and soak them in plenty of cold water in the fridge for at least 30 minutes, or overnight. Wash your hands and the board after you handle the raw goat, and wash the carrot.",
+        "Warm the oil in a heavy pot and cook the onion over medium heat for 10 to 12 minutes, stirring, until it is a deep golden brown. Scoop out a spoonful and keep it for the topping.",
+        "Add the grated ginger, garlic, garam masala, coriander, cumin, turmeric and kashmiri chili for 30 seconds, then add the goat and brown it for 5 minutes. Pour in about 1 litre of hot water, cover and simmer for 60 minutes, or pressure cook for 30 minutes, until the goat is very tender.",
+        "Drain the soaked grains and lentils and stir them into the pot with the salt and about 500 ml more hot water. Simmer, stirring from the bottom every few minutes, for 40 to 45 minutes, until everything has broken down (or pressure cook for 15 minutes). Add hot water if it sticks.",
+        "Stir in the ghee. Shred the goat with two forks and beat the haleem with a wooden spoon, or give it a few pulses with a stick blender, until thick and stretchy but not smooth. The goat should read at least 71 °C and be falling apart.",
+        "Knead the flour with warm water into a soft dough, rest it for 15 minutes, roll it thin and roast it on a hot dry pan for about 1 minute a side until it puffs.",
+        "Grate the carrot, then toss it with a little of the lemon juice and half the cilantro for a quick salad.",
+        "Before you sit down to eat, spoon the second portion into a shallow container, stir it once to let the heat out and get it into the fridge within 1 hour. Eat it within 3 days and reheat it once, with a splash of water, until steaming hot (74 °C).",
+        "Ladle the haleem into bowls and top with the browned onion, ginger matchsticks, the rest of the cilantro and a squeeze of lemon. Serve with the roti and the carrot salad."
+      ],
+      "prepMin": 25,
+      "cookMin": 120,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Buy halal meat from a halal butcher or a store that carries certified halal. Start by mid-afternoon (a pressure cooker cuts the whole pot to about 75 minutes). Serve the first portion hot and chill the second within the hour; do not hold it warm for hours. Haleem freezes well in single portions: cool it within 1 hour, freeze it flat in a shallow container, thaw it in the fridge, use within 2 days and never refreeze."
+    },
+    {
+      "id": "ramadan-south-asia-chicken-karahi-lighter-kachumber",
+      "name": "Lighter chicken karahi with whole-wheat roti and kachumber",
+      "inspiredBy": "Peshawari and Lahori chicken karahi, built on tomato, ginger and green chili with less oil",
+      "about": "Chicken thigh cooked in a wok-style pan with ripe tomatoes, garlic, ginger, green chili and crushed coriander until the sauce clings and glistens, finished with ginger matchsticks, cilantro and lemon, with a warm whole-wheat roti and a fresh kachumber. It is the quick, sharp karahi of the roadside dhaba with about a third of the oil. The chicken brings **protein, niacin and B12**, and the tomatoes bring vitamin C and potassium.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-skinless-raw-767a98",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "boneless, cut in bite-size pieces"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 170,
+          "note": "chopped"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "half crushed, half in matchsticks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 4,
+          "note": "slit"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 45,
+          "note": "whole-wheat atta"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 2,
+          "note": "crushed"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Wash the tomato, cucumber and cilantro. Wash your hands, knife and board after handling the raw chicken.",
+        "Warm the oil in a wide pan or karahi over high heat, add the cumin seeds and garlic for 15 seconds, then add the chicken and fry for 5 to 6 minutes, turning, until it is lightly browned all over.",
+        "Add the tomato, crushed ginger, chili, salt, kashmiri chili, crushed coriander and pepper. Cover and cook on medium for 10 minutes, then uncover and cook for 10 to 12 minutes more, stirring, until the tomato has broken down, the sauce clings to the chicken and darkens, and the chicken reaches 74 °C.",
+        "Knead the flour with warm water into a soft dough, rest it for 15 minutes, roll it thin and roast it on a hot dry pan for about 1 minute a side until it puffs. Keep it covered.",
+        "Toss the cucumber and onion with a few drops of lemon and a pinch of salt for the kachumber.",
+        "Stir the garam masala, cilantro, ginger matchsticks and the rest of the lemon juice through the karahi just before serving. Serve with the roti and kachumber."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Buy halal chicken from a halal butcher or a store that carries certified halal. Use a small seeded green chili for a milder karahi. Chicken thigh stays juicier than breast in a hot pan. Knead the roti dough for the day in one batch and keep it covered in the fridge."
+    },
+    {
+      "id": "ramadan-south-asia-bengali-salmon-mustard-jhol-spinach",
+      "name": "Salmon in a Bengali-style mustard jhol with brown basmati and garlic spinach",
+      "inspiredBy": "Inspired by Bangladeshi shorshe maach, with salmon in place of hilsa and canola in place of mustard oil",
+      "about": "Salmon simmered in a sharp, pungent sauce of ground yellow mustard, green chili and turmeric, with a small bowl of brown basmati, garlicky wilted spinach and a carrot and tomato kachumber. It is the Bengali iftar fish curry, sharp with mustard: start the rice first, and the fish itself takes about 10 minutes. The salmon brings **omega-3, vitamin D and B12**, and the spinach and lemon bring folate and vitamin C.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 155,
+          "swap": "fatty_fish",
+          "note": "fillet, skinless"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 4,
+          "note": "ground fresh"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 3,
+          "note": "slit"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 120,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 12
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "shredded"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.6
+        }
+      ],
+      "steps": [
+        "Wash the spinach, carrot and tomato. If the salmon was frozen, thaw it in the fridge and cook it within 2 days. Rinse the brown basmati, put it in a pot with about twice its volume of water and a pinch of the salt, bring to a boil, cover and simmer on low for 30 to 35 minutes until tender.",
+        "Grind the mustard seeds with the green chili, a splash of the lemon juice, a pinch of salt and 2 tablespoons of water in a spice grinder or small blender until smooth. Use it right away, because mustard paste turns bitter if it stands.",
+        "Rub the salmon with the turmeric and a pinch of salt and keep it in the fridge. Wash your hands and the board afterwards, and do not reuse anything that touched the raw fish.",
+        "Warm two thirds of the oil in a pan and stir in the mustard paste for 20 seconds. Add about 200 ml of water, bring to a simmer, then lay in the salmon, cover and cook for 7 to 8 minutes, until the fish flakes and reaches 70 °C. Do not boil hard.",
+        "In another pan, warm the rest of the oil, soften the garlic for 30 seconds, then wilt the spinach with a pinch of salt for 2 to 3 minutes.",
+        "Toss the carrot, tomato and onion with the rest of the lemon juice for the kachumber.",
+        "Serve the salmon and its sauce over or beside the brown basmati, with the spinach and kachumber."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Shorshe is usually eaten with plain white rice, and brown basmati is the lighter swap. Canola stands in for mustard oil, and the yellow mustard gives the sharpness, but the dish is milder than the real thing. Cool any extra rice in a shallow container within 1 hour. Mackerel works here too. No spice grinder? Soak the mustard seeds in warm water for 15 minutes first, then blend."
+    },
+    {
+      "id": "ramadan-south-asia-masoor-palak-dal-pulao-raita",
+      "name": "Masoor palak dal with vegetable pulao and cucumber raita",
+      "inspiredBy": "Pakistani and North Indian dal tarka with a light vegetable pulao and a cooling raita",
+      "about": "Red lentils cooked soft with spinach and tomato and finished with a hot ghee tarka of cumin, garlic and chili, with a small plate of vegetable pulao and a cucumber and mint raita. It is the everyday Ramadan dal plate at a lighter weight, with brown basmati for the pulao and plenty of vegetables. The lentils bring **folate, iron and fibre**, and the raita brings calcium.",
+      "ingredients": [
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 60,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "sliced"
+        },
+        {
+          "food": "clarified-butter-ghee-529962",
+          "g": 3
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "green-peas-raw-867b3e",
+          "g": 30,
+          "note": "fresh or frozen"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 110,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "grated"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1.2
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.6
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 0.6
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.8
+        }
+      ],
+      "steps": [
+        "Wash the spinach, tomato, carrot and mint. Rinse the lentils and brown basmati in separate bowls.",
+        "Put the lentils, half the onion, the tomato, turmeric and about 600 ml of water in a pot and simmer for 20 minutes, until the lentils fall apart. Add the spinach and half the salt for the last 3 minutes.",
+        "For the pulao, warm the oil in a second pot, add half the cumin seeds, the bay and cinnamon, then the rest of the onion for 3 minutes. Add the carrot, peas, brown basmati, the rest of the salt and about twice the rice's volume in water. Cover and cook on low for 30 to 35 minutes until the rice is tender.",
+        "For the tarka, warm the ghee in a small pan, add the rest of the cumin seeds, garlic and kashmiri chili, and sizzle for 30 to 40 seconds until the garlic is golden. Pour it over the dal.",
+        "Stir the grated cucumber, mint and ground cumin into the yogurt for the raita. Keep it in the fridge until you eat.",
+        "Spoon the dal and pulao onto a plate with the raita beside them.",
+        "Before you sit down, spoon the second portion of dal and pulao into shallow containers and refrigerate them within 1 hour (the rice cools quickly this way). Keep the raita fixings apart and mix them fresh tomorrow. Eat within 3 days and reheat once, until steaming hot (74 °C)."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "The dal freezes well without the raita. Thaw it in the fridge, use within 2 days and never refreeze. A pressure cooker finishes the lentils in 8 minutes."
+    },
+    {
+      "id": "ramadan-south-asia-mackerel-jhol-potato-cauliflower",
+      "name": "Mackerel jhol with potato, peas and whole-wheat roti",
+      "inspiredBy": "Bangladeshi and Bengali macher jhol, a thin, spiced fish curry with potato and peas",
+      "about": "Atlantic mackerel simmered in a thin, golden gravy of tomato, ginger, garlic, cumin and coriander with potato and green peas, finished with lemon and cilantro, with a warm whole-wheat roti to mop it up. It is a Bangladeshi weeknight curry, homely and tangy. The mackerel brings **omega-3, vitamin D and B12**, and the potato and peas bring potassium, folate and fibre.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "in steaks or fillets"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 90,
+          "note": "in chunks"
+        },
+        {
+          "food": "green-peas-raw-867b3e",
+          "g": 50,
+          "note": "fresh or frozen"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "chopped"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 12
+        },
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 30,
+          "note": "whole-wheat atta"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 2,
+          "note": "slit"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.5,
+          "note": "ground"
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Wash the potato, tomato and cilantro. If the fish was frozen, thaw it in the fridge and cook it within 2 days. Rub the mackerel with a pinch of the turmeric and salt and keep it in the fridge. Wash your hands and the board afterwards, and do not reuse the rub.",
+        "Warm the oil in a pan and cook the onion for 5 minutes until soft. Add the ginger, garlic, cumin, coriander, kashmiri chili and the rest of the turmeric for 30 seconds, then the tomato and cook for 5 minutes until it breaks down.",
+        "Add the potato, the salt and about 300 ml of water. Cover and simmer for 10 minutes, add the peas and chili and simmer for 5 minutes more, until the potato is nearly tender.",
+        "Lay the mackerel in the gravy, cover and simmer gently for 8 to 10 minutes, until the fish flakes and reaches 70 °C.",
+        "Meanwhile, knead the flour with warm water into a soft dough, rest it for 15 minutes, roll it thin and roast it on a hot dry pan for about 1 minute a side until it puffs.",
+        "Finish the jhol with the cilantro and lemon juice. Serve with the roti."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Sardines, trout or salmon are good in the same curry. Mackerel is oily and a little bony, so ask the fishmonger to steak or fillet it. Use Atlantic mackerel; king mackerel is high in mercury."
+    },
+    {
+      "id": "ramadan-south-asia-bhuna-chana-roasted",
+      "name": "Roasted masala chickpeas",
+      "inspiredBy": "Pakistani and North Indian bhuna chana, oven-roasted with chaat masala and lemon",
+      "about": "Chickpeas patted dry and roasted until crisp with chaat masala, cumin and chili, finished with a squeeze of lemon. It is a crunchy, savoury snack for the evening, baked rather than fried. The chickpeas bring **fibre, folate and plant protein**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 120,
+          "swap": "legumes",
+          "note": "no salt added, drained, rinsed and patted very dry"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 0.5
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Dry the chickpeas very well in a clean towel, because dry chickpeas turn crisp.",
+        "Toss them with the oil, cumin, kashmiri chili and salt on a baking tray and spread them in a single layer.",
+        "Roast for 25 to 30 minutes, shaking the tray every 10 minutes, until they are golden and crisp.",
+        "Toss with the chaat masala and lemon juice while warm. Let them cool, and they will crisp a little more."
+      ],
+      "prepMin": 5,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "They are best the day they are made. Keep any extra in a covered container in the fridge for up to 3 days, and crisp them again in a hot oven for 5 minutes."
+    },
+    {
+      "id": "ramadan-south-asia-guava-almonds-lemon",
+      "name": "Guava with almonds, lemon and chaat masala",
+      "inspiredBy": "Pakistani guava chaat, a seasonal evening fruit",
+      "about": "Chunks of ripe guava tossed with lemon, a pinch of chaat masala and black pepper, with toasted almonds for crunch. It is the sweet, tangy, peppery fruit the street sellers pile on a plate at dusk. The guava brings **vitamin C and fibre**, and the almonds bring vitamin E and magnesium.",
+      "ingredients": [
+        {
+          "food": "guava-common-raw-a500a0",
+          "g": 160,
+          "swap": "vit_c_fruit",
+          "note": "cut in chunks"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the guava well, then cut it in chunks.",
+        "Toast the almonds in a dry pan for 3 minutes until fragrant, then chop them.",
+        "Toss the guava with the lemon juice, chaat masala and black pepper, top with the almonds, and eat right away."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "No guava? Ripe papaya takes the same seasoning."
+    },
+    {
+      "id": "ramadan-south-asia-kheer-less-sugar",
+      "name": "Daliya kheer with less sugar, cardamom and almonds",
+      "inspiredBy": "North Indian daliya kheer and Pakistani kheer, a slow-cooked pudding, here with cracked wheat and the sugar cut right back",
+      "about": "Cracked wheat simmered slowly in milk with cardamom until thick and creamy, sweetened with only a little sugar and topped with sliced almonds. It is one small bowl of the traditional Ramadan sweet, served warm or chilled. The milk brings **calcium and protein**, and the cracked wheat keeps it a whole-grain pudding.",
+      "ingredients": [
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 230,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 14,
+          "swap": "low_gi_grains",
+          "note": "cracked wheat (daliya), rinsed"
+        },
+        {
+          "food": "white-sugar-4eb2be",
+          "g": 5
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "sliced"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Rinse the daliya and drain it. Toast it in a dry pot over medium heat for 2 minutes until it smells nutty.",
+        "Pour in the milk and cardamom and bring it to a gentle boil, then turn the heat low.",
+        "Simmer, stirring often and scraping the bottom so it does not catch, for 25 to 30 minutes, until the wheat is soft and the milk has thickened into a creamy pudding.",
+        "Stir in the sugar and half the almonds, cook for 2 minutes, and top with the rest. Serve warm or chilled; either way, refrigerate leftovers in a shallow container within 1 hour and eat them within 3 days, reheated to steaming (74 °C) if you want it warm."
+      ],
+      "prepMin": 5,
+      "cookMin": 32,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "A pressure cooker makes it in about 12 minutes. Chill it and stir in a splash of milk when serving cold."
+    },
+    {
+      "id": "ramadan-south-asia-masala-peanuts-carrot-sticks",
+      "name": "Masala peanuts with mooli sticks",
+      "inspiredBy": "Pakistani masala peanuts and street-style mooli with lemon and chaat masala",
+      "about": "A handful of roasted peanuts tossed with onion, cilantro, lemon and chaat masala, with crisp mooli (white radish) sticks on the side. It is the salty-sour crunch of masala peanuts with the cool, peppery bite of mooli. The peanuts bring **protein, niacin and vitamin E**, and the juicy mooli is mostly water.",
+      "ingredients": [
+        {
+          "food": "peanuts-dry-roasted-1c5949",
+          "g": 22,
+          "swap": "nuts_seeds",
+          "note": "unsalted if you can"
+        },
+        {
+          "food": "radish-white-mooli-raw-06c92a",
+          "g": 120,
+          "note": "peeled, in sticks"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Wash and peel the mooli and cut it into sticks. Wash the cilantro.",
+        "Toss the peanuts with the onion, cilantro and most of the lemon juice and chaat masala.",
+        "Serve the masala peanuts with the mooli sticks on the side, with the rest of the lemon and chaat masala over them."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "No mooli? Carrot sticks work the same way."
+    },
+    {
+      "id": "ramadan-south-asia-haldi-doodh-almonds",
+      "name": "Warm haldi doodh with almonds",
+      "inspiredBy": "North Indian haldi doodh, warm milk with turmeric, pepper and cardamom",
+      "about": "Warm milk simmered with turmeric, a pinch of black pepper and cardamom, sweetened with a little date and served with a few almonds. It is a soft, comforting drink for after taraweeh. The milk brings **calcium, protein and vitamin B12**.",
+      "ingredients": [
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 250,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 10,
+          "note": "chopped; a small date or half a medjool"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the milk with the turmeric, pepper, cardamom and chopped date in a small pot, whisking, until it just begins to steam, then hold it at a gentle simmer, watching it so it does not boil over.",
+        "Keep it at a gentle simmer for 3 minutes, then pour into a mug and serve with the almonds on the side."
+      ],
+      "prepMin": 3,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Drink a glass of water with every snack to spread your fluids between iftar and suhoor."
+    },
+    {
+      "id": "ramadan-south-asia-papaya-almonds-lemon",
+      "name": "Ripe papaya with almonds and lemon",
+      "inspiredBy": "Pakistani and Bangladeshi fruit plate, with lemon and black pepper",
+      "about": "Chilled ripe papaya with lemon juice and black pepper and a small handful of toasted almonds. It is a soft, juicy plate that is easy to eat late in the evening. The papaya brings **vitamin C**, and the almonds bring vitamin E and magnesium.",
+      "ingredients": [
+        {
+          "food": "papaya-raw-cd2cbc",
+          "g": 170,
+          "note": "ripe, peeled and cubed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the papaya well before you peel it, and scoop out the seeds.",
+        "Toast the almonds in a dry pan for 3 minutes until lightly golden, then chop them.",
+        "Toss the papaya with the lemon juice and black pepper, and top with the almonds."
+      ],
+      "prepMin": 6,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Use ripe papaya only. Unripe green papaya is not for this. Skip the almonds and add roasted peanuts if you like it more street-style."
+    },
+    {
+      "id": "ramadan-south-asia-mango-cardamom-lassi",
+      "name": "Mango and cardamom lassi",
+      "inspiredBy": "Pakistani and Punjabi sweet lassi, thinned yogurt with a little fruit and no added sugar",
+      "about": "Thick plain yogurt whisked with cold water, ripe mango and a pinch of cardamom until it pours like a thick drink, with chopped almonds on top. It is cooling and lightly sweet from the fruit alone. The yogurt brings **calcium and protein**, and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mango-raw-80de97",
+          "g": 70,
+          "note": "ripe, fresh or thawed frozen"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "finely chopped"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the mango well before you peel it. If you use frozen mango, thaw it in the fridge.",
+        "Blend the yogurt, mango, cardamom and about 150 ml cold water until smooth. Pour over ice and scatter over the almonds."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Prefer it salty? Skip the mango and blend the yogurt with water, roasted cumin and a pinch of salt for a zeera lassi."
+    },
+    {
+      "id": "ramadan-south-asia-egg-masala-tomato-onion",
+      "name": "Masala eggs with tomato and onion",
+      "inspiredBy": "Pakistani anda chaat, firm boiled eggs with onion, tomato and lemon",
+      "about": "Firm boiled eggs chopped with tomato, onion, cilantro and green chili, tossed with lemon and chaat masala. It is a savoury, cooling little bowl for a hungry evening, with the yolks cooked firm. The eggs bring **protein and choline**, and the tomato adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "boiled until the yolk is firm"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 110,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 35,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "chilli-chili-green-raw-496cb7",
+          "g": 1,
+          "note": "finely chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 8
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the tomato and cilantro. Lower the eggs into a small pot of boiling water, cook them for 10 minutes so the yolks are firm, then cool them under cold water and peel them.",
+        "Chop the eggs, tomato, onion, chili and cilantro.",
+        "Toss everything with the lemon juice, chaat masala and salt, and eat it right away."
+      ],
+      "prepMin": 10,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Boil a few eggs ahead and keep them in their shells in the fridge for up to 3 days."
+    },
+    {
+      "id": "ramadan-south-asia-shakarkandi-chaat",
+      "name": "Roasted sweet potato chaat",
+      "inspiredBy": "Pakistani shakarkandi chaat, a winter street classic, roasted instead of fried",
+      "about": "Sweet potato roasted until soft and caramelized at the edges, tossed with lemon, chaat masala and a little chili. It is the sweet, tangy, spiced chaat of Pakistani street stalls in the cooler months, baked here with only a drizzle of oil. The sweet potato brings **vitamin A, fibre and potassium**.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 140,
+          "note": "in chunks, skin on"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 10
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 1
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 0.3
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4,
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Scrub the sweet potato well and cut it into chunks.",
+        "Toss with the oil on a baking tray and roast for 25 to 30 minutes, turning once, until soft inside and browned at the edges.",
+        "Toss with the lemon juice, chaat masala, kashmiri chili and cilantro while still warm."
+      ],
+      "prepMin": 8,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Roast a double batch and keep half in a shallow container in the fridge for up to 3 days, then reheat until steaming hot (74 °C)."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-south-asia-anda-bhurji-paratha-dahi"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-south-asia-dates-dahi-fruit-chaat"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-south-asia-mutton-haleem-barley-dals"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-south-asia-mango-cardamom-lassi"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-south-asia-guava-almonds-lemon"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-south-asia-vegetable-daliya-moong"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-south-asia-dates-baked-besan-pakora-chutney"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-south-asia-mutton-haleem-barley-dals",
+          "leftover": true
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-south-asia-egg-masala-tomato-onion"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-south-asia-kheer-less-sugar"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-south-asia-masala-oats-egg-orange"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-south-asia-dates-chana-chaat"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-south-asia-bengali-salmon-mustard-jhol-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-south-asia-haldi-doodh-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-south-asia-masala-peanuts-carrot-sticks"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-south-asia-anda-bhurji-paratha-dahi"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-south-asia-dates-dahi-fruit-chaat"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-south-asia-masoor-palak-dal-pulao-raita"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-south-asia-guava-almonds-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-south-asia-bhuna-chana-roasted"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-south-asia-vegetable-daliya-moong"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-south-asia-dates-chana-chaat"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-south-asia-masoor-palak-dal-pulao-raita",
+          "leftover": true
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-south-asia-egg-masala-tomato-onion"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-south-asia-kheer-less-sugar"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-south-asia-masala-oats-egg-orange"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-south-asia-dates-baked-besan-pakora-chutney"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-south-asia-mackerel-jhol-potato-cauliflower"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-south-asia-haldi-doodh-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-south-asia-bhuna-chana-roasted"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-south-asia-vegetable-daliya-moong"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-south-asia-dates-sprouted-moong-egg-chaat"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-south-asia-chicken-karahi-lighter-kachumber"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-south-asia-mango-cardamom-lassi"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-south-asia-papaya-almonds-lemon"
+        }
+      ]
+    }
+  ]
+}
