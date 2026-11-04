@@ -1,0 +1,1909 @@
+{
+  "id": "muscle-asia",
+  "name": "Build Muscle Asian",
+  "style": "muscle",
+  "cuisine": "Asian",
+  "regions": [
+    "Japan",
+    "Korea",
+    "China",
+    "Taiwan",
+    "Thailand",
+    "Vietnam"
+  ],
+  "summary": "A week of real Asian home cooking for people who train hard: chicken teriyaki bowls, beef bibimbap, Thai basil chicken, steamed salmon and a Saturday red-braised beef, with congee and a Japanese breakfast tray to start the day. Rice and noodles carry the training fuel, with protein at every meal and snack.",
+  "howItWorks": "**Protein all day.** Every breakfast, lunch, dinner and snack has a real protein: cod, natto, eggs, pork and tofu in the morning, chicken, beef, shrimp and fish at lunch and dinner, and edamame, yogurt, tofu or mackerel in between. Five or six eating moments keep your muscles supplied from breakfast to bed.\n\n**Rice and noodles are the training fuel.** Rice or soba sits at almost every meal, and the onigiri make a quick snack around a session. It is how this food has always been built: a big bowl of rice with the protein on top, never instead of it. Brown rice stands in where the dish suits it.\n\n**Cook once, eat twice.** Monday's teriyaki, Tuesday's shrimp and tofu stir-fry, Wednesday's bibimbap, Friday's Thai basil chicken and Saturday's braised beef each make two portions, and Saturday's congee covers Sunday breakfast. Salmon is cooked fresh on Monday and Sunday and mackerel on Thursday. Canned mackerel snacks add omega-3 on other days.\n\n**Flavour without the salt.** Reduced-sodium soy sauce, miso, fish sauce and gochujang are used by the teaspoon. Ginger, garlic, scallion, chili, rice vinegar and lime do the rest, so the food stays properly seasoned while **sodium stays in check**.\n\n**Bigger sizes add food, not powder.** There is no Light size: building muscle takes enough food. Big and XL add a third snack on Tuesday, Thursday and Saturday and grow the plate: rice, noodles, tofu, eggs, meat and fish all get bigger, and no serving of meat goes past a pound. Vegetables and edamame stay as written.",
+  "signature": [
+    "muscle-asia-chicken-teriyaki-rice-bowl-green-beans-carrot",
+    "muscle-asia-beef-bibimbap-egg-namul-gochujang",
+    "muscle-asia-thai-basil-chicken-fried-egg-brown-rice-green-beans",
+    "muscle-asia-salmon-onigiri-bento-edamame-miso-tofu-soup"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2400,
+      "covers": [
+        "2200-2400",
+        "2400-2800"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-asia-tamagoyaki-rolled-omelette-daikon"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-asia-cold-sesame-ginger-chicken-cucumber"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-asia-cold-sesame-ginger-chicken-cucumber"
+          }
+        }
+      ]
+    },
+    "xl": {
+      "kcal": 3500,
+      "covers": [
+        "3200-3700"
+      ],
+      "adjust": [
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-asia-tamagoyaki-rolled-omelette-daikon"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-asia-cold-sesame-ginger-chicken-cucumber"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-asia-cold-sesame-ginger-chicken-cucumber"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "muscle-asia-japanese-breakfast-tray-grilled-cod-natto-miso-tofu-soup",
+      "name": "Japanese breakfast tray with grilled cod, natto and tofu miso soup",
+      "inspiredBy": "a classic Japanese asa-gohan set",
+      "about": "The classic Japanese morning tray: grilled cod, a tub of natto, a bowl of miso soup with tofu and scallion, rice, and spinach dressed with soy and sesame. It looks like a lot of small things, but it all comes together in about 20 minutes. The cod, natto and tofu give you **a big, steady dose of protein** before you train, and natto is also a good source of iron.",
+      "ingredients": [
+        {
+          "food": "atlantic-cod-wild-caught-raw-8de8e0",
+          "g": 140,
+          "note": "or Pacific cod or haddock; skin on if you can, patted dry"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        },
+        {
+          "food": "natto-86df6e",
+          "g": 35,
+          "note": "stirred well with a fork"
+        },
+        {
+          "food": "soft-or-firm-tofu-prepared-with-magnesium-chloride-nigari-4a4e28",
+          "g": 90,
+          "swap": "legumes",
+          "note": "cut in small cubes"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 5
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "rice-white-polished-type-2-raw-e88371",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "short-grain (sushi) rice"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 150,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 2
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 3,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook it with a little more than its own volume of water, covered, until tender, about 18 minutes, then rest it for 10 minutes. A rice cooker does this without watching.",
+        "Pat the cod dry, sprinkle it with the salt and let it sit while the grill heats. Broil or grill it skin side up for 6 to 8 minutes, until the skin blisters and the flesh flakes.",
+        "Blanch the spinach in boiling water for 40 seconds, cool it under cold water and squeeze it dry. Cut it into short lengths and dress with the soy sauce, rice vinegar and sesame seeds.",
+        "Warm a small mug of water, add the tofu and half the scallion and heat it through. Turn off the heat and stir in the miso until it dissolves. Do not boil it after the miso goes in.",
+        "Stir the natto briskly for about 20 turns until it turns stringy and pale, and top it with the rest of the scallion. Serve everything together on a tray with the rice."
+      ],
+      "prepMin": 8,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook the rice the night before, or set a rice cooker timer. Natto is sold frozen in most Asian grocers and thaws in the fridge overnight. A strip of kombu or a pinch of dashi granules in the soup water helps."
+    },
+    {
+      "id": "muscle-asia-dan-bing-egg-crepe-pork-scallion-edamame",
+      "name": "Dan bing egg crepe with pork and scallion, with edamame on the side",
+      "inspiredBy": "Taiwanese dan bing",
+      "about": "A thin wheat crepe with eggs cooked right onto it, rolled up around savoury minced pork and scallion and brushed with a little soy sauce and fresh chili. It is a Taiwanese street breakfast, and a warm bowl of edamame with a little vinegared daikon turns it into a proper meal. The eggs, pork and edamame together bring **plenty of protein**.",
+      "ingredients": [
+        {
+          "food": "wheat-flour-white-all-purpose-unenriched-68daeb",
+          "g": 30
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "egg-white-raw-b17726",
+          "g": 80
+        },
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 60,
+          "swap": "lean_protein",
+          "note": "minced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 25,
+          "note": "sliced"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 4,
+          "note": "sliced fine"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 140,
+          "swap": "legumes",
+          "note": "shelled, thawed"
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 70,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Whisk the flour with a pinch of the salt and about twice its weight in water until it is a thin, smooth batter like cream. Let it stand for 5 minutes.",
+        "Brush a nonstick pan with part of the canola oil over medium heat. Pour in the batter and swirl it into a thin round. Cook for about a minute, until the edges lift and it is just set. Slide it onto a plate.",
+        "Add the rest of the canola oil to the pan and cook the pork for 2 minutes, stirring, until no pink is left. Add the beaten eggs and egg whites with the scallion. When the eggs are nearly set, lay the crepe on top and press down so it sticks. Cover for 30 seconds, then flip the whole round with a wide spatula: the set egg holds the crepe together. Cook 30 seconds more and roll it up with the egg inside.",
+        "Slide onto a board, brush the outside with the soy sauce and sesame oil, scatter on the chili, then cut into thick slices.",
+        "Warm the edamame in a splash of hot water and drain. Toss the daikon with the rice vinegar and serve both beside the crepe."
+      ],
+      "prepMin": 8,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make the batter the night before and it pours even thinner. Scallion is the classic; a handful of chopped garlic chives makes a good change."
+    },
+    {
+      "id": "muscle-asia-congee-egg-cod-ginger-bok-choy",
+      "name": "Ginger congee with soft egg, cod and bok choy",
+      "inspiredBy": "Cantonese fish congee (yu jook)",
+      "about": "A pot of rice cooked down until it is silky, then topped with thin slices of cod, a soft egg with silky ribbons of egg white, bok choy and shiitake, plenty of ginger and scallion, toasted sesame and white pepper. It is the Saturday breakfast that takes care of you. The cod and egg give **a big serving of protein**, and a bowl of congee is easy on the stomach after a hard week of training.",
+      "ingredients": [
+        {
+          "food": "rice-white-polished-type-2-raw-e88371",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 12,
+          "note": "sliced, some cut into fine matchsticks"
+        },
+        {
+          "food": "atlantic-cod-wild-caught-raw-8de8e0",
+          "g": 120,
+          "note": "sliced thin, against the grain"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "cracked into a bowl"
+        },
+        {
+          "food": "egg-white-raw-b17726",
+          "g": 90,
+          "note": "lightly beaten"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20,
+          "note": "sliced"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 280,
+          "swap": "leafy_greens",
+          "note": "shredded"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 3
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 4,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Rinse the rice, then simmer it with about seven times its volume of water, the ginger coins and the salt, partly covered, for 45 minutes. Stir now and then so it does not stick, until the grains break down and the porridge is thick and creamy. Add hot water if it gets too thick.",
+        "Toss the cod slices with half the soy sauce, the sesame oil and the white pepper, and keep them cold while the congee finishes.",
+        "For the first portion, ladle half the congee into a small pot over medium heat, add the bok choy, shiitake and cod, and simmer for 3 minutes, until the cod turns opaque and the bok choy wilts. Turn the heat to low.",
+        "Stir in the egg whites in a thin stream so they set in soft ribbons. Crack the whole egg on top, cover and leave for 3 minutes, until the white is set and the yolk is still soft. Slide it into a bowl and add the rest of the soy sauce, the ginger matchsticks, scallion, cilantro and sesame seeds.",
+        "Chill the second portion of congee, with its cod, bok choy, shiitake and egg kept raw in the fridge. Tomorrow, loosen it with a splash of water, reheat it and finish it the same way."
+      ],
+      "prepMin": 10,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "A pressure cooker makes the congee in 20 minutes. Rice that has been frozen first breaks down faster."
+    },
+    {
+      "id": "muscle-asia-salmon-onigiri-bento-edamame-miso-tofu-soup",
+      "name": "Salmon onigiri bento with edamame and miso tofu soup",
+      "inspiredBy": "Japanese onigiri and a bento lunch",
+      "about": "Rice balls wrapped in nori and filled with flaked baked salmon, scallion and sesame, packed with a cool cucumber pickle and edamame, and a mug of miso soup with tofu. This is the lunch you can make the night before. The salmon gives you **omega-3 and vitamin D**, and the rice refuels you.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "skin removed"
+        },
+        {
+          "food": "rice-white-polished-type-2-raw-e88371",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "short-grain (sushi) rice"
+        },
+        {
+          "food": "nori-pyropia-laver-toasted-yakinori-7f29ab",
+          "g": 2,
+          "note": "toasted, cut in strips"
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 4,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20,
+          "note": "sliced fine"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 4
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 60,
+          "swap": "legumes",
+          "note": "shelled, thawed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 120,
+          "note": "sliced thin"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 8
+        },
+        {
+          "food": "soft-or-firm-tofu-prepared-with-magnesium-chloride-nigari-4a4e28",
+          "g": 80,
+          "swap": "legumes",
+          "note": "cut in cubes"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook it with a little more than its own volume of water, covered, for about 18 minutes, then rest it for 10 minutes. Spread it on a plate to cool for 10 minutes so you can handle it.",
+        "Bake the salmon at 200 C (400 F) for 10 to 12 minutes, until it flakes. Flake it with a fork and mix with half the soy sauce, the mirin, half the scallion and half the sesame seeds.",
+        "Wet your hands, rub them with a little of the salt, and press a handful of rice into a thick triangle around a spoonful of salmon, then cover it with more rice. Shape a few balls in this way and wrap each with a strip of nori.",
+        "Toss the cucumber with the rice vinegar, a pinch of salt and the remaining sesame seeds. Set it aside for 10 minutes.",
+        "Warm a small mug of water, add the tofu and the rest of the scallion and heat through, then off the heat stir in the miso. Serve with the onigiri, cucumber and edamame, with the rest of the soy sauce for dipping."
+      ],
+      "prepMin": 20,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook the salmon and rice the night before, cool the rice fast, and the morning is only shaping. Warm the rice until soft first: fridge-cold rice will not hold together. Wrap onigiri in nori just before eating if you want it crisp."
+    },
+    {
+      "id": "muscle-asia-chicken-teriyaki-rice-bowl-green-beans-carrot",
+      "name": "Chicken teriyaki rice bowl with green beans and carrot",
+      "inspiredBy": "Japanese chicken teriyaki",
+      "about": "Seared chicken thigh glazed in a quick teriyaki of soy sauce, mirin, ginger and garlic with only a spoonful of sugar, over brown rice with blistered green beans, carrot and edamame. It is glossy, savoury and not too sweet. It makes **two big portions**, so tomorrow's lunch is done, and the thigh stays juicy even when reheated.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 240,
+          "swap": "lean_protein",
+          "note": "cut in wide strips"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 50,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 200,
+          "note": "trimmed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 90,
+          "note": "sliced into thin coins"
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 50,
+          "swap": "legumes",
+          "note": "shelled, thawed"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 14
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 14
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 3
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "grated"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 4,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook enough for two portions in about twice its volume of water, covered, for 35 to 40 minutes, then rest it for 10 minutes.",
+        "Stir the soy sauce, mirin, sugar, ginger, garlic and rice vinegar together with a few spoonfuls of water.",
+        "Heat the oil in a large pan over medium-high heat and sear the chicken in two batches so it browns instead of steaming, 3 to 4 minutes a side, until golden and cooked through. Lift it out.",
+        "Add the green beans and carrot with a splash of water, cover for 2 minutes, then uncover and cook until the beans are bright and blistered at the edges. Add the edamame for the last minute.",
+        "Return the chicken, pour in the sauce and stir for a minute or two until it reduces and turns glossy. Spoon over the rice and finish with the sesame seeds and scallion. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Start the brown rice first, or use a rice cooker. Teri means shine and yaki means grilled, and the sugar is only a spoonful. Pack the rice and chicken apart for lunch so the rice does not go soggy."
+    },
+    {
+      "id": "muscle-asia-shrimp-tofu-edamame-stir-fry-bok-choy-brown-rice",
+      "name": "Shrimp, tofu and edamame stir-fry with bok choy and brown rice",
+      "inspiredBy": "Chinese home-style stir-fried tofu and shrimp",
+      "about": "Tofu seared until golden, then tossed with shrimp, edamame, bok choy and shiitake in a hot pan with garlic, ginger and a splash of rice wine. Only a little soy sauce and a squeeze of vinegar keep it bright instead of salty. The shrimp, tofu and soy beans together bring **a lot of protein**, and it makes two portions.",
+      "ingredients": [
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 115
+        },
+        {
+          "food": "soft-or-firm-tofu-prepared-with-magnesium-chloride-nigari-4a4e28",
+          "g": 150,
+          "swap": "legumes",
+          "note": "firm, not soft (soft will not sear); pressed dry and cut in squares"
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 60,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 180,
+          "swap": "leafy_greens",
+          "note": "cut in chunks"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 90,
+          "note": "sliced"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 55,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 10,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20,
+          "note": "in lengths"
+        },
+        {
+          "food": "shaoxing-wine-chinese-rice-wine-4e31ed",
+          "g": 10
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 9
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 4,
+          "note": "sliced"
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook enough for two portions in about twice its volume of water, covered, for 35 to 40 minutes, then rest it for 10 minutes.",
+        "Pat the shrimp dry and toss them with a little of the soy sauce and the rice wine. Leave them for 10 minutes.",
+        "Heat the canola oil in a wok or large pan over high heat and sear the tofu for 4 to 5 minutes, turning, until golden on most sides. Lift it out.",
+        "Add the garlic, ginger, chili and mushrooms and stir-fry for 1 minute. Add the shrimp and cook for 2 minutes, until pink and curled.",
+        "Tip in the edamame, bok choy and tofu with the rest of the soy sauce and the rice vinegar. Toss for 2 minutes, in two batches if your wok is small, until the bok choy stems are just crisp. Finish with the scallion.",
+        "Serve over the rice. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Start the brown rice first, or use a rice cooker. Frozen shrimp are best: thaw them in cold water in 10 minutes. Swap the bok choy for green beans or broccoli if that is what you have."
+    },
+    {
+      "id": "muscle-asia-beef-bibimbap-egg-namul-gochujang",
+      "name": "Beef bibimbap with namul, fried egg and gochujang",
+      "inspiredBy": "Korean bibimbap",
+      "about": "Warm rice with sesame-garlic beef, a colourful ring of seasoned spinach, carrot, mushrooms and cucumber, fried eggs and a spoonful of gochujang. Mix it all together at the table. The beef, egg and rice together bring **plenty of protein, iron and zinc**, and it makes two portions.",
+      "ingredients": [
+        {
+          "food": "beef-steak-boneless-round-lean-raw-64d7dd",
+          "g": 145,
+          "swap": "lean_protein",
+          "note": "sliced very thin against the grain"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "fried when serving"
+        },
+        {
+          "food": "rice-white-polished-type-2-raw-e88371",
+          "g": 50,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 130,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "gochujang-korean-chili-paste-843f28",
+          "g": 8
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "minced"
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 4,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook enough for two portions with a little more than its own volume of water, about 18 minutes, then rest 10 minutes.",
+        "Mix the beef with half the soy sauce, half the garlic and half the sesame oil. Leave it for 20 minutes.",
+        "Blanch the spinach for 40 seconds, squeeze it dry and toss with a pinch of garlic and the rest of the sesame oil. Toss the cucumber with the rice vinegar.",
+        "Stir-fry the carrot and shiitake separately in a little of the canola oil, 1 to 2 minutes each, until just tender and bright.",
+        "Cook the beef in a hot pan for 2 to 3 minutes, until browned. Fry today's eggs in the rest of the oil until the whites are set and the yolks are runny.",
+        "Spoon the rice into bowls, arrange the beef and vegetables in sections, add the egg, gochujang and sesame seeds, and stir it all together. For the second portion, keep the beef and vegetables cold and fry the egg fresh tomorrow."
+      ],
+      "prepMin": 25,
+      "cookMin": 20,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Use a pan with a lid to crisp the bottom of the rice for dolsot-style bibimbap. Gochujang is salty and brands vary, so stir in half, taste, then add the rest."
+    },
+    {
+      "id": "muscle-asia-saba-shioyaki-grated-daikon-miso-tofu-soup-rice",
+      "name": "Grilled saba with grated daikon, miso tofu soup and rice",
+      "inspiredBy": "Japanese saba shioyaki",
+      "about": "Mackerel fillets lightly salted and grilled until the skin crackles, with a cool heap of grated daikon, a squeeze of lime, bok choy in sesame and soy, and a bowl of tofu miso soup. The daikon and lime cut the richness of the fish. Mackerel is one of the best sources of **omega-3 and vitamin D** you can eat.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "fillets, patted dry"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 100,
+          "note": "peeled and finely grated"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 2
+        },
+        {
+          "food": "rice-white-polished-type-2-raw-e88371",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "short-grain (sushi) rice"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 170,
+          "swap": "leafy_greens",
+          "note": "halved lengthways"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 3,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "soft-or-firm-tofu-prepared-with-magnesium-chloride-nigari-4a4e28",
+          "g": 90,
+          "swap": "legumes",
+          "note": "cut in cubes"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 5
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "grated"
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook it with a little more than its own volume of water, about 18 minutes, then rest it for 10 minutes.",
+        "Rub the mackerel with the salt and leave it for 10 minutes. Pat it dry again. Broil or grill it skin side up for 6 to 8 minutes, until the skin is blistered and the flesh flakes. No turning needed.",
+        "Squeeze the grated daikon lightly. Mix the lime juice, ginger and soy sauce and spoon some over the daikon.",
+        "Steam the bok choy in a covered pan with a splash of water for 3 minutes until just tender. Toss with the sesame oil and sesame seeds.",
+        "Warm a small mug of water, add the tofu and scallion and heat through, then turn off the heat and stir in the miso.",
+        "Serve the fish with the daikon, rice, bok choy and soup."
+      ],
+      "prepMin": 15,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Ask the fishmonger for saba fillets with the skin on. Frozen saba from a Japanese grocer works, and fresh sardines or herring grill the same way. A strip of kombu in the soup water helps."
+    },
+    {
+      "id": "muscle-asia-pork-shabu-cold-soba-sesame-cucumber-edamame",
+      "name": "Cold pork shabu soba with sesame, cucumber and edamame",
+      "inspiredBy": "Japanese reishabu salad over cold soba",
+      "about": "Thin slices of lean pork quickly poached and chilled, laid over cold buckwheat noodles with cucumber, carrot and edamame under a sesame, rice vinegar and lime dressing. It is a summer lunch in Japan and works any day. The pork and soba together carry **a lot of protein and B vitamins**.",
+      "ingredients": [
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "sliced against the grain as thin as you can"
+        },
+        {
+          "food": "soba-noodles-dry-2dc785",
+          "g": 70,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 130,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 50,
+          "swap": "legumes",
+          "note": "shelled, thawed"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 10
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 14
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 5
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "grated"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Grind the sesame seeds to a rough paste with a mortar or a spice grinder. Whisk in the soy sauce, rice vinegar, lime juice, mirin, ginger and sesame oil with a spoonful of water to make a pourable dressing.",
+        "Slice the pork and drop it into a pot of barely simmering water for 1 to 2 minutes, until just white and cooked through. Lift it out into a bowl of ice water, then drain and pat dry.",
+        "Cook the soba in plenty of boiling water for 4 to 5 minutes, drain, rinse under cold water, rubbing the noodles to remove the starch, and shake them dry.",
+        "Pile the noodles into a wide bowl. Top with the pork, cucumber, carrot, edamame and scallion.",
+        "Pour over the dressing and toss at the table."
+      ],
+      "prepMin": 20,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Pork tenderloin slices much more easily if it spends 20 minutes in the freezer first."
+    },
+    {
+      "id": "muscle-asia-thai-basil-chicken-fried-egg-brown-rice-green-beans",
+      "name": "Thai basil chicken with fried egg, green beans and brown rice",
+      "inspiredBy": "Thai pad kra pao gai",
+      "about": "Chopped chicken thigh stir-fried hot and fast with garlic, chilies and a fistful of basil, over rice with a crisp-edged fried egg. A little fish sauce and soy sauce are the salt here, with lime to finish. It makes **two big portions with plenty of protein**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 200,
+          "swap": "lean_protein",
+          "note": "chopped small or minced"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "fried when serving"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 50,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 220,
+          "note": "cut in short lengths"
+        },
+        {
+          "food": "thai-basil-c5f9f2",
+          "g": 25
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 10,
+          "note": "smashed"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 6
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 5
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 3
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20,
+          "note": "sliced"
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook enough for two portions in about twice its volume of water, covered, for 35 to 40 minutes, then rest it for 10 minutes.",
+        "Pound or finely chop the garlic and chili together into a rough paste. Mix the soy sauce, fish sauce, sugar and a splash of water in a small bowl.",
+        "Heat two thirds of the oil in a wok or large pan over high heat. Add the garlic and chili paste for 15 seconds, then the chicken, and stir-fry for 3 minutes, breaking it up, until no pink remains. If your pan is small, cook it in two batches and put it all back together.",
+        "Add the green beans and scallion and stir-fry for 2 minutes, then pour in the sauce and toss for a minute. Take it off the heat and stir in the basil until it wilts. Finish with the lime juice.",
+        "Heat the rest of the oil in a small pan until shimmering, crack in today's eggs and fry until the edges are lacy and brown and the yolks are runny.",
+        "Serve the chicken over rice with the egg on top. For the second portion, keep the chicken cold and fry the egg fresh tomorrow."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Start the brown rice first, or use a rice cooker. Holy basil is the real thing, but Thai sweet basil is easier to find and works well. Ease off the chili for a milder plate."
+    },
+    {
+      "id": "muscle-asia-red-braised-beef-daikon-egg-bok-choy-rice",
+      "name": "Red-braised beef with daikon, egg, bok choy and rice",
+      "inspiredBy": "Chinese hong shao niu rou",
+      "about": "A weekend pot of lean beef braised slowly with ginger, star anise, cinnamon, reduced-sodium soy sauce and rice wine until it is tender and the sauce is glossy, with daikon, carrot, shiitake and a braised egg that soak up all the flavour. Served over rice with garlicky bok choy. It makes **two big portions**, and tastes even better the next day.",
+      "ingredients": [
+        {
+          "food": "beef-steak-boneless-round-lean-raw-64d7dd",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "cut in 4 cm chunks"
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 260,
+          "note": "peeled and cut in chunks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 140,
+          "note": "cut in chunks"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "boiled and peeled"
+        },
+        {
+          "food": "rice-white-polished-type-2-raw-e88371",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 210,
+          "swap": "leafy_greens",
+          "note": "halved"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 25,
+          "note": "in lengths"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "smashed"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 12
+        },
+        {
+          "food": "shaoxing-wine-chinese-rice-wine-4e31ed",
+          "g": 12
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 3
+        },
+        {
+          "food": "star-anise-02a10b",
+          "g": 1
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 50,
+          "note": "sliced"
+        }
+      ],
+      "steps": [
+        "Cover the beef with cold water, bring to a boil and simmer for 3 minutes. Drain and rinse off the grey scum. Boil the eggs for 8 minutes while you wait, cool them in cold water and peel them.",
+        "Heat half the oil in a heavy pot, add the ginger, scallion, half the garlic and the star anise and fry for 1 minute until fragrant, then add the sugar and let it melt for 30 seconds.",
+        "Add the beef, rice wine and soy sauce, turn the meat to coat, then pour in enough hot water to just cover. Add the cinnamon, cover and simmer very gently for 1 hour 15 minutes, then check; if a chunk resists a fork, give it 15 more.",
+        "Add the daikon, carrot, shiitake and eggs, cover and simmer for 30 minutes more, until the beef is tender and the sauce clings to the spoon. Uncover and boil for the last few minutes if it is too thin.",
+        "Meanwhile, cook the rice with a little more than its own volume of water, covered, for about 18 minutes. Stir-fry the bok choy in the rest of the oil with the last garlic for 2 minutes, with a splash of water.",
+        "Serve the beef, daikon and an egg over rice, with the bok choy. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 125,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "A pressure cooker does the beef in 40 minutes, and a cinnamon stick beats ground. The braise freezes well in its sauce for up to 3 months."
+    },
+    {
+      "id": "muscle-asia-ginger-scallion-steamed-salmon-tofu-bok-choy-brown-rice",
+      "name": "Ginger-scallion steamed salmon with silky tofu, bok choy and brown rice",
+      "inspiredBy": "Cantonese steamed fish with ginger and scallion",
+      "about": "A salmon fillet steamed over tofu with slivers of ginger and scallion, then finished with a spoonful of hot oil and a splash of soy sauce. It is the quickest of Chinese home dinners and keeps the fish silky. The salmon brings **omega-3 and vitamin D**, and the bok choy is steamed right on top.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 145,
+          "swap": "fatty_fish",
+          "note": "skin on, patted dry"
+        },
+        {
+          "food": "soft-or-firm-tofu-prepared-with-magnesium-chloride-nigari-4a4e28",
+          "g": 70,
+          "swap": "legumes",
+          "note": "in thick slices"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 340,
+          "swap": "leafy_greens",
+          "note": "halved"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 50,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 16,
+          "note": "cut in fine matchsticks"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 30,
+          "note": "cut in fine strips"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 9
+        },
+        {
+          "food": "shaoxing-wine-chinese-rice-wine-4e31ed",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 3,
+          "note": "sliced"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook it in about twice its volume of water, covered, for 35 to 40 minutes, then rest it for 10 minutes.",
+        "Lay the tofu slices on a heatproof plate, set the salmon on top, scatter over half the ginger and half the scallion, and pour on the rice wine.",
+        "Steam the plate over boiling water, covered, for 8 to 10 minutes, until the salmon is just opaque and flakes. Put the bok choy in a steamer basket above the fish for the last 4 minutes.",
+        "Pour off the liquid from the plate. Top the fish with the rest of the ginger and scallion, the chili and the cilantro.",
+        "Heat the canola and sesame oils in a small pan until they shimmer and pour them over the scallion, so they sizzle. Stir the soy sauce and rice vinegar together, spoon it over the fish and serve with the bok choy and rice."
+      ],
+      "prepMin": 20,
+      "cookMin": 45,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Start the brown rice first, or use a rice cooker. No steamer? A lidded pan with a rack, or a plate set on three balls of foil, works. Sea bass or cod steams the same way."
+    },
+    {
+      "id": "muscle-asia-edamame-lime-chili-sea-salt",
+      "name": "Edamame with lime, chili and a pinch of salt",
+      "inspiredBy": "Japanese izakaya edamame",
+      "about": "A bowl of warm edamame tossed with lime, a pinch of chili flakes and a little salt. It is simple, salty-sharp and hard to stop eating. A bowl gives you **a solid serving of protein and fibre**.",
+      "ingredients": [
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 120,
+          "swap": "legumes",
+          "note": "steamed"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 2,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Bring a pot of water to a boil and cook the edamame for 4 minutes, or steam them. Drain.",
+        "Toss while hot with the salt, lime juice, chili flakes and sesame seeds, and eat warm or cold."
+      ],
+      "prepMin": 2,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Frozen shelled edamame goes straight into the water. Pods work too, but the weight on the list is for the shelled beans."
+    },
+    {
+      "id": "muscle-asia-soy-braised-tea-eggs-cucumber",
+      "name": "Soy-braised eggs with star anise and cucumber",
+      "inspiredBy": "Chinese tea eggs (cha ye dan), without the tea",
+      "about": "Boiled eggs cracked and steeped in a fragrant soy, star anise and cinnamon bath until the whites are lightly marbled and savoury. Cool cucumber with a little rice vinegar keeps them fresh. The eggs bring **protein and choline**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "boiled"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "star-anise-02a10b",
+          "g": 0.5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.2
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "sliced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 150,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 4
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 2,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Boil the eggs for 8 minutes, cool under cold water and tap them all over with the back of a spoon to crack the shells without peeling.",
+        "Simmer the soy sauce, star anise, cinnamon and ginger with just enough water to come halfway up the eggs for 5 minutes. Add the cracked eggs, cover and simmer gently for 10 minutes, turning once, then turn off the heat and steep for at least 2 hours, or overnight in the fridge.",
+        "Peel the eggs. Toss the cucumber with the rice vinegar and sesame seeds, and serve alongside."
+      ],
+      "prepMin": 5,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Start them the night before so they steep overnight; they keep 3 days in their liquid in the fridge. A black tea bag in the pot makes them proper tea eggs."
+    },
+    {
+      "id": "muscle-asia-yogurt-mango-lime-sesame",
+      "name": "Thick yogurt with mango, lime and toasted sesame",
+      "inspiredBy": "Vietnamese sua chua trai cay",
+      "about": "Thick, tangy yogurt with ripe mango, a squeeze of lime and a scatter of toasted sesame seeds. It tastes like a Vietnamese dessert but holds **a big serving of protein**. Frozen mango works just as well as fresh.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 230,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mango-raw-80de97",
+          "g": 170,
+          "note": "diced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 4,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl and stir in the lime juice.",
+        "Top with the mango and the toasted sesame seeds."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Thaw frozen mango in the fridge overnight."
+    },
+    {
+      "id": "muscle-asia-hiyayakko-cold-tofu-ginger-scallion-edamame",
+      "name": "Hiyayakko, chilled tofu with ginger, scallion and edamame",
+      "inspiredBy": "Japanese hiyayakko",
+      "about": "A big slab of chilled tofu dressed with grated ginger, scallion, sesame seeds and a few drops of soy sauce and sesame oil, with a handful of edamame for bite. It is cold, silky and savoury. A plate gives you **a solid serving of protein**.",
+      "ingredients": [
+        {
+          "food": "soft-or-firm-tofu-prepared-with-magnesium-chloride-nigari-4a4e28",
+          "g": 150,
+          "swap": "legumes",
+          "note": "chilled, drained"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "grated"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "sliced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 6
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 3,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 50,
+          "swap": "legumes",
+          "note": "shelled, thawed"
+        }
+      ],
+      "steps": [
+        "Drain the tofu on a towel for 5 minutes and slide it onto a plate.",
+        "Top with the ginger, scallion and edamame, drizzle with the soy sauce and sesame oil, and scatter on the sesame seeds."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "A squeeze of lime or a dab of wasabi works in place of the ginger."
+    },
+    {
+      "id": "muscle-asia-yakitori-chicken-scallion-skewers-daikon",
+      "name": "Chicken and scallion yakitori skewers with daikon",
+      "inspiredBy": "Japanese negima yakitori",
+      "about": "Bite-sized chicken thigh and scallion skewers, grilled until charred and brushed with a light tare of soy sauce, mirin and ginger, with crisp daikon and a squeeze of lime. They are quick to cook, good cold and **properly high in protein**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "cut in bite-size chunks"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 40,
+          "note": "in 3 cm lengths"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 8
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 140,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Bring the soy sauce, mirin and ginger to a bubble in a small pan and cook for 30 seconds to a minute, until it turns slightly syrupy. It is only a few spoonfuls, so watch it.",
+        "Thread the chicken and scallion pieces alternately onto skewers (soak wooden ones for 20 minutes) and brush with the oil.",
+        "Grill or broil on high for 8 to 10 minutes, turning, and brushing with the tare in the last few minutes, until cooked through and charred in spots.",
+        "Toss the daikon with the rice vinegar. Squeeze the lime over the skewers and serve with the daikon."
+      ],
+      "prepMin": 12,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Grill a double batch for the two days they appear. They are good cold or gently reheated."
+    },
+    {
+      "id": "muscle-asia-shrimp-mango-cucumber-nuoc-cham",
+      "name": "Poached shrimp with mango, cucumber and nuoc cham",
+      "inspiredBy": "Vietnamese tom luoc, poached shrimp with nuoc cham",
+      "about": "Plump poached shrimp with sweet mango, cool cucumber and a bright dipping sauce of lime, fish sauce, garlic and chili. It is fresh, fast and light but carries **a good serving of protein**.",
+      "ingredients": [
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 115
+        },
+        {
+          "food": "mango-raw-80de97",
+          "g": 130,
+          "note": "cut in strips"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 150,
+          "note": "sliced thin"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 3.5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 3,
+          "note": "sliced"
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 2
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "torn"
+        }
+      ],
+      "steps": [
+        "Whisk the lime juice, fish sauce, sugar, garlic and chili with a spoonful of warm water until the sugar dissolves.",
+        "Drop the shrimp into boiling water for 2 minutes, until pink and curled. Cool them in cold water and drain.",
+        "Arrange the shrimp, mango, cucumber and carrot on a plate, scatter on the cilantro, and spoon over the sauce."
+      ],
+      "prepMin": 12,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Poach the shrimp the night before and they are cold and ready."
+    },
+    {
+      "id": "muscle-asia-mackerel-onigiri-ginger-scallion",
+      "name": "Canned mackerel onigiri with ginger and scallion",
+      "inspiredBy": "Japanese saba soboro onigiri",
+      "about": "Two rice balls filled with canned mackerel cooked down with ginger, soy and mirin into savoury flakes, wrapped in nori. A quick, salty-sharp snack that carries **omega-3 and vitamin D** and turns pantry fish into a proper bite before or after training.",
+      "ingredients": [
+        {
+          "food": "mackerel-canned-in-water-a99e2d",
+          "g": 90,
+          "swap": "fatty_fish",
+          "note": "canned Atlantic mackerel, not king mackerel; drained"
+        },
+        {
+          "food": "rice-white-polished-type-2-raw-e88371",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "short-grain (sushi) rice"
+        },
+        {
+          "food": "nori-pyropia-laver-toasted-yakinori-7f29ab",
+          "g": 2,
+          "note": "toasted"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 4
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 2
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 3,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook it with a little more than its own volume of water, covered, for about 18 minutes, then cool it for 10 minutes.",
+        "Warm the mackerel in a dry pan with the ginger, mirin and soy sauce, breaking it up with a fork, until it is dry and crumbly, about 3 minutes. Stir in the scallion.",
+        "Wet your hands, press the rice around a spoonful of the filling into two triangles, roll in the sesame seeds and wrap in nori."
+      ],
+      "prepMin": 10,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook a double batch of rice the night before and cool it fast; it keeps 3 days in the fridge. Warm it until soft before shaping, since cold rice will not hold together. Canned sardines work too."
+    },
+    {
+      "id": "muscle-asia-tamagoyaki-rolled-omelette-daikon",
+      "name": "Tamagoyaki rolled omelette with grated daikon",
+      "inspiredBy": "Japanese tamagoyaki",
+      "about": "A rolled Japanese omelette, lightly sweetened with a spoonful of mirin and seasoned with soy sauce and scallion, with a little pile of grated daikon. Soft, savoury and quick. It brings **protein and choline** without any bread, and the extra whites keep it light.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "egg-white-raw-b17726",
+          "g": 70
+        },
+        {
+          "food": "mirin-b780fb",
+          "g": 5
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 40,
+          "note": "peeled and finely grated"
+        }
+      ],
+      "steps": [
+        "Beat the eggs and egg whites with the mirin, soy sauce and scallion.",
+        "Brush a small nonstick pan with a little of the oil over medium-low heat. Pour in a thin layer of egg, and when it is almost set roll it up to one side.",
+        "Oil the pan again, pour in more egg under and around the roll, and roll again. Repeat until the egg is used up.",
+        "Rest the omelette for a minute, slice it into thick pieces and serve with the grated daikon."
+      ],
+      "prepMin": 6,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Squeeze the grated daikon lightly and add a drop of soy sauce."
+    },
+    {
+      "id": "muscle-asia-cold-sesame-ginger-chicken-cucumber",
+      "name": "Cold sesame-ginger chicken with cucumber",
+      "inspiredBy": "Sichuan bang bang chicken, lightened",
+      "about": "Tender poached chicken thigh shredded over cool cucumber with a sesame, ginger, rice vinegar and chili dressing. It is a Sichuan cold dish made lighter, good straight from the fridge. It brings **plenty of protein** with almost no effort.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 130,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "half sliced, half grated"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 10
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 3,
+          "note": "sliced fine"
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Simmer the chicken with the sliced ginger and half the scallion in barely bubbling water for 12 to 15 minutes, until cooked through. Cool it in its liquid, then shred it by hand.",
+        "Grind the sesame seeds to a rough paste. Stir in the grated ginger, soy sauce, rice vinegar, sugar, chili and a spoonful of the poaching liquid.",
+        "Pile the cucumber on a plate, top with the chicken and the rest of the scallion, and spoon over the dressing."
+      ],
+      "prepMin": 10,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Poach the chicken the night before and it only needs shredding. Keep the dressing separate until serving."
+    },
+    {
+      "id": "muscle-asia-ginger-lime-mackerel-cucumber-scallion",
+      "name": "Ginger-lime mackerel with cucumber and scallion",
+      "inspiredBy": "Japanese saba-kan, canned mackerel dressed at the table",
+      "about": "Flaked canned mackerel dressed with fresh ginger, lime, chili and scallion over cool cucumber with toasted sesame. It takes five minutes and tastes bright and clean. Canned mackerel is a cheap source of **omega-3, vitamin D and plenty of protein**.",
+      "ingredients": [
+        {
+          "food": "mackerel-canned-in-water-a99e2d",
+          "g": 100,
+          "swap": "fatty_fish",
+          "note": "canned Atlantic mackerel, not king mackerel; drained"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 150,
+          "note": "sliced into half moons"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "grated"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12
+        },
+        {
+          "food": "chili-pepper-red-raw-72faf1",
+          "g": 3,
+          "note": "sliced fine"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "sliced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 2
+        },
+        {
+          "food": "sesame-seeds-toasted-shelled-11092e",
+          "g": 3,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Flake the mackerel into a bowl and mix with the ginger, lime juice, chili, scallion and soy sauce.",
+        "Pile the cucumber on a plate, spoon the mackerel over and scatter on the sesame seeds."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Eat it with a few rice crackers or spoon it over a small scoop of leftover rice."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-asia-japanese-breakfast-tray-grilled-cod-natto-miso-tofu-soup"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-asia-salmon-onigiri-bento-edamame-miso-tofu-soup"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-asia-chicken-teriyaki-rice-bowl-green-beans-carrot"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-asia-yogurt-mango-lime-sesame"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-asia-soy-braised-tea-eggs-cucumber"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-asia-dan-bing-egg-crepe-pork-scallion-edamame"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-asia-chicken-teriyaki-rice-bowl-green-beans-carrot",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-asia-shrimp-tofu-edamame-stir-fry-bok-choy-brown-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-asia-ginger-lime-mackerel-cucumber-scallion"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-asia-yakitori-chicken-scallion-skewers-daikon"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-asia-dan-bing-egg-crepe-pork-scallion-edamame"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-asia-shrimp-tofu-edamame-stir-fry-bok-choy-brown-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-asia-beef-bibimbap-egg-namul-gochujang"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-asia-yakitori-chicken-scallion-skewers-daikon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-asia-ginger-lime-mackerel-cucumber-scallion"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-asia-japanese-breakfast-tray-grilled-cod-natto-miso-tofu-soup"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-asia-beef-bibimbap-egg-namul-gochujang",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-asia-saba-shioyaki-grated-daikon-miso-tofu-soup-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-asia-shrimp-mango-cucumber-nuoc-cham"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-asia-edamame-lime-chili-sea-salt"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-asia-japanese-breakfast-tray-grilled-cod-natto-miso-tofu-soup"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-asia-pork-shabu-cold-soba-sesame-cucumber-edamame"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-asia-thai-basil-chicken-fried-egg-brown-rice-green-beans"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-asia-mackerel-onigiri-ginger-scallion"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-asia-yogurt-mango-lime-sesame"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-asia-congee-egg-cod-ginger-bok-choy"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-asia-thai-basil-chicken-fried-egg-brown-rice-green-beans",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-asia-red-braised-beef-daikon-egg-bok-choy-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-asia-mackerel-onigiri-ginger-scallion"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-asia-edamame-lime-chili-sea-salt"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-asia-congee-egg-cod-ginger-bok-choy",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-asia-red-braised-beef-daikon-egg-bok-choy-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-asia-ginger-scallion-steamed-salmon-tofu-bok-choy-brown-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-asia-hiyayakko-cold-tofu-ginger-scallion-edamame"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-asia-shrimp-mango-cucumber-nuoc-cham"
+        }
+      ]
+    }
+  ]
+}
