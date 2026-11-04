@@ -313,7 +313,7 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
     label: 'Healthy aging',
     blurb: 'At least 25 g of protein at every main meal to protect muscle.',
     gates: { proteinPerMainMealG: 25, panelAge: 65, ironMaxMg: 30 },
-    note: "Health Canada advises everyone over 50 to take a daily vitamin D supplement of 400 IU, and B12 is absorbed less well with age, so fortified foods or a supplement help. If you have kidney disease or take medicines that interact with food, check this week with your care team.",
+    note: "Health Canada advises everyone over 50 to take a daily vitamin D supplement of 400 IU, and B12 is absorbed less well with age, so fortified foods or a supplement help. If you have kidney disease, take a blood thinner such as warfarin (keep leafy greens steady from week to week), or take other medicines that interact with food, check this week with your care team.",
   },
   // lifestyle
   family: { label: 'Family friendly', blurb: 'Mild flavours the whole table will eat.', gates: { noTags: ['spicy'] } },
