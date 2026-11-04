@@ -1,0 +1,2019 @@
+{
+  "id": "allergen-free-global",
+  "name": "Five-Allergen-free Kitchen",
+  "style": "allergen-free",
+  "cuisine": "Global",
+  "regions": [
+    "Canada",
+    "Mexico",
+    "the Mediterranean",
+    "Japan"
+  ],
+  "summary": "A week of home cooking made without peanuts and tree nuts, eggs, dairy, shellfish and sesame, from Mexican pipián and pozole to Canadian salmon, a Greek pork and bean stew and a Japanese-style tofu curry. It does use wheat, soy, fish and mustard, with seeds, fortified soy drink, tofu and lean meat doing the jobs of nuts, eggs and dairy.",
+  "howItWorks": "**Five left out, on purpose.** Made without peanuts and tree nuts, eggs, dairy, shellfish and sesame. It does use wheat, soy, fish and mustard, plus flax and sunflower and pumpkin seeds, so it does not suit anyone who avoids those. Some people with a nut or sesame allergy react to other seeds too, so ask your allergist first. **This plan does not replace your allergist's advice.**\n\n**Calcium, choline, vitamin D and B12.** Soy drink, calcium-set tofu, canned fish with soft bones and greens share calcium. Choline is hard, so chicken, pork, beef, fish, tofu and edamame turn up in most meals. Salmon, sardines and soy drink carry vitamin D and B12, but vitamin D and iodine stay low, so the salt is iodized; ask about a supplement. It does not suit a kidney diet.\n\n**Read every label.** Check the ingredient list and any \"may contain\" line each time you buy, since a missing warning does not guarantee safety. Hidden milk, egg, nuts or sesame turn up in bread, pasta, broth, spice blends, ground spices, dried chiles, seed butters, soy yogurt, oats and flax. Buy them packaged, never from bulk bins or bakery counters, and ask the maker if an allergy is severe.\n\n**Keep it clean at home.** If anyone in the house eats nuts, sesame, egg or dairy, cook these recipes first. Wash hands with soap and water (sanitiser gel does not remove allergens), and wash boards, knives, pans and counters. Use a fresh spoon in the seed butter jar and the soy yogurt tub, and a separate toaster or toaster bags.\n\n**Cook once, eat twice.** Pipián, Greek stew, beef soup and pozole each make two portions. At Light the second snack drops and grains, bread, potato and oil shrink while meat, fish and tofu stay about the same, so rice and rye are only a spoonful or half a slice; skip them if you like. Big adds a snack a day. Fibre runs high, so build up slowly and drink water.",
+  "signature": [
+    "allergen-free-global-chicken-pipian-rojo-rice-black-beans",
+    "allergen-free-global-maple-mustard-salmon-potatoes-broccoli",
+    "allergen-free-global-sardine-pasta-broccoli-lemon-breadcrumbs",
+    "allergen-free-global-pork-pozole-rojo-hominy"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1600,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "allergen-free-global-rye-toast-sunflower-seed-butter-blueberries"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "allergen-free-global-oat-sunflower-seed-butter-bites"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "allergen-free-global-soy-yogurt-blueberries-flax"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "allergen-free-global-black-bean-salsa-baked-tortilla-chips"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "allergen-free-global-baked-cinnamon-apple-pumpkin-seeds"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "allergen-free-global-rye-toast-sunflower-seed-butter-blueberries"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "allergen-free-global-black-bean-salsa-baked-tortilla-chips"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "servings": 1,
+      "id": "allergen-free-global-cinnamon-apple-oat-porridge",
+      "name": "Cinnamon apple oat porridge with ground flax and sunflower seed butter",
+      "inspiredBy": "Canadian morning porridge, made with fortified soy drink instead of milk and finished with ground flax, a Canadian crop",
+      "about": "Creamy rolled oats simmered in fortified soy drink with diced apple and cinnamon, stirred with ground flax and a spoonful of toasted wheat germ, then swirled with sunflower seed butter for a nutty richness, with no nuts in the recipe. The soy drink brings **calcium and vitamin D**, the flax adds plant omega-3, and the wheat germ and seed butter add choline and vitamin E.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "look for plain rolled oats, packaged and not from a bulk bin; check the label for \"may contain\" nuts and sesame"
+        },
+        {
+          "food": "soy-beverage-reduced-fat-1-added-ca-vitamins-a-b1-b2-b12-1beec5",
+          "g": 210,
+          "note": "plain or unsweetened, with calcium, vitamin D and B12 on the label (a carton giving about 25 to 30% of the daily value for calcium per cup); check it for \"may contain\" nuts"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 110,
+          "note": "diced, skin on"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "buy it already ground, from a facility that handles no nuts or sesame if you can, or check the label for \"may contain\"; keep it in the fridge once opened"
+        },
+        {
+          "food": "wheat-germ-2e7e8d",
+          "g": 12,
+          "note": "plain and toasted (wheat is allowed here); buy it packaged, not from a bulk bin, check the label for \"may contain\" nuts and sesame, and keep it in the fridge once opened"
+        },
+        {
+          "food": "sunflower-seeds-butter-ccaf05",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "plain; look for a brand made in a nut-free and sesame-free facility, and check the label for \"may contain\" peanuts, tree nuts and sesame, since many seed butters share a line"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the apple, then dice it with the skin on. Shake the carton of soy drink well, because the calcium settles at the bottom.",
+        "Put the oats, soy drink, apple, flax, wheat germ, cinnamon and salt in a small pot over medium heat. Stir often until it bubbles gently.",
+        "Turn the heat down and cook, stirring, until the oats are thick and creamy and the apple is soft, about 6 minutes.",
+        "Spoon into a bowl and swirl the sunflower seed butter over the top while the porridge is hot, so it melts into ribbons."
+      ],
+      "prepMin": 4,
+      "cookMin": 9,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Cook a double pot and keep the second portion in a shallow container in the fridge for up to 3 days. Reheat with a splash of soy drink until steaming. A fortified oat drink with added calcium works too, with a little less protein; check it for \"may contain\" nuts too."
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-tofu-scramble-mexicana",
+      "name": "Tofu scramble a la mexicana with warm corn tortillas",
+      "inspiredBy": "Mexican huevos a la mexicana, the everyday scramble of tomato, onion and chile, made with tofu",
+      "about": "Crumbled tofu fried with tomato, onion and spinach, turned golden with turmeric and cumin, and served with black beans, warm corn tortillas and avocado. It is the classic Mexican breakfast flavour with no eggs, and the calcium-set tofu brings **protein, calcium and choline**.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 90,
+          "swap": "lean_protein",
+          "note": "buy the calcium-set kind (calcium sulfate on the label) showing about 45% of the daily value for calcium in an 85 g serving; check the \"may contain\" line for nuts and sesame; opened tofu goes covered in the fridge and is used within 2 days"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 35,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 80
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed and chopped"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 45,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "plain corn tortillas; check the label for \"may contain\" and for added milk or egg"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "note": "from a lime"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.4
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the spinach and cilantro. Pat the tofu dry and crumble it with your fingers into pea-sized pieces.",
+        "Warm the oil in a nonstick pan over medium heat. Cook the onion until soft, about 3 minutes.",
+        "Add the tomatoes, cumin, turmeric and chili flakes and cook until the juices thicken, about 3 minutes.",
+        "Add the tofu, beans and salt and cook, stirring, until hot and lightly golden at the edges, about 5 minutes. Stir in the spinach until it wilts.",
+        "Warm the tortillas in a dry pan or directly over a low flame. Finish the scramble with the lime juice and cilantro and serve with the avocado."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Add more chili flakes if you like heat. A little more tomato makes it saucier. Buy tofu in blocks you will use within 2 days, keep the rest covered in the fridge, or freeze it."
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-blueberry-pumpkin-seed-overnight-oats",
+      "name": "Blueberry overnight oats with soy yogurt, flax and pumpkin seeds",
+      "inspiredBy": "Canadian overnight oats, with soy yogurt and soy drink in place of dairy",
+      "about": "Rolled oats soaked overnight in soy yogurt and fortified soy drink with ground flax, wheat germ and a spoonful of sunflower seed butter, then topped with blueberries and toasted pumpkin seeds for crunch. It is made the night before and tastes like a bowl of blueberry yogurt. It brings **calcium, fibre and plant omega-3**, with vitamin C from the berries and vitamin E from the seeds.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "look for plain rolled oats, packaged and not from a bulk bin; check the label for \"may contain\" nuts and sesame"
+        },
+        {
+          "food": "soy-yogurt-plain-345e92",
+          "g": 120,
+          "note": "soy only, with no almond or coconut blend; check the label for \"may contain\" nuts"
+        },
+        {
+          "food": "soy-beverage-reduced-fat-1-added-ca-vitamins-a-b1-b2-b12-1beec5",
+          "g": 120,
+          "note": "plain or unsweetened, with calcium, vitamin D and B12 on the label (a carton giving about 25 to 30% of the daily value for calcium per cup); check it for \"may contain\" nuts"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 80,
+          "swap": "berries",
+          "note": "fresh or frozen"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "buy it already ground, from a facility that handles no nuts or sesame if you can, or check the label for \"may contain\"; keep it in the fridge once opened"
+        },
+        {
+          "food": "wheat-germ-2e7e8d",
+          "g": 15,
+          "note": "plain and toasted (wheat is allowed here); buy it packaged, not from a bulk bin, check the label for \"may contain\" nuts and sesame, and keep it in the fridge once opened"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "plain and unsalted; buy them packaged, not from a bulk bin, from a brand made without nuts and sesame if you can, and check for \"may contain\""
+        },
+        {
+          "food": "sunflower-seeds-butter-ccaf05",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "plain; look for a brand made in a nut-free and sesame-free facility, and check the label for \"may contain\" peanuts, tree nuts and sesame, since many seed butters share a line"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "The night before, stir the oats, soy yogurt, soy drink, flax, wheat germ, sunflower seed butter, maple syrup and cinnamon together in a jar or bowl. Shake the soy drink carton first.",
+        "Cover and refrigerate overnight, or at least 4 hours, until the oats are soft and the mixture is thick. It keeps up to 2 days.",
+        "In the morning, toast the pumpkin seeds in a dry pan over medium heat until they puff and pop, about 3 minutes.",
+        "Rinse the blueberries. Stir the oats, loosen with a splash of soy drink if it is too thick, and top with the blueberries and warm seeds."
+      ],
+      "prepMin": 6,
+      "cookMin": 3,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Mix two jars at once. Frozen blueberries thaw into a natural sauce overnight. For children under 4, chop or grind the pumpkin seeds first, since whole seeds are a choking risk."
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-salmon-salad-sandwich-rye-dill",
+      "name": "Salmon salad sandwich on rye with dill and cucumber",
+      "inspiredBy": "Canadian deli salmon salad sandwiches, with a soy yogurt and Dijon dressing instead of mayo",
+      "about": "Flaked canned salmon, soft bones and all, mixed with crunchy cucumber, onion, dill, creamy mashed avocado and a lemony soy yogurt and Dijon dressing, piled on rye with spinach and carrot sticks. There is no mayo and no egg. The salmon brings **omega-3, vitamin D, B12 and calcium**.",
+      "ingredients": [
+        {
+          "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+          "g": 88,
+          "swap": "fatty_fish",
+          "note": "plain tin, not a flavoured one; check the label for \"may contain\"; move any leftover to a covered glass container"
+        },
+        {
+          "food": "soy-yogurt-plain-345e92",
+          "g": 35,
+          "note": "soy only, with no almond or coconut blend; check the label for \"may contain\" nuts"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 70,
+          "note": "ripe, mashed into the filling"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 6,
+          "note": "plain Dijon; check the label for \"may contain\""
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 40,
+          "note": "finely diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "minced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "from a lemon"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "sliced; buy it packaged with a full ingredient list, not from a bakery counter, since breads often carry milk, egg or sesame, and check for \"may contain\""
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 25,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the cucumber, spinach, carrot and dill before cutting.",
+        "Drain the salmon and flake it into a bowl, mashing in the soft bones, which are edible and carry the calcium.",
+        "Stir in the soy yogurt, mashed avocado, Dijon, lemon juice, cucumber, onion, dill and pepper. Taste and add a little more lemon if it needs brightness. The salmon is already salty, so there is no added salt.",
+        "Toast the rye in the oven or a dry pan if you like. Pile the salmon salad on half the slices, top with the spinach and cover with the rest. If the filling seems dry, loosen it with a teaspoon of soy drink or an extra squeeze of lemon.",
+        "Serve with the carrot sticks. Move any leftover salmon from the opened tin to a covered glass container in the fridge and use it within 2 days, as you would the leftover filling."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "To pack it, keep the filling cold with an ice pack and eat it within 2 hours of leaving the fridge. Pack the bread separately so the rye stays crisp."
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-teriyaki-tofu-edamame-rice-bowl",
+      "name": "Ginger-soy tofu and edamame rice bowl with cucumber and carrot",
+      "inspiredBy": "Japanese donburi-style rice bowls, with a ginger-soy glaze and no sesame",
+      "about": "Seared tofu and edamame over brown rice with crunchy cucumber and carrot, glazed with a quick ginger, garlic, soy and lime sauce. There is no sesame oil or seeds in the recipe, so just check the soy sauce label. The tofu and edamame bring **protein, calcium, iron and choline**.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 44,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 95,
+          "swap": "lean_protein",
+          "note": "buy the calcium-set kind (calcium sulfate on the label) showing about 45% of the daily value for calcium in an 85 g serving; check the \"may contain\" line for nuts and sesame; opened tofu goes covered in the fridge and is used within 2 days"
+        },
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 125,
+          "swap": "legumes",
+          "note": "shelled and already cooked; check the label for \"may contain\""
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 55,
+          "note": "cut into thin matchsticks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 45,
+          "note": "cut into thin matchsticks"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 12,
+          "note": "check the label for \"may contain\" sesame"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10,
+          "note": "from a lime"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 6
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Cook the rice ahead if you can. Cook the brown rice in plenty of simmering water until tender, about 30 minutes, drain it well, then spread it in a shallow container and cool it within 1 hour. Keep it up to 3 days.",
+        "Wash the cucumber and carrot and cut them into matchsticks. Whisk the soy sauce, lime juice, maple syrup and ginger with a spoonful of water.",
+        "Pat the tofu dry and cut it into cubes. Sear in the oil in a nonstick pan over medium-high heat until golden on two sides, about 6 minutes, adding the garlic for the last 30 seconds.",
+        "Add the edamame and the sauce to the pan and cook, turning, until the sauce turns glossy and clings, about 2 minutes.",
+        "Reheat the rice until steaming hot (74 °C), spoon it into a bowl and top with the tofu and edamame and the cool cucumber and carrot."
+      ],
+      "prepMin": 12,
+      "cookMin": 12,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook the rice on Wednesday night, and this lunch takes 15 minutes. Keep any opened tofu covered in the fridge and use it within 2 days."
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-potato-salmon-cakes-cucumber-dill-slaw",
+      "name": "Maritime-style salmon cakes with a carrot, cucumber and dill salad",
+      "inspiredBy": "Maritime Canadian salmon cakes, bound with potato and oats instead of egg",
+      "about": "Golden pan-fried cakes of canned salmon and mashed potato with onion, Dijon and dill, served with a crisp carrot, cucumber and dill salad and a squeeze of lemon. The potato and oats hold them together, so there is no egg. The salmon, soft bones and all, brings **omega-3, B12, vitamin D and calcium**, and the carrot adds vitamin A.",
+      "ingredients": [
+        {
+          "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "plain tin, not a flavoured one; check the label for \"may contain\"; move any leftover to a covered glass container"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 150,
+          "note": "peeled and cut up"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 15,
+          "note": "rolled oats, ground fine in a blender or crushed, to bind"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "minced"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 6,
+          "note": "plain Dijon; check the label for \"may contain\""
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "note": "from a lemon"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 90,
+          "note": "grated"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "soy-yogurt-plain-345e92",
+          "g": 20,
+          "note": "soy only, with no almond or coconut blend; check the label for \"may contain\" nuts"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Boil the potato in unsalted water until a knife slides in easily, about 15 minutes, or use the one you boiled and chilled on Wednesday. Drain well and mash it, leaving a few small lumps. Let it cool for 10 minutes.",
+        "Drain the salmon, flake it and mash in the soft bones. Mix it into the potato with the oats, onion, Dijon, half the dill, half the lemon juice, the pepper and the salt. Shape into 2 or 3 firm patties, then chill them for 10 minutes so they hold together.",
+        "Wash the cucumber, carrot, spinach and dill. Grate the carrot and toss it with the sliced cucumber, the soy yogurt, the rest of the dill and lemon juice, and a pinch of pepper.",
+        "Heat the oil in a nonstick pan over medium heat. Fry the cakes until deep golden and 74 °C (165 °F) in the centre, about 4 minutes a side. Turn them gently, once.",
+        "Serve the cakes on the spinach with the carrot and cucumber salad. Eat the same day, since fried fish cakes don't reheat well, and move any salmon left in the opened tin to a covered glass container in the fridge for up to 2 days."
+      ],
+      "prepMin": 20,
+      "cookMin": 25,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Boil an extra potato on Wednesday while the salmon roasts, chill it within 2 hours, and these come together in 15 minutes."
+    },
+    {
+      "servings": 2,
+      "id": "allergen-free-global-chicken-pipian-rojo-rice-black-beans",
+      "name": "Chicken in red pumpkin seed sauce with rice and black beans",
+      "inspiredBy": "Mexican pipián rojo, the red chile sauce thickened with toasted pepitas, served with beans and rice",
+      "about": "Tender chicken breast simmered in a smoky red sauce of guajillo chile, tomato and toasted pumpkin seeds, with black beans, wilted spinach and brown rice. The seeds give the sauce body, so it needs no nuts, no cream and no flour. It brings **protein, choline, iron and magnesium**. Make it for two and tomorrow's lunch is done.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 155,
+          "swap": "lean_protein",
+          "note": "plain, with no added broth or seasoning solution; check the label; cut into bite-size pieces"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "plain and unsalted; buy them packaged, not from a bulk bin, from a brand made without nuts and sesame if you can, and check for \"may contain\""
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 110
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 45,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "peeled"
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 100,
+          "note": "stock and bouillon can carry milk, so check the label for milk and for \"may contain\""
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed and chopped"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 60,
+          "note": "sliced, for the top"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10,
+          "note": "from a lime"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "guajillo-chile-dried-eb6416",
+          "g": 4,
+          "note": "dried, stemmed and seeded; check the package for \"may contain\" peanuts and sesame"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Start the rice. Cook the brown rice in plenty of simmering water until tender, about 30 minutes, then drain it well and keep it covered while you make the sauce.",
+        "Tear the guajillo into pieces and toast them in a dry pan for 20 seconds a side, just until fragrant, then cover with hot water and soak 10 minutes. Toast the pumpkin seeds in the same pan, stirring, until they puff and pop, 3 to 4 minutes. Set aside a spoonful for the top.",
+        "Blend the drained chiles with the tomatoes, half the onion, the garlic, the toasted seeds, the cumin, oregano, cinnamon and broth until smooth.",
+        "Heat the oil in a wide pot over medium heat and cook the rest of the onion until soft, about 4 minutes. Add the chicken and stir for 2 minutes. Wash your hands, the board and the knife after handling raw chicken.",
+        "Pour in the red sauce and simmer gently, stirring often, until it coats the back of a spoon and the chicken reaches 74 °C (165 °F) in the thickest piece, about 15 minutes. Keep the heat low, because seed sauces catch on the bottom.",
+        "Wash the cilantro. Stir in the beans and the spinach and cook until the spinach wilts, about 2 minutes. Add the lime juice and salt, taste, and serve over the rice with the avocado, cilantro and the reserved seeds on top.",
+        "Pack the second portion into a shallow container for tomorrow. Get the chicken and the rice into the fridge within 2 hours (cool the rice within 1 hour) and use within 3 days. Reheat once, until steaming hot at 74 °C."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Skip the rice and serve with warm corn tortillas if you prefer, and add a pinch of chili flakes at the table for heat. It freezes well: thaw it in the fridge, use within 2 days and never refreeze."
+    },
+    {
+      "servings": 2,
+      "id": "allergen-free-global-greek-pork-white-bean-stew-kale-lemon",
+      "name": "Greek-style pork and white bean stew with kale, lemon and dill",
+      "inspiredBy": "Greek braised pork with beans, in the spirit of fasolada and pork with celery, brightened with lemon and dill",
+      "about": "Lean pork simmered with white beans, tomato, carrot and kale in an oregano and cinnamon-scented sauce, finished with lemon and a handful of dill, with rye bread for the sauce. It is a hearty one-pot supper. It brings **protein, choline, iron and folate**. Make it for two and tomorrow's lunch is ready.",
+      "ingredients": [
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 185,
+          "swap": "lean_protein",
+          "note": "trimmed and cut into bite-size chunks"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 130
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, torn"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 45,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "note": "from a lemon"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "on the side; buy it packaged with a full ingredient list, not from a bakery counter, since breads often carry milk, egg or sesame, and check for \"may contain\""
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the kale and carrot. Pat the pork dry and wash your hands and the board after handling it.",
+        "Warm the oil in a heavy pot over medium-high heat. Brown the pork in a single layer, in two batches, about 4 minutes a batch, then set it aside.",
+        "Lower the heat, soften the onion and carrot for 5 minutes, then add the garlic, oregano and cinnamon for 1 minute. Stir in the tomatoes, bay leaf, salt, pepper and 200 ml of water, scraping up the browned bits.",
+        "Return the pork, cover and simmer gently for 20 minutes, until the pork is tender and has reached 71 °C (160 °F) in the middle of a thick chunk.",
+        "Add the beans and kale and simmer 8 minutes more, until the kale is silky. Remove the bay leaf and stir in the lemon juice and half the dill.",
+        "Serve with the rye bread and the rest of the dill. Put the second portion into a shallow container within 2 hours, keep it up to 3 days and reheat once to 74 °C."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "The stew freezes well for up to 3 months. Thaw it in the fridge, use it within 2 days and never refreeze it."
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-maple-mustard-salmon-potatoes-broccoli",
+      "name": "Maple-mustard salmon with roasted potatoes, carrots and broccoli",
+      "inspiredBy": "Canadian maple-glazed salmon, with a Dijon edge and roasted vegetables",
+      "about": "A salmon fillet brushed with maple and Dijon and roasted with crisp-edged potatoes, carrots and broccoli, finished with fresh dill and lemon. It is a classic Canadian supper on one tray. The salmon brings **omega-3, vitamin D, B12 and choline**, and the carrots and broccoli add vitamin A, C and K.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 170,
+          "swap": "fatty_fish",
+          "note": "fillet, pin bones removed"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 160,
+          "swap": "low_gi_grains",
+          "note": "scrubbed and cut in chunks"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 110,
+          "swap": "leafy_greens",
+          "note": "cut into florets"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 8
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 8,
+          "note": "plain Dijon; check the label for \"may contain\""
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Scrub the potatoes and carrots and wash the broccoli. Toss the potatoes and carrots with most of the oil, the garlic, salt and pepper on a large tray.",
+        "Roast the potatoes and carrots for 15 minutes, until they are just starting to brown. Add the broccoli to the tray and roast 5 minutes more.",
+        "Meanwhile whisk the maple syrup and Dijon in a small bowl. Pat the salmon dry. Wash your hands, the board and anything else the raw fish touched.",
+        "Push the vegetables to the sides of the tray, put the salmon in the middle with a little oil and brush it with the maple-mustard glaze.",
+        "Roast until the salmon flakes easily and reaches 70 °C (158 °F), 10 to 12 minutes. Squeeze the lemon over everything and scatter the dill on top."
+      ],
+      "prepMin": 12,
+      "cookMin": 32,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook it fresh, because fish is best eaten the day it is cooked. Boil an extra potato for Saturday's salmon cakes while the oven is on."
+    },
+    {
+      "servings": 2,
+      "id": "allergen-free-global-canadian-beef-potato-soup-kale",
+      "name": "Beef, potato and kale soup with carrot",
+      "inspiredBy": "Canadian farmhouse beef and vegetable soup, with tomato for depth",
+      "about": "A thick, savoury soup of tender beef, potato, carrot and onion with tomato and kale stirred in at the end and a slice of rye on the side. It tastes like a Sunday kitchen in a bowl. It brings **iron, zinc, B12 and choline** from the beef, and potassium and fibre from the vegetables.",
+      "ingredients": [
+        {
+          "food": "beef-chuck-for-stew-lean-and-fat-raw-8d6ce5",
+          "g": 162,
+          "swap": "lean_protein",
+          "note": "trimmed and cut into small cubes"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "scrubbed and diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 45,
+          "note": "diced"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, chopped"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 70
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 200,
+          "note": "stock and bouillon can carry milk, so check the label for milk and for \"may contain\""
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 25,
+          "note": "on the side; buy it packaged with a full ingredient list, not from a bakery counter, since breads often carry milk, egg or sesame, and check for \"may contain\""
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash the carrot, potato and kale. Pat the beef dry, wash your hands and board after handling it, and brown it in the oil in a heavy pot over medium-high heat until deeply coloured, about 6 minutes.",
+        "Add the onion and carrot and cook until the onion softens, about 5 minutes. Stir in the garlic and thyme for 1 minute.",
+        "Add the tomatoes, broth, bay leaf and about 500 ml of water. Bring to a boil, then cover and simmer gently for 50 minutes, until the beef is nearly tender.",
+        "Add the potato and simmer 20 minutes more, until the beef melts at the touch of a fork and the potato is tender. The beef will be well past 71 °C (160 °F) by then.",
+        "Stir in the kale and simmer 5 minutes more. Remove the bay leaf, add the salt and pepper, and taste. For a thicker soup, mash a few potato pieces against the side of the pot.",
+        "Serve with the rye. Cool the second portion in a shallow container and refrigerate within 2 hours. Keep up to 3 days and reheat once to 74 °C, adding a splash of water."
+      ],
+      "prepMin": 15,
+      "cookMin": 80,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "It takes about 1½ hours on the stove, so start early. A pressure cooker makes it in about 25 minutes of cooking, or use a slow cooker all day. Freeze single portions for up to 3 months, thaw them in the fridge, use within 2 days and never refreeze."
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-sardine-pasta-broccoli-lemon-breadcrumbs",
+      "name": "Sardine pasta with broccoli, tomato, lemon and toasted breadcrumbs",
+      "inspiredBy": "Sicilian pasta con le sarde and pasta with broccoli, without the pine nuts and with a crisp breadcrumb topping",
+      "about": "Whole-wheat spaghetti tossed with canned sardines, tender broccoli, tomato, garlic and chili, topped with golden breadcrumbs, dill and lemon. It is quick, bright and not the least bit fishy. The sardines, soft bones and all, bring **calcium, omega-3 and vitamin B12**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pasta-egg-free-dry-6e0f71",
+          "g": 75,
+          "swap": "low_gi_grains",
+          "note": "plain dry pasta, not fresh or filled (those often have egg); check the label for \"may contain\""
+        },
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 112,
+          "swap": "fatty_fish",
+          "note": "plain tin in oil, not one in sauce; check the label for \"may contain\"; move any leftover to a covered glass container"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 110,
+          "swap": "leafy_greens",
+          "note": "cut into small florets"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 100
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 15,
+          "note": "crushed from a plain, packaged bread; bread and crumbs can carry milk, egg or sesame, so check the label"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "note": "from a lemon"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Bring a large pot of water to a boil. Wash the broccoli and dill. Tear or crush the rye into crumbs and toast them in a dry pan, or with a drop of the oil, over medium heat until golden, about 3 minutes, then tip them out.",
+        "Cook the pasta in the boiling water until almost al dente, adding the broccoli for the last 3 minutes. Save a cup of the pasta water, then drain.",
+        "Meanwhile warm the oil in a wide pan over medium heat. Cook the garlic and chili flakes for 1 minute, then add the tomatoes, the salt and a splash of pasta water. Simmer until the sauce thickens slightly, about 6 minutes.",
+        "Break the sardines into the sauce and heat through for 2 minutes. Toss in the pasta and broccoli with a splash more pasta water, crushing the broccoli a little so it melts into the sauce.",
+        "Finish with the lemon juice, pepper and half the dill. Top with the breadcrumbs and the rest of the dill. Eat it fresh, and move any sardines left in the opened tin to a covered glass container in the fridge, for up to 2 days."
+      ],
+      "prepMin": 10,
+      "cookMin": 22,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "If your family dislikes sardines, mash them into the sauce so they melt away. The crumbs keep crisp if you add them at the table."
+    },
+    {
+      "servings": 2,
+      "id": "allergen-free-global-pork-pozole-rojo-hominy",
+      "name": "Pork pozole rojo with hominy, spinach and baked tortilla strips",
+      "inspiredBy": "Mexican pozole rojo from Jalisco, a red chile and hominy stew with fresh toppings, here made with lean pork",
+      "about": "A deep red stew of tender pork and hominy in a guajillo and ancho chile broth, with thin ribbons of raw spinach, lime, avocado and baked tortilla strips on top. The broth does the work while you do other things. The pork brings **protein, thiamin, choline and zinc**, and the lime and spinach add vitamin C and folate.",
+      "ingredients": [
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 200,
+          "swap": "lean_protein",
+          "note": "trimmed and cut into bite-size chunks"
+        },
+        {
+          "food": "hominy-canned-yellow-fd8e84",
+          "g": 140,
+          "note": "canned; rinse it well to cut the salt"
+        },
+        {
+          "food": "guajillo-chile-dried-eb6416",
+          "g": 4,
+          "note": "dried, stemmed and seeded; check the package for \"may contain\" peanuts and sesame"
+        },
+        {
+          "food": "ancho-chile-dried-b95180",
+          "g": 3,
+          "note": "dried, stemmed and seeded; check the package for \"may contain\" peanuts and sesame"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "half in the pot, half chopped for the top"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "peeled"
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 150,
+          "note": "stock and bouillon can carry milk, so check the label for milk and for \"may contain\""
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed and sliced into thin ribbons"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15,
+          "note": "from a lime"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "plain corn tortillas; check the label for \"may contain\" and for added milk or egg; cut into strips"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.4
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat a dry pan over medium heat. Toast the chiles 20 to 30 seconds a side, just until fragrant (burnt chiles turn bitter). Cover with hot water and soak 15 minutes.",
+        "Blend the soaked chiles with half the onion, the garlic, the cumin, the oregano, the broth and a ladle of the soaking water until smooth.",
+        "Put the bay leaf, the chile sauce and 600 ml of water in a heavy pot, bring to a simmer and cook, partly covered, for 20 minutes so the broth deepens. Add the pork and simmer gently until it is cooked through and tender, about 20 minutes. Wash your hands and board after handling the raw pork.",
+        "Add the rinsed hominy and salt and simmer 10 minutes more. The pork must reach at least 71 °C (160 °F) in the middle of a thick chunk.",
+        "Meanwhile, heat the oven to 200 °C (400 °F). Toss the tortilla strips with the oil, spread them on a tray and bake until crisp, about 8 minutes.",
+        "Wash the spinach and cilantro. Ladle the pozole into bowls and top with the spinach ribbons, onion, avocado, cilantro, a squeeze of lime and the tortilla strips.",
+        "Cool the second portion of the stew in a shallow container and refrigerate within 2 hours. Keep up to 3 days, reheat once to 74 °C, and add the toppings fresh."
+      ],
+      "prepMin": 25,
+      "cookMin": 60,
+      "tags": [
+        "medium-spicy",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "The stew freezes well without the toppings. Thaw it in the fridge, use within 2 days and never refreeze."
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-japanese-style-tofu-vegetable-curry-rice",
+      "name": "Japanese-style tofu and vegetable curry with brown rice",
+      "inspiredBy": "Japanese kare raisu, the mild, slightly sweet curry, here made from scratch rather than from a boxed roux",
+      "about": "A mild, glossy Japanese-style curry of golden tofu, carrot, broccoli and edamame over brown rice. The sauce gets its body and a gentle sweetness from grated potato and apple, so there is no boxed roux (which often carries milk). The calcium-set tofu brings **protein, calcium, iron and choline**.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 125,
+          "swap": "lean_protein",
+          "note": "buy the calcium-set kind (calcium sulfate on the label) showing about 45% of the daily value for calcium in an 85 g serving; check the \"may contain\" line for nuts and sesame; opened tofu goes covered in the fridge and is used within 2 days"
+        },
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 80,
+          "swap": "legumes",
+          "note": "shelled and already cooked; check the label for \"may contain\""
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 60,
+          "note": "peeled and grated, to thicken the sauce"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 30,
+          "note": "grated, skin on"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "sliced into half-moons"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "cut into small florets"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 40
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "curry-powder-55e9c6",
+          "g": 5,
+          "note": "blends can hide allergens such as sesame, mustard or fenugreek, so read the ingredient list and the \"may contain\" line"
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 1.2
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8,
+          "note": "check the label for \"may contain\" sesame"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the carrot, potato, apple and broccoli before cutting. Start the rice: cook the brown rice in plenty of simmering water until tender, about 30 minutes, then drain it well.",
+        "Pat the tofu dry and cut it into cubes. Fry it in half the oil in a nonstick pan over medium-high heat until golden on all sides, about 8 minutes. Set it aside.",
+        "In a pot, heat the rest of the oil and cook the onion until soft and golden, about 7 minutes. Add the garlic, ginger and curry powder and cook 1 minute, until it smells toasty.",
+        "Stir in the tomatoes, the grated potato and apple and about 350 ml of water, scraping the bottom. Add the carrot, cover and simmer until the carrot is just tender and the potato has melted into the sauce, about 12 minutes.",
+        "Add the broccoli, edamame, tofu, soy sauce, maple syrup and salt. Simmer 5 minutes, until the sauce is glossy and thick enough to coat the rice.",
+        "Serve over the rice. Cool any leftover rice within 1 hour and any leftover curry within 2 hours, refrigerate, keep up to 3 days, and reheat once to 74 °C."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Japanese curry is mild by design. Add a pinch of chili flakes at the table for heat. Keep any opened tofu covered in the fridge and use it within 2 days."
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-soy-yogurt-blueberries-flax",
+      "name": "Soy yogurt with blueberries and ground flax",
+      "about": "Cool plain soy yogurt with juicy blueberries, a spoonful of ground flax and a drizzle of maple. It is a quick, creamy snack that brings **calcium and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "soy-yogurt-plain-345e92",
+          "g": 150,
+          "note": "soy only, with no almond or coconut blend; check the label for \"may contain\" nuts"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 80,
+          "swap": "berries",
+          "note": "rinsed"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "buy it already ground, from a facility that handles no nuts or sesame if you can, or check the label for \"may contain\"; keep it in the fridge once opened"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Rinse the blueberries.",
+        "Spoon the soy yogurt into a bowl and stir in the flax.",
+        "Top with the blueberries and drizzle with the maple syrup."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-apple-sunflower-seed-butter",
+      "name": "Apple slices with a sunflower seed butter dip",
+      "about": "Crisp apple slices with a creamy, nutty-tasting sunflower seed butter dip loosened with a little soy drink. It is a simple snack with **fibre, vitamin E and magnesium**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "sunflower-seeds-butter-ccaf05",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "plain; look for a brand made in a nut-free and sesame-free facility, and check the label for \"may contain\" peanuts, tree nuts and sesame, since many seed butters share a line"
+        },
+        {
+          "food": "soy-beverage-reduced-fat-1-added-ca-vitamins-a-b1-b2-b12-1beec5",
+          "g": 10,
+          "note": "plain or unsweetened, with calcium, vitamin D and B12 on the label (a carton giving about 25 to 30% of the daily value for calcium per cup); check it for \"may contain\" nuts"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash the apple, then slice it and core it.",
+        "Stir the sunflower seed butter, soy drink and cinnamon together until it makes a smooth, thick dip.",
+        "Dip the apple slices as you go."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-smoky-roasted-white-beans",
+      "name": "Smoky roasted white beans",
+      "about": "White beans roasted until crunchy outside and creamy inside, with smoked paprika and a squeeze of lemon. They bring **fibre, folate and plant protein**.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 110,
+          "swap": "legumes",
+          "note": "rinsed and patted very dry"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "garlic-powder-e81d9c",
+          "g": 0.4
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "note": "from a lemon"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Dry the beans very well in a clean towel, because dry beans crisp.",
+        "Toss with the oil, paprika, garlic powder and salt and spread on a tray.",
+        "Roast, shaking the tray once, until crisp and golden, about 25 minutes. Finish with the lemon juice and eat the same day."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-edamame-lemon-flakes",
+      "name": "Warm edamame with lemon and chili",
+      "about": "Warm edamame tossed with lemon juice, a pinch of salt and a few chili flakes, the way a Japanese izakaya serves it. They bring **protein, folate, iron and choline**.",
+      "ingredients": [
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 150,
+          "swap": "legumes",
+          "note": "shelled and already cooked; check the label for \"may contain\""
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "note": "from a lemon"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the edamame in a microwave or steam them for 2 to 3 minutes, until steaming hot all the way through.",
+        "Toss with the lemon juice, salt and chili flakes while still warm.",
+        "Eat with a spoon, or with your fingers."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-blueberry-spinach-flax-soy-smoothie",
+      "name": "Blueberry, spinach and ginger soy smoothie",
+      "about": "A creamy smoothie of blueberries, spinach and fortified soy drink with ground flax, a spoonful of wheat germ and a little ginger. It is sweet enough that you taste only the berries, and a glass brings **calcium, vitamin D, B12 and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "soy-beverage-reduced-fat-1-added-ca-vitamins-a-b1-b2-b12-1beec5",
+          "g": 250,
+          "note": "plain or unsweetened, with calcium, vitamin D and B12 on the label (a carton giving about 25 to 30% of the daily value for calcium per cup); check it for \"may contain\" nuts"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 100,
+          "swap": "berries",
+          "note": "fresh or frozen"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "buy it already ground, from a facility that handles no nuts or sesame if you can, or check the label for \"may contain\"; keep it in the fridge once opened"
+        },
+        {
+          "food": "wheat-germ-2e7e8d",
+          "g": 10,
+          "note": "plain and toasted (wheat is allowed here); buy it packaged, not from a bulk bin, check the label for \"may contain\" nuts and sesame, and keep it in the fridge once opened"
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Shake the soy drink carton well and wash the blueberries (if fresh) and spinach.",
+        "Blend everything until smooth, about 1 minute.",
+        "Drink right away, or keep in the fridge up to a day and shake before drinking."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-cucumber-lime-chili-pumpkin-seeds",
+      "name": "Cucumber with lime, chili and pumpkin seeds",
+      "about": "Cool cucumber spears with lime, a pinch of chili and salt and toasted pumpkin seeds, the way Mexican street stands serve it. It is a crisp, refreshing snack with **magnesium and vitamin K**.",
+      "ingredients": [
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 160,
+          "note": "washed and cut into spears"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10,
+          "note": "from a lime"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "plain and unsalted; buy them packaged, not from a bulk bin, from a brand made without nuts and sesame if you can, and check for \"may contain\""
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.4
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the cucumber and cut it into spears.",
+        "Toast the pumpkin seeds in a dry pan until they pop, about 3 minutes.",
+        "Squeeze the lime over the cucumber, sprinkle with the paprika, chili flakes and salt, and scatter the seeds on top."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-baked-soy-lime-tofu-bites",
+      "name": "Baked tofu bites with a lime-soy dip",
+      "about": "Cubes of calcium-set tofu baked until the edges turn chewy and crisp, with a quick lime and soy dip. They bring **protein, calcium and choline**.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4",
+          "g": 90,
+          "swap": "lean_protein",
+          "note": "buy the calcium-set kind (calcium sulfate on the label) showing about 45% of the daily value for calcium in an 85 g serving; check the \"may contain\" line for nuts and sesame; opened tofu goes covered in the fridge and is used within 2 days"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 6,
+          "note": "check the label for \"may contain\" sesame"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "note": "from a lime"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.6
+        },
+        {
+          "food": "garlic-powder-e81d9c",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Pat the tofu very dry and cut it into cubes.",
+        "Toss with the oil, paprika and garlic powder and bake on a tray, turning once, until golden and chewy at the edges, about 25 minutes.",
+        "Stir the soy sauce and lime juice together for the dip. Toss the hot tofu with half of it as it leaves the oven, and serve the rest on the side."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-lime-paprika-toasted-pumpkin-seeds",
+      "name": "Lime and paprika toasted pumpkin seeds",
+      "about": "Pumpkin seeds toasted until they puff, tossed with lime and smoked paprika. A small handful brings **magnesium, zinc and iron**, and the crunch is very satisfying.",
+      "ingredients": [
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "plain and unsalted; buy them packaged, not from a bulk bin, from a brand made without nuts and sesame if you can, and check for \"may contain\""
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6,
+          "note": "from a lime"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the pumpkin seeds in a dry pan over medium heat, stirring, until they puff and pop, about 4 minutes.",
+        "Toss with the lime juice, paprika and salt in the hot pan so the lime dries onto the seeds.",
+        "Cool before eating, and keep any extra in a jar for up to a week."
+      ],
+      "prepMin": 5,
+      "cookMin": 4,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "For children under 4, chop or grind the pumpkin seeds first, since whole seeds are a choking risk."
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-oat-sunflower-seed-butter-bites",
+      "name": "No-bake oat bites with sunflower seed butter",
+      "about": "Soft, chewy bites of oats, sunflower seed butter, pumpkin seeds and maple, rolled by hand and chilled. They are made without nuts and bring **fibre, vitamin E and magnesium**.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "look for plain rolled oats, packaged and not from a bulk bin; check the label for \"may contain\" nuts and sesame"
+        },
+        {
+          "food": "soy-beverage-reduced-fat-1-added-ca-vitamins-a-b1-b2-b12-1beec5",
+          "g": 15,
+          "note": "plain or unsweetened, with calcium, vitamin D and B12 on the label (a carton giving about 25 to 30% of the daily value for calcium per cup); check it for \"may contain\" nuts"
+        },
+        {
+          "food": "sunflower-seeds-butter-ccaf05",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "plain; look for a brand made in a nut-free and sesame-free facility, and check the label for \"may contain\" peanuts, tree nuts and sesame, since many seed butters share a line"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "plain and unsalted; buy them packaged, not from a bulk bin, from a brand made without nuts and sesame if you can, and check for \"may contain\""
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Stir the oats, sunflower seed butter, pumpkin seeds, maple syrup and cinnamon together in a bowl. Add a splash of soy drink, a teaspoon at a time, until it holds when squeezed, then rest the mix for 5 minutes so the oats soften.",
+        "Roll into small balls with damp hands.",
+        "Chill for 20 minutes. They keep in a covered container in the fridge up to 5 days."
+      ],
+      "prepMin": 10,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ],
+      "tip": "For children under 4, chop or grind the pumpkin seeds first, since whole seeds are a choking risk."
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-baked-cinnamon-apple-pumpkin-seeds",
+      "name": "Baked apple with maple oat crumble",
+      "about": "A soft, warm baked apple topped with a crisp crumble of oats, pumpkin seeds, maple and cinnamon. It tastes like dessert and is the week's sweet treat, with **fibre and magnesium**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 170,
+          "note": "washed and halved, core removed"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 15,
+          "note": "look for plain rolled oats, packaged and not from a bulk bin; check the label for \"may contain\" nuts and sesame"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "plain and unsalted; buy them packaged, not from a bulk bin, from a brand made without nuts and sesame if you can, and check for \"may contain\""
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190 °C (375 °F). Wash the apple, halve it and scoop out the core.",
+        "Stir the oats, pumpkin seeds, maple syrup, oil and cinnamon together into a crumble. Put the apple cut side up in a small dish and pile the crumble into the hollows and over the top.",
+        "Bake until the apple is soft and the crumble is golden, about 25 minutes. Eat warm."
+      ],
+      "prepMin": 8,
+      "cookMin": 25,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "For children under 4, chop or grind the pumpkin seeds first, since whole seeds are a choking risk."
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-rye-toast-sunflower-seed-butter-blueberries",
+      "name": "Rye toast with sunflower seed butter and blueberries",
+      "about": "Toasted rye bread spread with sunflower seed butter and topped with juicy blueberries. It is a filling snack with **fibre, vitamin E and magnesium**.",
+      "ingredients": [
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "sliced; buy it packaged with a full ingredient list, not from a bakery counter, since breads often carry milk, egg or sesame, and check for \"may contain\""
+        },
+        {
+          "food": "sunflower-seeds-butter-ccaf05",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "plain; look for a brand made in a nut-free and sesame-free facility, and check the label for \"may contain\" peanuts, tree nuts and sesame, since many seed butters share a line"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 60,
+          "swap": "berries",
+          "note": "rinsed"
+        }
+      ],
+      "steps": [
+        "Rinse the blueberries and toast the bread in the oven or a dry pan until golden.",
+        "Spread with the sunflower seed butter.",
+        "Top with the blueberries, pressing a few in so they stay put."
+      ],
+      "prepMin": 5,
+      "cookMin": 4,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "servings": 1,
+      "id": "allergen-free-global-black-bean-salsa-baked-tortilla-chips",
+      "name": "Black bean salsa with baked tortilla chips",
+      "about": "A chunky salsa of black beans, canned tomato, onion, lime and cilantro, scooped with homemade baked corn tortilla chips. It brings **fibre, folate and iron**.",
+      "ingredients": [
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 70,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 50
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "minced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "note": "from a lime"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "plain corn tortillas; check the label for \"may contain\" and for added milk or egg; cut into wedges"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Cut the tortillas into wedges and bake on a tray until crisp, about 8 minutes.",
+        "Wash the cilantro. Stir the beans, tomatoes, onion, lime juice, cilantro and salt together.",
+        "Scoop the salsa with the warm chips."
+      ],
+      "prepMin": 8,
+      "cookMin": 8,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "allergen-free-global-cinnamon-apple-oat-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "allergen-free-global-salmon-salad-sandwich-rye-dill"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "allergen-free-global-chicken-pipian-rojo-rice-black-beans"
+        },
+        {
+          "slot": "snack",
+          "recipe": "allergen-free-global-edamame-lemon-flakes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "allergen-free-global-soy-yogurt-blueberries-flax"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "allergen-free-global-tofu-scramble-mexicana"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "allergen-free-global-chicken-pipian-rojo-rice-black-beans",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "allergen-free-global-greek-pork-white-bean-stew-kale-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "allergen-free-global-blueberry-spinach-flax-soy-smoothie"
+        },
+        {
+          "slot": "snack",
+          "recipe": "allergen-free-global-apple-sunflower-seed-butter"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "allergen-free-global-blueberry-pumpkin-seed-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "allergen-free-global-greek-pork-white-bean-stew-kale-lemon",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "allergen-free-global-maple-mustard-salmon-potatoes-broccoli"
+        },
+        {
+          "slot": "snack",
+          "recipe": "allergen-free-global-baked-soy-lime-tofu-bites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "allergen-free-global-cucumber-lime-chili-pumpkin-seeds"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "allergen-free-global-cinnamon-apple-oat-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "allergen-free-global-teriyaki-tofu-edamame-rice-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "allergen-free-global-canadian-beef-potato-soup-kale"
+        },
+        {
+          "slot": "snack",
+          "recipe": "allergen-free-global-edamame-lemon-flakes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "allergen-free-global-smoky-roasted-white-beans"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "allergen-free-global-tofu-scramble-mexicana"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "allergen-free-global-canadian-beef-potato-soup-kale",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "allergen-free-global-sardine-pasta-broccoli-lemon-breadcrumbs"
+        },
+        {
+          "slot": "snack",
+          "recipe": "allergen-free-global-smoky-roasted-white-beans"
+        },
+        {
+          "slot": "snack",
+          "recipe": "allergen-free-global-cucumber-lime-chili-pumpkin-seeds"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "allergen-free-global-blueberry-pumpkin-seed-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "allergen-free-global-potato-salmon-cakes-cucumber-dill-slaw"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "allergen-free-global-pork-pozole-rojo-hominy"
+        },
+        {
+          "slot": "snack",
+          "recipe": "allergen-free-global-baked-soy-lime-tofu-bites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "allergen-free-global-baked-cinnamon-apple-pumpkin-seeds"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "allergen-free-global-cinnamon-apple-oat-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "allergen-free-global-pork-pozole-rojo-hominy",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "allergen-free-global-japanese-style-tofu-vegetable-curry-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "allergen-free-global-oat-sunflower-seed-butter-bites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "allergen-free-global-lime-paprika-toasted-pumpkin-seeds"
+        }
+      ]
+    }
+  ]
+}
