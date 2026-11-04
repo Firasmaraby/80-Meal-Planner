@@ -1,0 +1,1995 @@
+{
+  "id": "gut-global",
+  "name": "Gut Health Kitchen",
+  "style": "gut",
+  "cuisine": "Global",
+  "regions": [
+    "Korea",
+    "Germany",
+    "the Mediterranean",
+    "India",
+    "Japan"
+  ],
+  "summary": "A week of fibre-rich home cooking from Korea, Germany, the Mediterranean, India and Japan: beans and lentils, oats, barley and rye, lots of vegetables and a fermented food every day, with more than 30 different plant foods.",
+  "howItWorks": "**More than 30 plant foods a week.** The idea is variety: lots of different vegetables, fruit, beans, whole grains, nuts and seeds across the week, not a big pile of one. Shiitake, kale, kimchi cabbage, lentils, barley, rye, hazelnuts and raspberries all turn up, so every meal brings something different.\n\n**A fermented food every day.** Kefir, yogurt, miso, kimchi and sauerkraut turn up daily inside real dishes, as food rather than medicine. Buy kimchi and sauerkraut from the refrigerated section and look for \"live\" or \"unpasteurised\" on the label, since shelf-stable jars are heat-treated. Kimchi often contains fish sauce or shrimp, so check the label. Stir miso in off the boil.\n\n**Fibre, calcium and iron.** This week is high in fibre, and Big is a lot of it. If you usually eat less, start with half the beans and lentils for the first week or two and drink water through the day. The food also brings plenty of calcium and a good amount of iron, so don't add a calcium or iron supplement unless your care team advises it.\n\n**Salt and the Sunday batch.** Kimchi, sauerkraut and miso are salty, so each recipe measures them, the beans are no-salt-added, and lemon, vinegar and herbs do the brightening. On Sunday cook brown rice and pearl barley (amounts are in the jjigae tip) and cool them within an hour. Keep Monday to Wednesday's portions in the fridge and freeze the rest, thawing in the fridge overnight and using within 2 days.\n\n**Light and Big.** Light has one snack a day and trims the grains, protein, nuts and oil, with a fermented food still in every day. Big adds a third snack and bigger portions.",
+  "signature": [
+    "gut-global-kimchi-tofu-jjigae",
+    "gut-global-masoor-dal-spinach",
+    "gut-global-trout-potatoes-kale-sauerkraut",
+    "gut-global-miso-salmon-sesame-spinach"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1600,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "gut-global-potato-bean-salad"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "gut-global-kefir-raspberry-walnuts"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "gut-global-chickpea-kachumber"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "gut-global-banana-yogurt-walnuts"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "gut-global-apple-yogurt-cinnamon"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "gut-global-potato-bean-salad"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "gut-global-seed-mix-raspberries"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "gut-global-kefir-bircher",
+      "name": "Kefir bircher muesli with apple, raspberries and toasted nuts",
+      "inspiredBy": "Swiss birchermuesli, made the way many German households do it with kefir",
+      "about": "Rolled oats soaked overnight in tangy kefir and a little thick yogurt with grated apple, cinnamon and a spoonful of ground flax, then topped with raspberries and toasted walnuts and hazelnuts. It is cold, creamy and ready the moment you wake up. The oats, fruit, flax and walnuts bring **plenty of fibre**, and kefir and yogurt are fermented dairy foods.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 35,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "kefir-2-3-9-fat-3639ea",
+          "g": 150,
+          "swap": "dairy_protein",
+          "note": "plain, unsweetened"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 70,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 100,
+          "note": "washed and grated, skin on"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "note": "from a lemon"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 8,
+          "note": "ground"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 70,
+          "swap": "berries",
+          "note": "fresh and rinsed just before eating, or frozen and thawed in the fridge"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        }
+      ],
+      "steps": [
+        "The night before, wash the apple and grate it, skin and all, into a jar or bowl.",
+        "Stir in the oats, kefir, yogurt, ground flax, lemon juice and cinnamon, cover and refrigerate overnight, at least 6 hours. It keeps in the fridge for up to 2 days.",
+        "In the morning, toast the walnuts and hazelnuts in a dry pan over medium heat until they smell nutty, about 3 minutes, then roughly chop them.",
+        "Give the muesli a good stir and loosen it with a splash of water if it has gone stiff. Top with the raspberries and the warm nuts."
+      ],
+      "prepMin": 8,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Make a jar the night before: Sunday for Monday, Tuesday for Wednesday and Friday for Saturday. A jar keeps in the fridge up to 2 days. Kefir that has been open a few days gets tangier, which many people like."
+    },
+    {
+      "id": "gut-global-oat-upma",
+      "name": "Savoury oat upma with carrot, spinach and yogurt",
+      "inspiredBy": "south Indian rava upma, made with oats",
+      "about": "A south Indian upma made with toasted rolled oats instead of semolina: mustard seeds, ginger, onion, carrot and tomato in a golden, spoonable porridge with spinach folded through. A bowl of cool yogurt on the side and some toasted pumpkin seeds finish it. The **oats and vegetables bring fibre** and the yogurt brings a fermented food to the morning.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 1.5,
+          "note": "whole"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "peeled and finely chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "finely diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "finely diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed and chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "from a lemon"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 130,
+          "swap": "dairy_protein",
+          "note": "for serving"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Wash the carrot, tomato and spinach, then dice the carrot and tomato and chop the spinach. Toast the oats in a wide dry pan over medium heat, stirring, until they smell nutty, about 4 minutes. Tip them out and wipe the pan.",
+        "Toast the pumpkin seeds in the same pan for 2 minutes until they pop, then set them aside.",
+        "Warm the oil over medium heat, add the mustard seeds and cover until they stop popping, about 30 seconds. Stir in the ginger and onion and cook until the onion is soft, about 4 minutes.",
+        "Add the carrot, tomato and turmeric and cook until the tomato has collapsed, about 3 minutes. Pour in about 150 ml (⅔ cup) of hot water and the salt and bring to a boil.",
+        "Stir in the oats and cook, stirring, until thick and fluffy, about 2 minutes. Fold in the spinach until wilted, then add the lemon juice.",
+        "Serve warm with the pumpkin seeds on top and the yogurt alongside."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "No time on a weekday? Chop the onion, carrot and tomato the night before and keep them in one container."
+    },
+    {
+      "id": "gut-global-miso-barley-egg-bowl",
+      "name": "Miso soup bowl with barley, tofu, kale and a boiled egg",
+      "inspiredBy": "a Japanese morning miso soup set, made as one bowl with barley",
+      "about": "A savoury Japanese-style breakfast soup: shiitake and ginger simmered into a quick broth, barley and tofu to make it hearty, kale, a boiled egg, toasted walnuts for crunch and miso stirred in at the end. It is warm, salty-sweet and filling. The **barley and kale bring fibre**, and miso is a fermented food.",
+      "ingredients": [
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "sliced thin"
+        },
+        {
+          "food": "barley-pearled-cooked-84df02",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "any kind; cubed"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "stems removed, washed"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 12
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Wash the shiitake and kale. Put the egg in a small pot of boiling water and cook for 9 minutes so the yolk is set. Cool it under cold running water, then peel and halve it.",
+        "Meanwhile, simmer the shiitake and ginger in about 300 ml (1¼ cups) of water for 5 minutes until the mushrooms are tender and the broth tastes savoury.",
+        "Add the barley from your batch and the tofu and heat until steaming hot, about 3 minutes. Stir in the kale and simmer until tender, about 3 minutes.",
+        "Turn off the heat. Whisk the miso with a ladle of the hot broth in a small bowl until smooth, then stir it back into the pot. Do not boil the soup after the miso goes in.",
+        "Toast the walnuts in a dry pan for 2 minutes. Ladle the soup into a bowl and top with the egg, scallion, walnuts for crunch and a few drops of sesame oil."
+      ],
+      "prepMin": 6,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Barley from your Sunday batch is a minute of reheating. See the batch note on the jjigae."
+    },
+    {
+      "id": "gut-global-lentil-salad-rye",
+      "name": "German-style lentil salad with egg, sauerkraut and rye bread",
+      "inspiredBy": "Linsensalat, the lentil salad served across southern Germany",
+      "about": "A Linsensalat of tender whole lentils in a lemony vinaigrette with carrot, cucumber, onion and a lot of parsley and dill, served with a halved egg, a spoonful of sauerkraut and a slice of dark rye. It is sharp, fresh and filling. **Lentils and rye bring fibre**, and the refrigerated, unpasteurised sauerkraut adds a live fermented food.",
+      "ingredients": [
+        {
+          "food": "green-and-brown-lentils-whole-dried-raw-f67c80",
+          "g": 60,
+          "swap": "legumes"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "diced small"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "note": "from a lemon"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 1.5,
+          "note": "ground"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "rye-bread-whole-grain-602344",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "sauerkraut-pickled-8f284d",
+          "g": 40,
+          "note": "refrigerated, unpasteurised, drained"
+        }
+      ],
+      "steps": [
+        "Rinse the lentils and simmer them in plenty of unsalted water until tender but still holding their shape, 20 to 25 minutes. Drain well.",
+        "While they cook, boil the egg for 9 minutes, then cool it under cold water and peel it. Wash the carrot, cucumber, parsley and dill, then dice the vegetables and chop the herbs.",
+        "Whisk the olive oil, lemon juice, ground mustard, salt and a grind of pepper in a bowl. Toss the warm lentils and the onion in the dressing so the onion softens a little.",
+        "Fold in the carrot, cucumber, parsley and dill.",
+        "Serve with the halved egg, the sauerkraut and the rye bread alongside."
+      ],
+      "prepMin": 12,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook the lentils on Sunday and keep them in a shallow container in the fridge for up to 3 days. Then this lunch takes 10 minutes."
+    },
+    {
+      "id": "gut-global-miso-tofu-rice-bowl",
+      "name": "Seared tofu rice bowl with miso-ginger glaze, shiitake and spinach",
+      "inspiredBy": "Japanese tofu donburi, with a miso-ginger glaze",
+      "about": "Golden pan-seared tofu over brown rice with shiitake, carrot, spinach and a fried egg, brushed with a glossy miso, ginger and rice vinegar glaze and finished with sesame seeds. It is quick, savoury and tangy. Tofu and the egg bring **plant and egg protein**, and the miso is a fermented food.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "any kind; pressed dry"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 110,
+          "note": "sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "cut in thin matchsticks"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 5,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 10
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Wash the shiitake, spinach and carrot. Press the tofu between paper towels for 5 minutes, then cut it into slabs about 1.5 cm (½ inch) thick. Reheat the rice from your batch until steaming hot.",
+        "Whisk the miso, soy sauce, ginger, rice vinegar and 2 tablespoons of water into a glaze.",
+        "Heat the olive oil in a non-stick pan over medium-high heat and sear the tofu until golden, about 4 minutes a side. Lift it out.",
+        "Add the shiitake and carrot to the same pan and cook until the mushrooms are browned, about 4 minutes. Add the spinach and cook 1 minute until wilted.",
+        "Return the tofu to the pan, pour in the glaze and turn everything for 1 minute so it glazes. Do not boil it hard. Push everything to one side, crack the eggs into the empty space and fry until the whites are set and the yolks are no longer runny, about 3 minutes.",
+        "Spoon over the rice and finish with the scallion, sesame seeds and a few drops of sesame oil."
+      ],
+      "prepMin": 10,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Press the tofu and slice the vegetables the night before and the bowl is 10 minutes."
+    },
+    {
+      "id": "gut-global-chickpea-chaat-bowl",
+      "name": "Chickpea chaat bowl with potato, tomato and yogurt",
+      "inspiredBy": "Indian chana chaat, with yogurt dressing and no tamarind chutney",
+      "about": "A tangy Indian-style chaat of chickpeas, warm potato, tomato, cucumber and onion, tossed with a lemony yogurt and chaat masala and scattered with toasted pumpkin seeds and parsley. It is cool, crunchy and sharp. The **chickpeas and potato bring fibre and potassium**, and the yogurt is a fermented food.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 150,
+          "note": "scrubbed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 2
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Wash the potato, cut it into 2 cm (¾ inch) cubes and boil in water until just tender, about 10 minutes. Drain and let the steam go.",
+        "Toast the cumin seeds and pumpkin seeds in a dry pan for 2 minutes until fragrant, then crush the cumin lightly.",
+        "Stir the yogurt, lemon juice, chaat masala and olive oil together.",
+        "Wash the tomato, cucumber and parsley before cutting. Toss the chickpeas, warm potato, onion, tomato and cucumber with the yogurt dressing.",
+        "Top with the parsley, the crushed cumin and the pumpkin seeds."
+      ],
+      "prepMin": 12,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Boil the potatoes the night before and the bowl takes 5 minutes. Cold potatoes work too."
+    },
+    {
+      "id": "gut-global-kimchi-tofu-jjigae",
+      "name": "Kimchi, chicken and tofu jjigae with brown rice and barley",
+      "inspiredBy": "Korean kimchi jjigae, made with chicken and tofu",
+      "about": "A fiery-tangy Korean kimchi stew with tender chicken thigh, tofu, shiitake, a handful of spinach and an egg poached in the pot, spooned over brown rice and barley. It is one pot, takes about 30 minutes and tastes even better the next day. **Kimchi is a fermented food**, bought refrigerated and live, and the tofu and egg add protein. Kimchi often contains fish sauce or shrimp, so check the label.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "cut in small pieces"
+        },
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 90,
+          "swap": "lean_protein",
+          "note": "any kind; cubed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "kimchi-1371a8",
+          "g": 80,
+          "note": "refrigerated, live; check the label for fish sauce or shrimp; with some of its juice"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 2
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 110,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "barley-pearled-cooked-84df02",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        }
+      ],
+      "steps": [
+        "Wash the vegetables. Cut the raw chicken, then wash your hands and the board. Warm the sesame oil in a pot over medium heat and cook the chicken with the garlic and ginger until the outside turns white, about 4 minutes.",
+        "Add the kimchi and onion and cook, stirring, until the kimchi softens and smells sweetly sour, about 4 minutes.",
+        "Stir in the gochugaru and soy sauce, then pour in about 600 ml (2½ cups) of water for the two portions. Bring to a boil, then simmer 10 minutes.",
+        "Add the shiitake and tofu and simmer 8 minutes more. Check that the chicken has reached 74 °C (165 °F) in the thickest piece.",
+        "Stir in the spinach and the scallion. Crack an egg into tonight's portion only, cover and simmer until the whites and yolk are set, about 3 minutes.",
+        "Reheat tonight's rice and barley from your batch until steaming and spoon the stew over them. Cool the second portion in a shallow container within 2 hours and refrigerate. Tomorrow, reheat the stew to 74 °C (165 °F) and crack in a fresh egg until set."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Older, sourer kimchi makes the best jjigae. Sunday grain batch, Standard: rinse 270 g (about 1½ cups) dry brown rice and simmer about 40 minutes, and simmer 90 g (a scant ½ cup) dry pearl barley about 30 minutes. Light needs about 200 g and 60 g, Big about 420 g and 135 g. Spread both on trays and refrigerate within 1 hour. Keep Monday to Wednesday's portions in the fridge (up to 3 days) and freeze the rest in single portions the same day. Thaw them in the fridge overnight, use within 2 days, never refreeze, and reheat to 74 °C (165 °F) until steaming."
+    },
+    {
+      "id": "gut-global-trout-potatoes-kale-sauerkraut",
+      "name": "Roasted trout with caraway potatoes, kale and warm sauerkraut with apple",
+      "inspiredBy": "German Forelle with roast potatoes, with kale and sauerkraut as sides",
+      "about": "A German-inspired plate: trout roasted with dill and lemon, crisp caraway potatoes, kale braised with onion, and sauerkraut warmed gently with apple. It is rustic, tangy and satisfying. Trout is an **oily fish with omega-3 and vitamin D**, and the sauerkraut is a refrigerated, live fermented food. Warming it briefly keeps it mostly raw.",
+      "ingredients": [
+        {
+          "food": "rainbow-trout-farmed-raw-0cc800",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "rainbow trout fillet, skin on"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 200,
+          "note": "scrubbed and cubed"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "stems removed, washed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "sauerkraut-pickled-8f284d",
+          "g": 60,
+          "note": "refrigerated, unpasteurised, drained"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 60,
+          "note": "cored and sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "caraway-seed-020d2f",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Wash the potatoes, kale and apple. Cut the potatoes into 3 cm (1 inch) cubes and toss with half the olive oil, the caraway and the salt. Roast on a tray for 25 minutes, turning once.",
+        "Warm the remaining oil in a wide pan and soften the onion for 5 minutes. Add the kale with a splash of water, cover, and cook until tender, about 8 minutes.",
+        "Stir the apple and sauerkraut into the kale and warm them for 2 minutes. Keep it brief so the sauerkraut stays bright.",
+        "Pat the trout dry, lay it skin-side down on the tray for the last 10 to 12 minutes, pushing the potatoes to one side so the fish is not steamed, until it flakes and reaches 70 °C (158 °F). Wash your hands and the board after handling the raw fish.",
+        "Drizzle the lemon juice over the trout, scatter the dill and serve with the potatoes, kale and sauerkraut."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "gut-global-masoor-dal-spinach",
+      "name": "Whole masoor dal with spinach and tomato, cucumber raita and brown rice",
+      "inspiredBy": "north Indian sabut masoor dal, with spinach and a quick raita",
+      "about": "A comforting Indian dal of whole brown lentils simmered soft, then finished with a spiced tadka of cumin, mustard seed, onion, garlic, ginger and tomato, with spinach folded in. A cooling cucumber raita and brown rice complete it. **Lentils bring fibre, iron and folate**, and the raita is a fermented food.",
+      "ingredients": [
+        {
+          "food": "green-and-brown-lentils-whole-dried-raw-f67c80",
+          "g": 85,
+          "swap": "legumes"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 1.5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 2
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 1.5,
+          "note": "whole"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "chopped"
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1.5
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 80,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 140,
+          "swap": "dairy_protein",
+          "note": "for the raita"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50,
+          "note": "grated"
+        }
+      ],
+      "steps": [
+        "Rinse the lentils, then simmer them in about 600 ml (2½ cups) of water with the turmeric for the two portions until soft, 25 to 30 minutes.",
+        "Meanwhile, warm the oil in a wide pan over medium heat. Add the cumin and mustard seeds and cover until the popping slows, about 30 seconds.",
+        "Stir in the onion, garlic and ginger and cook until soft and golden, about 7 minutes. Add the washed, chopped tomato and the garam masala and cook until it breaks down, 4 minutes.",
+        "Add the washed spinach and a splash of water, cover and cook until wilted, about 3 minutes.",
+        "Tip the tomato and spinach mixture into the lentils, add the salt and simmer together for 5 minutes. Finish with the lemon juice.",
+        "Stir the yogurt with the grated cucumber and a pinch of salt for the raita. Reheat the rice from your batch until steaming and serve all together. Cool the second portion of dal in a shallow container within 2 hours; tomorrow reheat it to 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "A pressure cooker gets the lentils tender in about 12 minutes."
+    },
+    {
+      "id": "gut-global-miso-salmon-sesame-spinach",
+      "name": "Miso-ginger salmon with sesame spinach, quick pickles and brown rice",
+      "inspiredBy": "Japanese miso-zuke salmon with goma-ae and sunomono-style pickles",
+      "about": "Salmon marinated briefly in miso, ginger and lemon then broiled until the edges caramelize, with sesame spinach, a quick carrot and cucumber pickle and brown rice. It is a fast, tidy Japanese-style dinner. The **salmon brings omega-3 and vitamin D**, and miso is a fermented food.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "skin-on or skinless fillet"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 12
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "from a lemon"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "toasted and crushed"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 8
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Wash the spinach, carrot and cucumber. Whisk the miso, ginger and lemon juice into a paste. Coat the salmon and marinate it in the fridge for 15 minutes, then wash your hands. Never reuse the marinade after raw fish has touched it.",
+        "Toss the sliced carrot and cucumber with the rice vinegar and leave them to pickle while everything else cooks.",
+        "Heat the broiler. Wipe most of the paste off the salmon, set it on a lined tray and broil 8 to 10 minutes until it flakes and reaches 70 °C (158 °F). Wash your hands and the tray after the raw fish.",
+        "Blanch the spinach in boiling water for 1 minute, drain and squeeze it dry. Toss with the crushed sesame, soy sauce and sesame oil.",
+        "Reheat the rice from your batch until steaming and serve with the salmon, spinach and pickles."
+      ],
+      "prepMin": 12,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Salmon is never made ahead for the next day. Eat it fresh."
+    },
+    {
+      "id": "gut-global-sardines-white-beans-rye-croutons",
+      "name": "Sardines on garlicky white beans with spinach, dill and rye croutons",
+      "inspiredBy": "Greek gigantes plaki, with canned sardines and rye croutons",
+      "about": "Tender white beans in a garlicky tomato sauce with spinach, dill and parsley, in the style of Greek gigantes plaki, with canned sardines warmed on top and toasted rye cubes for crunch. Lemon lifts it. **Sardines bring omega-3 and calcium**, and the beans bring fibre and folate. It is even better the next day.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 70,
+          "swap": "fatty_fish",
+          "note": "with the soft bones"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 200,
+          "note": "chopped"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "rye-bread-whole-grain-602344",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "cut into cubes"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Wash the tomatoes, spinach, parsley and dill. Warm two thirds of the olive oil in a wide pan over medium heat and soften the onion for 6 minutes. Add the garlic and paprika for 30 seconds.",
+        "Add the tomato and salt and simmer until it breaks down into a sauce, about 10 minutes.",
+        "Stir in the beans and about 100 ml (⅓ cup) of water. Simmer gently for 10 minutes until the sauce clings. Add the spinach until wilted.",
+        "Toss the rye cubes with the rest of the oil and toast them in a dry pan until crisp, about 4 minutes.",
+        "Lay the sardines on top of the beans and warm them through for 2 minutes. Stir in the parsley, dill and lemon juice, scatter the croutons and serve. Cool the second portion in a shallow container within 2 hours; reheat to 74 °C (165 °F) tomorrow and add the croutons then."
+      ],
+      "prepMin": 12,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Tomatoes out of season? Use no-salt-added canned tomatoes. Keep the rest of the opened sardine tin in a lidded container in the fridge and use it within 2 days."
+    },
+    {
+      "id": "gut-global-chicken-bibimbap",
+      "name": "Chicken bibimbap with sesame spinach, carrot, shiitake and kimchi",
+      "inspiredBy": "Korean dolsot-style bibimbap, with brown rice",
+      "about": "A Korean rice bowl with soy-garlic chicken, sesame spinach, matchstick carrot, shiitake, cucumber and kimchi, crowned with a fried egg. You cook the pieces separately and stir them together at the table. **Brown rice and vegetables bring fibre**, and the refrigerated kimchi is a live fermented food (check its label for fish sauce or shrimp).",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 120,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "cut in thin strips"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "kimchi-1371a8",
+          "g": 50,
+          "note": "refrigerated, live; check the label for fish sauce or shrimp"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 3,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 2
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        }
+      ],
+      "steps": [
+        "Mix the chicken with half the soy sauce, the garlic and a few drops of the sesame oil and marinate in the fridge for 15 minutes. Never reuse the marinade. Wash your hands and the board after the raw chicken.",
+        "Wash the spinach, carrot, cucumber and shiitake. Blanch the spinach for 1 minute, squeeze it dry and toss with a few drops of sesame oil, a little soy sauce and half the sesame seeds.",
+        "In a non-stick pan with a little sesame oil, cook the carrot for 2 minutes, then the shiitake for 4 minutes, each separately, and set aside.",
+        "Cook the chicken in the hot pan until golden and it reaches 74 °C (165 °F), about 5 minutes.",
+        "Reheat tonight's rice from your batch until steaming, stirring a teaspoon of the kimchi juice and a few drops of sesame oil through it. Arrange the chicken, vegetables, cucumber and kimchi on top, with the gochugaru.",
+        "Fry the egg until the yolk is set, add it on top with the scallion and the rest of the sesame seeds. Cool the second portion of chicken and vegetables (no egg, no rice) in a shallow container within 2 hours, with the cucumber and kimchi packed separately. Tomorrow reheat a fresh portion of batch rice with the chicken and vegetables to 74 °C (165 °F), add the cold cucumber and kimchi, and fry a fresh egg until the yolk is set."
+      ],
+      "prepMin": 25,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "Stir it all together with a little of the kimchi juice for extra tang."
+    },
+    {
+      "id": "gut-global-barley-chicken-soup",
+      "name": "Barley and chicken soup with root vegetables, dill and marjoram",
+      "inspiredBy": "German Graupensuppe, with chicken instead of sausage",
+      "about": "A German-style Graupensuppe: pearl barley, chicken thigh, carrot, potato, onion and kale in a marjoram-scented broth, brightened with lemon and dill. A slice of rye on the side makes it a meal. **Barley and vegetables bring fibre**, and it reheats beautifully.",
+      "ingredients": [
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "cut in bite-size pieces"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 150,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "from a lemon"
+        },
+        {
+          "food": "marjoram-dried-5adc61",
+          "g": 0.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "rye-bread-whole-grain-602344",
+          "g": 30,
+          "swap": "low_gi_grains"
+        }
+      ],
+      "steps": [
+        "Wash the carrot, potato and onion. Warm the oil in a pot over medium heat and soften the diced onion and carrot for 6 minutes. Add the chicken and cook until the outside turns white, 4 minutes. Wash your hands and the board after the raw chicken.",
+        "Add the barley, potato, bay leaf, marjoram, salt and about 700 ml (3 cups) of water. Bring to a boil, then simmer, partly covered, until the barley is tender, about 35 minutes, adding water if it gets too thick.",
+        "Wash and chop the kale and add it for the last 8 minutes. Check that the chicken reaches 74 °C (165 °F).",
+        "Remove the bay leaf, stir in the lemon juice, parsley and dill and serve with the rye bread. Cool any extra in a shallow container within 1 hour, since it is full of barley; reheat to 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Most of the 45 minutes is simmering, so the hands-on time is about 20. Double it and freeze single portions, cooled within 1 hour."
+    },
+    {
+      "id": "gut-global-apple-hazelnuts",
+      "name": "Warm cinnamon apple with toasted hazelnuts",
+      "about": "Apple slices softened in a pan with cinnamon and a squeeze of lemon, topped with toasted hazelnuts, a bit like a quick baked apple. The apple skin and nuts bring **fibre and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 3,
+          "note": "from a lemon"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        }
+      ],
+      "steps": [
+        "Wash and slice the apple. Toast the hazelnuts in a dry pan for 3 minutes until they smell nutty, then chop them.",
+        "Simmer the apple with the cinnamon, lemon juice and a splash of water in a small pan, covered, until soft but still holding its shape, about 5 minutes.",
+        "Spoon into a bowl and top with the warm hazelnuts."
+      ],
+      "prepMin": 4,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "gut-global-kefir-raspberry-walnuts",
+      "name": "Kefir with raspberries and walnuts",
+      "about": "A tangy drinkable kefir with raspberries stirred in and walnuts on top. **Raspberries are high in fibre**, and kefir is a fermented food.",
+      "ingredients": [
+        {
+          "food": "kefir-2-3-9-fat-3639ea",
+          "g": 200,
+          "swap": "dairy_protein",
+          "note": "plain"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 80,
+          "swap": "berries",
+          "note": "fresh and rinsed just before eating, or frozen and thawed in the fridge"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Spoon the raspberries into a glass or bowl and mash a few.",
+        "Pour the kefir over, stir and top with the chopped walnuts."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "gut-global-yogurt-chickpea-dip-veg",
+      "name": "Garlicky yogurt-chickpea dip with carrot and cucumber sticks",
+      "about": "A quick dip of chickpeas blended with yogurt, lemon, garlic and a little olive oil, with raw carrot and cucumber sticks to scoop. **Chickpeas bring fibre**, and the yogurt is a fermented food.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 70,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.5,
+          "note": "seeds, toasted and crushed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "cut in sticks"
+        }
+      ],
+      "steps": [
+        "Wash the carrot and cucumber and cut them into sticks.",
+        "Blend or mash the chickpeas with the yogurt, lemon juice, garlic, olive oil, cumin and a splash of water until fairly smooth.",
+        "Serve the dip with the vegetable sticks. It keeps 2 days in the fridge."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Any leftover dip keeps 2 days in the fridge and is good spread on rye toast."
+    },
+    {
+      "id": "gut-global-orange-walnuts",
+      "name": "Orange and carrot salad with toasted walnuts and hazelnuts",
+      "about": "A bright little salad of orange segments and finely grated carrot with a pinch of cinnamon and a handful of toasted walnuts and hazelnuts. **Walnuts bring plant omega-3**, hazelnuts bring vitamin E, and the orange brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 130,
+          "swap": "vit_c_fruit",
+          "note": "peeled and segmented"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "finely grated"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        }
+      ],
+      "steps": [
+        "Wash the orange and carrot before peeling. Peel and segment the orange, catching the juice, and grate the carrot.",
+        "Toast the walnuts and hazelnuts in a dry pan for 3 minutes, then chop them.",
+        "Toss the orange, juice, carrot and cinnamon together and top with the warm nuts."
+      ],
+      "prepMin": 6,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "gut-global-spiced-roasted-chickpeas",
+      "name": "Crunchy spiced roasted chickpeas",
+      "about": "Chickpeas roasted until crisp with cumin and chaat masala. **A handful brings fibre and plant protein.**",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 120,
+          "swap": "legumes",
+          "note": "rinsed, drained and patted dry"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chaat-masala-3e66c9",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.5,
+          "note": "seeds, crushed"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 210 °C (410 °F). Pat the chickpeas very dry.",
+        "Toss with the oil, chaat masala and cumin on a tray and roast, shaking once, until crisp, about 25 minutes.",
+        "Cool on the tray. They keep in a jar for 3 days but are crispest the day they are made."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Roast a double batch on day 4 and keep half in a jar for day 6; re-crisp it in a hot oven for 3 minutes."
+    },
+    {
+      "id": "gut-global-banana-yogurt-walnuts",
+      "name": "Banana and yogurt with walnuts",
+      "about": "Thick yogurt with sliced banana and a scatter of toasted walnuts. The yogurt is a fermented food and the banana brings potassium.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan for 2 minutes until they smell nutty.",
+        "Spoon the yogurt into a bowl, add the banana and walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "gut-global-rye-white-bean-toast",
+      "name": "Rye toast with white bean and parsley smash",
+      "about": "Dark rye toast topped with mashed white beans, lemon, parsley and a drop of olive oil. **Beans and rye bring fibre.**",
+      "ingredients": [
+        {
+          "food": "rye-bread-whole-grain-602344",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 60,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6,
+          "note": "from a lemon"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Toast the rye.",
+        "Wash the parsley. Mash the beans with the lemon juice, oil, a pinch of pepper and the chopped parsley, then spread on the toast."
+      ],
+      "prepMin": 4,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "gut-global-seed-mix-raspberries",
+      "name": "Toasted oat and nut crunch with raspberries",
+      "about": "Rolled oats toasted in a pan with walnuts, hazelnuts, pumpkin seeds and cinnamon until golden, then scattered over raspberries. It is crunchy and a little sweet. **Oats and nuts bring fibre and vitamin E.**",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 15,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 80,
+          "swap": "berries",
+          "note": "fresh and rinsed just before eating, or frozen and thawed in the fridge"
+        }
+      ],
+      "steps": [
+        "Toast the oats, walnuts, hazelnuts and pumpkin seeds with the cinnamon in a dry pan over medium heat, stirring, until golden and nutty, about 4 minutes.",
+        "Spoon the raspberries into a bowl and scatter the warm crunch over them."
+      ],
+      "prepMin": 3,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "gut-global-apple-yogurt-cinnamon",
+      "name": "Apple and cinnamon yogurt with walnuts and hazelnuts",
+      "about": "Grated apple stirred into yogurt with cinnamon and toasted walnuts and hazelnuts. The **yogurt is a fermented food** and the nuts add crunch.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 100,
+          "note": "washed and grated"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        }
+      ],
+      "steps": [
+        "Wash the apple, then stir it, grated, with the cinnamon and yogurt.",
+        "Toast the walnuts and hazelnuts in a dry pan for 2 minutes until they smell nutty, chop them and scatter over the top."
+      ],
+      "prepMin": 4,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "gut-global-egg-sesame-cucumber",
+      "name": "Boiled egg with sesame cucumber",
+      "about": "A Japanese-style boiled egg with cucumber rounds tossed in rice vinegar, soy and sesame seeds. **The egg brings protein and choline.**",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 5
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 2
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 3,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Boil the egg for 9 minutes so the yolk is set, cool it in cold water and peel.",
+        "Toss the washed, sliced cucumber with the rice vinegar, soy sauce and sesame seeds.",
+        "Serve the egg alongside, halved."
+      ],
+      "prepMin": 4,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "gut-global-potato-bean-salad",
+      "name": "Warm potato and white bean salad with dill",
+      "about": "Warm boiled potato and white beans tossed with dill, parsley, lemon and a little olive oil, in the spirit of a German Kartoffelsalat. It is soft, tangy and more of a small plate than a snack. **Potato and beans bring fibre and potassium.**",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 130,
+          "note": "scrubbed"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 90,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 3,
+          "note": "chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6,
+          "note": "from a lemon"
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 0.5,
+          "note": "ground"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the potato and cut it into 2 cm (¾ inch) cubes. Boil until just tender, about 10 minutes, then drain.",
+        "Whisk the olive oil, lemon juice, ground mustard and salt together. Wash and chop the dill and parsley.",
+        "Toss the warm potato, beans and herbs in the dressing and eat warm."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "gut-global-chickpea-kachumber",
+      "name": "Chickpea kachumber salad with lemon and cumin",
+      "about": "Chickpeas tossed with diced cucumber, tomato and onion, lemon, olive oil and toasted cumin, in the style of an Indian kachumber. It is crunchy, juicy and sharp. **Chickpeas bring fibre and plant protein.**",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 130,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "from a lemon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.5,
+          "note": "seeds, toasted and crushed"
+        }
+      ],
+      "steps": [
+        "Wash the cucumber, tomato and parsley, then dice the vegetables and chop the parsley.",
+        "Toast the cumin seeds in a dry pan for 1 minute and crush them.",
+        "Toss everything with the lemon juice and olive oil and a pinch of pepper."
+      ],
+      "prepMin": 8,
+      "cookMin": 1,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gut-global-kefir-bircher"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gut-global-lentil-salad-rye"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gut-global-kimchi-tofu-jjigae"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gut-global-orange-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gut-global-yogurt-chickpea-dip-veg"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gut-global-oat-upma"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gut-global-kimchi-tofu-jjigae",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gut-global-trout-potatoes-kale-sauerkraut"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gut-global-seed-mix-raspberries"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gut-global-rye-white-bean-toast"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gut-global-kefir-bircher"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gut-global-miso-tofu-rice-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gut-global-masoor-dal-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gut-global-apple-hazelnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gut-global-egg-sesame-cucumber"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gut-global-miso-barley-egg-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gut-global-masoor-dal-spinach",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gut-global-miso-salmon-sesame-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gut-global-spiced-roasted-chickpeas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gut-global-kefir-raspberry-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gut-global-oat-upma"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gut-global-chickpea-chaat-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gut-global-sardines-white-beans-rye-croutons"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gut-global-egg-sesame-cucumber"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gut-global-orange-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gut-global-kefir-bircher"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gut-global-sardines-white-beans-rye-croutons",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gut-global-chicken-bibimbap"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gut-global-spiced-roasted-chickpeas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gut-global-yogurt-chickpea-dip-veg"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "gut-global-miso-barley-egg-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "gut-global-chicken-bibimbap",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "gut-global-barley-chicken-soup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gut-global-apple-yogurt-cinnamon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "gut-global-rye-white-bean-toast"
+        }
+      ]
+    }
+  ]
+}
