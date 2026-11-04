@@ -10,7 +10,7 @@
     "Italy"
   ],
   "summary": "Make-ahead breakfasts, a Sunday chili and soup for the freezer, salmon, haddock chowder and snacks you can eat with one hand. Built for the nutrients breastfeeding asks more of, with plenty of water-rich foods.",
-  "howItWorks": "**One free hand, little sleep.** Every breakfast is made ahead: overnight oats, baked oat squares and egg muffins you reheat. Snacks are wraps, bars and cups. Soups, fruit, cucumber and yogurt cups carry plenty of water, so drink to thirst. Hot soup, tea and coffee wait until baby is set down. Wash hands, boards and knives after raw meat or fish, and do not rinse raw meat.\n\n**Sunday batch, then the freezer.** Before day 1, make the chili, lentil soup, muffins, squares and bars, and chill them within 2 hours. Keep what you eat on days 1 and 2 in the fridge (cooked dishes keep 3 days) and freeze the rest in single portions. Thaw each in the fridge the night before, use within 2 days and never refreeze. Reheat to 74°C (165°F).\n\n**Choline, B12 and calcium.** Choline comes from eggs at three breakfasts and two snacks, plus salmon, beef and chicken. B12 comes from salmon, beef, haddock, eggs and dairy. Calcium comes from milk, yogurt, cottage cheese, cheddar and canned salmon eaten with its soft bones.\n\n**DHA, iodine and vitamin D.** Salmon is cooked fresh for two dinners, plus a canned salmon wrap, all low-mercury and never back to back. Iodized salt, milk, yogurt, eggs and haddock help with iodine, but iodine and vitamin D still run low from food on most days. Ask your care provider about a supplement that covers both.\n\n**Bigger or smaller.** Big adds a third snack on four days and grows the grains, proteins and oils, while vegetables and fruit stay as written. There is no Light size: this plan does not go below 1,800 kcal.",
+  "howItWorks": "**One free hand, little sleep.** Every breakfast is made ahead: overnight oats, baked oat squares and egg muffins you reheat. Snacks are wraps, bars and cups. Soups, fruit, cucumber and yogurt cups carry plenty of water, so drink to thirst. Hot soup, tea and coffee wait until baby is set down. Wash hands, boards and knives after raw meat or fish, and do not rinse raw meat.\n\n**Sunday batch, then the freezer.** Before day 1, make the chili, lentil soup, muffins, squares and bars, and chill them within 2 hours. Keep what you eat on days 1 and 2 in the fridge (cooked dishes keep 3 days) and freeze the rest in single portions. Thaw each in the fridge the night before, use within 2 days and never refreeze. Reheat to 74°C (165°F).\n\n**Choline, B12 and calcium.** Choline comes from eggs at breakfast and snack time, plus salmon, beef and chicken. B12 comes from salmon, beef, haddock, eggs and dairy. Calcium comes from milk, yogurt, cottage cheese, cheddar and canned salmon eaten with its soft bones.\n\n**DHA, iodine and vitamin D.** Salmon is cooked fresh for two dinners, plus a canned salmon wrap, all low-mercury and never back to back. Iodized salt, milk, yogurt, eggs and haddock help with iodine, but iodine and vitamin D still run low from food on most days. Ask your care provider about a supplement that covers both.\n\n**Bigger or smaller.** Big adds a third snack on five days and grows the grains, proteins and oils, while vegetables and fruit stay as written. To keep food iron under 29 mg a day, Big swaps a few iron-heavy items for yogurt, cheese and fruit on days 2, 5 and 7. There is no Light size: this plan does not go below 1,800 kcal.",
   "signature": [
     "postpartum-global-sheet-pan-salmon-sweet-potato-broccoli",
     "postpartum-global-beef-three-bean-chili",
@@ -60,6 +60,54 @@
           "add": {
             "slot": "snack",
             "recipe": "postpartum-global-smoky-roasted-chickpeas"
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "recipe": "postpartum-global-almond-date-oat-bars"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "postpartum-global-blueberry-yogurt-walnut-bowl"
+          }
+        },
+        {
+          "day": 7,
+          "swap": {
+            "from": "postpartum-global-red-lentil-carrot-soup-cheddar-quesadilla",
+            "to": "postpartum-global-turkey-meatball-spinach-pasta-soup"
+          }
+        },
+        {
+          "day": 7,
+          "swap": {
+            "from": "postpartum-global-egg-muffin-breakfast-wrap",
+            "to": "postpartum-global-berry-walnut-overnight-oats"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "postpartum-global-cheddar-clementine-plate"
+          }
+        },
+        {
+          "day": 5,
+          "swap": {
+            "from": "postpartum-global-chickpea-cucumber-yogurt-wrap",
+            "to": "postpartum-global-blueberry-yogurt-walnut-bowl"
+          }
+        },
+        {
+          "day": 2,
+          "swap": {
+            "from": "postpartum-global-smoky-roasted-chickpeas",
+            "to": "postpartum-global-cheddar-clementine-plate"
           }
         }
       ]
@@ -1417,6 +1465,85 @@
         "Spoon the yogurt into a cup or small bowl.",
         "Top with the banana slices, almonds and cinnamon.",
         "Eat right away, so the banana stays fresh."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "postpartum-global-blueberry-yogurt-walnut-bowl",
+      "name": "Blueberry yogurt bowl with walnuts and maple",
+      "about": "Thick Greek yogurt with juicy blueberries, chopped walnuts and a drizzle of maple syrup, eaten with a spoon. It is cool, creamy and mostly water. It brings **calcium, protein and plant omega-3**, with very little iron, so it suits the bigger sizes.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 100,
+          "swap": "berries",
+          "note": "fresh, or thawed if frozen"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl or cup.",
+        "Top with the blueberries and walnuts and drizzle with the maple syrup.",
+        "Eat it cold, right away."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "postpartum-global-cheddar-clementine-plate",
+      "name": "Cheddar and clementine plate",
+      "about": "A small plate of sharp cheddar cubes, clementine segments and a few almonds, all finger food. It is sweet, salty and juicy, and easy to eat one-handed. The cheddar brings **calcium and protein**, and the clementines bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "cheddar-cheese-reduced-fat-a0786c",
+          "g": 40,
+          "swap": "dairy_protein",
+          "note": "cut in cubes"
+        },
+        {
+          "food": "clementine-raw-42fb6e",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "peeled"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "unsalted"
+        }
+      ],
+      "steps": [
+        "Peel the clementines and split into segments.",
+        "Cut the cheddar into small cubes.",
+        "Arrange everything on a plate and eat with your fingers."
       ],
       "prepMin": 4,
       "cookMin": 0,

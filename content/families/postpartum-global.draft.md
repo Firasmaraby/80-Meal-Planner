@@ -12,7 +12,13 @@ Style `postpartum`, Standard (1800-2400) and Big (2400-3200), no Light. Written 
 | 6 | Berry walnut overnight oats | Tray bake (leftover) | Maple-ginger salmon rice bowl | Cottage cheese mango cup, paprika yogurt eggs |
 | 7 | Egg muffin wrap (freezer) | Lentil soup (freezer) | Beef bean chili (cooked fresh, Sunday batch) | Smoothie, almond date oat bars |
 
-Big adds a third snack on days 1 to 4 (bars, banana cup, carrot dip, roasted chickpeas).
+Big adds a third snack on days 1 to 4 (bars, banana cup, carrot dip, roasted chickpeas) and on day 7 (cheddar and clementine plate).
+
+Food iron is capped at 29 mg a day (breastfeeding, like pregnancy), so Big swaps iron-heavy items for low-iron ones, using two Big-only snack recipes (blueberry yogurt bowl, cheddar and clementine plate):
+- day 2: roasted chickpeas become the cheddar and clementine plate;
+- day 5: the chickpea wrap becomes the blueberry yogurt bowl;
+- day 7: the egg muffin wrap becomes the berry walnut oats, the lentil soup becomes the turkey meatball soup (it freezes without the pasta), and the oat bars become the blueberry yogurt bowl, plus the cheddar plate.
+Iron peak per Big edge: 28.9 mg at 3200 (day 7), 26.1 at 2800 (day 7), 23.2 at 2400 (day 4). Standard is unchanged.
 
 ## Notes
 - Lunches on days 1, 2 and 7 come from the Sunday batch: days 1 and 2 from the fridge, day 7 from the freezer. The first week needs the batch cooked the Sunday before day 1.
