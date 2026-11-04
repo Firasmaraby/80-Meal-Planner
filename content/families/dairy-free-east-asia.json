@@ -1,0 +1,1570 @@
+{
+  "id": "dairy-free-east-asia",
+  "name": "Dairy-free East Asian",
+  "style": "dairy-free",
+  "cuisine": "Asian",
+  "regions": [
+    "China",
+    "Japan",
+    "Korea",
+    "Vietnam"
+  ],
+  "summary": "A week of Chinese, Japanese, Korean and Vietnamese home cooking that is naturally dairy-free, with calcium from greens, small fish eaten with their bones, fortified soy milk, tofu and sesame spread through every day.",
+  "howItWorks": "**Calcium without dairy.** Fortified soy milk, greens, sesame, a little tofu, and sardines or small dried anchovies eaten with their soft bones add up through every day, never in one big glass. The week counts tofu at about 10% DV calcium on the label, so any tofu works. You don't need a calcium supplement; if you take one, ask your pharmacist whether you still need it.\n\n**Vitamin D, B12 and soy.** Salmon, mackerel and sardines through the week, plus eggs and the soy milk, add **vitamin D, B12 and omega-3**. Vitamin D is hard to get from food alone: Health Canada advises 400 IU a day for adults over 50, and your care provider can say if you need one. If you take thyroid medication, ask your pharmacist whether to space it from soy foods.\n\n**Cook once, eat twice.** Monday's braised pork and tofu, Wednesday's rice plate, Thursday's mackerel, Friday's sundubu and Saturday's dumplings each make two portions for the next meal. Dumplings are the weekend project, and make Tuesday's iriko a double batch and it covers Friday's snack too.\n\n**Brown rice batches.** Cook three pots just before you need them. Standard: about 2 cups dry on Sunday, 1 on Wednesday and 1 on Friday (1 cup dry makes about 3 cups cooked). Light needs a little less, Big about one and a half times. Cool hot rice in trays under 5 cm deep within 1 hour, eat within 3 days, and rinse it before cooking.\n\n**Salt and sizes.** Reduced-sodium soy sauce, a little miso, kimchi and chili bean paste do most of the seasoning, in small amounts, with iodized salt as the salt. Light covers 1600-1800 only, with one snack a day. Big adds an extra snack on four days and bigger portions of rice and protein.",
+  "signature": [
+    "dairy-free-east-asia-teriyaki-salmon-bok-choy",
+    "dairy-free-east-asia-braised-mackerel-daikon",
+    "dairy-free-east-asia-sundubu-jjigae",
+    "dairy-free-east-asia-pork-napa-tofu-jiaozi"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "dairy-free-east-asia-cucumber-sesame-muchim"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "dairy-free-east-asia-veg-sticks-miso-dip"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "dairy-free-east-asia-veg-sticks-miso-dip"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "dairy-free-east-asia-walnut-soy-milk"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "dairy-free-east-asia-xian-dou-jiang",
+      "name": "Savoury soy milk bowl with egg, walnuts and rice",
+      "inspiredBy": "Taiwanese xian dou jiang, with rice and walnuts in place of the fried dough and dried shrimp",
+      "about": "Hot soy milk curdles into soft clouds with a splash of vinegar, then gets a jammy egg, edamame, scallion, crunchy walnuts and a scoop of warm rice, with walnuts standing in for the crunch of fried dough. The **fortified soy milk** gives you a good share of the day's calcium before you leave the house, and the egg adds choline.",
+      "ingredients": [
+        {
+          "food": "soy-milk-all-flavors-enhanced-f9fdd1",
+          "g": 170,
+          "note": "plain, unsweetened, fortified; shake the carton well"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "in the shell"
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 70,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 8
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.5,
+          "note": "a pinch"
+        }
+      ],
+      "steps": [
+        "Lower the egg into a pot of simmering water and cook 8 minutes, until the white is set and the yolk is jammy, adding the edamame for the last 4 minutes. Cool the egg under cold water and peel. Wash the scallion before slicing. If you are pregnant, over 65 or have a weak immune system, cook the egg 10 minutes for a firm yolk.",
+        "Reheat the rice with a splash of water, covered, until steaming hot (74 °C). Put it in a wide bowl with the vinegar, soy sauce, sesame oil and most of the scallion.",
+        "Warm the soy milk in a small pot over medium heat until steaming and just below a boil, about 3 minutes, stirring so no skin forms.",
+        "Pour the hot soy milk over the rice in one go and leave it alone for 1 minute. It will thicken into soft curds. Do not stir.",
+        "Slip in the halved egg and the edamame. Top with the walnuts, sesame seeds, the rest of the scallion and a pinch of chili flakes."
+      ],
+      "prepMin": 5,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Rice vinegar is what curdles the soy milk, so do not skip it. Warm the milk gently: a hard boil can make it foam over."
+    },
+    {
+      "id": "dairy-free-east-asia-miso-soup-set",
+      "name": "Japanese miso soup set: tofu miso soup, fried eggs on rice, sesame napa",
+      "inspiredBy": "a Japanese asa-gohan breakfast, with brown rice",
+      "about": "A proper Japanese morning plate: rice topped with fried eggs and nori, miso soup with tofu, and napa cabbage dressed in soy and sesame. About 20 minutes with rice from your batch. **Tofu and napa** carry some of the calcium, and the eggs bring protein, choline and vitamin D.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 130,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "fried"
+        },
+        {
+          "food": "firm-tofu-coagulated-with-calcium-sulfate-raw-d34852",
+          "g": 35,
+          "swap": "lean_protein",
+          "note": "cubed"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 7
+        },
+        {
+          "food": "nori-pyropia-laver-toasted-yakinori-7f29ab",
+          "g": 1,
+          "note": "toasted, torn"
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 3,
+          "note": "flakes"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 200,
+          "swap": "leafy_greens",
+          "note": "cut in strips"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 5,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Reheat the rice with a splash of water, covered, until steaming hot (74 °C). Wash the napa and scallion before cutting.",
+        "Bring about 250 ml of water to a gentle simmer, add the bonito flakes and steep 2 minutes, then strain them out. Add half the napa and the tofu and simmer 3 minutes.",
+        "Take the pot off the heat. Whisk the miso with a ladle of the broth until smooth and stir it back in. Do not boil it again. Sprinkle with half the scallion.",
+        "Blanch the rest of the napa in boiling water for 1 minute until limp. Cool under cold water, squeeze dry and toss with the soy sauce and half the sesame seeds.",
+        "Warm the oil in a small non-stick pan over medium heat and fry the eggs until the whites are set and the yolks are no longer runny. Slide them over the rice and top with the nori, the rest of the sesame and scallion. Serve with the soup and napa."
+      ],
+      "prepMin": 8,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Brown rice batch: cook a pot on Sunday afternoon, another on Wednesday afternoon and a third on Friday afternoon, and use them for every \"from your batch\" rice. Spread the hot rice in two or three shallow containers, no deeper than 5 cm, and refrigerate within 1 hour. Eat it within 3 days, or freeze single portions and thaw them in the fridge. Rinse the rice well and cook it in plenty of water to cut inorganic arsenic."
+    },
+    {
+      "id": "dairy-free-east-asia-salmon-ginger-congee",
+      "name": "Ginger salmon congee with tofu, bok choy and egg ribbons",
+      "inspiredBy": "Cantonese fish jook, with brown rice and a lighter hand with salt",
+      "about": "Brown rice porridge, silky and savoury, with ginger, thin slices of salmon, cubes of tofu, bok choy and a swirl of egg. The weekend bowl makes two portions, so Sunday's is ready in minutes. **Tofu, bok choy and sesame** quietly carry the calcium, and the salmon brings omega-3 and vitamin D.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 60,
+          "swap": "fatty_fish",
+          "note": "skinless, sliced very thin"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "peeled, in thin matchsticks"
+        },
+        {
+          "food": "firm-tofu-coagulated-with-calcium-sulfate-raw-d34852",
+          "g": 20,
+          "swap": "lean_protein",
+          "note": "cubed"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 4,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.3,
+          "note": "a pinch"
+        }
+      ],
+      "steps": [
+        "Put the cooked rice in a large pot with about 700 ml of water and half the ginger. Bring to a boil, then simmer, partly covered, for 30 to 35 minutes, stirring now and then and mashing the rice against the side of the pot, until it is creamy and thick. Add water if it gets too thick.",
+        "While it cooks, wash the bok choy and scallion and chop them. Slice the salmon as thinly as you can and toss it with half the soy sauce. Wash your hands and board after the raw salmon.",
+        "Add the tofu and bok choy to the congee and simmer 3 minutes. Stir in the salmon and simmer 3 to 4 minutes, until it is opaque and cooked through (70 °C).",
+        "Pour in the beaten egg in a thin stream while stirring, so it sets in ribbons, and cook 1 minute until firm.",
+        "Season with the rest of the soy sauce and a pinch of white pepper. Ladle into bowls and top with scallion, the rest of the ginger, sesame seeds and a few drops of sesame oil.",
+        "Put the second portion in a shallow container within 2 hours, refrigerate and eat within 3 days. Reheat with a splash of water until it bubbles (74 °C)."
+      ],
+      "prepMin": 10,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Leftover cooked rice is exactly what congee wants. Short on time? Simmer 20 minutes, then give it a few pulses with a stick blender for a smooth jook."
+    },
+    {
+      "id": "dairy-free-east-asia-sardine-tomato-rice-bowl",
+      "name": "Sardines in tomato with garlicky bok choy and brown rice",
+      "inspiredBy": "Vietnamese ca moi sot ca (sardines in tomato sauce)",
+      "about": "Canned sardines warmed in a ginger and garlic tomato sauce, spooned over brown rice with garlicky bok choy, shredded carrot and cool cucumber. A quick Vietnamese-style lunch. **Sardines canned with their soft bones** are a top calcium food, and they bring vitamin D and omega-3 too.",
+      "ingredients": [
+        {
+          "food": "european-pilchard-or-sardine-in-tomato-sauce-canned-drained-12abee",
+          "g": 80,
+          "swap": "fatty_fish",
+          "note": "bones left in"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "halved lengthwise"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 150,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 30,
+          "note": "shredded"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.5,
+          "note": "a pinch"
+        }
+      ],
+      "steps": [
+        "Reheat the rice with a splash of water, covered, until steaming hot (74 °C). Wash the bok choy, cucumber, carrot and scallion before cutting.",
+        "Toss the carrot with the vinegar and leave it to pickle while you cook.",
+        "Warm half the oil in a pan over medium heat. Soften the scallion whites, half the garlic and the ginger for 1 minute, then add the sardines with their tomato sauce and 3 tablespoons of water. Break the fish into big pieces and simmer gently 4 minutes, with a pinch of chili flakes.",
+        "In a second pan, heat the rest of the oil and the remaining garlic, add the bok choy cut-side down and cook 2 minutes. Add a splash of water, cover and steam 2 minutes, until tender.",
+        "Pile the rice in a bowl and top with the sardines, bok choy, cucumber and pickled carrot. Finish with the scallion greens."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Open the can over the pan so none of the tomato sauce is lost. The little bones mash into the sauce, so you will not notice them."
+    },
+    {
+      "id": "dairy-free-east-asia-cold-sesame-udon",
+      "name": "Cold sesame udon with sardines, edamame, egg and cucumber",
+      "inspiredBy": "Sichuan cold sesame noodles (liang mian), with udon and canned sardines",
+      "about": "Chewy cold udon in a nutty tahini and vinegar sauce, piled with cucumber, edamame, ribbons of egg and flaked canned sardines, with a little chili for heat. Cool, filling and ready in 20 minutes. **Sardines canned with their soft bones** bring calcium and omega-3, and tahini and edamame add more calcium.",
+      "ingredients": [
+        {
+          "food": "udon-wheat-noodles-boiled-e3345d",
+          "g": 220,
+          "swap": "low_gi_grains",
+          "note": "boiled, ready-cooked"
+        },
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 90,
+          "swap": "fatty_fish",
+          "note": "canned in oil, with bones; drained"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 2
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 70,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 4,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.5,
+          "note": "a pinch"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3,
+          "note": "a pinch"
+        }
+      ],
+      "steps": [
+        "Boil the edamame in water for 4 minutes until tender, drain and cool under cold water. Rinse the udon under cold water until chilled and loosened.",
+        "Beat the egg with a pinch of salt, pour into a non-stick pan over medium-low heat as a thin sheet, and cook until completely set, about 2 minutes. Roll it up and slice into ribbons.",
+        "Whisk the tahini with the soy sauce, vinegar, garlic, sugar and 2 to 3 tablespoons of warm water until smooth and pourable like cream.",
+        "Wash the cucumber and scallion, then cut the cucumber into matchsticks and slice the scallion. Drain the sardines and break them into chunks.",
+        "Toss the udon and edamame with most of the sauce. Pile into a bowl and top with the cucumber, egg, sardines, scallion and sesame seeds. Drizzle with the rest of the sauce and a pinch of chili flakes."
+      ],
+      "prepMin": 15,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Whisk a spoonful of warm water into the sauce if it seizes up. Tahini thickens at first, then loosens. Packing it? Keep the sauce separate and toss just before eating."
+    },
+    {
+      "id": "dairy-free-east-asia-braised-tofu-pork-gai-lan",
+      "name": "Braised pork and tofu with gai lan, over brown rice",
+      "inspiredBy": "Sichuan home-style tofu (jiachang doufu), with the pork leading and gai lan",
+      "about": "Ground pork and a few golden-seared slabs of tofu braised in a savoury, gently spicy sauce with ginger, garlic and crisp-tender gai lan (Chinese broccoli). Makes two portions, so tomorrow's lunch is done. **Gai lan** brings most of the calcium, with iron from the pork.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-coagulated-with-calcium-sulfate-raw-d34852",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "cut in slabs"
+        },
+        {
+          "food": "ground-pork-96-lean-4-fat-raw-efd870",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "extra-lean, or finely chopped pork tenderloin"
+        },
+        {
+          "food": "broccoli-chinese-raw-cc954c",
+          "g": 150,
+          "swap": "leafy_greens",
+          "note": "stems and leaves, cut in pieces"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 150,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "doubanjiang-chili-bean-paste-ba0ec4",
+          "g": 5
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 6
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5,
+          "note": "a pinch"
+        }
+      ],
+      "steps": [
+        "Wash the gai lan and scallion, then cut the gai lan in 5 cm pieces, mincing the ginger, garlic and scallion whites. Pat the tofu dry.",
+        "Heat half the canola oil in a wide pan over medium-high heat and sear the tofu slabs until golden on both sides, about 6 minutes. Remove to a plate.",
+        "Add the rest of the oil, then the ginger, garlic, scallion whites and chili bean paste. Stir 30 seconds until fragrant, add the pork and stir-fry, breaking it up, until cooked through (71 °C) and no pink remains, about 4 minutes. Wash your hands after handling the raw pork.",
+        "Add 150 ml of water, the soy sauce and a pinch of salt. Return the tofu, add the gai lan stems and braise 3 minutes, then the leaves for 2 minutes more, until the gai lan is bright and crisp-tender and the sauce is reduced by half.",
+        "Finish with sesame oil and scallion greens. Reheat the rice until steaming (74 °C) and serve alongside.",
+        "Pack the second portion for tomorrow's lunch within 2 hours, refrigerate and reheat once until steaming hot (74 °C)."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Chili bean paste (doubanjiang) is salty, so no more soy sauce is needed. Find it at any Asian grocery; it keeps for months in the fridge."
+    },
+    {
+      "id": "dairy-free-east-asia-teriyaki-salmon-bok-choy",
+      "name": "Ginger soy-glazed salmon with sesame bok choy and brown rice",
+      "inspiredBy": "Japanese teriyaki, without the mirin",
+      "about": "A seared salmon fillet glazed in a quick ginger soy sauce, beside bok choy cooked in the same pan and brown rice. Ready in 30 minutes. The **salmon brings omega-3 and vitamin D**, and the bok choy and sesame add calcium.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 115,
+          "swap": "fatty_fish",
+          "note": "skin-on fillet"
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 200,
+          "swap": "leafy_greens",
+          "note": "halved lengthwise"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 150,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 5
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 6
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "cut in thin ribbons"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4,
+          "note": "a pinch"
+        }
+      ],
+      "steps": [
+        "Wash the bok choy, carrot and scallion. Reheat the rice with a splash of water, covered, until steaming hot (74 °C).",
+        "Stir the soy sauce, sugar, rice vinegar and ginger together in a small bowl with 2 tablespoons of water.",
+        "Pat the salmon dry. Heat half the oil in a non-stick pan over medium-high heat and sear the salmon skin-side down for 4 minutes, until the skin is crisp. Flip and cook 2 to 3 minutes more, until the thickest part reaches 70 °C. Wash your hands and board after handling the raw fish.",
+        "Pour the sauce around the fish and let it bubble and reduce to a glaze, about 1 minute, spooning it over. Lift the fish out onto a plate.",
+        "Wipe the pan, add the rest of the oil and the garlic, then the bok choy cut-side down and the carrot. Cook 2 minutes, add a splash of water and a pinch of salt, cover and steam 2 minutes until tender.",
+        "Serve the salmon and bok choy over the rice, scattered with sesame seeds and scallion."
+      ],
+      "prepMin": 10,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Fish cooks fast, so have everything else ready first. Frozen salmon is fine: thaw it in the fridge overnight and use within 2 days."
+    },
+    {
+      "id": "dairy-free-east-asia-lemongrass-chicken-tofu-rice-plate",
+      "name": "Lemongrass chicken and crispy tofu rice plate with fried egg and pickles",
+      "inspiredBy": "Vietnamese com tam with lemongrass chicken, with brown rice and tofu",
+      "about": "Charred lemongrass chicken and golden tofu over rice with a fried egg, tangy pickled carrot and daikon, and a sweet-sour dipping sauce, the way a Vietnamese rice plate is served. Makes two portions for tomorrow's lunch. **Tofu** adds calcium, and the egg adds choline.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "sliced thin"
+        },
+        {
+          "food": "firm-tofu-coagulated-with-calcium-sulfate-raw-d34852",
+          "g": 70,
+          "swap": "lean_protein",
+          "note": "cut in cubes"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "lemon-grass-citronella-raw-517537",
+          "g": 15,
+          "note": "minced fine, tender inner part"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 6
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 4
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 8
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 25
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 40,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.5,
+          "note": "for the dipping sauce"
+        }
+      ],
+      "steps": [
+        "In a bowl, mix the chicken with the lemongrass, half the garlic, the soy sauce and a third of the sugar. Marinate in the fridge for at least 20 minutes. Discard any leftover marinade; do not reuse it. Wash your hands and board after the raw chicken.",
+        "Meanwhile, pickle the carrot and daikon: toss with half the vinegar, half of the remaining sugar and a splash of water, and leave 15 minutes. Make the dipping sauce by stirring the fish sauce, the rest of the vinegar and sugar, the rest of the garlic and 4 tablespoons of water, with chili flakes to taste.",
+        "Heat a third of the oil in a non-stick pan over medium-high heat and fry the tofu until golden on all sides, about 8 minutes. Remove it to a plate.",
+        "Add a third of the oil and cook the chicken until browned and cooked through (74 °C), 5 to 6 minutes.",
+        "Fry the egg in the rest of the oil until the white is set and the yolk is firm. Cook it fresh for each portion.",
+        "Reheat the rice until steaming (74 °C). Pile it on plates and top with the chicken, tofu, egg and pickles, with the dipping sauce on the side.",
+        "For the second portion, refrigerate the chicken and tofu within 2 hours (pickles and sauce separate), eat within 3 days, reheat to 74 °C, and fry a fresh egg tomorrow with the yolk cooked firm. Do not store a runny yolk."
+      ],
+      "prepMin": 20,
+      "cookMin": 20,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Short on time? Skip frying the tofu and eat it as soft cubes. It is still good with the sauce."
+    },
+    {
+      "id": "dairy-free-east-asia-braised-mackerel-daikon",
+      "name": "Korean braised mackerel with daikon and soybean sprout namul",
+      "inspiredBy": "Korean godeungeo jorim (braised mackerel and radish)",
+      "about": "Atlantic mackerel simmered with daikon in a soy and chili braise, with a bowl of sesame soybean sprouts and brown rice. It tastes even better the next day, so there is a portion for tomorrow's lunch. **Mackerel gives omega-3 and B12**, while the soybean sprouts and sesame add a little calcium.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 115,
+          "swap": "fatty_fish",
+          "note": "Atlantic mackerel fillet, cut in pieces"
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 180,
+          "note": "in thick half-moons"
+        },
+        {
+          "food": "soybean-sprouted-bean-sprouts-raw-000dd4",
+          "g": 150,
+          "swap": "legumes",
+          "note": "soybean sprouts, rinsed"
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 3,
+          "note": "Korean chili flakes"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 9
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 4
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 95,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        }
+      ],
+      "steps": [
+        "Wash the daikon, sprouts and scallion. Cut the daikon in thick half-moons and slice the scallion.",
+        "Make the sauce: stir the chili flakes, soy sauce, sugar, half the garlic and the ginger with 180 ml of water.",
+        "Lay the daikon in a wide pan, pour in the sauce and bring to a boil. Simmer covered 10 minutes, until the daikon is just tender.",
+        "Nestle in the mackerel. Spoon the sauce over, cover and simmer 8 minutes, until the fish is opaque and reaches 70 °C. Uncover, add the scallion and boil hard for about 5 minutes, spooning the sauce over the fish, until it coats the fish like a glaze. Wash your hands and board after the raw fish.",
+        "For the namul, cook the soybean sprouts in a covered pot with a splash of water for 6 minutes, keeping the lid on the whole time. Drain, then toss with the sesame oil, the rest of the garlic and the sesame seeds.",
+        "Reheat the rice until steaming (74 °C) and serve with the fish and namul. Put the second portion in a shallow container within 2 hours, eat within 3 days and reheat once until steaming hot (74 °C)."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Keep the lid on while the soybean sprouts cook: it keeps the nutty flavour and loses the raw bean taste."
+    },
+    {
+      "id": "dairy-free-east-asia-sundubu-jjigae",
+      "name": "Soft tofu and shrimp stew (sundubu jjigae) with kimchi and egg",
+      "inspiredBy": "Korean sundubu jjigae, with shrimp instead of clams",
+      "about": "A bubbling red stew of silky soft tofu, shrimp, kimchi, shiitake, carrot and bok choy, with an egg cracked in at the end, served with brown rice. Makes two portions, so Saturday's lunch is ready. **Soft tofu, shrimp and bok choy** make it a protein-rich bowl with a little calcium.",
+      "ingredients": [
+        {
+          "food": "soft-tofu-prepared-with-calcium-sulfate-and-magnesium-44bed7",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "in big spoonfuls"
+        },
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "peeled, raw"
+        },
+        {
+          "food": "kimchi-1371a8",
+          "g": 50,
+          "note": "chopped"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "bok-choy-pak-choi-raw-5119ed",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "cut in thin half-moons"
+        },
+        {
+          "food": "brown-rice-long-grain-cooked-fa60c8",
+          "g": 120,
+          "swap": "low_gi_grains",
+          "note": "from your batch"
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 4,
+          "note": "Korean chili flakes"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 5,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "If the shrimp are frozen, thaw them overnight in the fridge and cook them within 2 days. Wash the bok choy, carrot, mushrooms and scallion before cutting, then chop the bok choy and slice the carrot, mushrooms and scallion.",
+        "In a heavy pot, warm the sesame oil over medium heat. Stir in the garlic, chili flakes and kimchi and cook 2 minutes, until fragrant and the kimchi has softened.",
+        "Pour in about 500 ml of water, add the soy sauce, carrot and shiitake, and bring to a boil. Simmer 5 minutes.",
+        "Add the soft tofu in big spoonfuls, the bok choy and the shrimp. Simmer gently for 4 to 5 minutes, until the shrimp are pink and opaque all the way through (70 °C).",
+        "Put half the stew in a shallow container for tomorrow, then crack the egg into the stew that is left in the pot, cover and simmer gently for 2 to 3 minutes, until the white is firm and the yolk has thickened. Top with scallion and serve with the reheated rice (74 °C). Wash your hands and board after the raw shrimp and egg.",
+        "Refrigerate the second portion within 2 hours and eat it within 2 days. Tomorrow, reheat it once until bubbling (74 °C), crack in a fresh egg and cook 2 minutes until the white is firm and the yolk has thickened."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Look for soft or silken tofu in a tub or tube, ideally about 10% DV calcium on the label. Use a bit less chili flake for a milder bowl."
+    },
+    {
+      "id": "dairy-free-east-asia-pork-napa-tofu-jiaozi",
+      "name": "Whole-wheat pork, napa and tofu jiaozi with garlicky gai lan",
+      "inspiredBy": "northern Chinese jiaozi, with whole-wheat wrappers",
+      "about": "Hand-folded dumplings with whole-wheat wrappers, filled with juicy pork, napa cabbage, tofu and ginger, steamed and pan-seared, with a vinegar dip and garlicky gai lan on the side. The weekend project: dinner tonight and Sunday's lunch. **Napa, tofu and gai lan** add calcium, and a batch freezes well.",
+      "ingredients": [
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "whole-wheat, for the wrappers"
+        },
+        {
+          "food": "ground-pork-96-lean-4-fat-raw-efd870",
+          "g": 120,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 120,
+          "swap": "leafy_greens",
+          "note": "finely chopped"
+        },
+        {
+          "food": "firm-tofu-coagulated-with-calcium-sulfate-raw-d34852",
+          "g": 25,
+          "swap": "lean_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 6
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 10,
+          "note": "for the dip"
+        },
+        {
+          "food": "broccoli-chinese-raw-cc954c",
+          "g": 120,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4,
+          "note": "a pinch"
+        }
+      ],
+      "steps": [
+        "Make the dough: stir the flour with about 55 to 60 ml of hot water per 100 g of flour, adding a spoonful more if it stays crumbly, until shaggy, then knead 8 minutes until smooth. Cover and rest 30 minutes.",
+        "Wash the napa, scallion, gai lan and mushrooms. Chop the napa very fine, toss with a pinch of salt and let it sit 10 minutes, then squeeze out the water in a clean towel.",
+        "Mix the pork, napa, tofu, ginger, scallion, shiitake, soy sauce and sesame oil by hand until sticky. Keep the filling covered in the fridge while you roll the wrappers.",
+        "Roll the dough into a log, cut it into small pieces and roll each into a thin 8 cm round. Put a spoonful of filling in each, then fold and pleat to seal. Set the finished dumplings on a floured tray, cover with a damp towel and keep them in the fridge until you cook them. Wash your hands and board after the raw pork.",
+        "Heat half the canola oil in a lidded non-stick pan over medium heat. Set in the dumplings flat side down, fry 2 minutes until golden, add 80 ml of water, cover and steam 8 minutes until the filling reaches 71 °C. Uncover and let the bottoms crisp.",
+        "While they steam, stir-fry the gai lan with the garlic in the rest of the oil for 4 minutes with a splash of water, until crisp-tender. Serve the dumplings with the vinegar dip.",
+        "Freeze any extra uncooked dumplings on a tray, then bag them, and cook from frozen with 3 minutes longer, until the centre reaches 71 °C. Refrigerate the cooked second portion within 2 hours and reheat once in a covered pan to 74 °C."
+      ],
+      "prepMin": 60,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "weekend-project"
+      ],
+      "tip": "No time to roll wrappers? Packaged round dumpling wrappers work: just check the label for dairy. Folding is better with a friend."
+    },
+    {
+      "id": "dairy-free-east-asia-chicken-tofu-nabe",
+      "name": "Chicken, tofu and napa nabe with sesame dipping sauce and udon",
+      "inspiredBy": "Japanese nabemono, with a sesame dipping sauce (goma dare)",
+      "about": "A one-pot Japanese hot pot of chicken, tofu, napa, shiitake and carrot in a light bonito broth, with a nutty sesame and soy dipping sauce and a nest of udon with a swirl of egg at the end. Cosy, light and quick to clean up. **Napa and tahini** bring some calcium, and the chicken and egg bring protein.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "sliced"
+        },
+        {
+          "food": "firm-tofu-coagulated-with-calcium-sulfate-raw-d34852",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "cubed"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 200,
+          "swap": "leafy_greens",
+          "note": "cut in big pieces"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 50,
+          "note": "halved"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "sliced in coins"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 8
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 3
+        },
+        {
+          "food": "udon-wheat-noodles-boiled-e3345d",
+          "g": 90,
+          "swap": "low_gi_grains",
+          "note": "boiled, ready-cooked"
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 4,
+          "note": "flakes"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        }
+      ],
+      "steps": [
+        "Wash the napa, mushrooms, carrot and scallion. Cut the napa into big pieces and slice the scallion at an angle.",
+        "Whisk the tahini with the soy sauce, rice vinegar, sugar and 2 tablespoons of warm water for the dipping sauce.",
+        "In a wide pot, bring about 600 ml of water and the ginger to a simmer. Add the bonito flakes, steep 2 minutes, then strain them out. Add the carrot and napa stems and simmer 5 minutes.",
+        "Add the chicken, shiitake and tofu, and simmer gently for 8 minutes, until the chicken is cooked through (74 °C) and no pink remains. Add the napa leaves for the last 2 minutes. Wash your hands and board after the raw chicken.",
+        "Add the udon and scallion and warm for 2 minutes. Drizzle the beaten egg over the top, cover and simmer 1 minute until it is completely set. Ladle everything into a bowl with some broth and serve with the dipping sauce."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Leftover broth makes a great starter for tomorrow: add a handful of cooked rice and a beaten egg for zosui."
+    },
+    {
+      "id": "dairy-free-east-asia-salted-edamame",
+      "name": "Warm salted edamame",
+      "about": "Warm green soybeans with a little sea salt, a very Japanese snack. **Edamame brings protein and fibre** and a little calcium.",
+      "ingredients": [
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 120,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3,
+          "note": "a small pinch"
+        }
+      ],
+      "steps": [
+        "Boil the edamame in water for 4 minutes, until tender and bright green. Drain well.",
+        "Toss with a small pinch of salt and eat warm."
+      ],
+      "prepMin": 2,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "dairy-free-east-asia-iriko-walnut-bokkeum",
+      "name": "Iriko and walnut bokkeum",
+      "inspiredBy": "Korean myeolchi hodu bokkeum",
+      "about": "Tiny dried anchovies stir-fried crisp with walnuts in a sweet soy glaze, a classic Korean banchan. **The little fish are packed with calcium**, and the walnuts add omega-3.",
+      "ingredients": [
+        {
+          "food": "japanese-anchovy-katakuchi-iwashi-boiled-and-dried-niboshi-0bd518",
+          "g": 8,
+          "swap": "fatty_fish",
+          "note": "small dried anchovies (myeolchi, iriko or niboshi); the tiny ones need no gutting"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 2
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 3
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 2,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Toast the dried anchovies in a dry non-stick pan over medium heat for 2 minutes, until crisp and fragrant. Add the walnuts and toast 1 minute more.",
+        "Stir the soy sauce, sugar and 1 tablespoon of water into the pan and bubble 1 minute until it is a sticky glaze.",
+        "Stir in the sesame seeds and spread on a plate to cool. Make a double batch if you like: it keeps in a jar in the fridge for up to 1 week."
+      ],
+      "prepMin": 3,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "dairy-free-east-asia-mandarin-walnuts",
+      "name": "Mandarin and walnuts",
+      "about": "A juicy mandarin with a small handful of walnuts. **Walnuts bring omega-3** and the mandarin brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "mandarin-seedless-peeled-raw-8ed240",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "peeled, in segments"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Peel the mandarin and eat with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "dairy-free-east-asia-mandarin-almonds",
+      "name": "Mandarin and almonds",
+      "about": "A juicy mandarin with a small handful of almonds. **Almonds bring vitamin E and a little calcium**, and the mandarin brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "mandarin-seedless-peeled-raw-8ed240",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "peeled, in segments"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Peel the mandarin and eat with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "dairy-free-east-asia-sweet-potato-sesame",
+      "name": "Steamed sweet potato with sesame",
+      "inspiredBy": "Korean goguma and Japanese yaki-imo",
+      "about": "Soft steamed sweet potato with toasted sesame, a favourite Korean and Japanese street snack. **Sweet potato brings vitamin A**, and the sesame adds a little calcium.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 150,
+          "note": "scrubbed"
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Scrub the sweet potato and cut it into thick chunks. Steam for 15 minutes, until a knife slides in easily.",
+        "Sprinkle the toasted sesame over the warm sweet potato."
+      ],
+      "prepMin": 3,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "dairy-free-east-asia-walnut-soy-milk",
+      "name": "Warm walnut soy milk",
+      "inspiredBy": "Chinese hetao doujiang (walnut soy milk)",
+      "about": "Fortified soy milk whisked with ground walnuts and a touch of sugar, a Chinese comfort drink. **Walnuts add omega-3**, and the soy milk adds calcium.",
+      "ingredients": [
+        {
+          "food": "soy-milk-all-flavors-enhanced-f9fdd1",
+          "g": 150,
+          "note": "plain, unsweetened, fortified; shake the carton well"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "finely chopped"
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Grind the walnuts to a rough powder in a mortar or small grinder.",
+        "Warm the soy milk with the sugar until steaming, then whisk in the ground walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "dairy-free-east-asia-veg-sticks-miso-dip",
+      "name": "Carrot and daikon sticks with sesame miso dip",
+      "inspiredBy": "Japanese yasai sticks with miso",
+      "about": "Crunchy carrot and daikon sticks with a little miso, sesame and rice vinegar to dip in, a Japanese yasai stick snack. **Carrot brings vitamin A**, and the sesame adds a little calcium.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 100,
+          "note": "peeled, cut in sticks"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 5
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 4,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Wash and peel the carrot and daikon and cut them into sticks.",
+        "Stir the miso, sesame seeds, rice vinegar and a teaspoon of water into a thick dip, and serve with the sticks."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "dairy-free-east-asia-cucumber-sesame-muchim",
+      "name": "Sesame cucumber salad",
+      "inspiredBy": "Korean oi muchim",
+      "about": "Crisp cucumber in a sesame oil, vinegar and chili dressing, a cool Korean side (oi muchim). **Sesame adds a little calcium**, and the crunch is a good break from soft foods.",
+      "ingredients": [
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 150,
+          "note": "sliced thin"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 5
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 4,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 1,
+          "note": "Korean chili flakes"
+        }
+      ],
+      "steps": [
+        "Wash the cucumber and slice it thinly.",
+        "Toss with the sesame oil, vinegar, sesame seeds and chili flakes. Eat right away or chill 10 minutes."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "dairy-free-east-asia-xian-dou-jiang"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "dairy-free-east-asia-sardine-tomato-rice-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "dairy-free-east-asia-braised-tofu-pork-gai-lan"
+        },
+        {
+          "slot": "snack",
+          "recipe": "dairy-free-east-asia-mandarin-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "dairy-free-east-asia-salted-edamame"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "dairy-free-east-asia-miso-soup-set"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "dairy-free-east-asia-braised-tofu-pork-gai-lan",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "dairy-free-east-asia-teriyaki-salmon-bok-choy"
+        },
+        {
+          "slot": "snack",
+          "recipe": "dairy-free-east-asia-iriko-walnut-bokkeum"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "dairy-free-east-asia-xian-dou-jiang"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "dairy-free-east-asia-cold-sesame-udon"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "dairy-free-east-asia-lemongrass-chicken-tofu-rice-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "dairy-free-east-asia-mandarin-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "dairy-free-east-asia-cucumber-sesame-muchim"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "dairy-free-east-asia-miso-soup-set"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "dairy-free-east-asia-lemongrass-chicken-tofu-rice-plate",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "dairy-free-east-asia-braised-mackerel-daikon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "dairy-free-east-asia-mandarin-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "dairy-free-east-asia-sweet-potato-sesame"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "dairy-free-east-asia-xian-dou-jiang"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "dairy-free-east-asia-braised-mackerel-daikon",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "dairy-free-east-asia-sundubu-jjigae"
+        },
+        {
+          "slot": "snack",
+          "recipe": "dairy-free-east-asia-salted-edamame"
+        },
+        {
+          "slot": "snack",
+          "recipe": "dairy-free-east-asia-iriko-walnut-bokkeum"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "dairy-free-east-asia-salmon-ginger-congee"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "dairy-free-east-asia-sundubu-jjigae",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "dairy-free-east-asia-pork-napa-tofu-jiaozi"
+        },
+        {
+          "slot": "snack",
+          "recipe": "dairy-free-east-asia-walnut-soy-milk"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "dairy-free-east-asia-salmon-ginger-congee",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "dairy-free-east-asia-pork-napa-tofu-jiaozi",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "dairy-free-east-asia-chicken-tofu-nabe"
+        },
+        {
+          "slot": "snack",
+          "recipe": "dairy-free-east-asia-mandarin-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "dairy-free-east-asia-sweet-potato-sesame"
+        }
+      ]
+    }
+  ]
+}
