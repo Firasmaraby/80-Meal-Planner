@@ -460,6 +460,8 @@ A safety reviewer reads every week against the guidance before it ships.
   - Low-mercury fish (salmon, trout, char, sardines, herring, Atlantic mackerel, canned light tuna) at least twice a week.
   - Canned albacore at most 300 g a week.
   - Caffeine at most 300 mg a day; in practice, a cup of coffee or two of tea at most.
+- **Iron from food at most 29 mg a day.** The 45 mg upper limit counts the prenatal vitamin too (Health Canada advises
+  one with 16 to 20 mg), so iron-fortified cereal and oats are used in modest amounts.
 - **Shape:**
   - small, frequent meals;
   - plain, easy breakfasts for queasy mornings;

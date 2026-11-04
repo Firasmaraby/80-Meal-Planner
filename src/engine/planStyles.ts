@@ -193,6 +193,8 @@ export interface StyleGates {
   caffeineMaxMg?: number;
   /** canned white (albacore) tuna per week, g (Health Canada, pregnancy: 300 g) */
   albacoreMaxGWeek?: number;
+  /** iron from food, mg a day: leaves room under the 45 mg upper limit for the iron in a prenatal vitamin (Health Canada: 16 to 20 mg) */
+  ironMaxMg?: number;
 }
 
 export interface PlanStyleInfo {
@@ -269,8 +271,8 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
   prenatal: {
     label: 'Pregnancy',
     blurb: 'Graded on pregnancy needs, with the foods to avoid left out.',
-    gates: { lifeStage: 'pregnant', bans: ['prenatal'], minKcal: 1800, caffeineMaxMg: 300, albacoreMaxGWeek: 300 },
-    note: "Keep taking a prenatal vitamin with 0.4 mg of folic acid, and iodine and iron as your care provider advises. This week leaves out the foods Health Canada asks you to avoid in pregnancy, keeps caffeine under 300 mg a day and uses only low-mercury fish. It isn't a plan for gestational diabetes or another condition: follow your care provider.",
+    gates: { lifeStage: 'pregnant', bans: ['prenatal'], minKcal: 1800, caffeineMaxMg: 300, albacoreMaxGWeek: 300, ironMaxMg: 29 },
+    note: "Keep taking a prenatal vitamin with 0.4 mg of folic acid, as Health Canada advises. This week already brings plenty of iron from food and stays low enough to leave room for the iron in a prenatal vitamin, so don't add a separate iron pill unless your care provider tells you to. It leaves out the foods Health Canada asks you to avoid in pregnancy, keeps caffeine under 300 mg a day and uses only low-mercury fish. It isn't a plan for gestational diabetes or another condition: follow your care provider.",
   },
   postpartum: {
     label: 'Postpartum and nursing',
@@ -537,6 +539,8 @@ export function styleNutrientGates(style: PlanStyle, plan: MealPlan, foods: Food
       if (caffeine > g.caffeineMaxMg)
         fail('caffeine', `caffeine is about ${Math.round(caffeine)} mg (a ${label} plan allows ${g.caffeineMaxMg} mg).`, 'Use one cup of coffee at most, or decaf, half-caf or herbal tea from the safe list.');
     }
+    if (g.ironMaxMg != null && (t.iron ?? 0) > g.ironMaxMg)
+      fail('iron_high', `iron from food is ${(t.iron ?? 0).toFixed(1)} mg (a ${label} plan keeps it at or under ${g.ironMaxMg} mg, so a prenatal vitamin stays under the 45 mg upper limit).`, 'Use less iron-fortified cereal or oats that day, or swap a fortified food for its plain version.');
     if (g.ironFemaleRda != null && (t.iron ?? 0) < ironRda * g.ironFemaleRda)
       fail('iron', `iron is ${(t.iron ?? 0).toFixed(1)} mg (a ${label} plan needs ${(ironRda * g.ironFemaleRda).toFixed(0)} mg).`, 'Add lentils, beans, tofu, pumpkin seeds, spinach or lean red meat, with a vitamin C food.');
     if (g.proteinPerMainMealG != null)

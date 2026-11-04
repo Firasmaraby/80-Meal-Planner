@@ -269,6 +269,15 @@ describe('batch C safety: pregnancy, breastfeeding, PCOS and menopause', () => {
     expect(codes('balanced', plan)).not.toContain('caffeine');
   });
 
+  it('pregnancy keeps food iron at or under 29 mg a day, leaving room for a prenatal vitamin', () => {
+    expect(PLAN_STYLES.prenatal.gates.ironMaxMg).toBe(29);
+    const plan = standard(fixture);
+    const fortified = FOODS.find((x) => /fortified/i.test(x.name) && (x.n.iron ?? 0) > 20)!;
+    plan.days[0].meals[0].ingredients.push({ foodId: fortified.id, grams: 150 });
+    expect(codes('prenatal', plan)).toContain('iron_high');
+    expect(PLAN_STYLES.prenatal.note).toMatch(/don't add a separate iron pill/);
+  });
+
   it('pregnancy and breastfeeding plans never claim a band below 1,800 kcal', () => {
     expect(PLAN_STYLES.prenatal.gates.minKcal).toBe(1800);
     expect(PLAN_STYLES.postpartum.gates.minKcal).toBe(1800);
