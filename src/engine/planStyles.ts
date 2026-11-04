@@ -276,8 +276,9 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
   },
   gut: {
     label: 'Gut health',
-    blurb: 'Fibre, plant variety and fermented foods for the microbiome.',
+    blurb: 'Plenty of fibre, plant variety and fermented foods.',
     gates: { fibreMinG: 35, fibreMinGBelow1800: 30, plantFoodsPerWeek: 30, fermentedDaysPerWeek: 5 },
+    note: "This week is high in fibre: if you usually eat less, build up over a couple of weeks and drink water through the day. If you have IBS, inflammatory bowel disease or follow a low-FODMAP plan, check with your care team first. If you're pregnant or have a weakened immune system, choose pasteurised yogurt and kefir and ask about unpasteurised kimchi and sauerkraut.",
   },
   'anti-inflammatory': {
     label: 'Anti-inflammatory',
