@@ -1,4 +1,4 @@
-# Next: handoff for a fresh session (Nov 5)
+# Next: handoff for a fresh session (Nov 5, step 1 done)
 
 Read this first, then `content/STATUS.md` (session log at the bottom), `content/GUIDE.md` (§2, §11, §12, §13) and `content/CATALOG.md`. `AGENTS.md` has the Expo rules.
 
@@ -32,15 +32,13 @@ Read this first, then `content/STATUS.md` (session log at the bottom), `content/
 - **Desktop.** An admin console for Firas after launch, to manage plans, publish without a store release, and see usage. A web version for clients comes later.
 
 ## Order of work
-1. **UX fixes from Firas's testing:**
-   - **Check-in trends:** Week, Month and Year views of energy, sleep, mood, weight and 80% days. Today there is only the 30-day `src/app/report.tsx`.
-   - **Plans tab defaults:** open on global plans first, with diet and cuisine plans behind filters.
-   - **Carb-style message:** reword "N omitted" (`src/ui/carbParts.tsx`) so whole-food carbs reads as the main choice, not a loss.
-   - **Calorie filter:** add a per-meal calorie filter on the Meals tab (Under 400 / 400-600 / 600-800 / 800+), using the meal's calories at the person's size.
-   - **Search:**
-     - Add search to the Plans tab.
-     - Make search forgiving on both tabs: plurals ("salmons"), typos and ingredient names. `src/engine/search.ts` already does fuzzy food search; reuse it.
-     - Support nutrient queries ("high iron", "calcium") that rank by nutrient per serving.
+1. **UX fixes from Firas's testing: done Nov 5.**
+   - Check-in trends: the report card has Week, Month and Year views, with energy, sleep and mood lines, weight, and Eighty days (daily squares, or monthly bars for a year).
+   - Plans tab: **Everyday · Cuisines · Diets & goals** views (`src/engine/browse.ts`). Everyday is cuisine "Global" with the balanced style; until those plans ship it shows the regional kitchens with a line saying so. **Give the 30 new plans `cuisine: "Global"` and `style: "balanced"` so they land in Everyday.**
+   - Carb-style wording leads with whole-food carbs and offers "Add grains too".
+   - Meals: "Calories at your size" chips, using the same recipe in the plan size that fits the person.
+   - Search on both tabs (`src/engine/textSearch.ts`): plurals, prefixes, one typo, cooks' synonyms, ingredients; nutrient queries ("high iron", "omega-3") rank by amount and show it.
+   - **Revisit plan discovery with Firas once the app is done.** He sees how people find a plan as make or break for the app. Plan a session together on a creative solution; today's views and search are a stopgap. Note: with the default whole-food carb choice, most current plans are hidden until the global plans ship.
 2. **Engine and data:** remove the halal and kosher tags, fix the tofu data, fix leftover sizing, then rebuild and re-check.
 3. **The 30 global plans** in waves of about 5. Add briefs to CATALOG and GUIDE §13 first, using the writer → critic → final review loop below.
 4. **Final content pass:** remove pork, rebuild, run the full checks, publish the demo.
