@@ -1,0 +1,1873 @@
+{
+  "id": "ramadan-global",
+  "name": "Ramadan Global Kitchen",
+  "style": "ramadan",
+  "cuisine": "Global",
+  "regions": [
+    "Turkey",
+    "Morocco",
+    "Canada",
+    "the Mediterranean"
+  ],
+  "summary": "A week of Ramadan meals from everyday Turkish, Moroccan, Mediterranean and Canadian kitchens: a slow, salt-light suhoor of oats, eggs, labneh and pita, and an iftar that opens with dates, water and a soup before sheet-pan chicken, roasted salmon, köfte or a lentil stew.",
+  "howItWorks": "**Two meals, two snacks.** Suhoor before dawn and iftar at sunset carry the day, with a snack or two between iftar and bedtime. Iftar opens the traditional way, with dates and a glass of water, then a soup, a short pause, and the main plate. It works just as well on days you are not fasting.\n\n**A slow, salt-light suhoor.** Overnight oats, spinach and eggs with firm yolks, and a Turkish-style plate of labneh, egg, tomato and cucumber all digest slowly. Salt is kept very low on purpose, to help with thirst. Fruit, vegetables and milk add fluid, and a glass of water with each snack spreads it through the evening.\n\n**Soups and leftovers carry iftar.** Mercimek, harira and the Canadian lentil soup each make two portions, and so does Monday's chicken sheet pan. Tuesday is all leftovers, and the soup is already made on Thursday and Saturday. Cool the second portions within 2 hours, keep them up to 3 days and reheat once to 74 °C. Fish is always cooked fresh: **salmon on Wednesday, trout on Saturday**.\n\n**Small sweets, simple drinks.** There are only two sweets, a lighter sütlaç on Tuesday and a baked apple with dates on Saturday. Drinks are water, milk and ayran.\n\n**At the other sizes.** Light drops one snack each evening, including Saturday's baked apple, and trims the oats, the labneh on the suhoor plate, Sunday's bulgur, oil and nuts to fit. The rest stays close to Standard. Big adds a snack on Wednesday, Friday and Sunday and gives you more eggs, bread, meat, fish and beans.",
+  "signature": [
+    "ramadan-global-mercimek-soup",
+    "ramadan-global-sheet-pan-lemon-chicken",
+    "ramadan-global-lemon-herb-salmon-roasted-veg",
+    "ramadan-global-turkish-kofte-bulgur-pilav-salad"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 2800,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "ramadan-global-pita-labneh-cucumber"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "ramadan-global-apple-yogurt-pumpkin-seeds"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "ramadan-global-pita-labneh-cucumber"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "ramadan-global-walnut-apple-overnight-oats",
+      "name": "Apple, walnut and almond overnight oats with milk and cinnamon",
+      "inspiredBy": "Canadian overnight oats, set up after iftar so suhoor takes no cooking",
+      "about": "Rolled oats soaked overnight in milk and yogurt with grated apple, walnuts, almonds and cinnamon. It is thick, cold and creamy, and it is waiting in the fridge when the alarm goes. The oats and milk digest slowly, so they carry you through the day, and the milk and yogurt bring **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 90,
+          "note": "grated"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "After iftar, stir the oats, milk, yogurt, cinnamon and the pinch of salt together in a jar or bowl. Cover and put it in the fridge to soak overnight, at least 4 hours.",
+        "At suhoor, wash the apple and grate it, skin and all. Stir half of it into the oats, loosening them with a splash of cold milk or water if they have thickened too much.",
+        "Top with the rest of the apple, the walnuts and the almonds.",
+        "Soaked oats keep in the fridge for up to 3 days, so you can mix two nights at once."
+      ],
+      "prepMin": 6,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "makes-leftovers",
+        "15-minute"
+      ],
+      "tip": "Leave the apple out and use a few spoonfuls of mashed pear if you prefer."
+    },
+    {
+      "id": "ramadan-global-turkish-spinach-eggs-toast",
+      "name": "Turkish-style spinach and eggs with tomato and warm pita",
+      "inspiredBy": "Turkish ıspanaklı yumurta, spinach with eggs",
+      "about": "Spinach wilted with onion and garlic and a few chickpeas, with eggs set right in the pan and cooked until the yolks are firm. It comes with sliced tomato and warm pita, and only a pinch of salt. The eggs and spinach bring **protein, choline and iron**, and the tomato helps you absorb that iron.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 110,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 50,
+          "swap": "legumes"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 35,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 28,
+          "note": "warmed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash the spinach and tomato, and slice the tomato.",
+        "Warm the oil in a lidded skillet over medium heat. Soften the onion and garlic for about 4 minutes, until the onion is soft and just starting to colour.",
+        "Add the spinach a handful at a time and stir until wilted, about 2 minutes. Stir in the chickpeas and season with the Aleppo pepper, black pepper and salt.",
+        "Make small wells in the spinach and crack the eggs into them. Cover and cook on low for 8 to 10 minutes, until the whites are set and the yolks are firm, not runny.",
+        "Warm the pita while the eggs cook, then serve everything with the tomato."
+      ],
+      "prepMin": 8,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Short on time before dawn? Wilt the spinach after iftar, chill it within 2 hours, then reheat it until steaming hot (74 °C) before you crack the eggs in. Use it within 2 days. Have a glass of water, or a small glass of milk or ayran, with it."
+    },
+    {
+      "id": "ramadan-global-turkish-breakfast-plate",
+      "name": "Turkish-style suhoor plate with labneh, boiled egg, tomato, cucumber and almonds",
+      "inspiredBy": "Turkish kahvaltı, the breakfast table",
+      "about": "The kind of plate you would find on a Turkish breakfast table, built for suhoor: creamy labneh, a boiled egg, juicy tomato and cucumber, almonds and pita, with a pear to finish. There is hardly any salt on it. The egg and labneh bring **protein, choline and calcium**, and the vegetables and pear bring water and fibre.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "boiled"
+        },
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 110,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40,
+          "note": "warmed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 85,
+          "note": "sliced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 16,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 130,
+          "note": "sliced"
+        },
+        {
+          "food": "mint-dried-3fe241",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Put the egg in a small pot of cold water, bring it to a boil, then simmer for 10 minutes, until the yolk is firm. Cool it under cold water. If you boil it ahead, chill it within 2 hours in its shell and peel it just before eating. It keeps up to a week.",
+        "Wash the tomato, cucumber and pear. Slice them and fan them on a plate.",
+        "Spread the labneh on the plate, drizzle it with the olive oil and sprinkle with the dried mint and pepper.",
+        "Add the egg, halved, and the almonds. Serve with the warm pita."
+      ],
+      "prepMin": 10,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Put a few slices of tomato and cucumber on the table at iftar too. They help you start rehydrating."
+    },
+    {
+      "id": "ramadan-global-mercimek-soup",
+      "name": "Dates, water and mercimek çorbası (Turkish red lentil soup)",
+      "inspiredBy": "Turkish mercimek çorbası, the lentil soup of iftar tables",
+      "about": "Break the fast with dates and water, then a bowl of velvety red lentil soup with carrot and a little tomato paste, finished with Aleppo pepper, dried mint and lemon. It is warm, gentle on an empty stomach and quick to make. The lentils bring **iron, folate and protein**, and the lemon helps your body use that iron.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 40,
+          "note": "to open the fast"
+        },
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 75,
+          "swap": "legumes"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 55,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 45,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "crushed"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 10
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 18
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.4
+        },
+        {
+          "food": "mint-dried-3fe241",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the lentils until the water runs clear. Wash and dice the carrot and onion.",
+        "Warm the oil in a pot and soften the onion and carrot for about 6 minutes. Stir in the garlic, cumin, paprika and tomato paste and cook for a minute, until the paste darkens.",
+        "Add the lentils and enough water to cover by about 4 cm. Bring to a boil, then simmer for 20 to 25 minutes, until everything is very soft.",
+        "Blend the soup smooth with an immersion blender. Season with the salt, black pepper and half the lemon juice, adding water if it is too thick.",
+        "Before you sit down, ladle the second portion into a shallow container, cool it, and get it into the fridge within 2 hours. Reheat it once tomorrow until steaming hot, 74 °C. It keeps up to 3 days.",
+        "To open the fast, eat the dates with a glass of water, then ladle out the soup. Take a short pause before the main plate. Finish each bowl with the rest of the lemon, the Aleppo pepper and the dried mint."
+      ],
+      "prepMin": 12,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "A warm pita alongside is the classic way to eat it."
+    },
+    {
+      "id": "ramadan-global-harira-soup",
+      "name": "Dates, water and Moroccan harira (tomato, lentil and chickpea soup with egg)",
+      "inspiredBy": "Moroccan harira, the soup that opens the fast across the Maghreb",
+      "about": "Dates and water first, then the soup Moroccan families break the fast with all month: tomatoes, lentils and chickpeas simmered with celery, spinach, cilantro and parsley, with ginger and cinnamon, brightened with lemon and finished with a beaten egg stirred through. It is hearty and tangy. The lentils and chickpeas bring **iron, folate and fibre**, and the tomatoes and lemon bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 40,
+          "note": "to open the fast"
+        },
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 55,
+          "swap": "legumes"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 40,
+          "swap": "legumes"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 120,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "celery-raw-79a241",
+          "g": 45,
+          "note": "diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 65,
+          "swap": "leafy_greens",
+          "note": "washed, chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.6
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Rinse the lentils. Wash and dice the celery, dice the onion, and wash and chop the spinach, cilantro and parsley.",
+        "Warm the oil in a pot and soften the onion and celery for about 6 minutes. Stir in the ginger, turmeric, cinnamon and pepper for 30 seconds.",
+        "Add the tomatoes with their juice, the lentils, the chickpeas and about 600 ml water. Bring to a boil, then simmer for 25 minutes, until the lentils are tender.",
+        "Stir in the spinach, cilantro, parsley, salt and lemon juice. Bring it back to a gentle boil and pour in the beaten egg in a thin stream, stirring, until it sets in ribbons, 1 to 2 minutes. Make sure the egg is fully cooked, with nothing runny.",
+        "Before you sit down, ladle the second portion into a shallow container, cool it, and get it into the fridge within 2 hours. Reheat it once tomorrow until steaming hot, 74 °C. It keeps up to 3 days.",
+        "To open the fast, eat the dates with a glass of water, then ladle out the soup. Take a short pause before the main plate."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Many cooks also stir in a few broken vermicelli noodles or a spoon of cooked rice at the end."
+    },
+    {
+      "id": "ramadan-global-lentil-vegetable-soup",
+      "name": "Dates, water and Canadian lentil and vegetable soup",
+      "inspiredBy": "a Canadian lentil and vegetable soup",
+      "about": "Dates and water, then a thick, hearty lentil soup with carrot, celery, onion and tomato, wilted spinach and a bay leaf, finished with lemon. It is the kind of pot a Canadian kitchen makes all winter, and it is even better the next day. The lentils bring **iron, folate and fibre**, and the spinach and tomato bring vitamins A and C.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 40,
+          "note": "to open the fast"
+        },
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 75,
+          "swap": "legumes"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 65,
+          "note": "diced"
+        },
+        {
+          "food": "celery-raw-79a241",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 45,
+          "note": "diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 45,
+          "swap": "leafy_greens",
+          "note": "washed, chopped"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 80,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 18
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.6
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Rinse the lentils. Wash and dice the carrot and celery, dice the onion, and wash the spinach.",
+        "Warm the oil in a pot and soften the onion, carrot and celery for about 7 minutes. Add the garlic and thyme and stir for 30 seconds.",
+        "Add the lentils, the tomatoes, the bay leaf and about 700 ml water. Bring to a boil, then simmer for 25 minutes, until the lentils are tender.",
+        "Stir in the spinach for the last 3 minutes. Remove the bay leaf and season with the salt, pepper and lemon juice.",
+        "Before you sit down, ladle the second portion into a shallow container, cool it, and get it into the fridge within 2 hours. Reheat it once tomorrow until steaming hot, 74 °C. It keeps up to 3 days.",
+        "To open the fast, eat the dates with a glass of water, then ladle out the soup. Take a short pause before the main plate."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Mash a few spoonfuls of the lentils against the side of the pot to thicken it."
+    },
+    {
+      "id": "ramadan-global-squash-red-lentil-soup",
+      "name": "Dates, water and roasted butternut and red lentil soup",
+      "inspiredBy": "Canadian roasted squash soup, with red lentils for body",
+      "about": "Dates and water first, then a silky soup of roasted butternut squash and red lentils with ginger, cumin and a squeeze of lemon, topped with toasted pumpkin seeds. It is warm, sweet from the squash and surprisingly filling. The squash brings **vitamin A and potassium**, and the lentils bring protein and iron.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 40,
+          "note": "to open the fast"
+        },
+        {
+          "food": "butternut-squash-raw-dc25d8",
+          "g": 170,
+          "note": "peeled and cubed"
+        },
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 70,
+          "swap": "legumes"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 15
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Heat the oven to 210 °C (410 °F). Peel, seed and cube the squash, toss it with half the oil and a pinch of the salt and roast on a tray for 25 to 30 minutes, until soft and browned at the edges. If you like, roast the eggplant for the stew on a second tray alongside.",
+        "Meanwhile, warm the rest of the oil in a pot and soften the onion for 5 minutes. Add the garlic, ginger and cumin and stir for 30 seconds. Add the rinsed lentils and 600 ml water and simmer for 15 minutes.",
+        "Add the roasted squash and blend smooth with an immersion blender. Season with the rest of the salt, the pepper, cinnamon and lemon juice.",
+        "Toast the pumpkin seeds in a dry pan for 2 minutes, until they start to pop.",
+        "To open the fast, eat the dates with a glass of water, then ladle out the soup and top with the pumpkin seeds. Take a short pause before the main plate."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make a double batch. Before you sit down, pour the extra into shallow containers, cool it and freeze it within 2 hours. Thaw it in the fridge, use it within 2 days and reheat until steaming hot (74 °C)."
+    },
+    {
+      "id": "ramadan-global-sheet-pan-lemon-chicken",
+      "name": "Sheet-pan lemon-oregano chicken thighs with sweet potato, broccoli and garlic yogurt",
+      "inspiredBy": "a Canadian sheet-pan dinner with Turkish and Mediterranean flavours",
+      "about": "Boneless chicken thighs, sweet potato and broccoli roasted together on one tray with lemon, garlic and oregano, with a cool garlicky yogurt sauce and a warm pita. It is easy weeknight iftar food, and the second portion reheats well. The chicken brings **protein, zinc and B vitamins**, and the sweet potato and broccoli bring vitamins A and C.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 140,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 105,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 110,
+          "note": "cut in florets"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 22
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 70,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 30,
+          "note": "warmed"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the sweet potatoes, broccoli and parsley. Whisk half the oil with the lemon juice, half the garlic, the oregano, paprika, pepper and half the salt. Coat the chicken in it in a covered bowl in the fridge for at least 20 minutes, and never reuse the leftover marinade.",
+        "Heat the oven to 220 °C (425 °F). Toss the sweet potato wedges with the rest of the oil and a pinch of salt and roast on a large tray for 15 minutes. If the tray looks crowded, use two trays and swap them halfway.",
+        "Add the chicken to the tray and roast 10 minutes. Add the broccoli and roast another 10 to 12 minutes, until the chicken reaches 74 °C (165 °F) in the thickest part and the vegetables are browned at the edges. Wash your hands and the board after handling the raw chicken.",
+        "Stir the rest of the garlic and salt into the yogurt with the parsley and a splash of water.",
+        "Before you sit down, put the second portion of chicken and vegetables in a shallow container and into the fridge within 2 hours, and keep the yogurt sauce in its own covered container. Then serve the first portion with the yogurt and the warm pita.",
+        "Eat the second portion within 3 days, reheated once to 74 °C (165 °F) all the way through, and serve the garlic yogurt cold."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Buy halal chicken at a halal butcher or the halal counter of your supermarket. Swap the sweet potato for squash or potato if you like."
+    },
+    {
+      "id": "ramadan-global-lemon-herb-salmon-roasted-veg",
+      "name": "Lemon-herb roasted salmon with potatoes, carrots and broccoli",
+      "inspiredBy": "Canadian roasted salmon and vegetables",
+      "about": "A salmon fillet rubbed with lemon, garlic and parsley and roasted on one tray beside crisp-edged potatoes, carrots and broccoli, with the pan juices spooned over. It is a classic Canadian fish supper, simple and tasty. The salmon brings **omega-3 and vitamin D**, and the broccoli and lemon bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 175,
+          "swap": "fatty_fish",
+          "note": "skinless fillet"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 160,
+          "note": "cut in chunks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 85,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 100,
+          "note": "cut in florets"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 24
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the potatoes, carrots, broccoli and parsley. If the salmon was frozen, thaw it in the fridge and cook it within 2 days.",
+        "Toss the potatoes and carrots with two thirds of the oil and half the salt and roast on a large tray for 15 minutes.",
+        "Meanwhile, rub the salmon with half the lemon juice, the garlic, the paprika and half the parsley. Wash your hands after touching the raw fish. Toss the broccoli with the rest of the oil.",
+        "Make room on the tray and add the broccoli and the salmon together. Roast for 10 to 12 minutes, until the salmon flakes easily and reaches 70 °C (158 °F).",
+        "Squeeze the rest of the lemon juice over everything and scatter with the rest of the parsley and a pinch of pepper.",
+        "Serve the salmon on the vegetables with the pan juices spooned over."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Frozen salmon fillets work well. Thaw them in the fridge overnight."
+    },
+    {
+      "id": "ramadan-global-turkish-kofte-bulgur-pilav-salad",
+      "name": "Turkish köfte with bulgur pilav and shepherd salad (çoban salatası)",
+      "inspiredBy": "Turkish köfte with pilav and çoban salatası",
+      "about": "Juicy beef and parsley köfte seasoned with cumin and Aleppo pepper, with a tomato bulgur pilav and a crisp, lemony shepherd salad of tomato, cucumber and red pepper. A spoon of yogurt cools it all. The beef brings **iron, zinc and B12**, and the tomato, pepper and lemon bring vitamin C to help you absorb that iron.",
+      "ingredients": [
+        {
+          "food": "ground-beef-93-lean-raw-8d6017",
+          "g": 150,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "grated for the köfte and diced for the pilav"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 14,
+          "note": "chopped"
+        },
+        {
+          "food": "bulgur-dry-raw-2980c3",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "coarse"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 110,
+          "note": "diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 20
+        },
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "sumac-268746",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the parsley, tomato, cucumber and pepper. Grate half the onion into a bowl, squeeze out some of the liquid, and mix in the beef, half the parsley, the cumin, Aleppo pepper, pepper and a third of the salt. Knead for a minute, shape into small oval patties and chill for 15 minutes. Wash your hands afterwards.",
+        "For the pilav, soften the rest of the onion, diced, in a third of the oil for 4 minutes. Stir in the tomato paste, then the bulgur, and add enough water to cover it by about 1 cm. Cover and simmer for 12 minutes, then rest it off the heat for 5 minutes and fluff.",
+        "Cook the köfte in a hot, lightly oiled pan or under a hot broiler for 4 to 5 minutes a side, until browned and cooked through to 71 °C (160 °F).",
+        "Toss the tomato, cucumber, red pepper and the rest of the parsley with the lemon juice, the rest of the oil, the sumac and a pinch of salt.",
+        "Serve the köfte with the pilav, the salad and the yogurt.",
+        "Put any leftover pilav into a shallow container and into the fridge within 1 hour."
+      ],
+      "prepMin": 20,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Buy halal ground beef. Köfte freeze well raw: freeze a tray of them, thaw in the fridge and use within 2 days."
+    },
+    {
+      "id": "ramadan-global-moroccan-chicken-chickpea-skillet",
+      "name": "Moroccan-style chicken and chickpea skillet with apricots and warm pita",
+      "inspiredBy": "Moroccan chicken tagine with chickpeas and dried fruit, cooked in a skillet",
+      "about": "Chicken thighs braised with onion, tomato, chickpeas, a little dried apricot and warm spices (ras el hanout, ginger, cinnamon), with fresh cilantro and lemon, and warm pita to scoop it up the way a tagine is eaten. It is fragrant, sweet and savoury and cooks in one pan. The chicken and chickpeas bring **protein, iron and zinc**, and the tomato and lemon bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "cut in chunks"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 65,
+          "swap": "legumes"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 60,
+          "note": "warmed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 130,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "apricot-dried-1d0f8b",
+          "g": 18,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 18
+        },
+        {
+          "food": "ras-el-hanout-7dedb0",
+          "g": 2
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the cilantro. Toss the chicken with the ras el hanout, ginger, cinnamon, pepper and a pinch of the salt.",
+        "Warm half the oil in a wide, lidded skillet over medium-high heat and brown the chicken for 4 minutes, turning. Take it out, and wash your hands and the board.",
+        "In the same pan, soften the onion in the rest of the oil for 6 minutes. Add the garlic for 30 seconds, then the tomatoes, apricots, chickpeas and 150 ml water.",
+        "Return the chicken, cover and simmer for 20 minutes, until the chicken reaches 74 °C (165 °F) and the sauce is thick. Stir in the rest of the salt and the lemon juice.",
+        "Scatter with the cilantro and serve with the warm pita. Chill any leftovers in a shallow container within 2 hours and reheat once to 74 °C."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Buy halal chicken. Add a few green olives, rinsed, if you like the classic taste."
+    },
+    {
+      "id": "ramadan-global-chermoula-trout-roasted-veg",
+      "name": "Chermoula-baked trout with roasted broccoli, red pepper and chickpeas",
+      "inspiredBy": "Moroccan chermoula fish",
+      "about": "Rainbow trout baked under a green chermoula of cilantro, parsley, garlic, cumin and lemon, with broccoli, red pepper and chickpeas roasted until golden, and warm pita to scoop up the juices. It is bright, herby and flaky. The trout brings **omega-3 and vitamin D**, and the chickpeas bring iron and fibre.",
+      "ingredients": [
+        {
+          "food": "rainbow-trout-farmed-raw-0cc800",
+          "g": 160,
+          "swap": "fatty_fish",
+          "note": "skin-on fillet"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 130,
+          "note": "cut in florets"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "cut in strips"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 60,
+          "swap": "legumes"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 25
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 45,
+          "note": "warmed"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.2
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the broccoli, red pepper and herbs. If the trout was frozen, thaw it in the fridge and cook it within 2 days.",
+        "Toss the red pepper and chickpeas with a third of the oil, the paprika, half the cumin and half the salt and roast on a large tray for 12 minutes. Add the broccoli and roast 10 more minutes.",
+        "Stir the cilantro, parsley, garlic, the rest of the cumin, the lemon juice, the rest of the oil, a pinch of salt and the pepper into a loose chermoula.",
+        "Spread two thirds of the chermoula over the trout and leave it in the fridge for 10 minutes. Never reuse the marinade. Wash your hands after touching the raw fish.",
+        "Push the vegetables aside, lay the trout on the tray and bake for 10 to 12 minutes, until it flakes easily and reaches 70 °C (158 °F).",
+        "Serve with the rest of the chermoula spooned over and the warm pita."
+      ],
+      "prepMin": 20,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "weekend-project"
+      ],
+      "tip": "Any fatty fish works with chermoula. Salmon is a good stand-in."
+    },
+    {
+      "id": "ramadan-global-beef-eggplant-lentil-stew-bulgur",
+      "name": "Turkish-style beef, eggplant and lentil stew with bulgur and yogurt",
+      "inspiredBy": "Turkish and Moroccan lentil and eggplant pots, with a little beef",
+      "about": "A thick stew of lean beef, eggplant and green lentils simmered in tomato and red pepper with cumin, paprika and a little Aleppo pepper, with spinach stirred in, piled over bulgur with yogurt and parsley. It is smoky, hearty and the best kind of Sunday pot. The lentils and beef bring **iron, zinc and protein**, and the tomato, pepper and lemon bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "ground-beef-93-lean-raw-8d6017",
+          "g": 90,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 50,
+          "swap": "legumes"
+        },
+        {
+          "food": "eggplant-raw-b8b8c1",
+          "g": 130,
+          "note": "cubed"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 55,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 110,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 45,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "bulgur-dry-raw-2980c3",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "coarse"
+        },
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 12
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.2
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the lentils. Wash the eggplant, red pepper, spinach and parsley. Toss the eggplant cubes with a third of the oil and roast them at 220 °C (425 °F) for 20 minutes, or alongside the squash at 210 °C (410 °F) for about 25 minutes, until golden and soft.",
+        "Warm the rest of the oil in a pot and brown the beef for 5 minutes, breaking it up. Add the onion and red pepper and cook for 6 minutes. Stir in the garlic, cumin, paprika, Aleppo pepper and tomato paste for a minute. Wash your hands and the board after handling the raw beef.",
+        "Add the lentils, the tomatoes and 400 ml water. Simmer for 25 minutes, until the lentils are tender and the beef is cooked through to 71 °C (160 °F). Stir in the roasted eggplant, spinach, salt, pepper and the lemon juice and cook 3 minutes more.",
+        "Cook the bulgur: cover it with water by 1 cm, simmer for 12 minutes, then rest 5 minutes and fluff. Cool any leftover bulgur in a shallow container within 1 hour.",
+        "Spoon the stew over the bulgur and top with the yogurt and parsley."
+      ],
+      "prepMin": 15,
+      "cookMin": 50,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "weekend-project"
+      ],
+      "tip": "Buy halal ground beef. Roast the eggplant and the squash for the soup together, so the oven is used once. The stew keeps up to 3 days in the fridge, or freeze single portions, thaw in the fridge, use within 2 days and reheat to 74 °C (165 °F)."
+    },
+    {
+      "id": "ramadan-global-mint-ayran",
+      "name": "Ayran with mint",
+      "inspiredBy": "Turkish ayran",
+      "about": "Plain yogurt whisked with cold water, a pinch of salt and dried mint until it pours like a thick drink. It is cooling, tangy and the everyday drink of Turkish tables. The yogurt brings **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mint-dried-3fe241",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Whisk the yogurt with the salt and dried mint, then whisk in cold water, about 150 ml for every 200 g of yogurt, until smooth and pourable.",
+        "Serve over ice, or chill it for up to 2 days."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "A glass of water with every snack helps spread your fluids between iftar and suhoor."
+    },
+    {
+      "id": "ramadan-global-orange-cinnamon",
+      "name": "Orange slices with cinnamon and orange blossom",
+      "inspiredBy": "Moroccan orange with cinnamon, a light finish on the iftar table",
+      "about": "Cold orange rounds with a dusting of cinnamon and a few drops of orange blossom water, the simple Moroccan fruit plate that ends many iftars. It is juicy, fragrant and refreshing. The orange brings **vitamin C** and a little extra fluid for the evening.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 180,
+          "swap": "vit_c_fruit",
+          "note": "peeled and sliced into rounds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "orange-blossom-water-9dbff0",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Wash the orange, cut away the peel and white pith with a sharp knife, and slice it into thin rounds.",
+        "Fan the slices on a plate, sprinkle with the orange blossom water and dust with the cinnamon. Chill for 15 minutes if you have time."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "ramadan-global-lighter-sutlac",
+      "name": "Lighter sütlaç (Turkish rice pudding with less sugar)",
+      "inspiredBy": "Turkish sütlaç with much less sugar",
+      "about": "A small bowl of creamy Turkish rice pudding, made with milk, a little rice and a mashed date for a gentle sweetness, scented with cinnamon and topped with a few walnuts. It is lighter than the usual one, and it is the week's first small sweet. The milk brings **calcium and B12**.",
+      "ingredients": [
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 240,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "rice-white-short-grain-uncooked-fb1c67",
+          "g": 13
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 14,
+          "note": "pitted and mashed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Rinse the rice, put it in a small pot with 100 ml water and simmer for 10 minutes, until the water is mostly absorbed.",
+        "Add the milk and the mashed date. Simmer on low for 15 minutes, stirring often so it does not catch, until it is thick and creamy.",
+        "Pour into a bowl and top with the walnuts and cinnamon. Eat it warm, or cool it within 1 hour, chill it and eat it within 2 days."
+      ],
+      "prepMin": 4,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Use a small heavy-bottomed pot and keep the heat low, because the milk catches easily. For fırın sütlaç, the baked kind, slide the bowl under a hot broiler for a minute, until golden on top."
+    },
+    {
+      "id": "ramadan-global-cumin-roasted-chickpeas",
+      "name": "Cumin and paprika roasted chickpeas",
+      "about": "No-salt-added chickpeas roasted until crisp with oil, cumin and paprika. They are crunchy, savoury and easy to make ahead. The chickpeas bring **fibre, iron and protein**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "patted dry"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Pat the chickpeas very dry.",
+        "Toss them with the oil, cumin, paprika and salt and spread them on a tray.",
+        "Roast for 25 to 30 minutes, shaking the tray twice, until crisp. Squeeze the lemon over them."
+      ],
+      "prepMin": 5,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Eat them the same evening for the best crunch. They soften as they sit."
+    },
+    {
+      "id": "ramadan-global-carrot-cucumber-labneh-dip",
+      "name": "Carrot and cucumber sticks with parsley labneh",
+      "about": "Crunchy carrot and cucumber sticks with a bowl of labneh stirred with garlic, lemon and parsley. It is cool and fresh and easy on the stomach in the evening. The labneh brings **protein and calcium**, and the carrots bring vitamin A.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 90,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 75,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-3f3bd2",
+          "g": 6
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1,
+          "note": "grated"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the carrot, cucumber and parsley, and cut the vegetables into sticks.",
+        "Stir the labneh with the parsley, lemon juice, garlic and salt.",
+        "Serve the sticks with the dip."
+      ],
+      "prepMin": 7,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "ramadan-global-pear-walnuts",
+      "name": "Pear with walnuts",
+      "about": "A ripe pear, sliced, with a small handful of walnuts. It is soft and crunchy together. The walnuts bring **omega-3 fat**, and the pear brings fibre.",
+      "ingredients": [
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 160,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash and slice the pear.",
+        "Serve with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "ramadan-global-apple-yogurt-pumpkin-seeds",
+      "name": "Yogurt with apple, cinnamon and toasted pumpkin seeds",
+      "about": "Plain yogurt with diced apple, a dusting of cinnamon and toasted pumpkin seeds. It is creamy, tart and crunchy. The yogurt brings **protein and calcium**, and the pumpkin seeds bring magnesium and zinc.",
+      "ingredients": [
+        {
+          "food": "yogurt-plain-low-fat-3f6054",
+          "g": 170,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 90,
+          "note": "washed, diced"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Toast the pumpkin seeds in a dry pan for 2 minutes, until they start to pop.",
+        "Wash and dice the apple, spoon the yogurt into a bowl, and top with the apple, seeds and cinnamon."
+      ],
+      "prepMin": 4,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "ramadan-global-cardamom-milk-almonds",
+      "name": "Warm cardamom milk with almonds",
+      "about": "A mug of warm milk with a pinch of cardamom and cinnamon, with a small handful of almonds on the side. It is gentle and comforting before bed. The milk brings **calcium, B12 and protein**, and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 250,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.4
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the milk with the cardamom and cinnamon in a small pot, until it steams. Do not let it boil over.",
+        "Pour into a mug and serve with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "ramadan-global-baked-apple-dates-walnuts",
+      "name": "Baked apple with dates, walnuts and cinnamon",
+      "inspiredBy": "a Canadian baked apple with a Turkish date filling",
+      "about": "A whole apple cored and stuffed with chopped date, walnuts and cinnamon, baked until soft. It is warm, sweet from the fruit and a little crunchy, and it is the week's second small sweet. The apple brings **fibre**, and the walnuts bring omega-3 fat.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 190,
+          "note": "cored"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 18,
+          "note": "pitted and chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180 °C (350 °F). Wash the apple and core it, leaving the bottom closed.",
+        "Mix the date, walnuts and cinnamon and pack it into the apple. Stand it in a small dish with 3 tablespoons of water.",
+        "Bake for 30 to 35 minutes, until the apple is soft when pierced with a knife.",
+        "Serve warm, with the pan juices spooned over."
+      ],
+      "prepMin": 8,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Bake two and keep the second one covered in the fridge for up to 3 days. Eat it cold, or reheat it until steaming hot (74 °C)."
+    },
+    {
+      "id": "ramadan-global-pita-labneh-cucumber",
+      "name": "Whole-wheat pita with labneh, cucumber and mint",
+      "about": "Warm whole-wheat pita spread with labneh, with sliced cucumber and dried mint folded inside. It is light, cooling and filling. The labneh brings **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 50,
+          "note": "warmed"
+        },
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 45,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "mint-dried-3fe241",
+          "g": 0.3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Wash the cucumber and warm the pita.",
+        "Spread it with the labneh, add the cucumber and mint, drizzle with the oil and fold."
+      ],
+      "prepMin": 4,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "ramadan-global-orange-walnuts",
+      "name": "Orange wedges with walnuts and cinnamon",
+      "about": "A juicy orange cut into wedges, with a small handful of walnuts and a pinch of cinnamon. It is fresh and a little crunchy. The orange brings **vitamin C**, and the walnuts bring omega-3 fat.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 180,
+          "swap": "vit_c_fruit",
+          "note": "washed, cut in wedges"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the orange and cut it into wedges.",
+        "Serve with the walnuts and dust the orange with the cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "ramadan-global-apricots-walnuts",
+      "name": "Dried apricots with walnuts",
+      "inspiredBy": "a Turkish-style fruit and nut plate",
+      "about": "A small plate of soft dried apricots with walnut halves. It is chewy and crunchy and sweet from the fruit alone. The walnuts bring **omega-3 fat**, and the apricots bring fibre and potassium.",
+      "ingredients": [
+        {
+          "food": "apricot-dried-1d0f8b",
+          "g": 35
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Serve the apricots with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-global-turkish-breakfast-plate"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-global-mercimek-soup"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-global-sheet-pan-lemon-chicken"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-global-mint-ayran"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-global-orange-cinnamon"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-global-turkish-spinach-eggs-toast"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-global-mercimek-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-global-sheet-pan-lemon-chicken",
+          "leftover": true
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-global-lighter-sutlac"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-global-cumin-roasted-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-global-walnut-apple-overnight-oats"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-global-harira-soup"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-global-lemon-herb-salmon-roasted-veg"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-global-cumin-roasted-chickpeas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-global-apple-yogurt-pumpkin-seeds"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-global-walnut-apple-overnight-oats"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-global-harira-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-global-turkish-kofte-bulgur-pilav-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-global-carrot-cucumber-labneh-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-global-orange-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-global-turkish-spinach-eggs-toast"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-global-lentil-vegetable-soup"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-global-moroccan-chicken-chickpea-skillet"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-global-apricots-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-global-mint-ayran"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-global-turkish-breakfast-plate"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-global-lentil-vegetable-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-global-chermoula-trout-roasted-veg"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-global-carrot-cucumber-labneh-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-global-baked-apple-dates-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "ramadan-global-turkish-spinach-eggs-toast"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-global-squash-red-lentil-soup"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "ramadan-global-beef-eggplant-lentil-stew-bulgur"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-global-pear-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "ramadan-global-cardamom-milk-almonds"
+        }
+      ]
+    }
+  ]
+}
