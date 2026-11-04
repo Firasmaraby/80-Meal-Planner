@@ -1,0 +1,1857 @@
+{
+  "id": "family-global",
+  "name": "Family Kitchen",
+  "style": "family",
+  "cuisine": "Global",
+  "regions": [
+    "Canada",
+    "Mexico",
+    "Italy",
+    "Japan"
+  ],
+  "summary": "A mild, generous family week: tacos with the toppings on the table, a pasta bake with the vegetables blended into the sauce, baked salmon fish fingers, salmon rice bowls, a gentle chicken soup and a Saturday pizza night. Adult portions, kid-approved flavours, and a vegetable in every dish.",
+  "howItWorks": "**Mild in the pot, heat on the table.** Nothing here is cooked spicy. Adults add hot sauce, pickled jalapeños or chili flakes at the table. Every main dish carries vegetables, grated into the taco filling or blended into the pasta sauce. Tell the kids what is in it, let them grate and stir, and keep raw vegetables on the table too.\n\n**Cook once, eat twice.** Monday's tacos, Wednesday's pasta bake, Friday's soup and Saturday's pizza each make two portions, so the next lunch is done. Egg muffins cover Tuesday and Wednesday breakfasts. The fish fingers, rice bowls and sheet-pan chicken are cooked fresh. Pizza night is the slow one, so make the dough in the morning.\n\n**Omega-3, iron and calcium.** Salmon fish fingers on Tuesday and salmon rice bowls on Thursday carry your omega-3, with a little ground flax in the oatmeal and smoothies. Beans, turkey, chicken, edamame and spinach bring iron, with tomatoes, peppers and broccoli for vitamin C. Yogurt, milk and a little cheese bring calcium.\n\n**What changes at each size.** Standard is the plan as written. Light shrinks the grains, protein and fats, keeps the vegetables, and drops the second snack Monday to Saturday. It starts at 1,600 kcal, because these family dishes do not shrink to 1,400 and stay nutritious. Big adds a snack every day.\n\n**Little ones.** Set a baby's portion aside before any salt, maple syrup, soy sauce or glaze goes in. Offer cow's milk as a drink from 9 to 12 months, and keep to whole (3.25%) milk and yogurt until age 2. Cut grapes and cherry tomatoes in quarters, and skip whole nuts under 4.",
+  "signature": [
+    "family-global-taco-night-turkey-hidden-veg",
+    "family-global-crispy-baked-fish-fingers-wedges",
+    "family-global-hidden-veg-pasta-bake",
+    "family-global-salmon-rice-bowls-soy-maple-egg"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1600,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "family-global-egg-and-cherry-tomato-cup"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "family-global-blueberry-banana-yogurt-cup"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "family-global-warm-edamame-lemon-cup"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "family-global-apple-cinnamon-yogurt-dip"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "family-global-cheddar-toast-fingers-apple"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "family-global-egg-and-cherry-tomato-cup"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "family-global-apple-cinnamon-yogurt-dip"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "family-global-carrot-cake-oatmeal",
+      "name": "Carrot cake oatmeal with yogurt",
+      "inspiredBy": "North American carrot cake, turned into a quick oatmeal",
+      "about": "Creamy rolled oats simmered with finely grated carrot, cinnamon and a little maple, topped with a spoonful of yogurt and a thin swirl of sunflower seed butter. It tastes like carrot cake for breakfast, and the carrot melts into the oats. The oats bring **fibre** and the carrot brings vitamin A.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 230,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "peeled and grated fine"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 6,
+          "note": "ground"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 5
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "sunflower-seeds-butter-ccaf05",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "thinly swirled on top"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash and peel the carrot and grate it on the fine holes.",
+        "Stir the oats, milk, an equal splash of water, the carrot, ground flax, cinnamon and salt together in a small pot.",
+        "Bring to a gentle bubble over medium heat, then turn it down and cook, stirring often, until thick and creamy and the carrot is soft, about 7 minutes.",
+        "Stir in the maple syrup and spoon into a bowl.",
+        "Top with the yogurt and a thin swirl of sunflower seed butter."
+      ],
+      "prepMin": 5,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Serves the family: multiply the oats, milk and carrot and cook one big pot. Spread the sunflower seed butter thinly for little ones, or leave it off and stir in extra yogurt. For children under 2, use whole milk and whole-milk yogurt instead of the 1% milk and 2% yogurt here."
+    },
+    {
+      "id": "family-global-zucchini-banana-pancakes",
+      "name": "Zucchini and banana pancakes with blueberries",
+      "inspiredBy": "North American weekend pancakes, with zucchini in the batter",
+      "about": "Fluffy whole-wheat pancakes with grated zucchini and ripe banana folded into the batter, piled with blueberries, yogurt and a drizzle of maple. The zucchini melts into the batter and keeps the pancakes moist. The whole-wheat flour and oats bring **fibre**, and the egg brings choline.",
+      "ingredients": [
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 60,
+          "note": "grated and squeezed dry"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 35,
+          "note": "ripe, mashed"
+        },
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 35
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 12
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 55,
+          "note": "cooked until firm"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 70,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "baking-powder-low-sodium-2b32ac",
+          "g": 2
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils",
+          "note": "for the pan"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 60,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 45,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 4
+        },
+        {
+          "food": "sunflower-seeds-butter-ccaf05",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "warmed so it drizzles"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the zucchini, grate it and squeeze it dry in a clean tea towel. Mash it with the banana in a big bowl.",
+        "Whisk the flour, oats, baking powder, cinnamon and salt in a second bowl.",
+        "Beat the egg and milk into the banana mixture, then fold in the dry mix until just combined. A few lumps are fine. Let it sit for 5 minutes.",
+        "Heat a non-stick pan over medium with a little of the oil. Spoon in small rounds and cook until bubbles pop and the edges look set, about 2 minutes. Flip and cook 2 minutes more, until the middle is cooked through with no wet batter.",
+        "Stack the pancakes and top with the blueberries, yogurt, a drizzle of the warmed seed butter and the maple syrup."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Serves the family: multiply the batter and keep finished pancakes warm in a 100 °C (200 °F) oven. Cooled extras freeze between sheets of parchment and warm up in the toaster. Leave the maple off a baby's pancakes and top them with fruit, and no honey under 1. Do not taste raw batter and keep little hands out of it, as raw flour and raw egg can carry bacteria. Cut the blueberries in half for the very small."
+    },
+    {
+      "id": "family-global-cheesy-veggie-egg-muffins",
+      "name": "Cheesy spinach and zucchini egg muffins with toast",
+      "about": "Soft, golden egg muffins studded with grated zucchini, spinach and a little melted cheddar, served with whole-wheat toast and a few cherry tomatoes. They bake while you pack school bags, and the second portion reheats well for tomorrow's breakfast. The eggs bring **protein and choline**, and the spinach and tomatoes bring vitamins K and C.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten and cooked until firm"
+        },
+        {
+          "food": "cheddar-cheese-reduced-fat-a0786c",
+          "g": 8,
+          "note": "grated"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 25,
+          "note": "washed and finely chopped"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 30,
+          "note": "grated and squeezed dry"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 20,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils",
+          "note": "to grease the tin"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "note": "toasted"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 50,
+          "note": "cut in quarters"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180 °C (350 °F) and lightly oil a muffin tin. Wash the zucchini, spinach and tomatoes before cutting.",
+        "Grate the zucchini and squeeze it dry in a clean tea towel. Chop the spinach finely.",
+        "Whisk the eggs, milk and salt in a jug, then stir in the zucchini, spinach and cheese.",
+        "Pour into the muffin cups until about three-quarters full. Bake until puffed, golden and set right through with no wobble, about 20 minutes. The muffins must be firm and reach 74 °C (165 °F) in the centre.",
+        "Toast the bread, cut the tomatoes in quarters and serve the muffins warm with them.",
+        "Cool the second portion of muffins quickly, put them in a shallow container and into the fridge within 2 hours. Keep up to 3 days and reheat once until steaming hot, 74 °C (165 °F)."
+      ],
+      "prepMin": 10,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Serves the family: a dozen muffins uses about 6 eggs, and they freeze well. Thaw overnight in the fridge, eat within 2 days and never refreeze."
+    },
+    {
+      "id": "family-global-veggie-fried-rice-egg-edamame",
+      "name": "Veggie fried rice with egg and edamame",
+      "inspiredBy": "Chinese-Canadian fried rice, with the vegetables chopped small",
+      "about": "Brown basmati rice stir-fried with diced chicken, scrambled egg, edamame, sweet corn and tiny broccoli florets, finished with a little reduced-sodium soy sauce. It is the fried rice the kids ask for, with the vegetables chopped small enough to blend in. The chicken and egg bring **protein and choline**, and the broccoli brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 80,
+          "note": "raw, diced small"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten and cooked until firm"
+        },
+        {
+          "food": "edamame-immature-soy-bean-shelled-frozen-9c2350",
+          "g": 60,
+          "swap": "legumes"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 50,
+          "note": "washed and chopped very small"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 30
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "chopped small"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Cook the rice the night before if you can. Rinse it and cook it in plenty of water until tender, about 25 minutes, then drain and spread it on a tray so it cools within 1 hour. Chilled rice from the fridge fries best.",
+        "Wash the broccoli. Chop it into tiny florets and chop the onion small.",
+        "Heat the oil in a wide pan over medium-high heat. Add the chicken and stir-fry until cooked through to 74 °C (165 °F), about 6 minutes, then wash your hands and the board after the raw chicken.",
+        "Add the onion, broccoli, corn and edamame and stir-fry until bright and hot, about 5 minutes.",
+        "Push the vegetables aside, pour in the beaten egg and scramble it until fully set with no runny bits, about 2 minutes.",
+        "Add the cooled rice and ginger and stir-fry until steaming and lightly toasted, about 4 minutes. Splash in the soy sauce and toss to coat."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Serves the family: cook a big pot of rice the night before and chill it within 1 hour. Fridge rice keeps up to 3 days, and fried rice should be reheated until steaming, 74 °C (165 °F). For under-4s, mash or crush the edamame lightly, as whole firm beans and corn can be a choking risk."
+    },
+    {
+      "id": "family-global-loaded-potato-broccoli-white-beans",
+      "name": "Loaded baked potato with broccoli, cheddar and white beans",
+      "about": "A fluffy baked potato split open and piled with tender broccoli, creamy mashed white beans, melted cheddar and a cool spoonful of yogurt. It is a cosy, filling lunch that kids love to build themselves. The potato and beans bring **potassium and fibre**, and the broccoli brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 150,
+          "note": "scrubbed"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 90,
+          "note": "washed and cut into small florets"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 100,
+          "swap": "legumes"
+        },
+        {
+          "food": "cheddar-cheese-reduced-fat-a0786c",
+          "g": 20,
+          "note": "grated"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-powder-e81d9c",
+          "g": 0.5
+        },
+        {
+          "food": "dill-weed-dried-d92fd8",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Scrub the potato, prick it all over and microwave it for 7 to 9 minutes, turning once, until nearly soft.",
+        "Rub the skin with a little oil and finish in the oven for 10 minutes, until the skin is crisp and the middle is fluffy.",
+        "Steam the broccoli until tender and bright green, about 5 minutes, then chop it small.",
+        "Warm the beans in a small pan with the garlic powder, salt and a splash of water, mashing about half of them.",
+        "Split the potato, fluff the inside with a fork and pile on the beans, broccoli and cheddar. Return it to the oven for 2 minutes to melt the cheese, then top with the yogurt and dill."
+      ],
+      "prepMin": 10,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Serves the family: bake a whole tray of potatoes and set out the toppings so everyone builds their own. Chop the broccoli very small for little ones."
+    },
+    {
+      "id": "family-global-egg-salad-sandwich-veggie-sticks",
+      "name": "Creamy egg salad sandwich with veggie sticks and grapes",
+      "about": "Firm-cooked egg mashed with yogurt, cucumber and a little dill, piled between slices of whole-wheat bread, with carrot and red pepper sticks and a handful of grapes on the side. It is a lunchbox classic with a lighter yogurt dressing. The eggs bring **protein and choline**, and the peppers bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "boiled in the shell until the yolk is firm"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 40,
+          "note": "finely diced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "note": "from a lemon"
+        },
+        {
+          "food": "dill-weed-dried-d92fd8",
+          "g": 0.3
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 50
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "cut in thin sticks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 50,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "grapes-9e0556",
+          "g": 60,
+          "note": "cut in quarters lengthwise"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Lower the eggs into a pot of boiling water and cook for 10 to 12 minutes so the yolks are firm all the way through. Cool them in cold water and peel.",
+        "Wash the cucumber, carrot, pepper and grapes. Dice the cucumber finely, cut the carrot and pepper into sticks, and cut the grapes into quarters lengthwise.",
+        "Mash the eggs in a bowl with the yogurt, cucumber, lemon juice, dill and salt until creamy but still a bit chunky.",
+        "Spread the egg salad on a slice of bread, top with the second slice and cut into fingers.",
+        "Serve with the carrot and pepper sticks and the grapes."
+      ],
+      "prepMin": 15,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Serves the family: boil a dozen eggs at once and keep them in the shell in the fridge up to 5 days. If it goes in a lunchbox, pack it in an insulated bag with an ice pack so it stays cold until lunch. Without an ice pack, eat it within 2 hours of leaving the fridge (1 hour in hot weather). Throw away any that comes home. For under-4s, steam the carrot sticks until soft and keep the grapes in quarters."
+    },
+    {
+      "id": "family-global-taco-night-turkey-hidden-veg",
+      "name": "Taco night with turkey and veggie-packed filling",
+      "inspiredBy": "Mexican-style tacos, kept mild for the family",
+      "about": "A mild, savoury turkey and black bean filling with finely grated zucchini melted into it, spooned into warm corn tortillas, with all the toppings set out on the table so everyone builds their own. The heat goes on the table, not in the pot, so kids and grown-ups both get what they like. The beans bring **iron and fibre**, and the toppings add vitamin C.",
+      "ingredients": [
+        {
+          "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+          "g": 100,
+          "note": "raw"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 80,
+          "swap": "legumes"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 50,
+          "note": "grated fine and squeezed dry"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "chopped very small"
+        },
+        {
+          "food": "tomato-sauce-unsalted-037b3a",
+          "g": 50
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 60,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 25,
+          "note": "shredded"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 40,
+          "note": "cut in quarters"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 30,
+          "note": "warmed"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 30,
+          "note": "sliced"
+        },
+        {
+          "food": "cheddar-cheese-reduced-fat-a0786c",
+          "g": 10,
+          "note": "grated"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 40,
+          "note": "in place of sour cream"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "oregano-raw-219093",
+          "g": 0.5
+        },
+        {
+          "food": "garlic-powder-e81d9c",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Wash the vegetables. Grate the zucchini on the fine holes and squeeze it dry in a clean tea towel. Chop the onion very small.",
+        "Warm the oil in a wide pan over medium heat and soften the onion and zucchini for about 5 minutes.",
+        "Add the turkey and break it up as it cooks until no pink remains and it reaches 71 °C (160 °F), about 7 minutes. Wash your hands and the board after handling the raw turkey.",
+        "Stir in the paprika, cumin, oregano, garlic powder and salt for 1 minute, then add the tomato sauce and black beans. Simmer for 8 minutes, mashing some of the beans, until the filling is thick and spoonable.",
+        "Warm the tortillas in a dry pan or wrapped in foil in the oven.",
+        "Put the lettuce, tomatoes, corn, avocado, cheddar and yogurt in small bowls on the table with the filling and tortillas, and let everyone build their own.",
+        "Pack the second portion of filling into a shallow container and into the fridge within 2 hours, keeping the toppings separate and making a fresh bowl of toppings for the leftover filling. Keep up to 3 days and reheat once until steaming, 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Serves the family: multiply the filling and set out a bowl of hot sauce, pickled jalapeños or chili flakes for the adults, so nothing spicy goes in the pot. For under-4s, quarter the cherry tomatoes and serve it as a taco bowl."
+    },
+    {
+      "id": "family-global-crispy-baked-fish-fingers-wedges",
+      "name": "Crispy baked salmon fish fingers with potato wedges and peas",
+      "inspiredBy": "British fish fingers, baked with salmon",
+      "about": "Strips of salmon coated in crunchy whole-wheat crumbs and baked until golden, with crispy oven potato wedges, sweet green peas and a lemony yogurt dip. Salmon is naturally mild and soft, which makes it a great first fish finger. The salmon brings **omega-3 and vitamin D**, and the peas bring fibre.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "skin and bones removed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 25,
+          "note": "beaten"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 30,
+          "note": "toasted and blitzed into crumbs"
+        },
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 10
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 140,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 70
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 40
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "dill-weed-dried-d92fd8",
+          "g": 0.3
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Scrub the potato, cut it into wedges, toss with half the oil and a pinch of the salt on a tray and roast, turning once, for about 25 minutes.",
+        "Toast the bread and blitz it into crumbs in a food processor. Mix the crumbs with the paprika and a pinch of salt on a plate.",
+        "Pat the salmon dry. Run your fingertips along the fillet and pull out any pin bones with tweezers. Cut the salmon into finger-sized strips.",
+        "Dip each strip in the flour, then the egg, then the crumbs, pressing so they stick, and set them on an oiled tray. Drizzle with the rest of the oil. Wash your hands, the board and the knife in hot soapy water now, after the raw fish and egg.",
+        "Bake for 12 to 15 minutes, turning once, until golden and crisp and the salmon reaches 70 °C (158 °F) and flakes easily. The egg coating will be cooked firm.",
+        "Simmer the peas for 3 minutes. Stir the yogurt with the lemon juice, dill and a pinch of salt for the dip."
+      ],
+      "prepMin": 25,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Serves the family: double the batch on two trays. If your kids want a milder finger, use cod or haddock for some of the strips now and then, but you will get less omega-3 that night, so keep Thursday's salmon bowls as written. Check every finger for bones again before serving little ones, and break them up for the very small."
+    },
+    {
+      "id": "family-global-hidden-veg-pasta-bake",
+      "name": "Veggie-packed pasta bake with turkey, white beans and mozzarella",
+      "inspiredBy": "Italian baked pasta, with the vegetables blended into the sauce",
+      "about": "Whole-wheat pasta in a rich tomato sauce that has carrot, zucchini, red pepper and spinach blitzed right into it, with lean turkey and white beans for protein and a golden mozzarella top. The sauce is blended smooth, which kids who dislike chunks will happily eat, so tell them what is in it and let them help grate. It makes two portions, so tomorrow's lunch is done, and it brings **iron, fibre and vitamin A**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pasta-egg-free-dry-6e0f71",
+          "g": 80,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+          "g": 70,
+          "note": "raw"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 60,
+          "swap": "legumes"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 60,
+          "note": "grated"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "peeled and grated"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "note": "chopped"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "note": "washed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-sauce-unsalted-037b3a",
+          "g": 200
+        },
+        {
+          "food": "mozzarella-cheese-part-skim-milk-88097c",
+          "g": 30,
+          "note": "grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "basil-dried-160272",
+          "g": 0.5
+        },
+        {
+          "food": "oregano-raw-219093",
+          "g": 0.5
+        },
+        {
+          "food": "garlic-powder-e81d9c",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190 °C (375 °F). Boil the pasta in a big pot of water until just shy of tender, about 2 minutes less than the package says, and drain.",
+        "Wash the vegetables. Warm the oil in a wide pan and soften the onion, carrot, pepper and zucchini for 8 minutes. Add the tomato sauce, beans, basil, oregano and garlic powder and simmer 10 minutes, then stir in the spinach until wilted.",
+        "Blitz the sauce with a stick blender until smooth, keeping the blade under the surface so the hot sauce does not spit.",
+        "Brown the turkey in a separate small pan, breaking it up, until no pink remains and it reaches 71 °C (160 °F), about 6 minutes. Wash your hands and the board after handling the raw turkey.",
+        "Stir the turkey, salt and pasta into the sauce, tip into a baking dish and top with the mozzarella.",
+        "Bake until bubbling and golden on top, about 20 minutes, with the middle steaming hot at 74 °C (165 °F).",
+        "Pack the second portion into a shallow container and into the fridge within 2 hours. Keep up to 3 days and reheat once until steaming, 74 °C (165 °F)."
+      ],
+      "prepMin": 20,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Serves the family: multiply everything and bake in a bigger dish. It freezes well: thaw it overnight in the fridge, use it within 2 days, reheat to 74 °C (165 °F) and never refreeze. Chili flakes at the table for the adults."
+    },
+    {
+      "id": "family-global-salmon-rice-bowls-soy-maple-egg",
+      "name": "Salmon rice bowls with soy-maple glaze, egg ribbons and edamame",
+      "inspiredBy": "a Japanese-style teriyaki salmon bowl, kept mild for the family",
+      "about": "Flaky baked salmon brushed with a gentle soy and maple glaze over fluffy brown rice, with soft egg ribbons, edamame, cucumber and carrot and a few slices of avocado. It is a mild, sweet-salty bowl that kids tend to love, and it is on the table in about 45 minutes. The salmon brings **omega-3 and vitamin D**, and the edamame brings iron and fibre.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 120,
+          "swap": "fatty_fish",
+          "note": "bones checked"
+        },
+        {
+          "food": "brown-rice-basmati-raw-b75f1d",
+          "g": 50,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "cooked until firm"
+        },
+        {
+          "food": "edamame-immature-soy-bean-shelled-frozen-9c2350",
+          "g": 60,
+          "swap": "legumes"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "sliced thin"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "grated"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 30,
+          "note": "sliced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 10
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "from a lemon"
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils",
+          "note": "for the pan"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Rinse the rice and cook it in plenty of water until tender, about 25 minutes, then drain.",
+        "Stir the soy sauce, maple syrup, lemon juice and ginger together. Pour about a third into a small dish and keep it for the bowl, away from the raw fish.",
+        "Pat the salmon dry, feel along it for pin bones and pull any out. Set it on a lined tray and brush with the rest of the glaze, and throw away what is left on the brush. Wash your hands and the board now, after the raw fish, before touching anything else.",
+        "Bake for 10 to 12 minutes until the salmon reaches 70 °C (158 °F) and flakes easily.",
+        "Beat the egg with a splash of water and cook it as a thin omelette in a lightly oiled pan until completely set, about 2 minutes a side. Roll it up and slice into ribbons.",
+        "Boil the edamame for 4 minutes and drain. Wash the cucumber and carrot, then slice and grate them.",
+        "Pile the rice into a bowl with the edamame, cucumber, carrot, egg and avocado, flake the salmon on top and drizzle with the reserved glaze."
+      ],
+      "prepMin": 20,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Serves the family: if you cook extra rice, spread it on a tray so it cools within 1 hour, and keep it in the fridge up to 3 days. For under-4s, flake the salmon, double-check for bones, and mash or crush the edamame lightly."
+    },
+    {
+      "id": "family-global-mild-chicken-vegetable-noodle-soup",
+      "name": "Mild chicken and vegetable noodle soup",
+      "inspiredBy": "Canadian chicken noodle soup, with extra vegetables",
+      "about": "A gentle, golden soup with tender shredded chicken, carrot, zucchini and small whole-wheat pasta shapes, creamy white beans, peas and a little spinach, finished with lemon. It is the soup you want on a tired Friday night, and it makes enough for tomorrow's lunch. The chicken and white beans bring **protein and iron**, and the carrot and peas bring vitamin A and fibre.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 110,
+          "note": "raw"
+        },
+        {
+          "food": "whole-wheat-pasta-egg-free-dry-6e0f71",
+          "g": 25,
+          "swap": "low_gi_grains",
+          "note": "small shapes"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 100,
+          "swap": "legumes"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "peeled and sliced thin"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 35,
+          "note": "chopped small"
+        },
+        {
+          "food": "zucchini-raw-fac7ab",
+          "g": 50,
+          "note": "diced small"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 40
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "note": "washed"
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 250,
+          "note": "low-sodium"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "from a lemon"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "onion-powder-2b2126",
+          "g": 0.5
+        },
+        {
+          "food": "garlic-powder-e81d9c",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Wash the vegetables. Warm the oil in a big pot and soften the onion and carrot for 6 minutes.",
+        "Pour in the broth and about as much water as broth, to taste, add the bay leaf, onion powder, garlic powder and pepper, and slip in the chicken thighs whole. Bring to a gentle simmer and cook until the chicken is cooked through, 74 °C (165 °F), about 15 minutes. Wash your hands and the board after the raw chicken.",
+        "Lift out the chicken, shred it with two forks, and set it aside. Remove the bay leaf.",
+        "Add the pasta, white beans and zucchini and simmer until the pasta is tender, about 8 minutes. Add the peas and spinach for the last 2 minutes, until the spinach wilts.",
+        "Return the chicken to the pot with the salt and lemon juice and ladle into bowls.",
+        "Cool the second portion quickly in a shallow container and put it in the fridge within 2 hours. Keep up to 3 days and reheat once until steaming, 74 °C (165 °F), adding a splash of water as the pasta thickens it."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Serves the family: double the pot and freeze portions without the pasta. Thaw overnight in the fridge, use within 2 days and never refreeze. Hot pepper at the table for the grown-ups."
+    },
+    {
+      "id": "family-global-whole-wheat-pizza-night-chicken",
+      "name": "Pizza night on whole-wheat dough with chicken, peppers and corn",
+      "inspiredBy": "a North American pizza night, on whole-wheat dough",
+      "about": "Homemade whole-wheat pizza dough rolled thin and topped with a tomato and white bean sauce, a little mozzarella, cooked chicken, sweet red pepper, corn and spinach, with a crunchy avocado salad on the side. Let the kids add their own toppings, and make a plain cheese one for the fussy ones. It brings **protein, calcium and iron**, and the whole-wheat dough and beans add fibre.",
+      "ingredients": [
+        {
+          "food": "wheat-flour-whole-wheat-45d81e",
+          "g": 62
+        },
+        {
+          "food": "yeast-dry-powder-dea28d",
+          "g": 2
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-sauce-unsalted-037b3a",
+          "g": 70
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 40,
+          "swap": "legumes",
+          "note": "drained and mashed"
+        },
+        {
+          "food": "mozzarella-cheese-part-skim-milk-88097c",
+          "g": 40,
+          "note": "grated"
+        },
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 70,
+          "note": "raw"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 30,
+          "note": "cut in thin strips"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 25
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 20,
+          "note": "washed"
+        },
+        {
+          "food": "romaine-lettuce-3e8726",
+          "g": 40,
+          "note": "torn"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 25,
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "note": "from a lemon"
+        },
+        {
+          "food": "oregano-raw-219093",
+          "g": 0.5
+        },
+        {
+          "food": "garlic-powder-e81d9c",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Stir the yeast into comfortably warm water, about 70 ml for every 100 g of flour (the dough makes two portions, so that is twice the flour in the list), and leave it 5 minutes. Mix with the flour, salt and half the oil, adding a splash more water if it is dry, and knead for 8 minutes until smooth and slightly tacky. Cover and let it rise in a warm spot until doubled, about 1 hour. Do not taste the raw dough, and keep little hands out of it, as raw flour can carry bacteria.",
+        "Heat the oven to 250 °C (480 °F) with a tray inside. Wash the vegetables.",
+        "Dice the chicken small and cook it in a pan over medium-high heat until cooked through to 74 °C (165 °F), about 6 minutes. Wash your hands and the board after the raw chicken.",
+        "Roll the dough out thin on a sheet of baking parchment. Spread with the tomato sauce stirred with the mashed white beans, oregano and garlic powder, then scatter on the mozzarella, chicken, pepper, corn and spinach.",
+        "Slide it, on its parchment, onto the hot tray and bake until the crust is golden and the cheese is bubbling, 10 to 12 minutes.",
+        "Toss the lettuce, cucumber and avocado with the lemon juice and a drizzle of the rest of the oil and serve alongside.",
+        "Cool the second portion within 2 hours, put it in a shallow container in the fridge for up to 3 days, and reheat until steaming, 74 °C (165 °F)."
+      ],
+      "prepMin": 25,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "Serves the family: make the dough in the morning or the night before and keep it in the fridge, and bake two pizzas on two trays. Plan on a 1 hour rise on top of the prep and cook time. Hot sauce and chili flakes stay on the table. For little ones, cut the slices into small strips."
+    },
+    {
+      "id": "family-global-sheet-pan-maple-lemon-chicken",
+      "name": "Sheet-pan maple-lemon chicken with carrots, broccoli and crisp white beans",
+      "inspiredBy": "a North American sheet-pan supper",
+      "about": "Juicy chicken thighs brushed with a mild maple, lemon and paprika glaze, roasted on one tray with sweet caramelized carrots, broccoli and crisp white beans. One tray, no fuss, and everything finishes at the same time. The chicken and beans bring **protein and iron**, and the broccoli and carrots bring vitamins C and A.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 135,
+          "note": "raw"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 100,
+          "swap": "legumes",
+          "note": "patted dry"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 140,
+          "note": "peeled and cut in chunks"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 100,
+          "note": "washed and cut in florets"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "from a lemon"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "garlic-powder-e81d9c",
+          "g": 0.5
+        },
+        {
+          "food": "mustard-dry-powder-1623db",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the vegetables. Toss the carrots and onion with half the oil and a pinch of salt on a large tray and roast for 15 minutes.",
+        "Stir the maple syrup, lemon juice, paprika, garlic powder, mustard powder and a spoonful of the remaining oil into a glaze. Brush it over the chicken in a separate dish and use all of it on the chicken, never saving any that touched the raw meat.",
+        "Push the vegetables aside and lay the chicken on the tray, then wash your hands and the board. Toss the broccoli and white beans with the last of the oil, add them to the tray and roast for 20 minutes more, until the beans are crisp at the edges.",
+        "Check that the chicken reaches 74 °C (165 °F) in the thickest part and the juices run clear.",
+        "Rest for 5 minutes, then slice the chicken and serve it with the vegetables."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Serves the family: use two trays so nothing crowds and steams. For little ones, cut the chicken, carrots and broccoli small and mash their beans, as crisp, crunchy beans can be a choking risk under 4. Add baby potatoes if you want them. Hot sauce or grainy mustard at the table for the grown-ups."
+    },
+    {
+      "id": "family-global-apple-slices-sunflower-butter",
+      "name": "Apple slices with a thin spread of sunflower seed butter",
+      "about": "Crisp apple slices with a thin spread of sunflower seed butter, a snack that lasts all afternoon. The sunflower seed butter brings **protein and vitamin E**, and the apple brings fibre.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "washed and sliced thin"
+        },
+        {
+          "food": "sunflower-seeds-butter-ccaf05",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "spread thinly"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the apple, core it and cut it into thin slices.",
+        "Spread a thin layer of sunflower seed butter on each slice, or serve it as a dip, and dust with cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Spread sunflower seed butter thinly, never in a thick spoonful, for little ones. Grate or lightly steam the apple for under-4s."
+    },
+    {
+      "id": "family-global-berry-yogurt-parfait-oat-crunch",
+      "name": "Berry yogurt parfait with toasted oat crunch",
+      "about": "Creamy Greek yogurt layered with juicy blueberries and a crunchy toasted oat topping, with a little maple. It is an easy snack that tastes like dessert, and it brings **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 60,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 8,
+          "note": "toasted in a dry pan"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Toast the oats in a dry pan over medium heat until golden and smelling nutty, about 3 minutes, and let them cool.",
+        "Wash the blueberries. Layer the yogurt, blueberries and oats in a glass and drizzle with the maple syrup."
+      ],
+      "prepMin": 3,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Cut blueberries in half for the very small. No honey for babies under 1."
+    },
+    {
+      "id": "family-global-veggie-sticks-yogurt-dip",
+      "name": "Veggie sticks with lemon-dill yogurt dip",
+      "about": "Crunchy cucumber, carrot and red pepper sticks with a cool lemony yogurt dip. It is a bright, easy snack for after school, and it brings **vitamin C and calcium**.",
+      "ingredients": [
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "cut in thin sticks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 40,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "note": "from a lemon"
+        },
+        {
+          "food": "dill-weed-dried-d92fd8",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the vegetables and cut them into sticks.",
+        "Stir the yogurt with the lemon juice and dill and serve alongside for dipping."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "For under-4s, grate the carrot or steam the sticks until soft, as small, hard pieces of raw vegetable are a choking risk."
+    },
+    {
+      "id": "family-global-blueberry-banana-green-smoothie",
+      "name": "Blueberry banana smoothie with a handful of spinach",
+      "about": "A creamy smoothie of blueberries, banana and milk with a handful of spinach blended in, which turns it a deep purple. It brings **calcium and fibre**, and a little ground flax adds plant omega-3.",
+      "ingredients": [
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 50
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 20,
+          "note": "washed"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 60,
+          "swap": "berries"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 6,
+          "note": "ground"
+        }
+      ],
+      "steps": [
+        "Wash the spinach and blueberries.",
+        "Blend everything with a few ice cubes until completely smooth, about 1 minute, and pour into a glass."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Serves the family: double it and pour into small cups. Use frozen blueberries for a thicker shake."
+    },
+    {
+      "id": "family-global-cheddar-toast-fingers-apple",
+      "name": "Cheddar toast fingers with apple slices",
+      "about": "Warm whole-wheat toast fingers with melted cheddar and crisp apple slices on the side, a snack plate in a few minutes. The cheddar brings **calcium** and the apple brings fibre. Cheese stays a small portion to keep the salt down.",
+      "ingredients": [
+        {
+          "food": "cheddar-cheese-reduced-fat-a0786c",
+          "g": 20,
+          "note": "grated"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 15,
+          "note": "cut in fingers"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 120,
+          "swap": "vit_c_fruit",
+          "note": "washed and sliced thin"
+        }
+      ],
+      "steps": [
+        "Heat the grill. Lay the bread on a tray, scatter with the cheddar and grill until melted and bubbling, about 2 minutes. Cut into fingers.",
+        "Wash the apple, slice it thin and serve alongside."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Grate or steam the apple for under-4s."
+    },
+    {
+      "id": "family-global-grapes-and-mozzarella",
+      "name": "Grapes and mozzarella",
+      "about": "Sweet grapes with soft part-skim mozzarella, a fresh and filling snack. The mozzarella brings **calcium** and the grapes bring plenty of water.",
+      "ingredients": [
+        {
+          "food": "grapes-9e0556",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "cut in quarters lengthwise"
+        },
+        {
+          "food": "mozzarella-cheese-part-skim-milk-88097c",
+          "g": 20,
+          "note": "cut in thin sticks or tiny pieces"
+        }
+      ],
+      "steps": [
+        "Wash the grapes and cut each in quarters lengthwise.",
+        "Serve with the mozzarella."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Always cut grapes into quarters for under-4s, as whole grapes are a choking risk."
+    },
+    {
+      "id": "family-global-oat-sunflower-butter-bites",
+      "name": "Oat and sunflower seed butter bites",
+      "about": "No-bake little balls of oats, sunflower seed butter, mashed banana and ground flax, a lunchbox treat. The oats bring **fibre** and the sunflower seed butter brings protein and vitamin E.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "sunflower-seeds-butter-ccaf05",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 20,
+          "note": "ripe, mashed"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 5,
+          "note": "ground"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 4
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Mash the banana in a bowl and stir in the sunflower seed butter, maple syrup and cinnamon.",
+        "Mix in the oats and ground flax.",
+        "Roll into small balls and chill for 20 minutes. Keep in the fridge up to 3 days."
+      ],
+      "prepMin": 10,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ],
+      "tip": "Made with seed butter, so it is peanut-free for school lunchboxes, but check the label for traces. For under-4s, press each ball flat with a fork, as small, round, sticky balls can be a choking risk, and keep them cold in the lunchbox."
+    },
+    {
+      "id": "family-global-warm-edamame-lemon-cup",
+      "name": "Warm edamame with lemon and a pinch of salt",
+      "about": "Shelled edamame warmed through and tossed with lemon juice, a little salt and a pinch of garlic powder. It is a bright, easy snack that brings **protein, iron and folate**, and little hands can scoop it up.",
+      "ingredients": [
+        {
+          "food": "edamame-immature-soy-bean-shelled-frozen-9c2350",
+          "g": 100,
+          "swap": "legumes"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "note": "from a lemon"
+        },
+        {
+          "food": "garlic-powder-e81d9c",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Warm the edamame in a small pot of simmering water for 3 minutes until hot, then drain well.",
+        "Toss with the lemon juice, salt and garlic powder and serve warm or cool."
+      ],
+      "prepMin": 2,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Serve the shelled beans in a small bowl and keep an eye on the youngest, as small beans can be a choking risk under 4. Mash lightly for little ones."
+    },
+    {
+      "id": "family-global-egg-and-cherry-tomato-cup",
+      "name": "Firm-boiled egg with cherry tomatoes and cucumber",
+      "about": "A firm-boiled egg with sweet cherry tomatoes and crunchy cucumber half-moons, a simple protein snack for after school. The egg brings **protein and choline**, and the tomatoes bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "boiled in the shell until the yolk is firm"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 50,
+          "note": "cut in quarters"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50,
+          "note": "cut into thin half-moons"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lower the egg into boiling water and cook for 10 to 12 minutes, until the yolk is firm all the way through. Cool in cold water and peel.",
+        "Wash the tomatoes and cucumber, quarter the tomatoes and cut the cucumber into thin half-moons, quartered for under-4s. Serve with the egg, cut in wedges, and a pinch of salt."
+      ],
+      "prepMin": 5,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Boil a batch of eggs and keep them in the shell in the fridge up to 5 days. Keep the cherry tomatoes cut in quarters and the cucumber in small pieces for under-4s."
+    },
+    {
+      "id": "family-global-apple-cinnamon-yogurt-dip",
+      "name": "Apple slices with cinnamon yogurt dip",
+      "about": "Crisp apple slices with a creamy cinnamon and maple yogurt for dipping. It tastes like apple pie in a bowl, and brings **protein, calcium and fibre**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 130,
+          "swap": "vit_c_fruit",
+          "note": "washed and sliced thin"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Wash the apple, core it and slice it thin.",
+        "Stir the yogurt with the cinnamon and maple syrup and serve as a dip."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Grate or lightly steam the apple for under-4s. Leave the maple out of a baby's dip, and no honey under 1."
+    },
+    {
+      "id": "family-global-blueberry-banana-yogurt-cup",
+      "name": "Blueberry banana yogurt cup",
+      "about": "Cool Greek yogurt with sliced banana and juicy blueberries. It brings **protein, calcium and potassium**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 50,
+          "swap": "berries",
+          "note": "washed"
+        }
+      ],
+      "steps": [
+        "Wash the blueberries.",
+        "Layer the yogurt, banana and blueberries in a cup."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Cut blueberries in half for the very small. No honey for babies under 1."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "family-global-carrot-cake-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "family-global-veggie-fried-rice-egg-edamame"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "family-global-taco-night-turkey-hidden-veg"
+        },
+        {
+          "slot": "snack",
+          "recipe": "family-global-apple-slices-sunflower-butter"
+        },
+        {
+          "slot": "snack",
+          "recipe": "family-global-berry-yogurt-parfait-oat-crunch"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "family-global-cheesy-veggie-egg-muffins"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "family-global-taco-night-turkey-hidden-veg",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "family-global-crispy-baked-fish-fingers-wedges"
+        },
+        {
+          "slot": "snack",
+          "recipe": "family-global-blueberry-banana-green-smoothie"
+        },
+        {
+          "slot": "snack",
+          "recipe": "family-global-apple-slices-sunflower-butter"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "family-global-cheesy-veggie-egg-muffins",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "family-global-loaded-potato-broccoli-white-beans"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "family-global-hidden-veg-pasta-bake"
+        },
+        {
+          "slot": "snack",
+          "recipe": "family-global-oat-sunflower-butter-bites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "family-global-grapes-and-mozzarella"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "family-global-carrot-cake-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "family-global-hidden-veg-pasta-bake",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "family-global-salmon-rice-bowls-soy-maple-egg"
+        },
+        {
+          "slot": "snack",
+          "recipe": "family-global-veggie-sticks-yogurt-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "family-global-cheddar-toast-fingers-apple"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "family-global-carrot-cake-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "family-global-egg-salad-sandwich-veggie-sticks"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "family-global-mild-chicken-vegetable-noodle-soup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "family-global-oat-sunflower-butter-bites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "family-global-blueberry-banana-green-smoothie"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "family-global-zucchini-banana-pancakes"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "family-global-mild-chicken-vegetable-noodle-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "family-global-whole-wheat-pizza-night-chicken"
+        },
+        {
+          "slot": "snack",
+          "recipe": "family-global-berry-yogurt-parfait-oat-crunch"
+        },
+        {
+          "slot": "snack",
+          "recipe": "family-global-grapes-and-mozzarella"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "family-global-zucchini-banana-pancakes"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "family-global-whole-wheat-pizza-night-chicken",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "family-global-sheet-pan-maple-lemon-chicken"
+        },
+        {
+          "slot": "snack",
+          "recipe": "family-global-warm-edamame-lemon-cup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "family-global-blueberry-banana-yogurt-cup"
+        }
+      ]
+    }
+  ]
+}
