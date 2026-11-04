@@ -375,9 +375,11 @@ export function dietTagsOf(plan: Pick<MealPlan, 'days'>, foods: FoodIndex): stri
   return tags.filter(([t]) => ok.get(t)).map(([t]) => t);
 }
 
-/** Who the lab sizes for: the adult woman (the harder case for iron and at low calories), with the family's life stage. */
-export function sizingPerson(plan: Pick<MealPlan, 'lifeStage'>) {
-  return { sex: 'female' as const, age: 40, lifeStage: plan.lifeStage ?? ('none' as LifeStage), diet: [] as string[] };
+/** Who the lab sizes for: the adult woman (the harder case for iron and at low calories), with the family's life stage,
+ *  at the age the style grades (a menopause plan sizes for a woman of 55, who needs more calcium). */
+export function sizingPerson(plan: Pick<MealPlan, 'lifeStage' | 'style'>) {
+  const age = (plan.style && PLAN_STYLES[plan.style].gates.femalePanelAge) || 40;
+  return { sex: 'female' as const, age, lifeStage: plan.lifeStage ?? ('none' as LifeStage), diet: [] as string[] };
 }
 
 /** Size every day of a plan to `kcal` with the app's own engine. `dayKcal` is what each day actually reached. */

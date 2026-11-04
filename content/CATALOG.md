@@ -227,6 +227,26 @@ Rules for each diet are in GUIDE.md §12.
 12. **`heart-dash` · DASH North American.** Overnight oats, turkey and bean chili (no-salt-added), baked trout, big salads, sweet potatoes, low-fat yogurt, unsalted nuts, fruit with every breakfast.
 13. **`heart-asia` · Heart-healthy Asian.** Brown rice and steamed fish, tofu and vegetable stir-fries with low-sodium tamari in small amounts, edamame, miso in small amounts, ginger-scallion salmon.
 
+### Batch C briefs (pregnancy, breastfeeding, PCOS, menopause)
+
+Rules for each are in GUIDE.md §12, starting with "Batch C rule: healthy first, never sicker".
+
+**Pregnancy (`prenatal`), Standard 1800-2400 and Big 2400-3200:**
+1. **`prenatal-global` · Pregnancy Global Kitchen.** Canadian home cooking with global dishes: oats and eggs cooked through, salmon and trout, lentil soup, beef and bean chili, chicken traybakes, yogurt and fruit. Plain breakfasts for queasy mornings.
+2. **`prenatal-south-asia` · Pregnancy South Asian.** Dal, palak, egg bhurji (set eggs), low-mercury fish curry, paneer, roti, poha, khichdi, ripe fruit (no green papaya).
+
+**Postpartum and breastfeeding (`postpartum`), Standard 1800-2400 and Big 2400-3200:**
+3. **`postpartum-global` · Postpartum Global Kitchen.** One-hand snacks, freezer meals, a Sunday batch cook: oat bars, egg muffins, chili, salmon, soups, wraps.
+4. **`postpartum-asia` · Postpartum Asian.** Inspired by warming postpartum traditions: ginger and sesame chicken soup (no rice wine), miyeok-guk with a little seaweed, congee with fish, dal and rice, sesame-ginger greens.
+
+**PCOS (`pcos`), Light 1400-1800 and Standard 1800-2200:**
+5. **`pcos-med` · PCOS-friendly Mediterranean.** Lentils, chickpeas, barley and bulgur, fish twice a week, eggs and Greek yogurt at breakfast, olive oil, lots of vegetables.
+6. **`pcos-south-asia` · PCOS-friendly South Asian.** Moong chilla, dals and chana, millets and brown basmati, tandoori fish and chicken, raita, vegetable sabzis.
+
+**Menopause (`menopause`), Light 1600-1800 and Standard 1800-2200:**
+7. **`menopause-med` · Menopause Mediterranean.** Yogurt and almonds, sardines and salmon with bones, white beans and greens, eggs, olive oil, fortified soy drink in coffee.
+8. **`menopause-japan` · Menopause Japanese.** Soy-rich: tofu, natto or edamame, miso soup (small), grilled salmon and mackerel, sesame greens, calcium-set tofu, soy drink.
+
 ## Not offered, and why
 - **Carnivore:** it can't reach vitamin C, folate or fibre, and contradicts the framework.
 - **Raw vegan:** can't reliably reach B12, vitamin D, iodine or zinc.

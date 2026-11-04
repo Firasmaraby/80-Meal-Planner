@@ -427,3 +427,86 @@ happens to fit the diet, never like a list of things you can't have.
   the same day, or four days running, reads as lazy. Check across slots, not just within a recipe.
 - **Tags are checked:** `15-minute` only when prep plus cook is 15 or less.
 - **`howItWorks` is honest about Light:** one plain sentence on what gets smaller or drops away at Light.
+
+### Batch C rule: healthy first, never sicker
+These families serve people in pregnancy, breastfeeding, with PCOS or in menopause. Every week follows the published
+guidance (Health Canada, the IOM DRIs, ACOG, the 2023 international PCOS guideline). Make no medical claims or promises,
+and leave conditions to the care provider. The app shows a short "Good to know" note on each plan (the style's `note`).
+A safety reviewer reads every week against the guidance before it ships.
+
+### Pregnancy (`prenatal`)
+- **Graded on pregnancy DRIs:** folate 600 µg DFE, iron 27 mg, choline 450 mg, iodine 220 µg (hard from food), vitamin A
+  upper limit from retinol. Never below 1,800 kcal (no dieting in pregnancy): Standard covers 1800-2400 and Big 2400-3200.
+  No Light.
+- **Left out automatically** (the gate bans them):
+  - high-mercury fish;
+  - raw or smoked fish;
+  - liver and pâté;
+  - deli meats, hot dogs and dry-cured sausage (listeria);
+  - raw sprouts;
+  - unpasteurised milk, cheese and juice;
+  - soft-ripened and blue cheese;
+  - green (unripe) papaya;
+  - herbal teas on Health Canada's avoid list (chamomile, aloe, senna and the rest);
+  - **any alcohol**, wine and mirin in cooking included.
+- **Methods:**
+  - eggs until the yolk is set;
+  - meat and poultry cooked through (no rare or pink);
+  - fish cooked through;
+  - leftovers into the fridge within 2 hours and reheated until steaming.
+
+  Say so in the steps.
+- **Fish and caffeine:**
+  - Low-mercury fish (salmon, trout, char, sardines, herring, Atlantic mackerel, canned light tuna) at least twice a week.
+  - Canned albacore at most 300 g a week.
+  - Caffeine at most 300 mg a day; in practice, a cup of coffee or two of tea at most.
+- **Shape:**
+  - small, frequent meals;
+  - plain, easy breakfasts for queasy mornings;
+  - ginger as food;
+  - iodized salt as the salt.
+- **Text:** "keep taking your prenatal vitamin". Never promise outcomes for the baby.
+
+### Postpartum and breastfeeding (`postpartum`)
+- **Graded on lactation DRIs** (choline 550 mg, iodine 290 µg, vitamin A 1,300 µg, zinc 12 mg, B12 2.8 µg). Never below
+  1,800 kcal: Standard covers 1800-2400 and Big 2400-3200.
+- **Banned and capped:**
+  - no alcohol in any recipe;
+  - no high-mercury fish;
+  - caffeine at most 300 mg a day.
+- **Fish:** low-mercury fatty fish 2-3 times a week, for DHA.
+- **Shape:**
+  - one-hand snacks;
+  - batch cooking and freezer meals;
+  - little prep on weekdays;
+  - foods with plenty of water ("drink to thirst").
+- **Traditional postpartum foods are welcome:** ginger, sesame, warm soups, congee, dal. Leave out rice wine and herbal
+  remedies. Korean miyeok-guk is welcome, but keep the seaweed small, because wakame is very high in iodine (upper limit
+  1,100 µg).
+- **No claims** about milk supply.
+
+### PCOS (`pcos`)
+- **The 2023 international guideline** says no single diet is proven best. A balanced, lower-GI, high-fibre way of
+  eating, regular meals and, for some people, modest weight loss help.
+- **Gates:**
+  - glycaemic load at most 70 per 2,000 kcal;
+  - protein at least 25%;
+  - fibre at least 30 g;
+  - graded for a woman of 30.
+- **Sizes:** Light 1400-1800 and Standard 1800-2200. Never very low calorie.
+- **Shape:**
+  - protein at breakfast;
+  - legumes, intact grains, fish, olive oil, nuts and plenty of vegetables;
+  - no meal skipping.
+- **No claims:** don't promise to cure PCOS, "balance hormones" or "fix insulin", and don't promote supplements or teas
+  (inositol, spearmint).
+
+### Menopause (`menopause`)
+- **Graded for a woman of 55** (calcium 1,200 mg, iron 8 mg, B6 1.5 mg; vitamin D is hard from food, and the plan's note
+  advises the 400 IU supplement Health Canada recommends after 50).
+- **Protein:** at least 25 g at every main meal, to protect muscle.
+- **Calcium sources:** dairy, fortified soy drink, calcium-set tofu, canned salmon or sardines with bones, almonds and
+  greens.
+- **Soy foods and ground flax are welcome as food,** with no promises about hot flushes.
+- **Heart health matters more after menopause:** saturated fat under 10%, fibre, omega-3 and the sodium ceiling.
+- **Sizes:** Light 1600-1800 (1400-1600 if it passes) and Standard 1800-2200.

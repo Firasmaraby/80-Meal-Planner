@@ -312,6 +312,14 @@ describe('plan lab', () => {
     expect(LIMITS.fleshG).toBe(400);
   });
 
+  it('refuses a pregnancy plan that claims a band below 1,800 kcal', () => {
+    const f = clone();
+    f.style = 'prenatal';
+    (f as { lifeStage?: string }).lifeStage = 'pregnant';
+    const found = lab(f).failures.filter((x) => x.code === 'min_kcal');
+    expect(found.some((x) => /1400-1600, below the 1800 kcal floor/.test(x.message))).toBe(true);
+  });
+
   it('flags more than 150 g of liver in a week', () => {
     const f = clone();
     const fish = f.recipes.find((r) => r.id === 'salmon-potatoes-broccoli')!; // dinner on day 1, leftover lunch on day 2

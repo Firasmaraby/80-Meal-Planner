@@ -185,6 +185,20 @@ export default function PlanDetail() {
           </Card>
         ) : null}
 
+        {plan.style && PLAN_STYLES[plan.style].note ? (
+          <Card style={{ marginTop: space.md, gap: space.xs }}>
+            <Row gap={6}>
+              <Icon name={I.info} size={14} color={c.ink2} />
+              <Txt v="label" dim={1}>
+                Good to know
+              </Txt>
+            </Row>
+            <Txt v="caption" dim={1} style={{ lineHeight: 19 }}>
+              {PLAN_STYLES[plan.style].note}
+            </Txt>
+          </Card>
+        ) : null}
+
         {avg && (
           <Card style={{ marginTop: space.lg }}>
             <Row gap={space.lg}>

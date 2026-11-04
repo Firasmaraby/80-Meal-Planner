@@ -37,6 +37,30 @@ export const isHighMercuryFish = (f: Pick<Food, 'name' | 'category'>): boolean =
 export const isLiver = (f: Pick<Food, 'name' | 'category'>): boolean =>
   (f.category === 'meat' || f.category === 'poultry' || f.category === 'prepared') && /\bliver\b|liverwurst|p[âa]t[ée]/i.test(f.name) && !/\boil\b/i.test(f.name);
 
+/**
+ * Caffeine in mg per 100 g, from the food's name (the sources don't carry it). Typical values: brewed coffee 40,
+ * espresso 212, instant powder 3,140, brewed black tea 20, green tea 12, matcha powder 3,200, cocoa powder 230,
+ * dark chocolate 80, milk chocolate 20, cola 10, energy drink 32. Decaf and herbal teas are near zero.
+ */
+const CAFFEINE: [RegExp, number][] = [
+  [/decaf|herbal|rooibos|chamomile|peppermint tea|caffeine[- ]free|coffee cake|creamer|whitener|tea biscuit/i, 0],
+  [/matcha/i, 3200],
+  [/coffee.*\b(instant|powder|dry)\b|instant coffee/i, 3140],
+  [/espresso/i, 212],
+  [/\bcoffee\b/i, 40],
+  [/green tea|tea, green/i, 12],
+  [/\b(black )?tea\b(?!.*\b(herbal|fruit)\b)/i, 20],
+  [/cocoa(,| powder|\b).*unsweetened|unsweetened cocoa|cocoa powder|cacao/i, 230],
+  [/dark chocolate|chocolate, dark|baking chocolate|70-85%/i, 80],
+  [/milk chocolate|chocolate, milk/i, 20],
+  [/energy drink/i, 32],
+  [/\bcola\b/i, 10],
+];
+export const caffeineMgPer100g = (f: Pick<Food, 'name'>): number => {
+  for (const [rx, mg] of CAFFEINE) if (rx.test(f.name)) return mg;
+  return 0;
+};
+
 /** Categories that count as a meal's real protein. */
 const PROTEIN_CATEGORIES = new Set<Food['category']>(['meat', 'poultry', 'fish', 'egg', 'legume', 'dairy']);
 

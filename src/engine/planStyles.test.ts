@@ -4,6 +4,7 @@ import fixtureJson from '../../content/families/_fixture-mini.json';
 import { FOODS, FOOD_INDEX } from '@/state/catalog';
 
 import { compileSize, type FamilyFile } from './family';
+import { caffeineMgPer100g } from './foodRoles';
 import { FOOD_BANS, PLAN_STYLES, gradeOptionsFor, isSpiceShelf, runStyleGates, styleNutrientGates, styleStructureGates } from './planStyles';
 import { familyDeps } from '@/state/familyDeps';
 import type { Food, MealPlan, PlanStyle } from './types';
@@ -20,9 +21,9 @@ function swapFood(family: FamilyFile, from: string, to: string) {
 }
 
 describe('plan styles', () => {
-  it('has the 27 styles of the guide, each with a label and a blurb', () => {
+  it('has the 29 styles of the guide, each with a label and a blurb', () => {
     const styles = Object.keys(PLAN_STYLES);
-    expect(styles).toHaveLength(27);
+    expect(styles).toHaveLength(29);
     for (const s of styles) {
       expect(PLAN_STYLES[s as PlanStyle].label.length).toBeGreaterThan(2);
       expect(PLAN_STYLES[s as PlanStyle].blurb).not.toMatch(/[—–]/);
@@ -226,3 +227,63 @@ describe('spice shelf', () => {
     for (const re of [/^Gochujang/, /^Soy sauce \(shoyu\)/, /^Rice vinegar/, /^Olives/, /^Coffee, ground/, /^Curry leaves/]) expect(isSpiceShelf(by(re)), String(re)).toBe(false);
   });
 });
+
+describe('batch C safety: pregnancy, breastfeeding, PCOS and menopause', () => {
+  const f = (name: string, category: Food['category'] = 'other') => ({ id: name, name, category, n: {}, servings: [] }) as unknown as Food;
+
+  it('pregnancy bans deli and cured meats, raw sprouts, herbal teas to avoid and alcohol', () => {
+    const ban = FOOD_BANS.prenatal;
+    expect(ban(f('Salami', 'meat'))).toMatch(/listeria/);
+    expect(ban(f('Bologna, beef', 'meat'))).toMatch(/listeria/);
+    expect(ban(f('Alfalfa sprouts, raw', 'vegetable'))).toBe('raw sprouts');
+    expect(ban(f('Chamomile tea, brewed', 'beverage'))).toMatch(/herbal tea/);
+    expect(ban(f('Wine, cooking', 'beverage'))).toBe('alcohol');
+    expect(ban(f('Red wine vinegar', 'condiment'))).toBeUndefined();
+    expect(ban(f('Papaya, green, raw', 'fruit'))).toBe('unripe papaya');
+    expect(ban(f('Papaya, raw', 'fruit'))).toBeUndefined();
+    expect(ban(f('Chicken breast, skinless, roasted', 'poultry'))).toBeUndefined();
+  });
+
+  it('the alcohol ban spares vinegars, ginger ale and alcohol-free drinks, but not mirin', () => {
+    const ban = FOOD_BANS.alcohol;
+    for (const n of ['Mirin', 'Sake', 'Beer, regular', 'Shaoxing wine', 'Sherry'] ) expect(ban(f(n)), n).toBe('alcohol');
+    for (const n of ['Sherry vinegar', 'Rice wine vinegar', 'Ginger ale', 'Beer, non-alcoholic', 'Ginger root, raw']) expect(ban(f(n)), n).toBeUndefined();
+  });
+
+  it('postpartum bans alcohol and high-mercury fish but not salmon', () => {
+    expect(PLAN_STYLES.postpartum.gates.bans).toEqual(['alcohol', 'mercury']);
+    expect(FOOD_BANS.mercury(f('Swordfish, raw', 'fish'))).toBeTruthy();
+    expect(FOOD_BANS.mercury(f('Salmon, Atlantic, raw', 'fish'))).toBeUndefined();
+  });
+
+  it('estimates caffeine and caps it at 300 mg a day in pregnancy', () => {
+    expect(caffeineMgPer100g(f('Coffee, brewed, prepared with tap water'))).toBe(40);
+    expect(caffeineMgPer100g(f('Coffee cake'))).toBe(0);
+    expect(caffeineMgPer100g(f('Tea, green, brewed'))).toBe(12);
+    expect(caffeineMgPer100g(f('Chamomile tea, brewed'))).toBe(0);
+    const plan = standard(fixture);
+    plan.days[0].meals[0].ingredients.push({ foodId: idOf('Coffee, brewed, prepared with tap water'), grams: 1000 }); // about 400 mg
+    expect(codes('prenatal', plan)).toContain('caffeine');
+    expect(codes('balanced', plan)).not.toContain('caffeine');
+  });
+
+  it('pregnancy and breastfeeding plans never claim a band below 1,800 kcal', () => {
+    expect(PLAN_STYLES.prenatal.gates.minKcal).toBe(1800);
+    expect(PLAN_STYLES.postpartum.gates.minKcal).toBe(1800);
+  });
+
+  it('PCOS and menopause grade an adult woman of the right age only', () => {
+    expect(gradeOptionsFor('pcos', 2000).panel).toEqual([{ sex: 'female', age: 30, lifeStage: 'none' }]);
+    expect(gradeOptionsFor('menopause', 2000).panel).toEqual([{ sex: 'female', age: 55, lifeStage: 'none' }]);
+    expect(gradeOptionsFor('pcos', 2000).rules).toMatchObject({ proteinMinPctKcal: 25, glycemicLoadMax: 70 });
+  });
+
+  it('every life-stage and heart style carries a plain note for the plan screen, with no em or en dashes', () => {
+    for (const s of ['prenatal', 'postpartum', 'pcos', 'menopause', 'heart'] as PlanStyle[]) {
+      expect(PLAN_STYLES[s].note, s).toBeTruthy();
+      expect(PLAN_STYLES[s].note, s).not.toMatch(/[\u2013\u2014]/);
+    }
+    expect(PLAN_STYLES.pcos.note).toMatch(/No single diet is proven best/);
+  });
+});
+

@@ -206,6 +206,8 @@ export type PlanStyle =
   // life stage
   | 'prenatal'
   | 'postpartum'
+  | 'pcos'
+  | 'menopause'
   | 'healthy-aging'
   // lifestyle
   | 'family'

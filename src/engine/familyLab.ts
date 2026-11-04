@@ -392,6 +392,10 @@ export function runLab(raw: unknown, deps: LabDeps): LabResult {
       ...weekChecks(family, plan, deps.foods, name),
       ...styleStructureGates(family.style, plan, deps.foods).map((g): LabFailure => ({ kind: 'gate', size: name, ...g })),
     ];
+    const minKcal = PLAN_STYLES[family.style].gates.minKcal;
+    for (const b of compiled.covers)
+      if (minKcal != null && b.min < minKcal)
+        structure.push({ kind: 'gate', code: 'min_kcal', size: name, message: `${SIZE_LABEL[name]} claims ${bandString(b)}, below the ${minKcal} kcal floor for a ${PLAN_STYLES[family.style].label} plan.`, fix: `Claim only bands from ${minKcal} kcal up.` });
     failures.push(...structure);
     const edges: LabEdge[] = [];
     for (const { kcal, labels } of edgesOf(compiled.covers)) {

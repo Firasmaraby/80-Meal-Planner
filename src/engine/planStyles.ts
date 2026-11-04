@@ -9,7 +9,7 @@
  */
 import { dayPlanTotal, getFood, type FoodIndex } from './calc';
 import { carbStyleOfFood } from './carbStyle';
-import { isPlantDairy } from './foodRoles';
+import { caffeineMgPer100g, isPlantDairy } from './foodRoles';
 import { requirement } from './dri';
 import { REFERENCE_PANEL, type ReferencePerson, type Rules } from './planReport';
 import type { Food, FoodCategory, LifeStage, MealPlan, MealSlot, PlanStyle } from './types';
@@ -81,9 +81,28 @@ const MERCURY_FISH = /\b(shark|swordfish|king mackerel|tilefish|marlin|bigeye tu
 const RAW_OR_SMOKED_FISH = /\b(smoked|lox|gravlax|sashimi|ceviche|tartare|carpaccio|sushi|kippered|nigiri)\b/;
 const SOFT_CHEESE = /\b(brie|camembert|blue cheese|gorgonzola|roquefort|stilton|danish blue)\b|unpasteuri[sz]ed|raw milk/;
 
+// Health Canada, pregnancy: deli and dry-cured meats, refrigerated pate and hot dogs carry listeria unless heated until steaming
+const DELI_MEAT = /\b(salami|pepperoni|prosciutto|mortadella|bologna|pastrami|hot dogs?|frankfurters?|wieners?|luncheon meat|lunch meat|deli|cold cuts|p[âa]t[ée]|liverwurst|dry[- ]cured|summer sausage)\b/;
+const RAW_SPROUTS = /\b(alfalfa|clover|radish|broccoli|mung bean|bean)\b.*\bsprouts?\b|\bsprouts?\b.*\braw\b|sprouted.*\braw\b/;
+// herbal teas Health Canada asks pregnant women to avoid
+const AVOID_TEAS = /\b(chamomile|aloe|coltsfoot|juniper|pennyroyal|buckthorn|comfrey|labrador tea|sassafras|duck root|lobelia|senna)\b/;
+// alcohol in any form (no safe amount in pregnancy or while breastfeeding); vinegars, ginger ale and alcohol-free products are fine
+const ALCOHOL = /\b(wine|beer|lager|stout|sake|mirin|rum|brandy|cognac|vodka|gin|whiske?y|bourbon|liqueur|shaoxing|marsala|vermouth|sherry|hard cider|alcoholic)\b/;
+const NOT_ALCOHOL = /vinegar|ginger ale|non-?alcoholic|alcohol[- ]free|de-?alcoholi[sz]ed|root beer|wine grape|winged/;
+
+function alcoholReason(f: Food): string | undefined {
+  const t = lower(f);
+  return ALCOHOL.test(t) && !NOT_ALCOHOL.test(t) ? 'alcohol' : undefined;
+}
+
 function prenatalReason(f: Food): string | undefined {
   const t = lower(f);
   if (MERCURY_FISH.test(t)) return 'high-mercury fish';
+  if (DELI_MEAT.test(t)) return 'deli or cured meat (listeria)';
+  if (RAW_SPROUTS.test(t)) return 'raw sprouts';
+  if (AVOID_TEAS.test(t)) return 'herbal tea to avoid in pregnancy';
+  if (/\b(green|unripe)\b.*\bpapaya\b|\bpapaya\b.*\b(green|unripe)\b/.test(t)) return 'unripe papaya';
+  if (alcoholReason(f)) return 'alcohol';
   if (RAW_OR_SMOKED_FISH.test(t)) return 'raw or smoked fish';
   if (/\bliver\b/.test(t)) return 'liver';
   // "Egg, whole, raw" is how the library names an egg you cook, so only poached and soft eggs are caught here; raw egg in the method is caught by styleStructureGates
@@ -107,7 +126,7 @@ function paleoReason(f: Food): string | undefined {
   return undefined;
 }
 
-export type BanId = 'animal' | 'flesh' | 'meat-poultry' | 'dairy' | 'egg' | 'gluten' | 'nuts' | 'prenatal' | 'paleo';
+export type BanId = 'animal' | 'flesh' | 'meat-poultry' | 'dairy' | 'egg' | 'gluten' | 'nuts' | 'prenatal' | 'alcohol' | 'mercury' | 'paleo';
 
 /** Each ban answers with the reason a food is out, or undefined when it is fine. */
 export const FOOD_BANS: Record<BanId, (f: Food) => string | undefined> = {
@@ -124,6 +143,8 @@ export const FOOD_BANS: Record<BanId, (f: Food) => string | undefined> = {
   gluten: glutenReason,
   nuts: (f) => (NUT_WORDS.test(lower(f).replace(/without nuts?|water chestnuts?/g, ' ')) ? 'nuts' : undefined),
   prenatal: prenatalReason,
+  alcohol: alcoholReason,
+  mercury: (f) => (MERCURY_FISH.test(lower(f)) ? 'high-mercury fish' : undefined),
   paleo: paleoReason,
 };
 
@@ -163,12 +184,22 @@ export interface StyleGates {
   slotNames?: Partial<Record<MealSlot, string>>;
   /** grade against this person only (female) with this life stage */
   lifeStage?: Exclude<LifeStage, 'none'>;
+  /** grade against an adult woman of this age only (PCOS, menopause) */
+  femalePanelAge?: number;
+  /** no band may start below this (no dieting in pregnancy, no deep deficit while breastfeeding) */
+  minKcal?: number;
+  /** caffeine per day, mg (Health Canada: 300 mg in pregnancy and while breastfeeding) */
+  caffeineMaxMg?: number;
+  /** canned white (albacore) tuna per week, g (Health Canada, pregnancy: 300 g) */
+  albacoreMaxGWeek?: number;
 }
 
 export interface PlanStyleInfo {
   label: string;
   blurb: string;
   gates: StyleGates;
+  /** shown on the plan: what the plan does and doesn't cover, and when to follow a care provider instead */
+  note?: string;
 }
 
 export const FERMENTED_NAMES = /\b(yogh?urt|kefir|kimchi|sauerkraut|miso|tempeh)\b/i;
@@ -221,6 +252,7 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
     label: 'Heart healthy',
     blurb: 'Low sodium and low saturated fat, rich in fish, legumes and olive oil.',
     gates: { sodiumMaxMg: 2000, rules: { satFatMaxPct: 7 } },
+    note: "If you take blood-pressure or heart medication, follow your care team's advice on salt and diet.",
   },
   gut: {
     label: 'Gut health',
@@ -236,9 +268,27 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
   prenatal: {
     label: 'Pregnancy',
     blurb: 'Graded on pregnancy needs, with the foods to avoid left out.',
-    gates: { lifeStage: 'pregnant', bans: ['prenatal'] },
+    gates: { lifeStage: 'pregnant', bans: ['prenatal'], minKcal: 1800, caffeineMaxMg: 300, albacoreMaxGWeek: 300 },
+    note: "Keep taking a prenatal vitamin with 0.4 mg of folic acid, and iodine and iron as your care provider advises. This week leaves out the foods Health Canada asks you to avoid in pregnancy, keeps caffeine under 300 mg a day and uses only low-mercury fish. It isn't a plan for gestational diabetes or another condition: follow your care provider.",
   },
-  postpartum: { label: 'Postpartum and nursing', blurb: 'Graded on breastfeeding needs.', gates: { lifeStage: 'lactating' } },
+  postpartum: {
+    label: 'Postpartum and nursing',
+    blurb: 'Graded on breastfeeding needs, with no alcohol and only low-mercury fish.',
+    gates: { lifeStage: 'lactating', bans: ['alcohol', 'mercury'], minKcal: 1800, caffeineMaxMg: 300 },
+    note: "Breastfeeding raises your need for several nutrients, so keep taking the vitamin your care provider recommends (and vitamin D drops for your baby). No recipe uses alcohol, caffeine stays under 300 mg a day and the fish are low in mercury. Follow your care provider's advice.",
+  },
+  pcos: {
+    label: 'PCOS-friendly',
+    blurb: 'Lower-GI carbs, plenty of fibre and protein, regular meals.',
+    gates: { femalePanelAge: 30, glPer2000Kcal: 70, fibreMinG: 30, rules: { proteinMinPctKcal: 25 } },
+    note: 'No single diet is proven best for PCOS. This week follows what the international guideline supports: lower-GI carbs, plenty of fibre and protein and regular meals. Work with your care team, especially if you take metformin or are trying to conceive.',
+  },
+  menopause: {
+    label: 'Menopause',
+    blurb: 'Graded for women over 50: more calcium, and protein at every meal.',
+    gates: { femalePanelAge: 55, proteinPerMainMealG: 25 },
+    note: 'Built for women over 50: more calcium, protein at every meal and soy foods as food. Vitamin D is hard to get from food, and Health Canada advises adults over 50 to take 400 IU a day. It doesn\'t replace your care provider\'s advice on symptoms or bone health.',
+  },
   'healthy-aging': {
     label: 'Healthy aging',
     blurb: 'At least 25 g of protein at every main meal to protect muscle.',
@@ -282,7 +332,13 @@ export function gradeOptionsFor(style: PlanStyle, kcal: number): { panel: Refere
   const g = PLAN_STYLES[style].gates;
   const rules: Partial<Rules> = { ...g.rules };
   if (g.glPer2000Kcal) rules.glycemicLoadMax = g.glPer2000Kcal; // per 2000 kcal, scaled per day by gradePlan
-  const panel = g.lifeStage ? [{ ...FEMALE, lifeStage: g.lifeStage }] : kcal < 1600 ? [FEMALE] : REFERENCE_PANEL;
+  const panel = g.lifeStage
+    ? [{ ...FEMALE, lifeStage: g.lifeStage }]
+    : g.femalePanelAge
+      ? [{ ...FEMALE, age: g.femalePanelAge }]
+      : kcal < 1600
+        ? [FEMALE]
+        : REFERENCE_PANEL;
   return { panel, rules };
 }
 
@@ -356,7 +412,7 @@ export function styleStructureGates(style: PlanStyle, plan: MealPlan, foods: Foo
         // soft eggs and raw fish live in the method, not the food name
         if (ban === 'prenatal') {
           const text = [m.name, ...(m.steps ?? [])].join(' ').toLowerCase();
-          const hit = text.match(/soft[- ]boiled|runny|raw egg|sunny[- ]side|over[- ]easy|sashimi|ceviche|tartare|carpaccio|undercooked/);
+          const hit = text.match(/soft[- ]boiled|runny|raw egg|sunny[- ]side|over[- ]easy|sashimi|ceviche|tartare|carpaccio|undercooked|medium[- ]rare|\brare\b|pink in the (?:middle|centre|center)/);
           if (hit)
             out.push({
               code: 'prenatal_method',
@@ -367,6 +423,12 @@ export function styleStructureGates(style: PlanStyle, plan: MealPlan, foods: Foo
             });
         }
       }
+  }
+
+  if (g.albacoreMaxGWeek != null) {
+    const g_ = plan.days.reduce((n, d) => n + d.meals.reduce((s, m) => s + m.ingredients.reduce((x, i) => { const f = getFood(foods, i.foodId); return x + (f && /albacore|white tuna|tuna, white/i.test(f.name) ? i.grams : 0); }, 0), 0), 0);
+    if (g_ > g.albacoreMaxGWeek)
+      out.push({ code: 'albacore', message: `${Math.round(g_)} g of canned white (albacore) tuna this week (Health Canada advises at most ${g.albacoreMaxGWeek} g a week in pregnancy).`, fix: 'Use canned light tuna, salmon, sardines or trout instead on some days.' });
   }
 
   for (const slot of g.noSlots ?? []) {
@@ -469,6 +531,11 @@ export function styleNutrientGates(style: PlanStyle, plan: MealPlan, foods: Food
       fail('net_carbs', `net carbs are ${Math.round(carbs - fibre)} g (a ${label} plan allows ${g.netCarbsMaxG} g).`, 'Replace grains, fruit and starch with non-starchy vegetables, eggs, fish, nuts and olive oil.');
     if (g.sodiumMaxMg != null && (t.sodium ?? 0) > g.sodiumMaxMg)
       fail('sodium', `sodium is ${Math.round(t.sodium ?? 0)} mg (a ${label} plan allows ${g.sodiumMaxMg} mg).`, 'Cut salt, soy sauce, cured meat, cheese and canned foods; use herbs, citrus and spices.');
+    if (g.caffeineMaxMg != null) {
+      const caffeine = d.meals.reduce((n, m) => n + m.ingredients.reduce((s, i) => { const f = getFood(foods, i.foodId); return s + (f ? (caffeineMgPer100g(f) * i.grams) / 100 : 0); }, 0), 0);
+      if (caffeine > g.caffeineMaxMg)
+        fail('caffeine', `caffeine is about ${Math.round(caffeine)} mg (a ${label} plan allows ${g.caffeineMaxMg} mg).`, 'Use one cup of coffee at most, or decaf, half-caf or herbal tea from the safe list.');
+    }
     if (g.ironFemaleRda != null && (t.iron ?? 0) < ironRda * g.ironFemaleRda)
       fail('iron', `iron is ${(t.iron ?? 0).toFixed(1)} mg (a ${label} plan needs ${(ironRda * g.ironFemaleRda).toFixed(0)} mg).`, 'Add lentils, beans, tofu, pumpkin seeds, spinach or lean red meat, with a vitamin C food.');
     if (g.proteinPerMainMealG != null)
