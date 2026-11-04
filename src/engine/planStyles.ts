@@ -312,7 +312,7 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
   'healthy-aging': {
     label: 'Healthy aging',
     blurb: 'At least 25 g of protein at every main meal to protect muscle.',
-    gates: { proteinPerMainMealG: 25, panelAge: 65 },
+    gates: { proteinPerMainMealG: 25, panelAge: 65, ironMaxMg: 30 },
     note: "Health Canada advises everyone over 50 to take a daily vitamin D supplement of 400 IU, and B12 is absorbed less well with age, so fortified foods or a supplement help. If you have kidney disease or take medicines that interact with food, check this week with your care team.",
   },
   // lifestyle
@@ -347,7 +347,7 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
     label: 'Iron focus',
     blurb: 'Iron at 100% of the adult woman target every day.',
     gates: { ironFemaleRda: 1 },
-    note: "This week gets its iron from food, well over the daily target, so don't add an iron pill or a multivitamin with iron unless your care provider tells you to. If you've been told your iron is low, follow your care provider's advice on supplements and testing. Men and women past menopause need much less iron, so a regular plan suits them better.",
+    note: "This week gets its iron from food, well over the daily target, so don't add an iron pill or a multivitamin with iron unless your care provider tells you to. If you've been told your iron is low, follow your care provider's advice on supplements and testing. Men and women past menopause need much less iron, so a regular plan suits them better, and if you have haemochromatosis (iron overload) this plan isn't for you.",
   },
   paleo: { label: 'Paleo', blurb: 'No grains, legumes, dairy or added sugar.', gates: { bans: ['paleo'] } },
 };
@@ -568,7 +568,7 @@ export function styleNutrientGates(style: PlanStyle, plan: MealPlan, foods: Food
         fail('caffeine', `caffeine is about ${Math.round(caffeine)} mg (a ${label} plan allows ${g.caffeineMaxMg} mg).`, 'Use one cup of coffee at most, or decaf, half-caf or herbal tea from the safe list.');
     }
     if (g.ironMaxMg != null && (t.iron ?? 0) > g.ironMaxMg)
-      fail('iron_high', `iron from food is ${(t.iron ?? 0).toFixed(1)} mg (a ${label} plan keeps it at or under ${g.ironMaxMg} mg, so food plus a prenatal vitamin with 16 mg of iron stays under the 45 mg upper limit).`, 'Use less iron-fortified cereal or oats that day, or swap a fortified food for its plain version.');
+      fail('iron_high', `iron from food is ${(t.iron ?? 0).toFixed(1)} mg (a ${label} plan keeps it at or under ${g.ironMaxMg} mg${g.lifeStage ? ', so food plus a prenatal vitamin with 16 mg of iron stays under the 45 mg upper limit' : ''}).`, 'Spread the iron-rich foods (red meat, lentils, tofu, fortified cereal, seeds) across the week, or swap one for a lower-iron protein that day.');
     if (g.ironFemaleRda != null && (t.iron ?? 0) < ironRda * g.ironFemaleRda)
       fail('iron', `iron is ${(t.iron ?? 0).toFixed(1)} mg (a ${label} plan needs ${(ironRda * g.ironFemaleRda).toFixed(0)} mg).`, 'Add lentils, beans, tofu, pumpkin seeds, spinach or lean red meat, with a vitamin C food.');
     if (g.proteinPerMainMealG != null)

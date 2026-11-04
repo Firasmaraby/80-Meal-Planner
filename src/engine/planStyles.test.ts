@@ -329,5 +329,6 @@ describe('batch D styles', () => {
     expect(panel.map((p) => [p.sex, p.age])).toEqual([['male', 65], ['female', 65]]);
     expect(gradeOptionsFor('healthy-aging', 1500).panel).toEqual([expect.objectContaining({ sex: 'female', age: 65 })]);
     expect(PLAN_STYLES['healthy-aging'].note).toMatch(/vitamin D/);
+    expect(PLAN_STYLES['healthy-aging'].gates.ironMaxMg).toBe(30);
   });
 });

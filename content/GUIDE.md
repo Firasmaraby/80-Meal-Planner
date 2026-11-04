@@ -583,6 +583,8 @@ Same loop, same safety lines as batch C. Each style's gate and `note` are in src
 ### Healthy ageing 60+ (`healthy-aging`)
 - **Graded for a woman and a man of 65** (the 51-70 DRIs: calcium 1,200 mg for women, B6 1.5 and 1.7 mg, iron 8 mg).
 - **Protein:** at least 25 g at every main meal.
+- **Iron from food at most 30 mg a day.** The need after 50 is only 8 mg, and too much iron is a concern with age; the
+  lab enforces the cap.
 - **B12 and vitamin D:** fortified foods, fish, eggs and dairy. The note advises the 400 IU vitamin D supplement Health
   Canada recommends after 50, and fortified foods or a supplement for B12.
 - **Texture and cooking:** softer textures (stews, braises, flaky fish, eggs, soft-cooked vegetables), easy cooking for
