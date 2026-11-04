@@ -1,0 +1,1758 @@
+{
+  "id": "pcos-med",
+  "name": "PCOS-friendly Mediterranean",
+  "style": "pcos",
+  "cuisine": "Mediterranean",
+  "regions": [
+    "Greece",
+    "Italy",
+    "Spain",
+    "the Levant"
+  ],
+  "summary": "Lentils, chickpeas, barley and bulgur, fish through the week, eggs and Greek yogurt at breakfast, olive oil and lots of vegetables: steady, high-fibre Mediterranean home cooking with protein at every meal.",
+  "howItWorks": "**Protein and fibre at every meal.** Yogurt or eggs at breakfast, then fish, chicken, turkey, pork, lentils or chickpeas at lunch and dinner, with plenty of vegetables beside them. Together they bring **lots of fibre** and keep you full.\n\n**Slower-digesting carbs.** The starch comes from lentils, chickpeas, barley, bulgur, oats and half a wholewheat pita. They digest more slowly than white bread or rice, and each one sits next to protein and vegetables.\n\n**Regular meals.** Three meals and one or two snacks, spaced through the day, so something is always planned and nothing gets skipped. Wash all vegetables, herbs and fruit before cutting, and wash your hands and board after raw meat or fish.\n\n**Fish and olive oil.** Sardines on Monday, salmon on Tuesday, mackerel on Friday and trout on Sunday bring **omega-3 fats**, cooked fresh or from a tin. Olive oil is the main fat, with walnuts, almonds and tahini in the dishes that use them.\n\n**Cook once, eat twice.** The shawarma tray, kofta and souvlaki each make two portions for the next day's lunch, and Saturday's shakshuka and moussaka cover Sunday. Light keeps one snack a day, so the sardine snacks drop away, and uses a little less olive oil with smaller portions of shawarma chicken, labneh and lentil soup.",
+  "signature": [
+    "pcos-med-shawarma-chicken-cauliflower-tray",
+    "pcos-med-salmon-green-lentils-parsley",
+    "pcos-med-moussaka-lentil-beef",
+    "pcos-med-adas-bi-hamod-chard-soup"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2000,
+      "covers": [
+        "1800-2000",
+        "2000-2200"
+      ]
+    },
+    "light": {
+      "kcal": 1600,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "pcos-med-yogurt-apple-walnut-oats",
+      "name": "Thick yogurt with grated apple, walnuts and toasted oats",
+      "inspiredBy": "Inspired by Greek yiaourti me karydia, with a bircher-style grated apple",
+      "about": "Thick Greek yogurt with a grated apple, cinnamon, chopped walnuts and a handful of toasted oats. It is cool, crunchy and ready in minutes. The **yogurt brings plenty of protein**, and the oats, apple skin and nuts add fibre so the fruit digests slowly.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 230,
+          "swap": "dairy_protein",
+          "note": "plain, thick"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 130,
+          "note": "grated with the skin on"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 22,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 25,
+          "swap": "low_gi_grains",
+          "note": "rolled oats"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Toast the oats in a dry pan over medium heat for 3 to 4 minutes, shaking now and then, until they smell nutty. Tip them onto a plate to cool.",
+        "Wash the apple and grate it on the large holes of a box grater, skin and all.",
+        "Spoon the yogurt into a bowl and stir in half the apple and the cinnamon. Top with the rest of the apple.",
+        "Scatter on the walnuts and the toasted oats."
+      ],
+      "prepMin": 6,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Toast a jar of oats on Sunday and breakfast takes two minutes."
+    },
+    {
+      "id": "pcos-med-levant-egg-plate",
+      "name": "Levantine breakfast plate with eggs, labneh and za'atar",
+      "inspiredBy": "Inspired by the Lebanese and Palestinian breakfast table of eggs, labneh, olives and fresh vegetables",
+      "about": "Two hard-boiled eggs with a smear of labneh dusted with za'atar, cucumber, tomato, olives and a small wholewheat pita. It is a proper sit-down breakfast with very little starch. The **eggs and labneh carry protein**, and the fresh vegetables add fibre.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "boiled until firm"
+        },
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 3
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 20,
+          "note": "rinsed"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "small, warmed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "leaves"
+        }
+      ],
+      "steps": [
+        "Lower the eggs into a pot of boiling water and simmer for 10 minutes, until the yolks are completely set. Cool them under cold running water and peel.",
+        "Spread the labneh on a plate, make a shallow dip in the middle and spoon in the olive oil. Dust with the za'atar.",
+        "Wash the cucumber, tomato and mint. Arrange the cucumber, tomato wedges, olives and mint around it.",
+        "Warm the pita in a dry pan or toaster and serve it with the halved eggs."
+      ],
+      "prepMin": 8,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Boil a few eggs on Sunday and keep them in their shells in the fridge for up to 7 days, and peel them just before eating."
+    },
+    {
+      "id": "pcos-med-shakshuka-chickpeas",
+      "name": "Shakshuka with chickpeas and spinach",
+      "inspiredBy": "Inspired by shakshuka from across the Levant and North Africa, with chickpeas for body",
+      "about": "Eggs set in a cumin and paprika tomato and pepper sauce with chickpeas and wilted spinach. It makes two portions of sauce: the eggs go in fresh each morning. The eggs and chickpeas bring **protein and fibre**, and the tomato sauce brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "whole, in shell"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 140
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 60,
+          "swap": "legumes"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.2
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Wash the pepper, spinach and parsley. Warm the olive oil in a wide, deep pan over medium heat. Cook the onion and pepper for about 8 minutes, until soft and just starting to colour.",
+        "Stir in the garlic, cumin and paprika for 30 seconds, until fragrant.",
+        "Add the crushed tomatoes, chickpeas and salt and simmer for 10 minutes, until thick. Stir in the spinach until wilted.",
+        "Set aside half the sauce for tomorrow. Make two wells in the rest and crack in the eggs. Cover and cook gently for 6 to 8 minutes, until the whites and the yolks are set.",
+        "Scatter with parsley. Chill the saved sauce in a shallow container within 1 hour. Tomorrow, reheat it once to 74C (165F), then cook fresh eggs in it for 6 to 8 minutes until set."
+      ],
+      "prepMin": 10,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "Serve with a spoonful of thick yogurt on the side if you like it cool and tangy."
+    },
+    {
+      "id": "pcos-med-sardine-chickpea-parsley-salad",
+      "name": "Sardine, chickpea and parsley salad with lemon and sumac",
+      "inspiredBy": "Inspired by Levantine chickpea salads and the Spanish and Greek habit of tinned fish with beans",
+      "about": "Sardines, chickpeas, spinach, carrot, cucumber, tomato and a big handful of parsley under a sharp lemon, olive oil and sumac dressing. It is cool, crunchy and filling without any bread. The **sardines bring omega-3 fats** and the chickpeas bring fibre.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 100,
+          "swap": "fatty_fish",
+          "note": "drained"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "baby spinach"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "grated"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 85,
+          "swap": "legumes"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 120,
+          "note": "diced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 120,
+          "note": "halved"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 25,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 20,
+          "note": "roughly chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 25,
+          "note": "from a lemon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Whisk the lemon juice, olive oil, salt, sumac and a pinch of oregano.",
+        "Wash the spinach, carrot, cucumber, tomatoes and parsley. Toss the chickpeas, spinach, carrot, cucumber, tomatoes, red onion and parsley in a large bowl.",
+        "Break the sardines into chunks over the top and drizzle with the dressing.",
+        "Toss gently at the table."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Eat the salad within a day, and pack the dressing separately if you take it to work."
+    },
+    {
+      "id": "pcos-med-shawarma-chicken-cauliflower-tray",
+      "name": "Chicken shawarma tray with cauliflower, chickpeas and tahini yogurt",
+      "inspiredBy": "Inspired by Levantine chicken shawarma, roasted on a tray instead of a spit",
+      "about": "Chicken thighs rubbed with cumin, coriander, allspice and paprika, roasted with cauliflower, carrot, onion and chickpeas until the edges catch. It is served with a cool tahini and lemon yogurt. It makes two portions, and the chickpeas and cauliflower give you **plenty of fibre alongside the protein**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "trimmed of fat"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 150,
+          "note": "in small florets"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 80,
+          "swap": "legumes"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 70,
+          "swap": "dairy_protein",
+          "note": "plain"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "note": "from a lemon"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220C (425F). Mix the cumin, coriander, allspice, paprika, garlic, salt and half the olive oil, and rub it all over the chicken. Cover the chicken and leave it in the fridge for 15 minutes. Wash your hands, the board and the spoon before touching the vegetables.",
+        "Wash the cauliflower, carrot and parsley. Toss the cauliflower, carrot, chickpeas and onion with the rest of the oil on a large tray and push them to the sides.",
+        "Lay the chicken in the middle and roast for 25 to 30 minutes, turning the vegetables once, until the cauliflower is browned and the chicken reads 74C (165F) in the thickest piece.",
+        "Stir the yogurt, tahini and lemon juice with a spoon of water until smooth.",
+        "Slice the chicken, spoon over the sauce and scatter with parsley. Spread the second portion of chicken and vegetables in a shallow container and keep its sauce in a separate small jar. Refrigerate both within 1 hour, reheat the chicken and vegetables once to 74C (165F) all the way through, and spoon the cold sauce on top."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Keep the second portion up to 3 days in the fridge. Roast a second tray of cauliflower alongside if you like it as a side; it keeps 3 to 4 days in the fridge."
+    },
+    {
+      "id": "pcos-med-salmon-green-lentils-parsley",
+      "name": "Roasted salmon with warm lentils, tomato and parsley",
+      "inspiredBy": "Inspired by Italian lenticchie and the Greek love of lentils with fish",
+      "about": "A salmon fillet roasted over a tray of tomatoes, with warm lentils dressed in olive oil, lemon and plenty of parsley. It is a simple weeknight plate with a bright finish. The **salmon brings omega-3 fats**, and the lentils bring fibre and protein.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 125,
+          "swap": "fatty_fish",
+          "note": "skinless fillet"
+        },
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 50,
+          "swap": "legumes",
+          "note": "dry green or brown lentils"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 150,
+          "note": "halved"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "finely diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "finely diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "note": "from a lemon"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12,
+          "note": "chopped"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the tomatoes, carrot, spinach and parsley. Rinse the lentils and simmer them with the bay leaf in plenty of water for 20 to 25 minutes, until tender but not mushy. Drain and discard the bay leaf.",
+        "While they cook, heat the oven to 200C (400F). Spread the tomatoes on a tray with half the oil and a pinch of salt and roast for 10 minutes.",
+        "Nestle the salmon among the tomatoes, season, and roast for 10 to 12 minutes, until the fish flakes easily and is opaque all the way through (70C / 158F in the thickest part).",
+        "Soften the onion, carrot and garlic in the rest of the oil for 6 minutes. Stir in the lentils and spinach until the spinach wilts, then add the lemon juice, parsley and the remaining salt.",
+        "Serve the lentils topped with the salmon and the roasted tomatoes."
+      ],
+      "prepMin": 12,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook a double batch of lentils: cool them in a shallow tray, refrigerate within 1 hour, keep 3 to 4 days and reheat to 74C (165F)."
+    },
+    {
+      "id": "pcos-med-adas-bi-hamod-chard-soup",
+      "name": "Lemony lentil and chard soup with yogurt",
+      "inspiredBy": "Inspired by Lebanese adas bi hamod, the lemony lentil and chard soup",
+      "about": "A thick, sharp lentil soup with chard, garlic and plenty of lemon, finished with a spoon of thick yogurt. The **lentils and chard bring fibre and folate**.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 100,
+          "swap": "legumes",
+          "note": "dry green or brown lentils"
+        },
+        {
+          "food": "swiss-chard-raw-f646e5",
+          "g": 130,
+          "swap": "leafy_greens",
+          "note": "stems and leaves, chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.2
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 30,
+          "note": "from a lemon"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 100,
+          "swap": "dairy_protein",
+          "note": "plain, thick"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Wash the chard and parsley. Soften the onion in the olive oil in a pot for 6 minutes. Stir in the garlic and cumin for 30 seconds.",
+        "Add the rinsed lentils and about 5 times their volume of water. Bring to a boil, then simmer for 25 minutes, until the lentils fall apart.",
+        "Add the chard and salt and cook for another 8 minutes, until the stems are tender.",
+        "Stir in the lemon juice and taste; it should be quite sharp.",
+        "Ladle into a bowl and top with the yogurt and parsley."
+      ],
+      "prepMin": 10,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "freezer-friendly"
+      ],
+      "tip": "Double the pot and freeze portions: cool within 1 hour before freezing. Thaw in the fridge, use within 2 days and reheat to 74C (165F). It keeps 3 to 4 days in the fridge."
+    },
+    {
+      "id": "pcos-med-turkey-kofta-bulgur-tabbouleh",
+      "name": "Turkey and parsley kofta with bulgur tabbouleh",
+      "inspiredBy": "Inspired by Levantine kofta kebabs and tabbouleh, with more herbs than grain",
+      "about": "Spiced turkey and parsley kofta, browned in a pan, with a green tabbouleh that is mostly parsley, tomato, cucumber and mint with a little bulgur and chickpeas. A cool yogurt sauce ties it together. It makes two portions, and the **lean turkey keeps it high in protein**.",
+      "ingredients": [
+        {
+          "food": "ground-turkey-fat-free-raw-604508",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "raw, ground"
+        },
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 25,
+          "swap": "low_gi_grains",
+          "note": "fine or medium bulgur, dry"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 60,
+          "swap": "legumes"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 6,
+          "note": "finely chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 150,
+          "note": "finely diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "finely diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "grated for the kofta"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 14,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 30,
+          "note": "from a lemon"
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 150,
+          "swap": "dairy_protein",
+          "note": "plain"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Pour boiling water over the bulgur in a bowl, just enough to cover, and leave it for 15 minutes until tender. Drain well and squeeze out the excess water. Soaked bulgur is a cooked grain, so chill any portion you save within 1 hour.",
+        "Wash the parsley, mint, tomato and cucumber. Mix the turkey with the grated onion (do not squeeze it; its juice keeps lean turkey moist), a third of the parsley, the allspice, cumin and half the salt. Shape into 8 small oval kofta, then wash your hands.",
+        "Brown the kofta in half the oil in a nonstick pan over medium-high heat for 8 to 10 minutes, turning, until browned. Stop as soon as a thermometer in a kofta reads 74C (165F).",
+        "Toss the bulgur with the chickpeas, tomato, cucumber, the rest of the parsley, the mint, lemon juice, remaining oil and salt.",
+        "Stir a pinch of salt and some lemon into the yogurt and serve it alongside. Pack the kofta for the second portion in a shallow container and the tabbouleh and yogurt in separate ones, and refrigerate them all within 1 hour. Tomorrow, reheat only the kofta, once, to 74C (165F) all the way through, and eat the tabbouleh and yogurt cold."
+      ],
+      "prepMin": 25,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Make the kofta mix the night before, keep it covered in the fridge and cook it the next day."
+    },
+    {
+      "id": "pcos-med-pork-souvlaki-barley-salad",
+      "name": "Pork souvlaki with barley, tomato and cucumber salad",
+      "inspiredBy": "Inspired by Greek pork souvlaki, served with a barley salad in place of pita",
+      "about": "Lemony, oregano-rubbed pork tenderloin skewers with a chunky barley, tomato and cucumber salad and a yogurt and garlic sauce. It is the taverna plate, with barley instead of fries. The **barley and vegetables bring fibre**, and the lean pork keeps the saturated fat low. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 135,
+          "swap": "lean_protein",
+          "note": "trimmed, in cubes"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 25,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 30,
+          "note": "from a lemon"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1.2
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 130,
+          "swap": "dairy_protein",
+          "note": "plain, thick"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Cover the pearl barley with plenty of water and simmer for 25 to 30 minutes (hulled barley takes about 45), until tender but still chewy. Drain, spread it on a tray to cool, then refrigerate within 1 hour if you are not using it right away.",
+        "Toss the pork with half the oil, half the lemon juice, the oregano, half the garlic and a pinch of salt. Cover and leave it at least 20 minutes in the fridge, or overnight. Throw away any leftover marinade and never brush it on cooked pork. Wash your hands and the board.",
+        "Thread the pork onto skewers and grill or pan-sear over medium-high heat for 10 to 12 minutes, turning, until browned and the pork reads 71C (160F).",
+        "Wash the tomato, cucumber and parsley. Toss the barley with the tomato, cucumber, red onion, parsley, the remaining oil, lemon and salt.",
+        "Stir the rest of the garlic and a pinch of salt into the yogurt. Serve the skewers on the salad with the sauce. Spread the second portion in a shallow container, refrigerate it within 1 hour, and reheat the pork once to 74C (165F) all the way through."
+      ],
+      "prepMin": 25,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Marinate the pork the night before and dinner is half done. The second portion keeps up to 3 days."
+    },
+    {
+      "id": "pcos-med-mackerel-peppers-white-beans",
+      "name": "Roasted mackerel with peppers and white beans",
+      "inspiredBy": "Inspired by Spanish pisto and the Greek and Turkish habit of grilled mackerel with a sharp salad",
+      "about": "A mackerel fillet with sweet roasted peppers, tomato, and white beans warmed in olive oil and lemon. The fish is rich and the beans are mellow, so it all balances. **Mackerel is rich in omega-3**, and the beans bring fibre.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 115,
+          "swap": "fatty_fish",
+          "note": "fillet"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 110,
+          "swap": "legumes"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 120,
+          "note": "cut in strips"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100,
+          "note": "halved"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "note": "from a lemon"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        }
+      ],
+      "steps": [
+        "Wash the pepper, tomatoes, spinach and parsley. Heat the oven to 220C (425F). Toss the pepper strips, onion and tomatoes with half the oil and a pinch of salt on a tray and roast for 15 minutes.",
+        "Rub the mackerel with a little of the remaining oil, the paprika and a pinch of salt and lay it on the tray. Roast 8 to 10 minutes, until the flesh is opaque and flakes easily (70C / 158F in the thickest part).",
+        "Meanwhile warm the garlic in the rest of the oil in a pan for 1 minute. Add the beans and spinach with a splash of water and cook for 3 minutes, until the spinach is wilted.",
+        "Stir the lemon juice and parsley into the beans.",
+        "Serve the fish on the beans with the roasted vegetables."
+      ],
+      "prepMin": 12,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Sardines work just as well if mackerel is hard to find. Use Atlantic mackerel; king mackerel is high in mercury."
+    },
+    {
+      "id": "pcos-med-mujaddara-bulgur-yogurt",
+      "name": "Lentils and bulgur with sweet onions and cucumber yogurt",
+      "inspiredBy": "Inspired by Lebanese mujaddara, with bulgur and more lentils than rice",
+      "about": "Brown lentils and bulgur cooked with cumin and topped with slow-browned onions, with a cold cucumber yogurt on the side. It is humble and deeply savoury. The **lentils and yogurt give it protein and fibre**, and the onions give it the sweetness.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 65,
+          "swap": "legumes",
+          "note": "dry green or brown lentils"
+        },
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "coarse bulgur, dry"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 120,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 180,
+          "swap": "dairy_protein",
+          "note": "plain, thick"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Wash the cucumber and spinach. Cook the onions in two thirds of the oil (keep the rest for the yogurt) over medium-low heat for 25 to 30 minutes, stirring now and then, until deep golden brown.",
+        "Simmer the rinsed lentils in about 4 times their volume of water for 15 minutes. Stir in the cumin, half the onions, the bulgur and salt, cover and cook on low for 15 minutes, until the water is absorbed. If it is still wet, cook uncovered for a few minutes more.",
+        "Stir the spinach in at the end until wilted and leave to steam for 5 minutes. Cool any leftover lentils and bulgur within 1 hour.",
+        "Mix the yogurt, grated cucumber, garlic, mint and the rest of the oil.",
+        "Pile the lentils on a plate, top with the rest of the onions and serve with the yogurt."
+      ],
+      "prepMin": 10,
+      "cookMin": 50,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "freezer-friendly"
+      ],
+      "tip": "Brown a double batch of onions; they keep up to 4 days in the fridge. A cooked portion of lentils and bulgur freezes well: thaw it in the fridge, use within 2 days and reheat to 74C (165F)."
+    },
+    {
+      "id": "pcos-med-moussaka-lentil-beef",
+      "name": "Lighter moussaka with lentils and lean beef",
+      "inspiredBy": "Inspired by Greek moussaka, with roasted eggplant, a lentil and beef sauce and a yogurt topping",
+      "about": "Layers of roasted eggplant, a cinnamon-scented tomato sauce of lean beef and lentils, and a golden yogurt and egg topping. It is the Sunday-style bake, with a yogurt and egg topping in place of the béchamel. It makes two portions, and the **lentils stretch the beef** and bring fibre.",
+      "ingredients": [
+        {
+          "food": "eggplant-raw-b8b8c1",
+          "g": 200,
+          "note": "sliced lengthwise"
+        },
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "lean ground beef"
+        },
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 30,
+          "swap": "legumes",
+          "note": "dry green or brown lentils"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "finely diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 120
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.8
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 90,
+          "swap": "dairy_protein",
+          "note": "plain, thick"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 25,
+          "note": "beaten"
+        },
+        {
+          "food": "nutmeg-ground-15c547",
+          "g": 0.2
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Wash the eggplant and parsley. Heat the oven to 220C (425F). Brush the eggplant slices with half the oil, lay them on trays and roast for 20 minutes, turning once, until soft and golden.",
+        "Simmer the rinsed lentils in water for 20 minutes, until tender. Drain.",
+        "Brown the onion in the rest of the oil for 6 minutes. Add the beef and cook for 8 minutes, breaking it up, until no pink remains (71C / 160F). Stir in the garlic, cinnamon, oregano, crushed tomatoes, lentils and salt and simmer for 12 minutes, until thick.",
+        "Layer half the eggplant, the sauce, and the rest of the eggplant in a baking dish. Beat the yogurt with the egg, nutmeg and a pinch of salt and spread it on top.",
+        "Bake at 190C (375F) for 30 minutes, until the topping is set and golden and the centre reads 74C (165F). Rest for 10 minutes and scatter with parsley. Spread the second portion in a shallow container, refrigerate it within 1 hour, and reheat it once to 74C (165F) all the way through."
+      ],
+      "prepMin": 30,
+      "cookMin": 65,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "To make ahead, cool the sauce within 1 hour, assemble cold, refrigerate and bake it within a day. Bake from the fridge, adding about 10 minutes, until the centre reads 74C (165F). The second portion keeps up to 3 days."
+    },
+    {
+      "id": "pcos-med-trout-fennel-white-beans",
+      "name": "Roasted trout with fennel, olives and white beans",
+      "inspiredBy": "Inspired by the Italian and Greek way with baked fish, fennel and olives",
+      "about": "A trout fillet roasted over sliced fennel and tomatoes, with white beans and olives. It is fresh and savoury. **Trout carries omega-3 and vitamin D**, and the beans and fennel bring fibre.",
+      "ingredients": [
+        {
+          "food": "rainbow-trout-farmed-raw-0cc800",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "fillet"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 130,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 130,
+          "swap": "legumes"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 120,
+          "note": "halved"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 20,
+          "note": "pitted and rinsed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "note": "from a lemon"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Wash the fennel, tomatoes and parsley. Heat the oven to 200C (400F). Toss the fennel, tomatoes, garlic, thyme and half the oil on a tray and roast for 15 minutes, until the fennel softens.",
+        "Stir in the white beans and olives and move the vegetables to the edges.",
+        "Season the trout with salt and the rest of the oil and lay it in the middle. Roast for 10 to 12 minutes, until the flesh flakes easily and is opaque all the way through (70C / 158F in the thickest part).",
+        "Squeeze over the lemon juice and scatter with parsley."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Use salmon if trout is not available."
+    },
+    {
+      "id": "pcos-med-hummus-vegetable-sticks",
+      "name": "Lemony hummus with carrot, cucumber and pepper sticks",
+      "inspiredBy": "Inspired by Levantine hummus bi tahini",
+      "about": "Smooth lemony hummus made from chickpeas and tahini, with crunchy raw vegetables. The **chickpeas and tahini bring protein**, so it holds you between meals.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 80,
+          "swap": "legumes"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "note": "from a lemon"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1.5,
+          "note": "a small piece"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "in sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "in sticks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "in strips"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Blend the chickpeas, tahini, lemon juice, garlic, cumin, salt and 2 tablespoons of cold water until very smooth, scraping down the sides.",
+        "Wash and cut the carrot, cucumber and pepper into sticks.",
+        "Serve the hummus in a bowl with the vegetables for dipping."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "pcos-med-pear-walnuts",
+      "name": "Pear with a handful of walnuts",
+      "about": "A crisp pear with skin on and a small handful of walnuts. The **walnuts add omega-3 fats**, so the fruit does not stand alone.",
+      "ingredients": [
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 130,
+          "note": "washed, with skin"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "halves, unsalted"
+        }
+      ],
+      "steps": [
+        "Wash the pear and slice it.",
+        "Serve it with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "pcos-med-muhammara-vegetable-dippers",
+      "name": "Roasted red pepper and walnut dip with fennel and carrot",
+      "inspiredBy": "Inspired by Syrian muhammara, with less oil and more pepper",
+      "about": "A sweet-sharp dip of roasted red pepper, walnuts and pomegranate molasses, with a few chickpeas blended in where the classic uses breadcrumbs, served with raw vegetables. The **walnuts add omega-3** and the vegetables add crunch and fibre.",
+      "ingredients": [
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 100,
+          "note": "roasted, skinned"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "pomegranate-molasses-008fae",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.3
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 90,
+          "note": "in sticks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "in sticks"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 50,
+          "swap": "legumes"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6,
+          "note": "from a lemon"
+        }
+      ],
+      "steps": [
+        "Roast the pepper under a hot broiler, turning, until blackened all over, then cover it for 5 minutes, peel and seed it.",
+        "Blend the pepper, walnuts, chickpeas, pomegranate molasses, oil, lemon juice and cumin to a thick, slightly textured dip.",
+        "Wash the fennel and carrot, cut them into sticks and serve with the dip."
+      ],
+      "prepMin": 10,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "A jar of roasted peppers works in a pinch; rinse them first."
+    },
+    {
+      "id": "pcos-med-labneh-zaatar-cucumber",
+      "name": "Labneh with za'atar, cucumber and olives",
+      "inspiredBy": "Inspired by the Levantine labneh plate",
+      "about": "A spoon of thick labneh dusted with za'atar and drizzled with olive oil, with cucumber and a few olives. The **labneh brings protein and calcium** without much starch.",
+      "ingredients": [
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 2
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 120,
+          "note": "sliced"
+        },
+        {
+          "food": "kalamata-olives-brine-cured-ae9525",
+          "g": 12,
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "sliced"
+        }
+      ],
+      "steps": [
+        "Spread the labneh on a small plate and make a dip in the middle.",
+        "Drizzle in the olive oil and dust with za'atar.",
+        "Serve with the cucumber, tomato and olives."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "pcos-med-orange-walnuts",
+      "name": "Orange with walnuts",
+      "about": "A juicy orange and a small handful of walnuts. The **walnuts add fat and fibre**, which slows the fruit down.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "peeled"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "halves, unsalted"
+        }
+      ],
+      "steps": [
+        "Peel the orange and break it into segments.",
+        "Serve with the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "pcos-med-pear-nuts",
+      "name": "Pear with almonds and walnuts",
+      "about": "A crisp pear with the skin on, a few almonds and a few walnuts. The **nuts bring vitamin E and omega-3**, so the fruit does not stand alone.",
+      "ingredients": [
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 130,
+          "note": "washed, with skin"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "whole, unsalted"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "halves, unsalted"
+        }
+      ],
+      "steps": [
+        "Wash the pear and slice it.",
+        "Serve it with the almonds and walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "pcos-med-yogurt-cinnamon-almonds",
+      "name": "Thick yogurt with cinnamon and toasted almonds",
+      "about": "Cool Greek yogurt with cinnamon and a few toasted almonds. The **yogurt brings protein and calcium**, and the almonds add crunch and vitamin E.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 170,
+          "swap": "dairy_protein",
+          "note": "plain, thick"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "toasted, roughly chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan for 3 minutes until fragrant, then chop roughly.",
+        "Spoon the yogurt into a bowl and dust with cinnamon.",
+        "Scatter the almonds on top."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "pcos-med-sardines-tomato-lemon",
+      "name": "Sardines on tomato with lemon and a little pita",
+      "inspiredBy": "Inspired by the Spanish and Greek bar snack of tinned sardines with tomato",
+      "about": "Tinned sardines with ripe tomato, parsley and a squeeze of lemon, with a small piece of wholewheat pita. The **sardines bring omega-3 fats and calcium** from the soft bones.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 60,
+          "swap": "fatty_fish",
+          "note": "drained"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 110,
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "from a lemon"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 20,
+          "swap": "low_gi_grains",
+          "note": "small piece, toasted"
+        }
+      ],
+      "steps": [
+        "Toast the pita and tear it into pieces.",
+        "Wash and slice the tomato and lay the slices on a plate and top with the sardines, broken into chunks.",
+        "Squeeze over the lemon juice and scatter with parsley, with the pita alongside."
+      ],
+      "prepMin": 5,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Keep the rest of the tin in a lidded container in the fridge and use it within 2 days."
+    },
+    {
+      "id": "pcos-med-lupini-lemon",
+      "name": "Lupini beans with lemon, parsley and toasted almonds",
+      "inspiredBy": "Inspired by the Italian and Spanish bar snack of lupini beans",
+      "about": "Lupini beans tossed with lemon, olive oil and parsley, with a few toasted almonds for crunch. They are a savoury, high-protein bar snack. The **lupini beans carry protein and fibre**, and the almonds add vitamin E.",
+      "ingredients": [
+        {
+          "food": "lupin-boiled-748dba",
+          "g": 100,
+          "swap": "legumes",
+          "note": "jarred, ready to eat, rinsed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted, roughly chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "from a lemon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Rinse the lupini beans well and pat them dry.",
+        "Toast the almonds in a dry pan for 3 minutes until fragrant, then chop roughly.",
+        "Toss the lupini with the lemon juice, olive oil, parsley and almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Use jarred lupini only, never dried. Lupin is an allergen and can cross-react with peanut, so skip it if you are allergic to peanuts. Refrigerate an opened jar."
+    },
+    {
+      "id": "pcos-med-orange-almonds",
+      "name": "Orange with almonds",
+      "about": "A juicy orange and a small handful of almonds. The **almonds add vitamin E and fibre**, and the orange adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "peeled"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "whole, unsalted"
+        }
+      ],
+      "steps": [
+        "Peel the orange and break it into segments.",
+        "Serve with the almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pcos-med-yogurt-apple-walnut-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pcos-med-sardine-chickpea-parsley-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pcos-med-shawarma-chicken-cauliflower-tray"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pcos-med-lupini-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pcos-med-pear-nuts"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pcos-med-levant-egg-plate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pcos-med-shawarma-chicken-cauliflower-tray",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pcos-med-salmon-green-lentils-parsley"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pcos-med-yogurt-cinnamon-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pcos-med-muhammara-vegetable-dippers"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pcos-med-yogurt-apple-walnut-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pcos-med-adas-bi-hamod-chard-soup"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pcos-med-turkey-kofta-bulgur-tabbouleh"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pcos-med-orange-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pcos-med-sardines-tomato-lemon"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pcos-med-levant-egg-plate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pcos-med-turkey-kofta-bulgur-tabbouleh",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pcos-med-pork-souvlaki-barley-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pcos-med-pear-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pcos-med-sardines-tomato-lemon"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pcos-med-yogurt-apple-walnut-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pcos-med-pork-souvlaki-barley-salad",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pcos-med-mackerel-peppers-white-beans"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pcos-med-hummus-vegetable-sticks"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pcos-med-orange-almonds"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pcos-med-shakshuka-chickpeas"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pcos-med-mujaddara-bulgur-yogurt"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pcos-med-moussaka-lentil-beef"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pcos-med-orange-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pcos-med-labneh-zaatar-cucumber"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pcos-med-shakshuka-chickpeas",
+          "leftover": true
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pcos-med-moussaka-lentil-beef",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pcos-med-trout-fennel-white-beans"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pcos-med-yogurt-cinnamon-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pcos-med-hummus-vegetable-sticks"
+        }
+      ]
+    }
+  ]
+}
