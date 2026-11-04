@@ -1,0 +1,1725 @@
+{
+  "id": "veg-global",
+  "name": "Vegetarian Global Kitchen",
+  "style": "vegetarian",
+  "cuisine": "Global",
+  "regions": [
+    "Mexico",
+    "Japan",
+    "Italy",
+    "India",
+    "Ethiopia",
+    "the Levant"
+  ],
+  "summary": "A week of meatless food from around the world: Mexican enchiladas, a Japanese rice bowl, Italian minestrone, Indian dal, Ethiopian misir wat, a Levantine labneh plate and a British lentil pie. Beans, lentils and tofu lead, with eggs, yogurt and cheese in support.",
+  "howItWorks": "**Protein from beans, lentils and tofu first.** Black beans, white beans, chickpeas, red, green and toor lentils and calcium-set tofu carry every lunch and dinner. Eggs, yogurt, labneh and a little cheese support them, and every day lands at a fifth or more of its calories from protein.\n\n**B12 and choline from eggs and dairy.** Plants don't make **B12**, so it comes from the eggs, milk, yogurt, labneh and cheese that turn up every day. Eggs at breakfast from Tuesday to Friday, and the tofu, bring choline too. Calcium comes from yogurt, labneh, milk, calcium-set tofu, almonds and sesame.\n\n**Iron with vitamin C.** Lentils, beans, chickpeas, tofu and greens carry the **iron**, and each dish has lemon, lime or tomato beside it to help you absorb it. Tea and coffee with those meals block some of it, so have them between meals.\n\n**Omega-3 from walnuts and flax.** With no fish, the omega-3 is plant ALA. Ground flax goes in the porridge and the cardamom yogurt, and walnuts go in the porridge, the shepherd's pie and the apple and cheddar snack. Olive oil stays the main fat.\n\n**Cook once, eat twice.** Enchiladas, misir wat, minestrone, dal, the cauliflower plate and the shepherd's pie each make two portions for the next day's lunch. At Light, the second snack goes from Monday to Thursday, and the oil, cheese, labneh, nuts, rice, bread and lentils get smaller. The beans, tofu, eggs and vegetables stay.",
+  "signature": [
+    "veg-global-black-bean-spinach-enchiladas",
+    "veg-global-misir-wat-gomen",
+    "veg-global-toor-dal-tadka-spinach",
+    "veg-global-lentil-walnut-shepherds-pie"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-global-chilled-tofu-ginger-soy"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-global-white-bean-toast"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-global-apple-oat-yogurt-cup"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-global-labneh-zaatar-pita-wedges"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-global-apple-oat-yogurt-cup"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-global-mango-oat-yogurt-cup"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "veg-global-mango-oat-yogurt-cup"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "veg-global-apple-walnut-porridge",
+      "name": "Apple-cinnamon porridge with toasted walnuts and yogurt",
+      "inspiredBy": "Scottish porridge, with apple and cinnamon",
+      "about": "Rolled oats simmered in milk with grated apple and cinnamon, finished with a little thick yogurt and a few crunchy toasted walnuts. The oats, milk and yogurt carry **protein and fibre**, and the walnuts and ground flax bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 200
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 90,
+          "note": "grated"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted, chopped"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 4
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 100,
+          "note": "thick, for spooning on top"
+        }
+      ],
+      "steps": [
+        "Stir the oats, milk, grated apple, ground flax, cinnamon and a pinch of salt in a small pot over medium heat.",
+        "Simmer, stirring often, until the porridge is creamy and the apple has melted in, about 6 minutes.",
+        "While it cooks, toast the walnuts in a dry pan until they smell nutty, about 3 minutes, then chop them.",
+        "Pour the porridge into a bowl, drizzle with the honey, spoon the yogurt on top and scatter over the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Toast a jarful of walnuts on Sunday and they're ready all week. The apple and cinnamon can also go in the night before as overnight oats."
+    },
+    {
+      "id": "veg-global-huevos-a-la-mexicana",
+      "name": "Huevos a la mexicana with black beans and warm tortillas",
+      "inspiredBy": "Mexican huevos a la mexicana",
+      "about": "Soft scrambled eggs cooked with tomato, onion, chili and browned mushrooms, served with black beans and warm corn tortillas. The eggs and beans together give you **protein, choline and B12 to start the day**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 30,
+          "note": "finely diced"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1.5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 110,
+          "swap": "legumes"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 50,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Warm the oil in a non-stick pan over medium heat. Cook the mushrooms until browned, about 4 minutes, then add the onion with the chili powder and cook until soft, 3 minutes more.",
+        "Add the tomato and a pinch of the salt and cook until the juices have thickened, about 4 minutes.",
+        "Pour in the eggs and stir slowly with a spatula until just set and still glossy, about 2 minutes.",
+        "Warm the beans in a small pot with the cumin and the rest of the salt, mashing a few. Heat the tortillas in a dry pan or directly over a flame.",
+        "Serve the eggs with the beans and tortillas, finished with the cilantro and a squeeze of lime."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "kid-friendly"
+      ],
+      "tip": "Huevos a la mexicana takes its name from the red tomato, white onion and green chili, so add a chopped fresh jalapeño or serrano with the onion if you have one."
+    },
+    {
+      "id": "veg-global-smoky-roasted-chickpeas",
+      "name": "Smoky roasted chickpeas with lemon",
+      "about": "Crunchy chickpeas roasted until crisp with smoked paprika and finished with lemon. A **protein and fibre** snack you can eat by the handful.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 120,
+          "swap": "legumes",
+          "note": "patted very dry"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the dry chickpeas with the oil, paprika and salt on a tray.",
+        "Roast, shaking the tray once, until crisp and deep golden, about 25 minutes.",
+        "Squeeze the lemon over them and let them cool a few minutes; they crisp as they cool."
+      ],
+      "prepMin": 3,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make a double batch. They stay crisp in a jar for 2 days."
+    },
+    {
+      "id": "veg-global-apple-cheddar-walnuts",
+      "name": "Apple with sharp cheddar and walnuts",
+      "about": "Crisp apple slices with a few slices of sharp cheddar and a few walnuts, a British ploughman-style plate. The cheese brings **protein and calcium** and the walnuts bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 130,
+          "note": "sliced"
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 25,
+          "swap": "dairy_protein",
+          "note": "sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Slice the apple and cheddar.",
+        "Arrange them on a plate with the walnuts."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "veg-global-white-bean-toast",
+      "name": "White bean toast with za'atar and lemon",
+      "about": "Whole-wheat toast piled with garlicky mashed white beans, olive oil, parsley and a good pinch of za'atar. Fibre, iron and **plant protein** in a few minutes.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 50,
+          "note": "toasted"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 100,
+          "swap": "legumes"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 1.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Mash the beans with the garlic, half the oil, the lemon juice and a grind of pepper.",
+        "Pile onto the toast, sprinkle with the za'atar and finish with the parsley and the rest of the oil."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "veg-global-beans-on-toast-mushrooms",
+      "name": "Creamy garlic white beans on toast with poached eggs and mushrooms",
+      "inspiredBy": "British beans on toast with poached eggs, made from scratch",
+      "about": "Tender white beans simmered with garlic, thyme and a little smoked paprika, spooned onto thick toast with garlicky mushrooms and soft poached eggs. It is a proper **protein-rich** breakfast: beans, eggs and whole-wheat bread together bring fibre, iron, choline and B12.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 130,
+          "swap": "legumes"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 25,
+          "note": "finely diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.6
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.8
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 3
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 50,
+          "note": "thick slices, toasted"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "very fresh"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm half the oil in a small pot and soften the onion with half the garlic and the thyme until sweet, about 4 minutes. Stir in the smoked paprika for 20 seconds.",
+        "Add the beans, soy sauce and a good splash of water. Simmer, mashing a few beans against the side, until creamy and thick, about 8 minutes.",
+        "Meanwhile, cook the mushrooms in the rest of the oil over high heat until golden, about 5 minutes. Add the remaining garlic for the last minute and finish with the parsley and half the lemon juice.",
+        "Poach the eggs in barely simmering water until the white is set and the yolk still runny, about 3 minutes. Toast the bread.",
+        "Spoon the beans over the toast, top with the mushrooms and the eggs, and finish with the rest of the lemon juice and a grind of pepper."
+      ],
+      "prepMin": 8,
+      "cookMin": 16,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook the beans on Sunday night. They keep 4 days in the fridge, so on the day you only warm them, poach the eggs and toast the bread."
+    },
+    {
+      "id": "veg-global-tamago-tofu-rice-bowl",
+      "name": "Tamago and tofu rice bowl with sesame greens",
+      "inspiredBy": "Japanese tamago-yaki and tofu donburi",
+      "about": "Brown rice topped with a rolled soy-honey omelette, seared ginger tofu and mushrooms, sesame spinach and quick lemon-pickled carrot and onion. **Eggs and tofu together** make a high-protein bowl, and the calcium-set tofu brings calcium too.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 9
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "firm-tofu-coagulated-with-calcium-sulfate-raw-d34852",
+          "g": 200,
+          "note": "pressed dry, cut in slabs"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 6,
+          "note": "toasted"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "cut in matchsticks"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 20,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        }
+      ],
+      "steps": [
+        "Rinse the rice, then simmer it covered in plenty of water until tender, about 35 minutes, and drain. A rice cooker does this without watching.",
+        "Toss the carrot and onion with the lemon juice and a pinch of the sesame seeds. Let them sit while you cook.",
+        "Whisk the eggs with half the soy sauce and the honey. Warm a little oil in a small non-stick pan over medium-low heat, pour in a thin layer of egg, and roll it up as it sets. Push it to one side, add a little more egg and roll again until all the egg is used. Slice the roll.",
+        "Sear the tofu in the rest of the oil over medium-high heat until golden on both sides, about 6 minutes. Add the mushrooms and cook until browned, 4 minutes more, then the ginger and the remaining soy sauce for the last minute.",
+        "Wilt the spinach in a splash of water, squeeze it dry and toss with the sesame oil and half the remaining sesame seeds.",
+        "Pile the rice in a bowl and arrange the tamago, tofu, greens and pickles on top. Finish with the last sesame seeds."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook the rice on Sunday; it keeps 4 days in the fridge. Then the bowl comes together in about 15 minutes."
+    },
+    {
+      "id": "veg-global-black-bean-spinach-enchiladas",
+      "name": "Black bean, mushroom and spinach enchiladas with red chili sauce",
+      "inspiredBy": "Mexican enchiladas rojas, with black beans",
+      "about": "Corn tortillas rolled around smoky black beans, browned mushrooms and wilted spinach, baked under a quick red chili and tomato sauce with a little melted cheddar and a cool lime yogurt crema. The beans and mushrooms bring **iron, folate and B vitamins**, and the lime in the crema helps you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 170,
+          "swap": "legumes"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 80,
+          "note": "finely chopped"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 55,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 150,
+          "note": "with its juice"
+        },
+        {
+          "food": "ancho-chile-dried-b95180",
+          "g": 6,
+          "note": "stemmed and seeded"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 16,
+          "swap": "dairy_protein",
+          "note": "grated"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 70
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Pull the stem and seeds out of the ancho chile, toast it in a dry pan for a few seconds a side until it smells fruity, then cover it with hot water to soak. Warm the oil in a pot and soften the onion with the garlic, about 5 minutes. Stir in the cumin and oregano for 30 seconds.",
+        "Add the tomatoes with their juice, the soaked ancho chile with a splash of its soaking water, and the salt. Simmer for 12 minutes, then blend until smooth. This is the sauce.",
+        "In a wide pan, cook the mushrooms over high heat until they release their water and brown, about 6 minutes. Add the beans with a few spoonfuls of the sauce and mash about half. Fold in the spinach and cook until it just wilts.",
+        "Warm the tortillas so they bend without cracking. Fill each with the bean mixture, roll tightly and lay seam side down in a baking dish. With only a tortilla or two in the dish, tear them into strips and layer them through the filling instead, like a tortilla casserole.",
+        "Pour the rest of the sauce over the top, scatter on the cheddar and bake until bubbling at the edges, about 15 minutes.",
+        "Stir the yogurt with the lime juice and a pinch of salt. Spoon it over the enchiladas and finish with the cilantro. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Make the sauce and the filling on Sunday. On Monday, warm the tortillas, roll and bake, so they don't go soggy overnight."
+    },
+    {
+      "id": "veg-global-misir-wat-gomen",
+      "name": "Misir wat with garlicky greens and flatbread",
+      "inspiredBy": "Ethiopian misir wat and gomen",
+      "about": "Red lentils slow-cooked with a mountain of onion, garlic, ginger and berbere until they turn into a thick, fragrant stew, served with soft garlicky greens and a piece of warm flatbread. The lentils and greens give you **iron, folate and plenty of protein**, and the lemon helps your body use the iron.",
+      "ingredients": [
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 95,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 110,
+          "note": "very finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 7,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "berbere-ethiopian-spice-blend-a8ab4f",
+          "g": 7
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 70,
+          "note": "crushed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 120,
+          "note": "stems removed, shredded"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "warmed; use injera if you have an Ethiopian grocer nearby"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Cook the onion in a dry heavy pot over medium heat for 5 minutes, stirring, until it softens and starts to stick. Add half the oil and keep cooking until it is deep golden and jammy, about 10 more minutes.",
+        "Stir in half the garlic, half the ginger and the berbere. Cook for a minute until the pot smells rich and spicy, then add the tomatoes.",
+        "Add the lentils and plenty of water to cover by a finger. Simmer gently, stirring often and adding water if it gets too thick, until the lentils have collapsed into a thick stew, about 25 minutes. Season with half the salt.",
+        "For the greens, warm the remaining oil in a wide pan. Add the rest of the garlic and ginger for 30 seconds, then the kale with a splash of water and the remaining salt. Cook until tender, about 8 minutes, and finish with the lemon.",
+        "Serve the wat with the greens and the warm flatbread, and tear off pieces to scoop it up. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Berbere varies in heat, so start with less and add more once the lentils soften. Collards are the traditional green and work the same way as kale. If you find niter kibbeh (spiced butter) at an Ethiopian grocer, cook the onions in it for the real flavour."
+    },
+    {
+      "id": "veg-global-minestrone-white-bean-rice",
+      "name": "Minestrone with white beans, kale and brown rice",
+      "inspiredBy": "Italian minestrone con riso, with white beans and kale",
+      "about": "A thick Italian vegetable soup of carrot, kale and white beans, cooked with a little brown rice and finished with parmesan, parsley and a squeeze of lemon. The beans and rice together make a **complete, filling bowl** with plenty of fibre.",
+      "ingredients": [
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 110,
+          "note": "crushed with its juice"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 210,
+          "swap": "legumes"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 25,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 80,
+          "note": "shredded"
+        },
+        {
+          "food": "parmesan-cheese-hard-78ce3e",
+          "g": 18,
+          "swap": "dairy_protein",
+          "note": "finely grated; pick one made with microbial (vegetarian) rennet"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm half the oil in a large pot and cook the onion and carrot until soft and sweet, about 8 minutes. Add the garlic and rosemary for the last minute.",
+        "Add the tomatoes, rice and enough water to cover by about 5 cm (2 inches). Bring to a boil, then simmer for 35 minutes, until the rice is just tender.",
+        "Add the beans and kale, and simmer another 8 minutes, until the kale is silky. Mash a few beans against the side of the pot to thicken the broth. Season with the salt and pepper.",
+        "Stir in the lemon juice and half the parsley. Ladle into bowls and finish with the parmesan, the rest of the parsley and a drizzle of the remaining oil.",
+        "Pack the second portion for tomorrow's lunch, adding a splash of water when you reheat it, since the rice keeps drinking."
+      ],
+      "prepMin": 15,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "A pressure cooker has the rice soft in about 12 minutes. Keep the rind of a vegetarian parmesan wedge in the freezer and drop it in with the tomatoes for extra savoury depth."
+    },
+    {
+      "id": "veg-global-toor-dal-tadka-spinach",
+      "name": "Toor dal tadka with spinach and brown rice",
+      "inspiredBy": "Indian toor dal tadka and palak dal",
+      "about": "Soft yellow pigeon pea dal wilted with spinach, finished with a sizzling tadka of cumin, mustard seed, garlic and chili in hot oil. Dal and rice together give you **complete protein, iron and folate**, and the lemon at the end brightens everything.",
+      "ingredients": [
+        {
+          "food": "pigeon-peas-dahl-dried-raw-4b7ca5",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed until the water runs clear"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 1
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "finely diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 120
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 2
+        },
+        {
+          "food": "mustard-seed-yellow-cf19a3",
+          "g": 1.5
+        },
+        {
+          "food": "asafoetida-167479",
+          "g": 0.3
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "kashmiri-chili-powder-abccb2",
+          "g": 1.5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.3
+        }
+      ],
+      "steps": [
+        "Put the dal in a pot with the turmeric and plenty of water. Bring to a boil, skim off the foam, then simmer partly covered until completely soft, about 35 minutes. Whisk it smooth, adding hot water for a soupy, pourable texture.",
+        "While it cooks, simmer the rice in plenty of water until tender, about 30 minutes, and drain.",
+        "Stir half the salt into the dal and simmer 5 minutes. Stir in the spinach until it wilts.",
+        "For the tadka, warm the oil in a small pan until it shimmers. Add the mustard seeds; when they pop, add the cumin seeds, asafoetida, onion, garlic and ginger and cook until the onion is golden, about 4 minutes. Take off the heat and stir in the Kashmiri chili.",
+        "Pour the sizzling tadka over the dal, then stir in the lemon juice, the rest of the salt and the cilantro. Serve over the rice. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 12,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "A pressure cooker has the dal soft in about 15 minutes, and cooked dal freezes well. No Indian grocer nearby? Red lentils work the same way and are soft in about 20 minutes."
+    },
+    {
+      "id": "veg-global-roast-cauliflower-chickpea-labneh-plate",
+      "name": "Roast cauliflower and chickpea plate with labneh and za'atar pita",
+      "inspiredBy": "Levantine roasted cauliflower with labneh and spiced chickpeas",
+      "about": "Spiced roasted cauliflower and crisp chickpeas on a swoosh of lemony labneh, with a tomato and parsley salad, toasted almonds and warm za'atar pita. The chickpeas and labneh bring **protein and calcium**, and the lemon and tomato help you absorb the iron in the chickpeas.",
+      "ingredients": [
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 200,
+          "note": "cut in florets"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 180,
+          "swap": "legumes",
+          "note": "patted dry"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "sumac-268746",
+          "g": 1
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 3
+        },
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 70
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 18
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 20,
+          "note": "roughly chopped"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 15,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted, chopped"
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 35,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the cauliflower with half the oil, the cumin, half the salt and the pepper on one tray, and the dry chickpeas with most of the rest on a second tray, so neither steams.",
+        "Roast both trays, stirring once, until the cauliflower is browned at the edges and the chickpeas are crisp, about 28 minutes.",
+        "Meanwhile, stir the labneh with half the lemon juice and a pinch of salt, and spread it on a plate.",
+        "Toss the tomato, parsley and onion with the rest of the lemon juice and a pinch of salt for the salad.",
+        "Brush the pita with the last of the oil, sprinkle with the za'atar and warm it in the oven for the last 3 minutes.",
+        "Pile the roasted vegetables and chickpeas on the labneh, scatter over the almonds and sumac, and serve with the salad and pita. Pack the second portion for tomorrow's lunch, with the labneh and salad in their own tubs."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Warm the leftovers in the oven rather than the microwave to keep the crisp edges."
+    },
+    {
+      "id": "veg-global-lentil-walnut-shepherds-pie",
+      "name": "Lentil, mushroom and walnut shepherd's pie",
+      "inspiredBy": "British shepherd's pie, made with lentils and walnuts, with miso for savoury depth",
+      "about": "A rich filling of green lentils, mushrooms, carrot and walnuts in a savoury tomato gravy, topped with a creamy potato and cauliflower mash and a little cheddar baked until golden. The lentils bring **iron and plant protein**, and the walnuts add plant omega-3 and a meaty bite.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 120,
+          "swap": "legumes",
+          "note": "brown or green, rinsed"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 150,
+          "note": "finely chopped"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 80,
+          "note": "crushed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "finely chopped"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 1
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 95,
+          "note": "peeled and cut up"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 100,
+          "note": "cut in florets"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 20
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 16,
+          "swap": "dairy_protein",
+          "note": "grated"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F). Simmer the lentils in plenty of water until just tender, about 22 minutes, then drain. At the same time, boil the potato and cauliflower in salted water until very soft, about 18 minutes, then drain and leave them in the colander to steam dry.",
+        "Warm the oil in a large pan and cook the mushrooms over high heat until the water cooks off and they brown, about 8 minutes. Add the onion and carrot and cook until soft, 6 minutes more.",
+        "Stir in the garlic and thyme, then the tomatoes, walnuts and miso. Add the lentils and a splash of water and simmer for 10 minutes into a thick, glossy filling. Season with pepper and spoon it into a baking dish.",
+        "Tip the potato and cauliflower back into the hot pot for a minute so the last of the steam escapes, then mash with the milk, the salt and a little pepper until smooth. Spread it over the filling and rake the top with a fork.",
+        "Scatter on the cheddar and bake until the top is golden and the edges are bubbling, about 25 minutes. Rest for 5 minutes and finish with the parsley.",
+        "Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 30,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "Make the filling a day ahead. The flavour deepens overnight, and you only have to mash and bake."
+    },
+    {
+      "id": "veg-global-miso-eggplant-tofu-rice",
+      "name": "Miso-glazed eggplant with ginger tofu and brown rice",
+      "inspiredBy": "Japanese nasu dengaku, served as a rice bowl with tofu",
+      "about": "Soft roasted eggplant glazed with sweet-salty miso, served with a scoop of brown rice with seared ginger tofu, sesame spinach and crunchy lemon-pickled onion. The tofu brings **protein, calcium and iron**.",
+      "ingredients": [
+        {
+          "food": "eggplant-raw-b8b8c1",
+          "g": 220,
+          "note": "halved lengthwise and scored"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 14
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 6
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6
+        },
+        {
+          "food": "firm-tofu-coagulated-with-calcium-sulfate-raw-d34852",
+          "g": 260,
+          "note": "pressed dry, cut in slabs"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 38,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 90
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 30,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 6,
+          "note": "toasted"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Rub the eggplant halves with half the oil and roast them cut side up until soft and golden, about 30 minutes. Meanwhile, simmer the rice in plenty of water until tender, about 35 minutes, and drain.",
+        "Stir the miso, honey and half the ginger with a spoonful of water. Brush most of it thickly over the eggplant and return it to the oven for 6 minutes, until glossy and caramelized at the edges.",
+        "Toss the onion with the lemon juice and a pinch of the sesame seeds, and set aside to soften.",
+        "Sear the tofu in the rest of the oil until golden on both sides, about 6 minutes. Turn the heat down, add the soy sauce and the remaining ginger, then brush the tofu with the rest of the glaze and turn it for a minute until glossy.",
+        "Wilt the spinach in a splash of water, squeeze dry and toss with the sesame oil.",
+        "Spoon the rice into a bowl and top with the eggplant, tofu, spinach and pickled onion. Finish with the rest of the sesame seeds."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Start the rice first; everything else fits in the time it takes. Cook a double batch, cool the spare half within an hour and keep it in the fridge for Monday's tamago bowl."
+    },
+    {
+      "id": "veg-global-mango-yogurt-lime-chili",
+      "name": "Mango yogurt with lime and chili",
+      "about": "Thick yogurt with juicy mango, a squeeze of lime and a pinch of chili, inspired by the way mango is eaten with lime and chili in Mexico. It is a cool, bright snack with **protein, calcium and vitamin C**.",
+      "ingredients": [
+        {
+          "food": "mango-raw-80de97",
+          "g": 130,
+          "note": "diced"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 130
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl and top with the mango.",
+        "Squeeze the lime over it and dust with the chili powder."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Tajín, if you have it, is the classic Mexican finish."
+    },
+    {
+      "id": "veg-global-cardamom-yogurt-honey-almonds",
+      "name": "Cardamom yogurt with honey, almonds and flax",
+      "about": "Thick yogurt spiced with cardamom, with a spoonful of ground flax stirred in, sweetened with a little honey and topped with toasted almonds. A **protein and calcium** snack that feels like dessert, with plant omega-3 from the flax.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.6
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 8
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted, chopped"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 11,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Stir the cardamom, flax and half the honey into the yogurt.",
+        "Top with the toasted almonds and drizzle with the rest of the honey."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "veg-global-labneh-zaatar-pita-wedges",
+      "name": "Labneh with olive oil, za'atar and warm pita",
+      "about": "A swirl of tangy labneh with olive oil, lemon and za'atar, scooped up with warm whole-wheat pita wedges. It is a light Levantine snack with **calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "labneh-strained-yogurt-2a6ac2",
+          "g": 60
+        },
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "cut in wedges"
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 2
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Warm the pita in a dry pan or the oven and cut it in wedges.",
+        "Spread the labneh in a shallow bowl, drizzle with the olive oil and lemon juice and sprinkle with the za'atar. Scoop it up with the pita."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "veg-global-apple-oat-yogurt-cup",
+      "name": "Apple, oat and yogurt cup with cinnamon",
+      "about": "Thick yogurt layered with grated apple, rolled oats and cinnamon, a no-cook cup that tastes like apple crumble. **Protein and fibre** for bigger days.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 200
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 70,
+          "note": "grated"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.8
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Stir the oats into the yogurt with the cinnamon and honey.",
+        "Layer with the grated apple in a glass or bowl. Eat straight away, or leave for 15 minutes so the oats soften."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "veg-global-chilled-tofu-ginger-soy",
+      "name": "Chilled tofu with ginger, soy and sesame",
+      "about": "A block of cold tofu dressed with grated ginger, a little soy sauce, lemon, toasted sesame and thin onion, like Japanese hiyayakko. It is a cool, savoury, **high-protein** snack that also brings calcium.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-coagulated-with-calcium-sulfate-raw-d34852",
+          "g": 140,
+          "note": "drained and patted dry"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 4
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 3,
+          "note": "toasted"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 8,
+          "note": "very thinly sliced"
+        }
+      ],
+      "steps": [
+        "Cut the tofu in a few slabs and set it on a plate.",
+        "Pile the ginger and onion on top, then drizzle with the soy sauce, lemon juice and sesame oil. Scatter with the sesame seeds."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Ginger and a squeeze of lemon are the whole trick. Serve it straight from the fridge."
+    },
+    {
+      "id": "veg-global-spiced-almonds-lime",
+      "name": "Toasted almonds with cumin and lime",
+      "about": "Almonds toasted in a dry pan until fragrant, then tossed with cumin, a squeeze of lime and a tiny pinch of salt. A satisfying crunchy snack that brings **vitamin E and magnesium**.",
+      "ingredients": [
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 28,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the almonds in a dry pan over medium heat, shaking often, until they smell nutty and darken a shade, about 5 minutes.",
+        "Toss with the cumin, lime juice and salt while still warm, and let them cool a minute before eating."
+      ],
+      "prepMin": 2,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Toast a bigger batch on Sunday; plain, they keep a week in a jar. Add the cumin, lime and salt just before eating."
+    },
+    {
+      "id": "veg-global-boiled-eggs-zaatar-tomato",
+      "name": "Soft-boiled egg with za'atar and tomato",
+      "about": "A jammy egg with a sprinkle of za'atar and olive oil, with juicy tomato wedges on the side, a classic Levantine snack. The egg brings **choline and B12**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "at room temperature"
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 1.5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lower the egg into a small pot of simmering water and cook for 7 minutes for a jammy yolk. Cool it under cold water, then peel.",
+        "Halve the egg, drizzle with the olive oil, and sprinkle with the za'atar and a pinch of salt. Serve with the tomato wedges."
+      ],
+      "prepMin": 3,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "veg-global-mango-oat-yogurt-cup",
+      "name": "Mango, oat and yogurt cup with lime",
+      "about": "Thick yogurt layered with diced mango, rolled oats and a squeeze of lime, a no-cook cup that is bright and filling. **Protein and fibre** for bigger days.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 200
+        },
+        {
+          "food": "mango-raw-80de97",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Stir the oats into the yogurt with the honey and lime juice.",
+        "Layer with the diced mango in a glass or bowl. Eat straight away, or leave for 15 minutes so the oats soften."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-global-apple-walnut-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-global-tamago-tofu-rice-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-global-black-bean-spinach-enchiladas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-global-labneh-zaatar-pita-wedges"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-global-smoky-roasted-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-global-beans-on-toast-mushrooms"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-global-black-bean-spinach-enchiladas",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-global-misir-wat-gomen"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-global-mango-yogurt-lime-chili"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-global-apple-cheddar-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-global-huevos-a-la-mexicana"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-global-misir-wat-gomen",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-global-minestrone-white-bean-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-global-cardamom-yogurt-honey-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-global-smoky-roasted-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-global-beans-on-toast-mushrooms"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-global-minestrone-white-bean-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-global-toor-dal-tadka-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-global-mango-yogurt-lime-chili"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-global-chilled-tofu-ginger-soy"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-global-huevos-a-la-mexicana"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-global-toor-dal-tadka-spinach",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-global-roast-cauliflower-chickpea-labneh-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-global-cardamom-yogurt-honey-almonds"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-global-apple-walnut-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-global-roast-cauliflower-chickpea-labneh-plate",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-global-lentil-walnut-shepherds-pie"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-global-spiced-almonds-lime"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "veg-global-apple-walnut-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "veg-global-lentil-walnut-shepherds-pie",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "veg-global-miso-eggplant-tofu-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-global-spiced-almonds-lime"
+        },
+        {
+          "slot": "snack",
+          "recipe": "veg-global-boiled-eggs-zaatar-tomato"
+        }
+      ]
+    }
+  ]
+}
