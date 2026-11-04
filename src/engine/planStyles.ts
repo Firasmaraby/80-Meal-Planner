@@ -347,7 +347,7 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
     label: 'Iron focus',
     blurb: 'Iron at 100% of the adult woman target every day.',
     gates: { ironFemaleRda: 1 },
-    note: "This week gets its iron from food, well over the daily target, so don't add an iron pill or a multivitamin with iron unless your care provider tells you to. If you've been told your iron is low, follow your care provider's advice on supplements and testing. Men and women past menopause need much less iron, so a regular plan suits them better, and if you have haemochromatosis (iron overload) this plan isn't for you.",
+    note: "This week gets its iron from food, well over the daily target, so don't add an iron pill or a multivitamin with iron unless your care provider tells you to. If you've been told your iron is low, follow your care provider's advice on supplements and testing. Men and women past menopause need much less iron, so a regular plan suits them better, and if you have haemochromatosis (iron overload) this plan isn't for you. If you're pregnant or breastfeeding and taking a prenatal vitamin, choose a Pregnancy or Postpartum plan instead: they leave room for its iron.",
   },
   paleo: { label: 'Paleo', blurb: 'No grains, legumes, dairy or added sugar.', gates: { bans: ['paleo'] } },
 };
