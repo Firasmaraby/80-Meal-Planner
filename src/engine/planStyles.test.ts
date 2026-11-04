@@ -276,6 +276,12 @@ describe('batch C safety: pregnancy, breastfeeding, PCOS and menopause', () => {
     plan.days[0].meals[0].ingredients.push({ foodId: fortified.id, grams: 150 });
     expect(codes('prenatal', plan)).toContain('iron_high');
     expect(PLAN_STYLES.prenatal.note).toMatch(/don't add a separate iron pill/);
+    expect(PLAN_STYLES.prenatal.note).toMatch(/iodine/);
+  });
+
+  it('breastfeeding keeps the same food iron cap, since many keep taking a prenatal vitamin', () => {
+    expect(PLAN_STYLES.postpartum.gates.ironMaxMg).toBe(29);
+    expect(PLAN_STYLES.postpartum.note).toMatch(/don't add a separate iron pill/);
   });
 
   it('pregnancy and breastfeeding plans never claim a band below 1,800 kcal', () => {
@@ -317,5 +323,11 @@ describe('batch D styles', () => {
     expect(FOOD_BANS.pork(f('Turkey bacon', 'poultry'))).toBeUndefined();
   });
   it('Ramadan plans carry a care-team note', () => expect(PLAN_STYLES.ramadan.note).toMatch(/care team/));
-});
 
+  it('healthy ageing grades a woman and a man of 65 (the 51-70 DRIs)', () => {
+    const { panel } = gradeOptionsFor('healthy-aging', 2000);
+    expect(panel.map((p) => [p.sex, p.age])).toEqual([['male', 65], ['female', 65]]);
+    expect(gradeOptionsFor('healthy-aging', 1500).panel).toEqual([expect.objectContaining({ sex: 'female', age: 65 })]);
+    expect(PLAN_STYLES['healthy-aging'].note).toMatch(/vitamin D/);
+  });
+});

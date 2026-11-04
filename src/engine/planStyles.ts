@@ -196,6 +196,8 @@ export interface StyleGates {
   lifeStage?: Exclude<LifeStage, 'none'>;
   /** grade against an adult woman of this age only (PCOS, menopause) */
   femalePanelAge?: number;
+  /** grade against the usual woman and man, both at this age (healthy ageing: the 51-70 DRIs) */
+  panelAge?: number;
   /** no band may start below this (no dieting in pregnancy, no deep deficit while breastfeeding) */
   minKcal?: number;
   /** caffeine per day, mg (Health Canada: 300 mg in pregnancy and while breastfeeding) */
@@ -287,13 +289,13 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
     label: 'Pregnancy',
     blurb: 'Graded on pregnancy needs, with the foods to avoid left out.',
     gates: { lifeStage: 'pregnant', bans: ['prenatal'], minKcal: 1800, caffeineMaxMg: 300, albacoreMaxGWeek: 300, ironMaxMg: 29 },
-    note: "Keep taking a prenatal vitamin with 0.4 mg of folic acid, as Health Canada advises. This week already brings plenty of iron from food and stays low enough to leave room for the iron in a prenatal vitamin, so don't add a separate iron pill unless your care provider tells you to. It leaves out the foods Health Canada asks you to avoid in pregnancy, keeps caffeine under 300 mg a day and uses only low-mercury fish. It isn't a plan for gestational diabetes or another condition: follow your care provider.",
+    note: "Keep taking a prenatal vitamin with 0.4 mg of folic acid, as Health Canada advises. Vitamin D and iodine are hard to get from food, so check that yours has them, or ask your care provider. This week already brings a good amount of iron from food and leaves room for the iron in a prenatal vitamin, so don't add a separate iron pill unless your care provider tells you to. It leaves out the foods Health Canada asks you to avoid in pregnancy, keeps caffeine under 300 mg a day and uses only low-mercury fish. It isn't a plan for gestational diabetes or another condition: follow your care provider.",
   },
   postpartum: {
     label: 'Postpartum and nursing',
     blurb: 'Graded on breastfeeding needs, with no alcohol and only low-mercury fish.',
-    gates: { lifeStage: 'lactating', bans: ['alcohol', 'mercury'], minKcal: 1800, caffeineMaxMg: 300 },
-    note: "Breastfeeding raises your need for several nutrients, so keep taking the vitamin your care provider recommends (and vitamin D drops for your baby). No recipe uses alcohol, caffeine stays under 300 mg a day and the fish are low in mercury. Follow your care provider's advice.",
+    gates: { lifeStage: 'lactating', bans: ['alcohol', 'mercury'], minKcal: 1800, caffeineMaxMg: 300, ironMaxMg: 29 },
+    note: "Breastfeeding raises your need for several nutrients, so keep taking the vitamin your care provider recommends (and vitamin D drops for your baby). This week brings a good amount of iron from food and leaves room for the iron in a prenatal vitamin, so don't add a separate iron pill unless your care provider tells you to. No recipe uses alcohol, caffeine stays under 300 mg a day and the fish are low in mercury. Follow your care provider's advice.",
   },
   pcos: {
     label: 'PCOS-friendly',
@@ -310,7 +312,8 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
   'healthy-aging': {
     label: 'Healthy aging',
     blurb: 'At least 25 g of protein at every main meal to protect muscle.',
-    gates: { proteinPerMainMealG: 25 },
+    gates: { proteinPerMainMealG: 25, panelAge: 65 },
+    note: "Health Canada advises everyone over 50 to take a daily vitamin D supplement of 400 IU, and B12 is absorbed less well with age, so fortified foods or a supplement help. If you have kidney disease or take medicines that interact with food, check this week with your care team.",
   },
   // lifestyle
   family: { label: 'Family friendly', blurb: 'Mild flavours the whole table will eat.', gates: { noTags: ['spicy'] } },
@@ -344,6 +347,7 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
     label: 'Iron focus',
     blurb: 'Iron at 100% of the adult woman target every day.',
     gates: { ironFemaleRda: 1 },
+    note: "This week gets its iron from food. If you've been told your iron is low, follow your care provider's advice on supplements and testing. Men and women past menopause need much less iron, so a regular plan suits them better.",
   },
   paleo: { label: 'Paleo', blurb: 'No grains, legumes, dairy or added sugar.', gates: { bans: ['paleo'] } },
 };
@@ -362,8 +366,10 @@ export function gradeOptionsFor(style: PlanStyle, kcal: number): { panel: Refere
     : g.femalePanelAge
       ? [{ ...FEMALE, age: g.femalePanelAge }]
       : kcal < 1600
-        ? [FEMALE]
-        : REFERENCE_PANEL;
+        ? [{ ...FEMALE, age: g.panelAge ?? FEMALE.age }]
+        : g.panelAge
+          ? REFERENCE_PANEL.map((p) => ({ ...p, age: g.panelAge! }))
+          : REFERENCE_PANEL;
   return { panel, rules };
 }
 
@@ -562,7 +568,7 @@ export function styleNutrientGates(style: PlanStyle, plan: MealPlan, foods: Food
         fail('caffeine', `caffeine is about ${Math.round(caffeine)} mg (a ${label} plan allows ${g.caffeineMaxMg} mg).`, 'Use one cup of coffee at most, or decaf, half-caf or herbal tea from the safe list.');
     }
     if (g.ironMaxMg != null && (t.iron ?? 0) > g.ironMaxMg)
-      fail('iron_high', `iron from food is ${(t.iron ?? 0).toFixed(1)} mg (a ${label} plan keeps it at or under ${g.ironMaxMg} mg, so a prenatal vitamin stays under the 45 mg upper limit).`, 'Use less iron-fortified cereal or oats that day, or swap a fortified food for its plain version.');
+      fail('iron_high', `iron from food is ${(t.iron ?? 0).toFixed(1)} mg (a ${label} plan keeps it at or under ${g.ironMaxMg} mg, so food plus a prenatal vitamin with 16 mg of iron stays under the 45 mg upper limit).`, 'Use less iron-fortified cereal or oats that day, or swap a fortified food for its plain version.');
     if (g.ironFemaleRda != null && (t.iron ?? 0) < ironRda * g.ironFemaleRda)
       fail('iron', `iron is ${(t.iron ?? 0).toFixed(1)} mg (a ${label} plan needs ${(ironRda * g.ironFemaleRda).toFixed(0)} mg).`, 'Add lentils, beans, tofu, pumpkin seeds, spinach or lean red meat, with a vitamin C food.');
     if (g.proteinPerMainMealG != null)

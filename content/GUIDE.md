@@ -460,8 +460,8 @@ A safety reviewer reads every week against the guidance before it ships.
   - Low-mercury fish (salmon, trout, char, sardines, herring, Atlantic mackerel, canned light tuna) at least twice a week.
   - Canned albacore at most 300 g a week.
   - Caffeine at most 300 mg a day; in practice, a cup of coffee or two of tea at most.
-- **Iron from food at most 29 mg a day.** The 45 mg upper limit counts the prenatal vitamin too (Health Canada advises
-  one with 16 to 20 mg), so iron-fortified cereal and oats are used in modest amounts.
+- **Iron from food at most 29 mg a day.** The 45 mg upper limit counts the prenatal vitamin too. Health Canada advises
+  one with 16 to 20 mg; the cap leaves room for 16 mg, so iron-fortified cereal and oats are used in modest amounts.
 - **Shape:**
   - small, frequent meals;
   - plain, easy breakfasts for queasy mornings;
@@ -475,7 +475,9 @@ A safety reviewer reads every week against the guidance before it ships.
 - **Banned and capped:**
   - no alcohol in any recipe;
   - no high-mercury fish;
-  - caffeine at most 300 mg a day.
+  - caffeine at most 300 mg a day;
+  - iron from food at most 29 mg a day, the same cap as pregnancy, because many people keep taking their prenatal
+    vitamin while breastfeeding.
 - **Fish:** low-mercury fatty fish 2-3 times a week, for DHA.
 - **Shape:**
   - one-hand snacks;
@@ -512,3 +514,118 @@ A safety reviewer reads every week against the guidance before it ships.
 - **Soy foods and ground flax are welcome as food,** with no promises about hot flushes.
 - **Heart health matters more after menopause:** saturated fat under 10%, fibre, omega-3 and the sodium ceiling.
 - **Sizes:** Light 1600-1800 (1400-1600 if it passes) and Standard 1800-2200.
+
+### Lessons from batch C (apply to every family from now on)
+- **Write the safety lines in as you go:**
+  - doneness temperatures in the step (poultry 74 °C, ground meat and pork 71 °C, fish 70 °C);
+  - "reheat to 74 °C" on every leftover;
+  - cooked rice and grains cooled within 1 hour;
+  - washing produce before cutting, and hands and boards after raw meat and fish;
+  - marinades in the fridge, never reused.
+
+  Every critic in batch C had to add these.
+- **Keep the plan text true at every size.** Don't say "portions get smaller at Light" unless they do; check the Light
+  render.
+- **Name the exact product when it matters:** pearl or hulled barley, Atlantic (not king) mackerel, calcium-set tofu,
+  jarred ready-to-eat lupini.
+- **Iron near the cap:** a fortified cereal or oats plus tofu plus red meat on one day can top 30 mg. Spread them out.
+
+## 13. Batch D families
+Same loop, same safety lines as batch C. Each style's gate and `note` are in src/engine/planStyles.ts.
+
+### Build Muscle Plant-based (`muscle-plant`)
+- **Gates:** protein at least 30% from food, no animal foods, no fish requirement.
+- **Protein sources:** tofu, tempeh, seitan, edamame, lentils, beans, soy drink and soy yogurt. No protein powders.
+- **B12** comes from fortified soy drink, and the note says a supplement is the safe bet. Zinc, iron and calcium are
+  watched like the vegan families (calcium-set tofu, fortified drinks).
+- **Sizes:** Standard and Big (2400-3200); XL only if it passes. Big portions of beans need the gas-friendly tricks:
+  rinse canned beans and build up.
+
+### Pescatarian (`pescatarian`)
+- **Gates:** no meat or poultry.
+- **Fish:** fish and seafood on most days, but stay inside the mercury limits: high-mercury fish at most 150 g a week
+  (in practice, none), and canned albacore is fine in modest amounts. Choose salmon, trout, sardines, herring, Atlantic
+  mackerel, cod, pollock, shrimp, mussels and canned light tuna.
+- **Variety:** legumes, eggs and dairy carry some days, so it isn't a week of fish twice a day.
+- **Raw fish:** sushi-grade only, in at most one dish, with a "buy it labelled for raw eating" note. Smoked fish is fine
+  outside pregnancy.
+
+### Dairy-free (`dairy-free`)
+- **Gates:** no milk, cheese, yogurt, butter or ghee.
+- **Calcium is the hard nutrient:** calcium-set tofu, fortified soy drink (shake the carton), bok choy, gai lan, kale,
+  sesame and tahini, and canned fish with soft bones. Every day must reach 80% from these, not from one huge glass of
+  soy drink.
+- **Vitamin D:** fortified soy drink and fatty fish.
+
+### Top-allergen-free (`allergen-free`)
+- **Gates:** no peanuts or tree nuts, eggs, dairy, shellfish or sesame. Wheat, soy and fish are allowed.
+- **Watch the hidden sources:** pesto (pine nuts and cheese), tahini and hummus, sesame oil, many curry pastes, mayo,
+  baked goods and fresh pasta (egg), butter or ghee, Worcestershire (anchovy is fish, which is fine).
+- **Swaps:** sunflower or pumpkin seeds and sunflower seed butter, fortified oat or soy drink, aquafaba.
+- **The note** reminds people to read every label for "may contain". Never promise the plan is safe for a severe
+  allergy.
+
+### Gut health (`gut`)
+- **Gates:** fibre at least 35 g (30 below 1,800 kcal), at least 30 different plants a week, and a fermented food on
+  5 days (yogurt, kefir, kimchi, sauerkraut, miso, tempeh).
+- **Build fibre gently:** beans, lentils, whole grains, oats, seeds, vegetables and fruit, and water through the day.
+- **Fermented foods** are food, not therapy: unpasteurised kimchi and sauerkraut are fine for most people, but mention
+  the refrigerated kind. Make no claims about the microbiome curing anything.
+
+### Endurance (`endurance`)
+- **Gates:** carbs at least 50% of calories, protein at least 18%. Glycaemic load is not capped.
+- **Shape:** carbs built around training (rice, pasta, oats, potatoes, bread, fruit), protein spread across 4 eating
+  times, an easy pre-training snack and a recovery snack with protein and carbs.
+- **Salt:** salty foods are fine around long sessions, but every day stays under the app's ceiling.
+- **Sizes:** Standard, Big and XL. No sports drinks or gels; the text can mention them as extras for very long
+  sessions.
+
+### Healthy ageing 60+ (`healthy-aging`)
+- **Graded for a woman and a man of 65** (the 51-70 DRIs: calcium 1,200 mg for women, B6 1.5 and 1.7 mg, iron 8 mg).
+- **Protein:** at least 25 g at every main meal.
+- **B12 and vitamin D:** fortified foods, fish, eggs and dairy. The note advises the 400 IU vitamin D supplement Health
+  Canada recommends after 50, and fortified foods or a supplement for B12.
+- **Texture and cooking:** softer textures (stews, braises, flaky fish, eggs, soft-cooked vegetables), easy cooking for
+  one or two, and leftovers that freeze in single portions.
+- **Sodium and heart:** the usual ceiling; lean on herbs and acid.
+
+### Iron focus (`iron-focus`)
+- **Gate:** iron at 100% of the adult woman's need (18 mg) every day, from food.
+- **Every iron meal has vitamin C** (peppers, citrus, tomatoes, broccoli), and tea and coffee sit away from the iron
+  meals.
+- **Sources:** red meat 2-3 times a week, sardines, mussels, legumes, tofu, pumpkin seeds, dark greens, fortified
+  cereal in modest amounts. Stay well under the 45 mg upper limit.
+- **The note** says it's iron from food; anyone told they're low follows their care provider on supplements.
+
+### Ramadan (`ramadan`)
+- **Shape:** no lunch slot. **Suhoor** (before dawn) and **iftar** (sunset) are the main meals, with 1-2 snacks
+  between iftar and bedtime.
+  - **Suhoor:** slow-release carbs, protein and fluids (oats, eggs, labneh, ful, yogurt, fruit with water).
+  - **Iftar:** opens with dates and water, then soup, then a balanced plate.
+- **Keep it defensible:** fried classics appear lightened (baked or shallow-fried in modest oil). No sugary drinks;
+  water, milk or laban.
+- **Salt at suhoor:** keep it lower, to help with thirst.
+- **The note** says people with diabetes, who are pregnant or breastfeeding, or who take medication talk to their care
+  team before fasting.
+- **Fish twice a week and every micronutrient gate still apply.**
+
+### 20-minute (`quick`)
+- **Gate:** every meal on days 1 to 5 is ready in 20 minutes, prep plus cook (leftovers count as 0). The weekend can
+  have one longer dish.
+- **Allowed shortcuts:** frozen vegetables, canned beans and fish, pre-cooked grains (pouch rice, frozen brown rice),
+  rotisserie chicken (count its sodium), bagged salad.
+- **Food safety** doesn't get skipped for speed: thin cuts, a hot pan, and a thermometer check.
+
+### Budget (`budget`)
+- **Gates:** at most 35 groceries, and premium foods (fresh salmon, tenderloin, scallops, rack of lamb, pine nuts,
+  macadamias) on at most 2 days.
+- **Sources:** dried and canned beans and lentils, eggs, canned sardines, mackerel and salmon, chicken thighs, frozen
+  vegetables and fruit, oats, rice, potatoes, cabbage, carrots, onions, bananas.
+- **Cook from scratch:** one big pot, used across the week (and frozen), and nothing goes to waste.
+
+### Family kitchen (`family`)
+- **Gate:** nothing tagged spicy; heat goes on the table, not in the pot.
+- **Kid-approved dishes at adult portions:** tacos, pasta bake, sheet-pan chicken, baked fish fingers, soups, rice
+  bowls, with vegetables in every dish.
+- **Little ones:** never whole nuts for under-4s (nut butters thinly spread are fine), no honey for babies under 1, and
+  grapes and cherry tomatoes cut in quarters. Put these in tips where they apply.
