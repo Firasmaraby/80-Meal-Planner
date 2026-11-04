@@ -2,6 +2,7 @@ import { router } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
 
+import { COLLECTION_LABEL, planCollection, type PlanCollection } from '@/engine/browse';
 import { bandFor, bandLabel, calorieTarget } from '@/engine/calc';
 import {
   SIZE_LABEL,
@@ -16,18 +17,57 @@ import {
 } from '@/engine/families';
 import { PLAN_STYLES } from '@/engine/planStyles';
 import { plainText } from '@/engine/richText';
+import { TextIndex, nutrientAmount, parseNutrientQuery, type NutrientQuery } from '@/engine/textSearch';
 import type { CarbStyle, MealPlan, PlanStyle } from '@/engine/types';
-import { FOOD_INDEX } from '@/state/catalog';
+import { FOOD_INDEX, food } from '@/state/catalog';
 import { useFamilies } from '@/state/families';
 import { useStore } from '@/state/store';
 import { CARB_NEEDS, CarbFilter } from '@/ui/carbParts';
 import { Button, Card, Chip, Icon, I, Row, Screen, Txt } from '@/ui/primitives';
-import { ChipRow, Fingerprint, FingerprintLegend, MealThumb, Pill, DIET_OPTIONS, bandKey, displayTags, dietMatches, planStats, tagLabel, useWho } from '@/ui/planParts';
+import {
+  ChipRow,
+  Fingerprint,
+  FingerprintLegend,
+  MealThumb,
+  NutrientLine,
+  Pill,
+  SearchField,
+  Segmented,
+  DIET_OPTIONS,
+  bandKey,
+  displayTags,
+  dietMatches,
+  planAverage,
+  planStats,
+  tagLabel,
+  useWho,
+} from '@/ui/planParts';
 import { space, useTheme } from '@/ui/theme';
 
 const fmtN = (n: number) => Math.round(n).toLocaleString();
 const PAGE = 12;
 const roundTo50 = (n: number) => Math.round(n / 50) * 50;
+const VIEWS: PlanCollection[] = ['everyday', 'cuisine', 'diet'];
+
+/** What a family is searched by: its name first, then where it's from and its style, its dishes, then its groceries. */
+function searchDoc(f: PlanFamily) {
+  const lead = f.sizes.find((p) => p.size === 'standard') ?? f.sizes[0];
+  const meals = lead.days.flatMap((d) => d.meals);
+  const ingredients = new Set<string>();
+  for (const m of meals) for (const i of m.ingredients) {
+    const fd = food(i.foodId);
+    if (fd) ingredients.add(`${fd.name} ${fd.head ?? ''}`);
+  }
+  return {
+    key: f.id,
+    fields: [
+      { text: f.name, weight: 3 },
+      { text: [...new Set(meals.map((m) => m.name))].join(' '), weight: 2 },
+      { text: [f.cuisine, ...f.regions, f.style ? PLAN_STYLES[f.style].label : '', ...f.tags.map(tagLabel)].join(' '), weight: 1.5 },
+      { text: `${f.summary ? plainText(f.summary) : ''} ${[...ingredients].join(' ')}`, weight: 1 },
+    ],
+  };
+}
 
 /** A family on screen: which size the person would get, and whether they are on one of its sizes already. */
 interface Entry {
@@ -69,8 +109,36 @@ export default function Plans() {
   const [style, setStyle] = useState<PlanStyle | null>(null);
   const [showMore, setShowMore] = useState(false);
   const [diet, setDiet] = useState<string[]>(() => profile.diet);
+  const [query, setQuery] = useState('');
+  // open on the view that holds the person's plan, otherwise Everyday
+  const [viewSel, setViewSel] = useState<PlanCollection | null>(null);
+  const enrolledFamily = families.find((f) => f.sizes.some((p) => p.id === enrollment?.planId));
+  const view = viewSel ?? (enrolledFamily ? planCollection(enrolledFamily) : 'everyday');
+  // until the global everyday plans ship, Everyday shows the regional kitchens
+  const hasEveryday = useMemo(() => families.some((f) => planCollection(f) === 'everyday'), [families]);
+  const inView = (f: PlanFamily) => {
+    const col = planCollection(f);
+    return view === 'everyday' && !hasEveryday ? col === 'cuisine' : col === view;
+  };
+  const chooseView = (v: PlanCollection) => {
+    setViewSel(v);
+    // a filter in a row that's no longer on screen would hide plans without saying so
+    if (v !== 'cuisine') setCuisine(null);
+    if (v !== 'diet') setStyle(null);
+  };
+
+  const index = useMemo(() => new TextIndex(families.map(searchDoc)), [families]);
+  const nutrientQuery = useMemo(() => parseNutrientQuery(query), [query]);
+  const relevance = useMemo(() => index.search(nutrientQuery ? nutrientQuery.rest : query), [index, nutrientQuery, query]);
+  const searching = query.trim().length > 0;
+  // a nutrient search ranks by the average day at the size the person would get
+  const amounts = useMemo(() => {
+    if (!nutrientQuery) return null;
+    return new Map(families.map((f) => [f.id, nutrientAmount(planAverage(picks.get(f.id)!.plan), nutrientQuery.keys) ?? 0]));
+  }, [nutrientQuery, families, picks]);
+
   // a new filter starts back at the top of the list
-  const filterKey = `${band}|${cuisine}|${style}|${diet.join(',')}|${showMore}|${carbStyle}`;
+  const filterKey = `${band}|${cuisine}|${style}|${diet.join(',')}|${showMore}|${carbStyle}|${view}|${query}`;
   const [paged, setPaged] = useState({ key: filterKey, limit: PAGE });
   const limit = paged.key === filterKey ? paged.limit : PAGE;
 
@@ -85,11 +153,16 @@ export default function Plans() {
   const matching = useMemo(
     () =>
       families
+        // a search looks across every view
+        .filter((f) => (searching ? true : inView(f)))
+        .filter((f) => (relevance ? relevance.has(f.id) : true))
+        .filter((f) => (amounts ? (amounts.get(f.id) ?? 0) > 0 : true))
         .filter((f) => (band === 'all' ? true : familyBands(f).some((b) => bandKeyOf(b) === band)))
         .filter((f) => (cuisine ? f.cuisine === cuisine : true))
         .filter((f) => (style ? f.style === style : true))
         .filter((f) => dietMatches(f, diet)),
-    [families, band, cuisine, style, diet],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [families, band, cuisine, style, diet, searching, view, hasEveryday, relevance, amounts],
   );
   const hasBeyond = useMemo(() => families.some((f) => !familyVisible(f, carbStyle, FOOD_INDEX)), [families, carbStyle]);
   const hiddenCount = useMemo(() => matching.filter((f) => !familyVisible(f, carbStyle, FOOD_INDEX)).length, [matching, carbStyle]);
@@ -107,12 +180,18 @@ export default function Plans() {
         const ea = a.enrolled ? 0 : 1;
         const eb = b.enrolled ? 0 : 1;
         if (ea !== eb) return ea - eb;
+        if (amounts) return (amounts.get(b.family.id) ?? 0) - (amounts.get(a.family.id) ?? 0);
+        if (relevance) {
+          const r = (relevance.get(b.family.id) ?? 0) - (relevance.get(a.family.id) ?? 0);
+          if (r) return r;
+        }
         return a.pick.gap !== b.pick.gap ? a.pick.gap - b.pick.gap : a.family.name.localeCompare(b.family.name);
       });
-  }, [matching, picks, enrollment?.planId, carbStyle, showMore]);
+  }, [matching, picks, enrollment?.planId, carbStyle, showMore, amounts, relevance]);
 
-  const filtered = band !== defaultBand || cuisine != null || style != null || diet.length > 0;
+  const filtered = band !== defaultBand || cuisine != null || style != null || diet.length > 0 || searching;
   const clear = () => {
+    setQuery('');
     setBandSel('all');
     setCuisine(null);
     setStyle(null);
@@ -148,6 +227,22 @@ export default function Plans() {
           </Row>
         </View>
       }>
+      <SearchField value={query} onChange={setQuery} label="Search plans" placeholder="Salmon, lentils, Mexican, high iron" />
+      {!searching ? (
+        <View style={{ marginTop: space.md }}>
+          <Segmented<PlanCollection> options={VIEWS.map((k) => ({ key: k, label: COLLECTION_LABEL[k] }))} value={view} onChange={chooseView} />
+          {view === 'everyday' && !hasEveryday ? (
+            <Txt v="caption" dim={1} style={{ marginTop: space.sm, lineHeight: 18 }}>
+              Global everyday plans are on the way. For now, here are the regional kitchens.
+            </Txt>
+          ) : null}
+        </View>
+      ) : (
+        <Txt v="caption" dim={1} style={{ marginTop: space.sm }} accessibilityLiveRegion="polite">
+          {shown.length} {shown.length === 1 ? 'plan' : 'plans'} across every view
+          {nutrientQuery ? `, most ${nutrientQuery.label.toLowerCase()} first` : ''}
+        </Txt>
+      )}
       <ChipRow label="Calories">
         <Chip label="All" active={band === 'all'} onPress={() => setBandSel('all')} />
         {bands.map((b) => (
@@ -159,13 +254,15 @@ export default function Plans() {
           />
         ))}
       </ChipRow>
-      <ChipRow label="Cuisine">
-        <Chip label="Any" active={cuisine == null} onPress={() => setCuisine(null)} />
-        {cuisines.map((q) => (
-          <Chip key={q} label={q} active={cuisine === q} onPress={() => setCuisine(cuisine === q ? null : q)} />
-        ))}
-      </ChipRow>
-      {styles.length > 0 && (
+      {(searching || view === 'cuisine' || (view === 'everyday' && !hasEveryday)) && (
+        <ChipRow label="Cuisine">
+          <Chip label="Any" active={cuisine == null} onPress={() => setCuisine(null)} />
+          {cuisines.map((q) => (
+            <Chip key={q} label={q} active={cuisine === q} onPress={() => setCuisine(cuisine === q ? null : q)} />
+          ))}
+        </ChipRow>
+      )}
+      {(searching || view === 'diet') && styles.length > 0 && (
         <ChipRow label="Style">
           <Chip label="Any" accessibilityLabel="Any style" active={style == null} onPress={() => setStyle(null)} />
           {styles.map((k) => (
@@ -198,12 +295,12 @@ export default function Plans() {
           <Card style={{ alignItems: 'flex-start', gap: space.sm }}>
             <Txt v="h3">No plans match</Txt>
             <Txt v="caption" dim={1} style={{ lineHeight: 18 }}>
-              Try another calorie band or loosen a filter.
+              {searching ? 'Try a simpler search, or loosen a filter.' : 'Try another view or calorie band, or loosen a filter.'}
             </Txt>
             <Button small kind="secondary" label="Show all plans" onPress={clear} />
           </Card>
         ) : (
-          visible.map((e) => <PlanCard key={e.family.id} entry={e} carbStyle={carbStyle} yourBand={e.pick.covered} />)
+          visible.map((e) => <PlanCard key={e.family.id} entry={e} carbStyle={carbStyle} yourBand={e.pick.covered} nutrientQuery={nutrientQuery} />)
         )}
         {shown.length > visible.length && (
           <Button kind="secondary" label={`Show ${Math.min(PAGE, shown.length - visible.length)} more`} onPress={() => setPaged({ key: filterKey, limit: limit + PAGE })} />
@@ -220,7 +317,7 @@ export default function Plans() {
   );
 }
 
-function PlanCard({ entry, carbStyle, yourBand }: { entry: Entry; carbStyle: CarbStyle; yourBand: boolean }) {
+function PlanCard({ entry, carbStyle, yourBand, nutrientQuery }: { entry: Entry; carbStyle: CarbStyle; yourBand: boolean; nutrientQuery: NutrientQuery | null }) {
   const c = useTheme();
   const profile = useStore((s) => s.profile);
   const who = useWho(profile);
@@ -306,6 +403,12 @@ function PlanCard({ entry, carbStyle, yourBand }: { entry: Entry; carbStyle: Car
         ) : (
           <MealStrip plan={plan} />
         )}
+
+        {nutrientQuery ? (
+          <View style={{ marginTop: space.md }}>
+            <NutrientLine query={nutrientQuery} totals={stats.avg} who={who} prefix="Average day:" />
+          </View>
+        ) : null}
 
         {sizeLine ? (
           <Row gap={6} style={{ marginTop: space.md }}>
