@@ -347,7 +347,7 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
     label: 'Iron focus',
     blurb: 'Iron at 100% of the adult woman target every day.',
     gates: { ironFemaleRda: 1 },
-    note: "This week gets its iron from food. If you've been told your iron is low, follow your care provider's advice on supplements and testing. Men and women past menopause need much less iron, so a regular plan suits them better.",
+    note: "This week gets its iron from food, well over the daily target, so don't add an iron pill or a multivitamin with iron unless your care provider tells you to. If you've been told your iron is low, follow your care provider's advice on supplements and testing. Men and women past menopause need much less iron, so a regular plan suits them better.",
   },
   paleo: { label: 'Paleo', blurb: 'No grains, legumes, dairy or added sugar.', gates: { bans: ['paleo'] } },
 };
