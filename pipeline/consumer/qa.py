@@ -122,7 +122,9 @@ def write_outliers(path: Path, flags: list[dict[str, Any]]) -> None:
 
 
 def apply_overrides(records: list[dict[str, Any]], overrides: dict[str, Any]) -> int:
-    """Hand-reviewed fixes from config/value_overrides.json: {food id: {nutrient: value or null, "_why": reason}}."""
+    """Hand-reviewed fixes from config/value_overrides.json: {food id: {nutrient: value or null, "_why": reason}}.
+    A corrected source value counts as measured; with "_estimated": true (values filled from the literature, not measured
+    for this food) the keys are marked estimated."""
     by_id = {r.get("id"): r for r in records if r.get("id")}
     n = 0
     for fid, fix in overrides.items():
@@ -136,7 +138,10 @@ def apply_overrides(records: list[dict[str, Any]], overrides: dict[str, Any]) ->
                 r["n"].pop(k, None)
             else:
                 r["n"][k] = v
-            if k in r["estimated"]:
+            if fix.get("_estimated") and v is not None:
+                if k not in r["estimated"]:
+                    r["estimated"].append(k)
+            elif k in r["estimated"]:
                 r["estimated"].remove(k)
             r["notes"].append(f"reviewed: {k} {'dropped' if v is None else f'set to {v}'} ({fix.get('_why', '')})")
             n += 1
