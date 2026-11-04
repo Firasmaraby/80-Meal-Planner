@@ -332,7 +332,7 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
     label: 'Ramadan',
     blurb: 'Suhoor before dawn and iftar at sunset, no lunch.',
     gates: { noSlots: ['lunch'], slotNames: { breakfast: 'Suhoor', dinner: 'Iftar' } },
-    note: 'If you have diabetes, are pregnant or breastfeeding, or take medication, talk to your care team before fasting. Drink plenty of water between iftar and suhoor.',
+    note: 'If you have diabetes, kidney disease or another long-term condition, are pregnant or breastfeeding, take medication, or have a history of an eating disorder, talk to your care team before fasting. Drink plenty of water between iftar and suhoor.',
   },
   'intermittent-fasting': { label: 'Intermittent fasting', blurb: 'Two meals and a snack, with no breakfast.', gates: { noSlots: ['breakfast'] } },
   'gluten-free': { label: 'Gluten free', blurb: 'No wheat, barley or rye, and no hidden gluten.', gates: { bans: ['gluten'] } },
