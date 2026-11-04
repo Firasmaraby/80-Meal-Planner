@@ -247,6 +247,66 @@ Rules for each are in GUIDE.md §12, starting with "Batch C rule: healthy first,
 7. **`menopause-med` · Menopause Mediterranean.** Yogurt and almonds, sardines and salmon with bones, white beans and greens, eggs, olive oil, fortified soy drink in coffee.
 8. **`menopause-japan` · Menopause Japanese.** Soy-rich: tofu, natto or edamame, miso soup (small), grilled salmon and mackerel, sesame greens, calcium-set tofu, soy drink.
 
+### Batch D: approved by Firas (Nov 4)
+
+Firas went through the batch D list and kept 17 families plus two computed tags. Everything else in the diet table above
+that isn't built yet is **dropped** (see "Dropped from the plan" below). Rules for each diet go in GUIDE.md §12 before
+its writers start.
+
+**Tags and filters only (no families):**
+- **Halal-friendly:** computed for every plan. No pork products, no alcohol, no gelatin. The app says halal meat is the
+  cook's choice; it can't check that.
+- **Kosher-style:** computed for every plan. No pork, no shellfish, never meat with dairy in the same meal.
+
+**Families:**
+1. **`muscle-plant` · Build Muscle Plant-based** (`muscle` gates plus the vegan ban). Tofu, tempeh, seitan, lentils,
+   edamame and soy milk carry 30% protein from food, no powders. Standard and Big, XL if it passes. B12 from fortified
+   soy drink, as in the vegan families.
+2. **`pescatarian-med` · Pescatarian Mediterranean** (`pescatarian`). Fish and seafood most days, legumes, eggs and
+   dairy; grilled sardines, octopus or shrimp, fish soups, bean stews.
+3. **`pescatarian-north` · Pescatarian Japanese and Nordic Coast.** Salmon, mackerel, herring, cod, rye, potatoes,
+   miso, tofu, pickles; low-mercury fish only.
+4. **`dairy-free-east-asia` · Dairy-free East Asian** (`dairy-free`). Calcium from calcium-set tofu, fortified soy
+   drink, greens, sesame and small fish with bones.
+5. **`allergen-free-global` · Top-Allergen-free Kitchen** (new `allergen-free`). No peanuts, tree nuts, eggs, dairy,
+   shellfish or sesame. Seeds such as sunflower and pumpkin, fortified oat drink, fish, poultry, legumes. The app
+   reminds people to check every label for "may contain".
+6. **`gut-global` · Gut Health Kitchen** (`gut`). About 30 different plants a week, a fermented food on 5 days
+   (yogurt, kefir, kimchi, sauerkraut, miso), fibre at least 35 g.
+7. **`endurance-global` · Endurance Kitchen** (`endurance`). Carbs built around training (rice, pasta, oats,
+   potatoes, fruit), protein spread through the day, salty foods allowed around long sessions within the ceiling.
+8. **`healthy-aging-global` · Healthy Ageing 60+** (`healthy-aging`). 25 g of protein at every main meal, B12, calcium
+   and vitamin D foods, softer textures, easy cooking for one or two.
+9. **`iron-focus-global` · Iron Focus** (`iron-focus`). Iron at 100% of the adult woman's need every day, with vitamin
+   C at the iron meals, and tea and coffee kept away from them.
+10. **`ramadan-arabia` · Ramadan Arabian** (`ramadan`). Suhoor and iftar: dates and water, lentil soup, fattoush,
+    grilled meats and fish, rice dishes, slow-release suhoor (oats, eggs, labneh, ful).
+11. **`ramadan-south-asia` · Ramadan South Asian.** Dates, a lighter take on pakora, chana chaat, haleem, biryani,
+    dal, fruit chaat, suhoor parathas made lighter.
+12. **`ramadan-global` · Ramadan Global Kitchen.** Iftar and suhoor built from everyday Canadian, Mediterranean and
+    Turkish dishes.
+    - **All three Ramadan plans** carry a note: people with diabetes, who are pregnant or breastfeeding, or who take
+      medication should talk to their care team before fasting.
+13. **`quick-global` · 20-minute Global** (`quick`). Weeknight dinners in 20 minutes; sheet pans, stir-fries,
+    one-pan pasta.
+14. **`quick-asia` · 20-minute Asian.** Stir-fries, rice bowls, noodle soups and quick curries.
+15. **`budget-global` · Budget Kitchen** (`budget`). Dried beans and lentils, eggs, canned fish, chicken thighs,
+    frozen vegetables, oats and rice.
+16. **`budget-veg` · Budget Vegetarian.** Legumes, eggs, dairy, seasonal vegetables, whole grains.
+17. **`family-global` · Family Kitchen** (`family`). Mild, kid-approved dishes at adult portions: tacos, pasta bake,
+    sheet-pan chicken, fish fingers done right, soups.
+
+**Dropped from the plan** (Firas, Nov 4), with the reason:
+- **Low-carb:** keto and diabetes-friendly already cover it.
+- **Flexitarian:** the regional families already eat this way.
+- **Low-cholesterol:** heart-healthy covers it.
+- **Anti-inflammatory:** the framework already leans this way.
+- **Low-FODMAP:** clinical, short-term, needs a dietitian.
+- **Paleo and Whole30:** they cut legumes, the framework's backbone.
+- **Jain:** too niche.
+- **Intermittent fasting 16:8:** not needed.
+- **Sunday batch-cook:** every family already cooks once and eats twice.
+
 ## Not offered, and why
 - **Carnivore:** it can't reach vitamin C, folate or fibre, and contradicts the framework.
 - **Raw vegan:** can't reliably reach B12, vitamin D, iodine or zinc.
