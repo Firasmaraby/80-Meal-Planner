@@ -34,4 +34,9 @@ describe('store migration', () => {
     const out = migrateState(undefined, 0) as { profile: { carbStyle: string } };
     expect(out.profile.carbStyle).toBe('whole');
   });
+
+  it('drops the retired halal-friendly and kosher-style filters from a saved profile', () => {
+    const out = migrateState({ profile: { ...DEFAULT_PROFILE, diet: ['vegetarian', 'halal-friendly', 'kosher-style'] } }, 4) as { profile: { diet: string[] } };
+    expect(out.profile.diet).toEqual(['vegetarian']);
+  });
 });

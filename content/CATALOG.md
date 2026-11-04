@@ -106,7 +106,7 @@ except where the cuisine is built on a staple: then use the whole-grain form, or
 
 Built after all 20 regional families. Each diet gets 2 to 4 families in different cuisines, so people on a diet still
 get variety. Every family follows the same rules as the regional ones (80% every day, taste first), plus its diet's
-gates in `src/engine/planStyles.ts`. Diet tags such as vegan, gluten-free, halal-friendly and nut-free are also
+gates in `src/engine/planStyles.ts`. Diet tags such as vegan, gluten-free and nut-free are also
 computed for every plan, regional ones included, so the Plans filters work across the whole library.
 
 **Order of work:** the diets the most people need come first:
@@ -249,14 +249,12 @@ Rules for each are in GUIDE.md §12, starting with "Batch C rule: healthy first,
 
 ### Batch D: approved by Firas (Nov 4)
 
-Firas went through the batch D list and kept 17 families plus two computed tags. Everything else in the diet table above
+Firas went through the batch D list and kept 17 families. Everything else in the diet table above
 that isn't built yet is **dropped** (see "Dropped from the plan" below). Rules for each diet go in GUIDE.md §12 before
 its writers start.
 
-**Tags and filters only (no families):**
-- **Halal-friendly:** computed for every plan. No pork products, no alcohol, no gelatin. The app says halal meat is the
-  cook's choice; it can't check that.
-- **Kosher-style:** computed for every plan. No pork, no shellfish, never meat with dairy in the same meal.
+**No religious tags (Firas, Nov 5):** the halal-friendly and kosher-style tags and filter chips were removed so the
+app stays religiously neutral. Recipes still leave alcohol out.
 
 **Families:**
 1. **`muscle-plant` · Build Muscle Plant-based** (`muscle` gates plus the vegan ban). Tofu, tempeh, seitan, lentils,
@@ -304,6 +302,7 @@ its writers start.
 - **Low-FODMAP:** clinical, short-term, needs a dietitian.
 - **Paleo and Whole30:** they cut legumes, the framework's backbone.
 - **Jain:** too niche.
+- **Halal and kosher-style** (families, tags and filters; Nov 5): the app stays religiously neutral.
 - **Intermittent fasting 16:8:** not needed.
 - **Sunday batch-cook:** every family already cooks once and eats twice.
 

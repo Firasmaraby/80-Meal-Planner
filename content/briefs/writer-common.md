@@ -20,7 +20,7 @@
   - Wash produce before cutting. Wash hands and boards after raw meat and fish. Marinate in the fridge and never reuse a raw marinade.
   - Thaw in the fridge, use within 2 days, never refreeze.
 - **Claims:** no medical claims anywhere. Say what a food brings ("iron, with vitamin C to help absorb it"), not what it will cure or prevent. No supplements or powders in recipes.
-- **Alcohol:** wine or mirin in cooking is fine outside pregnancy and breastfeeding. Note that the halal-friendly tag is computed and alcohol removes it, so prefer to leave alcohol out unless the dish truly needs it.
+- **Alcohol:** leave it out of every recipe (no wine, beer, spirits or mirin in cooking); use stock, vinegar, citrus or a pinch of sugar instead.
 
 ## Sodium and the usual rules
 - **Write under the sodium ceiling from the start:**

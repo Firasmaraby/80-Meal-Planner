@@ -153,6 +153,8 @@ const safeStorage = {
   },
 };
 
+const RETIRED_DIETS = ['halal-friendly', 'kosher-style'];
+
 /** Bring a state saved by an older version up to the current shape. Exported for the tests. */
 export function migrateState(persisted: unknown, version: number): unknown {
   const st = (persisted ?? {}) as Record<string, unknown> & { profile?: Record<string, unknown> };
@@ -163,6 +165,10 @@ export function migrateState(persisted: unknown, version: number): unknown {
   if (version < 3) st.profile = { ...DEFAULT_PROFILE, ...(st.profile ?? {}) };
   // v4: everyone starts on whole-food carbs, which they can change in Food preferences
   if (version < 4) st.profile = { ...(st.profile ?? DEFAULT_PROFILE), carbStyle: st.profile?.carbStyle ?? DEFAULT_PROFILE.carbStyle };
+  // v5: the halal-friendly and kosher-style filters are gone (the app stays religiously neutral); a saved one would hide every plan
+  if (version < 5 && Array.isArray(st.profile?.diet)) {
+    st.profile = { ...st.profile, diet: (st.profile.diet as string[]).filter((d) => !RETIRED_DIETS.includes(d)) };
+  }
   return st;
 }
 
@@ -279,10 +285,11 @@ export const useStore = create<State>()(
     {
       name: 'eighty-v1',
       storage: createJSONStorage(() => safeStorage),
-      version: 4,
+      version: 5,
       // v2: Focus 3 removed; meals can be added to / removed from a day
       // v3: plan sizing + dislikes
       // v4: carb style
+      // v5: halal-friendly and kosher-style filters retired
       migrate: (persisted, version) => migrateState(persisted, version) as unknown as State,
     },
   ),

@@ -127,7 +127,7 @@ function paleoReason(f: Food): string | undefined {
   return undefined;
 }
 
-// pork in any form (for the halal-friendly and kosher-style tags); beef, turkey or chicken versions of a sausage are fine
+// pork in any form; beef, turkey or chicken versions of a sausage are fine
 const PORK = /\b(pork|ham|bacon|lard|prosciutto|pancetta|guanciale|pepperoni|chorizo|salami|mortadella|hot dogs?|wieners?|frankfurters?|chicharr[oó]n|spareribs?|baby back)\b/;
 const NOT_PORK = /\b(beef|turkey|chicken|veggie|vegetarian|plant-based|soy|tofu|mushroom|eggplant)\b/;
 const SHELLFISH = /\b(shrimps?|prawns?|crabs?|lobsters?|crayfish|crawfish|langoustines?|clams?|mussels?|oysters?|scallops?|squid|calamari|octopus|cuttlefish|sea urchin|abalone|whelks?|cockles?|shellfish)\b/;
