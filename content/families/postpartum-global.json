@@ -1,0 +1,1615 @@
+{
+  "id": "postpartum-global",
+  "name": "Postpartum Global Kitchen",
+  "style": "postpartum",
+  "cuisine": "Global",
+  "regions": [
+    "Canada",
+    "the US",
+    "Mexico",
+    "Italy"
+  ],
+  "summary": "Make-ahead breakfasts, a Sunday chili and soup for the freezer, salmon, haddock chowder and snacks you can eat with one hand. Built for the nutrients breastfeeding asks more of, with plenty of water-rich foods.",
+  "howItWorks": "**One free hand, little sleep.** Every breakfast is made ahead: overnight oats, baked oat squares and egg muffins you reheat. Snacks are wraps, bars and cups. Soups, fruit, cucumber and yogurt cups carry plenty of water, so drink to thirst. Hot soup, tea and coffee wait until baby is set down. Wash hands, boards and knives after raw meat or fish, and do not rinse raw meat.\n\n**Sunday batch, then the freezer.** Before day 1, make the chili, lentil soup, muffins, squares and bars, and chill them within 2 hours. Keep what you eat on days 1 and 2 in the fridge (cooked dishes keep 3 days) and freeze the rest in single portions. Thaw each in the fridge the night before, use within 2 days and never refreeze. Reheat to 74°C (165°F).\n\n**Choline, B12 and calcium.** Choline comes from eggs at three breakfasts and two snacks, plus salmon, beef and chicken. B12 comes from salmon, beef, haddock, eggs and dairy. Calcium comes from milk, yogurt, cottage cheese, cheddar and canned salmon eaten with its soft bones.\n\n**DHA, iodine and vitamin D.** Salmon is cooked fresh for two dinners, plus a canned salmon wrap, all low-mercury and never back to back. Iodized salt, milk, yogurt, eggs and haddock help with iodine, but iodine and vitamin D still run low from food on most days. Ask your care provider about a supplement that covers both.\n\n**Bigger or smaller.** Big adds a third snack on four days and grows the grains, proteins and oils, while vegetables and fruit stay as written. There is no Light size: this plan does not go below 1,800 kcal.",
+  "signature": [
+    "postpartum-global-sheet-pan-salmon-sweet-potato-broccoli",
+    "postpartum-global-beef-three-bean-chili",
+    "postpartum-global-haddock-corn-chowder",
+    "postpartum-global-egg-muffin-breakfast-wrap"
+  ],
+  "lifeStage": "lactating",
+  "sizes": {
+    "standard": {
+      "kcal": 2200,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 2800,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "postpartum-global-almond-date-oat-bars"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "postpartum-global-banana-almond-yogurt-cup"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "postpartum-global-carrot-sticks-yogurt-dill-dip"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "postpartum-global-smoky-roasted-chickpeas"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "postpartum-global-berry-walnut-overnight-oats",
+      "name": "Berry and walnut overnight oats",
+      "about": "Rolled oats soaked overnight in milk and yogurt, thick and cold, with blueberries, walnuts and a few pumpkin seeds for crunch. It is **ready the second you wake up**, and you can eat it one-handed from the jar. The yogurt and milk bring calcium and iodine, and the pumpkin seeds bring zinc.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "rolled oats"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 90,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 100,
+          "swap": "berries",
+          "note": "fresh, or thawed if frozen"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Stir the oats, milk, yogurt, cinnamon and maple syrup together in a jar until there are no dry pockets.",
+        "Fold in half the blueberries, put the lid on and chill overnight, or at least 4 hours.",
+        "In the morning, loosen with a splash of milk if it has set firm, then top with the rest of the blueberries, the walnuts and the pumpkin seeds."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Mix the jar the night before and eat it within 2 days. Mix a second jar for another morning only if you will eat it within that time."
+    },
+    {
+      "id": "postpartum-global-carrot-cake-baked-oat-squares",
+      "name": "Carrot cake baked oat squares with yogurt",
+      "about": "Soft, spiced oat squares with grated carrot, dates and walnuts, baked in one dish and cut cold from the fridge. They taste like carrot cake and eat like a bar, so one hand is plenty. The carrot and egg bring **vitamin A and choline**.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "rolled oats"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "grated, scrubbed first"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 15,
+          "note": "pitted and chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 3
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1.5
+        },
+        {
+          "food": "baking-powder-low-sodium-2b32ac",
+          "g": 2
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 90,
+          "swap": "dairy_protein",
+          "note": "to serve"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 50,
+          "swap": "berries",
+          "note": "fresh, or thawed if frozen, to serve"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C (350°F) and grease a small baking dish with a little canola oil.",
+        "Stir the oats, cinnamon and baking powder together, then stir in the beaten eggs, milk and maple syrup until evenly wet.",
+        "Fold in the grated carrot, dates and walnuts and spread the mix in the dish.",
+        "Bake for 25 to 30 minutes, until the middle is set, the top is golden and a knife comes out clean, so the egg is fully cooked (74°C or 165°F in the centre).",
+        "Cool, cover and chill in an airtight container. Cut into squares and serve cold or warmed, with the yogurt and blueberries on the side or spooned on top."
+      ],
+      "prepMin": 10,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Bake Sunday. Keep day 2's square in the fridge in an airtight container and freeze day 5's wrapped alone. Thaw it in the fridge overnight and eat within 2 days."
+    },
+    {
+      "id": "postpartum-global-egg-muffin-breakfast-wrap",
+      "name": "Egg muffin breakfast wrap with avocado and clementine",
+      "about": "A baked spinach and cheddar egg muffin tucked into a warm tortilla with sliced avocado, with a clementine on the side. The muffins are baked ahead, so breakfast is a minute of assembly and one hand. The eggs bring **choline and protein**, cooked all the way through.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 25,
+          "swap": "leafy_greens",
+          "note": "washed and chopped"
+        },
+        {
+          "food": "cheddar-cheese-reduced-fat-a0786c",
+          "g": 8,
+          "swap": "dairy_protein",
+          "note": "grated"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 15,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 55,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "clementine-raw-42fb6e",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "peeled, on the side"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180°C (350°F) and grease a muffin tin well.",
+        "Whisk the eggs, milk, salt and pepper, then stir in the spinach and cheddar.",
+        "Pour into the tin, about three-quarters full. Bake for 18 to 22 minutes, until puffed and completely set in the middle, with no wet egg, and the centre reaches 74°C (165°F).",
+        "Cool, then chill within 2 hours. Keep tomorrow's muffins in the fridge and freeze the rest in single portions.",
+        "To serve, reheat the muffins to 74°C (165°F), steaming hot all the way through. Warm the tortilla, lay on the avocado and the muffins, fold and eat. Peel the clementine on the side."
+      ],
+      "prepMin": 10,
+      "cookMin": 22,
+      "servings": 3,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "Bake 3 breakfasts on Sunday: day 1 from the fridge, days 4 and 7 from the freezer. Thaw overnight in the fridge, then reheat to 74°C (165°F)."
+    },
+    {
+      "id": "postpartum-global-beef-three-bean-chili",
+      "name": "Beef and bean chili with tortilla for scooping",
+      "inspiredBy": "classic North American chili con carne",
+      "about": "A thick, smoky chili with lean beef, kidney and black beans, carrot and tomato, topped with creamy avocado. Cook it on **Sunday and freeze portions**, so a hot, hearty meal is only a reheat away. The beef brings iron, zinc and B12, and the beans add fibre.",
+      "ingredients": [
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 90,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 160,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "kidney-beans-canned-no-salt-added-drained-89a75f",
+          "g": 65,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 65,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 3
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "diced, to top"
+        },
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 35,
+          "note": "warmed, for scooping"
+        }
+      ],
+      "steps": [
+        "Warm the oil in a large pot over medium heat. Cook the onion and carrot for 6 to 8 minutes, until soft and starting to colour. Add the garlic and cook 1 minute.",
+        "Add the ground beef and break it up with a spoon. Cook for 6 to 8 minutes, until no pink remains, it is browned all over and it reaches 71°C (160°F).",
+        "Stir in the chili powder, cumin, smoked paprika and oregano and cook for 30 seconds, until fragrant.",
+        "Add the tomatoes, beans, salt and a splash of water. Simmer gently for 30 minutes, stirring now and then, until thick and the flavours have come together.",
+        "Divide into shallow containers so it cools fast, and chill within 2 hours. Keep one portion in the fridge for up to 3 days and freeze the rest in single portions. Reheat to 74°C (165°F), steaming hot all the way through.",
+        "Serve in a bowl with the diced avocado on top and the warm tortilla for scooping."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "freezer-friendly",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "This pot covers day 1's lunch and day 7's dinner. Double it if you want spare freezer meals. Thaw overnight in the fridge, use within 2 days and never refreeze."
+    },
+    {
+      "id": "postpartum-global-red-lentil-carrot-soup-cheddar-quesadilla",
+      "name": "Red lentil, carrot and tomato soup with cheddar quesadilla wedges",
+      "inspiredBy": "Middle Eastern shorbat adas",
+      "about": "A silky orange soup of red lentils, carrots and tomato with warm cumin and a squeeze of lemon, served with crisp cheddar quesadilla wedges for dunking. It is a **freezer-friendly one-pot soup** that blends up thick and creamy. The carrots and spinach bring vitamin A and the lentils bring folate.",
+      "ingredients": [
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 60,
+          "swap": "legumes"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 90,
+          "note": "scrubbed and sliced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 100,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "vegetable-broth-ready-to-serve-low-sodium-91b9aa",
+          "g": 300
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 18,
+          "note": "from a lemon"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 45,
+          "note": "for the quesadilla"
+        },
+        {
+          "food": "cheddar-cheese-reduced-fat-a0786c",
+          "g": 12,
+          "swap": "dairy_protein",
+          "note": "grated"
+        }
+      ],
+      "steps": [
+        "Warm the oil in a pot over medium heat and cook the onion and carrot for 8 minutes, until the onion is soft.",
+        "Add the garlic, cumin and tomatoes and stir for 1 minute.",
+        "Rinse the lentils and add them with the broth and a cup of water. Bring to a boil, then simmer for 20 minutes, until the lentils and carrots are completely soft.",
+        "Blend with an immersion blender until smooth, or leave it a little chunky. Stir in the washed spinach until it wilts, then the salt and lemon juice.",
+        "For the quesadilla, scatter the cheddar over half the tortilla, fold it over and toast in a dry pan for 2 minutes a side, until golden and the cheese has melted. Cut into wedges.",
+        "Divide into shallow containers so it cools fast, and chill within 2 hours. Keep one portion in the fridge for up to 3 days and freeze the rest in single portions. Reheat to 74°C (165°F)."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Make it Sunday and freeze in single portions with a little room at the top. Thaw overnight in the fridge, use within 2 days and never refreeze. Make the quesadilla fresh each time."
+    },
+    {
+      "id": "postpartum-global-sheet-pan-salmon-sweet-potato-broccoli",
+      "name": "Sheet-pan salmon with sweet potato, broccoli and lemon-dill yogurt",
+      "about": "A whole dinner on one tray: salmon roasted over wedges of sweet potato and broccoli, spooned with a cool lemon-dill yogurt. Salmon is the DHA dinner of the week, and the sweet potato brings **plenty of vitamin A**. There is one pan to wash and nothing to stir.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "skin on or off"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 200,
+          "note": "scrubbed, cut in wedges"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 120,
+          "note": "washed, cut in florets"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "note": "from a lemon"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 40,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "dill-weed-dried-d92fd8",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Toss the sweet potato wedges with half the oil, half the salt and the pepper on a large tray and roast for 15 minutes.",
+        "Add the broccoli to the tray with the rest of the oil and toss. Make room for the salmon in the middle.",
+        "Season the salmon with a pinch of salt and lay it on the tray. Roast for 10 to 12 minutes more, until the salmon flakes easily with a fork, reaches 70°C (158°F) inside, and the sweet potato is tender.",
+        "Stir the yogurt, lemon juice, garlic and dill together in a small bowl.",
+        "Serve the salmon and vegetables with the yogurt sauce spooned over."
+      ],
+      "prepMin": 10,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "weekend-project"
+      ],
+      "tip": "Salmon is best eaten fresh, so cook only what you will eat tonight."
+    },
+    {
+      "id": "postpartum-global-chicken-tinga-sweet-potato-rice-bowl",
+      "name": "Chicken tinga bowl with sweet potato, black beans and avocado",
+      "inspiredBy": "Pueblan tinga de pollo",
+      "about": "Tender shredded chicken in a smoky tomato and chipotle sauce with sweet potato cooked right in, over a little brown rice and black beans with avocado and a squeeze of lemon. It makes **two portions**, and tomorrow's lunch is better for the night in the fridge. The chicken brings protein and choline, the sweet potato brings vitamin A.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "boneless, skinless"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 130,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "chipotle-peppers-in-adobo-sauce-f692a1",
+          "g": 8,
+          "note": "minced, with a little sauce"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 110,
+          "note": "peeled, in small cubes"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 25,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 60,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 35,
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "note": "from a lemon"
+        }
+      ],
+      "steps": [
+        "Cook the rice in plenty of water or per the packet until tender, then drain. Warm the black beans through in a small pot.",
+        "Warm the oil in a wide pan over medium heat and cook the onion for 6 minutes, until soft. Add the garlic, cumin and oregano and cook 30 seconds.",
+        "Add the tomatoes, chipotle, salt and a splash of water and bring to a simmer. Add the chicken and cover. Simmer for 10 minutes.",
+        "Add the sweet potato cubes, cover again and simmer 15 minutes more, until the sweet potato is tender and the chicken reaches 74°C (165°F) on a thermometer, with no pink and the juices running clear.",
+        "Shred the chicken with two forks right in the sauce and simmer a few minutes, until thick.",
+        "Spoon the chicken and sweet potato over the rice and beans. Top with avocado and a squeeze of lemon.",
+        "Pack the second portion for tomorrow's lunch, spreading any leftover rice thin in a shallow container so it cools fast. Chill within 2 hours and reheat once to 74°C (165°F), steaming hot."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Use less chipotle for a milder sauce. The tinga freezes well without the avocado. Thaw in the fridge, use within 2 days and never refreeze."
+    },
+    {
+      "id": "postpartum-global-turkey-meatball-spinach-pasta-soup",
+      "name": "Turkey meatball and spinach soup with little pasta",
+      "inspiredBy": "Italian wedding soup",
+      "about": "A brothy soup of tender baked turkey meatballs, carrot, chickpeas, spinach and a small handful of pasta, with lemon at the end. It is warm, mostly water and easy to eat with a spoon. It makes **tomorrow's lunch**, and freezes well without the pasta.",
+      "ingredients": [
+        {
+          "food": "ground-turkey-raw-52078e",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "ground turkey"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 10,
+          "swap": "low_gi_grains",
+          "note": "rolled oats, as the binder"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 15,
+          "note": "beaten"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 80,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 60,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "broken spaghetti"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "vegetable-broth-ready-to-serve-low-sodium-91b9aa",
+          "g": 300
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "from a lemon"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200°C (400°F) and line a tray with parchment. Beat the egg in a large bowl (if the list shows part of an egg, beat a whole one, use about half, and cover, chill and cook the rest within 2 days). Mix in the turkey, oats, half the garlic, half the oregano and a pinch of the salt with your hands. If the mix is too soft to roll, chill it for 10 minutes, then roll into small balls with wet hands and set them on the tray.",
+        "Bake for 15 to 18 minutes, until browned and cooked through, with no pink inside and 74°C (165°F) on a thermometer.",
+        "Meanwhile, warm the oil in a pot and cook the onion and carrot for 6 minutes, until soft. Add the rest of the garlic and oregano, then the tomatoes, broth, chickpeas and a cup of water.",
+        "Bring to a simmer, add the broken spaghetti and cook for 8 to 10 minutes, until tender.",
+        "Add the meatballs and the washed spinach and simmer 3 minutes, until the spinach wilts and the meatballs are hot all the way through. Stir in the lemon juice and the rest of the salt.",
+        "Pack the second portion in a shallow container and chill within 2 hours. Reheat to 74°C (165°F), steaming hot, with a splash of water if the pasta has soaked up the broth."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "To freeze, leave out the pasta and add fresh spaghetti when you reheat it. Thaw in the fridge, use within 2 days and never refreeze."
+    },
+    {
+      "id": "postpartum-global-haddock-corn-chowder",
+      "name": "Haddock and sweet corn chowder",
+      "inspiredBy": "Maritime fish chowder",
+      "about": "A creamy, comforting chowder of flaky haddock, potato, carrot and sweet corn in a milky broth with thyme and a handful of spinach stirred in. It is **a good iodine dinner**, since haddock and milk are two of the best food sources, and it reheats well for the next day's lunch. Soft, warm and easy to eat with a spoon.",
+      "ingredients": [
+        {
+          "food": "haddock-raw-492803",
+          "g": 170,
+          "note": "skinless, boneless"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 100,
+          "note": "diced small, skin on"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 45
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "diced small"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "washed and chopped"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 250,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "vegetable-broth-ready-to-serve-low-sodium-91b9aa",
+          "g": 150
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the oil in a pot over medium heat and cook the onion and carrot for 6 minutes, until soft but not browned.",
+        "Add the potato, broth and thyme with a cup of water. Simmer for 10 minutes, until the potato is nearly tender.",
+        "Pour in the milk and add the corn. Warm gently, without letting it boil hard.",
+        "Cut the haddock into big pieces and lay them in. Cover and cook for 5 to 6 minutes, until the fish turns opaque, flakes easily and reaches 70°C (158°F). Stir in the washed spinach until it wilts and season with the salt and pepper.",
+        "Crush a few potato pieces against the side of the pot to thicken the chowder.",
+        "Pack the second portion in a shallow container and chill within 2 hours. Eat it within 3 days, stir and reheat to 74°C (165°F), steaming hot all the way through."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Cod or pollock work too. Do not freeze the chowder, as the fish and milk turn soft and grainy."
+    },
+    {
+      "id": "postpartum-global-maple-ginger-salmon-rice-bowl",
+      "name": "Maple-ginger salmon rice bowl with broccoli and cucumber",
+      "inspiredBy": "a Japanese-style salmon bowl, with Canadian maple",
+      "about": "Salmon brushed with maple, ginger and a little soy sauce, roasted until just flaky, on brown rice with steamed broccoli, crunchy cucumber and carrot. It is sweet, salty and fresh, and everything comes together in one bowl. The salmon brings **DHA and B12**, and the broccoli brings vitamin C and folate.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 125,
+          "swap": "fatty_fish",
+          "note": "skin on or off"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 6
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.7
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 55,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 100,
+          "note": "cut in small florets"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "shredded"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "from a lemon"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Cook the rice in plenty of water or per the packet until tender, then drain and keep warm.",
+        "Heat the oven to 200°C (400°F). Stir the maple syrup, soy sauce and ginger together and brush it over the salmon on a lined tray.",
+        "Roast for 10 to 12 minutes, until the salmon flakes easily, is opaque all the way through and reaches 70°C (158°F) inside.",
+        "Steam the broccoli for 4 to 5 minutes, until bright green and just tender. Toss the cucumber and carrot with the lemon juice and the oil.",
+        "Pile the rice in a bowl, add the broccoli and the cucumber-carrot salad and set the salmon on top."
+      ],
+      "prepMin": 12,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook the rice fresh, or cool extra rice fast in a shallow container, use it within 2 days and reheat once to 74°C (165°F)."
+    },
+    {
+      "id": "postpartum-global-lemon-herb-chicken-tray-bake",
+      "name": "Lemon-herb chicken tray bake with potatoes, carrots and chickpeas",
+      "inspiredBy": "Greek-style lemon chicken and potatoes",
+      "about": "Juicy chicken thighs roasted over potatoes, carrots, chickpeas and onion with lemon, garlic and thyme, finished with wilted spinach. It goes in the oven and you leave it alone, and the second portion is **tomorrow's lunch**, eaten cold from the fridge or reheated until steaming. A simple roast dinner without the Sunday effort.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "boneless, skinless"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 130,
+          "note": "scrubbed, cut in chunks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 90,
+          "note": "scrubbed, cut in sticks"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 60,
+          "swap": "legumes",
+          "note": "drained, rinsed and patted dry"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "note": "from a lemon"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.8
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 210°C (410°F). Toss the potato and carrot with half the oil, half the salt and the thyme on a large tray and roast for 15 minutes.",
+        "Toss the chicken with the rest of the oil, the garlic, smoked paprika, lemon juice and the remaining salt.",
+        "Add the chicken, chickpeas and onion to the tray and roast for 25 minutes more, until the chicken reaches 74°C (165°F) on a thermometer in the thickest piece, with no pink and the juices clear, and the potatoes are golden.",
+        "Pile the washed spinach onto the hot tray and toss for a minute, until it wilts, and serve.",
+        "Pack the second portion and chill it within 2 hours. Reheat to 74°C (165°F), or eat it cold from the fridge."
+      ],
+      "prepMin": 12,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Cut the potatoes and carrots the night before and keep them covered in cold water in the fridge. Making Big? Use two trays so it roasts instead of steaming."
+    },
+    {
+      "id": "postpartum-global-almond-date-oat-bars",
+      "name": "Almond and date oat bars",
+      "about": "Chewy bars of rolled oats, dates and chopped almonds pressed into a pan and cut into squares. They are sweet without being sugary and you can eat one in your other hand. They bring **slow-burning oats and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 25,
+          "swap": "low_gi_grains",
+          "note": "rolled oats"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 25,
+          "note": "pitted"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160°C (325°F). Soak the dates in hot water for 5 minutes, then drain and mash them with a fork or blitz into a paste.",
+        "Mix the date paste with the maple syrup, a splash of water, cinnamon and salt, then stir in the oats and almonds until sticky.",
+        "Press firmly into a lined small pan. Bake for 15 to 18 minutes, until lightly golden around the edges.",
+        "Cool completely in the pan, cut into bars and keep in an airtight container in the fridge up to 4 days, or freeze wrapped one by one."
+      ],
+      "prepMin": 10,
+      "cookMin": 16,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "Bars you will not eat within 4 days go in the freezer, wrapped one by one. Move one to the fridge the night before and eat it within 2 days of thawing."
+    },
+    {
+      "id": "postpartum-global-chickpea-cucumber-yogurt-wrap",
+      "name": "Smashed chickpea and cucumber wrap",
+      "about": "Mashed chickpeas with yogurt and lemon in a soft whole-wheat tortilla with crunchy cucumber and baby spinach. It is cold, crisp and juicy, and you can hold it in one hand. The chickpeas and spinach bring **iron, zinc and folate**.",
+      "ingredients": [
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 60,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 70,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 30,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "cut in thin sticks"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 20,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Mash the chickpeas roughly with a fork, then stir in the yogurt, lemon juice and pepper.",
+        "Lay the tortilla flat and spread the chickpea mix over it, leaving a border.",
+        "Pile the spinach and cucumber down the middle, fold in the sides and roll up tightly.",
+        "Wrap in parchment or foil so you can eat it one-handed. It keeps in the fridge until the next day."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Roll it in foil and peel as you eat, so nothing falls out while the baby feeds."
+    },
+    {
+      "id": "postpartum-global-salmon-cucumber-yogurt-wrap",
+      "name": "Canned salmon and cucumber wrap",
+      "about": "Flaked canned salmon, mashed with its soft bones, with creamy yogurt, lemon and dill in a whole-wheat wrap with cucumber and spinach. It tastes like a fresh salmon salad sandwich. Canned salmon with the bones carries **DHA and calcium**.",
+      "ingredients": [
+        {
+          "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+          "g": 75,
+          "swap": "fatty_fish",
+          "note": "with its soft bones"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 25,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "dill-weed-dried-d92fd8",
+          "g": 0.3
+        },
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 60,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 45,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 15,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Drain the salmon and flake it into a bowl, mashing in the soft bones.",
+        "Stir in the yogurt, lemon juice, dill and pepper.",
+        "Spread on the tortilla, add the cucumber and spinach, fold in the sides and roll tightly.",
+        "Eat right away or chill, wrapped, until later in the day."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Open a can once and make two wraps. Keep the extra salmon mixture covered in the fridge up to 2 days."
+    },
+    {
+      "id": "postpartum-global-mango-banana-yogurt-smoothie",
+      "name": "Mango and banana yogurt smoothie",
+      "about": "A cold, thick smoothie of frozen mango, banana, yogurt and milk that you can drink straight from a water bottle or a tall travel cup. It is sweet, easy and mostly water. Yogurt and milk bring **calcium and iodine**, and the mango adds vitamin A.",
+      "ingredients": [
+        {
+          "food": "mango-peeled-frozen-a464dd",
+          "g": 100,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 60
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 80,
+          "swap": "dairy_protein"
+        }
+      ],
+      "steps": [
+        "Add the milk, yogurt, banana and frozen mango to a blender in that order.",
+        "Blend for about a minute, until completely smooth.",
+        "Drink right away, or pour into a lidded cup or water bottle (never a baby bottle), keep it cold and drink within a day."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Peel and freeze ripe bananas in chunks so the smoothie is thick and cold without ice."
+    },
+    {
+      "id": "postpartum-global-cottage-cheese-mango-almond-cup",
+      "name": "Cottage cheese with mango and almonds",
+      "about": "Creamy cottage cheese with juicy thawed mango and a few chopped almonds, eaten with a spoon from a cup. It is sweet and savoury, cool and hydrating. It brings **protein, iodine and vitamin E** with plenty of water.",
+      "ingredients": [
+        {
+          "food": "cottage-cheese-2-fat-49f49a",
+          "g": 140,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mango-peeled-frozen-a464dd",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "thawed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Thaw the mango in the fridge overnight or for a few minutes in a bowl of cold water.",
+        "Spoon the cottage cheese into a cup or small bowl and top with the mango and almonds.",
+        "Eat it cold with a spoon, or keep it in the fridge until you want it."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "postpartum-global-smoky-roasted-chickpeas",
+      "name": "Smoky roasted chickpeas",
+      "about": "Crunchy chickpeas roasted until crisp with smoked paprika, cumin and lemon. They are a handful-at-a-time snack you can eat from a bowl on your lap. They bring **plant protein, fibre and zinc**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 110,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.7
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220°C (425°F). Pat the chickpeas very dry with a clean towel.",
+        "Toss with the oil, smoked paprika, cumin and salt on a tray.",
+        "Roast for 25 to 30 minutes, shaking the tray halfway, until deep golden and crunchy.",
+        "Let them cool on the tray, as they crisp up as they cool. Squeeze the lemon over just the portion you are eating. Keep the rest plain in a jar for 3 days at most."
+      ],
+      "prepMin": 5,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Makes two portions. Keep the second plain and add its lemon when you eat it, so it stays crunchy."
+    },
+    {
+      "id": "postpartum-global-clementines-almonds-walnuts",
+      "name": "Clementines with almonds and walnuts",
+      "about": "Easy-peel clementines with a small handful of almonds and walnuts, juicy and crunchy together. There is no prep and no mess. Together they bring **vitamin C, vitamin E and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "clementine-raw-42fb6e",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "peeled"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "unsalted"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "halves"
+        }
+      ],
+      "steps": [
+        "Peel the clementines and split into segments.",
+        "Eat with a small handful of the almonds and walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "postpartum-global-carrot-sticks-yogurt-dill-dip",
+      "name": "Carrot sticks with garlicky yogurt dip",
+      "about": "Crunchy carrot sticks with a cool, garlicky lemon yogurt dip, easy to dunk and eat with one hand. Mostly water, with a little protein. The carrots bring **vitamin A**.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 130,
+          "note": "scrubbed, cut in sticks"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 70,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1,
+          "note": "finely grated"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Stir the yogurt, grated garlic, lemon juice, salt and pepper together in a small bowl.",
+        "Wash and cut the carrots into sticks and dunk them in the dip.",
+        "Keep the dip covered in the fridge for up to 2 days."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Makes enough dip for two snacks. Eat the second portion within 2 days."
+    },
+    {
+      "id": "postpartum-global-paprika-yogurt-eggs",
+      "name": "Paprika yogurt eggs",
+      "about": "Hard-boiled egg halves filled with a creamy yogurt, lemon and smoked paprika mix, easy to eat in two bites. Make them ahead and keep them in the fridge. The eggs bring **choline and protein**, boiled until the yolks are fully set.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "hard-boiled"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 25,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 3
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lower the eggs into a pot of simmering water and boil for 10 minutes, so the yolks are fully set. Cool under cold running water, then peel.",
+        "Halve the eggs and scoop the yolks into a bowl. Mash with the yogurt, lemon juice, salt and pepper until creamy.",
+        "Spoon the filling back into the whites and dust with the smoked paprika.",
+        "Eat them the day you fill them."
+      ],
+      "prepMin": 15,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Hard-boil the eggs up to a week ahead and keep them in the shell, in the fridge. Fill them the day you eat them."
+    },
+    {
+      "id": "postpartum-global-banana-almond-yogurt-cup",
+      "name": "Banana and almond yogurt cup",
+      "about": "Thick Greek yogurt with sliced banana, a few chopped almonds and a dusting of cinnamon, spooned from a cup. It is cool and creamy with a little crunch. The yogurt brings **calcium and iodine**, and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a cup or small bowl.",
+        "Top with the banana slices, almonds and cinnamon.",
+        "Eat right away, so the banana stays fresh."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "postpartum-global-egg-muffin-breakfast-wrap"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "postpartum-global-beef-three-bean-chili",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "postpartum-global-sheet-pan-salmon-sweet-potato-broccoli"
+        },
+        {
+          "slot": "snack",
+          "recipe": "postpartum-global-carrot-sticks-yogurt-dill-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "postpartum-global-banana-almond-yogurt-cup"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "postpartum-global-carrot-cake-baked-oat-squares"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "postpartum-global-red-lentil-carrot-soup-cheddar-quesadilla",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "postpartum-global-chicken-tinga-sweet-potato-rice-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "postpartum-global-cottage-cheese-mango-almond-cup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "postpartum-global-smoky-roasted-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "postpartum-global-berry-walnut-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "postpartum-global-chicken-tinga-sweet-potato-rice-bowl",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "postpartum-global-haddock-corn-chowder"
+        },
+        {
+          "slot": "snack",
+          "recipe": "postpartum-global-paprika-yogurt-eggs"
+        },
+        {
+          "slot": "snack",
+          "recipe": "postpartum-global-clementines-almonds-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "postpartum-global-egg-muffin-breakfast-wrap"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "postpartum-global-haddock-corn-chowder",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "postpartum-global-turkey-meatball-spinach-pasta-soup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "postpartum-global-mango-banana-yogurt-smoothie"
+        },
+        {
+          "slot": "snack",
+          "recipe": "postpartum-global-salmon-cucumber-yogurt-wrap"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "postpartum-global-carrot-cake-baked-oat-squares"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "postpartum-global-turkey-meatball-spinach-pasta-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "postpartum-global-lemon-herb-chicken-tray-bake"
+        },
+        {
+          "slot": "snack",
+          "recipe": "postpartum-global-chickpea-cucumber-yogurt-wrap"
+        },
+        {
+          "slot": "snack",
+          "recipe": "postpartum-global-clementines-almonds-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "postpartum-global-berry-walnut-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "postpartum-global-lemon-herb-chicken-tray-bake",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "postpartum-global-maple-ginger-salmon-rice-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "postpartum-global-cottage-cheese-mango-almond-cup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "postpartum-global-paprika-yogurt-eggs"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "postpartum-global-egg-muffin-breakfast-wrap"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "postpartum-global-red-lentil-carrot-soup-cheddar-quesadilla",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "postpartum-global-beef-three-bean-chili"
+        },
+        {
+          "slot": "snack",
+          "recipe": "postpartum-global-mango-banana-yogurt-smoothie"
+        },
+        {
+          "slot": "snack",
+          "recipe": "postpartum-global-almond-date-oat-bars"
+        }
+      ]
+    }
+  ]
+}
