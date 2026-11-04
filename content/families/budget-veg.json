@@ -1,0 +1,1590 @@
+{
+  "id": "budget-veg",
+  "name": "Budget Vegetarian",
+  "style": "budget",
+  "cuisine": "Global",
+  "regions": [
+    "Canada",
+    "India",
+    "Mexico",
+    "Italy"
+  ],
+  "summary": "A week of meatless pots built on beans, lentils, eggs and yogurt: Italian minestrone, red lentil dal, a cabbage and chickpea curry, shakshuka, a potato frittata and black bean tacos. One big pot or pan often feeds two meals, and nothing goes to waste.",
+  "howItWorks": "**One pot, then leftovers.** Monday's minestrone makes three portions: dinner, Tuesday's lunch and one for the freezer, moved to the fridge on Saturday night. The curry, shakshuka sauce, dal, frittata and tacos each make two, so every lunch from Tuesday on is cooked. Soak the black beans on Friday night.\n\n**Staples keep the list short.** Beans, lentils, oats, brown rice, potatoes, eggs and yogurt carry the week, with frozen peas, spinach and berries. Cabbage, onions and carrots turn up in several dishes so nothing wilts, and cheese is only a garnish. New to this many beans? Drink plenty of water.\n\n**B12 from eggs and dairy.** Plants don't make **B12**, so every day has an egg dish and yogurt or milk, which also bring choline. Vitamin D is hard to get from food, more so without fish. Health Canada advises a daily 400 IU supplement after 50; at any age, ask your care provider.\n\n**Iron, zinc and omega-3 from plants.** These are absorbed or converted less well from plants than from meat or fish, so beans, lentils, eggs and seeds turn up every day, with lime, tomato or pepper beside the iron. Flax, walnuts and canola bring ALA, which the body turns into fish-type omega-3 only in small amounts.\n\n**What changes with size.** Light drops the second snack and trims the rice, oats, tortillas, oil and cheese. Big grows every portion, and its milk and yogurt already carry plenty of calcium, so check with your care provider before adding a calcium supplement on top.",
+  "signature": [
+    "budget-veg-minestrone-white-bean-rice",
+    "budget-veg-red-lentil-dal-spinach-rice",
+    "budget-veg-shakshuka-white-bean-bread",
+    "budget-veg-black-bean-cabbage-tacos"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1600,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "budget-veg-banana-peanut-butter-flax-oatmeal",
+      "name": "Peanut butter banana oatmeal with flax",
+      "inspiredBy": "Inspired by everyday Canadian oatmeal",
+      "about": "Oats simmered in milk until creamy, swirled with peanut butter and topped with sliced banana, a generous scoop of Greek yogurt and ground flax. The oats bring **fibre and steady energy**, and the peanut butter and flax add vitamin E, niacin and plant omega-3.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 230,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 60,
+          "note": "ripe, sliced"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 22,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "ground"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 80,
+          "swap": "dairy_protein",
+          "note": "a generous scoop on top"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put the oats, milk, cinnamon and salt in a small pot. Bring to a gentle boil over medium heat, stirring.",
+        "Turn the heat down and simmer, stirring often, until the oats are thick and creamy, about 5 minutes. Add a splash of water if it gets too thick.",
+        "Swirl in half the peanut butter and the ground flax. Spoon into a bowl and top with the banana, a scoop of yogurt and the rest of the peanut butter."
+      ],
+      "prepMin": 4,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "The spottiest bananas are the sweetest, so this is the place for any going brown. Peanut is a common allergen, so use sunflower seed butter instead if you need to."
+    },
+    {
+      "id": "budget-veg-banana-walnut-flax-oatmeal",
+      "name": "Banana walnut oatmeal with flax",
+      "inspiredBy": "Inspired by everyday Canadian oatmeal",
+      "about": "Oats simmered in milk until creamy, topped with sliced banana, a generous scoop of Greek yogurt, toasted walnuts and ground flax. The oats bring **fibre and steady energy**, and the walnuts and flax add plant omega-3.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 230,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 70,
+          "note": "ripe, sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "ground"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 80,
+          "swap": "dairy_protein",
+          "note": "a generous scoop on top"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan over medium heat until they smell nutty, about 3 minutes. Tip them onto a plate to cool.",
+        "Put the oats, milk, cinnamon and salt in a small pot. Bring to a gentle boil over medium heat, stirring.",
+        "Turn the heat down and simmer, stirring often, until the oats are thick and creamy, about 5 minutes. Add a splash of water if it gets too thick.",
+        "Stir in the ground flax. Spoon into a bowl and top with the banana, a scoop of yogurt and the walnuts."
+      ],
+      "prepMin": 6,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Any bananas going brown are the sweetest, so use those."
+    },
+    {
+      "id": "budget-veg-berry-flax-overnight-oats",
+      "name": "Berry overnight oats with flax",
+      "inspiredBy": "Inspired by Swiss-style bircher muesli",
+      "about": "Oats soaked overnight in milk and Greek yogurt with ground flax, and frozen berries that thaw into the jar and bleed purple. They are cold, creamy and ready when you wake, and the berries bring **vitamin C and fibre** while the yogurt adds protein and B12.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 170,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mixed-berry-frozen-9f87f1",
+          "g": 100,
+          "swap": "berries",
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "ground"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Stir the oats, milk, yogurt, ground flax and cinnamon together in a jar or a bowl until there are no dry patches.",
+        "Fold in the frozen berries, put the lid on and leave in the fridge overnight, or at least 6 hours. The berries thaw as the oats soften.",
+        "Stir and eat cold from the jar. Add a splash of milk if it is too thick."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ],
+      "tip": "Make the jar the night before and keep it in the fridge. It is best eaten within 2 days. Frozen berries eaten raw can carry viruses, so if anyone eating is pregnant, 60 or older, 5 or under, or has a weak immune system, boil the berries for 1 minute and cool them first, or cook them into a pot of oatmeal instead."
+    },
+    {
+      "id": "budget-veg-masala-egg-bhurji-toast",
+      "name": "Masala egg bhurji on toast",
+      "inspiredBy": "Inspired by Indian egg bhurji",
+      "about": "Eggs scrambled with browned onion, mushroom, ginger, tomato and a little turmeric and chili, finished with fresh coriander and piled on toast. It is a hot breakfast with **protein, choline and B12**, ready in about 20 minutes.",
+      "ingredients": [
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "peeled and grated"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 50,
+          "note": "crushed with a fork"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.8
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.4
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash the coriander, mushrooms and ginger, then chop the onion and mushrooms and grate the ginger. Beat the eggs in a bowl and wash your hands after handling the raw shells.",
+        "Warm the oil in a non-stick pan over medium heat. Add the cumin seeds and let them sizzle for 10 seconds. Add the onion and mushrooms and cook until soft and golden and the mushroom liquid has cooked off, about 8 minutes.",
+        "Stir in the ginger, turmeric, chili powder and tomato and cook until the tomato breaks down and the oil shines at the edges, about 3 minutes.",
+        "Pour in the eggs and the salt. Stir slowly until the eggs are fully set with no runny egg left, 74 C (165 F), about 3 minutes.",
+        "Scatter with the coriander and pile onto the hot toast."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "For more heat, add a sliced green chili with the onion."
+    },
+    {
+      "id": "budget-veg-smashed-chickpea-salad-sandwich",
+      "name": "Smashed chickpea salad sandwich with cabbage slaw",
+      "inspiredBy": "Inspired by the Canadian chickpea salad sandwich",
+      "about": "Chickpeas mashed with Greek yogurt, onion, lime and black pepper, piled on toasted whole-wheat bread with a handful of crunchy cabbage. It is cool, creamy and ready in about 15 minutes, and the chickpeas bring **protein, iron and fibre**, with the lime to help you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "very finely chopped"
+        },
+        {
+          "food": "lime-raw-30841a",
+          "g": 12,
+          "swap": "vit_c_fruit",
+          "note": "juiced"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 50,
+          "note": "finely shredded"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4,
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Wash the cabbage and coriander. Shred the cabbage very fine, mince the onion and chop the coriander.",
+        "Mash the chickpeas in a bowl with a fork until about half are broken down and half stay whole.",
+        "Stir in the yogurt, onion, lime juice, salt and pepper. Taste and add a squeeze more lime if it needs brightness.",
+        "Toast the bread. Pile the chickpea salad on one slice, top with the cabbage and coriander, and close with the other slice."
+      ],
+      "prepMin": 10,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute",
+        "no-cook"
+      ],
+      "tip": "The chickpea salad keeps in the fridge for up to 3 days, so make a double batch for a second lunch."
+    },
+    {
+      "id": "budget-veg-minestrone-white-bean-rice",
+      "name": "Minestrone with white beans and brown rice",
+      "inspiredBy": "Inspired by Italian minestra di riso e fagioli",
+      "about": "A big pot of tomato-rich vegetable soup with white beans, mushrooms, spinach, cabbage, carrots, peas and chewy brown rice, with a shaving of parmesan on top. It is thick and filling, and the beans and vegetables bring **fibre, folate and potassium**. The pot makes three portions: dinner now, lunch tomorrow and one for the freezer.",
+      "ingredients": [
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 150,
+          "note": "crushed by hand, with its juice"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 170,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 10,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "spinach-frozen-boiled-4493fe",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 60,
+          "note": "shredded"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 30,
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "parmesan-cheese-hard-78ce3e",
+          "g": 10,
+          "swap": "dairy_protein",
+          "note": "finely grated, to finish; pick one made with microbial (vegetarian) rennet"
+        },
+        {
+          "food": "basil-dried-160272",
+          "g": 0.4
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.3
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the onion, carrot, mushrooms and cabbage. Dice the onion and carrot, slice the mushrooms and shred the cabbage.",
+        "Warm the oil in a big pot over medium heat. Cook the onion, carrot and mushrooms until the onion is soft and the mushrooms have given up their water, about 8 minutes. Add the garlic, basil, oregano and bay leaf and stir for 30 seconds.",
+        "Add the tomatoes and their juice, the rinsed brown rice and about 5 cups of water for every 3 portions, plus the salt. Bring to a boil, then simmer covered for 20 minutes. Add more water if it looks too thick.",
+        "Stir in the cabbage and white beans and simmer until the rice and cabbage are tender, about 20 minutes more. Stir in the peas and spinach and cook 3 minutes. Remove the bay leaf and season with pepper.",
+        "Ladle into bowls and finish with the parmesan.",
+        "Cool the leftover soup in shallow containers and get it into the fridge within 1 hour, because it holds cooked rice. Keep tomorrow's portion in the fridge (up to 3 days) and freeze the third portion once it is cold.",
+        "To eat the frozen portion, thaw it in the fridge for a day, use within 2 days and never refreeze it. Reheat once until steaming hot, 74 C (165 F), adding a splash of water as the rice will have thickened it."
+      ],
+      "prepMin": 20,
+      "cookMin": 45,
+      "servings": 3,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Once it is simmering it needs little attention, so cook it while you do other things. The rice and beans thicken the soup overnight, so thin it with a splash of water when you reheat."
+    },
+    {
+      "id": "budget-veg-red-lentil-dal-spinach-rice",
+      "name": "Red lentil dal with spinach and carrot",
+      "inspiredBy": "Inspired by Indian masoor dal tadka",
+      "about": "Red lentils cooked down with carrot, ginger and tomato until soft and golden, then finished with a sizzling cumin and garlic tadka, spinach and a squeeze of lime, over brown rice with a scoop of yogurt. The lentils bring **iron and folate**, and the lime and tomato help you absorb the iron. It makes two portions, so tomorrow's lunch is done.",
+      "ingredients": [
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed until the water runs clear"
+        },
+        {
+          "food": "spinach-frozen-boiled-4493fe",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "diced small"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "finely chopped"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "peeled and grated"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 50,
+          "note": "crushed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.7
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.4
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 0.6
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "lime-raw-30841a",
+          "g": 15,
+          "swap": "vit_c_fruit",
+          "note": "juiced, plus wedges to serve"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 60,
+          "swap": "dairy_protein",
+          "note": "a scoop to serve"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Rinse the brown rice and simmer it with about twice its volume of water until tender, about 40 minutes, then keep it covered. If you are short on time, start it first.",
+        "Wash the carrot and coriander. Put the lentils, carrot, ginger, tomato, turmeric, chili powder and about 3 cups of water for 2 portions in a pot. Bring to a boil, skim off any foam, then simmer partly covered until the lentils fall apart, about 20 minutes.",
+        "Stir in the spinach and salt and cook until hot, 3 minutes.",
+        "For the tadka, warm the oil in a small pan over medium heat. Cook the onion until golden, about 6 minutes, then add the cumin seeds and garlic and stir until the garlic is just golden, about 30 seconds. Do not let it burn.",
+        "Pour the tadka into the dal with the garam masala and lime juice, and scatter with coriander. Serve over the rice with a scoop of yogurt.",
+        "Spread the leftover rice on a tray to cool within 1 hour. Then put the leftover dal and rice into shallow containers in the fridge within 2 hours. Eat tomorrow's portion, reheated once until steaming hot, 74 C (165 F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "The dal also freezes well. Cool it fast, freeze it flat in a bag and thaw it in the fridge."
+    },
+    {
+      "id": "budget-veg-aloo-patta-gobi-chana-roti",
+      "name": "Cabbage, potato and chickpea curry with roti",
+      "inspiredBy": "Inspired by Punjabi aloo patta gobi, with chickpeas",
+      "about": "Potatoes, carrots, mushrooms and cabbage simmered with chickpeas, tomato, ginger and warm spices until tender and fragrant, served with a soft whole-wheat roti and cool yogurt. The chickpeas bring **protein, iron and zinc**, and the lime and tomato help your body absorb the iron. It makes two portions for tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 80,
+          "note": "scrubbed and cut in bite-size cubes"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "cut in coins"
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 70,
+          "note": "quartered"
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 100,
+          "note": "shredded"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "peeled and grated"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 80,
+          "note": "crushed"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1.2
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.7
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.5
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 0.7
+        },
+        {
+          "food": "lime-raw-30841a",
+          "g": 10,
+          "swap": "vit_c_fruit",
+          "note": "juiced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "chapati-or-roti-bread-whole-wheat-frozen-950577",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "warmed"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 60,
+          "swap": "dairy_protein",
+          "note": "to serve"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Wash the potatoes, carrots, mushrooms, cabbage and coriander, then cut the potatoes and carrots, quarter the mushrooms and shred the cabbage.",
+        "Warm the oil in a wide pot over medium heat. Add the cumin seeds, then the onion, and cook until soft and golden, about 7 minutes. Add the garlic and ginger and stir for 30 seconds.",
+        "Add the turmeric, chili powder, tomato and salt and cook until thick and the oil separates at the edges, about 4 minutes.",
+        "Add the potatoes, carrots, mushrooms and a cup of water for 2 portions. Cover and simmer for 10 minutes, then stir in the cabbage and chickpeas. Cook, covered, until the potatoes and carrots are tender and the cabbage has softened, about 12 minutes more.",
+        "Finish with the garam masala, lime juice and coriander. Serve with the warm roti and a scoop of yogurt.",
+        "Chill the second portion in a shallow container in the fridge within 2 hours. Reheat once until steaming hot, 74 C (165 F), and warm a fresh roti."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Cabbage turns sweet when it simmers with the spices, so this is the place to use up half a head."
+    },
+    {
+      "id": "budget-veg-shakshuka-white-bean-bread",
+      "name": "Shakshuka with red pepper, feta and toast",
+      "inspiredBy": "Inspired by North African shakshuka",
+      "about": "Eggs set gently in a spiced sauce of tomato, red pepper, onion, mushrooms, white beans and spinach with cumin and smoked paprika, finished with crumbled feta and fresh coriander. Scoop it up with toast. The eggs and beans bring **protein, choline and iron**, and the peppers and tomatoes bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "seeded and sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 220,
+          "note": "crushed by hand, with its juice"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "whole, in their shells"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "spinach-frozen-boiled-4493fe",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 12,
+          "swap": "dairy_protein",
+          "note": "crumbled; pick one made with microbial (vegetarian) rennet"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1.0
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.0
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Wash the pepper, mushrooms and coriander. Slice the onion, pepper and mushrooms.",
+        "Warm the oil in a wide, deep pan over medium heat. Cook the onion, pepper and mushrooms until soft and just starting to brown, about 10 minutes.",
+        "Stir in the garlic, cumin, smoked paprika and chili powder for 30 seconds until fragrant. Add the tomatoes with their juice, the white beans, the spinach and the salt and simmer until the sauce is thick, about 12 minutes.",
+        "The recipe makes sauce for 2 portions. Spoon half of it into a shallow container and cool it quickly. Refrigerate within 2 hours for tomorrow.",
+        "Make wells in the sauce left in the pan and crack the eggs in. Cover and cook until the whites are fully set and the yolks are firm, about 8 minutes. A thermometer in the white reads 74 C (165 F).",
+        "Scatter with the feta and coriander and serve with the toast.",
+        "Tomorrow, reheat the chilled sauce in the pan until steaming hot, 74 C (165 F), then cook fresh eggs in it the same way."
+      ],
+      "prepMin": 12,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Only the sauce is kept, never the cooked eggs. Cook fresh eggs in it the next day. Eating lunch away from home? Hard-boil the eggs that morning, keep them cold, and halve them into the sauce once it is reheated to 74 C (165 F)."
+    },
+    {
+      "id": "budget-veg-potato-pea-parmesan-frittata",
+      "name": "Potato, onion and pea frittata with cabbage salad",
+      "inspiredBy": "Inspired by Italian frittata di patate",
+      "about": "A thick, golden frittata of thin-sliced potato, soft onion, mushrooms and sweet peas, finished with parmesan and served with a crunchy lime-dressed cabbage and carrot salad with toasted sunflower seeds. It is good hot and just as good cold, and the eggs bring **protein, B12 and choline**. It makes two portions, so tomorrow's lunch is easy.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 85,
+          "note": "scrubbed and sliced thin"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 40,
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parmesan-cheese-hard-78ce3e",
+          "g": 10,
+          "swap": "dairy_protein",
+          "note": "finely grated; pick one made with microbial (vegetarian) rennet"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "basil-dried-160272",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 60,
+          "note": "finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 30,
+          "note": "grated"
+        },
+        {
+          "food": "lime-raw-30841a",
+          "g": 10,
+          "swap": "vit_c_fruit",
+          "note": "juiced"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils",
+          "note": "for the salad"
+        }
+      ],
+      "steps": [
+        "Wash the potatoes, mushrooms, cabbage and carrot. Slice the potatoes thin, about the thickness of a coin, and slice the onion and mushrooms.",
+        "Warm the oil in an ovenproof non-stick pan over medium heat. Cook the potatoes, onion and mushrooms, stirring now and then, until the potatoes are tender and the mushrooms have given up their water, about 15 minutes. Stir in the garlic and peas for the last 2 minutes.",
+        "Beat the eggs with the parmesan, basil, salt and pepper, and pour over the vegetables. Cook without stirring on low heat until the edges set, about 5 minutes.",
+        "Slide the pan under a hot grill, or into a 200 C (400 F) oven, until the top is set and golden and the centre reads 74 C (165 F), about 5 minutes. Cut the frittata into wedges.",
+        "Toast the sunflower seeds in a dry pan until golden, about 3 minutes. Toss the cabbage and carrot with the lime juice, the last of the oil, the seeds and a pinch of salt. Serve alongside the frittata.",
+        "Cool the second portion within 2 hours and refrigerate it in a shallow container. Eat it cold, or reheat once until steaming hot, 74 C (165 F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Fold in any leftover cooked potatoes or frozen spinach and it still works."
+    },
+    {
+      "id": "budget-veg-black-bean-cabbage-tacos",
+      "name": "Black bean tacos with cabbage slaw",
+      "inspiredBy": "Inspired by Mexican tacos de frijoles",
+      "about": "Black beans simmered from dry with onion, garlic, cumin and smoked paprika until creamy, spooned into warm corn tortillas with a lime-bright cabbage and carrot slaw with toasted sunflower seeds, plus feta and yogurt. The beans bring **fibre, iron, zinc and folate**, and the lime helps your body absorb the iron. It makes two portions, and the filling is even better tomorrow.",
+      "ingredients": [
+        {
+          "food": "black-beans-dry-9f5377",
+          "g": 65,
+          "swap": "legumes",
+          "note": "soaked overnight"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 1.5
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1.0
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.7
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 80,
+          "swap": "low_gi_grains",
+          "note": "warmed"
+        },
+        {
+          "food": "cabbage-raw-c493c1",
+          "g": 70,
+          "note": "finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 30,
+          "note": "grated"
+        },
+        {
+          "food": "lime-raw-30841a",
+          "g": 20,
+          "swap": "vit_c_fruit",
+          "note": "juiced, plus wedges to serve"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 12,
+          "swap": "dairy_protein",
+          "note": "crumbled; pick one made with microbial (vegetarian) rennet"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 50,
+          "swap": "dairy_protein",
+          "note": "to spoon on top"
+        }
+      ],
+      "steps": [
+        "The night before, rinse the dry black beans, pick out any stones and cover with plenty of cold water. Soak at least 8 hours, then drain and rinse.",
+        "Put the soaked beans in a pot with fresh water to cover by about 5 cm and the bay leaf. Bring to a boil for 10 minutes, then simmer, partly covered, until completely tender, about 1 hour.",
+        "Wash the onion, cabbage, carrot and coriander. Warm the oil in a pan over medium heat and cook the onion until soft, about 6 minutes. Add the garlic, cumin, chili powder and smoked paprika and stir for 30 seconds.",
+        "Tip the onion mix into the beans with the salt and simmer uncovered until the liquid is thick and some beans are mashed against the pot, about 10 minutes. Remove the bay leaf.",
+        "Toast the sunflower seeds in a dry pan until golden, about 3 minutes. Toss the cabbage and carrot with the lime juice, the seeds and a pinch of salt to make the slaw.",
+        "Warm the tortillas in a dry pan. Fill with the beans, slaw, feta, yogurt and coriander. At Light, one or two small tortillas is plenty.",
+        "Refrigerate the leftover beans in a shallow container within 2 hours. Reheat once until steaming hot, 74 C (165 F), and warm fresh tortillas for tomorrow."
+      ],
+      "prepMin": 20,
+      "cookMin": 80,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "In a pressure cooker the soaked beans are tender in about 15 minutes. Keep the slaw undressed until serving so it stays crisp."
+    },
+    {
+      "id": "budget-veg-masala-boiled-eggs",
+      "name": "Masala boiled eggs",
+      "inspiredBy": "Inspired by Indian street-style spiced eggs",
+      "about": "Firm hard-boiled eggs halved and dusted with chili, cumin and salt, with a squeeze of lime. They are salty, tangy and portable, and they bring **protein, B12 and choline**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "whole, in their shells"
+        },
+        {
+          "food": "lime-raw-30841a",
+          "g": 8,
+          "swap": "vit_c_fruit",
+          "note": "cut in wedges"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.4
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Lower the eggs gently into a pot of boiling water and boil for 10 minutes so the yolks are fully firm.",
+        "Cool them in cold water, peel and cut in half.",
+        "Dust with the chili powder, cumin and salt and squeeze the lime over."
+      ],
+      "prepMin": 3,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Boil extra eggs and keep them unpeeled in the fridge for up to a week. At Big, eat two with lunch if four feels like a lot."
+    },
+    {
+      "id": "budget-veg-smoky-roasted-chickpeas",
+      "name": "Smoky roasted chickpeas",
+      "inspiredBy": "Inspired by Spanish tapas chickpeas",
+      "about": "Chickpeas roasted until crunchy with smoked paprika and a little cumin. They are salty-crisp, filling and a good source of **protein, fibre and iron**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 120,
+          "swap": "legumes",
+          "note": "rinsed and patted very dry"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.0
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.7
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 C (400 F). Spread the chickpeas on a clean towel and dry them very well, or they will steam instead of crisp.",
+        "Toss with the oil, smoked paprika, cumin and salt on a baking sheet.",
+        "Roast, shaking the pan every 10 minutes, until deep golden and crisp, about 30 minutes. Cool for 5 minutes, because they crisp more as they cool."
+      ],
+      "prepMin": 5,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "They are crispest the day they are made. When they are on the menu twice, roast a double batch the first time, keep the second half covered in the fridge for up to 2 days and re-crisp it in a 200 C (400 F) oven for 5 minutes."
+    },
+    {
+      "id": "budget-veg-carrots-garlicky-white-bean-dip",
+      "name": "Carrot sticks with garlicky white bean dip",
+      "inspiredBy": "Inspired by Italian cannellini bean dip",
+      "about": "Crisp carrot sticks with a smooth dip of white beans, garlic, lime and a little oil. The beans bring **fibre and plant protein** and the carrots bring vitamin A.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 120,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "minced"
+        },
+        {
+          "food": "lime-raw-30841a",
+          "g": 8,
+          "swap": "vit_c_fruit",
+          "note": "juiced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-seed-626f82",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash and peel the carrots and cut them into sticks.",
+        "Mash the white beans with a fork, or blitz them in a small food processor, with the garlic, lime juice, oil, cumin and salt. Add a splash of water until it is smooth and spreadable.",
+        "Serve the dip in a small bowl with the carrot sticks."
+      ],
+      "prepMin": 7,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Make the dip in a bigger batch and keep it in the fridge for up to 3 days."
+    },
+    {
+      "id": "budget-veg-banana-walnut-oat-cookies",
+      "name": "Banana walnut oat cookies",
+      "inspiredBy": "Inspired by Canadian no-fuss banana cookies",
+      "about": "Soft, chewy cookies made from mashed banana, oats, chopped walnuts and ground flax, with a little cinnamon. They use up the spottiest bananas, and they bring **fibre and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 70,
+          "note": "very ripe, mashed"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "ground"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 180 C (350 F) and line a baking sheet.",
+        "Mash the banana well. Stir in the oats, walnuts, flax, cinnamon and salt until it holds together.",
+        "Scoop into rounds on the sheet and flatten them slightly. Bake until golden at the edges and set, about 14 minutes.",
+        "Cool on the sheet for 5 minutes. Keep leftover cookies in a covered container in the fridge for up to 3 days."
+      ],
+      "prepMin": 8,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Bake a small batch just for the day, and keep any extra cookies in the fridge for up to 3 days."
+    },
+    {
+      "id": "budget-veg-white-bean-tomato-toast",
+      "name": "White bean and tomato toast",
+      "inspiredBy": "Inspired by Tuscan bean crostini",
+      "about": "Crisp toast piled with mashed white beans, garlic and a little tomato, and a pinch of basil. It is a quick, savoury snack with **plant protein and fibre**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 90,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 40,
+          "note": "crushed"
+        },
+        {
+          "food": "basil-dried-160272",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Mash the white beans with a fork with the garlic, a pinch of salt and a splash of the tomato until chunky.",
+        "Toast the bread until crisp.",
+        "Spread the beans on the toast, spoon the rest of the tomato over, and finish with the basil and pepper."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "budget-veg-walnut-cinnamon-yogurt",
+      "name": "Walnut and cinnamon yogurt bowl",
+      "inspiredBy": "Inspired by Greek yogurt with walnuts",
+      "about": "Thick Greek yogurt with ground flax stirred through, topped with toasted walnuts and cinnamon. It is cool and creamy with a crunch, and it brings **protein, calcium and B12**, plus plant omega-3 from the walnuts and flax.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "ground"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the walnuts in a dry pan over medium heat until they smell nutty, about 3 minutes. Cool and chop.",
+        "Stir the ground flax into the yogurt, spoon into a bowl, and top with the walnuts and cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "budget-veg-warm-cinnamon-milk",
+      "name": "Warm cinnamon milk",
+      "inspiredBy": "Inspired by a bedtime cup of warm milk",
+      "about": "A mug of warm milk with a pinch of cinnamon. It is soothing and brings **calcium, protein and B12**.",
+      "ingredients": [
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 170,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Pour the milk and cinnamon into a small pot. Warm over medium heat, stirring, until steaming but not boiling, about 4 minutes.",
+        "Pour into a mug."
+      ],
+      "prepMin": 1,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "budget-veg-berry-yogurt-flax-cup",
+      "name": "Berry yogurt cup with flax",
+      "inspiredBy": "Inspired by the everyday North American yogurt parfait",
+      "about": "Greek yogurt with frozen berries thawed on top and a spoonful of ground flax. It is cold, tart and creamy, and it brings **protein, vitamin C and fibre**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mixed-berry-frozen-9f87f1",
+          "g": 80,
+          "swap": "berries",
+          "note": "straight from the freezer, left to thaw while you prep"
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "ground"
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl. Top with the berries and let them thaw for about 5 minutes so they release their juice.",
+        "Sprinkle with the ground flax."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Frozen berries eaten raw can carry viruses, so if anyone eating is pregnant, 60 or older, 5 or under, or has a weak immune system, bring the berries to a boil for 1 minute and cool them first, or use fresh berries."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "budget-veg-banana-peanut-butter-flax-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "budget-veg-smashed-chickpea-salad-sandwich"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "budget-veg-minestrone-white-bean-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-veg-masala-boiled-eggs"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-veg-smoky-roasted-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "budget-veg-masala-egg-bhurji-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "budget-veg-minestrone-white-bean-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "budget-veg-aloo-patta-gobi-chana-roti"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-veg-walnut-cinnamon-yogurt"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-veg-carrots-garlicky-white-bean-dip"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "budget-veg-berry-flax-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "budget-veg-aloo-patta-gobi-chana-roti",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "budget-veg-shakshuka-white-bean-bread"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-veg-smoky-roasted-chickpeas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-veg-warm-cinnamon-milk"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "budget-veg-banana-peanut-butter-flax-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "budget-veg-shakshuka-white-bean-bread",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "budget-veg-red-lentil-dal-spinach-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-veg-carrots-garlicky-white-bean-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-veg-berry-yogurt-flax-cup"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "budget-veg-berry-flax-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "budget-veg-red-lentil-dal-spinach-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "budget-veg-potato-pea-parmesan-frittata"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-veg-banana-walnut-oat-cookies"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-veg-warm-cinnamon-milk"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "budget-veg-banana-walnut-flax-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "budget-veg-potato-pea-parmesan-frittata",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "budget-veg-black-bean-cabbage-tacos"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-veg-white-bean-tomato-toast"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-veg-berry-yogurt-flax-cup"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "budget-veg-masala-egg-bhurji-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "budget-veg-black-bean-cabbage-tacos",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "budget-veg-minestrone-white-bean-rice",
+          "leftover": true
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-veg-walnut-cinnamon-yogurt"
+        },
+        {
+          "slot": "snack",
+          "recipe": "budget-veg-white-bean-tomato-toast"
+        }
+      ]
+    }
+  ]
+}
