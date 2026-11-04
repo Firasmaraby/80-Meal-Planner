@@ -241,6 +241,8 @@ describe('batch C safety: pregnancy, breastfeeding, PCOS and menopause', () => {
     expect(ban(f('Red wine vinegar', 'condiment'))).toBeUndefined();
     expect(ban(f('Papaya, green, raw', 'fruit'))).toBe('unripe papaya');
     expect(ban(f('Papaya, raw', 'fruit'))).toBeUndefined();
+    expect(ban(f('Paprika, smoked', 'condiment'))).toBeUndefined();
+    expect(ban(f('Salmon, smoked', 'fish'))).toBe('raw or smoked fish');
     expect(ban(f('Chicken breast, skinless, roasted', 'poultry'))).toBeUndefined();
   });
 

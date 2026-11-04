@@ -103,7 +103,8 @@ function prenatalReason(f: Food): string | undefined {
   if (AVOID_TEAS.test(t)) return 'herbal tea to avoid in pregnancy';
   if (/\b(green|unripe)\b.*\bpapaya\b|\bpapaya\b.*\b(green|unripe)\b/.test(t)) return 'unripe papaya';
   if (alcoholReason(f)) return 'alcohol';
-  if (RAW_OR_SMOKED_FISH.test(t)) return 'raw or smoked fish';
+  // smoked paprika, smoked tofu or smoked chicken cooked in a hot dish are fine: only fish and seafood count here
+  if (f.category === 'fish' && RAW_OR_SMOKED_FISH.test(t)) return 'raw or smoked fish';
   if (/\bliver\b/.test(t)) return 'liver';
   // "Egg, whole, raw" is how the library names an egg you cook, so only poached and soft eggs are caught here; raw egg in the method is caught by styleStructureGates
   if (f.category === 'egg' && /\b(poached|soft)\b/.test(t)) return 'raw or soft egg';
