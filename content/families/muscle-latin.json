@@ -1,0 +1,1686 @@
+{
+  "id": "muscle-latin",
+  "name": "Build Muscle Latin",
+  "style": "muscle",
+  "cuisine": "Latin American",
+  "regions": [
+    "Mexico",
+    "Peru",
+    "Brazil",
+    "Colombia",
+    "Cuba"
+  ],
+  "summary": "A week of real Latin American home cooking for people who train hard: huevos rancheros and pericos, lomo saltado, trout ceviche, feijoada and salmon moqueca. Rice, potatoes, corn, plantain and beans carry the training, with real protein at every meal and snack.",
+  "howItWorks": "**Protein all day.** Breakfast, lunch, dinner and two snacks each carry real protein: eggs, yogurt and beans in the morning, beef, turkey, chicken, pork and fish at lunch and dinner, and egg whites, cottage cheese, sardines or chicken tostadas in between. Spread out like this, your muscles are supplied from morning to night.\n\n**Carbs are there for training.** Rice, potatoes, sweet potato, corn, plantain and beans sit at lunch and dinner on purpose. They refill your energy for the next session, the way they do on a plate in Lima, Bahia or Havana, with the protein beside them, never instead of them.\n\n**Cook once, eat twice.** Monday's lomo saltado, Tuesday's arroz con pollo, Thursday's rice, beans and grilled chicken, Friday's picadillo and Saturday's feijoada each make two portions, so the next day's lunch is done. The fish is always cooked fresh: trout ceviche on Wednesday, moqueca on Sunday.\n\n**Fish and lean cuts.** Trout and salmon bring **omega-3 and vitamin D**, with sardine tostadas on Friday. Sirloin, turkey, chicken breast and pork tenderloin keep saturated fat low, and queso fresco and a little chicken linguiça are there for flavour, never the base.\n\n**Bigger sizes add food, not powder.** Big and XL add a third snack on Tuesday, Friday and Sunday and grow the whole plate: more meat, fish, eggs and yogurt, and more rice, potatoes, tortillas and beans. Vegetables stay as written. XL plates are big, so sear the meat in batches and use a deep bowl.",
+  "signature": [
+    "muscle-latin-lomo-saltado-potatoes-rice",
+    "muscle-latin-trout-ceviche-sweet-potato-corn",
+    "muscle-latin-brazilian-rice-beans-grilled-chicken",
+    "muscle-latin-huevos-rancheros-pinto-beans"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2400,
+      "covers": [
+        "2200-2400",
+        "2400-2800"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-latin-arepa-egg-whites-tomato-hogao"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-latin-chile-lime-eggs-cucumber"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-latin-arepa-egg-whites-tomato-hogao"
+          }
+        }
+      ]
+    },
+    "xl": {
+      "kcal": 3500,
+      "covers": [
+        "3200-3700"
+      ],
+      "adjust": [
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-latin-arepa-egg-whites-tomato-hogao"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-latin-chile-lime-eggs-cucumber"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "muscle-latin-arepa-egg-whites-tomato-hogao"
+          }
+        }
+      ]
+    }
+  },
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-latin-yogurt-mango-oats-pepitas"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-latin-turkey-burrito-bowl-black-beans"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-latin-lomo-saltado-potatoes-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-latin-black-bean-egg-white-tostadas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-latin-chile-lime-eggs-cucumber"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-latin-huevos-rancheros-pinto-beans"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-latin-lomo-saltado-potatoes-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-latin-arroz-con-pollo-peruvian-green"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-latin-pineapple-chile-lime-yogurt"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-latin-cottage-cheese-pico-de-gallo-totopos"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-latin-huevos-pericos-arepa-pinto-beans"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-latin-arroz-con-pollo-peruvian-green",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-latin-trout-ceviche-sweet-potato-corn"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-latin-cottage-cheese-pineapple-cinnamon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-latin-chicken-tostadas-cucumber-lime"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-latin-huevos-rancheros-pinto-beans"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-latin-turkey-burrito-bowl-black-beans"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-latin-brazilian-rice-beans-grilled-chicken"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-latin-chicken-tostadas-cucumber-lime"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-latin-black-bean-egg-white-tostadas"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-latin-yogurt-mango-oats-pepitas"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-latin-brazilian-rice-beans-grilled-chicken",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-latin-cuban-picadillo-black-beans-rice-maduros"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-latin-sardine-tostadas-cucumber-lime-avocado"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-latin-egg-white-tacos-tomato-chile"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-latin-huevos-pericos-arepa-pinto-beans"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-latin-cuban-picadillo-black-beans-rice-maduros",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-latin-feijoada-leve-pork-black-beans-collards"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-latin-pineapple-chile-lime-yogurt"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-latin-cottage-cheese-pico-de-gallo-totopos"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "muscle-latin-yogurt-mango-oats-pepitas"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "muscle-latin-feijoada-leve-pork-black-beans-collards",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "muscle-latin-salmon-moqueca-coconut-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-latin-egg-white-tacos-tomato-chile"
+        },
+        {
+          "slot": "snack",
+          "recipe": "muscle-latin-cottage-cheese-pineapple-cinnamon"
+        }
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "muscle-latin-huevos-rancheros-pinto-beans",
+      "name": "Huevos rancheros with pinto beans and avocado",
+      "inspiredBy": "Mexican huevos rancheros",
+      "about": "Fried eggs on warm corn tortillas, under a spicy tomato and jalapeño sauce, with garlicky mashed pinto beans, a little crumbled queso fresco and slices of avocado. The eggs and beans together bring **plenty of protein and fibre** to the first meal of the day.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 150
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 45,
+          "note": "warmed or crisped"
+        },
+        {
+          "food": "pinto-beans-canned-no-salt-added-drained-0b80db",
+          "g": 115,
+          "swap": "legumes",
+          "note": "mashed with a fork"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 170,
+          "note": "diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 15,
+          "note": "seeded and minced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 30,
+          "note": "sliced"
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 10,
+          "note": "crumbled, as a garnish"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 30,
+          "note": "for a lime crema"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "note": "from a lime"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Warm half the oil in a skillet over medium heat. Cook the onion, jalapeño and half the garlic for 3 minutes until soft and fragrant.",
+        "Stir in the cumin, then the tomato with a splash of water. Simmer 8 minutes, pressing it down with a spoon, until it thickens into a spoonable sauce. Season with part of the salt and half the lime juice.",
+        "Meanwhile, warm the pinto beans in a small pot with the rest of the garlic and a splash of water, mashing them roughly until creamy. Season with a pinch of salt.",
+        "Warm the tortillas in a dry pan until they have a few toasty spots, then lay them on the plate.",
+        "Fry the eggs in the remaining oil in a nonstick pan until the whites are set and the yolks still soft.",
+        "Spoon the beans onto the tortillas, set the eggs on top, and ladle the sauce over the whites. Taste the sauce and beans and add a pinch more salt if they need it. Stir the rest of the lime juice into the yogurt, and finish with a spoonful of that crema, the avocado, queso fresco and cilantro."
+      ],
+      "prepMin": 8,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make the sauce on Sunday and it keeps four days in the fridge, so breakfast takes about 10 minutes."
+    },
+    {
+      "id": "muscle-latin-huevos-pericos-arepa-pinto-beans",
+      "name": "Huevos pericos with a cheese arepa and beans",
+      "inspiredBy": "Colombian huevos pericos and arepa con queso",
+      "about": "Colombia's morning scramble with tomato and onion (the colours of the parrot, perico), served with a griddled corn arepa stuffed with a little queso fresco and a spoonful of warm beans. Extra egg whites keep the plate **high in protein** without making it heavy.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "egg-white-raw-b17726",
+          "g": 130,
+          "note": "from a carton, or separated"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 110,
+          "note": "diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 35,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "pinto-beans-canned-no-salt-added-drained-0b80db",
+          "g": 80,
+          "swap": "legumes"
+        },
+        {
+          "food": "masarepa-precooked-corn-flour-b58618",
+          "g": 45
+        },
+        {
+          "food": "queso-fresco-cheese-b89d54",
+          "g": 15,
+          "note": "crumbled, for stuffing"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Stir the corn flour with a pinch of the salt and enough warm water to make a soft, smooth dough. Rest it 5 minutes, then shape into a thick patty and press the queso fresco into the middle, closing the dough around it.",
+        "Cook the arepa in a lightly oiled nonstick skillet over medium heat, about 5 minutes a side, until golden outside and firm when tapped.",
+        "Warm a little oil in a pan and cook the onion, garlic and tomato with the cumin for 4 minutes, until the tomato is soft and saucy. Spoon a quarter of it into a small pot with the pinto beans and a splash of water and warm through.",
+        "Beat the whole eggs with the egg whites and a pinch of salt, pour them into the tomato pan and stir gently over medium-low heat until just set and creamy, about 2 minutes.",
+        "Season the beans and eggs to taste, then serve the eggs beside the arepa and the beans."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "On a weekday, griddle the arepa the night before and warm it in a dry pan while the eggs cook, so breakfast is quick. Split it and pile the eggs inside to eat on the go."
+    },
+    {
+      "id": "muscle-latin-yogurt-mango-oats-pepitas",
+      "name": "Yogurt bowl with mango, toasted oats and pepitas",
+      "inspiredBy": "a tropical-fruit yogurt breakfast, with Brazilian and Mexican touches",
+      "about": "Thick yogurt with ripe mango and lime, topped with oats toasted in a dry pan and a spoonful of toasted pepitas. The yogurt does the heavy lifting here: a big bowl of it carries **more than 25 g of protein** before you add the oats and seeds.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 265,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mango-raw-80de97",
+          "g": 130,
+          "note": "cubed"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 25
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6,
+          "note": "from a lime"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the oats and pepitas in a dry skillet over medium heat for 3 to 4 minutes, stirring, until they smell nutty. Tip them onto a plate to cool.",
+        "Spoon the yogurt into a bowl and top with the mango. Squeeze over the lime juice, which brings out the mango's sweetness.",
+        "Scatter on the toasted oats and pepitas and finish with a pinch of cinnamon."
+      ],
+      "prepMin": 5,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Toast a big batch of oats and pepitas on Sunday and keep them in a jar. At larger sizes use a deep bowl."
+    },
+    {
+      "id": "muscle-latin-turkey-burrito-bowl-black-beans",
+      "name": "Turkey burrito bowl with black beans and lime rice",
+      "inspiredBy": "the Tex-Mex burrito bowl",
+      "about": "Taco-spiced turkey over lime-cilantro rice with black beans, charred corn, crunchy cucumber, tomato, avocado and a spoonful of chipotle crema. It is a Tex-Mex lunch bowl, built to be big: **lean turkey and beans** carry the protein and the rice carries your training.",
+      "ingredients": [
+        {
+          "food": "ground-turkey-fat-free-raw-604508",
+          "g": 170
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 100,
+          "swap": "legumes"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 40,
+          "note": "thawed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "cubed"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20,
+          "note": "from limes"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 40,
+          "note": "for the crema"
+        },
+        {
+          "food": "chipotle-peppers-in-adobo-sauce-f692a1",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Rinse the rice, then cook it in a covered pot with a little under twice its volume of water and a pinch of salt for about 15 minutes, until tender. Fluff it with half the lime juice and half the cilantro.",
+        "Warm the oil in a skillet over medium-high heat. Cook the onion and garlic for 2 minutes, then add the turkey and break it up as it browns, about 6 minutes.",
+        "Stir in the chili powder, cumin, oregano and the rest of the salt with a splash of water, and cook 2 more minutes until the turkey is coated and a little saucy.",
+        "Warm the black beans in a small pot, and char the corn in a hot dry pan for 3 to 4 minutes until it has brown spots.",
+        "Stir the yogurt with the chipotle, a squeeze of lime and a pinch of salt to make the crema.",
+        "Build the bowls with rice, turkey, beans, corn, cucumber, tomato and avocado. Spoon on the crema and the rest of the cilantro."
+      ],
+      "prepMin": 10,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook a double batch of rice and turkey on Monday and chill half in a covered container. Thursday's bowl then takes 5 minutes; cooked rice and meat keep 3 days in the fridge."
+    },
+    {
+      "id": "muscle-latin-lomo-saltado-potatoes-rice",
+      "name": "Lomo saltado with crisp potatoes and rice",
+      "inspiredBy": "Peruvian lomo saltado",
+      "about": "Peru's famous stir-fry, born where Chinese and Peruvian cooking meet: strips of beef seared hot with red onion and tomato, splashed with soy sauce and vinegar and tossed with golden potatoes, served over rice. Lean sirloin and a mound of potatoes make it **high in protein and in training carbs**. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "beef-top-sirloin-steak-lean-raw-a51c2c",
+          "g": 190,
+          "note": "cut into thin strips"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 130,
+          "note": "cut into thick wedges"
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 25
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 75,
+          "note": "cut into thick wedges"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 110,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 10
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 10
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Cover the potato wedges with cold water in a pot, bring to a boil and simmer 8 minutes until just tender. Drain well and let them steam dry.",
+        "Cook the rice in a covered pot with a little under twice its volume of water for about 15 minutes, until tender.",
+        "Toss the beef with the garlic, cumin, pepper and the soy sauce. Heat half the oil in a large skillet over high heat and crisp the potatoes until golden, 6 to 8 minutes, in two batches if they crowd the pan. Set them aside on a plate.",
+        "Add the remaining oil to the very hot pan and sear the beef in a single layer, in batches, for 1 to 2 minutes, until browned but still pink inside. A crowded pan steams the beef instead of searing it.",
+        "Add the onion and tomato wedges and toss over high heat for 2 minutes, so they stay a little firm. Stir in the ají amarillo paste, the vinegar and the salt.",
+        "Fold the potatoes back in, scatter on the cilantro and serve over the rice. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "For a crisper potato, reheat leftovers in a hot dry pan, not the microwave."
+    },
+    {
+      "id": "muscle-latin-arroz-con-pollo-peruvian-green",
+      "name": "Peruvian green arroz con pollo with corn",
+      "inspiredBy": "Peruvian arroz con pollo",
+      "about": "Chicken and rice cooked in a blended cilantro and ají sauce until the grains turn vivid green and fragrant, with sweet corn and red pepper stirred in. It is a pot you make once and reheat well, with **lean chicken breast** for protein and the rice for energy. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 215,
+          "note": "cut into chunks"
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 50
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "diced small"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 45,
+          "note": "stems and leaves"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 55,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10,
+          "note": "from a lime"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Blend the cilantro and ají amarillo paste with water, a few spoonfuls at a time, until smooth, pourable and bright green, about a third of a cup at Standard and Big and a little more at XL.",
+        "Warm the oil in a wide, heavy pot over medium-high heat and brown the chicken for 4 to 5 minutes. Lift it onto a plate.",
+        "In the same pot, cook the onion, garlic, cumin and oregano for 4 minutes until soft and golden. Stir in the green purée and cook 3 minutes, until it darkens and smells herby.",
+        "Add the rice, red pepper and salt with a little under twice the rice's volume of water. Bring to a simmer, cover and cook on low for 10 minutes, then nestle the chicken back in, scatter the corn on top and cover again.",
+        "Cook 10 minutes more, until the rice is tender and the chicken is cooked through, then rest off the heat for 5 minutes. Fluff with a fork and finish with the lime juice.",
+        "Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Reheat leftovers with a splash of water so the chicken stays moist."
+    },
+    {
+      "id": "muscle-latin-trout-ceviche-sweet-potato-corn",
+      "name": "Trout ceviche with sweet potato, corn and toasted corn",
+      "inspiredBy": "Peruvian ceviche de trucha, as it is made around Lake Titicaca, with camote and choclo",
+      "about": "Fresh trout cured briefly in lime juice with red onion, chili and cilantro, served the Peruvian way with boiled sweet potato and sweet corn, and a handful of pan-toasted corn for a nutty bite. Trout is a **fatty fish rich in omega-3**, and the sweet potato brings the carbs.",
+      "ingredients": [
+        {
+          "food": "rainbow-trout-farmed-raw-0cc800",
+          "g": 205,
+          "swap": "fatty_fish",
+          "note": "safe to eat raw, skinned and cut into 2 cm cubes"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 75,
+          "note": "freshly squeezed"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 45,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "aji-amarillo-paste-b63909",
+          "g": 6
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 160,
+          "note": "peeled and cut into thick rounds"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 100,
+          "note": "thawed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Rinse the onion slices in cold water for a minute, then drain; this softens their bite and keeps them crisp.",
+        "Cover the sweet potato with water, bring to a boil and cook about 12 minutes until tender but not mushy. Lift it out with a slotted spoon, then simmer most of the corn in the same water for 4 minutes and drain.",
+        "Pat the rest of the corn very dry and toast it in a dry skillet over medium heat, shaking the pan, until golden and nutty in spots, 6 to 8 minutes. It will be chewy rather than crunchy.",
+        "Stir the lime juice with the ají amarillo paste, garlic and salt. Toss the trout with this leche de tigre and the onion, and leave it for 3 to 5 minutes, until the edges just turn opaque and the centre is still glossy.",
+        "Fold in the cilantro. Serve the ceviche right away with its juices, the warm sweet potato and boiled corn alongside, and the toasted corn on top."
+      ],
+      "prepMin": 20,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Ask your fishmonger for trout that is safe to eat raw, and keep it cold until you cut it. If you are pregnant or have a weakened immune system, skip the raw version: cook the trout cubes in a hot pan until opaque all the way through, 3 to 4 minutes, then dress them. Ceviche is always made fresh and is not a leftover."
+    },
+    {
+      "id": "muscle-latin-brazilian-rice-beans-grilled-chicken",
+      "name": "Arroz, feijão and grilled lime chicken with collards and vinagrete",
+      "inspiredBy": "Brazilian prato feito",
+      "about": "The everyday Brazilian plate: garlicky grilled chicken, white rice, pinto beans simmered with onion and bay, quick sautéed collards (couve) and a fresh tomato vinagrete, with orange slices to finish. It is **big on protein**, and the orange's vitamin C helps your body absorb the iron from the beans and collards. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 215,
+          "note": "butterflied or sliced into thin cutlets"
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "pinto-beans-canned-no-salt-added-drained-0b80db",
+          "g": 110,
+          "swap": "legumes"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 110,
+          "note": "stems removed, sliced into thin ribbons"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 60,
+          "note": "finely chopped, divided"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "minced, divided"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80,
+          "note": "finely diced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15,
+          "note": "from a lime"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Marinate the chicken in the lime juice, half the garlic, the paprika and a pinch of salt for 15 minutes while you start the rice.",
+        "Cook the rice with a little under twice its volume of water and a pinch of salt in a covered pot, about 15 minutes. Fluff with a fork.",
+        "Warm a third of the oil in a pot and cook half the onion and the remaining garlic for 3 minutes. Add the beans, bay leaf and enough water to just cover them, and simmer 15 minutes, mashing a few beans against the side to thicken the broth. Season with a pinch of salt.",
+        "Stir the tomato, the remaining raw onion, the cilantro and the vinegar with a pinch of salt for the vinagrete.",
+        "Sear the chicken in the second third of the oil in a very hot pan, in batches if it crowds, for 4 to 5 minutes a side, until browned and cooked through. Rest it for 3 minutes, then slice.",
+        "Cook the collards in the last third of the oil in a wide pan over high heat for 3 to 4 minutes, until bright green and just tender.",
+        "Plate the rice, beans, chicken, collards and vinagrete with orange slices on the side. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Slice the chicken before packing the leftover so it reheats evenly."
+    },
+    {
+      "id": "muscle-latin-cuban-picadillo-black-beans-rice-maduros",
+      "name": "Cuban picadillo with black beans, rice and sweet plantain",
+      "inspiredBy": "Cuban picadillo a la habanera",
+      "about": "Lean beef simmered in a sofrito of onion, sweet pepper and garlic with tomato, olives and a splash of vinegar, with black beans stirred in and spooned over rice with sweet fried plantain. The plantain and beans bring the **energy for training**, and the beef the protein. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 190
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 110,
+          "swap": "legumes"
+        },
+        {
+          "food": "plantain-ripe-raw-c315a0",
+          "g": 50,
+          "note": "sliced on the diagonal"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 70,
+          "note": "finely chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 200,
+          "note": "grated or finely chopped"
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "red-vinegar-wine-42e82c",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Cook the rice in a covered pot with a little under twice its volume of water and a pinch of salt, about 15 minutes.",
+        "Warm two thirds of the oil in a wide skillet over medium heat. Cook the onion, pepper and garlic with the cumin and oregano for 6 minutes, until soft and sweet. This is the sofrito.",
+        "Add the beef and break it up, cooking 6 minutes until no longer pink. Stir in the tomato, bay leaf, vinegar, a splash of water and the rest of the salt, and simmer 12 minutes until saucy.",
+        "Stir in the black beans and the olives and simmer 3 minutes more.",
+        "Fry the plantain in the remaining oil in a nonstick pan over medium heat for 2 to 3 minutes a side, until deeply golden and caramelized at the edges.",
+        "Serve the picadillo over the rice with the plantain alongside. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Add a spoonful of raisins with the olives if you like the sweet and salty Cuban way."
+    },
+    {
+      "id": "muscle-latin-feijoada-leve-pork-black-beans-collards",
+      "name": "Lighter feijoada with pork, black beans, collards and orange",
+      "inspiredBy": "Brazilian feijoada completa, lightened",
+      "about": "Brazil's Saturday pot, lightened: lean pork tenderloin simmered until tender, then black beans, garlic, bay and a little chicken linguiça for smoke, served over rice with sautéed collards and orange slices. It is a **weekend project** that fills the house with its smell and makes two portions, one for Sunday's lunch.",
+      "ingredients": [
+        {
+          "food": "pork-tenderloin-lean-raw-4f3638",
+          "g": 185,
+          "note": "cut into large chunks"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 130,
+          "swap": "legumes"
+        },
+        {
+          "food": "chicken-sausage-linguica-grilled-ce183b",
+          "g": 30,
+          "note": "sliced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 75,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 100,
+          "note": "stems removed, sliced into thin ribbons"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 110,
+          "note": "sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        }
+      ],
+      "steps": [
+        "Put the pork in a heavy pot with the bay leaf, a pinch of the salt and enough water to cover by 5 cm. Bring to a boil and skim off the foam, then turn it down to a few lazy bubbles, partly cover and cook for 40 minutes, until the pork is nearly tender. A hard boil makes lean pork stringy.",
+        "In a skillet, warm half the oil and cook the onion and garlic with the smoked paprika for 6 minutes until golden and sweet.",
+        "Stir the sofrito, the black beans and the linguiça slices into the pot. Simmer, uncovered, 20 to 25 minutes, until the broth is thick and glossy. Mash a ladleful of beans against the side of the pot to thicken it more, and season with the rest of the salt.",
+        "Cook the rice in a covered pot with a little under twice its volume of water, about 15 minutes.",
+        "Sauté the collards in the remaining oil in a wide pan over high heat for 3 to 4 minutes, until bright green.",
+        "Serve the feijoada over rice, with the collards and orange slices, which cut the richness. Pack the second portion for tomorrow's lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 85,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "A pressure cooker does the pork in 10 minutes at high pressure. Release it, add the sofrito, beans and linguiça, and simmer 15 minutes, uncovered."
+    },
+    {
+      "id": "muscle-latin-salmon-moqueca-coconut-rice",
+      "name": "Salmon moqueca with coconut, tomato and rice",
+      "inspiredBy": "Brazilian moqueca baiana, with colorau in place of dendê oil",
+      "about": "A Bahian-style fish stew: salmon simmered gently with tomato, peppers, onion, cilantro and a little coconut milk, golden with urucum, and spooned over fluffy rice. Salmon brings **omega-3 and vitamin D**, and the coconut milk is just a splash, enough for silkiness without much saturated fat.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 220,
+          "swap": "fatty_fish",
+          "note": "skin removed, cut into large chunks"
+        },
+        {
+          "food": "coconut-milk-canned-regular-fat-e1db91",
+          "g": 35
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 160,
+          "note": "sliced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 15,
+          "note": "chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20,
+          "note": "from a lime"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6
+        },
+        {
+          "food": "colorau-urucum-and-corn-powder-c79a9c",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Marinate the salmon with the lime juice, half the garlic and a pinch of the salt while you start the rice.",
+        "Rinse the rice, then cook it in a covered pot with a little under twice its volume of water and a pinch of salt for about 15 minutes, until tender.",
+        "Warm the oil in a wide, shallow pan. Layer in half the onion, tomato and red pepper, then the salmon, then the rest of the vegetables. Scatter on the remaining garlic and the colorau.",
+        "Pour the coconut milk, loosened with a splash of water, around the edges. Cover and simmer gently for 12 to 15 minutes, until the salmon flakes and the sauce has thickened. Do not stir; spoon the liquid over the fish instead.",
+        "Season with the remaining salt, scatter on the cilantro and serve over the rice, with plenty of sauce."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "In Bahia, moqueca comes with rice and pirão, the broth thickened with cassava flour. If you have some, whisk a spoonful into a ladle of the sauce and simmer for a minute."
+    },
+    {
+      "id": "muscle-latin-chile-lime-eggs-cucumber",
+      "name": "Chile-lime boiled eggs with cucumber",
+      "inspiredBy": "Mexican street snacks of cucumber with chile and lime",
+      "about": "Boiled eggs with crunchy cucumber sticks, dressed the Mexican street way with lime, chili and salt. The eggs give you **high-quality protein and choline**, and the crunch makes it feel like a snack.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "in the shell"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 150,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 14,
+          "note": "from a lime"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Lower the eggs into a pot of boiling water and cook 9 minutes. Cool them under cold water, peel and halve.",
+        "Toss the cucumber with the lime juice, chili and half the salt.",
+        "Sprinkle the remaining salt over the eggs and serve them with the cucumber."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Boil a batch of eggs on Sunday; they keep five days in the shell."
+    },
+    {
+      "id": "muscle-latin-chicken-tostadas-cucumber-lime",
+      "name": "Chicken tostadas with cucumber, lime and chipotle crema",
+      "inspiredBy": "Mexican tostadas de pollo, with a nod to tinga",
+      "about": "Poached shredded chicken tossed in a smoky chipotle crema and piled on crisp baked tostadas with lime-dressed cucumber and avocado. A **high-protein snack** without the frying, with the chipotle as a nod to tinga.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 110
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 50,
+          "note": "cut into wedges or left whole"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "cut into thin matchsticks"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 14,
+          "note": "from a lime"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 30
+        },
+        {
+          "food": "chipotle-peppers-in-adobo-sauce-f692a1",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "stems for the pot, leaves chopped"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 25,
+          "note": "sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200C and bake the tortillas on a tray for 8 to 10 minutes until crisp.",
+        "Stir the yogurt with the chipotle and half the lime juice for the crema. Toss the cucumber with the rest of the lime juice and a pinch of salt.",
+        "Simmer the chicken in a small pot of lightly salted water with the cilantro stems for 12 to 14 minutes, until cooked through. Cool slightly, shred with two forks, and toss with half the crema.",
+        "Pile the chicken on the tostadas, top with cucumber, avocado, the rest of the crema and the cilantro leaves."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Poach double the chicken when you are cooking dinner and the tostadas take 5 minutes."
+    },
+    {
+      "id": "muscle-latin-cottage-cheese-pineapple-cinnamon",
+      "name": "Requesón-style cottage cheese with pineapple and cinnamon",
+      "inspiredBy": "Mexican requesón with fruit",
+      "about": "Soft, creamy cottage cheese, close to Mexico's requesón, with sweet pineapple, lime and cinnamon. A **cool, high-protein snack** that takes two minutes.",
+      "ingredients": [
+        {
+          "food": "cottage-cheese-2-fat-49f49a",
+          "g": 240,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pineapple-raw-7de748",
+          "g": 120,
+          "note": "cubed"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 5,
+          "note": "zest and a squeeze"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8,
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Spoon the cottage cheese into a bowl and top with the pineapple.",
+        "Grate over a little lime zest, squeeze on the juice, and dust with cinnamon.",
+        "Scatter on the pepitas."
+      ],
+      "prepMin": 5,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-latin-cottage-cheese-pico-de-gallo-totopos",
+      "name": "Cottage cheese with pico de gallo and baked totopos",
+      "inspiredBy": "Mexican pico de gallo",
+      "about": "Creamy cottage cheese topped with a fresh pico de gallo of tomato, onion, jalapeño and cilantro, with crisp baked corn totopos for scooping. **Cool, tangy and high in protein**, it is a savoury answer to a sweet snack.",
+      "ingredients": [
+        {
+          "food": "cottage-cheese-2-fat-49f49a",
+          "g": 180,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "finely diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "finely diced"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 6,
+          "note": "seeded and minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10,
+          "note": "from a lime"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 40,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200C. Lay the tortilla wedges on a tray and bake 8 to 10 minutes until crisp and lightly golden.",
+        "Stir the tomato, onion, jalapeño, cilantro, lime juice and salt together for the pico de gallo.",
+        "Spoon the cottage cheese into a bowl, top with the pico and serve with the totopos."
+      ],
+      "prepMin": 8,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ]
+    },
+    {
+      "id": "muscle-latin-pineapple-chile-lime-yogurt",
+      "name": "Pineapple yogurt with chile, lime and pepitas",
+      "inspiredBy": "Mexican fruit with chile and lime",
+      "about": "Thick yogurt with sweet pineapple, a squeeze of lime, a pinch of chili and toasted pepitas, the way fruit is eaten with chile and lime across Mexico. The yogurt keeps it **protein-forward**, the pineapple keeps it a treat.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 250,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pineapple-raw-7de748",
+          "g": 130,
+          "note": "cubed"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "note": "from a lime"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.5
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 9,
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl and top with the pineapple.",
+        "Squeeze on the lime and sprinkle with a pinch of chili.",
+        "Finish with the toasted pepitas."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "muscle-latin-sardine-tostadas-cucumber-lime-avocado",
+      "name": "Sardine tostadas with cucumber, lime and avocado",
+      "inspiredBy": "Mexican tostadas de sardina",
+      "about": "Canned sardines, with their soft bones, mashed gently onto crisp corn tostadas with cucumber, red onion, avocado and a squeeze of lime. Sardines bring **omega-3, calcium and vitamin D** in one snack, and tostadas de sardina are a real Mexican favourite.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 70,
+          "swap": "fatty_fish",
+          "note": "drained"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 50,
+          "note": "cut into wedges or left whole"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "finely diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 30,
+          "note": "sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 14,
+          "note": "from a lime"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4,
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200C and bake the tortillas on a tray for 8 to 10 minutes until crisp.",
+        "Toss the cucumber, red onion, jalapeño and cilantro with half the lime juice.",
+        "Mash the sardines lightly with the rest of the lime, then spread over the tostadas and top with the cucumber mix and avocado."
+      ],
+      "prepMin": 8,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "If there is sardine left in the can, keep it covered in the fridge and eat it within 2 days, mashed with lime on a tostada."
+    },
+    {
+      "id": "muscle-latin-black-bean-egg-white-tostadas",
+      "name": "Black bean and egg white tostadas with salsa",
+      "inspiredBy": "Mexican tostadas with frijoles",
+      "about": "Crisp corn tostadas topped with mashed black beans, soft-scrambled egg whites and a quick fresh salsa. A savoury, **high-protein snack** with the beans for fibre.",
+      "ingredients": [
+        {
+          "food": "egg-white-raw-b17726",
+          "g": 160,
+          "note": "from a carton, or separated"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 80,
+          "swap": "legumes",
+          "note": "mashed"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 45,
+          "note": "cut into wedges or left whole"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "finely diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10,
+          "note": "from a lime"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200C and bake the tortillas on a tray for 8 to 10 minutes until crisp.",
+        "Toss the tomato, onion, jalapeño and cilantro with the lime juice and a pinch of salt to make the salsa.",
+        "Warm the beans in a small pot with a splash of water, mashing them until spreadable.",
+        "Scramble the egg whites in the oil in a nonstick pan over medium-low heat until just set, about 2 minutes, and season with a pinch of salt.",
+        "Spread the beans over the tostadas, top with the eggs and finish with the salsa."
+      ],
+      "prepMin": 10,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "muscle-latin-egg-white-tacos-tomato-chile",
+      "name": "Egg white tacos with tomato, onion and chile",
+      "inspiredBy": "Mexican huevos a la mexicana",
+      "about": "Egg whites scrambled the way Mexico does huevos a la mexicana, with tomato, onion and jalapeño, folded into warm corn tortillas with a squeeze of lime. A **light, very high-protein snack** that is quick and lean.",
+      "ingredients": [
+        {
+          "food": "egg-white-raw-b17726",
+          "g": 200,
+          "note": "from a carton, or separated"
+        },
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 45,
+          "note": "warmed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "finely diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "finely diced"
+        },
+        {
+          "food": "jalapeno-pepper-raw-e8a875",
+          "g": 6,
+          "note": "seeded and minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "note": "from a lime"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Warm a little oil in a nonstick pan over medium heat and cook the onion and jalapeño for 2 minutes, until soft.",
+        "Add the tomato and cook 2 minutes more, until it has softened and lost its raw edge.",
+        "Pour in the egg whites with a pinch of salt and stir gently over medium-low heat, taking the pan off the heat while they are still glossy; the pan finishes them. Overcooked whites go rubbery.",
+        "Warm the tortillas in a dry pan, fill them with the eggs and finish with cilantro and a squeeze of lime."
+      ],
+      "prepMin": 5,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Buy egg whites by the carton. This week uses a lot of them, and you won't be left with a bowl of yolks."
+    },
+    {
+      "id": "muscle-latin-arepa-egg-whites-tomato-hogao",
+      "name": "Griddled arepa with soft egg whites and tomato hogao",
+      "inspiredBy": "Colombian arepa with hogao",
+      "about": "A golden Colombian arepa split open and filled with soft-scrambled egg whites and a warm tomato and onion hogao. The corn arepa gives you **carbs for training** and the egg whites add protein without much fat.",
+      "ingredients": [
+        {
+          "food": "masarepa-precooked-corn-flour-b58618",
+          "g": 50
+        },
+        {
+          "food": "egg-white-raw-b17726",
+          "g": 150,
+          "note": "from a carton, or separated"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Stir the corn flour with a pinch of the salt and enough warm water to make a soft dough. Rest it 5 minutes, then shape into a thick patty.",
+        "Cook the arepa in a lightly oiled nonstick skillet over medium heat, about 5 minutes a side, until golden and firm when tapped.",
+        "In a small pan, soften the onion and garlic in a little oil for 2 minutes. Add the tomato and cumin and cook 4 minutes into a thick hogao. Spoon a little out for the top.",
+        "Pour the egg whites into the rest of the hogao with the rest of the salt and stir gently until just set, about 2 minutes.",
+        "Split the arepa, fill it with the eggs and spoon the saved hogao on top."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    }
+  ]
+}
