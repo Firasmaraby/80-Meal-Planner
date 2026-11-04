@@ -8,6 +8,7 @@ import { requirement } from '@/engine/dri';
 import { NUTRIENTS } from '@/engine/nutrients';
 import {
   FEEL_KEYS,
+  RANGE_DAYS,
   bestAndWorst,
   eightyStats,
   feelLine,
@@ -17,22 +18,26 @@ import {
   nutrientHitRates,
   settleToday,
   topFoodSources,
+  trendBuckets,
   weightSeries,
   type DayTotals,
   type FeelKey,
   type HitRate,
+  type TrendBucket,
+  type TrendRange,
 } from '@/lib/insights';
 import { FOODS, FOOD_INDEX } from '@/state/catalog';
 import { useMealLibrary } from '@/state/library';
 import { addDays, today, useStore, type Log } from '@/state/store';
 import { foldInSupplements, supplementTotal, useWellness } from '@/state/wellnessStore';
-import { MealThumb, openLibraryMeal, useWho } from '@/ui/planParts';
+import { MealThumb, Segmented, openLibraryMeal, useWho } from '@/ui/planParts';
 import { Button, Card, I, IconButton, Row, Screen, Section, Txt } from '@/ui/primitives';
 import { groupColor, radius, space, useTheme } from '@/ui/theme';
+import { MonthBars, TrendLine } from '@/ui/trends';
 import { fmtPct } from '@/ui/viz';
 
-const WINDOW = 30;
 const NEEDED_FOR_PATTERNS = 3;
+const RANGE_TITLE: Record<TrendRange, string> = { week: 'last 7 days', month: 'last 30 days', year: 'last 12 months' };
 const MIN_EACH = 4;
 
 function dayTotalsFor(byDate: Map<string, Log[]>, takenOn: Record<string, string[]>, date: string): DayTotals {
@@ -45,7 +50,10 @@ const fmtShort = (d: string) => {
   return new Date(y, m - 1, day).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
 };
 
-/** The last 30 days at a glance: how often you landed an Eighty day, which tiles are easy, which are hard. */
+/**
+ * The last week, month or year at a glance: how often you landed an Eighty day, how energy, sleep, mood and weight
+ * moved, which tiles are easy and which are hard.
+ */
 export default function Report() {
   const c = useTheme();
   const profile = useStore((s) => s.profile);
@@ -56,6 +64,9 @@ export default function Report() {
   const library = useMealLibrary();
   const who = useWho(profile);
   const end = today();
+  const [range, setRange] = useState<TrendRange>('month');
+  const WINDOW = RANGE_DAYS[range];
+  const start = addDays(end, -(WINDOW - 1));
 
   const byDate = useMemo(() => {
     const m = new Map<string, Log[]>();
@@ -66,7 +77,7 @@ export default function Report() {
   // food plus any supplements taken, the same way the board counts them
   const days = useMemo(
     () => Array.from({ length: WINDOW }, (_, i) => dayTotalsFor(byDate, takenOn, addDays(end, -(WINDOW - 1 - i)))),
-    [byDate, takenOn, end],
+    [byDate, takenOn, end, WINDOW],
   );
   const settled = useMemo(() => settleToday(days, end, who), [days, end, who]);
   const stats = useMemo(() => eightyStats(settled, who), [settled, who]);
@@ -74,20 +85,24 @@ export default function Report() {
   const { best, worst } = useMemo(() => bestAndWorst(rates, 5), [rates]);
   const enough = stats.loggedDays >= NEEDED_FOR_PATTERNS;
 
-  // how you felt: every check-in, judged by the day it was made on
+  // check-ins in the range, oldest first
+  const inRange = useMemo(() => checkins.filter((ck) => ck.date >= start && ck.date <= end), [checkins, start, end]);
+  const buckets = useMemo(() => trendBuckets(inRange, stats.byDate, end, range), [inRange, stats.byDate, end, range]);
+
+  // how you felt: every check-in in the range, judged by the day it was made on
   const feelFlags = useMemo(() => {
     const m = new Map<string, boolean>();
-    for (const ck of checkins) {
+    for (const ck of inRange) {
       const d = dayTotalsFor(byDate, takenOn, ck.date);
       if (d.logged) m.set(ck.date, isEightyDay(d, who));
     }
     return m;
-  }, [checkins, byDate, takenOn, who]);
-  const split = useMemo(() => feelSplit(checkins, feelFlags, MIN_EACH), [checkins, feelFlags]);
-  const eightyCheckins = checkins.filter((ck) => feelFlags.get(ck.date) === true).length;
-  const otherCheckins = checkins.filter((ck) => feelFlags.get(ck.date) === false).length;
+  }, [inRange, byDate, takenOn, who]);
+  const split = useMemo(() => feelSplit(inRange, feelFlags, MIN_EACH), [inRange, feelFlags]);
+  const eightyCheckins = inRange.filter((ck) => feelFlags.get(ck.date) === true).length;
+  const otherCheckins = inRange.filter((ck) => feelFlags.get(ck.date) === false).length;
 
-  const weights = useMemo(() => weightSeries(checkins, addDays(end, -(WINDOW - 1))), [checkins, end]);
+  const weights = useMemo(() => weightSeries(inRange, start), [inRange, start]);
 
   const toughest = worst[0] ?? (best.length ? best[best.length - 1] : undefined);
 
@@ -102,11 +117,22 @@ export default function Report() {
         </Row>
       }>
       <Txt v="label" dim={1}>
-        Report card · last {WINDOW} days
+        Report card · {RANGE_TITLE[range]}
       </Txt>
       <Txt v="title" style={{ marginTop: 2 }}>
         How it’s going
       </Txt>
+      <View style={{ marginTop: space.md }}>
+        <Segmented<TrendRange>
+          options={[
+            { key: 'week', label: 'Week' },
+            { key: 'month', label: 'Month' },
+            { key: 'year', label: 'Year' },
+          ]}
+          value={range}
+          onChange={setRange}
+        />
+      </View>
 
       {/* Eighty days + streak */}
       <Card style={{ marginTop: space.lg, gap: space.lg }}>
@@ -127,11 +153,13 @@ export default function Report() {
             </Txt>
           </View>
         </Row>
-        <DayStrip days={days} eighty={stats.byDate} today={end} />
+        {range === 'year' ? <MonthBars buckets={buckets} /> : <DayStrip days={days} eighty={stats.byDate} today={end} />}
         <Txt v="caption" dim={2} style={{ lineHeight: 18 }}>
           {stats.loggedDays === 0
             ? 'Log a day and it shows up here.'
-            : 'Only days you logged count, so a quiet week never counts against you. Eighty days are the dark squares.'}
+            : range === 'year'
+              ? 'Only days you logged count, so a quiet week never counts against you. Dark is Eighty days, light is the other days you logged.'
+              : 'Only days you logged count, so a quiet week never counts against you. Eighty days are the dark squares.'}
         </Txt>
       </Card>
 
@@ -164,6 +192,11 @@ export default function Report() {
           )}
         </>
       )}
+
+      {/* Check-in trends */}
+      <Section title="Trends">
+        <FeelTrends buckets={buckets} range={range} />
+      </Section>
 
       {/* How you felt */}
       <Section
@@ -200,6 +233,63 @@ export default function Report() {
 }
 
 // ── Pieces ─────────────────────────────────────────────────────────────────
+
+const FEEL_NAME: Record<FeelKey, string> = { energy: 'Energy', sleep: 'Sleep', mood: 'Mood' };
+
+/** Energy, sleep and mood over the range, one small line each on the same 1 to 5 scale. */
+function FeelTrends({ buckets, range }: { buckets: TrendBucket[]; range: TrendRange }) {
+  const c = useTheme();
+  const rated = buckets.filter((b) => b.energy != null).length;
+  if (rated < 2) {
+    return (
+      <Card style={{ gap: space.sm }}>
+        <Txt v="caption" dim={1} style={{ lineHeight: 18 }}>
+          {rated === 0
+            ? 'Check in a couple of times and your energy, sleep and mood show up here as a trend.'
+            : 'One more check-in and the trend lines appear.'}
+        </Txt>
+        <Button small kind="secondary" label="Check in" icon={I.check} onPress={() => router.push('/checkin')} style={{ alignSelf: 'flex-start' }} />
+      </Card>
+    );
+  }
+  const per = range === 'year' ? 'monthly average' : 'by day';
+  return (
+    <Card style={{ gap: space.lg }}>
+      {FEEL_KEYS.map((k) => {
+        const vals = buckets.map((b) => b[k]);
+        const known = vals.filter((v): v is number => v != null);
+        const first = known[0];
+        const last = known[known.length - 1];
+        const fmt = (v: number) => (Math.round(v * 10) / 10).toString();
+        const change = last === first ? 'steady' : `${last > first ? 'up' : 'down'} from ${fmt(first)}`;
+        return (
+          <View key={k} style={{ gap: 4 }}>
+            <Row style={{ justifyContent: 'space-between' }}>
+              <Txt v="bodyStrong">{FEEL_NAME[k]}</Txt>
+              <Txt v="caption" dim={1} style={{ fontVariant: ['tabular-nums'] }}>
+                <Txt v="caption" style={{ fontWeight: '800' }}>
+                  {fmt(last)}
+                </Txt>
+                {` of 5, ${change}`}
+              </Txt>
+            </Row>
+            <TrendLine
+              values={vals}
+              labels={buckets.map((b) => b.label)}
+              min={1}
+              max={5}
+              color={k === 'energy' ? c.accent : k === 'sleep' ? c.ink : c.ink2}
+              label={`${FEEL_NAME[k]} over the ${RANGE_TITLE[range]}, ${per}: latest ${fmt(last)} of 5, ${change}`}
+            />
+          </View>
+        );
+      })}
+      <Txt v="caption" dim={2} style={{ lineHeight: 18 }}>
+        Your own ratings out of 5, {per}. Days without a check-in are skipped.
+      </Txt>
+    </Card>
+  );
+}
 
 /** 30 small squares, oldest first: dark = Eighty day, tinted = logged, empty = not logged. */
 function DayStrip({ days, eighty, today: now }: { days: DayTotals[]; eighty: Map<string, boolean>; today: string }) {
