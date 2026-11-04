@@ -195,6 +195,7 @@ export type PlanStyle =
   | 'flexitarian'
   // goals
   | 'muscle'
+  | 'muscle-plant'
   | 'fat-loss'
   | 'endurance'
   | 'low-gi'
@@ -218,6 +219,7 @@ export type PlanStyle =
   | 'intermittent-fasting'
   | 'gluten-free'
   | 'dairy-free'
+  | 'allergen-free'
   | 'iron-focus'
   | 'paleo';
 

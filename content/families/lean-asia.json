@@ -1,0 +1,1637 @@
+{
+  "id": "lean-asia",
+  "name": "Lean Asian",
+  "style": "fat-loss",
+  "cuisine": "Asian",
+  "regions": [
+    "Vietnam",
+    "Japan",
+    "Korea",
+    "Thailand",
+    "China"
+  ],
+  "summary": "Big, bright bowls and plates from Vietnam, Japan, Korea, Thailand and China: herb-heaped chicken pho, a grilled mackerel set meal, soft tofu stew, larb in lettuce cups and steamed fish with greens. It is real home cooking, built to keep you full on fewer calories.",
+  "howItWorks": "**Protein at every meal.** Chicken, beef, shrimp, salmon, eggs, tofu, edamame and Greek yogurt carry real protein, the most filling thing on the plate. A smaller meal still feels like a proper one.\n\n**Volume first.** Broths, herbs, sprouts, napa cabbage, mushrooms, cucumber and greens fill the bowl, and edamame and tofu bring the fibre. Rice and noodles stay as modest scoops beside them.\n\n**Fatty fish three times.** Canned salmon on Monday, grilled mackerel on Wednesday and a salmon miso hot pot on Friday carry the omega-3 and some vitamin D. Steamed sea bass on Sunday keeps it lean. A few drops of toasted perilla oil, the nutty Korean finishing oil, add plant omega-3 on most days.\n\n**Flavour without the salt.** Lime, chili, ginger, vinegar, herbs and toasted rice powder carry the taste. Reduced-sodium soy sauce, fish sauce and miso go in by the teaspoon, so the food is properly seasoned and the sodium stays sensible.\n\n**Cook once, eat twice.** The pho, tofu stew, larb, nabe and braise each make two portions, so the next day's lunch is done. At Light, the rice, noodles, oil, yogurt, chicken and most of the tofu shrink, Friday has no snack and the weekend one each, and the vegetables, fish, shrimp, beef and eggs barely move.",
+  "signature": [
+    "lean-asia-chicken-pho-herbs",
+    "lean-asia-grilled-mackerel-set-meal",
+    "lean-asia-soft-tofu-shrimp-stew",
+    "lean-asia-chicken-larb-lettuce-cups",
+    "lean-asia-steamed-sea-bass-ginger-gai-lan"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2000,
+      "covers": [
+        "1800-2000",
+        "2000-2200"
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "lean-asia-yogurt-mango-lime-sesame",
+      "name": "Greek yogurt bowl with mango, lime, mint and toasted seeds",
+      "inspiredBy": "Inspired by Thai and Vietnamese fruit with lime and mint",
+      "about": "Thick Greek yogurt under juicy mango, with a squeeze of lime, torn mint and warm toasted sesame and sunflower seeds. It is a cool, bright start with **plenty of protein**, vitamin C from the mango and vitamin E from the seeds.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 280,
+          "swap": "dairy_protein",
+          "note": "thick"
+        },
+        {
+          "food": "mango-raw-80de97",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "cubed"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6,
+          "note": "from a lime"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "unsalted, toasted"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "leaves, torn"
+        }
+      ],
+      "steps": [
+        "Toast the sesame and sunflower seeds in a dry pan over medium heat for 2 to 3 minutes, shaking often, until they smell nutty and turn pale gold. Tip them onto a plate.",
+        "Spoon the yogurt into a wide bowl and top with the mango.",
+        "Squeeze over the lime, scatter on the warm seeds and finish with the torn mint."
+      ],
+      "prepMin": 6,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Toast a small jar of mixed seeds on Sunday and this is a two-minute breakfast. Pineapple or papaya work in place of the mango."
+    },
+    {
+      "id": "lean-asia-egg-tofu-scramble-spinach-sweet-potato",
+      "name": "Egg and tofu scramble with shiitake, spinach and sweet potato",
+      "inspiredBy": "Inspired by Chinese tofu and egg stir-fries and Korean sweet potato breakfasts",
+      "about": "Soft-set eggs folded with silken tofu, browned shiitake, spinach and ginger, next to chunks of tender steamed sweet potato. It gives you **protein, fibre and a slow carb** to carry you well past mid-morning.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 120,
+          "note": "scrubbed, in 3 cm chunks"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 60,
+          "note": "stems removed, sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 120,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "grated"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 210,
+          "swap": "legumes",
+          "note": "pressed and crumbled"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "perilla-egoma-oil-7638e7",
+          "g": 3,
+          "swap": "healthy_oils",
+          "note": "toasted"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Press the tofu between paper towels while you start. Put the sweet potato in a covered microwave dish with a splash of water and cook for 6 to 8 minutes, until a knife slides in easily. Or steam it on the stove for 12 minutes.",
+        "Warm the canola oil in a non-stick pan over medium-high heat. Add the shiitake in a single layer and leave them for 3 minutes, then stir and cook for 2 minutes more, until browned.",
+        "Add the ginger, then the spinach by the handful, and stir until just wilted, about 1 minute.",
+        "Crumble the pressed tofu into the pan and cook for 2 minutes to steam off the water.",
+        "Beat the eggs with the soy sauce, pour them over and turn the heat to low. Fold gently for 2 minutes, until softly set and still glossy.",
+        "Serve with the sweet potato. Scatter on the scallion and chili flakes and finish with a drizzle of perilla oil, as Korean cooks do with greens."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Microwave the sweet potato the night before and the pan part takes 8 minutes."
+    },
+    {
+      "id": "lean-asia-silken-tofu-edamame-bowl",
+      "name": "Warm silken tofu bowl with edamame, ginger-soy and bonito",
+      "inspiredBy": "Inspired by Japanese hiyayakko and Chinese savoury tofu pudding",
+      "about": "Silky tofu warmed through with sweet edamame, a spoon of ginger and soy, curls of bonito, nori and toasted seeds, with crisp Asian pear on the side. It is a light, savoury Japanese-style start with **plenty of plant protein** and lots of fibre.",
+      "ingredients": [
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 260,
+          "swap": "legumes",
+          "note": "drained"
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 90,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "grated"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 3,
+          "note": "flakes"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 4,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "unsalted, toasted"
+        },
+        {
+          "food": "nori-pyropia-laver-toasted-yakinori-7f29ab",
+          "g": 1,
+          "note": "snipped with scissors"
+        },
+        {
+          "food": "perilla-egoma-oil-7638e7",
+          "g": 3,
+          "swap": "healthy_oils",
+          "note": "toasted"
+        },
+        {
+          "food": "pear-asian-raw-2202f6",
+          "g": 140,
+          "note": "cored and sliced"
+        }
+      ],
+      "steps": [
+        "Boil the edamame for 3 minutes, or as the bag says, then drain. Toast the sesame and sunflower seeds in a dry pan for 2 minutes, until fragrant.",
+        "Slide the tofu into a shallow bowl and microwave for 1 minute, or until warm. Tip off any liquid.",
+        "Pile the edamame around the tofu. Spoon the grated ginger, soy sauce and perilla oil over the top.",
+        "Scatter on the bonito, scallion, nori and the warm seeds. Eat with the pear slices on the side."
+      ],
+      "prepMin": 6,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Chilled tofu works just as well on a hot morning: skip the microwave."
+    },
+    {
+      "id": "lean-asia-salmon-edamame-namasu-rice-bowl",
+      "name": "Salmon and edamame rice bowl with spinach and carrot-daikon pickle",
+      "inspiredBy": "Inspired by Japanese salmon-flake rice bowls and namasu",
+      "about": "Flaked canned salmon over a small bed of brown rice, with edamame, wilted spinach, cucumber and a quick carrot and daikon pickle, finished with sesame and nori. The salmon brings **omega-3 and calcium** (the soft bones are edible), and the crunchy pickles make the bowl big and bright.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "salmon-canned-drained-9cea4e",
+          "g": 100,
+          "swap": "fatty_fish",
+          "note": "flaked, soft bones included"
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 110,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "cut into thin matchsticks"
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 60,
+          "note": "cut into thin matchsticks"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 12
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "finely grated"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 5,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "nori-pyropia-laver-toasted-yakinori-7f29ab",
+          "g": 1.5,
+          "note": "snipped with scissors"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "sliced"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2,
+          "swap": "healthy_oils",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Cook the brown rice in plenty of simmering water for about 30 minutes, until tender, then drain and let it cool a little.",
+        "Toss the carrot, daikon and cucumber with the rice vinegar and ginger and leave for 10 minutes while the rice cooks, until lightly pickled and crisp.",
+        "Boil the edamame for 3 minutes, adding the spinach for the last 30 seconds, then drain, rinse under cold water and squeeze the spinach dry.",
+        "Stir the soy sauce, sesame oil and a spoonful of the pickling liquid together. Pile the rice into a bowl and top with the salmon, edamame, spinach and the pickled vegetables.",
+        "Spoon the soy dressing over the top and finish with the sesame seeds, nori and scallion."
+      ],
+      "prepMin": 12,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook a pot of brown rice on Sunday for the first four rice meals and again on Wednesday for the other eight: roughly 1 to 1⅓ cups dry on Sunday and 1⅓ to 2¼ cups on Wednesday, the smaller amounts for Light. It keeps 4 to 5 days in the fridge, so this bowl takes 10 minutes."
+    },
+    {
+      "id": "lean-asia-chicken-pho-herbs",
+      "name": "Vietnamese chicken pho with a big plate of herbs",
+      "inspiredBy": "Inspired by phở gà, served southern-style with a plate of sprouts and herbs",
+      "about": "A fragrant broth built on charred shallot and ginger, star anise and cinnamon, with poached chicken, a small nest of rice noodles, a mound of crunchy sprouts and a heap of cilantro, mint and scallion. The chicken makes this **a big serving of lean protein**, and the herbs, lime and chili season it so you need very little salt. The second portion is tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 50,
+          "note": "halved"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 15,
+          "note": "sliced into coins"
+        },
+        {
+          "food": "star-anise-02a10b",
+          "g": 0.6
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 0.5
+        },
+        {
+          "food": "clove-cb7cf1",
+          "g": 0.2
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 450
+        },
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "whole breast"
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "rice-noodles-pasta-dry-790ac8",
+          "g": 55,
+          "note": "flat, about 3 mm wide"
+        },
+        {
+          "food": "mung-bean-sprouts-raw-abdb2d",
+          "g": 180
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 15,
+          "note": "leaves and tender stems"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 8,
+          "note": "leaves"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15,
+          "note": "from a lime, cut into wedges to squeeze"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Set a dry pot over high heat and char the shallot halves and ginger coins for 5 to 6 minutes, turning, until blackened in spots and sweet-smelling. Add the star anise, coriander seed and clove for the last minute, until fragrant.",
+        "Pour in the broth, the cinnamon and about ¼ cup of water for each portion. Simmer gently, half covered, for 15 minutes to draw out the spices. Add the chicken, cover and cook very gently for 5 minutes, then turn off the heat and leave it in the hot broth for 10 minutes, until cooked through.",
+        "Lift out the chicken and shred it. Strain the broth, stir in the fish sauce and the salt and taste: it should be savoury, warm and a little sweet.",
+        "Cook the rice noodles as the packet says, usually 4 to 6 minutes, then rinse under cold water and drain.",
+        "Divide the noodles and shredded chicken between bowls and ladle on the hot broth. Pile the sprouts, cilantro, mint, scallion and lime wedges on a plate with the chili flakes for everyone to add.",
+        "Pack the second portion for tomorrow's lunch with the broth, noodles and herbs in separate containers. Reheat the broth until steaming and pour it over."
+      ],
+      "prepMin": 20,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Thai basil, if you can find it, is a lovely extra at the table."
+    },
+    {
+      "id": "lean-asia-soft-tofu-shrimp-stew",
+      "name": "Korean soft tofu stew with shrimp, napa cabbage and an egg",
+      "inspiredBy": "Inspired by Korean sundubu-jjigae",
+      "about": "A bubbling, brick-red stew of silky tofu, shrimp, napa cabbage and kimchi, with a raw egg set in the centre at the end. The tofu, shrimp and egg together bring **a big helping of protein and B12**, and the chili warms you without much salt. The second portion is tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 25,
+          "note": "whites and greens kept apart, sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "kimchi-1371a8",
+          "g": 30,
+          "note": "chopped"
+        },
+        {
+          "food": "gochugaru-korean-red-chili-flakes-a76dc7",
+          "g": 4
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 3,
+          "note": "flakes"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 240,
+          "swap": "leafy_greens",
+          "note": "cut into wide strips"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 300,
+          "swap": "legumes",
+          "note": "in big chunks"
+        },
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "deveined"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "perilla-egoma-oil-7638e7",
+          "g": 3,
+          "swap": "healthy_oils",
+          "note": "toasted"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        }
+      ],
+      "steps": [
+        "Cook the brown rice in plenty of simmering water for about 30 minutes, until tender, then drain. Make enough for both portions.",
+        "Warm the canola oil in a wide pot over medium-low heat. Add the scallion whites, garlic and kimchi and cook for 3 minutes until soft. Stir in the gochugaru for 20 seconds, until it smells toasty and turns the oil red. Do not let it scorch.",
+        "Add the bonito, shiitake, napa and about ¾ cup of water for each portion (the napa and tofu add their own juices, and sundubu should be thick and spoonable). Bring to a simmer and cook for 8 minutes, until the cabbage is soft.",
+        "Add the soy sauce and the salt, then spoon in the tofu in big chunks and let it warm for 2 minutes. Add the shrimp and simmer for 2 to 3 minutes, until they turn pink.",
+        "Ladle the second portion into a container to cool. Make a small well in the stew left in the pot and crack in an egg. Cover and cook for 2 minutes, until the white is set and the yolk is still soft. Scatter on the scallion greens and drizzle with the perilla oil.",
+        "Serve with the rice. Pack the second portion with its rice for tomorrow's lunch. When you reheat it, set a fresh egg in the same way."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Cook the rice on Sunday and this is 20 minutes. Stir the yolk into the broth for a richer stew. Bonito stands in for the anchovy stock Korean cooks use. Look for shrimp with no added salt or phosphates."
+    },
+    {
+      "id": "lean-asia-grilled-mackerel-set-meal",
+      "name": "Japanese grilled mackerel set with miso soup, spinach and daikon",
+      "inspiredBy": "Inspired by a Japanese teishoku of saba shioyaki",
+      "about": "Crisp-skinned broiled mackerel with a pile of grated daikon and lime, sesame spinach, a small bowl of tofu and shiitake miso soup, and brown rice, all on one tray. The mackerel carries **a big dose of omega-3**, and the miso is used by the teaspoon so the sodium stays sensible.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "fillets, skin on"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 90,
+          "note": "finely grated, squeezed lightly"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "note": "from a lime"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 130,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 5,
+          "swap": "nuts_seeds",
+          "note": "toasted and crushed"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 3
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 2.5,
+          "note": "flakes"
+        },
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 80,
+          "swap": "legumes",
+          "note": "cubed"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 9
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        }
+      ],
+      "steps": [
+        "Cook the brown rice in plenty of simmering water for about 30 minutes, until tender, then drain. Make a batch ahead if you can.",
+        "Heat the broiler to high. Salt the skin side of the mackerel, leave it for 10 minutes, then pat it dry and broil it flesh side up, about 10 cm from the heat, for 3 minutes. Flip it and broil skin side up for 4 to 5 minutes, until the skin is blistered and crisp and the fish flakes. Serve it skin side up.",
+        "Blanch the spinach in boiling water for 1 minute, plunge it into cold water, squeeze it dry and cut it into lengths. Toss with the soy sauce and the crushed sesame seeds.",
+        "Simmer about ¾ cup of water with the bonito and shiitake for 4 minutes. Add the tofu and warm for 2 minutes. Take the pot off the heat, whisk the miso in with a little hot broth and stir it back in. Never boil it after the miso goes in. Add the scallion.",
+        "Mound the grated daikon beside the mackerel and squeeze the lime over both. Serve with the rice, the spinach and the soup."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Salmon or trout fillets broil the same way if mackerel is hard to find. Buy Atlantic or chub mackerel, never king mackerel."
+    },
+    {
+      "id": "lean-asia-ginger-shrimp-gai-lan-brown-rice",
+      "name": "Ginger shrimp with gai lan, edamame and brown rice",
+      "inspiredBy": "Inspired by Cantonese stir-fried shrimp with Chinese broccoli",
+      "about": "Plump shrimp tossed over high heat with garlic, ginger, shiitake, edamame and big green stalks of gai lan, in a light, savoury Shaoxing and rice vinegar sauce. The shrimp are **lean protein for very few calories**, the edamame add fibre and iron, and the gai lan brings calcium and vitamin K.",
+      "ingredients": [
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "deveined"
+        },
+        {
+          "food": "shaoxing-wine-chinese-rice-wine-4e31ed",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "broccoli-chinese-raw-cc954c",
+          "g": 230,
+          "swap": "leafy_greens",
+          "note": "gai lan, stalks cut in 5 cm lengths, thick ones halved"
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 70,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 10,
+          "note": "cut into thin matchsticks"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 5
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2,
+          "swap": "healthy_oils",
+          "note": "toasted"
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.3
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        }
+      ],
+      "steps": [
+        "Cook the brown rice in plenty of simmering water for about 30 minutes, until tender, then drain.",
+        "Pat the shrimp dry and toss with half the Shaoxing wine and the white pepper. Stir the soy sauce, rice vinegar and the rest of the Shaoxing with 1 tablespoon of water.",
+        "Boil the gai lan and the edamame together for 2 minutes, then drain well.",
+        "Heat a wok or large skillet until very hot. Add half the canola oil and the shrimp in one layer and sear for about 90 seconds a side, until just pink. Tip them out.",
+        "Add the rest of the oil, the shiitake, garlic and ginger and stir-fry for 2 minutes. Add the gai lan and edamame, return the shrimp, pour in the sauce and toss for 1 minute, until the sauce bubbles and coats everything lightly. Finish with the sesame oil.",
+        "Serve over the rice."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Broccoli stems or broccolini work if you cannot find gai lan. Look for a bag of shrimp with no added salt or phosphates. Cook the rice on Sunday."
+    },
+    {
+      "id": "lean-asia-chicken-larb-lettuce-cups",
+      "name": "Thai chicken larb in lettuce cups with cucumber and raw cabbage",
+      "inspiredBy": "Inspired by Thai larb gai from Isan",
+      "about": "Minced chicken tossed warm with lime, fish sauce, chili, shallot, mint, cilantro and nutty toasted rice powder, spooned into crisp lettuce cups with cucumber, carrot and raw cabbage. It is lean, loud and bright, with **plenty of lean protein** and a small scoop of rice to round it out. The second portion is tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 200,
+          "swap": "lean_protein",
+          "note": "finely minced by hand or pulsed in a food processor"
+        },
+        {
+          "food": "shallot-raw-6a0adb",
+          "g": 30,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 30,
+          "note": "from fresh limes"
+        },
+        {
+          "food": "fish-sauce-nam-pla-4146b7",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 1
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 10,
+          "note": "leaves, torn"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "leaves and stems, chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "butterhead-lettuce-raw-104c92",
+          "g": 120,
+          "swap": "leafy_greens",
+          "note": "leaves separated"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "cut into wedges"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "some toasted dry for the powder, the rest rinsed"
+        }
+      ],
+      "steps": [
+        "Toast a tablespoon of the dry brown rice in a dry pan over medium heat for 5 to 6 minutes, stirring, until deep golden and fragrant. Grind it to a coarse powder in a mortar or spice grinder.",
+        "Rinse the rest of the rice and cook it in plenty of simmering water for about 30 minutes, until tender, then drain. Make enough for both portions.",
+        "Put the chicken in a pan with a splash of water over medium heat and cook, breaking it up with a spoon, for 5 to 6 minutes, until cooked through and no longer pink. Take it off the heat and let it cool for a minute.",
+        "Stir the lime juice, fish sauce, salt and chili flakes together, then toss with the warm chicken, the shallot and the rice powder.",
+        "Fold in the mint, cilantro and scallion. Taste: it should be sour first, then salty, then hot.",
+        "Spoon into the lettuce cups and serve with the cucumber, carrot, cabbage and rice. Pack the second portion for tomorrow's lunch with the lettuce and herbs kept apart."
+      ],
+      "prepMin": 20,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Sticky rice makes the classic powder; brown rice gives a nuttier, coarser one. Use fewer chili flakes for a milder larb, or add a sliced fresh chili for more fire."
+    },
+    {
+      "id": "lean-asia-salmon-napa-tofu-miso-nabe",
+      "name": "Japanese salmon, napa cabbage and tofu miso nabe with rice",
+      "inspiredBy": "Inspired by Hokkaido ishikari-nabe, a salmon and miso hot pot",
+      "about": "A shallow pot of gently simmered napa cabbage, spinach and tender salmon with shiitake, tofu and ginger in a light miso dashi, with a lime-soy dip and a scoop of rice to finish. It is **a huge, warming bowl for few calories**, with omega-3 from the salmon and plenty of fibre. The second portion is tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 5,
+          "note": "flakes"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 14
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "sliced into coins"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 250,
+          "swap": "leafy_greens",
+          "note": "cut into wide strips"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "skinless, in large bite-sized chunks"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 100,
+          "note": "stems removed"
+        },
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 140,
+          "swap": "legumes",
+          "note": "cut into large cubes"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "thin coins"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "cut into lengths"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12,
+          "note": "from a lime"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 6
+        },
+        {
+          "food": "perilla-egoma-oil-7638e7",
+          "g": 2,
+          "swap": "healthy_oils",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Cook the brown rice in plenty of simmering water for about 30 minutes, until tender, then drain. Make enough for both portions.",
+        "Simmer about 1½ cups of water for each portion with the bonito and the ginger for 5 minutes, then strain. Return the broth to a wide pot.",
+        "Whisk the miso with a little hot broth and stir it back in. Keep the pot at a gentle simmer and never boil it after the miso goes in.",
+        "Layer the napa in the pot with the carrot and shiitake. Cover and simmer gently for 6 minutes, until the cabbage is soft.",
+        "Tuck in the tofu and lay the salmon on top. Cover and keep the pot barely simmering for 4 minutes, until the salmon is just opaque, pushing the spinach under the broth for the last minute. Scatter on the scallion.",
+        "Stir the lime juice, soy sauce and perilla oil into a small dipping dish. Ladle the nabe into bowls, add a scoop of rice and dip as you go. Pack the second portion and the rice separately for tomorrow's lunch, and reheat it gently, just until the salmon is warm."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Chicken thigh or shrimp work in place of the salmon."
+    },
+    {
+      "id": "lean-asia-braised-beef-shank-daikon",
+      "name": "Chinese braised beef shank and daikon with gai lan",
+      "inspiredBy": "Inspired by Chinese red-braised beef and daikon",
+      "about": "Lean beef shank braised slowly with star anise, cinnamon, ginger and Shaoxing until it falls apart, with sweet daikon and carrot that drink up the sauce, over a little brown rice with garlicky gai lan on the side. It is the weekend project: mostly hands-off, with **a lot of iron, zinc and B12**. The second portion is tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "beef-shank-crosscut-lean-raw-f78752",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "cut into 4 cm chunks"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "smashed"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "cut into lengths"
+        },
+        {
+          "food": "star-anise-02a10b",
+          "g": 0.7
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        },
+        {
+          "food": "shaoxing-wine-chinese-rice-wine-4e31ed",
+          "g": 12
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 16
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 200,
+          "note": "peeled, in big chunks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "in chunks"
+        },
+        {
+          "food": "broccoli-chinese-raw-cc954c",
+          "g": 200,
+          "swap": "leafy_greens",
+          "note": "gai lan, stalks cut in lengths"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 6
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        }
+      ],
+      "steps": [
+        "Cook the brown rice in plenty of simmering water for about 30 minutes, until tender, then drain. Make enough for both portions.",
+        "Blanch the beef in boiling water for 2 minutes to clean it, then drain and rinse.",
+        "Warm the canola oil in a heavy pot over medium-high heat. Brown the beef for 4 to 5 minutes, then add the ginger, half the garlic, the scallion, star anise and cinnamon and stir for 1 minute, until fragrant.",
+        "Add the Shaoxing wine, soy sauce and enough water to just cover the beef. Bring to a boil, then cover and simmer on low for 1 hour 30 minutes, until the beef is nearly tender. In a pressure cooker, 40 minutes is enough.",
+        "Add the daikon and carrot and simmer, uncovered, for 25 to 30 minutes, until the vegetables are soft and the sauce has thickened and turned glossy. Stir in the rice vinegar. If the sauce is still thin, boil it hard for the last 5 minutes.",
+        "Stir-fry the gai lan with the rest of the garlic in a hot pan with a splash of water for 2 to 3 minutes, until bright green and tender, then drizzle with the sesame oil. Serve everything over the rice.",
+        "Pack the second portion for tomorrow's lunch. The braise is better the next day."
+      ],
+      "prepMin": 25,
+      "cookMin": 135,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "A pressure cooker brings the braise down to about 40 minutes. Freeze extra portions for up to 3 months."
+    },
+    {
+      "id": "lean-asia-steamed-sea-bass-ginger-gai-lan",
+      "name": "Chinese steamed sea bass and tofu with ginger, scallion and gai lan",
+      "inspiredBy": "Inspired by Cantonese steamed whole fish",
+      "about": "Sweet, tender sea bass steamed over silky tofu and shiitake with ginger and scallion, finished with a spoon of hot oil, soy and cilantro, with steamed gai lan and a little brown rice. It is quick, clean and light, with **over 35 g of lean protein** and very little fat.",
+      "ingredients": [
+        {
+          "food": "sea-bass-raw-b59bda",
+          "g": 200,
+          "swap": "lean_protein",
+          "note": "fillets, skin on"
+        },
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 180,
+          "swap": "legumes",
+          "note": "in thick slices"
+        },
+        {
+          "food": "shiitake-mushroom-raw-273ba7",
+          "g": 60,
+          "note": "stems removed, sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 14,
+          "note": "half sliced, half cut into fine matchsticks"
+        },
+        {
+          "food": "shaoxing-wine-chinese-rice-wine-4e31ed",
+          "g": 6
+        },
+        {
+          "food": "broccoli-chinese-raw-cc954c",
+          "g": 230,
+          "swap": "leafy_greens",
+          "note": "gai lan, stalks halved lengthways"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 25,
+          "note": "cut into fine strips"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "leaves"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2,
+          "swap": "healthy_oils",
+          "note": "toasted"
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.3
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        }
+      ],
+      "steps": [
+        "Cook the brown rice in plenty of simmering water for about 30 minutes, until tender, then drain. Make a batch ahead if you can.",
+        "Set a rack or heatproof plate over simmering water in a wide pot or wok. Put the tofu, shiitake and the sliced ginger on a plate, lay the fish on top, sprinkle with the Shaoxing wine and white pepper.",
+        "Cover and steam over high heat for 6 to 8 minutes, until the fish is opaque and flakes at the thickest part. Steam the gai lan on a second plate or tier for 4 minutes.",
+        "Pour off the liquid on the plate. Scatter the ginger matchsticks, scallion and cilantro over the fish.",
+        "Heat the canola oil in a small pan or a metal ladle until it shimmers, then pour it over the scallion and ginger so it sizzles. Drizzle on the soy sauce and sesame oil. Serve with the gai lan and rice."
+      ],
+      "prepMin": 12,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Branzino, black or striped bass work; skip Chilean sea bass. Cod or haddock fillets steam the same way. Batch-cook the rice on Sunday and this is a 20-minute dinner."
+    },
+    {
+      "id": "lean-asia-edamame-lime-chili",
+      "name": "Warm edamame with lime and chili",
+      "about": "A bowl of warm, bright green edamame tossed with lime and a pinch of chili. It is **a filling bowl of protein and fibre** in about five minutes.",
+      "ingredients": [
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 130,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6,
+          "note": "from a lime"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Boil the edamame for 3 minutes, or as the bag says, then drain.",
+        "Toss with the lime juice, chili flakes and salt, and eat warm."
+      ],
+      "prepMin": 2,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lean-asia-carrot-daikon-sticks-miso-sesame-dip",
+      "name": "Carrot and daikon sticks with a sesame-miso dip",
+      "inspiredBy": "Inspired by Japanese miso-dipped raw vegetables",
+      "about": "Crunchy carrot and daikon sticks with a sharp little dip of miso, rice vinegar, ginger and sesame. The carrot gives you **a day's worth of vitamin A**, and the dip is just a teaspoon of miso, so it stays light on salt.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 110,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 90,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 4
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 6
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "finely grated"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 5,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Stir the miso, rice vinegar, ginger and 1 tablespoon of water into a smooth dip, then stir in the sesame seeds.",
+        "Serve the carrot and daikon sticks with the dip."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lean-asia-smashed-cucumber-sesame",
+      "name": "Smashed cucumber with garlic, rice vinegar and sesame",
+      "inspiredBy": "Inspired by Chinese pai huang gua",
+      "about": "Cucumber smacked into craggy pieces so it soaks up a sharp garlic, vinegar and soy dressing, with toasted sesame on top. It is **a big, crunchy, very low-calorie bowl** that fills a gap between meals.",
+      "ingredients": [
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 250,
+          "note": "smashed with the flat of a knife and cut into chunks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 8
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 3
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 3,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lay the cucumber on a board and smash it with the flat of a knife, then cut it into bite-sized chunks.",
+        "Toss with the salt and leave for 5 minutes, then drain off the liquid. Toss with the garlic, rice vinegar, soy sauce, sesame oil and chili flakes, and scatter on the sesame seeds."
+      ],
+      "prepMin": 10,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lean-asia-yogurt-pear-ginger-sesame",
+      "name": "Greek yogurt with Asian pear, ginger and toasted sesame",
+      "about": "Thick Greek yogurt with crisp Asian pear, a little grated ginger and warm toasted sesame seeds, built from flavours common in Chinese and Japanese cooking. It brings **a good hit of protein and calcium** with a gentle crunch.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 200,
+          "swap": "dairy_protein",
+          "note": "thick"
+        },
+        {
+          "food": "pear-asian-raw-2202f6",
+          "g": 170,
+          "note": "cored and thinly sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "finely grated"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 4,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Toast the sesame seeds in a dry pan over medium heat for 2 to 3 minutes, shaking often, until they smell nutty.",
+        "Stir the grated ginger into the yogurt and spoon it into a bowl. Fan the pear slices on top and scatter with the warm seeds."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lean-asia-mango-lime-chili-sunflower",
+      "name": "Mango with lime, chili and toasted sunflower seeds",
+      "about": "Juicy mango with a squeeze of lime, a pinch of chili and warm toasted sunflower seeds, a nod to the chili-salt dip on Thai fruit carts. The seeds add **vitamin E and magnesium**, and the mango is rich in vitamin C.",
+      "ingredients": [
+        {
+          "food": "mango-raw-80de97",
+          "g": 170,
+          "swap": "vit_c_fruit",
+          "note": "cubed"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6,
+          "note": "from a lime"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "unsalted, toasted"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toast the sunflower seeds in a dry pan over medium heat for 2 to 3 minutes, until they smell nutty.",
+        "Toss the mango with the lime juice and chili flakes and scatter on the warm seeds."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lean-asia-soy-marinated-eggs",
+      "name": "Soy-marinated soft-boiled eggs with scallion",
+      "inspiredBy": "Inspired by Japanese ajitsuke tamago",
+      "about": "Jammy soft-boiled eggs marinated in a light soy and ginger bath. They give you **protein and choline** in a pocket-sized snack.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "in the shell, at room temperature"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 3
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "thin slices"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 8,
+          "note": "sliced"
+        }
+      ],
+      "steps": [
+        "Lower the eggs into boiling water and cook for 6 and a half minutes. Move them to ice water for 5 minutes, then peel.",
+        "Stir the soy sauce, rice vinegar and ginger with 1 tablespoon of water. Put the eggs and the marinade in a small zip bag, press out the air and marinate for at least 2 hours, turning once.",
+        "Halve and top with the scallion."
+      ],
+      "prepMin": 8,
+      "cookMin": 7,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make them the night before. They keep 3 days in the fridge, so make a fresh pair for Sunday."
+    },
+    {
+      "id": "lean-asia-chilled-silken-tofu-ginger-soy",
+      "name": "Chilled silken tofu with ginger, scallion and soy",
+      "inspiredBy": "Inspired by Japanese hiyayakko",
+      "about": "A cool block of silken tofu with fresh ginger, scallion, soy, bonito and a pinch of chili and sesame. It is **a quick, light protein snack** that fills you up for very few calories.",
+      "ingredients": [
+        {
+          "food": "silken-tofu-light-extra-firm-62377e",
+          "g": 220,
+          "swap": "legumes",
+          "note": "chilled and drained"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "finely grated"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "perilla-egoma-oil-7638e7",
+          "g": 2,
+          "swap": "healthy_oils",
+          "note": "toasted"
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 2,
+          "note": "flakes"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 3,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Slide the tofu onto a small plate and pat the top dry with a paper towel.",
+        "Pile the ginger and scallion on top, drizzle with the soy sauce and perilla oil, and scatter on the bonito, sesame seeds and chili flakes."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lean-asia-yogurt-mango-lime-sesame"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lean-asia-salmon-edamame-namasu-rice-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lean-asia-chicken-pho-herbs"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-asia-soy-marinated-eggs"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-asia-carrot-daikon-sticks-miso-sesame-dip"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lean-asia-egg-tofu-scramble-spinach-sweet-potato"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lean-asia-chicken-pho-herbs",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lean-asia-soft-tofu-shrimp-stew"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-asia-yogurt-pear-ginger-sesame"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-asia-smashed-cucumber-sesame"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lean-asia-silken-tofu-edamame-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lean-asia-soft-tofu-shrimp-stew",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lean-asia-grilled-mackerel-set-meal"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-asia-carrot-daikon-sticks-miso-sesame-dip"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lean-asia-yogurt-mango-lime-sesame"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lean-asia-ginger-shrimp-gai-lan-brown-rice"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lean-asia-chicken-larb-lettuce-cups"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-asia-edamame-lime-chili"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-asia-chilled-silken-tofu-ginger-soy"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lean-asia-silken-tofu-edamame-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lean-asia-chicken-larb-lettuce-cups",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lean-asia-salmon-napa-tofu-miso-nabe"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-asia-mango-lime-chili-sunflower"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lean-asia-egg-tofu-scramble-spinach-sweet-potato"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lean-asia-salmon-napa-tofu-miso-nabe",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lean-asia-braised-beef-shank-daikon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-asia-edamame-lime-chili"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-asia-yogurt-pear-ginger-sesame"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lean-asia-silken-tofu-edamame-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lean-asia-braised-beef-shank-daikon",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lean-asia-steamed-sea-bass-ginger-gai-lan"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-asia-soy-marinated-eggs"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lean-asia-mango-lime-chili-sunflower"
+        }
+      ]
+    }
+  ]
+}

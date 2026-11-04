@@ -353,7 +353,9 @@ export function planFromWeek(family: FamilyFile, week: WeekDay[], size: PlanSize
   return plan;
 }
 
-/** The diet labels a plan earns from its foods: vegan, vegetarian, pescatarian, gluten-free, dairy-free, egg-free, nut-free. */
+/** The diet labels a plan earns from its foods: vegan, vegetarian, pescatarian, gluten-free, dairy-free, egg-free, nut-free,
+ *  halal-friendly (no pork, alcohol or gelatin; halal meat itself is the cook's choice) and kosher-style (no pork or shellfish,
+ *  and never meat with dairy in the same meal). */
 export function dietTagsOf(plan: Pick<MealPlan, 'days'>, foods: FoodIndex): string[] {
   const tags: [string, keyof typeof FOOD_BANS][] = [
     ['vegan', 'animal'],
@@ -372,7 +374,26 @@ export function dietTagsOf(plan: Pick<MealPlan, 'days'>, foods: FoodIndex): stri
         if (!f) continue;
         for (const [tag, ban] of tags) if (ok.get(tag) && FOOD_BANS[ban](f)) ok.set(tag, false);
       }
-  return tags.filter(([t]) => ok.get(t)).map(([t]) => t);
+  let halal = true;
+  let kosher = true;
+  for (const d of plan.days)
+    for (const m of d.meals) {
+      let meat = false;
+      let dairy = false;
+      for (const i of m.ingredients) {
+        const f = getFood(foods, i.foodId);
+        if (!f) continue;
+        if (FOOD_BANS.pork(f) || FOOD_BANS.alcohol(f) || /\bgelatine?\b/i.test(f.name)) halal = false;
+        if (FOOD_BANS.pork(f) || FOOD_BANS.shellfish(f)) kosher = false;
+        if (f.category === 'meat' || f.category === 'poultry') meat = true;
+        if (FOOD_BANS.dairy(f)) dairy = true;
+      }
+      if (meat && dairy) kosher = false;
+    }
+  const out = tags.filter(([t]) => ok.get(t)).map(([t]) => t);
+  if (halal) out.push('halal-friendly');
+  if (kosher) out.push('kosher-style');
+  return out;
 }
 
 /** Who the lab sizes for: the adult woman (the harder case for iron and at low calories), with the family's life stage,

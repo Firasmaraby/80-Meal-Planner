@@ -26,6 +26,8 @@ export const DIET_OPTIONS = [
   { key: 'dairy-free', label: 'Dairy-free' },
   { key: 'egg-free', label: 'Egg-free' },
   { key: 'gluten-free', label: 'Gluten-free' },
+  { key: 'halal-friendly', label: 'Halal-friendly' },
+  { key: 'kosher-style', label: 'Kosher-style' },
 ] as const;
 
 /** A plan tagged "vegan" also satisfies "vegetarian" and "dairy-free", and so on. */

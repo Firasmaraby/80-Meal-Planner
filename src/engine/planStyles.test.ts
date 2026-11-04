@@ -21,9 +21,9 @@ function swapFood(family: FamilyFile, from: string, to: string) {
 }
 
 describe('plan styles', () => {
-  it('has the 29 styles of the guide, each with a label and a blurb', () => {
+  it('has the 31 styles of the guide, each with a label and a blurb', () => {
     const styles = Object.keys(PLAN_STYLES);
-    expect(styles).toHaveLength(29);
+    expect(styles).toHaveLength(31);
     for (const s of styles) {
       expect(PLAN_STYLES[s as PlanStyle].label.length).toBeGreaterThan(2);
       expect(PLAN_STYLES[s as PlanStyle].blurb).not.toMatch(/[—–]/);
@@ -296,5 +296,26 @@ describe('batch C safety: pregnancy, breastfeeding, PCOS and menopause', () => {
     }
     expect(PLAN_STYLES.pcos.note).toMatch(/No single diet is proven best/);
   });
+});
+
+describe('batch D styles', () => {
+  const f = (name: string, category: Food['category'] = 'other') => ({ id: name, name, category, n: {}, servings: [] }) as unknown as Food;
+  it('allergen-free bans peanuts, tree nuts, eggs, dairy, shellfish and sesame, and says to read labels', () => {
+    expect(PLAN_STYLES['allergen-free'].gates.bans).toEqual(['nuts', 'egg', 'dairy', 'shellfish', 'sesame']);
+    expect(FOOD_BANS.sesame(f('Tahini'))).toBe('sesame');
+    expect(FOOD_BANS.shellfish(f('Shrimp, raw', 'fish'))).toBe('shellfish');
+    expect(FOOD_BANS.shellfish(f('Salmon, raw', 'fish'))).toBeUndefined();
+    expect(PLAN_STYLES['allergen-free'].note).toMatch(/label/);
+  });
+  it('plant-based muscle is the muscle protein floor plus the vegan ban', () => {
+    expect(PLAN_STYLES['muscle-plant'].gates.bans).toEqual(['animal']);
+    expect(gradeOptionsFor('muscle-plant', 2400).rules).toMatchObject({ proteinMinPctKcal: 30, fattyFishPerWeek: 0 });
+  });
+  it('pork means pork, not beef or turkey sausage', () => {
+    expect(FOOD_BANS.pork(f('Bacon, cooked', 'meat'))).toBe('pork');
+    expect(FOOD_BANS.pork(f('Salami, cooked, beef', 'meat'))).toBeUndefined();
+    expect(FOOD_BANS.pork(f('Turkey bacon', 'poultry'))).toBeUndefined();
+  });
+  it('Ramadan plans carry a care-team note', () => expect(PLAN_STYLES.ramadan.note).toMatch(/care team/));
 });
 

@@ -130,7 +130,7 @@ describe('compiling a family', () => {
     expect(p.band).toEqual({ min: 2000, max: 2200 });
     expect(p.carbStyle).toBe('wholegrain'); // whole wheat bread and brown rice
     // chicken, fish, eggs, dairy, wheat and nuts: no diet label; fish twice and walnuts give a 4:1 week
-    expect(p.tags).toEqual(["omega-balanced"]);
+    expect(p.tags).toEqual(["halal-friendly", "omega-balanced"]);
   });
 
   it('applies adjust steps: add, drop by slot and index, drop by recipe, swap, day "*"', () => {
@@ -194,12 +194,25 @@ describe('compiling a family', () => {
 
   it('diet tags come from the foods', () => {
     const plan = (...names: string[]) => ({ days: [{ day: 1, meals: [{ id: 'm', slot: 'dinner' as const, name: 'x', ingredients: names.map((n) => ({ foodId: FOODS.find((f) => f.name === n)!.id, grams: 100 })) }] }] });
-    const all = ['vegan', 'vegetarian', 'pescatarian', 'gluten-free', 'dairy-free', 'egg-free', 'nut-free'];
+    const all = ['vegan', 'vegetarian', 'pescatarian', 'gluten-free', 'dairy-free', 'egg-free', 'nut-free', 'halal-friendly', 'kosher-style'];
     expect(dietTagsOf(plan('Lentils, boiled', 'Kale, raw', 'Olive oil'), FOOD_INDEX)).toEqual(all);
-    expect(dietTagsOf(plan('Lentils, boiled', 'Greek yogurt, plain, low-fat'), FOOD_INDEX)).toEqual(['vegetarian', 'pescatarian', 'gluten-free', 'egg-free', 'nut-free']);
-    expect(dietTagsOf(plan('Salmon, atlantic, farmed, baked or broiled', 'Broccoli, boiled'), FOOD_INDEX)).toEqual(['pescatarian', 'gluten-free', 'dairy-free', 'egg-free', 'nut-free']);
-    expect(dietTagsOf(plan('Chicken breast, skinless, roasted'), FOOD_INDEX)).toEqual(['gluten-free', 'dairy-free', 'egg-free', 'nut-free']);
-    expect(dietTagsOf(plan('Whole wheat bread', 'Almonds, dried', 'Egg, whole, boiled'), FOOD_INDEX)).toEqual(['vegetarian', 'pescatarian', 'dairy-free']);
+    expect(dietTagsOf(plan('Lentils, boiled', 'Greek yogurt, plain, low-fat'), FOOD_INDEX)).toEqual(['vegetarian', 'pescatarian', 'gluten-free', 'egg-free', 'nut-free', 'halal-friendly', 'kosher-style']);
+    expect(dietTagsOf(plan('Salmon, atlantic, farmed, baked or broiled', 'Broccoli, boiled'), FOOD_INDEX)).toEqual(['pescatarian', 'gluten-free', 'dairy-free', 'egg-free', 'nut-free', 'halal-friendly', 'kosher-style']);
+    expect(dietTagsOf(plan('Chicken breast, skinless, roasted'), FOOD_INDEX)).toEqual(['gluten-free', 'dairy-free', 'egg-free', 'nut-free', 'halal-friendly', 'kosher-style']);
+    expect(dietTagsOf(plan('Whole wheat bread', 'Almonds, dried', 'Egg, whole, boiled'), FOOD_INDEX)).toEqual(['vegetarian', 'pescatarian', 'dairy-free', 'halal-friendly', 'kosher-style']);
+  });
+
+  it('halal-friendly and kosher-style: pork, alcohol, shellfish, and meat with dairy in one meal', () => {
+    const plan = (...names: string[]) => ({ days: [{ day: 1, meals: [{ id: 'm', slot: 'dinner' as const, name: 'x', ingredients: names.map((n) => ({ foodId: FOODS.find((f) => f.name === n)!.id, grams: 100 })) }] }] });
+    const tags = (...n: string[]) => dietTagsOf(plan(...n), FOOD_INDEX);
+    const pork = FOODS.find((f) => /^pork/i.test(f.name) && f.category === 'meat')!.name;
+    const shrimp = FOODS.find((f) => /^shrimp/i.test(f.name))!.name;
+    expect(tags(pork)).not.toContain('halal-friendly');
+    expect(tags(pork)).not.toContain('kosher-style');
+    expect(tags(shrimp)).toContain('halal-friendly');
+    expect(tags(shrimp)).not.toContain('kosher-style');
+    expect(tags('Chicken breast, skinless, roasted', 'Greek yogurt, plain, low-fat')).not.toContain('kosher-style');
+    expect(tags('Chicken breast, skinless, roasted', 'Greek yogurt, plain, low-fat')).toContain('halal-friendly');
   });
 });
 

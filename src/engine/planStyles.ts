@@ -127,7 +127,13 @@ function paleoReason(f: Food): string | undefined {
   return undefined;
 }
 
-export type BanId = 'animal' | 'flesh' | 'meat-poultry' | 'dairy' | 'egg' | 'gluten' | 'nuts' | 'prenatal' | 'alcohol' | 'mercury' | 'paleo';
+// pork in any form (for the halal-friendly and kosher-style tags); beef, turkey or chicken versions of a sausage are fine
+const PORK = /\b(pork|ham|bacon|lard|prosciutto|pancetta|guanciale|pepperoni|chorizo|salami|mortadella|hot dogs?|wieners?|frankfurters?|chicharr[oó]n|spareribs?|baby back)\b/;
+const NOT_PORK = /\b(beef|turkey|chicken|veggie|vegetarian|plant-based|soy|tofu|mushroom|eggplant)\b/;
+const SHELLFISH = /\b(shrimps?|prawns?|crabs?|lobsters?|crayfish|crawfish|langoustines?|clams?|mussels?|oysters?|scallops?|squid|calamari|octopus|cuttlefish|sea urchin|abalone|whelks?|cockles?|shellfish)\b/;
+const SESAME = /\b(sesame|tahini|tahina|halva|halwa|gomasio|za'?atar|dukkah)\b/;
+
+export type BanId = 'animal' | 'flesh' | 'meat-poultry' | 'dairy' | 'egg' | 'gluten' | 'nuts' | 'prenatal' | 'alcohol' | 'mercury' | 'pork' | 'shellfish' | 'sesame' | 'paleo';
 
 /** Each ban answers with the reason a food is out, or undefined when it is fine. */
 export const FOOD_BANS: Record<BanId, (f: Food) => string | undefined> = {
@@ -146,6 +152,9 @@ export const FOOD_BANS: Record<BanId, (f: Food) => string | undefined> = {
   prenatal: prenatalReason,
   alcohol: alcoholReason,
   mercury: (f) => (MERCURY_FISH.test(lower(f)) ? 'high-mercury fish' : undefined),
+  pork: (f) => (!PLANT_CATEGORIES.has(f.category) && PORK.test(lower(f)) && !NOT_PORK.test(lower(f)) ? 'pork' : undefined),
+  shellfish: (f) => (SHELLFISH.test(lower(f)) && !PLANT_CATEGORIES.has(f.category) ? 'shellfish' : undefined),
+  sesame: (f) => (SESAME.test(lower(f)) ? 'sesame' : undefined),
   paleo: paleoReason,
 };
 
@@ -230,6 +239,12 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
   },
   // goals
   muscle: { label: 'Build muscle', blurb: 'A high-protein week for training and gaining lean mass.', gates: { rules: { proteinMinPctKcal: 30 } } },
+  'muscle-plant': {
+    label: 'Build muscle, plant-based',
+    blurb: 'A high-protein vegan week from tofu, tempeh, seitan and legumes, no powders.',
+    gates: { rules: { proteinMinPctKcal: 30, fattyFishPerWeek: 0 }, bans: ['animal'] },
+    note: 'B12 comes from a fortified soy drink in this week; check the carton, and a B12 supplement is the safe bet on a vegan diet.',
+  },
   'fat-loss': {
     label: 'Fat loss',
     blurb: 'High protein and high fibre to stay full on fewer calories.',
@@ -314,10 +329,17 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
     label: 'Ramadan',
     blurb: 'Suhoor before dawn and iftar at sunset, no lunch.',
     gates: { noSlots: ['lunch'], slotNames: { breakfast: 'Suhoor', dinner: 'Iftar' } },
+    note: 'If you have diabetes, are pregnant or breastfeeding, or take medication, talk to your care team before fasting. Drink plenty of water between iftar and suhoor.',
   },
   'intermittent-fasting': { label: 'Intermittent fasting', blurb: 'Two meals and a snack, with no breakfast.', gates: { noSlots: ['breakfast'] } },
   'gluten-free': { label: 'Gluten free', blurb: 'No wheat, barley or rye, and no hidden gluten.', gates: { bans: ['gluten'] } },
   'dairy-free': { label: 'Dairy free', blurb: 'No milk, cheese, yogurt, butter or ghee.', gates: { bans: ['dairy'] } },
+  'allergen-free': {
+    label: 'Top-allergen free',
+    blurb: 'No peanuts, tree nuts, eggs, dairy, shellfish or sesame.',
+    gates: { bans: ['nuts', 'egg', 'dairy', 'shellfish', 'sesame'] },
+    note: 'Always read the label: packaged foods can carry "may contain" warnings, and recipes here assume the plain versions are free of these allergens.',
+  },
   'iron-focus': {
     label: 'Iron focus',
     blurb: 'Iron at 100% of the adult woman target every day.',
