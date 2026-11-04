@@ -1,0 +1,1716 @@
+{
+  "id": "pescatarian-north",
+  "name": "Pescatarian Japanese and Nordic",
+  "style": "pescatarian",
+  "cuisine": "Nordic and Japanese",
+  "regions": [
+    "Japan",
+    "Norway",
+    "Sweden",
+    "Denmark",
+    "Finland"
+  ],
+  "summary": "A week of Nordic and Japanese home cooking with one fish main meal a day, and tofu, eggs, dairy and peas at the other. Finnish salmon soup, miso-simmered mackerel, pea soup, rye smørrebrød and a Hokkaido salmon hot pot, with no meat or poultry.",
+  "howItWorks": "**Fish once a day, your call.** Fish once a day here, all low in mercury; the usual advice is two or three times a week, so swap in the egg or tofu dishes any day you like. Herring Monday, salmon Tuesday and Wednesday, mackerel Thursday and Friday, hot pot Saturday, smoked salmon Sunday. Eggs sit where they belong: rye, tamago-toji, potato salad, scrambled and fried.\n\n**Omega-3 and vitamin D.** Salmon and herring carry **omega-3 and vitamin D**, mackerel is rich in omega-3, selenium and B12, and UV-exposed mushrooms and eggs add more vitamin D. Milk, eggs, mackerel and iodized salt bring **iodine**; nori is a small piece, because seaweed is very rich in iodine. Wash all vegetables, herbs and fruit before cutting, and choose Atlantic herring and salmon, not Baltic.\n\n**Cured fish is salty.** Pickled herring and cold-smoked salmon are **high in sodium**, so there are only two servings, on Monday and Sunday. They also carry a listeria risk: skip them, or heat them until steaming hot (74 °C), if anyone eating is pregnant, over 65 or has a weakened immune system. Buy small packs and finish them by their date. Soy sauce is reduced-sodium and miso is a spoonful.\n\n**Cook once, eat twice.** Pea soup, salmon soup, the tofu and egg bowl, the mackerel and the potato salad each make two portions. Chill leftovers within 2 hours, cool barley within 1 hour, and reheat once until steaming hot (74 °C). A quick bonito dashi, with no kombu, gives the mackerel, the breakfast miso soup and the hot pot their depth. Saturday's hot pot is the weekend project.\n\n**At the other sizes.** Light covers 1600 to 1800 kcal, because below that the days cannot be trimmed without losing calcium and magnesium. It drops one snack a day and trims the rye, barley, split peas, butter and oil. Big adds a snack each day and bigger portions of fish, eggs, tofu, barley, rye and potato.",
+  "signature": [
+    "pescatarian-north-lohikeitto-rye",
+    "pescatarian-north-miso-simmered-mackerel-spinach-rice",
+    "pescatarian-north-ishikari-style-salmon-tofu-nabe",
+    "pescatarian-north-tofu-egg-mushroom-rice-bowl"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1600,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "pescatarian-north-skyr-lingonberry-hazelnuts"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "pescatarian-north-apple-hazelnuts"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "pescatarian-north-mushroom-miso-mug-soup"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "pescatarian-north-rye-toast-skyr-pickled-cucumber"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "pescatarian-north-mushrooms-rye-toast-dill"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "pescatarian-north-blueberry-oat-milk-smoothie"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "pescatarian-north-carrot-pear-sunflower-salad"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "pescatarian-north-overnight-rye-oat-skyr-blueberry",
+      "name": "Overnight rye and oat muesli with skyr, blueberries and lingonberry",
+      "inspiredBy": "Nordic overnight muesli, with rye flakes and skyr",
+      "about": "Rolled oats and rye flakes soaked overnight in milk and skyr, with blueberries, a spoonful of lingonberry jam and toasted sunflower seeds on top. It is ready when you wake, creamy and a little tart, with a crunch from the seeds. The oats and rye bring **slow-release fibre**, and the milk and skyr bring calcium and protein.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "rye-flakes-2971fb",
+          "g": 15
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 130
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 80
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 80,
+          "swap": "berries",
+          "note": "fresh, or frozen and thawed"
+        },
+        {
+          "food": "lingonberry-jam-rarorda-lingon-deecb7",
+          "g": 12
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 24,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "The night before, stir the oats, rye flakes, cinnamon, milk and skyr together in a jar. It should look a little too loose, because the flakes will drink it up. Cover and chill overnight, and eat within 2 days.",
+        "Toast the sunflower seeds in a dry pan over medium heat until they smell nutty, about 2 minutes, and let them cool.",
+        "In the morning, give the muesli a good stir. It should be thick and spoonable. A splash of milk loosens it if it has gone stiff.",
+        "Top with the blueberries (rinse fresh ones first), the lingonberry jam and the toasted seeds, and eat straight away so the seeds stay crisp."
+      ],
+      "prepMin": 6,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Mix it the night before. A jar keeps up to 2 days in the fridge, and the seeds go on fresh each morning. If anyone eating is pregnant, over 65 or immunocompromised, bring frozen berries to a boil for 1 minute and cool them first."
+    },
+    {
+      "id": "pescatarian-north-warm-oat-rye-porridge-apple",
+      "name": "Warm oat and rye porridge with apple, cinnamon and hazelnuts",
+      "inspiredBy": "Swedish havregrynsgröt and Finnish kaurapuuro, with rye flakes for chew",
+      "about": "A creamy milk porridge of rolled oats and rye flakes, with grated apple stirred in at the end and toasted hazelnuts on top. It is the **bowl of every Nordic morning**, plain and filling, and it keeps you full well past mid-morning. The milk brings calcium and iodine, and the hazelnuts bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "rye-flakes-2971fb",
+          "g": 10
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 200
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 100,
+          "note": "washed and grated with the skin on"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "toasted and roughly chopped"
+        }
+      ],
+      "steps": [
+        "Toast the hazelnuts in a dry pan over medium heat until golden and fragrant, about 3 minutes. Let them cool, then chop roughly.",
+        "Put the oats, rye flakes, milk, a splash of water and the salt in a small pot. Bring to a gentle simmer over medium heat, stirring often so it doesn't catch.",
+        "Cook until thick and creamy, about 6 to 8 minutes. Wash the apple, grate it and stir it in for the last minute.",
+        "Spoon into a bowl and top with the cinnamon and hazelnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 9,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Make it with water for a lighter bowl, or stir in a spoon of skyr at the end for extra protein."
+    },
+    {
+      "id": "pescatarian-north-egg-cucumber-rye-open-sandwich",
+      "name": "Egg and cucumber smørrebrød on buttered rye with scallion tops and dill",
+      "inspiredBy": "Danish smørrebrød, a Copenhagen lunch turned into a breakfast",
+      "about": "Buttered dark rye topped with a skyr and mustard spread, sliced boiled egg, cool cucumber and a shower of scallion tops and dill. It is the **Danish open-faced classic**, savoury and fresh in equal measure. Rye brings fibre, and the egg brings protein and choline.",
+      "ingredients": [
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 65
+        },
+        {
+          "food": "butter-63ea86",
+          "g": 8
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "boiled until the yolk is set"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 70
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 4
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed and thinly sliced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 5,
+          "note": "washed, green tops finely sliced"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 2,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Lower the eggs into a pan of boiling water and cook for 9 minutes, until the yolks are fully set. Cool them in cold water, peel and slice.",
+        "Stir the skyr with the mustard and a grind of pepper until smooth.",
+        "Wash the cucumber, scallion and dill before slicing and chopping. Slice the cucumber thinly.",
+        "Butter the rye, spread it with the skyr mixture, then layer on the cucumber and the egg. Finish with the scallion tops, dill and a little more pepper."
+      ],
+      "prepMin": 8,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Boil the eggs on Sunday night and keep them, unpeeled, in the fridge. Use them within 5 days."
+    },
+    {
+      "id": "pescatarian-north-tofu-mushroom-miso-soup-rice",
+      "name": "Tofu and mushroom miso soup with barley rice and quick daikon pickle",
+      "inspiredBy": "Japanese asa-gohan, the breakfast set, kept to one soup and one pickle",
+      "about": "A Japanese-style breakfast: miso soup with firm tofu, spinach, mushrooms and scallion, a small bowl of chewy barley rice, a snap of vinegared daikon and a little torn nori. It is **gentle, warming and quick to eat**. Tofu brings protein, and the mushrooms bring vitamin D.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 70,
+          "swap": "lean_protein",
+          "note": "any kind, cut into small cubes"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 14
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "mushroom-white-exposed-to-ultraviolet-light-raw-0cd6fe",
+          "g": 40,
+          "note": "wiped clean and sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "peeled and sliced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 60,
+          "note": "peeled and cut into thin matchsticks"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "nori-pyropia-laver-toasted-yakinori-7f29ab",
+          "g": 1,
+          "note": "torn"
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 2,
+          "note": "dried flakes"
+        }
+      ],
+      "steps": [
+        "Rinse the barley and simmer it in plenty of water until tender but still chewy, about 25 minutes, then drain. Start it first, or cook it the night before. Cook only what you will eat. If any is left, spread it in a shallow dish so it cools within 1 hour, and refrigerate it.",
+        "While the barley cooks, toss the daikon with the rice vinegar and salt. Leave it for 10 minutes, then squeeze out the extra liquid.",
+        "Simmer the ginger and mushrooms in about 350 ml water for 6 minutes. Add the bonito flakes for the last 2 minutes, then lift them out with a small sieve. This is a quick dashi, and it is what makes the soup taste like miso soup should.",
+        "Add the tofu to the pot and warm it for 2 minutes. Add the spinach and scallion for the last 30 seconds, until the spinach just wilts.",
+        "Take the pot off the heat. Stir the miso with a ladle of hot broth until smooth, then stir it back in. Don't let it boil after the miso goes in, or it loses its flavour.",
+        "Serve the soup with the barley, the pickle and the torn nori on top."
+      ],
+      "prepMin": 12,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "weekend-project"
+      ],
+      "tip": "Seaweed is kept to a small piece of nori because it is very rich in iodine. Cook the barley the night before and cool it within 1 hour for a quick weekday version, reheating it until steaming hot (74 °C). On a weekday, make just the soup and eat it with the leftover barley."
+    },
+    {
+      "id": "pescatarian-north-pickled-herring-egg-rye-open-sandwich",
+      "name": "Pickled herring and egg on rye with dill skyr, beets and new potatoes",
+      "inspiredBy": "Danish sildemad and Swedish sillbricka, with skyr in place of the usual sour cream",
+      "about": "Dark rye with pickled herring, a sliced boiled egg, thin onion and sweet pickled beet under a cool dill and lemon skyr sauce, with a small plate of dill potatoes on the side. It is the **sharp, sweet and creamy** balance of a Danish lunch table. Herring is rich in omega-3 and vitamin D, but it is cured and salty, so it is a once-a-week fish. Not for anyone pregnant, over 65 or with a weakened immune system unless heated to 74 °C (165 °F).",
+      "ingredients": [
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 50
+        },
+        {
+          "food": "butter-63ea86",
+          "g": 5
+        },
+        {
+          "food": "pickled-herring-atlantic-3f1974",
+          "g": 70,
+          "swap": "fatty_fish",
+          "note": "drained"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "boiled until the yolk is set"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 70
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "pickled-beet-canned-solids-and-liquid-2794c2",
+          "g": 50,
+          "note": "drained and sliced"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 70,
+          "note": "scrubbed, small ones left whole"
+        }
+      ],
+      "steps": [
+        "Put the potatoes in a pot of cold water, bring to a boil and cook until a knife slides in easily, about 15 minutes. Drain and let the steam escape. Toss with half of the dill. Boil the eggs alongside for 9 minutes, until the yolks are set, then cool, peel and slice them.",
+        "Stir the skyr with the lemon juice and the rest of the dill until smooth.",
+        "Take the herring straight from the fridge and drain it. Cured fish should be kept cold, so don't leave it out for more than 2 hours. Choose Atlantic herring, not Baltic, and use it by the date on the jar. If anyone eating is pregnant, over 65 or has a weakened immune system, skip the herring, or warm it in a small covered pan over low heat until steaming hot (74 °C).",
+        "Butter the rye, lay on the herring, egg, beet and onion, and spoon the skyr sauce on top. If the slice looks small for the toppings, cut it in half and stack them on both halves.",
+        "Serve with the warm potatoes on the side."
+      ],
+      "prepMin": 12,
+      "cookMin": 16,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Buy the smallest jar and keep it in the coldest part of the fridge, at 4 °C or colder. Finish it within 3 days of opening or by its date, whichever comes first. Rinse the herring first for a milder taste."
+    },
+    {
+      "id": "pescatarian-north-yellow-pea-soup-mustard",
+      "name": "Yellow pea soup with kale, mustard and rye bread",
+      "inspiredBy": "Swedish ärtsoppa, made without the pork",
+      "about": "A thick, smoky yellow pea soup in the Swedish ärtsoppa style, simmered with onion, carrot and marjoram and finished with kale and a splash of vinegar. The smoked paprika gives it the **smoky depth** the traditional pork usually adds. The peas bring plenty of fibre, folate and plant protein, the kale adds vitamin C and vitamin K, and a dab of mustard on top is how Swedes eat it.",
+      "ingredients": [
+        {
+          "food": "split-peas-dry-6b69b1",
+          "g": 120,
+          "swap": "legumes",
+          "note": "yellow, rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed and diced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "marjoram-dried-5adc61",
+          "g": 1.5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, shredded"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 5
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 6,
+          "note": "to serve"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 30
+        }
+      ],
+      "steps": [
+        "Warm the oil in a large pot over medium heat. Cook the onion and carrot until soft, about 6 minutes. Stir in the marjoram and paprika for 30 seconds, until fragrant.",
+        "Add the split peas and enough water to cover them by about 5 cm. Bring to a boil and skim off any foam.",
+        "Simmer gently with the lid slightly ajar, stirring now and then, until the peas have collapsed into a thick soup, about 45 minutes. Add water if it gets too thick.",
+        "Wash the kale, remove the stems, shred it and stir it in for the last 5 minutes, until tender and bright green. Season with the salt and finish with the vinegar.",
+        "Stir a spoonful of mustard into each bowl and serve with the rye bread.",
+        "Pack the second portion into a shallow container, cool it, and get it into the fridge within 2 hours. It keeps up to 3 days; reheat it once, until steaming hot (74 °C)."
+      ],
+      "prepMin": 12,
+      "cookMin": 55,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Short on time? A pressure cooker has the peas ready in about 15 minutes. The soup freezes well in single portions."
+    },
+    {
+      "id": "pescatarian-north-lohikeitto-rye",
+      "name": "Lohikeitto, Finnish salmon soup with leeks, dill and rye",
+      "inspiredBy": "Finnish lohikeitto, made with milk and a little butter in place of cream",
+      "about": "Finland's creamy salmon soup: leek, potato and carrot simmered in milk with allspice, then big pieces of salmon poached at the very end and a handful of dill. Served with a slice of dark rye, it is a **whole meal in a bowl**. The salmon brings omega-3 and vitamin D, and the milk brings calcium and iodine.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "skin and pin bones removed, cut into large cubes"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 150,
+          "note": "peeled and cubed"
+        },
+        {
+          "food": "leek-raw-01ddc0",
+          "g": 60,
+          "note": "washed well, sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "butter-63ea86",
+          "g": 5
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 200
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.8
+        },
+        {
+          "food": "white-pepper-b6f065",
+          "g": 0.3
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 8,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.3
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 30
+        }
+      ],
+      "steps": [
+        "If the salmon is frozen, thaw it overnight in the fridge and cook it within 2 days. Cut it into big cubes, and wash your hands, the knife and the board afterwards.",
+        "Melt the butter in a pot over medium heat and cook the leek until soft, about 4 minutes. Add the potato, carrot, allspice and enough water to just cover. Simmer until the potato is tender, about 15 minutes.",
+        "Pour in the milk and warm it to a gentle simmer. Don't let it boil hard, or it can split.",
+        "Slide in the salmon and poach gently, off a boil, until it is opaque and flakes easily (70 °C), about 5 minutes.",
+        "Season with the salt, white pepper and a squeeze of lemon. Stir in most of the dill and serve with the rye bread and the rest of the dill on top.",
+        "Pack the second portion into a shallow container, cool it, and get it into the fridge within 2 hours. It keeps up to 3 days; reheat it once, until steaming hot (74 °C). Reheat gently so the fish doesn't toughen."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "A splash of cold milk loosens the soup when you reheat it. Don't boil it hard, or the fish turns dry."
+    },
+    {
+      "id": "pescatarian-north-tofu-egg-mushroom-rice-bowl",
+      "name": "Tofu and egg simmered with mushrooms and spinach over barley rice",
+      "inspiredBy": "Japanese tamago-toji donburi, made with tofu and mushrooms",
+      "about": "Firm tofu and mushrooms simmered in a light soy and ginger broth, with beaten egg swirled in until just set and spinach wilted through, all spooned over chewy barley rice. It is **Japanese home comfort**, in the style of a tamago-toji donburi. The egg and tofu bring protein and choline, and the mushrooms bring vitamin D.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 70,
+          "swap": "lean_protein",
+          "note": "any kind, drained and cut into cubes"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "mushroom-white-exposed-to-ultraviolet-light-raw-0cd6fe",
+          "g": 60,
+          "note": "wiped clean and sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "peeled"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 12
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 3
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Rinse the barley and simmer it in plenty of water until tender but still chewy, about 25 minutes, then drain.",
+        "While the barley cooks, simmer the onion, mushrooms and ginger in about 150 ml water for each portion you are cooking, with the soy sauce and sugar, for 8 minutes, until the onion is soft and the broth smells savoury.",
+        "Add the tofu and simmer for 3 minutes. Add the spinach and let it wilt.",
+        "Pour the beaten egg in a slow circle over the top, cover and cook over low heat until it is completely set, with no runny egg left (74 °C), about 2 minutes. Hold back a little broth if the bowl looks wet.",
+        "Spoon over the barley and finish with the scallion and sesame seeds.",
+        "Pack the second portion into a shallow container, cool it, and get it into the fridge within 2 hours. It keeps up to 3 days; reheat it once, until steaming hot (74 °C). Cool leftover barley within 1 hour, too."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Slide the pot off the heat just as the egg sets, because it keeps cooking in the hot broth. The egg is firmer on the second day, which is normal."
+    },
+    {
+      "id": "pescatarian-north-miso-simmered-mackerel-spinach-rice",
+      "name": "Miso-simmered mackerel with sesame spinach, pickled daikon and barley rice",
+      "inspiredBy": "Japanese saba no misoni, with a pickle and spinach on the side",
+      "about": "Atlantic mackerel simmered in a ginger and miso broth until the sauce turns glossy, with a quick sesame spinach, a sharp daikon pickle and a bowl of chewy barley rice. This is **Japanese home cooking at its best**. Mackerel is a top source of omega-3, selenium and vitamin B12, and the ginger and miso tame its richness.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 110,
+          "swap": "fatty_fish",
+          "note": "skin on, pin bones removed"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "peeled and sliced"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 12
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 4
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 8
+        },
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 60,
+          "note": "peeled and cut into thin matchsticks"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "ground in a mortar"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 2,
+          "note": "dried flakes"
+        }
+      ],
+      "steps": [
+        "If the mackerel is frozen, thaw it overnight in the fridge and cook it within 2 days. Never refreeze it.",
+        "Rinse the barley and simmer it in plenty of water until tender but still chewy, about 25 minutes, then drain. Cool leftover barley within 1 hour.",
+        "Toss the daikon with the vinegar, half of the sugar and the salt. Leave it for 15 minutes while the fish cooks.",
+        "Simmer the bonito flakes in about 200 ml water for 2 minutes in a wide pan, then lift them out with a small sieve. Add the ginger, soy sauce and the rest of the sugar and bring to a boil. Add the mackerel skin side up and cover with a piece of parchment or a lid that sits just above the fish. Wash your hands, board and knife after handling the raw fish.",
+        "Simmer gently for 8 minutes. Stir the miso with a ladle of the hot broth until smooth, then stir it into the pan. Simmer for 4 more minutes, spooning the sauce over, until the fish is opaque all the way through (70 °C) and the sauce is glossy.",
+        "Wash the spinach, boil it for 1 minute, drain, rinse in cold water and squeeze dry. Toss with the ground sesame and a spoonful of the mackerel's simmering liquid.",
+        "Serve the fish and its sauce over the barley with the scallion on top, with the spinach and the drained daikon on the side. Pack the second portion into a shallow container, cool it, and get it into the fridge within 2 hours. It keeps up to 3 days; reheat it once, until steaming hot (74 °C)."
+      ],
+      "prepMin": 20,
+      "cookMin": 32,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Ask the fishmonger to remove the pin bones. Use Atlantic or Pacific (chub) mackerel, never king mackerel, which is high in mercury. Keep it on ice or in the coldest part of the fridge and cook it the day you buy it."
+    },
+    {
+      "id": "pescatarian-north-warm-dill-potato-egg-salad-rye",
+      "name": "Warm dill potato salad with eggs, pickled beets and rye",
+      "inspiredBy": "Danish kartoffelsalat, with skyr in place of the mayonnaise",
+      "about": "Warm sliced potatoes tossed in a skyr, mustard and lemon dressing with dill, grated carrot and onion, topped with boiled eggs and served with sweet pickled beets. It is a **Danish-style potato supper** that tastes just as good cold the next day. Egg and skyr bring the protein, and the potatoes bring potassium and vitamin C.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 230,
+          "note": "scrubbed, small ones if possible"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "boiled until the yolk is set"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 100
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 8
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 6,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "washed and coarsely grated"
+        },
+        {
+          "food": "pickled-beet-canned-solids-and-liquid-2794c2",
+          "g": 50,
+          "note": "drained and sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20,
+          "note": "very finely diced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Put the potatoes in a pot of cold water with a pinch of the salt. Bring to a boil and cook until a knife slides in easily, about 20 minutes. Drain.",
+        "Add the eggs to boiling water in a separate pan and cook for 9 minutes, until the yolks are completely set. Cool them in cold water, peel and quarter.",
+        "Stir the skyr with the mustard, lemon juice, oil and the rest of the salt to make the dressing. Wash the carrot and grate it coarsely.",
+        "Slice the potatoes while still warm and fold them gently into the dressing with the onion, carrot and most of the dill. Warm potatoes soak up the dressing best.",
+        "Top with the eggs and the remaining dill, and serve with the beets on the side.",
+        "Pack the second portion into a shallow container and get it into the fridge within 2 hours. Eat it cold the next day, within 2 days of cooking. There is no need to reheat it."
+      ],
+      "prepMin": 15,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Add a spoon of capers or a few slices of pickled cucumber if you like more bite."
+    },
+    {
+      "id": "pescatarian-north-ishikari-style-salmon-tofu-nabe",
+      "name": "Ishikari-style salmon and tofu hot pot with miso, cabbage and barley rice",
+      "inspiredBy": "Hokkaido ishikari nabe, with less miso and no sake",
+      "about": "A Hokkaido hot pot of salmon, tofu, napa cabbage, potato and mushrooms in a light miso broth with a small knob of butter, the way northern Japan shares a cold evening. It is a **weekend project** that is easy to cook at the table, with a bowl of chewy barley alongside. The salmon brings omega-3 and vitamin D, and the mushrooms add more vitamin D.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "skin and pin bones removed, cut into thick pieces"
+        },
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 70,
+          "swap": "lean_protein",
+          "note": "any kind, cut into large cubes"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 150,
+          "note": "washed and cut into wide pieces"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 80,
+          "note": "peeled and sliced about 1 cm thick"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "mushroom-white-exposed-to-ultraviolet-light-raw-0cd6fe",
+          "g": 50,
+          "note": "wiped clean and sliced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 15
+        },
+        {
+          "food": "butter-63ea86",
+          "g": 5
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "peeled and sliced"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "skipjack-tuna-katsuobushi-dried-bonito-deeb30",
+          "g": 3,
+          "note": "dried flakes"
+        }
+      ],
+      "steps": [
+        "If the salmon is frozen, thaw it overnight in the fridge and cook it within 2 days. Wash your hands, the knife and the board after handling the raw fish.",
+        "Rinse the barley and simmer it in plenty of water until tender but still chewy, about 25 minutes, then drain. Cool any leftover barley within 1 hour.",
+        "Bring about 600 ml water, the ginger and the bonito flakes to a simmer in a wide pot and simmer for 3 minutes. Lift out the flakes with a small sieve. Add the potato slices and simmer for 8 minutes.",
+        "Add the carrot to the pot. Lay the cabbage stems and tofu on top and simmer for 4 minutes. Stir the miso and soy sauce with a ladle of hot broth until smooth, then stir them in.",
+        "Add the salmon, the cabbage leaves and the mushrooms, cover and simmer very gently until the salmon is opaque and flakes (70 °C), about 5 minutes.",
+        "Add the butter and the scallion and finish with pepper. Eat from the pot, with the barley on the side. This makes one generous portion, so double it for two and eat it all the same evening."
+      ],
+      "prepMin": 20,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "weekend-project"
+      ],
+      "tip": "Pour the last of the broth over the barley. For two people, use a bigger pot and double everything."
+    },
+    {
+      "id": "pescatarian-north-smoked-salmon-scrambled-egg-rye",
+      "name": "Cold-smoked salmon and soft scrambled eggs on rye with dill and cucumber",
+      "inspiredBy": "Danish røget laks med røræg",
+      "about": "Buttery scrambled eggs on dark rye with folds of cold-smoked salmon, a dill and lemon skyr cream and cool cucumber. It is a **Danish favourite**, rich and fresh in one bite, and the smoked salmon is only a small part of the plate. Smoked salmon is salty and not for anyone pregnant, over 65 or with a weakened immune system unless heated to 74 °C (165 °F), for example folded into the hot scrambled eggs at the end. It is one of only two cured fish meals this week.",
+      "ingredients": [
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 80
+        },
+        {
+          "food": "butter-63ea86",
+          "g": 2
+        },
+        {
+          "food": "smoked-salmon-20ce72",
+          "g": 45,
+          "swap": "fatty_fish",
+          "note": "cold-smoked, kept in the fridge"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 80
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 3,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed and cut into thin ribbons"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 5,
+          "note": "washed, green tops finely sliced"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Take the smoked salmon out of the fridge only when you are ready to eat. Keep it at 4 °C or colder, never leave it out for more than 2 hours, and finish an opened pack within 3 days or by its date, or sooner if the pack says so.",
+        "Stir the skyr with half of the lemon juice and the dill until smooth.",
+        "Wash the cucumber and scallion before cutting. Peel the cucumber into thin ribbons with a vegetable peeler.",
+        "Melt the butter in a non-stick pan over low heat. Add the beaten eggs and stir slowly with a spatula until they are creamy and fully set, with no runny egg left (74 °C), about 3 minutes.",
+        "Spoon the eggs onto the rye and add the skyr cream. Fold the salmon on top. If anyone eating is pregnant, over 65 or has a weakened immune system, fold the salmon into the hot eggs for the last minute instead, until steaming hot (74 °C).",
+        "Top with the cucumber, scallion and a grind of pepper, and finish with the rest of the lemon."
+      ],
+      "prepMin": 12,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Buy the smallest pack (about 100 g) and freeze the rest unopened, or share it. Cold-smoked salmon is not cooked, so anyone pregnant, over 65 or immunocompromised should heat it as above, or pan-fry a small piece of fresh salmon until it flakes (70 °C) instead. Refrigerated hot-smoked salmon needs the same care."
+    },
+    {
+      "id": "pescatarian-north-tofu-miso-butter-potatoes-spinach",
+      "name": "Pan-seared tofu with miso butter, potatoes, mushrooms and spinach",
+      "inspiredBy": "Hokkaido-style jaga-bata (potato and butter), with miso-glazed tofu",
+      "about": "Crisp-edged tofu glazed with a little miso and soy sauce, served over potatoes with butter-fried mushrooms, carrot and wilted spinach, and topped with fried eggs. It is **inspired by Hokkaido's potato and butter cooking**, savoury and slightly sweet, with sesame for crunch. Tofu brings protein, the spinach and carrot bring vitamin A, and the mushrooms bring vitamin D.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-eb666c",
+          "g": 60,
+          "swap": "lean_protein",
+          "note": "any kind, pressed dry and cut into thick slabs"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "fried"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 160,
+          "note": "scrubbed and cut into chunks"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "washed and cut into thin matchsticks"
+        },
+        {
+          "food": "mushroom-white-exposed-to-ultraviolet-light-raw-0cd6fe",
+          "g": 60,
+          "note": "wiped clean and sliced"
+        },
+        {
+          "food": "butter-63ea86",
+          "g": 2
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 12
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 3
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 5
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 6
+        }
+      ],
+      "steps": [
+        "Boil the potatoes in a pot of water until a knife slides in easily, about 15 minutes. Drain well.",
+        "Press the tofu between clean towels under something heavy for 10 minutes, then pat it dry.",
+        "Heat the oil in a non-stick pan over medium-high heat. Fry the tofu until golden and crisp at the edges, about 4 minutes a side. Lift it onto a plate.",
+        "Mix the miso, soy sauce, sugar and rice vinegar with 2 tablespoons of water. Melt half of the butter in the same pan and cook the mushrooms and carrot until golden and just tender, about 5 minutes. Add the washed spinach and stir until it wilts, about 1 minute.",
+        "Pour in the miso mixture, let it bubble for 1 minute, then return the tofu to the pan and turn it in the sauce. Toss the potatoes with the rest of the butter.",
+        "Fry the eggs in a little oil in a clean pan until the white is set and the yolk is firm (74 °C).",
+        "Serve the tofu and vegetables over the potatoes, topped with the eggs, the sesame and the scallion."
+      ],
+      "prepMin": 18,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "A squeeze of lemon at the table brightens it. Spoon any pan sauce over the potatoes."
+    },
+    {
+      "id": "pescatarian-north-apple-hazelnuts",
+      "name": "Apple wedges with toasted hazelnuts",
+      "about": "Crisp apple wedges with a handful of toasted hazelnuts, a classic Nordic pair. It is **crunchy and sweet**, and it carries vitamin E from the hazelnuts and fibre from the apple.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed and cut into wedges"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Toast the hazelnuts in a dry pan over medium heat until golden and fragrant, about 3 minutes. Let them cool.",
+        "Wash the apple, cut it into wedges and serve with the hazelnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Toast a bigger batch of nuts on Sunday and keep them in a jar for the week."
+    },
+    {
+      "id": "pescatarian-north-skyr-blueberry-rye-crunch",
+      "name": "Skyr with blueberries and toasted rye flakes",
+      "about": "Thick skyr with sweet blueberries and a crunch of toasted rye flakes. It is **creamy, tart and crisp** at once, with a lot of protein for a snack.",
+      "ingredients": [
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 150
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 80,
+          "swap": "berries",
+          "note": "fresh, or frozen and thawed"
+        },
+        {
+          "food": "rye-flakes-2971fb",
+          "g": 15,
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Toast the rye flakes in a dry pan over medium heat until they smell nutty, about 3 minutes. Cool them.",
+        "Spoon the skyr into a bowl, top with the blueberries (rinse fresh ones first) and scatter over the rye flakes just before eating."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Thawed frozen blueberries make a purple swirl through the skyr. If anyone eating is pregnant, over 65 or immunocompromised, bring frozen berries to a boil for 1 minute and cool them first."
+    },
+    {
+      "id": "pescatarian-north-apple-gjetost-rye-toast",
+      "name": "Apple and gjetost on toasted rye",
+      "inspiredBy": "Norwegian brunost on bread, with apple",
+      "about": "Slices of crisp apple and a few thin shavings of gjetost, Norway's caramel-sweet brown cheese, on toasted dark rye. It is a **sweet and savoury** snack, with calcium from the cheese and fibre from the apple and rye.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 120,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "gjetost-cheese-0b5a74",
+          "g": 15,
+          "note": "shaved paper-thin"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 30,
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Toast the rye until crisp. Wash and slice the apple, and shave the cheese into paper-thin curls with a cheese slicer or vegetable peeler.",
+        "Lay the apple and cheese on the toast and eat right away so it stays crisp."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Gjetost is rich and sweet, so a little goes a long way."
+    },
+    {
+      "id": "pescatarian-north-daikon-carrot-miso-skyr-dip",
+      "name": "Daikon and carrot sticks with miso skyr dip",
+      "inspiredBy": "a Japanese miso dip, with a Nordic skyr base",
+      "about": "Crunchy daikon and carrot sticks with a quick dip of skyr, a little miso and rice vinegar. It is **cool, savoury and fresh**, with a scatter of toasted sesame on top, and the carrots bring plenty of vitamin A.",
+      "ingredients": [
+        {
+          "food": "daikon-root-with-skin-raw-447286",
+          "g": 70,
+          "note": "peeled and cut into sticks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "washed and cut into sticks"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 80
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 6
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 3
+        },
+        {
+          "food": "sesame-seeds-whole-roasted-and-toasted-8980c2",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Peel the daikon and wash the carrot, then cut both into sticks.",
+        "Stir the skyr, miso and rice vinegar until smooth. Spoon it into a small bowl and scatter over the sesame seeds.",
+        "Serve with the sticks for dipping."
+      ],
+      "prepMin": 6,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "The dip keeps 2 days in the fridge. Cut the sticks fresh."
+    },
+    {
+      "id": "pescatarian-north-rye-toast-skyr-pickled-cucumber",
+      "name": "Toasted rye with skyr, quick-pickled cucumber and dill",
+      "about": "Toasted dark rye spread with thick skyr and topped with cucumber pickled in rice vinegar for ten minutes, plus a little dill. It is **crunchy and bright**, with protein from the skyr and fibre from the rye.",
+      "ingredients": [
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 30,
+          "note": "toasted"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 80
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed and very thinly sliced"
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 8
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 1
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 1,
+          "note": "washed and chopped"
+        }
+      ],
+      "steps": [
+        "Wash the cucumber, slice it very thinly and toss it with the rice vinegar and sugar. Leave it for 10 minutes so it softens, then drain.",
+        "Toast the rye until crisp, spread it with the skyr, top with the drained cucumber and dill, and eat straight away."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Pickle a bigger batch in a jar. It keeps up to 5 days in the fridge."
+    },
+    {
+      "id": "pescatarian-north-mushrooms-rye-toast-dill",
+      "name": "Buttery mushrooms on toasted rye with dill and lemon",
+      "inspiredBy": "Swedish and Danish svampmacka",
+      "about": "Sliced mushrooms fried in butter until golden and piled on toasted rye with dill and a squeeze of lemon, like a Nordic svampmacka. It is **savoury and a little earthy**. UV-exposed mushrooms bring vitamin D.",
+      "ingredients": [
+        {
+          "food": "mushroom-white-exposed-to-ultraviolet-light-raw-0cd6fe",
+          "g": 100,
+          "note": "wiped clean and sliced"
+        },
+        {
+          "food": "butter-63ea86",
+          "g": 6
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 30,
+          "note": "toasted"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 2,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the butter in a wide pan over medium-high heat. Add the mushrooms in a single layer and cook without stirring for 2 minutes, then stir until golden and any liquid has cooked off, about 5 minutes more.",
+        "Season with pepper and the lemon juice.",
+        "Toast the rye, pile the mushrooms onto it, scatter over the dill and eat while warm."
+      ],
+      "prepMin": 4,
+      "cookMin": 7,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Any mushroom works, but the UV-exposed ones bring vitamin D."
+    },
+    {
+      "id": "pescatarian-north-warm-blueberry-skyr",
+      "name": "Warm blueberries with skyr",
+      "inspiredBy": "Finnish mustikkakeitto, with skyr",
+      "about": "Blueberries warmed with a little sugar and lemon until they burst and turn into a jammy sauce, spooned over cold skyr. It is **warm and cold at once**, like a Finnish blueberry soup. Blueberries bring vitamin C and skyr brings protein and calcium.",
+      "ingredients": [
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 120,
+          "swap": "berries",
+          "note": "fresh or frozen"
+        },
+        {
+          "food": "sugar-refined-552eca",
+          "g": 4
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 4
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 100
+        }
+      ],
+      "steps": [
+        "Put the blueberries, sugar, lemon juice and a spoonful of water in a small pot. Warm over medium heat until the berries burst and the juices turn syrupy, about 4 minutes.",
+        "Spoon the skyr into a bowl and pour the warm berries over the top."
+      ],
+      "prepMin": 2,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "pescatarian-north-mushroom-miso-mug-soup",
+      "name": "Mushroom miso soup in a mug with ginger and scallion",
+      "inspiredBy": "Japanese miso soup, in a mug",
+      "about": "A quick mug of miso soup with sliced mushrooms, ginger and scallion. It is **warming and light**, a Japanese afternoon pick-me-up, with vitamin D from the mushrooms.",
+      "ingredients": [
+        {
+          "food": "miso-ea8eb5",
+          "g": 8
+        },
+        {
+          "food": "mushroom-white-exposed-to-ultraviolet-light-raw-0cd6fe",
+          "g": 80,
+          "note": "wiped clean and thinly sliced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 5,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "peeled and sliced"
+        }
+      ],
+      "steps": [
+        "Simmer the ginger and mushrooms in about 250 ml water for 8 minutes, until the broth smells earthy.",
+        "Take the pot off the heat. Stir the miso with a ladle of hot broth until smooth, then stir it back in. Pour into a mug and top with the scallion."
+      ],
+      "prepMin": 4,
+      "cookMin": 9,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Miso is salty, so it is kept to a spoonful. Add a few cubes of tofu if you want more protein."
+    },
+    {
+      "id": "pescatarian-north-carrot-pear-sunflower-salad",
+      "name": "Grated carrot and pear salad with sunflower seeds",
+      "inspiredBy": "Danish gulerodssalat",
+      "about": "Sweet grated carrot and juicy pear with lemon, a little oil and toasted sunflower seeds. It is **bright and crunchy**, like a Danish gulerodssalat, and the carrots bring vitamin A and the seeds vitamin E.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "washed and grated"
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 80,
+          "note": "washed and grated"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Toast the sunflower seeds in a dry pan over medium heat until fragrant, about 2 minutes. Cool them.",
+        "Wash the carrot and pear, grate them and toss with the lemon juice and oil.",
+        "Scatter over the seeds just before eating so they stay crisp."
+      ],
+      "prepMin": 6,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "pescatarian-north-blueberry-oat-milk-smoothie",
+      "name": "Blueberry and oat smoothie with milk",
+      "about": "Milk blended with blueberries, rolled oats and a pinch of cinnamon into a thick purple smoothie. It is **cool and filling**, and the milk brings calcium and iodine.",
+      "ingredients": [
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 200
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 80,
+          "swap": "berries",
+          "note": "frozen is best"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Put the milk, blueberries, oats and cinnamon in a blender.",
+        "Blend until smooth and thick, about 1 minute, and drink right away."
+      ],
+      "prepMin": 3,
+      "cookMin": 1,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Soak the oats in the milk for 10 minutes first for a smoother texture. If anyone eating is pregnant, over 65 or immunocompromised, bring frozen berries to a boil for 1 minute and cool them first."
+    },
+    {
+      "id": "pescatarian-north-skyr-lingonberry-hazelnuts",
+      "name": "Skyr with lingonberry jam and toasted hazelnuts",
+      "about": "Thick skyr swirled with a spoonful of tart lingonberry jam and topped with toasted hazelnuts. It is **tangy, creamy and crunchy**, with a lot of protein for a snack and vitamin E from the hazelnuts.",
+      "ingredients": [
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 150
+        },
+        {
+          "food": "lingonberry-jam-rarorda-lingon-deecb7",
+          "g": 15
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "toasted and roughly chopped"
+        }
+      ],
+      "steps": [
+        "Toast the hazelnuts in a dry pan over medium heat until golden, about 3 minutes. Cool and chop them roughly.",
+        "Spoon the skyr into a bowl, swirl in the lingonberry jam and scatter over the hazelnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pescatarian-north-overnight-rye-oat-skyr-blueberry"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pescatarian-north-pickled-herring-egg-rye-open-sandwich"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pescatarian-north-yellow-pea-soup-mustard"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-north-mushrooms-rye-toast-dill"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-north-daikon-carrot-miso-skyr-dip"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pescatarian-north-egg-cucumber-rye-open-sandwich"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pescatarian-north-yellow-pea-soup-mustard",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pescatarian-north-lohikeitto-rye"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-north-carrot-pear-sunflower-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-north-skyr-blueberry-rye-crunch"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pescatarian-north-warm-oat-rye-porridge-apple"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pescatarian-north-lohikeitto-rye",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pescatarian-north-tofu-egg-mushroom-rice-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-north-warm-blueberry-skyr"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-north-rye-toast-skyr-pickled-cucumber"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pescatarian-north-overnight-rye-oat-skyr-blueberry"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pescatarian-north-tofu-egg-mushroom-rice-bowl",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pescatarian-north-miso-simmered-mackerel-spinach-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-north-apple-gjetost-rye-toast"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-north-mushroom-miso-mug-soup"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pescatarian-north-warm-oat-rye-porridge-apple"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pescatarian-north-miso-simmered-mackerel-spinach-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pescatarian-north-warm-dill-potato-egg-salad-rye"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-north-skyr-blueberry-rye-crunch"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-north-daikon-carrot-miso-skyr-dip"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pescatarian-north-tofu-mushroom-miso-soup-rice"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pescatarian-north-warm-dill-potato-egg-salad-rye",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pescatarian-north-ishikari-style-salmon-tofu-nabe"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-north-warm-blueberry-skyr"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-north-apple-hazelnuts"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "pescatarian-north-warm-oat-rye-porridge-apple"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "pescatarian-north-smoked-salmon-scrambled-egg-rye"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "pescatarian-north-tofu-miso-butter-potatoes-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-north-skyr-lingonberry-hazelnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "pescatarian-north-blueberry-oat-milk-smoothie"
+        }
+      ]
+    }
+  ]
+}
