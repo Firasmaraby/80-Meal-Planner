@@ -343,7 +343,7 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
     label: 'Top-allergen free',
     blurb: 'No peanuts, tree nuts, eggs, dairy, shellfish or sesame.',
     gates: { bans: ['nuts', 'egg', 'dairy', 'shellfish', 'sesame'] },
-    note: 'Always read the label: packaged foods can carry "may contain" warnings, and recipes here assume the plain versions are free of these allergens.',
+    note: 'Recipes are made without these five allergens, but packaged foods can carry them or be made on shared lines. Read every label every time, and remember a missing "may contain" line is not a guarantee. This plan does not replace advice from your allergist, especially for a severe allergy.',
   },
   'iron-focus': {
     label: 'Iron focus',

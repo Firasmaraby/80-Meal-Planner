@@ -51,6 +51,8 @@ export const tagLabel = (t: string) => {
   const known = DIET_OPTIONS.find((d) => d.key === t);
   if (known) return known.label;
   if (t === 'omega-balanced') return 'Great omega balance';
+  // a recipe fact, not a promise about the factory or kitchen
+  if (t === 'nut-free') return 'No nuts in recipes';
   // "15-minute" keeps its hyphen; "gluten-free" and "freezer-friendly" read as words
   const s = /^\d/.test(t) ? t : t.replace(/[-_]/g, ' ');
   return s.charAt(0).toUpperCase() + s.slice(1);
