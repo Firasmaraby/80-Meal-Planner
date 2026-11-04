@@ -1,0 +1,1475 @@
+{
+  "id": "healthy-aging-global",
+  "name": "Healthy Ageing 60+",
+  "style": "healthy-aging",
+  "cuisine": "Global",
+  "regions": [
+    "Canada",
+    "the Mediterranean",
+    "Japan",
+    "Britain"
+  ],
+  "summary": "Soft, flavourful food for one or two from Canadian, Mediterranean, Japanese and British kitchens: 25 g or more of protein at every meal, fish through the week, and stews and soups that freeze in single portions.",
+  "howItWorks": "**Protein at every meal.** Eggs, milk, Greek yogurt, fish, chicken, lamb, beef, tofu and lentils put a solid portion of protein on every breakfast, lunch and dinner, and the snacks add a little more. Steady protein at each meal helps look after muscle.\n\n**Calcium, vitamin D and B12.** Milk, yogurt, calcium-set tofu, and canned salmon and sardines with their soft bones bring the calcium. Salmon, mackerel, sardines, eggs and Canadian milk (fortified with vitamin D) bring D. B12 comes from fish, eggs, dairy and meat. The week already brings most days' calcium from food, so check with your care team before adding a calcium pill on top.\n\n**Soft on purpose.** Porridge, braises, stews, soups, creamy eggs, mash and flaky baked fish can all be eaten with a spoon or a fork. Lentils melt, spinach wilts and vegetables cook until tender. Salt is kept in check with herbs, lemon, ginger and tomato.\n\n**Cook for one or two.** Lentil soup, shepherd's pie, niku-dofu, the chicken braise and the haddock chowder each make two portions: eat one, chill the other for tomorrow. The soup, pie and braise freeze well: cool single portions fully, freeze, then thaw in the fridge and use within 2 days. Fatty fish is always cooked fresh, and the niku-dofu and chowder stay in the fridge rather than the freezer.\n\n**Light size.** Light drops the second snack and uses fewer lentils in the soup, less chicken in the braise, less rice with the mackerel and a little less oil; fish, eggs, tofu, beef and lamb stay the same, so every meal keeps its protein. Light covers 1600-1800 only; a lower band could not keep calcium, vitamin E and protein at every meal.",
+  "signature": [
+    "healthy-aging-global-baked-salmon-dill-mash-spinach",
+    "healthy-aging-global-shepherds-pie-lamb-lentil",
+    "healthy-aging-global-saba-miso-simmered-mackerel",
+    "healthy-aging-global-haddock-fennel-chowder"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2000,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "light": {
+      "kcal": 1700,
+      "covers": [
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "healthy-aging-global-oat-porridge-stewed-pear",
+      "name": "Creamy oat porridge with stewed pear and walnuts",
+      "inspiredBy": "Inspired by Scottish porridge and a Canadian oatmeal breakfast",
+      "about": "Rolled oats simmered in milk with soft diced pear and cinnamon until thick and spoonable, with a spoonful of almond butter stirred in, then topped with cool Greek yogurt, toasted walnuts and a little honey. The **milk and yogurt bring protein and calcium**, and the almond butter adds vitamin E.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 220,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 110,
+          "note": "ripe, cored and diced small"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "unsalted, finely chopped"
+        },
+        {
+          "food": "almond-butter-plain-9dd16b",
+          "g": 20,
+          "swap": "nuts_seeds",
+          "note": "smooth, unsalted"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Rinse the pear under running water, then core it and dice it small so it cooks down soft.",
+        "Put the oats, milk, pear, cinnamon and a pinch of iodized salt in a small pot over medium-low heat. Stir often.",
+        "Simmer gently for 7 to 8 minutes, until the oats are thick and creamy and the pear is completely soft. Add a splash of milk if it gets too thick.",
+        "Toast the walnuts in a dry pan for 2 minutes, until they smell nutty.",
+        "Stir the almond butter into the porridge, spoon it into a bowl and top with the Greek yogurt, walnuts and honey."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "For an even softer bowl, mash the cooked pear into the porridge with the back of the spoon."
+    },
+    {
+      "id": "healthy-aging-global-soft-eggs-tomato-white-beans",
+      "name": "Soft scrambled eggs with tomato white beans on toast",
+      "inspiredBy": "Inspired by British beans on toast, with white beans simmered in tomato",
+      "about": "Creamy scrambled eggs over white beans simmered in tomato, garlic and a little spinach, with soft toast to mop it up and a small glass of milk on the side. The **eggs and beans bring plenty of protein**, the milk adds calcium, and the beans and spinach add fibre and iron.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 165
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 200,
+          "swap": "dairy_protein",
+          "note": "a small glass on the side"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 100,
+          "swap": "legumes"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 100,
+          "note": "crushed by hand with its juice"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 35,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "lightly toasted so it stays soft in the middle"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "finely chopped"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 3,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the spinach and parsley under running water.",
+        "Warm two thirds of the olive oil in a small pan over medium heat. Cook the garlic for 30 seconds, then stir in the paprika, tomato and beans. Simmer for 6 minutes, until thick and the beans are soft enough to squash with a fork.",
+        "Stir in the spinach until it wilts, about 1 minute. Keep the pan warm over the lowest heat.",
+        "Beat the eggs with a pinch of iodized salt, then wash your hands. Warm the rest of the olive oil in a second pan over medium-low heat, add the eggs and stir slowly for about 4 minutes, until set and creamy with no liquid egg left, 74 °C (165 °F).",
+        "Spoon the beans onto the toast, top with the eggs and scatter with parsley."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make the bean base ahead and keep it in the fridge up to 3 days; reheat it until steaming hot, 74 °C, before adding the eggs. Small appetite? Have the glass of milk with a mid-morning snack instead."
+    },
+    {
+      "id": "healthy-aging-global-okayu-salmon-egg-spinach",
+      "name": "Okayu rice porridge with salmon, egg and spinach",
+      "inspiredBy": "Inspired by Japanese okayu",
+      "about": "A soft, savoury rice porridge with flaked canned salmon, a stirred-in egg, wilted spinach and fresh ginger. The **soft salmon bones add calcium and vitamin D**, along with plenty of protein, in a bowl that is easy to eat.",
+      "ingredients": [
+        {
+          "food": "rice-white-short-grain-uncooked-fb1c67",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+          "g": 85,
+          "swap": "fatty_fish",
+          "note": "with its soft bones, flaked"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 55
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "finely grated"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 4,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Rinse the rice in a sieve until the water runs clearer, and rinse the spinach and scallion under running water.",
+        "Put the rice and about 5 times its volume of water (add a splash more if it gets too thick) in a small pot with the ginger. Bring to a boil, then cover and simmer on low for 25 minutes, stirring now and then, until the rice has broken down into a soft porridge.",
+        "Stir in the salmon, breaking the bones into the porridge, with the spinach. Cook 3 minutes, until the spinach is soft.",
+        "Beat the egg (wash your hands after cracking it), stir it in and keep stirring for 1 minute, until the egg is cooked through and the porridge is steaming hot, 74 °C (165 °F).",
+        "Add the soy sauce, then top with the scallion and sesame seeds. Eat it right away. Keep the rest of the salmon tin in a lidded container in the fridge and use it within 2 days."
+      ],
+      "prepMin": 8,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "A rice cooker's porridge setting does the 25 minutes for you. Start it before you shower."
+    },
+    {
+      "id": "healthy-aging-global-red-lentil-soup-lemon-yogurt",
+      "name": "Red lentil and carrot soup with lemon, yogurt and soft bread",
+      "inspiredBy": "Inspired by Turkish mercimek corbasi",
+      "about": "A silky soup of red lentils, carrot and onion warmed with cumin and paprika, finished with lemon and a spoonful of Greek yogurt. Red lentils melt into the soup, so it is silky and easy to eat, and the **lentils and yogurt bring plenty of protein**, with iron and fibre too.",
+      "ingredients": [
+        {
+          "food": "lentil-red-hulled-dry-d3e937",
+          "g": 55,
+          "swap": "legumes"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 45,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 250
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 110,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "soft, warmed and torn"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Rinse the carrot and parsley under running water, then peel and dice the carrot. Rinse the lentils in a sieve.",
+        "Warm the olive oil in a pot over medium heat. Cook the onion and carrot until soft, about 8 minutes, adding the garlic, cumin and paprika for the last minute.",
+        "Add the lentils, the broth and about 400 ml of water. Bring to a boil, then simmer for 20 to 25 minutes, until the lentils and carrot are completely soft.",
+        "Blend the soup with a hand blender until smooth. Stir in the lemon juice and iodized salt, and thin with a little water if you like.",
+        "Ladle one portion into a bowl, swirl in about half of the yogurt and top with parsley. Serve with the warm bread and the rest of the yogurt on the side.",
+        "Keep the second portion without yogurt (add fresh yogurt when you reheat it). Spoon the second portion into a shallow container and get it into the fridge within 2 hours. It keeps up to 3 days; reheat it once until steaming hot, 74 °C (165 °F). To freeze a single portion, cool it fully first; thaw it in the fridge overnight, use within 2 days and never refreeze."
+      ],
+      "prepMin": 10,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Freeze single portions in jars or small containers; this soup is best frozen without the yogurt."
+    },
+    {
+      "id": "healthy-aging-global-baked-salmon-dill-mash-spinach",
+      "name": "Baked salmon with lemon and dill, buttery mash and garlicky spinach",
+      "inspiredBy": "Inspired by a Canadian Sunday salmon supper",
+      "about": "A tender salmon fillet baked with lemon and fresh dill, served on creamy mashed potato with garlicky spinach wilted until soft. The **salmon brings omega-3 and vitamin D**, and flakes apart with a fork.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "skin removed"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 150,
+          "note": "peeled and cut into chunks"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 40
+        },
+        {
+          "food": "unsalted-butter-9a1175",
+          "g": 3
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 90,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190 °C (375 °F). Rinse the potatoes, spinach and dill under running water, and wash your hands and board after handling the raw salmon.",
+        "Cover the potatoes with cold water, add a pinch of iodized salt and boil for 15 to 18 minutes, until a knife slides in with no resistance.",
+        "Put the salmon on a lined tray, rub with the rest of the olive oil and the lemon juice and scatter with half the dill. Bake for 12 to 15 minutes, until it flakes easily and reaches 70 °C (158 °F).",
+        "Warm half the olive oil in a pan, cook the garlic for 30 seconds and add the spinach. Cook, turning, for 2 to 3 minutes, until soft. Drain the potatoes, saving a splash of the water.",
+        "Mash the potatoes with the milk, butter and a little of the cooking water until smooth. Stir in the rest of the dill.",
+        "Serve the salmon over the mash with the spinach and a squeeze of lemon."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Swap the dill for chives or parsley."
+    },
+    {
+      "id": "healthy-aging-global-shepherds-pie-lamb-lentil",
+      "name": "Shepherd's pie with lamb, lentils and peas",
+      "inspiredBy": "Inspired by the British shepherd's pie, with lentils stretching the lamb",
+      "about": "Lean minced lamb and red lentils in a rich gravy of carrot, peas and tomato, topped with a thick mash. It is soft and comforting, and the **lamb and lentils bring protein, iron and zinc** in one dish that freezes in single portions.",
+      "ingredients": [
+        {
+          "food": "lamb-ground-lamb-new-zealand-raw-474cec",
+          "g": 70,
+          "note": "minced"
+        },
+        {
+          "food": "lentil-red-hulled-dry-d3e937",
+          "g": 35,
+          "swap": "legumes"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 120,
+          "note": "peeled and chunked"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 55,
+          "note": "finely diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 45,
+          "note": "finely chopped"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 40
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 70,
+          "note": "crushed with its juice"
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 120
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 30
+        },
+        {
+          "food": "unsalted-butter-9a1175",
+          "g": 3
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Rinse the potatoes, carrot, peas and lentils under running water. Peel and chunk the potatoes, cover with cold water and boil about 18 minutes, until completely soft.",
+        "Meanwhile warm the olive oil in a wide pan over medium heat. Cook the onion and carrot until soft, about 8 minutes.",
+        "Add the lamb and cook, breaking it up, until no pink remains. Wash your hands after handling the raw lamb.",
+        "Stir in the tomato, thyme, soy sauce, the rinsed red lentils and the broth. Simmer for 15 minutes, until the lentils have melted into the gravy, then add the peas and cook 2 minutes more, until thick. The lamb must reach 71 °C (160 °F).",
+        "Drain the potatoes and mash with the milk, butter and iodized salt until smooth.",
+        "Spoon the filling into a baking dish, cover with the mash and rough it up with a fork. Bake at 200 °C (400 °F) for 15 minutes, until bubbling and golden at the edges.",
+        "Divide into two. Spoon the second portion into a shallow container and get it into the fridge within 2 hours. It keeps up to 3 days; reheat it once until steaming hot, 74 °C (165 °F). To freeze a single portion, cool it fully first; thaw it in the fridge overnight, use within 2 days and never refreeze."
+      ],
+      "prepMin": 20,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Bake the two portions in separate small dishes so one goes straight into the freezer."
+    },
+    {
+      "id": "healthy-aging-global-niku-dofu-beef-tofu-ginger",
+      "name": "Niku-dofu, beef and tofu simmered in ginger soy",
+      "inspiredBy": "Inspired by Japanese niku-dofu and nikujaga",
+      "about": "Tofu, potato, onion and carrot simmered in a gently sweet ginger soy broth, with thin slices of lean beef laid in at the end so they stay tender, and spinach folded through. The **beef and calcium-set tofu bring protein and calcium**, and it tastes even better the next day.",
+      "ingredients": [
+        {
+          "food": "beef-sirloin-lean-raw-3087fc",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "very thin slices, from the butcher or sliced half-frozen across the grain"
+        },
+        {
+          "food": "tofu-medium-firm-prepared-with-calcium-sulphate-d17594",
+          "g": 90,
+          "note": "calcium-set, cut into large cubes"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 70,
+          "note": "peeled and cut into small chunks"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 70,
+          "note": "cut into wedges"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "cut into thin half-moons"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 14
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 6
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "sliced thin"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "thinly sliced"
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables and spinach under running water. Peel and cut them. Wash your hands and board after handling the raw beef.",
+        "Warm the olive oil in a wide pot over medium heat and soften the ginger for 1 minute.",
+        "Add the potato, onion, carrot, soy sauce, honey and 350 ml of water. Bring to a simmer, cover and cook gently for 15 minutes, until the potato and carrot are soft.",
+        "Add the tofu and simmer 4 minutes. Lay in the beef slices and the spinach, push them under the broth and cook 2 to 3 minutes, until no pink remains and the beef reaches 71 °C (160 °F).",
+        "Serve one portion in a deep bowl, topped with the scallion. Spoon the second portion into a shallow container and get it into the fridge within 2 hours. It keeps up to 3 days; reheat it once until steaming hot, 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Serve it over a small bowl of soft rice if you want a bigger meal. Keep this one in the fridge, not the freezer: frozen tofu turns spongy and chewy. Keep the rest of the tofu block covered in fresh water in the fridge, change the water daily and use it within 3 days; it goes into the miso soup."
+    },
+    {
+      "id": "healthy-aging-global-chicken-braise-white-beans-fennel",
+      "name": "Braised chicken thighs with white beans, fennel and tomato",
+      "inspiredBy": "Inspired by Tuscan chicken and beans",
+      "about": "Chicken thighs braised until they fall apart, with creamy white beans, fennel, carrot, tomato and spinach, scented with rosemary and finished with lemon. The **chicken and beans bring plenty of protein**, and the fennel and carrot cook down to nearly a sauce.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "trimmed of fat"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 110,
+          "swap": "legumes"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 100,
+          "note": "crushed with its juice"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 70,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.5
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 120
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "soft, to serve"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Rinse the vegetables, spinach and parsley under running water. Wash your hands and board after handling the raw chicken.",
+        "Warm the olive oil in a heavy pot over medium heat. Brown the chicken lightly for 2 minutes a side, then lift it out.",
+        "Cook the onion, fennel and carrot in the same pot until soft, about 8 minutes, adding the garlic and rosemary for the last minute.",
+        "Add the tomato, broth, beans and iodized salt, then nestle the chicken back in. Cover and simmer gently for 35 minutes, until the chicken is fork-tender and reaches 74 °C (165 °F).",
+        "Break the chicken into big pieces with a fork. Stir in the spinach until it wilts, then add the lemon juice and parsley.",
+        "Serve one portion with the soft bread. Spoon the second portion into a shallow container and get it into the fridge within 2 hours. It keeps up to 3 days; reheat it once until steaming hot, 74 °C (165 °F). To freeze a single portion, cool it fully first; thaw it in the fridge overnight, use within 2 days and never refreeze."
+      ],
+      "prepMin": 15,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Make it in a slow cooker on low for 6 hours if you prefer."
+    },
+    {
+      "id": "healthy-aging-global-saba-miso-simmered-mackerel",
+      "name": "Miso-simmered mackerel with ginger, soft rice and sesame spinach",
+      "inspiredBy": "Inspired by Japanese saba no misoni",
+      "about": "Atlantic mackerel simmered in a ginger miso glaze until it flakes apart, with soft rice and spinach dressed with soy and sesame. The **mackerel is rich in omega-3 and vitamin D**, and the glaze is salty-sweet.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "fillet, pin bones pulled out; Atlantic, never king"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 14
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 4
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "sliced thin"
+        },
+        {
+          "food": "rice-white-short-grain-uncooked-fb1c67",
+          "g": 80,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 85,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "juice"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 4
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 4,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "thinly sliced"
+        }
+      ],
+      "steps": [
+        "Rinse the spinach and scallion under running water. Wash your hands and board after handling the raw fish. Run a fingertip along the fillet and pull out any pin bones with tweezers.",
+        "Cook the rice in a small pot with one and a half times its volume of water, covered, on low for 15 minutes, until soft and sticky. Keep it covered off the heat.",
+        "Whisk the miso and honey into 120 ml of water in a small pan and add the ginger. Bring to a gentle simmer.",
+        "Add the mackerel, skin side up, cover and simmer for 8 to 10 minutes, spooning the glaze over, until it flakes and reaches 70 °C (158 °F). Check for stray bones.",
+        "Blanch the spinach in boiling water for 1 minute, until soft, then squeeze it dry, cut it into short lengths and toss with the soy sauce, lemon juice and sesame seeds.",
+        "Serve the fish over the rice with the glaze spooned over, the spinach on the side and the scallion on top."
+      ],
+      "prepMin": 12,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook the fish and eat it the same day; do not save it for the next. Use the smallest pot with a tight lid for the rice."
+    },
+    {
+      "id": "healthy-aging-global-chicken-egg-rice-bowl",
+      "name": "Oyakodon, soft chicken and egg over rice",
+      "inspiredBy": "Inspired by Japanese oyakodon",
+      "about": "Tender simmered chicken, onion and soft broccoli in a light soy broth, set with beaten egg and spooned over soft rice. It is ready in about 30 minutes, and the **chicken and eggs bring plenty of protein**, in a soft, comforting bowl.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 105,
+          "swap": "lean_protein",
+          "note": "cut into small bite-size pieces"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 55,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "rice-white-short-grain-uncooked-fb1c67",
+          "g": 35,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 110
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 12
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 3
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 70,
+          "note": "cut into small florets"
+        }
+      ],
+      "steps": [
+        "Rinse the onion, broccoli and scallion under running water. Wash your hands and board after handling the raw chicken.",
+        "Cook the rice in a small pot with one and a half times its volume of water, covered, on low for 15 minutes, until soft and sticky.",
+        "Meanwhile simmer the broth, soy sauce and honey in a small pan, add the onion and chicken, and cook for 6 minutes, until the onion is soft and the chicken reaches 74 °C (165 °F). Add the broccoli for the last 4 minutes, until it is very soft.",
+        "Beat the eggs lightly (wash your hands after cracking them) and pour them over the chicken. Cover and cook gently for 2 to 3 minutes, until the egg is set all the way through, with no runny parts, 74 °C (165 °F).",
+        "Spoon the rice into a deep bowl, slide the chicken and egg over it with the broth, and scatter with the scallion."
+      ],
+      "prepMin": 10,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Hold back a little rice and a cup of broth for a thinner, soupier bowl."
+    },
+    {
+      "id": "healthy-aging-global-haddock-fennel-chowder",
+      "name": "Maritime haddock and potato chowder",
+      "inspiredBy": "Inspired by a Canadian Maritime fish chowder",
+      "about": "Flaky haddock in a creamy chowder of soft potato, fennel, carrot and onion, scented with thyme and bay and brightened with lemon. The **milk brings calcium** and the haddock is a lean, mild protein that flakes with the side of a spoon.",
+      "ingredients": [
+        {
+          "food": "haddock-raw-492803",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "boneless, cut into chunks"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 90,
+          "note": "peeled and diced small"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 50,
+          "note": "finely diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 45,
+          "note": "finely diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 45,
+          "note": "finely chopped"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 220,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "unsalted-butter-9a1175",
+          "g": 4
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 150
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.4
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Rinse the potato, fennel, carrot and parsley under running water. Wash your hands and board after handling the raw fish, and feel through the haddock for any bones.",
+        "Melt the butter with the olive oil in a pot over medium heat and cook the onion, fennel and carrot until soft, about 8 minutes.",
+        "Add the broth, potato, thyme and bay leaf. Simmer for 12 minutes, until the potato is very soft, then crush a few pieces against the side of the pot to thicken the broth.",
+        "Add the milk and warm gently; do not boil hard.",
+        "Slip in the haddock and simmer for 5 to 6 minutes, until it flakes and reaches 70 °C (158 °F). Take out the bay leaf, then add the lemon juice, parsley and iodized salt.",
+        "Eat one portion now. Spoon the second portion into a shallow container and get it into the fridge within 2 hours. It keeps up to 3 days; reheat it once until steaming hot, 74 °C (165 °F)."
+      ],
+      "prepMin": 12,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Best eaten within 2 days; the potato goes grainy when frozen, so don't freeze this one."
+    },
+    {
+      "id": "healthy-aging-global-sardine-lemon-spinach-pasta",
+      "name": "Sardine, tomato and spinach pasta with lemon",
+      "inspiredBy": "Inspired by Sicilian pasta con le sarde, kept simple",
+      "about": "Soft-cooked whole-wheat pasta tossed with canned sardines, tomato, spinach and fennel in lemon and olive oil. The **sardines and their soft bones bring calcium**, plus vitamin D and omega-3.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 90,
+          "swap": "fatty_fish",
+          "note": "with soft bones, drained"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 60,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 150,
+          "note": "crushed with its juice"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 60,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Rinse the spinach, fennel and parsley under running water.",
+        "Boil the pasta in plenty of water for 2 minutes longer than the pack says, until very tender, then drain, keeping a cup of the cooking water.",
+        "Meanwhile warm the olive oil in a wide pan over medium heat. Cook the fennel until soft, about 8 minutes, adding the garlic for the last minute.",
+        "Add the tomato and cook 5 minutes, until it thickens into a sauce, then stir in the spinach until it wilts.",
+        "Stir in the sardines, breaking them up, with the pasta and a splash of cooking water. Toss for 2 minutes, until hot all the way through.",
+        "Finish with the lemon juice and parsley."
+      ],
+      "prepMin": 10,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Use no-salt-added canned sardines if you can find them."
+    },
+    {
+      "id": "healthy-aging-global-baked-egg-custard",
+      "name": "Baked egg custard with nutmeg",
+      "inspiredBy": "Inspired by the British baked egg custard",
+      "about": "A small, silky custard of egg and milk baked gently until just set, with a grating of nutmeg. It is soft, and the **milk and egg bring calcium and protein** in a few spoonfuls.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 55
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 160,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 8
+        },
+        {
+          "food": "nutmeg-ground-15c547",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 160 °C (325 °F). Beat the egg with the honey (wash your hands after cracking it), then whisk in the milk, warmed.",
+        "Pour into an ovenproof ramekin and grate a little nutmeg on top.",
+        "Stand the ramekin in a dish and pour hot water halfway up its side.",
+        "Bake for 30 to 35 minutes, until the custard is set with just a slight wobble, and reaches 74 °C (165 °F). Eat warm or chilled."
+      ],
+      "prepMin": 5,
+      "cookMin": 35,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Bake two ramekins together if the oven is on anyway, and chill the second; it keeps up to 2 days."
+    },
+    {
+      "id": "healthy-aging-global-yogurt-ginger-apple-walnuts",
+      "name": "Greek yogurt with ginger apple, almond butter and walnuts",
+      "inspiredBy": "Inspired by apple compote",
+      "about": "Cold Greek yogurt over a small pot of soft apple simmered with fresh ginger, with almond butter swirled in and a few walnuts. The **yogurt brings protein and calcium**, the walnuts add omega-3 and the almond butter vitamin E.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 110,
+          "note": "peeled and diced small"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "unsalted, finely chopped"
+        },
+        {
+          "food": "almond-butter-plain-9dd16b",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "smooth, unsalted"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 2,
+          "note": "finely grated"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 4
+        }
+      ],
+      "steps": [
+        "Rinse and peel the apple, and dice it small.",
+        "Simmer the apple with 2 tablespoons of water and the ginger, covered, for 8 minutes, until completely soft, then stir in the honey.",
+        "Spoon over the yogurt, warm or cooled, swirl in the almond butter and scatter with the walnuts."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "healthy-aging-global-baked-sweet-potato-cinnamon-yogurt",
+      "name": "Soft baked sweet potato with nutmeg and yogurt",
+      "about": "A sweet potato baked until it collapses, split open and spooned with cool Greek yogurt, a little honey and a grating of nutmeg. It is soft and warming, and the **sweet potato brings vitamin A and fibre**.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 170,
+          "note": "scrubbed"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 4
+        },
+        {
+          "food": "nutmeg-ground-15c547",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Scrub the sweet potato under running water and prick it all over with a fork.",
+        "Bake on a tray for 45 to 50 minutes, until it is completely soft and slumps when squeezed. (In the microwave, 6 to 8 minutes, turning once.)",
+        "Split it open, spoon in the yogurt and drizzle with honey and grate a little nutmeg over the top."
+      ],
+      "prepMin": 5,
+      "cookMin": 50,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Bake a few at once and keep them in the fridge up to 3 days; reheat each until steaming hot, 74 °C. The microwave works too."
+    },
+    {
+      "id": "healthy-aging-global-warm-cinnamon-apple-oatmeal",
+      "name": "Warm cinnamon apple oatmeal",
+      "inspiredBy": "Inspired by Canadian stewed apple oatmeal",
+      "about": "A small bowl of rolled oats cooked with diced apple and cinnamon until soft and spoonable, with a few chopped walnuts. It is cosy, easy to eat, and the **oats bring soluble fibre** and plenty of comfort.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 100,
+          "note": "peeled and diced small"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "unsalted, finely chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Rinse and peel the apple, and dice it small.",
+        "Simmer the oats, apple, cinnamon and a pinch of iodized salt with 200 ml of water for 6 to 8 minutes, stirring, until thick and the apple is completely soft.",
+        "Spoon into a bowl and scatter with the walnuts."
+      ],
+      "prepMin": 4,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "healthy-aging-global-warm-edamame-lemon",
+      "name": "Warm edamame with lemon and sesame",
+      "inspiredBy": "Inspired by Japanese edamame",
+      "about": "Shelled edamame simmered until tender and tossed with lemon, toasted sesame and a little salt. It is a soft, savoury bite with **protein and fibre**.",
+      "ingredients": [
+        {
+          "food": "edamame-immature-soy-bean-shelled-frozen-9c2350",
+          "g": 110,
+          "swap": "legumes"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 4
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 2,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Simmer the edamame in water for 5 to 6 minutes, until soft enough to squash between your fingers.",
+        "Toast the sesame seeds in a dry pan for 1 minute. Drain the edamame and toss with the lemon juice, sesame and iodized salt."
+      ],
+      "prepMin": 2,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "healthy-aging-global-pear-almond-butter-honey",
+      "name": "Ripe pear with almond butter and honey",
+      "about": "A ripe, juicy pear sliced and spooned over with smooth almond butter and a drizzle of honey. It is soft, sweet and filling, and the **almond butter brings vitamin E** and a little calcium.",
+      "ingredients": [
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 120,
+          "note": "very ripe, cored and sliced"
+        },
+        {
+          "food": "almond-butter-plain-9dd16b",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "smooth, unsalted"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 3
+        }
+      ],
+      "steps": [
+        "Rinse the pear under running water, then core and slice it into a bowl.",
+        "Warm the almond butter for 10 seconds so it runs, spoon it over and drizzle with the honey."
+      ],
+      "prepMin": 2,
+      "cookMin": 1,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "healthy-aging-global-miso-soup-tofu-spinach",
+      "name": "Miso soup with tofu and spinach",
+      "inspiredBy": "Inspired by Japanese miso soup",
+      "about": "A small bowl of miso broth with cubes of calcium-set tofu, wilted spinach and a little scallion. It is warm and light, and the **tofu brings calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "miso-ea8eb5",
+          "g": 12
+        },
+        {
+          "food": "tofu-medium-firm-prepared-with-calcium-sulphate-d17594",
+          "g": 40,
+          "note": "calcium-set, cut into small cubes"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 6,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 2,
+          "note": "finely grated"
+        }
+      ],
+      "steps": [
+        "Rinse the spinach and scallion under running water.",
+        "Heat 300 ml of water with the ginger until steaming. Add the tofu and spinach and simmer for 2 minutes, until the spinach is soft.",
+        "Turn off the heat, whisk in the miso until smooth, and top with the scallion. Do not boil the soup once the miso is in."
+      ],
+      "prepMin": 3,
+      "cookMin": 5,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "healthy-aging-global-boiled-egg-soy-sesame",
+      "name": "Hard-boiled egg with soy, scallion and sesame",
+      "inspiredBy": "Inspired by Japanese ajitama",
+      "about": "A firm, creamy-yolked boiled egg halved and dressed with a few drops of soy sauce, scallion and toasted sesame. It is an easy, **savoury egg snack** that is soft to eat.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 55
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 3
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 6,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 2,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Rinse the scallion under running water and slice it.",
+        "Lower the egg into boiling water and cook for 10 minutes, until the yolk is set all the way through. Wash your hands after handling the raw egg.",
+        "Cool the egg under cold water, peel it and halve it. Dress with the soy sauce, scallion and sesame, and eat it the same day."
+      ],
+      "prepMin": 3,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "healthy-aging-global-soft-eggs-tomato-white-beans"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "healthy-aging-global-red-lentil-soup-lemon-yogurt"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "healthy-aging-global-baked-salmon-dill-mash-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "healthy-aging-global-pear-almond-butter-honey"
+        },
+        {
+          "slot": "snack",
+          "recipe": "healthy-aging-global-warm-cinnamon-apple-oatmeal"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "healthy-aging-global-okayu-salmon-egg-spinach"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "healthy-aging-global-red-lentil-soup-lemon-yogurt",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "healthy-aging-global-shepherds-pie-lamb-lentil"
+        },
+        {
+          "slot": "snack",
+          "recipe": "healthy-aging-global-yogurt-ginger-apple-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "healthy-aging-global-pear-almond-butter-honey"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "healthy-aging-global-oat-porridge-stewed-pear"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "healthy-aging-global-shepherds-pie-lamb-lentil",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "healthy-aging-global-niku-dofu-beef-tofu-ginger"
+        },
+        {
+          "slot": "snack",
+          "recipe": "healthy-aging-global-boiled-egg-soy-sesame"
+        },
+        {
+          "slot": "snack",
+          "recipe": "healthy-aging-global-warm-cinnamon-apple-oatmeal"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "healthy-aging-global-oat-porridge-stewed-pear"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "healthy-aging-global-niku-dofu-beef-tofu-ginger",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "healthy-aging-global-chicken-braise-white-beans-fennel"
+        },
+        {
+          "slot": "snack",
+          "recipe": "healthy-aging-global-baked-egg-custard"
+        },
+        {
+          "slot": "snack",
+          "recipe": "healthy-aging-global-miso-soup-tofu-spinach"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "healthy-aging-global-oat-porridge-stewed-pear"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "healthy-aging-global-chicken-braise-white-beans-fennel",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "healthy-aging-global-saba-miso-simmered-mackerel"
+        },
+        {
+          "slot": "snack",
+          "recipe": "healthy-aging-global-baked-egg-custard"
+        },
+        {
+          "slot": "snack",
+          "recipe": "healthy-aging-global-yogurt-ginger-apple-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "healthy-aging-global-oat-porridge-stewed-pear"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "healthy-aging-global-chicken-egg-rice-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "healthy-aging-global-haddock-fennel-chowder"
+        },
+        {
+          "slot": "snack",
+          "recipe": "healthy-aging-global-warm-edamame-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "healthy-aging-global-miso-soup-tofu-spinach"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "healthy-aging-global-soft-eggs-tomato-white-beans"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "healthy-aging-global-haddock-fennel-chowder",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "healthy-aging-global-sardine-lemon-spinach-pasta"
+        },
+        {
+          "slot": "snack",
+          "recipe": "healthy-aging-global-baked-sweet-potato-cinnamon-yogurt"
+        },
+        {
+          "slot": "snack",
+          "recipe": "healthy-aging-global-warm-edamame-lemon"
+        }
+      ]
+    }
+  ]
+}
