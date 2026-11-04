@@ -256,6 +256,7 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
     label: 'Endurance',
     blurb: 'Carbs first to fuel long training days, with enough protein to recover.',
     gates: { carbsMinPct: 50, rules: { proteinMinPctKcal: 18, glycemicLoadMax: Infinity } },
+    note: "Training needs change a lot from week to week, so eat more on big days and when you're hungry. If you're losing weight without trying, your periods have stopped, or you keep getting injured or ill, see a doctor or a sports dietitian. If you take blood-pressure, heart or kidney medication, check the salty foods with your care team.",
   },
   'low-gi': {
     label: 'Low glycaemic',

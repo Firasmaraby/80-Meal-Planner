@@ -1,0 +1,1679 @@
+{
+  "id": "endurance-global",
+  "name": "Endurance Kitchen",
+  "style": "endurance",
+  "cuisine": "Global",
+  "regions": [
+    "Italy",
+    "Japan",
+    "Mexico",
+    "Canada",
+    "Kenya"
+  ],
+  "summary": "A carb-first week of real home cooking for runners, cyclists and triathletes: ugali with beef stew, salmon rice bowls, chicken in salsa verde, sardine spaghetti and polenta ragu. Rice, pasta, oats, potatoes, bread, fruit and juice sit around your sessions, with protein at every meal and a recovery snack.",
+  "howItWorks": "**Carbs around your training.** Carbs sit at every meal, from rice, pasta, oats, potatoes, bread, ugali and polenta, with fruit and juice around them, so fuel is on the plate whenever your session falls. No schedule is assumed. In the week table the first snack is the pre-training one and the second is the recovery one. Move them to wherever they fit your day.\n\n**Recovery.** Protein is spread over four eating times: breakfast, lunch, dinner and a recovery snack that pairs carbs with protein, like chocolate milk, yogurt with mango or an egg sandwich. Eat it within an hour or two of finishing. Beef is on the plate twice, with beans and greens, and the salmon and sardines land on day 2 and day 4.\n\n**Hydration and salt.** Drink water through the day, more in the heat, and to thirst during sessions. Salty foods such as miso, soy sauce, sardines and the salted potatoes are welcome, within the app's sodium ceiling. For sessions over about 90 minutes, a sports drink or gel is an easy extra, but none are in the recipes.\n\n**Cook once, eat twice.** The day 1 beef stew, day 3 chicken, day 5 turkey and day 6 ragu each make two portions, so the next lunch is done. Fish is cooked fresh. Wash vegetables, herbs and fruit before cutting, and chill leftovers within 2 hours (1 hour for rice and grains).\n\n**Big and XL.** Rice, pasta, ugali, oats, potatoes and bread grow the most, with more protein alongside, and some days gain an extra snack, such as arroz con leche. Vegetables and fruit stay as written, so the bigger plates are bigger bowls of starch, not bigger salads.",
+  "signature": [
+    "endurance-global-kenyan-beef-stew-ugali-sukuma",
+    "endurance-global-ginger-soy-salmon-rice-bowl",
+    "endurance-global-spaghetti-sardines-tomato-lemon-crumbs",
+    "endurance-global-beef-white-bean-ragu-polenta"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2600,
+      "covers": [
+        "2200-2400",
+        "2400-2800"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "endurance-global-arroz-con-leche-cinnamon"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "endurance-global-salted-potatoes-olive-oil-lemon"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "endurance-global-arroz-con-leche-cinnamon"
+          }
+        }
+      ]
+    },
+    "xl": {
+      "kcal": 3500,
+      "covers": [
+        "3200-3700"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "endurance-global-arroz-con-leche-cinnamon"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "endurance-global-salted-potatoes-olive-oil-lemon"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "endurance-global-mango-banana-oat-smoothie"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "endurance-global-arroz-con-leche-cinnamon"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "endurance-global-maple-oat-porridge-yogurt-orange",
+      "name": "Maple flax oat porridge with yogurt and orange juice",
+      "inspiredBy": "Inspired by Canadian flax porridge with maple",
+      "about": "Creamy oats cooked in milk with cinnamon and a spoon of ground flax, in the spirit of Canadian flax porridge, topped with cold Greek yogurt and a drizzle of maple, with a glass of orange juice alongside. It is a **carb-first start with real protein** from the milk and yogurt, and it sits easily before a session.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "rolled oats"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 250,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 12
+        },
+        {
+          "food": "flaxseed-linseed-whole-and-ground-42b661",
+          "g": 8,
+          "note": "ground"
+        },
+        {
+          "food": "orange-juice-canned-7cb7a6",
+          "g": 150,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put the oats, milk, a splash of water, the cinnamon, the ground flax and the salt in a small pot over medium heat. Stir often until the porridge is thick and creamy, about 5 minutes.",
+        "Spoon the porridge into a bowl, add the Greek yogurt in a cold spoonful on top and drizzle with the maple syrup.",
+        "Serve with the glass of orange juice."
+      ],
+      "prepMin": 3,
+      "cookMin": 7,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Stir the yogurt in only at the end so you get hot and cool in the same spoonful."
+    },
+    {
+      "id": "endurance-global-japanese-egg-rice-bowl-miso-spinach",
+      "name": "Soft egg rice bowl with spinach and miso soup",
+      "inspiredBy": "Inspired by a Japanese teishoku breakfast",
+      "about": "A Japanese-style breakfast: soft scrambled eggs and soy-dressed spinach over steamed rice, with a small bowl of miso soup and a glass of orange juice. It gives you **plenty of rice for the day ahead** and a good share of protein from the eggs.",
+      "ingredients": [
+        {
+          "food": "rice-white-short-grain-uncooked-fb1c67",
+          "g": 80,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "miso-ea8eb5",
+          "g": 8
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 6
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "orange-juice-canned-7cb7a6",
+          "g": 180,
+          "swap": "vit_c_fruit"
+        }
+      ],
+      "steps": [
+        "Rinse the rice until the water runs nearly clear. Cook it covered in a rice cooker or a small pot with a little more than its own volume of water, about 15 minutes, then rest it 5 minutes with the lid on.",
+        "While the rice cooks, wash the spinach and scallion, then wilt half the spinach in a dry hot pan for 1 minute, press out the water and toss it with a few drops of the soy sauce. Keep the other half raw for the soup.",
+        "Heat 250 ml of water until steaming, not boiling. Whisk the miso into a ladle of it, pour it back in, then add the raw spinach and half the scallion. Keep it just below a simmer for 2 minutes.",
+        "Beat the eggs with the rest of the soy sauce. Scramble them gently in the canola oil over medium heat until fully set but still soft, about 2 minutes.",
+        "Pile the rice in a bowl, top with the spinach and eggs, and scatter over the rest of the scallion. Serve with the miso soup and the orange juice."
+      ],
+      "prepMin": 8,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Set the rice cooker on a timer the night before."
+    },
+    {
+      "id": "endurance-global-huevos-rancheros-black-beans",
+      "name": "Huevos rancheros with black beans on corn tortillas",
+      "inspiredBy": "Inspired by Mexican huevos rancheros",
+      "about": "Fried eggs on warm corn tortillas under a quick cooked tomato and chili sauce, with black beans on the side. It is a **carbs, protein and fibre** breakfast, with tomato and lime in the sauce for vitamin C.",
+      "ingredients": [
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 80,
+          "swap": "low_gi_grains",
+          "note": "warmed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 120,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "chopped"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 30,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash the tomato and cilantro. Warm the canola oil in a skillet over medium heat. Cook the onion with the chili powder and cumin until soft, about 3 minutes, then add the chopped tomato and the salt. Simmer 6 minutes until thick, then stir in the lime juice.",
+        "Warm the black beans in a small pot with a splash of water until steaming. Warm the tortillas in a dry pan, about 30 seconds a side.",
+        "Make a well in the sauce for each egg, crack them in, cover and cook until the whites and yolks are set, about 6 minutes.",
+        "Lay the tortillas on a plate, spoon over the beans, slide the eggs and sauce on top and finish with the cilantro."
+      ],
+      "prepMin": 8,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Make the sauce the night before if you like. It keeps up to 3 days in the fridge, so make it fresh for each of the two mornings."
+    },
+    {
+      "id": "endurance-global-tuna-white-bean-pasta-salad",
+      "name": "Tuna, white bean and tomato pasta salad",
+      "inspiredBy": "Inspired by Italian insalata di pasta al tonno",
+      "about": "A cool Italian-style pasta salad of tuna, creamy white beans, juicy tomato and spinach in a lemon and olive oil dressing. It packs **plenty of carbs and protein**, and keeps well in a lunch box.",
+      "ingredients": [
+        {
+          "food": "pasta-dry-e5bb80",
+          "g": 90,
+          "swap": "low_gi_grains",
+          "note": "short pasta such as penne or fusilli"
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "drained"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed and shredded"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "basil-dried-160272",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Boil the pasta in plenty of water until just tender, about 10 minutes. Drain and rinse under cold water until cool, which stops it going gluey.",
+        "Wash the tomato, spinach and onion. Whisk the olive oil, lemon juice, dried basil, pepper and salt in a bowl. Add the onion and leave it for a few minutes to soften.",
+        "Add the pasta, beans, tomato, spinach and tuna and toss until everything is coated.",
+        "Eat it cold. Cool the pasta fast and refrigerate it within 1 hour. If you carry the salad, keep it cold and eat it within 2 hours."
+      ],
+      "prepMin": 10,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook the pasta the night before and dress it just before you eat. Keep the rest of the tuna tin in a lidded container in the fridge and use it within 2 days."
+    },
+    {
+      "id": "endurance-global-maple-white-beans-toast-milk",
+      "name": "Maple white beans on toast with a glass of milk",
+      "inspiredBy": "Inspired by Quebec baked beans, without the pork",
+      "about": "Soft white beans simmered in a tomato, maple and mustard sauce piled onto thick whole wheat toast. It is quick Canadian comfort food, and the beans, toast and milk give you **carbs, fibre and plenty of protein**.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 200,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 80,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 250,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 80
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "finely chopped"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 10
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 6
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the olive oil in a small pot and soften the onion, about 4 minutes.",
+        "Add the crushed tomatoes, beans, maple syrup, mustard, a splash of water, the salt and the pepper. Simmer gently, stirring now and then, for 10 minutes until the sauce is thick and glossy.",
+        "Toast the bread and spoon the beans over it. Serve with the glass of milk."
+      ],
+      "prepMin": 5,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make a double batch of the beans, cool it within 2 hours and keep it up to 3 days in the fridge."
+    },
+    {
+      "id": "endurance-global-tuna-black-bean-tostadas-pico",
+      "name": "Tuna and black bean tostadas with fresh pico",
+      "inspiredBy": "Inspired by Mexican tostadas de atun",
+      "about": "Crisp baked corn tortillas piled with chili and lime tuna, black beans and a fresh tomato, onion and cilantro pico. It is crunchy, tangy and **carb-rich with lots of protein**.",
+      "ingredients": [
+        {
+          "food": "corn-tortilla-4f1d6a",
+          "g": 140,
+          "swap": "low_gi_grains",
+          "note": "corn tortillas"
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 90,
+          "swap": "lean_protein",
+          "note": "drained"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 120,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 120,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash the tomato and cilantro. Heat the oven to 200 °C (400 °F). Brush the tortillas with the olive oil, lay them on a tray and bake 8 to 10 minutes, turning once, until crisp and lightly golden. If you have more than 4 tortillas on your plate, keep 3 or 4 whole as tostadas and break the rest into chips for scooping.",
+        "Make the pico by mixing the tomato, onion, cilantro, half the lime juice and a pinch of the salt.",
+        "Warm the beans in a small pot with the cumin and a splash of water, mashing a few, for 3 minutes.",
+        "Mix the tuna with the chili powder, the rest of the lime juice, the salt and a spoon of the pico juice for moisture.",
+        "Spread the beans on the tostadas, then top with the tuna and the pico. Eat straight away so they stay crisp."
+      ],
+      "prepMin": 12,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Open a fresh tin for this one. Keep any spare tuna in a lidded container in the fridge and use it within 2 days."
+    },
+    {
+      "id": "endurance-global-kenyan-beef-stew-ugali-sukuma",
+      "name": "Beef and potato stew with ugali and sukuma wiki",
+      "inspiredBy": "Inspired by Kenyan beef stew with ugali and sukuma wiki",
+      "about": "A Kenyan-style home stew of tender beef, potato and carrot in a tomato and ginger sauce, served with firm white ugali and sukuma wiki, collard greens cooked with onion and tomato. It is **a big, carb-rich plate with iron** from the beef and greens, and a squeeze of lemon helps your body absorb it.",
+      "ingredients": [
+        {
+          "food": "beef-casserole-meat-boneless-chuck-lean-raw-b1636f",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "trimmed, cut in 3 cm cubes"
+        },
+        {
+          "food": "cornmeal-whole-grain-white-71e64c",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "or maize meal"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 120,
+          "note": "washed, cubed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "chopped"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100,
+          "note": "chopped"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed, sliced thin"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Wash all the vegetables. Pat the beef dry and season with half the salt, the pepper and the cumin. Brown it in half the oil in a heavy pot over medium-high heat, about 6 minutes, then lift it out. Wash your hands and the board after handling the raw beef.",
+        "In the same pot, cook half the onion, the garlic and the ginger until soft, about 4 minutes. Add half the tomato and the turmeric and cook down for 4 minutes.",
+        "Return the beef, add enough water to just cover it, cover and simmer gently for 40 minutes. Add the potato and carrot and simmer 20 minutes more, until the beef is tender and the potatoes are soft.",
+        "For the sukuma wiki, cook the rest of the onion in the remaining oil for 3 minutes, add the rest of the tomato and the collards and cook 6 to 8 minutes until wilted and tender. Add the rest of the salt and half the lemon juice.",
+        "For the ugali, bring water to a boil, about 2 cups for every cup of cornmeal. Pour in the cornmeal in a steady stream, stirring hard with a wooden spoon, and keep pressing and turning for 6 minutes until it pulls away from the pot as a firm mound.",
+        "Finish the stew with the rest of the lemon juice and the cilantro. Serve the ugali with the stew and greens. Put the second portion in a shallow container, refrigerate within 1 hour (the ugali is a cooked grain) and use it within 3 days. Reheat once, covered, with a splash of water, until steaming hot (74 °C)."
+      ],
+      "prepMin": 15,
+      "cookMin": 70,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "A pressure cooker does the beef in 25 minutes. Use white maize meal (unga) from an African or Latin grocer if you can; a fine cornmeal makes a smoother ugali than a coarse polenta grind."
+    },
+    {
+      "id": "endurance-global-ginger-soy-salmon-rice-bowl",
+      "name": "Ginger soy salmon rice bowl with spinach and carrot",
+      "inspiredBy": "Inspired by Japanese salmon teriyaki donburi",
+      "about": "Pan-seared salmon glazed with soy, ginger and maple on short-grain rice, with garlicky spinach and shredded carrot. It is a Japanese-style bowl with **omega-3 fats and plenty of rice** after a long day.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "skin off, pin bones removed"
+        },
+        {
+          "food": "rice-white-short-grain-uncooked-fb1c67",
+          "g": 95,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "shredded"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 15
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 8
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Rinse the rice and cook it covered in a rice cooker or small pot, about 15 minutes, then rest 5 minutes with the lid on.",
+        "Stir the soy sauce, maple syrup, ginger and half the lime juice in a small pot and simmer for 1 minute until slightly syrupy. This glaze only touches cooked fish.",
+        "Wash the spinach, carrot and scallion. Wilt the spinach with the garlic in a hot dry pan, about 1 minute. Squeeze out the water and toss with the rest of the lime juice.",
+        "Pat the salmon dry. Sear it in the canola oil in a non-stick pan over medium-high heat, about 4 minutes a side, until the centre reaches 70 °C and flakes easily. Wash your hands and the board after handling the raw fish.",
+        "Pile the rice in a bowl and add the spinach and carrot. Lay the salmon on top, spoon over the glaze and finish with the scallion."
+      ],
+      "prepMin": 12,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Eat the salmon the day you cook it. Fish is best fresh."
+    },
+    {
+      "id": "endurance-global-pollo-salsa-verde-carrot-rice",
+      "name": "Chicken in salsa verde with Mexican carrot rice",
+      "inspiredBy": "Inspired by Mexican pollo en salsa verde and arroz con zanahoria",
+      "about": "Chicken thighs simmered in a tangy tomatillo and cilantro sauce, served over fluffy rice cooked with carrot and onion. It is a Mexican home classic with **rice for the carbs and lean protein**, and it tastes even better the next day.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "cut in 3 cm pieces"
+        },
+        {
+          "food": "tomatillo-raw-c18847",
+          "g": 150,
+          "note": "husked, washed, halved"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "quartered"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 95,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "diced small"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Wash the tomatillos, carrot and cilantro. Put the tomatillos, half the onion and the garlic in a pot with water to cover and boil for 8 minutes until the tomatillos turn olive green and soft. Drain, and blend with the cilantro, lime juice and half the salt into a sauce.",
+        "Season the chicken with the cumin and a pinch of the salt. Brown it in half the oil in a wide pan for 5 minutes. Wash your hands and the board after handling the raw chicken.",
+        "Pour in the sauce and simmer, partly covered, for 15 minutes until the chicken reaches 74 °C and the sauce has thickened.",
+        "Meanwhile dice the rest of the onion and cook it with the carrot in the remaining oil for 3 minutes. Stir in the rice for 1 minute, add about twice its volume of water and the rest of the salt, cover and cook on low for 15 minutes. Rest 5 minutes, then fluff.",
+        "Serve the chicken and sauce over the rice. Cool the second portion of rice within 1 hour, then refrigerate it and the chicken in shallow containers and reheat once to steaming hot (74 °C) for tomorrow."
+      ],
+      "prepMin": 12,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Canned tomatillos work if you cannot find fresh."
+    },
+    {
+      "id": "endurance-global-maple-mustard-turkey-mashed-potatoes",
+      "name": "Maple mustard turkey with mashed potatoes and garlicky spinach",
+      "inspiredBy": "Inspired by Canadian maple and mustard roasts",
+      "about": "Turkey breast roasted with a sticky maple and Dijon glaze and carrots on the tray, with a big pile of creamy skin-on mashed potatoes and garlicky spinach. It is a Canadian Sunday dinner that works on a weeknight, with **potatoes for carbs** and lean protein from the turkey.",
+      "ingredients": [
+        {
+          "food": "turkey-breast-skinless-raw-fbc978",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "cut into 2 thick cutlets"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 280,
+          "note": "washed, cubed, skin on"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "cut in sticks"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 60,
+          "swap": "dairy_protein",
+          "note": "warmed"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "a whole wheat roll or slice"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 10
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 10
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "minced"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the carrots, potatoes and spinach. Heat the oven to 220 °C (425 °F). Stir the mustard, maple syrup, half the garlic and the thyme together.",
+        "Toss the carrots with a third of the canola oil and a little of the salt on a tray. Rub the turkey with the glaze and set it in the middle. Wash your hands and the board after handling the raw turkey.",
+        "Roast for 18 to 22 minutes, until the thickest part of the turkey reaches 74 °C (165 °F) and the carrots are tender. Rest the turkey 5 minutes.",
+        "Meanwhile boil the potatoes in water for 15 to 18 minutes until a knife slides in easily. Drain and mash with half the remaining oil, the warm milk, most of the remaining salt and the pepper.",
+        "Wilt the spinach with the rest of the garlic in the last of the oil in a hot pan, about 1 minute, and season with the last pinch of salt.",
+        "Serve the turkey over the mash with the carrots, spinach and the bread on the side. Put the second portion in a shallow container, refrigerate within 2 hours. Tomorrow, slice the turkey and reheat it covered in a pan with a splash of water, so it stays moist, until steaming hot (74 °C)."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Some Dijon mustard, soy sauce and miso contain a little wine or alcohol, so check the label if you avoid it."
+    },
+    {
+      "id": "endurance-global-spaghetti-sardines-tomato-lemon-crumbs",
+      "name": "Spaghetti with sardines, tomato, lemon and garlic breadcrumbs",
+      "inspiredBy": "Inspired by Sicilian spaghetti with sardines and toasted breadcrumbs",
+      "about": "Spaghetti in a quick garlicky tomato sauce with sardines, wilted spinach, lemon and crisp toasted breadcrumbs. It is a southern Italian-style pasta night with **carbs and omega-3 fats**, and the sardine bones add calcium.",
+      "ingredients": [
+        {
+          "food": "pasta-dry-e5bb80",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "spaghetti"
+        },
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 90,
+          "swap": "fatty_fish",
+          "note": "drained, bones in"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 150
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 25,
+          "note": "torn into crumbs"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.3
+        },
+        {
+          "food": "basil-dried-160272",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the spinach. Bring a large pot of water to a boil. Cook the spaghetti until just tender, about 10 minutes. Save a mug of the pasta water, then drain.",
+        "While it cooks, toast the bread crumbs with a third of the olive oil in a pan over medium heat until golden, 3 to 4 minutes. Tip them out and wipe the pan.",
+        "Warm the rest of the oil in the pan and cook the garlic and cayenne for 30 seconds. Add the crushed tomatoes, dried basil and a splash of pasta water and simmer 8 minutes.",
+        "Stir in the sardines, breaking them up, and the spinach. Cook until the spinach wilts, 2 minutes.",
+        "Toss in the pasta with the lemon juice, a splash of pasta water and the salt. Top with the toasted breadcrumbs."
+      ],
+      "prepMin": 10,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Keep a tin of sardines in the cupboard for this one."
+    },
+    {
+      "id": "endurance-global-beef-white-bean-ragu-polenta",
+      "name": "Slow beef and white bean ragu on soft polenta",
+      "inspiredBy": "Inspired by northern Italian ragu on polenta",
+      "about": "A slow-cooked tomato ragu of tender shredded beef and white beans with carrot and collards, spooned over creamy polenta. It is **a rich weekend pot** that makes two portions, with corn for carbs and beef and beans for iron.",
+      "ingredients": [
+        {
+          "food": "beef-casserole-meat-boneless-chuck-lean-raw-b1636f",
+          "g": 90,
+          "swap": "lean_protein",
+          "note": "trimmed, cut in 3 cm cubes"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "cornmeal-whole-grain-white-71e64c",
+          "g": 85,
+          "swap": "low_gi_grains",
+          "note": "for polenta"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 150
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "finely chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "finely chopped"
+        },
+        {
+          "food": "collard-raw-d53929",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed, sliced thin"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.2
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the vegetables. Pat the beef dry and brown it in the olive oil in a heavy pot over medium-high heat, about 6 minutes, then lift it out. Wash your hands and the board after handling the raw beef.",
+        "In the same pot, cook the onion and carrot until soft, about 8 minutes. Add the garlic and rosemary for 1 minute.",
+        "Return the beef, add the crushed tomatoes, bay leaf, half the salt and a cup of water. Cover and simmer gently for 1 hour 15 minutes, until the beef is very tender and falls apart. Stir in the beans and the collards for the last 10 minutes, until the collards are tender, then break up the beef with a spoon.",
+        "For the polenta, bring water to a boil, about 4 cups for every cup of cornmeal, with the rest of the salt. Whisk in the cornmeal in a thin stream, turn the heat low and cook for 25 to 30 minutes, stirring every few minutes, until thick and creamy. Add water if it gets stiff.",
+        "Stir the pepper into the polenta. Spoon the ragu over it. Put the second portion in shallow containers, refrigerate within 1 hour (the polenta is a cooked grain) and reheat once with a splash of water to steaming hot (74 °C)."
+      ],
+      "prepMin": 15,
+      "cookMin": 95,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "weekend-project",
+        "freezer-friendly"
+      ],
+      "tip": "The pressure cooker does the beef in 35 minutes. To freeze, cool the ragu within 1 hour and freeze it the same day. Thaw it in the fridge, use it within 2 days and reheat once to 74 °C (165 °F). Eat the polenta fresh or reheat it with a splash of water."
+    },
+    {
+      "id": "endurance-global-kenyan-chicken-pilau-kachumbari",
+      "name": "Chicken pilau with kachumbari",
+      "inspiredBy": "Inspired by Swahili pilau and kachumbari",
+      "about": "A Kenyan coastal-style pilau: rice cooked with browned onion, chicken and warm spices, with a fresh tomato and onion kachumbari on the side. It is a **one-pot rice dinner** that is mild and rich in carbs, and the kachumbari brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "cut in 3 cm pieces"
+        },
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 95,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 90,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 200,
+          "note": "chopped, some for the pilau and some for the kachumbari"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "clove-cb7cf1",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5
+        }
+      ],
+      "steps": [
+        "Wash the rice and let it drain, and wash the onion, tomato and cilantro. Heat the oil in a heavy pot and cook two thirds of the sliced onion over medium heat until deep golden, about 12 minutes.",
+        "Add the garlic, ginger, cumin, cardamom, cinnamon, clove and pepper and stir for 1 minute. Add the chicken and brown it for 5 minutes, then about a third of the chopped tomato. Wash your hands and the board after handling the raw chicken.",
+        "Stir in the rice and the salt, then pour in enough water to sit about 1 cm above the rice. Bring to a boil, cover tightly and cook on the lowest heat for 18 minutes.",
+        "Leave it covered for 10 minutes, then check that the chicken is at 74 °C and fluff gently.",
+        "For the kachumbari, mix the rest of the tomato, diced, with the remaining raw onion, the cilantro, lime juice and a pinch of salt. Serve it alongside the pilau.",
+        "Cool any extra rice within 1 hour and refrigerate."
+      ],
+      "prepMin": 15,
+      "cookMin": 50,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "endurance-global-banana-maple-toast",
+      "name": "Banana and maple toast",
+      "about": "Whole wheat toast with sliced banana and a drizzle of maple syrup. It is quick, easy on the stomach and **steady carbs before you head out**.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 12
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Toast the bread until lightly golden.",
+        "Lay the banana slices on top, drizzle with the maple syrup and finish with the tiniest pinch of salt."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute",
+        "no-cook"
+      ],
+      "tip": "Eat it 30 to 60 minutes before a session."
+    },
+    {
+      "id": "endurance-global-rice-cakes-almond-butter-maple",
+      "name": "Rice cakes with almond butter and maple",
+      "about": "Crisp rice cakes spread with almond butter and a thin drizzle of maple. It is **light, easy carbs** for a pre-session snack, with a little vitamin E from the almonds, and it travels well in a jersey pocket or bag.",
+      "ingredients": [
+        {
+          "food": "rice-cake-crackers-2134f5",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "almond-butter-plain-9dd16b",
+          "g": 16,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 10
+        }
+      ],
+      "steps": [
+        "Spread the almond butter on the rice cakes.",
+        "Drizzle with the maple syrup and eat straight away, or wrap them for the bag."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "endurance-global-salted-potatoes-olive-oil-lemon",
+      "name": "Salted baby potatoes with olive oil and lemon",
+      "about": "Small potatoes boiled until tender, tossed in olive oil and lemon with a good pinch of salt. It is a savoury **carb and salt snack** that is easy to eat before a long session, and it is a favourite on long rides.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 200,
+          "swap": "low_gi_grains",
+          "note": "small, washed, skin on"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        }
+      ],
+      "steps": [
+        "Scrub the potatoes. Put them in a pot of cold water with a pinch of salt, bring to a boil and simmer 12 to 15 minutes, until a knife slides in easily.",
+        "Drain and let them steam dry for a minute. Toss with the olive oil, lemon juice and the rest of the salt.",
+        "Eat them warm or at room temperature. Refrigerate any that are left within 2 hours, in a lidded container."
+      ],
+      "prepMin": 5,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Boil a double batch and keep half in the fridge for up to 3 days. For a long ride or run, pack them with an ice pack, or eat them within 2 hours of leaving the fridge (1 hour on a hot day)."
+    },
+    {
+      "id": "endurance-global-almond-butter-oat-bites",
+      "name": "Almond butter oat bites",
+      "about": "No-bake bites of rolled oats, almond butter, maple and cinnamon rolled into small balls. They give you **slow carbs and a little vitamin E** and fit in a pocket.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "rolled oats"
+        },
+        {
+          "food": "almond-butter-plain-9dd16b",
+          "g": 16,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 12
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Mix the oats, almond butter, maple syrup, cinnamon and salt with a teaspoon of water until it holds together.",
+        "Roll into 4 or 5 small balls. Eat straight away or chill for 20 minutes to firm up."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "endurance-global-chocolate-milk-banana",
+      "name": "Homemade chocolate milk with a banana",
+      "about": "Cold milk whisked with cocoa and a little maple syrup, with a banana on the side. It is the classic recovery pairing of **carbs and protein**, with no powders needed.",
+      "ingredients": [
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 400,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cocoa-powder-unsweetened-f976ae",
+          "g": 8
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 12
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 100
+        }
+      ],
+      "steps": [
+        "Whisk the cocoa and maple syrup with a splash of warm milk until smooth, then stir in the rest of the cold milk.",
+        "Drink it with the banana."
+      ],
+      "prepMin": 3,
+      "cookMin": 1,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute",
+        "no-cook"
+      ],
+      "tip": "Shake it in a bottle and keep it cold in a cooler bag with an ice pack until you drink it."
+    },
+    {
+      "id": "endurance-global-yogurt-mango-oat-crunch",
+      "name": "Greek yogurt with mango and toasted oats",
+      "about": "Thick Greek yogurt with sweet mango, maple and a crunch of toasted oats. It brings **protein and carbs together** after a session.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mango-raw-80de97",
+          "g": 150,
+          "note": "diced"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "rolled oats"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 10
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the oats in a dry pan over medium heat for 3 minutes, shaking, until they smell nutty. Let them cool.",
+        "Spoon the yogurt into a bowl, top with the mango, the toasted oats, the maple syrup and a pinch of cinnamon."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "endurance-global-egg-tomato-sandwich",
+      "name": "Egg, tomato and yogurt sandwich",
+      "about": "Chopped hard-boiled eggs mixed with Greek yogurt, mustard and lemon, with tomato and spinach in whole wheat bread. It is a savoury, **protein and carb recovery snack** that holds up in a lunchbox.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "hard-boiled and cooled"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 80,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 30
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 4
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 15,
+          "note": "washed"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the tomato and spinach. Cover the eggs with cold water, bring to a boil, then cover and leave off the heat for 11 minutes. Cool in cold water and peel.",
+        "Chop the eggs and mash them with the yogurt, mustard, lemon juice, pepper and salt.",
+        "Pile onto one slice of bread, add the tomato and spinach, and top with the second slice. Keep it cold if you are carrying it, and eat within 2 hours."
+      ],
+      "prepMin": 5,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "endurance-global-mango-banana-oat-smoothie",
+      "name": "Mango banana oat smoothie",
+      "about": "Milk, Greek yogurt, banana, mango and a spoonful of oats blended thick. It is **an easy drink of carbs and protein** when you do not feel like chewing after a session.",
+      "ingredients": [
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 250,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 80
+        },
+        {
+          "food": "mango-raw-80de97",
+          "g": 60
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains",
+          "note": "rolled oats"
+        }
+      ],
+      "steps": [
+        "Put everything in a blender and blend for about a minute until smooth and thick.",
+        "Add a splash of milk if it is too thick. Drink it straight away."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "endurance-global-arroz-con-leche-cinnamon",
+      "name": "Arroz con leche with cinnamon",
+      "inspiredBy": "Inspired by Mexican arroz con leche",
+      "about": "Creamy rice simmered slowly in milk with cinnamon and a strip of lemon peel, sweetened with a little maple syrup and eaten warm or chilled. It is a Mexican-style rice pudding that gives you **easy carbs plus the protein of milk**, and it is the extra snack on the bigger days.",
+      "ingredients": [
+        {
+          "food": "rice-white-long-grain-raw-7d423f",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 300,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "maple-syrup-prepackaged-65e117",
+          "g": 15
+        },
+        {
+          "food": "lemon-peel-raw-d60963",
+          "g": 2,
+          "note": "one wide strip, no white pith"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the lemon and pare off one wide strip of peel, leaving the white pith behind. Put the rinsed rice, milk, cinnamon, lemon peel and salt in a small heavy pot over medium-low heat. Bring to a gentle simmer, stirring often so it does not catch.",
+        "Cook uncovered for 25 to 30 minutes, stirring now and then, until the rice is very soft and the milk has thickened to a creamy pudding.",
+        "Fish out the lemon peel and stir in the maple syrup. Eat it warm, or cool it within 1 hour, chill it in a lidded container and eat it within 2 days."
+      ],
+      "prepMin": 5,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make it the day you eat it, or the night before: it is lovely cold. Many Mexican cooks use a strip of lime peel instead of lemon, so use whichever you have."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "endurance-global-maple-oat-porridge-yogurt-orange"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "endurance-global-tuna-white-bean-pasta-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "endurance-global-kenyan-beef-stew-ugali-sukuma"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-global-rice-cakes-almond-butter-maple"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-global-egg-tomato-sandwich"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "endurance-global-japanese-egg-rice-bowl-miso-spinach"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "endurance-global-kenyan-beef-stew-ugali-sukuma",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "endurance-global-ginger-soy-salmon-rice-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-global-banana-maple-toast"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-global-yogurt-mango-oat-crunch"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "endurance-global-huevos-rancheros-black-beans"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "endurance-global-maple-white-beans-toast-milk"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "endurance-global-pollo-salsa-verde-carrot-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-global-almond-butter-oat-bites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-global-chocolate-milk-banana"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "endurance-global-maple-oat-porridge-yogurt-orange"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "endurance-global-pollo-salsa-verde-carrot-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "endurance-global-spaghetti-sardines-tomato-lemon-crumbs"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-global-salted-potatoes-olive-oil-lemon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-global-egg-tomato-sandwich"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "endurance-global-japanese-egg-rice-bowl-miso-spinach"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "endurance-global-tuna-black-bean-tostadas-pico"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "endurance-global-maple-mustard-turkey-mashed-potatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-global-rice-cakes-almond-butter-maple"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-global-mango-banana-oat-smoothie"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "endurance-global-huevos-rancheros-black-beans"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "endurance-global-maple-mustard-turkey-mashed-potatoes",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "endurance-global-beef-white-bean-ragu-polenta"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-global-banana-maple-toast"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-global-yogurt-mango-oat-crunch"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "endurance-global-maple-oat-porridge-yogurt-orange"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "endurance-global-beef-white-bean-ragu-polenta",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "endurance-global-kenyan-chicken-pilau-kachumbari"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-global-almond-butter-oat-bites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-global-chocolate-milk-banana"
+        }
+      ]
+    }
+  ]
+}
