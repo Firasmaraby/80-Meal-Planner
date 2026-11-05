@@ -1,0 +1,1695 @@
+{
+  "id": "fish-and-seafood",
+  "name": "Fish and Seafood Week",
+  "style": "balanced",
+  "cuisine": "Global",
+  "carbStyle": "whole",
+  "regions": [
+    "Spain",
+    "France",
+    "Italy",
+    "Germany",
+    "Morocco",
+    "Mexico"
+  ],
+  "summary": "Fish or seafood at dinner six nights, all low in mercury: sheet-pan salmon, trout with lentils, a shrimp and white bean skillet, mackerel on potato salad, cod and chickpea stew, and mussels in tomato broth. Four dishes make tomorrow's lunch, and beans, vegetables, eggs and nuts fill in the rest.",
+  "howItWorks": "**Fish most days.** Salmon on Monday, trout on Tuesday, shrimp on Wednesday, mackerel on Thursday, cod on Friday and mussels on Saturday, plus canned salmon in Sunday's lunch. Salmon, trout, mackerel and canned salmon bring **omega-3 and vitamin D**. Shrimp, cod and mussels add lean protein, iodine and B12. All of it is low in mercury.\n\n**Cook once, eat twice.** Monday's salmon tray, Wednesday's lentil soup, Thursday's mackerel potato salad and Friday's cod stew each make two portions. Cooked fish keeps up to 2 days, so each second portion is the very next lunch, cold or reheated once until steaming (74 °C). Mussels are cooked and eaten the same day.\n\n**Not only fish.** Sunday's dinner is a black bean and sweet potato chili, and lentils, chickpeas, white beans or edamame turn up most days. Eggs cooked firm cover three breakfasts and two snack plates, and nuts or seeds land every day for crunch and magnesium.\n\n**Easy on salt.** Beans are no-salt-added, feta is a garnish, and the broths and stews get their flavour from tomato, fennel, lemon, garlic and herbs. Wash all fruit and vegetables before cutting, lemons too. No fresh tuna, swordfish or shark appears.\n\n**What changes with size.** Light covers 1,400 to 1,800 kcal. The fresh fish and eggs stay at or near full size, while the canned salmon, quinoa, oats, potatoes, oil, nuts and some beans shrink, and a snack drops on five days. At 1,400 the grains and potatoes are a small side. Big grows the fish, potatoes and beans and adds a snack on three days.",
+  "signature": [
+    "fish-and-seafood-sheet-pan-salmon-potatoes-carrots-broccoli",
+    "fish-and-seafood-trout-warm-lentils-spinach",
+    "fish-and-seafood-cod-chickpea-fennel-stew",
+    "fish-and-seafood-mussels-tomato-broth-potatoes-fennel-salad"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1600,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "fish-and-seafood-yogurt-pear-walnut-bowl"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "fish-and-seafood-pear-walnuts"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "fish-and-seafood-pear-walnuts"
+          }
+        }
+      ]
+    }
+  },
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "fish-and-seafood-mushroom-spinach-tomato-avocado-scramble-firm-eggs"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "fish-and-seafood-lemony-chickpea-herb-salad-feta"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "fish-and-seafood-sheet-pan-salmon-potatoes-carrots-broccoli"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fish-and-seafood-raspberries-yogurt-pumpkin-seeds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fish-and-seafood-apple-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "fish-and-seafood-pear-hazelnut-quinoa-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "fish-and-seafood-sheet-pan-salmon-potatoes-carrots-broccoli",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "fish-and-seafood-trout-warm-lentils-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fish-and-seafood-lemon-chili-edamame"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fish-and-seafood-apple-peanut-butter"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "fish-and-seafood-raspberry-walnut-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "fish-and-seafood-lentil-kale-tomato-soup"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "fish-and-seafood-shrimp-white-bean-kale-skillet"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fish-and-seafood-egg-tomato-cucumber-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fish-and-seafood-pear-hazelnuts"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "fish-and-seafood-mushroom-spinach-tomato-avocado-scramble-firm-eggs"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "fish-and-seafood-lentil-kale-tomato-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "fish-and-seafood-mackerel-warm-potato-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fish-and-seafood-veg-sticks-garlic-yogurt-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fish-and-seafood-apple-peanut-butter"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "fish-and-seafood-raspberry-walnut-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "fish-and-seafood-mackerel-warm-potato-salad",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "fish-and-seafood-cod-chickpea-fennel-stew"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fish-and-seafood-pear-hazelnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fish-and-seafood-lemon-chili-edamame"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "fish-and-seafood-pear-hazelnut-quinoa-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "fish-and-seafood-cod-chickpea-fennel-stew",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "fish-and-seafood-mussels-tomato-broth-potatoes-fennel-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fish-and-seafood-egg-tomato-cucumber-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fish-and-seafood-raspberries-yogurt-pumpkin-seeds"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "fish-and-seafood-mushroom-spinach-tomato-avocado-scramble-firm-eggs"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "fish-and-seafood-salmon-white-bean-cucumber-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "fish-and-seafood-black-bean-sweet-potato-chili"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fish-and-seafood-apple-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "fish-and-seafood-veg-sticks-garlic-yogurt-dip"
+        }
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "fish-and-seafood-raspberry-walnut-overnight-oats",
+      "name": "Overnight oats with raspberries and walnuts",
+      "inspiredBy": "Inspired by Swiss bircher and North American overnight oats",
+      "about": "Rolled oats soaked overnight in milk and Greek yogurt, spooned over juicy raspberries with chopped walnuts for crunch. The oats and raspberries bring **plenty of fibre**, and the walnuts add plant omega-3.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 60,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 100,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Stir the oats, milk, yogurt, cinnamon and salt together in a jar or bowl. Cover and chill overnight, or at least 4 hours.",
+        "In the morning, stir well and loosen with a splash of milk if it has thickened.",
+        "Wash the raspberries and roughly chop the walnuts.",
+        "Spoon the raspberries on top and scatter with the walnuts.",
+        "Keep any spare jar covered in the fridge and eat it within 3 days."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Mix each jar the night before: Tuesday night for Wednesday and Thursday night for Friday. Any berry works. If you use frozen berries and you are pregnant, 60 or older, feeding a child 5 or under, or have a weakened immune system, boil them for 1 minute and cool them first."
+    },
+    {
+      "id": "fish-and-seafood-pear-hazelnut-quinoa-porridge",
+      "name": "Warm quinoa porridge with pear and hazelnuts",
+      "inspiredBy": "Inspired by Andean quinoa porridge",
+      "about": "Quinoa simmered in milk until creamy and soft, then topped with diced pear and toasted hazelnuts. It is a gentle, cosy start, and the hazelnuts bring **vitamin E** while the quinoa adds magnesium.",
+      "ingredients": [
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "rinsed well"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 260,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 130,
+          "note": "washed and diced"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "toasted and roughly chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa in a fine sieve under cold water for 30 seconds to remove its bitter coating.",
+        "Put the quinoa, milk, cinnamon and salt in a small pot. Bring to a gentle boil, then cover and simmer on low until the quinoa is soft and creamy, about 15 minutes, stirring once or twice. If it still looks thin, simmer it uncovered for a few minutes more.",
+        "Meanwhile, wash and dice the pear, and toast the hazelnuts in a dry pan until fragrant, about 3 minutes.",
+        "Spoon the porridge into a bowl and top with the pear and the hazelnuts."
+      ],
+      "prepMin": 5,
+      "cookMin": 17,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook it the night before, cool it in a shallow container within 1 hour and keep it in the fridge. Reheat it with a splash of milk until steaming (74 °C) and add the pear and nuts cold. Use within 3 days."
+    },
+    {
+      "id": "fish-and-seafood-lemon-chili-edamame",
+      "name": "Lemon and chili edamame",
+      "about": "Warm edamame tossed with lemon juice, a pinch of chili flakes and a little salt. A **plant-protein** snack that brings folate and iron.",
+      "ingredients": [
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 140,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the edamame in a pot of simmering water or in the microwave until steaming hot all the way through, about 3 minutes, then drain.",
+        "Toss with the lemon juice, chili flakes and salt."
+      ],
+      "prepMin": 2,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "fish-and-seafood-lemony-chickpea-herb-salad-feta",
+      "name": "Lemony chickpea and herb salad with feta",
+      "inspiredBy": "Inspired by Greek and Levantine chickpea salads",
+      "about": "A crunchy salad of chickpeas, edamame, cucumber, tomato, red pepper and a big handful of parsley, with a little feta, a lemony yogurt dressing and toasted pumpkin seeds. The chickpeas and parsley bring **fibre, iron and folate**, and the lemon helps you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 135,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 70,
+          "swap": "legumes",
+          "note": "shelled"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed and diced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "washed and halved"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "washed and diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "finely sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 16,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 18
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Simmer the edamame in water until steaming hot all the way through, about 3 minutes, then drain and cool under cold water. Rinse the chickpeas well and drain them. Wash all the vegetables and the parsley.",
+        "Dice the cucumber and red pepper, halve the tomatoes, slice the onion very thinly and chop the parsley.",
+        "Whisk the yogurt, olive oil, lemon juice, oregano and pepper in a large bowl. Add the chickpeas, edamame and vegetables and toss to coat.",
+        "Top with the feta and the pumpkin seeds. If you are packing it, keep it in a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 12,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "A spoonful of leftover quinoa or a handful of baby spinach makes it bigger. The feta is a garnish, so a little goes a long way."
+    },
+    {
+      "id": "fish-and-seafood-sheet-pan-salmon-potatoes-carrots-broccoli",
+      "name": "Sheet-pan lemon-parsley salmon with potatoes, carrots and broccoli",
+      "inspiredBy": "Inspired by sheet-pan suppers from North American home kitchens",
+      "about": "Baby potatoes, carrots and broccoli roast on one tray while a mustard-glazed salmon fillet finishes on top, with lemon and fresh parsley. The salmon brings **omega-3, vitamin D and B12**, and the carrots and broccoli add vitamin A, vitamin C and choline.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 125,
+          "swap": "fatty_fish",
+          "note": "skin on or off, patted dry"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 135,
+          "note": "scrubbed and halved or quartered"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "washed and cut in thick sticks"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 150,
+          "note": "washed and cut in florets"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the potatoes, carrots and broccoli. Cut the potatoes into bite-sized pieces and the carrots into thick sticks.",
+        "Toss the potatoes and carrots on a large tray with half the olive oil, the garlic, salt and pepper. Roast for 15 minutes.",
+        "Toss the broccoli with the rest of the oil. Push the potatoes aside, add the broccoli, and nestle the salmon fillets among the vegetables. Brush the salmon with the mustard.",
+        "Roast until the salmon flakes easily and reads 70 °C (158 °F) in the thickest part, and the potatoes and carrots are golden, about 12 to 14 minutes.",
+        "Finish with the lemon juice and parsley. Wash your hands, the knife and the board after handling the raw fish.",
+        "Cool the second portion in a shallow container within 1 hour, because it holds cooked potato and fish, and keep it in the fridge for tomorrow. Eat it within 2 days and reheat it only once."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Tomorrow the second portion is lunch: eat it cold on a bed of greens, or reheat it until steaming (74 °C). In a packed lunch, use a cold bag with an ice pack."
+    },
+    {
+      "id": "fish-and-seafood-trout-warm-lentils-spinach",
+      "name": "Pan-seared trout with warm mustard lentils and spinach",
+      "inspiredBy": "Inspired by French lentilles du Puy with fish",
+      "about": "A crisp-skinned trout fillet over earthy green lentils tossed with carrot, spinach, kale, mustard and lemon, finished with toasted hazelnuts. The trout brings **omega-3 and vitamin D**, and the lentils bring iron and folate.",
+      "ingredients": [
+        {
+          "food": "rainbow-trout-farmed-raw-0cc800",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "skin on, patted dry"
+        },
+        {
+          "food": "green-and-brown-lentils-whole-dried-raw-f67c80",
+          "g": 75,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed and finely diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 40,
+          "note": "finely diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed and chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 22
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put the lentils in a pot with plenty of water and bring to a boil. Simmer until tender but not mushy, about 22 minutes, then drain.",
+        "Meanwhile, heat half the oil in a pan. Cook the carrot and onion until soft, about 6 minutes. Stir in the lentils, mustard, half the lemon juice, half the salt, the chili flakes, the spinach and the kale. Stir until both wilt, about 3 minutes.",
+        "Pat the trout dry and season with the remaining salt and the pepper. Heat the rest of the oil in a non-stick pan over medium-high heat and cook the trout skin-side down until crisp, about 4 minutes.",
+        "Flip and cook until the fish flakes easily and reads 70 °C (158 °F), about 3 minutes more. Squeeze the rest of the lemon juice over it.",
+        "Spoon the lentils onto a plate, lay the trout on top and scatter with the hazelnuts and parsley. Wash your hands, the pan and the board after handling the raw fish."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook a double batch of lentils on a quiet evening and keep them chilled within 1 hour in a shallow container; use within 3 days."
+    },
+    {
+      "id": "fish-and-seafood-shrimp-white-bean-kale-skillet",
+      "name": "Garlicky shrimp and white bean skillet with kale",
+      "inspiredBy": "Inspired by Spanish alubias con gambas and gambas al ajillo",
+      "about": "Plump shrimp in a smoky garlic, paprika and tomato pan with creamy white beans, sweet carrot, browned mushrooms and wilted kale, finished with lemon, parsley and toasted walnuts. The shrimp bring **protein, iodine and selenium**, and the beans, kale and carrot add iron, calcium, folate and vitamin A.",
+      "ingredients": [
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "thawed in the fridge overnight if frozen, patted dry"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 130,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, and torn"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed and diced"
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 70,
+          "note": "wiped clean and sliced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 120,
+          "note": "washed and halved"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.4
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Wash the kale, tomatoes and parsley. Pat the shrimp dry.",
+        "Heat the oil in a large skillet over medium heat. Cook the onion, carrot and mushrooms until the mushrooms are browned and the carrot is soft, about 8 minutes. Add the garlic, smoked paprika and chili flakes and cook for 30 seconds.",
+        "Add the tomatoes and cook until they slump and turn saucy, about 5 minutes. Stir in the beans, the kale and a splash of water, cover and cook until the kale is tender, about 4 minutes.",
+        "Nestle in the shrimp. Cook, turning once, until they are pink and opaque all the way through and curled into a loose C, about 3 to 4 minutes (74 °C if you check with a thermometer). Do not eat shrimp that are still grey or translucent.",
+        "Season with the salt, then finish with the lemon juice, parsley and toasted walnuts. Wash your hands, the board and the knife after handling raw shrimp."
+      ],
+      "prepMin": 12,
+      "cookMin": 23,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Serve with a few spoonfuls of cooked quinoa if you want it bigger. Thaw frozen shrimp in the fridge overnight, cook them the same day and never refreeze them."
+    },
+    {
+      "id": "fish-and-seafood-mackerel-warm-potato-salad",
+      "name": "Seared mackerel on a warm mustard potato salad",
+      "inspiredBy": "Inspired by German warm potato salad and Scandinavian mackerel",
+      "about": "A seared Atlantic mackerel fillet over warm baby potatoes, green beans, cucumber and red onion in a tangy yogurt and mustard dressing. The mackerel brings **omega-3, vitamin D and B12**, and the potatoes and beans add potassium and fibre.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 120,
+          "swap": "fatty_fish",
+          "note": "skin on, patted dry"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 200,
+          "note": "scrubbed and cut in bite-sized pieces"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 130,
+          "note": "washed and trimmed"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 30,
+          "note": "finely sliced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed and thinly sliced"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 10
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Put the potatoes in a pot of cold water, bring to a boil and simmer until tender, about 15 minutes. Add the green beans for the last 4 minutes, then drain.",
+        "Whisk the yogurt, mustard, lemon juice, half the salt and the pepper in a large bowl. Add the warm potatoes, beans, onion, cucumber and parsley and toss gently.",
+        "Pat the mackerel dry and season with the rest of the salt. Heat the oil in a non-stick pan over medium-high heat and cook skin-side down until crisp, about 4 minutes.",
+        "Flip and cook until the flesh flakes easily and reads 70 °C (158 °F), about 3 minutes more.",
+        "Serve the mackerel on top of the potato salad. Wash your hands, the pan and the board after handling the raw fish.",
+        "Cool the second portion in a shallow container within 1 hour, because it holds cooked potato and fish, and keep it in the fridge. Eat it tomorrow, cold, and within 2 days."
+      ],
+      "prepMin": 12,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Buy the mackerel very fresh, keep it in the fridge and cook it the day you buy it or the next. Tomorrow the cold salad and mackerel make a packed lunch: use a cold bag with an ice pack and eat it the same day."
+    },
+    {
+      "id": "fish-and-seafood-cod-chickpea-fennel-stew",
+      "name": "Cod and chickpea stew with fennel and saffron",
+      "inspiredBy": "Inspired by Spanish and Moroccan fish and chickpea stews",
+      "about": "Flaky cod simmered in a saffron and smoked paprika tomato broth with chickpeas, fennel, carrot, mushrooms and spinach, with lemon and parsley at the end. The cod brings **lean protein and iodine**, and the chickpeas and spinach bring iron and folate, and the carrot adds vitamin A.",
+      "ingredients": [
+        {
+          "food": "atlantic-cod-wild-caught-raw-8de8e0",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "cut in large chunks"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 90,
+          "note": "washed, trimmed and thinly sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "washed and diced"
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 60,
+          "note": "wiped clean and sliced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 150
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 110,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "saffron-37c5ad",
+          "g": 0.1
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Heat the oil in a wide pot over medium heat. Cook the fennel, carrot, mushrooms and onion until soft, about 10 minutes. Stir in the garlic, smoked paprika and saffron for 30 seconds.",
+        "Add the tomatoes, crushing them with a spoon, the chickpeas and a cup of water. Simmer for 10 minutes, until the broth thickens a little.",
+        "Season the cod with the salt and nestle it into the stew with the spinach. Cover and simmer gently until the fish is opaque and flakes easily, 70 °C (158 °F), about 6 minutes.",
+        "Finish with the lemon juice and parsley. Wash your hands, the board and the knife after handling the raw fish.",
+        "Cool the second portion in a shallow container within 2 hours and keep it in the fridge. Tomorrow, reheat it only once, until steaming (74 °C). Eat it within 2 days."
+      ],
+      "prepMin": 10,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Serve with a spoonful of cooked quinoa if you want it bigger. Do not freeze the leftover."
+    },
+    {
+      "id": "fish-and-seafood-mussels-tomato-broth-potatoes-fennel-salad",
+      "name": "Mussels in tomato broth with garlic potatoes and fennel salad",
+      "inspiredBy": "Inspired by Belgian moules and Provençal fish broths",
+      "about": "Mussels steamed open in a garlicky tomato and fennel broth, with tender potatoes to mop it up and a crunchy fennel and spinach salad. The mussels bring **iron, B12, zinc and selenium** in one pot, and the tomato broth is a pleasure to dip into.",
+      "ingredients": [
+        {
+          "food": "mussel-blue-raw-29212c",
+          "g": 165,
+          "swap": "lean_protein",
+          "note": "meat weight, so buy about four times as much in the shell"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 250,
+          "note": "scrubbed and cut in bite-sized pieces"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 200
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 40,
+          "note": "finely sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "sliced"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 100,
+          "note": "washed, half sliced for the broth and half shaved for the salad"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Put the potatoes in a pot of cold water, bring to a boil and simmer until tender, about 15 minutes. Drain and toss with a little of the oil, the salt and half the garlic.",
+        "Scrub the mussels under cold running water and pull off any beards. Tap any open mussel on the counter: if it does not close within a minute, throw it away, along with any with cracked shells.",
+        "Heat the rest of the oil in a wide pot. Cook the onion and sliced fennel until soft, about 5 minutes. Add the remaining garlic and the chili flakes for 30 seconds, then the tomatoes, crushing them, and a splash of water. Simmer for 8 minutes.",
+        "Add the mussels, cover tightly and cook over high heat, shaking the pot once, until the shells open, about 5 to 6 minutes. Throw away any mussel that stays closed after cooking.",
+        "Toss the shaved fennel and baby spinach with the lemon juice. Spoon the mussels and broth over the potatoes, scatter with the parsley and hazelnuts and serve the salad alongside.",
+        "Wash your hands, the board and the pot after handling the raw mussels. Eat them the day you cook them and do not keep the leftovers."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Buy mussels from a trusted fishmonger, keep them cold and cook them the same day. At home, keep them in the fridge in an open bowl under a damp cloth, never in water or a sealed bag."
+    },
+    {
+      "id": "fish-and-seafood-black-bean-sweet-potato-chili",
+      "name": "Black bean and sweet potato chili with lemon and avocado",
+      "inspiredBy": "Inspired by Tex-Mex and Southwestern bean chili",
+      "about": "A thick, smoky chili of black beans, sweet potato, peppers and kale with a little quinoa, finished with lemon, avocado and toasted pumpkin seeds. The beans and sweet potato bring **fibre, iron and vitamin A**, and the lemon helps you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 210,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 110,
+          "note": "scrubbed and cut in small cubes"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "rinsed well"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "washed and diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 150
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed and chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 3
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "washed, then peeled and sliced"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large pot over medium heat. Cook the onion and red pepper until soft, about 6 minutes. Stir in the garlic, chili powder, cumin and smoked paprika and cook for 1 minute.",
+        "Add the sweet potato, tomatoes (crushed with a spoon), the quinoa, the beans, salt and a cup of water. Bring to a boil, then cover and simmer until the sweet potato and quinoa are tender, about 22 minutes.",
+        "Stir in the kale and cook until wilted, about 3 minutes. Add a splash of water if it gets too thick.",
+        "Finish with the lemon juice. Ladle into a bowl and top with the avocado, pumpkin seeds and parsley.",
+        "Chill any extra within 1 hour (it holds cooked quinoa) in a shallow container and eat it within 3 days, reheated until steaming (74 °C)."
+      ],
+      "prepMin": 12,
+      "cookMin": 33,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "freezer-friendly"
+      ],
+      "tip": "Leave out the chili powder for a milder pot. To freeze a double batch, cool it within 1 hour, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze and reheat to 74 °C. Add the avocado and seeds fresh."
+    },
+    {
+      "id": "fish-and-seafood-mushroom-spinach-tomato-avocado-scramble-firm-eggs",
+      "name": "Mushroom, spinach and tomato scramble with avocado and orange",
+      "inspiredBy": "Inspired by classic North American scrambled eggs",
+      "about": "Eggs scrambled until completely set with browned mushrooms, wilted spinach and sweet cherry tomatoes, topped with creamy avocado and served with orange segments. It is ready in about 15 minutes, and the eggs bring **choline and B12** while the orange adds vitamin C.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "cooked until completely firm"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 60,
+          "note": "wiped clean and sliced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "washed and halved"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "washed, then peeled and sliced"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "washed, peeled and segmented"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the spinach, tomatoes, avocado and orange, and wipe the mushrooms clean. Beat the eggs with the salt and pepper in a bowl.",
+        "Heat the oil in a non-stick pan over medium heat. Add the mushrooms and cook until they are browned, about 4 minutes, then add the tomatoes and cook 2 minutes more. Add the spinach and stir until it wilts.",
+        "Pour in the eggs and stir gently until they are completely set, with no runny egg left, about 3 minutes. The eggs should be firm all the way through.",
+        "Peel and segment the orange. Serve the scramble with the sliced avocado, the pumpkin seeds and the orange on the side.",
+        "Wash your hands, the pan and the bowl after handling raw eggs."
+      ],
+      "prepMin": 7,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "fish-and-seafood-lentil-kale-tomato-soup",
+      "name": "Lentil, kale and tomato soup with lemon",
+      "inspiredBy": "Inspired by Middle Eastern and Mediterranean lentil soups",
+      "about": "A hearty soup of green lentils, carrot, kale and tomato, flavoured with garlic, cumin and a squeeze of lemon, with toasted pumpkin seeds on top. The lentils bring **protein, iron and folate**, and the lemon helps you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "green-and-brown-lentils-whole-dried-raw-f67c80",
+          "g": 62,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "washed and diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 150
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed and chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Heat the oil in a pot over medium heat. Add the onion and carrot and cook until the onion is soft, about 6 minutes.",
+        "Stir in the garlic, cumin and paprika and cook for 30 seconds, until fragrant.",
+        "Add the lentils, the tomatoes (crushed with a spoon) and plenty of water to cover by 3 cm. Bring to a boil, then simmer partly covered until the lentils are tender, about 22 minutes.",
+        "Stir in the kale and salt and cook until the kale is tender, about 3 minutes. Add the lemon juice.",
+        "Serve topped with the pumpkin seeds. Cool the second portion in a shallow container within 2 hours, keep it in the fridge and reheat it only once, until steaming (74 °C), tomorrow."
+      ],
+      "prepMin": 10,
+      "cookMin": 32,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "This is a long weekday lunch, so make it the evening before while dinner cooks. To freeze the second portion, cool it within 2 hours and freeze up to 2 months. Thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C. Add the seeds fresh."
+    },
+    {
+      "id": "fish-and-seafood-salmon-white-bean-cucumber-salad",
+      "name": "Canned salmon and white bean salad with cucumber and parsley",
+      "inspiredBy": "Inspired by Tuscan tuna and bean salad",
+      "about": "Flaked canned salmon and creamy white beans tossed with crisp cucumber, red onion, parsley and a lemony yogurt dressing. The salmon, bones and all, brings **omega-3 and calcium**, and it takes no cooking at all.",
+      "ingredients": [
+        {
+          "food": "salmon-canned-drained-9cea4e",
+          "g": 100,
+          "swap": "fatty_fish",
+          "note": "drained, bones left in and mashed"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 165,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "washed and diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "finely sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the white beans and drain the salmon. Wash the cucumber, spinach and parsley.",
+        "Whisk the yogurt, lemon juice, olive oil and pepper in a bowl. Add the beans, cucumber, onion and parsley and toss.",
+        "Flake in the salmon, mashing the soft bones in, and fold gently.",
+        "Pile onto the spinach and scatter the walnuts over the top.",
+        "Move any leftover salmon out of the tin into a covered container, keep it in the fridge and use it within 2 days. If you pack the salad, use a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 10,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Add a handful of cherry tomatoes if you have them."
+    },
+    {
+      "id": "fish-and-seafood-apple-walnuts",
+      "name": "Apple with walnuts",
+      "about": "A crisp apple with a small handful of walnuts. The apple brings **fibre**, and the walnuts bring plant omega-3 and vitamin E.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash and slice the apple.",
+        "Eat with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "fish-and-seafood-pear-hazelnuts",
+      "name": "Pear with toasted hazelnuts",
+      "about": "A ripe pear with a small handful of toasted hazelnuts. The pear brings **fibre**, and the hazelnuts bring vitamin E and magnesium.",
+      "ingredients": [
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 160,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "hazelnuts-kernel-only-180221",
+          "g": 24,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Wash and slice the pear.",
+        "Toast the hazelnuts in a dry pan until fragrant, about 3 minutes, and eat them with the pear."
+      ],
+      "prepMin": 2,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "fish-and-seafood-raspberries-yogurt-pumpkin-seeds",
+      "name": "Raspberries with Greek yogurt and pumpkin seeds",
+      "about": "Cool Greek yogurt topped with juicy raspberries and a spoonful of toasted pumpkin seeds. The yogurt brings **protein and calcium**, and the raspberries add fibre.",
+      "ingredients": [
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 110,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 170,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted in a dry pan"
+        }
+      ],
+      "steps": [
+        "Toast the pumpkin seeds in a dry pan until they pop, about 2 minutes.",
+        "Wash the raspberries.",
+        "Spoon the yogurt into a bowl and top with the raspberries and seeds."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "fish-and-seafood-veg-sticks-garlic-yogurt-dip",
+      "name": "Veg sticks with lemon-garlic yogurt dip",
+      "about": "Crunchy carrot, cucumber and red pepper sticks with a thick yogurt dip brightened with lemon, garlic and oregano. The vegetables bring **vitamin A and fibre**, and the yogurt adds protein and calcium.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 45,
+          "note": "washed and cut in sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed and cut in sticks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "washed and cut in strips"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "finely grated"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the carrot, cucumber and pepper, then cut them into sticks.",
+        "Stir the yogurt with the lemon juice, garlic, oregano and salt.",
+        "Serve the sticks with the dip. Keep any extra dip covered in the fridge and use it within 3 days."
+      ],
+      "prepMin": 6,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "fish-and-seafood-apple-peanut-butter",
+      "name": "Apple with peanut butter",
+      "about": "Crisp apple slices with a spoonful of peanut butter. The apple brings **fibre**, and the peanut butter adds protein, niacin and vitamin E.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 22,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash and slice the apple.",
+        "Dip the slices in the peanut butter or spread it on top."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "fish-and-seafood-egg-tomato-cucumber-plate",
+      "name": "Firm-boiled egg with tomato and cucumber",
+      "about": "A firm-boiled egg with juicy cherry tomatoes and crisp cucumber, drizzled with olive oil and a pinch of oregano. A **light, protein-rich** snack where the egg brings choline and the tomatoes add vitamin C.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "boiled until the yolk is firm, then peeled"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100,
+          "note": "washed and halved"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lower the egg into a pot of boiling water and cook for 10 minutes, until the yolk is completely firm. Cool in cold water, then peel.",
+        "Wash the tomatoes and cucumber, then halve the tomatoes and slice the cucumber.",
+        "Arrange on a plate with the egg, then drizzle with the olive oil and sprinkle with the oregano and salt. Wash your hands after handling the raw egg."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "fish-and-seafood-yogurt-pear-walnut-bowl",
+      "name": "Greek yogurt with pear and walnuts",
+      "about": "Thick Greek yogurt topped with diced pear, chopped walnuts and a pinch of cinnamon. The yogurt brings **protein and calcium**, and the walnuts add plant omega-3.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 120,
+          "note": "washed and diced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash and dice the pear.",
+        "Spoon the yogurt into a bowl and top with the pear, the walnuts and the cinnamon."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "fish-and-seafood-pear-walnuts",
+      "name": "Pear with walnuts",
+      "about": "A ripe pear with a handful of walnuts. The pear brings **fibre**, and the walnuts bring plant omega-3 and a good crunch.",
+      "ingredients": [
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 170,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash and slice the pear.",
+        "Eat with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    }
+  ]
+}
