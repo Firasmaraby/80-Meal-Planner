@@ -1,0 +1,1700 @@
+{
+ "id": "everyday-classics",
+ "name": "Everyday Classics",
+ "style": "balanced",
+ "cuisine": "Global",
+ "carbStyle": "wholegrain",
+ "regions": [
+  "Canada",
+  "United States",
+  "Italy",
+  "United Kingdom"
+ ],
+ "summary": "The easy default week most people would recognise: oatmeal and toast breakfasts, lemon chicken with brown rice, salmon with potatoes, whole-wheat spaghetti with lentil tomato sauce and bean soup with rye. Whole grains in modest portions beside plenty of vegetables and legumes.",
+ "howItWorks": "**Cook once, eat twice.** Monday's bean soup, Tuesday's lemon chicken and rice, Wednesday's lentil spaghetti, Thursday's chili and Saturday's roast chicken each make two portions, so the next day's lunch is already done. Cool the rice and spaghetti portions within an hour.\n\n**Fish and beans.** Salmon sandwich on Monday, baked salmon on Friday and baked trout on Sunday, plus canned-salmon toasts as snacks, bring omega-3 and some **vitamin D**, which is hard to get from food alone. Fish is never a leftover. One can covers Monday's sandwich and Tuesday's toast, and another covers Wednesday and Thursday. Beans, lentils or chickpeas turn up most days.\n\n**Whole grains, kept modest.** Oatmeal, whole-wheat toast, rye, brown rice and whole-wheat pasta stay in fist-sized portions, always next to vegetables and beans.\n\n**Eggs on four days.** Choline is hard to reach without them, so scrambled eggs open Monday, Tuesday, Friday and Saturday. At Light, where the chicken portions are smaller, a hard-boiled egg on rye joins Wednesday and Thursday as a snack. Swap in tofu or more chicken if you prefer, though they bring less choline than eggs.\n\n**Easy week.** Weekday dinners take 45 to 50 minutes start to finish, most of it simmering or roasting while you do something else. Saturday's roast is the slower tray, and Sunday's trout takes under 40. Wash produce, use a thermometer, and cook eggs until the yolk is firm.\n\n**Sizes.** Light (1600 to 1800) has smaller portions of chicken, beef, grains, potatoes, bread, oil and cheese, and a little less of the beans and canned salmon; the vegetables, lentils and fish dinners stay about the same. It stops at 1600 because Saturday and Sunday can't shrink further and keep every nutrient. Big adds a snack on four days and a little more of everything else.",
+ "signature": [
+  "everyday-classics-hearty-bean-vegetable-soup-rye",
+  "everyday-classics-lemon-herb-chicken-broccoli-brown-rice",
+  "everyday-classics-whole-wheat-spaghetti-lentil-tomato-sauce",
+  "everyday-classics-lemon-dill-salmon-potatoes-green-beans"
+ ],
+ "lifeStage": "none",
+ "sizes": {
+  "light": {
+   "kcal": 1600,
+   "covers": [
+    "1600-1800"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 2,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 3,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 4,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 5,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 6,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 7,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 3,
+     "add": {
+      "slot": "snack",
+      "recipe": "everyday-classics-egg-tomato-rye-toast"
+     }
+    },
+    {
+     "day": 4,
+     "add": {
+      "slot": "snack",
+      "recipe": "everyday-classics-egg-tomato-rye-toast"
+     }
+    },
+    {
+     "day": 5,
+     "add": {
+      "slot": "snack",
+      "recipe": "everyday-classics-berry-yogurt-almonds"
+     }
+    },
+    {
+     "day": 7,
+     "add": {
+      "slot": "snack",
+      "recipe": "everyday-classics-apple-almonds"
+     }
+    }
+   ]
+  },
+  "standard": {
+   "kcal": 2100,
+   "covers": [
+    "1800-2000",
+    "2000-2200",
+    "2200-2400"
+   ],
+   "adjust": [
+    {
+     "day": 4,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    }
+   ]
+  },
+  "big": {
+   "kcal": 3000,
+   "covers": [
+    "2400-2800",
+    "2800-3200"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "add": {
+      "slot": "snack",
+      "recipe": "everyday-classics-blueberries-walnuts"
+     }
+    },
+    {
+     "day": 3,
+     "add": {
+      "slot": "snack",
+      "recipe": "everyday-classics-blueberries-walnuts"
+     }
+    },
+    {
+     "day": 4,
+     "add": {
+      "slot": "snack",
+      "recipe": "everyday-classics-berry-yogurt-almonds"
+     }
+    },
+    {
+     "day": 6,
+     "add": {
+      "slot": "snack",
+      "recipe": "everyday-classics-orange-sunflower-seeds"
+     }
+    }
+   ]
+  }
+ },
+ "recipes": [
+  {
+   "id": "everyday-classics-apple-cinnamon-oatmeal",
+   "name": "Apple cinnamon oatmeal with walnuts",
+   "inspiredBy": "Inspired by an old-fashioned Canadian porridge",
+   "about": "Creamy rolled oats cooked in milk with chopped apple and cinnamon, finished with a big dollop of Greek yogurt, toasted walnuts and sunflower seeds. The oats bring **slow-burning fibre**, and the yogurt and milk add protein and calcium.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 42,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "milk-reduced-fat-2-fat-4a4316",
+     "g": 150,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 130,
+     "swap": "vit_c_fruit",
+     "note": "washed, chopped with the skin on"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 100,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 8,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 1
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the apple, then chop it into small pieces, skin on. Toast the walnuts and sunflower seeds in a dry pan over medium heat until they smell nutty, about 3 minutes.",
+    "Put the oats, milk, apple, cinnamon and salt in a small pot over medium heat. Stir often until the oats are thick and creamy and the apple is just soft, about 6 minutes.",
+    "Spoon into a bowl, top with the yogurt, walnuts and sunflower seeds."
+   ],
+   "prepMin": 3,
+   "cookMin": 8,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ],
+   "tip": "Cook a double batch on Wednesday, spread the second bowl in a shallow container and refrigerate it within 1 hour, then reheat it on Thursday with a splash of milk until steaming hot, 74 °C (165 °F)."
+  },
+  {
+   "id": "everyday-classics-eggs-tomato-spinach-toast",
+   "name": "Scrambled eggs with tomato and spinach on whole-wheat toast",
+   "inspiredBy": "Inspired by a Canadian diner scramble",
+   "about": "Firm, fluffy scrambled eggs folded with wilted spinach and tomato, on whole-wheat toast with orange wedges. The eggs bring **protein and choline**, and the orange helps your body absorb the iron in the spinach.",
+   "ingredients": [
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 100,
+     "swap": "lean_protein",
+     "note": "beaten"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 40,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 80,
+     "note": "chopped"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 5,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 60,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "orange-raw-ce787f",
+     "g": 130,
+     "swap": "vit_c_fruit",
+     "note": "cut in wedges"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the spinach, tomato and orange. Chop the tomato, beat the eggs with the salt and pepper, and put the bread in the toaster.",
+    "Warm the oil in a nonstick pan over medium heat. Add the tomato and cook until it softens, about 2 minutes. Add the spinach and stir until it wilts, about 30 seconds.",
+    "Pour in the eggs and keep folding gently until they are completely set with no liquid egg left and the yolk is firm, about 3 minutes. They should reach 71 °C (160 °F).",
+    "Pile the eggs on the toast and serve with the orange wedges."
+   ],
+   "prepMin": 6,
+   "cookMin": 7,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "everyday-classics-yogurt-blueberry-banana-crunch",
+   "name": "Yogurt bowl with blueberries, banana and oat crunch",
+   "inspiredBy": "Inspired by the North American yogurt parfait",
+   "about": "Thick Greek yogurt topped with blueberries, sliced banana and a toasty crunch of oats and walnuts. It has **plenty of protein**, plus plant omega-3 from the walnuts, and takes 10 minutes.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 200,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "blueberry-raw-e94073",
+     "g": 80,
+     "swap": "berries",
+     "note": "washed"
+    },
+    {
+     "food": "banana-raw-61b750",
+     "g": 80,
+     "swap": "vit_c_fruit",
+     "note": "sliced"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 25,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 18,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Wash the blueberries. Toast the oats and walnuts in a dry pan over medium heat, stirring, until they smell nutty, about 3 minutes. Tip them onto a plate to cool.",
+    "Spoon the yogurt into a bowl and top with the blueberries and banana.",
+    "Scatter the oat crunch and the cinnamon over the top just before eating so it stays crisp."
+   ],
+   "prepMin": 5,
+   "cookMin": 3,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ],
+   "tip": "Toast a jar of the oat and walnut crunch on Sunday and keep it in the cupboard for the week."
+  },
+  {
+   "id": "everyday-classics-salmon-salad-rye-sandwich",
+   "name": "Salmon salad sandwich on rye",
+   "inspiredBy": "Inspired by the classic Canadian salmon sandwich",
+   "about": "Canned salmon mashed with yogurt, Dijon, celery and dill, piled on rye with crisp cucumber, with carrot sticks on the side. It is **omega-3 rich** and the soft bones in canned salmon add calcium.",
+   "ingredients": [
+    {
+     "food": "salmon-canned-drained-9cea4e",
+     "g": 100,
+     "swap": "fatty_fish",
+     "note": "bones mashed in"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 30,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 5
+    },
+    {
+     "food": "celery-raw-79a241",
+     "g": 30,
+     "note": "finely chopped"
+    },
+    {
+     "food": "dill-raw-b97f95",
+     "g": 3,
+     "note": "chopped"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 8,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "rye-bread-bdc47e",
+     "g": 70,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 60,
+     "note": "sliced"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 90,
+     "note": "cut in sticks"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the celery, dill, cucumber and carrot. Chop the celery and dill, slice the cucumber and cut the carrot into sticks.",
+    "Mash the salmon in a bowl with the yogurt, Dijon, celery, dill, lemon juice and pepper until it holds together.",
+    "Pile the salmon onto one slice of rye with the cucumber and top with the other slice. Serve with the carrot sticks.",
+    "If you are packing it, keep the filling in a container in the fridge and assemble at lunch so the bread stays crisp. Pack it with an ice pack, or keep it in the fridge until you leave, and eat it the same day. Refrigerate the rest of an opened can of salmon in a covered container and use it within 2 days, on the salmon toast."
+   ],
+   "prepMin": 12,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "everyday-classics-chickpea-veg-sandwich",
+   "name": "Smashed chickpea and crunchy veg sandwich with yogurt sauce",
+   "inspiredBy": "Inspired by the café smashed-chickpea sandwich",
+   "about": "Whole-wheat toast piled with smashed chickpeas and walnuts, cucumber, tomato and red pepper, with a lemony yogurt sauce and parsley. The chickpeas bring **fibre, folate and plant iron**, and the lemon helps you absorb it.",
+   "ingredients": [
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 150,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 40,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 70,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 80,
+     "note": "diced"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 80,
+     "note": "diced"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 50,
+     "note": "diced"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 60,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 15,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "swap": "leafy_greens",
+     "note": "chopped"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 0.5
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    },
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 120,
+     "swap": "vit_c_fruit",
+     "note": "washed, sliced, on the side"
+    }
+   ],
+   "steps": [
+    "Wash the cucumber, tomato, red pepper, spinach, parsley and apple. Dice the vegetables and chop the parsley.",
+    "Mash about half the chickpeas roughly with a fork, with the walnuts, the olive oil, half the lemon juice, the cumin, salt and pepper. Stir in the remaining whole chickpeas.",
+    "Stir the yogurt with the rest of the lemon juice and a pinch of pepper.",
+    "Toast the bread dark so it holds together. Spread the yogurt sauce on both slices, pile the chickpeas, spinach and diced vegetables on one, scatter over the parsley and close the sandwich. Serve the apple on the side."
+   ],
+   "prepMin": 15,
+   "cookMin": 2,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "everyday-classics-hearty-bean-vegetable-soup-rye",
+   "name": "Hearty white bean and vegetable soup with rye",
+   "inspiredBy": "Inspired by Italian minestrone and a Canadian bean soup",
+   "about": "A big, comforting pot of white beans, carrot, celery, spinach and tomato in a thyme-scented broth, finished with lemon and a little Parmesan, with a slice of rye on the side. The beans and spinach bring **fibre, iron and folate**, and it tastes even better the next day.",
+   "ingredients": [
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 190,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "celery-raw-79a241",
+     "g": 40,
+     "note": "diced"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 100
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 250,
+     "note": "low sodium"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 0.5
+    },
+    {
+     "food": "bay-leaf-513612",
+     "g": 0.3
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 8,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parmesan-cheese-hard-78ce3e",
+     "g": 8,
+     "note": "finely grated, to finish"
+    },
+    {
+     "food": "rye-bread-bdc47e",
+     "g": 30,
+     "swap": "low_gi_grains",
+     "note": "on the side"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the carrot, celery, onion and spinach. Dice the carrot, celery and onion, and mince the garlic.",
+    "Warm the oil in a large pot over medium heat. Cook the onion, carrot and celery with the salt until they begin to soften, about 6 minutes. Stir in the garlic and thyme for 30 seconds.",
+    "Add the tomatoes, broth, bay leaf and the beans. Bring to a boil, then lower the heat and simmer for 15 minutes, until the vegetables are tender.",
+    "Stir in the spinach and cook until it just wilts, about 2 minutes. Remove the bay leaf, then stir in the lemon juice and pepper.",
+    "Ladle into bowls, top with the Parmesan and serve with the rye.",
+    "Pack the second portion into a shallow container within 2 hours and refrigerate it. Eat it within 3 days, reheated once until steaming hot, 74 °C (165 °F)."
+   ],
+   "prepMin": 15,
+   "cookMin": 30,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "freezer-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "Mash a ladleful of the beans against the side of the pot for a thicker soup. It freezes well for up to 3 months."
+  },
+  {
+   "id": "everyday-classics-lemon-herb-chicken-broccoli-brown-rice",
+   "name": "Lemon herb chicken with broccoli and brown rice",
+   "inspiredBy": "Inspired by a family-dinner roast chicken and rice",
+   "about": "Juicy chicken thigh pan-roasted with lemon, oregano and garlic, served over a fist of nutty brown rice with garlicky broccoli and carrots. It is a **weeknight classic** that makes two portions, so tomorrow's lunch is done.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-boneless-skinless-raw-722c98",
+     "g": 170,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "brown-rice-long-grain-dry-19c5eb",
+     "g": 33,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 170,
+     "swap": "leafy_greens",
+     "note": "washed, cut in florets"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 70,
+     "note": "sliced into coins"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 40,
+     "note": "sliced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 20,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "oregano-ground-ec4216",
+     "g": 1
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.8
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Rinse the brown rice and cook it in plenty of boiling water for 30 minutes, or follow the packet, then drain. Spread the portion for tomorrow on a plate to cool within 1 hour, then refrigerate.",
+    "Meanwhile, wash the broccoli and carrot, and trim the chicken and cut it into 2 or 3 flat pieces. Mix the oregano, paprika, half the salt and half the garlic with half the lemon juice and half the oil, and rub it over the chicken. Wash your hands and the board after handling the raw chicken.",
+    "Warm a large pan over medium-high heat. Cook the chicken for 6 to 7 minutes on each side, until golden and it reaches 74 °C (165 °F) in the thickest part. Rest it on a board for 5 minutes, then slice.",
+    "In the same pan, cook the onion and carrot in the remaining oil for 4 minutes. Add the broccoli, the rest of the garlic, the rest of the salt, the pepper and a splash of water, cover, and steam for 4 minutes, until bright green and just tender.",
+    "Serve the chicken over the rice with the vegetables and squeeze over the rest of the lemon juice.",
+    "Pack the second portion of chicken and vegetables into a shallow container within 2 hours and refrigerate it with the rice. Eat it within 3 days, reheated once until steaming hot, 74 °C (165 °F)."
+   ],
+   "prepMin": 15,
+   "cookMin": 35,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "Squeeze a little extra lemon over the leftover portion when you reheat it. Quick-cooking brown rice takes about 10 minutes and gets dinner nearer 35."
+  },
+  {
+   "id": "everyday-classics-whole-wheat-spaghetti-lentil-tomato-sauce",
+   "name": "Whole-wheat spaghetti with lentil tomato sauce",
+   "inspiredBy": "Inspired by Italian spaghetti bolognese, with lentils doing the work of the meat",
+   "about": "A thick, savoury tomato sauce packed with lentils, carrot, celery and spinach over whole-wheat spaghetti, with Parmesan on top. The lentils make it taste like a bolognese and bring **protein, fibre and iron**.",
+   "ingredients": [
+    {
+     "food": "whole-wheat-pasta-dry-fc0c47",
+     "g": 58,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "lentils-canned-no-salt-added-drained-c1edbd",
+     "g": 150,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 220
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 50,
+     "note": "finely diced"
+    },
+    {
+     "food": "celery-raw-79a241",
+     "g": 30,
+     "note": "finely diced"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 50,
+     "note": "finely diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 6,
+     "note": "minced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "oregano-ground-ec4216",
+     "g": 1
+    },
+    {
+     "food": "parmesan-cheese-hard-78ce3e",
+     "g": 12,
+     "note": "finely grated"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.8
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the carrot, celery, onion and spinach, then dice the carrot, celery and onion finely and mince the garlic. Bring a large pot of water to a boil for the pasta.",
+    "Warm the oil in a deep pan over medium heat. Cook the onion, carrot and celery with a pinch of the salt until soft, about 7 minutes. Stir in the garlic and oregano for 1 minute.",
+    "Add the crushed tomatoes, lentils and the rest of the salt with a splash of water. Simmer for 15 minutes, stirring now and then, until thick. Stir in the spinach until wilted.",
+    "Meanwhile, cook the spaghetti in the boiling water until just tender, about 10 minutes. Drain, saving a cup of the water.",
+    "Toss the spaghetti with the sauce, loosening it with a splash of the pasta water. Season with pepper and top with the Parmesan.",
+    "Spread the second portion in a shallow container so it cools fast, and refrigerate it within 1 hour. Eat it within 3 days, reheated once until steaming hot, 74 °C (165 °F)."
+   ],
+   "prepMin": 15,
+   "cookMin": 30,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "freezer-friendly",
+    "makes-leftovers"
+   ]
+  },
+  {
+   "id": "everyday-classics-beef-bean-chili",
+   "name": "Beef and bean chili",
+   "inspiredBy": "Inspired by the classic North American bean chili",
+   "about": "A weeknight chili with a little ground beef stretched with kidney beans and plenty of peppers, spiced with chili powder, cumin and smoked paprika. The beans bring **fibre and plant protein** and the beef adds iron and zinc.",
+   "ingredients": [
+    {
+     "food": "ground-beef-85-lean-raw-26e746",
+     "g": 35,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "kidney-beans-canned-no-salt-added-drained-89a75f",
+     "g": 150,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 160
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 100,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "parmesan-cheese-hard-78ce3e",
+     "g": 4,
+     "note": "finely grated, to top"
+    },
+    {
+     "food": "chili-powder-f1ace8",
+     "g": 3
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1.5
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1
+    },
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 30,
+     "swap": "low_gi_grains",
+     "note": "toasted, on the side"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.8
+    }
+   ],
+   "steps": [
+    "Wash the pepper and onion, then dice them and mince the garlic.",
+    "Warm the oil in a large pot over medium-high heat. Add the beef and break it up, cooking until it is browned with no pink left, about 6 minutes. Wash your hands and the board after handling the raw beef.",
+    "Add the onion and pepper and cook until soft, about 5 minutes. Stir in the garlic, chili powder, cumin and paprika for 1 minute until fragrant.",
+    "Add the tomatoes, beans, salt and a splash of water. Simmer for 20 minutes, until thick. The beef should reach 71 °C (160 °F).",
+    "Ladle into bowls, top with the Parmesan and serve with the toast.",
+    "Pack the second portion into a shallow container within 2 hours and refrigerate. Eat it within 3 days, reheated once until steaming hot, 74 °C (165 °F)."
+   ],
+   "prepMin": 12,
+   "cookMin": 35,
+   "servings": 2,
+   "tags": [
+    "medium-spicy",
+    "freezer-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "Leave out the chili powder for a milder pot, and add a squeeze of lemon at the end. A pack of ground beef is more than this pot needs: freeze the rest flat in pot-sized bags, then thaw one in the fridge and cook it within 2 days."
+  },
+  {
+   "id": "everyday-classics-lemon-dill-salmon-potatoes-green-beans",
+   "name": "Lemon dill salmon with roasted potatoes and green beans",
+   "inspiredBy": "Inspired by a classic baked salmon dinner",
+   "about": "Salmon baked with a Dijon, lemon and dill topping, beside crisp roasted baby potatoes and carrots with garlicky green beans. The salmon is a **rich source of omega-3 and vitamin D**, and it is on the table in about 45 minutes.",
+   "ingredients": [
+    {
+     "food": "salmon-atlantic-farmed-raw-914b10",
+     "g": 150,
+     "swap": "fatty_fish",
+     "note": "skin on or off"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 125,
+     "swap": "low_gi_grains",
+     "note": "scrubbed, cut in bite-size chunks"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 80,
+     "note": "cut in chunks"
+    },
+    {
+     "food": "green-beans-raw-29678a",
+     "g": 130,
+     "swap": "leafy_greens",
+     "note": "washed, trimmed"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 8
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 15,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "dill-raw-b97f95",
+     "g": 4,
+     "note": "chopped"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.8
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 °C (425 °F). Wash the potatoes, carrots, green beans and dill, then cut the potatoes and carrots into bite-size chunks.",
+    "Toss the potatoes and carrots on a large tray with half the oil and half the salt. Roast for 15 minutes.",
+    "Mix the Dijon, half the lemon juice, the dill and the pepper. Pat the salmon dry and spread the mixture over the top. Wash your hands and the board after handling the raw fish.",
+    "Push the vegetables to one side, add the green beans tossed with the rest of the oil, the garlic and the rest of the salt, and nestle in the salmon. Roast for 12 to 14 minutes, until the salmon flakes easily and reaches 70 °C (158 °F).",
+    "Squeeze the rest of the lemon over everything and serve."
+   ],
+   "prepMin": 15,
+   "cookMin": 30,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ]
+  },
+  {
+   "id": "everyday-classics-mustard-roast-chicken-sweet-potato-carrots",
+   "name": "Mustard roast chicken with sweet potato and carrots",
+   "inspiredBy": "Inspired by a Sunday roast chicken",
+   "about": "Chicken thighs roasted on one tray with sweet potato, carrots and broccoli, with Dijon, rosemary and garlic. The sweet potato and carrot bring **vitamin A and fibre**, and it makes two portions for Sunday's lunch.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-boneless-skinless-raw-722c98",
+     "g": 165,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "sweet-potato-raw-15f948",
+     "g": 170,
+     "swap": "low_gi_grains",
+     "note": "scrubbed, cut in chunks"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 110,
+     "note": "cut in chunks"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 110,
+     "note": "cut in florets"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 50,
+     "note": "in wedges"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "smashed"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 10
+    },
+    {
+     "food": "rosemary-e0b942",
+     "g": 1
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 15,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.9
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 °C (425 °F). Wash the sweet potato, carrots, broccoli and onion, then cut them into even chunks.",
+    "Toss the sweet potato, carrot, onion and garlic on a large tray with half the oil and half the salt. Roast for 15 minutes.",
+    "Meanwhile, mix the Dijon, rosemary, the rest of the oil and the rest of the salt, and rub it over the chicken. Wash your hands and the board after handling the raw chicken.",
+    "Push the vegetables aside, add the chicken, and roast for 10 minutes, then add the broccoli and roast 15 to 20 minutes more, until the chicken reaches 74 °C (165 °F) and the edges of the vegetables are browned.",
+    "Squeeze the lemon over the tray and toss the juices through.",
+    "Pack the second portion into a shallow container within 2 hours and refrigerate. Eat it within 3 days, reheated once until steaming hot, 74 °C (165 °F)."
+   ],
+   "prepMin": 20,
+   "cookMin": 50,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "makes-leftovers",
+    "weekend-project"
+   ],
+   "tip": "Eat the second portion cold from the fridge on Sunday, or reheat it once until steaming hot, 74 °C (165 °F)."
+  },
+  {
+   "id": "everyday-classics-baked-trout-white-beans-tomatoes",
+   "name": "Herby baked trout with white beans and tomatoes",
+   "inspiredBy": "Inspired by a Tuscan white-bean and fish supper",
+   "about": "Trout fillet baked with lemon and parsley over a warm skillet of white beans, tomatoes and spinach. The trout brings **omega-3 and vitamin D**, and the beans add fibre and iron to a light Sunday supper.",
+   "ingredients": [
+    {
+     "food": "trout-raw-f3ae43",
+     "g": 180,
+     "swap": "fatty_fish"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 100,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 100,
+     "note": "cut in wedges"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 80,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 20,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 6,
+     "note": "chopped"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.8
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200 °C (400 °F). Wash the tomatoes, spinach and parsley. Cut the tomatoes into wedges and chop the parsley.",
+    "Pat the trout dry and rub it with a little of the oil, half the lemon juice, half the parsley, half the salt and the pepper. Wash your hands and the board after handling the raw fish. Bake on a lined tray for 12 to 15 minutes, until it flakes easily and reaches 70 °C (158 °F).",
+    "Meanwhile, warm the rest of the oil in a skillet over medium heat. Cook the garlic for 30 seconds, then add the tomatoes and cook until they burst, about 4 minutes.",
+    "Add the beans and the rest of the salt and heat through for 3 minutes. Stir in the spinach until wilted, then add the rest of the lemon juice.",
+    "Spoon the beans onto a plate, lay the trout on top and finish with the rest of the parsley."
+   ],
+   "prepMin": 12,
+   "cookMin": 25,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ]
+  },
+  {
+   "id": "everyday-classics-apple-almonds",
+   "name": "Apple with almonds",
+   "about": "A crisp apple with a small handful of almonds. The almonds bring **vitamin E and healthy fats**.",
+   "ingredients": [
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 160,
+     "swap": "vit_c_fruit",
+     "note": "washed, sliced"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 22,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the apple and slice it. Serve with the almonds."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "everyday-classics-banana-walnuts",
+   "name": "Banana with walnuts and cinnamon",
+   "about": "A banana sliced over a handful of walnuts with a dash of cinnamon. It gives you **potassium and plant omega-3**.",
+   "ingredients": [
+    {
+     "food": "banana-raw-61b750",
+     "g": 110,
+     "swap": "vit_c_fruit",
+     "note": "sliced"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 16,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Slice the banana into a bowl, scatter over the walnuts and dust with the cinnamon."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "everyday-classics-orange-sunflower-seeds",
+   "name": "Orange with sunflower seeds",
+   "about": "A juicy orange with a spoonful of sunflower seeds. The seeds bring **vitamin E and magnesium**, and the orange adds vitamin C.",
+   "ingredients": [
+    {
+     "food": "orange-raw-ce787f",
+     "g": 150,
+     "swap": "vit_c_fruit",
+     "note": "washed, cut in wedges"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 18,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the orange and cut it into wedges. Serve with the sunflower seeds."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "everyday-classics-yogurt-walnut-cinnamon",
+   "name": "Yogurt with walnuts and cinnamon",
+   "about": "Thick Greek yogurt with walnuts and a shake of cinnamon. A quick snack of **protein and omega-3**.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 130,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Spoon the yogurt into a bowl. Top with the walnuts and cinnamon."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "everyday-classics-roasted-chickpeas",
+   "name": "Smoky roasted chickpeas",
+   "about": "Crunchy oven-roasted chickpeas with smoked paprika and garlic powder. A snack with **fibre, iron and plant protein**.",
+   "ingredients": [
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 65,
+     "swap": "legumes",
+     "note": "rinsed, drained and patted very dry"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 3,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1
+    },
+    {
+     "food": "garlic-powder-e81d9c",
+     "g": 0.5
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200 °C (400 °F). Pat the chickpeas very dry with a clean towel.",
+    "Toss them on a tray with the oil, paprika, garlic powder and salt. Roast, shaking the tray halfway, until crisp and golden, 25 to 30 minutes.",
+    "Cool on the tray for 10 minutes so they crisp up. Keep leftovers in an open container at room temperature and eat within 2 days."
+   ],
+   "prepMin": 3,
+   "cookMin": 28,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Roast a double tray and keep the rest in an open jar for up to 2 days."
+  },
+  {
+   "id": "everyday-classics-blueberries-walnuts",
+   "name": "Blueberries with walnuts",
+   "about": "A bowl of fresh blueberries with a handful of walnuts. A snack of **antioxidant-rich berries and plant omega-3**.",
+   "ingredients": [
+    {
+     "food": "blueberry-raw-e94073",
+     "g": 120,
+     "swap": "berries",
+     "note": "washed"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 16,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    }
+   ],
+   "steps": [
+    "Wash the blueberries. Serve in a bowl with the walnuts scattered over."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "everyday-classics-berry-yogurt-almonds",
+   "name": "Blueberry yogurt with almonds",
+   "about": "Thick Greek yogurt with blueberries and chopped almonds. A snack with **protein, calcium and vitamin E**.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 150,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "blueberry-raw-e94073",
+     "g": 80,
+     "swap": "berries",
+     "note": "washed"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 15,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    }
+   ],
+   "steps": [
+    "Wash the blueberries. Spoon the yogurt into a bowl and top with the blueberries and almonds."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "everyday-classics-lemon-edamame",
+   "name": "Warm edamame with lemon and chili",
+   "inspiredBy": "Inspired by Japanese izakaya edamame",
+   "about": "Shelled edamame steamed until tender, with lemon, a pinch of salt and chili flakes. A snack with **plant protein, folate and choline**.",
+   "ingredients": [
+    {
+     "food": "edamame-immature-soy-bean-shelled-frozen-9c2350",
+     "g": 140,
+     "swap": "legumes",
+     "note": "shelled, frozen"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 6,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "chili-powder-f1ace8",
+     "g": 0.4
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Cook the edamame in boiling water until tender and hot, about 4 minutes, then drain well.",
+    "Toss with the lemon juice, chili and salt and eat warm."
+   ],
+   "prepMin": 1,
+   "cookMin": 5,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "everyday-classics-salmon-cucumber-rye-toast",
+   "name": "Canned salmon on rye toast with cucumber",
+   "about": "Flaked canned salmon on rye toast with cucumber, lemon and black pepper. A quick snack that brings **omega-3, protein and choline**, and the soft bones add calcium.",
+   "ingredients": [
+    {
+     "food": "salmon-canned-drained-9cea4e",
+     "g": 105,
+     "swap": "fatty_fish",
+     "note": "bones mashed in"
+    },
+    {
+     "food": "rye-bread-bdc47e",
+     "g": 35,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 60,
+     "note": "sliced"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 5,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the cucumber and slice it. Toast the rye.",
+    "Mash the salmon with the lemon juice and pepper, pile it on the toast and top with the cucumber. Eat it the same day, and refrigerate the rest of an opened can in a covered container to use within 2 days."
+   ],
+   "prepMin": 4,
+   "cookMin": 2,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "everyday-classics-salmon-tomato-toast",
+   "name": "Canned salmon and tomato on whole-wheat toast",
+   "about": "Flaked canned salmon on whole-wheat toast with sliced tomato, lemon and black pepper. A quick snack that brings **omega-3, protein and choline**.",
+   "ingredients": [
+    {
+     "food": "salmon-canned-drained-9cea4e",
+     "g": 60,
+     "swap": "fatty_fish",
+     "note": "bones mashed in"
+    },
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 30,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 80,
+     "note": "sliced"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 5,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the tomato and slice it. Toast the bread.",
+    "Mash the salmon with the lemon juice and pepper, pile it on the toast and top with the tomato. Eat it the same day, and refrigerate the rest of an opened can in a covered container to use within 2 days."
+   ],
+   "prepMin": 4,
+   "cookMin": 2,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "everyday-classics-egg-tomato-rye-toast",
+   "name": "Hard-boiled egg with tomato on rye toast",
+   "about": "A firm hard-boiled egg sliced over rye toast with juicy tomato and pepper. It brings **protein and choline** in a few minutes.",
+   "ingredients": [
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "swap": "lean_protein",
+     "note": "boiled in the shell"
+    },
+    {
+     "food": "rye-bread-bdc47e",
+     "g": 35,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 70,
+     "note": "sliced"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Lower the egg into boiling water and cook for 12 minutes, until the yolk is completely firm. Cool it in cold water, then peel.",
+    "Wash the tomato and slice it. Toast the rye, top with the tomato and the sliced egg, and season with the salt and pepper."
+   ],
+   "prepMin": 4,
+   "cookMin": 12,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ]
+  }
+ ],
+ "week": [
+  {
+   "day": 1,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "everyday-classics-eggs-tomato-spinach-toast"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "everyday-classics-salmon-salad-rye-sandwich"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "everyday-classics-hearty-bean-vegetable-soup-rye"
+    },
+    {
+     "slot": "snack",
+     "recipe": "everyday-classics-apple-almonds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "everyday-classics-banana-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "everyday-classics-eggs-tomato-spinach-toast"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "everyday-classics-hearty-bean-vegetable-soup-rye",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "everyday-classics-lemon-herb-chicken-broccoli-brown-rice"
+    },
+    {
+     "slot": "snack",
+     "recipe": "everyday-classics-salmon-tomato-toast"
+    },
+    {
+     "slot": "snack",
+     "recipe": "everyday-classics-lemon-edamame"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "everyday-classics-apple-cinnamon-oatmeal"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "everyday-classics-lemon-herb-chicken-broccoli-brown-rice",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "everyday-classics-whole-wheat-spaghetti-lentil-tomato-sauce"
+    },
+    {
+     "slot": "snack",
+     "recipe": "everyday-classics-salmon-tomato-toast"
+    },
+    {
+     "slot": "snack",
+     "recipe": "everyday-classics-roasted-chickpeas"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "everyday-classics-apple-cinnamon-oatmeal"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "everyday-classics-whole-wheat-spaghetti-lentil-tomato-sauce",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "everyday-classics-beef-bean-chili"
+    },
+    {
+     "slot": "snack",
+     "recipe": "everyday-classics-salmon-cucumber-rye-toast"
+    },
+    {
+     "slot": "snack",
+     "recipe": "everyday-classics-orange-sunflower-seeds"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "everyday-classics-eggs-tomato-spinach-toast"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "everyday-classics-beef-bean-chili",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "everyday-classics-lemon-dill-salmon-potatoes-green-beans"
+    },
+    {
+     "slot": "snack",
+     "recipe": "everyday-classics-apple-almonds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "everyday-classics-yogurt-walnut-cinnamon"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "everyday-classics-eggs-tomato-spinach-toast"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "everyday-classics-chickpea-veg-sandwich"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "everyday-classics-mustard-roast-chicken-sweet-potato-carrots"
+    },
+    {
+     "slot": "snack",
+     "recipe": "everyday-classics-lemon-edamame"
+    },
+    {
+     "slot": "snack",
+     "recipe": "everyday-classics-yogurt-walnut-cinnamon"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "everyday-classics-yogurt-blueberry-banana-crunch"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "everyday-classics-mustard-roast-chicken-sweet-potato-carrots",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "everyday-classics-baked-trout-white-beans-tomatoes"
+    },
+    {
+     "slot": "snack",
+     "recipe": "everyday-classics-salmon-cucumber-rye-toast"
+    },
+    {
+     "slot": "snack",
+     "recipe": "everyday-classics-berry-yogurt-almonds"
+    }
+   ]
+  }
+ ]
+}
