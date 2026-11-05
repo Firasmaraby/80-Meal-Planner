@@ -1,0 +1,1788 @@
+{
+ "id": "one-pot",
+ "name": "One-Pot Week",
+ "style": "balanced",
+ "cuisine": "Global",
+ "carbStyle": "whole",
+ "regions": [
+  "India",
+  "Iran",
+  "West Africa",
+  "Greece",
+  "Italy",
+  "Israel",
+  "Scandinavia"
+ ],
+ "summary": "Dinner in one pot or pan, with little washing up: a chicken and lentil pot, coconut salmon curry, a chicken and peanut stew, a Persian-style beef and kidney bean herb pot, a sardine and tomato pot, mushroom barley and a one-pan trout. Shakshuka with chickpeas is a lunch, and the carbs are all whole foods.",
+ "howItWorks": "**One pot, little washing up.** Every dinner is cooked in a single pot or pan in about 40 minutes or less on weekdays, with a slower barley risotto on Saturday. The carbs are all whole foods: potatoes, sweet potatoes, millet, barley, oats and beans.\n\n**Cook once, eat twice.** Monday's chicken and lentil pot, Wednesday's chicken and peanut stew, Thursday's beef and kidney bean herb pot and Saturday's barley risotto each make two portions, so the next lunch is done. Reheat them once to 74 °C and add the yogurt cold. Wash all fruit and vegetables before cutting, lemons too.\n\n**Fish three times.** Sockeye salmon curry on Tuesday, a sardine and tomato pot on Friday and trout on Sunday bring omega-3 and some **vitamin D**. They are cooked fresh, never a leftover. Saturday's shakshuka stays under the lid until the yolks are completely firm.\n\n**Light.** It covers 1400 to 1800 kcal. It drops one snack on Monday, Wednesday, Thursday and Sunday and both on Tuesday and Friday, and keeps both on Saturday. At 1400 it trims mostly the grains, beans, potatoes, oils and nuts, cuts the chicken by about half or more and the beef a little, and keeps the fish, fruit and other vegetables as written.\n\n**Big.** It keeps both snacks, adds a third on Monday, Tuesday and Friday, and grows the chicken, beef, fish, eggs, grains, beans, yogurt, potato and nuts. Vegetables and fruit stay as written, so use a bigger pot for the two-portion dishes.",
+ "signature": [
+  "one-pot-chicken-lentil-broccoli-pot",
+  "one-pot-coconut-salmon-sweet-potato-curry",
+  "one-pot-chickpea-shakshuka",
+  "one-pot-beef-kidney-bean-herb-pot"
+ ],
+ "lifeStage": "none",
+ "sizes": {
+  "light": {
+   "kcal": 1500,
+   "covers": [
+    "1400-1600",
+    "1600-1800"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 2,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 2,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 3,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 4,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 5,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 5,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 7,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    }
+   ]
+  },
+  "standard": {
+   "kcal": 2100,
+   "covers": [
+    "1800-2000",
+    "2000-2200",
+    "2200-2400"
+   ]
+  },
+  "big": {
+   "kcal": 3000,
+   "covers": [
+    "2400-2800",
+    "2800-3200"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "add": {
+      "slot": "snack",
+      "recipe": "one-pot-pear-pumpkin-seeds"
+     }
+    },
+    {
+     "day": 2,
+     "add": {
+      "slot": "snack",
+      "recipe": "one-pot-orange-walnuts"
+     }
+    },
+    {
+     "day": 5,
+     "add": {
+      "slot": "snack",
+      "recipe": "one-pot-orange-kiwi-cup"
+     }
+    }
+   ]
+  }
+ },
+ "recipes": [
+  {
+   "id": "one-pot-pear-cardamom-oats",
+   "name": "Stovetop pear and cardamom oats with walnuts",
+   "inspiredBy": "Inspired by a pear crumble",
+   "about": "Rolled oats simmered in milk in one small pot with grated pear and a little cardamom, then topped with toasted walnuts. It tastes like a pear crumble and brings **fibre and a steady start** to the morning.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 55,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "milk-nonfat-37ddd7",
+     "g": 250,
+     "swap": "dairy_protein",
+     "note": "or any milk you like"
+    },
+    {
+     "food": "pear-raw-with-skin-7d77aa",
+     "g": 130,
+     "note": "washed and coarsely grated, skin on"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 11,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "cardamom-ground-ac233b",
+     "g": 0.8
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the pear. Grate it, skin and all, into a small pot and add the oats, milk, cardamom and salt.",
+    "Bring to a gentle simmer over medium heat, stirring often, and cook for 5 to 6 minutes, until thick and creamy.",
+    "Spoon into a bowl and scatter the walnuts over the top just before eating so they stay crisp."
+   ],
+   "prepMin": 4,
+   "cookMin": 7,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ],
+   "tip": "Stir in a spoonful of yogurt at the end for extra creaminess."
+  },
+  {
+   "id": "one-pot-orange-yogurt-oat-crunch",
+   "name": "Orange and cardamom yogurt bowl with toasted oat crunch",
+   "about": "Thick Greek yogurt under juicy orange segments, with a pinch of cardamom and oats and walnuts toasted in a dry pan for crunch. The orange brings **vitamin C**, and the yogurt brings protein and calcium.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 135,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "orange-raw-ce787f",
+     "g": 170,
+     "swap": "vit_c_fruit",
+     "note": "peeled, in segments"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 20,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 10,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 9,
+     "swap": "nuts_seeds",
+     "note": "unsalted"
+    },
+    {
+     "food": "cardamom-ground-ac233b",
+     "g": 0.6
+    }
+   ],
+   "steps": [
+    "Toast the oats, walnuts and sunflower seeds in a dry pan over medium heat for 3 to 4 minutes, shaking often, until they smell nutty. Tip onto a plate to cool.",
+    "Stir the cardamom into the yogurt and spoon it into a bowl.",
+    "Wash and peel the orange, cut it into segments and lay them on top, then scatter the oat crunch over just before eating."
+   ],
+   "prepMin": 6,
+   "cookMin": 4,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ],
+   "tip": "Toast a double batch of the crunch and keep it in a jar for a few days."
+  },
+  {
+   "id": "one-pot-chickpea-spinach-scramble",
+   "name": "Spiced chickpea and spinach scramble",
+   "inspiredBy": "Inspired by Indian egg bhurji",
+   "about": "Eggs scrambled until completely firm with chickpeas, red pepper, spinach and a little cumin, like an Indian egg bhurji. The eggs and chickpeas bring **protein, fibre and choline**, and the red pepper adds vitamin C.",
+   "ingredients": [
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 100,
+     "swap": "lean_protein",
+     "note": "beaten"
+    },
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 55,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 70,
+     "note": "diced"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 40,
+     "note": "finely diced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 30,
+     "swap": "leafy_greens",
+     "note": "chopped"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 5,
+     "note": "chopped"
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 4,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1.2
+    },
+    {
+     "food": "paprika-59bfc4",
+     "g": 1
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.3
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the pepper, spinach and cilantro before cutting. Warm the oil in a small non-stick pan and cook the onion and pepper with the cumin and paprika for 4 minutes, until soft.",
+    "Stir in the chickpeas and spinach and heat through for 1 minute, until the spinach wilts.",
+    "Pour in the beaten eggs with the salt and pepper. Stir gently over medium heat for 3 to 4 minutes, until the eggs are completely set and firm, with no liquid left.",
+    "Scatter the cilantro on top and serve hot."
+   ],
+   "prepMin": 8,
+   "cookMin": 9,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Add a pinch of chili flakes if you like heat."
+  },
+  {
+   "id": "one-pot-tuna-edamame-barley-salad",
+   "name": "Tuna, edamame and barley salad with lemon and dill",
+   "inspiredBy": "Inspired by a Nordic grain and fish salad",
+   "about": "A hearty lunch of flaked light tuna, edamame and chewy pearl barley with broccoli, sweet red pepper and tender kale in a lemon and dill dressing. It carries **protein, fibre and folate**, and travels well in a lunchbox.",
+   "ingredients": [
+    {
+     "food": "barley-pearled-dry-4b1ebc",
+     "g": 45,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+     "g": 100,
+     "swap": "lean_protein",
+     "note": "from a tin"
+    },
+    {
+     "food": "edamame-green-soybeans-frozen-edcd2b",
+     "g": 90,
+     "swap": "legumes",
+     "note": "frozen"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 110,
+     "note": "in small florets"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 40,
+     "swap": "leafy_greens",
+     "note": "baby kale or finely shredded kale"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 15,
+     "note": "very finely diced"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 7,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 22
+    },
+    {
+     "food": "dill-raw-b97f95",
+     "g": 8,
+     "note": "chopped"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the broccoli, pepper, kale and dill. Simmer the barley in plenty of water for 25 minutes, adding the broccoli and the frozen edamame for the last 4 minutes, until the edamame is steaming hot. Drain well and spread in a shallow dish to cool within 1 hour.",
+    "Dice the pepper and onion, chop the dill, and shred the kale finely.",
+    "Whisk the olive oil, lemon juice, salt and pepper in a bowl. Toss in the onion, pepper, dill and the cooled barley, broccoli and edamame.",
+    "Fold in the drained, flaked tuna, then lay the kale over the top. If you are packing it, use a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 12,
+   "cookMin": 26,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Cook extra barley on Sunday, spread it in a shallow dish and refrigerate it within 1 hour, and the salad takes five minutes. Keep an opened tin of tuna covered in the fridge and use it within 2 days."
+  },
+  {
+   "id": "one-pot-beef-pepper-millet-pan",
+   "name": "One-pan beef, pepper and millet with oregano",
+   "inspiredBy": "Inspired by stuffed peppers and Greek-style pilaf",
+   "about": "Lean ground beef, red pepper and millet cooked together in one pan with tomato, oregano and lemon, finished with a little Parmesan, like a stuffed pepper without the fuss. The beef brings **iron, zinc and B12**, and the millet cooks right in the tomatoey broth.",
+   "ingredients": [
+    {
+     "food": "ground-beef-93-lean-raw-8d6017",
+     "g": 135,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "foxtail-millet-polished-grain-raw-0dfe59",
+     "g": 50,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 100,
+     "note": "diced"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 50,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 110
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 160
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 12
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 8,
+     "note": "chopped"
+    },
+    {
+     "food": "parmesan-cheese-hard-78ce3e",
+     "g": 8,
+     "note": "finely grated"
+    },
+    {
+     "food": "oregano-ground-ec4216",
+     "g": 1.5
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the pepper, spinach and cilantro. Warm the oil in a wide pan over medium heat and soften the onion for 4 minutes, then stir in the garlic and oregano for 30 seconds.",
+    "Add the beef and break it up with a spoon. Cook for 5 to 6 minutes, until browned and no pink remains. Wash your hands, the board and the knife after handling the raw beef.",
+    "Rinse the millet and stir it in with the pepper, crushed tomatoes, broth, salt and pepper. Cover and simmer over medium-low heat for 14 to 16 minutes, until the millet is tender and the liquid is absorbed. The beef should read 71 °C (160 °F).",
+    "Stir in the spinach until it wilts, then the lemon juice, and top with the cilantro and the Parmesan."
+   ],
+   "prepMin": 12,
+   "cookMin": 27,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Add a squeeze more lemon at the table."
+  },
+  {
+   "id": "one-pot-chickpea-shakshuka",
+   "name": "Chickpea shakshuka with spinach",
+   "inspiredBy": "Inspired by North African and Israeli shakshuka",
+   "about": "Eggs poached in a spiced tomato and pepper sauce thickened with chickpeas, with the lid on until the yolks are completely firm. The chickpeas and spinach bring **fibre, folate and iron**, and the tomato adds vitamin C to help absorb it.",
+   "ingredients": [
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 80,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 200
+    },
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 110,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 40,
+     "swap": "leafy_greens"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 100,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 8,
+     "note": "chopped"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 2
+    },
+    {
+     "food": "paprika-59bfc4",
+     "g": 2
+    },
+    {
+     "food": "cayenne-pepper-a95c95",
+     "g": 0.3
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.5
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the pepper, spinach and cilantro. Warm the oil in a deep skillet over medium heat and cook the onion and pepper for 6 to 7 minutes, until soft.",
+    "Stir in the garlic, cumin, paprika and cayenne for 30 seconds, until fragrant.",
+    "Add the crushed tomatoes, chickpeas, salt and pepper. Simmer for 8 minutes, until thick, then fold in the spinach until it wilts.",
+    "Make two wells in the sauce and crack in the eggs. Cover with the lid and cook over low heat for 10 to 12 minutes, until the whites are opaque and the yolks are completely firm, with no wobble. Do not serve it until they are.",
+    "Scatter the cilantro over the top and serve straight from the pan."
+   ],
+   "prepMin": 12,
+   "cookMin": 30,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Add a pinch of chili flakes at the table if you like it hotter. Eat it fresh, because it is not one to keep."
+  },
+  {
+   "id": "one-pot-chicken-lentil-broccoli-pot",
+   "name": "Chicken, lentil and greens pot with lemon",
+   "inspiredBy": "Inspired by Greek lentil soup and lemony chicken soups",
+   "about": "Chicken thigh, lentils and potato simmered with oregano, bay and tomato, then broccoli, kale and plenty of lemon stirred through at the end. Cooked in one pot, it makes two portions, and the lentils and greens bring **iron, folate and fibre**.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-boneless-skinless-raw-722c98",
+     "g": 225,
+     "swap": "lean_protein",
+     "note": "trimmed, in bite-sized pieces"
+    },
+    {
+     "food": "lentils-canned-no-salt-added-drained-c1edbd",
+     "g": 85,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 90,
+     "note": "scrubbed, in small dice"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 70,
+     "note": "diced"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 60,
+     "note": "cut in small florets"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "stems removed, torn"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 60
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 50,
+     "swap": "dairy_protein",
+     "note": "to swirl in at the table"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 300
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 15
+    },
+    {
+     "food": "oregano-ground-ec4216",
+     "g": 1.5
+    },
+    {
+     "food": "bay-leaf-513612",
+     "g": 0.3,
+     "note": "1 leaf for the pot"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the carrot, potato, broccoli and kale. Warm the oil in a large pot over medium heat and soften the onion and carrot for 6 minutes.",
+    "Stir in the garlic, oregano and crushed tomatoes for 1 minute. Add the chicken and turn it for 3 minutes. Wash your hands, the board and the knife after handling the raw chicken.",
+    "Add the rinsed lentils, potato, broth, bay leaf, salt and pepper. Bring to a boil, then cover and simmer gently for 12 minutes.",
+    "Stir in the broccoli and kale and simmer 5 to 6 minutes more, until the potato and greens are tender and the chicken reaches 74 °C (165 °F). Lift out the bay leaf, add the lemon juice and taste for salt. Swirl the yogurt over each bowl.",
+    "Eat one portion now. Cool the other in a shallow container within 2 hours, refrigerate it, and reheat it once until steaming hot, 74 °C (165 °F), for tomorrow's lunch, and add the yogurt cold."
+   ],
+   "prepMin": 12,
+   "cookMin": 28,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "makes-leftovers",
+    "freezer-friendly"
+   ],
+   "tip": "To freeze it, cool it within 2 hours and freeze up to 2 months. Thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+  },
+  {
+   "id": "one-pot-coconut-salmon-sweet-potato-curry",
+   "name": "Coconut salmon and sweet potato curry",
+   "inspiredBy": "Inspired by Kerala coconut fish curries",
+   "about": "Wild sockeye salmon nestled into a gently spiced coconut and tomato curry with sweet potato, broccoli and kale, finished with lemon, cilantro and a swirl of yogurt. The salmon brings **omega-3 and vitamin D**, and the sweet potato brings vitamin A.",
+   "ingredients": [
+    {
+     "food": "salmon-sockeye-red-raw-728ce6",
+     "g": 150,
+     "swap": "fatty_fish",
+     "note": "wild sockeye, skinless, in large chunks; thaw frozen fillets in the fridge"
+    },
+    {
+     "food": "sweet-potato-raw-15f948",
+     "g": 110,
+     "note": "peeled, in chunks"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 110,
+     "note": "in small florets"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "stems removed, torn"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 40,
+     "swap": "dairy_protein",
+     "note": "to swirl in at the table"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 50,
+     "note": "sliced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "ginger-root-raw-da2481",
+     "g": 6
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 90
+    },
+    {
+     "food": "coconut-milk-reduced-fat-93cbb3",
+     "g": 40
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 165
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 4,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 15
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 8,
+     "note": "chopped"
+    },
+    {
+     "food": "turmeric-ground-32f550",
+     "g": 1
+    },
+    {
+     "food": "coriander-seed-a0cdb1",
+     "g": 2
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1.5
+    },
+    {
+     "food": "chili-powder-f1ace8",
+     "g": 1
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    }
+   ],
+   "steps": [
+    "Wash the sweet potato, broccoli, kale, ginger and cilantro. Warm the oil in a deep skillet over medium heat and soften the onion for 5 minutes. Stir in the garlic, ginger, turmeric, coriander, cumin and chili powder for 1 minute.",
+    "Add the crushed tomatoes, coconut milk, broth, salt and sweet potato. Cover and simmer for 12 minutes, until the sweet potato is almost tender.",
+    "Add the broccoli and kale and simmer 4 minutes more, until just tender.",
+    "Nestle the salmon in the sauce, cover and cook gently for 6 to 8 minutes, until it flakes and reaches 70 °C (158 °F). Wash your hands and the board after handling the raw fish.",
+    "Finish with the lemon juice and cilantro and swirl a spoonful of yogurt over each bowl. Eat it fresh, and refrigerate any extra within 2 hours."
+   ],
+   "prepMin": 10,
+   "cookMin": 30,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Trout or arctic char work too. Serve with a lemon wedge."
+  },
+  {
+   "id": "one-pot-peanut-chickpea-sweet-potato-stew",
+   "name": "Chicken, peanut and sweet potato stew with chickpeas",
+   "inspiredBy": "Inspired by West African maafe",
+   "about": "A thick, savoury West African-style stew of chicken thigh, chickpeas, edamame, sweet potato, broccoli and kale in a ginger and tomato sauce enriched with peanut butter. It makes two portions, and the chicken, chickpeas and edamame bring **protein, fibre and folate**.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-boneless-skinless-raw-722c98",
+     "g": 250,
+     "swap": "lean_protein",
+     "note": "trimmed, in bite-sized pieces"
+    },
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 30,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "edamame-green-soybeans-frozen-edcd2b",
+     "g": 110,
+     "swap": "legumes"
+    },
+    {
+     "food": "sweet-potato-raw-15f948",
+     "g": 60,
+     "note": "peeled, in small dice"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 70,
+     "note": "cut in small florets"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "stems removed, torn"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "ginger-root-raw-da2481",
+     "g": 6
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 110
+    },
+    {
+     "food": "peanut-butter-smooth-51208a",
+     "g": 18,
+     "swap": "nuts_seeds",
+     "note": "unsweetened"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 260
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 12
+    },
+    {
+     "food": "chili-powder-f1ace8",
+     "g": 1
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Wash the sweet potato, broccoli, kale and ginger. Warm the oil in a large pot over medium heat and soften the onion for 5 minutes. Stir in the garlic, ginger and chili powder for 1 minute.",
+    "Add the chicken and turn it for 3 minutes. Wash your hands, the board and the knife after handling the raw chicken.",
+    "Add the crushed tomatoes, broth, sweet potato, chickpeas and salt. Bring to a boil, cover and simmer for 12 minutes.",
+    "Whisk the peanut butter with a ladle of the hot broth until smooth, then stir it into the pot with the broccoli, kale and the frozen edamame. Simmer, uncovered, for 8 to 10 minutes, until the sweet potato is tender, the edamame is steaming hot and the chicken reaches 74 °C (165 °F).",
+    "Stir in the lemon juice.",
+    "Eat one portion now. Cool the other in a shallow container within 2 hours, refrigerate it, and reheat it once until steaming hot, 74 °C (165 °F), within 3 days."
+   ],
+   "prepMin": 10,
+   "cookMin": 30,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "makes-leftovers",
+    "freezer-friendly"
+   ],
+   "tip": "Add a pinch of cayenne with the garlic for heat. To freeze it, cool within 2 hours and freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+  },
+  {
+   "id": "one-pot-beef-kidney-bean-herb-pot",
+   "name": "Beef and kidney bean herb pot with dried lime",
+   "inspiredBy": "Inspired by Persian ghormeh sabzi, made quick with ground beef",
+   "about": "Lean ground beef and kidney beans simmered with a big handful of spinach, cilantro and dill that is fried first until dark and fragrant, then soured with dried lime and lemon, a weeknight take on the Persian herb stew. It makes two portions, the beef brings **iron and zinc**, and the lemon helps you absorb the iron from the beans and spinach.",
+   "ingredients": [
+    {
+     "food": "ground-beef-93-lean-raw-8d6017",
+     "g": 160,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "kidney-beans-canned-no-salt-added-drained-89a75f",
+     "g": 110,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 60,
+     "swap": "leafy_greens"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 80,
+     "note": "finely diced"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 300
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 7,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 20
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 15,
+     "note": "chopped"
+    },
+    {
+     "food": "dill-raw-b97f95",
+     "g": 10,
+     "note": "chopped"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 30,
+     "swap": "dairy_protein",
+     "note": "on the side"
+    },
+    {
+     "food": "turmeric-ground-32f550",
+     "g": 1.5
+    },
+    {
+     "food": "kasuri-methi-dried-fenugreek-leaves-6f4317",
+     "g": 1.5
+    },
+    {
+     "food": "loomi-dried-black-lime-8b452f",
+     "g": 3,
+     "note": "1 dried lime for the pot, pierced with a fork"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the carrot, spinach, cilantro and dill, and chop the greens and herbs finely. Warm the oil in a large, deep pot over medium heat and cook the onion and carrot for 6 minutes, until soft. Stir in the garlic and turmeric for 1 minute.",
+    "Add the beef and break it up. Cook for 5 minutes, until browned and no pink remains. Wash your hands, the board and the knife after handling the raw beef.",
+    "Add the chopped spinach, cilantro, dill and the dried fenugreek leaves and fry, stirring, for 4 minutes, until the greens darken and smell rich.",
+    "Add the rinsed kidney beans, broth, pierced dried lime, salt and pepper. Cover and simmer for 15 minutes, pressing the lime against the pot once, until the sauce is dark green and the beef reaches 71 °C (160 °F). Lift out the lime and stir in the lemon juice.",
+    "Serve with the yogurt on the side. Eat one portion now. Cool the other in a shallow container and refrigerate it within 2 hours, then reheat it once to 74 °C (165 °F) within 3 days. To freeze it instead, freeze it once cold, thaw it in the fridge, eat it within 2 days and never refreeze it."
+   ],
+   "prepMin": 10,
+   "cookMin": 32,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "makes-leftovers",
+    "freezer-friendly"
+   ],
+   "tip": "No dried lime? Skip it and add an extra squeeze of lemon at the end."
+  },
+  {
+   "id": "one-pot-sardine-tomato-millet-broccoli-pot",
+   "name": "Smoky sardine, tomato and millet pot with broccoli",
+   "inspiredBy": "Inspired by Portuguese and Spanish tomato rice pots",
+   "about": "Millet simmered in a smoky tomato base with broccoli and kale, topped with flaked canned sardines and lemon. It is a fast pantry dinner, and the sardines bring **omega-3, calcium and vitamin D**.",
+   "ingredients": [
+    {
+     "food": "foxtail-millet-polished-grain-raw-0dfe59",
+     "g": 50,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+     "g": 100,
+     "swap": "fatty_fish",
+     "note": "from a tin"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 100,
+     "note": "in small florets"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 70,
+     "note": "coarsely grated"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 160
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 180
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 18
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 8,
+     "note": "chopped"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 2
+    },
+    {
+     "food": "chili-powder-f1ace8",
+     "g": 0.5
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the broccoli, carrot and cilantro. Rinse the millet well and drain it.",
+    "Warm the oil in a pot and soften the onion and carrot for 5 minutes. Stir in the garlic, smoked paprika and chili powder for 30 seconds.",
+    "Add the crushed tomatoes, broth, pepper and millet. Cover and simmer for 15 minutes, stirring once or twice.",
+    "Stir in the broccoli, cover and cook 5 minutes more, until the broccoli is tender and the millet has absorbed most of the liquid.",
+    "Flake the sardines over the top with the lemon juice and cilantro, and heat for 1 minute. Keep an opened tin covered in the fridge and use it within 2 days."
+   ],
+   "prepMin": 10,
+   "cookMin": 24,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Use the sardines packed in tomato sauce if you like, and then skip some of the crushed tomatoes."
+  },
+  {
+   "id": "one-pot-mushroom-white-bean-barley-pot",
+   "name": "Mushroom, white bean and kale barley risotto",
+   "inspiredBy": "Inspired by Italian mushroom risotto, made with barley",
+   "about": "Pearl barley stirred slowly in broth with browned mushrooms, thyme and white beans, finished with kale, lemon and a little Parmesan. It is creamy without any cream, makes two portions, and the barley and beans bring **fibre**, with mushrooms for B vitamins.",
+   "ingredients": [
+    {
+     "food": "barley-pearled-dry-4b1ebc",
+     "g": 70,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+     "g": 160,
+     "note": "sliced"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 150,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 50,
+     "swap": "dairy_protein",
+     "note": "for the top"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "stems removed, chopped"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 420
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 9,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "parmesan-cheese-hard-78ce3e",
+     "g": 16,
+     "note": "finely grated"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 14
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 1
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the mushrooms and kale before slicing. Warm the oil in a wide pot over medium-high heat and brown the mushrooms for 6 to 7 minutes, until golden. Remove a third and set aside for the top.",
+    "Add the onion and cook for 4 minutes. Stir in the garlic, thyme and barley for 1 minute.",
+    "Pour in the broth, add the salt and pepper, and bring to a boil. Cover and simmer for 30 to 35 minutes, stirring now and then, until the barley is tender and the liquid is mostly absorbed.",
+    "Stir in the white beans and kale for 3 minutes, until the kale wilts and the beans are hot. Add the lemon juice and Parmesan.",
+    "Top with the reserved mushrooms and a spoonful of yogurt. Eat one portion now. Spread the second in a shallow container so it cools within 1 hour, refrigerate it, and reheat it once until steaming hot, 74 °C (165 °F), within 3 days, adding the yogurt cold."
+   ],
+   "prepMin": 12,
+   "cookMin": 47,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "makes-leftovers",
+    "weekend-project"
+   ],
+   "tip": "If it thickens in the fridge, loosen it with a splash of broth or water when you reheat."
+  },
+  {
+   "id": "one-pot-one-pan-trout-lemon-dill-potatoes",
+   "name": "One-pan trout with lemon-dill potatoes and broccoli",
+   "inspiredBy": "Inspired by Scandinavian fish and dill potatoes",
+   "about": "Potato chunks and sliced carrot simmered tender in lemony broth, then topped with broccoli and a trout fillet that steams on top, with a quick dill yogurt sauce. The trout brings **omega-3 and vitamin D**, and the potatoes bring potassium, with vitamin A from the carrot.",
+   "ingredients": [
+    {
+     "food": "rainbow-trout-farmed-raw-0cc800",
+     "g": 160,
+     "swap": "fatty_fish",
+     "note": "skin on or off"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 200,
+     "note": "scrubbed, in bite-sized chunks"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 100,
+     "note": "in small florets"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 60,
+     "note": "sliced thin"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 40,
+     "note": "sliced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "minced"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 150
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 9,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 20,
+     "note": "plus zest if you like"
+    },
+    {
+     "food": "dill-raw-b97f95",
+     "g": 8,
+     "note": "chopped"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 45,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the potatoes, carrot, broccoli and dill. Warm the oil in a large, lidded skillet over medium heat and soften the onion for 3 minutes, then stir in the garlic.",
+    "Add the potatoes, carrot, broth, half the lemon juice, salt and pepper. Cover and simmer for 12 minutes.",
+    "Lay the broccoli over the potatoes and the trout on top. Season the trout lightly, cover and cook for 8 to 10 minutes, until the fish flakes and reaches 70 °C (158 °F) and the potatoes are tender. Wash your hands and the board after handling the raw fish.",
+    "Stir the yogurt with the rest of the lemon juice and half the dill. Spoon it over the fish and scatter on the remaining dill. Refrigerate any extra within 2 hours."
+   ],
+   "prepMin": 12,
+   "cookMin": 25,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Salmon or arctic char work too."
+  },
+  {
+   "id": "one-pot-orange-walnuts",
+   "name": "Orange with walnuts",
+   "about": "A juicy orange with a few walnuts for crunch. It brings **vitamin C** from the orange and plant omega-3 from the walnuts.",
+   "ingredients": [
+    {
+     "food": "orange-raw-ce787f",
+     "g": 180,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "unsalted"
+    }
+   ],
+   "steps": [
+    "Wash the orange before peeling it. Eat it in segments with the walnuts."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "one-pot-carrot-pepper-sticks-peanut-butter",
+   "name": "Carrot and red pepper sticks with peanut butter",
+   "about": "Crunchy sticks to dip in a spoonful of peanut butter. It brings **protein, fibre and vitamin C**, and the carrot adds vitamin A.",
+   "ingredients": [
+    {
+     "food": "carrot-raw-f79846",
+     "g": 90,
+     "note": "cut in sticks"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 70,
+     "note": "cut in sticks"
+    },
+    {
+     "food": "peanut-butter-smooth-51208a",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "unsweetened"
+    }
+   ],
+   "steps": [
+    "Wash the carrot and pepper, cut them into sticks, and serve with the peanut butter for dipping."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "one-pot-pear-pumpkin-seeds",
+   "name": "Pear with pumpkin seeds",
+   "about": "A ripe pear with a small handful of pumpkin seeds. The pear brings **fibre**, and the seeds bring magnesium and zinc.",
+   "ingredients": [
+    {
+     "food": "pear-raw-with-skin-7d77aa",
+     "g": 160
+    },
+    {
+     "food": "pumpkin-seeds-dried-5099f2",
+     "g": 16,
+     "swap": "nuts_seeds",
+     "note": "unsalted"
+    }
+   ],
+   "steps": [
+    "Wash the pear, slice it, and eat it with the seeds."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "one-pot-apple-walnuts",
+   "name": "Apple with walnuts",
+   "about": "A crisp apple with a few walnuts. The apple brings **fibre**, and the walnuts bring plant omega-3 and crunch.",
+   "ingredients": [
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 150
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "unsalted"
+    }
+   ],
+   "steps": [
+    "Wash the apple, slice it, and eat it with the walnuts."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "one-pot-kiwi-sunflower-seeds",
+   "name": "Kiwi with sunflower seeds",
+   "about": "Two kiwi with a spoonful of sunflower seeds. The kiwi brings **vitamin C and fibre**, and the seeds bring vitamin E.",
+   "ingredients": [
+    {
+     "food": "kiwi-fruit-raw-9fc921",
+     "g": 140,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 16,
+     "swap": "nuts_seeds",
+     "note": "unsalted"
+    }
+   ],
+   "steps": [
+    "Wash and peel the kiwi, slice it, and eat it with the seeds."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "one-pot-warm-edamame-lemon",
+   "name": "Warm edamame with lemon and chili",
+   "about": "Steamed edamame tossed with lemon and a pinch of chili. A snack that brings **plant protein and folate**.",
+   "ingredients": [
+    {
+     "food": "edamame-green-soybeans-frozen-edcd2b",
+     "g": 145,
+     "swap": "legumes",
+     "note": "in the pod or shelled"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 6
+    },
+    {
+     "food": "chili-powder-f1ace8",
+     "g": 0.2
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Heat the frozen edamame in a pot of simmering water for 4 to 5 minutes, until steaming hot. Drain.",
+    "Toss with the lemon juice, chili powder and salt."
+   ],
+   "prepMin": 1,
+   "cookMin": 5,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "one-pot-yogurt-cinnamon-walnuts",
+   "name": "Greek yogurt with cinnamon and walnuts",
+   "about": "Thick Greek yogurt with cinnamon and chopped walnuts. It brings **protein and calcium**, with plant omega-3 from the walnuts.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 130,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Spoon the yogurt into a bowl, dust with cinnamon and scatter the walnuts over."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "one-pot-egg-pepper-strips",
+   "name": "Hard-cooked egg with red pepper strips",
+   "about": "A hard-cooked egg, yolk completely firm, with crunchy red pepper strips and a pinch of cumin. It brings **protein and choline**, and the pepper adds vitamin C.",
+   "ingredients": [
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "swap": "lean_protein",
+     "note": "hard-cooked until the yolk is firm"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 80,
+     "note": "cut in strips"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 0.5
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Lower the egg into a pot of simmering water and cook for 12 minutes, until the yolk is completely firm. Cool it under cold water, peel it, and keep it in the fridge for up to 3 days.",
+    "Wash the pepper, cut it into strips, and eat with the halved egg sprinkled with the cumin and salt."
+   ],
+   "prepMin": 3,
+   "cookMin": 12,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ]
+  },
+  {
+   "id": "one-pot-pear-walnuts",
+   "name": "Pear with walnuts",
+   "about": "A ripe pear with a few walnuts for crunch. The pear brings **fibre**, and the walnuts bring plant omega-3.",
+   "ingredients": [
+    {
+     "food": "pear-raw-with-skin-7d77aa",
+     "g": 160
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "unsalted"
+    }
+   ],
+   "steps": [
+    "Wash the pear, slice it, and eat it with the walnuts."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "one-pot-cinnamon-apple-slices",
+   "name": "Cinnamon apple slices with lemon",
+   "about": "Crisp apple slices tossed with a squeeze of lemon and a dusting of cinnamon. They bring **fibre and vitamin C**, and keep well for a snack on the go.",
+   "ingredients": [
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 170
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 5
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.6
+    }
+   ],
+   "steps": [
+    "Wash the apple, slice it, and toss with the lemon juice and cinnamon. Eat it right away."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "one-pot-orange-kiwi-cup",
+   "name": "Orange and kiwi cup with lemon",
+   "about": "Orange segments and sliced kiwi with a squeeze of lemon, a bright snack that packs well. It brings **vitamin C and fibre**.",
+   "ingredients": [
+    {
+     "food": "orange-raw-ce787f",
+     "g": 150,
+     "swap": "vit_c_fruit",
+     "note": "peeled, in segments"
+    },
+    {
+     "food": "kiwi-fruit-raw-9fc921",
+     "g": 140,
+     "swap": "vit_c_fruit",
+     "note": "peeled and sliced"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 5
+    }
+   ],
+   "steps": [
+    "Wash the orange and kiwi. Peel the orange and cut it into segments, then peel and slice the kiwi.",
+    "Toss together with the lemon juice and eat right away, or pack it in a lidded tub."
+   ],
+   "prepMin": 5,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute",
+    "kid-friendly"
+   ]
+  }
+ ],
+ "week": [
+  {
+   "day": 1,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "one-pot-chickpea-spinach-scramble"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "one-pot-tuna-edamame-barley-salad"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "one-pot-chicken-lentil-broccoli-pot"
+    },
+    {
+     "slot": "snack",
+     "recipe": "one-pot-orange-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "one-pot-carrot-pepper-sticks-peanut-butter"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "one-pot-chickpea-spinach-scramble"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "one-pot-chicken-lentil-broccoli-pot",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "one-pot-coconut-salmon-sweet-potato-curry"
+    },
+    {
+     "slot": "snack",
+     "recipe": "one-pot-pear-pumpkin-seeds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "one-pot-warm-edamame-lemon"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "one-pot-orange-yogurt-oat-crunch"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "one-pot-beef-pepper-millet-pan"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "one-pot-peanut-chickpea-sweet-potato-stew"
+    },
+    {
+     "slot": "snack",
+     "recipe": "one-pot-apple-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "one-pot-egg-pepper-strips"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "one-pot-pear-cardamom-oats"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "one-pot-peanut-chickpea-sweet-potato-stew",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "one-pot-beef-kidney-bean-herb-pot"
+    },
+    {
+     "slot": "snack",
+     "recipe": "one-pot-kiwi-sunflower-seeds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "one-pot-warm-edamame-lemon"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "one-pot-orange-yogurt-oat-crunch"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "one-pot-beef-kidney-bean-herb-pot",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "one-pot-sardine-tomato-millet-broccoli-pot"
+    },
+    {
+     "slot": "snack",
+     "recipe": "one-pot-pear-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "one-pot-cinnamon-apple-slices"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "one-pot-pear-cardamom-oats"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "one-pot-chickpea-shakshuka"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "one-pot-mushroom-white-bean-barley-pot"
+    },
+    {
+     "slot": "snack",
+     "recipe": "one-pot-kiwi-sunflower-seeds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "one-pot-yogurt-cinnamon-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "one-pot-chickpea-spinach-scramble"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "one-pot-mushroom-white-bean-barley-pot",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "one-pot-one-pan-trout-lemon-dill-potatoes"
+    },
+    {
+     "slot": "snack",
+     "recipe": "one-pot-apple-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "one-pot-carrot-pepper-sticks-peanut-butter"
+    }
+   ]
+  }
+ ]
+}
