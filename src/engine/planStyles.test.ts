@@ -354,5 +354,13 @@ describe('house bans: no pork, no alcohol, in any style', () => {
     expect(words({ about: 'Lentils with beef chorizo and a turkey bacon crumb.' })).toEqual([]);
     expect(words({ name: 'Hamburger steak with onions' })).toEqual([]);
   });
+
+  it('wants every egg cooked until the yolk is firm', () => {
+    const egg = (meal: Partial<import('./types').Meal>) => houseGates(plan(meal, /^Chicken breast/i), FOOD_INDEX).map((g) => g.code);
+    expect(egg({ steps: ['Fry until the white is set and the yolk is still runny.'] })).toEqual(['house_egg']);
+    expect(egg({ steps: ['Boil for 7 minutes for a jammy yolk.'] })).toEqual(['house_egg']);
+    expect(egg({ steps: ['Cook until there is no runny egg left.', 'Simmer the tomatoes until thick and jammy.'] })).toEqual([]);
+    expect(egg({ steps: ['Fry until the yolk is firm.'] })).toEqual([]);
+  });
 });
 

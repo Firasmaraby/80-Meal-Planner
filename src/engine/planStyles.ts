@@ -430,6 +430,9 @@ const HOUSE_WORDS =
 const HOUSE_WORDS_OK =
   /\b(?:rice|red|white|sherry|wine|cider|malt)?\s*wine vinegar\b|\bsherry vinegar\b|\b(?:beef|turkey|chicken|plant-based|soy)\s+(?:bacon|ham|chorizo|salami|pepperoni|sausage)\b|\bpork-free\b|\bno pork\b|\bnon-?alcoholic\b|\balcohol-free\b|\bginger beer\b|\broot beer\b/g;
 
+// eggs served with a soft yolk; "no runny egg left" and a jammy tomato sauce are fine
+const SOFT_EGG = /soft[- ]boiled egg|soft[- ]cooked egg|jammy (?:egg|yolk)|yolks? (?:is |are )?(?:still |stays? |left )?(?:soft|runny)|runny yolk|sunny[- ]side|over[- ]easy|soft egg\b/;
+
 /** Every style: no pork or alcohol among the foods (HOUSE_BANS) or in the words of the recipe. */
 export function houseGates(plan: MealPlan, foods: FoodIndex): GateFailure[] {
   const out: GateFailure[] = [];
@@ -459,6 +462,17 @@ export function houseGates(plan: MealPlan, foods: FoodIndex): GateFailure[] {
         .join(' ')
         .toLowerCase()
         .replace(HOUSE_WORDS_OK, ' ');
+      const egg = text.match(SOFT_EGG);
+      if (egg) {
+        seen.add(key);
+        out.push({
+          code: 'house_egg',
+          day: d.day,
+          recipe: m.recipeId ?? m.name,
+          message: `Day ${d.day}, ${m.name}: "${egg[0]}". Every plan cooks eggs until the yolk is firm (Health Canada's advice).`,
+          fix: 'Cook the egg until the white and the yolk are firm: boil 10 minutes, fry or poach until set, and say so in the step.',
+        });
+      }
       const hit = text.match(HOUSE_WORDS);
       if (hit) {
         seen.add(key);

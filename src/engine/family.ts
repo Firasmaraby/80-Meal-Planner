@@ -76,6 +76,8 @@ export interface FamilyFile {
   howItWorks?: string;
   signature?: string[];
   lifeStage?: LifeStage;
+  /** the carb style the family promises (the Everyday plans): the lab fails any size whose food goes beyond it */
+  carbStyle?: 'whole' | 'wholegrain';
   sizes: Partial<Record<PlanSize, FamilySize>>;
   recipes: FamilyRecipe[];
   week: WeekDay[];
@@ -136,6 +138,7 @@ export function validateFamily(raw: unknown, ctx: ValidateContext): { family?: F
   for (const k of ['summary', 'howItWorks'] as const) if (raw[k] != null && typeof raw[k] !== 'string') err(k, `${k} must be text.`);
   if (raw.regions != null && !(Array.isArray(raw.regions) && raw.regions.every(isStr))) err('regions', 'regions must be a list of names.');
   if (raw.lifeStage != null && !['none', 'pregnant', 'lactating'].includes(raw.lifeStage as string)) err('lifeStage', 'lifeStage must be "none", "pregnant" or "lactating".');
+  if (raw.carbStyle != null && !['whole', 'wholegrain'].includes(raw.carbStyle as string)) err('carbStyle', 'carbStyle must be "whole" or "wholegrain".');
   if (isPlanStyle(raw.style)) {
     const want = PLAN_STYLES[raw.style].gates.lifeStage;
     if (want && raw.lifeStage !== want) err('lifeStage', `The ${raw.style} style needs "lifeStage": "${want}".`);
@@ -247,7 +250,7 @@ export function validateFamily(raw: unknown, ctx: ValidateContext): { family?: F
     });
   }
   for (const k of Object.keys(raw)) {
-    if (!['id', 'name', 'style', 'cuisine', 'regions', 'summary', 'howItWorks', 'signature', 'lifeStage', 'sizes', 'recipes', 'week'].includes(k)) warn(k, `Unknown field "${k}" is ignored.`);
+    if (!['id', 'name', 'style', 'cuisine', 'regions', 'summary', 'howItWorks', 'signature', 'lifeStage', 'carbStyle', 'sizes', 'recipes', 'week'].includes(k)) warn(k, `Unknown field "${k}" is ignored.`);
   }
 
   if (issues.some((i) => i.level === 'error')) return { issues };

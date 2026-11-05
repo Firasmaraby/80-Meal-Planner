@@ -28,6 +28,7 @@ import {
 import { boldStats, markerCount, paragraphWords, parseRich } from './richText';
 import { HARD_NUTRIENTS, fixListForAI, gradePlan, type DayReport } from './planReport';
 import { SIZING_TOLERANCE, sizingAdvice } from './personalize';
+import { carbStyleFits, carbStyleOfFood } from './carbStyle';
 import { isHighMercuryFish, isLiver, isProteinSource } from './foodRoles';
 import { PLAN_STYLES, distinctGroceries, gradeOptionsFor, isSpiceShelf, styleNutrientGates, styleStructureGates } from './planStyles';
 import type { CalorieBand, Food, MealPlan, NutrientKey, PlanSize } from './types';
@@ -391,6 +392,7 @@ export function runLab(raw: unknown, deps: LabDeps): LabResult {
       ...compiled.problems.map((message): LabFailure => ({ kind: 'cooking', code: 'adjust', size: name, message: `${SIZE_LABEL[name]}: ${message}`, fix: 'Fix the adjust list so every step applies.' })),
       ...weekChecks(family, plan, deps.foods, name),
       ...styleStructureGates(family.style, plan, deps.foods).map((g): LabFailure => ({ kind: 'gate', size: name, ...g })),
+      ...carbPromise(family, plan, deps.foods, name),
     ];
     const minKcal = PLAN_STYLES[family.style].gates.minKcal;
     for (const b of compiled.covers)
@@ -410,5 +412,31 @@ export function runLab(raw: unknown, deps: LabDeps): LabResult {
   // fixListForAI ends with an instruction about re-sending CSV blocks; that is for the Excel and AI importer, not for a family file
   const fixList = reports.length ? fixListForAI({ reports }).split('\n').filter((l) => !l.startsWith('Return the corrected')).join('\n').trim() : '';
   return { exitCode: failures.length ? 2 : 0, family, formatIssues: issues, writing, sizes, failures, fixList };
+}
+
+/** A family that promises a carb style (the Everyday plans) may not serve a food beyond it at any size. */
+function carbPromise(family: FamilyFile, plan: MealPlan, foods: FoodIndex, size: PlanSize): LabFailure[] {
+  if (!family.carbStyle) return [];
+  const out: LabFailure[] = [];
+  const seen = new Set<string>();
+  for (const d of plan.days)
+    for (const m of d.meals)
+      for (const i of m.ingredients) {
+        const f = getFood(foods, i.foodId);
+        if (!f || seen.has(f.id)) continue;
+        const cs = carbStyleOfFood(f);
+        if (carbStyleFits(cs, family.carbStyle)) continue;
+        seen.add(f.id);
+        out.push({
+          kind: 'gate',
+          code: 'carb_style',
+          size,
+          day: d.day,
+          recipe: m.recipeId ?? m.name,
+          message: `Day ${d.day}, ${m.name}: ${f.name} goes beyond the family's "${family.carbStyle}" carbs.`,
+          fix: family.carbStyle === 'whole' ? 'Use legumes, potatoes, sweet potatoes, squash, fruit or intact grains (oats, quinoa, barley, buckwheat, millet).' : 'Use brown rice, whole-wheat pasta, whole-grain bread or corn tortillas, not refined ones.',
+        });
+      }
+  return out;
 }
 
