@@ -1,0 +1,1766 @@
+{
+ "id": "pasta-night",
+ "name": "Pasta Night, Balanced",
+ "style": "balanced",
+ "cuisine": "Global",
+ "carbStyle": "wholegrain",
+ "regions": [
+  "Italy",
+  "Greece",
+  "United States"
+ ],
+ "summary": "Whole-wheat pasta three nights, with the sauce doing most of the work: pasta e fagioli, a salmon, spinach and lemon pasta and a lentil and mushroom bolognese. The rest of the week is Italian-leaning home cooking with beans, fish and plenty of vegetables.",
+ "howItWorks": "**Pasta, in sensible portions.** Monday's pasta e fagioli, Wednesday's salmon pasta and Sunday's lentil bolognese each use a fist of whole-wheat pasta in a lot of sauce, beans and vegetables. The other dinners lean on potatoes, a slice of bread or nothing starchy, so the week never becomes pasta every night.\n\n**Cook once, eat twice.** Monday's soup, Tuesday's lemon chicken, Thursday's meatballs and Saturday's beef stew each make two portions, so the next lunch is done. Cool each pot within 1 hour in a shallow container and reheat to 74 °C. Weekday dinners take about 40 minutes or less; the stew is the slow weekend pot.\n\n**Fish, mostly.** Fresh salmon in Wednesday's pasta and trout on Friday, plus canned salmon in Monday's pita, Saturday's salad and two snack dips on Tuesday and Thursday, bring omega-3 and some **vitamin D**, which is hard to get from food. Fish is never a leftover. Beef, chicken, turkey, lentils and beans cover the other protein, and eggs on three breakfasts, Saturday's lunch and Sunday's snack bring choline.\n\n**What changes with size.** Light drops a snack a day and trims the toast, pitas, oats, nuts, oil and Wednesday's pasta. At 1,400, Tuesday's chicken and potatoes are about halved and the soup has fewer beans; fish, beef, turkey, eggs and lentils stay. Big adds a snack on five days, swaps Tuesday's yogurt bowl for oatmeal and edamame for an orange, and grows portions toward the top of its range.",
+ "signature": [
+  "pasta-night-pasta-e-fagioli",
+  "pasta-night-salmon-spinach-lemon-pasta",
+  "pasta-night-lentil-mushroom-bolognese-fusilli",
+  "pasta-night-turkey-meatballs-white-bean-tomato"
+ ],
+ "lifeStage": "none",
+ "sizes": {
+  "light": {
+   "kcal": 1500,
+   "covers": [
+    "1400-1600",
+    "1600-1800"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 2,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 3,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 4,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 5,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 6,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 7,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    }
+   ]
+  },
+  "standard": {
+   "kcal": 2100,
+   "covers": [
+    "1800-2000",
+    "2000-2200",
+    "2200-2400"
+   ]
+  },
+  "big": {
+   "kcal": 3000,
+   "covers": [
+    "2400-2800",
+    "2800-3200"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "add": {
+      "slot": "snack",
+      "recipe": "pasta-night-pear-almonds"
+     }
+    },
+    {
+     "day": 3,
+     "add": {
+      "slot": "snack",
+      "recipe": "pasta-night-italian-roasted-chickpeas"
+     }
+    },
+    {
+     "day": 5,
+     "add": {
+      "slot": "snack",
+      "recipe": "pasta-night-lemon-edamame"
+     }
+    },
+    {
+     "day": 6,
+     "add": {
+      "slot": "snack",
+      "recipe": "pasta-night-pear-almonds"
+     }
+    },
+    {
+     "day": 7,
+     "add": {
+      "slot": "snack",
+      "recipe": "pasta-night-orange-walnuts"
+     }
+    },
+    {
+     "day": 2,
+     "swap": {
+      "from": "pasta-night-raspberry-yogurt-oat-bowl",
+      "to": "pasta-night-banana-walnut-oatmeal"
+     }
+    },
+    {
+     "day": 2,
+     "swap": {
+      "from": "pasta-night-lemon-edamame",
+      "to": "pasta-night-orange-walnuts"
+     }
+    }
+   ]
+  }
+ },
+ "recipes": [
+  {
+   "id": "pasta-night-banana-walnut-oatmeal",
+   "name": "Banana nut oatmeal with cinnamon",
+   "about": "Creamy stovetop oats with sliced banana, cinnamon and a crunchy mix of walnuts and almonds. The oats bring **fibre and magnesium**, the nuts bring vitamin E and plant omega-3, and the milk makes it filling.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 36,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "milk-reduced-fat-2-fat-4a4316",
+     "g": 160,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "banana-raw-61b750",
+     "g": 100,
+     "swap": "vit_c_fruit",
+     "note": "sliced"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 8,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 8,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 1
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Bring the milk and oats to a gentle simmer in a small pot with the cinnamon and salt. Stir and cook until thick and creamy, about 5 minutes.",
+    "Stir in half of the banana for the last minute so it softens.",
+    "Spoon into a bowl and top with the rest of the banana and the walnuts and almonds."
+   ],
+   "prepMin": 3,
+   "cookMin": 6,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ],
+   "tip": "Make a double batch of the dry mix on Sunday so weekday oatmeal is two minutes of work."
+  },
+  {
+   "id": "pasta-night-eggs-tomato-spinach-toast",
+   "name": "Scrambled eggs with tomato and spinach on toast",
+   "about": "Firm scrambled eggs folded with sweet cherry tomatoes and wilted spinach, piled on whole-wheat toast. **Eggs and spinach** bring choline, iron and folate, and the tomatoes add a bright, juicy edge. A glass of milk on the side adds calcium and protein.",
+   "ingredients": [
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 100,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "cherry-tomato-raw-b40abc",
+     "g": 80,
+     "note": "washed and quartered"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 45,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    },
+    {
+     "food": "milk-nonfat-37ddd7",
+     "g": 200,
+     "swap": "dairy_protein",
+     "note": "a glass on the side"
+    }
+   ],
+   "steps": [
+    "Wash the spinach and tomatoes. Quarter the tomatoes and roughly chop the spinach. Beat the eggs with the salt and pepper.",
+    "Warm the oil in a nonstick pan over medium heat. Add the tomatoes and cook until they soften, about 2 minutes. Add the spinach and stir until it wilts.",
+    "Pour in the eggs and stir gently until they are completely set and no liquid egg remains, about 3 minutes.",
+    "Toast the bread and pile the eggs on top. Serve with a glass of milk."
+   ],
+   "prepMin": 6,
+   "cookMin": 7,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "pasta-night-raspberry-yogurt-oat-bowl",
+   "name": "Yogurt bowl with raspberries, toasted oats and almonds",
+   "about": "Thick Greek yogurt with raspberries, lightly toasted oats and almonds. The raspberries bring **fibre and vitamin C**, the yogurt brings protein and calcium, and the toasted oats give it a granola crunch.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 180,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "raspberry-raw-e6d914",
+     "g": 120,
+     "swap": "berries",
+     "note": "washed"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 25,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 16,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Toast the oats in a dry pan over medium heat, stirring, until they smell nutty, about 3 minutes. Let them cool.",
+    "Wash the raspberries.",
+    "Spoon the yogurt into a bowl, top with the raspberries, toasted oats and almonds, and dust with the cinnamon."
+   ],
+   "prepMin": 4,
+   "cookMin": 3,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "pasta-night-lemony-salmon-spinach-pita",
+   "name": "Lemony salmon and spinach pita",
+   "inspiredBy": "Inspired by a classic tuna salad sandwich, made with canned salmon",
+   "about": "Flaked canned salmon with yogurt, lemon and parsley, tucked into a warm whole-wheat pita with baby spinach and cucumber. The salmon brings **omega-3 and some vitamin D**, and the soft bones add calcium.",
+   "ingredients": [
+    {
+     "food": "salmon-canned-drained-9cea4e",
+     "g": 100,
+     "swap": "fatty_fish",
+     "note": "drained, bones left in and mashed in"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 30,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 12,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "note": "chopped"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 30,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 60,
+     "note": "sliced"
+    },
+    {
+     "food": "whole-wheat-pita-bread-9baae8",
+     "g": 70,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 90,
+     "note": "cut into sticks"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the spinach, cucumber, parsley and carrot. Slice the cucumber, chop the parsley and cut the carrot into sticks.",
+    "Flake the salmon into a bowl and mix in the yogurt, lemon juice, parsley and pepper.",
+    "Warm the pita in a dry pan or the toaster and open it up.",
+    "Fill with the spinach, cucumber and salmon salad and eat with the carrot sticks. Move any salmon left in the tin to a covered container in the fridge and use it within 2 days.",
+    "If you are packing it, use a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 12,
+   "cookMin": 2,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "pasta-night-greek-chickpea-yogurt-pita",
+   "name": "Greek-style chickpea salad pita",
+   "inspiredBy": "Inspired by a Greek village salad",
+   "about": "Chickpeas tossed with cucumber, tomato, red pepper, onion and parsley in a lemony yogurt and olive-oil dressing, stuffed into a whole-wheat pita. **Chickpeas** bring fibre, iron and folate, and the pepper and lemon add vitamin C to help you absorb the iron.",
+   "ingredients": [
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 165,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 80,
+     "note": "diced"
+    },
+    {
+     "food": "cherry-tomato-raw-b40abc",
+     "g": 80,
+     "note": "halved"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 60,
+     "note": "washed and diced"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 20,
+     "note": "finely sliced"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 8,
+     "note": "chopped"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 30,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 15,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "oregano-ground-ec4216",
+     "g": 0.5
+    },
+    {
+     "food": "whole-wheat-pita-bread-9baae8",
+     "g": 45,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the cucumber, tomatoes, pepper and parsley. Dice the cucumber and pepper, halve the tomatoes, slice the onion very thinly and chop the parsley.",
+    "Whisk the yogurt, olive oil, lemon juice, oregano and pepper in a bowl. Toss in the chickpeas, vegetables and parsley.",
+    "Warm the pita, open it and spoon in the salad.",
+    "If you are packing it, use a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 12,
+   "cookMin": 2,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "pasta-night-tuscan-salmon-white-bean-toast",
+   "name": "Tuscan-style salmon and white bean salad on toast",
+   "inspiredBy": "Inspired by Tuscan tonno e fagioli, made with salmon",
+   "about": "Creamy white beans and flaked canned salmon with cherry tomatoes, onion, parsley and a firm-cooked egg, dressed with lemon and olive oil and piled on whole-wheat toast. The salmon brings **omega-3 and some vitamin D**, and the egg and beans add choline, fibre and iron.",
+   "ingredients": [
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 120,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "salmon-canned-drained-9cea4e",
+     "g": 90,
+     "swap": "fatty_fish",
+     "note": "drained, bones left in and mashed in"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "swap": "lean_protein",
+     "note": "hard-boiled until the yolk is firm"
+    },
+    {
+     "food": "cherry-tomato-raw-b40abc",
+     "g": 100,
+     "note": "halved"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 20,
+     "note": "thinly sliced"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 8,
+     "note": "chopped"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 7,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 12,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 45,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Cover the egg with cold water in a small pot, bring to a boil, then simmer for 10 to 12 minutes, until the yolk is completely firm. Cool it in cold water, peel and cut it into wedges.",
+    "Wash the tomatoes and parsley. Halve the tomatoes, slice the onion very thinly and chop the parsley.",
+    "Toss the beans, salmon, tomatoes, onion and parsley with the olive oil, lemon juice and pepper.",
+    "Toast the bread, spoon the salad on top and tuck in the egg wedges. Move any salmon left in the tin to a covered container in the fridge and use it within 2 days.",
+    "If you are packing it, use a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 8,
+   "cookMin": 12,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Rinse the beans well to keep the salt down."
+  },
+  {
+   "id": "pasta-night-pasta-e-fagioli",
+   "name": "Pasta e fagioli with beef and kale",
+   "inspiredBy": "Inspired by Italian pasta e fagioli and the Italian-American version made with ground beef",
+   "about": "A thick, cozy Italian-American soup of white beans, a little lean ground beef, small whole-wheat pasta, tomato and kale, with rosemary and a little Parmesan. The beans and kale bring **fibre, iron and folate**, and it tastes even better the next day.",
+   "ingredients": [
+    {
+     "food": "ground-beef-93-lean-raw-8d6017",
+     "g": 100,
+     "swap": "lean_protein",
+     "note": "lean"
+    },
+    {
+     "food": "whole-wheat-pasta-dry-fc0c47",
+     "g": 40,
+     "swap": "low_gi_grains",
+     "note": "small shape such as ditalini or macaroni"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 200,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 40,
+     "note": "diced"
+    },
+    {
+     "food": "celery-raw-79a241",
+     "g": 40,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 150
+    },
+    {
+     "food": "tomato-paste-7d3238",
+     "g": 10
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 300,
+     "note": "low sodium"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "washed and chopped"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 9,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "rosemary-e0b942",
+     "g": 0.5
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.2
+    },
+    {
+     "food": "parmesan-cheese-hard-78ce3e",
+     "g": 8,
+     "note": "finely grated, to finish"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.5
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the carrot, celery and kale. Dice the onion, carrot and celery, mince the garlic, and chop the kale, discarding the thick stems.",
+    "Warm the oil in a large pot over medium heat. Cook the beef, breaking it up, until browned and no pink remains, about 5 minutes, then wash your hands, board and spoon after handling the raw beef. Add the onion, carrot, celery and salt and cook until soft, about 6 minutes. Stir in the garlic, rosemary, pepper flakes and tomato paste for 1 minute.",
+    "Add the crushed tomatoes, broth, 2 cups of water and half of the beans, and bring to a boil. Mash the remaining beans with a fork and stir them in to thicken the soup.",
+    "Stir in the pasta and simmer until it is just tender, about 10 minutes, making sure the beef is at least 71 °C (160 °F). Add the kale for the last 3 minutes.",
+    "Ladle into bowls and top with the Parmesan.",
+    "Cool the second portion within 1 hour, in a shallow container, then refrigerate it. The pasta drinks the broth overnight, so loosen it with a splash of water when you reheat it once to 74 °C (165 °F). Eat within 3 days."
+   ],
+   "prepMin": 12,
+   "cookMin": 28,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "freezer-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "To freeze, cool within 1 hour, freeze up to 2 months, thaw in the fridge and use within 2 days, never refreezing. Reheat to 74 °C (165 °F)."
+  },
+  {
+   "id": "pasta-night-lemon-garlic-chicken-broccoli-potatoes",
+   "name": "Lemon garlic chicken with roasted broccoli and potatoes",
+   "about": "Chicken thighs roasted on one tray with baby potatoes, broccoli and cherry tomatoes in lemon, garlic and oregano. The broccoli and tomatoes bring **vitamin C**, which helps your body absorb the iron from the chicken and potatoes.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-boneless-skinless-raw-722c98",
+     "g": 195,
+     "swap": "lean_protein",
+     "note": "cut into large pieces"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 120,
+     "note": "scrubbed, in small chunks"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 160,
+     "note": "washed, in florets"
+    },
+    {
+     "food": "cherry-tomato-raw-b40abc",
+     "g": 60,
+     "note": "washed"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 40,
+     "note": "in wedges"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "sliced"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 20,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "oregano-ground-ec4216",
+     "g": 1
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.8
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 °C (425 °F) and line a large tray. Scrub the potatoes and cut them into small chunks so they cook quickly.",
+    "Toss the potatoes, onion and half of the oil, salt and oregano on the tray and roast for 10 minutes.",
+    "Toss the chicken with the garlic, lemon juice, the rest of the oil, salt, oregano and the pepper, then add it to the tray. Wash your hands, board and knife after handling the raw chicken.",
+    "Roast for 10 minutes, then add the broccoli and tomatoes and roast another 10 minutes, until the chicken reaches 74 °C (165 °F) in the thickest part and the potatoes are golden.",
+    "Pack the second portion into a shallow container within 1 hour and refrigerate it. Eat it within 3 days, reheated once until steaming hot, 74 °C (165 °F)."
+   ],
+   "prepMin": 10,
+   "cookMin": 30,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "makes-leftovers"
+   ]
+  },
+  {
+   "id": "pasta-night-salmon-spinach-lemon-pasta",
+   "name": "Salmon, spinach and lemon pasta",
+   "about": "Whole-wheat penne tossed with flaked pan-seared salmon, wilted spinach, peas and a bright lemon-garlic olive oil sauce. The salmon brings **omega-3 and some vitamin D**, and the spinach and peas add fibre and folate.",
+   "ingredients": [
+    {
+     "food": "whole-wheat-pasta-dry-fc0c47",
+     "g": 75,
+     "swap": "low_gi_grains",
+     "note": "penne or fusilli"
+    },
+    {
+     "food": "salmon-atlantic-farmed-raw-914b10",
+     "g": 150,
+     "swap": "fatty_fish",
+     "note": "skin removed"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 140,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "peas-frozen-raw-dd927b",
+     "g": 70,
+     "note": "frozen"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 11,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 25,
+     "swap": "vit_c_fruit",
+     "note": "from the lemon you zest first"
+    },
+    {
+     "food": "parmesan-cheese-hard-78ce3e",
+     "g": 8,
+     "note": "finely grated"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.7
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Bring a large pot of water to a boil for the pasta. Wash the spinach and the lemon. Zest half of the lemon, then juice it.",
+    "Pat the salmon dry, season with a pinch of the salt and pepper and cook it in a hot nonstick pan with half of the oil, 3 to 4 minutes a side, until it reaches 70 °C (158 °F) and flakes easily. Wash your hands, board and anything that touched the raw fish.",
+    "Salt the water lightly and cook the pasta until al dente, scooping out a mug of the cooking water before draining. Add the peas for the last 2 minutes and heat until steaming.",
+    "In the pasta pot over low heat, warm the remaining oil with the garlic for 30 seconds. Add the pasta, peas, spinach, lemon zest, lemon juice and a splash of pasta water. Toss until the spinach wilts.",
+    "Flake the salmon in, toss gently, and finish with the Parmesan and pepper. Eat it fresh; fish is not kept as a leftover in this plan."
+   ],
+   "prepMin": 10,
+   "cookMin": 20,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ]
+  },
+  {
+   "id": "pasta-night-turkey-meatballs-white-bean-tomato",
+   "name": "Turkey meatballs in white bean tomato sauce with garlic toast",
+   "about": "Tender turkey and spinach meatballs simmered in a garlicky tomato sauce with white beans, carrot and zucchini, served with a slice of whole-wheat garlic toast. Oats keep the meatballs moist, and the beans and spinach bring **iron, fibre and folate**.",
+   "ingredients": [
+    {
+     "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+     "g": 130,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "washed and finely chopped"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 10,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 30,
+     "note": "grated"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 200
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 60,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 50,
+     "note": "grated"
+    },
+    {
+     "food": "zucchini-raw-fac7ab",
+     "g": 100,
+     "note": "washed and diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 6,
+     "note": "minced"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "basil-dried-160272",
+     "g": 0.5
+    },
+    {
+     "food": "parmesan-cheese-hard-78ce3e",
+     "g": 4,
+     "note": "finely grated"
+    },
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 25,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.8
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the spinach, carrot and zucchini. Finely chop the spinach, grate the onion and carrot, dice the zucchini and mince the garlic.",
+    "Mix the turkey, spinach, onion, oats, half of the garlic, half of the salt, the Parmesan and the pepper with wet hands until just combined. Roll into small balls. Wash your hands, board and bowl after handling the raw turkey.",
+    "Warm half of the oil in a deep skillet and brown the meatballs on all sides, about 5 minutes. Add the carrot, zucchini and the rest of the garlic and cook for 1 minute.",
+    "Pour in the tomatoes, beans, basil and the rest of the salt, plus a splash of water. Cover and simmer for 12 to 15 minutes, until the meatballs reach 74 °C (165 °F) in the middle.",
+    "Toast the bread, rub it with the cut side of a clove of garlic if you like, brush with a few drops of the remaining oil and serve with the meatballs.",
+    "Pack the second portion into a shallow container within 1 hour and refrigerate it. Eat it within 3 days, reheated once until steaming hot, 74 °C (165 °F)."
+   ],
+   "prepMin": 15,
+   "cookMin": 25,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "freezer-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "To freeze, cool within 1 hour, freeze up to 2 months, thaw in the fridge and use within 2 days, never refreezing. Reheat to 74 °C (165 °F)."
+  },
+  {
+   "id": "pasta-night-baked-trout-tomato-pepper-chickpeas",
+   "name": "Baked trout with tomatoes, peppers and chickpeas",
+   "inspiredBy": "Inspired by Italian baked fish",
+   "about": "A trout fillet baked over sweet cherry tomatoes, red pepper and chickpeas with lemon, garlic and parsley. The trout brings **omega-3 and some vitamin D**, and the chickpeas add fibre and iron.",
+   "ingredients": [
+    {
+     "food": "trout-raw-f3ae43",
+     "g": 165,
+     "swap": "fatty_fish"
+    },
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 80,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "cherry-tomato-raw-b40abc",
+     "g": 130,
+     "note": "washed and halved"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 90,
+     "note": "washed, in strips"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 40,
+     "note": "in thin wedges"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "sliced"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 20,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 8,
+     "note": "chopped"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.8
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200 °C (400 °F). Wash the pepper, tomatoes and parsley. Halve the tomatoes, cut the pepper into strips and chop the parsley.",
+    "Toss the pepper, onion, tomatoes, chickpeas, garlic, half of the oil and half of the salt in a baking dish. Roast for 12 minutes, until the pepper starts to soften.",
+    "Rub the trout with the remaining oil, salt and pepper and nestle it on top of the vegetables. Wash your hands and board after handling the raw fish.",
+    "Bake for 10 to 12 minutes, until the trout reaches 70 °C (158 °F) and flakes easily.",
+    "Squeeze over the lemon juice and scatter with the parsley."
+   ],
+   "prepMin": 10,
+   "cookMin": 25,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ]
+  },
+  {
+   "id": "pasta-night-lentil-mushroom-bolognese-fusilli",
+   "name": "Lentil and mushroom bolognese with fusilli",
+   "inspiredBy": "Inspired by Bolognese ragu",
+   "about": "A rich, meaty-tasting ragu of lentils, browned cremini mushrooms and sweet red pepper simmered with tomato and basil, over whole-wheat fusilli. The lentils and mushrooms bring **fibre, iron, folate and B vitamins** with no meat.",
+   "ingredients": [
+    {
+     "food": "whole-wheat-pasta-dry-fc0c47",
+     "g": 50,
+     "swap": "low_gi_grains",
+     "note": "fusilli"
+    },
+    {
+     "food": "lentils-canned-no-salt-added-drained-c1edbd",
+     "g": 165,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+     "g": 100,
+     "note": "washed and finely chopped"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 60,
+     "note": "finely diced"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 50,
+     "note": "finely diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 6,
+     "note": "minced"
+    },
+    {
+     "food": "tomato-paste-7d3238",
+     "g": 15
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 180
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 40,
+     "swap": "leafy_greens",
+     "note": "washed, finely shredded"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "basil-dried-160272",
+     "g": 1
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 6,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parmesan-cheese-hard-78ce3e",
+     "g": 8,
+     "note": "finely grated"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.8
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the mushrooms, pepper and kale. Finely chop the mushrooms, dice the pepper and onion, mince the garlic and shred the kale.",
+    "Warm the oil in a wide pan over medium-high heat. Cook the mushrooms, stirring now and then, until they release their water and turn golden, about 8 minutes. Add the onion, pepper and salt and cook for 4 minutes more.",
+    "Stir in the garlic and tomato paste for 1 minute, then add the crushed tomatoes, lentils, basil, pepper and 1 cup of water. Simmer for 15 minutes, until thick, adding the kale for the last 3 minutes. Stir in the lemon juice.",
+    "Meanwhile boil the fusilli in lightly salted water until al dente, then drain.",
+    "Toss the pasta with the ragu and finish with the Parmesan."
+   ],
+   "prepMin": 12,
+   "cookMin": 28,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Double the ragu and freeze half: cool within 1 hour, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F). Boil fresh pasta each time."
+  },
+  {
+   "id": "pasta-night-tuscan-beef-potato-kale-stew",
+   "name": "Tuscan-style beef stew with potatoes and kale",
+   "inspiredBy": "Inspired by Tuscan beef stews",
+   "about": "A slow-simmered stew of lean beef, potato, carrot, celery and kale in a tomato-rosemary broth. The beef brings **iron and zinc**, the kale and carrot bring vitamin A, and a squeeze of lemon at the end brightens the pot.",
+   "ingredients": [
+    {
+     "food": "beef-chuck-for-stew-lean-and-fat-raw-8d6ce5",
+     "g": 150,
+     "swap": "lean_protein",
+     "note": "trimmed and cut into bite-sized cubes"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 100,
+     "note": "scrubbed, in chunks"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 80,
+     "note": "diced"
+    },
+    {
+     "food": "celery-raw-79a241",
+     "g": 40,
+     "note": "diced"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 70,
+     "swap": "leafy_greens",
+     "note": "washed and chopped"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 100
+    },
+    {
+     "food": "tomato-paste-7d3238",
+     "g": 10
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 300,
+     "note": "low sodium"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 7,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "rosemary-e0b942",
+     "g": 0.7
+    },
+    {
+     "food": "bay-leaf-513612",
+     "g": 0.3
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 10,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.7
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the carrot, celery, potato and kale. Dice the carrot, celery and onion, mince the garlic, cut the potato into chunks and chop the kale.",
+    "Warm the oil in a heavy pot over medium-high heat. Brown the beef in batches, then set aside. Wash your hands and board after handling the raw beef.",
+    "Lower the heat and cook the onion, carrot, celery and salt for 6 minutes. Stir in the garlic, rosemary and tomato paste for 1 minute.",
+    "Return the beef with the tomatoes, broth, bay leaf and 1 cup of water. Cover and simmer gently for 45 minutes, until the beef is nearly tender.",
+    "Stir in the potato and simmer 20 minutes more, adding the kale for the last 5 minutes. Check that the beef is tender and at least 71 °C (160 °F).",
+    "Remove the bay leaf, stir in the lemon juice and pepper and ladle into bowls. Cool the second portion within 1 hour in a shallow container, refrigerate it and eat it within 3 days, reheated once until steaming hot, 74 °C (165 °F)."
+   ],
+   "prepMin": 20,
+   "cookMin": 75,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "weekend-project",
+    "freezer-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "In a pressure cooker, the stew takes about 35 minutes. To freeze, cool within 1 hour, freeze up to 2 months, thaw in the fridge and use within 2 days, never refreezing."
+  },
+  {
+   "id": "pasta-night-orange-almonds",
+   "name": "Orange with almonds",
+   "about": "A juicy orange with a small handful of almonds. The almonds bring **vitamin E and magnesium**, and the orange brings vitamin C.",
+   "ingredients": [
+    {
+     "food": "orange-raw-ce787f",
+     "g": 150,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 26,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the orange, peel and segment it, and serve with the almonds."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "pasta-night-pear-walnuts",
+   "name": "Pear with walnuts",
+   "about": "A juicy pear with a few walnuts. The walnuts bring **plant omega-3 and vitamin E**.",
+   "ingredients": [
+    {
+     "food": "pear-raw-with-skin-7d77aa",
+     "g": 170,
+     "swap": "vit_c_fruit",
+     "note": "washed"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 20,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the pear, slice it and serve with the walnuts."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "pasta-night-banana-walnuts",
+   "name": "Banana with walnuts and cinnamon",
+   "about": "A banana with a few walnuts and a dusting of cinnamon. The walnuts bring **plant omega-3**, and the banana brings potassium.",
+   "ingredients": [
+    {
+     "food": "banana-raw-61b750",
+     "g": 110,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 20,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Peel the banana, slice it and serve with the walnuts and cinnamon."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "pasta-night-raspberry-yogurt",
+   "name": "Raspberries with yogurt and walnuts",
+   "about": "Thick Greek yogurt over raspberries with a few walnuts. The raspberries bring **fibre and vitamin C**, the yogurt adds protein and calcium, and the walnuts add plant omega-3.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 140,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "raspberry-raw-e6d914",
+     "g": 100,
+     "swap": "berries",
+     "note": "washed"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    }
+   ],
+   "steps": [
+    "Wash the raspberries, spoon the yogurt into a bowl and top with the berries and walnuts."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "pasta-night-lemon-edamame",
+   "name": "Warm edamame with lemon and chili",
+   "about": "Steamed edamame with lemon and a pinch of chili. The edamame brings **protein, fibre and folate**.",
+   "ingredients": [
+    {
+     "food": "edamame-immature-soy-bean-shelled-frozen-9c2350",
+     "g": 140,
+     "swap": "legumes",
+     "note": "frozen, shelled"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 6,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "chili-powder-f1ace8",
+     "g": 0.4
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Cook the edamame in boiling water for 3 to 4 minutes, until steaming hot all the way through. Drain.",
+    "Toss with the lemon juice, chili and salt."
+   ],
+   "prepMin": 1,
+   "cookMin": 5,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "pasta-night-italian-roasted-chickpeas",
+   "name": "Italian roasted chickpeas",
+   "about": "Chickpeas roasted until crisp with garlic, oregano and a pinch of pepper flakes. They bring **fibre, iron and protein** and keep for a few days in a jar.",
+   "ingredients": [
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 85,
+     "swap": "legumes",
+     "note": "rinsed, drained and patted dry"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 3,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "oregano-ground-ec4216",
+     "g": 0.5
+    },
+    {
+     "food": "garlic-powder-e81d9c",
+     "g": 0.5
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.1
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200 °C (400 °F). Pat the chickpeas very dry.",
+    "Toss with the oil, oregano, garlic powder, pepper flakes and salt on a tray.",
+    "Roast, shaking once, for 25 to 28 minutes, until crisp. They crisp more as they cool."
+   ],
+   "prepMin": 3,
+   "cookMin": 28,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ]
+  },
+  {
+   "id": "pasta-night-carrot-cucumber-lemon-yogurt-dip",
+   "name": "Carrot and cucumber sticks with lemony yogurt dip",
+   "about": "Crunchy carrot and cucumber sticks with a creamy yogurt dip brightened with lemon and parsley. The carrots bring **vitamin A**, and the yogurt adds protein and calcium.",
+   "ingredients": [
+    {
+     "food": "carrot-raw-f79846",
+     "g": 90,
+     "note": "washed, cut into sticks"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 70,
+     "note": "washed, cut into sticks"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 85,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 6,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 3,
+     "note": "chopped"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the carrot, cucumber and parsley. Cut the vegetables into sticks and chop the parsley.",
+    "Stir the yogurt with the lemon juice, parsley and pepper and serve with the sticks."
+   ],
+   "prepMin": 5,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "pasta-night-egg-tomato-basil",
+   "name": "Hard-boiled egg with cherry tomatoes and basil",
+   "about": "A firm hard-boiled egg with juicy cherry tomatoes, basil and black pepper. The egg brings **choline and protein**, and the tomatoes add a little vitamin C.",
+   "ingredients": [
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "swap": "lean_protein",
+     "note": "hard-boiled until the yolk is firm"
+    },
+    {
+     "food": "cherry-tomato-raw-b40abc",
+     "g": 70,
+     "note": "washed and halved"
+    },
+    {
+     "food": "basil-dried-160272",
+     "g": 0.2
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Cover the egg with cold water in a small pot, bring to a boil, then simmer for 10 to 12 minutes, until the yolk is completely firm. Cool it in cold water and peel.",
+    "Wash the tomatoes and halve them.",
+    "Slice the egg over the tomatoes, add a pinch of basil, the salt and pepper."
+   ],
+   "prepMin": 4,
+   "cookMin": 12,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ]
+  },
+  {
+   "id": "pasta-night-pear-almonds",
+   "name": "Pear with almonds",
+   "about": "A ripe pear with a small handful of almonds. The almonds bring **vitamin E and magnesium**.",
+   "ingredients": [
+    {
+     "food": "pear-raw-with-skin-7d77aa",
+     "g": 170,
+     "swap": "vit_c_fruit",
+     "note": "washed"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 26,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the pear, slice it and serve with the almonds."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "pasta-night-orange-walnuts",
+   "name": "Orange with walnuts",
+   "about": "A juicy orange with a few walnuts. The walnuts bring **plant omega-3 and vitamin E**, and the orange brings vitamin C.",
+   "ingredients": [
+    {
+     "food": "orange-raw-ce787f",
+     "g": 150,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 18,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the orange, peel and segment it, and serve with the walnuts."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "pasta-night-salmon-yogurt-dip-sticks",
+   "name": "Salmon and dill dip with veg sticks",
+   "about": "Canned salmon mashed with yogurt, lemon, dill and a pinch of garlic into a creamy dip, with crunchy cucumber and carrot sticks. It brings **omega-3 and some vitamin D**, and it's a good way to finish an opened tin.",
+   "ingredients": [
+    {
+     "food": "salmon-canned-drained-9cea4e",
+     "g": 100,
+     "swap": "fatty_fish",
+     "note": "drained, bones left in and mashed in"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 40,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 8,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "dill-weed-dried-d92fd8",
+     "g": 0.5
+    },
+    {
+     "food": "garlic-powder-e81d9c",
+     "g": 0.3
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 70,
+     "note": "washed, cut into sticks"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 70,
+     "note": "washed, cut into sticks"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the cucumber and carrot and cut them into sticks.",
+    "Mash the salmon with the yogurt, lemon juice, dill, garlic powder and pepper until creamy.",
+    "Serve with the sticks. Move any salmon left in the tin to a covered container in the fridge and use it within 2 days."
+   ],
+   "prepMin": 8,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute"
+   ]
+  }
+ ],
+ "week": [
+  {
+   "day": 1,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "pasta-night-eggs-tomato-spinach-toast"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "pasta-night-lemony-salmon-spinach-pita"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "pasta-night-pasta-e-fagioli"
+    },
+    {
+     "slot": "snack",
+     "recipe": "pasta-night-orange-almonds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "pasta-night-banana-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "pasta-night-raspberry-yogurt-oat-bowl"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "pasta-night-pasta-e-fagioli",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "pasta-night-lemon-garlic-chicken-broccoli-potatoes"
+    },
+    {
+     "slot": "snack",
+     "recipe": "pasta-night-salmon-yogurt-dip-sticks"
+    },
+    {
+     "slot": "snack",
+     "recipe": "pasta-night-lemon-edamame"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "pasta-night-eggs-tomato-spinach-toast"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "pasta-night-lemon-garlic-chicken-broccoli-potatoes",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "pasta-night-salmon-spinach-lemon-pasta"
+    },
+    {
+     "slot": "snack",
+     "recipe": "pasta-night-raspberry-yogurt"
+    },
+    {
+     "slot": "snack",
+     "recipe": "pasta-night-orange-almonds"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "pasta-night-banana-walnut-oatmeal"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "pasta-night-greek-chickpea-yogurt-pita"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "pasta-night-turkey-meatballs-white-bean-tomato"
+    },
+    {
+     "slot": "snack",
+     "recipe": "pasta-night-salmon-yogurt-dip-sticks"
+    },
+    {
+     "slot": "snack",
+     "recipe": "pasta-night-pear-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "pasta-night-eggs-tomato-spinach-toast"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "pasta-night-turkey-meatballs-white-bean-tomato",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "pasta-night-baked-trout-tomato-pepper-chickpeas"
+    },
+    {
+     "slot": "snack",
+     "recipe": "pasta-night-pear-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "pasta-night-banana-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "pasta-night-raspberry-yogurt-oat-bowl"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "pasta-night-tuscan-salmon-white-bean-toast"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "pasta-night-tuscan-beef-potato-kale-stew"
+    },
+    {
+     "slot": "snack",
+     "recipe": "pasta-night-carrot-cucumber-lemon-yogurt-dip"
+    },
+    {
+     "slot": "snack",
+     "recipe": "pasta-night-italian-roasted-chickpeas"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "pasta-night-banana-walnut-oatmeal"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "pasta-night-tuscan-beef-potato-kale-stew",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "pasta-night-lentil-mushroom-bolognese-fusilli"
+    },
+    {
+     "slot": "snack",
+     "recipe": "pasta-night-egg-tomato-basil"
+    },
+    {
+     "slot": "snack",
+     "recipe": "pasta-night-raspberry-yogurt"
+    }
+   ]
+  }
+ ]
+}
