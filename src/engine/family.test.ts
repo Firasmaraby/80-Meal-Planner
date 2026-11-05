@@ -166,8 +166,9 @@ describe('compiling a family', () => {
     expect(light.plan.days[1].meals.at(-1)!.recipeId).toBe('yogurt-walnut-berries');
     for (const d of light.plan.days) {
       const kcal = d.meals.reduce((n, m) => n + (ingredientsTotal(m.ingredients, FOOD_INDEX).kcal ?? 0), 0);
-      // sizing down never trims a vegetable or a tile that was complete, so a day can stop a little above the target
-      expect(kcal).toBeLessThan(1500 * 1.08);
+      // sizing down never trims a vegetable or a tile that was complete, and a leftover day carries the portion cooked
+      // the night before untouched, so a day of this tiny fixture can stop a little above the target
+      expect(kcal).toBeLessThan(1500 * 1.1);
       expect(kcal).toBeGreaterThan(1500 * 0.95);
       d.meals.forEach((m) =>
         m.ingredients.forEach((i, k) => {
@@ -180,6 +181,16 @@ describe('compiling a family', () => {
       );
     }
     expect(light.plan.days[0].meals[0].ingredients.find((i) => i.foodId.startsWith('whole-wheat-bread'))!.grams).toBeLessThan(60);
+  });
+
+  it('a leftover is exactly the portion cooked for it, at every size', () => {
+    for (const size of ['light', 'standard', 'big'] as const) {
+      const c = compileSize(fixture, size, ctx);
+      if (!c) continue;
+      const cooked = c.plan.days[0].meals.find((m) => m.recipeId === 'salmon-potatoes-broccoli' && !m.leftover)!;
+      const left = c.plan.days[1].meals.find((m) => m.recipeId === 'salmon-potatoes-broccoli' && m.leftover)!;
+      expect(left.ingredients, size).toEqual(cooked.ingredients);
+    }
   });
 
   it('Big adds the snack to day 1 only and sizes up', () => {
@@ -296,7 +307,7 @@ describe('plan lab', () => {
   it('checks oil, salt and dried spices per serving, grouped by recipe and day', () => {
     const f = clone();
     const stew = f.recipes.find((r) => r.id === 'chicken-chickpea-stew')!;
-    stew.ingredients.find((i) => i.food.startsWith('olive-oil'))!.g = 24; // sizing up to Big makes it more
+    stew.ingredients.find((i) => i.food.startsWith('olive-oil'))!.g = 26; // sizing up to Big makes it more
     stew.ingredients.find((i) => i.food.startsWith('paprika'))!.g = 14;
     f.recipes[0].ingredients.find((i) => i.food.startsWith('table-salt'))!.g = 3;
     const found = lab(f).failures.filter((x) => x.kind === 'cooking' && x.size === 'big' && x.kcal === 2800);

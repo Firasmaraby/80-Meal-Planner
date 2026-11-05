@@ -11,9 +11,9 @@ import {
   macroTargets,
   pillars,
 } from '@/engine/calc';
-import type { Ingredient, Meal, MealPlan, MealSlot, NutrientVector, PlanDay } from '@/engine/types';
+import type { Ingredient, Meal, MealPlan, MealSlot, NutrientVector, PlanDay, Profile } from '@/engine/types';
 
-import { personalizeDay, sizingAdvice } from '@/engine/personalize';
+import { personalizeWeek, sizingAdvice, type PersonalizedDay } from '@/engine/personalize';
 import { sizingTargetFor } from '@/engine/families';
 
 import { BUNDLED_PLANS, FOODS, FOOD_INDEX, LIBRARY_PLANS, SWAP_GROUPS, isFattyFish } from './catalog';
@@ -72,6 +72,24 @@ export interface DayMeal {
 
 const SLOT_ORDER: Record<MealSlot, number> = { breakfast: 0, lunch: 1, snack: 2, dinner: 3 };
 
+/**
+ * The plan's week made the person's (dislikes swapped, days sized), computed once per plan and setting: sizing a day
+ * needs the day that cooked its leftovers, so the whole week is personalised together (see personalizeWeek).
+ */
+const weekCache = new WeakMap<MealPlan, Map<string, Map<number, PersonalizedDay>>>();
+function personalWeek(plan: MealPlan, profile: Profile, targetKcal: number | undefined): Map<number, PersonalizedDay> {
+  const key = JSON.stringify([profile.sex, profile.age, profile.lifeStage, profile.diet, profile.dislikes, targetKcal]);
+  let byKey = weekCache.get(plan);
+  if (!byKey) weekCache.set(plan, (byKey = new Map()));
+  let week = byKey.get(key);
+  if (!week) {
+    week = personalizeWeek(plan.days, profile, { foods: FOOD_INDEX, catalog: FOODS, groups: SWAP_GROUPS, targetKcal });
+    if (byKey.size > 8) byKey.clear();
+    byKey.set(key, week);
+  }
+  return week;
+}
+
 export function useDay(date: string) {
   const profile = useStore((s) => s.profile);
   const enrollment = useStore((s) => s.enrollment);
@@ -91,14 +109,10 @@ export function useDay(date: string) {
     const skips = new Set(daySkips[date] ?? []);
     // the plan, made theirs: dislikes swapped, portions sized to their calories (micros first)
     const target = calorieTarget(profile);
-    const personal = planDay
-      ? personalizeDay(planDay, profile, {
-          foods: FOOD_INDEX,
-          catalog: FOODS,
-          groups: SWAP_GROUPS,
-          targetKcal: profile.sizeToMe && plan ? sizingTargetFor(plan, target) : profile.sizeToMe ? target : undefined,
-        })
-      : undefined;
+    const personal =
+      planDay && plan
+        ? personalWeek(plan, profile, profile.sizeToMe ? sizingTargetFor(plan, target) : undefined).get(planDay.day)
+        : undefined;
     const fromPlan: DayMeal[] = (planDay?.meals ?? [])
       .filter((meal) => !skips.has(meal.id))
       .map((meal) => {

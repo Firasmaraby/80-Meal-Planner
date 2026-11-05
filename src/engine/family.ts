@@ -13,7 +13,7 @@ import { boardProgress, getFood, ingredientsTotal, omega3, type FoodIndex } from
 import { RULES } from './planReport';
 import { carbStyleOfPlan } from './carbStyle';
 import { BOARD_KEYS } from './nutrients';
-import { personalizeDay } from './personalize';
+import { personalizeWeek } from './personalize';
 import { mealFrom, type CompactPlan, type Hero, type LibraryIngredient, type LibraryRecipe } from './libraryPlans';
 import { measureText } from './measure';
 import { FOOD_BANS, PLAN_STYLES, isPlanStyle } from './planStyles';
@@ -388,9 +388,11 @@ export function sizingPerson(plan: Pick<MealPlan, 'lifeStage' | 'style'>) {
 export function sizePlan(plan: MealPlan, kcal: number, ctx: CompileContext, panel: Pick<Profile, 'sex' | 'age' | 'lifeStage'>[] = []): { plan: MealPlan; dayKcal: number[] } {
   const person = sizingPerson(plan);
   const dayKcal: number[] = [];
+  // sizing keeps every tile complete for the woman it sizes for and for anyone else the plan is graded for;
+  // a leftover is the portion cooked for it, so the week is sized in order (see personalizeWeek)
+  const week = personalizeWeek(plan.days, person, { foods: ctx.foods, catalog: ctx.catalog, groups: ctx.groups, targetKcal: kcal, alsoProtect: panel });
   const days = plan.days.map((d) => {
-    // sizing keeps every tile complete for the woman it sizes for and for anyone else the plan is graded for
-    const p = personalizeDay(d, person, { foods: ctx.foods, catalog: ctx.catalog, groups: ctx.groups, targetKcal: kcal, alsoProtect: panel });
+    const p = week.get(d.day)!;
     dayKcal.push(p.kcal);
     return { ...d, meals: d.meals.map((m) => ({ ...m, ingredients: p.meals.get(m.id) ?? m.ingredients })) };
   });

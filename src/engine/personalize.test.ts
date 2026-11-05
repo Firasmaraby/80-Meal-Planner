@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 import { BUNDLED_PLANS, FOODS, FOOD_INDEX, SWAP_GROUPS } from '@/state/catalog';
 
 import { boardProgress, dayScore, ingredientsTotal } from './calc';
-import { daySizing, personalizeDay, scaleIngredients, sizingAdvice, swapDislikes, wholeUnits } from './personalize';
+import { daySizing, leftoverSources, personalizeDay, personalizeWeek, scaleIngredients, sizingAdvice, swapDislikes, wholeUnits } from './personalize';
 
 const who = { sex: 'male' as const, age: 36, lifeStage: 'none' as const, diet: [] as string[] };
 const opts = { foods: FOOD_INDEX, catalog: FOODS, groups: SWAP_GROUPS };
@@ -147,3 +147,35 @@ describe('seasonings follow the dish', () => {
     expect(ratio(big)).toBeCloseTo(ratio(curry), 2);
   });
 });
+
+describe('leftovers across the week', () => {
+  const ing = (name: string, grams: number) => ({ foodId: FOODS.find((f) => f.name === name)!.id, grams });
+  const stew = [ing('Lentils, boiled', 200), ing('Olive oil', 15), ing('Kale, raw', 80)];
+  const days = [
+    { day: 1, meals: [{ id: 'd1-dinner', slot: 'dinner' as const, name: 'Stew', recipeId: 'stew', ingredients: stew }] },
+    { day: 2, meals: [
+      { id: 'd2-lunch', slot: 'lunch' as const, name: 'Stew', recipeId: 'stew', leftover: true, ingredients: stew },
+      { id: 'd2-dinner', slot: 'dinner' as const, name: 'Oats', recipeId: 'oats', ingredients: [ing('Lentils, boiled', 150), ing('Olive oil', 10)] },
+    ] },
+    // eaten on day 3 but cooked on day 4: the week wraps, so it takes day 4's portion
+    { day: 3, meals: [{ id: 'd3-lunch', slot: 'lunch' as const, name: 'Soup', recipeId: 'soup', leftover: true, ingredients: [ing('Olive oil', 10), ing('Kale, raw', 50)] }] },
+    { day: 4, meals: [{ id: 'd4-dinner', slot: 'dinner' as const, name: 'Soup', recipeId: 'soup', ingredients: [ing('Olive oil', 10), ing('Kale, raw', 50)] }] },
+  ];
+  const who = { sex: 'female' as const, age: 40, lifeStage: 'none' as const, diet: [] as string[] };
+
+  it('finds the meal that cooked each leftover, wrapping around the week', () => {
+    const src = leftoverSources(days);
+    expect(src.get('d2-lunch')).toEqual({ day: 1, mealId: 'd1-dinner' });
+    expect(src.get('d3-lunch')).toEqual({ day: 4, mealId: 'd4-dinner' });
+    expect(src.has('d1-dinner')).toBe(false);
+  });
+
+  it('serves the leftover exactly as cooked and flexes the rest of its day', () => {
+    for (const target of [300, 2500]) {
+      const week = personalizeWeek(days, who, { foods: FOOD_INDEX, catalog: FOODS, groups: [], targetKcal: target });
+      expect(week.get(2)!.meals.get('d2-lunch')).toEqual(week.get(1)!.meals.get('d1-dinner'));
+      expect(week.get(3)!.meals.get('d3-lunch')).toEqual(week.get(4)!.meals.get('d4-dinner'));
+    }
+  });
+});
+
