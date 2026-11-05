@@ -54,7 +54,7 @@ const signature = (m: Meal) =>
     .join(',')}`;
 
 /** A recipe is one entry however many plans and sizes use it. */
-const groupKey = (m: Meal) => (m.recipeId ? `recipe:${m.recipeId}` : signature(m));
+const groupKey = (m: Meal) => (m.recipeId ? `recipe:${m.variantOf ?? m.recipeId}` : signature(m));
 
 const familyKey = (p: MealPlan) => p.familyId ?? p.id;
 
@@ -145,13 +145,15 @@ export function sizedTotalsFor(library: LibraryMeal[], families: PlanFamily[], t
       for (const d of [...pickSize(fam, target).plan.days].sort((a, b) => a.day - b.day)) {
         for (const m of d.meals) {
           if (!m.recipeId) continue;
-          const had = idx.get(m.recipeId);
-          if (!had || (had.leftover && !m.leftover)) idx.set(m.recipeId, m);
+          // a size-only copy stands in for the recipe it copies
+          const id = m.variantOf ?? m.recipeId;
+          const had = idx.get(id);
+          if (!had || (had.leftover && !m.leftover)) idx.set(id, m);
         }
       }
       recipes.set(lm.familyId, idx);
     }
-    const m = idx.get(rid);
+    const m = idx.get(lm.meal.variantOf ?? rid);
     if (m) out.set(lm.key, m === lm.meal ? lm.totals : ingredientsTotal(m.ingredients, FOOD_INDEX));
   }
   return out;

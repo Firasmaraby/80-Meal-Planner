@@ -130,6 +130,8 @@ export interface Meal {
   // Library recipes (see content/GUIDE.md); the Excel and AI importers leave these empty.
   /** the recipe this meal is cooked from; one recipe can appear in many plans */
   recipeId?: string;
+  /** set on a size-only copy of a recipe (same dish, amounts written for one size): the recipe it is a copy of */
+  variantOf?: string;
   /** two or three sentences for someone browsing the meal library */
   about?: string;
   steps?: string[];

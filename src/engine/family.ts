@@ -312,6 +312,25 @@ export interface CompileContext {
 
 const recipeMap = (family: FamilyFile) => new Map(family.recipes.map((r) => [r.id, r]));
 
+/**
+ * Size-only copies: a recipe the written week never uses that a size swaps in for a recipe of the same name (the same
+ * dish with amounts written for that size, e.g. a Light rice bowl that keeps its rice). copy id -> original id.
+ */
+export function sizeVariants(family: FamilyFile): Map<string, string> {
+  const recipes = recipeMap(family);
+  const inWeek = new Set(family.week.flatMap((d) => d.meals.map((m) => m.recipe)));
+  const out = new Map<string, string>();
+  for (const s of SIZES)
+    for (const op of family.sizes[s]?.adjust ?? []) {
+      if (!('swap' in op)) continue;
+      const { from, to } = op.swap;
+      const a = recipes.get(from);
+      const b = recipes.get(to);
+      if (a && b && !inWeek.has(to) && a.name.trim().toLowerCase() === b.name.trim().toLowerCase()) out.set(to, out.get(from) ?? from);
+    }
+  return out;
+}
+
 /** Build the day-by-day plan for a week, every recipe at its written grams. */
 export function planFromWeek(family: FamilyFile, week: WeekDay[], size: PlanSize): MealPlan {
   const recipes = recipeMap(family);
@@ -416,6 +435,13 @@ export function compileSize(family: FamilyFile, size: PlanSize, ctx: CompileCont
   if (!spec) return undefined;
   const { week, problems } = applyAdjust(family.week, spec.adjust);
   let plan = planFromWeek(family, week, size);
+  // a signature dish a size swaps out everywhere is shown as the dish that replaces it
+  if (plan.signature?.length) {
+    const present = new Set(week.flatMap((d) => d.meals.map((m) => m.recipe)));
+    const swapTo = new Map<string, string>();
+    for (const op of spec.adjust ?? []) if ('swap' in op && !swapTo.has(op.swap.from)) swapTo.set(op.swap.from, op.swap.to);
+    plan.signature = [...new Set(plan.signature.map((id) => (present.has(id) ? id : swapTo.get(id) ?? id)))];
+  }
   if (size !== 'standard') plan = sizePlan(plan, spec.kcal, ctx).plan;
   plan.tags = dietTagsOf(plan, ctx.foods);
   // the framework's ~4:1 omega-6:3 over the week earns a badge (plans must reach 6:1, see RULES)
@@ -446,13 +472,21 @@ export function compileFamily(family: FamilyFile, ctx: CompileContext): Compiled
 const compactObject = <T extends object>(o: T): T => Object.fromEntries(Object.entries(o).filter(([, v]) => v !== undefined && v !== null && !(Array.isArray(v) && !v.length))) as T;
 
 export function recipesOf(family: FamilyFile): LibraryRecipe[] {
+  const variants = sizeVariants(family);
   const slotCount = new Map<string, Map<MealSlot, number>>();
-  for (const d of family.week)
-    for (const m of d.meals) {
-      const c = slotCount.get(m.recipe) ?? new Map<MealSlot, number>();
-      c.set(m.slot, (c.get(m.slot) ?? 0) + 1);
-      slotCount.set(m.recipe, c);
-    }
+  const count = (week: WeekDay[], only?: Set<string>) => {
+    for (const d of week)
+      for (const m of d.meals) {
+        if (only && !only.has(m.recipe)) continue;
+        const c = slotCount.get(m.recipe) ?? new Map<MealSlot, number>();
+        c.set(m.slot, (c.get(m.slot) ?? 0) + 1);
+        slotCount.set(m.recipe, c);
+      }
+  };
+  count(family.week);
+  // recipes only a size uses (Light-only swaps and adds) take their slot from that size's week
+  const sizeOnly = new Set(family.recipes.map((r) => r.id).filter((id) => !slotCount.has(id)));
+  for (const s of SIZES) if (sizeOnly.size && family.sizes[s]) count(applyAdjust(family.week, family.sizes[s]!.adjust).week, sizeOnly);
   return family.recipes.map((r) => {
     const counts = [...(slotCount.get(r.id) ?? new Map<MealSlot, number>())];
     const slot = counts.sort((a, b) => b[1] - a[1] || slotRank(a[0]) - slotRank(b[0]))[0]?.[0] ?? 'dinner';
@@ -469,6 +503,7 @@ export function recipesOf(family: FamilyFile): LibraryRecipe[] {
       servings: r.servings,
       tags: r.tags,
       tip: r.tip,
+      variantOf: variants.get(r.id),
       ingredients: r.ingredients.map((i): LibraryIngredient => (i.note ? [i.food, i.g, i.swap ?? '', i.note] : i.swap ? [i.food, i.g, i.swap] : [i.food, i.g])),
     });
   });

@@ -611,3 +611,45 @@ describe('plan review', () => {
     expect(householdMeasure({ servings: [{ label: '1 cup', g: 240 }] }, 5)).toBeUndefined();
   });
 });
+
+describe('size-only recipe copies', () => {
+  // a Light copy of the scramble (same dish, own amounts) and of the signature soup, swapped in everywhere at Light
+  const withCopies = (): FamilyFile => {
+    const f = clone();
+    const scramble = f.recipes.find((r) => r.id === 'veggie-egg-scramble')!;
+    const soup = f.recipes.find((r) => r.id === 'lentil-kale-soup')!;
+    f.recipes.push({ ...structuredClone(scramble), id: 'veggie-egg-scramble-light' }, { ...structuredClone(soup), id: 'lentil-kale-soup-light' });
+    f.sizes.light!.adjust = [
+      ...(f.sizes.light!.adjust ?? []),
+      { day: '*', swap: { from: 'veggie-egg-scramble', to: 'veggie-egg-scramble-light' } },
+      { day: '*', swap: { from: 'lentil-kale-soup', to: 'lentil-kale-soup-light' } },
+    ];
+    return f;
+  };
+
+  it('marks a same-name copy a size swaps in as a variant of the original, in the slot that size uses it', () => {
+    const recipes = new Map(recipesOf(withCopies()).map((r) => [r.id, r]));
+    expect(recipes.get('veggie-egg-scramble-light')?.variantOf).toBe('veggie-egg-scramble');
+    expect(recipes.get('veggie-egg-scramble-light')?.slot).toBe('breakfast');
+    expect(recipes.get('lentil-kale-soup-light')?.slot).toBe('lunch');
+    expect(recipes.get('veggie-egg-scramble')?.variantOf).toBeUndefined();
+    // a swap to a different dish is not a copy
+    expect(recipes.get('yogurt-walnut-berries')?.variantOf).toBeUndefined();
+  });
+
+  it('shows the copy as the signature dish of the size that swaps the original out', () => {
+    const f = withCopies();
+    expect(compileSize(f, 'light', familyDeps)!.plan.signature).toEqual(['salmon-potatoes-broccoli', 'lentil-kale-soup-light']);
+    expect(compileSize(f, 'standard', familyDeps)!.plan.signature).toEqual(['salmon-potatoes-broccoli', 'lentil-kale-soup']);
+  });
+
+  it('expands the variant link onto the meals', () => {
+    const f = withCopies();
+    const compiled = compileFamily(f, familyDeps).map((c) => compactPlan(c.plan, FOOD_INDEX));
+    const plans = expandPlans(compiled, recipesOf(f));
+    const light = plans.find((p) => p.size === 'light')!;
+    const meal = light.days[0].meals.find((m) => m.slot === 'breakfast')!;
+    expect(meal.recipeId).toBe('veggie-egg-scramble-light');
+    expect(meal.variantOf).toBe('veggie-egg-scramble');
+  });
+});

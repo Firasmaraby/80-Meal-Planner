@@ -65,6 +65,8 @@ export interface LibraryRecipe {
   servings?: number;
   tags?: string[];
   tip?: string;
+  /** a size-only copy of another recipe in the family (same name, swapped in by a size): that recipe's id */
+  variantOf?: string;
   ingredients: LibraryIngredient[];
 }
 
@@ -158,6 +160,7 @@ export function expandPlans(plans: CompactPlan[], recipes: LibraryRecipe[]): Mea
               m.leftover,
             );
             if (m.heroes?.length) meal.heroes = m.heroes;
+            if (r.variantOf) meal.variantOf = r.variantOf;
             return meal;
           }),
         };

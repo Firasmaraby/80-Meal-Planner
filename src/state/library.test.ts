@@ -26,3 +26,14 @@ describe('meal library', () => {
     expect(lib.some((m) => m.key === libraryKey(BUNDLED_PLANS[0].id, first.id))).toBe(true);
   });
 });
+
+describe('size-only copies in the library', () => {
+  it('lists a size-only copy once, with the recipe it copies', () => {
+    const base = { id: 'm1', slot: 'breakfast' as const, name: 'Rice bowl', ingredients: [{ foodId: 'x', grams: 100 }], recipeId: 'fam-bowl' };
+    const plan = (size: 'standard' | 'light', meal: object) =>
+      ({ id: `fam-${size}`, version: 1, name: 'Fam', band: { min: 0, max: 0 }, cuisine: 'Global', tags: [], author: 'Eighty', familyId: 'fam', size, days: [{ day: 1, meals: [meal] }] }) as never;
+    const lib = buildLibrary([plan('light', { ...base, id: 'm2', recipeId: 'fam-bowl-light', variantOf: 'fam-bowl', ingredients: [{ foodId: 'x', grams: 60 }] }), plan('standard', base)]);
+    expect(lib).toHaveLength(1);
+    expect(lib[0].meal.recipeId).toBe('fam-bowl');
+  });
+});
