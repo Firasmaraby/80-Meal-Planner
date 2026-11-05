@@ -1,0 +1,1787 @@
+{
+ "id": "potato-kitchen",
+ "name": "Potato Kitchen",
+ "style": "balanced",
+ "cuisine": "Global",
+ "carbStyle": "whole",
+ "regions": [
+  "United Kingdom",
+  "India",
+  "Sweden",
+  "France",
+  "United States"
+ ],
+ "summary": "For people who love potatoes: loaded baked potatoes with turkey chili, salmon cakes with slaw, a sweet potato and chickpea curry, tray-roasted chicken with crushed potatoes and a weekend potato hash. Every carb is a whole food.",
+ "howItWorks": "**Potatoes, every which way.** Baked, crushed, mashed, hashed, in cakes and in a sweet potato curry, with oats, beans and lentils beside them, so every carb is a whole food. Weeknight dinners take about 40 minutes.\n\n**Cook once, eat twice.** Monday's chili potatoes (jacket potatoes at Light), Tuesday's curry, Thursday's tray chicken and Saturday's keema each make two portions, so the next lunch is done. Saturday's hash is also Sunday's breakfast.\n\n**Fish four times.** Sardines on Monday and Saturday, salmon cakes on Wednesday and trout on Sunday carry your omega-3 and some **vitamin D**. Fish is always cooked or opened fresh, never a leftover. Eggs sit where the dish has them and where choline needs them.\n\n**Light.** It covers 1400 to 1800 kcal and drops one snack a day. Monday's chili becomes a jacket potato: more potato, a smaller ladle of chili. Tuesday's breakfast is the overnight oats. Oats, nuts, oil, beans, coconut milk and toppings trim the most, and chicken and turkey get smaller. At 1400 the cakes, mash and trout salad hold less potato. Fish, beef, eggs, vegetables and fruit stay about the same.\n\n**Big.** It keeps every snack and grows the potatoes, oats, beans, meat, fish, eggs, dairy, nuts and oil, with about double the potatoes at the top. The vegetables and fruit stay the same. Cook the two-portion dishes in a wider pot or on two trays.",
+ "signature": [
+  "potato-kitchen-turkey-chili-loaded-baked-potatoes",
+  "potato-kitchen-salmon-potato-cakes-with-crunchy-slaw",
+  "potato-kitchen-tray-chicken-crushed-potatoes-green-beans",
+  "potato-kitchen-sweet-potato-chickpea-spinach-curry"
+ ],
+ "lifeStage": "none",
+ "sizes": {
+  "light": {
+   "kcal": 1500,
+   "covers": [
+    "1400-1600",
+    "1600-1800"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 2,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 3,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 4,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 5,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 6,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 7,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": "*",
+     "swap": {
+      "from": "potato-kitchen-turkey-chili-loaded-baked-potatoes",
+      "to": "potato-kitchen-turkey-chili-jacket-potatoes"
+     }
+    },
+    {
+     "day": 2,
+     "swap": {
+      "from": "potato-kitchen-banana-blueberry-walnut-porridge",
+      "to": "potato-kitchen-apple-pie-overnight-oats"
+     }
+    }
+   ]
+  },
+  "standard": {
+   "kcal": 2100,
+   "covers": [
+    "1800-2000",
+    "2000-2200",
+    "2200-2400"
+   ]
+  },
+  "big": {
+   "kcal": 3000,
+   "covers": [
+    "2400-2800",
+    "2800-3200"
+   ],
+   "adjust": []
+  }
+ },
+ "recipes": [
+  {
+   "id": "potato-kitchen-apple-pie-overnight-oats",
+   "name": "Apple pie overnight oats",
+   "inspiredBy": "Inspired by Swiss bircher muesli",
+   "about": "Rolled oats soaked overnight in milk and yogurt with grated apple, cinnamon and walnuts, like a cold bowl of apple pie. Five minutes the night before and nothing to cook in the morning, and it brings **fibre and protein** to the start of the day.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 40,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "milk-nonfat-37ddd7",
+     "g": 150,
+     "swap": "dairy_protein",
+     "note": "or any milk you like"
+    },
+    {
+     "food": "greek-yogurt-2-fat-plain-3b5a16",
+     "g": 60,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 120,
+     "swap": "vit_c_fruit",
+     "note": "washed and coarsely grated, skin on"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 18,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 1
+    }
+   ],
+   "steps": [
+    "Wash your hands and the apple. Grate the apple, skin and all, and stir it into a jar with the oats, milk, yogurt and cinnamon until there are no dry patches.",
+    "Put the lid on and refrigerate overnight. The oats soak up the milk and turn creamy.",
+    "In the morning, stir it up and loosen it with a splash of milk if it is thick. Scatter the walnuts on just before eating so they stay crunchy.",
+    "Keep it in the fridge and eat it within 2 days of making it. Never keep soaked oats longer than 3 days."
+   ],
+   "prepMin": 5,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ],
+   "tip": "Stir up Sunday night's jar for Monday, Tuesday night's for Wednesday and Thursday night's for Friday, so no jar sits more than 2 days. At the Light size, make Monday's and Tuesday's jars together on Sunday night. At the lowest Light setting the oats are a couple of spoonfuls, so it eats like a thick apple and yogurt bircher. At the Big size, use a big bowl or a 1 litre jar."
+  },
+  {
+   "id": "potato-kitchen-banana-blueberry-walnut-porridge",
+   "name": "Banana, blueberry and walnut porridge",
+   "about": "Creamy rolled oats simmered in milk and topped with sliced banana, blueberries and crunchy walnuts. It is a warm, filling weekday breakfast that takes 10 minutes and brings **fibre, potassium and protein**.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 40,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "milk-nonfat-37ddd7",
+     "g": 240,
+     "swap": "dairy_protein",
+     "note": "or any milk you like"
+    },
+    {
+     "food": "banana-raw-61b750",
+     "g": 70,
+     "swap": "vit_c_fruit",
+     "note": "sliced"
+    },
+    {
+     "food": "blueberry-raw-e94073",
+     "g": 60,
+     "swap": "berries",
+     "note": "fresh or frozen"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 15,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 1
+    }
+   ],
+   "steps": [
+    "Wash your hands and rinse the blueberries. Stir the oats, milk and cinnamon together in a small pot over medium heat.",
+    "Bring to a gentle simmer and cook for 5 to 6 minutes, stirring often, until thick and creamy.",
+    "Pour into a bowl and top with the banana, blueberries and walnuts. Eat right away."
+   ],
+   "prepMin": 3,
+   "cookMin": 7,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ],
+   "tip": "No time? Microwave the oats and milk in a big bowl for 2 minutes, stir, then 1 more minute. Watch the bowl, it can bubble over. If you are cooking for someone who is pregnant, 60 or older, 5 or under, or has a weak immune system, use fresh blueberries or stir frozen ones into the pot for the last 2 minutes."
+  },
+  {
+   "id": "potato-kitchen-potato-white-bean-spinach-hash-with-eggs",
+   "name": "Potato, white bean and spinach hash with eggs",
+   "inspiredBy": "Inspired by a diner-style potato hash",
+   "about": "Crisp-edged diced potatoes in a big skillet with onion, red pepper, white beans and spinach, with eggs cooked right on top until the yolks are firm and a little feta crumbled over. It makes two breakfasts, and the eggs, beans and spinach bring **protein, folate and choline**.",
+   "ingredients": [
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 110,
+     "note": "scrubbed, cut in 1.5 cm dice"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 40,
+     "note": "diced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 80,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "feta-cheese-f7c0e3",
+     "g": 25,
+     "swap": "dairy_protein",
+     "note": "crumbled"
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1.5
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.8
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the potatoes, pepper and spinach before cutting. Heat the oil in a large lidded nonstick skillet over medium heat, add the potatoes with the salt, cover and cook for 10 minutes, stirring now and then, until they are tender and starting to brown.",
+    "Add the onion and pepper, turn the heat up a little and cook for 5 minutes, until the onion is soft and the potatoes are crisp at the edges.",
+    "Stir in the white beans, paprika and pepper, then fold in the spinach until it wilts, about 1 minute.",
+    "Make wells in the hash and crack the eggs into them. Cover and cook for 7 to 8 minutes, until the whites are opaque and the yolks are completely firm. Wash your hands after cracking the eggs, then crumble the feta over the top.",
+    "Eat half now. Move the other half to a shallow container within 2 hours and refrigerate.",
+    "Reheat the second portion once, until steaming hot, 74 \u00b0C (165 \u00b0F), and eat it within 3 days."
+   ],
+   "prepMin": 12,
+   "cookMin": 25,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "Break the yolks up into the hash with a fork once they are firm. A few drops of hot sauce are great on top."
+  },
+  {
+   "id": "potato-kitchen-sardine-potato-green-bean-salad",
+   "name": "Sardine, egg, new potato and green bean salad",
+   "inspiredBy": "Inspired by salade Nicoise, with sardines",
+   "about": "Warm potatoes and green beans tossed in a mustard-lemon dressing with white beans, cherry tomatoes and onion, topped with chunks of sardine, and a firm hard-cooked egg. It is a Nicoise-style packed lunch, and the sardines and egg bring **omega-3 fats, calcium, vitamin D and choline**.",
+   "ingredients": [
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 110,
+     "note": "baby or new potatoes, scrubbed and cut in 2 cm pieces"
+    },
+    {
+     "food": "green-beans-raw-29678a",
+     "g": 80,
+     "note": "trimmed and halved"
+    },
+    {
+     "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+     "g": 85,
+     "swap": "fatty_fish",
+     "note": "drained, soft bones and all"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "swap": "lean_protein",
+     "note": "hard-cooked, quartered"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 80,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "cherry-tomato-raw-b40abc",
+     "g": 80,
+     "note": "halved"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 15,
+     "note": "thinly sliced"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 6,
+     "note": "chopped"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 15,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 5
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.5
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Put the egg in a pot of cold water, bring to a boil and cook for 12 minutes so the yolk is completely firm. Cool it in cold water, peel and quarter it, then wash your hands.",
+    "Wash the potatoes, green beans, tomatoes and parsley. Cook the potatoes in a pot of cold water with a pinch of the salt, brought to a boil, for 8 minutes. Add the green beans and cook for 4 minutes more, until the potatoes are tender and the beans are bright green. Drain well.",
+    "In a big bowl, whisk the mustard, lemon juice, oil, the rest of the salt and the pepper. Toss the warm potatoes and beans in the dressing so they soak it up.",
+    "Fold in the white beans, tomatoes, onion and parsley. Break the sardines into chunks and lay them and the egg on top. Keep any opened tin covered in the fridge and use it within 2 days.",
+    "For a packed lunch, chill the salad, then carry it in a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 10,
+   "cookMin": 25,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Cook the potatoes, beans and egg the night before: chill them within 2 hours in a shallow container, keep them in the fridge and eat within 3 days. In the morning it is a 3-minute toss. Swap the sardines for canned mackerel."
+  },
+  {
+   "id": "potato-kitchen-sardine-white-bean-green-bean-salad",
+   "name": "Sardine, white bean and green bean salad",
+   "inspiredBy": "Inspired by Italian tuna and white bean salad, with sardines",
+   "about": "Green beans and creamy white beans with cherry tomatoes, onion and baby spinach in a mustard-lemon dressing, topped with chunks of sardine and sunflower seeds. It is a potato-free lunch for the day that already has two potato dishes, and the sardines bring **omega-3 fats, calcium and vitamin D**.",
+   "ingredients": [
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 130,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "green-beans-raw-29678a",
+     "g": 100,
+     "note": "trimmed and halved"
+    },
+    {
+     "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+     "g": 85,
+     "swap": "fatty_fish",
+     "note": "drained, soft bones and all"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 40,
+     "swap": "leafy_greens",
+     "note": "baby spinach"
+    },
+    {
+     "food": "cherry-tomato-raw-b40abc",
+     "g": 80,
+     "note": "halved"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 15,
+     "note": "thinly sliced"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 6,
+     "note": "chopped"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 10,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 15,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 5
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.5
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the green beans, spinach, tomatoes and parsley. Boil the green beans in salted water for 4 minutes, until bright green and just tender, then drain and cool them under cold water.",
+    "In a big bowl, whisk the mustard, lemon juice, oil, salt and pepper.",
+    "Toss the white beans, green beans, tomatoes, onion and parsley in the dressing so the beans soak it up.",
+    "Pile onto the spinach. Break the sardines into chunks and lay them on top, then scatter over the sunflower seeds. Keep any opened tin covered in the fridge and use it within 2 days.",
+    "For a packed lunch, carry it in a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 10,
+   "cookMin": 5,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "15-minute"
+   ],
+   "tip": "Cook the green beans the night before and chill them within 2 hours in a shallow container. Swap the sardines for canned mackerel."
+  },
+  {
+   "id": "potato-kitchen-lentil-beet-egg-salad",
+   "name": "Lentil, beet and egg salad with feta and sunflower seeds",
+   "inspiredBy": "Inspired by a French lentil and beet salad",
+   "about": "Earthy lentils, sweet cooked beets and firm hard-cooked eggs on baby spinach with crunchy carrot, crumbled feta and sunflower seeds, tossed in a lemon-mustard dressing. It is a filling packed lunch with **iron, folate and choline**, and the lemon helps you absorb the iron.",
+   "ingredients": [
+    {
+     "food": "lentils-canned-no-salt-added-drained-c1edbd",
+     "g": 120,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "swap": "lean_protein",
+     "note": "hard-cooked"
+    },
+    {
+     "food": "beet-cooked-2d61be",
+     "g": 80,
+     "note": "plain, vacuum-packed, cut in small wedges"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 40,
+     "swap": "leafy_greens",
+     "note": "baby spinach"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 50,
+     "note": "peeled and grated"
+    },
+    {
+     "food": "feta-cheese-f7c0e3",
+     "g": 20,
+     "swap": "dairy_protein",
+     "note": "crumbled"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 15,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 15,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 4
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Put the egg in a pot of cold water, bring to a boil, then cook for 12 minutes so the yolk is completely firm. Cool it in cold water, peel and quarter it. Wash your hands after handling the raw egg.",
+    "Wash the spinach and carrot. Whisk the lemon juice, mustard, oil and pepper in a big bowl. Add the lentils, beets and carrot and toss to coat. The lentils soak up the dressing, which is what you want.",
+    "Fold in the spinach just before serving, then top with the eggs, feta and sunflower seeds.",
+    "For a packed lunch, keep the spinach, eggs, feta and seeds in a separate container, carry it all in a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 12,
+   "cookMin": 12,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Boil the eggs the night before and this is a 5-minute lunch. Beet juice stains, so use a dark bowl."
+  },
+  {
+   "id": "potato-kitchen-turkey-chili-loaded-baked-potatoes",
+   "name": "Turkey and bean chili loaded baked potatoes",
+   "inspiredBy": "Inspired by Tex-Mex chili and the classic loaded baked potato",
+   "about": "Fluffy baked potatoes with crisp skins, piled with a smoky turkey and kidney bean chili with spinach stirred in, and finished with a squeeze of lemon and parsley. It makes two portions, and the beans and potato bring **fibre, potassium and iron**.",
+   "ingredients": [
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 150,
+     "note": "scrubbed, a medium baking potato"
+    },
+    {
+     "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+     "g": 150,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "kidney-beans-canned-no-salt-added-drained-89a75f",
+     "g": 100,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 40,
+     "note": "finely grated"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "finely chopped"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 200
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 10,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "note": "chopped"
+    },
+    {
+     "food": "chili-powder-f1ace8",
+     "g": 2.5
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1.5
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1.0
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.0
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 \u00b0C (425 \u00b0F). Scrub the potatoes, prick them all over with a fork and microwave for 8 minutes, turning halfway. Set them straight on the oven rack and bake for 15 minutes, until the skins are crisp and the middles are soft.",
+    "Meanwhile, wash the pepper, carrot, spinach and parsley before cutting. Warm the oil in a big pot over medium heat and cook the onion, pepper and carrot for 5 minutes, until soft. Stir in the garlic, chili powder, cumin and paprika for 30 seconds, until fragrant.",
+    "Add the turkey and break it up with a spoon. Cook for 5 to 6 minutes, until there is no pink left. Wash your hands, the board and the spoon with hot soapy water.",
+    "Stir in the crushed tomatoes, kidney beans, salt and a splash of water. Simmer for 12 minutes, until thick, then stir in the spinach for the last minute. The turkey must reach 74 \u00b0C (165 \u00b0F).",
+    "Split the potatoes, spoon the chili over, and finish with the lemon juice and parsley. Eat half now.",
+    "Pack the second portion, with the potato and chili in separate shallow containers, within 2 hours and refrigerate. Eat it within 3 days, reheated once until steaming hot, 74 \u00b0C (165 \u00b0F). If you carry it to work, use a cold bag with an ice pack."
+   ],
+   "prepMin": 12,
+   "cookMin": 30,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "Microwave tomorrow's potato for 2 minutes, then crisp it in a hot oven or an air fryer while the chili heats. Use a wide pot if you cook this at the Big size, so the chili thickens."
+  },
+  {
+   "id": "potato-kitchen-turkey-chili-jacket-potatoes",
+   "name": "Jacket potatoes with a ladle of turkey and bean chili",
+   "inspiredBy": "Inspired by the British jacket potato and Tex-Mex chili",
+   "about": "A fluffy jacket potato with a crisp skin, topped with a ladle of smoky turkey and kidney bean chili with spinach, lemon and parsley. It is a lighter take on the loaded baked potatoes, with more potato and a little less chili, and it makes two portions with **fibre, potassium and iron**.",
+   "ingredients": [
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 260,
+     "note": "scrubbed, one baking potato"
+    },
+    {
+     "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+     "g": 100,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "kidney-beans-canned-no-salt-added-drained-89a75f",
+     "g": 80,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 40,
+     "note": "finely grated"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "finely chopped"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 200
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 10,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "note": "chopped"
+    },
+    {
+     "food": "chili-powder-f1ace8",
+     "g": 2.5
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1.5
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1.0
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.0
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 \u00b0C (425 \u00b0F). Scrub the potatoes, prick them all over with a fork and microwave for 6 to 8 minutes, turning halfway, until a knife slides in. Set them straight on the oven rack and bake for 15 minutes, until the skins are crisp and the middles are soft.",
+    "Meanwhile, wash the pepper, carrot, spinach and parsley before cutting. Warm the oil in a big pot over medium heat and cook the onion, pepper and carrot for 5 minutes, until soft. Stir in the garlic, chili powder, cumin and paprika for 30 seconds, until fragrant.",
+    "Add the turkey and break it up with a spoon. Cook for 5 to 6 minutes, until there is no pink left. Wash your hands, the board and the spoon with hot soapy water.",
+    "Stir in the crushed tomatoes, kidney beans, salt and a splash of water. Simmer for 12 minutes, until thick, then stir in the spinach for the last minute. The turkey must reach 74 \u00b0C (165 \u00b0F).",
+    "Split the potatoes, spoon the chili over, and finish with the lemon juice and parsley. Eat half now.",
+    "Pack the second portion, with the potato and chili in separate shallow containers, within 2 hours and refrigerate. Eat it within 3 days, reheated once until steaming hot, 74 \u00b0C (165 \u00b0F). If you carry it to work, use a cold bag with an ice pack."
+   ],
+   "prepMin": 12,
+   "cookMin": 30,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "Microwave tomorrow's potato for 2 minutes, then crisp it in a hot oven or an air fryer while the chili heats. Use a wide pot if you cook this at the Big size, so the chili thickens."
+  },
+  {
+   "id": "potato-kitchen-sweet-potato-chickpea-spinach-curry",
+   "name": "Sweet potato, chickpea and spinach curry",
+   "inspiredBy": "Inspired by Indian chana aloo masala",
+   "about": "A creamy, gently spiced curry of sweet potato, chickpeas and lentils in tomato and light coconut milk, with spinach wilted in at the end and lemon and parsley to finish. It makes two portions and is good the next day, with **vitamin A, folate, iron and fibre** all in one pot.",
+   "ingredients": [
+    {
+     "food": "sweet-potato-raw-15f948",
+     "g": 120,
+     "note": "peeled and cut in 2 cm cubes"
+    },
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 160,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "lentils-canned-no-salt-added-drained-c1edbd",
+     "g": 70,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "coconut-milk-reduced-fat-93cbb3",
+     "g": 60,
+     "note": "shaken well"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 100
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 80,
+     "swap": "leafy_greens"
+    },
+    {
+     "food": "ginger-root-raw-da2481",
+     "g": 5,
+     "note": "peeled and grated"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "finely chopped"
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 12,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 8,
+     "note": "chopped"
+    },
+    {
+     "food": "curry-powder-55e9c6",
+     "g": 3
+    },
+    {
+     "food": "turmeric-ground-32f550",
+     "g": 1
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1.5
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.0
+    }
+   ],
+   "steps": [
+    "Wash the spinach and parsley. Warm the oil in a large pot over medium heat and cook the onion for 5 minutes, until soft. Add the ginger, garlic, curry powder, turmeric and cumin and stir for 30 seconds, until fragrant.",
+    "Add the sweet potato, crushed tomatoes, coconut milk, salt and enough water to just cover. Bring to a boil, then turn it down, cover and simmer for 15 minutes, stirring now and then, until the sweet potato is tender.",
+    "Stir in the chickpeas and lentils and cook for 3 minutes, then add the spinach and let it wilt for 1 minute.",
+    "Finish with the lemon juice and parsley. Taste and add a pinch more salt if it needs it. Eat half now.",
+    "Cool the second portion in a shallow container within 2 hours, then refrigerate. Eat it within 3 days, reheated once until steaming hot, 74 \u00b0C (165 \u00b0F). If you carry it to work, use a cold bag with an ice pack.",
+    "To freeze, cool within 2 hours and freeze up to 2 months. Thaw in the fridge and use within 2 days, never refreeze, and reheat to 74 \u00b0C (165 \u00b0F)."
+   ],
+   "prepMin": 12,
+   "cookMin": 28,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "freezer-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "A spoonful of plain yogurt on top cools it down. Add a pinch of chili flakes if you like heat."
+  },
+  {
+   "id": "potato-kitchen-salmon-potato-cakes-with-crunchy-slaw",
+   "name": "Salmon potato cakes with crunchy slaw and peas",
+   "inspiredBy": "Inspired by British fishcakes",
+   "about": "Golden, oven-baked cakes of canned salmon, mashed potato, egg, onion and mustard, with a crisp cabbage and carrot slaw and sweet peas. The salmon, soft bones and all, brings **omega-3 fats, calcium and vitamin D**, and nothing needs frying.",
+   "ingredients": [
+    {
+     "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+     "g": 130,
+     "swap": "fatty_fish",
+     "note": "drained, soft bones included"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 100,
+     "note": "peeled and cut in 2 cm cubes"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 15,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "note": "beaten"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 20,
+     "note": "finely diced"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 8,
+     "note": "chopped"
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 6
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 25,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "peas-frozen-raw-dd927b",
+     "g": 80,
+     "note": "frozen"
+    },
+    {
+     "food": "cabbage-green-raw-f18ffb",
+     "g": 80,
+     "note": "finely shredded"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 40,
+     "note": "coarsely grated"
+    },
+    {
+     "food": "greek-yogurt-2-fat-plain-3b5a16",
+     "g": 35,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.8
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 \u00b0C (425 \u00b0F). Wash the potatoes, parsley, cabbage and carrot. Boil the potatoes in salted water for 8 to 10 minutes, until a fork slips in easily. Drain, let them steam dry for 2 minutes, and mash roughly.",
+    "While they cook, make the slaw. Toss the cabbage and carrot with the yogurt, half the lemon juice, a pinch of salt and half the parsley. Keep it in the fridge.",
+    "Flake the salmon into the mash, mashing the soft bones in. Add the onion, egg, the rest of the parsley and lemon juice, the mustard, pepper, the rest of the salt and the oats, and mix. Wash your hands after handling the raw egg. Shape into 4 cakes and chill them for 5 minutes. Keep any opened tin covered in the fridge and use it within 2 days.",
+    "Line a tray with parchment and brush it with half the oil. Bake the cakes for 10 minutes, flip them, brush with the rest of the oil and bake for 8 to 10 minutes more, until golden and hot through, 74 \u00b0C (165 \u00b0F).",
+    "Heat the peas in a small pot of water or in the microwave until steaming hot, about 3 minutes. Serve the cakes with the slaw and peas."
+   ],
+   "prepMin": 12,
+   "cookMin": 28,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "The cakes firm up if you chill them 30 minutes, so shape them in the morning if you can. Swap the salmon for canned mackerel."
+  },
+  {
+   "id": "potato-kitchen-tray-chicken-crushed-potatoes-green-beans",
+   "name": "Tray-roasted chicken with crushed potatoes and green beans",
+   "inspiredBy": "Inspired by British roast chicken with crushed potatoes",
+   "about": "Chicken thighs roasted on one tray with garlicky crushed baby potatoes, green beans and cherry tomatoes, finished with lemon, parsley and a garlic yogurt. The potatoes go crisp on the edges and soak up the chicken juices, and it makes two portions with **protein, vitamin C and potassium**.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-boneless-skinless-raw-722c98",
+     "g": 200,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 160,
+     "note": "baby potatoes, scrubbed and halved"
+    },
+    {
+     "food": "green-beans-raw-29678a",
+     "g": 120,
+     "note": "trimmed"
+    },
+    {
+     "food": "cherry-tomato-raw-b40abc",
+     "g": 80
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 7,
+     "note": "most smashed for the tray, a little finely grated for the sauce"
+    },
+    {
+     "food": "greek-yogurt-2-fat-plain-3b5a16",
+     "g": 40,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 12,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 20,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 6,
+     "note": "chopped"
+    },
+    {
+     "food": "thyme-cbb9af",
+     "g": 1
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1.5
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.2
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 \u00b0C (425 \u00b0F). Wash the potatoes, green beans, tomatoes and parsley. Boil the potatoes in salted water for 8 minutes, until nearly tender, then drain.",
+    "Meanwhile, cut the thighs into large pieces and toss them with half the oil, the lemon juice, garlic, thyme, paprika, pepper and half the salt. Wash your hands, the board and the knife with hot soapy water.",
+    "Tip the potatoes onto a big sheet pan and crush each one lightly with the bottom of a glass. Drizzle with the rest of the oil and salt, push them to the sides, and add the chicken in the middle. Roast for 12 minutes.",
+    "Add the green beans and tomatoes to the tray and roast for 10 minutes more, until the chicken reaches 74 \u00b0C (165 \u00b0F) in the thickest piece and the potato edges are crisp.",
+    "Stir the yogurt with the grated garlic, a squeeze of the lemon and a pinch of salt. Scatter the parsley over the tray, spoon the pan juices over and serve with the garlic yogurt. Eat half now.",
+    "Pack the second portion in a shallow container within 2 hours and refrigerate. Eat it within 3 days, reheated once until steaming hot, 74 \u00b0C (165 \u00b0F), with the garlic yogurt added cold. If you carry it to work, use a cold bag with an ice pack."
+   ],
+   "prepMin": 10,
+   "cookMin": 30,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "If the pan looks crowded, use two so everything roasts instead of steaming. At Standard and Big, roast the chickpeas for Thursday's and Friday's snacks together on the second shelf while the oven is on."
+  },
+  {
+   "id": "potato-kitchen-turkey-meatballs-tomato-sauce-white-bean-mash",
+   "name": "Turkey meatballs in tomato sauce with white bean mash and peas",
+   "inspiredBy": "Inspired by Swedish meatballs and mash, with a tomato sauce",
+   "about": "Tender oven-baked turkey meatballs with roasted carrots, a quick onion and tomato sauce, a creamy mash of potato and white beans and sweet peas. It is meatballs and mash comfort food, and the beans in the mash add **fibre and extra protein**.",
+   "ingredients": [
+    {
+     "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+     "g": 140,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "note": "beaten"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 12,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 60,
+     "note": "half finely grated, half finely diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "finely grated"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 6,
+     "note": "chopped"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 60,
+     "note": "peeled and cut in sticks"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 100
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 110,
+     "note": "peeled and cut in 3 cm cubes"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 80,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "milk-nonfat-37ddd7",
+     "g": 80
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "peas-frozen-raw-dd927b",
+     "g": 80,
+     "note": "frozen"
+    },
+    {
+     "food": "thyme-cbb9af",
+     "g": 0.8
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.0
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 \u00b0C (425 \u00b0F) and line a sheet pan. Wash the carrots and parsley. Boil the potatoes in salted water for 12 minutes, until very tender.",
+    "While they cook, mix the turkey with the egg, oats, the grated onion, garlic, parsley, thyme, half the salt and the pepper. Shape into 6 small balls. Wash your hands and the bowl with hot soapy water.",
+    "Put the meatballs and carrot sticks on the tray with a third of the oil and bake for 18 minutes, until the meatballs are browned and reach 74 \u00b0C (165 \u00b0F) in the middle.",
+    "Meanwhile, soften the diced onion in a small pot with a little of the oil for 4 minutes. Add the crushed tomatoes and a pinch of salt and simmer for 8 minutes, until thick.",
+    "Drain the potatoes and mash them with the white beans, milk, the rest of the oil and salt. Stir in the peas for the last minute so they heat through until steaming.",
+    "Roll the meatballs in the sauce and serve with the mash and carrots."
+   ],
+   "prepMin": 15,
+   "cookMin": 25,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Mash the white beans in well and nobody will guess they are there."
+  },
+  {
+   "id": "potato-kitchen-beef-keema-aloo-with-peas",
+   "name": "Beef keema aloo with peas and tomato-onion salad",
+   "inspiredBy": "Inspired by Punjabi keema aloo",
+   "about": "Lean ground beef simmered with potatoes, peas and spinach in a tomato, ginger and garam masala sauce, finished with lemon and parsley, with a cool tomato and onion salad on the side. It makes two portions, and the beef and spinach bring **iron and zinc**, with the lemon helping you absorb the iron.",
+   "ingredients": [
+    {
+     "food": "ground-beef-93-lean-raw-8d6017",
+     "g": 130,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 100,
+     "note": "scrubbed and cut in 1.5 cm dice"
+    },
+    {
+     "food": "peas-frozen-raw-dd927b",
+     "g": 70,
+     "note": "frozen"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 90,
+     "note": "most finely diced for the sauce, a little thinly sliced for the salad"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 100
+    },
+    {
+     "food": "ginger-root-raw-da2481",
+     "g": 6,
+     "note": "peeled and grated"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "finely chopped"
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 20,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 8,
+     "note": "chopped"
+    },
+    {
+     "food": "cherry-tomato-raw-b40abc",
+     "g": 70,
+     "note": "quartered"
+    },
+    {
+     "food": "greek-yogurt-2-fat-plain-3b5a16",
+     "g": 60,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "garam-masala-951e26",
+     "g": 2
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1.5
+    },
+    {
+     "food": "turmeric-ground-32f550",
+     "g": 0.8
+    },
+    {
+     "food": "chili-powder-f1ace8",
+     "g": 0.8
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.2
+    }
+   ],
+   "steps": [
+    "Wash the potatoes, spinach, tomatoes and parsley. Warm the oil in a large lidded pan over medium heat and cook the diced onion for 8 minutes, until soft and golden.",
+    "Stir in the ginger, garlic, cumin, turmeric and chili powder for 30 seconds, until fragrant. Add the beef and break it up well. Cook for 6 minutes, until no pink is left. Wash your hands, the board and the spoon with hot soapy water.",
+    "Add the crushed tomatoes, potatoes, half the salt and 150 ml of water. Cover and simmer for 15 minutes, until the potatoes are tender and the sauce is thick. The beef must reach 71 \u00b0C (160 \u00b0F).",
+    "Stir in the peas and spinach and cook for 3 minutes, until the peas are steaming hot and the spinach has wilted. Finish with the garam masala, half the lemon juice and half the parsley.",
+    "Toss the tomatoes and sliced onion with the rest of the lemon juice, parsley and salt. Serve it alongside, with the yogurt spooned over the keema. Eat half now.",
+    "Cool the second portion in a shallow container within 2 hours, then refrigerate. Eat it within 3 days, reheated once until steaming hot, 74 \u00b0C (165 \u00b0F), with the salad made fresh and the yogurt added cold. If you carry it to work, use a cold bag with an ice pack."
+   ],
+   "prepMin": 15,
+   "cookMin": 35,
+   "servings": 2,
+   "tags": [
+    "medium-spicy",
+    "makes-leftovers"
+   ],
+   "tip": "Add a green chili with the ginger if you like it hotter. The flavours deepen overnight, so the leftover is even better."
+  },
+  {
+   "id": "potato-kitchen-trout-warm-mustard-potato-salad",
+   "name": "Pan-seared trout with warm mustard potato salad and green beans",
+   "inspiredBy": "Inspired by Scandinavian trout with potatoes",
+   "about": "Crisp-skinned rainbow trout on baby spinach with a warm salad of baby potatoes, white beans and green beans in a mustard-lemon dressing. It takes about 35 minutes, and the trout brings **omega-3 fats, vitamin D and B12**.",
+   "ingredients": [
+    {
+     "food": "rainbow-trout-farmed-raw-0cc800",
+     "g": 150,
+     "swap": "fatty_fish",
+     "note": "skin on, pin bones removed"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 140,
+     "note": "baby potatoes, scrubbed and halved"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 60,
+     "swap": "legumes",
+     "note": "rinsed and drained"
+    },
+    {
+     "food": "green-beans-raw-29678a",
+     "g": 100,
+     "note": "trimmed and halved"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 40,
+     "swap": "leafy_greens",
+     "note": "baby spinach"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 15,
+     "note": "thinly sliced"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 6,
+     "note": "chopped"
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 8
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 20,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 4,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.0
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the potatoes, green beans, spinach and parsley. Put the potatoes in a pot of cold water with a pinch of the salt, bring to a boil and cook for 8 minutes. Add the green beans and cook for 4 minutes more, until both are tender, then drain.",
+    "In a big bowl, whisk the mustard, lemon juice, the olive oil, a pinch of salt and the pepper. Toss the warm potatoes and beans in the dressing with the white beans, onion and parsley.",
+    "Pat the trout dry and season with the rest of the salt, then wash your hands and the board with hot soapy water. Heat the canola oil in a nonstick pan over medium-high heat and cook the trout skin-side down for 4 minutes, until the skin is crisp. Flip and cook for 2 minutes, until it flakes easily and reaches 70 \u00b0C (158 \u00b0F).",
+    "Pile the spinach on a plate, add the potato salad and lay the trout on top."
+   ],
+   "prepMin": 12,
+   "cookMin": 22,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Swap the trout for Arctic char or salmon. Fish is best eaten the day you cook it. If you cook the potato salad ahead, chill it within 2 hours in a shallow container and eat it within 3 days."
+  },
+  {
+   "id": "potato-kitchen-apple-almonds",
+   "name": "Apple and almonds",
+   "about": "A crisp apple with a handful of almonds. The pair gives you **fibre, healthy fats and vitamin E**, and it keeps in a bag all day.",
+   "ingredients": [
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 140,
+     "swap": "vit_c_fruit",
+     "note": "washed and sliced"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 20,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the apple, slice it and serve with the almonds."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "potato-kitchen-egg-hummus-pepper",
+   "name": "Hard-cooked egg with hummus and red pepper strips",
+   "about": "A firm hard-cooked egg with a spoonful of hummus and crunchy red pepper strips. It is a little mezze plate with **protein, choline and vitamin C**.",
+   "ingredients": [
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "swap": "lean_protein",
+     "note": "hard-cooked"
+    },
+    {
+     "food": "hummus-443cc0",
+     "g": 30,
+     "swap": "legumes"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 60,
+     "note": "cut in strips"
+    }
+   ],
+   "steps": [
+    "Put the egg in a pot of cold water, bring to a boil, then cook for 12 minutes so the yolk is completely firm. Cool it in cold water and peel it. Wash your hands after handling the raw egg.",
+    "Wash the pepper and cut it into strips. Serve the egg with the hummus and pepper. Keep boiled eggs in the fridge and eat them within 3 days, and use opened hummus within 3 days."
+   ],
+   "prepMin": 3,
+   "cookMin": 12,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ]
+  },
+  {
+   "id": "potato-kitchen-hummus-carrot-sticks",
+   "name": "Hummus with carrot sticks",
+   "about": "Creamy hummus with crunchy carrot sticks for dipping. It is **fibre, plant protein and vitamin A** in a few minutes.",
+   "ingredients": [
+    {
+     "food": "hummus-443cc0",
+     "g": 80,
+     "swap": "legumes"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 100,
+     "note": "peeled and cut in sticks"
+    }
+   ],
+   "steps": [
+    "Wash and peel the carrot, then cut it into sticks. Serve with the hummus. Keep opened hummus in the fridge and use it within 3 days."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "potato-kitchen-orange-almonds",
+   "name": "Orange and almonds",
+   "about": "A juicy orange with a handful of almonds. The orange brings **vitamin C**, and the almonds bring vitamin E and some calcium.",
+   "ingredients": [
+    {
+     "food": "orange-raw-ce787f",
+     "g": 150,
+     "swap": "vit_c_fruit",
+     "note": "washed and peeled"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 20,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the orange, peel it and serve with the almonds."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "potato-kitchen-smoky-roasted-chickpeas",
+   "name": "Smoky roasted chickpeas",
+   "about": "Chickpeas roasted until crunchy with smoked paprika and cumin. A handful brings **plant protein, fibre and folate**, and they are good until the end of the day.",
+   "ingredients": [
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 120,
+     "swap": "legumes",
+     "note": "rinsed, drained and patted very dry"
+    },
+    {
+     "food": "canola-oil-6744e1",
+     "g": 4,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1.5
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 \u00b0C (425 \u00b0F). Pat the chickpeas very dry with a clean towel and toss them with the oil, paprika, cumin and salt.",
+    "Spread them on a small tray and roast for 20 to 25 minutes, shaking the tray halfway, until golden and crisp. They crisp up more as they cool.",
+    "Eat them the same day. For the next day, cool them within 2 hours, keep them covered in the fridge and crisp them in a hot oven or air fryer for 3 to 4 minutes."
+   ],
+   "prepMin": 5,
+   "cookMin": 25,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ]
+  },
+  {
+   "id": "potato-kitchen-kiwi-sunflower-seeds",
+   "name": "Kiwi and sunflower seeds",
+   "about": "Two sweet-tart kiwis with a spoonful of sunflower seeds. The kiwis bring more **vitamin C** than an orange, and the seeds bring vitamin E and magnesium.",
+   "ingredients": [
+    {
+     "food": "kiwi-fruit-raw-9fc921",
+     "g": 150,
+     "swap": "vit_c_fruit",
+     "note": "washed and halved, eaten with a spoon"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 15,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the kiwis, halve them and scoop with a spoon. Eat with the sunflower seeds."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "potato-kitchen-blueberry-yogurt-sunflower-seeds",
+   "name": "Greek yogurt with blueberries and sunflower seeds",
+   "about": "Thick Greek yogurt with juicy blueberries and a crunch of sunflower seeds. It is **protein, calcium and vitamin E**, ready in two minutes.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-2-fat-plain-3b5a16",
+     "g": 150,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "blueberry-raw-e94073",
+     "g": 80,
+     "swap": "berries",
+     "note": "fresh or frozen, rinsed"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 12,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Rinse the blueberries. Spoon the yogurt into a bowl and top with the blueberries and sunflower seeds.",
+    "Use fresh blueberries if you are cooking for someone who is pregnant, 60 or older, 5 or under, or has a weak immune system, or boil frozen ones for 1 minute and cool them first."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "potato-kitchen-banana-almonds",
+   "name": "Banana and almonds",
+   "about": "A banana with a handful of almonds. The banana brings **potassium and vitamin B6**, and the almonds bring protein and vitamin E.",
+   "ingredients": [
+    {
+     "food": "banana-raw-61b750",
+     "g": 80,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 20,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Peel the banana and eat it with the almonds."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  }
+ ],
+ "week": [
+  {
+   "day": 1,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "potato-kitchen-apple-pie-overnight-oats"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "potato-kitchen-sardine-potato-green-bean-salad"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "potato-kitchen-turkey-chili-loaded-baked-potatoes"
+    },
+    {
+     "slot": "snack",
+     "recipe": "potato-kitchen-orange-almonds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "potato-kitchen-hummus-carrot-sticks"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "potato-kitchen-banana-blueberry-walnut-porridge"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "potato-kitchen-turkey-chili-loaded-baked-potatoes",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "potato-kitchen-sweet-potato-chickpea-spinach-curry"
+    },
+    {
+     "slot": "snack",
+     "recipe": "potato-kitchen-blueberry-yogurt-sunflower-seeds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "potato-kitchen-egg-hummus-pepper"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "potato-kitchen-apple-pie-overnight-oats"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "potato-kitchen-sweet-potato-chickpea-spinach-curry",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "potato-kitchen-salmon-potato-cakes-with-crunchy-slaw"
+    },
+    {
+     "slot": "snack",
+     "recipe": "potato-kitchen-kiwi-sunflower-seeds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "potato-kitchen-apple-almonds"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "potato-kitchen-banana-blueberry-walnut-porridge"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "potato-kitchen-lentil-beet-egg-salad"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "potato-kitchen-tray-chicken-crushed-potatoes-green-beans"
+    },
+    {
+     "slot": "snack",
+     "recipe": "potato-kitchen-orange-almonds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "potato-kitchen-smoky-roasted-chickpeas"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "potato-kitchen-apple-pie-overnight-oats"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "potato-kitchen-tray-chicken-crushed-potatoes-green-beans",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "potato-kitchen-turkey-meatballs-tomato-sauce-white-bean-mash"
+    },
+    {
+     "slot": "snack",
+     "recipe": "potato-kitchen-kiwi-sunflower-seeds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "potato-kitchen-smoky-roasted-chickpeas"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "potato-kitchen-potato-white-bean-spinach-hash-with-eggs"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "potato-kitchen-sardine-white-bean-green-bean-salad"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "potato-kitchen-beef-keema-aloo-with-peas"
+    },
+    {
+     "slot": "snack",
+     "recipe": "potato-kitchen-banana-almonds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "potato-kitchen-hummus-carrot-sticks"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "potato-kitchen-potato-white-bean-spinach-hash-with-eggs",
+     "leftover": true
+    },
+    {
+     "slot": "lunch",
+     "recipe": "potato-kitchen-beef-keema-aloo-with-peas",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "potato-kitchen-trout-warm-mustard-potato-salad"
+    },
+    {
+     "slot": "snack",
+     "recipe": "potato-kitchen-blueberry-yogurt-sunflower-seeds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "potato-kitchen-apple-almonds"
+    }
+   ]
+  }
+ ]
+}
