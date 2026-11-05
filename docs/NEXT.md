@@ -45,7 +45,7 @@ Read this first, then `content/STATUS.md` (session log at the bottom), `content/
    - Leftovers are exactly the portion cooked for them, at every size and in the app (`personalizeWeek`, `sizeDaysDown`). 45 families needed small recipe fixes (Sonnet writers, reviewed); every 1,400 band kept. Sizing a Light week in the app takes about 0.5 s on a desktop (cached per plan); check it on Firas's phone.
    - Follow-up: thai-viet Big 3200 day 3 zinc sits just under the 40 mg upper limit (above the 36 mg headroom newer families keep).
 3. **The 30 global plans** in waves of about 5. Add briefs to CATALOG and GUIDE §13 first, using the writer → critic → final review loop below.
-4. **Final content pass:** remove pork; remove the alcohol still in 29 recipes (Shaoxing wine and mirin in china-home, japan-korea, lean-asia and muscle-asia), then add a lab gate so no recipe has alcohol; rebuild, run the full checks, publish the demo.
+4. **Final content pass: pork, alcohol and soft eggs done Nov 6** (house bans in the lab for every family). Left: rebuild, full checks and the demo after the 30 global plans.
 5. **Paywall screens:** UI only, ready for RevenueCat.
 6. **When the accounts exist:** Supabase sign-in (Apple, Google, email), account deletion, sync, EAS builds, a beta (Google needs 12 testers for 14 days), store listing, submit.
 
