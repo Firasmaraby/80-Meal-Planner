@@ -1,0 +1,1829 @@
+{
+ "id": "chicken-every-way",
+ "name": "Chicken Every Way",
+ "style": "balanced",
+ "cuisine": "Global",
+ "carbStyle": "whole",
+ "regions": [
+  "Morocco",
+  "Greece",
+  "India",
+  "Britain",
+  "Levant"
+ ],
+ "summary": "Five chicken dinners that taste nothing alike: a Moroccan-style tagine, a Greek lemon-oregano grill, a barley soup, a sweet potato curry and a Sunday-style roast. Salmon and trout bring the omega-3, and the carbs are all whole foods.",
+ "howItWorks": "**Chicken, five ways.** Thighs go into Monday's tagine-style stew, breast into Tuesday's Greek grill and Friday's curry, drumsticks into Wednesday's barley soup and mixed legs into Saturday's roast. Each dish has its own spices and method, so no two taste alike.\n\n**Cook once, eat twice.** The stew, soup, curry and roast each make two portions, and the second is the next day's lunch. Cool it within the hour, keep it up to 3 days and reheat it to 74 °C. Salmon and trout are always cooked fresh.\n\n**Fish three times.** Sardines on Monday, salmon on Thursday and trout on Sunday bring **omega-3** and a little **vitamin D**. Wednesday's tuna lunch is a lighter extra. Eggs appear at three breakfasts and two lunches, and the carbs stay whole: oats, quinoa, barley, potatoes, beans and fruit.\n\n**Light.** It covers 1400 to 1800 kcal. It keeps one snack a day and trims the oats, barley, oil, nuts and potatoes first, while kale and spinach stay for calcium and iron. The fish and most chicken hold; at 1400 the Greek chicken breast is about half size and the roast legs a third smaller.\n\n**Big.** It grows the chicken, fish, eggs, beans, grains, dairy, oil and nuts, and adds an orange and banana snack on Monday and apricots with almonds on Thursday. The vegetables and fruit in the dishes stay about the same.",
+ "signature": [
+  "chicken-every-way-apricot-chickpea-chicken-tagine",
+  "chicken-every-way-lemon-oregano-chicken-greek-salad",
+  "chicken-every-way-chicken-sweet-potato-lentil-curry",
+  "chicken-every-way-roast-chicken-legs-roots-thyme"
+ ],
+ "lifeStage": "none",
+ "sizes": {
+  "light": {
+   "kcal": 1650,
+   "covers": [
+    "1400-1600",
+    "1600-1800"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 2,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 3,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 5,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 6,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 7,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    }
+   ]
+  },
+  "standard": {
+   "kcal": 2100,
+   "covers": [
+    "1800-2000",
+    "2000-2200",
+    "2200-2400"
+   ]
+  },
+  "big": {
+   "kcal": 3000,
+   "covers": [
+    "2400-2800",
+    "2800-3200"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "add": {
+      "slot": "snack",
+      "recipe": "chicken-every-way-orange-cinnamon"
+     }
+    },
+    {
+     "day": 4,
+     "add": {
+      "slot": "snack",
+      "recipe": "chicken-every-way-apricot-almond-mix"
+     }
+    }
+   ]
+  }
+ },
+ "recipes": [
+  {
+   "id": "chicken-every-way-berry-walnut-overnight-oats",
+   "name": "Berry and walnut overnight oats",
+   "inspiredBy": "Inspired by Swiss bircher muesli",
+   "about": "Rolled oats soaked overnight in milk and Greek yogurt until creamy, with frozen berries that thaw into a purple swirl and a crunch of walnuts. Five minutes the night before and it brings **protein and fibre** before you leave the house.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 50,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "milk-reduced-fat-2-fat-4a4316",
+     "g": 140,
+     "swap": "dairy_protein",
+     "note": "or any milk you like"
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 100,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "mixed-berry-frozen-9f87f1",
+     "g": 100,
+     "swap": "berries",
+     "note": "straight from the freezer"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Wash your hands. Stir the oats, milk, yogurt and cinnamon together in a jar until there are no dry patches.",
+    "Spoon the frozen berries on top, put the lid on and refrigerate overnight. They thaw into the oats and turn them pink.",
+    "In the morning, stir it up. If it is thick, loosen it with a splash of milk. Scatter the walnuts on just before eating so they stay crisp.",
+    "Keep it in the fridge and eat it within 2 days of making it."
+   ],
+   "prepMin": 5,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ],
+   "tip": "Make it the night before. If you are cooking for someone who is pregnant, 60 or older, 5 or under, or has a weak immune system, boil the frozen berries for 1 minute and cool them first, or use fresh."
+  },
+  {
+   "id": "chicken-every-way-apple-chia-cinnamon-overnight-oats",
+   "name": "Apple, chia and cinnamon overnight oats",
+   "about": "Oats and chia soaked overnight in milk, topped with grated apple, cinnamon and toasted almonds. Cosy and lightly sweet, and the chia and almonds bring **magnesium, vitamin E and fibre**.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 40,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "milk-reduced-fat-2-fat-4a4316",
+     "g": 200,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "chia-seeds-dried-33a3b7",
+     "g": 12,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 120,
+     "swap": "vit_c_fruit",
+     "note": "washed and coarsely grated, skin on"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "sliced"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.8
+    },
+    {
+     "food": "ginger-ground-648bc0",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash your hands and the apple. Stir the oats, chia, milk, cinnamon and ginger together in a jar. Fold in about two thirds of the grated apple and keep the rest for the top.",
+    "Cover and refrigerate overnight. The chia swells and makes it thick and creamy.",
+    "In the morning, stir well, loosen with a splash of milk if you like, and top with the rest of the apple.",
+    "Toast the almonds in a dry pan for 2 minutes until golden, then scatter them over. Eat within 2 days of making."
+   ],
+   "prepMin": 8,
+   "cookMin": 2,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ],
+   "tip": "Grate the apple in the morning instead if you like it crisp."
+  },
+  {
+   "id": "chicken-every-way-banana-nut-quinoa-porridge",
+   "name": "Banana, nut and quinoa porridge",
+   "about": "A warm bowl of quinoa simmered in milk until soft and creamy, with mashed banana and chia, topped with sliced banana and chopped almonds and walnuts. Comforting on a cold morning, with **fibre, potassium and omega-3 fats** from the chia and walnuts, and a change from oats.",
+   "ingredients": [
+    {
+     "food": "quinoa-dry-13e0ee",
+     "g": 45,
+     "swap": "low_gi_grains",
+     "note": "rinsed"
+    },
+    {
+     "food": "milk-reduced-fat-2-fat-4a4316",
+     "g": 230,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "banana-raw-61b750",
+     "g": 100,
+     "swap": "vit_c_fruit",
+     "note": "ripe, half mashed and half sliced"
+    },
+    {
+     "food": "chia-seeds-dried-33a3b7",
+     "g": 8,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 10,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 8,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.6
+    }
+   ],
+   "steps": [
+    "Rinse the quinoa under cold water. Put it in a small pot with the milk, mashed banana and cinnamon and bring to a gentle simmer, stirring.",
+    "Cover and cook for 14 minutes, stirring now and then, until the quinoa is soft and the milk is mostly absorbed. Stir in the chia and let it stand for 2 minutes.",
+    "Pour into a bowl and top with the sliced banana, almonds and walnuts."
+   ],
+   "prepMin": 4,
+   "cookMin": 16,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Toast the nuts in a dry pan for 2 minutes if you have the time. To save time, cook it the night before, cool it within 1 hour, keep it covered in the fridge and warm it with a splash of milk until steaming."
+  },
+  {
+   "id": "chicken-every-way-savoury-oat-bowl-spinach-tomato-egg",
+   "name": "Savoury oats with spinach, tomatoes and scrambled egg",
+   "about": "Creamy oats simmered in milk with garlic and spinach, topped with blistered cherry tomatoes and eggs scrambled until firm, with a scatter of walnuts. A hearty, quick breakfast with **protein, choline and calcium**.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 45,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "milk-reduced-fat-2-fat-4a4316",
+     "g": 200,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 100,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "cherry-tomato-raw-b40abc",
+     "g": 70,
+     "note": "washed and halved"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 2,
+     "note": "minced"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 5,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 0.3
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Wash the spinach and tomatoes. Put the oats in a small pot with the milk, the garlic and a pinch of the salt. Simmer for 4 to 5 minutes, stirring, until thick and creamy. Stir in the spinach for the last minute until wilted.",
+    "While the oats cook, heat the oil in a small nonstick pan and cook the tomatoes with the smoked paprika for 2 minutes, until they start to burst.",
+    "Push the tomatoes aside, add the beaten eggs with the pepper and scramble for 3 minutes, until completely firm with no runny parts.",
+    "Spoon the oats into a bowl and top with the tomatoes, eggs and walnuts."
+   ],
+   "prepMin": 4,
+   "cookMin": 10,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ],
+   "tip": "Use a plant milk if you prefer, and check that it is fortified with calcium."
+  },
+  {
+   "id": "chicken-every-way-pepper-spinach-sweet-potato-hash",
+   "name": "Sweet potato hash with red pepper, spinach and eggs",
+   "about": "Crisp-edged sweet potato cubes browned with red pepper and onion, with spinach wilted in and eggs scrambled until firm. A slow weekend breakfast, with a cool spoonful of yogurt on the side, bringing **vitamin A, choline and calcium**.",
+   "ingredients": [
+    {
+     "food": "sweet-potato-raw-15f948",
+     "g": 150,
+     "note": "scrubbed and cut in small cubes"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 70,
+     "note": "washed, diced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 40,
+     "note": "diced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 100,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 70,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 0.8
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.8
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Wash the sweet potato, pepper and spinach. Heat the oil in a large nonstick pan over medium heat and add the sweet potato with a splash of water. Cover and cook for 8 minutes, stirring now and then, until nearly tender.",
+    "Uncover and add the onion, pepper, smoked paprika and salt. Cook for 6 minutes, until the potato is golden at the edges and the pepper is soft.",
+    "Fold in the spinach until just wilted. Push the hash to one side.",
+    "Beat the eggs with a pinch of pepper and scramble them in the cleared space for 3 minutes, until completely firm with no runny parts. Mix everything together and serve hot with a spoonful of cold yogurt on the side."
+   ],
+   "prepMin": 12,
+   "cookMin": 20,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Cube the sweet potato small so it softens in the time it takes to brown."
+  },
+  {
+   "id": "chicken-every-way-sardine-lentil-broccoli-salad",
+   "name": "Sardine, lentil and broccoli salad with lemon and za'atar",
+   "inspiredBy": "Inspired by French lentil salads",
+   "about": "Canned sardines on lemony lentils with a big pile of lightly blanched broccoli, cherry tomatoes and red onion on a bed of shredded kale, finished with cilantro and a pinch of za'atar. Quick, and full of flavour, with **omega-3, calcium, iron and choline** from the sardines, lentils and broccoli.",
+   "ingredients": [
+    {
+     "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+     "g": 90,
+     "swap": "fatty_fish",
+     "note": "bone-in"
+    },
+    {
+     "food": "lentils-canned-no-salt-added-drained-c1edbd",
+     "g": 100,
+     "swap": "legumes"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 270,
+     "note": "washed, in small florets"
+    },
+    {
+     "food": "cherry-tomato-raw-b40abc",
+     "g": 70,
+     "note": "washed and halved"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 20,
+     "note": "thinly sliced"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 8,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, shredded"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 20,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "zaatar-74bd44",
+     "g": 1.5
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Wash the broccoli, tomatoes, cilantro and kale. Drop the broccoli florets into boiling water for 2 minutes, drain and cool them under cold water. Whisk the lemon juice, olive oil and pepper in a bowl, and rub a spoonful of it into the kale with your hands for a minute, until the kale softens and darkens.",
+    "Add the lentils, broccoli, tomatoes and onion and toss to coat. Let it sit for 5 minutes so the onion mellows.",
+    "Pile the kale on a plate. Spoon the lentil salad over it, flake the sardines on top and finish with the cilantro and za'atar.",
+    "Keep an opened tin of sardines covered in the fridge and use it within 2 days. If packing this for lunch, put it in a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 12,
+   "cookMin": 3,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "15-minute"
+   ],
+   "tip": "Mash a few of the lentils into the dressing for a creamier salad. Baby kale or Tuscan (lacinato) kale is the most tender here."
+  },
+  {
+   "id": "chicken-every-way-tuna-chickpea-red-pepper-salad",
+   "name": "Tuna, chickpea and egg salad with red pepper and lemon-cumin dressing",
+   "inspiredBy": "Inspired by Spanish tuna and chickpea salads",
+   "about": "Canned light tuna, chickpeas and a firm hard-boiled egg with crunchy red pepper, cucumber and shredded kale in a lemon, cumin and olive oil dressing. Bright and filling, with **protein, choline and folate** in one bowl.",
+   "ingredients": [
+    {
+     "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+     "g": 100,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "swap": "lean_protein",
+     "note": "in its shell"
+    },
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 120,
+     "swap": "legumes"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 70,
+     "note": "washed, diced"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 60,
+     "note": "washed, diced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 20,
+     "note": "finely diced"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 70,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, shredded"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 10,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 8,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 22,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 0.6
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 0.3
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    }
+   ],
+   "steps": [
+    "Put the eggs in a small pot of boiling water and cook for 10 minutes, until completely hard-boiled with firm yolks. Cool them under cold running water.",
+    "Wash the pepper, cucumber, kale and cilantro. Whisk the lemon juice, olive oil, cumin, smoked paprika and salt in a bowl.",
+    "Add the chickpeas, pepper, cucumber, onion and cilantro and toss.",
+    "Massage the kale with a little of the dressing for a minute, until it softens, and spread it on a plate. Spoon the chickpea salad over it, flake the tuna on top, add the peeled eggs in quarters and scatter the walnuts over.",
+    "Keep an opened tin of tuna covered in the fridge and use it within 2 days. If packing this for lunch, use a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 12,
+   "cookMin": 10,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ]
+  },
+  {
+   "id": "chicken-every-way-egg-potato-broccoli-dill-salad",
+   "name": "Egg, potato and broccoli salad with lemon-dill dressing",
+   "inspiredBy": "Inspired by Scandinavian potato salad",
+   "about": "Baby potatoes, broccoli, chickpeas and firm hard-boiled eggs in a mustardy lemon and dill dressing over shredded kale, with a little feta. A lunch salad with **protein, choline and calcium**.",
+   "ingredients": [
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 120,
+     "note": "small, scrubbed and halved"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 110,
+     "note": "washed, in small florets"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 100,
+     "swap": "lean_protein",
+     "note": "in their shells"
+    },
+    {
+     "food": "dill-raw-b97f95",
+     "g": 6,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 18,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 60,
+     "swap": "legumes"
+    },
+    {
+     "food": "feta-cheese-f7c0e3",
+     "g": 20,
+     "note": "crumbled"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, shredded"
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 5
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 0.3
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.5
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Put the potatoes in a pot of cold water with a pinch of salt and bring to a boil. Lower the eggs in with a spoon and cook for 10 minutes, until the eggs are completely hard-boiled with firm yolks.",
+    "Add the broccoli florets for the last 3 minutes. Drain everything, run the eggs under cold water to cool them, and spread the potatoes and broccoli on a plate to cool.",
+    "Whisk the lemon juice, olive oil, mustard, dill, salt and pepper. Peel the eggs and cut them in quarters. Wash the kale and massage it with a pinch of salt and a squeeze of lemon for a minute.",
+    "Toss the potatoes, broccoli and chickpeas with the dressing, serve on the kale, top with the eggs and feta and dust the eggs with smoked paprika. Eat it cool, not hot. If packing, use a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 10,
+   "cookMin": 14,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Cook the potatoes and eggs the night before, cool them and keep them covered in the fridge, and this takes five minutes."
+  },
+  {
+   "id": "chicken-every-way-apricot-chickpea-chicken-tagine",
+   "name": "Chicken and chickpea tagine-style stew with apricots and barley",
+   "inspiredBy": "Inspired by Moroccan chicken tagines",
+   "about": "Chicken thighs simmered with chickpeas, carrots and dried apricots in a warm cumin, ginger and cinnamon sauce, wilted spinach stirred in, served over barley. It makes tomorrow's lunch, and the chickpeas, spinach and barley bring **iron, folate and fibre**.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-skinless-raw-767a98",
+     "g": 190,
+     "swap": "lean_protein",
+     "note": "boneless, trimmed, in bite-size pieces"
+    },
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 100,
+     "swap": "legumes"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 80,
+     "note": "washed, sliced in rounds"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 70,
+     "note": "diced"
+    },
+    {
+     "food": "apricot-dried-1d0f8b",
+     "g": 20,
+     "note": "sliced"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 120
+    },
+    {
+     "food": "pearl-barley-raw-07771a",
+     "g": 35,
+     "swap": "low_gi_grains",
+     "note": "rinsed"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 100,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 12,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 8,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1.5
+    },
+    {
+     "food": "ginger-ground-648bc0",
+     "g": 1
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.8
+    },
+    {
+     "food": "turmeric-ground-32f550",
+     "g": 0.5
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.1
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Rinse the barley, put it in a pot with plenty of water and simmer for 25 minutes, until tender but chewy. Drain.",
+    "Meanwhile, heat the oil in a wide pot over medium heat and soften the onion and carrot for 5 minutes. Add the garlic, cumin, ginger, cinnamon and turmeric and stir for 30 seconds until fragrant.",
+    "Add the chicken and brown it lightly for 4 minutes. Wash your hands and the board with hot soapy water after handling the raw chicken. Stir in the tomatoes, apricots, salt, pepper and a splash of water.",
+    "Cover and simmer for 12 minutes. Add the chickpeas and simmer 5 minutes more, until the chicken reaches 74 °C (165 °F) in the thickest piece and the sauce is thick. Wash the spinach and cilantro.",
+    "Stir the spinach and lemon juice into the stew until wilted and scatter the cilantro over. Serve over the barley.",
+    "Cool the second portion of stew and barley within 1 hour, spread in a shallow container, and refrigerate. Eat within 3 days, reheated once until steaming hot, 74 °C (165 °F). To carry it to work, use a cold bag with an ice pack and reheat it before eating."
+   ],
+   "prepMin": 12,
+   "cookMin": 28,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "makes-leftovers"
+   ],
+   "tip": "Freeze the stew without the barley up to 2 months: cool within 1 hour, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+  },
+  {
+   "id": "chicken-every-way-lemon-oregano-chicken-greek-salad",
+   "name": "Lemon-oregano grilled chicken with Greek salad and crushed potatoes",
+   "inspiredBy": "Inspired by Greek souvlaki and horiatiki",
+   "about": "Chicken breast marinated in lemon, garlic, oregano and yogurt, seared in a hot pan and served with a big crunchy kale, tomato, cucumber and feta salad and lemony crushed potatoes. The yogurt keeps the breast juicy, and the salad brings **vitamin C, vitamin K and potassium**.",
+   "ingredients": [
+    {
+     "food": "chicken-breast-boneless-skinless-raw-c37574",
+     "g": 190,
+     "swap": "lean_protein",
+     "note": "cut in two flat cutlets"
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 30,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 25,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "oregano-raw-219093",
+     "g": 4,
+     "note": "fresh, chopped; or 1 tsp dried"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 200,
+     "note": "small, scrubbed"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 80,
+     "note": "washed, chunked"
+    },
+    {
+     "food": "cherry-tomato-raw-b40abc",
+     "g": 100,
+     "note": "washed, halved"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 25,
+     "note": "thinly sliced"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, shredded"
+    },
+    {
+     "food": "feta-cheese-f7c0e3",
+     "g": 20,
+     "note": "crumbled"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.9
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Mix the yogurt, half the lemon juice, the garlic, half the oregano, a pinch of the salt and the pepper in a bowl. Add the chicken cutlets, turn to coat and leave in the fridge while you cook the potatoes, up to 20 minutes. Never reuse the marinade. Wash your hands, the knife and the board after cutting the raw chicken.",
+    "Boil the potatoes in salted water for 15 minutes until tender. Drain, crush each with a fork, and toss with half the oil, the remaining lemon juice and a pinch of salt.",
+    "Heat a grill pan or heavy skillet over medium-high heat with a little of the oil. Lift the chicken out, wipe off the extra marinade, and cook for 5 minutes per side, until deep golden and 74 °C (165 °F) in the thickest part. Wash your hands, the board and the plate that held the raw chicken with hot soapy water.",
+    "Wash the vegetables. Massage the shredded kale with a pinch of salt and a squeeze of lemon for a minute, then toss it with the cucumber, tomatoes, onion, the last of the oil, the rest of the oregano and the feta. Slice the rested chicken and serve with the salad and potatoes."
+   ],
+   "prepMin": 15,
+   "cookMin": 22,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Pat the chicken breast to an even thickness so it cooks evenly."
+  },
+  {
+   "id": "chicken-every-way-chicken-barley-vegetable-soup",
+   "name": "Chicken, barley and vegetable soup with dill",
+   "inspiredBy": "Inspired by Eastern European chicken soup",
+   "about": "A golden, brothy chicken soup with pearl barley, carrot, parsnip and spinach, finished with lemon and dill. It tastes even better the next day, and the barley and vegetables bring **fibre and potassium**.",
+   "ingredients": [
+    {
+     "food": "chicken-drumstick-skinless-raw-817ce8",
+     "g": 205,
+     "swap": "lean_protein",
+     "note": "weight of the meat off the bone; buy about 1.4 times this in bone-in drumsticks, skin removed"
+    },
+    {
+     "food": "pearl-barley-raw-07771a",
+     "g": 40,
+     "swap": "low_gi_grains",
+     "note": "rinsed"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 90,
+     "note": "washed, diced"
+    },
+    {
+     "food": "parsnip-raw-27bd40",
+     "g": 70,
+     "note": "peeled, diced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 70,
+     "note": "diced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 120,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 15,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "dill-raw-b97f95",
+     "g": 6,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "turmeric-ground-32f550",
+     "g": 0.4
+    },
+    {
+     "food": "bay-leaf-513612",
+     "g": 0.2
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.2
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Heat the oil in a large pot over medium heat and soften the onion, carrot and parsnip for 5 minutes. Add the garlic, turmeric and bay leaf and stir for 30 seconds.",
+    "Add the drumsticks, the barley and 1 litre of water, with the salt and pepper. Wash your hands and the board with hot soapy water after handling the raw chicken.",
+    "Bring to a boil, then simmer, partly covered, for 25 minutes, until the barley is tender and the chicken is 74 °C (165 °F) at the thickest part, near the bone.",
+    "Lift out the drumsticks, pull the meat off the bones in chunks and return it to the pot with the washed spinach. Simmer for 2 minutes more. Add the lemon juice and the dill.",
+    "Cool the second portion within 1 hour, since it holds cooked barley, in a shallow container in the fridge. Eat within 3 days, reheated until steaming hot, 74 °C (165 °F); add a splash of water, since the barley thickens it. To carry it to work, use a cold bag with an ice pack."
+   ],
+   "prepMin": 10,
+   "cookMin": 40,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "freezer-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "To freeze, cool within 1 hour, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F). Chicken thighs work as well as drumsticks."
+  },
+  {
+   "id": "chicken-every-way-mustard-lemon-salmon-chickpeas-broccoli",
+   "name": "Ginger-mustard salmon with crispy chickpeas, potatoes and broccoli",
+   "about": "A salmon fillet brushed with Dijon, ginger and lemon and roasted on one tray with golden chickpeas, baby potatoes, broccoli and wilted spinach, with a fresh cilantro and lemon drizzle. Quick and bright, with **omega-3 and vitamin D** from the salmon and **iron and fibre** from the chickpeas.",
+   "ingredients": [
+    {
+     "food": "salmon-atlantic-farmed-raw-914b10",
+     "g": 160,
+     "swap": "fatty_fish",
+     "note": "skinless fillet"
+    },
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 90,
+     "swap": "legumes",
+     "note": "rinsed and patted dry"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 70,
+     "note": "baby potatoes, scrubbed and halved"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 130,
+     "note": "washed, in florets"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 130,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 10
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 25,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 8,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "ginger-ground-648bc0",
+     "g": 0.8
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 0.5
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.9
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 °C (425 °F). Wash the vegetables. Toss the potatoes with half the oil and a pinch of salt on a sheet pan and roast for 10 minutes.",
+    "Add the chickpeas and the smoked paprika to the tray with a pinch of salt and roast 5 minutes more. Stir the mustard, garlic, ginger, half the lemon juice and the pepper together.",
+    "Add the broccoli to the tray, push everything aside and lay the salmon on it. Brush the salmon with the mustard glaze. Roast for 10 to 12 minutes, until the fish flakes easily and reaches 70 °C (158 °F). Wash your hands and the board with hot soapy water after handling the raw fish.",
+    "Meanwhile, stir the cilantro with a squeeze of the remaining lemon and a pinch of salt.",
+    "Toss the vegetables with the rest of the oil and lemon and fold in the washed spinach so it wilts in the heat. Serve the salmon on top and spoon the cilantro and lemon over it."
+   ],
+   "prepMin": 12,
+   "cookMin": 27,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Green beans work in place of the broccoli too."
+  },
+  {
+   "id": "chicken-every-way-chicken-sweet-potato-lentil-curry",
+   "name": "Chicken, sweet potato and lentil curry",
+   "inspiredBy": "Inspired by Indian chicken curries and East African coconut curries",
+   "about": "Diced chicken breast in a gently spiced coconut and tomato sauce with sweet potato, lentils, spinach and kale, finished with lemon and cilantro. Creamy without being heavy, it makes tomorrow's lunch and brings **vitamin A, fibre and iron**.",
+   "ingredients": [
+    {
+     "food": "chicken-breast-boneless-skinless-raw-c37574",
+     "g": 150,
+     "swap": "lean_protein",
+     "note": "cut in 2 cm pieces"
+    },
+    {
+     "food": "sweet-potato-raw-15f948",
+     "g": 100,
+     "note": "peeled, in small cubes"
+    },
+    {
+     "food": "lentils-canned-no-salt-added-drained-c1edbd",
+     "g": 100,
+     "swap": "legumes"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 70,
+     "note": "diced"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 100
+    },
+    {
+     "food": "coconut-milk-reduced-fat-93cbb3",
+     "g": 45,
+     "note": "reduced-fat, stirred"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, chopped"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "ginger-ground-648bc0",
+     "g": 1.5
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 15,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 8,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "curry-powder-55e9c6",
+     "g": 3
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1
+    },
+    {
+     "food": "garam-masala-951e26",
+     "g": 1
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.1
+    }
+   ],
+   "steps": [
+    "Heat the oil in a large pot over medium heat and soften the onion for 5 minutes. Add the garlic, ginger, curry powder and cumin and stir for 30 seconds until fragrant.",
+    "Add the chicken and stir for 3 minutes. Wash your hands and the board with hot soapy water after handling the raw chicken.",
+    "Add the sweet potato, tomatoes, coconut milk, salt and 150 ml water. Bring to a simmer, cover and cook for 15 minutes, stirring now and then, until the sweet potato is tender and the chicken reaches 74 °C (165 °F).",
+    "Stir in the lentils, the washed spinach and the kale and cook for 4 minutes, until the lentils are hot and the greens are wilted. Stir in the garam masala and finish with the lemon juice and cilantro.",
+    "Cool the second portion within 1 hour in a shallow container and refrigerate. Eat within 3 days, reheated once until steaming hot, 74 °C (165 °F). To carry it to work, use a cold bag with an ice pack and reheat it before eating."
+   ],
+   "prepMin": 12,
+   "cookMin": 27,
+   "servings": 2,
+   "tags": [
+    "medium-spicy",
+    "freezer-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "Add a pinch of chili for more heat. To freeze, cool within 1 hour, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+  },
+  {
+   "id": "chicken-every-way-roast-chicken-legs-roots-thyme",
+   "name": "Roast chicken legs with carrots, parsnips and potatoes",
+   "inspiredBy": "Inspired by a British Sunday roast",
+   "about": "Chicken drumsticks and thighs roasted over carrots, parsnips and potatoes with garlic, thyme and lemon until the juices run into the vegetables, with broccoli and kale added for the last minutes. The Sunday-style roast, with **vitamin A, potassium and protein**. It makes tomorrow's lunch.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-skinless-raw-767a98",
+     "g": 110,
+     "swap": "lean_protein",
+     "note": "weight of the meat off the bone; buy about 1.3 times this in bone-in thighs, skin pulled off"
+    },
+    {
+     "food": "chicken-drumstick-skinless-raw-817ce8",
+     "g": 110,
+     "swap": "lean_protein",
+     "note": "weight of the meat off the bone; buy about 1.4 times this in bone-in drumsticks, skin pulled off"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 100,
+     "note": "washed, in thick sticks"
+    },
+    {
+     "food": "parsnip-raw-27bd40",
+     "g": 80,
+     "note": "peeled, in thick sticks"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 100,
+     "note": "small, scrubbed and halved"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 60,
+     "note": "in wedges"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 130,
+     "note": "washed, in florets"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, torn"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 6,
+     "note": "smashed"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 20,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 12,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 1.2
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 6
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.3
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 °C (425 °F). Wash the vegetables. Toss the carrots, parsnips, potatoes, onion and garlic on a large pan, or two, with half the oil, the thyme and half the salt. Roast for 15 minutes.",
+    "Meanwhile, pull the skin off the drumsticks and thighs. Rub them with the mustard, the rest of the oil, the lemon juice, pepper and the remaining salt. Wash your hands and the board with hot soapy water.",
+    "Nestle the chicken among the vegetables, not on top of them, and roast for 25 minutes. Add the broccoli and kale, turn the vegetables over and roast 10 minutes more, until the chicken reaches 74 °C (165 °F) at the thickest part, near the bone, and the juices run clear.",
+    "Rest for 5 minutes, then spoon the pan juices over everything.",
+    "Pack the second portion in a shallow container within 1 hour and refrigerate. Eat within 3 days, reheated once until steaming hot, 74 °C (165 °F). To carry it to work, use a cold bag with an ice pack and reheat it before eating."
+   ],
+   "prepMin": 20,
+   "cookMin": 50,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "makes-leftovers",
+    "weekend-project"
+   ],
+   "tip": "Use two pans so nothing steams. A spoonful of plain yogurt with the pan juices is good on the side."
+  },
+  {
+   "id": "chicken-every-way-zaatar-trout-lentil-cucumber-salad",
+   "name": "Za'atar trout with lentil, cucumber and tomato salad",
+   "inspiredBy": "Inspired by Levantine flavours",
+   "about": "Rainbow trout fillet rubbed with za'atar and lemon and roasted, served over a cool lentil salad with cucumber, tomato and dill and a lemony yogurt drizzle. Fresh and light, with **omega-3, protein and fibre**.",
+   "ingredients": [
+    {
+     "food": "rainbow-trout-farmed-raw-0cc800",
+     "g": 140,
+     "swap": "fatty_fish",
+     "note": "skinless fillet"
+    },
+    {
+     "food": "lentils-canned-no-salt-added-drained-c1edbd",
+     "g": 140,
+     "swap": "legumes"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 80,
+     "note": "washed, diced"
+    },
+    {
+     "food": "cherry-tomato-raw-b40abc",
+     "g": 90,
+     "note": "washed, halved"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 20,
+     "note": "finely diced"
+    },
+    {
+     "food": "dill-raw-b97f95",
+     "g": 6,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 50,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 25,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "zaatar-74bd44",
+     "g": 3
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200 °C (400 °F). Rub the trout with half the oil, half the lemon juice and the za'atar and set it on a lined pan. Roast for 10 to 12 minutes, until the fish flakes easily and reaches 70 °C (158 °F). Wash your hands and the board with hot soapy water after handling the raw fish.",
+    "Meanwhile, wash the cucumber, tomatoes and dill. Toss the lentils with the cucumber, tomatoes, onion, most of the dill, the rest of the oil, a little lemon juice, salt and pepper.",
+    "Whisk the yogurt with the remaining lemon juice and a spoonful of water until pourable.",
+    "Serve the trout on the lentil salad and drizzle with the yogurt. Scatter the last of the dill over."
+   ],
+   "prepMin": 12,
+   "cookMin": 12,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ]
+  },
+  {
+   "id": "chicken-every-way-apple-almonds",
+   "name": "Apple slices with almonds",
+   "about": "Crisp apple slices with a small handful of almonds: sweet, crunchy and quick. The apple brings **fibre and vitamin C** and the almonds bring vitamin E.",
+   "ingredients": [
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 150,
+     "swap": "vit_c_fruit",
+     "note": "washed and sliced"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 18,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the apple, slice it and serve with the almonds."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "chicken-every-way-apple-walnuts",
+   "name": "Apple slices with walnuts and cinnamon",
+   "about": "Apple slices with walnuts and a pinch of cinnamon. The apple brings **fibre and vitamin C**, and the walnuts bring omega-3 fats and crunch.",
+   "ingredients": [
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 150,
+     "swap": "vit_c_fruit",
+     "note": "washed and sliced"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 16,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the apple, slice it and sprinkle with the cinnamon. Serve with the walnuts."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "chicken-every-way-lemon-chili-edamame",
+   "name": "Edamame with lemon and chili",
+   "about": "Warm shelled edamame tossed with lemon juice, a pinch of chili and a little salt. A savoury snack with **plant protein, folate, iron and choline**.",
+   "ingredients": [
+    {
+     "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+     "g": 90,
+     "swap": "legumes",
+     "note": "shelled, frozen"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 8,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "cayenne-pepper-a95c95",
+     "g": 0.15
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Put the frozen edamame in a pot of boiling water or a covered bowl in the microwave for 3 to 4 minutes, until heated through and steaming hot.",
+    "Drain and toss with the lemon juice, chili and salt. Serve warm."
+   ],
+   "prepMin": 2,
+   "cookMin": 4,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "chicken-every-way-orange-cinnamon",
+   "name": "Orange and banana with cinnamon",
+   "about": "Juicy orange segments and banana slices with a pinch of cinnamon, a light fruit snack. The fruit brings **vitamin C, folate and potassium**.",
+   "ingredients": [
+    {
+     "food": "orange-raw-ce787f",
+     "g": 200,
+     "swap": "vit_c_fruit",
+     "note": "peeled"
+    },
+    {
+     "food": "banana-raw-61b750",
+     "g": 130,
+     "note": "sliced"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Peel the orange and break it into segments. Peel and slice the banana, and sprinkle both with the cinnamon."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "chicken-every-way-apricot-almond-mix",
+   "name": "Dried apricots and almonds",
+   "about": "A small chewy and crunchy mix of dried apricots and almonds. The apricots bring **vitamin A and potassium**, and the almonds bring magnesium and vitamin E.",
+   "ingredients": [
+    {
+     "food": "apricot-dried-1d0f8b",
+     "g": 35,
+     "note": "sliced"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 12,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Slice the apricots, toss with the almonds and eat from a small bowl."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "chicken-every-way-banana-walnuts",
+   "name": "Banana with walnuts",
+   "about": "A banana with a small handful of walnuts: filling, sweet and crunchy. The banana brings **potassium and fibre**, and the walnuts bring omega-3 fats.",
+   "ingredients": [
+    {
+     "food": "banana-raw-61b750",
+     "g": 110,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 16,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Peel the banana and serve with the walnuts."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "chicken-every-way-orange-almonds",
+   "name": "Orange and almonds",
+   "about": "A juicy orange with a small handful of almonds. The orange brings **vitamin C and folate**, and the almonds bring vitamin E and some calcium.",
+   "ingredients": [
+    {
+     "food": "orange-raw-ce787f",
+     "g": 150,
+     "swap": "vit_c_fruit",
+     "note": "peeled"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 20,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Peel the orange, break it into segments and serve with the almonds."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "chicken-every-way-smoky-roasted-chickpeas",
+   "name": "Smoky roasted chickpeas",
+   "about": "Crunchy oven-roasted chickpeas with smoked paprika and a squeeze of lemon. A savoury snack with **fibre and plant protein**.",
+   "ingredients": [
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 100,
+     "swap": "legumes",
+     "note": "rinsed and patted very dry"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 3,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 0.8
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 5,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 °C (425 °F). Toss the chickpeas with the oil, smoked paprika and salt on a pan.",
+    "Roast for 20 minutes, shaking once, until golden and crisp. Squeeze the lemon over and let them cool for 5 minutes; they crisp more as they cool.",
+    "They are best within a couple of hours. Once cool, keep any leftovers covered in the fridge for up to 3 days, and crisp them again in a hot oven or dry pan for 3 to 4 minutes."
+   ],
+   "prepMin": 3,
+   "cookMin": 20,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ]
+  },
+  {
+   "id": "chicken-every-way-yogurt-berries-walnuts",
+   "name": "Greek yogurt with berries and walnuts",
+   "about": "Thick yogurt with thawed berries and toasted walnuts. Protein, **calcium and omega-3 fats** in a few minutes.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 150,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "mixed-berry-frozen-9f87f1",
+     "g": 80,
+     "swap": "berries",
+     "note": "thawed"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    }
+   ],
+   "steps": [
+    "Thaw the berries in a bowl in the fridge or in the microwave for 30 seconds.",
+    "Spoon the yogurt into a bowl, top with the berries and scatter the walnuts over."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ],
+   "tip": "If you are cooking for someone who is pregnant, 60 or older, 5 or under, or has a weak immune system, boil the frozen berries for 1 minute and cool them first."
+  }
+ ],
+ "week": [
+  {
+   "day": 1,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "chicken-every-way-apple-chia-cinnamon-overnight-oats"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "chicken-every-way-sardine-lentil-broccoli-salad"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "chicken-every-way-apricot-chickpea-chicken-tagine"
+    },
+    {
+     "slot": "snack",
+     "recipe": "chicken-every-way-apple-almonds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "chicken-every-way-lemon-chili-edamame"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "chicken-every-way-savoury-oat-bowl-spinach-tomato-egg"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "chicken-every-way-apricot-chickpea-chicken-tagine",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "chicken-every-way-lemon-oregano-chicken-greek-salad"
+    },
+    {
+     "slot": "snack",
+     "recipe": "chicken-every-way-apple-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "chicken-every-way-smoky-roasted-chickpeas"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "chicken-every-way-banana-nut-quinoa-porridge"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "chicken-every-way-tuna-chickpea-red-pepper-salad"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "chicken-every-way-chicken-barley-vegetable-soup"
+    },
+    {
+     "slot": "snack",
+     "recipe": "chicken-every-way-smoky-roasted-chickpeas"
+    },
+    {
+     "slot": "snack",
+     "recipe": "chicken-every-way-lemon-chili-edamame"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "chicken-every-way-berry-walnut-overnight-oats"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "chicken-every-way-chicken-barley-vegetable-soup",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "chicken-every-way-mustard-lemon-salmon-chickpeas-broccoli"
+    },
+    {
+     "slot": "snack",
+     "recipe": "chicken-every-way-yogurt-berries-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "chicken-every-way-berry-walnut-overnight-oats"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "chicken-every-way-egg-potato-broccoli-dill-salad"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "chicken-every-way-chicken-sweet-potato-lentil-curry"
+    },
+    {
+     "slot": "snack",
+     "recipe": "chicken-every-way-apple-almonds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "chicken-every-way-banana-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "chicken-every-way-savoury-oat-bowl-spinach-tomato-egg"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "chicken-every-way-chicken-sweet-potato-lentil-curry",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "chicken-every-way-roast-chicken-legs-roots-thyme"
+    },
+    {
+     "slot": "snack",
+     "recipe": "chicken-every-way-apple-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "chicken-every-way-orange-almonds"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "chicken-every-way-pepper-spinach-sweet-potato-hash"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "chicken-every-way-roast-chicken-legs-roots-thyme",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "chicken-every-way-zaatar-trout-lentil-cucumber-salad"
+    },
+    {
+     "slot": "snack",
+     "recipe": "chicken-every-way-yogurt-berries-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "chicken-every-way-banana-walnuts"
+    }
+   ]
+  }
+ ]
+}
