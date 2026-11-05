@@ -39,7 +39,7 @@
 
 ## Upper-limit headroom (lessons from batch D so far)
 - Keep every day at every edge at or under: iron 40 mg, calcium 2,200 mg (Light and Standard 2,000 mg where you can), zinc 36 mg, selenium about 300 µg, phosphorus 3,600 mg. Brands vary, and people take multivitamins.
-- **Tofu:** most firm tofu sold in Canada is calcium-set (up to 683 mg calcium per 100 g). Write "firm tofu, any kind" and make no calcium claim for it, but make sure that with every firm tofu counted as `firm-tofu-raw-prepared-with-calcium-sulfate-f29db4` (a stress test on a scratch copy), no day goes over 2,500 mg.
+- **Tofu:** use `firm-tofu-calcium-set-c9fb4e` (firm, 78 kcal, 9 g protein, 180 mg calcium per 100 g) or `extra-firm-tofu-calcium-set-455d4a` (extra-firm, 144 kcal, 17 g protein, 300 mg calcium), sourced from the Canadian Nutrient File and North American labels. Pick one per week where you can (they count as two groceries). Brands vary, so claim "some calcium", never "a day's calcium" from tofu. With every firm tofu counted at 400 mg per 100 g (the top of the label range) on a scratch copy, no day may go over 2,500 mg.
 - **Eggs:** cook yolks firm everywhere (Health Canada's general advice). At most 4 eggs a day at any size.
 - **Leftovers:** a cooked dish keeps 3 days; plan the week so nothing is eaten later than that, or freeze it with a thaw-in-the-fridge line.
 - **Plan text** must be true at every size: read the Light and Big renders before you hand back.

@@ -41,7 +41,7 @@ Read this first, then `content/STATUS.md` (session log at the bottom), `content/
    - **Revisit plan discovery with Firas once the app is done.** He sees how people find a plan as make or break for the app. Plan a session together on a creative solution; today's views and search are a stopgap. Note: with the default whole-food carb choice, most current plans are hidden until the global plans ship.
 2. **Engine and data:** remove the halal and kosher tags, fix the tofu data, fix leftover sizing, then rebuild and re-check.
 3. **The 30 global plans** in waves of about 5. Add briefs to CATALOG and GUIDE §13 first, using the writer → critic → final review loop below.
-4. **Final content pass:** remove pork, rebuild, run the full checks, publish the demo.
+4. **Final content pass:** remove pork; remove the alcohol still in 29 recipes (Shaoxing wine and mirin in china-home, japan-korea, lean-asia and muscle-asia), then add a lab gate so no recipe has alcohol; rebuild, run the full checks, publish the demo.
 5. **Paywall screens:** UI only, ready for RevenueCat.
 6. **When the accounts exist:** Supabase sign-in (Apple, Google, email), account deletion, sync, EAS builds, a beta (Google needs 12 testers for 14 days), store listing, submit.
 
@@ -56,7 +56,7 @@ Read this first, then `content/STATUS.md` (session log at the bottom), `content/
   - Leftovers: in the fridge within 2 hours, eaten within 3 days. Rice and grains are cooled within 1 hour.
   - Eggs: yolks firm, at most 4 a day.
   - Headroom under upper limits: iron 40 mg, calcium 2,200 mg, zinc 36 mg, selenium about 300 µg, phosphorus 3,600 mg.
-  - Tofu stress test: with every firm tofu counted at 683 mg calcium per 100 g, no day may go over 2,500 mg.
+  - Tofu stress test: with every firm tofu counted at 400 mg calcium per 100 g, no day may go over 2,500 mg.
   - Text must be true at every size. No medical claims.
 - **Style:** casual cooking steps, Canadian spelling, no em or en dashes.
 

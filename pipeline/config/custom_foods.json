@@ -1852,6 +1852,36 @@
    },
    "recipe": "Dried salt cod soaked in cold water for 24 to 48 hours with several changes of water, then drained, as every recipe for ackee and saltfish, bacalao or brandade starts. About 60 g of dried fish makes 100 g soaked. Soaking draws out most of the salt: sodium is set at a fifth of the dried fish's (about 590 mg per 100 g), the middle of published values for well-soaked salt cod.",
    "limits": "Saltiness depends on how long it soaks and how often the water is changed; a short soak leaves it much saltier. Water-soluble B vitamins and potassium are also partly lost in the soak, which these values don't reduce."
+  },
+  {
+   "key": "firm-tofu-calcium-set",
+   "name": "Firm tofu, calcium-set",
+   "head": "firm tofu",
+   "form": "product",
+   "category": "legume",
+   "aliases": ["tofu", "extra firm tofu", "extra-firm tofu", "calcium-set tofu", "tofu made with calcium sulphate", "bean curd"],
+   "servings": [{"label": "1/4 block (350 g block)", "g": 88}, {"label": "1/2 cup, cubed", "g": 126}],
+   "components": [
+    {"food": "firm-tofu-eb666c", "g": 100, "note": "Canadian Nutrient File 3404 firm tofu (calcium sulphate and nigari), the full nutrient profile"}
+   ],
+   "adjust": {"calcium": 1.286},
+   "recipe": "Firm or extra-firm tofu as sold in Canada, made with calcium sulphate. Every nutrient is the Canadian Nutrient File's firm tofu (CNF 3404, USDA 172448): 78 kcal, 9 g protein, 1.6 mg iron per 100 g. Calcium is raised from 140 to 180 mg, the median of nine North American calcium-sulphate firm and extra-firm labels in the library (USDA branded entries for Nasoya, Nasoya Tofu Plus, Azumaya and House Foods: 77 to 246 mg, iron 1.2 to 2.0 mg). The Japanese tables agree on iron (momen-dofu 1.5 mg, MEXT 04032).",
+   "limits": "Brands vary: calcium on Canadian labels runs from about 80 to 250 mg per 100 g depending on how much calcium sulphate is used, and extra-firm blocks carry a little more protein and energy than this average. The old USDA 'firm, prepared with calcium sulfate' entry (683 mg calcium, 144 kcal) describes a much denser block than retail tofu and is not used for recipes."
+  },
+  {
+   "key": "extra-firm-tofu-calcium-set",
+   "name": "Extra-firm tofu, calcium-set",
+   "head": "extra-firm tofu",
+   "form": "product",
+   "category": "legume",
+   "aliases": ["extra firm tofu", "super firm tofu", "pressed tofu", "high-protein tofu"],
+   "servings": [{"label": "1/4 block (350 g block)", "g": 88}, {"label": "1/2 cup, cubed", "g": 126}],
+   "components": [
+    {"food": "firm-tofu-raw-prepared-with-calcium-sulfate-f29db4", "g": 100, "note": "USDA SR 172475, a dense calcium-sulphate block: 144 kcal, 17 g protein per 100 g, like Canadian extra-firm labels"}
+   ],
+   "adjust": {"calcium": 0.44},
+   "recipe": "Extra-firm (dense, pressed) tofu made with calcium sulphate. Energy, protein, fat, iron and the rest are USDA SR 172475 (144 kcal, 17 g protein, 2.7 mg iron per 100 g), whose density matches extra-firm and super-firm blocks; its iron per gram of protein matches the Canadian Nutrient File's firm tofu. Calcium is lowered from 683 to 300 mg: nine North American calcium-sulphate firm and extra-firm labels in the library carry a median of 17.5 mg calcium per gram of protein (range 8 to 26), so a 17 g-protein block carries about 300 mg.",
+   "limits": "Calcium depends on the brand's coagulant and how hard the curd is pressed: labels run from under 100 to about 400 mg per 100 g. 683 mg (the USDA figure) is beyond what retail cartons show, so it is not used. Extra-firm tofu made only with nigari carries far less calcium."
   }
- ]
+]
 }
