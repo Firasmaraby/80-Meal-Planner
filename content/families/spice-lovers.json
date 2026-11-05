@@ -1,0 +1,1868 @@
+{
+ "id": "spice-lovers",
+ "name": "Spice Lover's Week",
+ "style": "balanced",
+ "cuisine": "Global",
+ "carbStyle": "whole",
+ "regions": [
+  "India",
+  "Jamaica",
+  "Ethiopia",
+  "Morocco",
+  "China",
+  "Indonesia"
+ ],
+ "summary": "Bold spice from India, Jamaica, Ethiopia, Morocco, Goa, Sichuan and Indonesia, with the heat set by you and the salt kept low. Chickpea curry, jerk chicken, berbere lentils, Moroccan salmon, Goan mackerel and Sichuan beef, all on whole-food carbs.",
+ "howItWorks": "**Heat you control, salt kept low.** Each spicy dish says where to start the chili, and you can leave it out for a mild plate. Heat deepens overnight in leftovers, so go easy the first night. Flavour comes from toasted spices, garlic, ginger, tamarind, lime and tomato, with a measured pinch of iodized salt and no-salt-added beans.\n\n**Cook once, eat twice.** Monday's chickpea curry, Tuesday's jerk chicken, Wednesday's berbere lentils, Thursday's Moroccan salmon, Friday's Sichuan beef and Saturday's Goan mackerel each make two portions, so the next day's lunch is done. Chill within the hour, keep it 3 days (fish 2) and reheat to 74 °C. Wash all fruit and vegetables before cutting, mangoes and limes too.\n\n**Fish and the hard nutrients.** Sardines on Monday, salmon on Thursday and Friday, and Atlantic mackerel on Saturday and Sunday bring **omega-3** and some vitamin D. Chickpeas, lentils, black beans, tempeh and kale bring iron, folate and calcium, and the eggs, yogurt and milk help with choline and B12. Carbs are whole-food: oats, quinoa, potatoes, beans and fruit.\n\n**Light.** It covers 1400 to 1800 kcal, drops one snack a day and swaps the chai oatmeal for a chai yogurt bowl. By 1400 the oats, quinoa, potatoes, nuts and oil shrink most, so the masala oats are a few spoonfuls of oats in a spiced tomato and spinach base. Black beans and the salmon's chickpeas lose about a third. The meat, fish, milk and produce stay near full size.\n\n**Big.** It adds cardamom yogurt with apple on Thursday and Sunday and sweet potato wedges on Wednesday and Friday. At the top end the meat, fish, eggs, tempeh, grains, beans, dairy and oil grow, while the vegetables and fruit in the dishes stay about the same.",
+ "signature": [
+  "spice-lovers-chickpea-potato-curry-spinach",
+  "spice-lovers-jerk-chicken-mango-salsa-black-beans",
+  "spice-lovers-berbere-red-lentils-potato-greens",
+  "spice-lovers-moroccan-spiced-salmon-chickpeas-kale",
+  "spice-lovers-sichuan-pepper-beef-greens-quinoa"
+ ],
+ "lifeStage": "none",
+ "sizes": {
+  "light": {
+   "kcal": 1650,
+   "covers": [
+    "1400-1600",
+    "1600-1800"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 2,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 3,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 4,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 5,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 6,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 7,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": "*",
+     "swap": {
+      "from": "spice-lovers-chai-oats-banana-walnuts",
+      "to": "spice-lovers-chai-yogurt-bowl-banana-walnuts"
+     }
+    }
+   ]
+  },
+  "standard": {
+   "kcal": 2100,
+   "covers": [
+    "1800-2000",
+    "2000-2200",
+    "2200-2400"
+   ]
+  },
+  "big": {
+   "kcal": 3000,
+   "covers": [
+    "2400-2800",
+    "2800-3200"
+   ],
+   "adjust": [
+    {
+     "day": 7,
+     "add": {
+      "slot": "snack",
+      "recipe": "spice-lovers-cardamom-yogurt-apple"
+     }
+    },
+    {
+     "day": 3,
+     "add": {
+      "slot": "snack",
+      "recipe": "spice-lovers-smoky-sweet-potato-wedges-lime"
+     }
+    },
+    {
+     "day": 4,
+     "add": {
+      "slot": "snack",
+      "recipe": "spice-lovers-cardamom-yogurt-apple"
+     }
+    },
+    {
+     "day": 5,
+     "add": {
+      "slot": "snack",
+      "recipe": "spice-lovers-smoky-sweet-potato-wedges-lime"
+     }
+    }
+   ]
+  }
+ },
+ "recipes": [
+  {
+   "id": "spice-lovers-chai-oats-banana-walnuts",
+   "name": "Chai-spiced oatmeal with banana and walnuts",
+   "inspiredBy": "Inspired by masala chai, turned into a bowl of oatmeal",
+   "about": "Creamy stovetop oats simmered in milk with cinnamon, cardamom, ginger and a pinch of clove, topped with sliced banana, walnuts and sunflower seeds. Warming rather than hot, it gives you **fibre, magnesium and a little omega-3** to start the day.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 40,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "milk-reduced-fat-2-fat-4a4316",
+     "g": 220,
+     "swap": "dairy_protein",
+     "note": "or any milk you like"
+    },
+    {
+     "food": "banana-raw-61b750",
+     "g": 100,
+     "note": "sliced"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 12,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 1
+    },
+    {
+     "food": "cardamom-ground-ac233b",
+     "g": 0.5
+    },
+    {
+     "food": "ginger-ground-648bc0",
+     "g": 0.5
+    },
+    {
+     "food": "clove-cb7cf1",
+     "g": 0.15
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.15
+    }
+   ],
+   "steps": [
+    "Stir the oats, milk, cinnamon, cardamom, ginger, clove and pepper together in a small pot and bring to a gentle simmer over medium heat.",
+    "Cook for 5 to 6 minutes, stirring often, until the oats are thick and creamy. Add a splash of milk if you like it looser.",
+    "Spoon into a bowl, lay the sliced banana on top and scatter over the walnuts and sunflower seeds so they stay crunchy."
+   ],
+   "prepMin": 3,
+   "cookMin": 7,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "15-minute",
+    "kid-friendly"
+   ],
+   "tip": "Want it spicier? Add another pinch of ginger and black pepper. For a make-ahead version, soak the oats and spices in the milk in the fridge overnight, top in the morning and eat within 2 days."
+  },
+  {
+   "id": "spice-lovers-masala-oats-spinach-yogurt",
+   "name": "Savoury masala oats with spinach and yogurt",
+   "inspiredBy": "Inspired by Indian upma, made with oats instead of semolina",
+   "about": "Oats toasted and cooked in milk with mustard seed, cumin, turmeric, tomato, spinach and a green chili, finished with lime and cilantro. A savoury, gently spicy breakfast with **protein, iron and folate** from the spinach, milk and yogurt, and lime to help you absorb the iron.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 50,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "milk-reduced-fat-2-fat-4a4316",
+     "g": 100,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 60,
+     "swap": "dairy_protein",
+     "note": "to spoon on top"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 7,
+     "swap": "nuts_seeds",
+     "note": "toasted with the oats"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 40,
+     "note": "finely diced"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 70,
+     "note": "washed, diced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "serrano-pepper-raw-bcef02",
+     "g": 4,
+     "note": "washed, minced; start with less, or leave it out"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 5,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 8,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "mustard-seed-yellow-cf19a3",
+     "g": 1
+    },
+    {
+     "food": "cumin-seed-626f82",
+     "g": 1
+    },
+    {
+     "food": "turmeric-ground-32f550",
+     "g": 0.4
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 5,
+     "note": "washed, chopped"
+    }
+   ],
+   "steps": [
+    "Toast the oats and sunflower seeds in a dry pan over medium heat for 2 to 3 minutes, until they smell nutty. Tip them into a bowl.",
+    "Heat the oil in the same pan and add the mustard and cumin seeds. When the mustard seeds pop, add the onion and chili and cook for 3 minutes, until the onion is soft.",
+    "Stir in the turmeric and tomato and cook for 2 minutes, until the tomato softens. Add the milk and the salt and bring to a simmer.",
+    "Add the oats and spinach and stir for 3 to 4 minutes, adding water a little at a time, until thick and porridge-like.",
+    "Finish with the lime juice and cilantro, and spoon the cold yogurt on top. Taste and add more chili if you want more heat."
+   ],
+   "prepMin": 6,
+   "cookMin": 12,
+   "servings": 1,
+   "tags": [
+    "medium-spicy"
+   ],
+   "tip": "Chop the onion and tomato the night before and this is about a 12-minute breakfast. Keep the chili seeds in for more heat, or leave the chili out and finish with a pinch of black pepper."
+  },
+  {
+   "id": "spice-lovers-berbere-egg-scramble-potatoes-spinach",
+   "name": "Berbere scrambled eggs with crispy potatoes and spinach",
+   "inspiredBy": "Inspired by Ethiopian enkulal firfir (spiced scrambled eggs)",
+   "about": "Eggs scrambled until firm with onion, green chili and berbere, over crisp potato cubes and wilted spinach, with a cool lime yogurt on the side. A warming weekend breakfast with **protein, choline and potassium**, and it uses the berbere from Wednesday.",
+   "ingredients": [
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 150,
+     "note": "scrubbed, cut in 1 cm cubes"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 100
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 40,
+     "note": "diced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 40,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "serrano-pepper-raw-bcef02",
+     "g": 3,
+     "note": "washed, minced; start with less, or leave it out"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 50,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "berbere-ethiopian-spice-blend-a8ab4f",
+     "g": 1.5,
+     "note": "mild or hot, to taste"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 10,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 6,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    }
+   ],
+   "steps": [
+    "Wash the potato, spinach and cilantro. Heat the oil in a wide non-stick skillet over medium heat, add the potato and half the salt, cover and cook for 10 minutes, stirring now and then, until tender and golden at the edges.",
+    "Push the potatoes to one side. Add the onion and serrano and cook for 3 minutes, until soft, then stir in the berbere for 30 seconds, until fragrant. Fold in the spinach until it wilts. Wash your hands after cutting the chili and keep them away from your eyes.",
+    "Beat the eggs with the rest of the salt and wash your hands. Pour the eggs into the pan, turn the heat to medium-low and stir gently for 3 to 4 minutes, until the eggs are completely set and firm, with no runny bits left.",
+    "Stir the yogurt with the lime juice and spoon it alongside, then scatter with cilantro. Start with half the berbere if you like less heat; the yogurt cools it."
+   ],
+   "prepMin": 8,
+   "cookMin": 18,
+   "servings": 1,
+   "tags": [
+    "medium-spicy"
+   ],
+   "tip": "No berbere? Use smoked paprika with a pinch of cumin and cayenne."
+  },
+  {
+   "id": "spice-lovers-chai-yogurt-bowl-banana-walnuts",
+   "name": "Chai-spiced yogurt bowl with banana and walnuts",
+   "inspiredBy": "Inspired by masala chai, as a yogurt bowl",
+   "about": "Thick yogurt stirred with cinnamon, cardamom and ginger, topped with sliced banana, walnuts and sunflower seeds. A cool, no-cook version of the chai oatmeal with **protein, calcium and a little omega-3**.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 200,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "banana-raw-61b750",
+     "g": 100,
+     "note": "sliced"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 8,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 1
+    },
+    {
+     "food": "cardamom-ground-ac233b",
+     "g": 0.5
+    },
+    {
+     "food": "ginger-ground-648bc0",
+     "g": 0.5
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.15
+    }
+   ],
+   "steps": [
+    "Stir the yogurt with the cinnamon, cardamom, ginger and pepper in a bowl until smooth.",
+    "Peel and slice the banana and lay it on top.",
+    "Scatter over the walnuts and sunflower seeds so they stay crunchy."
+   ],
+   "prepMin": 4,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute",
+    "kid-friendly"
+   ],
+   "tip": "Eat it straight away so the nuts stay crisp."
+  },
+  {
+   "id": "spice-lovers-piri-piri-sardine-black-bean-quinoa-salad",
+   "name": "Piri-piri sardine and black bean salad with quinoa",
+   "inspiredBy": "Inspired by Portuguese piri-piri, in a cold salad",
+   "about": "Canned sardines and black beans on quinoa with tomato, cucumber and spinach, tossed in a lime piri-piri dressing of garlic, paprika and chili flakes. The sardines bring **omega-3, vitamin D and calcium** (from the soft bones) and the black beans bring fibre and iron.",
+   "ingredients": [
+    {
+     "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+     "g": 85,
+     "swap": "fatty_fish",
+     "note": "drained"
+    },
+    {
+     "food": "black-beans-canned-no-salt-added-drained-33bee5",
+     "g": 90,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "quinoa-dry-13e0ee",
+     "g": 40,
+     "swap": "low_gi_grains",
+     "note": "rinsed"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 80,
+     "note": "washed, diced"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 50,
+     "note": "washed, diced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 40,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 15,
+     "note": "thinly sliced"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 15,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "minced"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1.2
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.4,
+     "note": "add more to taste"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Rinse the quinoa and simmer it in plenty of water for 12 to 15 minutes, until tender. Drain, spread in a shallow container and cool within 1 hour.",
+    "Whisk the lime juice, oil, garlic, paprika, chili flakes and pepper in a large bowl. Taste and add more chili flakes for more heat.",
+    "Add the black beans, tomato, cucumber, onion, spinach and cooled quinoa and toss. Break the sardines into big pieces and fold them in last.",
+    "Keep any opened tin of sardines covered in the fridge and use it within 2 days. To pack it, use a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 10,
+   "cookMin": 15,
+   "servings": 1,
+   "tags": [
+    "medium-spicy"
+   ],
+   "tip": "Cook the quinoa the night before and this takes 10 minutes. Keep cooked quinoa no more than 3 days."
+  },
+  {
+   "id": "spice-lovers-chickpea-potato-curry-spinach",
+   "name": "Chickpea and potato curry with spinach",
+   "inspiredBy": "Inspired by Punjabi aloo chana",
+   "about": "A comforting weeknight curry of chickpeas and potato in a tomato, ginger and garlic sauce, thickened with red lentils and finished with spinach, lime and cilantro, with a halved firm egg on top. Chickpeas, lentils and spinach bring **iron, folate and fibre**, and it makes tomorrow's lunch.",
+   "ingredients": [
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 130,
+     "swap": "legumes"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "note": "hard-cooked, halved"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 120,
+     "note": "scrubbed, cut in 1.5 cm cubes"
+    },
+    {
+     "food": "red-lentils-split-dried-raw-a4a763",
+     "g": 25,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 100
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 70,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "ginger-root-raw-da2481",
+     "g": 8
+    },
+    {
+     "food": "serrano-pepper-raw-bcef02",
+     "g": 5,
+     "note": "washed, minced; start with less, or leave it out"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 9,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 10,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 8,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "cumin-seed-626f82",
+     "g": 1.2
+    },
+    {
+     "food": "coriander-seed-a0cdb1",
+     "g": 1.5
+    },
+    {
+     "food": "turmeric-ground-32f550",
+     "g": 0.6
+    },
+    {
+     "food": "garam-masala-951e26",
+     "g": 1.2
+    },
+    {
+     "food": "kashmiri-chili-powder-abccb2",
+     "g": 1,
+     "note": "for colour and gentle heat"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.2
+    }
+   ],
+   "steps": [
+    "Wash your hands. Put the eggs in a small pot (one for each portion), cover with cold water, bring to a boil and simmer for 10 minutes, until the yolks are fully firm. Cool them in cold water, then peel and halve one and keep the other in its shell in the fridge for tomorrow. Heat the oil in a wide pot over medium heat. Add the cumin seeds and let them sizzle for 20 seconds, then add the onion and cook for 5 minutes, until soft and golden.",
+    "Add the garlic, ginger and serrano and stir for 1 minute. Stir in the coriander, turmeric, Kashmiri chili and salt for 30 seconds, until fragrant. Wash your hands after cutting the chili.",
+    "Add the tomatoes, potato, red lentils and enough water to just cover the potato. Bring to a simmer, cover and cook for 15 to 18 minutes, stirring now and then, until the potato is tender and the lentils have melted into the sauce.",
+    "Stir in the chickpeas and heat through for 3 minutes. Add the spinach, garam masala and lime juice and stir until the spinach wilts. Taste: add more chili, or a pinch of cayenne, for more heat. The heat deepens in the leftovers.",
+    "Serve topped with the egg halves and the cilantro. If the heat is too much, a spoonful of cold yogurt from the fridge cools it.",
+    "Cool the second portion within 1 hour in a shallow container and refrigerate. Eat it within 3 days, reheating only the curry, once, until steaming hot, 74 °C (165 °F). Peel and halve the second egg and add it cold. Pack it in a cold bag with an ice pack if you carry it to work."
+   ],
+   "prepMin": 10,
+   "cookMin": 28,
+   "servings": 2,
+   "tags": [
+    "medium-spicy",
+    "makes-leftovers"
+   ],
+   "tip": "Freeze the curry without the egg for up to 2 months: cool within 1 hour, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+  },
+  {
+   "id": "spice-lovers-jerk-chicken-mango-salsa-black-beans",
+   "name": "Jerk-spiced chicken with mango salsa and coconut black beans",
+   "inspiredBy": "Inspired by Jamaican jerk chicken with rice and peas",
+   "about": "Chicken thighs rubbed with a fiery jerk paste of scallion, thyme, allspice, garlic and chili, roasted until juicy and served over coconut-simmered black beans with a cool mango and pepper salsa and a crunchy lime kale slaw. **Iron, folate, vitamin A and vitamin C** from the beans, mango, pepper and kale, and the heat is yours to set. It makes tomorrow's lunch.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-skinless-raw-767a98",
+     "g": 170,
+     "swap": "lean_protein",
+     "note": "boneless, trimmed"
+    },
+    {
+     "food": "black-beans-canned-no-salt-added-drained-33bee5",
+     "g": 140,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "coconut-milk-reduced-fat-93cbb3",
+     "g": 25
+    },
+    {
+     "food": "scallion-raw-1ccff7",
+     "g": 25,
+     "note": "washed, sliced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "serrano-pepper-raw-bcef02",
+     "g": 6,
+     "note": "washed, minced; start small, or leave it out"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 20,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "mango-raw-80de97",
+     "g": 80,
+     "swap": "vit_c_fruit",
+     "note": "washed, peeled, diced"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 50,
+     "note": "washed, diced"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 70,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, finely shredded"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 5,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 0.8
+    },
+    {
+     "food": "allspice-ground-67abb9",
+     "g": 1.2
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.3
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.2
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 °C (425 °F). Mash most of the scallion, the garlic, serrano, thyme, allspice, cinnamon, pepper, half the salt, half the lime juice and the oil into a rough paste. Rub it over the chicken on a lined tray and leave it in the fridge while the oven heats, about 15 minutes. Never reuse the raw marinade.",
+    "Roast the chicken for 22 to 26 minutes, until it reaches 74 °C (165 °F) in the thickest piece. Wash your hands and the board with hot soapy water after handling the raw chicken.",
+    "Meanwhile, warm the black beans gently in a small pot with the coconut milk and the remaining scallion for 5 minutes, mashing a few to thicken.",
+    "Make the salsa: stir the mango and red pepper with most of the remaining lime juice, the cilantro and a pinch of the salt. Massage the kale with the last of the lime juice and salt for a minute, until it softens.",
+    "Slice the chicken and serve it over the beans with the salsa and slaw. If the heat is too much, an extra spoonful of salsa cools it.",
+    "Cool the second portion of chicken, beans and salsa within 1 hour in separate shallow containers and refrigerate. Eat within 3 days, reheating the chicken and beans once until steaming hot, 74 °C (165 °F), and keeping the salsa and slaw cold. Pack in a cold bag with an ice pack."
+   ],
+   "prepMin": 14,
+   "cookMin": 26,
+   "servings": 2,
+   "tags": [
+    "spicy",
+    "makes-leftovers"
+   ],
+   "tip": "Wear gloves when you handle hot chilies. For a mild version, leave the chili out and use a pinch of black pepper and a little extra allspice. The heat deepens in the leftovers, so go easy the first night. Wash your hands after cutting chilies and keep them away from your eyes. A Scotch bonnet gives the classic heat if you can find one."
+  },
+  {
+   "id": "spice-lovers-berbere-red-lentils-potato-greens",
+   "name": "Berbere-spiced red lentils with cabbage, carrot and kale",
+   "inspiredBy": "Inspired by Ethiopian misir wot, with potatoes as in dinich",
+   "about": "Red lentils simmered slowly with onion, garlic, ginger and berbere until thick and glossy, with carrot, potato, cabbage and kale stirred in, a halved hard-cooked egg and a cooling spoonful of yogurt on top. It is **rich in plant protein, iron and folate**, with lime to help you absorb the iron, and it makes tomorrow's lunch.",
+   "ingredients": [
+    {
+     "food": "red-lentils-split-dried-raw-a4a763",
+     "g": 70,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 90,
+     "note": "finely diced"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 50,
+     "note": "washed, finely diced"
+    },
+    {
+     "food": "cabbage-green-raw-f18ffb",
+     "g": 80,
+     "note": "washed, shredded"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 80,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, chopped"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "ginger-root-raw-da2481",
+     "g": 8
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 60
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 12,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 100,
+     "note": "scrubbed, cut in 1.5 cm cubes"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 10,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 50,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "note": "hard-cooked"
+    },
+    {
+     "food": "berbere-ethiopian-spice-blend-a8ab4f",
+     "g": 4,
+     "note": "mild or hot, to taste"
+    },
+    {
+     "food": "turmeric-ground-32f550",
+     "g": 0.4
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1
+    }
+   ],
+   "steps": [
+    "Wash your hands. Put the eggs in a small pot (one for each portion), cover with cold water, bring to a boil and simmer for 10 minutes, until the yolks are fully firm. Cool in cold water, peel one and keep the other in its shell in the fridge for tomorrow. Meanwhile, cook the onion in a dry wide pot over medium heat for 5 minutes, stirring, until it softens and starts to catch. Add the oil, garlic and ginger and stir for 1 minute.",
+    "Stir in the berbere and turmeric and cook for 30 seconds, then add the tomatoes. Start with half the berbere if you like less heat, and add more to taste at the end, or leave it out and use paprika.",
+    "Add the lentils, carrot, potato, cabbage, salt and enough water to cover by 2 cm. Simmer, partly covered, for 18 to 20 minutes, stirring often, until the lentils are soft and thick.",
+    "Stir in the kale and cook for 3 minutes, until wilted. Add the lime juice and taste for salt and heat. Serve with the halved egg and a spoonful of yogurt.",
+    "Cool the second portion within 1 hour in a shallow container and refrigerate. Eat within 3 days, reheating only the lentils once until steaming hot, 74 °C (165 °F). Peel and halve the second egg and add it and the yogurt cold."
+   ],
+   "prepMin": 10,
+   "cookMin": 30,
+   "servings": 2,
+   "tags": [
+    "spicy",
+    "makes-leftovers"
+   ],
+   "tip": "For a mild pot, use 2 g berbere and add a pinch of paprika. The heat deepens in the leftovers. Freeze the lentils without the egg and yogurt for up to 2 months: cool within 1 hour, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+  },
+  {
+   "id": "spice-lovers-moroccan-spiced-salmon-chickpeas-kale",
+   "name": "Moroccan-spiced salmon with chickpeas, tomatoes and kale",
+   "inspiredBy": "Inspired by Moroccan chermoula fish",
+   "about": "Salmon fillets over a skillet of chickpeas, tomatoes and kale, brushed with a chermoula of garlic, cumin, paprika, lime and cilantro. Salmon brings **omega-3 and vitamin D**, chickpeas and kale bring iron, folate and some calcium, and the chili is up to you. It makes tomorrow's lunch.",
+   "ingredients": [
+    {
+     "food": "salmon-atlantic-farmed-raw-914b10",
+     "g": 140,
+     "swap": "fatty_fish",
+     "note": "skin-on or skinless fillets"
+    },
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 160,
+     "swap": "legumes"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 130,
+     "note": "washed, diced"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 70,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, chopped"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 40,
+     "note": "sliced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 15,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 14,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 12,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1.5
+    },
+    {
+     "food": "paprika-59bfc4",
+     "g": 2
+    },
+    {
+     "food": "coriander-seed-a0cdb1",
+     "g": 1
+    },
+    {
+     "food": "turmeric-ground-32f550",
+     "g": 0.4
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.5,
+     "note": "add more to taste"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1
+    }
+   ],
+   "steps": [
+    "Make the chermoula: stir the garlic, cilantro, lime juice, half the oil, cumin, paprika, coriander and chili flakes together. Spoon half into a small clean bowl for serving, then rub the rest over the salmon and put it in the fridge. Never reuse that raw marinade.",
+    "Heat the remaining oil in a wide skillet over medium heat. Cook the onion for 4 minutes, until soft. Add the turmeric, cinnamon and salt, then the tomatoes and chickpeas with a splash of water. Simmer for 8 minutes, until the tomatoes collapse into a sauce.",
+    "Stir in the kale and cook for 3 minutes, until wilted. Nestle the salmon on top, cover and cook for 8 to 10 minutes, until the fish flakes easily and reaches 70 °C (158 °F). Wash your hands and the board after handling the raw fish.",
+    "Spoon the rest of the chermoula over the top and serve it from the pan. Taste and add more chili flakes if you want more heat.",
+    "Cool the second portion within 1 hour in a shallow container and refrigerate. Eat it within 2 days, cold as a salad or reheated once until steaming hot, 74 °C (165 °F). Pack it in a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 12,
+   "cookMin": 26,
+   "servings": 2,
+   "tags": [
+    "medium-spicy",
+    "makes-leftovers"
+   ]
+  },
+  {
+   "id": "spice-lovers-sichuan-pepper-beef-greens-quinoa",
+   "name": "Sichuan-pepper beef and greens over quinoa",
+   "inspiredBy": "Inspired by Sichuan stir-fried beef, with quinoa and more vegetables",
+   "about": "Thin strips of lean beef stir-fried hot and fast with broccoli, cabbage and edamame in a garlicky ginger sauce, with toasted Sichuan peppercorns and chili for a tingling heat. The beef and greens bring **iron, zinc and vitamin K**, and it makes tomorrow's lunch.",
+   "ingredients": [
+    {
+     "food": "beef-top-sirloin-steak-lean-raw-a51c2c",
+     "g": 120,
+     "swap": "lean_protein",
+     "note": "trimmed, sliced thinly across the grain"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 100,
+     "note": "washed, small florets"
+    },
+    {
+     "food": "cabbage-green-raw-f18ffb",
+     "g": 100,
+     "note": "washed, torn in pieces"
+    },
+    {
+     "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+     "g": 60,
+     "swap": "legumes",
+     "note": "shelled, frozen"
+    },
+    {
+     "food": "quinoa-dry-13e0ee",
+     "g": 40,
+     "swap": "low_gi_grains",
+     "note": "rinsed"
+    },
+    {
+     "food": "scallion-raw-1ccff7",
+     "g": 25,
+     "note": "washed, sliced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "ginger-root-raw-da2481",
+     "g": 8
+    },
+    {
+     "food": "soy-sauce-reduced-sodium-de4ba7",
+     "g": 8
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 10,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils",
+     "note": "or any neutral oil"
+    },
+    {
+     "food": "sichuan-peppercorn-bb776d",
+     "g": 0.8,
+     "note": "toasted and ground"
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.8,
+     "note": "add more to taste"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Rinse the quinoa, simmer it in plenty of water for 12 to 15 minutes, drain and keep covered. Toast the Sichuan peppercorns in a dry pan for 1 minute, until fragrant, then crush them.",
+    "Toss the beef with the ground peppercorns, pepper and half the soy sauce and leave it in the fridge for 10 minutes. Wash your hands and the board after handling the raw beef.",
+    "Heat half the oil in a wide pan or wok over high heat. Cook the beef in one layer for 2 to 3 minutes, turning once, until browned and no pink is left in the thickest strip, 71 °C (160 °F) if you check with a thermometer. Move it to a plate.",
+    "Add the rest of the oil, then the broccoli with a splash of water and stir-fry for 3 minutes. Add the garlic, ginger, scallion and chili flakes for 30 seconds, then the cabbage and frozen edamame for 2 to 3 minutes, until the edamame is steaming hot and the cabbage is tender-crisp.",
+    "Return the beef with the lime juice, the rest of the soy sauce and a splash of water, and toss for 1 minute. Taste and add more chili flakes for more heat; skip them for a mild version, because the Sichuan pepper tingles rather than burns. Serve over the quinoa.",
+    "Cool the second portion within 1 hour (quinoa in a separate shallow container) and refrigerate. Eat within 3 days, reheated once until steaming hot, 74 °C (165 °F)."
+   ],
+   "prepMin": 15,
+   "cookMin": 20,
+   "servings": 2,
+   "tags": [
+    "spicy",
+    "makes-leftovers"
+   ]
+  },
+  {
+   "id": "spice-lovers-goan-mackerel-tamarind-green-beans",
+   "name": "Goan-style mackerel in tamarind-tomato sauce with potato and green beans",
+   "inspiredBy": "Inspired by Goan fish curry, with tamarind and no coconut",
+   "about": "Atlantic mackerel simmered with potato and green beans in a sharp tamarind and tomato sauce with mustard seed, turmeric, coriander, ginger and chili, finished with kale and lime, over quinoa. Mackerel brings **omega-3 and vitamin D**, the kale and green beans bring folate and vitamin K, and it makes tomorrow's lunch.",
+   "ingredients": [
+    {
+     "food": "mackerel-atlantic-raw-e5edaa",
+     "g": 130,
+     "swap": "fatty_fish",
+     "note": "Atlantic (not king) mackerel fillets, skin on is fine, pin bones out, cut in 4 cm pieces"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 110,
+     "note": "scrubbed, cut in 2 cm cubes"
+    },
+    {
+     "food": "green-beans-raw-29678a",
+     "g": 100,
+     "swap": "leafy_greens",
+     "note": "washed, trimmed, cut in 4 cm pieces"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, chopped"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 80
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "quinoa-dry-13e0ee",
+     "g": 40,
+     "swap": "low_gi_grains",
+     "note": "rinsed"
+    },
+    {
+     "food": "tamarind-paste-484d0c",
+     "g": 10,
+     "note": "or a little extra lime juice if you cannot find it"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "ginger-root-raw-da2481",
+     "g": 8
+    },
+    {
+     "food": "serrano-pepper-raw-bcef02",
+     "g": 4,
+     "note": "washed, minced; start with less, or leave it out"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 12,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 6,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "mustard-seed-yellow-cf19a3",
+     "g": 1
+    },
+    {
+     "food": "turmeric-ground-32f550",
+     "g": 0.6
+    },
+    {
+     "food": "coriander-seed-a0cdb1",
+     "g": 1.5
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1
+    },
+    {
+     "food": "kashmiri-chili-powder-abccb2",
+     "g": 1
+    },
+    {
+     "food": "fenugreek-seed-95f5a8",
+     "g": 0.3,
+     "note": "optional"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1
+    }
+   ],
+   "steps": [
+    "Rinse the quinoa, simmer it in plenty of water for 12 to 15 minutes, drain and keep covered. Meanwhile, heat the oil in a wide pot over medium heat and add the mustard seeds. When they pop, add the onion and cook for 4 minutes, until soft.",
+    "Add the garlic, ginger and serrano and stir for 1 minute, then the turmeric, coriander, cumin, Kashmiri chili and fenugreek for 30 seconds. Wash your hands after cutting chilies and keep them away from your eyes.",
+    "Stir the tamarind paste into a mug of warm water until it dissolves. Add it to the pot with the tomatoes, potato and salt. Simmer, covered, for 12 minutes, until the potato is nearly tender.",
+    "Add the green beans and cook for 3 minutes. Slide in the mackerel, cover and cook gently for 6 to 8 minutes, until the fish flakes easily and reaches 70 °C (158 °F). Wash your hands and the board after handling the raw fish.",
+    "Fold in the kale and cook for 2 minutes more, until just wilted, being careful not to break up the fish. Add the lime juice and top with cilantro. Taste: more lime sharpens it, more chili or a pinch of cayenne heats it. Serve over the quinoa.",
+    "Cool the second portion (quinoa separate) within 1 hour in shallow containers and refrigerate. Eat within 2 days. Add a splash of water and warm it gently, covered, once, until steaming hot, 74 °C (165 °F). Pack it in a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 12,
+   "cookMin": 28,
+   "servings": 2,
+   "tags": [
+    "medium-spicy",
+    "makes-leftovers"
+   ],
+   "tip": "Buy the mackerel last, keep it cold and cook it the day you buy it or the next. Frozen fillets work too: thaw them in the fridge, cook them within a day and never refreeze. Salmon works if mackerel is hard to find. The sauce deepens overnight, so go easy on the chili the first night."
+  },
+  {
+   "id": "spice-lovers-tempeh-sambal-kale-quinoa",
+   "name": "Indonesian-style tempeh sambal with kale, red pepper and quinoa",
+   "inspiredBy": "Inspired by Indonesian sambal tempeh",
+   "about": "Golden pan-fried tempeh simmered with red pepper and kale in a thick chili-tomato sambal with ginger, garlic, coriander and lime, over quinoa. Tempeh brings **plant protein**, and the kale and sunflower seeds bring calcium and vitamin E.",
+   "ingredients": [
+    {
+     "food": "tempeh-b9c516",
+     "g": 90,
+     "swap": "legumes",
+     "note": "cut in 2 cm cubes"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 80,
+     "note": "washed, sliced"
+    },
+    {
+     "food": "tomato-red-ripe-canned-crushed-c5bbec",
+     "g": 130
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 80,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, chopped"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 70,
+     "note": "diced"
+    },
+    {
+     "food": "quinoa-dry-13e0ee",
+     "g": 40,
+     "swap": "low_gi_grains",
+     "note": "rinsed"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "ginger-root-raw-da2481",
+     "g": 8
+    },
+    {
+     "food": "serrano-pepper-raw-bcef02",
+     "g": 4,
+     "note": "washed, minced; start with less, or leave it out"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 10,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 12,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 6,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "coriander-seed-a0cdb1",
+     "g": 1
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1
+    },
+    {
+     "food": "turmeric-ground-32f550",
+     "g": 0.3
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.1
+    }
+   ],
+   "steps": [
+    "Rinse the quinoa, simmer it in plenty of water for 12 to 15 minutes, drain and keep covered. Meanwhile, heat half the oil in a wide pot over medium-high heat and brown the tempeh for 6 to 8 minutes, turning, until golden on most sides. Move it to a plate.",
+    "Add the rest of the oil and the onion and cook for 4 minutes. Add the garlic, ginger, serrano, coriander, cumin, paprika and turmeric and stir for 1 minute. Wash your hands after cutting chilies and keep them away from your eyes.",
+    "Stir in the tomatoes, red pepper, salt and a mug of water. Simmer uncovered for 10 minutes, until the pepper is soft and the sauce is thick.",
+    "Add the kale and tempeh and simmer for 5 minutes, until the kale is tender and the tempeh is steaming hot all the way through, 74 °C (165 °F).",
+    "Finish with the lime juice, sunflower seeds and cilantro. Taste, and add more chili or a pinch of cayenne for more heat. Serve over the quinoa."
+   ],
+   "prepMin": 12,
+   "cookMin": 28,
+   "servings": 1,
+   "tags": [
+    "medium-spicy"
+   ],
+   "tip": "Tempeh blocks are usually about 240 g: wrap the rest and keep it in the fridge until its date, or freeze it. Keep tempeh cold until you cook it, and always cook it through."
+  },
+  {
+   "id": "spice-lovers-chili-lime-mango-sunflower-seeds",
+   "name": "Chili-lime mango with sunflower seeds",
+   "about": "Ripe mango chunks with lime and a dusting of chili, and a handful of sunflower seeds for crunch. Sweet, sharp and a little hot, with **vitamin C and magnesium**.",
+   "ingredients": [
+    {
+     "food": "mango-raw-80de97",
+     "g": 120,
+     "swap": "vit_c_fruit",
+     "note": "peeled, cut in chunks"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 6,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.2,
+     "note": "or less; add more to taste"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 14,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the mango, peel it and cut it into chunks, then toss with the lime juice and a pinch of chili flakes.",
+    "Eat with the sunflower seeds on the side."
+   ],
+   "prepMin": 4,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "medium-spicy",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "spice-lovers-cucumber-mint-raita-veg-sticks",
+   "name": "Cucumber-mint raita with pepper and cucumber sticks",
+   "inspiredBy": "Inspired by Indian raita",
+   "about": "A cooling yogurt dip with grated cucumber, mint and toasted cumin, for dunking red pepper and cucumber sticks. **Calcium, protein and vitamin C**, and a good counter to a spicy day.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 110,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 100,
+     "note": "washed; half grated and squeezed dry, half cut in sticks"
+    },
+    {
+     "food": "mint-raw-9e671e",
+     "g": 3,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 0.5,
+     "note": "toasted"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 80,
+     "note": "washed, cut in sticks"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 4,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash your hands and the vegetables. Stir the yogurt with the grated cucumber, mint, cumin, lime juice and salt.",
+    "Serve with the pepper and cucumber sticks. Keep it cold and eat it the same day."
+   ],
+   "prepMin": 6,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute",
+    "kid-friendly"
+   ]
+  },
+  {
+   "id": "spice-lovers-mango-cucumber-chaat-lime-chili",
+   "name": "Mango and cucumber chaat with lime and chili",
+   "inspiredBy": "Inspired by Indian fruit chaat",
+   "about": "Diced mango and cucumber with red onion, mint, lime and a pinch of chili and cumin, in the style of an Indian fruit chaat. Juicy, sharp and a little hot, with **vitamin C and vitamin A**.",
+   "ingredients": [
+    {
+     "food": "mango-raw-80de97",
+     "g": 100,
+     "swap": "vit_c_fruit",
+     "note": "peeled, diced"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 80,
+     "note": "washed, diced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 10,
+     "note": "finely diced"
+    },
+    {
+     "food": "mint-raw-9e671e",
+     "g": 3,
+     "note": "washed, chopped"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 8,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.15,
+     "note": "or less; add more to taste"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 0.3,
+     "note": "toasted"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the mango, cucumber and mint. Peel and dice the mango, then toss it with the cucumber, onion and mint in a bowl.",
+    "Add the lime juice, chili flakes, cumin and salt and toss again.",
+    "Eat right away, or keep it covered in the fridge and eat within a day."
+   ],
+   "prepMin": 6,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "medium-spicy",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "spice-lovers-cinnamon-chili-apple-walnuts",
+   "name": "Cinnamon apple with peanut butter, walnuts and a pinch of chili",
+   "about": "Crisp apple slices dusted with cinnamon and the faintest pinch of cayenne, with peanut butter to dip and a few walnuts. Sweet, warm and crunchy, with **fibre, vitamin E and a little omega-3**.",
+   "ingredients": [
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 150,
+     "note": "washed, sliced"
+    },
+    {
+     "food": "peanut-butter-smooth-51208a",
+     "g": 8,
+     "swap": "nuts_seeds",
+     "note": "smooth, unsalted if you can find it"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 12,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    },
+    {
+     "food": "chili-powder-f1ace8",
+     "g": 0.1,
+     "note": "optional"
+    }
+   ],
+   "steps": [
+    "Wash the apple and slice it. Toss the slices with the cinnamon (and chili, if using).",
+    "Dip the slices in the peanut butter and eat with the walnuts."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute",
+    "kid-friendly"
+   ]
+  },
+  {
+   "id": "spice-lovers-ginger-banana-walnuts",
+   "name": "Ginger-cardamom banana with walnuts",
+   "about": "A banana sliced and dusted with ginger and cardamom, with a handful of walnuts. Mild and fragrant, with **potassium, vitamin B6 and a little omega-3**.",
+   "ingredients": [
+    {
+     "food": "banana-raw-61b750",
+     "g": 100,
+     "note": "sliced"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 16,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "ginger-ground-648bc0",
+     "g": 0.3
+    },
+    {
+     "food": "cardamom-ground-ac233b",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Slice the banana and dust it with the ginger and cardamom.",
+    "Eat with the walnuts."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute",
+    "kid-friendly"
+   ]
+  },
+  {
+   "id": "spice-lovers-masala-roasted-chickpeas",
+   "name": "Masala roasted chickpeas",
+   "about": "Crunchy oven-roasted chickpeas tossed with cumin, coriander, amchur (dried green mango powder) or lime, and chili. A crisp, savoury snack with **fibre, iron and plant protein**.",
+   "ingredients": [
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 110,
+     "swap": "legumes",
+     "note": "rinsed and patted very dry"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 4,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 0.8
+    },
+    {
+     "food": "coriander-seed-a0cdb1",
+     "g": 0.8
+    },
+    {
+     "food": "amchur-dried-green-mango-powder-59b304",
+     "g": 0.5,
+     "note": "or a squeeze of lime at the end"
+    },
+    {
+     "food": "kashmiri-chili-powder-abccb2",
+     "g": 0.6,
+     "note": "add more to taste"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200 °C (400 °F). Pat the chickpeas very dry with a clean towel so they crisp.",
+    "Toss with the oil and spices on a tray and roast for 22 to 25 minutes, shaking the tray halfway, until golden and crunchy. They firm up more as they cool.",
+    "Eat them warm or cooled. Keep the rest in a closed jar in the fridge for up to 3 days, and crisp them in a hot oven for 5 minutes before eating."
+   ],
+   "prepMin": 3,
+   "cookMin": 25,
+   "servings": 1,
+   "tags": [
+    "medium-spicy"
+   ],
+   "tip": "Roast a double batch on Wednesday and keep the second half for Saturday."
+  },
+  {
+   "id": "spice-lovers-warm-ginger-cardamom-milk",
+   "name": "Warm ginger-cardamom milk",
+   "inspiredBy": "Inspired by masala chai",
+   "about": "A mug of milk warmed with fresh ginger, cardamom and cinnamon, like a quick, unsweetened chai. A soothing end to a spicy day with **calcium, protein and B12**.",
+   "ingredients": [
+    {
+     "food": "milk-reduced-fat-2-fat-4a4316",
+     "g": 250,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "ginger-root-raw-da2481",
+     "g": 4,
+     "note": "peeled, thinly sliced"
+    },
+    {
+     "food": "cardamom-ground-ac233b",
+     "g": 0.4
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Warm the milk with the ginger, cardamom and cinnamon in a small pot over medium-low heat for 4 to 5 minutes, until steaming but not boiling.",
+    "Strain into a mug and sip warm. Keep any extra in the fridge and drink it within a day."
+   ],
+   "prepMin": 2,
+   "cookMin": 5,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "15-minute",
+    "kid-friendly"
+   ]
+  },
+  {
+   "id": "spice-lovers-smoky-sweet-potato-wedges-lime",
+   "name": "Smoky sweet potato wedges with lime",
+   "about": "Sweet potato wedges roasted until caramelised at the edges with smoked paprika, cumin and a squeeze of lime. Sweet, smoky and a little hot, with **vitamin A and potassium**.",
+   "ingredients": [
+    {
+     "food": "sweet-potato-raw-15f948",
+     "g": 150,
+     "note": "scrubbed, cut in thin wedges"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 4,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 0.8
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 0.5
+    },
+    {
+     "food": "chili-powder-f1ace8",
+     "g": 0.3,
+     "note": "add more to taste"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 6,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 °C (425 °F). Toss the wedges with the oil, paprika, cumin, chili powder and salt on a lined tray.",
+    "Roast for 22 to 25 minutes, turning once, until tender inside and browned at the edges. Squeeze the lime over the top."
+   ],
+   "prepMin": 5,
+   "cookMin": 25,
+   "servings": 1,
+   "tags": [
+    "medium-spicy"
+   ],
+   "tip": "Roast them alongside the chicken or the chickpeas to share the oven."
+  },
+  {
+   "id": "spice-lovers-cardamom-yogurt-apple",
+   "name": "Cardamom yogurt with apple",
+   "about": "Thick Greek yogurt with diced apple and a pinch of cardamom. Cool and creamy, with **protein and calcium**.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 150,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 120,
+     "note": "washed, cored and diced"
+    },
+    {
+     "food": "cardamom-ground-ac233b",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the apple, core it and dice it.",
+    "Spoon the yogurt into a bowl and top with the apple and a pinch of cardamom."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook",
+    "15-minute",
+    "kid-friendly"
+   ]
+  }
+ ],
+ "week": [
+  {
+   "day": 1,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "spice-lovers-chai-oats-banana-walnuts"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "spice-lovers-piri-piri-sardine-black-bean-quinoa-salad"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "spice-lovers-chickpea-potato-curry-spinach"
+    },
+    {
+     "slot": "snack",
+     "recipe": "spice-lovers-chili-lime-mango-sunflower-seeds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "spice-lovers-cucumber-mint-raita-veg-sticks"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "spice-lovers-masala-oats-spinach-yogurt"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "spice-lovers-chickpea-potato-curry-spinach",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "spice-lovers-jerk-chicken-mango-salsa-black-beans"
+    },
+    {
+     "slot": "snack",
+     "recipe": "spice-lovers-warm-ginger-cardamom-milk"
+    },
+    {
+     "slot": "snack",
+     "recipe": "spice-lovers-ginger-banana-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "spice-lovers-chai-oats-banana-walnuts"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "spice-lovers-jerk-chicken-mango-salsa-black-beans",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "spice-lovers-berbere-red-lentils-potato-greens"
+    },
+    {
+     "slot": "snack",
+     "recipe": "spice-lovers-masala-roasted-chickpeas"
+    },
+    {
+     "slot": "snack",
+     "recipe": "spice-lovers-cinnamon-chili-apple-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "spice-lovers-masala-oats-spinach-yogurt"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "spice-lovers-berbere-red-lentils-potato-greens",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "spice-lovers-moroccan-spiced-salmon-chickpeas-kale"
+    },
+    {
+     "slot": "snack",
+     "recipe": "spice-lovers-chili-lime-mango-sunflower-seeds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "spice-lovers-ginger-banana-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "spice-lovers-chai-oats-banana-walnuts"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "spice-lovers-moroccan-spiced-salmon-chickpeas-kale",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "spice-lovers-sichuan-pepper-beef-greens-quinoa"
+    },
+    {
+     "slot": "snack",
+     "recipe": "spice-lovers-cucumber-mint-raita-veg-sticks"
+    },
+    {
+     "slot": "snack",
+     "recipe": "spice-lovers-cinnamon-chili-apple-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "spice-lovers-masala-oats-spinach-yogurt"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "spice-lovers-sichuan-pepper-beef-greens-quinoa",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "spice-lovers-goan-mackerel-tamarind-green-beans"
+    },
+    {
+     "slot": "snack",
+     "recipe": "spice-lovers-masala-roasted-chickpeas"
+    },
+    {
+     "slot": "snack",
+     "recipe": "spice-lovers-warm-ginger-cardamom-milk"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "spice-lovers-berbere-egg-scramble-potatoes-spinach"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "spice-lovers-goan-mackerel-tamarind-green-beans",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "spice-lovers-tempeh-sambal-kale-quinoa"
+    },
+    {
+     "slot": "snack",
+     "recipe": "spice-lovers-mango-cucumber-chaat-lime-chili"
+    }
+   ]
+  }
+ ]
+}
