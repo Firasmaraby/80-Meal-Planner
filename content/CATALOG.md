@@ -306,6 +306,64 @@ app stays religiously neutral. Recipes still leave alcohol out.
 - **Intermittent fasting 16:8:** not needed.
 - **Sunday batch-cook:** every family already cooks once and eats twice.
 
+## Wave 3: Everyday global plans (the default Plans view)
+
+Firas's framework (Nov 5): 80% of the RDA or AI for every micronutrient every day; high fibre, low saturated fat; whole
+foods (legumes, nuts, seeds, fruit, vegetables). General and global, not regional: every week borrows freely from
+everywhere, the way people really cook at home now, and above all it's tasty, everyday food people will make. Each
+plan is `cuisine: "Global"`, `style: "balanced"`, sizes Light, Standard and Big (1400-3200 where it passes), fatty fish
+at least twice a week, **no pork and no alcohol**. They open the Plans tab (Everyday). Rules in GUIDE §13 "Everyday global".
+
+The plans are told apart by **how** people like to eat (a format, a season, a favourite food), not by a country.
+
+**Whole-food carbs only (20).** Legumes, potatoes, sweet potatoes, squash, fruit and intact grains (oats, quinoa,
+barley, buckwheat, millet, freekeh). No bread, rice, pasta, tortillas, bulgur or couscous. `carbStyle: "whole"`.
+
+| # | id | Name | The idea, and dishes to start from |
+|---|---|---|---|
+| 1 | `sheet-pan-suppers` | Sheet-Pan Suppers | One tray, one oven, little washing up: lemon-oregano chicken thighs with chickpeas, squash and red onion; salmon with baby potatoes and broccoli; harissa cauliflower with lentils and feta; sausage-free "fajita" tray of chicken, peppers and black beans. Overnight oats breakfasts. |
+| 2 | `big-bowls` | Big Bowls | A base, a protein, lots of veg and a great sauce: quinoa with roast sweet potato, black beans and lime crema; lentil and roasted beet bowl with walnuts; teriyaki-style salmon bowl on edamame and greens; chicken shawarma-spiced bowl with chickpeas and tahini. |
+| 3 | `soup-and-stew` | Soup and Stew Week | Big pots that taste better the next day: red lentil and carrot soup; chicken, white bean and kale stew; beef and barley soup; smoky black bean soup; fish chowder with potatoes and corn; a hearty minestrone made with barley instead of pasta. |
+| 4 | `potato-kitchen` | Potato Kitchen | For people who love potatoes: baked potatoes loaded with chili beans; salmon fishcakes with slaw; potato, egg and spinach hash; tray-roasted chicken with crushed potatoes and green beans; sweet potato and chickpea curry. |
+| 5 | `bean-kitchen` | Bean Kitchen | Beans and lentils at most meals, done well: three-bean chili; hummus plates; lentil and squash dal; Tuscan-style beans with greens and a firm-cooked egg; black bean and sweet potato stew; white bean and tuna salad. Fish twice. |
+| 6 | `fish-and-seafood` | Fish and Seafood Week | Fish four or five times, all low-mercury: sheet-pan salmon; trout with lentils; shrimp and white bean skillet; mackerel on potato salad; cod and chickpea stew; mussels in tomato broth with potatoes. |
+| 7 | `chicken-every-way` | Chicken Every Way | Chicken-forward and never boring: roast chicken with roots; chicken and chickpea tagine-style stew; chicken soup with barley; grilled chicken with a big Greek-style salad; chicken and sweet potato curry. Fish twice. |
+| 8 | `spice-lovers` | Spice Lover's Week | Bold spice from everywhere: chickpea and potato curry; berbere-spiced lentils; jerk-spiced chicken with mango salsa and beans; Moroccan-spiced fish with chickpeas; Sichuan-pepper beef and greens over quinoa. |
+| 9 | `ancient-grains` | Ancient Grains | Intact grains as the star: barley "risotto" with mushrooms and peas; quinoa tabbouleh-style salad with salmon; buckwheat with roasted veg and feta; millet porridge; freekeh with chicken and herbs. |
+| 10 | `mostly-plants` | Mostly Plants | Plants at most meals, fish twice and a little chicken: lentil shepherd's pie with sweet potato top; chickpea and spinach stew; tofu and vegetable traybake; bean-stuffed peppers; salmon with greens. |
+| 11 | `one-pot` | One-Pot Week | Everything in one pot or pan: chicken, lentil and spinach stew; shakshuka with chickpeas; beef and bean chili; coconut fish curry with sweet potato; one-pot barley with mushrooms and greens. |
+| 12 | `grill-and-skillet` | Grill and Skillet | Quick heat, big flavour: grilled chicken with charred corn and bean salad; skillet salmon with potatoes and asparagus; lean beef kebabs with herby quinoa; halloumi-free grilled veg with chickpeas and yogurt sauce. |
+| 13 | `comfort-classics` | Comfort Classics, Lighter | The food people crave, built to the framework: lentil and beef shepherd's pie with mash; chicken pot pie filling under a potato crust; fish pie; turkey meatballs with squash mash; chili with all the toppings. |
+| 14 | `grazing-plates` | Grazing Plates | Smaller plates you mix and match: hummus, eggs, smoked trout, fruit, nuts and crunchy veg; bean salads; potato and herb salad; marinated chickpeas; fruit and yogurt. Built for people who like to snack. |
+| 15 | `eat-the-rainbow` | Eat the Rainbow | Every day leans on a colour: green (peas, spinach, herbs), red (tomato, peppers, beets), orange (squash, sweet potato, carrot), purple (cabbage, berries, beets). Fun and very varied. |
+| 16 | `spring-fresh` | Spring Fresh | Asparagus, peas, new potatoes, radishes, herbs, trout and salmon, eggs, light lentil salads, strawberries. |
+| 17 | `summer-salads` | Summer Salads | Big main-course salads that fill you up: niçoise-style with potatoes and tuna; chicken, peach and quinoa salad; bean and corn salad with grilled fish; watermelon, feta and mint sides. Little cooking. |
+| 18 | `autumn-harvest` | Autumn Harvest | Squash, apples, mushrooms, lentils, kale and beets: roast squash with lentils and walnuts; chicken with apples and cabbage; mushroom and barley soup; baked apples with oats. |
+| 19 | `winter-warmers` | Winter Warmers | Slow braises and roasts: beef and root veg stew; chicken and white bean cassoulet-style (no sausage); split pea soup with smoked turkey; baked oats; mulled-spice fruit. |
+| 20 | `cook-once-eat-twice` | Cook Once, Eat Twice | A Sunday and a Wednesday cook that feed the week: a big pot of lentils, a tray of roast chicken and roots, a pan of salmon; weekday meals assembled in minutes. |
+
+**Whole grains allowed (10).** Adds brown rice, whole-wheat pasta, whole-grain bread, corn tortillas, bulgur and soba
+in modest portions next to plenty of vegetables and legumes. `carbStyle: "wholegrain"`.
+
+| # | id | Name | The idea, and dishes to start from |
+|---|---|---|---|
+| 21 | `everyday-classics` | Everyday Classics | The easy default: oats and whole-grain toast breakfasts; chicken, veg and brown rice; salmon with potatoes; whole-wheat spaghetti with lentil-tomato sauce; bean soup with a slice of rye. |
+| 22 | `pasta-night` | Pasta Night, Balanced | Whole-wheat pasta two or three times, in sensible portions with plenty in the sauce: pasta e fagioli; salmon, spinach and lemon pasta; chicken and broccoli orecchiette; lentil bolognese. |
+| 23 | `rice-bowls` | Rice Bowls | Brown rice as a base, always with beans or veg: cooked-salmon poke-style bowl (no raw fish); burrito bowl; chicken and veg stir-fry; dal with brown basmati; bibimbap-style bowl with beef and greens. |
+| 24 | `soup-and-sandwich` | Soup and Sandwich | Classic lunches done right: whole-grain bread with tuna and white bean, egg and cress, chicken and avocado; soups alongside; open-face rye toasts with smoked fish. |
+| 25 | `noodle-bowls` | Noodle Bowls | Soba and whole-wheat noodles: cold soba with edamame and salmon; chicken noodle soup with lots of greens; peanut noodle salad with tofu; beef and broccoli noodles. |
+| 26 | `wraps-and-tacos` | Wraps and Tacos | Corn tortillas and whole-wheat wraps: fish tacos with slaw; chicken and black bean burritos; lentil-walnut taco "meat"; breakfast wraps with eggs and beans. |
+| 27 | `takeout-at-home` | Takeout at Home | Favourite takeout, made better at home: whole-wheat pizza with lots of veg; lean beef burger on a whole-grain bun with sweet potato wedges; chicken tikka with brown rice; fish and potato "chips" from the oven; veg fried brown rice. |
+| 28 | `stir-fry-week` | Stir-Fry Week | Hot wok, lots of veg: chicken and cashew; beef and broccoli; shrimp and snow peas; tofu and greens; all with brown rice or whole-wheat noodles in modest portions. |
+| 29 | `lunchbox-week` | Lunchbox Week | Packable lunches that travel: grain salads with bulgur or brown rice; whole-grain wraps; bean salads; boiled eggs and fruit; dinners that leave a portion for tomorrow. |
+| 30 | `brunch-lovers` | Brunch Lovers | Breakfast is the favourite meal: whole-grain toast with eggs and avocado; oat pancakes with berries; shakshuka with bread; smoked salmon on rye; savoury oats. |
+
+**Waves:** 1: `sheet-pan-suppers`, `big-bowls`, `soup-and-stew`, `bean-kitchen`, `everyday-classics`. 2: `potato-kitchen`,
+`fish-and-seafood`, `chicken-every-way`, `one-pot`, `pasta-night`. 3: `spice-lovers`, `mostly-plants`, `comfort-classics`,
+`rice-bowls`, `soup-and-sandwich`. 4: `ancient-grains`, `grill-and-skillet`, `grazing-plates`, `eat-the-rainbow`,
+`takeout-at-home`. 5: `spring-fresh`, `summer-salads`, `autumn-harvest`, `winter-warmers`, `stir-fry-week`. 6:
+`cook-once-eat-twice`, `noodle-bowls`, `wraps-and-tacos`, `lunchbox-week`, `brunch-lovers`.
+
 ## Not offered, and why
 - **Carnivore:** it can't reach vitamin C, folate or fibre, and contradicts the framework.
 - **Raw vegan:** can't reliably reach B12, vitamin D, iodine or zinc.
