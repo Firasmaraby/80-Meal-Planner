@@ -274,7 +274,7 @@ export function sizeDaysDown(dishes: Ingredient[][], days: number[][], targetKca
     }, 0);
   const proteinFloor = out.map((m) => Math.min(MEAL_PROTEIN_FLOOR, proteinOf(m)));
   // a dish shared with a day already at its target may still be trimmed while that day stays within this much of it
-  const SHARED_SLACK = 0.03;
+  const SHARED_SLACK = 0.05;
   for (let round = 0; round < 200 * days.length; round++) {
     const totals = days.map((_, d) => totalOf(d));
     const kcal = totals.map((t) => t.kcal ?? 0);
