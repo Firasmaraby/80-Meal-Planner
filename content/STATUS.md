@@ -130,4 +130,9 @@ Every family in CATALOG.md moves through these steps:
   - Upper limits at Big 3200 sit under the house headroom everywhere.
   - Only `everyday-classics` stays Light 1600-1800.
   - Wave 3 is in review.
+- **Nov 5:** **Everyday wave 3 shipped (15 of 30), demo v25.** New plans: `spice-lovers`, `mostly-plants` and `comfort-classics` (whole-food carbs), plus `rice-bowls` and `soup-and-sandwich` (whole grains). Every band is kept, Light 1400 included.
+  - Where the plan's star shrank to scraps at 1,400 (rice, bread, potato), Light-only copies of those dishes keep a real base: 35 to 40 g dry rice, a 35 g slice.
+  - Engine: a same-name Light copy carries `variantOf`, so the Meals tab lists it once, and signature dishes follow the swap. Size-only recipes take their slot from the size that uses them.
+  - Wave 3 was written in parallel, so sibling near-copies (peanut stews, coconut salmon curries, sloppy joes, the hash) were swapped out in review.
+  - Rebuilt the data. Tests (494), typecheck and the Playwright walk all pass: 15 Everyday plans show, no duplicate meals, no errors.
 
