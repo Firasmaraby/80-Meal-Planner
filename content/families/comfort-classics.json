@@ -1,0 +1,1956 @@
+{
+ "id": "comfort-classics",
+ "name": "Comfort Classics, Lighter",
+ "style": "balanced",
+ "cuisine": "Global",
+ "carbStyle": "whole",
+ "regions": [
+  "United Kingdom",
+  "United States",
+  "Sweden"
+ ],
+ "summary": "The food people crave, built to the framework: shepherd's pie, fish pie, chicken pot pie under a potato crust, meatballs with gravy, meatloaf and a white chicken chili with all the toppings. Sauces are thickened with beans, cauliflower and potato, not flour, and cheddar is only a garnish.",
+ "howItWorks": "**Comfort, rebuilt.** Shepherd's pie, fish pie, chicken pot pie, meatballs and gravy, meatloaf and a white chicken chili are all here, with no flour. Potato crusts and mashes, and sauces thickened with blended beans, cauliflower and potato, do the work. Cheddar is a small garnish, never a layer.\n\n**Cook once, eat twice.** Monday's shepherd's pie, Wednesday's chili, Thursday's meatballs and Saturday's pot pie each make two portions, so Tuesday, Thursday, Friday and Sunday lunches are done. Weeknight dinners take about 40 minutes. Saturday's pot pie is the one weekend project.\n\n**Fish and protein.** Salmon in Tuesday's fish pie and Friday's roast fillet carries your omega-3 and some **vitamin D**, always cooked fresh. Beef, chicken, turkey, salmon, beans and lentils carry the lunches and dinners, and milk, nuts and seeds the oatmeal breakfasts. Eggs sit in three breakfasts, and the fish pie, meatballs and meatloaf use some.\n\n**Light.** It covers 1400 to 1800 kcal and drops one snack a day. At 1400 the oats, nuts, oil, cheddar, potatoes and beans get smaller, so the pies keep a real topping but the mash is mostly cauliflower. The turkey trims by up to a third, the chicken and salmon by less. The beef, eggs and other vegetables stay about as written.\n\n**Big.** It keeps every snack and adds a guacamole snack on Monday and Thursday. The meat, fish, dairy, beans, lentils and nuts grow by about half to three quarters, and the potatoes, sweet potatoes, oats and oil by up to about double; the scramble gets a third or fourth egg. The other vegetables, squash and fruit stay the same. Use a wider pot for the two-portion dishes.",
+ "signature": [
+  "comfort-classics-lentil-beef-shepherds-pie",
+  "comfort-classics-chicken-pot-pie-potato-crust",
+  "comfort-classics-salmon-spinach-fish-pie",
+  "comfort-classics-white-chicken-bean-chili-all-the-toppings"
+ ],
+ "lifeStage": "none",
+ "sizes": {
+  "light": {
+   "kcal": 1650,
+   "covers": [
+    "1400-1600",
+    "1600-1800"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 2,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 3,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 4,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 5,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 6,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 7,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    }
+   ]
+  },
+  "standard": {
+   "kcal": 2100,
+   "covers": [
+    "1800-2000",
+    "2000-2200",
+    "2200-2400"
+   ]
+  },
+  "big": {
+   "kcal": 3000,
+   "covers": [
+    "2400-2800",
+    "2800-3200"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "add": {
+      "slot": "snack",
+      "recipe": "comfort-classics-guacamole-veg-sticks"
+     }
+    },
+    {
+     "day": 4,
+     "add": {
+      "slot": "snack",
+      "recipe": "comfort-classics-guacamole-veg-sticks"
+     }
+    }
+   ]
+  }
+ },
+ "recipes": [
+  {
+   "id": "comfort-classics-pumpkin-pie-oatmeal",
+   "name": "Pumpkin pie oatmeal",
+   "about": "Rolled oats simmered in milk with pumpkin, a mashed banana, ground flaxseed, cinnamon and nutmeg, topped with toasted walnuts and sunflower seeds. It tastes like a slice of pie and takes ten minutes from the pot, and the pumpkin and oats bring **fibre and vitamin A**, with the flax adding some omega-3.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 45,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "milk-nonfat-37ddd7",
+     "g": 210,
+     "swap": "dairy_protein",
+     "note": "or any milk you like"
+    },
+    {
+     "food": "pumpkin-canned-8c1c09",
+     "g": 90,
+     "note": "plain purée, not pie filling"
+    },
+    {
+     "food": "banana-raw-61b750",
+     "g": 40,
+     "swap": "vit_c_fruit",
+     "note": "mashed"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 10,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 7,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "flaxseed-linseed-whole-and-ground-42b661",
+     "g": 6,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 1.5
+    },
+    {
+     "food": "nutmeg-ground-15c547",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Stir the oats, milk, pumpkin, mashed banana, ground flaxseed, cinnamon and nutmeg together in a small pot over medium heat.",
+    "Bring to a gentle simmer and cook for 5 to 6 minutes, stirring often, until thick and creamy and the pumpkin has melted into the oats.",
+    "Spoon into a bowl and top with the walnuts and sunflower seeds. Eat right away."
+   ],
+   "prepMin": 3,
+   "cookMin": 7,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ],
+   "tip": "Keep what is left of the tin of pumpkin covered in the fridge and use it within 4 days, or freeze it in spoonfuls. It also goes into the pumpkin pie yogurt snack. At the smallest sizes there are only a few spoonfuls of oats: cook them in just enough of the milk to cover, and drink the rest of the milk alongside."
+  },
+  {
+   "id": "comfort-classics-cherry-pie-oatmeal",
+   "name": "Cherry pie oatmeal",
+   "inspiredBy": "Inspired by a bowl of warm cherry pie",
+   "about": "Creamy rolled oats with frozen cherries that cook down to a jammy sauce, a pinch of cinnamon and a scatter of toasted almonds and walnuts. It is dessert for breakfast that happens to bring **fibre, protein and vitamin E**.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 45,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "milk-nonfat-37ddd7",
+     "g": 230,
+     "swap": "dairy_protein",
+     "note": "or any milk you like"
+    },
+    {
+     "food": "cherry-pitted-frozen-e8afe0",
+     "g": 80,
+     "swap": "berries",
+     "note": "unsweetened, no need to thaw"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 8,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 1
+    }
+   ],
+   "steps": [
+    "Stir the oats, milk, cherries and cinnamon together in a small pot over medium heat.",
+    "Simmer gently for 6 to 7 minutes, stirring often and pressing a few cherries with the spoon, until the oats are creamy and the milk has turned pink.",
+    "Spoon into a bowl and top with the almonds and walnuts."
+   ],
+   "prepMin": 2,
+   "cookMin": 9,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ],
+   "tip": "Frozen blueberries or a diced apple work the same way. At the smallest sizes there are only a few spoonfuls of oats: cook them with the cherries in just enough of the milk to cover, and drink the rest of the milk alongside."
+  },
+  {
+   "id": "comfort-classics-spinach-mushroom-scramble-sweet-potato",
+   "name": "Spinach and mushroom scramble on a sweet potato",
+   "inspiredBy": "Inspired by a diner breakfast plate",
+   "about": "Eggs scrambled until completely set with mushrooms and spinach, spooned onto a microwaved sweet potato split open like a baked potato. It is a quick, hearty breakfast with **protein, choline and vitamin A**.",
+   "ingredients": [
+    {
+     "food": "sweet-potato-raw-15f948",
+     "g": 130,
+     "note": "scrubbed"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 100,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "mushroom-white-raw-a74147",
+     "g": 60,
+     "note": "sliced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 4,
+     "note": "chopped"
+    },
+    {
+     "food": "cheddar-cheese-c95e9a",
+     "g": 4,
+     "note": "sharp, grated"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 0.8
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the sweet potato, spinach and parsley. Prick the sweet potato all over with a fork and microwave it for 6 to 8 minutes, turning once, until a knife slides in easily.",
+    "Meanwhile, warm the oil in a nonstick pan over medium-high heat. Cook the mushrooms for 4 minutes, until browned and the water has cooked off.",
+    "Add the spinach and stir for 1 minute, until it wilts. Beat the eggs with the salt, pepper and paprika and pour them in.",
+    "Stir gently for 3 to 4 minutes, until the eggs are completely set and no liquid egg is left.",
+    "Split the sweet potato, spoon the scramble on top and scatter with the cheddar and parsley."
+   ],
+   "prepMin": 6,
+   "cookMin": 12,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Bake the sweet potato in the oven when you have the time and the skin goes crisp."
+  },
+  {
+   "id": "comfort-classics-sage-turkey-patties-potato-hash",
+   "name": "Sage turkey patties and potato hash with a firm egg",
+   "inspiredBy": "Inspired by a classic diner breakfast of patties and hash, made with turkey",
+   "about": "Savoury turkey patties with sage, thyme and grated apple, on a crisp-edged hash of potato, onion and spinach, with an egg cooked on top until the yolk is firm. It is the slow weekend breakfast, with **protein, choline and iron**.",
+   "ingredients": [
+    {
+     "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+     "g": 100,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 30,
+     "note": "coarsely grated, skin on"
+    },
+    {
+     "food": "sage-ground-eb1db2",
+     "g": 0.8
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 0.4
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 140,
+     "note": "scrubbed and cut in 1 cm dice"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 40,
+     "note": "diced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the potatoes, spinach and apple. Mix the turkey with the grated apple, sage, thyme, half the salt and the pepper. Shape into small flat patties, then wash your hands, the board and the bowl with hot soapy water.",
+    "Warm half the oil in a large nonstick pan over medium-high heat. Add the potatoes, onion and paprika, cover for 5 minutes, then uncover and cook for 8 minutes more, turning now and then, until golden and tender.",
+    "Push the potatoes to one side. Add the rest of the oil and the patties and cook for 4 to 5 minutes a side, until browned and the middle reaches 74 °C (165 °F).",
+    "Stir the spinach and the rest of the salt into the hash for 1 to 2 minutes, until the spinach wilts. Make a well, crack in the egg, add a spoonful of water to the pan and cover for 5 to 6 minutes, until the white is set and the yolk is fully firm all the way through.",
+    "Slide the hash onto a plate and serve with the patties."
+   ],
+   "prepMin": 12,
+   "cookMin": 28,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Make the patties the night before so they hold together better in the pan. Keep the raw patties covered on the bottom shelf of the fridge and cook them within a day."
+  },
+  {
+   "id": "comfort-classics-chicken-waldorf-white-bean-salad",
+   "name": "Chicken Waldorf salad with white beans",
+   "inspiredBy": "Inspired by the classic Waldorf salad, with a yogurt dressing",
+   "about": "Poached chicken, crisp apple and celery in a creamy lemon-yogurt dressing with walnuts and sunflower seeds, folded with white beans and piled on baby spinach. It is the deli salad you remember, with **protein, fibre and vitamin C**.",
+   "ingredients": [
+    {
+     "food": "chicken-breast-boneless-skinless-raw-c37574",
+     "g": 100,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 120,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 120,
+     "swap": "vit_c_fruit",
+     "note": "diced, skin on"
+    },
+    {
+     "food": "celery-raw-79a241",
+     "g": 40,
+     "note": "thinly sliced"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 8,
+     "swap": "nuts_seeds",
+     "note": "toasted and chopped"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 6,
+     "swap": "nuts_seeds",
+     "note": "toasted"
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 50,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 12,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 4
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 4,
+     "note": "chopped"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Cover the chicken with cold water in a small pot, bring to a gentle simmer and cook for 12 to 14 minutes, until the thickest part reaches 74 °C (165 °F). Lift it out, slice it, spread it in a shallow container and refrigerate it within 2 hours.",
+    "Wash your hands, the board and the knife with hot soapy water. Wash the apple, celery, spinach and parsley.",
+    "Whisk the yogurt, lemon juice, mustard, salt and pepper in a bowl.",
+    "Dice the cold chicken and fold it into the dressing with the apple, celery, beans and parsley.",
+    "Pile onto the spinach and scatter with the toasted walnuts and sunflower seeds."
+   ],
+   "prepMin": 12,
+   "cookMin": 15,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Poach the chicken the night before and the salad takes five minutes. Packed for lunch, use a cold bag with an ice pack and eat it the same day."
+  },
+  {
+   "id": "comfort-classics-loaded-potato-white-bean-soup",
+   "name": "Loaded baked potato soup with smoky turkey crumbles",
+   "inspiredBy": "Inspired by loaded baked potato soup",
+   "about": "A thick, creamy soup of potato and white beans that gets its body from blending part of the pot, not from flour or cream, with green beans stirred in at the end. It is \"loaded\" with smoky turkey crumbles, a little cheddar, yogurt and parsley, and it brings **protein, fibre and potassium**.",
+   "ingredients": [
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 170,
+     "note": "scrubbed and diced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 60,
+     "note": "chopped"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 75,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "green-beans-raw-29678a",
+     "g": 80,
+     "note": "cut in short pieces"
+    },
+    {
+     "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+     "g": 70,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 220
+    },
+    {
+     "food": "milk-nonfat-37ddd7",
+     "g": 100
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "sliced"
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 40,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "cheddar-cheese-c95e9a",
+     "g": 6,
+     "note": "sharp, grated"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 4,
+     "note": "chopped"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 0.4
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the potatoes, green beans and parsley. Warm half the oil in a pot over medium heat and soften the onion and garlic for 4 minutes.",
+    "Add the potatoes, thyme and broth and bring to a simmer. Cover and cook for 12 minutes, until the potatoes are very tender. Add the white beans and milk and bring back to a simmer.",
+    "Meanwhile, crumble the turkey into a small pan with the rest of the oil and the paprika. Cook for 5 to 6 minutes, until browned and crisp and it reaches 74 °C (165 °F). Wash your hands and the pan with hot soapy water.",
+    "Blend about half the soup, with a stick blender or in a blender, and stir it back in, so it is thick and creamy but still has chunks. Add the green beans and simmer for 5 to 6 minutes, until they are tender and the soup is steaming hot. Season with the salt and pepper, and loosen with a splash of water if it is too thick.",
+    "Ladle into a bowl and top with the turkey, yogurt, cheddar and parsley."
+   ],
+   "prepMin": 10,
+   "cookMin": 26,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Careful when blending hot soup: fill the blender halfway and hold the lid down with a towel."
+  },
+  {
+   "id": "comfort-classics-broccoli-cheddar-soup-sweet-potato-rounds",
+   "name": "Broccoli cheddar soup with crisp sweet potato rounds",
+   "inspiredBy": "Inspired by American broccoli cheddar soup",
+   "about": "A thick, green, cheesy-tasting soup of broccoli, onion and white beans, made creamy by blending most of the pot rather than with flour or cream, with a little sharp cheddar and a swirl of yogurt. Roasted sweet potato rounds go alongside for dunking. The broccoli and beans bring **vitamin C, fibre and folate**.",
+   "ingredients": [
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 180,
+     "swap": "leafy_greens",
+     "note": "chopped, stalks peeled and sliced"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 140,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 60,
+     "note": "chopped"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 40,
+     "note": "finely chopped"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "sliced"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 250
+    },
+    {
+     "food": "milk-nonfat-37ddd7",
+     "g": 60
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 3
+    },
+    {
+     "food": "sweet-potato-raw-15f948",
+     "g": 130,
+     "note": "scrubbed, cut in thick rounds"
+    },
+    {
+     "food": "cheddar-cheese-c95e9a",
+     "g": 12,
+     "note": "sharp, grated, half for the soup and half for the rounds"
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 40,
+     "swap": "dairy_protein",
+     "note": "for swirling in"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 8,
+     "swap": "nuts_seeds",
+     "note": "toasted"
+    },
+    {
+     "food": "nutmeg-ground-15c547",
+     "g": 0.2
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 °C (425 °F). Wash the sweet potato and broccoli. Toss the sweet potato rounds with half the oil and a pinch of salt on a tray and roast for 20 minutes, turning once, until tender with browned edges.",
+    "Meanwhile, warm the rest of the oil in a pot over medium heat and soften the onion, carrot and garlic for 6 minutes. Add the broth, beans and broccoli and bring to a simmer.",
+    "Cover and cook for 10 minutes, until the broccoli is very tender and the soup is steaming hot. Add the milk, mustard, nutmeg, salt and pepper.",
+    "Blend about two thirds of the soup, with a stick blender or in a blender, and stir it back in, so it is thick and creamy but still has green flecks. Stir in half the cheddar.",
+    "Scatter the rest of the cheddar over the hot sweet potato rounds and return them to the oven for 2 minutes, until melted.",
+    "Ladle the soup into a bowl, swirl in the yogurt, scatter with the sunflower seeds and serve the cheesy rounds alongside for dunking."
+   ],
+   "prepMin": 10,
+   "cookMin": 28,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Careful when blending hot soup: fill the blender halfway and hold the lid down with a towel."
+  },
+  {
+   "id": "comfort-classics-lentil-beef-shepherds-pie",
+   "name": "Lentil and beef shepherd's pie with cauliflower mash",
+   "inspiredBy": "Inspired by British shepherd's pie, with lentils in half the meat's place",
+   "about": "Lean beef and lentils simmered with carrot, celery, mushrooms and peas in a thick herby gravy, under a golden mash of potato and cauliflower. The lentils bring **iron, folate and fibre**, and they thicken the gravy, so there is no flour.",
+   "ingredients": [
+    {
+     "food": "ground-beef-95-lean-raw-6df9ef",
+     "g": 85,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "lentils-canned-no-salt-added-drained-c1edbd",
+     "g": 90,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 60,
+     "note": "finely diced"
+    },
+    {
+     "food": "celery-raw-79a241",
+     "g": 30,
+     "note": "finely diced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 50,
+     "note": "finely diced"
+    },
+    {
+     "food": "mushroom-white-raw-a74147",
+     "g": 50,
+     "note": "finely chopped"
+    },
+    {
+     "food": "peas-frozen-raw-dd927b",
+     "g": 50
+    },
+    {
+     "food": "tomato-paste-7d3238",
+     "g": 12
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 140
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 115,
+     "note": "peeled and cut in chunks"
+    },
+    {
+     "food": "cauliflower-raw-f8205d",
+     "g": 130,
+     "note": "cut in florets"
+    },
+    {
+     "food": "milk-nonfat-37ddd7",
+     "g": 30
+    },
+    {
+     "food": "cheddar-cheese-c95e9a",
+     "g": 10,
+     "note": "sharp, grated"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 11,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 0.6
+    },
+    {
+     "food": "rosemary-dried-bacf22",
+     "g": 0.4
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 0.6
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.2
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the vegetables. Boil the potatoes and cauliflower in salted water for 15 minutes, until very tender. Heat the grill (broiler) to high.",
+    "While they cook, warm half the oil in a deep ovenproof pan over medium-high heat and cook the onion, carrot, celery and mushrooms for 6 minutes, until soft. Add the beef and cook for 5 minutes, breaking it up, until no pink is left. Wash your hands, the board and the spoon with hot soapy water.",
+    "Stir in the tomato paste, thyme, rosemary, paprika and broth. Mash a third of the lentils with a fork, then stir in all the lentils, mashed and whole, with the peas. Simmer for 8 minutes, until a spoon drawn through the gravy leaves a trail, the peas are steaming hot and the beef has reached 71 °C (160 °F).",
+    "Drain the potatoes and cauliflower and mash them with the milk, the rest of the oil and the salt until smooth.",
+    "Spoon the mash over the filling and fork it into ridges. Scatter with the cheddar and grill for 5 to 6 minutes, until golden at the edges.",
+    "Eat half now. Cool the second portion in a shallow container within 2 hours and refrigerate. Eat it tomorrow, reheated until steaming hot, 74 °C (165 °F)."
+   ],
+   "prepMin": 15,
+   "cookMin": 26,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "freezer-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "Drain the cauliflower well and let it steam dry for a minute before mashing so the top can brown. To freeze the pie, cool it within 2 hours and freeze for up to 2 months. Thaw it in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+  },
+  {
+   "id": "comfort-classics-salmon-spinach-fish-pie",
+   "name": "Salmon fish pie with spinach and peas",
+   "inspiredBy": "Inspired by British fish pie",
+   "about": "Chunks of salmon gently poached in milk with onion, spinach and peas, in a creamy sauce thickened with blended white beans, under a lightly browned mash of potato and cauliflower, with a chopped firm-cooked egg folded in the way the classic has it. The salmon brings **omega-3, vitamin D and protein**.",
+   "ingredients": [
+    {
+     "food": "salmon-atlantic-farmed-raw-914b10",
+     "g": 100,
+     "swap": "fatty_fish",
+     "note": "skinless, cut in chunks"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 60,
+     "note": "finely diced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens"
+    },
+    {
+     "food": "peas-frozen-raw-dd927b",
+     "g": 50
+    },
+    {
+     "food": "milk-nonfat-37ddd7",
+     "g": 130
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 50,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "swap": "lean_protein",
+     "note": "cooked until firm"
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 4
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 10,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "note": "chopped"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 90,
+     "note": "peeled and cut in chunks"
+    },
+    {
+     "food": "cauliflower-raw-f8205d",
+     "g": 80,
+     "note": "cut in florets"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "cheddar-cheese-c95e9a",
+     "g": 8,
+     "note": "sharp, grated"
+    },
+    {
+     "food": "nutmeg-ground-15c547",
+     "g": 0.2
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the vegetables and parsley. Bring a pot of salted water to the boil, lower in the egg in its shell, add the potatoes and cauliflower and boil for 10 minutes, then lift out the egg and cool it under cold water. Keep the vegetables boiling 4 minutes more, until very tender, then mash them with half the oil and a pinch of salt. Heat the grill (broiler) to high.",
+    "Meanwhile, soften the onion in a wide ovenproof pan with the rest of the oil for 4 minutes. Blend the beans with the milk, mustard and nutmeg until smooth and pour it in.",
+    "Simmer gently for 2 minutes, until the sauce coats a spoon, then add the salmon and poach for 4 to 5 minutes, until it flakes easily and reaches 70 °C (158 °F). Wash your hands and the board with hot soapy water after handling the raw fish.",
+    "Peel and chop the firm egg. Fold it in with the spinach, peas, lemon juice, parsley and the rest of the salt and pepper for 1 minute, until the spinach wilts and the peas are steaming hot.",
+    "Spoon the mash over the top and rough it up with a fork. Scatter with the cheddar and grill for 5 to 6 minutes, until golden."
+   ],
+   "prepMin": 12,
+   "cookMin": 26,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Cooked fish keeps only 2 days, so this is one to eat fresh rather than plan as a leftover."
+  },
+  {
+   "id": "comfort-classics-white-chicken-bean-chili-all-the-toppings",
+   "name": "White chicken and bean chili with all the toppings",
+   "inspiredBy": "Inspired by Tex-Mex white chicken chili",
+   "about": "A mild, lime-bright chili of chicken, white beans and green chiles, thickened with a few mashed beans, then piled with avocado, cilantro, yogurt, a little cheddar and crunchy pumpkin seeds. It makes two bowls, and the beans and toppings bring **protein, fibre and healthy fats**.",
+   "ingredients": [
+    {
+     "food": "chicken-breast-boneless-skinless-raw-c37574",
+     "g": 100,
+     "swap": "lean_protein",
+     "note": "cut in bite-size pieces"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 120,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "chili-pepper-green-canned-16f1a2",
+     "g": 30,
+     "note": "drained"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 230
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 15,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "avocado-raw-c06278",
+     "g": 50,
+     "swap": "healthy_oils",
+     "note": "diced"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 6,
+     "note": "chopped"
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 30,
+     "swap": "dairy_protein",
+     "note": "for dolloping"
+    },
+    {
+     "food": "cheddar-cheese-c95e9a",
+     "g": 8,
+     "note": "sharp, grated"
+    },
+    {
+     "food": "pumpkin-seeds-dried-5099f2",
+     "g": 5,
+     "swap": "nuts_seeds",
+     "note": "toasted"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1.5
+    },
+    {
+     "food": "oregano-ground-ec4216",
+     "g": 0.8
+    },
+    {
+     "food": "chili-powder-f1ace8",
+     "g": 0.8
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the cilantro and avocado. Warm the oil in a large pot over medium heat and soften the onion and garlic for 5 minutes. Add the cumin, oregano and chili powder and stir for 30 seconds, until fragrant.",
+    "Add the chicken and stir for 3 minutes, until the outside turns white. Wash your hands, the board and the knife with hot soapy water.",
+    "Add the green chiles, broth and half the beans. Simmer for 12 minutes, until the chicken is tender and reaches 74 °C (165 °F).",
+    "Mash the rest of the beans with a fork, or blend them with a splash of the broth, and stir them in. Simmer for 5 minutes more, until thick. Season with the lime juice, salt and pepper.",
+    "Ladle into bowls and top with the avocado, cilantro, yogurt, cheddar and pumpkin seeds. Eat half now.",
+    "Cool the second portion in a shallow container within 2 hours and refrigerate without the toppings. Eat it tomorrow, reheated until steaming hot, 74 °C (165 °F), with fresh toppings."
+   ],
+   "prepMin": 12,
+   "cookMin": 28,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "freezer-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "Add a pinch of cayenne for heat. To freeze the chili, cool it within 2 hours, freeze for up to 2 months, thaw it in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+  },
+  {
+   "id": "comfort-classics-turkey-meatballs-mushroom-gravy-squash-mash",
+   "name": "Turkey meatballs with mushroom gravy and squash mash",
+   "inspiredBy": "Inspired by Swedish meatballs and Sunday-dinner gravy",
+   "about": "Tender baked turkey meatballs with a savoury mushroom gravy thickened by blended white beans, a sweet mash of butternut squash and green beans on the side. It is the cosy plate of meatballs and gravy, with **protein, vitamin A and fibre**.",
+   "ingredients": [
+    {
+     "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+     "g": 110,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 25,
+     "note": "beaten"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 12,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 70,
+     "note": "half grated, half sliced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "grated"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "note": "chopped"
+    },
+    {
+     "food": "mushroom-white-raw-a74147",
+     "g": 80,
+     "note": "sliced"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 40,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 130
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 3
+    },
+    {
+     "food": "butternut-squash-raw-dc25d8",
+     "g": 240,
+     "note": "peeled and cut in 3 cm cubes"
+    },
+    {
+     "food": "milk-nonfat-37ddd7",
+     "g": 30
+    },
+    {
+     "food": "green-beans-raw-29678a",
+     "g": 100,
+     "note": "trimmed"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 9,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 0.6
+    },
+    {
+     "food": "nutmeg-ground-15c547",
+     "g": 0.2
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.2
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 °C (425 °F) and line a tray. Wash the vegetables and parsley. Boil the squash in salted water for 15 minutes, until very tender.",
+    "Mix the turkey with the egg, oats, grated onion, garlic, parsley, thyme, half the salt and the pepper. Shape into small balls and set on the tray. Wash your hands and the bowl with hot soapy water. Bake for 16 to 18 minutes, until browned and the middle reaches 74 °C (165 °F).",
+    "Meanwhile, brown the sliced onion and mushrooms in half the oil in a wide pan for 6 minutes. Spoon a third of them into a blender with the beans, broth and mustard, blend until smooth and pour it back into the pan. Simmer for 5 minutes, until the gravy coats the back of a spoon.",
+    "Steam the green beans in a basket over the squash pot for the last 6 minutes, until tender but still bright green.",
+    "Drain the squash and mash it with the milk, the rest of the oil, the nutmeg and the rest of the salt. Roll the meatballs in the gravy and serve with the mash and green beans. Eat half now.",
+    "Cool the second portion in a shallow container within 2 hours and refrigerate. Eat it tomorrow, reheated until steaming hot, 74 °C (165 °F)."
+   ],
+   "prepMin": 15,
+   "cookMin": 28,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "makes-leftovers"
+   ],
+   "tip": "The meatballs keep 3 days in the fridge. Leftover squash mash is lovely stirred into oatmeal."
+  },
+  {
+   "id": "comfort-classics-lemon-parsley-salmon-creamed-spinach-smashed-potatoes",
+   "name": "Roast salmon with creamed spinach and crispy smashed potatoes",
+   "inspiredBy": "Inspired by a steakhouse plate of creamed spinach and smashed potatoes",
+   "about": "A salmon fillet roasted with lemon and parsley, a bowl of creamed spinach made creamy with blended white beans, milk and a little nutmeg, and golden smashed baby potatoes. The salmon brings **omega-3, vitamin D and protein**, and the spinach brings **folate and vitamin K**.",
+   "ingredients": [
+    {
+     "food": "salmon-atlantic-farmed-raw-914b10",
+     "g": 130,
+     "swap": "fatty_fish",
+     "note": "skin-on or skinless fillet"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 150,
+     "swap": "leafy_greens"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 150,
+     "note": "small waxy potatoes, scrubbed"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 40,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "milk-nonfat-37ddd7",
+     "g": 70
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 30,
+     "note": "finely diced"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 12,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 15,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 6,
+     "note": "chopped"
+    },
+    {
+     "food": "nutmeg-ground-15c547",
+     "g": 0.2
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.2
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 °C (425 °F). Wash the potatoes, spinach and parsley. Boil the potatoes in salted water for 12 minutes, until a knife slides in easily, then drain.",
+    "Flatten each potato with the bottom of a glass on an oiled tray, brush with a third of the oil and a pinch of salt and roast for 18 minutes, until crisp and golden.",
+    "Pat the salmon dry, rub with a little oil, half the lemon juice, half the parsley, salt and pepper and add it to the tray for the last 10 minutes, until it flakes and reaches 70 °C (158 °F). Wash your hands and the board with hot soapy water.",
+    "Meanwhile, soften the onion and garlic in the rest of the oil in a large pan for 3 minutes. Add the spinach in handfuls and stir for 3 minutes, until it wilts.",
+    "Blend the beans with the milk, nutmeg and a pinch of salt until smooth, stir it into the spinach and simmer for 3 minutes, until creamy.",
+    "Squeeze the rest of the lemon over the salmon, scatter with parsley and serve with the spinach and potatoes."
+   ],
+   "prepMin": 10,
+   "cookMin": 30,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Trout works the same way if you prefer it."
+  },
+  {
+   "id": "comfort-classics-chicken-pot-pie-potato-crust",
+   "name": "Chicken pot pie with a crispy potato crust",
+   "inspiredBy": "Inspired by classic chicken pot pie, with a potato crust instead of pastry",
+   "about": "Chicken, carrot, celery, peas and mushrooms in a creamy thyme and sage sauce thickened with blended cauliflower and white beans, under an overlapping crust of thinly sliced potato baked golden. It is the Sunday pie without the pastry, with **protein, vitamin A and fibre**, and it makes two portions.",
+   "ingredients": [
+    {
+     "food": "chicken-breast-boneless-skinless-raw-c37574",
+     "g": 110,
+     "swap": "lean_protein",
+     "note": "cut in bite-size pieces"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "celery-raw-79a241",
+     "g": 30,
+     "note": "diced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 50,
+     "note": "diced"
+    },
+    {
+     "food": "mushroom-white-raw-a74147",
+     "g": 50,
+     "note": "sliced"
+    },
+    {
+     "food": "peas-frozen-raw-dd927b",
+     "g": 50
+    },
+    {
+     "food": "cauliflower-raw-f8205d",
+     "g": 70,
+     "note": "small florets"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 30,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 150
+    },
+    {
+     "food": "milk-nonfat-37ddd7",
+     "g": 80
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 3
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 110,
+     "note": "scrubbed, sliced as thin as a coin"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 12,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "cheddar-cheese-c95e9a",
+     "g": 8,
+     "note": "sharp, grated"
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 0.8
+    },
+    {
+     "food": "sage-ground-eb1db2",
+     "g": 0.4
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.2
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200 °C (400 °F). Wash the vegetables. Simmer the cauliflower in the broth for 8 minutes, until very soft, then blend it with the beans, milk and mustard until smooth. Fill the blender no more than half full and hold the lid down with a towel.",
+    "Meanwhile, warm half the oil in a deep ovenproof pan over medium-high heat. Cook the onion, carrot, celery and mushrooms for 6 minutes. Add the chicken, thyme and sage and stir for 4 minutes, until the chicken turns white. Wash your hands, the board and the knife with hot soapy water.",
+    "Pour in the blended sauce, add the peas and half the salt and simmer uncovered for 5 minutes, until it bubbles and coats the back of a spoon. At the bigger sizes there is more liquid, so give it a few minutes longer.",
+    "Toss the potato slices with the rest of the oil and salt and the pepper, and lay them in overlapping circles over the filling, like roof tiles.",
+    "Bake for 35 to 40 minutes, until the potatoes are tender and golden at the edges and the chicken reaches 74 °C (165 °F). Scatter with the cheddar for the last 5 minutes.",
+    "Let it stand for 5 minutes. Eat half now. Cool the second portion in a shallow container within 2 hours and refrigerate. Eat it tomorrow, reheated until steaming hot, 74 °C (165 °F)."
+   ],
+   "prepMin": 25,
+   "cookMin": 55,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "makes-leftovers",
+    "weekend-project"
+   ],
+   "tip": "A mandoline or the slicing blade of a food processor makes the potato layer quick. Keep the slices thin so they cook through."
+  },
+  {
+   "id": "comfort-classics-lentil-beef-meatloaf-roasted-potatoes-broccoli",
+   "name": "Glazed beef and lentil meatloaf with roasted potatoes and broccoli",
+   "inspiredBy": "Inspired by a classic diner meatloaf dinner",
+   "about": "Two small, tender, lean loaves with grated carrot and mashed lentils for moisture, brushed with a tangy tomato and mustard glaze, served with crisp roasted potatoes and broccoli. The beef and lentils bring **iron, zinc and protein**, and the vitamin C in the broccoli helps you absorb the lentils' iron.",
+   "ingredients": [
+    {
+     "food": "ground-beef-95-lean-raw-6df9ef",
+     "g": 100,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "lentils-canned-no-salt-added-drained-c1edbd",
+     "g": 50,
+     "swap": "legumes",
+     "note": "rinsed and mashed"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 12,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 25,
+     "note": "beaten"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 50,
+     "note": "finely diced"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 40,
+     "note": "finely grated"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "grated"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 4,
+     "note": "chopped"
+    },
+    {
+     "food": "tomato-paste-7d3238",
+     "g": 15
+    },
+    {
+     "food": "dijon-mustard-7b49e7",
+     "g": 4
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 100,
+     "note": "scrubbed, cut in wedges"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 140,
+     "note": "cut in florets"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 10,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 0.5
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 0.8
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1.2
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200 °C (400 °F). Wash the potatoes, broccoli and parsley. Toss the potato wedges with half the oil, the paprika and a pinch of salt on a large tray and roast for 10 minutes.",
+    "Meanwhile, mix the beef with the lentils, oats, egg, onion, carrot, garlic, parsley, thyme, half the salt and the pepper. Shape into 2 small, flat loaves about 3 cm high on a second small tray. Wash your hands and the bowl with hot soapy water.",
+    "Stir the tomato paste, mustard and half the lemon juice together with a spoonful of water and brush half over the loaves.",
+    "Slide the loaves into the oven beside the potatoes and bake for 15 minutes. Give the wedges a turn.",
+    "Add the broccoli, tossed in the rest of the oil and a pinch of salt, to the potato tray. Brush the loaves with the rest of the glaze and bake for 12 minutes more, until the loaves reach 71 °C (160 °F) in the middle and the potatoes and broccoli are crisp and browned.",
+    "Rest the loaves for 5 minutes and serve with the vegetables, with the rest of the lemon juice squeezed over the broccoli."
+   ],
+   "prepMin": 15,
+   "cookMin": 38,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Mix the meatloaf in the morning, keep it covered in the fridge and it only needs shaping and baking."
+  },
+  {
+   "id": "comfort-classics-baked-cinnamon-apple-walnuts",
+   "name": "Baked cinnamon apple with walnuts",
+   "about": "A warm apple cooked soft with cinnamon and topped with toasted walnuts, like a little apple crisp. It brings **fibre, vitamin C and healthy fats**.",
+   "ingredients": [
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 190,
+     "swap": "vit_c_fruit",
+     "note": "washed, cored and cut in chunks"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 16,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 1
+    }
+   ],
+   "steps": [
+    "Wash the apple. Put the apple chunks, cinnamon and a spoonful of water in a microwave-safe bowl, cover and microwave for 3 to 4 minutes, until soft.",
+    "Top with the walnuts and eat warm."
+   ],
+   "prepMin": 3,
+   "cookMin": 4,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "comfort-classics-veg-sticks-white-bean-ranch-dip",
+   "name": "Veggie sticks with white bean ranch dip",
+   "about": "Crunchy carrot, celery and broccoli with a creamy herb dip of blended white beans, lemon and parsley. It is the ranch you love, with **fibre and plant protein**.",
+   "ingredients": [
+    {
+     "food": "carrot-raw-f79846",
+     "g": 80,
+     "note": "cut in sticks"
+    },
+    {
+     "food": "celery-raw-79a241",
+     "g": 60,
+     "note": "cut in sticks"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 60,
+     "note": "small florets"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 60,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 8,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 3,
+     "note": "chopped"
+    },
+    {
+     "food": "garlic-powder-e81d9c",
+     "g": 0.3
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the vegetables and cut them into sticks.",
+    "Blend the beans, oil, lemon juice, garlic powder, salt and 2 spoonfuls of water until smooth, then stir in the parsley. Serve with the vegetables.",
+    "Keep leftover dip covered in the fridge and eat within 3 days."
+   ],
+   "prepMin": 7,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "comfort-classics-clementines-almonds-walnuts",
+   "name": "Clementines with almonds and walnuts",
+   "about": "Two easy-peel clementines with a small handful of almonds and walnuts. It is sweet, juicy and crunchy, with **vitamin C, vitamin E and omega-3**.",
+   "ingredients": [
+    {
+     "food": "clementine-raw-42fb6e",
+     "g": 180,
+     "swap": "vit_c_fruit",
+     "note": "peeled"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 10,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 10,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the clementines, peel them and eat with the almonds and walnuts."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "comfort-classics-banana-walnuts",
+   "name": "Banana with walnuts and cinnamon",
+   "about": "A sliced banana with chopped walnuts and a shake of cinnamon, a little like banana bread without the loaf. It brings **potassium and omega-3**.",
+   "ingredients": [
+    {
+     "food": "banana-raw-61b750",
+     "g": 120,
+     "swap": "vit_c_fruit",
+     "note": "sliced"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 20,
+     "swap": "nuts_seeds",
+     "note": "chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Slice the banana into a bowl and scatter with the walnuts and cinnamon."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "comfort-classics-cherry-yogurt-walnuts",
+   "name": "Cherry yogurt with walnuts",
+   "about": "Thick Greek yogurt with cherries that thaw to a juicy sauce, a little cinnamon and chopped walnuts. It brings **protein, calcium and omega-3**.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 110,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "cherry-pitted-frozen-e8afe0",
+     "g": 80,
+     "swap": "berries",
+     "note": "unsweetened, thawed in the fridge"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 16,
+     "swap": "nuts_seeds",
+     "note": "chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Thaw the cherries in the fridge. Stir the cherries and cinnamon into the yogurt and top with the walnuts."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ],
+   "tip": "If you are pregnant, over 60, or have a weakened immune system, heat the cherries until steaming and cool them first."
+  },
+  {
+   "id": "comfort-classics-pumpkin-pie-yogurt",
+   "name": "Pumpkin pie yogurt with walnuts",
+   "about": "Greek yogurt swirled with pumpkin, cinnamon and nutmeg, topped with a few walnuts. It tastes like pumpkin pie filling and brings **protein, calcium and vitamin A**.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 120,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "pumpkin-canned-8c1c09",
+     "g": 60,
+     "note": "plain purée"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 1
+    },
+    {
+     "food": "nutmeg-ground-15c547",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Stir the yogurt, pumpkin, cinnamon and nutmeg together and top with the walnuts.",
+    "Keep the rest of the pumpkin tin covered in the fridge and use it within 4 days."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "comfort-classics-apple-walnuts-sunflower-seeds",
+   "name": "Apple slices with walnuts and sunflower seeds",
+   "about": "A crisp apple with a handful of walnuts and sunflower seeds and a shake of cinnamon. It is sweet and crunchy, with **fibre, vitamin E and omega-3**.",
+   "ingredients": [
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 150,
+     "swap": "vit_c_fruit",
+     "note": "washed and sliced"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "chopped"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 8,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Wash the apple, slice it and serve with the walnuts, sunflower seeds and a shake of cinnamon."
+   ],
+   "prepMin": 2,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  },
+  {
+   "id": "comfort-classics-guacamole-veg-sticks",
+   "name": "Guacamole with carrot and celery sticks",
+   "about": "Mashed avocado with lime, cilantro and a pinch of garlic, scooped up with crunchy carrot and celery. It is creamy and filling, with **healthy fats, potassium and fibre**.",
+   "ingredients": [
+    {
+     "food": "avocado-raw-c06278",
+     "g": 100,
+     "swap": "healthy_oils",
+     "note": "halved and stoned"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 10,
+     "swap": "vit_c_fruit"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 3,
+     "note": "chopped"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 80,
+     "note": "cut in sticks"
+    },
+    {
+     "food": "celery-raw-79a241",
+     "g": 60,
+     "note": "cut in sticks"
+    },
+    {
+     "food": "garlic-powder-e81d9c",
+     "g": 0.3
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the avocado, carrot, celery and cilantro. Halve the avocado, scoop it into a bowl and mash it with a fork with the lime juice, garlic powder and salt.",
+    "Stir in the cilantro and serve with the carrot and celery sticks.",
+    "Eat it the day you make it, or press cling film onto the surface and keep it in the fridge for up to 1 day."
+   ],
+   "prepMin": 8,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly",
+    "no-cook",
+    "15-minute"
+   ]
+  }
+ ],
+ "week": [
+  {
+   "day": 1,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "comfort-classics-pumpkin-pie-oatmeal"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "comfort-classics-chicken-waldorf-white-bean-salad"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "comfort-classics-lentil-beef-shepherds-pie"
+    },
+    {
+     "slot": "snack",
+     "recipe": "comfort-classics-clementines-almonds-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "comfort-classics-veg-sticks-white-bean-ranch-dip"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "comfort-classics-cherry-pie-oatmeal"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "comfort-classics-lentil-beef-shepherds-pie",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "comfort-classics-salmon-spinach-fish-pie"
+    },
+    {
+     "slot": "snack",
+     "recipe": "comfort-classics-baked-cinnamon-apple-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "comfort-classics-banana-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "comfort-classics-spinach-mushroom-scramble-sweet-potato"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "comfort-classics-loaded-potato-white-bean-soup"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "comfort-classics-white-chicken-bean-chili-all-the-toppings"
+    },
+    {
+     "slot": "snack",
+     "recipe": "comfort-classics-pumpkin-pie-yogurt"
+    },
+    {
+     "slot": "snack",
+     "recipe": "comfort-classics-baked-cinnamon-apple-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "comfort-classics-pumpkin-pie-oatmeal"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "comfort-classics-white-chicken-bean-chili-all-the-toppings",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "comfort-classics-turkey-meatballs-mushroom-gravy-squash-mash"
+    },
+    {
+     "slot": "snack",
+     "recipe": "comfort-classics-cherry-yogurt-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "comfort-classics-banana-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "comfort-classics-spinach-mushroom-scramble-sweet-potato"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "comfort-classics-turkey-meatballs-mushroom-gravy-squash-mash",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "comfort-classics-lemon-parsley-salmon-creamed-spinach-smashed-potatoes"
+    },
+    {
+     "slot": "snack",
+     "recipe": "comfort-classics-cherry-yogurt-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "comfort-classics-veg-sticks-white-bean-ranch-dip"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "comfort-classics-sage-turkey-patties-potato-hash"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "comfort-classics-broccoli-cheddar-soup-sweet-potato-rounds"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "comfort-classics-chicken-pot-pie-potato-crust"
+    },
+    {
+     "slot": "snack",
+     "recipe": "comfort-classics-pumpkin-pie-yogurt"
+    },
+    {
+     "slot": "snack",
+     "recipe": "comfort-classics-apple-walnuts-sunflower-seeds"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "comfort-classics-cherry-pie-oatmeal"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "comfort-classics-chicken-pot-pie-potato-crust",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "comfort-classics-lentil-beef-meatloaf-roasted-potatoes-broccoli"
+    },
+    {
+     "slot": "snack",
+     "recipe": "comfort-classics-clementines-almonds-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "comfort-classics-apple-walnuts-sunflower-seeds"
+    }
+   ]
+  }
+ ]
+}
