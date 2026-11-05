@@ -1,0 +1,2416 @@
+{
+  "id": "soup-and-sandwich",
+  "name": "Soup and Sandwich",
+  "style": "balanced",
+  "cuisine": "Global",
+  "carbStyle": "wholegrain",
+  "regions": [
+    "United Kingdom",
+    "United States",
+    "Scandinavia",
+    "India"
+  ],
+  "summary": "Classic lunches done right: whole-grain and rye bread piled with chicken and avocado, tuna and chickpea, egg and cress or pan-seared trout, plus a tomato and white bean soup, a curried cauliflower soup and a split pea soup. Every sandwich comes with beans, vegetables or fish.",
+  "howItWorks": "**Sandwiches with something in them.** Whole-grain bread, rye or a whole-wheat bun turns up more often here than in most plans, but each slice is a sensible portion and every sandwich is filled with beans, vegetables or fish: chicken and avocado with hummus, tuna and chickpea, egg and cress, a salmon cake burger (a salmon cake over slaw at Light), sloppy joes with lentils, a meatball sub.\n\n**Cook once, eat twice.** Monday's tomato and white bean soup, Wednesday's curried cauliflower soup, Thursday's sloppy joes and Saturday's split pea soup each make two portions, so the next lunch is done. Cool each pot within 2 hours in a shallow container and reheat to 74 °C. Make the toasts fresh, and pack sandwiches in a cold bag with an ice pack and eat them the same day.\n\n**Fish and protein.** Tuesday's salmon cake, Friday's warm pan-seared trout on rye and canned salmon on cucumber rounds on Monday and Saturday bring omega-3 and some **vitamin D**. Tuna, chicken, beef, turkey, eggs, lentils, chickpeas and beans cover the rest. Canned salmon carries some salt, so it is a portion rather than a pile; the tuna is unsalted and the beans are no-salt-added.\n\n**What changes with size.** Light covers 1,400 to 1,800 kcal. It drops a snack each day (both on Sunday) and serves Tuesday's salmon cake over slaw, with no bun. Every sandwich and toast keeps at least a real slice or a small roll, and most sandwiches go open-face at 1,400. Chicken, beef, turkey, lentils and split peas trim; tuna, salmon, trout and eggs stay near full size.\n\n**Bigger days.** Big grows the bread, meat, beans, eggs and yogurt and adds a snack on four days.",
+  "signature": [
+    "soup-and-sandwich-tomato-white-bean-soup-cheddar-toastie",
+    "soup-and-sandwich-tuna-chickpea-celery-sandwich",
+    "soup-and-sandwich-beef-lentil-sloppy-joe",
+    "soup-and-sandwich-trout-white-bean-rye-toasts"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1400,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "soup-and-sandwich-pepper-spinach-egg-rye-toast",
+            "to": "soup-and-sandwich-pepper-spinach-egg-rye-toast-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "soup-and-sandwich-tomato-white-bean-soup-cheddar-toastie",
+            "to": "soup-and-sandwich-tomato-white-bean-soup-cheddar-toastie-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "soup-and-sandwich-curried-cauliflower-chickpea-soup-toast",
+            "to": "soup-and-sandwich-curried-cauliflower-chickpea-soup-toast-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "soup-and-sandwich-split-pea-carrot-soup-rye",
+            "to": "soup-and-sandwich-split-pea-carrot-soup-rye-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "soup-and-sandwich-beef-lentil-sloppy-joe",
+            "to": "soup-and-sandwich-beef-lentil-sloppy-joe-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "soup-and-sandwich-salmon-cake-burger-slaw",
+            "to": "soup-and-sandwich-salmon-cake-burger-slaw-light"
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "soup-and-sandwich-chili-lemon-edamame"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "soup-and-sandwich-tuna-cucumber-rye-toast"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "soup-and-sandwich-pear-walnuts"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "soup-and-sandwich-hummus-veg-sticks"
+          }
+        }
+      ]
+    }
+  },
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "soup-and-sandwich-pepper-spinach-egg-rye-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "soup-and-sandwich-chicken-avocado-hummus-sandwich"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "soup-and-sandwich-tomato-white-bean-soup-cheddar-toastie"
+        },
+        {
+          "slot": "snack",
+          "recipe": "soup-and-sandwich-salmon-cucumber-rounds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "soup-and-sandwich-apple-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "soup-and-sandwich-orange-walnut-yogurt-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "soup-and-sandwich-tomato-white-bean-soup-cheddar-toastie",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "soup-and-sandwich-salmon-cake-burger-slaw"
+        },
+        {
+          "slot": "snack",
+          "recipe": "soup-and-sandwich-hummus-veg-sticks"
+        },
+        {
+          "slot": "snack",
+          "recipe": "soup-and-sandwich-orange-almonds"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "soup-and-sandwich-pear-cardamom-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "soup-and-sandwich-tuna-chickpea-celery-sandwich"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "soup-and-sandwich-curried-cauliflower-chickpea-soup-toast"
+        },
+        {
+          "slot": "snack",
+          "recipe": "soup-and-sandwich-lemon-cumin-edamame"
+        },
+        {
+          "slot": "snack",
+          "recipe": "soup-and-sandwich-apple-almonds"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "soup-and-sandwich-pear-cardamom-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "soup-and-sandwich-curried-cauliflower-chickpea-soup-toast",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "soup-and-sandwich-beef-lentil-sloppy-joe"
+        },
+        {
+          "slot": "snack",
+          "recipe": "soup-and-sandwich-yogurt-pear-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "soup-and-sandwich-apple-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "soup-and-sandwich-pepper-spinach-egg-rye-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "soup-and-sandwich-beef-lentil-sloppy-joe",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "soup-and-sandwich-trout-white-bean-rye-toasts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "soup-and-sandwich-yogurt-pear-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "soup-and-sandwich-orange-almonds"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "soup-and-sandwich-orange-walnut-yogurt-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "soup-and-sandwich-egg-cress-hummus-sandwich"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "soup-and-sandwich-split-pea-carrot-soup-rye"
+        },
+        {
+          "slot": "snack",
+          "recipe": "soup-and-sandwich-salmon-cucumber-rounds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "soup-and-sandwich-lemon-cumin-edamame"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "soup-and-sandwich-pepper-spinach-egg-rye-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "soup-and-sandwich-split-pea-carrot-soup-rye",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "soup-and-sandwich-turkey-carrot-meatball-sub"
+        },
+        {
+          "slot": "snack",
+          "recipe": "soup-and-sandwich-apple-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "soup-and-sandwich-chili-lemon-edamame"
+        }
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "soup-and-sandwich-pear-cardamom-oatmeal",
+      "name": "Pear and cardamom oatmeal with walnuts, almonds and chia",
+      "about": "Creamy oats simmered in milk with diced pear, cardamom and cinnamon, stirred with a spoonful of chia and topped with walnuts and almonds. The oats and pear bring **fibre**, the walnuts and chia bring plant omega-3 and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 55,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 220,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 120,
+          "note": "washed, cored and diced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 9,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 6,
+          "note": "stirred in"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash the pear, then core and dice it.",
+        "Put the oats, milk, chia, pear, cinnamon and cardamom in a small pot with a splash of water. Bring to a gentle simmer over medium heat.",
+        "Cook, stirring often, until thick and creamy and the pear is tender, about 6 minutes.",
+        "Spoon into a bowl and scatter the walnuts and almonds over the top."
+      ],
+      "prepMin": 3,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Toast the walnuts in a dry pan for 2 minutes for more crunch."
+    },
+    {
+      "id": "soup-and-sandwich-pepper-spinach-egg-rye-toast",
+      "name": "Pepper and spinach scrambled eggs on rye toast",
+      "about": "Eggs scrambled until fully set with sweet red pepper and wilted spinach, piled on toasted rye with an orange on the side. The eggs bring **choline and protein**, the glass of milk brings calcium, and the orange brings vitamin C to help absorb the iron in the spinach.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "whole eggs"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "washed and diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 110,
+          "swap": "vit_c_fruit",
+          "note": "washed, cut in wedges"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 150,
+          "swap": "dairy_protein",
+          "note": "a glass, on the side"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the pepper, spinach and orange. Dice the pepper and cut the orange into wedges.",
+        "Warm the oil in a non-stick pan over medium heat. Cook the pepper until just soft, about 3 minutes, then add the spinach and stir until it wilts, about 1 minute.",
+        "Beat the eggs with the salt and pepper and pour them into the pan. Stir gently until the eggs are cooked through with no liquid left and the yolk is firm, about 3 minutes. Wash your hands after cracking the eggs.",
+        "Toast the rye, top it with the eggs and serve with the orange wedges and a glass of milk."
+      ],
+      "prepMin": 5,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "soup-and-sandwich-orange-walnut-yogurt-bowl",
+      "name": "Orange yogurt bowl with toasted oats, walnuts and almonds",
+      "about": "Thick yogurt with juicy orange segments, toasted oats for a granola crunch, walnuts and almonds. The orange brings **vitamin C**, the yogurt brings calcium and the nuts bring plant omega-3 and vitamin E.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 180,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 140,
+          "swap": "vit_c_fruit",
+          "note": "washed, peeled and cut into segments"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 25,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Toast the oats, walnuts and almonds in a dry pan over medium heat, stirring, until they smell nutty, about 3 minutes. Let them cool.",
+        "Wash the orange, then peel it and cut it into segments.",
+        "Spoon the yogurt into a bowl, top with the orange, oats and nuts, and dust with the cinnamon."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "soup-and-sandwich-chicken-avocado-hummus-sandwich",
+      "name": "Chicken and avocado sandwich with hummus and crunchy slaw",
+      "about": "Poached chicken, creamy avocado and a thin spread of hummus on whole-grain bread with lemony red cabbage and carrot for crunch. The hummus and slaw make it **more than bread and meat**, and the cucumber on the side keeps it fresh.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 75,
+          "swap": "low_gi_grains",
+          "note": "whole-grain"
+        },
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 125,
+          "swap": "lean_protein",
+          "note": "poached"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 60,
+          "note": "washed before cutting, sliced"
+        },
+        {
+          "food": "hummus-443cc0",
+          "g": 25,
+          "swap": "legumes"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 40,
+          "note": "washed, finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 35,
+          "note": "washed, grated"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 20,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed, cut into sticks"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Poach the chicken: cover it with water in a small pot, bring to a simmer and cook gently until it reaches 74 °C (165 °F) in the thickest part and the juices run clear, about 12 minutes. Cool within 1 hour, then slice and refrigerate. You can do this the night before.",
+        "Wash the cabbage, carrot, cucumber, spinach and avocado. Toss the cabbage and carrot with the lemon juice, salt and pepper.",
+        "Toast the bread if you like and spread the hummus on it. Layer the spinach, chicken, avocado and slaw on half the bread and close with the rest (at the bigger sizes that makes two sandwiches), or leave it open-face if you have only one slice. Serve with the cucumber sticks.",
+        "To pack it: wrap the sandwich, put it in a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 15,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Mash the avocado with a little of the lemon juice so it spreads like butter. At smaller sizes the bread shrinks to about one slice, so eat it open-face."
+    },
+    {
+      "id": "soup-and-sandwich-tomato-white-bean-soup-cheddar-toastie",
+      "name": "Tomato and white bean soup with an open-face cheddar toastie",
+      "about": "A velvety tomato soup blended with white beans and a handful of spinach, with a hot open-face cheddar toastie on the side. The beans make it filling and bring **fibre and folate**, and the cheese is a garnish, not a layer.",
+      "ingredients": [
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 320,
+          "note": "no added salt, with the juice"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 150,
+          "swap": "legumes",
+          "note": "no-salt-added, drained and rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80,
+          "note": "peeled and chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "vegetable-broth-ready-to-serve-low-sodium-91b9aa",
+          "g": 200,
+          "note": "low-sodium"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "basil-dried-160272",
+          "g": 0.8
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "whole-grain"
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 18,
+          "swap": "dairy_protein",
+          "note": "grated"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the oil in a pot over medium heat. Cook the onion and carrot until soft, about 6 minutes, then add the garlic and basil for 30 seconds.",
+        "Add the tomatoes with their juice, the white beans and the broth. Bring to a boil, then simmer for 12 minutes.",
+        "Wash the spinach and stir it in until wilted, about 1 minute. Blend with an immersion blender until smooth, then season with the salt and pepper.",
+        "Make the toastie: spread the mustard on the bread, scatter over the cheddar and grill under a hot broiler until bubbling and golden, about 3 minutes. Cut into fingers.",
+        "Serve the soup with the toastie. This makes two portions: cool the second portion within 2 hours in a shallow container, refrigerate and use within 3 days. Reheat the soup until steaming hot (74 °C) and make the toastie fresh."
+      ],
+      "prepMin": 10,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Hold back a few whole beans and add them after blending for some texture."
+    },
+    {
+      "id": "soup-and-sandwich-salmon-cake-burger-slaw",
+      "name": "Salmon cake burger with lemon-dill slaw",
+      "about": "A flaky canned salmon patty, bound with egg, oats and mustard and baked until golden, tucked into a whole-wheat bun with a cool, crunchy slaw. Canned salmon with its soft bones brings **omega-3 and calcium**, and the cucumber and spinach keep the plate fresh.",
+      "ingredients": [
+        {
+          "food": "salmon-canned-drained-9cea4e",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "drained, soft bones mashed in"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 18,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 45,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 3
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "peeled and finely chopped"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "rolls-for-burger-hotdog-buns-whole-wheat-a4095c",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "whole-wheat bun"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 60,
+          "note": "washed, finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "washed, grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 20,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F) and line a tray with parchment. Wash the dill, cabbage, carrot, cucumber and spinach.",
+        "Mash the salmon in a bowl with the egg, oats, a third of the yogurt, half the mustard, the onion, half the dill, half the lemon juice and the pepper. Let it sit for 5 minutes so the oats soak up the moisture, then shape into a patty and place on the tray. Wash your hands and the bowl with hot soapy water after handling the raw egg. Brush with the oil.",
+        "Bake until golden and cooked through, with the egg set firm and the centre at 74 °C (165 °F), about 16 minutes.",
+        "Meanwhile, toss the cabbage and carrot with the rest of the yogurt, mustard, dill and lemon juice, and the salt, for a quick slaw.",
+        "Toast the bun (at smaller sizes a half bun is plenty), fill it with the spinach, patty and plenty of slaw, and serve with the cucumber slices.",
+        "Move any salmon left in the tin to a covered container in the fridge and use it within 2 days."
+      ],
+      "prepMin": 15,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Chill the shaped patty for 10 minutes if you have time, it holds together better."
+    },
+    {
+      "id": "soup-and-sandwich-tuna-chickpea-celery-sandwich",
+      "name": "Tuna, chickpea and celery sandwich with lemon yogurt",
+      "about": "Flaked light tuna and mashed chickpeas with crunchy celery and onion, bound with lemony yogurt and a little mustard instead of mayonnaise. Piled on whole-grain bread with spinach, it brings **protein, fibre and selenium**, with carrot sticks and cherry tomatoes alongside.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "whole-grain"
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 90,
+          "swap": "lean_protein",
+          "note": "drained, unsalted"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 75,
+          "swap": "legumes",
+          "note": "no-salt-added, drained and rinsed"
+        },
+        {
+          "food": "celery-raw-79a241",
+          "g": 40,
+          "note": "washed, finely diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "peeled and finely diced"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 45,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 3
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 20,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "washed, cut into sticks"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "washed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the celery, dill, spinach, carrot and tomatoes. Drain the tuna and chickpeas and rinse the chickpeas.",
+        "Mash the chickpeas roughly with a fork, leaving some texture. Fold in the tuna, celery, onion, dill, yogurt, lemon juice, mustard, salt and pepper.",
+        "Toast the bread if you like. Pile the tuna mixture onto half the bread, top with the spinach and close with the rest (at the bigger sizes that makes two sandwiches), or leave it open-face if you have only one slice. Serve with the carrot sticks and cherry tomatoes.",
+        "To pack it: wrap the sandwich, put it in a cold bag with an ice pack and eat it the same day. Move any tuna left in the tin to a covered container in the fridge and use it within 2 days."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Add a pinch of smoked paprika if you like it punchier. At smaller sizes the bread shrinks to about one slice, so eat it open-face."
+    },
+    {
+      "id": "soup-and-sandwich-curried-cauliflower-chickpea-soup-toast",
+      "name": "Curried cauliflower and chickpea soup with garlic toast",
+      "inspiredBy": "Inspired by Indian-style spiced cauliflower soups",
+      "about": "A golden, lightly curried soup of cauliflower, chickpeas and carrot, finished with spinach and a spoonful of lemony yogurt, with garlic toast for scooping. The chickpeas bring **protein and fibre**, the carrot brings vitamin A and the cauliflower brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 200,
+          "note": "washed, cut into small florets"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 170,
+          "swap": "legumes",
+          "note": "no-salt-added, drained and rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed and diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "peeled and chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "crushed, plus a cut clove for the toast"
+        },
+        {
+          "food": "curry-powder-55e9c6",
+          "g": 3
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "vegetable-broth-ready-to-serve-low-sodium-91b9aa",
+          "g": 350,
+          "note": "low-sodium"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 45,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "whole-grain"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "sliced and toasted"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 3,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Warm most of the oil in a pot over medium heat. Cook the onion and carrot until soft, about 6 minutes, then stir in half the garlic, the curry powder, turmeric and ginger for 1 minute until fragrant.",
+        "Add the cauliflower, chickpeas and broth. Bring to a boil, then simmer, partly covered, until the cauliflower is very tender, about 15 minutes.",
+        "Mash some of the soup roughly with a potato masher, or blend a third of it, so it is thick but still chunky. Wash the spinach, stir it in until wilted and season with the salt.",
+        "Toast the bread, rub it with the cut side of the remaining garlic clove and brush with the last of the oil. Stir the lemon juice into the yogurt.",
+        "Ladle the soup into bowls, swirl in the lemony yogurt, scatter the toasted almonds and dill and serve with the garlic toast. This makes two portions: cool the second within 2 hours in a shallow container, refrigerate and reheat until steaming hot (74 °C). Use within 3 days."
+      ],
+      "prepMin": 12,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "To freeze: leave out the yogurt, cool within 2 hours, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze and reheat to 74 °C."
+    },
+    {
+      "id": "soup-and-sandwich-beef-lentil-sloppy-joe",
+      "name": "Beef and lentil sloppy joes with crunchy cabbage slaw",
+      "inspiredBy": "Inspired by the American diner sloppy joe",
+      "about": "The diner classic with half the beef swapped for lentils, simmered with onion, pepper and carrot in a tangy tomato sauce and piled onto a whole-wheat bun with a lemony cabbage slaw. The lentils stretch the beef and bring **iron and fibre**, and the vegetables are hidden right in the sauce.",
+      "ingredients": [
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 125,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "lentils-canned-no-salt-added-drained-c1edbd",
+          "g": 110,
+          "swap": "legumes",
+          "note": "no-salt-added, drained and rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "peeled and finely chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "washed and finely diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "washed and grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 200,
+          "note": "no added salt, crushed with a spoon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1.5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 14,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 3
+        },
+        {
+          "food": "rolls-for-burger-hotdog-buns-whole-wheat-a4095c",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "whole-wheat bun"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 60,
+          "note": "washed, finely shredded"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Warm the oil in a large pan over medium heat. Cook the onion, pepper and carrot until soft, about 7 minutes. Add the garlic, chili powder, smoked paprika and cumin and stir for 30 seconds.",
+        "Add the beef and break it up with a spoon. Cook until no pink remains, about 5 minutes. Wash your hands, the board and the spoon with hot soapy water after handling the raw beef.",
+        "Stir in the tomatoes with their juice, the lentils, the mustard, half the lemon juice and the salt. Simmer, stirring now and then, until thick and glossy, about 12 minutes. The beef must reach 71 °C (160 °F).",
+        "Toss the cabbage with the rest of the lemon juice and a pinch of salt for a quick slaw.",
+        "Toast the bun (at smaller sizes a half bun is plenty), spoon on the sloppy joe mixture and top with slaw. This makes two portions: cool the second portion within 2 hours in a shallow container, refrigerate and use within 3 days. Reheat it until steaming hot (74 °C) and use a fresh bun."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Serve the filling in a bowl over the slaw if you want to skip the bun at lunch."
+    },
+    {
+      "id": "soup-and-sandwich-trout-white-bean-rye-toasts",
+      "name": "Warm trout and white bean smash on rye with cucumber and dill",
+      "inspiredBy": "Inspired by Scandinavian smørrebrød",
+      "about": "Open-face rye toasts spread with a lemony garlic white bean smash, topped with flaked pan-seared trout, shaved cucumber and dill, with a mustard-lemon drizzle and a little spinach salad. Fresh trout brings **omega-3 and vitamin D** and the beans bring fibre.",
+      "ingredients": [
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 100,
+          "swap": "legumes",
+          "note": "no-salt-added, drained and rinsed"
+        },
+        {
+          "food": "rainbow-trout-farmed-raw-0cc800",
+          "g": 100,
+          "swap": "fatty_fish",
+          "note": "skin-on fillet, patted dry"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 14,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "washed, shaved into ribbons"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 2
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed, as a side salad"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 60,
+          "note": "washed, halved"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the cucumber, dill, spinach and tomatoes. Shave the cucumber into ribbons with a peeler.",
+        "Mash the white beans with a fork with half the lemon juice, the garlic, half the oil and the pepper until fairly smooth, adding a spoonful of water if it is stiff.",
+        "Pat the trout dry and season with the salt. Warm the rest of the oil in a non-stick pan over medium-high heat and cook the trout skin-side down for 4 minutes, then flip and cook until it flakes easily and reaches 70 °C (158 °F), about 3 minutes more. Wash your hands, the board and the plate with hot soapy water after handling the raw fish.",
+        "Whisk the mustard with the rest of the lemon juice and a teaspoon of water. Flake the warm trout, discarding the skin and any bones.",
+        "Toast the rye. Spread each slice with the bean smash and top with the warm trout and cucumber. Drizzle with the mustard-lemon dressing, scatter with the dill and serve with the spinach and cherry tomatoes."
+      ],
+      "prepMin": 12,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Salmon fillet works too, cooked to the same 70 °C (158 °F). If the trout is frozen, thaw it in the fridge overnight and cook it within 2 days."
+    },
+    {
+      "id": "soup-and-sandwich-egg-cress-hummus-sandwich",
+      "name": "Egg and cress sandwich with hummus, tomato and carrot sticks",
+      "inspiredBy": "Inspired by the English egg and cress sandwich",
+      "about": "The tea-room classic with a lighter touch: chopped hard-boiled eggs with peppery cress, mustard and lemon, a layer of hummus and juicy tomato on whole-grain bread. The eggs bring **choline and protein**, the hummus adds fibre, and the carrot sticks add crunch.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 75,
+          "swap": "low_gi_grains",
+          "note": "whole-grain"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "whole eggs, hard-boiled until the yolk is firm"
+        },
+        {
+          "food": "cress-garden-raw-6c7abd",
+          "g": 20,
+          "note": "washed, snipped"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 3
+        },
+        {
+          "food": "hummus-443cc0",
+          "g": 45,
+          "swap": "legumes"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 70,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "washed, cut into sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50,
+          "note": "washed, cut into sticks"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Lower the eggs into a pot of boiling water and cook for 12 minutes, until the whites are set and the yolks are completely firm. Cool them in cold water, then peel.",
+        "Wash the cress well (if you are pregnant, over 65 or have a weakened immune system, use watercress or baby spinach instead of the cress), and wash the tomatoes, carrot and cucumber. Chop the eggs and mix with the cress, mustard, lemon juice, salt and pepper.",
+        "Spread the hummus on the bread, top with the tomato and the egg mixture, and close the sandwich, or leave it open-face if you have only one slice. Serve with the carrot and cucumber sticks.",
+        "To pack it: put the sandwich in a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 10,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "soup-and-sandwich-split-pea-carrot-soup-rye",
+      "name": "Split pea and carrot soup with dill, yogurt and rye toast",
+      "about": "A thick, comforting soup of yellow split peas, carrot, celery and thyme, with a spoonful of yogurt, dill and toasted walnuts and rye toast alongside. Split peas are one of the best **fibre and protein** foods in the pantry, and this pot needs nothing but time.",
+      "ingredients": [
+        {
+          "food": "split-peas-dry-6b69b1",
+          "g": 75,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 110,
+          "note": "washed and diced"
+        },
+        {
+          "food": "celery-raw-79a241",
+          "g": 50,
+          "note": "washed and diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80,
+          "note": "peeled and chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "vegetable-broth-ready-to-serve-low-sodium-91b9aa",
+          "g": 450,
+          "note": "low-sodium"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.6
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 35,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the oil in a large pot over medium heat. Cook the onion, carrot and celery until the onion is soft, about 7 minutes. Add the garlic, thyme and bay leaf for 30 seconds.",
+        "Add the split peas and the broth with a cup of water. Bring to a boil, then lower the heat and simmer, partly covered and stirring now and then, until the peas have broken down and the soup is thick, about 40 minutes. Add a splash of water if it gets too thick.",
+        "Remove the bay leaf. Wash the spinach and stir it in until wilted. Blend about a third of the soup for a creamier body, then season with the lemon juice, salt and pepper.",
+        "Toast the rye. Ladle the soup into bowls, top with the yogurt, dill and walnuts, and serve with the toast.",
+        "This makes two portions: cool the second within 2 hours in a shallow container, refrigerate and use within 3 days. Reheat it until steaming hot (74 °C), adding a splash of water."
+      ],
+      "prepMin": 12,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "To freeze: leave out the yogurt, cool within 2 hours, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze and reheat to 74 °C. A pressure cooker does the peas in 15 minutes."
+    },
+    {
+      "id": "soup-and-sandwich-turkey-carrot-meatball-sub",
+      "name": "Turkey and carrot meatball sub with spinach and tomato sauce",
+      "inspiredBy": "Inspired by the Italian-American meatball sub",
+      "about": "Tender turkey meatballs with grated carrot and oats, simmered in a quick garlicky tomato sauce and tucked into a whole-wheat bun with spinach and a little cheddar. The carrot keeps the meatballs juicy, and the spinach stirred into the sauce adds **folate and iron**.",
+      "ingredients": [
+        {
+          "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+          "g": 165,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed and grated"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 15,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "peeled and finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 220,
+          "note": "no added salt, crushed with a spoon"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "rolls-for-burger-hotdog-buns-whole-wheat-a4095c",
+          "g": 80,
+          "swap": "low_gi_grains",
+          "note": "whole-wheat bun"
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 10,
+          "note": "finely grated"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 70,
+          "note": "washed, halved, as a side salad"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). In a bowl, mix the turkey, carrot, oats, half the onion, half the garlic, half the oregano, a pinch of the salt and the pepper. Shape into small meatballs. Wash your hands, the bowl and the board with hot soapy water after handling the raw turkey.",
+        "Bake the meatballs on a lined tray until browned and cooked through to 74 °C (165 °F), about 15 minutes.",
+        "Meanwhile, warm the oil in a pan over medium heat and soften the rest of the onion, about 4 minutes. Add the rest of the garlic and oregano, then the tomatoes with their juice and the rest of the salt. Simmer for 10 minutes, crushing the tomatoes. Wash two thirds of the spinach and stir it in until wilted.",
+        "Add the cooked meatballs to the sauce and simmer for 3 minutes.",
+        "Split and toast the bun, fill with the rest of the spinach, the meatballs and sauce, and finish with the cheddar. Serve with the cucumber and cherry tomatoes."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "soup-and-sandwich-apple-walnuts",
+      "name": "Apple with walnuts",
+      "about": "A crisp apple with a few walnut halves. The walnuts bring **plant omega-3**, and the apple brings fibre.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 170,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the apple, slice it and serve with the walnuts."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "soup-and-sandwich-pear-walnuts",
+      "name": "Pear with walnuts",
+      "about": "A ripe pear with a few walnut halves. The walnuts bring **plant omega-3**, and the pear brings fibre.",
+      "ingredients": [
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 170,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the pear, slice it and serve with the walnuts."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "soup-and-sandwich-apple-almonds",
+      "name": "Apple with almonds",
+      "about": "A crisp apple with a small handful of almonds. The almonds bring **vitamin E and magnesium**, and the apple brings fibre.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 170,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 18,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the apple, slice it and serve with the almonds."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "soup-and-sandwich-orange-almonds",
+      "name": "Orange with almonds",
+      "about": "A juicy orange with a handful of almonds. The orange brings **vitamin C** and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 170,
+          "swap": "vit_c_fruit",
+          "note": "washed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 18,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash and peel the orange and serve in segments with the almonds."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "soup-and-sandwich-hummus-veg-sticks",
+      "name": "Hummus with carrot and pepper sticks",
+      "about": "Creamy hummus with crunchy carrot and red pepper sticks. The hummus brings **plant protein and fibre**, and the pepper brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "hummus-443cc0",
+          "g": 45,
+          "swap": "legumes"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 90,
+          "note": "washed, cut into sticks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "washed, cut into sticks"
+        }
+      ],
+      "steps": [
+        "Wash the carrot and pepper, cut them into sticks and serve with the hummus."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "soup-and-sandwich-yogurt-pear-almonds",
+      "name": "Yogurt with pear and almonds",
+      "about": "Cool Greek yogurt with diced pear, a few chopped almonds and a pinch of cinnamon. It brings **calcium and protein**, and the almonds add vitamin E.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 100,
+          "note": "washed, diced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash and dice the pear, spoon it over the yogurt and top with the almonds and cinnamon."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "soup-and-sandwich-lemon-cumin-edamame",
+      "name": "Warm edamame with lemon and cumin",
+      "about": "Warm shelled edamame tossed with lemon, a pinch of cumin and salt. It brings **protein, folate and fibre**.",
+      "ingredients": [
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 110,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Cook the frozen edamame in boiling water or in the microwave until steaming hot all the way through, about 3 minutes, then drain.",
+        "Toss with the lemon juice, cumin and salt."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "soup-and-sandwich-tuna-cucumber-rye-toast",
+      "name": "Tuna and cucumber on rye toast",
+      "about": "Flaked light tuna with lemon and dill on a small slice of rye with cucumber. It brings **lean protein and selenium** and uses up an opened tin.",
+      "ingredients": [
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "drained, unsalted"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 35,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 2,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the cucumber and dill. Toast the rye.",
+        "Mash the tuna with the lemon juice, dill and pepper, pile onto the toast and top with the cucumber.",
+        "Use tuna from a tin opened within the last 2 days and kept in a covered container in the fridge."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "soup-and-sandwich-chili-lemon-edamame",
+      "name": "Warm edamame with lemon and chili",
+      "about": "Warm shelled edamame tossed with lemon, a pinch of chili flakes and salt. It brings **protein, folate and fibre**.",
+      "ingredients": [
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 110,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Cook the frozen edamame in boiling water or in the microwave until steaming hot all the way through, about 3 minutes, then drain.",
+        "Toss with the lemon juice, chili flakes and salt."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "soup-and-sandwich-pepper-spinach-egg-rye-toast-light",
+      "name": "Pepper and spinach scrambled eggs on rye toast",
+      "about": "Eggs scrambled until fully set with sweet red pepper and wilted spinach, piled on toasted rye with an orange on the side. The eggs bring **choline and protein**, the glass of milk brings calcium, and the orange brings vitamin C to help absorb the iron in the spinach.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "whole eggs"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "washed and diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 110,
+          "swap": "vit_c_fruit",
+          "note": "washed, cut in wedges"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 150,
+          "swap": "dairy_protein",
+          "note": "a glass, on the side"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the pepper, spinach and orange. Dice the pepper and cut the orange into wedges.",
+        "Warm the oil in a non-stick pan over medium heat. Cook the pepper until just soft, about 3 minutes, then add the spinach and stir until it wilts, about 1 minute.",
+        "Beat the eggs with the salt and pepper and pour them into the pan. Stir gently until the eggs are cooked through with no liquid left and the yolk is firm, about 3 minutes. Wash your hands after cracking the eggs.",
+        "Toast the rye, top it with the eggs and serve with the orange wedges and a glass of milk."
+      ],
+      "prepMin": 5,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "soup-and-sandwich-tomato-white-bean-soup-cheddar-toastie-light",
+      "name": "Tomato and white bean soup with an open-face cheddar toastie",
+      "about": "A velvety tomato soup blended with white beans and a handful of spinach, with a hot open-face cheddar toastie on the side. The beans make it filling and bring **fibre and folate**, and the cheese is a garnish, not a layer.",
+      "ingredients": [
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 320,
+          "note": "no added salt, with the juice"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 150,
+          "swap": "legumes",
+          "note": "no-salt-added, drained and rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80,
+          "note": "peeled and chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "vegetable-broth-ready-to-serve-low-sodium-91b9aa",
+          "g": 200,
+          "note": "low-sodium"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "basil-dried-160272",
+          "g": 0.8
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "whole-grain"
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 18,
+          "swap": "dairy_protein",
+          "note": "grated"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the oil in a pot over medium heat. Cook the onion and carrot until soft, about 6 minutes, then add the garlic and basil for 30 seconds.",
+        "Add the tomatoes with their juice, the white beans and the broth. Bring to a boil, then simmer for 12 minutes.",
+        "Wash the spinach and stir it in until wilted, about 1 minute. Blend with an immersion blender until smooth, then season with the salt and pepper.",
+        "Make the toastie: spread the mustard on the bread, scatter over the cheddar and grill under a hot broiler until bubbling and golden, about 3 minutes. Cut into fingers.",
+        "Serve the soup with the toastie. This makes two portions: cool the second portion within 2 hours in a shallow container, refrigerate and use within 3 days. Reheat the soup until steaming hot (74 °C) and make the toastie fresh."
+      ],
+      "prepMin": 10,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Hold back a few whole beans and add them after blending for some texture."
+    },
+    {
+      "id": "soup-and-sandwich-curried-cauliflower-chickpea-soup-toast-light",
+      "name": "Curried cauliflower and chickpea soup with garlic toast",
+      "inspiredBy": "Inspired by Indian-style spiced cauliflower soups",
+      "about": "A golden, lightly curried soup of cauliflower, chickpeas and carrot, finished with spinach and a spoonful of lemony yogurt, with garlic toast for scooping. The chickpeas bring **protein and fibre**, the carrot brings vitamin A and the cauliflower brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 200,
+          "note": "washed, cut into small florets"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 170,
+          "swap": "legumes",
+          "note": "no-salt-added, drained and rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed and diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "peeled and chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "crushed, plus a cut clove for the toast"
+        },
+        {
+          "food": "curry-powder-55e9c6",
+          "g": 3
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "vegetable-broth-ready-to-serve-low-sodium-91b9aa",
+          "g": 350,
+          "note": "low-sodium"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 45,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "whole-grain"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "sliced and toasted"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 3,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Warm most of the oil in a pot over medium heat. Cook the onion and carrot until soft, about 6 minutes, then stir in half the garlic, the curry powder, turmeric and ginger for 1 minute until fragrant.",
+        "Add the cauliflower, chickpeas and broth. Bring to a boil, then simmer, partly covered, until the cauliflower is very tender, about 15 minutes.",
+        "Mash some of the soup roughly with a potato masher, or blend a third of it, so it is thick but still chunky. Wash the spinach, stir it in until wilted and season with the salt.",
+        "Toast the bread, rub it with the cut side of the remaining garlic clove and brush with the last of the oil. Stir the lemon juice into the yogurt.",
+        "Ladle the soup into bowls, swirl in the lemony yogurt, scatter the toasted almonds and dill and serve with the garlic toast. This makes two portions: cool the second within 2 hours in a shallow container, refrigerate and reheat until steaming hot (74 °C). Use within 3 days."
+      ],
+      "prepMin": 12,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "freezer-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "To freeze: leave out the yogurt, cool within 2 hours, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze and reheat to 74 °C."
+    },
+    {
+      "id": "soup-and-sandwich-split-pea-carrot-soup-rye-light",
+      "name": "Split pea and carrot soup with dill, yogurt and rye toast",
+      "about": "A thick, comforting soup of yellow split peas, carrot, celery and thyme, with a spoonful of yogurt, dill and toasted walnuts and rye toast alongside. Split peas are one of the best **fibre and protein** foods in the pantry, and this pot needs nothing but time.",
+      "ingredients": [
+        {
+          "food": "split-peas-dry-6b69b1",
+          "g": 75,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 110,
+          "note": "washed and diced"
+        },
+        {
+          "food": "celery-raw-79a241",
+          "g": 50,
+          "note": "washed and diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80,
+          "note": "peeled and chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "vegetable-broth-ready-to-serve-low-sodium-91b9aa",
+          "g": 450,
+          "note": "low-sodium"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.6
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 35,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "rye-bread-bdc47e",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "toasted"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Warm the oil in a large pot over medium heat. Cook the onion, carrot and celery until the onion is soft, about 7 minutes. Add the garlic, thyme and bay leaf for 30 seconds.",
+        "Add the split peas and the broth with a cup of water. Bring to a boil, then lower the heat and simmer, partly covered and stirring now and then, until the peas have broken down and the soup is thick, about 40 minutes. Add a splash of water if it gets too thick.",
+        "Remove the bay leaf. Wash the spinach and stir it in until wilted. Blend about a third of the soup for a creamier body, then season with the lemon juice, salt and pepper.",
+        "Toast the rye. Ladle the soup into bowls, top with the yogurt, dill and walnuts, and serve with the toast.",
+        "This makes two portions: cool the second within 2 hours in a shallow container, refrigerate and use within 3 days. Reheat it until steaming hot (74 °C), adding a splash of water."
+      ],
+      "prepMin": 12,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "To freeze: leave out the yogurt, cool within 2 hours, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze and reheat to 74 °C. A pressure cooker does the peas in 15 minutes."
+    },
+    {
+      "id": "soup-and-sandwich-beef-lentil-sloppy-joe-light",
+      "name": "Beef and lentil sloppy joes with crunchy cabbage slaw",
+      "inspiredBy": "Inspired by the American diner sloppy joe",
+      "about": "The diner classic with half the beef swapped for lentils, simmered with onion, pepper and carrot in a tangy tomato sauce and piled onto a whole-wheat bun with a lemony cabbage slaw. The lentils stretch the beef and bring **iron and fibre**, and the vegetables are hidden right in the sauce.",
+      "ingredients": [
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 150,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "lentils-canned-no-salt-added-drained-c1edbd",
+          "g": 110,
+          "swap": "legumes",
+          "note": "no-salt-added, drained and rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "peeled and finely chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "washed and finely diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "washed and grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 200,
+          "note": "no added salt, crushed with a spoon"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1.5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 14,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 3
+        },
+        {
+          "food": "rolls-for-burger-hotdog-buns-whole-wheat-a4095c",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "whole-wheat bun"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 60,
+          "note": "washed, finely shredded"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Warm the oil in a large pan over medium heat. Cook the onion, pepper and carrot until soft, about 7 minutes. Add the garlic, chili powder, smoked paprika and cumin and stir for 30 seconds.",
+        "Add the beef and break it up with a spoon. Cook until no pink remains, about 5 minutes. Wash your hands, the board and the spoon with hot soapy water after handling the raw beef.",
+        "Stir in the tomatoes with their juice, the lentils, the mustard, half the lemon juice and the salt. Simmer, stirring now and then, until thick and glossy, about 12 minutes. The beef must reach 71 °C (160 °F).",
+        "Toss the cabbage with the rest of the lemon juice and a pinch of salt for a quick slaw.",
+        "Toast the bun (at smaller sizes a half bun is plenty), spoon on the sloppy joe mixture and top with slaw. This makes two portions: cool the second portion within 2 hours in a shallow container, refrigerate and use within 3 days. Reheat it until steaming hot (74 °C) and use a fresh bun."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Serve the filling in a bowl over the slaw if you want to skip the bun at lunch."
+    },
+    {
+      "id": "soup-and-sandwich-salmon-cake-burger-slaw-light",
+      "name": "Salmon cake with lemon-dill slaw",
+      "about": "A flaky canned salmon cake, bound with egg, oats and mustard and baked until golden, piled on a cool, crunchy slaw with spinach and cucumber. Canned salmon with its soft bones brings **omega-3 and calcium**, and the slaw keeps the plate fresh.",
+      "ingredients": [
+        {
+          "food": "salmon-canned-drained-9cea4e",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "drained, soft bones mashed in"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 18,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 45,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 3
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "peeled and finely chopped"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 60,
+          "note": "washed, finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "washed, grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 20,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F) and line a tray with parchment. Wash the dill, cabbage, carrot, cucumber and spinach.",
+        "Mash the salmon in a bowl with the egg, oats, a third of the yogurt, half the mustard, the onion, half the dill, half the lemon juice and the pepper. Let it sit for 5 minutes so the oats soak up the moisture, then shape into a patty and place on the tray. Wash your hands and the bowl with hot soapy water after handling the raw egg. Brush with the oil.",
+        "Bake until golden and cooked through, with the egg set firm and the centre at 74 °C (165 °F), about 16 minutes.",
+        "Meanwhile, toss the cabbage and carrot with the rest of the yogurt, mustard, dill and lemon juice, and the salt, for a quick slaw.",
+        "Pile the spinach and plenty of slaw on a plate, set the salmon cake on top and serve with the cucumber slices.",
+        "Move any salmon left in the tin to a covered container in the fridge and use it within 2 days."
+      ],
+      "prepMin": 15,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Chill the shaped cake for 10 minutes if you have time, it holds together better."
+    },
+    {
+      "id": "soup-and-sandwich-salmon-cucumber-rounds",
+      "name": "Canned salmon on cucumber rounds",
+      "about": "Flaked canned salmon with lemon and dill piled on thick cucumber rounds. It brings **omega-3 and calcium**.",
+      "ingredients": [
+        {
+          "food": "salmon-canned-drained-9cea4e",
+          "g": 60,
+          "swap": "fatty_fish",
+          "note": "drained, soft bones mashed in"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 120,
+          "note": "washed, cut into thick rounds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 2,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the cucumber and dill. Cut the cucumber into thick rounds.",
+        "Mash the salmon with the lemon juice, dill and pepper and pile it onto the rounds.",
+        "Move any salmon left in the tin to a covered container in the fridge and use it within 2 days. Pack with an ice pack if it is not eaten within 2 hours."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    }
+  ]
+}
