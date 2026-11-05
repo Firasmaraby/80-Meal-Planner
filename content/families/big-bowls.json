@@ -1,0 +1,1729 @@
+{
+  "id": "big-bowls",
+  "name": "Big Bowls",
+  "style": "balanced",
+  "cuisine": "Global",
+  "carbStyle": "whole",
+  "regions": [
+    "Mexico",
+    "Japan",
+    "Lebanon",
+    "Korea",
+    "Italy",
+    "Morocco"
+  ],
+  "summary": "Every main meal is a bowl: a base of quinoa, lentils, sweet potato or an intact grain, a protein, lots of vegetables and a sauce worth eating. Salmon, trout and canned salmon bring the omega-3, and four of the bowls make enough for tomorrow's lunch.",
+  "howItWorks": "**Base, protein, veg, sauce.** Every lunch and dinner follows the same build: a whole-food base (quinoa, barley, buckwheat, beans, lentils or sweet potato), a protein, a pile of vegetables and a sauce that ties it together. No bread, rice or pasta, so the fibre stays high.\n\n**Cook once, eat twice.** Monday's black bean bowl, Wednesday's lentil and beet bowl, Thursday's shawarma bowl and Saturday's beef bowl each make two portions for the next day's lunch. Reheat only the grain and the hot protein, and add egg, slaw, crema and avocado cold.\n\n**Fish four times.** Teriyaki-style salmon on Tuesday, lemon-herb trout on Friday, and canned salmon in Saturday's bowl and Sunday's spiced cakes bring the omega-3 and some vitamin D. Legumes, eggs, chicken, tuna and beef cover the protein, and almonds, walnuts or seeds land every day for vitamin E. Eggs show up where the day needs choline: the black bean bowl, the beet bowl, the hash and two snack plates.\n\n**Two short preps.** Mix each oats jar the night before, or Wednesday's and Friday's together on Tuesday night. Cook a little extra quinoa with Friday's trout for Saturday's lunch. Cooked grains cool within 1 hour and keep up to 3 days.\n\n**What changes with size.** Light keeps the same bowls with the same chicken, beef, canned fish, eggs, yogurt and most of the beans and lentils. What shrinks is the grain, the oil and the nuts, and most snacks drop. Tuesday's salmon and Friday's trout are about half a regular fillet across Light.\n\n**Grain and Big.** Near 1,600 kcal the grain under each bowl is about half a Standard portion; at 1,400 it is a couple of spoonfuls on most days, and the beans, vegetables and spinach fill the bowl. Big grows the bases and adds a snack on three days.\"",
+  "signature": [
+    "big-bowls-quinoa-sweet-potato-black-bean-bowl",
+    "big-bowls-teriyaki-style-salmon-edamame-barley-bowl",
+    "big-bowls-lentil-roasted-beet-walnut-bowl",
+    "big-bowls-chicken-shawarma-chickpea-barley-bowl"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "big-bowls-apple-walnuts"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "big-bowls-veg-sticks-quick-hummus"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "big-bowls-apple-walnuts"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "big-bowls-overnight-oats-blueberries-almonds",
+      "name": "Overnight oats with blueberries and almonds",
+      "inspiredBy": "Inspired by Swiss bircher and North American overnight oats",
+      "about": "Oats soaked in milk and Greek yogurt with chia until spoonable, then topped with fresh blueberries, a drizzle of honey and crunchy almonds. It is made the night before, and the oats and chia bring **fibre and plant omega-3**, and the almonds bring vitamin E, to keep you going till lunch.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 90,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Stir the oats, milk, yogurt, chia, cinnamon and salt together in a jar or bowl. Cover and chill overnight, or at least 4 hours.",
+        "In the morning, stir well. If it has thickened too much, loosen it with a splash of milk.",
+        "Wash the blueberries and spoon them on top, then add the honey and the almonds for crunch.",
+        "Keep any extra jar covered in the fridge and eat it within 3 days."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Mix each jar the night before, or mix Monday's on Sunday night and Wednesday's and Friday's together on Tuesday night, so none waits more than 3 days. Swap in any berry or chopped fruit."
+    },
+    {
+      "id": "big-bowls-apple-cinnamon-quinoa-bowl",
+      "name": "Warm apple and cinnamon quinoa bowl",
+      "inspiredBy": "Inspired by quinoa breakfast porridge from the Andes",
+      "about": "Quinoa simmered in milk until soft and creamy, with diced apple, cinnamon, a spoonful of Greek yogurt, toasted almonds and chia on top. It is warm and comforting, and the quinoa and yogurt bring **protein and magnesium** to a quick weekday breakfast.",
+      "ingredients": [
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "rinsed well"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 180,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 120,
+          "note": "washed and diced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 6
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa in a fine sieve under cold water for 30 seconds. This removes its bitter coating.",
+        "Put the quinoa, milk, cinnamon and salt in a small pot. Bring to a gentle boil, then turn the heat to low, cover and simmer until the quinoa is soft and most of the milk is absorbed, about 15 minutes. Stir once or twice.",
+        "Meanwhile, wash and dice the apple, and toast the almonds in a dry pan until fragrant, about 3 minutes.",
+        "Spoon the quinoa into a bowl and top with the apple, the yogurt, the almonds, the chia and the honey."
+      ],
+      "prepMin": 5,
+      "cookMin": 17,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook a double pot, chill the second portion within 1 hour in a shallow container, and eat it within 3 days. Reheat the quinoa with a splash of milk until steaming (74 °C), then add the yogurt, apple and almonds cold."
+    },
+    {
+      "id": "big-bowls-sweet-potato-black-bean-hash",
+      "name": "Sweet potato and black bean breakfast hash with firm eggs",
+      "inspiredBy": "Inspired by Tex-Mex breakfast skillets",
+      "about": "Crisp-edged sweet potato cubes, onion, black beans and wilted spinach in a smoky skillet, with eggs cooked until the yolks are firm, a little avocado and a cool spoonful of yogurt on top. It is a proper weekend breakfast, and the sweet potato and spinach bring **vitamin A and folate**.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 140,
+          "note": "scrubbed and cut in small cubes"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 70,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "cooked until the yolks are firm"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the vegetables. Microwave the sweet potato cubes in a covered bowl with a splash of water until just tender, about 4 minutes.",
+        "Heat the oil in a large non-stick skillet over medium-high heat. Add the sweet potato in a single layer and cook without stirring for 3 minutes, then stir and cook until golden at the edges, about 5 minutes more.",
+        "Add the onion, smoked paprika, cumin and salt. Cook until the onion softens, about 4 minutes. Stir in the black beans and spinach until the spinach wilts.",
+        "Make gaps in the hash and crack in the eggs. Cover and cook over medium-low heat until the whites are set and the yolks are firm all the way through, about 6 minutes. Break each yolk gently with a spatula to be sure it is cooked through.",
+        "Slide onto a plate and top with the sliced avocado, a spoonful of yogurt and the pepper. Wash your hands and the pan after handling raw eggs."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "big-bowls-apple-walnuts",
+      "name": "Apple slices with walnuts",
+      "about": "Crisp apple slices with a handful of walnuts and a dusting of cinnamon. It is sweet and crunchy, with **fibre and plant omega-3** in a snack that takes a minute.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the apple, slice it and scatter the cinnamon over the slices. Serve with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "big-bowls-veg-sticks-quick-hummus",
+      "name": "Carrot and cucumber sticks with quick hummus",
+      "inspiredBy": "Inspired by Levantine hummus",
+      "about": "A small bowl of lemony, garlicky chickpea hummus with crisp carrot and cucumber sticks for dipping. The chickpeas and tahini bring **fibre, folate and copper**, and it is blended in two minutes.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 55,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1,
+          "note": "grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 90,
+          "note": "washed and cut in sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed and cut in sticks"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Blend or mash the chickpeas with the tahini, lemon juice, garlic, cumin, salt and a spoonful of cold water until smooth and creamy, adding a little more water if it is thick.",
+        "Wash the carrot and cucumber, cut them into sticks and serve with the hummus."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Make a double batch of hummus and keep it in a covered container in the fridge for up to 3 days."
+    },
+    {
+      "id": "big-bowls-roasted-smoky-chickpeas",
+      "name": "Crunchy smoky roasted chickpeas",
+      "about": "Chickpeas dried well and roasted until crunchy, tossed with smoked paprika, cumin and a squeeze of lemon. They are a salty-crunchy snack with **plant protein and fibre**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 120,
+          "swap": "legumes",
+          "note": "rinsed and patted very dry"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 5,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Rinse the chickpeas, then pat them completely dry in a clean towel. Dry chickpeas get crunchy.",
+        "Toss them with the oil, smoked paprika, cumin and salt on a baking tray and spread in one layer.",
+        "Roast, shaking the tray halfway, until golden and crisp, about 25 minutes. Squeeze over the lemon juice and let them cool on the tray, where they keep crisping."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Roast a double tray, cool completely, and keep in a jar for up to 3 days. They soften after that."
+    },
+    {
+      "id": "big-bowls-apple-almonds",
+      "name": "Apple slices with almonds",
+      "about": "Crisp apple slices with a small handful of almonds and a pinch of cinnamon: sweet, crunchy and quick. The apple brings **fibre and vitamin C** and the almonds bring vitamin E and magnesium.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "washed and sliced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 20,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the apple, slice it and scatter the cinnamon over the slices. Serve with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "big-bowls-lime-chili-edamame",
+      "name": "Warm edamame with lime and chili",
+      "inspiredBy": "Inspired by Japanese izakaya edamame",
+      "about": "Warm shelled edamame tossed with lime juice, chili flakes and a few sesame seeds. They are a protein-rich snack with **folate and iron**, ready in five minutes.",
+      "ingredients": [
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 100,
+          "swap": "legumes"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 3,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the edamame in a microwave-safe bowl with a splash of water, covered, until steaming hot, about 2 minutes.",
+        "Drain, then toss with the lime juice, chili flakes, salt and sesame seeds."
+      ],
+      "prepMin": 2,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "big-bowls-egg-tomato-cucumber-plate",
+      "name": "Hard-cooked eggs with cherry tomatoes and cucumber",
+      "about": "Firm hard-cooked eggs with sweet cherry tomatoes, cool cucumber and a pinch of smoked paprika. It is a simple plate with **protein and choline**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "hard-cooked until the yolks are firm"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "washed and halved"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Lower the eggs into a pot of boiling water and cook for 11 minutes, so the yolks are completely firm. Cool in cold water and peel.",
+        "Wash and slice the tomatoes and cucumber. Halve the eggs and serve with the vegetables, sprinkled with the smoked paprika, salt and pepper."
+      ],
+      "prepMin": 3,
+      "cookMin": 11,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook a few extra eggs and keep them peeled in the fridge in a covered container for up to 3 days."
+    },
+    {
+      "id": "big-bowls-lemony-tuna-white-bean-spinach-bowl",
+      "name": "Lemony tuna and white bean bowl with spinach",
+      "inspiredBy": "Inspired by Tuscan tonno e fagioli",
+      "about": "Creamy white beans and flaked light tuna tossed in a lemon and garlic dressing over a big bed of spinach, with juicy cherry tomatoes, cucumber and pumpkin seeds. It needs no cooking at all, and the beans, tuna and spinach bring **protein, folate and iron**.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 130,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "drained and flaked"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 110,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "washed and halved"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed and diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the spinach, tomatoes, cucumber and parsley. Whisk the oil, lemon juice, garlic, salt and pepper together in a bowl.",
+        "Add the beans, tuna, red onion, tomatoes and cucumber to the dressing and toss gently so the beans soak it up.",
+        "Pile the spinach into a bowl, spoon the bean and tuna mix on top and finish with the parsley and pumpkin seeds."
+      ],
+      "prepMin": 10,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Eat it the day it is made; to pack it for work, keep the spinach separate until lunch. Canned light tuna is a low-mercury choice. Keep any leftover tuna covered in the fridge and use it within 2 days."
+    },
+    {
+      "id": "big-bowls-quinoa-sweet-potato-black-bean-bowl",
+      "name": "Quinoa bowl with roast sweet potato, black beans and lime crema",
+      "inspiredBy": "Inspired by Mexican and Tex-Mex burrito bowls",
+      "about": "Fluffy quinoa under smoky roasted sweet potato and black beans, with a firm hard-cooked egg, crunchy red cabbage, creamy avocado, pumpkin seeds and a cool lime and cilantro crema. It makes **two portions, so tomorrow's lunch is done**, and the sweet potato and beans bring vitamin A, fibre and iron.",
+      "ingredients": [
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "rinsed well"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 150,
+          "note": "scrubbed and cut in cubes"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 120,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "hard-cooked until the yolk is firm"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 50,
+          "note": "finely shredded"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 35,
+          "note": "washed, sliced just before serving"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 70,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 18,
+          "swap": "vit_c_fruit",
+          "note": "from limes"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the vegetables. Toss the sweet potato cubes on a tray with half the oil, the cumin, smoked paprika, chili powder and half the salt. Roast, turning once, until tender and browned at the edges, about 25 minutes.",
+        "Meanwhile, rinse the quinoa under cold water. Simmer it in a pot of water with a pinch of salt, covered, until the grains are tender and the little tails have popped, about 15 minutes. Drain and fluff with a fork.",
+        "Lower the eggs into boiling water and cook for 11 minutes, so the yolks are completely firm. Cool in cold water, then peel and halve them.",
+        "Stir the beans into the tray for the last 5 minutes so they warm through and pick up the spices.",
+        "Make the crema: stir the yogurt with the lime juice, half the cilantro and a pinch of salt. Toss the red cabbage and onion with a squeeze of lime and a pinch of salt.",
+        "Spoon half the quinoa into a bowl for tonight. Top with half the sweet potato and beans, an egg, half the cabbage and crema and the pumpkin seeds. Slice the avocado just before eating and scatter on with the rest of the cilantro.",
+        "Pack the rest for tomorrow with the egg, cabbage, crema and avocado kept separate. Cool the quinoa, sweet potato and beans within 1 hour in a shallow container and keep everything in the fridge up to 3 days. Reheat only the quinoa, sweet potato and beans, once, until steaming at 74 °C (165 °F), then add the cold toppings."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Slice fresh avocado and add a squeeze of lime to the leftover bowl so it tastes freshly made."
+    },
+    {
+      "id": "big-bowls-teriyaki-style-salmon-edamame-barley-bowl",
+      "name": "Teriyaki-style salmon bowl with edamame, spinach and barley",
+      "inspiredBy": "Inspired by Japanese teriyaki",
+      "about": "Salmon glazed in a sticky ginger, soy and honey sauce over chewy barley, edamame, wilted spinach and carrot ribbons. The salmon brings **omega-3 and vitamin D**, and the edamame brings protein and folate.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "skinless, in one piece"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "pearl barley, rinsed"
+        },
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 80,
+          "swap": "legumes"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed and peeled into ribbons"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 14
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "finely grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 5,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Rinse the barley and simmer it in plenty of water until tender but still chewy, about 25 minutes. Drain. Start this first.",
+        "Stir the soy sauce, honey, lemon juice, ginger and garlic together. Pour a spoonful over the salmon and leave it in the fridge while the barley cooks. Do not reuse that marinade; the rest is your sauce.",
+        "Heat the oil in a non-stick skillet over medium-high heat. Cook the salmon about 4 minutes on the first side and 3 on the other, until the centre reaches 70 °C (158 °F) and it flakes easily. Wash your hands, the board and the plate that held the raw fish.",
+        "Pour the sauce into the pan and let it bubble for 1 minute until it thickens and coats the salmon.",
+        "Heat the edamame with a splash of water in a covered pan until steaming, about 2 minutes, then add the spinach and wilt it for 1 minute.",
+        "Spoon the barley into a bowl, add the spinach, edamame and carrot ribbons, and lay the salmon on top. Finish with the sesame seeds."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "If you cook the barley the night before, chill it within 1 hour in a shallow container, use it the next day, and reheat it until steaming (74 °C)."
+    },
+    {
+      "id": "big-bowls-sesame-lime-chicken-buckwheat-bowl",
+      "name": "Sesame-lime chicken and buckwheat bowl",
+      "inspiredBy": "Inspired by Asian sesame noodle sauces",
+      "about": "Seared chicken breast strips on nutty buckwheat with spinach, shredded red cabbage, carrot and cucumber, all coated in a creamy tahini, lime and ginger sauce. The chicken brings **protein** and the tahini brings **calcium and iron**, and the bowl is crunchy and bright.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-skinless-boneless-raw-7998f9",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "cut in strips"
+        },
+        {
+          "food": "buckwheat-groats-80619e",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 70,
+          "note": "finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed and grated"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 20,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 12
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 4
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "finely grated"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 4,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Simmer the buckwheat in water until tender, about 12 minutes. Drain and let the steam escape.",
+        "Meanwhile, whisk the tahini, lime juice, soy sauce, honey and ginger with a splash of warm water until creamy and pourable.",
+        "Heat the oil in a skillet over medium-high heat. Cook the chicken strips, turning, until golden and cooked through at 74 °C (165 °F), about 7 minutes. Wash your hands, the knife and the board after the raw chicken.",
+        "Wash the vegetables. Toss the cabbage, carrot and cucumber with a spoonful of the sauce.",
+        "Spoon the buckwheat into a bowl over the spinach so it wilts a little, top with the vegetables and chicken, and drizzle with the rest of the sauce. Finish with the cilantro and sesame seeds."
+      ],
+      "prepMin": 15,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Swap the chicken for edamame or a hard-cooked egg if you like."
+    },
+    {
+      "id": "big-bowls-lentil-roasted-beet-walnut-bowl",
+      "name": "Lentil and roasted beet bowl with walnuts and yogurt-parsley sauce",
+      "inspiredBy": "Inspired by Eastern European and Middle Eastern beet and lentil salads",
+      "about": "Earthy green-brown lentils and sweet roasted beets over spinach, with a firm-cooked egg, toasted walnuts and a cool yogurt and parsley sauce. It makes **two portions, so tomorrow's lunch is done**, and the lentils and beets bring iron and folate.",
+      "ingredients": [
+        {
+          "food": "green-and-brown-lentils-whole-dried-raw-f67c80",
+          "g": 65,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "beet-raw-4df109",
+          "g": 150,
+          "note": "scrubbed and cut in small cubes"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "hard-cooked until the yolk is firm"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash and scrub the beets and cut them into small cubes so they cook quickly. Toss with half the oil and a pinch of salt and roast on a tray until tender and caramelised at the edges, about 30 minutes.",
+        "Meanwhile, rinse the lentils. Simmer them in plenty of water until tender but not mushy, about 22 minutes. Drain well.",
+        "Lower the eggs into boiling water and cook for 11 minutes, so the yolks are completely firm. Cool in cold water, then peel.",
+        "Whisk the rest of the oil with half the lemon juice, the garlic, a pinch of salt and the pepper. Toss the warm lentils and red onion in it. Toast the walnuts in a dry pan until fragrant, about 3 minutes.",
+        "Stir the yogurt with the parsley, the remaining lemon juice and a pinch of salt.",
+        "Pile half the spinach into a bowl for tonight, top with half the lentils and beets and a halved egg, and finish with walnuts and yogurt sauce.",
+        "Pack the rest with the egg, spinach, sauce and walnuts kept separate. Cool the lentils and beets within 1 hour in a shallow container and keep everything in the fridge up to 3 days. Reheat only the lentils and beets, once, until steaming at 74 °C (165 °F), then add the cold toppings. They are also good cold."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Beets stain, so use a tray you do not mind. Pre-cooked beets from the produce aisle also work and save the roasting."
+    },
+    {
+      "id": "big-bowls-chicken-shawarma-chickpea-barley-bowl",
+      "name": "Chicken shawarma-spiced bowl with chickpeas, roast carrots, barley and tahini sauce",
+      "inspiredBy": "Inspired by Levantine chicken shawarma",
+      "about": "Chicken breast, chickpeas and carrots roasted together on one tray in warm shawarma spices, over chewy barley with a crunchy red cabbage and parsley slaw and a lemony tahini sauce. It makes **two portions, so tomorrow's lunch is done**, and the chickpeas and tahini bring fibre, iron and copper.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-skinless-boneless-raw-7998f9",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "cut in strips"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 90,
+          "swap": "legumes",
+          "note": "rinsed and patted dry"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "pearl barley, rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 120,
+          "note": "washed and cut in batons"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 60,
+          "note": "finely shredded"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "washed and shredded"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 25,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "coriander-seed-cilantro-973ca2",
+          "g": 1
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash your hands, then toss the chicken strips with a third of the oil, the garlic, cumin, coriander, paprika, turmeric, allspice, cinnamon, a splash of the lemon juice and half the salt in a bowl. Cover and marinate in the fridge for at least 15 minutes. Never reuse the marinade.",
+        "Rinse the barley and simmer it in plenty of water until tender but chewy, about 25 minutes. Drain.",
+        "Heat the oven to 220 °C (425 °F). Toss the carrots and chickpeas with the rest of the oil and a pinch of salt on a lined tray and roast for 10 minutes. Add the chicken, spread everything in a single layer and roast, turning once, until the chicken is cooked through at 74 °C (165 °F) and the chickpeas are crisp at the edges, about 15 minutes more. Wash the bowl, board and your hands after the raw chicken.",
+        "Wash the cabbage, spinach and parsley. Toss the cabbage, onion, spinach and parsley with a squeeze of lemon and a pinch of salt.",
+        "Whisk the tahini with the rest of the lemon juice, a pinch of salt and enough cold water to make a pourable sauce.",
+        "Spoon half the barley into a bowl for tonight, top with half the chicken, chickpeas and carrots and some slaw, and drizzle with tahini sauce.",
+        "Pack the rest with the slaw and sauce kept separate. Cool the barley, chicken, chickpeas and carrots within 1 hour in a shallow container and keep everything in the fridge up to 3 days. Reheat only the barley, chicken, chickpeas and carrots, once, until steaming at 74 °C (165 °F), then add the cold slaw and sauce."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "Add a pinch of chili flakes to the tahini sauce for heat."
+    },
+    {
+      "id": "big-bowls-herb-trout-squash-quinoa-bowl",
+      "name": "Lemon-herb trout bowl with roast squash, white beans and spinach",
+      "inspiredBy": "Inspired by Italian salsa verde",
+      "about": "Flaky rainbow trout with a bright parsley, lemon and garlic sauce, over roasted butternut squash, quinoa, white beans and garlicky spinach with pumpkin seeds. The trout brings **omega-3 and vitamin D**, and the squash and spinach bring vitamins A and K.",
+      "ingredients": [
+        {
+          "food": "rainbow-trout-farmed-raw-0cc800",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "skin-on or skinless fillets"
+        },
+        {
+          "food": "butternut-squash-raw-dc25d8",
+          "g": 180,
+          "note": "peeled and cut in cubes"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "rinsed well"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 15,
+          "note": "finely chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the vegetables. Toss the squash with a little of the oil and a pinch of salt and roast on a tray until tender and browned, about 25 minutes.",
+        "Rinse the quinoa and simmer it in water, covered, until tender, about 15 minutes. Drain and fluff.",
+        "Make the sauce: stir the parsley, half the garlic, half the lemon juice and half the remaining oil together with a pinch of salt.",
+        "Pat the trout dry and season with salt and pepper. Add it to the oven tray for the last 8 to 10 minutes, until it flakes easily and reaches 70 °C (158 °F). Wash your hands and the board after raw fish.",
+        "Meanwhile, heat the last of the oil in a skillet, add the rest of the garlic and the spinach with a splash of water and cook until wilted, about 2 minutes. Stir in the white beans to warm through, and the last of the lemon juice.",
+        "Spoon the quinoa into a bowl, top with the squash, spinach and beans and the trout, and spoon the sauce over. Finish with the pumpkin seeds."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook a little extra quinoa and chill it within 1 hour for tomorrow's salmon bowl. Salmon or arctic char work in place of the trout."
+    },
+    {
+      "id": "big-bowls-salmon-avocado-quinoa-bowl",
+      "name": "Salmon and avocado bowl with quinoa, edamame and lime-ginger dressing",
+      "inspiredBy": "Inspired by Hawaiian poke bowls, made with canned salmon",
+      "about": "Flaked canned salmon on quinoa with creamy avocado, cool cucumber, grated carrot and edamame, under a bright lime and ginger dressing, with sesame seeds on top. The salmon brings **omega-3 and calcium from its soft bones**, and nothing needs cooking except the quinoa.",
+      "ingredients": [
+        {
+          "food": "salmon-canned-drained-9cea4e",
+          "g": 100,
+          "swap": "fatty_fish",
+          "note": "flaked, soft bones included"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "rinsed well"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 60,
+          "note": "washed, sliced just before serving"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed and grated"
+        },
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 60,
+          "swap": "legumes"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 4
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "finely grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 5,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa and simmer it in water with a pinch of salt, covered, until tender, about 15 minutes. Drain, fluff and cool it for 5 minutes.",
+        "Whisk the lime juice, honey, ginger, oil and salt together. Heat the edamame in a covered bowl with a splash of water until steaming hot, about 2 minutes, then let it cool a little.",
+        "Wash the cucumber, carrot and cilantro. Spoon the quinoa into a bowl and arrange the salmon, edamame, cucumber, carrot and avocado on top.",
+        "Drizzle with the dressing and finish with the sesame seeds and cilantro."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Use the extra quinoa from Friday's trout bowl, chilled within 1 hour and kept in the fridge. Keep the rest of an opened can of salmon covered in the fridge and use it within 2 days, for Sunday's cakes. Canned salmon with its soft bones is a good calcium source, and you will not taste them."
+    },
+    {
+      "id": "big-bowls-gochujang-beef-vegetable-barley-bowl",
+      "name": "Gochujang beef and vegetable barley bowl",
+      "inspiredBy": "Inspired by Korean bibimbap, with barley in place of rice",
+      "about": "Savoury ground beef and quickly sautéed spinach, carrot and cabbage over chewy barley with edamame and a sweet-hot gochujang sauce. It makes **two portions, so tomorrow's lunch is done**, and the spinach and edamame bring iron and folate while the beef brings zinc and B12.",
+      "ingredients": [
+        {
+          "food": "ground-beef-93-lean-raw-8d6017",
+          "g": 120,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "pearl barley, rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed and cut in matchsticks"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 60,
+          "note": "finely shredded"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 50,
+          "swap": "legumes"
+        },
+        {
+          "food": "gochujang-korean-chili-paste-843f28",
+          "g": 15
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 4
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "sesame-seeds-whole-dried-6e3fc2",
+          "g": 5,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Rinse the barley and simmer it in plenty of water until tender but chewy, about 25 minutes. Drain and keep it covered.",
+        "Stir the gochujang with the honey and a spoonful of water to make the sauce.",
+        "Heat half the oil in a large skillet over high heat. Stir-fry the carrot and cabbage for 3 minutes, then add the spinach until just wilted. Tip onto a plate and season with a little of the sauce.",
+        "Add the rest of the oil to the pan, then the beef and garlic. Break up the beef and cook, stirring, until browned and no pink remains, about 6 minutes, reaching 71 °C (160 °F). Stir in the soy sauce. Wash your hands and the bowl that held the raw beef.",
+        "Add the edamame to the pan and stir until steaming hot, about 2 minutes. Spoon half the barley into a bowl for tonight and arrange half the vegetables, edamame and beef on top. Spoon over some gochujang sauce, add the cucumber and sprinkle with sesame seeds.",
+        "Pack the rest for tomorrow with the cucumber and gochujang sauce kept separate. Cool the barley, beef and cooked vegetables within 1 hour in a shallow container and keep them in the fridge up to 3 days. Reheat only those, once, until steaming at 74 °C (165 °F), then add the cucumber and sauce."
+      ],
+      "prepMin": 20,
+      "cookMin": 20,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "weekend-project"
+      ],
+      "tip": "Use less gochujang if you like it milder, and add more at the table."
+    },
+    {
+      "id": "big-bowls-moroccan-spiced-salmon-cakes-buckwheat-bowl",
+      "name": "Moroccan-spiced salmon cakes with buckwheat, roast carrots and spinach",
+      "inspiredBy": "Inspired by North African spiced fish cakes",
+      "about": "Golden baked cakes of canned salmon, oats and parsley with cumin, coriander and smoked paprika, served over nutty buckwheat and spinach with roast carrots, toasted walnuts and a lemon-garlic tahini sauce. The salmon brings **omega-3 and vitamin D** along with calcium from its soft bones, and the carrots bring vitamin A.",
+      "ingredients": [
+        {
+          "food": "salmon-canned-drained-9cea4e",
+          "g": 120,
+          "swap": "fatty_fish",
+          "note": "flaked, soft bones included"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 18,
+          "swap": "low_gi_grains",
+          "note": "as the binder"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "buckwheat-groats-80619e",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 150,
+          "note": "washed and cut in batons"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 50,
+          "note": "washed and diced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 2
+        },
+        {
+          "food": "coriander-seed-cilantro-973ca2",
+          "g": 1
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.7
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Toss the carrot batons with half the oil and a pinch of salt on a large tray and roast for 10 minutes.",
+        "Meanwhile, mix the salmon with the egg, oats, parsley, half the garlic, cumin, coriander, smoked paprika, chili powder, cinnamon, salt, pepper and a squeeze of lemon. Let it sit for 5 minutes so the oats soak up the moisture, then shape into firm patties. Wash your hands after handling the raw egg.",
+        "Brush the patties with the rest of the oil and set them on the tray beside the carrots. Bake, turning once, until golden and cooked through at 74 °C (165 °F) in the centre, about 15 minutes.",
+        "Meanwhile, simmer the buckwheat in water until tender, about 12 minutes. Drain and stir in the spinach so it wilts in the heat.",
+        "Toast the walnuts in a dry pan until fragrant, about 3 minutes. Whisk the tahini with the rest of the garlic, the remaining lemon juice, a pinch of salt and enough cold water to make a pourable sauce.",
+        "Spoon the buckwheat and spinach into a bowl, add the carrots, salmon cakes and cucumber, and spoon the tahini sauce over. Finish with the walnuts."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Pan-fry the cakes in a little oil instead if you want a crisper crust."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "big-bowls-overnight-oats-blueberries-almonds"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "big-bowls-lemony-tuna-white-bean-spinach-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "big-bowls-quinoa-sweet-potato-black-bean-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "big-bowls-roasted-smoky-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "big-bowls-apple-cinnamon-quinoa-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "big-bowls-quinoa-sweet-potato-black-bean-bowl",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "big-bowls-teriyaki-style-salmon-edamame-barley-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "big-bowls-egg-tomato-cucumber-plate"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "big-bowls-overnight-oats-blueberries-almonds"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "big-bowls-sesame-lime-chicken-buckwheat-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "big-bowls-lentil-roasted-beet-walnut-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "big-bowls-apple-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "big-bowls-lime-chili-edamame"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "big-bowls-apple-cinnamon-quinoa-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "big-bowls-lentil-roasted-beet-walnut-bowl",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "big-bowls-chicken-shawarma-chickpea-barley-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "big-bowls-lime-chili-edamame"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "big-bowls-overnight-oats-blueberries-almonds"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "big-bowls-chicken-shawarma-chickpea-barley-bowl",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "big-bowls-herb-trout-squash-quinoa-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "big-bowls-egg-tomato-cucumber-plate"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "big-bowls-sweet-potato-black-bean-hash"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "big-bowls-salmon-avocado-quinoa-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "big-bowls-gochujang-beef-vegetable-barley-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "big-bowls-apple-almonds"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "big-bowls-apple-cinnamon-quinoa-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "big-bowls-gochujang-beef-vegetable-barley-bowl",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "big-bowls-moroccan-spiced-salmon-cakes-buckwheat-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "big-bowls-roasted-smoky-chickpeas"
+        }
+      ]
+    }
+  ]
+}
