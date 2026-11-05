@@ -1,0 +1,1878 @@
+{
+  "id": "bean-kitchen",
+  "name": "Bean Kitchen",
+  "style": "balanced",
+  "cuisine": "Global",
+  "carbStyle": "whole",
+  "regions": [
+    "Mexico",
+    "Italy",
+    "India",
+    "Spain",
+    "Japan",
+    "Lebanon",
+    "Turkey"
+  ],
+  "summary": "Beans and lentils at most meals, done well: a three-bean chili, a hummus plate, a lentil and squash dal, Tuscan white beans, a black bean stew and two fish dinners. No bread, rice or pasta, just beans, potatoes, sweet potato, squash and oats.",
+  "howItWorks": "**Beans at most meals.** Chili, dal, Tuscan beans, black bean stew and a chicken and chickpea stew each make two portions. A hummus plate, a white bean and tuna salad, a sweet potato and pinto bean bowl and a lentil dinner fill the gaps.\n\n**Easing into beans.** This plan is high in fibre on purpose. If beans are new to you, start with smaller portions, drink water through the day and give your gut a week or two to settle. Rinse canned beans well. The dal and the edamame are the gentlest places to begin. With a sensitive gut or a health condition, check with a dietitian first.\n\n**Cook once, eat twice.** Monday's chili, Wednesday's dal, Thursday's Tuscan beans, Friday's black bean stew and Saturday's chicken stew each become the next day's lunch. **Sunday prep:** blend the hummus and boil Monday's egg, and Monday's lunch is a five-minute job.\n\n**Fish, eggs and sardines.** Ginger-soy salmon on Tuesday and lemon trout on Sunday bring omega-3 and some **vitamin D**, which is hard to get from food alone. A firm egg on Monday's and Wednesday's lunch and Thursday's baked egg carry your **choline**, and sardines on Thursday and Friday add protein, niacin and calcium. These days run bean-heavy, and they close the gaps.\n\n**Sizes.** Light drops the second snack and trims the oats, beef, chicken and potatoes; the fish, eggs and sardines stay. Big adds a snack and bigger portions, so on the bean-heaviest days fibre runs to more than double the usual daily target. Build up slowly.",
+  "signature": [
+    "bean-kitchen-three-bean-chili",
+    "bean-kitchen-lentil-squash-dal",
+    "bean-kitchen-black-bean-sweet-potato-stew",
+    "bean-kitchen-tuscan-white-beans-greens-egg"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "bean-kitchen-apple-almonds"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "bean-kitchen-orange-almonds"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "bean-kitchen-yogurt-apple-walnuts"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "bean-kitchen-yogurt-pear-walnuts"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "bean-kitchen-yogurt-pear-walnuts"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "bean-kitchen-apple-walnuts"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "bean-kitchen-almond-walnut-pumpkin-seed-mix"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "bean-kitchen-overnight-oats-berries-walnuts",
+      "name": "Overnight oats with berries, walnuts and chia",
+      "inspiredBy": "Inspired by Swiss bircher muesli",
+      "about": "Rolled oats soaked overnight with Greek yogurt and milk until creamy, with frozen berries that thaw into a sweet swirl, a spoonful of chia and crunchy walnuts. Five minutes the night before, and it brings **fibre, protein and plant omega-3** to the first meal.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 120,
+          "swap": "dairy_protein",
+          "note": "or any milk you like"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mixed-berry-frozen-9f87f1",
+          "g": 100,
+          "swap": "berries",
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash your hands, then stir the oats, milk, yogurt, chia and cinnamon together in a jar until no dry oats are left.",
+        "Spoon the frozen berries on top, put the lid on and refrigerate overnight. The berries thaw and bleed into the oats, which is exactly what you want.",
+        "In the morning, stir it up and loosen it with a splash of milk if it is thick. Scatter the walnuts over the top so they stay crunchy.",
+        "Keep it in the fridge and eat within 2 days of making it."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "If you are cooking for someone who is pregnant, 60 or older, 5 or under, or has a weak immune system, simmer the frozen berries for 1 minute and cool them first, or use fresh."
+    },
+    {
+      "id": "bean-kitchen-apple-cinnamon-walnut-oatmeal",
+      "name": "Apple cinnamon oatmeal with walnuts",
+      "about": "Creamy stovetop oats cooked in milk with grated apple and cinnamon, topped with toasted walnuts. It is warm, filling and ready in 10 minutes, with **fibre, calcium and a little plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 50,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 250,
+          "swap": "dairy_protein",
+          "note": "or water"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 130,
+          "note": "grated, skin on"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the apple, then grate it. Put the oats, grated apple, cinnamon and salt in a small pot with just enough of the milk to cover them.",
+        "Cook over medium heat, stirring often, for about 5 minutes until thick and creamy, adding a splash more milk if it catches.",
+        "Spoon into a bowl, pour the rest of the milk around it and scatter over the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 7,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Toast the walnuts in a dry pan for 2 minutes for extra flavour."
+    },
+    {
+      "id": "bean-kitchen-chickpea-potato-breakfast-hash-eggs",
+      "name": "Turkish-style potato and chickpea skillet with eggs",
+      "inspiredBy": "Inspired by Turkish patatesli yumurta (potatoes with eggs)",
+      "about": "Crisp-edged potatoes and chickpeas with onion, spinach, cumin and mild, fruity Aleppo pepper, with eggs cooked right in the pan until the yolks are firm, then finished with lemon, parsley and a pinch of dried mint. A slow Saturday breakfast with **protein, iron and folate**.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 80,
+          "note": "scrubbed and diced small"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 45,
+          "swap": "legumes",
+          "note": "rinsed well"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "whole"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "aleppo-pepper-pul-biber-2339da",
+          "g": 1
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "mint-dried-3fe241",
+          "g": 0.5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "fresh juice"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the potatoes and spinach before cutting. Dice the potatoes small, about 1 cm, so they cook quickly.",
+        "Heat the oil in a wide nonstick pan over medium heat. Add the potatoes, cover and cook for about 10 minutes, stirring now and then, until they are tender and starting to brown.",
+        "Add the onion, Aleppo pepper, cumin and salt and cook for 4 minutes. Stir in the chickpeas and cook another 3 minutes so they crisp at the edges, then fold in the spinach until just wilted.",
+        "Make wells in the pan and crack in the eggs. Cover and cook for about 8 minutes, until the whites and yolks are completely firm. Finish with the lemon juice, parsley and the mint, rubbed between your fingers. Wash your hands after handling the raw eggs."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Dice the potatoes the night before to cut the morning time."
+    },
+    {
+      "id": "bean-kitchen-pinto-sweet-potato-breakfast-bowl",
+      "name": "Sweet potato and pinto bean breakfast bowl",
+      "inspiredBy": "Inspired by Tex-Mex breakfast bowls",
+      "about": "A soft baked sweet potato piled with warm, cumin-scented pinto beans mashed until creamy, plus avocado, a spoonful of yogurt and lime. Filling, sweet and savoury at once, with **fibre, potassium and vitamin A** to start the day.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 180,
+          "note": "scrubbed, pierced with a fork"
+        },
+        {
+          "food": "pinto-beans-canned-no-salt-added-drained-0b80db",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed well"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "sliced"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10,
+          "note": "fresh juice"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash the sweet potato and prick it all over with a fork. Microwave on high for 6 to 8 minutes, turning once, until soft all the way through. In the oven it takes about 45 minutes at 200 °C (400 °F): bake it the night before, refrigerate within 2 hours and reheat to 74 °C (165 °F).",
+        "Meanwhile, warm the pinto beans in a small pot with the cumin, salt and 2 tablespoons of water for about 4 minutes, mashing about half so they turn creamy, like quick refried beans.",
+        "Split the sweet potato open, spoon over the beans, then top with the avocado, yogurt, lime juice and pumpkin seeds."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Add a pinch of chili flakes to the beans for heat."
+    },
+    {
+      "id": "bean-kitchen-hummus-plate-lentil-salad",
+      "name": "Hummus plate with herby lentil salad and egg",
+      "inspiredBy": "Inspired by Levantine hummus plates",
+      "about": "Creamy homemade hummus with a cool lentil, cucumber and tomato salad, a firm hard-boiled egg and carrot sticks to scoop. The chickpeas and lentils bring **plenty of protein, iron and folate**, and the lemon helps your body absorb the iron.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed well"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 20,
+          "note": "well stirred"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 30,
+          "note": "fresh juice"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "one small clove"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lentils-canned-no-salt-added-drained-c1edbd",
+          "g": 110,
+          "swap": "legumes",
+          "note": "rinsed well"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "halved"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 20,
+          "note": "finely diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 90,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "whole"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Wash the cucumber, tomatoes, parsley and carrot. Put the egg in a small pot, cover with cold water, bring to a boil and simmer for 10 minutes until the yolk is completely firm. Cool in cold water, then peel and halve.",
+        "Blend the chickpeas, tahini, half the lemon juice, the garlic, half the olive oil, the cumin, half the salt and 2 to 3 tablespoons of cold water until smooth and creamy. Add more water if it is thick.",
+        "Toss the lentils with the cucumber, tomatoes, onion, parsley, the rest of the lemon juice, the rest of the oil and the remaining salt.",
+        "Spread the hummus on a plate, make a dip in the middle and pile the lentil salad beside it. Arrange the egg and carrot sticks around the edge."
+      ],
+      "prepMin": 15,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make the hummus and boil the egg the night before and it is a 5-minute lunch."
+    },
+    {
+      "id": "bean-kitchen-white-bean-tuna-potato-salad",
+      "name": "White bean and tuna salad with potatoes and spinach",
+      "inspiredBy": "Inspired by the Tuscan tonno e fagioli",
+      "about": "A Tuscan-style salad of creamy white beans, flaked tuna, a firm hard-boiled egg, warm boiled potatoes, tomatoes and baby spinach in a bright lemon dressing. The beans and tuna bring **protein, folate and iron**, and the potatoes make it a full lunch.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed well"
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 90,
+          "note": "canned in water, drained"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "whole"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 130,
+          "note": "small, scrubbed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "baby leaves"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100,
+          "note": "halved"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 20,
+          "note": "sliced very thin"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "note": "fresh juice"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the potatoes and produce. Cut the potatoes into bite-sized chunks, put them in a pot with the egg, cover with cold water, bring to a boil and cook for about 12 minutes, until a knife slides in easily and the egg yolk is completely firm. Drain, then cool the egg in cold water, peel it and cut it into quarters.",
+        "Whisk the oil, lemon juice, salt and pepper in a large bowl. Add the warm potatoes and onion and toss, so they soak up the dressing.",
+        "Fold in the white beans, tuna, tomatoes and parsley, flaking the tuna with a fork. Top with the egg.",
+        "Add the spinach just before serving so it stays fresh and bright."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Canned light tuna is low in mercury; keep fresh or frozen tuna out of the week. For a packed lunch, boil the potatoes and egg the night before, keep them in the fridge and add the spinach in the morning."
+    },
+    {
+      "id": "bean-kitchen-three-bean-chili",
+      "name": "Three-bean beef chili",
+      "inspiredBy": "Inspired by Tex-Mex chili con carne",
+      "about": "A thick, smoky chili with kidney, black and pinto beans, lean beef, carrot, tomatoes and sweet peppers, topped with avocado, a spoonful of yogurt and lime. The three beans bring **fibre, folate and iron**, and the spices are bloomed in the oil for depth.",
+      "ingredients": [
+        {
+          "food": "kidney-beans-canned-no-salt-added-drained-89a75f",
+          "g": 70,
+          "swap": "legumes",
+          "note": "rinsed well"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 70,
+          "swap": "legumes",
+          "note": "rinsed well"
+        },
+        {
+          "food": "pinto-beans-canned-no-salt-added-drained-0b80db",
+          "g": 70,
+          "swap": "legumes",
+          "note": "rinsed well"
+        },
+        {
+          "food": "ground-beef-85-lean-raw-26e746",
+          "g": 85,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "diced small"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "swap": "vit_c_fruit",
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 200
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 30,
+          "swap": "dairy_protein",
+          "note": "as a topping"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10,
+          "note": "fresh juice"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "chopped"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 3
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 2
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Wash the carrot, pepper and parsley. Heat the oil in a large pot over medium heat and cook the onion, carrot and pepper for about 7 minutes, until soft. Add the garlic, chili powder, cumin and smoked paprika and stir for 30 seconds until fragrant.",
+        "Add the beef and cook, breaking it up, until no pink remains and it reaches 71 °C (160 °F), about 6 minutes. Wash your hands and the board after handling the raw beef.",
+        "Stir in the crushed tomatoes, all three beans, the salt and about 150 ml of water. Simmer, partly covered, for 18 to 20 minutes until thick, adding a splash of water if it catches.",
+        "Stir in the lime juice. Serve topped with the avocado, yogurt and parsley.",
+        "Pack the second portion for tomorrow's lunch: cool it in a shallow container and refrigerate within 2 hours. Keep up to 3 days and reheat once to 74 °C (165 °F), until steaming. To freeze, cool within 2 hours and freeze for up to 2 months. Thaw overnight in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F) until steaming."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Easing into beans? Rinse canned beans well and start with a smaller bowl, then build up over a week or two. Keep the rest of the pinto beans covered in the fridge for Thursday's breakfast bowl, and freeze the leftover black and kidney beans for Friday's stew or another chili. Skip the beef for a fully vegetarian pot."
+    },
+    {
+      "id": "bean-kitchen-ginger-soy-salmon-edamame-spinach",
+      "name": "Ginger-soy salmon with edamame, spinach and roasted sweet potato",
+      "inspiredBy": "Inspired by Japanese teriyaki-style salmon",
+      "about": "Salmon fillets glazed with ginger, garlic, lime and reduced-sodium soy, served over garlicky wilted spinach and edamame with caramelized roasted sweet potato. It is the first fish night, with **omega-3 and some vitamin D** from the salmon and plant protein from the edamame.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 160,
+          "swap": "fatty_fish",
+          "note": "skin on or off, pin bones removed"
+        },
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 100,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 200,
+          "note": "scrubbed, cut in wedges"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 12
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 12,
+          "note": "fresh juice"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the sweet potato and spinach. Cut the sweet potato into thin wedges. Toss them with half the olive oil and a pinch of salt on a tray and roast for 15 minutes.",
+        "Whisk the soy sauce, lime juice, ginger and half the garlic. Pour half over the salmon in a dish and marinate in the fridge for 10 minutes. Never reuse the marinade that touched raw fish.",
+        "Move the sweet potato aside and put the salmon on the tray. Roast for 10 to 12 minutes, until the fish flakes and reaches 70 °C (158 °F). Wash your hands and the board after handling raw fish.",
+        "Meanwhile, warm the rest of the oil in a pan, add the remaining garlic, the edamame and the spinach and cook for about 4 minutes, until the spinach is wilted and the edamame is hot. Splash in the reserved sauce.",
+        "Serve the salmon over the spinach and edamame with the sweet potato."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Eat the fish fresh: salmon is one of the two dinners this week that is not a leftover."
+    },
+    {
+      "id": "bean-kitchen-lentil-squash-dal",
+      "name": "Lentil and squash dal",
+      "inspiredBy": "Inspired by Indian dal",
+      "about": "Red lentils melt into a golden, gently spiced dal with sweet butternut squash and carrot, served with a cool cucumber and tomato salad and brightened with lemon and parsley. It brings **iron, folate and vitamin A**, and the lemon helps your body absorb the iron.",
+      "ingredients": [
+        {
+          "food": "lentil-red-hulled-dry-d3e937",
+          "g": 80,
+          "swap": "legumes"
+        },
+        {
+          "food": "butternut-squash-raw-dc25d8",
+          "g": 150,
+          "note": "peeled, cut in small cubes"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "diced small"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 6,
+          "note": "grated"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 80
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 2
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 1.5
+        },
+        {
+          "food": "coriander-seed-cilantro-973ca2",
+          "g": 1.5
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "note": "fresh juice"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Wash the squash, carrot, cucumber, tomatoes and parsley. Rinse the lentils under cold water until it runs clear.",
+        "Heat the oil in a large pot over medium heat. Cook the onion for 5 minutes, then add the garlic, ginger, cumin, turmeric and coriander and stir for 30 seconds until fragrant.",
+        "Add the lentils, squash, carrot, crushed tomatoes, salt and about 600 ml of water. Bring to a boil, then simmer for 20 minutes, stirring now and then, until the lentils have broken down and the squash is tender.",
+        "Stir in the garam masala and half the lemon juice and cook for 1 minute. Scatter with parsley.",
+        "While the dal finishes, toss the cucumber and tomatoes with the rest of the lemon juice and a pinch of the salt. Serve this cool, crunchy salad next to the dal.",
+        "Pack the second portion for lunch: cool it in a shallow container, refrigerate within 2 hours, keep up to 3 days and reheat once to 74 °C (165 °F). To freeze, cool within 2 hours and freeze for up to 2 months. Thaw overnight in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F) until steaming."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Add a pinch of chili flakes with the cumin for heat, and spoon it over a little cooked millet or quinoa if you have some."
+    },
+    {
+      "id": "bean-kitchen-tuscan-white-beans-greens-egg",
+      "name": "Tuscan white beans with spinach, potatoes and baked eggs",
+      "inspiredBy": "Inspired by Tuscan fagioli all'uccelletto",
+      "about": "Creamy cannellini-style beans simmered with rosemary, tomato, carrot and spinach, with diced potato for body and eggs baked firm on top. It is rustic and deeply savoury, with **fibre, plant iron and folate** from the beans and greens.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 190,
+          "swap": "legumes",
+          "note": "rinsed well"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 70,
+          "note": "scrubbed, diced small"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 100
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "whole"
+        },
+        {
+          "food": "rosemary-e0b942",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "fresh juice"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Wash the potato, carrot and spinach. Warm the oil in a wide pot over medium heat and cook the onion and carrot for 6 minutes. Add the garlic, rosemary and chili flakes and cook 1 minute.",
+        "Add the potato, crushed tomatoes, salt and about 300 ml of water. Simmer, covered, for 10 minutes, until the potato is almost tender.",
+        "Stir in the beans and simmer for 8 minutes more. Mash a few beans against the side of the pot to make the broth creamy, then stir in the spinach until it wilts.",
+        "Make a small well for each egg and crack them in. Cover and cook gently for about 8 minutes, until the white and yolk are completely firm. Wash your hands after handling the raw eggs.",
+        "Finish with lemon juice. Pack the second portion for lunch: cool it in a shallow container, refrigerate within 2 hours, keep up to 3 days and reheat once to 74 °C (165 °F)."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Add the rind of a hard cheese to the pot while it simmers if you have one."
+    },
+    {
+      "id": "bean-kitchen-black-bean-sweet-potato-stew",
+      "name": "Black bean and sweet potato stew",
+      "inspiredBy": "Inspired by Caribbean and Latin American black bean stews",
+      "about": "A smoky, lime-bright stew of black beans and sweet potato with peppers, cumin and smoked paprika, finished with creamy avocado and toasted pumpkin seeds. It brings **fibre, potassium and vitamin A**, and it is even better the next day.",
+      "ingredients": [
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 205,
+          "swap": "legumes",
+          "note": "rinsed well"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 110,
+          "note": "peeled, small cubes"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "swap": "vit_c_fruit",
+          "note": "diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 120
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 2
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 2
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15,
+          "note": "fresh juice"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Wash the sweet potato, pepper and parsley. Heat the oil in a large pot over medium heat and cook the onion and pepper for 5 minutes. Add the garlic, cumin, smoked paprika and chili powder and stir for 30 seconds.",
+        "Add the sweet potato, crushed tomatoes, salt and about 300 ml of water. Bring to a boil, then simmer, covered, for 12 minutes.",
+        "Stir in the black beans and simmer uncovered for 10 minutes more, until the sweet potato is tender and the stew is thick. Mash a few beans against the pot to thicken it.",
+        "Stir in the lime juice. Serve topped with the avocado, pumpkin seeds and parsley.",
+        "Pack the second portion for tomorrow's lunch: cool it in a shallow container and refrigerate within 2 hours. Keep up to 3 days and reheat once to 74 °C (165 °F). To freeze, cool within 2 hours and freeze for up to 2 months. Thaw overnight in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F) until steaming."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Leave out the chili powder for a mild pot."
+    },
+    {
+      "id": "bean-kitchen-spanish-chicken-chickpea-potato-stew",
+      "name": "Spanish-style chicken, chickpea and potato stew",
+      "inspiredBy": "Inspired by Spanish chicken and chickpea stews",
+      "about": "Tender chicken thighs simmered with chickpeas, potatoes, peppers and smoked paprika in a garlicky tomato broth, finished with spinach and lemon. It is the weekend project: the stew gets better overnight and brings **protein, iron and zinc**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 135,
+          "swap": "lean_protein",
+          "note": "trimmed, cut in chunks"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed well"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 100,
+          "note": "scrubbed, cut in chunks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "swap": "vit_c_fruit",
+          "note": "sliced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 120
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 3
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "note": "fresh juice"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        }
+      ],
+      "steps": [
+        "Wash the pepper, spinach and parsley. Pat the chicken dry and season with half the salt and half the smoked paprika. Heat the oil in a large pot over medium-high heat and brown the chicken for about 5 minutes. Wash your hands, board and knife after handling raw chicken.",
+        "Add the onion and pepper and cook for 5 minutes, then stir in the garlic, cumin and the rest of the paprika for 30 seconds.",
+        "Add the potatoes, crushed tomatoes, the remaining salt and about 300 ml of water. Bring to a boil, then cover and simmer for 20 minutes.",
+        "Stir in the chickpeas and simmer uncovered for 10 minutes more, until the potatoes are tender, the sauce is thick and the chicken reaches 74 °C (165 °F).",
+        "Fold in the spinach until wilted, then add the lemon juice and parsley.",
+        "Pack the second portion for tomorrow's lunch: cool it in a shallow container and refrigerate within 2 hours. Keep up to 3 days and reheat once to 74 °C (165 °F). To freeze, cool within 2 hours and freeze for up to 2 months. Thaw overnight in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F) until steaming."
+      ],
+      "prepMin": 15,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "weekend-project"
+      ],
+      "tip": "A strip of orange peel simmered in the pot adds a classic Spanish note."
+    },
+    {
+      "id": "bean-kitchen-lemon-trout-warm-lentils-roasted-tomatoes",
+      "name": "Lemon trout on warm lentils with roasted tomatoes",
+      "inspiredBy": "Inspired by French lentilles with fish",
+      "about": "Trout fillets roasted with lemon over earthy lentils warmed with carrot, onion and garlic, with blistered cherry tomatoes and a handful of spinach. It is the second fish night, with **omega-3, protein and some vitamin D**, plus the lentils' iron and folate.",
+      "ingredients": [
+        {
+          "food": "trout-raw-f3ae43",
+          "g": 185,
+          "swap": "fatty_fish",
+          "note": "pin bones removed"
+        },
+        {
+          "food": "lentils-canned-no-salt-added-drained-c1edbd",
+          "g": 110,
+          "swap": "legumes",
+          "note": "rinsed well"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100,
+          "note": "whole"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "finely diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "finely diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "sliced, toasted"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 30,
+          "note": "fresh juice and slices"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.0
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Wash the tomatoes, carrot, spinach and parsley. Put the tomatoes on a lined tray with a little of the oil and roast for 10 minutes.",
+        "Push the tomatoes aside, lay the trout on the tray, brush with a little oil, top with lemon slices and a pinch of the salt. Roast for 10 to 12 minutes, until the fish flakes and reaches 70 °C (158 °F). Wash your hands and the board after handling raw fish.",
+        "Meanwhile, warm most of the remaining oil in a pan and cook the carrot and onion for 6 minutes. Add the garlic and cumin, then the lentils and a splash of water and warm through for 4 minutes. Stir in the spinach until wilted, then the lemon juice, parsley, pepper and the rest of the salt. Toast the almonds in a dry pan for 2 minutes.",
+        "Serve the trout over the lentils with the roasted tomatoes, scattered with the toasted almonds."
+      ],
+      "prepMin": 15,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Salmon works in place of trout if you prefer."
+    },
+    {
+      "id": "bean-kitchen-orange-pumpkin-seeds",
+      "name": "Orange with pumpkin seeds",
+      "about": "A juicy orange with a small handful of pumpkin seeds, sweet and crunchy at once. It brings **vitamin C, magnesium and zinc**, and the vitamin C helps your body absorb the iron in the beans.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the orange before peeling it. Peel, segment and eat with the pumpkin seeds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "bean-kitchen-pear-walnuts",
+      "name": "Pear with walnuts",
+      "about": "A ripe pear and a small handful of walnuts, soft and crunchy together. It brings **fibre and a little plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 150
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the pear, slice it and serve with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "bean-kitchen-yogurt-berries-walnuts",
+      "name": "Greek yogurt with berries, walnuts and chia",
+      "about": "Thick Greek yogurt with frozen berries that thaw into a sauce, a sprinkle of walnuts and a spoonful of chia. It brings **protein, calcium and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mixed-berry-frozen-9f87f1",
+          "g": 60,
+          "swap": "berries",
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 8,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl, top with the berries and let them thaw for a few minutes, then add the walnuts and chia."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "If you are cooking for someone who is pregnant, 60 or older, 5 or under, or has a weak immune system, simmer the frozen berries for 1 minute and cool them first, or use fresh."
+    },
+    {
+      "id": "bean-kitchen-apple-almonds",
+      "name": "Apple with almonds",
+      "about": "A crisp apple with a small handful of almonds for crunch. It brings **fibre, vitamin E and magnesium**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 160
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the apple, slice it and serve with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "bean-kitchen-carrot-cucumber-tahini-dip",
+      "name": "Carrot and cucumber sticks with lemon tahini",
+      "about": "Crunchy carrot and cucumber sticks with a quick lemon tahini dip that takes a minute to stir. It brings **fibre, vitamin A and some calcium**.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 90,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "cut into sticks"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 15,
+          "note": "well stirred"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "fresh juice"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the carrot and cucumber and cut into sticks. Stir the tahini, lemon juice, salt and a splash of cold water until smooth and pourable, then serve for dipping."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "bean-kitchen-edamame-lime-chili",
+      "name": "Edamame with lime and chili",
+      "about": "Warm shelled edamame tossed with lime and a pinch of chili, salty and bright. It brings **plant protein, folate and iron**.",
+      "ingredients": [
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 100,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "note": "fresh juice"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Cook the edamame in boiling water for 3 minutes, then drain. Toss with the lime juice, chili flakes and salt and eat warm."
+      ],
+      "prepMin": 2,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "bean-kitchen-edamame-lemon-cumin",
+      "name": "Edamame with lemon and cumin",
+      "about": "Warm shelled edamame tossed with lemon juice, a little ground cumin and a pinch of salt. It brings **plant protein, folate and iron**, and the lemon helps your body absorb the iron.",
+      "ingredients": [
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 100,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "note": "fresh juice"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Cook the edamame in boiling water for 3 minutes, then drain. Toss with the lemon juice, cumin and salt and eat warm."
+      ],
+      "prepMin": 2,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "bean-kitchen-sardines-tomato-cucumber-plate",
+      "name": "Sardines with tomato, cucumber and lemon",
+      "about": "Canned sardines with their soft bones, fresh tomato and cucumber and a squeeze of lemon, ready in two minutes. They bring **omega-3, calcium, vitamin B12 and some vitamin D**.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 60,
+          "swap": "fatty_fish",
+          "note": "drained"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 70,
+          "note": "halved"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "note": "fresh juice"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 3,
+          "note": "chopped"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the tomatoes, cucumber and parsley. Arrange the cucumber and tomatoes on a plate, lay the sardines on top, then finish with the lemon juice, parsley and pepper."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Buy two tins for Thursday and Friday. Sardines are packed in oil; drain them well and keep the soft bones in for the calcium. Keep any opened tin in a covered container in the fridge and use it within 2 days."
+    },
+    {
+      "id": "bean-kitchen-yogurt-pear-walnuts",
+      "name": "Greek yogurt with pear and walnuts",
+      "about": "Thick Greek yogurt with diced pear, cinnamon and a few walnuts, a protein-rich extra at the bigger sizes. It brings **protein, calcium and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 100,
+          "note": "diced, skin on"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the pear, then dice it. Spoon the yogurt into a bowl and top with the pear, walnuts and cinnamon."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "bean-kitchen-yogurt-apple-walnuts",
+      "name": "Greek yogurt with apple and walnuts",
+      "about": "Thick Greek yogurt with diced apple, cinnamon and a few walnuts, a protein-rich extra at the bigger sizes. It brings **protein, calcium and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 100,
+          "note": "diced, skin on"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the apple, then dice it. Spoon the yogurt into a bowl and top with the apple, walnuts and cinnamon."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "bean-kitchen-almond-walnut-pumpkin-seed-mix",
+      "name": "Almond, walnut and pumpkin seed mix",
+      "about": "A small handful of almonds, walnuts and pumpkin seeds, an easy extra at the bigger sizes. It brings **vitamin E, magnesium and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Mix the almonds, walnuts and pumpkin seeds in a small bowl."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "bean-kitchen-orange-almonds",
+      "name": "Orange with almonds",
+      "about": "A juicy orange and a handful of almonds, fresh and crunchy. It brings **vitamin C, vitamin E and some calcium**.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the orange before peeling it. Peel, segment and eat with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "bean-kitchen-apple-walnuts",
+      "name": "Apple with walnuts",
+      "about": "A crisp apple with a handful of walnuts, an easy extra at the bigger sizes. It brings **fibre and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 160
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the apple, slice it and serve with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "bean-kitchen-overnight-oats-berries-walnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "bean-kitchen-hummus-plate-lentil-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "bean-kitchen-three-bean-chili"
+        },
+        {
+          "slot": "snack",
+          "recipe": "bean-kitchen-orange-pumpkin-seeds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "bean-kitchen-edamame-lemon-cumin"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "bean-kitchen-apple-cinnamon-walnut-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "bean-kitchen-three-bean-chili",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "bean-kitchen-ginger-soy-salmon-edamame-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "bean-kitchen-edamame-lime-chili"
+        },
+        {
+          "slot": "snack",
+          "recipe": "bean-kitchen-pear-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "bean-kitchen-overnight-oats-berries-walnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "bean-kitchen-white-bean-tuna-potato-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "bean-kitchen-lentil-squash-dal"
+        },
+        {
+          "slot": "snack",
+          "recipe": "bean-kitchen-apple-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "bean-kitchen-carrot-cucumber-tahini-dip"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "bean-kitchen-pinto-sweet-potato-breakfast-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "bean-kitchen-lentil-squash-dal",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "bean-kitchen-tuscan-white-beans-greens-egg"
+        },
+        {
+          "slot": "snack",
+          "recipe": "bean-kitchen-sardines-tomato-cucumber-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "bean-kitchen-yogurt-berries-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "bean-kitchen-overnight-oats-berries-walnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "bean-kitchen-tuscan-white-beans-greens-egg",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "bean-kitchen-black-bean-sweet-potato-stew"
+        },
+        {
+          "slot": "snack",
+          "recipe": "bean-kitchen-sardines-tomato-cucumber-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "bean-kitchen-orange-pumpkin-seeds"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "bean-kitchen-chickpea-potato-breakfast-hash-eggs"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "bean-kitchen-black-bean-sweet-potato-stew",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "bean-kitchen-spanish-chicken-chickpea-potato-stew"
+        },
+        {
+          "slot": "snack",
+          "recipe": "bean-kitchen-yogurt-berries-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "bean-kitchen-pear-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "bean-kitchen-apple-cinnamon-walnut-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "bean-kitchen-spanish-chicken-chickpea-potato-stew",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "bean-kitchen-lemon-trout-warm-lentils-roasted-tomatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "bean-kitchen-edamame-lime-chili"
+        },
+        {
+          "slot": "snack",
+          "recipe": "bean-kitchen-carrot-cucumber-tahini-dip"
+        }
+      ]
+    }
+  ]
+}
