@@ -67,6 +67,13 @@ Per recipe and per week, the cooking-sense checks:
 - at most about 45 distinct groceries per week. Dried spices, dried herbs, spice blends, salt and pepper don't count: they're a pantry shelf with its own limit of 25, so season properly;
 - no em dashes or en dashes anywhere. Use a comma, a full stop, or "and".
 
+**House bans (Firas), checked for every family whatever its style:**
+- **No pork in any form** (bacon, ham, lard, chorizo, salami and the rest). Beef, turkey or chicken versions of a cured meat
+  are fine when the library has them.
+- **No alcohol in any recipe**: no wine, beer, spirits, mirin, sake or Shaoxing wine, in the pot or in the words ("serve
+  with beer"). Vinegars are fine.
+- **Eggs cooked until the yolk is firm**: no soft-boiled, jammy, runny or sunny-side eggs.
+
 ## 3. Taste comes first: the rubric
 
 The chef critic and the final reviewer score every meal from 1 to 5 on each point. Any 2 sends the family back. So
@@ -631,3 +638,30 @@ Same loop, same safety lines as batch C. Each style's gate and `note` are in src
   bowls, with vegetables in every dish.
 - **Little ones:** never whole nuts for under-4s (nut butters thinly spread are fine), no honey for babies under 1, and
   grapes and cherry tomatoes cut in quarters. Put these in tips where they apply.
+
+## 13b. Everyday global plans (Wave 3)
+The 30 plans that open the Plans tab. Briefs in CATALOG "Wave 3". They are what most people will cook, so taste and
+ease come first, and they follow Firas's framework to the letter.
+
+- **Framework:** 80% of the RDA or AI for every board nutrient every day; high fibre (aim for 35 g at Standard); low
+  saturated fat (under 10%, aim nearer 8%); whole foods first: legumes, nuts, seeds, fruit and vegetables at every meal.
+- **Global, not regional.** A week borrows from everywhere the way people cook at home now: a curry on Monday, a
+  sheet-pan salmon on Tuesday, a chili on Thursday. Name dishes plainly ("Chickpea and spinach curry"), add the source in
+  `inspiredBy` when a dish has one. Use spices freely; avoid hard-to-find staples unless the dish needs them.
+- **Carbs, by class** (`carbStyle` in the family file, checked by the lab):
+  - `"whole"` (20 plans): legumes, potatoes, sweet potatoes, squash, fruit, and intact grains (oats, quinoa, barley,
+    buckwheat, millet, freekeh). No bread, rice, pasta, tortillas, bulgur, couscous or flour products (up to 10 g of
+    cornstarch to thicken is fine).
+  - `"wholegrain"` (10 plans): adds brown rice, whole-wheat pasta, whole-grain bread, corn tortillas, bulgur and soba in
+    modest portions (a fist of cooked grain), always next to vegetables and legumes.
+- **The shape:** `cuisine: "Global"`, `style: "balanced"`, `regions: []` or a few countries the week borrows from,
+  sizes Light (1400-1800), Standard (1800-2400) and Big (2400-3200), claimed where they pass. Fatty fish at least twice a
+  week (low-mercury). Protein at every main meal. Breakfasts recognisable and quick on weekdays.
+- **House bans:** no pork, no alcohol, eggs cooked firm (GUIDE §2).
+- **Make it everyday:** at most about 45 groceries, at least two dishes cooked once and eaten twice, weekday dinners
+  under about 40 minutes, one weekend project at most. Real portions; no crutches (GUIDE §11).
+- **Tell them apart:** each plan has a clear idea (its CATALOG row). Stay on it: a Soup and Stew week is mostly soups
+  and stews; a Sheet-Pan week cooks dinners on a tray.
+- **Plan text:** `summary` sells the idea in two sentences; `howItWorks` explains the cook-once days, where the fish
+  and the protein come from, and what changes at Light, honestly.
+

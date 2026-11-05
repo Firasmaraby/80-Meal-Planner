@@ -7,7 +7,7 @@
    - §2: the sodium ceiling, the mercury and liver limits, and the upper limits;
    - §5, §7, §9 and §11;
    - §12: the batch 2A, 2B and C lessons, and the "Batch C rule" (the same spirit applies);
-   - §13 in full, especially your diet's section.
+   - §13 in full, especially your diet's section (§13b for the Everyday global plans).
 2. Your family's brief in `content/CATALOG.md` (Batch D).
 3. Your style in `src/engine/planStyles.ts`: its gates, bans and `note` (the app shows the note on your plan, so don't repeat it word for word in `howItWorks`). If your style has bans, read the ban regexes so you know what they catch.
 4. The worked examples your brief names. Don't copy their dishes.
@@ -21,6 +21,8 @@
   - Thaw in the fridge, use within 2 days, never refreeze.
 - **Claims:** no medical claims anywhere. Say what a food brings ("iron, with vitamin C to help absorb it"), not what it will cure or prevent. No supplements or powders in recipes.
 - **Alcohol:** leave it out of every recipe (no wine, beer, spirits or mirin in cooking); use stock, vinegar, citrus or a pinch of sugar instead.
+- **Pork:** none in any form, anywhere (bacon, ham, lard, chorizo...). Use chicken, turkey, beef, lamb, fish or beans; beef or turkey versions of cured meats only if the library has them. The lab checks foods and words for every family (GUIDE §2 house bans).
+- **Eggs:** yolks firm, always, in the words too (no soft-boiled, jammy or runny). The lab checks it.
 
 ## Sodium and the usual rules
 - **Write under the sodium ceiling from the start:**
