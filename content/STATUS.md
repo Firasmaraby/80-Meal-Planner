@@ -125,4 +125,9 @@ Every family in CATALOG.md moves through these steps:
   - `sheet-pan-suppers`, `big-bowls`, `soup-and-stew` and `bean-kitchen` are whole-food carbs and keep every band, Light 1400 included.
   - `everyday-classics` (whole grains) is Light 1600-1800 only: Saturday and Sunday can't trim to 1,400 without a nutrient under 80%, and the plan text says so.
   - The writer brief now carries the wave 1 lessons: true Light and Big text, meat at least about 70 g at 1,400, standard safety lines, honest times, iron 40 mg or under at Big.
+- **Nov 5:** **Everyday wave 2 shipped (10 of 30).** `potato-kitchen`, `fish-and-seafood`, `chicken-every-way`, `one-pot` and `pasta-night` (whole grains) all keep every band, Light 1400 included.
+  - Two writers had dropped 1400; critics found routes. The usual one: Light `kcal` 1600 to 1650 plus more greens. For Potato Kitchen it was a Light-only jacket-potato swap, so the star stays real.
+  - Upper limits at Big 3200 sit under the house headroom everywhere.
+  - Only `everyday-classics` stays Light 1600-1800.
+  - Wave 3 is in review.
 
