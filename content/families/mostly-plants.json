@@ -1,0 +1,1990 @@
+{
+  "id": "mostly-plants",
+  "name": "Mostly Plants",
+  "style": "balanced",
+  "cuisine": "Global",
+  "carbStyle": "whole",
+  "regions": [
+    "Spain",
+    "Hungary",
+    "Turkey",
+    "India",
+    "Britain",
+    "Japan",
+    "Mexico"
+  ],
+  "summary": "Plants lead at nearly every meal: a mushroom, lentil and tofu cottage pie, a chickpea and spinach stew, a crispy tofu traybake and bean-stuffed peppers, with salmon and trout for the fish and one paprika chicken stew. Fortified soy milk, eggs and calcium-set tofu cover B12, choline and calcium, and the carbs are all whole foods.",
+  "howItWorks": "**Plants first.** Four dinners are meat-free, built on lentils, chickpeas, beans, tofu and greens. Oats and quinoa are the only grains, with potato and sweet potato for comfort. Fish lands on Tuesday and Sunday, and the week's one chicken dish is Friday's stew, which is also Saturday's lunch.\n\n**Why the eggs.** Choline is the hard one in a plant-heavy week, and eggs are its main source here, so one or two show up every day, always cooked until the yolk is firm. Tofu, edamame, quinoa, fish and chicken add the rest.\n\n**B12 and calcium.** Fortified soy milk brings most of the **B12** and much of the calcium on most days, so choose one with about 100% of the daily value of B12 per cup (check the label). An unfortified soy drink leaves several days short, so use cow's milk instead. Fish, eggs and yogurt cover the rest, and calcium-set tofu, kale and tahini add calcium.\n\n**Cook once, eat twice.** Monday's pie, Wednesday's chickpea stew, Friday's chicken stew and Saturday's peppers each become the next day's lunch. Cool them within the hour, keep them up to 3 days and reheat to 74 °C (165 °F). Salmon and trout are always cooked fresh. Wash all fruit and vegetables before cutting, lemons and limes too.\n\n**Light.** It covers 1,400 to 1,800 kcal and drops the second snack every day. At 1,400 the oats, quinoa, nuts and oil shrink most, tofu and beans trim a little, the salmon becomes a smaller fillet and the chicken a small portion; the trout, eggs and soy milk hold.\n\n**Big.** It grows the oats, soy milk, quinoa, beans, tofu, eggs, chicken and fish, swaps Monday's edamame for a yogurt bowl and adds a snack on the other six days, so fibre runs very high: build up slowly.",
+  "signature": [
+    "mostly-plants-lentil-shepherds-pie",
+    "mostly-plants-chickpea-spinach-potato-stew",
+    "mostly-plants-crispy-tofu-broccoli-sweet-potato-traybake",
+    "mostly-plants-bean-stuffed-peppers-quinoa"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1650,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "mostly-plants-yogurt-banana-walnuts"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "mostly-plants-yogurt-banana-walnuts"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "mostly-plants-banana-peanut-butter-cinnamon"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "mostly-plants-chili-garlic-edamame"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "mostly-plants-berry-banana-soy-smoothie"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "mostly-plants-apple-peanut-butter"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "mostly-plants-berry-banana-soy-smoothie"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "mostly-plants-cardamom-berry-porridge",
+      "name": "Cardamom berry porridge with walnuts",
+      "inspiredBy": "Inspired by Scandinavian spiced porridge",
+      "about": "Oats simmered in fortified soy milk with frozen berries, chia and cardamom until thick and creamy, then topped with toasted walnuts. Warm, gently sweet and ready in ten minutes, it brings **fibre, omega-3 and B12** (the B12 comes from the fortified soy milk).",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 55,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "soy-milk-all-flavors-enhanced-f9fdd1",
+          "g": 240,
+          "swap": "dairy_protein",
+          "note": "choose a soy milk fortified with B12 and calcium (check the label)"
+        },
+        {
+          "food": "mixed-berry-frozen-9f87f1",
+          "g": 100,
+          "swap": "berries",
+          "note": "straight from the freezer"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.8
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put the oats, soy milk, frozen berries, chia, cardamom, cinnamon and salt in a small pot.",
+        "Bring to a gentle simmer over medium heat, stirring often, and cook for 6 to 8 minutes until thick and the berries have melted into purple swirls.",
+        "Toast the walnuts in a dry pan for 2 minutes until they smell nutty.",
+        "Spoon the porridge into a bowl and scatter the walnuts over the top so they stay crunchy."
+      ],
+      "prepMin": 3,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mostly-plants-turmeric-tofu-scramble",
+      "name": "Turmeric tofu scramble with peppers, spinach and avocado",
+      "inspiredBy": "Inspired by Indian-style tofu bhurji",
+      "about": "Crumbled calcium-set tofu fried with turmeric, pepper and onion until golden, then wilted spinach, with sliced avocado on the side. It eats like a scramble and brings **plant protein, iron and some calcium** before eight o'clock.",
+      "ingredients": [
+        {
+          "food": "extra-firm-tofu-calcium-set-455d4a",
+          "g": 105,
+          "note": "pressed dry for 10 minutes, crumbled"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "washed, diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 30,
+          "note": "finely diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 45,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 1
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        }
+      ],
+      "steps": [
+        "Wash the pepper, spinach and avocado. Heat the oil in a non-stick pan over medium heat and soften the onion and pepper for 4 minutes.",
+        "Crumble in the tofu with the turmeric, cumin, smoked paprika and salt. Fry for 5 to 6 minutes, stirring now and then, until the tofu is hot and golden at the edges.",
+        "Add the spinach and stir for 1 minute until it has wilted.",
+        "Squeeze over the lime juice and serve with the sliced avocado alongside."
+      ],
+      "prepMin": 5,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mostly-plants-chocolate-tahini-banana-oats",
+      "name": "Chocolate tahini banana overnight oats",
+      "inspiredBy": "Inspired by Swiss overnight oats",
+      "about": "Oats soaked overnight in fortified soy milk with cocoa, mashed banana, chia and a spoonful of tahini, so it tastes like dessert and eats like a proper breakfast. Five minutes the night before gives you **fibre, calcium and omega-3**, plus B12 from the fortified soy milk.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 50,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "soy-milk-all-flavors-enhanced-f9fdd1",
+          "g": 170,
+          "swap": "dairy_protein",
+          "note": "choose a soy milk fortified with B12 and calcium (check the label)"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 90,
+          "note": "mashed"
+        },
+        {
+          "food": "cocoa-powder-unsweetened-f976ae",
+          "g": 5
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash your hands. Mash the banana in a jar or bowl, then stir in the cocoa, tahini, soy milk, cinnamon and salt until smooth.",
+        "Stir in the oats and chia until no dry oats are left. Put the lid on and refrigerate overnight.",
+        "In the morning, stir well and loosen with a splash of soy milk if it is thick. Eat it cold, or warm it in the microwave for 1 minute.",
+        "Keep it in the fridge and eat within 2 days of making it."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Never keep soaked oats more than 2 days; make a fresh jar on Tuesday night for Wednesday and Thursday night for Friday."
+    },
+    {
+      "id": "mostly-plants-mushroom-spinach-white-bean-omelette",
+      "name": "Mushroom, spinach and white bean omelette with blistered tomatoes",
+      "inspiredBy": "Inspired by a Spanish tortilla and a Tuscan egg and bean skillet",
+      "about": "A fully set omelette filled with browned mushrooms, wilted spinach and white beans, with cherry tomatoes blistered in the pan. The eggs bring **choline and B12**, and the beans and spinach add iron, with the tomatoes' vitamin C to help absorb it.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "whisked"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 80,
+          "note": "wiped clean, sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 90,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "washed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Wash the spinach, tomatoes and cilantro. Heat half the oil in a non-stick pan over medium-high heat and brown the mushrooms for 4 minutes.",
+        "Add the tomatoes and cook for 2 minutes until their skins blister, then add the spinach and white beans and cook for 1 minute until the spinach has wilted. Tip everything onto a plate.",
+        "Wipe the pan, add the rest of the oil and pour in the whisked eggs with the salt. Cook over medium heat, lifting the edges, for 3 minutes until the base is set. Wash your hands after cracking the eggs.",
+        "Spoon half the filling over one side, fold the other side over and cook for 2 minutes more, until the eggs are completely firm all the way through.",
+        "Slide onto a plate, spoon the rest of the filling alongside and scatter the cilantro over."
+      ],
+      "prepMin": 8,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "On a busy weekday, cook the mushroom, tomato and bean filling the night before, keep it in the fridge and reheat it until steaming hot while the eggs cook."
+    },
+    {
+      "id": "mostly-plants-peanut-lime-quinoa-egg-salad",
+      "name": "Peanut-lime quinoa salad with edamame, cabbage and egg",
+      "inspiredBy": "Inspired by Indonesian gado-gado and a Thai-style peanut slaw",
+      "about": "Fluffy quinoa tossed with edamame, green cabbage and carrot in a creamy peanut and lime dressing, topped with firm-boiled egg. It packs well, tastes better after an hour in the fridge, and gives you **plant protein, folate, fibre and choline**.",
+      "ingredients": [
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 48,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 100,
+          "swap": "legumes",
+          "note": "frozen"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 70,
+          "note": "washed, finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed, grated"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 6
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Put the egg in a pot of cold water, bring to the boil and simmer for 10 minutes until the yolk is completely firm. Cool under cold water, peel and quarter.",
+        "Rinse the quinoa, then simmer it in twice its volume of water, covered, for 12 to 15 minutes until the water is absorbed. Spread it in a shallow container and cool within 1 hour.",
+        "Cook the frozen edamame in boiling water for 3 minutes, until steaming hot all the way through, then drain and cool under cold water.",
+        "Whisk the peanut butter, lime juice, soy sauce, ginger and chili powder with 2 to 3 tablespoons of warm water until smooth and pourable.",
+        "Wash the cabbage, carrot and cilantro, then shred the cabbage, grate the carrot and chop the cilantro. Toss them with the quinoa, edamame and dressing, then top with the egg.",
+        "For a packed lunch, use a cold bag with an ice pack and eat it the same day. Keep cooked quinoa no more than 3 days."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook the quinoa for this salad on Sunday evening or Monday morning, cool it within 1 hour and keep it covered in the fridge for no more than 3 days."
+    },
+    {
+      "id": "mostly-plants-curried-lentil-kale-apple-salad",
+      "name": "Warm curried lentil and kale salad with apple, eggs and walnuts",
+      "inspiredBy": "Inspired by an Indian lentil salad and a French lentil and apple salad",
+      "about": "No-salt-added lentils warmed with curry powder and onion, folded through softened kale and crisp apple, then topped with firm-boiled eggs, lemon and walnuts. Ready in about twenty minutes, it gives you **iron, folate and choline**, with the lemon helping you absorb the iron.",
+      "ingredients": [
+        {
+          "food": "lentils-canned-no-salt-added-drained-c1edbd",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, shredded"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 90,
+          "note": "washed, diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "finely diced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "curry-powder-55e9c6",
+          "g": 2
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Put the eggs in a pot of cold water, bring to the boil and simmer for 10 minutes until the yolks are completely firm. Cool under cold water, peel and quarter.",
+        "Wash the kale, apple and cilantro. Heat the oil in a wide pan over medium heat and soften the onion for 4 minutes.",
+        "Stir in the curry powder for 30 seconds until fragrant, then add the lentils, kale, a splash of water and the salt. Cook, stirring, for 4 to 5 minutes until the kale is tender and the lentils are hot.",
+        "Take the pan off the heat and stir in the lemon juice and the diced apple, so the apple stays crisp.",
+        "Spoon into a bowl and top with the eggs, walnuts and cilantro. For a packed lunch, use a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 10,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "mostly-plants-smoky-black-bean-corn-avocado-salad",
+      "name": "Smoky black bean, corn and avocado salad with egg",
+      "inspiredBy": "Inspired by Mexican ensalada de frijoles",
+      "about": "Black beans, sweet corn, red pepper and tomatoes in a smoky lime dressing, with creamy avocado, a firm-boiled egg and toasted pumpkin seeds. It brings **fibre, folate, magnesium and choline**.",
+      "ingredients": [
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 190,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 50,
+          "note": "frozen"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "washed, diced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "washed, halved"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 70,
+          "note": "washed, diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 20,
+          "note": "finely diced"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Put the egg in a pot of cold water, bring to the boil and simmer for 10 minutes until the yolk is completely firm. Cool under cold water, peel and quarter.",
+        "Cook the frozen corn in boiling water for 3 minutes until steaming hot, then drain and cool under cold water.",
+        "Whisk the oil, lime juice, smoked paprika, cumin and salt in a bowl.",
+        "Wash the pepper, tomatoes, avocado and cilantro. Add the beans, corn, pepper, tomatoes, onion and cilantro to the bowl and toss well.",
+        "Fold in the avocado gently and top with the egg. Toast the pumpkin seeds in a dry pan for 2 minutes and scatter them over just before eating.",
+        "For a packed lunch, use a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 12,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "mostly-plants-lentil-shepherds-pie",
+      "name": "Mushroom, lentil and tofu cottage pie with sweet potato top",
+      "inspiredBy": "Inspired by British shepherd's and cottage pie, with lentils and mushrooms doing the meat's job",
+      "about": "A rich filling of lentils, crumbled tofu, mushrooms, carrot, peas and spinach with tomato and thyme, under a golden mash of sweet potato and a crunch of walnuts, with no meat at all. It is proper comfort food, it makes tomorrow's lunch, and it brings **iron, folate and vitamin A**.",
+      "ingredients": [
+        {
+          "food": "lentils-canned-no-salt-added-drained-c1edbd",
+          "g": 160,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "extra-firm-tofu-calcium-set-455d4a",
+          "g": 45,
+          "note": "patted dry, crumbled"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 175,
+          "note": "peeled, cut in 2 cm cubes"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 70,
+          "note": "wiped clean, finely chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed, finely diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "finely diced"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 40,
+          "note": "frozen"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 70
+        },
+        {
+          "food": "soy-milk-all-flavors-enhanced-f9fdd1",
+          "g": 30,
+          "swap": "dairy_protein",
+          "note": "for the mash; choose a soy milk fortified with B12 and calcium (check the label)"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "chopped, for the top"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 5
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Put the sweet potato in a pot of cold water with a pinch of the salt, bring to the boil and simmer for 12 minutes until a knife slides in easily. Heat the grill to high.",
+        "Meanwhile, warm the oil in a wide pan and cook the onion, carrot and mushrooms for 6 minutes until the water has cooked off and they begin to brown. Add the garlic and thyme and stir for 30 seconds.",
+        "Add the tofu, breaking it into small crumbs, and cook for 2 minutes. Add the lentils, crushed tomatoes, peas, soy sauce, bay leaf and 100 ml water. Simmer for 6 minutes until thick, then stir in the washed spinach until wilted and remove the bay leaf.",
+        "Drain the sweet potato, return it to the pot with the soy milk and the rest of the salt and mash until smooth.",
+        "Spoon the filling into an ovenproof dish and spread the mash over the top, rough it up with a fork and scatter the walnuts over. Grill for 5 to 6 minutes until the peaks are golden.",
+        "Serve one portion now.",
+        "Cool the second portion within 1 hour in a shallow container, then refrigerate. Eat it within 3 days and reheat it once until steaming hot, 74 °C (165 °F). To carry it to work, use a cold bag with an ice pack and reheat it before eating. To freeze, cool within 2 hours, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+      ],
+      "prepMin": 14,
+      "cookMin": 26,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "freezer-friendly",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "mostly-plants-ginger-soy-salmon-greens-quinoa",
+      "name": "Ginger-lime salmon with broccoli, garlicky kale and quinoa",
+      "inspiredBy": "Inspired by Japanese-style ginger and soy glazed salmon",
+      "about": "A salmon fillet roasted under a glaze of ginger, soy and lime beside broccoli florets, with garlicky kale and a bed of quinoa. Twenty-five minutes, and the salmon brings **omega-3, B12 and vitamin D**, while the kale adds calcium and vitamin K.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 170,
+          "swap": "fatty_fish",
+          "note": "skin on or off"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 110,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, shredded"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 80,
+          "note": "washed, cut in small florets"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 9
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 14,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "washed, chopped"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Rinse the quinoa and simmer it in twice its volume of water, covered, for 12 to 15 minutes. Drain any extra water, fluff and keep covered.",
+        "Whisk half the soy sauce with the ginger, half the garlic and the lime juice. Wash the broccoli. Put the salmon and the broccoli on a lined tray, spoon the glaze over the salmon and roast for 10 to 12 minutes, until the salmon flakes easily and reaches 70 °C (158 °F). Wash your hands and the board after handling the raw fish.",
+        "Meanwhile, wash the kale. Warm the oil in a wide pan, add the rest of the garlic and the kale and stir for 3 minutes until bright green.",
+        "Add the rest of the soy sauce and 3 tablespoons of water, cover and steam for 3 minutes until tender.",
+        "Serve the salmon and broccoli on the quinoa with the kale, and scatter the cilantro over the top."
+      ],
+      "prepMin": 12,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "mostly-plants-chickpea-spinach-potato-stew",
+      "name": "Chickpea and spinach stew with potatoes and toasted walnuts",
+      "inspiredBy": "Inspired by Spanish espinacas con garbanzos",
+      "about": "A smoky tomato stew of chickpeas, potato and a lot of spinach, finished with lemon, cool yogurt and a handful of toasted walnuts. It makes tomorrow's lunch, and the chickpeas, spinach and walnuts bring **folate, iron, magnesium and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 180,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 80,
+          "note": "scrubbed, cut in 1.5 cm cubes"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 120
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "minced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.0
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Warm the oil in a wide pot over medium heat and soften the onion for 5 minutes. Add the garlic, smoked paprika and cumin and stir for 30 seconds.",
+        "Add the potato, crushed tomatoes, salt and 200 ml water. Bring to a simmer, cover and cook for 12 minutes until the potato is almost tender.",
+        "Stir in the chickpeas and cook, uncovered, for 5 minutes. Add the washed spinach in handfuls and stir until it has wilted.",
+        "Toast the walnuts in a dry pan for 2 minutes. Finish the stew with the lemon juice and cilantro.",
+        "Serve with a spoonful of cold yogurt and the walnuts scattered on top. Keep the yogurt separate for the second portion; add it cold after reheating.",
+        "Cool the second portion within 1 hour in a shallow container, then refrigerate. Eat it within 3 days and reheat it once until steaming hot, 74 °C (165 °F). To carry it to work, use a cold bag with an ice pack and reheat it before eating. To freeze, cool within 2 hours, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "mostly-plants-crispy-tofu-broccoli-sweet-potato-traybake",
+      "name": "Crispy tofu traybake with broccoli, sweet potato and ginger-lime yogurt",
+      "inspiredBy": "Inspired by crisp-fried tofu from Japan and Indonesia, roasted on one tray",
+      "about": "Cubes of calcium-set tofu roasted until crisp at the edges with broccoli, sweet potato, mushrooms and onion, then drizzled with a cool ginger-lime yogurt sauce. It is one tray, and it brings **plant protein, some calcium, vitamin C and potassium**.",
+      "ingredients": [
+        {
+          "food": "extra-firm-tofu-calcium-set-455d4a",
+          "g": 105,
+          "note": "pressed dry, cut in 2 cm cubes"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 160,
+          "note": "washed, cut in florets"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 150,
+          "note": "scrubbed, cut in 2 cm cubes"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 80,
+          "note": "wiped clean, halved"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 9
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 14,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the broccoli and cilantro. Toss the sweet potato, mushrooms and onion with half the oil and the chili powder on a large tray and roast for 10 minutes.",
+        "Press the tofu dry between clean towels. Toss it with the rest of the oil and a third of the soy sauce until evenly coated.",
+        "Push the vegetables aside and add the tofu and broccoli to the tray in a single layer. Roast for 15 minutes more, turning once, until the tofu is crisp at the edges and the sweet potato is tender.",
+        "Stir the yogurt with the rest of the soy sauce, the lime juice, ginger, garlic and half the cilantro into a sauce.",
+        "Serve the traybake hot, with the cold sauce spooned over and the rest of the cilantro scattered on top."
+      ],
+      "prepMin": 15,
+      "cookMin": 26,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "mostly-plants-paprika-chicken-cabbage-stew",
+      "name": "Paprika chicken and cabbage stew with potatoes",
+      "inspiredBy": "Inspired by Hungarian paprikás and cabbage stews",
+      "about": "The week's only chicken goes into a mild paprika stew with cabbage, potato, carrot, kale and mushrooms, with a pinch of caraway and a squeeze of lemon. It makes tomorrow's lunch and brings **protein, vitamin A, vitamin C and fibre**.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "cut in 2 cm pieces"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 140,
+          "note": "scrubbed, cut in 2 cm cubes"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 80,
+          "note": "washed, shredded"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, shredded"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 70,
+          "note": "wiped clean, sliced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 100
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 3
+        },
+        {
+          "food": "caraway-seed-020d2f",
+          "g": 0.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Warm the oil in a large pot over medium heat and brown the mushrooms with the onion for 6 minutes. Add the garlic, paprika and caraway and stir for 30 seconds.",
+        "Add the chicken and stir for 3 minutes. Wash your hands and the board with hot soapy water after handling the raw chicken.",
+        "Add the crushed tomatoes, potato, carrot, cabbage, kale, salt, bay leaf and 300 ml water. Bring to a simmer, cover and cook for 18 minutes, stirring now and then, until the potato is soft, the cabbage is tender and the chicken reaches 74 °C (165 °F).",
+        "Remove the bay leaf and stir in the lemon juice. Serve one portion now.",
+        "Cool the second portion within 1 hour in a shallow container, then refrigerate. Eat it within 3 days and reheat it once until steaming hot, 74 °C (165 °F). To carry it to work, use a cold bag with an ice pack and reheat it before eating. To freeze, cool within 2 hours, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+      ],
+      "prepMin": 12,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "mostly-plants-bean-stuffed-peppers-quinoa",
+      "name": "Bean-stuffed peppers with quinoa, mint and lemon yogurt",
+      "inspiredBy": "Inspired by Turkish biber dolma, filled with beans",
+      "about": "Roasted red pepper halves filled with black beans, quinoa, spinach and a warm tomato sauce spiced Turkish-style with cinnamon, allspice and mint, finished with a spoonful of cool lemon yogurt. A relaxed weekend dish that makes tomorrow's lunch and brings **vitamin C, fibre, folate and iron**.",
+      "ingredients": [
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 200,
+          "note": "washed, halved lengthwise, seeds removed"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 160,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 90
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 45,
+          "note": "finely diced"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 40,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 14,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 0.5
+        },
+        {
+          "food": "mint-dried-3fe241",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Rinse the quinoa and simmer it in twice its volume of water, covered, for 12 to 15 minutes. Cool a little.",
+        "Put the pepper halves cut side up in a baking dish and roast for 15 minutes while you make the filling.",
+        "Warm the oil in a pan and soften the onion for 4 minutes. Add the garlic, cinnamon, allspice and dried mint and stir for 30 seconds.",
+        "Add the crushed tomatoes and salt and simmer for 5 minutes, then stir in the beans, quinoa and the washed spinach and cook for 2 minutes until the spinach wilts. Add half the lemon juice.",
+        "Spoon the filling into the pepper halves and bake for 20 minutes until the peppers are tender and the filling is steaming hot. Stir the rest of the lemon juice and a pinch of dried mint into the yogurt.",
+        "Serve with the cold yogurt on top. For the second portion, keep the yogurt separate.",
+        "Cool the second portion within 1 hour in a shallow container, then refrigerate. Eat it within 3 days and reheat it once until steaming hot, 74 °C (165 °F). To carry it to work, use a cold bag with an ice pack and reheat it before eating. To freeze, cool within 2 hours, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+      ],
+      "prepMin": 25,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "freezer-friendly",
+        "makes-leftovers",
+        "weekend-project"
+      ]
+    },
+    {
+      "id": "mostly-plants-lemon-trout-quinoa-peas",
+      "name": "Roast trout with lemon, quinoa, peas and a yogurt-cilantro sauce",
+      "inspiredBy": "Inspired by lemon-and-herb roast trout",
+      "about": "Rainbow trout roasted with lemon, served over fluffy quinoa and sweet peas with a cool yogurt-cilantro sauce and a bright cherry tomato salad. The trout brings **omega-3, B12 and vitamin D**, and the peas and edamame bring fibre and folate.",
+      "ingredients": [
+        {
+          "food": "rainbow-trout-farmed-raw-0cc800",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "skin on or off"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 70,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 50,
+          "note": "frozen"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 50,
+          "swap": "legumes",
+          "note": "frozen"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 120,
+          "note": "washed, halved"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 45,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 22,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 20,
+          "note": "very finely diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa and simmer it in twice its volume of water with a pinch of the salt, covered, for 12 to 15 minutes. Add the peas and edamame for the last 3 minutes so they are steaming hot, then fluff.",
+        "Heat the oven to 220 °C (425 °F). Put the trout on a lined tray, rub with half the oil, a little lemon juice, the garlic and a pinch of salt, and roast for 10 to 12 minutes until it flakes easily and reaches 70 °C (158 °F). Wash your hands and the board after handling the raw fish.",
+        "Wash the tomatoes and cilantro. Stir the yogurt, half the cilantro and a squeeze of lemon into a sauce.",
+        "Toss the tomatoes with the onion, the rest of the oil, the rest of the lemon juice, the rest of the cilantro and the salt.",
+        "Spoon the quinoa and peas onto plates, top with the trout, and serve with the yogurt sauce and the tomato salad."
+      ],
+      "prepMin": 12,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "mostly-plants-apple-peanut-butter",
+      "name": "Apple slices with peanut butter",
+      "about": "Crisp apple with a spoonful of peanut butter. A simple snack that brings **fibre and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 16,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the apple and slice it. Serve with the peanut butter for dipping."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mostly-plants-edamame-lime-salt",
+      "name": "Warm edamame with lime and sea salt",
+      "about": "A bowl of steaming edamame with lime. Quick plant protein, **folate and iron**.",
+      "ingredients": [
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 90,
+          "swap": "legumes",
+          "note": "frozen"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Cook the frozen edamame in boiling water for 3 minutes until steaming hot, then drain.",
+        "Toss with the lime juice and salt and eat warm."
+      ],
+      "prepMin": 3,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mostly-plants-veg-sticks-tahini-yogurt-dip",
+      "name": "Carrot and pepper sticks with tahini-yogurt dip",
+      "about": "Crunchy sticks of carrot and red pepper with a lemony tahini and yogurt dip. It brings **vitamin A, vitamin C and some calcium**.",
+      "ingredients": [
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "washed, cut in sticks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "washed, cut in sticks"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 40,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the carrot and pepper and cut them in sticks.",
+        "Stir the yogurt, tahini, lemon juice and salt together with a splash of water until smooth. Serve the dip with the sticks, and keep any left over in the fridge for up to 2 days."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mostly-plants-cumin-lime-roasted-chickpeas",
+      "name": "Crunchy cumin-lime roasted chickpeas",
+      "about": "Chickpeas roasted until crisp with cumin and a squeeze of lime. They bring **protein, fibre and zinc**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed, drained and patted very dry"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 210 °C (410 °F). Pat the chickpeas very dry and toss with the oil, cumin and salt.",
+        "Roast on a tray for 25 minutes, shaking once, until crisp. Squeeze the lime over and eat warm or cool. Store in an open container for up to 2 days."
+      ],
+      "prepMin": 3,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "mostly-plants-berry-yogurt-chia",
+      "name": "Greek yogurt with berries and chia",
+      "about": "Thick yogurt over thawed berries with a spoonful of chia for crunch. **Protein, calcium and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mixed-berry-frozen-9f87f1",
+          "g": 80,
+          "swap": "berries",
+          "note": "thawed"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 10,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl, top with the thawed berries and scatter the chia over."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "If you are cooking for someone who is pregnant, 60 or older, 5 or under, or has a weak immune system, simmer the frozen berries for 1 minute and cool them first, or use fresh."
+    },
+    {
+      "id": "mostly-plants-apple-walnuts",
+      "name": "Apple with walnuts",
+      "about": "A crisp apple with a few walnuts for crunch. **Fibre and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the apple, slice it and eat with the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mostly-plants-banana-peanut-butter-oats",
+      "name": "Banana and peanut butter on cinnamon oats",
+      "about": "A small bowl of oats made with fortified soy milk, topped with banana and peanut butter. **Fibre, calcium and B12 from the soy milk**.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 35,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "soy-milk-all-flavors-enhanced-f9fdd1",
+          "g": 150,
+          "swap": "dairy_protein",
+          "note": "choose a soy milk fortified with B12 and calcium (check the label)"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Stir the oats, chia and soy milk in a bowl and microwave for 90 seconds, stirring once, until hot. Let it stand for 3 minutes so the chia thickens it; it should be soft and spoonable, not stiff.",
+        "Top with the banana, peanut butter and cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mostly-plants-egg-apple-tomato",
+      "name": "Firm-boiled egg with apple slices and cherry tomatoes",
+      "about": "A firm-boiled egg with crisp apple and sweet cherry tomatoes. A simple plate that brings **choline, protein and vitamin C**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 100,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 60,
+          "note": "washed"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put the egg in a pot of cold water, bring to the boil and simmer for 10 minutes until the yolk is completely firm. Cool under cold water and peel.",
+        "Wash the apple and tomatoes. Slice the egg and eat with the apple, the tomatoes and a pinch of salt. If you boil it ahead, keep it in the fridge in its shell and eat it within 1 week; for a packed snack, use a cold bag with an ice pack."
+      ],
+      "prepMin": 3,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mostly-plants-soy-chia-berry-pudding",
+      "name": "Cinnamon soy chia pudding with berries",
+      "about": "Chia seeds soaked in fortified soy milk until spoonable, with cinnamon and berries on top. **Plant omega-3, calcium and B12** from the soy milk.",
+      "ingredients": [
+        {
+          "food": "soy-milk-all-flavors-enhanced-f9fdd1",
+          "g": 180,
+          "swap": "dairy_protein",
+          "note": "choose a soy milk fortified with B12 and calcium (check the label)"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 18,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "mixed-berry-frozen-9f87f1",
+          "g": 70,
+          "swap": "berries",
+          "note": "thawed"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Stir the chia and cinnamon into the soy milk in a jar. Wait 5 minutes, stir again to break up any clumps, then cover and refrigerate for at least 2 hours or overnight.",
+        "Top with the thawed berries. Keep it in the fridge and eat within 2 days of making it."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ],
+      "tip": "If you are cooking for someone who is pregnant, 60 or older, 5 or under, or has a weak immune system, simmer the frozen berries for 1 minute and cool them first, or use fresh."
+    },
+    {
+      "id": "mostly-plants-berry-banana-soy-smoothie",
+      "name": "Berry banana soy smoothie",
+      "about": "A thick smoothie of fortified soy milk, banana, berries, oats and chia. **Fibre, calcium, omega-3 and B12** from the soy milk.",
+      "ingredients": [
+        {
+          "food": "soy-milk-all-flavors-enhanced-f9fdd1",
+          "g": 250,
+          "swap": "dairy_protein",
+          "note": "choose a soy milk fortified with B12 and calcium (check the label)"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 100,
+          "note": "peeled"
+        },
+        {
+          "food": "mixed-berry-frozen-9f87f1",
+          "g": 80,
+          "swap": "berries",
+          "note": "frozen"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 6,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put the soy milk, banana, frozen berries, oats, chia and cinnamon in a blender and blend for 1 minute until completely smooth.",
+        "Pour into a glass and drink straight away, or keep it in the fridge and drink within 1 day."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "If you are cooking for someone who is pregnant, 60 or older, 5 or under, or has a weak immune system, simmer the frozen berries for 1 minute and cool them first, or use fresh."
+    },
+    {
+      "id": "mostly-plants-yogurt-banana-walnuts",
+      "name": "Greek yogurt with banana and walnuts",
+      "about": "Thick yogurt with sliced banana, walnuts and a pinch of cinnamon. **Protein, calcium and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 140,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 80,
+          "note": "sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl, top with the sliced banana and walnuts and dust with the cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mostly-plants-chili-garlic-edamame",
+      "name": "Chili-garlic edamame",
+      "about": "Edamame tossed in a hot pan with garlic, chili and a splash of soy sauce. **Plant protein, folate and iron**.",
+      "ingredients": [
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 70,
+          "swap": "legumes",
+          "note": "frozen"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.5
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6,
+          "swap": "vit_c_fruit"
+        }
+      ],
+      "steps": [
+        "Cook the frozen edamame in boiling water for 3 minutes until steaming hot, then drain well.",
+        "Warm the oil in a pan, stir the garlic and chili for 20 seconds, add the edamame and soy sauce and toss for 1 minute. Finish with the lime juice and eat warm."
+      ],
+      "prepMin": 3,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "medium-spicy",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "mostly-plants-banana-peanut-butter-cinnamon",
+      "name": "Banana with peanut butter and cinnamon",
+      "about": "A ripe banana with a spoonful of peanut butter and a dust of cinnamon. **Potassium, B6 and magnesium**.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 120,
+          "note": "sliced"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Slice the banana, spread or drizzle the peanut butter over it and dust with the cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "mostly-plants-cardamom-berry-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mostly-plants-peanut-lime-quinoa-egg-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mostly-plants-lentil-shepherds-pie"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mostly-plants-edamame-lime-salt"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mostly-plants-veg-sticks-tahini-yogurt-dip"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "mostly-plants-turmeric-tofu-scramble"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mostly-plants-lentil-shepherds-pie",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mostly-plants-ginger-soy-salmon-greens-quinoa"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mostly-plants-egg-apple-tomato"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mostly-plants-cumin-lime-roasted-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "mostly-plants-chocolate-tahini-banana-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mostly-plants-curried-lentil-kale-apple-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mostly-plants-chickpea-spinach-potato-stew"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mostly-plants-berry-yogurt-chia"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mostly-plants-chili-garlic-edamame"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "mostly-plants-mushroom-spinach-white-bean-omelette"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mostly-plants-chickpea-spinach-potato-stew",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mostly-plants-crispy-tofu-broccoli-sweet-potato-traybake"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mostly-plants-banana-peanut-butter-oats"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mostly-plants-apple-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "mostly-plants-chocolate-tahini-banana-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mostly-plants-smoky-black-bean-corn-avocado-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mostly-plants-paprika-chicken-cabbage-stew"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mostly-plants-edamame-lime-salt"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mostly-plants-veg-sticks-tahini-yogurt-dip"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "mostly-plants-mushroom-spinach-white-bean-omelette"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mostly-plants-paprika-chicken-cabbage-stew",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mostly-plants-bean-stuffed-peppers-quinoa"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mostly-plants-soy-chia-berry-pudding"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mostly-plants-cumin-lime-roasted-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "mostly-plants-turmeric-tofu-scramble"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "mostly-plants-bean-stuffed-peppers-quinoa",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "mostly-plants-lemon-trout-quinoa-peas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mostly-plants-egg-apple-tomato"
+        },
+        {
+          "slot": "snack",
+          "recipe": "mostly-plants-banana-peanut-butter-oats"
+        }
+      ]
+    }
+  ]
+}
