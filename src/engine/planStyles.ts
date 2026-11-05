@@ -420,9 +420,63 @@ const daysIn = (plan: MealPlan, test: (f: Food) => boolean, foods: FoodIndex) =>
 const perDays = (limit: number, plan: MealPlan) => Math.ceil((limit * Math.min(plan.days.length, 7)) / 7);
 
 /** Checks on what the week is made of. They do not change with portion size, so the lab runs them once per size. */
+/** Bans every plan carries whatever its style (Firas): no pork in any form, no alcohol in any recipe. */
+export const HOUSE_BANS: BanId[] = ['pork', 'alcohol'];
+
+// the same, in the words of a recipe: a step that deglazes with wine, a dish named for ham. Vinegars and the beef or turkey
+// versions of cured meats are fine.
+const HOUSE_WORDS =
+  /\b(pork|bacon|ham|hams|lard|prosciutto|pancetta|guanciale|chorizo|salami|pepperoni|mortadella|wine|mirin|sake|beer|shaoxing|rum|brandy|cognac|sherry|vodka|bourbon|whiske?y|liqueur|marsala|vermouth)\b/;
+const HOUSE_WORDS_OK =
+  /\b(?:rice|red|white|sherry|wine|cider|malt)?\s*wine vinegar\b|\bsherry vinegar\b|\b(?:beef|turkey|chicken|plant-based|soy)\s+(?:bacon|ham|chorizo|salami|pepperoni|sausage)\b|\bpork-free\b|\bno pork\b|\bnon-?alcoholic\b|\balcohol-free\b|\bginger beer\b|\broot beer\b/g;
+
+/** Every style: no pork or alcohol among the foods (HOUSE_BANS) or in the words of the recipe. */
+export function houseGates(plan: MealPlan, foods: FoodIndex): GateFailure[] {
+  const out: GateFailure[] = [];
+  const seen = new Set<string>();
+  for (const d of plan.days)
+    for (const m of d.meals) {
+      for (const i of m.ingredients) {
+        const f = getFood(foods, i.foodId);
+        if (!f) continue;
+        for (const ban of HOUSE_BANS) {
+          const why = FOOD_BANS[ban](f);
+          if (!why || seen.has(`${m.recipeId}:${f.id}`)) continue;
+          seen.add(`${m.recipeId}:${f.id}`);
+          out.push({
+            code: 'house_food',
+            day: d.day,
+            recipe: m.recipeId ?? m.name,
+            message: `Day ${d.day}, ${m.name}: ${f.name} is not allowed in any plan (${why}).`,
+            fix: why === 'pork' ? 'Use the protein that fits the dish: chicken or turkey, beef, lamb or goat, fish or beans.' : 'Leave the alcohol out: stock with a little rice vinegar, or a little sugar or honey with vinegar.',
+          });
+        }
+      }
+      const key = `text:${m.recipeId ?? m.name}`;
+      if (seen.has(key)) continue;
+      const text = [m.name, m.about, m.tip, m.inspiredBy, ...(m.steps ?? []), ...m.ingredients.map((i) => i.note ?? '')]
+        .filter(Boolean)
+        .join(' ')
+        .toLowerCase()
+        .replace(HOUSE_WORDS_OK, ' ');
+      const hit = text.match(HOUSE_WORDS);
+      if (hit) {
+        seen.add(key);
+        out.push({
+          code: 'house_words',
+          day: d.day,
+          recipe: m.recipeId ?? m.name,
+          message: `Day ${d.day}, ${m.name}: the recipe text mentions "${hit[1]}". No plan has pork or alcohol, so the words can't either.`,
+          fix: 'Reword the name, steps, about, tip or note to match the ingredients.',
+        });
+      }
+    }
+  return out;
+}
+
 export function styleStructureGates(style: PlanStyle, plan: MealPlan, foods: FoodIndex): GateFailure[] {
   const g = PLAN_STYLES[style].gates;
-  const out: GateFailure[] = [];
+  const out: GateFailure[] = houseGates(plan, foods);
   const label = PLAN_STYLES[style].label;
 
   for (const ban of g.bans ?? []) {

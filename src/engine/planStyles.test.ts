@@ -5,7 +5,7 @@ import { FOODS, FOOD_INDEX } from '@/state/catalog';
 
 import { compileSize, type FamilyFile } from './family';
 import { caffeineMgPer100g } from './foodRoles';
-import { FOOD_BANS, PLAN_STYLES, gradeOptionsFor, isSpiceShelf, runStyleGates, styleNutrientGates, styleStructureGates } from './planStyles';
+import { FOOD_BANS, PLAN_STYLES, gradeOptionsFor, houseGates, isSpiceShelf, runStyleGates, styleNutrientGates, styleStructureGates } from './planStyles';
 import { familyDeps } from '@/state/familyDeps';
 import type { Food, MealPlan, PlanStyle } from './types';
 
@@ -332,3 +332,27 @@ describe('batch D styles', () => {
     expect(PLAN_STYLES['healthy-aging'].gates.ironMaxMg).toBe(30);
   });
 });
+
+describe('house bans: no pork, no alcohol, in any style', () => {
+  const food = (rx: RegExp) => FOODS.find((f) => rx.test(f.name))!;
+  const plan = (meal: Partial<import('./types').Meal>, ...names: RegExp[]) => ({
+    days: [{ day: 1, meals: [{ id: 'm', slot: 'dinner' as const, name: 'Dinner', ...meal, ingredients: names.map((rx) => ({ foodId: food(rx).id, grams: 100 })) }] }],
+  }) as unknown as import('./types').MealPlan;
+
+  it('flags pork and alcohol foods even in a balanced plan', () => {
+    const codes = (p: import('./types').MealPlan) => styleStructureGates('balanced', p, FOOD_INDEX).map((g) => g.code);
+    expect(codes(plan({}, /^Pork\b/i))).toContain('house_food');
+    expect(codes(plan({}, /^Chicken breast/i))).not.toContain('house_food');
+    expect(FOOD_BANS.alcohol(food(/vinegar/i))).toBeUndefined();
+  });
+
+  it('reads the words of the recipe, but lets vinegars and beef or turkey versions through', () => {
+    const words = (meal: Partial<import('./types').Meal>) => houseGates(plan(meal, /^Chicken breast/i), FOOD_INDEX).map((g) => g.code);
+    expect(words({ steps: ['Deglaze the pan with a splash of white wine.'] })).toEqual(['house_words']);
+    expect(words({ name: 'Ham and pea soup' })).toEqual(['house_words']);
+    expect(words({ steps: ['Finish with rice wine vinegar and a little sherry vinegar.'] })).toEqual([]);
+    expect(words({ about: 'Lentils with beef chorizo and a turkey bacon crumb.' })).toEqual([]);
+    expect(words({ name: 'Hamburger steak with onions' })).toEqual([]);
+  });
+});
+
