@@ -1,4 +1,4 @@
-# Next: handoff for a fresh session (Nov 5, step 1 done)
+# Next: handoff for a fresh session (Nov 5, steps 1 and 2 done)
 
 Read this first, then `content/STATUS.md` (session log at the bottom), `content/GUIDE.md` (§2, §11, §12, §13) and `content/CATALOG.md`. `AGENTS.md` has the Expo rules.
 
@@ -39,7 +39,11 @@ Read this first, then `content/STATUS.md` (session log at the bottom), `content/
    - Meals: "Calories at your size" chips, using the same recipe in the plan size that fits the person.
    - Search on both tabs (`src/engine/textSearch.ts`): plurals, prefixes, one typo, cooks' synonyms, ingredients; nutrient queries ("high iron", "omega-3") rank by amount and show it.
    - **Revisit plan discovery with Firas once the app is done.** He sees how people find a plan as make or break for the app. Plan a session together on a creative solution; today's views and search are a stopgap. Note: with the default whole-food carb choice, most current plans are hidden until the global plans ship.
-2. **Engine and data:** remove the halal and kosher tags, fix the tofu data, fix leftover sizing, then rebuild and re-check.
+2. **Engine and data: done Nov 5.**
+   - Halal-friendly and kosher-style tags and chips removed (store migration v5 drops them from saved profiles). Ramadan recipe tips still suggest halal meat as shopping advice.
+   - Tofu: `firm-tofu-calcium-set-c9fb4e` (CNF firm tofu, calcium 180 mg, the median of nine North American calcium-sulphate labels) and `extra-firm-tofu-calcium-set-455d4a` (USDA dense block, calcium 683 -> 300 mg). Iron overrides: medium-firm tofu 1.6 mg, natto 3.3 mg. Web access was blocked, so these come from the sources already in the library; Canadian labels checked by hand would firm them up. The earlier "250 to 700 mg" figure for Canadian cartons isn't supported by any label we have (max 246).
+   - Leftovers are exactly the portion cooked for them, at every size and in the app (`personalizeWeek`, `sizeDaysDown`). 45 families needed small recipe fixes (Sonnet writers, reviewed); every 1,400 band kept. Sizing a Light week in the app takes about 0.5 s on a desktop (cached per plan); check it on Firas's phone.
+   - Follow-up: thai-viet Big 3200 day 3 zinc sits just under the 40 mg upper limit (above the 36 mg headroom newer families keep).
 3. **The 30 global plans** in waves of about 5. Add briefs to CATALOG and GUIDE §13 first, using the writer → critic → final review loop below.
 4. **Final content pass:** remove pork; remove the alcohol still in 29 recipes (Shaoxing wine and mirin in china-home, japan-korea, lean-asia and muscle-asia), then add a lab gate so no recipe has alcohol; rebuild, run the full checks, publish the demo.
 5. **Paywall screens:** UI only, ready for RevenueCat.
