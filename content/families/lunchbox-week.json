@@ -1,0 +1,2697 @@
+{
+  "id": "lunchbox-week",
+  "name": "Lunchbox Week",
+  "style": "balanced",
+  "cuisine": "Global",
+  "carbStyle": "wholegrain",
+  "regions": [
+    "Lebanon",
+    "Greece",
+    "Japan",
+    "Mexico"
+  ],
+  "lifeStage": "none",
+  "summary": "A week of lunches built to travel: bulgur and brown rice salads, a sardine wrap, a white bean jar and dinners that make tomorrow's lunch. Everything packs in a cold bag, and every lunch brings beans, vegetables or fish.",
+  "howItWorks": "**Lunch is the star.** Monday's bulgur salad with chicken, chickpeas and egg also packs for Tuesday. Thursday is a sardine and avocado wrap and Saturday a Greek-style brown rice and white bean jar. Bulgur, brown rice, soba and whole-wheat tortillas come in modest portions, always beside beans and plenty of vegetables.\n\n**Cook once, eat twice.** Tuesday's tahini-ginger soba, Thursday's turkey pilaf and Saturday's enchiladas each make two portions, so Wednesday, Friday and Sunday lunches are already packed. On Sunday evening, make Monday's bulgur salad, boil eggs in their shells (they keep a week) and cook brown rice for Monday's salmon.\n\n**Pack it safely.** Lunches with meat, fish, egg, dairy or cooked grains go in a cold bag with an ice pack and are eaten that day. Throw them out after 2 hours out of the cold (1 hour in hot weather). Cool grains within 1 hour, reheat anything hot to 74 °C, and pack dressings apart.\n\n**Fish and protein.** Salmon on Monday and Sunday and sardines on Thursday bring omega-3 and some **vitamin D**, which is hard to reach from food. Eggs turn up most days because they are the classic lunchbox protein and carry the **choline** the week needs. Chicken, turkey, shrimp, beans and yogurt cover the rest.\n\n**What changes with size.** Light covers 1,400 to 1,800 kcal and drops the second snack every day. At 1,400 most of the cut comes from the grains, tortillas, nuts, oil and beans, while the meat and fish shrink less and stay a proper serving. Big grows the grains, potatoes, protein, beans, nuts and dairy, but not the vegetables or fruit.",
+  "signature": [
+    "lunchbox-week-lemon-chicken-bulgur-salad",
+    "lunchbox-week-sesame-ginger-soba-chicken",
+    "lunchbox-week-sardine-avocado-wrap",
+    "lunchbox-week-turkey-chickpea-bulgur-pilaf"
+  ],
+  "sizes": {
+    "light": {
+      "kcal": 1400,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "lunchbox-week-raspberry-chia-oats",
+            "to": "lunchbox-week-raspberry-chia-oats-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "lunchbox-week-lemon-chicken-bulgur-salad",
+            "to": "lunchbox-week-lemon-chicken-bulgur-salad-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "lunchbox-week-tahini-salmon-broccoli-rice",
+            "to": "lunchbox-week-tahini-salmon-broccoli-rice-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "lunchbox-week-sesame-ginger-soba-chicken",
+            "to": "lunchbox-week-sesame-ginger-soba-chicken-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "lunchbox-week-turkey-chickpea-bulgur-pilaf",
+            "to": "lunchbox-week-turkey-chickpea-bulgur-pilaf-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "lunchbox-week-greek-shrimp-tomato-rice",
+            "to": "lunchbox-week-greek-shrimp-tomato-rice-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "lunchbox-week-black-bean-carrot-enchiladas",
+            "to": "lunchbox-week-black-bean-carrot-enchiladas-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "lunchbox-week-spinach-feta-egg-wrap",
+            "to": "lunchbox-week-spinach-feta-egg-wrap-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "lunchbox-week-raspberry-banana-yogurt-parfait",
+            "to": "lunchbox-week-raspberry-banana-yogurt-parfait-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "lunchbox-week-lemon-dill-salmon-potatoes",
+            "to": "lunchbox-week-lemon-dill-salmon-potatoes-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "lunchbox-week-chicken-white-bean-pepper-traybake",
+            "to": "lunchbox-week-chicken-white-bean-pepper-traybake-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "lunchbox-week-greek-rice-white-bean-jar",
+            "to": "lunchbox-week-greek-rice-white-bean-jar-light"
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "lunchbox-week-raspberry-chia-oats",
+      "name": "Raspberry and chia overnight oats with walnuts, almonds and pumpkin seeds",
+      "about": "Rolled oats soaked overnight in milk with chia, topped with raspberries, walnuts, almonds and toasted pumpkin seeds. It is **ready from the fridge** on a weekday morning and travels in a jar. The chia and walnuts bring plant omega-3 and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 47,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 210,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 8,
+          "note": "stirred in"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 100,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 7.7,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 7.7,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 6.6,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Stir the oats, milk, chia and cinnamon together in a jar, cover and put it in the fridge overnight.",
+        "In the morning, wash the raspberries and toast the pumpkin seeds in a dry pan until they pop and smell nutty, about 2 minutes.",
+        "Stir the oats, then top with the raspberries, walnuts, almonds and pumpkin seeds. Pack the jar in a cold bag with an ice pack if you are taking it with you, and throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather).",
+        "Soaked oats keep up to 3 days in the fridge, so mix two jars at a time and no more."
+      ],
+      "prepMin": 6,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ],
+      "tip": "Swap the raspberries for any berry that is on sale."
+    },
+    {
+      "id": "lunchbox-week-spinach-feta-egg-wrap",
+      "name": "Spinach, red pepper and scallion egg wrap with smoked paprika and an orange",
+      "about": "Eggs scrambled until completely firm with spinach, red pepper, scallion and smoked paprika, rolled in a warm whole-wheat tortilla, with an orange on the side. It **wraps up and travels**. The eggs bring protein and choline and the orange helps you absorb the iron from the spinach.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "whole eggs"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed and chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 45,
+          "note": "washed and diced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3.5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 61.6,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 130,
+          "swap": "vit_c_fruit",
+          "note": "washed, cut in wedges"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the spinach, pepper, scallion and orange. Dice the pepper, slice the scallion, chop the spinach and cut the orange into wedges.",
+        "Warm the oil in a non-stick pan over medium heat and cook the pepper and scallion with the paprika until just soft, about 3 minutes. Add the spinach and stir until it wilts.",
+        "Beat the eggs with the salt and pepper and pour into the pan. Stir gently until the eggs are cooked through, with no liquid left and the yolk firm (74 °C, 165 °F), about 3 minutes. Wash your hands and the bowl after cracking the eggs.",
+        "Warm the tortilla in a dry pan for 20 seconds, fill with the eggs and roll up. Serve with the orange wedges.",
+        "To take it with you, wrap in foil, cool, and pack in a cold bag with an ice pack. Eat it the same day, and throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 7,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lunchbox-week-raspberry-banana-yogurt-parfait",
+      "name": "Raspberry and banana yogurt parfait with toasted oats, walnuts and almonds",
+      "about": "Thick yogurt layered with raspberries, sliced banana and a crunch of toasted oats, walnuts, almonds and chia. It **packs in a jar** with the crunch kept separate. The yogurt brings protein and calcium and the walnuts and chia bring plant omega-3 and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 80,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 28,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 7.7,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8.8,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Toast the oats, walnuts and almonds in a dry pan over medium heat, stirring, until they smell nutty, about 3 minutes. Let them cool completely.",
+        "Wash the raspberries and slice the banana.",
+        "Layer the yogurt, raspberries and banana in a jar or bowl and stir the chia into the yogurt. Keep the oats and nuts in a small container, or put them on top just before eating, so they stay crunchy.",
+        "Pack the jar in a cold bag with an ice pack if it is leaving the house, and throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lunchbox-week-lemon-chicken-bulgur-salad",
+      "name": "Lemon chicken and bulgur salad with chickpeas, egg, cucumber and carrot",
+      "inspiredBy": "Inspired by Levantine tabbouleh, with chicken and chickpeas to make it a full lunch",
+      "about": "Fluffy bulgur tossed with lemony pan-cooked chicken, chickpeas, a firm-boiled egg, cucumber, tomato, grated carrot, soft shredded kale, baby spinach, parsley and toasted pumpkin seeds. It makes two portions, so **tomorrow's lunch is already packed**. The chickpeas bring fibre and folate, the seeds bring magnesium and zinc and the bulgur is a whole grain.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 108,
+          "swap": "lean_protein",
+          "note": "trimmed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "hard-boiled"
+        },
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 47,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 88,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed and diced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "washed and halved"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed and grated"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, finely shredded"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed and chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8.8,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 22
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11.5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Make this the evening before. Put the bulgur in a bowl, cover with twice its volume of boiling water, add a pinch of the salt, cover and leave until tender and the water is absorbed, about 15 minutes. Fluff with a fork, spread on a tray, and cool within 1 hour.",
+        "Meanwhile, rub the chicken with half the oil, the cumin and a pinch of salt. Cook in a hot pan over medium heat until golden outside and 74 °C (165 °F) in the middle, about 6 minutes a side. Move the cooked chicken to a clean plate, rest 5 minutes, then slice. Wash your hands, the board and the knife after the raw chicken.",
+        "While the bulgur cooks, cover the eggs with cold water, bring to a boil and simmer 12 minutes until the yolks are completely firm. Cool in cold water, peel and quarter. Wash the cucumber, tomatoes, carrot, kale, spinach, scallion and parsley. Dice, halve, grate and chop, and rub the shredded kale with a pinch of salt for a minute so it softens.",
+        "Whisk the lemon juice with the rest of the oil and the salt. Toast the pumpkin seeds in a dry pan until they pop, about 2 minutes. Toss the cooled bulgur, chickpeas, vegetables and parsley with most of the dressing and scatter the seeds on top.",
+        "Divide into two containers and lay the chicken and egg quarters on top. Keep the extra dressing in a small separate pot. Chill both portions right away.",
+        "Keep both portions in the fridge. Each day, pack one in a cold bag with an ice pack and dress it just before eating. Throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "lunchbox-week-sardine-avocado-wrap",
+      "name": "Sardine, avocado and tomato whole-wheat wrap with lemon and spinach",
+      "about": "A whole-wheat tortilla rolled around mashed sardines with their soft bones, avocado, tomato, spinach and a squeeze of lemon, with carrot sticks on the side. The sardines bring **omega-3, vitamin D and calcium** and the avocado brings vitamin E.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 78.8,
+          "swap": "fatty_fish",
+          "note": "drained"
+        },
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 67.2,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "washed, then peeled"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 70,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 25,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 8,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "chopped"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "washed, cut in sticks"
+        }
+      ],
+      "steps": [
+        "Wash the avocado, tomatoes, spinach, scallion, parsley and carrot. Drain the sardines from a freshly opened tin (move any left in the tin to a covered container in the fridge and use it within 2 days).",
+        "Mash the sardines with the avocado, lemon juice, parsley and pepper until chunky.",
+        "Warm the tortilla for 20 seconds in a dry pan so it rolls easily. Spread with the mash, then add the tomatoes, scallion and spinach.",
+        "Roll up tightly, tuck in the ends and wrap in parchment. Cut the carrot into sticks to go alongside.",
+        "Pack in a cold bag with an ice pack and eat the same day. Throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 10,
+      "cookMin": 1,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lunchbox-week-greek-rice-white-bean-jar",
+      "name": "Greek-style brown rice and white bean jar with egg, feta and cucumber",
+      "about": "Brown rice, white beans, cucumber, tomato and a firm-boiled egg in a jar, with a lemon-oregano dressing and a little feta. It is a **bean salad that eats like a meal**. The beans and rice bring fibre and the egg brings choline.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 44.8,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 110,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed and diced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "washed and halved"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 15,
+          "note": "crumbled"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "washed, peeled and diced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4.6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Simmer the rice in plenty of water until tender, about 30 minutes, then drain. Spread on a tray and cool within 1 hour.",
+        "Cover the egg with cold water, bring to a boil, then simmer 12 minutes until the yolk is completely firm. Cool in cold water. In its shell, a hard-boiled egg keeps up to 1 week in the fridge, so you can cook it ahead.",
+        "Wash the cucumber, tomatoes, scallion and parsley, then dice, halve, slice and chop.",
+        "Whisk the lemon, oil, oregano and salt in a small pot and keep it separate until you eat.",
+        "Layer the beans, rice, cucumber, tomato, scallion and parsley in a jar. Peel and quarter the egg and add it with the avocado and feta on top. (Toss the avocado in a little of the lemon juice so it keeps its colour.)",
+        "Pack in a cold bag with an ice pack, eat the same day, and pour the dressing over at lunch. Throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Cook a double batch of rice and keep it chilled for up to 3 days."
+    },
+    {
+      "id": "lunchbox-week-tahini-salmon-broccoli-rice",
+      "name": "Lemon-paprika salmon with roasted broccoli, chickpeas, kale and brown rice",
+      "about": "A salmon fillet brushed with garlic, lemon, parsley and smoked paprika, roasted beside broccoli, carrots, crisp chickpeas and kale and served over brown rice stirred with wilted spinach. The salmon brings **omega-3 and vitamin D**, the broccoli brings vitamin C and folate, the carrots bring vitamin A and the chickpeas bring iron and fibre.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 136.5,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 130,
+          "note": "washed, cut in florets"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed, cut in batons"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 77,
+          "swap": "legumes",
+          "note": "drained, rinsed and patted dry"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, torn"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 44.8,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10.4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Rinse the rice and simmer in plenty of water until tender, 35 to 40 minutes, then drain. Start the rice first, or use cooked rice from your Sunday batch, chilled and reheated until steaming.",
+        "Mix the garlic, parsley, lemon juice, paprika, salt and half the oil into a loose paste.",
+        "Toss the broccoli, carrots and chickpeas with the rest of the oil on a tray and roast 8 minutes. Make room for the salmon, patted dry, and spread the paste over it.",
+        "Add the torn kale to the tray for the last 4 minutes, until its edges crisp. Roast until the salmon flakes and reaches 70 °C (158 °F) and the vegetables are tender, about 12 minutes in all. Wash your hands and the board after the raw salmon.",
+        "Stir the spinach into the hot rice until it wilts. Serve the salmon and vegetables over the rice. Cook the salmon the day you buy it."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "lunchbox-week-sesame-ginger-soba-chicken",
+      "name": "Cold tahini-ginger soba with chicken, kale, cucumber and carrot",
+      "inspiredBy": "Inspired by Japanese cold soba and Chinese sesame noodles",
+      "about": "Buckwheat soba in a tahini, ginger and lemon sauce with sliced chicken, cucumber, carrot, red pepper, shredded kale and toasted almonds. It makes two portions and the second one is **even better cold in a lunchbox**. Buckwheat brings magnesium, the almonds bring vitamin E and the tahini brings some calcium.",
+      "ingredients": [
+        {
+          "food": "soba-noodles-dry-2dc785",
+          "g": 61.6,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 156.6,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed, in half-moons"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed, cut in matchsticks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 45,
+          "note": "washed, sliced thin"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, finely shredded"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "sliced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8.8,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 15
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 12,
+          "note": "reduced sodium"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 18
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4.6,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Wash the cucumber, carrot, pepper, kale and scallion, then slice them. Shred the kale very fine and rub it with a pinch of salt for a minute so it softens.",
+        "Boil the soba in plenty of water until just tender, about 5 minutes. Drain, rinse under cold water and drain well. Cool within 1 hour.",
+        "Whisk the tahini, soy sauce, lemon juice, ginger and garlic with a splash of warm water until pourable.",
+        "Slice the chicken into thin strips and cook in the oil in a hot pan until no pink is left and it reaches 74 °C (165 °F), about 6 minutes. Move it to a clean plate. Wash your hands and the board after the raw chicken.",
+        "Toast the almonds in a dry pan until golden, about 2 minutes, and chop them. Toss the noodles with the sauce, vegetables and kale and top with the chicken and almonds.",
+        "Eat one portion now. Put the second in a shallow container and into the fridge within 1 hour, with a spoonful of the sauce in a small pot to loosen it with a splash of water at lunch. Pack it in a cold bag with an ice pack and eat it cold, the same day. Throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "lunchbox-week-chicken-white-bean-pepper-traybake",
+      "name": "Za'atar chicken traybake with white beans, peppers and cherry tomatoes",
+      "inspiredBy": "Inspired by Levantine za'atar roast chicken",
+      "about": "Chicken pieces rubbed with za'atar and roasted on one tray with white beans, red peppers, onion and cherry tomatoes, then finished with lemon and spinach wilted in the heat. It is **one tray and about 40 minutes**, and it is just as good cold, so it doubles easily for a packed lunch. The beans bring fibre, the peppers vitamin C and the chicken protein and choline.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 162,
+          "swap": "lean_protein",
+          "note": "cut in large pieces"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 121,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 120,
+          "note": "washed, cut in strips"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100,
+          "note": "washed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 110,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11.5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the peppers, tomatoes and spinach, then cut the peppers into strips and the onion into wedges.",
+        "Toss the peppers, onion, garlic, white beans and tomatoes with most of the oil and the salt on a large tray and roast 10 minutes.",
+        "Toss the chicken with the rest of the oil, the za'atar and the black pepper. Push the vegetables aside, add the chicken and roast until golden and 74 °C (165 °F) in the thickest piece, about 18 minutes. Wash your hands and the board after the raw chicken.",
+        "Scatter the spinach over the hot tray for the last 2 minutes, until it wilts. Squeeze the lemon juice over everything and rest 3 minutes before serving."
+      ],
+      "prepMin": 12,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Double it for a packed lunch. Cool the second portion in a shallow container in the fridge within 2 hours, and eat it within 3 days, cold from a cold bag with an ice pack or reheated to 74 °C (165 °F)."
+    },
+    {
+      "id": "lunchbox-week-turkey-chickpea-bulgur-pilaf",
+      "name": "Turkey, chickpea and kale bulgur pilaf with cucumber yogurt",
+      "inspiredBy": "Inspired by Lebanese tomato and bulgur pilaf, made with turkey",
+      "about": "Lean ground turkey, chickpeas and bulgur simmered in tomato with cumin, cinnamon and kale, served with cool cucumber yogurt. It makes two portions, and the second is **good warm or cold** in tomorrow's lunchbox. Bulgur and chickpeas bring fibre, iron and folate.",
+      "ingredients": [
+        {
+          "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+          "g": 118.8,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 56,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 88,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 150
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9.2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed, grated or finely diced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Warm the oil in a wide pan over medium heat and cook the onion until soft and golden, about 6 minutes. Add the garlic, cumin and cinnamon for 30 seconds.",
+        "Add the turkey and cook, breaking it up, until no pink remains and it reaches 74 °C (165 °F), about 6 minutes. Wash your hands and the board after handling the raw turkey.",
+        "Stir in the crushed tomatoes, chickpeas, salt and the bulgur, then add water to cover by 1 cm. Bring to a boil, cover and simmer on low until the bulgur is tender, about 15 minutes.",
+        "Fold in the kale, cover and cook until just tender, about 3 minutes, and finish with lemon juice and parsley.",
+        "Mix the yogurt with the cucumber and a pinch of salt for the side.",
+        "Eat one portion now. Spread the second into a shallow container and into the fridge within 1 hour, with the cucumber yogurt kept apart. Eat it tomorrow, cold from a cold bag with an ice pack, or reheated to 74 °C (165 °F), the same day. Throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "lunchbox-week-greek-shrimp-tomato-rice",
+      "name": "Garlicky shrimp with tomato, spinach, feta and brown rice",
+      "inspiredBy": "Inspired by Greek shrimp saganaki",
+      "about": "Shrimp simmered in a garlicky tomato sauce with oregano and spinach, finished with feta and parsley, over brown rice. It is **on the table in about 40 minutes** and tastes like a Greek taverna. Shrimp bring iodine and protein, and the tomato brings vitamin C and potassium.",
+      "ingredients": [
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 145.8,
+          "swap": "lean_protein",
+          "note": "peeled; thawed in the fridge if frozen"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 44.8,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 160
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 15,
+          "note": "crumbled"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.6
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9.2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Rinse the rice and simmer in plenty of water until tender, about 30 minutes, then drain. Start this first.",
+        "Warm the oil in a deep pan over medium heat and soften the onion, about 5 minutes. Add the garlic and oregano for 30 seconds.",
+        "Add the crushed tomatoes and salt and simmer until slightly thick, about 8 minutes.",
+        "Stir in the spinach until wilted, then the shrimp. Simmer until the shrimp are pink and firm and reach 70 °C (158 °F), about 4 minutes. Wash your hands and the board after the raw shrimp.",
+        "Finish with lemon juice and parsley and crumble the feta over the top.",
+        "Serve over the rice."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "lunchbox-week-black-bean-carrot-enchiladas",
+      "name": "Turkey and black bean enchiladas with carrot, spinach and lemon crema",
+      "about": "Whole-wheat tortillas rolled around lean turkey, black beans, grated carrot, spinach and red pepper, baked under a quick cumin-chili tomato sauce, with a lemony yogurt crema. It is the week's **weekend project** and makes two portions. The beans bring fibre and iron, the carrot brings vitamin A and the pumpkin seeds bring magnesium.",
+      "ingredients": [
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 84,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+          "g": 85,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 110,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "washed and grated"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 50,
+          "note": "washed, diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 130
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.6
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 55,
+          "swap": "dairy_protein",
+          "note": "for the crema"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 11,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6.9,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190 °C (375 °F). Soften the onion, pepper and garlic in the oil, about 6 minutes. Add the turkey and cook, breaking it up, until no pink remains and it reaches 74 °C (165 °F), about 5 minutes. Wash your hands and the board after the raw turkey. Add the cumin, chili powder and the crushed tomatoes with a pinch of salt and simmer 8 minutes. Spoon half of this turkey and tomato mixture into a bowl as the sauce.",
+        "Stir the beans, carrot and spinach into the mixture left in the pan just until the spinach wilts, then mash lightly.",
+        "Warm the tortillas in a dry pan or wrapped in foil in the oven so they fold easily. Fill and roll them, and set seam side down in a baking dish.",
+        "Pour the rest of the sauce over, cover with foil and bake for 15 minutes. Remove the foil and bake 5 minutes more, until bubbling and 74 °C (165 °F) in the centre.",
+        "Stir the yogurt with the lemon juice. Spoon over each portion and scatter with the pumpkin seeds.",
+        "Eat one portion now. Put the second in a shallow container and into the fridge within 1 hour, with the crema in its own small pot. Tomorrow, carry it in a cold bag with an ice pack and reheat it in a microwave at lunch until steaming hot, 74 °C (165 °F). Throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather). With no microwave, reheat it at home until steaming and carry it in an insulated food jar warmed first with boiling water, and eat it by lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "weekend-project"
+      ]
+    },
+    {
+      "id": "lunchbox-week-lemon-dill-salmon-potatoes",
+      "name": "Pan-seared salmon with warm lemon-dill potatoes and broccoli",
+      "about": "A crisp-skinned salmon fillet beside warm potatoes tossed in a lemon, scallion and dill yogurt dressing, with broccoli. The salmon brings **omega-3 and vitamin D** and the potatoes bring potassium.",
+      "ingredients": [
+        {
+          "food": "salmon-coho-wild-raw-bf1cdf",
+          "g": 157.5,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 190,
+          "note": "scrubbed, cut in chunks"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 110,
+          "note": "washed, cut in florets"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 18
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9.2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 35,
+          "swap": "dairy_protein",
+          "note": "stirred into the dressing"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Cover the potatoes with cold salted water, bring to a boil and simmer until tender, about 12 minutes. Add the broccoli for the last 3 minutes. Drain.",
+        "Whisk the lemon juice, half the oil, the yogurt, scallion, dill and pepper. Toss the warm potatoes with half the dressing.",
+        "Pat the salmon dry and season with a pinch of salt. Sear skin side down in the rest of the oil over medium-high heat for 4 minutes, until the skin is crisp, then flip for 2 to 3 minutes until it flakes and reaches 70 °C (158 °F). Wash your hands and the board after the raw fish.",
+        "Serve the salmon on the potatoes with the broccoli and a spoon of the remaining dressing. Cook the salmon the day you buy it."
+      ],
+      "prepMin": 10,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "lunchbox-week-egg-orange",
+      "name": "Firm-boiled egg with orange wedges",
+      "about": "A firm-boiled egg with juicy orange wedges. The egg brings **protein and choline** and the orange brings vitamin C, and both travel well.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "hard-boiled"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 140,
+          "swap": "vit_c_fruit",
+          "note": "washed, cut in wedges"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Cover the egg with cold water, bring to a boil, then simmer 12 minutes until the yolk is completely firm. Cool in cold water. Boiled eggs keep in the shell up to 1 week in the fridge.",
+        "Peel the egg, wash the orange and cut it in wedges. Pack together in a cold bag with an ice pack, and throw them out if they have been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 3,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lunchbox-week-apple-almonds",
+      "name": "Apple with almonds",
+      "about": "A crisp apple and a small handful of almonds. The almonds bring **vitamin E and magnesium** and the apple brings fibre.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 13.2,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash and slice the apple, then eat with the almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lunchbox-week-apple-walnuts",
+      "name": "Apple with walnuts and cinnamon",
+      "about": "A crisp apple with walnuts and a dusting of cinnamon. The walnuts bring **plant omega-3** and the apple brings fibre.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15.4,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash and slice the apple, then eat with the walnuts and cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lunchbox-week-raspberry-walnut-yogurt-cup",
+      "name": "Raspberry yogurt cup with walnuts and almonds",
+      "about": "Thick yogurt with raspberries and chopped walnuts and almonds in a small tub. The yogurt brings **protein and calcium**, the walnuts plant omega-3 and the almonds vitamin E.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 70,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8.8,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 6.6,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Wash the raspberries. Spoon the yogurt into a tub and top with the raspberries, walnuts and almonds. Pack in a cold bag with an ice pack, and throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lunchbox-week-white-bean-dip-veg",
+      "name": "White bean and lemon dip with carrot and pepper sticks",
+      "about": "A creamy dip of white beans, lemon, garlic and olive oil with crunchy sticks. The beans bring **fibre and folate** and the pepper brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 77,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1.5,
+          "note": "grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4.6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "washed, cut in sticks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "washed, cut in sticks"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Blend or mash the beans with the lemon juice, garlic, oil, salt and a splash of water until smooth.",
+        "Wash the carrot and pepper and cut into sticks. Keep the dip in a small pot in a cold bag with an ice pack, and throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather).",
+        "The dip keeps up to 3 days in the fridge."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lunchbox-week-orange-pumpkin-seeds",
+      "name": "Orange with pumpkin seeds",
+      "about": "A juicy orange with toasted pumpkin seeds. The orange brings **vitamin C** and the seeds bring magnesium and zinc.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "washed"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 13.2,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash and peel the orange. Eat with the pumpkin seeds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lunchbox-week-banana-walnuts",
+      "name": "Banana with walnuts and cinnamon",
+      "about": "A banana with chopped walnuts and a dusting of cinnamon. The banana brings **potassium** and the walnuts bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 110
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 17.6,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Slice the banana and scatter over the walnuts and cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lunchbox-week-smoky-roasted-chickpeas",
+      "name": "Smoky roasted chickpeas",
+      "about": "Chickpeas roasted until crisp with smoked paprika and cumin. They bring **fibre and plant protein** for a crunchy snack.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 88,
+          "swap": "legumes",
+          "note": "drained, rinsed and patted dry"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3.5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.6
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 210 °C (410 °F). Pat the chickpeas very dry.",
+        "Toss with the oil, paprika, cumin and salt on a tray.",
+        "Roast, shaking once, until crisp, about 25 minutes. Cool on the tray; they crisp more as they cool. Keep in a loosely covered container up to 2 days."
+      ],
+      "prepMin": 3,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "lunchbox-week-raspberry-chia-oats-light",
+      "name": "Raspberry and chia overnight oats with walnuts, almonds and pumpkin seeds",
+      "about": "Rolled oats soaked overnight in milk with chia, topped with raspberries, walnuts, almonds and toasted pumpkin seeds. It is **ready from the fridge** on a weekday morning and travels in a jar. The chia and walnuts bring plant omega-3 and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 38,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 170,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 6,
+          "note": "stirred in"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 100,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 7,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 4,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Stir the oats, milk, chia and cinnamon together in a jar, cover and put it in the fridge overnight.",
+        "In the morning, wash the raspberries and toast the pumpkin seeds in a dry pan until they pop and smell nutty, about 2 minutes.",
+        "Stir the oats, then top with the raspberries, walnuts, almonds and pumpkin seeds. Pack the jar in a cold bag with an ice pack if you are taking it with you, and throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather).",
+        "Soaked oats keep up to 3 days in the fridge, so mix two jars at a time and no more."
+      ],
+      "prepMin": 6,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook"
+      ],
+      "tip": "Swap the raspberries for any berry that is on sale."
+    },
+    {
+      "id": "lunchbox-week-lemon-chicken-bulgur-salad-light",
+      "name": "Lemon chicken and bulgur salad with chickpeas, egg, cucumber and carrot",
+      "inspiredBy": "Inspired by Levantine tabbouleh, with chicken and chickpeas to make it a full lunch",
+      "about": "Fluffy bulgur tossed with lemony pan-cooked chicken, chickpeas, a firm-boiled egg, cucumber, tomato, grated carrot, soft shredded kale, baby spinach, parsley and toasted pumpkin seeds. It makes two portions, so **tomorrow's lunch is already packed**. The chickpeas bring fibre and folate, the seeds bring magnesium and zinc and the bulgur is a whole grain.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "trimmed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "hard-boiled"
+        },
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 72,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 45,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed and diced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "washed and halved"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed and grated"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, finely shredded"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed and chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 22
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Make this the evening before. Put the bulgur in a bowl, cover with twice its volume of boiling water, add a pinch of the salt, cover and leave until tender and the water is absorbed, about 15 minutes. Fluff with a fork, spread on a tray, and cool within 1 hour.",
+        "Meanwhile, rub the chicken with half the oil, the cumin and a pinch of salt. Cook in a hot pan over medium heat until golden outside and 74 °C (165 °F) in the middle, about 6 minutes a side. Move the cooked chicken to a clean plate, rest 5 minutes, then slice. Wash your hands, the board and the knife after the raw chicken.",
+        "While the bulgur cooks, cover the eggs with cold water, bring to a boil and simmer 12 minutes until the yolks are completely firm. Cool in cold water, peel and quarter. Wash the cucumber, tomatoes, carrot, kale, spinach, scallion and parsley. Dice, halve, grate and chop, and rub the shredded kale with a pinch of salt for a minute so it softens.",
+        "Whisk the lemon juice with the rest of the oil and the salt. Toast the pumpkin seeds in a dry pan until they pop, about 2 minutes. Toss the cooled bulgur, chickpeas, vegetables and parsley with most of the dressing and scatter the seeds on top.",
+        "Divide into two containers and lay the chicken and egg quarters on top. Keep the extra dressing in a small separate pot. Chill both portions right away.",
+        "Keep both portions in the fridge. Each day, pack one in a cold bag with an ice pack and dress it just before eating. Throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "lunchbox-week-tahini-salmon-broccoli-rice-light",
+      "name": "Lemon-paprika salmon with roasted broccoli, chickpeas, kale and brown rice",
+      "about": "A salmon fillet brushed with garlic, lemon, parsley and smoked paprika, roasted beside broccoli, carrots, crisp chickpeas and kale and served over brown rice stirred with wilted spinach. The salmon brings **omega-3 and vitamin D**, the broccoli brings vitamin C and folate, the carrots bring vitamin A and the chickpeas bring iron and fibre.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 140,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 130,
+          "note": "washed, cut in florets"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed, cut in batons"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 30,
+          "swap": "legumes",
+          "note": "drained, rinsed and patted dry"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, torn"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 75,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Rinse the rice and simmer in plenty of water until tender, 35 to 40 minutes, then drain. Start the rice first, or use cooked rice from your Sunday batch, chilled and reheated until steaming.",
+        "Mix the garlic, parsley, lemon juice, paprika, salt and half the oil into a loose paste.",
+        "Toss the broccoli, carrots and chickpeas with the rest of the oil on a tray and roast 8 minutes. Make room for the salmon, patted dry, and spread the paste over it.",
+        "Add the torn kale to the tray for the last 4 minutes, until its edges crisp. Roast until the salmon flakes and reaches 70 °C (158 °F) and the vegetables are tender, about 12 minutes in all. Wash your hands and the board after the raw salmon.",
+        "Stir the spinach into the hot rice until it wilts. Serve the salmon and vegetables over the rice. Cook the salmon the day you buy it."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "lunchbox-week-sesame-ginger-soba-chicken-light",
+      "name": "Cold tahini-ginger soba with chicken, kale, cucumber and carrot",
+      "inspiredBy": "Inspired by Japanese cold soba and Chinese sesame noodles",
+      "about": "Buckwheat soba in a tahini, ginger and lemon sauce with sliced chicken, cucumber, carrot, red pepper, shredded kale and toasted almonds. It makes two portions and the second one is **even better cold in a lunchbox**. Buckwheat brings magnesium, the almonds bring vitamin E and the tahini brings some calcium.",
+      "ingredients": [
+        {
+          "food": "soba-noodles-dry-2dc785",
+          "g": 55,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 100,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed, in half-moons"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed, cut in matchsticks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 45,
+          "note": "washed, sliced thin"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, finely shredded"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "sliced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8.8,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 12
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 12,
+          "note": "reduced sodium"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 18
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 2,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Wash the cucumber, carrot, pepper, kale and scallion, then slice them. Shred the kale very fine and rub it with a pinch of salt for a minute so it softens.",
+        "Boil the soba in plenty of water until just tender, about 5 minutes. Drain, rinse under cold water and drain well. Cool within 1 hour.",
+        "Whisk the tahini, soy sauce, lemon juice, ginger and garlic with a splash of warm water until pourable.",
+        "Slice the chicken into thin strips and cook in the oil in a hot pan until no pink is left and it reaches 74 °C (165 °F), about 6 minutes. Move it to a clean plate. Wash your hands and the board after the raw chicken.",
+        "Toast the almonds in a dry pan until golden, about 2 minutes, and chop them. Toss the noodles with the sauce, vegetables and kale and top with the chicken and almonds.",
+        "Eat one portion now. Put the second in a shallow container and into the fridge within 1 hour, with a spoonful of the sauce in a small pot to loosen it with a splash of water at lunch. Pack it in a cold bag with an ice pack and eat it cold, the same day. Throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "lunchbox-week-turkey-chickpea-bulgur-pilaf-light",
+      "name": "Turkey, chickpea and kale bulgur pilaf with cucumber yogurt",
+      "inspiredBy": "Inspired by Lebanese tomato and bulgur pilaf, made with turkey",
+      "about": "Lean ground turkey, chickpeas and bulgur simmered in tomato with cumin, cinnamon and kale, served with cool cucumber yogurt. It makes two portions, and the second is **good warm or cold** in tomorrow's lunchbox. Bulgur and chickpeas bring fibre, iron and folate.",
+      "ingredients": [
+        {
+          "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+          "g": 95,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "bulgur-dry-8ee6ab",
+          "g": 72,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 60,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 150
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed, grated or finely diced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Warm the oil in a wide pan over medium heat and cook the onion until soft and golden, about 6 minutes. Add the garlic, cumin and cinnamon for 30 seconds.",
+        "Add the turkey and cook, breaking it up, until no pink remains and it reaches 74 °C (165 °F), about 6 minutes. Wash your hands and the board after handling the raw turkey.",
+        "Stir in the crushed tomatoes, chickpeas, salt and the bulgur, then add water to cover by 1 cm. Bring to a boil, cover and simmer on low until the bulgur is tender, about 15 minutes.",
+        "Fold in the kale, cover and cook until just tender, about 3 minutes, and finish with lemon juice and parsley.",
+        "Mix the yogurt with the cucumber and a pinch of salt for the side.",
+        "Eat one portion now. Spread the second into a shallow container and into the fridge within 1 hour, with the cucumber yogurt kept apart. Eat it tomorrow, cold from a cold bag with an ice pack, or reheated to 74 °C (165 °F), the same day. Throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "lunchbox-week-greek-shrimp-tomato-rice-light",
+      "name": "Garlicky shrimp with tomato, spinach, feta and brown rice",
+      "inspiredBy": "Inspired by Greek shrimp saganaki",
+      "about": "Shrimp simmered in a garlicky tomato sauce with oregano and spinach, finished with feta and parsley, over brown rice. It is **on the table in about 40 minutes** and tastes like a Greek taverna. Shrimp bring iodine and protein, and the tomato brings vitamin C and potassium.",
+      "ingredients": [
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 115,
+          "swap": "lean_protein",
+          "note": "peeled; thawed in the fridge if frozen"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 70,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 160
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 15,
+          "note": "crumbled"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.6
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Rinse the rice and simmer in plenty of water until tender, about 30 minutes, then drain. Start this first.",
+        "Warm the oil in a deep pan over medium heat and soften the onion, about 5 minutes. Add the garlic and oregano for 30 seconds.",
+        "Add the crushed tomatoes and salt and simmer until slightly thick, about 8 minutes.",
+        "Stir in the spinach until wilted, then the shrimp. Simmer until the shrimp are pink and firm and reach 70 °C (158 °F), about 4 minutes. Wash your hands and the board after the raw shrimp.",
+        "Finish with lemon juice and parsley and crumble the feta over the top.",
+        "Serve over the rice."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "lunchbox-week-black-bean-carrot-enchiladas-light",
+      "name": "Turkey and black bean enchiladas with carrot, spinach and lemon crema",
+      "about": "Whole-wheat tortillas rolled around lean turkey, black beans, grated carrot, spinach and red pepper, baked under a quick cumin-chili tomato sauce, with a lemony yogurt crema. It is the week's **weekend project** and makes two portions. The beans bring fibre and iron, the carrot brings vitamin A and the pumpkin seeds bring magnesium.",
+      "ingredients": [
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 80,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+          "g": 150,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 60,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "washed and grated"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 50,
+          "note": "washed, diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 130
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.6
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 50,
+          "swap": "dairy_protein",
+          "note": "for the crema"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190 °C (375 °F). Soften the onion, pepper and garlic in the oil, about 6 minutes. Add the turkey and cook, breaking it up, until no pink remains and it reaches 74 °C (165 °F), about 5 minutes. Wash your hands and the board after the raw turkey. Add the cumin, chili powder and the crushed tomatoes with a pinch of salt and simmer 8 minutes. Spoon half of this turkey and tomato mixture into a bowl as the sauce.",
+        "Stir the beans, carrot and spinach into the mixture left in the pan just until the spinach wilts, then mash lightly.",
+        "Warm the tortillas in a dry pan or wrapped in foil in the oven so they fold easily. Fill and roll them, and set seam side down in a baking dish.",
+        "Pour the rest of the sauce over, cover with foil and bake for 15 minutes. Remove the foil and bake 5 minutes more, until bubbling and 74 °C (165 °F) in the centre.",
+        "Stir the yogurt with the lemon juice. Spoon over each portion and scatter with the pumpkin seeds.",
+        "Eat one portion now. Put the second in a shallow container and into the fridge within 1 hour, with the crema in its own small pot. Tomorrow, carry it in a cold bag with an ice pack and reheat it in a microwave at lunch until steaming hot, 74 °C (165 °F). Throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather). With no microwave, reheat it at home until steaming and carry it in an insulated food jar warmed first with boiling water, and eat it by lunch."
+      ],
+      "prepMin": 20,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "weekend-project"
+      ]
+    },
+    {
+      "id": "lunchbox-week-spinach-feta-egg-wrap-light",
+      "name": "Spinach, red pepper and scallion egg wrap with smoked paprika and an orange",
+      "about": "Eggs scrambled until completely firm with spinach, red pepper, scallion and smoked paprika, rolled in a warm whole-wheat tortilla, with an orange on the side. It **wraps up and travels**. The eggs bring protein and choline and the orange helps you absorb the iron from the spinach.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "whole eggs"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed and chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 45,
+          "note": "washed and diced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 10,
+          "note": "sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 75,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 130,
+          "swap": "vit_c_fruit",
+          "note": "washed, cut in wedges"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the spinach, pepper, scallion and orange. Dice the pepper, slice the scallion, chop the spinach and cut the orange into wedges.",
+        "Warm the oil in a non-stick pan over medium heat and cook the pepper and scallion with the paprika until just soft, about 3 minutes. Add the spinach and stir until it wilts.",
+        "Beat the eggs with the salt and pepper and pour into the pan. Stir gently until the eggs are cooked through, with no liquid left and the yolk firm (74 °C, 165 °F), about 3 minutes. Wash your hands and the bowl after cracking the eggs.",
+        "Warm the tortilla in a dry pan for 20 seconds, fill with the eggs and roll up. Serve with the orange wedges.",
+        "To take it with you, wrap in foil, cool, and pack in a cold bag with an ice pack. Eat it the same day, and throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 7,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lunchbox-week-raspberry-banana-yogurt-parfait-light",
+      "name": "Raspberry and banana yogurt parfait with toasted oats, walnuts and almonds",
+      "about": "Thick yogurt layered with raspberries, sliced banana and a crunch of toasted oats, walnuts, almonds and chia. It **packs in a jar** with the crunch kept separate. The yogurt brings protein and calcium and the walnuts and chia bring plant omega-3 and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 80,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Toast the oats, walnuts and almonds in a dry pan over medium heat, stirring, until they smell nutty, about 3 minutes. Let them cool completely.",
+        "Wash the raspberries and slice the banana.",
+        "Layer the yogurt, raspberries and banana in a jar or bowl and stir the chia into the yogurt. Keep the oats and nuts in a small container, or put them on top just before eating, so they stay crunchy.",
+        "Pack the jar in a cold bag with an ice pack if it is leaving the house, and throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "lunchbox-week-lemon-dill-salmon-potatoes-light",
+      "name": "Pan-seared salmon with warm lemon-dill potatoes and broccoli",
+      "about": "A crisp-skinned salmon fillet beside warm potatoes tossed in a lemon, scallion and dill yogurt dressing, with broccoli. The salmon brings **omega-3 and vitamin D** and the potatoes bring potassium.",
+      "ingredients": [
+        {
+          "food": "salmon-coho-wild-raw-bf1cdf",
+          "g": 130,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 150,
+          "note": "scrubbed, cut in chunks"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 110,
+          "note": "washed, cut in florets"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 18
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 35,
+          "swap": "dairy_protein",
+          "note": "stirred into the dressing"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Cover the potatoes with cold salted water, bring to a boil and simmer until tender, about 12 minutes. Add the broccoli for the last 3 minutes. Drain.",
+        "Whisk the lemon juice, half the oil, the yogurt, scallion, dill and pepper. Toss the warm potatoes with half the dressing.",
+        "Pat the salmon dry and season with a pinch of salt. Sear skin side down in the rest of the oil over medium-high heat for 4 minutes, until the skin is crisp, then flip for 2 to 3 minutes until it flakes and reaches 70 °C (158 °F). Wash your hands and the board after the raw fish.",
+        "Serve the salmon on the potatoes with the broccoli and a spoon of the remaining dressing. Cook the salmon the day you buy it."
+      ],
+      "prepMin": 10,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "lunchbox-week-chicken-white-bean-pepper-traybake-light",
+      "name": "Za'atar chicken traybake with white beans, peppers and cherry tomatoes",
+      "inspiredBy": "Inspired by Levantine za'atar roast chicken",
+      "about": "Chicken pieces rubbed with za'atar and roasted on one tray with white beans, red peppers, onion and cherry tomatoes, then finished with lemon and spinach wilted in the heat. It is **one tray and about 40 minutes**, and it is just as good cold, so it doubles easily for a packed lunch. The beans bring fibre, the peppers vitamin C and the chicken protein and choline.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "cut in large pieces"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 110,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 120,
+          "note": "washed, cut in strips"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "cut in wedges"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100,
+          "note": "washed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 110,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "zaatar-74bd44",
+          "g": 3
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the peppers, tomatoes and spinach, then cut the peppers into strips and the onion into wedges.",
+        "Toss the peppers, onion, garlic, white beans and tomatoes with most of the oil and the salt on a large tray and roast 10 minutes.",
+        "Toss the chicken with the rest of the oil, the za'atar and the black pepper. Push the vegetables aside, add the chicken and roast until golden and 74 °C (165 °F) in the thickest piece, about 18 minutes. Wash your hands and the board after the raw chicken.",
+        "Scatter the spinach over the hot tray for the last 2 minutes, until it wilts. Squeeze the lemon juice over everything and rest 3 minutes before serving."
+      ],
+      "prepMin": 12,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Double it for a packed lunch. Cool the second portion in a shallow container in the fridge within 2 hours, and eat it within 3 days, cold from a cold bag with an ice pack or reheated to 74 °C (165 °F)."
+    },
+    {
+      "id": "lunchbox-week-greek-rice-white-bean-jar-light",
+      "name": "Greek-style brown rice and white bean jar with egg, feta and cucumber",
+      "about": "Brown rice, white beans, cucumber, tomato and a firm-boiled egg in a jar, with a lemon-oregano dressing and a little feta. It is a **bean salad that eats like a meal**. The beans and rice bring fibre and the egg brings choline.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 70,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 90,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed and diced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "washed and halved"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 15,
+          "note": "crumbled"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "washed, peeled and diced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Simmer the rice in plenty of water until tender, about 30 minutes, then drain. Spread on a tray and cool within 1 hour.",
+        "Cover the egg with cold water, bring to a boil, then simmer 12 minutes until the yolk is completely firm. Cool in cold water. In its shell, a hard-boiled egg keeps up to 1 week in the fridge, so you can cook it ahead.",
+        "Wash the cucumber, tomatoes, scallion and parsley, then dice, halve, slice and chop.",
+        "Whisk the lemon, oil, oregano and salt in a small pot and keep it separate until you eat.",
+        "Layer the beans, rice, cucumber, tomato, scallion and parsley in a jar. Peel and quarter the egg and add it with the avocado and feta on top. (Toss the avocado in a little of the lemon juice so it keeps its colour.)",
+        "Pack in a cold bag with an ice pack, eat the same day, and pour the dressing over at lunch. Throw it out if it has been out of the cold bag for more than 2 hours (1 hour in hot weather)."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Cook a double batch of rice and keep it chilled for up to 3 days."
+    },
+    {
+      "id": "lunchbox-week-banana-almonds",
+      "name": "Banana with almonds and cinnamon",
+      "about": "A banana with chopped almonds and a dusting of cinnamon. The banana brings **potassium** and the almonds bring vitamin E and magnesium.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 110
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15.4,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Slice the banana and scatter over the almonds and cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lunchbox-week-raspberry-chia-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lunchbox-week-lemon-chicken-bulgur-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lunchbox-week-tahini-salmon-broccoli-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lunchbox-week-apple-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lunchbox-week-banana-almonds"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lunchbox-week-raspberry-chia-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lunchbox-week-lemon-chicken-bulgur-salad",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lunchbox-week-sesame-ginger-soba-chicken"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lunchbox-week-white-bean-dip-veg"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lunchbox-week-banana-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lunchbox-week-raspberry-banana-yogurt-parfait"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lunchbox-week-sesame-ginger-soba-chicken",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lunchbox-week-chicken-white-bean-pepper-traybake"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lunchbox-week-egg-orange"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lunchbox-week-apple-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lunchbox-week-spinach-feta-egg-wrap"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lunchbox-week-sardine-avocado-wrap"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lunchbox-week-turkey-chickpea-bulgur-pilaf"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lunchbox-week-apple-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lunchbox-week-orange-pumpkin-seeds"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lunchbox-week-raspberry-chia-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lunchbox-week-turkey-chickpea-bulgur-pilaf",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lunchbox-week-greek-shrimp-tomato-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lunchbox-week-egg-orange"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lunchbox-week-banana-almonds"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lunchbox-week-raspberry-banana-yogurt-parfait"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lunchbox-week-greek-rice-white-bean-jar"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lunchbox-week-black-bean-carrot-enchiladas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lunchbox-week-smoky-roasted-chickpeas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lunchbox-week-orange-pumpkin-seeds"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "lunchbox-week-spinach-feta-egg-wrap"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "lunchbox-week-black-bean-carrot-enchiladas",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "lunchbox-week-lemon-dill-salmon-potatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lunchbox-week-raspberry-walnut-yogurt-cup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "lunchbox-week-apple-almonds"
+        }
+      ]
+    }
+  ]
+}
