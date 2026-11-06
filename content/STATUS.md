@@ -140,4 +140,10 @@ Every family in CATALOG.md moves through these steps:
   - `takeout-at-home` (whole grains) is Light 1600-2000, Standard 2000-2400 and Big. At 1,400 the bun, rice and chicken couldn't stay real without calcium and iron failing, so with `everyday-classics` that makes two plans with no 1400 band.
   - Big upper limits are all under the house headroom.
   - Wave 5 is being written.
+- **Nov 6:** **Everyday wave 5 shipped (25 of 30).** `spring-fresh`, `summer-salads`, `autumn-harvest` and `winter-warmers` use whole-food carbs; `stir-fry-week` uses whole grains. All keep Light 1400.
+  - Big upper limits are under the headroom, fixed where needed with Big-only snack swaps.
+  - Beef is 71 °C everywhere.
+  - Winter's two near-twins of Autumn's dishes were replaced.
+  - Lab fix: up to 10 g of cornstarch as a thickener no longer fails a carb promise, as GUIDE §6 says.
+  - Wave 6 is being written.
 
