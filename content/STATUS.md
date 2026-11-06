@@ -146,4 +146,10 @@ Every family in CATALOG.md moves through these steps:
   - Winter's two near-twins of Autumn's dishes were replaced.
   - Lab fix: up to 10 g of cornstarch as a thickener no longer fails a carb promise, as GUIDE §6 says.
   - Wave 6 is being written.
+- **Nov 6:** **Everyday wave 6 shipped: all 30 global plans are in, demo v26.**
+  - New: `cook-once-eat-twice` (whole-food carbs), plus `noodle-bowls`, `wraps-and-tacos`, `lunchbox-week` and `brunch-lovers` (whole grains).
+  - The library now has 20 whole-food and 10 whole-grain Everyday plans. 28 keep Light 1400; `everyday-classics` and `takeout-at-home` start Light at 1600 (Firas to confirm).
+  - Lab: house words now include "alcohol" and "mulled" and cover the plan's own summary and howItWorks. That fixed stale lines in lean-med, heart-med and lowgi-med.
+  - Rebuilt data. Tests (497), typecheck and the Playwright walk pass: 30 Everyday plans, no duplicate meals, no errors.
+  - Open: older regional plans name pork dishes as inspiration (cochinita pibil, porchetta, tofu al pastor). The food is pork-free; Firas to decide.
 
