@@ -1,0 +1,2736 @@
+{
+ "id": "brunch-lovers",
+ "name": "Brunch Lovers",
+ "style": "balanced",
+ "cuisine": "Global",
+ "carbStyle": "wholegrain",
+ "regions": [
+  "Turkey",
+  "Mexico",
+  "India",
+  "United States"
+ ],
+ "summary": "Brunch every morning: oat pancakes with warm strawberries, avocado and a firm egg on whole-grain toast, savoury oats with a yogurt swirl, white bean toast, a ranchero tofu scramble, Turkish menemen and canned salmon toast. Lunches and dinners are easy everyday food, with beans, lentils and vegetables on most plates and salmon through the week.",
+ "howItWorks": "**Brunch all week.** Seven different breakfasts: oat pancakes with warm strawberries, avocado and egg toast, savoury oats, white bean toast, a ranchero tofu scramble, menemen and canned salmon toast. Eggs star at only three breakfasts, always cooked until the yolk is completely firm, and Monday's chilaquiles and Thursday's strata bring brunch to dinner.\n\n**Cook once, eat twice.** Monday's chilaquiles bake, Wednesday's chicken dhansak, Thursday's egg strata and Saturday's carrot-lentil soup and beef braise each make two portions, so the next lunch or dinner is done. Cool them within 1 hour in shallow containers, reheat to 74 \u00b0C, and keep slaw, yogurt and eggs cold. Wash all produce before cutting, lemons and limes too.\n\n**Fish and protein.** Tuesday's maple-lime salmon, canned salmon in Monday's lentil bowl, Sunday's toast and two snacks bring omega-3 and **vitamin D**. Chicken, beef, tofu, eggs, beans and lentils cover the rest. Canned salmon is bought for the week and each opened tin is used within 2 days.\n\n**What changes with size.** Light covers 1,400 to 1,800 kcal and keeps one snack a day. Bread, tortillas, grains, chicken and the salmon fillet shrink most; the beef stays. Seven dishes have Light versions, so the breakfasts keep their stack, toast or tortilla and the chicken stays a real portion. Canned salmon, eggs, vegetables and fruit stay close to full size.\n\n**Bigger days.** Big covers 2,400 to 3,200 kcal. It adds a third snack from Monday to Thursday, takes the eggs in the strata and menemen from two to three and Sunday's from one to two, and grows the beef, potatoes and beans. Toward 3,200 the chicken, fish, bread and grains grow too.",
+ "signature": [
+  "brunch-lovers-oat-pancakes-berries",
+  "brunch-lovers-avocado-egg-toast",
+  "brunch-lovers-menemen-firm-eggs",
+  "brunch-lovers-salmon-egg-toast-strawberries"
+ ],
+ "lifeStage": "none",
+ "sizes": {
+  "light": {
+   "kcal": 1500,
+   "covers": [
+    "1400-1600",
+    "1600-1800"
+   ],
+   "adjust": [
+    {
+     "day": "*",
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": "*",
+     "swap": {
+      "from": "brunch-lovers-oat-pancakes-berries",
+      "to": "brunch-lovers-oat-pancakes-berries-light"
+     }
+    },
+    {
+     "day": "*",
+     "swap": {
+      "from": "brunch-lovers-avocado-egg-toast",
+      "to": "brunch-lovers-avocado-egg-toast-light"
+     }
+    },
+    {
+     "day": "*",
+     "swap": {
+      "from": "brunch-lovers-menemen-firm-eggs",
+      "to": "brunch-lovers-menemen-firm-eggs-light"
+     }
+    },
+    {
+     "day": "*",
+     "swap": {
+      "from": "brunch-lovers-black-bean-sweet-potato-burgers",
+      "to": "brunch-lovers-black-bean-sweet-potato-burgers-light"
+     }
+    },
+    {
+     "day": "*",
+     "swap": {
+      "from": "brunch-lovers-chicken-lentil-dhansak",
+      "to": "brunch-lovers-chicken-lentil-dhansak-light"
+     }
+    },
+    {
+     "day": "*",
+     "swap": {
+      "from": "brunch-lovers-chicken-black-bean-chilaquiles-bake",
+      "to": "brunch-lovers-chicken-black-bean-chilaquiles-bake-light"
+     }
+    },
+    {
+     "day": "*",
+     "swap": {
+      "from": "brunch-lovers-ranchero-tofu-scramble",
+      "to": "brunch-lovers-ranchero-tofu-scramble-light"
+     }
+    }
+   ]
+  },
+  "standard": {
+   "kcal": 2100,
+   "covers": [
+    "1800-2000",
+    "2000-2200",
+    "2200-2400"
+   ]
+  },
+  "big": {
+   "kcal": 3000,
+   "covers": [
+    "2400-2800",
+    "2800-3200"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "add": {
+      "slot": "snack",
+      "recipe": "brunch-lovers-tomato-cucumber-feta-cup"
+     }
+    },
+    {
+     "day": 3,
+     "add": {
+      "slot": "snack",
+      "recipe": "brunch-lovers-hummus-tomato-toast"
+     }
+    },
+    {
+     "day": 4,
+     "add": {
+      "slot": "snack",
+      "recipe": "brunch-lovers-walnut-almond-mix"
+     }
+    },
+    {
+     "day": 2,
+     "add": {
+      "slot": "snack",
+      "recipe": "brunch-lovers-walnut-almond-mix"
+     }
+    }
+   ]
+  }
+ },
+ "recipes": [
+  {
+   "id": "brunch-lovers-oat-pancakes-berries",
+   "name": "Oat and banana pancakes with warm strawberries and yogurt",
+   "about": "Fluffy whole-wheat and oat pancakes, sweetened mostly by mashed banana (no egg), stacked with warm strawberries, Greek yogurt and sliced almonds. The oats and strawberries bring **fibre and vitamin C**, the yogurt brings protein, the almonds bring vitamin E and the chia brings plant omega-3.",
+   "ingredients": [
+    {
+     "food": "wheat-flour-whole-wheat-45d81e",
+     "g": 28,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 32,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "banana-raw-61b750",
+     "g": 80,
+     "note": "ripe, mashed"
+    },
+    {
+     "food": "chia-seeds-dried-33a3b7",
+     "g": 6,
+     "note": "stirred into the batter"
+    },
+    {
+     "food": "baking-powder-low-sodium-2b32ac",
+     "g": 3
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 5,
+     "swap": "healthy_oils",
+     "note": "for the pan"
+    },
+    {
+     "food": "strawberry-raw-fc000f",
+     "g": 130,
+     "swap": "berries",
+     "note": "washed, hulled and halved"
+    },
+    {
+     "food": "maple-syrup-prepackaged-65e117",
+     "g": 6
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 130,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "sliced or chopped"
+    }
+   ],
+   "steps": [
+    "Mash the banana in a bowl. Stir in about 100 ml of water per portion, then the flour, oats, chia, baking powder and cinnamon until just combined, with a few small lumps. Rest the batter 5 minutes while the oats and chia soften.",
+    "Warm the strawberries with the maple syrup in a small pot over medium heat, stirring now and then, until they are soft and juicy and steaming, about 4 minutes. Keep them warm.",
+    "Brush a non-stick pan with the oil and heat over medium. Spoon in the batter in rounds and cook until bubbles form and the edges look set, about 2 minutes, then flip and cook another 2 minutes until golden and cooked through.",
+    "Stack the pancakes, spoon over the warm berries and the yogurt, and scatter the almonds on top."
+   ],
+   "prepMin": 8,
+   "cookMin": 14,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Mix the dry ingredients the night before and the batter takes 2 minutes in the morning."
+  },
+  {
+   "id": "brunch-lovers-avocado-egg-toast",
+   "name": "Avocado and firm egg on whole-grain toast with tomato and spinach",
+   "about": "Mashed avocado with lemon and chili flakes on whole-wheat toast, topped with a fried egg cooked until the yolk is completely firm, tomato and baby spinach. The avocado brings **healthy fats and vitamin E**, and the egg brings protein and choline.",
+   "ingredients": [
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 70,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "avocado-raw-c06278",
+     "g": 62,
+     "note": "washed before cutting, mashed"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 100,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 70,
+     "note": "washed and sliced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 25,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 6
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 4,
+     "swap": "healthy_oils",
+     "note": "for the pan"
+    },
+    {
+     "food": "feta-cheese-f7c0e3",
+     "g": 25,
+     "note": "crumbled"
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.3
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Wash the avocado, tomato and spinach. Halve and stone the avocado, scoop it into a bowl and mash it with the lemon juice, the chili flakes and the salt. Slice the tomato.",
+    "Toast the bread. Warm the oil in a non-stick pan over medium heat, crack in the eggs and cook, covered, until the whites are set and the yolks are completely firm, about 5 minutes, turning them once if you like. Wash your hands after cracking the eggs.",
+    "Spread the avocado on the toast, lay on the spinach and tomato, top with the firm eggs and scatter the feta over."
+   ],
+   "prepMin": 8,
+   "cookMin": 6,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "15-minute"
+   ],
+   "tip": "Add a squeeze of lime and a little chopped cilantro for a fresher bite."
+  },
+  {
+   "id": "brunch-lovers-savoury-oats-spinach",
+   "name": "Savoury oats with garlicky spinach, tomatoes and a yogurt swirl",
+   "about": "Creamy oats simmered in low-sodium broth with garlic and oregano, folded with wilted spinach and tomatoes and finished with a swirl of Greek yogurt and toasted walnuts. The oats and spinach bring **iron, magnesium and fibre**, and no eggs are needed.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 55,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 200,
+     "note": "or use water"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 80,
+     "note": "washed and diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "minced"
+    },
+    {
+     "food": "oregano-ground-ec4216",
+     "g": 0.5
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 5,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 100,
+     "swap": "dairy_protein",
+     "note": "for the swirl"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "toasted and chopped"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the spinach and tomato. Dice the tomato.",
+    "Warm the oil in a small pot over medium heat and cook the garlic and oregano for 30 seconds, then add the tomato and cook until it starts to break down, about 3 minutes.",
+    "Add the broth and oats. Simmer, stirring often, until the oats are creamy, about 6 minutes, adding a splash of water if they get too thick. Stir in the spinach for the last minute, until wilted.",
+    "Spoon into a bowl, swirl in the yogurt, and top with the walnuts and a grind of pepper."
+   ],
+   "prepMin": 5,
+   "cookMin": 12,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Toast the walnuts in a dry pan for 2 minutes until fragrant."
+  },
+  {
+   "id": "brunch-lovers-white-bean-greens-toast",
+   "name": "White bean and wilted greens toast with lemon, tomato and walnuts",
+   "about": "Warm, garlicky smashed white beans and wilted spinach piled on whole-wheat toast with fresh tomato, lemon and toasted walnuts and a little feta. The beans bring **fibre, folate and protein** and the walnuts bring plant omega-3, so there is plenty of substance without an egg.",
+   "ingredients": [
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 70,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 120,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 70,
+     "note": "washed and diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "minced"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 7,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 8
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "toasted and chopped"
+    },
+    {
+     "food": "feta-cheese-f7c0e3",
+     "g": 20,
+     "note": "crumbled"
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.3
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Wash the spinach and tomato, and dice the tomato.",
+    "Warm the oil in a pan over medium heat. Cook the garlic and chili flakes for 30 seconds, then add the beans, tomato and salt. Cook, mashing about half the beans with the back of a spoon, until hot and thick, about 5 minutes.",
+    "Stir in the spinach and cook until just wilted, about 1 minute, then add the lemon juice.",
+    "Toast the bread, pile the warm beans and greens on top, and scatter the feta and walnuts over."
+   ],
+   "prepMin": 5,
+   "cookMin": 8,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "15-minute"
+   ],
+   "tip": "Mash the beans with a little lemon zest for a brighter flavour."
+  },
+  {
+   "id": "brunch-lovers-ranchero-tofu-scramble",
+   "name": "Ranchero tofu scramble with black beans on corn tortillas",
+   "inspiredBy": "Mexican huevos rancheros, with tofu and beans in place of the eggs",
+   "about": "Crumbled tofu simmered with a quick ranchero sauce of tomato, red pepper, onion, garlic, oregano and a little chili, with black beans, spooned onto warm corn tortillas with lime and cilantro. The tofu and beans bring **protein and some calcium** with no eggs.",
+   "ingredients": [
+    {
+     "food": "firm-tofu-calcium-set-c9fb4e",
+     "g": 105,
+     "swap": "lean_protein",
+     "note": "drained and crumbled"
+    },
+    {
+     "food": "black-beans-canned-no-salt-added-drained-33bee5",
+     "g": 65,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 90,
+     "note": "washed and diced"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 60,
+     "note": "washed, seeded and diced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 30,
+     "note": "diced"
+    },
+    {
+     "food": "corn-tortilla-4f1d6a",
+     "g": 50,
+     "swap": "low_gi_grains",
+     "note": "warmed"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "minced"
+    },
+    {
+     "food": "oregano-ground-ec4216",
+     "g": 0.5
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.3
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 8
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 6,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Wash the tomato, pepper and cilantro. Dice the tomato, onion and pepper, and chop the cilantro.",
+    "Warm the oil in a pan over medium heat. Cook the onion and pepper until soft, about 5 minutes, then stir in the garlic, oregano and chili flakes for 30 seconds.",
+    "Add the tomato, the crumbled tofu, the beans and the salt. Cook, stirring, until the tomato breaks down and the tofu is hot and lightly golden, about 6 minutes.",
+    "Warm the tortillas in a dry pan, about 20 seconds a side. Spoon the scramble onto them and finish with the lime juice and cilantro."
+   ],
+   "prepMin": 8,
+   "cookMin": 12,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Add a spoonful of salsa or a little more chili for more heat."
+  },
+  {
+   "id": "brunch-lovers-menemen-firm-eggs",
+   "name": "Turkish-style menemen with firm eggs, peppers and whole-grain toast",
+   "inspiredBy": "Turkish menemen, with the eggs cooked fully firm",
+   "about": "Eggs stirred into slowly cooked tomatoes, red pepper and onion until completely set, with parsley, feta and Aleppo pepper, scooped up with whole-wheat toast and a handful of spinach. The egg and tomato bring **choline and vitamin C**.",
+   "ingredients": [
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 100,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 130,
+     "note": "washed and diced"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 60,
+     "note": "washed, seeded and diced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 30,
+     "note": "diced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 30,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "aleppo-pepper-pul-biber-2339da",
+     "g": 0.5,
+     "note": "or a pinch of chili flakes"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 60,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "feta-cheese-f7c0e3",
+     "g": 20,
+     "note": "crumbled"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Wash the tomato, pepper, spinach and parsley. Dice the tomato, pepper and onion.",
+    "Warm the oil in a wide pan over medium heat. Cook the onion and pepper until soft, about 6 minutes. Add the tomato, Aleppo pepper and salt and simmer until thick and glossy, about 8 minutes, stirring in the spinach for the last minute.",
+    "Beat the eggs lightly and stir them in. Cook, stirring gently, until the eggs are completely set and the yolks are firm, with no liquid left, about 4 minutes. Wash your hands after cracking the eggs.",
+    "Scatter with the feta and parsley and serve straight from the pan with the toast."
+   ],
+   "prepMin": 10,
+   "cookMin": 18,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Serve from the pan with extra bread for scooping."
+  },
+  {
+   "id": "brunch-lovers-salmon-egg-toast-strawberries",
+   "name": "Canned salmon and egg toast with cucumber, parsley and strawberries",
+   "about": "Flaked canned salmon (bones and all) mashed with Greek yogurt, lemon and parsley on whole-wheat toast, topped with sliced hard-cooked egg and crisp cucumber, with a few strawberries on the side. The salmon brings **omega-3 and vitamin D**, its soft bones bring calcium and the egg brings choline.",
+   "ingredients": [
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 70,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "salmon-canned-drained-9cea4e",
+     "g": 80,
+     "swap": "fatty_fish",
+     "note": "drained, bones mashed in"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 45,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 70,
+     "note": "washed and sliced"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 8
+    },
+    {
+     "food": "strawberry-raw-fc000f",
+     "g": 130,
+     "swap": "berries",
+     "note": "washed and hulled"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Boil the egg in its shell for 12 minutes, until the yolk is completely firm, then cool it under cold water, peel it and slice it. Wash your hands after handling the raw egg. Wash the cucumber, parsley and strawberries, slice the cucumber thinly and chop the parsley.",
+    "In a bowl, mash the salmon with the yogurt, lemon juice, parsley and pepper. Keep any opened tin covered in the fridge and use it within 2 days.",
+    "Toast the bread. Spread with the salmon mixture and top with the cucumber and the sliced egg. Serve with the strawberries."
+   ],
+   "prepMin": 8,
+   "cookMin": 14,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Rub the toast with half a garlic clove for extra flavour."
+  },
+  {
+   "id": "brunch-lovers-warm-lentil-tomato-salmon-bowl",
+   "name": "Warm red lentil and roasted tomato bowl with canned salmon, spinach and a firm egg",
+   "about": "Red lentils simmered with onion, garlic and cumin until thick and spoonable, piled in a bowl with oven-roasted tomatoes, wilted spinach, flaked canned salmon and a chopped firm hard-cooked egg, finished with lemon and almonds. The salmon and egg bring **omega-3, B12 and choline**, the lentils bring iron and folate, and the almonds bring vitamin E.",
+   "ingredients": [
+    {
+     "food": "red-lentils-split-dried-raw-a4a763",
+     "g": 55,
+     "swap": "legumes",
+     "note": "dry, rinsed"
+    },
+    {
+     "food": "salmon-canned-drained-9cea4e",
+     "g": 70,
+     "swap": "fatty_fish",
+     "note": "drained, bones mashed in"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 150,
+     "note": "washed and halved"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 40,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 45,
+     "note": "washed and grated"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 30,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "minced"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "chopped"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 6,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 12
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 7,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 \u00b0C (425 \u00b0F). Wash the tomatoes, spinach, carrot and parsley. Halve the tomatoes, toss them on a tray with half the oil and a pinch of the salt, and roast until soft and browned at the edges, about 20 minutes.",
+    "Meanwhile, warm the rest of the oil in a pot over medium heat and cook the onion until soft, about 5 minutes. Add the garlic and cumin for 1 minute, then the lentils and about 3 times their volume of water. Simmer, stirring now and then, until the lentils are soft and thick, about 15 minutes, adding the rest of the salt at the end.",
+    "Boil the egg in its shell for 12 minutes, until the yolk is completely firm, then cool it under cold water, peel it and chop it. Wash your hands after handling the raw egg.",
+    "Stir the spinach into the hot lentils until wilted. Spoon into a bowl, top with the roasted tomatoes, the grated carrot, the flaked salmon and the egg, then finish with the lemon juice, parsley and almonds. Keep any opened tin covered in the fridge and use it within 2 days.",
+    "If packing it, keep the lentils and toppings in a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 12,
+   "cookMin": 22,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Cook the lentils the night before; cool within 1 hour in a shallow container and reheat until steaming."
+  },
+  {
+   "id": "brunch-lovers-chicken-black-bean-chilaquiles-bake",
+   "name": "Chicken and black bean chilaquiles bake with lime kale slaw",
+   "inspiredBy": "Mexican chilaquiles, baked with chicken and beans instead of fried with eggs",
+   "about": "Crisp-baked corn tortilla wedges tossed in a smoky chicken, black bean and tomato sauce, then topped with a lime-cilantro kale and carrot slaw. A brunch classic turned into an easy weeknight dinner. Makes two portions, so tomorrow's lunch is done. The beans and chicken bring **protein and iron**, the lime and kale bring vitamin C and some calcium.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-boneless-skinless-raw-722c98",
+     "g": 160,
+     "swap": "lean_protein",
+     "note": "trimmed, diced small"
+    },
+    {
+     "food": "black-beans-canned-no-salt-added-drained-33bee5",
+     "g": 80,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "corn-tortilla-4f1d6a",
+     "g": 56,
+     "swap": "low_gi_grains",
+     "note": "cut in wedges and baked"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 40,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "minced"
+    },
+    {
+     "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+     "g": 70,
+     "note": "crushed by hand, with its juice"
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.6
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1.5
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "curly-kale-raw-d92774",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, very thinly sliced"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 35,
+     "note": "washed and grated"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 12
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 6,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.7
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200 \u00b0C (400 \u00b0F). Wash the kale, carrot and cilantro. Slice the kale very thinly, grate the carrot and massage both with the lime juice, half the cilantro and a pinch of the salt until the kale softens. Keep the slaw in the fridge.",
+    "Cut all the tortillas into wedges, toss with a little of the oil and bake on a tray until crisp, about 8 minutes. Once cool, keep half in a sealed container for tomorrow.",
+    "Warm the rest of the oil in a wide pan over medium heat. Cook the onion until soft, about 5 minutes, then add the garlic, cumin, smoked paprika and chili flakes for 1 minute.",
+    "Add the chicken, the tomatoes and a splash of water, and simmer, stirring now and then, until the chicken reaches 74 \u00b0C (165 \u00b0F) and the sauce is thick, about 12 minutes. Stir in the beans and the rest of the salt and cook 3 minutes. Wash your hands, knife and board after handling the raw chicken.",
+    "Toss half the sauce with the warm tortilla wedges so they soften at the edges but keep some crunch, top with the slaw and the rest of the cilantro, and eat right away.",
+    "Cool the second portion of sauce within 1 hour in a shallow container and keep it in the fridge with the slaw separate. Tomorrow, reheat the sauce until steaming, to 74 \u00b0C (165 \u00b0F), and toss it with the saved wedges."
+   ],
+   "prepMin": 12,
+   "cookMin": 22,
+   "servings": 2,
+   "tags": [
+    "medium-spicy",
+    "makes-leftovers"
+   ],
+   "tip": "Leave out the chili flakes for a milder version."
+  },
+  {
+   "id": "brunch-lovers-maple-lime-salmon-bulgur",
+   "name": "Maple-lime salmon with roasted broccoli, carrots, kale and lemony bulgur",
+   "about": "A salmon fillet glazed with maple, lime, garlic and smoked paprika, roasted on the same tray as garlicky broccoli, carrots and crisp kale and served over fluffy bulgur. The salmon brings **omega-3 and vitamin D**, the carrots bring vitamin A and the kale brings some calcium.",
+   "ingredients": [
+    {
+     "food": "salmon-atlantic-fillet-raw-e89a6f",
+     "g": 140,
+     "swap": "fatty_fish",
+     "note": "skin-on or skinless fillet, bought fresh"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 130,
+     "note": "washed, cut into florets"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 100,
+     "note": "washed, cut in sticks"
+    },
+    {
+     "food": "curly-kale-raw-d92774",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, torn"
+    },
+    {
+     "food": "bulgur-dry-8ee6ab",
+     "g": 50,
+     "swap": "low_gi_grains",
+     "note": "medium or coarse"
+    },
+    {
+     "food": "maple-syrup-prepackaged-65e117",
+     "g": 8
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 12
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 9,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 8
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 1
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 \u00b0C (425 \u00b0F). Wash the broccoli, carrots and kale. Cut the broccoli and carrots up and tear the kale off its stems. Toss the broccoli and carrots on a tray with half the oil, half the garlic and a pinch of the salt, and start roasting.",
+    "Stir the maple syrup, lime juice, smoked paprika, the rest of the garlic and a pinch of salt in a small bowl. After 8 minutes, pat the salmon dry, set it on the tray with the vegetables, scatter the kale around it and brush the fish with the glaze. Wash your hands and the board after handling the raw fish.",
+    "Roast for 12 to 14 minutes more, until the salmon flakes easily and reaches 70 \u00b0C (158 \u00b0F) and the vegetable edges are browned.",
+    "Meanwhile, rinse the bulgur and simmer it in twice its volume of water with a pinch of salt, covered, for about 12 minutes, until the water is absorbed. Fluff with the lemon juice and the parsley.",
+    "Serve the salmon and vegetables over the bulgur. Buy fresh salmon the day you cook it, or thaw frozen fillets in the fridge."
+   ],
+   "prepMin": 10,
+   "cookMin": 25,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Spoon any glaze left on the tray over the bulgur."
+  },
+  {
+   "id": "brunch-lovers-roasted-veg-tofu-egg-hummus-toast",
+   "name": "Roasted pepper, broccoli and tofu toasts with hummus, feta and a firm egg",
+   "about": "Two slices of whole-wheat toast spread with hummus and piled with roasted red pepper, onion and broccoli, golden roasted tofu, baby spinach, feta and sliced hard-cooked egg. The tofu, egg and hummus bring **protein, choline and some calcium**, with a squeeze of lemon to brighten it.",
+   "ingredients": [
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 70,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "hummus-443cc0",
+     "g": 45
+    },
+    {
+     "food": "firm-tofu-calcium-set-c9fb4e",
+     "g": 120,
+     "swap": "lean_protein",
+     "note": "drained and cubed"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 50,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "broccoli-raw-51684f",
+     "g": 80,
+     "note": "washed, in small florets"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 70,
+     "note": "washed, seeded and sliced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 25,
+     "note": "sliced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 25,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "feta-cheese-f7c0e3",
+     "g": 25,
+     "note": "crumbled"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 7,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 8
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 \u00b0C (425 \u00b0F). Wash the pepper, broccoli and spinach. Slice the pepper and onion and cut the broccoli into small florets.",
+    "Toss the vegetables and the tofu cubes on a tray with the oil, cumin and salt. Roast, shaking once, until the vegetables are browned at the edges and the tofu is golden, about 22 minutes. Meanwhile, boil the egg in its shell for 12 minutes, until the yolk is completely firm, then cool it under cold water, peel it and slice it. Wash your hands after handling the raw egg.",
+    "Toast the bread and spread with the hummus. Top with the spinach, the roasted vegetables and tofu, the sliced egg, the feta and a squeeze of lemon."
+   ],
+   "prepMin": 8,
+   "cookMin": 22,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Roast a double tray on Sunday and use half in a bowl later in the week."
+  },
+  {
+   "id": "brunch-lovers-baked-egg-strata",
+   "name": "Baked egg and spinach strata with red pepper and feta, and a crisp cucumber salad",
+   "inspiredBy": "a North American breakfast strata, with a yogurt custard, spinach, red pepper and feta",
+   "about": "Cubes of whole-wheat bread soaked in an egg and yogurt custard with spinach, red pepper and feta, baked until the centre is completely set and the eggs are firm all the way through, served with a cucumber and tomato salad. Makes two portions, so tomorrow's lunch is done. The eggs bring **protein and choline**, the spinach and pepper bring vitamins A and C.",
+   "ingredients": [
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 100,
+     "swap": "lean_protein",
+     "note": "beaten"
+    },
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 40,
+     "swap": "low_gi_grains",
+     "note": "cut in small cubes"
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 40,
+     "swap": "dairy_protein",
+     "note": "whisked into the eggs"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 40,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 50,
+     "note": "washed, seeded and diced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 30,
+     "note": "diced"
+    },
+    {
+     "food": "feta-cheese-f7c0e3",
+     "g": 14,
+     "note": "crumbled"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 60,
+     "note": "washed and sliced"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 70,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 6
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 4,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180 \u00b0C (350 \u00b0F) and oil a baking dish with a little of the oil. Wash the pepper, spinach, cucumber, tomato and parsley. Cut the bread into small cubes.",
+    "Warm the rest of the oil in a pan over medium heat. Cook the onion and pepper until soft, about 5 minutes, then stir in the spinach until wilted. Tip everything into the dish with the bread cubes and the feta.",
+    "Whisk the eggs with the yogurt, salt and pepper and pour over, pressing the bread down so it soaks. Wash your hands after cracking the eggs.",
+    "Bake until the centre is completely set, a knife comes out clean and the middle reaches 74 \u00b0C (165 \u00b0F), about 25 minutes (30 to 35 in a deeper dish). The eggs must be firm all the way through, with no wet egg left.",
+    "Toss the cucumber, tomato and parsley with the lemon juice and serve alongside slices of the strata.",
+    "Cool the second portion within 1 hour, wrap it and keep it in the fridge with the salad separate. Eat it tomorrow, cold or warmed until steaming, to 74 \u00b0C (165 \u00b0F). Do not freeze."
+   ],
+   "prepMin": 12,
+   "cookMin": 30,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "makes-leftovers"
+   ],
+   "tip": "Assemble it in the morning, keep it covered in the fridge and bake it straight from the fridge after work, adding about 10 minutes."
+  },
+  {
+   "id": "brunch-lovers-black-bean-sweet-potato-burgers",
+   "name": "Smoky black bean and sweet potato burgers on toast with kale slaw",
+   "about": "Pan-seared patties of black beans, sweet potato, oats and walnuts in smoked paprika and cumin, served open-face on toasted whole-wheat bread with feta and a lime-yogurt kale slaw. The beans and sweet potato bring **fibre and vitamin A**, with protein from the beans, walnuts and feta.",
+   "ingredients": [
+    {
+     "food": "black-beans-canned-no-salt-added-drained-33bee5",
+     "g": 150,
+     "swap": "legumes",
+     "note": "rinsed and dried"
+    },
+    {
+     "food": "sweet-potato-raw-15f948",
+     "g": 120,
+     "note": "washed, pricked"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 15,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "finely chopped"
+    },
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 50,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "feta-cheese-f7c0e3",
+     "g": 14,
+     "note": "crumbled"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 25,
+     "note": "finely diced"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 0.8
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils",
+     "note": "for the pan and the slaw"
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 40,
+     "swap": "dairy_protein",
+     "note": "for the slaw"
+    },
+    {
+     "food": "curly-kale-raw-d92774",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, very thinly sliced"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 30,
+     "note": "washed and grated"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 10
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Wash the sweet potato and prick it all over. Microwave until very soft, about 6 minutes, then scoop the flesh into a bowl. Wash the kale and carrot.",
+    "Mash the sweet potato with the black beans, leaving some texture. Stir in the oats, walnuts, onion, paprika, cumin and salt, then shape into patties and chill for 10 minutes.",
+    "Massage the thinly sliced kale and the carrot with the lime juice and a little of the oil until the kale softens, then stir in the yogurt for the slaw.",
+    "Warm the rest of the oil in a non-stick pan over medium heat. Cook the patties until crisp and golden and hot through, about 5 minutes a side.",
+    "Toast the bread, set a patty on each slice, and top with the feta and slaw. Cool any extra patties within 1 hour and use them within 2 days, reheated until steaming, to 74 \u00b0C (165 \u00b0F)."
+   ],
+   "prepMin": 20,
+   "cookMin": 15,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Chill the patties longer if the mixture feels soft."
+  },
+  {
+   "id": "brunch-lovers-carrot-red-lentil-soup-toast",
+   "name": "Carrot, red lentil and ginger soup with walnuts and whole-grain toast",
+   "about": "A silky soup of carrots, red lentils, ginger and cumin, finished with lemon, a yogurt swirl and toasted walnuts, with a slice of whole-wheat toast on the side. Makes two portions, so tomorrow's lunch is done. The lentils bring **iron, folate and protein**, and the carrots bring vitamin A.",
+   "ingredients": [
+    {
+     "food": "red-lentils-split-dried-raw-a4a763",
+     "g": 70,
+     "swap": "legumes",
+     "note": "dry, rinsed"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 170,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 40,
+     "note": "diced"
+    },
+    {
+     "food": "ginger-root-raw-da2481",
+     "g": 5,
+     "note": "peeled and grated"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "minced"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 7,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 300,
+     "note": "plus water to cover"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 8
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 60,
+     "swap": "dairy_protein",
+     "note": "for swirling in"
+    },
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 50,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "toasted and chopped"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    }
+   ],
+   "steps": [
+    "Wash the carrots and chop them. Warm the oil in a pot over medium heat and cook the onion until soft, about 5 minutes. Add the garlic, ginger and cumin for 1 minute.",
+    "Add the carrots, lentils, broth and enough water to cover everything. Bring to a boil, then simmer, partly covered, until the lentils and carrots are completely soft, about 22 minutes.",
+    "Blend until smooth with a stick blender (or leave it a little chunky). Stir in the lemon juice and the salt.",
+    "Serve in a bowl with a swirl of yogurt and the walnuts on top, with the toast on the side.",
+    "Cool the second portion within 1 hour in a shallow container, keep it in the fridge without the toast or yogurt, and use it tomorrow. Reheat the soup to 74 \u00b0C (165 \u00b0F) and add the yogurt cold. It also freezes: cool within 2 hours, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze."
+   ],
+   "prepMin": 10,
+   "cookMin": 28,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "makes-leftovers",
+    "freezer-friendly"
+   ],
+   "tip": "A pinch of chili flakes on top gives it a little heat."
+  },
+  {
+   "id": "brunch-lovers-beef-white-bean-braise",
+   "name": "Braised beef with white beans, potatoes, carrots and spinach",
+   "about": "Beef chuck and onions braised slowly with tomato and thyme until tender, with white beans, small potatoes, carrots and spinach stirred in at the end. Makes two portions, so tomorrow's dinner is done. The beef and beans bring **iron and zinc**, with vitamin C from the tomato.",
+   "ingredients": [
+    {
+     "food": "beef-chuck-for-stew-lean-and-fat-raw-8d6ce5",
+     "g": 130,
+     "swap": "lean_protein",
+     "note": "trimmed, cut in chunks"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 70,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 105,
+     "note": "washed, in chunks"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 70,
+     "note": "washed, in chunks"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 50,
+     "note": "diced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+     "g": 70,
+     "note": "crushed by hand, with its juice"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "thyme-cbb9af",
+     "g": 0.5
+    },
+    {
+     "food": "bay-leaf-513612",
+     "g": 0.2
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 7,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 250,
+     "note": "plus water to cover"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 6
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.8
+    }
+   ],
+   "steps": [
+    "Pat the beef dry. Warm the oil in a heavy pot over medium-high heat and brown the beef in batches, about 6 minutes, moving it to a clean plate. Wash your hands, knife and board after handling the raw beef.",
+    "In the same pot, cook the onion until golden, about 6 minutes. Stir in the garlic and thyme for 1 minute.",
+    "Return the beef, add the tomatoes, broth and enough water to just cover, plus the bay leaf and salt. Bring to a simmer, cover and cook gently until the beef is tender and reaches at least 71 \u00b0C (160 \u00b0F), about 75 minutes.",
+    "Add the potatoes and carrots and cook until tender, about 15 minutes, then the beans for 5 minutes and the spinach for the last 2 minutes. Remove the bay leaf and finish with the lemon juice.",
+    "Cool the second portion within 1 hour in a shallow container and keep it in the fridge. Use it tomorrow, reheated to 74 \u00b0C (165 \u00b0F). It also freezes: cool within 2 hours, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze."
+   ],
+   "prepMin": 20,
+   "cookMin": 105,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "weekend-project",
+    "makes-leftovers",
+    "freezer-friendly"
+   ],
+   "tip": "In a pressure cooker the beef is tender in 35 minutes."
+  },
+  {
+   "id": "brunch-lovers-hummus-veg-sticks",
+   "name": "Hummus with cucumber, carrot and red pepper sticks",
+   "about": "A scoop of hummus with crunchy cucumber, carrot and red pepper for dipping. The chickpeas bring **fibre and protein**.",
+   "ingredients": [
+    {
+     "food": "hummus-443cc0",
+     "g": 55
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 80,
+     "note": "washed and cut in sticks"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 70,
+     "note": "washed, seeded and cut in sticks"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 60,
+     "note": "washed and cut in sticks"
+    }
+   ],
+   "steps": [
+    "Wash the vegetables, cut them into sticks and serve with the hummus. If packing it, keep it chilled and eat it the same day."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook"
+   ]
+  },
+  {
+   "id": "brunch-lovers-strawberry-almond-yogurt",
+   "name": "Strawberry and almond yogurt bowl with toasted oats and chia",
+   "about": "Thick Greek yogurt with sliced strawberries, chopped almonds, toasted oats and a pinch of chia. A fruit-and-nut bowl that brings **protein and calcium**.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 170,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "strawberry-raw-fc000f",
+     "g": 130,
+     "swap": "berries",
+     "note": "washed, hulled and sliced"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "chopped"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 12,
+     "swap": "low_gi_grains",
+     "note": "toasted in a dry pan"
+    },
+    {
+     "food": "chia-seeds-dried-33a3b7",
+     "g": 4
+    }
+   ],
+   "steps": [
+    "Wash, hull and slice the strawberries. Toast the oats in a dry pan for 2 minutes.",
+    "Spoon the yogurt into a bowl, top with the strawberries, then the almonds, oats and chia."
+   ],
+   "prepMin": 5,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook"
+   ]
+  },
+  {
+   "id": "brunch-lovers-orange-almonds",
+   "name": "Orange and almonds",
+   "about": "A juicy orange with a small handful of almonds. The orange brings **vitamin C** and the almonds bring vitamin E.",
+   "ingredients": [
+    {
+     "food": "orange-raw-ce787f",
+     "g": 150,
+     "swap": "vit_c_fruit",
+     "note": "washed, in wedges"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 16,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the orange and cut it into wedges. Serve with the almonds."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook"
+   ]
+  },
+  {
+   "id": "brunch-lovers-banana-walnuts",
+   "name": "Sliced banana with cinnamon-toasted walnuts",
+   "about": "A sliced banana with walnuts toasted in a dry pan with a pinch of cinnamon. It brings **potassium** and the walnuts bring plant omega-3.",
+   "ingredients": [
+    {
+     "food": "banana-raw-61b750",
+     "g": 110
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 16,
+     "swap": "nuts_seeds",
+     "note": "chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Toast the walnuts with the cinnamon in a dry pan over medium heat for 2 minutes, until fragrant. Peel and slice the banana and scatter the warm walnuts over."
+   ],
+   "prepMin": 3,
+   "cookMin": 2,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook"
+   ]
+  },
+  {
+   "id": "brunch-lovers-strawberry-almonds",
+   "name": "Strawberries with almonds",
+   "about": "Fresh strawberries with a small handful of almonds. The strawberries bring **vitamin C** and the almonds bring vitamin E.",
+   "ingredients": [
+    {
+     "food": "strawberry-raw-fc000f",
+     "g": 150,
+     "swap": "berries",
+     "note": "washed and hulled"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 18,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash and hull the strawberries and serve them with the almonds."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook"
+   ]
+  },
+  {
+   "id": "brunch-lovers-paprika-roasted-chickpeas",
+   "name": "Paprika roasted chickpeas",
+   "about": "Chickpeas roasted until crunchy with smoked paprika and a little olive oil. They bring **fibre, protein and iron**.",
+   "ingredients": [
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 125,
+     "swap": "legumes",
+     "note": "rinsed and dried well"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 3,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 0.8
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 210 \u00b0C (410 \u00b0F). Toss the dried chickpeas with the oil, paprika and salt.",
+    "Roast on a tray, shaking once, until crisp, about 25 minutes. Cool a few minutes before eating."
+   ],
+   "prepMin": 2,
+   "cookMin": 25,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook"
+   ]
+  },
+  {
+   "id": "brunch-lovers-tomato-cucumber-feta-cup",
+   "name": "Tomato, cucumber and feta cup with olive oil",
+   "about": "Diced tomato and cucumber with crumbled feta, a drizzle of olive oil and a squeeze of lemon. It brings **vitamin C and some calcium**.",
+   "ingredients": [
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 100,
+     "note": "washed and diced"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 80,
+     "note": "washed and diced"
+    },
+    {
+     "food": "feta-cheese-f7c0e3",
+     "g": 20,
+     "note": "crumbled"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 4,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 4
+    }
+   ],
+   "steps": [
+    "Wash the tomato and cucumber and dice them. Toss with the feta, oil and lemon juice."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook"
+   ]
+  },
+  {
+   "id": "brunch-lovers-hummus-tomato-toast",
+   "name": "Hummus and tomato toast",
+   "about": "A slice of whole-wheat toast with hummus and sliced tomato. The hummus brings **fibre and protein**.",
+   "ingredients": [
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 40,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "hummus-443cc0",
+     "g": 35
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 70,
+     "note": "washed and sliced"
+    }
+   ],
+   "steps": [
+    "Toast the bread, spread with the hummus and top with the sliced tomato."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook"
+   ]
+  },
+  {
+   "id": "brunch-lovers-walnut-almond-mix",
+   "name": "Walnut and almond mix with cinnamon",
+   "about": "A small handful of walnuts and almonds with a pinch of cinnamon. The walnuts bring plant omega-3 and the almonds bring **vitamin E**.",
+   "ingredients": [
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 18,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 14,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Mix the nuts with the cinnamon and serve."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook"
+   ]
+  },
+  {
+   "id": "brunch-lovers-yogurt-banana-walnuts",
+   "name": "Greek yogurt with banana, walnuts and cinnamon",
+   "about": "Thick Greek yogurt with sliced banana, chopped walnuts and a dusting of cinnamon. It brings **protein and calcium**, and the walnuts bring plant omega-3.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 150,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "banana-raw-61b750",
+     "g": 70,
+     "note": "sliced"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Slice the banana into a bowl, spoon the yogurt over and top with the walnuts and cinnamon."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook"
+   ]
+  },
+  {
+   "id": "brunch-lovers-oat-pancakes-berries-light",
+   "name": "Oat and banana pancakes with warm strawberries and yogurt",
+   "about": "Fluffy whole-wheat and oat pancakes, sweetened mostly by mashed banana (no egg), stacked with warm strawberries, Greek yogurt and sliced almonds. The oats and strawberries bring **fibre and vitamin C**, the yogurt brings protein, the almonds bring vitamin E and the chia brings plant omega-3.",
+   "ingredients": [
+    {
+     "food": "wheat-flour-whole-wheat-45d81e",
+     "g": 40,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 40,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "banana-raw-61b750",
+     "g": 80,
+     "note": "ripe, mashed"
+    },
+    {
+     "food": "chia-seeds-dried-33a3b7",
+     "g": 6,
+     "note": "stirred into the batter"
+    },
+    {
+     "food": "baking-powder-low-sodium-2b32ac",
+     "g": 3
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 5,
+     "swap": "healthy_oils",
+     "note": "for the pan"
+    },
+    {
+     "food": "strawberry-raw-fc000f",
+     "g": 130,
+     "swap": "berries",
+     "note": "washed, hulled and halved"
+    },
+    {
+     "food": "maple-syrup-prepackaged-65e117",
+     "g": 6
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 130,
+     "swap": "dairy_protein"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "sliced or chopped"
+    }
+   ],
+   "steps": [
+    "Mash the banana in a bowl. Stir in about 100 ml of water per portion, then the flour, oats, chia, baking powder and cinnamon until just combined, with a few small lumps. Rest the batter 5 minutes while the oats and chia soften.",
+    "Warm the strawberries with the maple syrup in a small pot over medium heat, stirring now and then, until they are soft and juicy and steaming, about 4 minutes. Keep them warm.",
+    "Brush a non-stick pan with the oil and heat over medium. Spoon in the batter in rounds and cook until bubbles form and the edges look set, about 2 minutes, then flip and cook another 2 minutes until golden and cooked through.",
+    "Stack the pancakes, spoon over the warm berries and the yogurt, and scatter the almonds on top."
+   ],
+   "prepMin": 8,
+   "cookMin": 14,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Mix the dry ingredients the night before and the batter takes 2 minutes in the morning."
+  },
+  {
+   "id": "brunch-lovers-avocado-egg-toast-light",
+   "name": "Avocado and firm egg on whole-grain toast with tomato and spinach",
+   "about": "Mashed avocado with lemon and chili flakes on whole-wheat toast, topped with a fried egg cooked until the yolk is completely firm, tomato and baby spinach. The avocado brings **healthy fats and vitamin E**, and the egg brings protein and choline.",
+   "ingredients": [
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 85,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "avocado-raw-c06278",
+     "g": 40,
+     "note": "washed before cutting, mashed"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 100,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 70,
+     "note": "washed and sliced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 25,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 6
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 4,
+     "swap": "healthy_oils",
+     "note": "for the pan"
+    },
+    {
+     "food": "feta-cheese-f7c0e3",
+     "g": 25,
+     "note": "crumbled"
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.3
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Wash the avocado, tomato and spinach. Halve and stone the avocado, scoop it into a bowl and mash it with the lemon juice, the chili flakes and the salt. Slice the tomato.",
+    "Toast the bread. Warm the oil in a non-stick pan over medium heat, crack in the eggs and cook, covered, until the whites are set and the yolks are completely firm, about 5 minutes, turning them once if you like. Wash your hands after cracking the eggs.",
+    "Spread the avocado on the toast, lay on the spinach and tomato, top with the firm eggs and scatter the feta over."
+   ],
+   "prepMin": 8,
+   "cookMin": 6,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "15-minute"
+   ],
+   "tip": "Add a squeeze of lime and a little chopped cilantro for a fresher bite."
+  },
+  {
+   "id": "brunch-lovers-menemen-firm-eggs-light",
+   "name": "Turkish-style menemen with firm eggs, peppers and whole-grain toast",
+   "inspiredBy": "Turkish menemen, with the eggs cooked fully firm",
+   "about": "Eggs stirred into slowly cooked tomatoes, red pepper and onion until completely set, with parsley, feta and Aleppo pepper, scooped up with whole-wheat toast and a handful of spinach. The egg and tomato bring **choline and vitamin C**.",
+   "ingredients": [
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 100,
+     "swap": "lean_protein"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 130,
+     "note": "washed and diced"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 60,
+     "note": "washed, seeded and diced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 30,
+     "note": "diced"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 30,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "aleppo-pepper-pul-biber-2339da",
+     "g": 0.5,
+     "note": "or a pinch of chili flakes"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 80,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "feta-cheese-f7c0e3",
+     "g": 20,
+     "note": "crumbled"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Wash the tomato, pepper, spinach and parsley. Dice the tomato, pepper and onion.",
+    "Warm the oil in a wide pan over medium heat. Cook the onion and pepper until soft, about 6 minutes. Add the tomato, Aleppo pepper and salt and simmer until thick and glossy, about 8 minutes, stirring in the spinach for the last minute.",
+    "Beat the eggs lightly and stir them in. Cook, stirring gently, until the eggs are completely set and the yolks are firm, with no liquid left, about 4 minutes. Wash your hands after cracking the eggs.",
+    "Scatter with the feta and parsley and serve straight from the pan with the toast."
+   ],
+   "prepMin": 10,
+   "cookMin": 18,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Serve from the pan with extra bread for scooping."
+  },
+  {
+   "id": "brunch-lovers-black-bean-sweet-potato-burgers-light",
+   "name": "Smoky black bean and sweet potato burgers on toast with kale slaw",
+   "about": "Pan-seared patties of black beans, sweet potato, oats and walnuts in smoked paprika and cumin, served open-face on toasted whole-wheat bread with feta and a lime-yogurt kale slaw. The beans and sweet potato bring **fibre and vitamin A**, with protein from the beans, walnuts and feta.",
+   "ingredients": [
+    {
+     "food": "black-beans-canned-no-salt-added-drained-33bee5",
+     "g": 150,
+     "swap": "legumes",
+     "note": "rinsed and dried"
+    },
+    {
+     "food": "sweet-potato-raw-15f948",
+     "g": 120,
+     "note": "washed, pricked"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 15,
+     "swap": "low_gi_grains",
+     "note": "rolled"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "finely chopped"
+    },
+    {
+     "food": "whole-wheat-bread-0dcc61",
+     "g": 70,
+     "swap": "low_gi_grains",
+     "note": "toasted"
+    },
+    {
+     "food": "feta-cheese-f7c0e3",
+     "g": 14,
+     "note": "crumbled"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 25,
+     "note": "finely diced"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 0.8
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils",
+     "note": "for the pan and the slaw"
+    },
+    {
+     "food": "greek-yogurt-plain-nonfat-a79a72",
+     "g": 40,
+     "swap": "dairy_protein",
+     "note": "for the slaw"
+    },
+    {
+     "food": "curly-kale-raw-d92774",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, very thinly sliced"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 30,
+     "note": "washed and grated"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 10
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Wash the sweet potato and prick it all over. Microwave until very soft, about 6 minutes, then scoop the flesh into a bowl. Wash the kale and carrot.",
+    "Mash the sweet potato with the black beans, leaving some texture. Stir in the oats, walnuts, onion, paprika, cumin and salt, then shape into patties and chill for 10 minutes.",
+    "Massage the thinly sliced kale and the carrot with the lime juice and a little of the oil until the kale softens, then stir in the yogurt for the slaw.",
+    "Warm the rest of the oil in a non-stick pan over medium heat. Cook the patties until crisp and golden and hot through, about 5 minutes a side.",
+    "Toast the bread, set a patty on each slice, and top with the feta and slaw. Cool any extra patties within 1 hour and use them within 2 days, reheated until steaming, to 74 \u00b0C (165 \u00b0F)."
+   ],
+   "prepMin": 20,
+   "cookMin": 15,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "Chill the patties longer if the mixture feels soft."
+  },
+  {
+   "id": "brunch-lovers-chicken-black-bean-chilaquiles-bake-light",
+   "name": "Chicken and black bean chilaquiles bake with lime kale slaw",
+   "inspiredBy": "Mexican chilaquiles, baked with chicken and beans instead of fried with eggs",
+   "about": "Crisp-baked corn tortilla wedges tossed in a smoky chicken, black bean and tomato sauce, then topped with a lime-cilantro kale and carrot slaw. A brunch classic turned into an easy weeknight dinner. Makes two portions, so tomorrow's lunch is done. The beans and chicken bring **protein and iron**, the lime and kale bring vitamin C and some calcium.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-boneless-skinless-raw-722c98",
+     "g": 160,
+     "swap": "lean_protein",
+     "note": "trimmed, diced small"
+    },
+    {
+     "food": "black-beans-canned-no-salt-added-drained-33bee5",
+     "g": 50,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "corn-tortilla-4f1d6a",
+     "g": 56,
+     "swap": "low_gi_grains",
+     "note": "cut in wedges and baked"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 40,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "minced"
+    },
+    {
+     "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+     "g": 70,
+     "note": "crushed by hand, with its juice"
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.6
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1.5
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "curly-kale-raw-d92774",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed, stems removed, very thinly sliced"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 35,
+     "note": "washed and grated"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 12
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 6,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.7
+    }
+   ],
+   "steps": [
+    "Heat the oven to 200 \u00b0C (400 \u00b0F). Wash the kale, carrot and cilantro. Slice the kale very thinly, grate the carrot and massage both with the lime juice, half the cilantro and a pinch of the salt until the kale softens. Keep the slaw in the fridge.",
+    "Cut all the tortillas into wedges, toss with a little of the oil and bake on a tray until crisp, about 8 minutes. Once cool, keep half in a sealed container for tomorrow.",
+    "Warm the rest of the oil in a wide pan over medium heat. Cook the onion until soft, about 5 minutes, then add the garlic, cumin, smoked paprika and chili flakes for 1 minute.",
+    "Add the chicken, the tomatoes and a splash of water, and simmer, stirring now and then, until the chicken reaches 74 \u00b0C (165 \u00b0F) and the sauce is thick, about 12 minutes. Stir in the beans and the rest of the salt and cook 3 minutes. Wash your hands, knife and board after handling the raw chicken.",
+    "Toss half the sauce with the warm tortilla wedges so they soften at the edges but keep some crunch, top with the slaw and the rest of the cilantro, and eat right away.",
+    "Cool the second portion of sauce within 1 hour in a shallow container and keep it in the fridge with the slaw separate. Tomorrow, reheat the sauce until steaming, to 74 \u00b0C (165 \u00b0F), and toss it with the saved wedges."
+   ],
+   "prepMin": 12,
+   "cookMin": 22,
+   "servings": 2,
+   "tags": [
+    "medium-spicy",
+    "makes-leftovers"
+   ],
+   "tip": "Leave out the chili flakes for a milder version."
+  },
+  {
+   "id": "brunch-lovers-chicken-lentil-dhansak",
+   "name": "Chicken and red lentil dhansak with onion bulgur and a cucumber salad",
+   "inspiredBy": "Parsi chicken dhansak, with lime and a little maple in place of tamarind and jaggery, and bulgur in place of brown rice",
+   "about": "Chicken thighs simmered with red lentils, tomato, ginger and warm spices until the lentils melt into a thick, gently sweet and sour sauce, with spinach and fenugreek stirred through. It comes with golden-onion bulgur and a crunchy cucumber salad. Makes two portions, so tomorrow's lunch is done. The lentils and spinach bring **iron, folate and fibre**, and the lime and tomato help your body absorb the iron.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-boneless-skinless-raw-722c98",
+     "g": 170,
+     "swap": "lean_protein",
+     "note": "trimmed, diced"
+    },
+    {
+     "food": "red-lentils-split-dried-raw-a4a763",
+     "g": 40,
+     "swap": "legumes",
+     "note": "dry, rinsed"
+    },
+    {
+     "food": "bulgur-dry-8ee6ab",
+     "g": 45,
+     "swap": "low_gi_grains",
+     "note": "medium or coarse, rinsed"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 70,
+     "note": "thinly sliced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "ginger-root-raw-da2481",
+     "g": 6,
+     "note": "peeled and grated"
+    },
+    {
+     "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+     "g": 100,
+     "note": "crushed by hand, with its juice"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed and chopped"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 70,
+     "note": "washed and diced"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 5,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 12
+    },
+    {
+     "food": "maple-syrup-prepackaged-65e117",
+     "g": 4
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1
+    },
+    {
+     "food": "coriander-seed-a0cdb1",
+     "g": 1
+    },
+    {
+     "food": "turmeric-ground-32f550",
+     "g": 0.5
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.3
+    },
+    {
+     "food": "cardamom-ground-ac233b",
+     "g": 0.2
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.4
+    },
+    {
+     "food": "kasuri-methi-dried-fenugreek-leaves-6f4317",
+     "g": 0.8,
+     "note": "crumbled"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.9
+    }
+   ],
+   "steps": [
+    "Wash the spinach, cucumber and cilantro. Rinse the lentils and the bulgur. Thinly slice the onion and set a small handful aside for the salad.",
+    "Warm half the oil in a small pot over medium heat and cook a third of the sliced onion until deep golden, about 8 minutes. Add the bulgur, a pinch of the salt and twice its volume of water, cover and simmer until the water is absorbed, about 12 minutes.",
+    "Meanwhile, warm the rest of the oil in a wide pan over medium heat and cook the rest of the onion until soft and golden, about 7 minutes. Add the garlic, ginger, cumin, coriander, turmeric, cinnamon, cardamom and chili flakes and stir for 1 minute until fragrant.",
+    "Add the tomatoes, the chicken, the lentils, the rest of the salt and about 3 times the lentils' volume of water. Simmer, stirring often so the lentils don't catch, until they collapse into a thick sauce and the chicken reaches 74 \u00b0C (165 \u00b0F), about 20 minutes. Wash your hands, knife and board after handling the raw chicken.",
+    "Stir in the spinach and the crumbled fenugreek leaves until the spinach wilts, then the maple syrup and most of the lime juice. Taste: it should be gently sweet, sour and warm.",
+    "Toss the cucumber with the reserved onion, the cilantro and the last of the lime juice. Serve the dhansak over the onion bulgur with the cucumber salad on the side.",
+    "Cool the second portion of dhansak and bulgur within 1 hour in separate shallow containers, keep them in the fridge with the salad separate, and use them tomorrow. Reheat the dhansak and bulgur until steaming, to 74 \u00b0C (165 \u00b0F), adding a splash of water."
+   ],
+   "prepMin": 12,
+   "cookMin": 32,
+   "servings": 2,
+   "tags": [
+    "medium-spicy",
+    "makes-leftovers",
+    "freezer-friendly"
+   ],
+   "tip": "Freeze the dhansak without the bulgur: cool within 2 hours, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 \u00b0C (165 \u00b0F)."
+  },
+  {
+   "id": "brunch-lovers-lemony-salmon-tomato-cucumber",
+   "name": "Lemony canned salmon with Aleppo pepper on tomato and cucumber slices",
+   "about": "Canned salmon flaked with lemon, olive oil, parsley and a pinch of Aleppo pepper, piled on thick slices of tomato and cucumber and eaten with a fork. The salmon brings **omega-3, B12 and some vitamin D**, and its soft bones bring calcium.",
+   "ingredients": [
+    {
+     "food": "salmon-canned-drained-9cea4e",
+     "g": 90,
+     "swap": "fatty_fish",
+     "note": "drained, bones mashed in"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 100,
+     "note": "washed, in thick slices"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 60,
+     "note": "washed, in thick slices"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 6
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 3,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 4,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "aleppo-pepper-pul-biber-2339da",
+     "g": 0.3
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the tomato, cucumber and parsley. Cut the tomato and cucumber into thick slices and lay them on a plate.",
+    "Flake the salmon with the lemon juice, olive oil, parsley, Aleppo pepper and black pepper, mashing in the soft bones, and pile it on the slices. Keep any opened tin covered in the fridge and use it within 2 days. If packing it, keep it in a cold bag with an ice pack and eat it the same day."
+   ],
+   "prepMin": 5,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "no-cook"
+   ]
+  },
+  {
+   "id": "brunch-lovers-chicken-lentil-dhansak-light",
+   "name": "Chicken and red lentil dhansak with onion bulgur and a cucumber salad",
+   "inspiredBy": "Parsi chicken dhansak, with lime and a little maple in place of tamarind and jaggery, and bulgur in place of brown rice",
+   "about": "Chicken thighs simmered with red lentils, tomato, ginger and warm spices until the lentils melt into a thick, gently sweet and sour sauce, with spinach and fenugreek stirred through. It comes with golden-onion bulgur and a crunchy cucumber salad. Makes two portions, so tomorrow's lunch is done. The lentils and spinach bring **iron, folate and fibre**, and the lime and tomato help your body absorb the iron.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-boneless-skinless-raw-722c98",
+     "g": 270,
+     "swap": "lean_protein",
+     "note": "trimmed, diced"
+    },
+    {
+     "food": "red-lentils-split-dried-raw-a4a763",
+     "g": 30,
+     "swap": "legumes",
+     "note": "dry, rinsed"
+    },
+    {
+     "food": "bulgur-dry-8ee6ab",
+     "g": 45,
+     "swap": "low_gi_grains",
+     "note": "medium or coarse, rinsed"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 70,
+     "note": "thinly sliced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "ginger-root-raw-da2481",
+     "g": 6,
+     "note": "peeled and grated"
+    },
+    {
+     "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+     "g": 100,
+     "note": "crushed by hand, with its juice"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed and chopped"
+    },
+    {
+     "food": "cucumber-raw-087bf8",
+     "g": 70,
+     "note": "washed and diced"
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 5,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 12
+    },
+    {
+     "food": "maple-syrup-prepackaged-65e117",
+     "g": 4
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1
+    },
+    {
+     "food": "coriander-seed-a0cdb1",
+     "g": 1
+    },
+    {
+     "food": "turmeric-ground-32f550",
+     "g": 0.5
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.3
+    },
+    {
+     "food": "cardamom-ground-ac233b",
+     "g": 0.2
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.4
+    },
+    {
+     "food": "kasuri-methi-dried-fenugreek-leaves-6f4317",
+     "g": 0.8,
+     "note": "crumbled"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.9
+    }
+   ],
+   "steps": [
+    "Wash the spinach, cucumber and cilantro. Rinse the lentils and the bulgur. Thinly slice the onion and set a small handful aside for the salad.",
+    "Warm half the oil in a small pot over medium heat and cook a third of the sliced onion until deep golden, about 8 minutes. Add the bulgur, a pinch of the salt and twice its volume of water, cover and simmer until the water is absorbed, about 12 minutes.",
+    "Meanwhile, warm the rest of the oil in a wide pan over medium heat and cook the rest of the onion until soft and golden, about 7 minutes. Add the garlic, ginger, cumin, coriander, turmeric, cinnamon, cardamom and chili flakes and stir for 1 minute until fragrant.",
+    "Add the tomatoes, the chicken, the lentils, the rest of the salt and about 3 times the lentils' volume of water. Simmer, stirring often so the lentils don't catch, until they collapse into a thick sauce and the chicken reaches 74 \u00b0C (165 \u00b0F), about 20 minutes. Wash your hands, knife and board after handling the raw chicken.",
+    "Stir in the spinach and the crumbled fenugreek leaves until the spinach wilts, then the maple syrup and most of the lime juice. Taste: it should be gently sweet, sour and warm.",
+    "Toss the cucumber with the reserved onion, the cilantro and the last of the lime juice. Serve the dhansak over the onion bulgur with the cucumber salad on the side.",
+    "Cool the second portion of dhansak and bulgur within 1 hour in separate shallow containers, keep them in the fridge with the salad separate, and use them tomorrow. Reheat the dhansak and bulgur until steaming, to 74 \u00b0C (165 \u00b0F), adding a splash of water."
+   ],
+   "prepMin": 12,
+   "cookMin": 32,
+   "servings": 2,
+   "tags": [
+    "medium-spicy",
+    "makes-leftovers",
+    "freezer-friendly"
+   ],
+   "tip": "Freeze the dhansak without the bulgur: cool within 2 hours, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 \u00b0C (165 \u00b0F)."
+  },
+  {
+   "id": "brunch-lovers-ranchero-tofu-scramble-light",
+   "name": "Ranchero tofu scramble with black beans on corn tortillas",
+   "inspiredBy": "Mexican huevos rancheros, with tofu and beans in place of the eggs",
+   "about": "Crumbled tofu simmered with a quick ranchero sauce of tomato, red pepper, onion, garlic, oregano and a little chili, with black beans, spooned onto warm corn tortillas with lime and cilantro. The tofu and beans bring **protein and some calcium** with no eggs.",
+   "ingredients": [
+    {
+     "food": "firm-tofu-calcium-set-c9fb4e",
+     "g": 105,
+     "swap": "lean_protein",
+     "note": "drained and crumbled"
+    },
+    {
+     "food": "black-beans-canned-no-salt-added-drained-33bee5",
+     "g": 65,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "tomato-red-ripe-raw-eb3084",
+     "g": 90,
+     "note": "washed and diced"
+    },
+    {
+     "food": "red-bell-pepper-raw-42163e",
+     "g": 60,
+     "note": "washed, seeded and diced"
+    },
+    {
+     "food": "yellow-onion-raw-9328f7",
+     "g": 30,
+     "note": "diced"
+    },
+    {
+     "food": "corn-tortilla-4f1d6a",
+     "g": 100,
+     "swap": "low_gi_grains",
+     "note": "warmed"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "minced"
+    },
+    {
+     "food": "oregano-ground-ec4216",
+     "g": 0.5
+    },
+    {
+     "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+     "g": 0.3
+    },
+    {
+     "food": "lime-juice-raw-c67980",
+     "g": 8
+    },
+    {
+     "food": "coriander-cilantro-raw-c0e7c1",
+     "g": 6,
+     "note": "washed and chopped"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Wash the tomato, pepper and cilantro. Dice the tomato, onion and pepper, and chop the cilantro.",
+    "Warm the oil in a pan over medium heat. Cook the onion and pepper until soft, about 5 minutes, then stir in the garlic, oregano and chili flakes for 30 seconds.",
+    "Add the tomato, the crumbled tofu, the beans and the salt. Cook, stirring, until the tomato breaks down and the tofu is hot and lightly golden, about 6 minutes.",
+    "Warm the tortillas in a dry pan, about 20 seconds a side. Spoon the scramble onto them and finish with the lime juice and cilantro."
+   ],
+   "prepMin": 8,
+   "cookMin": 12,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Add a spoonful of salsa or a little more chili for more heat."
+  }
+ ],
+ "week": [
+  {
+   "day": 1,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "brunch-lovers-oat-pancakes-berries"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "brunch-lovers-warm-lentil-tomato-salmon-bowl"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "brunch-lovers-chicken-black-bean-chilaquiles-bake"
+    },
+    {
+     "slot": "snack",
+     "recipe": "brunch-lovers-orange-almonds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "brunch-lovers-hummus-veg-sticks"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "brunch-lovers-avocado-egg-toast"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "brunch-lovers-chicken-black-bean-chilaquiles-bake",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "brunch-lovers-maple-lime-salmon-bulgur"
+    },
+    {
+     "slot": "snack",
+     "recipe": "brunch-lovers-strawberry-almond-yogurt"
+    },
+    {
+     "slot": "snack",
+     "recipe": "brunch-lovers-orange-almonds"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "brunch-lovers-savoury-oats-spinach"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "brunch-lovers-roasted-veg-tofu-egg-hummus-toast"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "brunch-lovers-chicken-lentil-dhansak"
+    },
+    {
+     "slot": "snack",
+     "recipe": "brunch-lovers-lemony-salmon-tomato-cucumber"
+    },
+    {
+     "slot": "snack",
+     "recipe": "brunch-lovers-strawberry-almonds"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "brunch-lovers-white-bean-greens-toast"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "brunch-lovers-chicken-lentil-dhansak",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "brunch-lovers-baked-egg-strata"
+    },
+    {
+     "slot": "snack",
+     "recipe": "brunch-lovers-yogurt-banana-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "brunch-lovers-paprika-roasted-chickpeas"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "brunch-lovers-ranchero-tofu-scramble"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "brunch-lovers-baked-egg-strata",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "brunch-lovers-black-bean-sweet-potato-burgers"
+    },
+    {
+     "slot": "snack",
+     "recipe": "brunch-lovers-lemony-salmon-tomato-cucumber"
+    },
+    {
+     "slot": "snack",
+     "recipe": "brunch-lovers-paprika-roasted-chickpeas"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "brunch-lovers-menemen-firm-eggs"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "brunch-lovers-carrot-red-lentil-soup-toast"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "brunch-lovers-beef-white-bean-braise"
+    },
+    {
+     "slot": "snack",
+     "recipe": "brunch-lovers-strawberry-almond-yogurt"
+    },
+    {
+     "slot": "snack",
+     "recipe": "brunch-lovers-banana-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "brunch-lovers-salmon-egg-toast-strawberries"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "brunch-lovers-carrot-red-lentil-soup-toast",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "brunch-lovers-beef-white-bean-braise",
+     "leftover": true
+    },
+    {
+     "slot": "snack",
+     "recipe": "brunch-lovers-yogurt-banana-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "brunch-lovers-strawberry-almonds"
+    }
+   ]
+  }
+ ]
+}
