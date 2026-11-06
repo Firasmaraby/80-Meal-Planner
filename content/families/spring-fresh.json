@@ -1,0 +1,1991 @@
+{
+  "id": "spring-fresh",
+  "name": "Spring Fresh",
+  "style": "balanced",
+  "cuisine": "Global",
+  "carbStyle": "whole",
+  "regions": [
+    "France",
+    "England",
+    "Italy",
+    "Lebanon"
+  ],
+  "summary": "Light, bright spring food that still warms a cool evening: asparagus, peas, new potatoes, radishes and herbs with trout, salmon, lamb and lentils. Strawberries and rhubarb start the day.",
+  "howItWorks": "**Cook once, eat twice.** Monday's chicken, leek and barley pot becomes Tuesday's lunch, Friday's warm lentil salad becomes Saturday's, and Saturday's lamb and white bean pot becomes Sunday's. Cool each within the hour; the pots keep up to 3 days and the lentil salad, with its salmon, 2 days.\n\n**Fish three ways.** Trout parcels on Thursday and seared salmon on Sunday are bought and cooked the same day, never kept. Canned salmon goes into Monday's fennel and orange salad and Friday's lentil salad, for **omega-3 and vitamin D**. Beans, lentils, chickpeas or tofu turn up every day.\n\n**Eggs, but not every day.** Two breakfasts, two lunches and Tuesday's green shakshuka use eggs, always cooked until the yolk is firm. They carry **choline**, along with the fish, beef, lamb and chicken. Beef on Wednesday, tofu on Friday and lamb on Saturday fill the other dinners.\n\n**Light.** Each day drops its first snack, and the oats, barley, quinoa, potatoes, nuts, oil and cheese shrink first. At 1,400 Monday's chicken pot keeps less than half its Standard chicken; the fish, beef, lamb and tofu stay as written.\n\n**Big.** There is no extra snack. Most of the proteins, beans, grains, potatoes, yogurt, oil and nuts grow, and the vegetables and fruit stay close to as written. To keep iron, selenium and phosphorus in range, most Friday to Sunday snacks become fruit with nuts or seeds or a radish and fennel pinzimonio, and Saturday's breakfast is the overnight oats.",
+  "signature": [
+    "spring-fresh-spring-chicken-leek-pea-barley-pot",
+    "spring-fresh-trout-asparagus-new-potato-parcels",
+    "spring-fresh-salmon-minted-pea-white-bean-smash-radish-fennel",
+    "spring-fresh-spring-lamb-white-bean-pot"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 5,
+          "swap": {
+            "from": "spring-fresh-edamame-lemon-mint",
+            "to": "spring-fresh-strawberries-walnuts"
+          }
+        },
+        {
+          "day": 6,
+          "swap": {
+            "from": "spring-fresh-edamame-lemon-mint",
+            "to": "spring-fresh-radish-fennel-pinzimonio"
+          }
+        },
+        {
+          "day": 5,
+          "swap": {
+            "from": "spring-fresh-snap-peas-carrot-white-bean-dip",
+            "to": "spring-fresh-kiwi-sunflower-seeds"
+          }
+        },
+        {
+          "day": 6,
+          "swap": {
+            "from": "spring-fresh-kiwi-sunflower-seeds",
+            "to": "spring-fresh-kiwi-orange-walnuts"
+          }
+        },
+        {
+          "day": 7,
+          "swap": {
+            "from": "spring-fresh-snap-peas-lemon-mint-yogurt-dip",
+            "to": "spring-fresh-orange-strawberry-sunflower"
+          }
+        },
+        {
+          "day": 6,
+          "swap": {
+            "from": "spring-fresh-strawberry-rhubarb-yogurt-bowl",
+            "to": "spring-fresh-strawberry-walnut-overnight-oats"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "spring-fresh-strawberry-walnut-overnight-oats",
+      "name": "Strawberry and walnut overnight oats",
+      "inspiredBy": "Inspired by Swiss bircher muesli, with the first strawberries of the season",
+      "about": "Rolled oats soaked overnight in milk, with half the strawberries mashed through so the whole jar turns blush pink, and walnuts on top for crunch. It gives you **fibre, protein and plant omega-3** before the day starts, with five minutes of work the night before.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 170,
+          "swap": "dairy_protein",
+          "note": "or any milk you like"
+        },
+        {
+          "food": "strawberry-raw-fc000f",
+          "g": 140,
+          "swap": "berries",
+          "note": "washed, hulled"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash your hands and the strawberries. Mash about half of the strawberries with a fork and slice the rest.",
+        "Stir the oats, milk, cinnamon and the mashed strawberries together in a jar until there are no dry patches. Put the lid on and refrigerate overnight.",
+        "In the morning, stir it up and loosen it with a splash of milk if it is too thick. Top with the sliced strawberries and the walnuts just before eating so they stay crunchy.",
+        "Keep the jar in the fridge and eat it within 2 days of making it."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "In a hurry, make it in a jar for the commute. Keep it cold in a bag with an ice pack and eat it the same day."
+    },
+    {
+      "id": "spring-fresh-strawberry-rhubarb-yogurt-bowl",
+      "name": "Strawberry-rhubarb yogurt bowl with walnut oat crunch",
+      "inspiredBy": "Inspired by an English strawberry and rhubarb fool, lightened up for breakfast",
+      "about": "Rhubarb and strawberries simmered for a few minutes until jammy, spooned over thick yogurt with a crunch of toasted oats and walnuts. The yogurt brings **protein and calcium**, and the walnuts add plant omega-3.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 110,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "rhubarb-raw-6ae2d2",
+          "g": 70,
+          "note": "washed, trimmed, sliced thin; leaves discarded"
+        },
+        {
+          "food": "strawberry-raw-fc000f",
+          "g": 100,
+          "swap": "berries",
+          "note": "washed, hulled, halved"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 25,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Put the rhubarb, strawberries and cinnamon in a small pot with a spoonful of water. Cover and simmer over medium-low heat for 6 to 8 minutes, until the rhubarb is soft and the fruit is jammy. Tip it into a bowl so it cools a little.",
+        "While it simmers, toast the oats and walnuts in a dry skillet over medium heat for 3 to 4 minutes, stirring, until golden and fragrant. Tip them onto a plate.",
+        "Spoon the yogurt into a bowl, top with the warm fruit and scatter the crunch over the top.",
+        "Eat it the same day. The cooked fruit keeps 3 days in the fridge in a covered container if you want to make extra."
+      ],
+      "prepMin": 5,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "The rhubarb is tart on purpose. If you like it sweeter, add a teaspoon of honey to the pot."
+    },
+    {
+      "id": "spring-fresh-asparagus-herb-scramble-new-potatoes",
+      "name": "Asparagus and herb egg scramble with crisp new potatoes",
+      "inspiredBy": "Inspired by a spring asparagus and egg brunch",
+      "about": "Small potatoes crisped in the pan, then folded with snappy asparagus, spring onion, parsley and a whole egg and extra whites scrambled until fully set, with plenty of herbs. The egg brings **choline**, the whites add protein, and the asparagus adds folate and vitamin K.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 130,
+          "note": "small new potatoes, scrubbed and diced small"
+        },
+        {
+          "food": "asparagus-raw-506f1c",
+          "g": 90,
+          "note": "washed, woody ends snapped off, cut in short lengths"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 55
+        },
+        {
+          "food": "egg-white-raw-b17726",
+          "g": 70,
+          "note": "liquid egg whites, or the whites of two eggs"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Put the diced potatoes in a skillet with the oil over medium heat. Cover and cook for 8 minutes, stirring now and then, until tender and starting to turn golden.",
+        "Wash the asparagus, scallion and parsley. Add the asparagus and scallion to the pan and cook uncovered for 3 minutes, until the asparagus is bright green and just tender.",
+        "Beat the egg and egg whites with the salt and pepper and pour them over the vegetables. Stir gently over medium heat for 3 to 4 minutes, until the eggs are completely set with no liquid left.",
+        "Fold in the parsley, scatter the sunflower seeds over the top and serve straight away."
+      ],
+      "prepMin": 5,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Potatoes boiled the night before and kept in the fridge? Skip step 1 and crisp them in the oil for 4 minutes, and the breakfast takes 10 minutes."
+    },
+    {
+      "id": "spring-fresh-canned-salmon-chickpea-fennel-orange-salad",
+      "name": "Canned salmon, egg and chickpea salad with fennel, orange and baby spinach",
+      "inspiredBy": "Inspired by a Sicilian orange and fennel salad",
+      "about": "Flaked salmon, a firm-cooked egg and chickpeas over shaved fennel, orange segments and baby spinach with a lemon-dill dressing. The salmon with its soft bones brings **omega-3, vitamin D and some calcium**, and the orange with the chickpeas helps your body take up the iron.",
+      "ingredients": [
+        {
+          "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+          "g": 100,
+          "swap": "fatty_fish",
+          "note": "drained, skin and bones mashed in"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 55
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 60,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 80,
+          "note": "washed, shaved thin"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "peeled, cut in segments"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 5,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Cover the egg with cold water in a small pot, bring to a boil and cook for 10 minutes so the yolk is completely firm. Cool it in cold water, then peel and quarter it. Wash the fennel, spinach and dill. Shave the fennel very thin and peel and segment the orange, catching any juice in a bowl.",
+        "Whisk the orange juice, lemon juice, oil, salt and pepper in the bowl. Add the onion and fennel and toss.",
+        "Add the chickpeas, spinach and dill and toss lightly. Flake the salmon over the top, add the egg and the sunflower seeds.",
+        "Cover and refrigerate any opened tin of salmon and use it within 2 days. If you pack this for lunch, carry it in a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 12,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Spoon it onto a baked potato for a cold-evening version."
+    },
+    {
+      "id": "spring-fresh-minted-pea-soup-chickpeas",
+      "name": "Minted pea soup with edamame, chickpeas and lemon yogurt",
+      "inspiredBy": "Inspired by a classic English pea and mint soup",
+      "about": "Sweet peas, carrot, a little onion and a handful of spinach simmered in stock and blended with fresh mint until silky, with edamame and chickpeas for body and a generous swirl of lemon yogurt. The peas, edamame and chickpeas together bring **fibre, folate and plant protein**, and the carrot and spinach add vitamin A.",
+      "ingredients": [
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 150,
+          "swap": "legumes"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed, diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 70,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 80,
+          "swap": "legumes"
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 250,
+          "note": "low-sodium chicken broth"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 8,
+          "note": "washed, leaves only"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the carrot and spinach, and dice the carrot. Warm the oil in a pot over medium heat and cook the onion for 4 minutes until soft and translucent.",
+        "Add the stock and the carrot, with a splash of water if the stock does not cover it, and simmer for 5 minutes. Add the frozen peas, edamame and half the chickpeas and simmer for 5 minutes more, until the peas and edamame are steaming hot all the way through.",
+        "Stir in the spinach and most of the mint until the spinach wilts, then blend until smooth with an immersion blender or in batches in a blender, holding the lid down with a towel. Add a little hot water if it is too thick to pour. Season with the salt, pepper and half the lemon juice.",
+        "Stir the yogurt with the rest of the lemon juice. Ladle the soup into a bowl, swirl the yogurt over it and top with the remaining chickpeas and mint."
+      ],
+      "prepMin": 8,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "It is just as good cold on a warm day."
+    },
+    {
+      "id": "spring-fresh-quinoa-egg-cucumber-herb-salad",
+      "name": "Herby quinoa salad with a firm egg, chickpeas and cucumber",
+      "inspiredBy": "Inspired by Lebanese tabbouleh, with quinoa and chickpeas",
+      "about": "Fluffy quinoa tossed with chickpeas, cucumber, radishes, carrot, spinach and a lot of dill and mint, topped with feta, a firm-cooked egg and sunflower seeds. Quinoa, chickpeas and egg make a **complete, filling lunch** with plenty of protein and fibre.",
+      "ingredients": [
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 55
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "washed, grated"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed, diced"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 40,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 4,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 25,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 18,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Put the quinoa in a small pot with twice its volume of water. Bring to a boil, cover and simmer on low for 12 minutes until the water is absorbed. Spread it on a plate to cool.",
+        "At the same time, cover the egg with cold water in another pot, bring to a boil and cook for 10 minutes so the yolk is completely firm. Cool it in cold water, then peel and halve it.",
+        "Whisk the lemon juice, oil and salt in a bowl. Add the cucumber, radishes, carrot, scallion, chickpeas, spinach, dill and mint, then the cooled quinoa, and toss.",
+        "Top with the egg, feta and sunflower seeds. If you pack this for lunch, keep it in a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook the quinoa the night before and chill it in a shallow container within 1 hour. Use it within 3 days."
+    },
+    {
+      "id": "spring-fresh-lentil-snap-pea-carrot-salad",
+      "name": "Warm lentil salad with snap peas, carrot, dill, feta and flaked salmon",
+      "inspiredBy": "Inspired by a French lentil salad",
+      "about": "Green-brown lentils that hold their shape, tossed while still warm in a mustardy lemon dressing with crunchy snap peas, grated carrot, spring onion and plenty of herbs, with flaked canned salmon folded through. Lentils bring **iron and folate**, the salmon adds omega-3 and B12, and the lemon helps your body take up the iron.",
+      "ingredients": [
+        {
+          "food": "green-and-brown-lentils-whole-dried-raw-f67c80",
+          "g": 45,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+          "g": 60,
+          "swap": "fatty_fish",
+          "note": "drained, skin and bones mashed in"
+        },
+        {
+          "food": "sugar-snap-peas-raw-1133ae",
+          "g": 60,
+          "note": "washed, strings removed, sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed, grated"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 4,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 15,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 18,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Rinse the lentils and put them in a pot with plenty of water, enough to cover by a good 5 cm. Bring to a boil, then simmer for 20 to 25 minutes, until tender but still holding their shape. Drain.",
+        "Whisk the mustard, lemon juice, oil, salt and pepper in a large bowl. Tip in the warm lentils and toss so they soak up the dressing.",
+        "Wash the snap peas, carrot, scallion and herbs. Add them to the lentils with the feta and toss. Flake the salmon over the top and scatter the sunflower seeds on just before eating.",
+        "Put the second portion in a shallow container within 1 hour, without the sunflower seeds, and refrigerate. Eat it the next day, cold or at room temperature; it keeps 2 days at most because of the salmon. Cover and refrigerate any opened tin and use it within 2 days. If you pack it, use a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Cook the lentils the night before and the salad takes 10 minutes."
+    },
+    {
+      "id": "spring-fresh-spring-chicken-leek-pea-barley-pot",
+      "name": "Spring chicken pot with leeks, peas and barley",
+      "inspiredBy": "Inspired by a French blanquette and a Scottish barley broth",
+      "about": "Tender chicken thigh simmered with sweet leeks, carrots and pearl barley in a tarragon and mustard broth, with peas and spinach stirred in at the end and a squeeze of lemon. Barley, peas and spinach bring **fibre, folate and iron**, and the chicken brings protein and B vitamins to a warm, cool-evening pot.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 200,
+          "swap": "lean_protein",
+          "note": "trimmed of visible fat, cut in bite-size pieces"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "pearl barley, rinsed"
+        },
+        {
+          "food": "leek-raw-01ddc0",
+          "g": 90,
+          "note": "washed well, sliced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed, diced"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 50,
+          "swap": "legumes"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "tarragon-dried-6a465a",
+          "g": 0.5
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 5
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 250,
+          "note": "low-sodium chicken broth"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Warm the oil in a wide pot over medium-high heat. Add the chicken and brown it for 3 to 4 minutes, then lift it onto a plate. Wash your hands, the board and the knife with hot soapy water after handling the raw chicken.",
+        "Add the leeks, carrots and garlic to the pot with a pinch of the salt and cook for 4 minutes, until the leeks are soft. Stir in the mustard, tarragon and barley.",
+        "Pour in the broth with enough water to cover everything by 2 cm. Return the chicken, bring to a boil, then cover and simmer for 20 to 25 minutes, until the barley is tender and the chicken reads 74 °C (165 °F) in the thickest piece.",
+        "Stir in the peas and cook for 3 minutes, until they are steaming hot. Stir in the spinach until just wilted. Add the lemon juice, the rest of the salt, the pepper and most of the parsley. It should be a thick, spoonable stew; add a splash of water if it is too thick.",
+        "Serve in warm bowls with the rest of the parsley. Put the second portion in a shallow container within 1 hour and refrigerate. It keeps up to 3 days; reheat it to 74 °C (165 °F) until steaming, loosening with a splash of water."
+      ],
+      "prepMin": 8,
+      "cookMin": 32,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "kid-friendly"
+      ],
+      "tip": "It thickens as it sits; add a splash of water or broth when you reheat it."
+    },
+    {
+      "id": "spring-fresh-green-shakshuka-white-beans-spinach",
+      "name": "Green herb shakshuka with white beans",
+      "inspiredBy": "Inspired by shakshuka, with a spring-green sauce instead of tomato",
+      "about": "Eggs cooked in a bright green sauce of spinach, spring onion, parsley, dill and mint, with creamy white beans and a little feta. The eggs and beans bring **protein and choline**, and the spinach and herbs add iron, folate and vitamin K.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 110
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 120,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 30,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 5,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 4,
+          "note": "washed, leaves only"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 80,
+          "note": "low-sodium chicken broth"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 15,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Warm the oil in a deep skillet over medium heat. Cook the scallion and garlic with the cumin for 2 minutes, until soft and fragrant.",
+        "Add the spinach in handfuls and cook for 3 minutes, until wilted. Add the parsley, dill, mint, white beans and broth and simmer for 5 minutes. Mash about half the beans with a fork so the sauce turns creamy. Season with the salt, pepper and lemon juice.",
+        "Make two wells in the sauce and crack an egg into each. Cover and cook for 8 to 10 minutes on low, until the whites are set and the yolks are firm all the way through. Break the yolks with a spoon and keep cooking for a minute if any look soft.",
+        "Scatter the feta and the sunflower seeds over the top and serve in the skillet."
+      ],
+      "prepMin": 10,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Serve it with a bowl of sliced cucumbers on the side."
+    },
+    {
+      "id": "spring-fresh-trout-asparagus-new-potato-parcels",
+      "name": "Trout and asparagus parcels with new potatoes and lemon-dill yogurt",
+      "inspiredBy": "Inspired by the French way of cooking fish en papillote",
+      "about": "A trout fillet baked in a sealed parchment parcel on thin-sliced new potatoes with carrot, asparagus, lemon and dill, so everything steams in its own juices. Trout brings **omega-3 and vitamin D**, and the potatoes, carrot and asparagus add potassium, vitamin A and folate.",
+      "ingredients": [
+        {
+          "food": "rainbow-trout-farmed-raw-0cc800",
+          "g": 170,
+          "swap": "fatty_fish",
+          "note": "fresh fillet, bought today, skin-on"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 230,
+          "note": "small new potatoes, scrubbed, sliced thin"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed, in thin ribbons"
+        },
+        {
+          "food": "asparagus-raw-506f1c",
+          "g": 110,
+          "note": "washed, woody ends snapped off"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 25,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Boil the potato slices in salted water for 5 minutes until just starting to soften, then drain. Buy the trout the day you cook it and keep it in the fridge until you start.",
+        "Cut a large sheet of parchment, fold it in half and open it flat. Pile the potatoes on one side with the carrot ribbons, garlic, scallion, half the oil and a pinch of the salt. Lay the asparagus on top.",
+        "Pat the trout dry and season it with the rest of the salt, pepper, half the lemon juice and half the dill. Place it on the vegetables, drizzle with the rest of the oil, fold the parchment over and crimp the edges tightly shut. Put the parcel on a tray. Wash your hands, the board and the plate that held the raw fish.",
+        "Bake for 18 to 20 minutes, until the trout flakes easily and reads 70 °C (158 °F) in the thickest part.",
+        "Stir the yogurt with the rest of the lemon juice and dill. Open the parcel carefully (the steam is hot) and spoon the yogurt over the top."
+      ],
+      "prepMin": 12,
+      "cookMin": 26,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Fresh fish is not a leftover. Cook it the day you buy it and eat it the same day."
+    },
+    {
+      "id": "spring-fresh-seared-beef-salsa-verde-radishes-buckwheat",
+      "name": "Seared beef with salsa verde, roasted radishes and barley",
+      "inspiredBy": "Inspired by Italian salsa verde over steak",
+      "about": "Lean sirloin seared and sliced over chewy barley and roasted radishes, with a sharp, chunky salsa verde of parsley, mint, walnuts, garlic, lemon and mustard. The beef brings **iron and zinc**, and the lemon and parsley in the salsa help your body take up that iron.",
+      "ingredients": [
+        {
+          "food": "beef-top-sirloin-steak-lean-raw-a51c2c",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "trimmed of visible fat"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "pearl barley, rinsed"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 100,
+          "note": "washed, trimmed, halved"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 25,
+          "note": "washed, trimmed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 18,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Toss the radishes and scallion with a third of the oil and a pinch of the salt on a tray and roast for 18 to 20 minutes, until browned at the edges and tender.",
+        "Rinse the barley. Simmer it in plenty of water with a pinch of salt for 25 minutes, until tender but still chewy. Drain well. Start it first, while the radishes roast.",
+        "Stir the parsley, mint, walnuts, garlic, lemon juice, mustard, half the remaining oil and a pinch of salt into a chunky salsa verde.",
+        "Pat the beef dry and season it with the rest of the salt and the pepper, then wash your hands, the board and the knife you used for the raw beef. Sear it in a hot skillet with the last of the oil for 4 to 6 minutes per side, until it reads 71 °C (160 °F) in the centre. Rest it for 3 minutes on a clean plate (never the one that held the raw steak), then slice it across the grain on the clean board.",
+        "Pile the barley and spinach on a plate, add the radishes and the beef, and spoon the salsa verde over everything."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "No barley? Quinoa works too and cooks in 12 minutes."
+    },
+    {
+      "id": "spring-fresh-salmon-minted-pea-white-bean-smash-radish-fennel",
+      "name": "Seared salmon with minty pea and white bean smash and a radish-fennel salad",
+      "inspiredBy": "Inspired by an English supper of salmon and crushed peas",
+      "about": "Crisp-skinned salmon on a chunky smash of peas, edamame, white beans and mint, with a crunchy shaved radish and fennel salad on the side. Salmon brings **omega-3 and vitamin D**, and the peas and beans bring fibre and plant protein.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "fresh skin-on fillet, bought today"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 80,
+          "swap": "legumes"
+        },
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 60,
+          "swap": "legumes"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 70,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 8,
+          "note": "washed, leaves only"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 50,
+          "note": "washed, shaved thin"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 60,
+          "note": "washed, shaved thin"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 4,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 25,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Buy the salmon the day you cook it and keep it in the fridge until you start. Wash the radish, fennel, mint, dill and scallion. Toss the shaved radish and fennel with the dill, half the lemon juice, a teaspoon of the oil and a pinch of salt.",
+        "Put the peas and edamame in a pot with the beans and a splash of water. Cover and heat for 4 to 5 minutes, until the peas and edamame are steaming hot all the way through. Drain, then mash roughly with a fork, leaving some texture. Stir in the mint, scallion, half the remaining oil, the rest of the lemon and a pinch of salt.",
+        "Pat the salmon dry and season with the rest of the salt and the pepper. Heat the last of the oil in a skillet over medium-high heat and lay the salmon in skin-side down, then wash your hands, the board and the plate that held the raw fish. Cook for 5 minutes until the skin is crisp, flip and cook for 2 to 3 minutes more, until it flakes and reads 70 °C (158 °F) in the thickest part.",
+        "Stir the yogurt with a squeeze of lemon and a pinch of salt. Spoon the smash onto a plate, set the salmon on top, add the yogurt and sunflower seeds and serve the salad alongside."
+      ],
+      "prepMin": 12,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "The salmon is cooked the day you buy it, never kept for later."
+    },
+    {
+      "id": "spring-fresh-spring-lamb-white-bean-pot",
+      "name": "Spring lamb and white bean pot with carrots, leeks and peas",
+      "inspiredBy": "Inspired by the French lamb stew navarin printanier",
+      "about": "Lean lamb simmered slowly with new potatoes, white beans, carrots, leeks, mushrooms and thyme until the broth turns silky, with peas stirred in at the end. The lamb brings **iron and zinc**, and the beans and peas bring fibre. It is an unhurried weekend pot that tastes better the next day.",
+      "ingredients": [
+        {
+          "food": "lamb-cubed-for-stew-or-kabob-lean-raw-e3098a",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "trimmed of visible fat, in bite-size cubes"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 60,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 70,
+          "note": "small new potatoes, scrubbed and halved"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "washed, in chunks"
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 85,
+          "note": "wiped clean, quartered"
+        },
+        {
+          "food": "leek-raw-01ddc0",
+          "g": 70,
+          "note": "washed well, sliced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 60,
+          "swap": "legumes"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.7
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 250,
+          "note": "low-sodium chicken broth"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Pat the lamb dry. Warm the oil in a heavy pot over medium-high heat and brown the lamb in two batches for 5 minutes each, then lift it onto a plate. Wash your hands, the board and the knife with hot soapy water after handling the raw lamb.",
+        "Lower the heat and cook the onion, leeks, mushrooms and garlic for 6 minutes, until soft and the mushrooms have given up their liquid. Stir in the thyme and cook for 1 minute.",
+        "Return the lamb with its juices. Add the carrots, potatoes, bay leaf, broth and enough water to just cover everything. Bring to a boil, then cover and simmer gently for 40 minutes, until the lamb is tender and reads at least 71 °C (160 °F).",
+        "Add the white beans and cook for 10 minutes more. Stir in the peas and cook for 3 minutes, until steaming hot. Remove the bay leaf and season with the salt, pepper and lemon juice.",
+        "Serve in warm bowls scattered with the parsley. Put the second portion in a shallow container within 1 hour and refrigerate. It keeps up to 3 days; reheat it to 74 °C (165 °F) until steaming. It also freezes: cool within 2 hours, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze."
+      ],
+      "prepMin": 15,
+      "cookMin": 62,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "weekend-project"
+      ],
+      "tip": "A pressure cooker does the lamb in 20 minutes."
+    },
+    {
+      "id": "spring-fresh-lemon-herb-tofu-asparagus-peas-crushed-potatoes",
+      "name": "Lemon-herb tofu with mushrooms, asparagus and minty crushed potatoes",
+      "inspiredBy": "Inspired by an English crushed new potato supper, with seared tofu for the protein",
+      "about": "Firm tofu seared until golden in lemon, garlic and mustard, on minty crushed new potatoes with mushrooms, asparagus and peas cooked in the same pan, and walnuts for crunch. Calcium-set tofu brings **protein and some calcium**, and the asparagus and peas add folate.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-calcium-set-c9fb4e",
+          "g": 180,
+          "swap": "lean_protein",
+          "note": "firm, calcium-set, patted dry and cut in thick slabs"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 250,
+          "note": "small new potatoes, scrubbed"
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 100,
+          "note": "wiped clean, sliced"
+        },
+        {
+          "food": "asparagus-raw-506f1c",
+          "g": 100,
+          "note": "washed, woody ends snapped off"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 50,
+          "swap": "legumes"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 22,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 5
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Boil the potatoes in salted water for 15 to 18 minutes, until a knife slides in easily. Drain, return them to the pot and crush each one roughly with a fork. Fold in a third of the oil, the scallion, mint and a pinch of salt.",
+        "Whisk the mustard, garlic, half the lemon juice, a little of the salt and the pepper in a shallow dish. Press the tofu between clean towels for a few minutes, then turn it in the mixture.",
+        "Heat half the remaining oil in a large skillet over medium-high heat. Sear the tofu for 3 to 4 minutes per side, until golden and crisp at the edges. Lift onto a plate.",
+        "Add the rest of the oil and the mushrooms to the pan and cook for 4 minutes, until golden. Add the asparagus and peas and cook for 3 to 4 minutes more, turning, until the asparagus is bright green and just tender and the peas are steaming hot.",
+        "Squeeze the rest of the lemon over everything, scatter the walnuts on top and serve with the potatoes."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Chicken breast works the same way if you prefer, cooked until it reads 74 °C (165 °F) in the centre."
+    },
+    {
+      "id": "spring-fresh-snap-peas-carrot-white-bean-dip",
+      "name": "Sugar snap peas and carrot sticks with lemony white bean dip",
+      "about": "Crunchy snap peas and sweet carrot sticks for scooping through a creamy mash of white beans, lemon and parsley. A **high-fibre** snack with plant protein from the beans.",
+      "ingredients": [
+        {
+          "food": "sugar-snap-peas-raw-1133ae",
+          "g": 80,
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "washed, cut in sticks"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Mash the white beans with the lemon juice, oil, salt and parsley with a fork until mostly smooth, adding a spoonful of water if it is stiff.",
+        "Wash the snap peas and carrot, trim the peas and cut the carrot into sticks, then serve with the dip. Keep leftover dip covered in the fridge and use it within 3 days."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "spring-fresh-orange-walnuts",
+      "name": "Orange with walnuts",
+      "about": "A juicy orange with a small handful of walnuts for crunch. The orange brings **vitamin C**, which helps your body take up iron from the day's meals, and the walnuts bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "washed before peeling"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the orange, peel it and break it into segments.",
+        "Eat with the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "spring-fresh-edamame-lemon-mint",
+      "name": "Warm edamame with lemon, mint and sunflower seeds",
+      "about": "Shelled edamame warmed through and tossed with lemon, mint, a pinch of salt and a few sunflower seeds. A snack of **plant protein, folate and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "edamame-frozen-prepared-004b3e",
+          "g": 115,
+          "swap": "legumes"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Put the frozen edamame in a bowl with a splash of water, cover and microwave for 2 minutes, until steaming hot all the way through, or simmer in a pot for 3 minutes. Drain well.",
+        "Toss with the lemon juice, mint, sunflower seeds and salt. Serve warm."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "spring-fresh-kiwi-sunflower-seeds",
+      "name": "Kiwi with sunflower seeds",
+      "about": "Two kiwi, halved to scoop with a spoon, and a small handful of sunflower seeds. The kiwi brings **vitamin C and fibre**, and the seeds bring vitamin E and magnesium.",
+      "ingredients": [
+        {
+          "food": "kiwi-fruit-raw-9fc921",
+          "g": 140,
+          "swap": "vit_c_fruit",
+          "note": "washed, halved"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 11,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the kiwi, halve it and scoop it with a spoon.",
+        "Eat with the sunflower seeds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "spring-fresh-cucumber-radish-lemon-dill-yogurt-dip",
+      "name": "Cucumber and radish with lemon-dill yogurt dip",
+      "about": "Cool cucumber and peppery radish for dipping into thick yogurt with lemon and dill. The yogurt brings **protein and calcium**, and it is a light, refreshing snack.",
+      "ingredients": [
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 50,
+          "note": "washed, trimmed"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 3,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Stir the yogurt with the lemon juice, dill and salt.",
+        "Wash and slice the cucumber and radishes and serve with the dip. Keep leftover dip covered in the fridge and use it within 2 days."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "spring-fresh-strawberries-walnuts",
+      "name": "Strawberries with walnuts",
+      "about": "A bowl of ripe strawberries with a small handful of walnuts. The berries bring **vitamin C**, and the walnuts bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "strawberry-raw-fc000f",
+          "g": 150,
+          "swap": "berries",
+          "note": "washed, hulled"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash and hull the strawberries.",
+        "Eat with the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "spring-fresh-smashed-chickpeas-cucumber-rounds",
+      "name": "Smashed chickpeas on cucumber rounds with lemon and dill",
+      "about": "Chickpeas lightly smashed with lemon, oil and dill, piled on thick cucumber rounds. A fresh, crunchy snack with **fibre and plant protein**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 90,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "washed, cut in thick rounds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 3,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Smash the chickpeas roughly with a fork with the lemon juice, oil, dill and salt.",
+        "Wash and slice the cucumber, then spoon the chickpeas onto the rounds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "spring-fresh-snap-peas-lemon-mint-yogurt-dip",
+      "name": "Sugar snap peas with lemon-mint yogurt dip",
+      "about": "Sweet, crunchy snap peas for dipping into thick yogurt stirred with lemon and fresh mint. The yogurt brings **protein and calcium**, and the peas bring vitamin C and fibre.",
+      "ingredients": [
+        {
+          "food": "sugar-snap-peas-raw-1133ae",
+          "g": 100,
+          "note": "washed, strings removed"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 100,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Stir the yogurt with the lemon juice, mint and salt.",
+        "Wash the snap peas, trim the ends and serve with the dip. Keep leftover dip covered in the fridge and use it within 2 days."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "spring-fresh-kiwi-orange-walnuts",
+      "name": "Kiwi and orange with walnuts",
+      "about": "A kiwi and an orange cut up together, with a small handful of walnuts for crunch. The fruit brings **vitamin C and fibre**, and the walnuts bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "kiwi-fruit-raw-9fc921",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "washed, peeled, sliced"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "washed before peeling"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the kiwi and the orange. Peel both and cut them into bite-size pieces.",
+        "Eat with the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "spring-fresh-orange-strawberry-sunflower",
+      "name": "Orange and strawberries with sunflower seeds",
+      "about": "Orange segments and sliced strawberries with a small handful of sunflower seeds. The fruit brings **vitamin C**, and the seeds bring vitamin E and magnesium.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "washed before peeling"
+        },
+        {
+          "food": "strawberry-raw-fc000f",
+          "g": 100,
+          "swap": "berries",
+          "note": "washed, hulled, sliced"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 10,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the orange and the strawberries. Peel the orange and break it into segments, and hull and slice the strawberries.",
+        "Eat with the sunflower seeds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "spring-fresh-radish-fennel-pinzimonio",
+      "name": "Radish and fennel pinzimonio",
+      "inspiredBy": "Inspired by Tuscan pinzimonio",
+      "about": "Crisp radishes and fennel cut into wedges for dipping into a little bowl of good olive oil with salt and pepper, the way Tuscans eat raw spring vegetables. The vegetables bring crunch and **vitamin C**, and the olive oil brings vitamin E.",
+      "ingredients": [
+        {
+          "food": "radish-raw-724b59",
+          "g": 80,
+          "note": "washed, trimmed, halved"
+        },
+        {
+          "food": "fennel-bulb-raw-e22e89",
+          "g": 70,
+          "note": "washed, cut in thin wedges"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Wash the radishes and fennel. Halve the radishes and cut the fennel into thin wedges through the root so they hold together.",
+        "Pour the oil into a small dish and season it with the salt and pepper. Dip the vegetables as you eat."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "spring-fresh-strawberry-walnut-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "spring-fresh-canned-salmon-chickpea-fennel-orange-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "spring-fresh-spring-chicken-leek-pea-barley-pot"
+        },
+        {
+          "slot": "snack",
+          "recipe": "spring-fresh-smashed-chickpeas-cucumber-rounds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "spring-fresh-orange-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "spring-fresh-strawberry-walnut-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "spring-fresh-spring-chicken-leek-pea-barley-pot",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "spring-fresh-green-shakshuka-white-beans-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "spring-fresh-snap-peas-carrot-white-bean-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "spring-fresh-cucumber-radish-lemon-dill-yogurt-dip"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "spring-fresh-asparagus-herb-scramble-new-potatoes"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "spring-fresh-minted-pea-soup-chickpeas"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "spring-fresh-seared-beef-salsa-verde-radishes-buckwheat"
+        },
+        {
+          "slot": "snack",
+          "recipe": "spring-fresh-orange-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "spring-fresh-snap-peas-lemon-mint-yogurt-dip"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "spring-fresh-strawberry-walnut-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "spring-fresh-quinoa-egg-cucumber-herb-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "spring-fresh-trout-asparagus-new-potato-parcels"
+        },
+        {
+          "slot": "snack",
+          "recipe": "spring-fresh-kiwi-sunflower-seeds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "spring-fresh-cucumber-radish-lemon-dill-yogurt-dip"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "spring-fresh-asparagus-herb-scramble-new-potatoes"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "spring-fresh-lentil-snap-pea-carrot-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "spring-fresh-lemon-herb-tofu-asparagus-peas-crushed-potatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "spring-fresh-edamame-lemon-mint"
+        },
+        {
+          "slot": "snack",
+          "recipe": "spring-fresh-snap-peas-carrot-white-bean-dip"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "spring-fresh-strawberry-rhubarb-yogurt-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "spring-fresh-lentil-snap-pea-carrot-salad",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "spring-fresh-spring-lamb-white-bean-pot"
+        },
+        {
+          "slot": "snack",
+          "recipe": "spring-fresh-kiwi-sunflower-seeds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "spring-fresh-edamame-lemon-mint"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "spring-fresh-strawberry-rhubarb-yogurt-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "spring-fresh-spring-lamb-white-bean-pot",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "spring-fresh-salmon-minted-pea-white-bean-smash-radish-fennel"
+        },
+        {
+          "slot": "snack",
+          "recipe": "spring-fresh-smashed-chickpeas-cucumber-rounds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "spring-fresh-snap-peas-lemon-mint-yogurt-dip"
+        }
+      ]
+    }
+  ]
+}
