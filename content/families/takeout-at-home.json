@@ -1,0 +1,3138 @@
+{
+  "id": "takeout-at-home",
+  "name": "Takeout at Home",
+  "style": "balanced",
+  "cuisine": "Global",
+  "carbStyle": "wholegrain",
+  "regions": [
+    "United States",
+    "India",
+    "Mexico",
+    "China",
+    "Greece",
+    "United Kingdom",
+    "Lebanon"
+  ],
+  "summary": "Your favourite takeout, made better at home: a lean beef cheeseburger with sweet potato wedges, chicken tikka with brown rice, a crisp turkey and veggie pizza, oven fish and chips, shrimp fried brown rice and baked falafel in a pita. Whole-grain buns, pitas, wraps and rice in real portions, lots of vegetables and no deep fryer.",
+  "howItWorks": "**Takeout, made at home.** Every classic keeps its soul but swaps the fryer for the oven, lean beef and turkey and skinless chicken for fattier cuts, cheese as a measured topping and reduced-sodium soy for the salt. Buns, pitas, wraps and brown rice are whole grain, and every plate has vegetables, beans or both.\n\n**Cook once, eat twice.** Tuesday's chicken tikka traybake and Friday's shrimp fried rice each make two portions, so Wednesday and Saturday lunches are done, and Monday's falafel can be baked with Thursday's. Cook Friday's rice the night before, cool any cooked rice within 1 hour in a shallow container, and reheat leftovers once, until steaming hot, to 74 °C.\n\n**Fish and protein.** Salmon on Wednesday (Cajun-spiced) and Saturday (tacos) brings omega-3 and **vitamin D**, with shrimp on Friday and haddock on Sunday. Beef, turkey, chicken, eggs, chickpeas and black beans cover the rest. The salmon and haddock are always cooked fresh; only the shrimp fried rice comes back as a leftover.\n\n**What changes with size.** Light has one snack a day instead of two. Its dishes start from a smaller bun, wraps, rice and wedges and a little less fish and chicken, then grow with your calories; near 2,000 they are about as big as Standard's, since there is one snack fewer.\n\n**Bigger sizes.** Big adds a third snack every day. At 2,400 that snack comes partly out of the rice, bread and chicken; as calories rise, the grains, beans, fish and meat grow, and at the top sizes the bun, pita and wraps come as two.",
+  "signature": [
+    "takeout-at-home-lean-beef-burger-sweet-potato-wedges",
+    "takeout-at-home-chicken-tikka-traybake-brown-rice",
+    "takeout-at-home-turkey-veggie-whole-wheat-pizza",
+    "takeout-at-home-oven-fish-and-chips"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1600,
+      "covers": [
+        "1600-1800",
+        "1800-2000"
+      ],
+      "adjust": [
+        {
+          "day": "*",
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-egg-black-bean-breakfast-wrap",
+            "to": "takeout-at-home-egg-black-bean-breakfast-wrap-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-cajun-salmon-broccoli-brown-rice",
+            "to": "takeout-at-home-cajun-salmon-broccoli-brown-rice-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-crunchy-chickpeas",
+            "to": "takeout-at-home-crunchy-chickpeas-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-chicken-souvlaki-wrap",
+            "to": "takeout-at-home-chicken-souvlaki-wrap-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-shrimp-veggie-fried-brown-rice",
+            "to": "takeout-at-home-shrimp-veggie-fried-brown-rice-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-salmon-tacos-lime-slaw",
+            "to": "takeout-at-home-salmon-tacos-lime-slaw-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-black-bean-egg-quesadilla",
+            "to": "takeout-at-home-black-bean-egg-quesadilla-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-oven-fish-and-chips",
+            "to": "takeout-at-home-oven-fish-and-chips-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-baked-falafel-pita",
+            "to": "takeout-at-home-baked-falafel-pita-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-chicken-tikka-traybake-brown-rice",
+            "to": "takeout-at-home-chicken-tikka-traybake-brown-rice-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-lean-beef-burger-sweet-potato-wedges",
+            "to": "takeout-at-home-lean-beef-burger-sweet-potato-wedges-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-turkey-veggie-whole-wheat-pizza",
+            "to": "takeout-at-home-turkey-veggie-whole-wheat-pizza-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-blueberry-banana-oatmeal",
+            "to": "takeout-at-home-blueberry-banana-oatmeal-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-mango-lassi-yogurt-bowl",
+            "to": "takeout-at-home-mango-lassi-yogurt-bowl-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-orange-almonds",
+            "to": "takeout-at-home-orange-almonds-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "takeout-at-home-banana-walnuts",
+            "to": "takeout-at-home-banana-walnuts-light"
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "takeout-at-home-banana-almonds"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "takeout-at-home-blueberries-walnuts"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "takeout-at-home-orange-almonds"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "takeout-at-home-blueberries-walnuts"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "takeout-at-home-orange-blueberry-cup"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "takeout-at-home-mango-yogurt-walnuts"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "takeout-at-home-orange-walnuts"
+          }
+        }
+      ]
+    }
+  },
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "takeout-at-home-mango-lassi-yogurt-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "takeout-at-home-baked-falafel-pita"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "takeout-at-home-lean-beef-burger-sweet-potato-wedges"
+        },
+        {
+          "slot": "snack",
+          "recipe": "takeout-at-home-orange-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "takeout-at-home-blueberries-almonds"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "takeout-at-home-mango-lassi-yogurt-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "takeout-at-home-black-bean-egg-quesadilla"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "takeout-at-home-chicken-tikka-traybake-brown-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "takeout-at-home-banana-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "takeout-at-home-black-bean-avocado-dip"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "takeout-at-home-egg-black-bean-breakfast-wrap"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "takeout-at-home-chicken-tikka-traybake-brown-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "takeout-at-home-cajun-salmon-broccoli-brown-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "takeout-at-home-crunchy-chickpeas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "takeout-at-home-mango-almonds"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "takeout-at-home-mango-lassi-yogurt-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "takeout-at-home-baked-falafel-pita"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "takeout-at-home-turkey-veggie-whole-wheat-pizza"
+        },
+        {
+          "slot": "snack",
+          "recipe": "takeout-at-home-orange-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "takeout-at-home-banana-almonds"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "takeout-at-home-blueberry-banana-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "takeout-at-home-chicken-souvlaki-wrap"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "takeout-at-home-shrimp-veggie-fried-brown-rice"
+        },
+        {
+          "slot": "snack",
+          "recipe": "takeout-at-home-black-bean-avocado-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "takeout-at-home-mango-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "takeout-at-home-blueberry-banana-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "takeout-at-home-shrimp-veggie-fried-brown-rice",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "takeout-at-home-salmon-tacos-lime-slaw"
+        },
+        {
+          "slot": "snack",
+          "recipe": "takeout-at-home-crunchy-chickpeas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "takeout-at-home-orange-blueberry-cup"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "takeout-at-home-mango-lassi-yogurt-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "takeout-at-home-black-bean-egg-quesadilla"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "takeout-at-home-oven-fish-and-chips"
+        },
+        {
+          "slot": "snack",
+          "recipe": "takeout-at-home-banana-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "takeout-at-home-blueberries-almonds"
+        }
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "takeout-at-home-blueberry-banana-oatmeal",
+      "name": "Blueberry banana oatmeal with walnuts and chia",
+      "about": "Creamy oats cooked in milk with sliced banana, cinnamon and a spoonful of chia, topped with blueberries, walnuts and almonds. The oats and berries bring **fibre**, the walnuts and chia bring plant omega-3 and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 250,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 60,
+          "note": "sliced"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 5,
+          "note": "stirred in"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 60,
+          "note": "washed"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the blueberries and slice the banana.",
+        "Put the oats, milk, chia, half the banana and the cinnamon in a small pot with a splash of water. Bring to a gentle simmer over medium heat.",
+        "Cook, stirring often, until thick and creamy, about 6 minutes. The banana will melt into the oats.",
+        "Spoon into a bowl and top with the blueberries, the rest of the banana, the walnuts and the almonds."
+      ],
+      "prepMin": 4,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Mix the dry oats, chia and cinnamon in a jar on Sunday and just add the milk."
+    },
+    {
+      "id": "takeout-at-home-egg-black-bean-breakfast-wrap",
+      "name": "Egg, black bean and pepper breakfast wrap",
+      "about": "Eggs scrambled until fully set with sweet pepper and black beans, rolled in a toasted whole-wheat tortilla with tomato and spinach, with an orange and a glass of milk on the side. The eggs and beans bring **protein and choline**, the milk brings calcium and the orange helps your body absorb the iron in the beans.",
+      "ingredients": [
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "whole wheat"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "whole eggs"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 60,
+          "swap": "legumes",
+          "note": "no salt added, rinsed"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 130,
+          "swap": "dairy_protein",
+          "note": "a glass on the side"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "washed and diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "note": "washed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "washed and diced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 120,
+          "swap": "vit_c_fruit",
+          "note": "washed, in wedges"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the pepper, tomato, spinach and orange. Dice the pepper and tomato and cut the orange into wedges.",
+        "Warm the oil in a non-stick pan over medium heat. Cook the pepper and chili for 3 minutes, then stir in the beans and spinach until the spinach wilts.",
+        "Beat the eggs and pour them in. Stir until completely set with no liquid left and the yolk is firm, about 3 minutes. Wash your hands after cracking the eggs.",
+        "Warm the tortilla for 20 seconds in a dry pan, fill it with the eggs and tomato, roll it up and serve with the orange wedges and a glass of milk."
+      ],
+      "prepMin": 6,
+      "cookMin": 9,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Taking it to work? Pack the wrap in a cold bag with an ice pack and eat it the same day. Keep the milk and orange separate and cold."
+    },
+    {
+      "id": "takeout-at-home-mango-lassi-yogurt-bowl",
+      "name": "Mango lassi yogurt bowl with toasted oats, walnuts and chia",
+      "about": "Thick Greek yogurt with juicy mango, a pinch of cardamom and chia, like a spoonable lassi, with a crunchy topping of toasted oats, walnuts and almonds. The yogurt brings **protein and calcium**, and the walnuts and chia bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 170,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mango-raw-80de97",
+          "g": 130,
+          "note": "peeled and diced"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 16,
+          "swap": "low_gi_grains",
+          "note": "for toasting"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 5,
+          "note": "stirred in"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Toast the oats, walnuts and almonds in a dry pan over medium heat until golden and smelling nutty, about 3 minutes. Tip onto a plate to cool.",
+        "Wash, peel and dice the mango.",
+        "Stir the chia and cardamom into the yogurt and spoon it into a bowl.",
+        "Pile the mango on top and scatter over the crunchy oats and nuts."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "takeout-at-home-baked-falafel-pita",
+      "name": "Baked falafel-style chickpea patties in a whole-wheat pita with garlic yogurt",
+      "inspiredBy": "Inspired by falafel from a Levantine takeout counter, baked instead of fried",
+      "about": "Chickpeas mashed with oats, onion, cilantro, cumin and coriander, shaped into patties and baked until golden, then tucked into a warm whole-wheat pita with crunchy red cabbage, spinach, tomato, pickles and a garlic yogurt. The chickpeas and pita bring **fibre and plant protein**, and the yogurt brings calcium.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 42,
+          "swap": "low_gi_grains",
+          "note": "whole wheat"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 165,
+          "swap": "legumes",
+          "note": "no salt added, rinsed and patted very dry"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 5,
+          "swap": "low_gi_grains",
+          "note": "as a binder"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 40,
+          "note": "washed and shredded"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "note": "washed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "washed and diced"
+        },
+        {
+          "food": "pickles-cucumber-dill-4ea7a6",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F) and line a tray. Mash the chickpeas well with a fork or potato masher until most are broken and the mix is sticky.",
+        "Stir in the oats, onion, half the garlic, the cilantro, cumin, coriander, salt and half the oil until the mix holds together when squeezed. Shape into 5 small patties and press them firm.",
+        "Lay the patties on the tray, brush with the remaining oil and bake, turning once, until golden and crisp at the edges, about 20 minutes.",
+        "Meanwhile, wash the cabbage, spinach and tomato. Stir the yogurt, remaining garlic and lemon juice together with a splash of water to make a pourable sauce.",
+        "Warm the pita, cut it in half and open the pockets. Fill them with the patties, cabbage, spinach, tomato and pickles and drizzle with the garlic yogurt."
+      ],
+      "prepMin": 12,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Taking it to work? Pack it in a cold bag with an ice pack and eat it the same day. Bake Thursday's patties with Monday's, cool them within 2 hours and keep them covered in the fridge up to 3 days, then warm them until steaming hot."
+    },
+    {
+      "id": "takeout-at-home-chicken-souvlaki-wrap",
+      "name": "Chicken souvlaki-style wrap with cucumber yogurt",
+      "inspiredBy": "Inspired by Greek souvlaki from a takeout counter, with chicken thigh in a wrap",
+      "about": "Lemon and oregano chicken thigh pan-seared until golden, rolled in a warm whole-wheat tortilla with tomato, cucumber, carrot, red onion and spinach and a garlicky cucumber yogurt. The chicken brings **protein and B vitamins**, and the carrot and vegetables keep it fresh and crunchy.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "boneless, skinless, cut in strips"
+        },
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "whole wheat (two at the bigger sizes)"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed and grated"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 90,
+          "note": "washed, half grated into the yogurt, half sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "note": "washed"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "crushed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toss the chicken with half the lemon juice, half the garlic, the oregano, salt, pepper and half the oil in a bowl and leave in the fridge while you prep. Never reuse the marinade.",
+        "Wash the cucumber, carrot, tomato and spinach. Grate the carrot, and grate half the cucumber, squeeze out the water and stir it into the yogurt with the rest of the garlic and lemon.",
+        "Heat the remaining oil in a pan over medium-high heat and cook the chicken for 6 to 8 minutes, turning, until golden and cooked through to 74 °C (165 °F). Wash your hands, board and knife after handling the raw chicken.",
+        "Warm the tortilla in a dry pan for 20 seconds, fill it with the chicken, tomato, sliced cucumber, carrot, onion and spinach, spoon over the cucumber yogurt and roll it up."
+      ],
+      "prepMin": 12,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Taking it to work? Pack it in a cold bag with an ice pack and eat it the same day."
+    },
+    {
+      "id": "takeout-at-home-black-bean-egg-quesadilla",
+      "name": "Black bean and egg quesadilla with avocado",
+      "about": "A crisp whole-wheat tortilla folded around firm scrambled egg, black beans, peppers, carrot and spinach with a measured sprinkle of cheddar, served with sliced avocado and fresh tomato. The beans bring **fibre, iron and folate**, the egg brings choline and the peppers and tomato add vitamin C to help absorb the iron.",
+      "ingredients": [
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "whole wheat (two at the bigger sizes)"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "a whole egg, beaten"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 135,
+          "swap": "legumes",
+          "note": "no salt added, rinsed and lightly mashed"
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 20,
+          "swap": "dairy_protein",
+          "note": "grated"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "washed and diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "washed and grated"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "washed and diced"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "washed, then sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Wash the pepper, carrot, tomato, spinach and avocado. Dice the pepper and tomato, grate the carrot and slice the avocado.",
+        "Warm half the oil in a non-stick pan and cook the pepper and carrot with the cumin and chili for 4 minutes. Stir in the spinach and beans and cook until the spinach wilts.",
+        "Push the filling aside and pour the egg into the pan. Stir until completely set with no liquid left and the yolk is firm, about 2 minutes, then mix it through the filling. Wash your hands after cracking the egg.",
+        "Spread the filling over half the tortilla, scatter over the cheese and fold it over.",
+        "Wipe the pan, add the remaining oil and cook the quesadilla for 2 minutes a side until golden and crisp. Cut into wedges and serve with the avocado and tomato."
+      ],
+      "prepMin": 10,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Taking it to work? Pack it in a cold bag with an ice pack and eat it the same day, and warm it until steaming."
+    },
+    {
+      "id": "takeout-at-home-lean-beef-burger-sweet-potato-wedges",
+      "name": "Lean beef cheeseburger on a whole-grain bun with sweet potato wedges",
+      "inspiredBy": "Inspired by a diner cheeseburger and fries, made with lean beef and baked wedges",
+      "about": "A juicy burger made with lean beef and grated onion, on a toasted whole-wheat bun with one slice of cheddar, a firm fried egg, tomato, pickles, avocado and a crunchy red cabbage slaw, with oven-crisp sweet potato wedges. Beef brings **iron, zinc and B12**, the egg adds choline and the sweet potato brings vitamin A and potassium.",
+      "ingredients": [
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 125,
+          "swap": "lean_protein",
+          "note": "95% lean"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "a whole egg for the top"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 25,
+          "note": "grated"
+        },
+        {
+          "food": "rolls-for-burger-hotdog-buns-whole-wheat-a4095c",
+          "g": 76,
+          "swap": "low_gi_grains",
+          "note": "whole-wheat, split"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 80,
+          "note": "washed, cut into wedges"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 15,
+          "swap": "dairy_protein",
+          "note": "sliced thin"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 50,
+          "note": "washed and shredded"
+        },
+        {
+          "food": "pickles-cucumber-dill-4ea7a6",
+          "g": 20,
+          "note": "sliced"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 30,
+          "note": "washed, then sliced"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the sweet potatoes and avocado, then cut the sweet potatoes into wedges, toss with the oil, smoked paprika and a pinch of the salt on a tray and roast, turning once, until golden and tender, about 30 minutes.",
+        "Mix the beef with the onion, half the mustard, remaining salt and the pepper using a fork. Shape into a patty a little wider than the bun and press a dip in the middle.",
+        "Cook the patty in a hot non-stick pan, about 4 minutes a side, until browned and cooked through to 71 °C (160 °F) on a thermometer with no pink inside. Lay the cheese on in the last minute. Wash your hands, the board and the plate that held the raw beef.",
+        "Fry the egg in the same pan with a drop of water and a lid until the white is set and the yolk is firm all the way through, about 4 minutes. Wash your hands after cracking the egg. Toast the bun in the pan.",
+        "Toss the cabbage with the lemon juice and the remaining mustard. Build the burger with the tomato, pickles, avocado, cabbage and egg and serve with the wedges."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "At the bigger sizes, make two smaller patties and use two buns."
+    },
+    {
+      "id": "takeout-at-home-chicken-tikka-traybake-brown-rice",
+      "name": "Chicken tikka traybake with broccoli and brown rice",
+      "inspiredBy": "Inspired by chicken tikka from an Indian takeout, roasted on a tray instead of in a tandoor",
+      "about": "Chicken thigh marinated in yogurt, garlic, ginger and garam masala and roasted on a tray with broccoli, carrots, peppers and red onion, served over brown rice with fresh coriander. The chicken brings **protein and B vitamins**, the carrots and peppers bring vitamins A and C, and the broccoli brings vitamin C and folate.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "boneless, skinless, cut in chunks"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 60,
+          "swap": "dairy_protein",
+          "note": "part for the marinade, part for serving"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 1.2
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1.8
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 130,
+          "note": "washed, in florets"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "washed, in chunks"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 50,
+          "note": "in wedges"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed, in thick sticks"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 7,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "dry"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "note": "washed, for stirring in"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed and chopped"
+        }
+      ],
+      "steps": [
+        "Spoon a third of the yogurt into a small bowl for serving and keep it in the fridge. Stir the rest with the lemon juice, garlic, ginger, garam masala, paprika, turmeric, cumin, chili and salt and coat the chicken. Cover and leave in the fridge while you prep, and never reuse the marinade.",
+        "Heat the oven to 220 °C (425 °F). Rinse the rice, then boil it in a large pot of water like pasta for about 25 minutes until tender, and drain well.",
+        "Wash the broccoli, pepper, carrot and onion, cut them up and toss with the oil on a large tray. Roast for 10 minutes.",
+        "Push the vegetables aside, add the chicken in a single layer and roast about 15 minutes more, until the chicken is cooked through to 74 °C (165 °F). Switch the oven to grill for the last 3 minutes so the edges char a little. Wash your hands, board and knife after handling the raw chicken.",
+        "Stir the spinach and half the coriander into the hot rice. Serve the rice topped with the chicken and vegetables, spoon over the reserved yogurt and scatter the rest of the coriander.",
+        "Pack the second portion for tomorrow's lunch. Cool any rice within 1 hour, spread in a shallow container, and keep it in the fridge up to 3 days. Reheat the chicken and rice together, once only, until steaming hot all the way through, at 74 °C (165 °F)."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "takeout-at-home-salmon-tacos-lime-slaw",
+      "name": "Baked salmon tacos with lime slaw and black beans",
+      "inspiredBy": "Inspired by Baja-style fish tacos",
+      "about": "Flaky chili-lime baked salmon in warm whole-wheat tortillas with a crunchy cabbage and carrot slaw and a lime avocado crema, with black beans on the side. The salmon brings **omega-3 and vitamin D**, and the beans and slaw bring fibre and vitamin C.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 145,
+          "swap": "fatty_fish",
+          "note": "skinless fillet"
+        },
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "whole-wheat, small"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 70,
+          "note": "washed and shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "washed and grated"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20,
+          "swap": "vit_c_fruit",
+          "note": "juice from a lime"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "washed"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 90,
+          "swap": "legumes",
+          "note": "no salt added, rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "washed and diced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the cabbage, carrot, tomato, cilantro and avocado.",
+        "Rub the salmon with the oil, chili, cumin and half the salt and lay it on a lined tray. Bake about 12 minutes, until it flakes easily and reaches 70 °C (158 °F). Wash your hands, board and knife after handling the raw fish.",
+        "Toss the cabbage and carrot with the lime juice, half the cilantro and the remaining salt. Mash the avocado with the rest of the cilantro and a squeeze of lime into a quick crema.",
+        "Warm the beans in a small pot until steaming. Warm the tortillas in a dry pan or wrapped in foil in the oven.",
+        "Flake the salmon into the tortillas with the slaw, tomato and avocado crema, and serve the beans on the side."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Buy the salmon fresh and cook it within a day, or thaw frozen fillets in the fridge overnight."
+    },
+    {
+      "id": "takeout-at-home-turkey-veggie-whole-wheat-pizza",
+      "name": "Turkey and veggie pizza on a crisp whole-wheat pita base with a fresh salad",
+      "inspiredBy": "Inspired by a pizzeria sausage and pepper pizza, made with lean turkey on a pita",
+      "about": "A whole-wheat pita crisped in the oven as a thin, sturdy pizza base, spread with tomato sauce, lean turkey seasoned with fennel, peppers, onion, spinach and a little cheddar, and topped with a fried egg cooked until the yolk is firm, with a quick tomato, cucumber and spinach salad. The vegetables bring **fibre and vitamin C**, the egg brings choline and the turkey keeps the saturated fat low.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 85,
+          "swap": "low_gi_grains",
+          "note": "whole wheat, one large (or two at the bigger sizes)"
+        },
+        {
+          "food": "tomato-sauce-unsalted-037b3a",
+          "g": 60,
+          "note": "unsalted"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "crushed"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 20,
+          "swap": "dairy_protein",
+          "note": "grated"
+        },
+        {
+          "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "ground"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "a whole egg"
+        },
+        {
+          "food": "fennel-seed-8a14d7",
+          "g": 0.8,
+          "note": "crushed"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 25,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "note": "washed, half for the pizza and half for the salad"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "washed and diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Heat the oven to 230 °C (450 °F) with a baking tray inside. Wash the pepper, spinach, tomato and cucumber.",
+        "Warm half the oil in a pan and cook the turkey with the fennel and the salt, breaking it up, until no pink remains and it reaches 74 °C (165 °F), about 5 minutes. Tip it into a bowl. Wash your hands and board after handling the raw turkey.",
+        "Prick the pita all over with a fork and crisp it on the hot tray for 2 minutes. Meanwhile stir the garlic and oregano into the tomato sauce.",
+        "Spread the sauce over the pita, scatter on the turkey, pepper, onion and half the spinach and finish with the cheddar. Bake 7 to 8 minutes, until the cheese is bubbling and the edge is crisp.",
+        "While it bakes, crack the egg into the turkey pan with a drop of water, break the yolk, cover and cook until the white is set and the yolk is firm all the way through, about 4 minutes. Wash your hands after cracking the egg.",
+        "Slide the egg onto the middle of the pizza. Toss the tomato, cucumber and remaining spinach with the lemon juice and remaining oil, slice the pizza and serve with the salad."
+      ],
+      "prepMin": 12,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "The egg is fried in the pan while the pizza bakes: on a thin pita in the oven it would need so long to set firm that the base would burn."
+    },
+    {
+      "id": "takeout-at-home-shrimp-veggie-fried-brown-rice",
+      "name": "Shrimp and veggie fried brown rice",
+      "inspiredBy": "Inspired by takeout shrimp fried rice, with brown rice and plenty of vegetables",
+      "about": "Brown rice stir-fried hot with shrimp, firm scrambled egg, spinach, peas, carrot, cabbage and red onion in garlic, ginger and a little reduced-sodium soy sauce, finished with lemon. The shrimp brings **protein and iodine**, the egg brings choline and the spinach and peas bring iron and folate.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "dry, cooked and cooled"
+        },
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 145,
+          "swap": "lean_protein",
+          "note": "peeled, raw"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "whole eggs, beaten"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "note": "washed and roughly chopped"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 70,
+          "note": "frozen"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed and diced"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 60,
+          "note": "washed and shredded"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 30,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.8
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 11,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Cook the rice the night before or on Sunday: rinse it, boil it in a large pot of water like pasta for about 25 minutes until tender, drain and spread it in a shallow tray. Cool within 1 hour, then cover and chill. Cold rice fries best.",
+        "Wash the vegetables. Dice the carrot and onion and shred the cabbage.",
+        "Heat half the oil in a large pan or wok over high heat. Cook the shrimp for 2 to 3 minutes until pink and opaque all the way through, then lift them out. Wash your hands and board after handling the raw shrimp.",
+        "Add the remaining oil and stir-fry the carrot, cabbage, onion, garlic and ginger for 3 minutes. Add the rice and peas and fry, breaking up the clumps, until the rice is steaming hot all the way through, about 4 minutes.",
+        "Push the rice aside, pour the beaten eggs into the pan and stir until completely set with no liquid left and the yolk is firm, about 2 minutes, then mix them through with the spinach until it wilts. Wash your hands after cracking the eggs.",
+        "Return the shrimp, add the soy sauce, pepper and lemon juice and toss.",
+        "Pack the second portion for tomorrow's lunch. Cool any rice within 1 hour, spread in a shallow container, and keep it in the fridge up to 3 days. Reheat the rice, egg and shrimp together, once only, until steaming hot all the way through, at 74 °C (165 °F)."
+      ],
+      "prepMin": 12,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Thaw frozen shrimp in the fridge overnight and cook them within a day."
+    },
+    {
+      "id": "takeout-at-home-oven-fish-and-chips",
+      "name": "Oven-baked haddock and chips with crushed peas",
+      "inspiredBy": "Inspired by classic fish and chips, baked instead of fried",
+      "about": "Haddock in a crisp oat and mustard crumb baked in the oven, with thick potato chips roasted in just a little olive oil, crushed lemony peas and a sharp pickle and lemon relish. Haddock brings **lean protein and iodine**, and the peas and potatoes bring fibre and potassium.",
+      "ingredients": [
+        {
+          "food": "haddock-raw-492803",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "skinless fillet"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 25,
+          "swap": "low_gi_grains",
+          "note": "blitzed to a coarse crumb"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 10
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 190,
+          "note": "scrubbed, cut in thick chips"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 80,
+          "note": "frozen"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "pickles-cucumber-dill-4ea7a6",
+          "g": 20,
+          "note": "finely chopped"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Scrub the potatoes, cut them into thick chips, toss with half the oil, paprika and half the salt on a tray and roast, turning once, for 35 minutes until golden and crisp at the edges.",
+        "Mix the oat crumbs with the rest of the oil, the pepper and a pinch of salt. Mix half the mustard with a spoonful of the oil from the crumbs and brush it over the fish, then press the crumbs on top.",
+        "Lay the fish on a lined tray and bake for the last 12 to 15 minutes, until the crumbs are golden and the fish flakes and reaches 70 °C (158 °F). Wash your hands, board and plate after handling the raw fish.",
+        "Cook the peas in boiling water until steaming hot, about 3 minutes, drain and crush roughly with a squeeze of lemon and a pinch of salt.",
+        "Stir the chopped pickle with the rest of the mustard and a squeeze of lemon for a quick relish. Serve everything with a lemon wedge."
+      ],
+      "prepMin": 15,
+      "cookMin": 38,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Buy the fish fresh and cook it within a day, or thaw frozen fillets in the fridge overnight."
+    },
+    {
+      "id": "takeout-at-home-cajun-salmon-broccoli-brown-rice",
+      "name": "Cajun salmon with crunchy slaw, garlic broccoli and brown rice",
+      "inspiredBy": "Inspired by a Louisiana-style blackened fish plate with slaw",
+      "about": "Salmon rubbed with a smoky, peppery Cajun spice mix and baked until it flakes, with a fist of brown rice, garlicky broccoli and a sharp red cabbage slaw dressed with mustard and lemon. The salmon brings **omega-3 and vitamin D**, and the broccoli and cabbage bring vitamin C, vitamin K and folate.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "skinless fillet"
+        },
+        {
+          "food": "cajun-blackening-spice-8a7316",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "dry"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 150,
+          "note": "washed, in florets"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 70,
+          "note": "washed and shredded"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "washed and chopped"
+        }
+      ],
+      "steps": [
+        "Rinse the rice and boil it in a large pot of water like pasta for about 25 minutes until tender, then drain.",
+        "Heat the oven to 220 °C (425 °F). Rub the salmon with half the oil and the Cajun spice and lay it on a lined tray. Bake about 12 minutes until it flakes and reaches 70 °C (158 °F). Wash your hands, board and knife after handling the raw fish.",
+        "Wash the cabbage and broccoli. Shred the cabbage and toss it with the mustard, half the lemon juice and the cilantro.",
+        "Steam or boil the broccoli for 4 minutes until bright green and just tender. Warm the remaining oil with the garlic for 30 seconds and toss the broccoli in it.",
+        "Serve the salmon on the rice with the broccoli and slaw, and squeeze over the rest of the lemon."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Buy the salmon fresh and cook it within a day, or thaw frozen fillets in the fridge overnight. Use half the spice mix for a milder dish."
+    },
+    {
+      "id": "takeout-at-home-blueberries-almonds",
+      "name": "Blueberries with almonds",
+      "about": "A bowl of blueberries with a handful of almonds. The almonds bring **vitamin E and magnesium**, and the blueberries bring fibre.",
+      "ingredients": [
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 120,
+          "note": "washed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the fruit, prepare it as needed and serve with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "takeout-at-home-blueberries-walnuts",
+      "name": "Blueberries with walnuts",
+      "about": "A bowl of blueberries with a handful of walnuts. The walnuts bring **plant omega-3**, and the blueberries brings vitamin C and fibre.",
+      "ingredients": [
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 120,
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the fruit, prepare it as needed and serve with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "takeout-at-home-orange-almonds",
+      "name": "Orange with almonds",
+      "about": "Orange with a handful of almonds. The almonds bring **vitamin E and magnesium**, and the orange brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "washed, in segments"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the fruit, prepare it as needed and serve with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "takeout-at-home-orange-walnuts",
+      "name": "Orange with walnuts",
+      "about": "Orange with a handful of walnuts. The walnuts bring **plant omega-3**, and the orange brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "washed, in segments"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the fruit, prepare it as needed and serve with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "takeout-at-home-mango-almonds",
+      "name": "Mango with almonds",
+      "about": "Mango with a handful of almonds. The almonds bring **vitamin E and magnesium**, and the mango brings vitamin C and vitamin A.",
+      "ingredients": [
+        {
+          "food": "mango-raw-80de97",
+          "g": 130,
+          "swap": "vit_c_fruit",
+          "note": "peeled and cubed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the fruit, prepare it as needed and serve with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "takeout-at-home-mango-walnuts",
+      "name": "Mango with walnuts",
+      "about": "Mango with a handful of walnuts. The walnuts bring **plant omega-3**, and the mango brings vitamin C and vitamin A.",
+      "ingredients": [
+        {
+          "food": "mango-raw-80de97",
+          "g": 130,
+          "swap": "vit_c_fruit",
+          "note": "peeled and cubed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the fruit, prepare it as needed and serve with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "takeout-at-home-banana-almonds",
+      "name": "Banana with almonds",
+      "about": "Banana with a handful of almonds. The almonds bring **vitamin E and magnesium**, and the banana brings potassium.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the fruit, prepare it as needed and serve with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "takeout-at-home-banana-walnuts",
+      "name": "Banana with walnuts",
+      "about": "Banana with a handful of walnuts. The walnuts bring **plant omega-3**, and the banana brings potassium.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the fruit, prepare it as needed and serve with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "takeout-at-home-orange-blueberry-cup",
+      "name": "Orange and blueberry cup with walnuts",
+      "about": "Orange segments and blueberries with chopped walnuts. The fruit brings **vitamin C and fibre**, and the walnuts bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 100,
+          "swap": "vit_c_fruit",
+          "note": "washed, in segments"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 80,
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Wash the fruit, cut the orange into segments and mix with the blueberries. Scatter the walnuts over the top."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "takeout-at-home-mango-yogurt-walnuts",
+      "name": "Greek yogurt with mango and walnuts",
+      "about": "Thick Greek yogurt with diced mango and chopped walnuts. The yogurt brings **protein and calcium**, and the walnuts bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mango-raw-80de97",
+          "g": 100,
+          "note": "peeled and diced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Peel and dice the mango, spoon it over the yogurt and scatter the walnuts on top."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "takeout-at-home-crunchy-chickpeas",
+      "name": "Cumin paprika crunchy chickpeas",
+      "about": "Chickpeas roasted until crunchy with cumin, paprika and a pinch of salt, a savoury takeout-style snack. They bring **fibre, plant protein and folate**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 70,
+          "swap": "legumes",
+          "note": "no salt added, rinsed and patted very dry"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Toss the chickpeas with the oil, cumin, paprika and salt on a tray.",
+        "Roast, shaking once, until crisp, about 20 minutes. Cool on the tray, they crisp up as they cool. Keep in a covered container and eat within 3 days."
+      ],
+      "prepMin": 3,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "takeout-at-home-black-bean-avocado-dip",
+      "name": "Black bean and avocado dip with cucumber sticks",
+      "about": "A chunky dip of mashed black beans and avocado with lime and cumin, scooped with crisp cucumber sticks. The beans bring **fibre and folate**, and the avocado and lime make it creamy and fresh.",
+      "ingredients": [
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 70,
+          "swap": "legumes",
+          "note": "no salt added, rinsed"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 40,
+          "note": "washed"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 4,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "washed, in sticks"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Mash the beans and avocado with a fork until chunky. Stir in the lime juice, cilantro and cumin.",
+        "Serve with the cucumber sticks. The dip keeps covered in the fridge for a day."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "takeout-at-home-egg-black-bean-breakfast-wrap-light",
+      "name": "Egg, black bean and pepper breakfast wrap",
+      "about": "Eggs scrambled until fully set with sweet pepper and black beans, rolled in a toasted whole-wheat tortilla with tomato and spinach, with an orange and a glass of milk on the side. The eggs and beans bring **protein and choline**, the milk brings calcium and the orange helps your body absorb the iron in the beans.",
+      "ingredients": [
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "whole wheat"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "whole eggs"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 40,
+          "swap": "legumes",
+          "note": "no salt added, rinsed"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 120,
+          "swap": "dairy_protein",
+          "note": "a glass on the side"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "washed and diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "note": "washed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "washed and diced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 120,
+          "swap": "vit_c_fruit",
+          "note": "washed, in wedges"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the pepper, tomato, spinach and orange. Dice the pepper and tomato and cut the orange into wedges.",
+        "Warm the oil in a non-stick pan over medium heat. Cook the pepper and chili for 3 minutes, then stir in the beans and spinach until the spinach wilts.",
+        "Beat the eggs and pour them in. Stir until completely set with no liquid left and the yolk is firm, about 3 minutes. Wash your hands after cracking the eggs.",
+        "Warm the tortilla for 20 seconds in a dry pan, fill it with the eggs and tomato, roll it up and serve with the orange wedges and a glass of milk."
+      ],
+      "prepMin": 6,
+      "cookMin": 9,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute"
+      ],
+      "tip": "Taking it to work? Pack the wrap in a cold bag with an ice pack and eat it the same day. Keep the milk and orange separate and cold."
+    },
+    {
+      "id": "takeout-at-home-cajun-salmon-broccoli-brown-rice-light",
+      "name": "Cajun salmon with crunchy slaw, garlic broccoli and brown rice",
+      "inspiredBy": "Inspired by a Louisiana-style blackened fish plate with slaw",
+      "about": "Salmon rubbed with a smoky, peppery Cajun spice mix and baked until it flakes, with a fist of brown rice, garlicky broccoli and a sharp red cabbage slaw dressed with mustard and lemon. The salmon brings **omega-3 and vitamin D**, and the broccoli and cabbage bring vitamin C, vitamin K and folate.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 105,
+          "swap": "fatty_fish",
+          "note": "skinless fillet"
+        },
+        {
+          "food": "cajun-blackening-spice-8a7316",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "dry"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 120,
+          "note": "washed, in florets"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 40,
+          "note": "washed and shredded"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "washed and chopped"
+        }
+      ],
+      "steps": [
+        "Rinse the rice and boil it in a large pot of water like pasta for about 25 minutes until tender, then drain.",
+        "Heat the oven to 220 °C (425 °F). Rub the salmon with half the oil and the Cajun spice and lay it on a lined tray. Bake about 12 minutes until it flakes and reaches 70 °C (158 °F). Wash your hands, board and knife after handling the raw fish.",
+        "Wash the cabbage and broccoli. Shred the cabbage and toss it with the mustard, half the lemon juice and the cilantro.",
+        "Steam or boil the broccoli for 4 minutes until bright green and just tender. Warm the remaining oil with the garlic for 30 seconds and toss the broccoli in it.",
+        "Serve the salmon on the rice with the broccoli and slaw, and squeeze over the rest of the lemon."
+      ],
+      "prepMin": 10,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ],
+      "tip": "Buy the salmon fresh and cook it within a day, or thaw frozen fillets in the fridge overnight. Use half the spice mix for a milder dish."
+    },
+    {
+      "id": "takeout-at-home-crunchy-chickpeas-light",
+      "name": "Cumin paprika crunchy chickpeas",
+      "about": "Chickpeas roasted until crunchy with cumin, paprika and a pinch of salt, a savoury takeout-style snack. They bring **fibre, plant protein and folate**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 45,
+          "swap": "legumes",
+          "note": "no salt added, rinsed and patted very dry"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 2,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Toss the chickpeas with the oil, cumin, paprika and salt on a tray.",
+        "Roast, shaking once, until crisp, about 20 minutes. Cool on the tray, they crisp up as they cool. Keep in a covered container and eat within 3 days."
+      ],
+      "prepMin": 3,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "takeout-at-home-chicken-souvlaki-wrap-light",
+      "name": "Chicken souvlaki-style wrap with cucumber yogurt",
+      "inspiredBy": "Inspired by Greek souvlaki from a takeout counter, with chicken thigh in a wrap",
+      "about": "Lemon and oregano chicken thigh pan-seared until golden, rolled in a warm whole-wheat tortilla with tomato, cucumber, carrot, red onion and spinach and a garlicky cucumber yogurt. The chicken brings **protein and B vitamins**, and the carrot and vegetables keep it fresh and crunchy.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "boneless, skinless, cut in strips"
+        },
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "whole wheat (two at the bigger sizes)"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 65,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed and grated"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 90,
+          "note": "washed, half grated into the yogurt, half sliced"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "note": "washed"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "crushed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Toss the chicken with half the lemon juice, half the garlic, the oregano, salt, pepper and half the oil in a bowl and leave in the fridge while you prep. Never reuse the marinade.",
+        "Wash the cucumber, carrot, tomato and spinach. Grate the carrot, and grate half the cucumber, squeeze out the water and stir it into the yogurt with the rest of the garlic and lemon.",
+        "Heat the remaining oil in a pan over medium-high heat and cook the chicken for 6 to 8 minutes, turning, until golden and cooked through to 74 °C (165 °F). Wash your hands, board and knife after handling the raw chicken.",
+        "Warm the tortilla in a dry pan for 20 seconds, fill it with the chicken, tomato, sliced cucumber, carrot, onion and spinach, spoon over the cucumber yogurt and roll it up."
+      ],
+      "prepMin": 12,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Taking it to work? Pack it in a cold bag with an ice pack and eat it the same day."
+    },
+    {
+      "id": "takeout-at-home-shrimp-veggie-fried-brown-rice-light",
+      "name": "Shrimp and veggie fried brown rice",
+      "inspiredBy": "Inspired by takeout shrimp fried rice, with brown rice and plenty of vegetables",
+      "about": "Brown rice stir-fried hot with shrimp, firm scrambled egg, spinach, peas, carrot, cabbage and red onion in garlic, ginger and a little reduced-sodium soy sauce, finished with lemon. The shrimp brings **protein and iodine**, the egg brings choline and the spinach and peas bring iron and folate.",
+      "ingredients": [
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "dry, cooked and cooled"
+        },
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "peeled, raw"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "whole eggs, beaten"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "note": "washed and roughly chopped"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 70,
+          "note": "frozen"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed and diced"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 60,
+          "note": "washed and shredded"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 30,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.8
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Cook the rice the night before or on Sunday: rinse it, boil it in a large pot of water like pasta for about 25 minutes until tender, drain and spread it in a shallow tray. Cool within 1 hour, then cover and chill. Cold rice fries best.",
+        "Wash the vegetables. Dice the carrot and onion and shred the cabbage.",
+        "Heat half the oil in a large pan or wok over high heat. Cook the shrimp for 2 to 3 minutes until pink and opaque all the way through, then lift them out. Wash your hands and board after handling the raw shrimp.",
+        "Add the remaining oil and stir-fry the carrot, cabbage, onion, garlic and ginger for 3 minutes. Add the rice and peas and fry, breaking up the clumps, until the rice is steaming hot all the way through, about 4 minutes.",
+        "Push the rice aside, pour the beaten eggs into the pan and stir until completely set with no liquid left and the yolk is firm, about 2 minutes, then mix them through with the spinach until it wilts. Wash your hands after cracking the eggs.",
+        "Return the shrimp, add the soy sauce, pepper and lemon juice and toss.",
+        "Pack the second portion for tomorrow's lunch. Cool any rice within 1 hour, spread in a shallow container, and keep it in the fridge up to 3 days. Reheat the rice, egg and shrimp together, once only, until steaming hot all the way through, at 74 °C (165 °F)."
+      ],
+      "prepMin": 12,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Thaw frozen shrimp in the fridge overnight and cook them within a day."
+    },
+    {
+      "id": "takeout-at-home-salmon-tacos-lime-slaw-light",
+      "name": "Baked salmon tacos with lime slaw and black beans",
+      "inspiredBy": "Inspired by Baja-style fish tacos",
+      "about": "Flaky chili-lime baked salmon in warm whole-wheat tortillas with a crunchy cabbage and carrot slaw and a lime avocado crema, with black beans on the side. The salmon brings **omega-3 and vitamin D**, and the beans and slaw bring fibre and vitamin C.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 105,
+          "swap": "fatty_fish",
+          "note": "skinless fillet"
+        },
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "whole-wheat, small"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 70,
+          "note": "washed and shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "washed and grated"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20,
+          "swap": "vit_c_fruit",
+          "note": "juice from a lime"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 25,
+          "note": "washed"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 75,
+          "swap": "legumes",
+          "note": "no salt added, rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 50,
+          "note": "washed and diced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the cabbage, carrot, tomato, cilantro and avocado.",
+        "Rub the salmon with the oil, chili, cumin and half the salt and lay it on a lined tray. Bake about 12 minutes, until it flakes easily and reaches 70 °C (158 °F). Wash your hands, board and knife after handling the raw fish.",
+        "Toss the cabbage and carrot with the lime juice, half the cilantro and the remaining salt. Mash the avocado with the rest of the cilantro and a squeeze of lime into a quick crema.",
+        "Warm the beans in a small pot until steaming. Warm the tortillas in a dry pan or wrapped in foil in the oven.",
+        "Flake the salmon into the tortillas with the slaw, tomato and avocado crema, and serve the beans on the side."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Buy the salmon fresh and cook it within a day, or thaw frozen fillets in the fridge overnight."
+    },
+    {
+      "id": "takeout-at-home-black-bean-egg-quesadilla-light",
+      "name": "Black bean and egg quesadilla with avocado",
+      "about": "A crisp whole-wheat tortilla folded around firm scrambled egg, black beans, peppers, carrot and spinach with a measured sprinkle of cheddar, served with sliced avocado and fresh tomato. The beans bring **fibre, iron and folate**, the egg brings choline and the peppers and tomato add vitamin C to help absorb the iron.",
+      "ingredients": [
+        {
+          "food": "tortillas-ready-to-bake-or-fry-whole-wheat-a70715",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "whole wheat (two at the bigger sizes)"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "a whole egg, beaten"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 100,
+          "swap": "legumes",
+          "note": "no salt added, rinsed and lightly mashed"
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 10,
+          "swap": "dairy_protein",
+          "note": "grated"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "washed and diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "washed and grated"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "washed and diced"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 25,
+          "note": "washed, then sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Wash the pepper, carrot, tomato, spinach and avocado. Dice the pepper and tomato, grate the carrot and slice the avocado.",
+        "Warm half the oil in a non-stick pan and cook the pepper and carrot with the cumin and chili for 4 minutes. Stir in the spinach and beans and cook until the spinach wilts.",
+        "Push the filling aside and pour the egg into the pan. Stir until completely set with no liquid left and the yolk is firm, about 2 minutes, then mix it through the filling. Wash your hands after cracking the egg.",
+        "Spread the filling over half the tortilla, scatter over the cheese and fold it over.",
+        "Wipe the pan, add the remaining oil and cook the quesadilla for 2 minutes a side until golden and crisp. Cut into wedges and serve with the avocado and tomato."
+      ],
+      "prepMin": 10,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Taking it to work? Pack it in a cold bag with an ice pack and eat it the same day, and warm it until steaming."
+    },
+    {
+      "id": "takeout-at-home-oven-fish-and-chips-light",
+      "name": "Oven-baked haddock and chips with crushed peas",
+      "inspiredBy": "Inspired by classic fish and chips, baked instead of fried",
+      "about": "Haddock in a crisp oat and mustard crumb baked in the oven, with thick potato chips roasted in just a little olive oil, crushed lemony peas and a sharp pickle and lemon relish. Haddock brings **lean protein and iodine**, and the peas and potatoes bring fibre and potassium.",
+      "ingredients": [
+        {
+          "food": "haddock-raw-492803",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "skinless fillet"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains",
+          "note": "blitzed to a coarse crumb"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 10
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 120,
+          "note": "scrubbed, cut in thick chips"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "peas-frozen-raw-dd927b",
+          "g": 80,
+          "note": "frozen"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "pickles-cucumber-dill-4ea7a6",
+          "g": 20,
+          "note": "finely chopped"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Scrub the potatoes, cut them into thick chips, toss with half the oil, paprika and half the salt on a tray and roast, turning once, for 35 minutes until golden and crisp at the edges.",
+        "Mix the oat crumbs with the rest of the oil, the pepper and a pinch of salt. Mix half the mustard with a spoonful of the oil from the crumbs and brush it over the fish, then press the crumbs on top.",
+        "Lay the fish on a lined tray and bake for the last 12 to 15 minutes, until the crumbs are golden and the fish flakes and reaches 70 °C (158 °F). Wash your hands, board and plate after handling the raw fish.",
+        "Cook the peas in boiling water until steaming hot, about 3 minutes, drain and crush roughly with a squeeze of lemon and a pinch of salt.",
+        "Stir the chopped pickle with the rest of the mustard and a squeeze of lemon for a quick relish. Serve everything with a lemon wedge."
+      ],
+      "prepMin": 15,
+      "cookMin": 38,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Buy the fish fresh and cook it within a day, or thaw frozen fillets in the fridge overnight."
+    },
+    {
+      "id": "takeout-at-home-baked-falafel-pita-light",
+      "name": "Baked falafel-style chickpea patties in a whole-wheat pita with garlic yogurt",
+      "inspiredBy": "Inspired by falafel from a Levantine takeout counter, baked instead of fried",
+      "about": "Chickpeas mashed with oats, onion, cilantro, cumin and coriander, shaped into patties and baked until golden, then tucked into a warm whole-wheat pita with crunchy red cabbage, spinach, tomato, pickles and a garlic yogurt. The chickpeas and pita bring **fibre and plant protein**, and the yogurt brings calcium.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 48,
+          "swap": "low_gi_grains",
+          "note": "whole wheat"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 140,
+          "swap": "legumes",
+          "note": "no salt added, rinsed and patted very dry"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 5,
+          "swap": "low_gi_grains",
+          "note": "as a binder"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 25,
+          "note": "finely chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "crushed"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 75,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 40,
+          "note": "washed and shredded"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "note": "washed"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "washed and diced"
+        },
+        {
+          "food": "pickles-cucumber-dill-4ea7a6",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F) and line a tray. Mash the chickpeas well with a fork or potato masher until most are broken and the mix is sticky.",
+        "Stir in the oats, onion, half the garlic, the cilantro, cumin, coriander, salt and half the oil until the mix holds together when squeezed. Shape into 5 small patties and press them firm.",
+        "Lay the patties on the tray, brush with the remaining oil and bake, turning once, until golden and crisp at the edges, about 20 minutes.",
+        "Meanwhile, wash the cabbage, spinach and tomato. Stir the yogurt, remaining garlic and lemon juice together with a splash of water to make a pourable sauce.",
+        "Warm the pita, cut it in half and open the pockets. Fill them with the patties, cabbage, spinach, tomato and pickles and drizzle with the garlic yogurt."
+      ],
+      "prepMin": 12,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Taking it to work? Pack it in a cold bag with an ice pack and eat it the same day. Bake Thursday's patties with Monday's, cool them within 2 hours and keep them covered in the fridge up to 3 days, then warm them until steaming hot."
+    },
+    {
+      "id": "takeout-at-home-chicken-tikka-traybake-brown-rice-light",
+      "name": "Chicken tikka traybake with broccoli and brown rice",
+      "inspiredBy": "Inspired by chicken tikka from an Indian takeout, roasted on a tray instead of in a tandoor",
+      "about": "Chicken thigh marinated in yogurt, garlic, ginger and garam masala and roasted on a tray with broccoli, carrots, peppers and red onion, served over brown rice with fresh coriander. The chicken brings **protein and B vitamins**, the carrots and peppers bring vitamins A and C, and the broccoli brings vitamin C and folate.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "boneless, skinless, cut in chunks"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 60,
+          "swap": "dairy_protein",
+          "note": "part for the marinade, part for serving"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "crushed"
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 1.2
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1.8
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 130,
+          "note": "washed, in florets"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70,
+          "note": "washed, in chunks"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 50,
+          "note": "in wedges"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed, in thick sticks"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "brown-rice-long-grain-dry-19c5eb",
+          "g": 42,
+          "swap": "low_gi_grains",
+          "note": "dry"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "note": "washed, for stirring in"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed and chopped"
+        }
+      ],
+      "steps": [
+        "Spoon a third of the yogurt into a small bowl for serving and keep it in the fridge. Stir the rest with the lemon juice, garlic, ginger, garam masala, paprika, turmeric, cumin, chili and salt and coat the chicken. Cover and leave in the fridge while you prep, and never reuse the marinade.",
+        "Heat the oven to 220 °C (425 °F). Rinse the rice, then boil it in a large pot of water like pasta for about 25 minutes until tender, and drain well.",
+        "Wash the broccoli, pepper, carrot and onion, cut them up and toss with the oil on a large tray. Roast for 10 minutes.",
+        "Push the vegetables aside, add the chicken in a single layer and roast about 15 minutes more, until the chicken is cooked through to 74 °C (165 °F). Switch the oven to grill for the last 3 minutes so the edges char a little. Wash your hands, board and knife after handling the raw chicken.",
+        "Stir the spinach and half the coriander into the hot rice. Serve the rice topped with the chicken and vegetables, spoon over the reserved yogurt and scatter the rest of the coriander.",
+        "Pack the second portion for tomorrow's lunch. Cool any rice within 1 hour, spread in a shallow container, and keep it in the fridge up to 3 days. Reheat the chicken and rice together, once only, until steaming hot all the way through, at 74 °C (165 °F)."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "takeout-at-home-lean-beef-burger-sweet-potato-wedges-light",
+      "name": "Lean beef cheeseburger on a whole-grain bun with sweet potato wedges",
+      "inspiredBy": "Inspired by a diner cheeseburger and fries, made with lean beef and baked wedges",
+      "about": "A juicy burger made with lean beef and grated onion, on a toasted whole-wheat bun with one slice of cheddar, a firm fried egg, tomato, pickles, avocado and a crunchy red cabbage slaw, with oven-crisp sweet potato wedges. Beef brings **iron, zinc and B12**, the egg adds choline and the sweet potato brings vitamin A and potassium.",
+      "ingredients": [
+        {
+          "food": "ground-beef-95-lean-raw-6df9ef",
+          "g": 125,
+          "swap": "lean_protein",
+          "note": "95% lean"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "a whole egg for the top"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 25,
+          "note": "grated"
+        },
+        {
+          "food": "rolls-for-burger-hotdog-buns-whole-wheat-a4095c",
+          "g": 64,
+          "swap": "low_gi_grains",
+          "note": "whole-wheat, split"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 55,
+          "note": "washed, cut into wedges"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 8,
+          "swap": "dairy_protein",
+          "note": "sliced thin"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 60,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 50,
+          "note": "washed and shredded"
+        },
+        {
+          "food": "pickles-cucumber-dill-4ea7a6",
+          "g": 20,
+          "note": "sliced"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 20,
+          "note": "washed, then sliced"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 8
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the sweet potatoes and avocado, then cut the sweet potatoes into wedges, toss with the oil, smoked paprika and a pinch of the salt on a tray and roast, turning once, until golden and tender, about 30 minutes.",
+        "Mix the beef with the onion, half the mustard, remaining salt and the pepper using a fork. Shape into a patty a little wider than the bun and press a dip in the middle.",
+        "Cook the patty in a hot non-stick pan, about 4 minutes a side, until browned and cooked through to 71 °C (160 °F) on a thermometer with no pink inside. Lay the cheese on in the last minute. Wash your hands, the board and the plate that held the raw beef.",
+        "Fry the egg in the same pan with a drop of water and a lid until the white is set and the yolk is firm all the way through, about 4 minutes. Wash your hands after cracking the egg. Toast the bun in the pan.",
+        "Toss the cabbage with the lemon juice and the remaining mustard. Build the burger with the tomato, pickles, avocado, cabbage and egg and serve with the wedges."
+      ],
+      "prepMin": 10,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "At the bigger sizes, make two smaller patties and use two buns."
+    },
+    {
+      "id": "takeout-at-home-turkey-veggie-whole-wheat-pizza-light",
+      "name": "Turkey and veggie pizza on a crisp whole-wheat pita base with a fresh salad",
+      "inspiredBy": "Inspired by a pizzeria sausage and pepper pizza, made with lean turkey on a pita",
+      "about": "A whole-wheat pita crisped in the oven as a thin, sturdy pizza base, spread with tomato sauce, lean turkey seasoned with fennel, peppers, onion, spinach and a little cheddar, and topped with a fried egg cooked until the yolk is firm, with a quick tomato, cucumber and spinach salad. The vegetables bring **fibre and vitamin C**, the egg brings choline and the turkey keeps the saturated fat low.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pita-bread-9baae8",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "whole wheat, one large (or two at the bigger sizes)"
+        },
+        {
+          "food": "tomato-sauce-unsalted-037b3a",
+          "g": 60,
+          "note": "unsalted"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "crushed"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.8
+        },
+        {
+          "food": "cheddar-cheese-c95e9a",
+          "g": 12,
+          "swap": "dairy_protein",
+          "note": "grated"
+        },
+        {
+          "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "ground"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "swap": "lean_protein",
+          "note": "a whole egg"
+        },
+        {
+          "food": "fennel-seed-8a14d7",
+          "g": 0.8,
+          "note": "crushed"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 25,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "note": "washed, half for the pizza and half for the salad"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 70,
+          "note": "washed and diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Heat the oven to 230 °C (450 °F) with a baking tray inside. Wash the pepper, spinach, tomato and cucumber.",
+        "Warm half the oil in a pan and cook the turkey with the fennel and the salt, breaking it up, until no pink remains and it reaches 74 °C (165 °F), about 5 minutes. Tip it into a bowl. Wash your hands and board after handling the raw turkey.",
+        "Prick the pita all over with a fork and crisp it on the hot tray for 2 minutes. Meanwhile stir the garlic and oregano into the tomato sauce.",
+        "Spread the sauce over the pita, scatter on the turkey, pepper, onion and half the spinach and finish with the cheddar. Bake 7 to 8 minutes, until the cheese is bubbling and the edge is crisp.",
+        "While it bakes, crack the egg into the turkey pan with a drop of water, break the yolk, cover and cook until the white is set and the yolk is firm all the way through, about 4 minutes. Wash your hands after cracking the egg.",
+        "Slide the egg onto the middle of the pizza. Toss the tomato, cucumber and remaining spinach with the lemon juice and remaining oil, slice the pizza and serve with the salad."
+      ],
+      "prepMin": 12,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "The egg is fried in the pan while the pizza bakes: on a thin pita in the oven it would need so long to set firm that the base would burn."
+    },
+    {
+      "id": "takeout-at-home-blueberry-banana-oatmeal-light",
+      "name": "Blueberry banana oatmeal with walnuts and chia",
+      "about": "Creamy oats cooked in milk with sliced banana, cinnamon and a spoonful of chia, topped with blueberries, walnuts and almonds. The oats and berries bring **fibre**, the walnuts and chia bring plant omega-3 and the almonds bring vitamin E.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 35,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 45,
+          "note": "sliced"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 5,
+          "note": "stirred in"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 4,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 4,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 60,
+          "note": "washed"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash the blueberries and slice the banana.",
+        "Put the oats, milk, chia, half the banana and the cinnamon in a small pot with a splash of water. Bring to a gentle simmer over medium heat.",
+        "Cook, stirring often, until thick and creamy, about 6 minutes. The banana will melt into the oats.",
+        "Spoon into a bowl and top with the blueberries, the rest of the banana, the walnuts and the almonds."
+      ],
+      "prepMin": 4,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Mix the dry oats, chia and cinnamon in a jar on Sunday and just add the milk."
+    },
+    {
+      "id": "takeout-at-home-mango-lassi-yogurt-bowl-light",
+      "name": "Mango lassi yogurt bowl with toasted oats, walnuts and chia",
+      "about": "Thick Greek yogurt with juicy mango, a pinch of cardamom and chia, like a spoonable lassi, with a crunchy topping of toasted oats, walnuts and almonds. The yogurt brings **protein and calcium**, and the walnuts and chia bring plant omega-3.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mango-raw-80de97",
+          "g": 90,
+          "note": "peeled and diced"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 16,
+          "swap": "low_gi_grains",
+          "note": "for toasting"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 9,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 5,
+          "note": "stirred in"
+        },
+        {
+          "food": "cardamom-ground-ac233b",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Toast the oats, walnuts and almonds in a dry pan over medium heat until golden and smelling nutty, about 3 minutes. Tip onto a plate to cool.",
+        "Wash, peel and dice the mango.",
+        "Stir the chia and cardamom into the yogurt and spoon it into a bowl.",
+        "Pile the mango on top and scatter over the crunchy oats and nuts."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "takeout-at-home-orange-almonds-light",
+      "name": "Orange with almonds",
+      "about": "Orange with a handful of almonds. The almonds bring **vitamin E and magnesium**, and the orange brings vitamin C.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "washed, in segments"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the fruit, prepare it as needed and serve with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "takeout-at-home-banana-walnuts-light",
+      "name": "Banana with walnuts",
+      "about": "Banana with a handful of walnuts. The walnuts bring **plant omega-3**, and the banana brings potassium.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 70,
+          "note": "sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the fruit, prepare it as needed and serve with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    }
+  ]
+}
