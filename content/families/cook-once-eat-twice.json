@@ -1,0 +1,1625 @@
+{
+  "id": "cook-once-eat-twice",
+  "name": "Cook Once, Eat Twice",
+  "style": "balanced",
+  "cuisine": "Global",
+  "carbStyle": "whole",
+  "regions": [
+    "France",
+    "Morocco",
+    "India",
+    "Thailand",
+    "Italy"
+  ],
+  "summary": "Two big cooks feed most of the week: a lentil pot and a roast chicken tray on Day 1 turn into a soup, a lentil bowl and a skillet, and the Day 4 chermoula salmon becomes the next day's lunch. On the days after each cook, the slow parts are already in the fridge.",
+  "howItWorks": "**Two big cooks.** Day 1 cooks a pot of lentils and a tray of roast chicken, roots and barley, with enough over for the soup on Day 2 and the lentil bowl and skillet on Day 3. Day 4 bakes chermoula salmon for dinner and the next day's lunch. Start on a weekend if you can.\n\n**Quick days in between.** The Day 2 soup takes about half an hour, and the Day 3 bowl and skillet under 20 minutes each. The Day 5 saag makes two portions and cooks the quinoa for the Day 6 shrimp. The Prep tab adds up the lentils, barley and quinoa to cook ahead.\n\n**The storage plan.** Cooked chicken, lentils and fish are eaten within 3 days of cooking. The Day 1 chicken is finished by Day 3 and the Day 4 salmon by Day 5, which is why the second cook exists. Cooked barley, millet and quinoa cool within 1 hour in shallow containers, and hot food is reheated to 74 °C.\n\n**Fish and protein.** Sardines on Day 1 and Day 7, canned salmon on Day 2, tuna on Day 3, fresh salmon on Day 4 (eaten cold on Day 5) and shrimp on Day 6. Beef, chicken, eggs, tofu and lentils cover the rest. Legumes or soy appear on six days out of seven, and eggs cook until the yolk is firm.\n\n**What changes with size.** Light cuts back the chicken, lentils, barley and oats, trims the oil and nuts, drops about half the snacks and leans on the yogurt bowl, while fish, eggs, tofu and beef stay close to full size. At the top of its range, Big grows the grains, potatoes, chicken, beef, fish and oil, adds a Day 1 snack and swaps one breakfast and one snack.",
+  "signature": [
+    "cook-once-eat-twice-roast-chicken-roots-barley",
+    "cook-once-eat-twice-chermoula-salmon-millet",
+    "cook-once-eat-twice-tofu-saag-quinoa",
+    "cook-once-eat-twice-braised-lentils-lemon-yogurt"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1500,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 4,
+          "swap": {
+            "from": "cook-once-eat-twice-banana-pb-oat-bowl",
+            "to": "cook-once-eat-twice-blueberry-yogurt-bowl"
+          }
+        },
+        {
+          "day": 6,
+          "swap": {
+            "from": "cook-once-eat-twice-banana-pb-oat-bowl",
+            "to": "cook-once-eat-twice-blueberry-yogurt-bowl"
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 3,
+          "swap": {
+            "from": "cook-once-eat-twice-warm-edamame-lemon",
+            "to": "cook-once-eat-twice-salmon-cucumber-lemon-cups"
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 4,
+          "swap": {
+            "from": "cook-once-eat-twice-yogurt-blueberries-almonds",
+            "to": "cook-once-eat-twice-apple-almonds"
+          }
+        },
+        {
+          "day": 6,
+          "swap": {
+            "from": "cook-once-eat-twice-banana-pb-oat-bowl",
+            "to": "cook-once-eat-twice-blueberry-yogurt-bowl"
+          }
+        },
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "cook-once-eat-twice-salmon-cucumber-lemon-cups"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "cook-once-eat-twice-banana-pb-oat-bowl",
+      "name": "Creamy banana oats with peanut butter and walnuts",
+      "inspiredBy": "a classic hot oatmeal with banana and peanut butter",
+      "about": "Creamy stovetop oats with mashed banana, a spoonful of peanut butter and toasted walnuts. The oats bring **slow-burning fibre**, and the walnuts add plant omega-3.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 45,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 200,
+          "swap": "dairy_protein",
+          "note": "1% milk or any milk you like"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 100,
+          "note": "ripe, half mashed and half sliced"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped and toasted in a dry pan"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash your hands. Stir the oats, milk and the mashed half of the banana in a small pot over medium heat.",
+        "Simmer for 4 to 5 minutes, stirring, until thick and creamy.",
+        "Spoon into a bowl and top with the sliced banana, the peanut butter and the walnuts. Dust with cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 6,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-blueberry-yogurt-bowl",
+      "name": "Blueberry yogurt bowl with toasted oats and walnuts",
+      "inspiredBy": "a parfait-style yogurt bowl",
+      "about": "Thick Greek yogurt under juicy blueberries, with oats toasted in a pan for crunch and walnuts on top. It is quick, cool and **high in protein**, with plant omega-3 from the walnuts.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 110,
+          "swap": "berries",
+          "note": "fresh or frozen and thawed"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 35,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash fresh blueberries. If using frozen, thaw them in a bowl in the fridge overnight or for 30 minutes on the counter.",
+        "Toast the oats in a dry pan over medium heat for 3 minutes until golden and fragrant, then let them cool.",
+        "Spoon the yogurt into a bowl, pile on the berries, and scatter over the oats and walnuts. Dust with cinnamon."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "For anyone pregnant, over 65, under 5 or with a weak immune system, boil frozen berries for 1 minute and cool them first."
+    },
+    {
+      "id": "cook-once-eat-twice-spinach-bean-scramble",
+      "name": "Spinach, mushroom and white bean scramble with firm-cooked eggs",
+      "inspiredBy": "Tuscan-style beans and greens with eggs",
+      "about": "Mushrooms, spinach and tomatoes cooked down with white beans, then eggs stirred through until fully firm. Served with an orange on the side, the beans and eggs together give **protein, choline and fibre** before 9 a.m.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "whole eggs"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 90,
+          "swap": "legumes",
+          "note": "no-salt-added, rinsed"
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 80
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 50,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 90,
+          "swap": "vit_c_fruit",
+          "note": "peeled, served on the side"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5,
+          "note": "iodized"
+        }
+      ],
+      "steps": [
+        "Wash the mushrooms, spinach, orange and tomatoes. Slice the mushrooms, halve the tomatoes and mince the garlic.",
+        "Warm the oil in a pan over medium-high heat. Cook the mushrooms for 4 minutes until browned, then add the garlic and tomatoes for 2 minutes.",
+        "Add the beans and spinach and stir until the spinach wilts and the beans are hot.",
+        "Beat the eggs with the iodized salt, pour them in, and stir gently for 3 to 4 minutes until completely firm all the way through, with no liquid left. Serve with the orange. Keep the rest of an opened tin of beans covered in the fridge and use it within 2 days: the next scramble or the bean dip can take it."
+      ],
+      "prepMin": 6,
+      "cookMin": 12,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-braised-lentils-lemon-yogurt",
+      "name": "Braised lentils with carrots, thyme, sardines and lemon yogurt",
+      "inspiredBy": "French-style lentils with carrots and thyme",
+      "about": "Green-brown lentils simmered with carrot, onion, tomato paste and thyme, wilted with spinach and finished with sardines and lemon yogurt. This is **the big lentil pot** for the week: one portion for lunch today, plus the lentils the soup and the bowl will need later.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 65,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.5
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.3
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "note": "from a lemon; zest it first"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 55,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 90,
+          "swap": "fatty_fish",
+          "note": "drained"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted in a dry pan"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1,
+          "note": "iodized"
+        }
+      ],
+      "steps": [
+        "Wash the carrot, spinach and lemon. Dice the carrot and onion small and mince the garlic. Zest the lemon, then juice it.",
+        "Warm the oil in a large pot and soften the onion and carrot for 8 minutes. Stir in the garlic, tomato paste and thyme for 1 minute.",
+        "Add the rinsed lentils for all three meals: today's lunch, the Day 2 soup and the Day 3 bowl (add up the dry lentils in those recipes, or check the Prep tab), then the bay leaf and water to cover by two fingers. Simmer for 20 to 25 minutes in a roomy pot until tender but still holding their shape.",
+        "Now, before the spinach goes in, scoop out the lentils for the soup and the bowl (cooked lentils weigh about 2½ times their dry weight, so each meal's share is its dry amount times 2½). Spread them in a shallow container, cool within 1 hour and refrigerate. Use within 3 days, and reheat to 74 °C (165 °F) when used hot.",
+        "Stir the spinach into the pot for 2 minutes, then the salt and half the lemon juice. Remove the bay leaf.",
+        "Stir the lemon zest and remaining juice into the yogurt. Serve the lentils topped with the yogurt, the sardines broken into chunks and the sunflower seeds. Keep any opened tin covered in the fridge and use it within 2 days."
+      ],
+      "prepMin": 12,
+      "cookMin": 35,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Day 1 is the big cook. To do it all in one session, roast the chicken tray while the lentils simmer, cool tonight's portion with the rest and reheat it to 74 °C (165 °F) at dinner. Cooked lentils also freeze well if you will not use them within 3 days."
+    },
+    {
+      "id": "cook-once-eat-twice-roast-chicken-roots-barley",
+      "name": "Roast chicken thighs with carrots, sweet potato and lemony barley",
+      "inspiredBy": "a big-batch roast tray with roots and a grain",
+      "about": "Chicken thighs roast next to a tray of carrots, sweet potato, onion and broccoli while a pot of barley simmers. Cook extra and it feeds **four meals**: tonight's dinner, the Day 2 lunch, the chicken in the Day 2 soup and the base of the Day 3 skillet.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 220,
+          "swap": "lean_protein",
+          "note": "trimmed"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 100
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 80
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "note": "from a lemon"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.5,
+          "note": "iodized"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). This is the big cook of the week. The list here is one portion, so make twice everything on it (tonight and the Day 2 lunch). Also weigh out the raw chicken listed in the Day 2 soup and in the Day 3 skillet, and the carrots, sweet potato and dry barley listed in the skillet. Together that is all the chicken and barley on the week's shopping list.",
+        "Wash the vegetables and herbs. Cut the carrots, sweet potato and onion into chunky pieces, and the broccoli into florets.",
+        "Rub all the chicken with half the oil, the paprika, thyme, garlic, half the lemon juice and half the salt. Wash your hands, the board and the knife with hot soapy water after handling the raw chicken.",
+        "Use two trays so nothing is crowded. Toss the vegetables (not the broccoli yet) with the remaining oil and a pinch of the salt on one tray, with the skillet's carrots and sweet potato at one end. Lay the chicken on the other tray in its groups. Roast the vegetables for 40 minutes and the chicken for 35 to 40 minutes, until it reaches 74 °C (165 °F) in the thickest part. Add the broccoli to the vegetable tray for the last 15 minutes.",
+        "Meanwhile simmer all the barley in plenty of water for 25 to 30 minutes until tender, then drain. Cooked barley weighs about 3 times its dry weight, so scoop out the skillet's share (its dry amount times 3), then toss the rest with the remaining lemon juice, salt and the chopped parsley.",
+        "Serve one portion now with the barley. Pack the second portion for the Day 2 lunch, the soup's chicken in its own container, and the skillet's chicken, carrots, sweet potato and barley in another, all in shallow containers.",
+        "Cool everything within 1 hour, then refrigerate. Eat it all within 3 days of cooking (the Day 3 skillet finishes it), reheated to 74 °C (165 °F)."
+      ],
+      "prepMin": 20,
+      "cookMin": 45,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-mushroom-lentil-soup",
+      "name": "Mushroom, lentil and chicken soup with thyme and spinach",
+      "inspiredBy": "rustic European mushroom and lentil soup",
+      "about": "Browned mushrooms and tomato paste give this soup a deep, savoury flavour, and the lentils bring **iron and folate**. It is made for lentils and chicken cooked ahead, like the big pot and tray in this plan, so it is ready in about half an hour; cooking them from scratch adds about 40 minutes.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 35,
+          "swap": "legumes",
+          "note": "dry weight; cooked ahead in the big lentil pot, or simmered first"
+        },
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 190,
+          "swap": "lean_protein",
+          "note": "raw weight; roasted ahead on the tray, or cooked first, then shredded"
+        },
+        {
+          "food": "mushroom-white-raw-a74147",
+          "g": 100
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 15
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.5
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "toasted in a dry pan"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1,
+          "note": "iodized"
+        }
+      ],
+      "steps": [
+        "If the lentils and chicken are not cooked yet, simmer the lentils in plenty of water for 20 to 25 minutes, and roast the chicken until it reaches 74 °C (165 °F) in the thickest part, then shred it. If you cooked them ahead, take your portion from the fridge. Wash your hands, the board and the knife after raw chicken.",
+        "Wash the mushrooms, carrot and spinach. Slice the mushrooms, dice the onion and carrot and mince the garlic.",
+        "Warm the oil in a pot over medium-high heat and brown the mushrooms for 5 minutes. Add the onion and carrot and cook for 4 minutes.",
+        "Stir in the garlic, tomato paste and thyme for 1 minute, then add the cooked lentils, the shredded chicken and enough water to cover generously.",
+        "Simmer for 10 minutes, until the chicken is steaming hot and reaches 74 °C (165 °F). Stir in the spinach until wilted, then the lemon juice and salt.",
+        "Ladle into a bowl and top with the yogurt and toasted sunflower seeds. Use cooked lentils and chicken within 3 days of cooking."
+      ],
+      "prepMin": 10,
+      "cookMin": 22,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Blend a third of the soup for a creamier texture."
+    },
+    {
+      "id": "cook-once-eat-twice-lentil-tuna-feta-bowl",
+      "name": "Lentil and tuna bowl with cucumber, feta and red pepper",
+      "inspiredBy": "a Greek-leaning lentil salad with tuna",
+      "about": "Cooked lentils (made ahead in the big pot, or simmered first and cooled) tossed cold with flaked tuna, crunchy cucumber, sweet pepper, tomatoes, feta and plenty of parsley in a lemon dressing. It is assembled in five minutes and is **high in fibre and protein**, with B12 from the tuna.",
+      "ingredients": [
+        {
+          "food": "lentils-dry-3ef869",
+          "g": 60,
+          "swap": "legumes",
+          "note": "dry weight; cooked ahead in the big lentil pot, or simmered first and cooled"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 70
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80
+        },
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 72,
+          "swap": "lean_protein",
+          "note": "drained"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 20,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 12
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3,
+          "note": "iodized"
+        }
+      ],
+      "steps": [
+        "If the lentils are not cooked yet, simmer them in plenty of water for 20 to 25 minutes, drain, spread in a shallow container and cool within 1 hour. Wash the cucumber, pepper, tomatoes, spinach and parsley. Dice the cucumber and pepper, halve the tomatoes, thinly slice the onion and chop the parsley.",
+        "Whisk the oil, lemon juice and salt in a bowl. Add the lentils, vegetables, spinach and parsley and toss.",
+        "Flake in the tuna, then crumble over the feta and add the walnuts. Keep any opened tin of tuna covered in the fridge and use it within 2 days. Pack in a cold bag with an ice pack if taking it to work, and eat the same day. Use cooked lentils within 3 days of cooking."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-lemony-chicken-barley-skillet",
+      "name": "Lemony chicken, barley and broccoli skillet with spinach",
+      "inspiredBy": "a fast skillet supper from tray leftovers",
+      "about": "Roast chicken, roots and barley, reheated with garlic, spinach, broccoli and lemon so it tastes like a new dish. Made for tray leftovers, like the big tray in this plan, it keeps **protein and fibre high** with almost no new cooking. From scratch, roast the chicken and vegetables and cook the barley first.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 220,
+          "swap": "lean_protein",
+          "note": "raw weight; roasted ahead on the tray, or cooked first, then sliced"
+        },
+        {
+          "food": "barley-pearled-dry-4b1ebc",
+          "g": 40,
+          "swap": "low_gi_grains",
+          "note": "dry weight; cooked ahead with the tray, or simmered first"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "roasted ahead on the tray, or roasted first"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 100,
+          "note": "roasted ahead on the tray, or roasted first"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "chopped"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 100,
+          "note": "florets"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "If the chicken, vegetables and barley are not cooked yet, roast the chicken and vegetables at 220 °C (425 °F) for 35 to 40 minutes until the chicken reaches 74 °C (165 °F), and simmer the barley for 25 to 30 minutes. Wash your hands, the board and the knife after raw chicken. Wash the spinach, broccoli, parsley and lemon. Chop the spinach and parsley, cut the broccoli into small florets and mince the garlic.",
+        "Warm the oil in a large skillet over medium heat. Add the garlic and chili flakes for 30 seconds, then the broccoli with a splash of water. Cover and steam for 3 minutes.",
+        "Add the roasted vegetables, barley, chicken and spinach with a splash of water. Cover and heat for 5 to 6 minutes, stirring, until everything is steaming hot and the chicken reaches 74 °C (165 °F).",
+        "Finish with the lemon juice and parsley. Cooked chicken is good for 3 days in the fridge, so finish every bit of this skillet today."
+      ],
+      "prepMin": 7,
+      "cookMin": 12,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-edamame-slaw-bowl",
+      "name": "Edamame, tofu and egg slaw bowl with tahini-ginger dressing",
+      "inspiredBy": "Asian-style slaws with a sesame dressing",
+      "about": "Edamame, firm tofu and chopped firm-cooked eggs on a crunchy red cabbage, carrot and pepper slaw in a tahini-ginger-lemon dressing, topped with sunflower seeds. It brings **protein, choline, some calcium and vitamin C**, and nothing here needs a long cook.",
+      "ingredients": [
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 90,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "baby spinach, left raw"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "whole eggs"
+        },
+        {
+          "food": "firm-tofu-calcium-set-c9fb4e",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "firm, patted dry and cubed"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 100
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 50
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 18,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 18
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5,
+          "note": "iodized"
+        }
+      ],
+      "steps": [
+        "Cook the frozen edamame in boiling water for 3 minutes until steaming hot, then drain and cool under cold water.",
+        "Boil the eggs in a pot of simmering water for 10 minutes until the yolks are completely firm, then cool them under cold water and peel. Eggs boiled ahead are fine too.",
+        "Wash the cabbage, spinach, carrot, pepper and lemon. Shred the cabbage and carrot, slice the pepper and grate the ginger.",
+        "Whisk the tahini, lemon juice, ginger and salt with a spoonful of warm water until smooth.",
+        "Cube the tofu (it is ready to eat, so keep it chilled). Toss the edamame, tofu, spinach and vegetables with the dressing, top with the quartered eggs and the sunflower seeds. Eat it the same day, packed in a cold bag with an ice pack if it travels."
+      ],
+      "prepMin": 12,
+      "cookMin": 12,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Boil the eggs ahead, while the lentils simmer on Day 1 or any evening: in their shells they keep up to 1 week in the fridge, and lunch then takes about 15 minutes."
+    },
+    {
+      "id": "cook-once-eat-twice-chermoula-salmon-millet",
+      "name": "Chermoula salmon with lemony millet, cucumber and tomato salad",
+      "inspiredBy": "Moroccan chermoula, with a millet salad on the side",
+      "about": "Salmon baked under a bright herb, garlic and cumin paste, served on lemony millet with cucumber and tomato. It is **the week's fish cook**: eat one portion warm, and pack the second cold for tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 135,
+          "swap": "fatty_fish",
+          "note": "skin on"
+        },
+        {
+          "food": "millet-dry-a10dc7",
+          "g": 50,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 100
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 20
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 25
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1.5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1,
+          "note": "iodized"
+        }
+      ],
+      "steps": [
+        "The list is one portion, so make twice everything on it (tonight and tomorrow's lunch). Cook fresh salmon the day you buy it, or thaw frozen fillets overnight in the fridge. Wash the herbs, cucumber, tomatoes and lemons. Heat the oven to 200 °C (400 °F). Rinse the millet.",
+        "Blend or finely chop most of the parsley, the garlic, cumin, paprika, half the lemon juice and half the oil into a paste. Rub it over the salmon and rest it in the fridge while the oven heats, 30 minutes at most. Never reuse the raw paste.",
+        "Simmer the millet in plenty of water for 15 minutes, drain, and toss with the remaining lemon juice, oil and salt. Wash your hands, the board and the knife after handling the raw salmon.",
+        "Bake the salmon on a lined tray for 12 to 14 minutes until it flakes and reaches 70 °C (158 °F).",
+        "Dice the cucumber, tomato and onion and toss with the millet. Serve a portion of salmon on top with the almonds.",
+        "This makes two portions. Cool the second portion within 1 hour, refrigerate it covered, and eat it cold tomorrow. Use it within 2 days; if you take it to work, use a cold bag with an ice pack."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-tofu-saag-quinoa",
+      "name": "Tofu and spinach saag-style curry with tomatoes and quinoa",
+      "inspiredBy": "Indian saag paneer, with tofu doing the work of the cheese",
+      "about": "Cubes of tofu in a spiced spinach, tomato and ginger sauce finished with yogurt, over fluffy quinoa. Spinach and tofu make this **rich in iron, folate and some calcium**. The second portion is tomorrow's lunch, and the pot of quinoa also feeds the Day 6 shrimp.",
+      "ingredients": [
+        {
+          "food": "firm-tofu-calcium-set-c9fb4e",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "firm, patted dry and cubed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 150,
+          "swap": "leafy_greens"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 150,
+          "note": "ripe, chopped"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 40,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2,
+          "note": "iodized"
+        }
+      ],
+      "steps": [
+        "Wash the spinach and tomatoes. Dice the onion and mince the garlic and ginger. Rinse the quinoa. The list is one portion, so make twice everything on it (tonight and tomorrow's lunch).",
+        "Simmer the quinoa in about double its volume of water for 15 minutes, then fluff and set aside, covered. Cook the quinoa for the Day 6 shrimp in the same pot (its dry weight is listed in that recipe, or check the Prep tab).",
+        "Warm the oil in a wide pan and cook the onion for 6 minutes. Stir in the garlic, ginger, garam masala, cumin and turmeric for 1 minute.",
+        "Add the tomatoes, tomato paste and tofu and simmer for 10 minutes, then stir in the spinach until it wilts down. Take off the heat and stir in the yogurt and salt.",
+        "This makes two portions. Serve one over quinoa. Cool the second portion and the rest of the quinoa in shallow containers within 1 hour and refrigerate. Eat the curry tomorrow, reheated to 74 °C (165 °F), and use the quinoa within 3 days."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-lemon-chili-shrimp-quinoa",
+      "name": "Lemon-chili shrimp with broccoli, edamame and quinoa",
+      "inspiredBy": "a quick garlicky shrimp pilaf",
+      "about": "Garlic shrimp tossed with broccoli, edamame and fluffy quinoa, brightened with lemon and a pinch of chili. With quinoa cooked ahead, like the saag night in this plan, it is on the table in about 20 minutes (30 from scratch), and it brings **iodine, zinc and lean protein**.",
+      "ingredients": [
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "peeled, thawed in the fridge if frozen"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "dry weight, rinsed; cooked ahead with the saag, or simmered first"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 120
+        },
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 70,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 25,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.4
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8,
+          "note": "iodized"
+        }
+      ],
+      "steps": [
+        "Wash the broccoli and parsley. Cut the broccoli into small florets, thinly slice the onion and mince the garlic. Pat the shrimp dry.",
+        "If the quinoa is not cooked yet, simmer it in about double its volume of water for 15 minutes, then fluff. If you cooked it ahead, take it from the fridge.",
+        "Warm half the oil in a wide pan. Cook the broccoli and frozen edamame with a splash of water for 5 minutes until tender and steaming hot.",
+        "Push the vegetables aside, add the remaining oil, garlic and chili flakes for 30 seconds, then the shrimp for 3 minutes until pink and opaque (70 °C, 158 °F). Wash your hands, the board and the knife after the raw shrimp.",
+        "Toss in the quinoa and stir for 2 minutes until it is steaming hot, then add the onion, lemon juice, parsley and salt."
+      ],
+      "prepMin": 10,
+      "cookMin": 20,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-sardine-potato-orange-salad",
+      "name": "Sardine and new potato salad with cucumber, orange and parsley",
+      "inspiredBy": "a Sicilian-style orange and olive oil salad",
+      "about": "Warm baby potatoes with crisp cucumber, tomato, juicy orange and sardines in a lemon-olive oil dressing. The sardines carry **omega-3, vitamin D and calcium** from their soft bones.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 100,
+          "swap": "fatty_fish",
+          "note": "drained"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 180,
+          "note": "small, unpeeled"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 100
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 15
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10
+        },
+        {
+          "food": "tomato-red-ripe-raw-eb3084",
+          "g": 80
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the potatoes, tomatoes, orange, cucumber and parsley. Halve the potatoes and boil for 12 to 15 minutes until tender, then drain.",
+        "Thinly slice the onion and cucumber and chop the tomatoes. Cut the peel from the orange and slice it into rounds.",
+        "Whisk the oil, lemon juice and pepper. Toss the warm potatoes with the dressing, tomatoes, onion, cucumber and parsley.",
+        "Top with the orange and the sardines, broken into chunks, and the sunflower seeds. Keep any opened tin covered in the fridge and use it within 2 days."
+      ],
+      "prepMin": 12,
+      "cookMin": 15,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-beef-sweet-potato-curry",
+      "name": "Beef and sweet potato curry with broccoli (massaman-inspired)",
+      "inspiredBy": "Inspired by Thai massaman, with less coconut and more vegetables",
+      "about": "Tender beef simmered with sweet potato and broccoli in a mildly spiced, tomato-coconut sauce with a spoonful of peanut butter. It is **rich in iron, zinc and vitamin A**.",
+      "ingredients": [
+        {
+          "food": "beef-diced-lean-raw-81c347",
+          "g": 160,
+          "swap": "lean_protein",
+          "note": "lean sirloin or inside round, in small cubes"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 180
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 100
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8
+        },
+        {
+          "food": "curry-powder-55e9c6",
+          "g": 5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 12
+        },
+        {
+          "food": "coconut-milk-reduced-fat-93cbb3",
+          "g": 70
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1,
+          "note": "iodized"
+        }
+      ],
+      "steps": [
+        "Wash the sweet potato, broccoli and parsley. Cube the sweet potato, cut the broccoli into florets, dice the onion and mince the garlic and ginger.",
+        "Warm the oil in a pot and brown the beef in batches, then put it on a clean plate. Wash your hands, board and knife after the raw beef.",
+        "Cook the onion for 5 minutes. Stir in the garlic, ginger, curry powder, cinnamon and tomato paste for 1 minute.",
+        "Return the beef with the sweet potato, coconut milk, peanut butter and enough water to just cover. Simmer, covered, for 25 minutes until the beef is tender and reaches 71 °C (160 °F).",
+        "Add the broccoli for the last 6 minutes. Finish with the lemon juice, salt and parsley. Move the rest of the coconut milk to a covered container in the fridge and use it within 2 days, or freeze it."
+      ],
+      "prepMin": 15,
+      "cookMin": 38,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make a double batch and freeze the second portion for a busy night next week: cool it within 2 hours, freeze it once cold, thaw it in the fridge, eat it within 2 days of thawing, reheated to 74 °C (165 °F), and never refreeze it."
+    },
+    {
+      "id": "cook-once-eat-twice-apple-walnuts",
+      "name": "Apple slices with toasted walnuts",
+      "about": "Crisp apple slices with warm, toasted walnuts. The apple brings **fibre**, and the walnuts bring plant omega-3 and a good crunch.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "toasted in a dry pan"
+        }
+      ],
+      "steps": [
+        "Wash the apple and cut it into wedges.",
+        "Toast the walnuts in a dry pan for 2 minutes, cool a little and serve with the apple."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-apple-almonds",
+      "name": "Apple wedges with almonds",
+      "about": "Crisp apple wedges with a handful of almonds. The apple brings **fibre**, and the almonds bring vitamin E and a little calcium.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 18,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the apple, cut it into wedges and eat with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-apple-peanut-butter",
+      "name": "Apple slices with peanut butter",
+      "about": "Crisp apple slices with a spoonful of peanut butter for dipping. The apple brings **fibre**, and the peanut butter brings protein and niacin.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 34,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the apple, slice it and dip the slices in the peanut butter."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-salmon-cucumber-lemon-cups",
+      "name": "Canned salmon and cucumber cups with lemon yogurt",
+      "about": "Cucumber rounds topped with flaked canned salmon and a lemony yogurt spoonful. The salmon, soft bones and all, brings **omega-3, calcium and vitamin D**.",
+      "ingredients": [
+        {
+          "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+          "g": 70,
+          "swap": "fatty_fish",
+          "note": "drained, soft bones mashed in"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 120
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 40,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the cucumber, lemon and parsley. Slice the cucumber into thick rounds.",
+        "Flake the salmon into a bowl, mashing the soft bones in. Stir in half the lemon juice and the chopped parsley.",
+        "Mix the yogurt with the remaining lemon juice and pepper. Spoon the salmon onto the cucumber rounds and top with the yogurt. Keep any opened tin covered in the fridge and use it within 2 days: the lentil and tuna bowl is a good home for the rest."
+      ],
+      "prepMin": 6,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-orange-walnuts",
+      "name": "Orange wedges with toasted walnuts",
+      "about": "Juicy orange wedges with toasted walnuts. It is an easy snack with **vitamin C and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "toasted in a dry pan"
+        }
+      ],
+      "steps": [
+        "Wash the orange and cut it into wedges.",
+        "Toast the walnuts in a dry pan for 2 minutes, cool a little and serve with the orange."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-yogurt-blueberries-almonds",
+      "name": "Greek yogurt with blueberries and almonds",
+      "about": "Thick Greek yogurt with blueberries and chopped almonds. It is a cool snack with **protein, calcium and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 80,
+          "swap": "berries"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Wash the blueberries.",
+        "Spoon the yogurt into a bowl and top with the berries and almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-warm-edamame-lemon",
+      "name": "Warm edamame with lemon and cayenne",
+      "about": "Warm edamame tossed with lemon juice and a pinch of cayenne. It is a savoury snack with **plant protein, folate and iron**.",
+      "ingredients": [
+        {
+          "food": "edamame-green-soybeans-frozen-edcd2b",
+          "g": 100,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4,
+          "note": "iodized"
+        }
+      ],
+      "steps": [
+        "Cook the frozen edamame in boiling water for 3 minutes until steaming hot.",
+        "Drain and toss with the lemon juice, cayenne and iodized salt."
+      ],
+      "prepMin": 3,
+      "cookMin": 3,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "cook-once-eat-twice-white-bean-dip-cucumber",
+      "name": "White bean and parsley dip with cucumber",
+      "about": "A quick lemony white bean dip with garlic and parsley for dipping cucumber. It brings **fibre, iron and potassium**.",
+      "ingredients": [
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 90,
+          "swap": "legumes",
+          "note": "no-salt-added, rinsed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 120
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3,
+          "note": "iodized"
+        }
+      ],
+      "steps": [
+        "Wash the cucumber and parsley. Mash or blend the beans with the oil, lemon juice, garlic, parsley and salt until smooth, adding a spoonful of water if needed.",
+        "Slice the cucumber into rounds and dip. Keep any extra dip covered in the fridge for up to 2 days."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "cook-once-eat-twice-spinach-bean-scramble"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "cook-once-eat-twice-braised-lentils-lemon-yogurt"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "cook-once-eat-twice-roast-chicken-roots-barley"
+        },
+        {
+          "slot": "snack",
+          "recipe": "cook-once-eat-twice-apple-almonds"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "cook-once-eat-twice-blueberry-yogurt-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "cook-once-eat-twice-roast-chicken-roots-barley",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "cook-once-eat-twice-mushroom-lentil-soup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "cook-once-eat-twice-orange-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "cook-once-eat-twice-salmon-cucumber-lemon-cups"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "cook-once-eat-twice-spinach-bean-scramble"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "cook-once-eat-twice-lentil-tuna-feta-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "cook-once-eat-twice-lemony-chicken-barley-skillet"
+        },
+        {
+          "slot": "snack",
+          "recipe": "cook-once-eat-twice-yogurt-blueberries-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "cook-once-eat-twice-warm-edamame-lemon"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "cook-once-eat-twice-banana-pb-oat-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "cook-once-eat-twice-edamame-slaw-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "cook-once-eat-twice-chermoula-salmon-millet"
+        },
+        {
+          "slot": "snack",
+          "recipe": "cook-once-eat-twice-yogurt-blueberries-almonds"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "cook-once-eat-twice-spinach-bean-scramble"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "cook-once-eat-twice-chermoula-salmon-millet",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "cook-once-eat-twice-tofu-saag-quinoa"
+        },
+        {
+          "slot": "snack",
+          "recipe": "cook-once-eat-twice-apple-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "cook-once-eat-twice-warm-edamame-lemon"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "cook-once-eat-twice-banana-pb-oat-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "cook-once-eat-twice-tofu-saag-quinoa",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "cook-once-eat-twice-lemon-chili-shrimp-quinoa"
+        },
+        {
+          "slot": "snack",
+          "recipe": "cook-once-eat-twice-apple-peanut-butter"
+        },
+        {
+          "slot": "snack",
+          "recipe": "cook-once-eat-twice-white-bean-dip-cucumber"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "cook-once-eat-twice-blueberry-yogurt-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "cook-once-eat-twice-sardine-potato-orange-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "cook-once-eat-twice-beef-sweet-potato-curry"
+        },
+        {
+          "slot": "snack",
+          "recipe": "cook-once-eat-twice-apple-walnuts"
+        }
+      ]
+    }
+  ]
+}
