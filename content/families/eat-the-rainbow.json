@@ -1,0 +1,2314 @@
+{
+  "id": "eat-the-rainbow",
+  "name": "Eat the Rainbow",
+  "style": "balanced",
+  "cuisine": "Global",
+  "carbStyle": "whole",
+  "regions": [
+    "Thailand",
+    "Hungary",
+    "Iran",
+    "Mexico",
+    "Morocco",
+    "India"
+  ],
+  "summary": "Each day leans on a colour: green, red, orange, purple, yellow, white and a rainbow Sunday, so the dishes and snacks are fun and very varied. Whole-food carbs, fish three times, and nothing you cannot find at an ordinary supermarket.",
+  "howItWorks": "**A colour a day.** Monday is green, Tuesday red, Wednesday orange, Thursday purple, Friday yellow, Saturday white and cream, and Sunday a rainbow. Breakfast, dinner and snacks lean on the day's colour, and the dish names say what is in the bowl. A leftover lunch carries the colour of the night before.\n\n**Cook once, eat twice.** Monday's green curry, Thursday's beef and eggplant stew and Friday's golden chicken skillet each make two portions, so the next lunch is done. Chill within the hour, keep up to 3 days and reheat until steaming. Weeknight dinners run about 40 minutes, with a night-before prep tip, and Sunday's stuffed peppers are the one project.\n\n**Fish and the hard nutrients.** Sardines on Monday and salmon on Wednesday and Saturday bring omega-3 and some vitamin D. Beef, chicken, shrimp, four eggs through the week and quinoa help with choline, while chickpeas, lentils, black beans and leafy greens bring iron, folate and calcium. Chia and walnuts add plant omega-3.\n\n**Light.** It covers 1400 to 1800 and drops one snack a day. At 1400 the sweet breakfasts keep their milk and yogurt, but their oats and quinoa shrink to a few spoonfuls, so the porridges are milky and loose. Coconut milk, potatoes, corn, millet, oil and nuts come down, and the skillet chicken drops to about a third. Fish, beef, shrimp, beans and vegetables stay at or near Standard.\n\n**Big.** It adds one snack a day. At 2,400 the meat, fish, beans and dairy grow by a fifth to a half, while the oats, oil and coconut milk stay at or under Standard. At 3,200 the meat, fish, beans and dairy grow by a third to a half, and the grains, potatoes, nuts and oil by about two-thirds to double. Vegetables stay as written.",
+  "signature": [
+    "eat-the-rainbow-green-chicken-curry-kale-quinoa",
+    "eat-the-rainbow-beef-red-pepper-goulash-potatoes",
+    "eat-the-rainbow-orange-ginger-salmon-sweet-potato-spinach",
+    "eat-the-rainbow-beef-eggplant-stew-sweet-potato-cabbage-slaw",
+    "eat-the-rainbow-turkey-millet-stuffed-peppers-paprika-tomato"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1600,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "eat-the-rainbow-mango-almonds"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "eat-the-rainbow-apple-cinnamon-pumpkin-seeds"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "eat-the-rainbow-banana-almonds-cinnamon"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "eat-the-rainbow-green-apple-almonds"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "eat-the-rainbow-almond-walnut-handful"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "eat-the-rainbow-red-apple-walnuts"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "eat-the-rainbow-orange-wedges-pumpkin-seeds"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "eat-the-rainbow-green-oats-spinach-egg",
+      "name": "Green savoury oats with spinach and a firm egg",
+      "inspiredBy": "Inspired by savoury congee and a bowl of greens on porridge",
+      "about": "Rolled oats simmered with garlic and a big handful of spinach, then topped with a fried egg cooked until the yolk is firm, a squeeze of lemon, cilantro and chopped walnuts. A savoury, filling green start with **protein, fibre and folate**, and lemon to help absorb the iron.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed, roughly chopped"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.2,
+          "note": "optional"
+        }
+      ],
+      "steps": [
+        "Wash the spinach and cilantro. Heat half the oil in a small pot over medium heat, add the garlic and cook for 30 seconds, until fragrant.",
+        "Stir in the oats for 1 minute, then pour in about a cup of water and the salt. Bring to a simmer and cook for 4 minutes, stirring, until the oats are thick and creamy.",
+        "Add the spinach and stir for 1 to 2 minutes, until it wilts and turns bright green. Add a splash of water if it gets stiff.",
+        "While that cooks, heat the rest of the oil in a small non-stick pan. Fry the egg over medium heat, cover the pan, and cook for 4 to 5 minutes, flipping once, until the white is set and the yolk is completely firm.",
+        "Spoon the oats into a bowl, stir in the lemon juice and pepper, and top with the egg, the walnuts, the cilantro and a pinch of chili if you like heat."
+      ],
+      "prepMin": 6,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Swap the spinach for kale if you like, and give it 2 to 3 minutes."
+    },
+    {
+      "id": "eat-the-rainbow-strawberry-quinoa-porridge-almonds",
+      "name": "Warm strawberry quinoa porridge with almonds",
+      "inspiredBy": "Inspired by breakfast quinoa from the Andes, cooked in milk like a porridge",
+      "about": "Quinoa simmered in milk until creamy, with half the strawberries mashed in so the whole bowl turns pink, then topped with fresh berries, cinnamon and toasted almonds. Milk and almonds bring **calcium and vitamin E**, and the chia brings plant omega-3.",
+      "ingredients": [
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 220,
+          "swap": "dairy_protein",
+          "note": "or any milk you like"
+        },
+        {
+          "food": "strawberry-raw-fc000f",
+          "g": 120,
+          "swap": "berries",
+          "note": "washed, hulled"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "toasted, chopped"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa in a fine sieve under cold water for 30 seconds. Wash the strawberries and slice them, keeping a handful for the top.",
+        "Put the quinoa, milk, cinnamon and a splash of water in a small pot and bring to a gentle simmer over medium heat.",
+        "Cook for 14 to 15 minutes, stirring now and then, until the quinoa is tender and the porridge is thick and creamy. Add a splash of milk if it gets stiff.",
+        "Stir in the chia, then mash the strawberries you set aside into the pot and stir for 1 minute, until the porridge turns pink.",
+        "Spoon into a bowl and top with the sliced strawberries and the almonds."
+      ],
+      "prepMin": 5,
+      "cookMin": 17,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make it ahead: cook a double batch of quinoa on Sunday, cool it within 1 hour in a shallow container, and on Tuesday warm 1 serving in the milk for 5 minutes. Use cooked quinoa within 3 days. Rinsing raw quinoa takes away its bitter coating, so do not skip that."
+    },
+    {
+      "id": "eat-the-rainbow-carrot-apple-oatmeal",
+      "name": "Carrot cake oatmeal with apple and almonds",
+      "inspiredBy": "Inspired by carrot cake, in a bowl of oatmeal",
+      "about": "Creamy oats simmered in milk with grated carrot, grated apple, cinnamon, ginger and nutmeg, topped with cool Greek yogurt, toasted almonds and pumpkin seeds. It tastes like carrot cake with the frosting, and the carrot brings **vitamin A as carotenoids** alongside protein from the yogurt and fibre from the oats and apple.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 200,
+          "swap": "dairy_protein",
+          "note": "or any milk you like"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "washed, grated"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 40,
+          "note": "washed, grated"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 90,
+          "swap": "dairy_protein",
+          "note": "to spoon on top"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "toasted, chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1.5
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.5
+        },
+        {
+          "food": "nutmeg-ground-15c547",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the carrot and apple and grate them on the large holes of a box grater.",
+        "Put the oats, milk, carrot, apple, cinnamon, ginger and nutmeg in a small pot with a splash of water.",
+        "Bring to a simmer over medium heat and cook for 6 to 7 minutes, stirring often, until the oats are thick and the carrot is soft.",
+        "Spoon into a bowl, add the yogurt and scatter over the toasted almonds and pumpkin seeds."
+      ],
+      "prepMin": 6,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Grate the carrot the night before and keep it covered in the fridge to make this a 10-minute breakfast."
+    },
+    {
+      "id": "eat-the-rainbow-blueberry-overnight-oats",
+      "name": "Blueberry overnight oats with yogurt and chia",
+      "inspiredBy": "Inspired by Swiss bircher muesli, soaked the night before",
+      "about": "Rolled oats soaked overnight in milk and Greek yogurt, with chia stirred through, then topped with blueberries. It is ready when you wake up, with **fibre, protein and plant omega-3** and the deep blue of the berries.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 140,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 110,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "The night before, stir the oats, milk, yogurt, chia and cinnamon together in a jar or small bowl until smooth.",
+        "Cover and put it in the fridge to soak for at least 6 hours, or overnight.",
+        "In the morning, wash the blueberries and spoon them on top. Eat it cold, straight from the jar."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Make it fresh the night before and eat it within 2 days. Never keep soaked oats longer than 3 days."
+    },
+    {
+      "id": "eat-the-rainbow-golden-sweet-potato-corn-hash-egg",
+      "name": "Golden sweet potato and corn hash with a firm egg",
+      "inspiredBy": "Inspired by a diner breakfast hash",
+      "about": "Golden sweet potato cubes with sweet corn, yellow pepper and onion with smoked paprika, topped with an egg cooked until the yolk is firm, a squeeze of lemon and cool yogurt. A sunny, hearty plate with **vitamin A as carotenoids, potassium and protein**.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 130,
+          "note": "scrubbed, cut in 1 cm cubes"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 60,
+          "note": "frozen"
+        },
+        {
+          "food": "yellow-bell-pepper-raw-be5730",
+          "g": 60,
+          "note": "washed, diced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 30,
+          "note": "diced"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 80,
+          "swap": "dairy_protein",
+          "note": "to spoon on top"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.2,
+          "note": "optional"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the sweet potato, pepper and cilantro. Put the sweet potato cubes in a bowl with a splash of water, cover with a plate and microwave for 4 minutes, until just tender.",
+        "Heat the oil in a wide non-stick pan over medium-high heat. Add the sweet potatoes, smoked paprika and salt and cook for 6 minutes, turning now and then, until golden and crisp at the edges.",
+        "Add the onion and pepper and cook for 3 minutes, then the frozen corn for 2 minutes, until the corn is steaming hot.",
+        "Push the hash to the sides, crack the egg into the middle and cover the pan. Cook for 4 to 5 minutes, until the white is set and the yolk is completely firm.",
+        "Finish with the lemon, black pepper, cilantro and a pinch of chili flakes if you like, then serve straight from the pan with the cold yogurt on the side."
+      ],
+      "prepMin": 8,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Microwave the sweet potato cubes the night before and this is a 15-minute breakfast."
+    },
+    {
+      "id": "eat-the-rainbow-banana-cinnamon-quinoa-porridge",
+      "name": "Banana and cinnamon quinoa porridge with almonds",
+      "inspiredBy": "Inspired by creamy breakfast porridge, made with quinoa and milk",
+      "about": "Quinoa simmered in milk with cinnamon until soft and creamy, topped with sliced banana, toasted almonds and pumpkin seeds. A slow, cosy weekend bowl with **potassium, calcium and iron**.",
+      "ingredients": [
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 220,
+          "swap": "dairy_protein",
+          "note": "or any milk you like"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 110,
+          "note": "sliced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 7,
+          "swap": "nuts_seeds",
+          "note": "toasted, chopped"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa in a fine sieve under cold water for 30 seconds.",
+        "Put the quinoa, milk, cinnamon and a splash of water in a small pot and bring to a gentle simmer over medium heat.",
+        "Cook for 14 to 15 minutes, stirring now and then, until the quinoa is tender and the porridge is thick and creamy. Add a splash of milk if it gets stiff.",
+        "Spoon into a bowl, lay the banana slices on top and scatter over the almonds and pumpkin seeds."
+      ],
+      "prepMin": 5,
+      "cookMin": 16,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Mash half the banana into the pot for a naturally sweet porridge."
+    },
+    {
+      "id": "eat-the-rainbow-rainbow-yogurt-fruit-bowl",
+      "name": "Rainbow fruit bowl with yogurt and toasted oats",
+      "inspiredBy": "Inspired by a fruit-and-yogurt parfait, with a stripe of every colour",
+      "about": "Thick Greek yogurt topped with mango, green apple, blueberries and strawberries in a row of colour, then a crunch of toasted oats, walnuts and a spoonful of chia. It is bright, quick and gives you **vitamin C, protein and calcium** in one bowl.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 180,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mango-peeled-frozen-a464dd",
+          "g": 80,
+          "note": "thawed, diced"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 70,
+          "note": "green, washed, diced"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 40,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "strawberry-raw-fc000f",
+          "g": 40,
+          "swap": "berries",
+          "note": "washed, sliced"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 10,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        }
+      ],
+      "steps": [
+        "Toast the oats in a dry pan over medium heat for 2 to 3 minutes, stirring, until they smell nutty. Tip them into a bowl to cool.",
+        "Wash the blueberries, strawberries and apple. Use mango thawed overnight in a covered bowl in the fridge, or fresh mango.",
+        "Spoon the yogurt into a bowl and arrange the mango, apple, blueberries and strawberries in rows on top.",
+        "Scatter over the toasted oats, the walnuts and the chia just before eating so the oats stay crisp."
+      ],
+      "prepMin": 7,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "15-minute",
+        "kid-friendly"
+      ],
+      "tip": "Toast a few days of oats at once and keep them in a jar."
+    },
+    {
+      "id": "eat-the-rainbow-sardine-quinoa-herb-salad-kale",
+      "name": "Sardine and quinoa herb salad with chickpeas, kale and cucumber",
+      "inspiredBy": "Inspired by lemony chickpea and herb salads from the eastern Mediterranean",
+      "about": "A herby, lemony salad of quinoa, chickpeas, kale, cucumber and cilantro, with sardines folded through. Sardines bring **omega-3, calcium and vitamin D**, and the chickpeas and greens bring iron and folate, with the lemon to help absorb the iron.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 70,
+          "swap": "fatty_fish",
+          "note": "drained"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 150,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 90,
+          "note": "washed, diced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 20,
+          "note": "finely diced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa and cook it in about twice its volume of water for 14 minutes, until tender. Spread it on a plate to cool, then chill it within 1 hour.",
+        "Wash the kale, cucumber and cilantro. Slice the kale very thinly, put it in a bowl with the lemon juice, the oil and the salt, and rub it with your fingers for 1 minute, until it softens.",
+        "Add the chickpeas, quinoa, cucumber, onion, cilantro, cumin and pepper and toss well.",
+        "Flake the sardines over the top and fold them in gently so they stay in chunks.",
+        "Taste and add a little more lemon if you like. If you pack it, put it in a container with an ice pack and eat it the same day. Keep an opened tin of sardines covered in the fridge and use it within 2 days."
+      ],
+      "prepMin": 12,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook the quinoa the evening before and this is a 10-minute lunch. Squeeze a little extra lemon over the sardines just before eating."
+    },
+    {
+      "id": "eat-the-rainbow-carrot-lentil-kale-slaw",
+      "name": "Carrot, lentil and kale slaw with a firm egg and cumin-lemon yogurt",
+      "inspiredBy": "Inspired by Moroccan carrot salad, with lentils and greens added",
+      "about": "Grated carrot and shredded kale tossed with lentils and pumpkin seeds in a cumin and lemon yogurt dressing, with a firm hard-cooked egg on top. Orange from the carrot, green from the kale, and **fibre, vitamin A (as carotenoids) and protein** all in one bowl.",
+      "ingredients": [
+        {
+          "food": "lentils-canned-no-salt-added-drained-c1edbd",
+          "g": 170,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "washed, grated"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "hard-cooked until the yolk is firm"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Put the egg in a small pot of cold water, bring to a boil and cook for 10 minutes, until the yolk is completely firm. Cool it under cold water and peel it.",
+        "Wash the carrot, kale and cilantro. Grate the carrot and slice the kale as thinly as you can.",
+        "Whisk the yogurt, lemon juice, oil, cumin, paprika and salt together in a bowl.",
+        "Add the carrot, kale and lentils and toss until everything is coated. Let it sit for 5 minutes so the kale softens.",
+        "Halve the egg and lay it on top with the pumpkin seeds and cilantro. If you pack it, put it in a container with an ice pack and eat it the same day."
+      ],
+      "prepMin": 12,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Keep the dressing in a separate small jar if you are packing it, and stir it in at lunch."
+    },
+    {
+      "id": "eat-the-rainbow-purple-cabbage-beet-shrimp-quinoa-bowl",
+      "name": "Purple cabbage, beet and shrimp bowl with black beans and quinoa",
+      "inspiredBy": "Inspired by a Tex-Mex bean and slaw bowl, in purple, with paprika shrimp",
+      "about": "Shredded red cabbage and beet with black beans, fluffy quinoa and quick paprika shrimp, tossed in a lemony cilantro dressing and finished with toasted almonds. It is **high in fibre and protein**, and the red cabbage and beet turn the whole bowl a deep purple.",
+      "ingredients": [
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "peeled, thawed in the fridge if frozen"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 110,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 80,
+          "note": "washed, shredded"
+        },
+        {
+          "food": "beet-cooked-2d61be",
+          "g": 50,
+          "note": "vacuum-packed cooked beet or home-roasted, diced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted, sliced or chopped"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa and cook it in about twice its volume of water for 14 minutes, until the little tails pop out. Spread it on a plate to cool for 10 minutes, then chill it within 1 hour.",
+        "Wash the cabbage and cilantro. Shred the cabbage finely and dice the beet.",
+        "Pat the shrimp dry and toss with the paprika and a pinch of the salt. Heat half the oil in a pan over medium-high heat and cook the shrimp for 2 to 3 minutes per side, until pink, opaque and firm all the way through. Cool them on a plate, then wash your hands, the pan and the board with hot soapy water.",
+        "Whisk the lemon juice, the rest of the oil, cumin, the rest of the salt, half the cilantro and a splash of water together.",
+        "Toss the cooled quinoa with the cabbage, beans and beet, then stir through the dressing. Lay the shrimp on top with the almonds and the rest of the cilantro.",
+        "Pack it in a container with an ice pack and eat it the same day. Keep the shrimp cold until you eat."
+      ],
+      "prepMin": 14,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Cook the quinoa the evening before, cool it fast in a shallow container, and use it within 3 days. Swap the shrimp for chicken if you prefer."
+    },
+    {
+      "id": "eat-the-rainbow-rainbow-chickpea-millet-chopped-salad",
+      "name": "Rainbow chopped salad with chickpeas, millet, a firm egg and lemon dressing",
+      "inspiredBy": "Inspired by an Israeli chopped salad, with every colour in the bowl",
+      "about": "Finely chopped red cabbage, carrot, yellow pepper, cucumber and sweet corn with kale, chickpeas, millet and a firm egg, in a bright lemon and olive oil dressing. A crunchy bowl with **fibre, vitamin C and plant protein**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 140,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "millet-dry-a10dc7",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "hard-cooked until the yolk is firm"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, finely chopped"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 40,
+          "note": "washed, finely chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed, finely diced"
+        },
+        {
+          "food": "yellow-bell-pepper-raw-be5730",
+          "g": 50,
+          "note": "washed, diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed, diced"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 30,
+          "note": "frozen, heated with the millet"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Rinse the millet and cook it in about 2½ times its volume of water for 15 to 20 minutes, until tender, adding the frozen corn for the last 2 minutes so it is steaming hot. Spread both on a plate and cool quickly, then chill within 1 hour. Hard-cook the egg in boiling water for 10 minutes, until the yolk is completely firm, then cool and peel it.",
+        "Wash all the vegetables and cilantro. Chop the cabbage, kale, carrot, pepper and cucumber into small, even pieces.",
+        "Whisk the lemon juice, oil, paprika, salt and pepper together in a large bowl.",
+        "Add the chickpeas, millet and corn, the vegetables and the cilantro and toss well.",
+        "Chop the egg and scatter it over with the walnuts. Eat it right away, or cover it and chill it and eat it the same day."
+      ],
+      "prepMin": 15,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "The smaller you chop, the better it tastes: every forkful gets every colour."
+    },
+    {
+      "id": "eat-the-rainbow-green-chicken-curry-kale-quinoa",
+      "name": "Green herb chicken curry with kale and quinoa",
+      "inspiredBy": "Inspired by Thai green curry, with a fresh cilantro, ginger and lemon paste",
+      "about": "Chicken simmered in a bright green paste of cilantro, garlic, ginger and chili with light coconut milk and plenty of kale, over quinoa. The kale brings **calcium, vitamin K and folate**, and the lemon at the end lifts the whole pot.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "cut in bite-size pieces"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "coconut-milk-reduced-fat-93cbb3",
+          "g": 90
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 15,
+          "note": "washed, with stems"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 1
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1.2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa and cook it in about twice its volume of water for 14 minutes, until tender, then fluff it with a fork.",
+        "Wash the kale and cilantro. Roughly chop half the onion and blitz it with the garlic, cilantro, ginger, coriander, cumin, chili, half the lemon juice and a splash of water to a loose green paste.",
+        "Heat the oil in a wide pot over medium heat. Dice the rest of the onion and cook it for 4 minutes, then add the paste and cook for 2 minutes, until it smells fragrant.",
+        "Add the chicken and stir to coat, then wash your hands, the knife and the board with hot soapy water after handling the raw chicken. Pour in the coconut milk and about a cup of water, bring to a gentle simmer and cook for 12 minutes, until the chicken is cooked through and reaches 74 °C (165 °F).",
+        "Add the kale and cook for 4 minutes, until it is soft and bright green. Stir in the salt and the rest of the lemon juice.",
+        "Serve over the quinoa. Pack the second portion for tomorrow: put the curry and quinoa in a shallow container, cool and chill within 1 hour, keep it up to 3 days and reheat it until steaming hot, 74 °C (165 °F)."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Freezer: cool within 1 hour in a shallow container and freeze up to 2 months. Thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F). Add more chili if you like heat."
+    },
+    {
+      "id": "eat-the-rainbow-beef-red-pepper-goulash-potatoes",
+      "name": "Quick beef and red pepper goulash with potatoes",
+      "inspiredBy": "Inspired by Hungarian goulash, made quick with tender steak cubes",
+      "about": "Small cubes of sirloin simmered with sweet paprika, tomato, red pepper and potatoes until the sauce is rich and red, with a spoonful of cool yogurt. A beefy red bowl with **iron, zinc and vitamin C** from the peppers and tomato.",
+      "ingredients": [
+        {
+          "food": "beef-top-sirloin-steak-lean-raw-a51c2c",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "trimmed, cut in 2 cm cubes"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 220,
+          "note": "scrubbed, cut in 2 cm cubes"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 90,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 120,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 4,
+          "note": "sweet"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "caraway-seed-020d2f",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the pepper, potatoes and cilantro. Pat the beef dry and season it with half the salt.",
+        "Heat the oil in a wide, heavy pot over medium-high heat and brown the beef in a single layer for 4 minutes, turning once. Lift it onto a plate. Wash your hands, the knife and the board with hot soapy water after handling the raw beef.",
+        "Add the onion to the pot and cook for 4 minutes, until soft. Stir in the garlic, paprika, smoked paprika and caraway for 30 seconds, until fragrant.",
+        "Add the tomato, about 1 cup of water, the potatoes and the beef with its juices. Bring to a simmer, cover and cook for 15 minutes.",
+        "Add the red pepper and cook uncovered for 8 minutes more, until the potatoes are tender, the beef is cooked through at 71 °C (160 °F) and the sauce is thick. Season with the rest of the salt and the pepper.",
+        "Spoon into a bowl, top with the yogurt and the cilantro."
+      ],
+      "prepMin": 12,
+      "cookMin": 30,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "The goulash tastes even better the next day. Chill it within 1 hour and eat it within 3 days, reheated until steaming hot. To make it a faster weeknight dinner, cut the beef, potatoes and pepper the night before, or cook it in a pressure cooker for 15 minutes at high pressure."
+    },
+    {
+      "id": "eat-the-rainbow-orange-ginger-salmon-sweet-potato-spinach",
+      "name": "Orange-ginger salmon with roasted sweet potato and garlicky spinach",
+      "inspiredBy": "Inspired by orange-glazed salmon, with a ginger and garlic glaze",
+      "about": "Salmon brushed with a sticky orange and ginger glaze, roasted beside crisp sweet potato wedges, with garlicky spinach on the side. Salmon brings **omega-3 and vitamin D**, and the sweet potato brings vitamin A as carotenoids and potassium.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "skin on or off"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 210,
+          "note": "scrubbed, cut in wedges"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 90,
+          "swap": "vit_c_fruit",
+          "note": "zested, then juiced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 70,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.7
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Wash the sweet potatoes, spinach and orange. Toss the wedges on a tray with half the oil, the paprika and half the salt and roast for 15 minutes.",
+        "Meanwhile, simmer the orange juice, zest, ginger and half the garlic in a small pan for 4 to 5 minutes, until it is reduced and syrupy.",
+        "Turn the sweet potatoes, push them to one side and lay the salmon on the tray. Brush the fish with half the glaze and roast for 10 to 12 minutes, until the fish flakes easily and reaches 70 °C (158 °F). Use fresh salmon the day you buy it, or thaw frozen salmon in the fridge. Wash your hands, the knife and the board with hot soapy water after handling the raw fish.",
+        "While the fish roasts, heat the rest of the oil in a pan, add the rest of the garlic and the spinach and cook for 2 minutes, until wilted. Season with the rest of the salt and the pepper.",
+        "Serve the salmon and wedges with the spinach and brush on the last of the glaze."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Orange zest is where the flavour is, so wash the orange well before zesting."
+    },
+    {
+      "id": "eat-the-rainbow-beef-eggplant-stew-sweet-potato-cabbage-slaw",
+      "name": "Beef and eggplant stew with sweet potato, chickpeas and red cabbage slaw",
+      "inspiredBy": "Inspired by Persian khoresht bademjan, a beef and eggplant stew with tomato and cinnamon",
+      "about": "Small cubes of sirloin simmered with eggplant, sweet potato and chickpeas in a cinnamon-scented tomato sauce, with cool yogurt and a crunchy purple cabbage slaw. The eggplant and cabbage give the plate its colour, and the beef, chickpeas and yogurt bring **protein, iron and calcium**.",
+      "ingredients": [
+        {
+          "food": "beef-top-sirloin-steak-lean-raw-a51c2c",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "trimmed, cut in 2 cm cubes"
+        },
+        {
+          "food": "eggplant-raw-b8b8c1",
+          "g": 150,
+          "note": "washed, cut in 2 cm cubes"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 130,
+          "note": "scrubbed, cut in 2 cm cubes"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 80,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 130,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 50,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "red-cabbage-raw-5d4c8b",
+          "g": 60,
+          "note": "washed, shredded"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the eggplant, sweet potato, cabbage and cilantro. Heat half the oil in a wide, deep pot over medium-high heat, add the eggplant and cook for 5 minutes, stirring, until it starts to brown. Lift it out.",
+        "Add the rest of the oil and brown the beef in a single layer for 4 minutes, turning once. Wash your hands, the knife and the board with hot soapy water after handling the raw beef. Add the onion and cook for 3 minutes, then the garlic, cinnamon, turmeric and cumin for 30 seconds.",
+        "Pour in the tomato and about a cup of water, add the sweet potato and the salt, cover and simmer for 12 minutes.",
+        "Return the eggplant, add the chickpeas and simmer uncovered for 8 minutes more, until the sweet potato is tender, the beef is cooked through at 71 °C (160 °F) and the sauce is thick.",
+        "Toss the cabbage with the lemon juice and a pinch of salt and pepper. Spoon the stew into bowls, top with the yogurt and cilantro and serve with the slaw.",
+        "Pack the second portion for tomorrow: cool and chill the stew within 1 hour in a shallow container, keep the slaw and the yogurt apart, and reheat the stew until steaming hot, 74 °C (165 °F). Keep it up to 3 days."
+      ],
+      "prepMin": 14,
+      "cookMin": 30,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Salt the eggplant cubes for 10 minutes and pat them dry if you want less oil to soak in. For a faster weeknight dinner, cut everything the night before and keep it covered in the fridge, or use a pressure cooker for 15 minutes at high pressure."
+    },
+    {
+      "id": "eat-the-rainbow-golden-turmeric-chicken-chickpea-skillet",
+      "name": "Golden turmeric chicken and chickpea skillet with corn and yellow pepper",
+      "inspiredBy": "Inspired by an Indian-style turmeric chicken, with lemon and sweet corn",
+      "about": "Chicken and chickpeas simmered in turmeric, cumin and ginger with yellow pepper and sweet corn, finished with lemon and cilantro. A warm, golden skillet with **protein, fibre and iron**, and the lemon helps your body absorb the iron.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 250,
+          "swap": "lean_protein",
+          "note": "cut in bite-size pieces"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 50,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 20,
+          "note": "frozen"
+        },
+        {
+          "food": "yellow-bell-pepper-raw-be5730",
+          "g": 80,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 50,
+          "swap": "dairy_protein",
+          "note": "to spoon on top"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 1.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 1
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the pepper and cilantro. Season the chicken with half the salt, the turmeric, cumin, coriander and ginger and toss to coat.",
+        "Heat the oil in a wide skillet over medium-high heat and brown the chicken for 5 minutes, stirring now and then. Wash your hands, the knife and the board after handling the raw chicken.",
+        "Add the onion and pepper and cook for 4 minutes, until soft, then the garlic for 30 seconds.",
+        "Add the chickpeas, the frozen corn and about three-quarters of a cup of water. Cover and simmer for 10 minutes, until the chicken is cooked through at 74 °C (165 °F) and the corn is steaming hot.",
+        "Stir in the lemon juice, the rest of the salt and the pepper. Serve in bowls, spoon the cold yogurt on top and scatter with the cilantro.",
+        "Pack the second portion for tomorrow: cool and chill it within 1 hour in a shallow container, keep the yogurt separate, keep it up to 3 days and reheat until steaming hot, 74 °C (165 °F)."
+      ],
+      "prepMin": 12,
+      "cookMin": 26,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Swap the chicken breast for thigh if you like it richer, and add 3 minutes."
+    },
+    {
+      "id": "eat-the-rainbow-cumin-lemon-salmon-cauliflower-chickpea-mash",
+      "name": "Cumin-lemon salmon on cauliflower and chickpea mash with garlicky spinach",
+      "inspiredBy": "Inspired by Middle Eastern spiced fish with a hummus-style mash",
+      "about": "A cumin-and-paprika seared salmon fillet with a garlicky lemon pan sauce, on a creamy mash of cauliflower, potato and chickpeas, with garlicky spinach. The salmon brings **omega-3 and vitamin D**, and the chickpeas and cauliflower bring fibre, iron and choline.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 125,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 150,
+          "note": "washed, cut in florets"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 100,
+          "note": "scrubbed, cut in chunks"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 30,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 6,
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 1
+        }
+      ],
+      "steps": [
+        "Wash the cauliflower, potatoes, spinach and cilantro. Put the potato chunks in a pot of cold water, bring to a boil and cook for 8 minutes. Add the cauliflower and the chickpeas and cook for 8 minutes more, until the vegetables are very tender.",
+        "Pat the salmon dry and season with half the salt, the pepper, the cumin and the paprika, then wash your hands, the knife and the board with hot soapy water. Heat half the oil in a non-stick pan over medium-high heat and sear the fillet for 4 minutes, until golden. Flip it and cook for 3 to 4 minutes more, until it flakes easily and reaches 70 °C (158 °F). Use fresh salmon the day you buy it, or thaw frozen salmon in the fridge.",
+        "In the last minute, add the garlic and the lemon juice to the pan and spoon it over the fish.",
+        "Drain the potato, cauliflower and chickpeas and mash them with the milk, the rest of the oil and the rest of the salt until creamy.",
+        "Wilt the spinach in a hot pan with the garlic left in the pan and a splash of water for 2 minutes, until soft. Serve the salmon on the mash with the spinach and cilantro."
+      ],
+      "prepMin": 10,
+      "cookMin": 22,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "No skin on the fillet? Cook it a minute less on the second side."
+    },
+    {
+      "id": "eat-the-rainbow-turkey-millet-stuffed-peppers-paprika-tomato",
+      "name": "Red and yellow peppers stuffed with turkey and millet in paprika tomato sauce",
+      "inspiredBy": "Inspired by Hungarian stuffed peppers (töltött paprika)",
+      "about": "Red and yellow pepper halves filled with ground turkey, millet and kale, baked in a sweet paprika tomato sauce until soft and topped with cool yogurt and cilantro. The weekend project of the week, with **protein, fibre and vitamin C** in two colours of pepper.",
+      "ingredients": [
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 90,
+          "note": "washed, halved and seeded"
+        },
+        {
+          "food": "yellow-bell-pepper-raw-be5730",
+          "g": 90,
+          "note": "washed, halved and seeded"
+        },
+        {
+          "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+          "g": 150,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "millet-dry-a10dc7",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "washed, stems removed, chopped"
+        },
+        {
+          "food": "tomato-whole-canned-in-tomato-juice-no-added-salt-undrained-247d31",
+          "g": 160,
+          "note": "crushed by hand"
+        },
+        {
+          "food": "yellow-onion-raw-9328f7",
+          "g": 40,
+          "note": "diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "caraway-seed-020d2f",
+          "g": 0.5
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 2,
+          "note": "sweet"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 190 °C (375 °F). Rinse the millet and cook it in about 2½ times its volume of water for 15 to 20 minutes, until tender, then spread it on a plate to cool for 10 minutes. Chill it within 1 hour if you are not filling the peppers right away.",
+        "Wash the peppers, kale and cilantro. Cut the peppers in half through the stem, remove the seeds and set them cut-side up in a baking dish.",
+        "Heat the oil in a skillet over medium heat and cook the onion for 4 minutes. Add the garlic, caraway, paprika and smoked paprika for 30 seconds, then the turkey. Cook for 6 minutes, breaking it up, until no pink remains. Wash your hands, the spoon and the board with hot soapy water after handling the raw turkey.",
+        "Stir in half the tomato, the kale, the millet and the salt and cook for 3 minutes, until the kale wilts.",
+        "Spoon the filling into the pepper halves. Pour the rest of the tomato around them in the dish with a splash of water and cover with foil. Bake for 25 minutes, then uncover and bake for 10 minutes more, until the peppers are soft and the filling reaches 74 °C (165 °F).",
+        "Top with the yogurt, the cilantro and a grind of black pepper. Chill any leftovers within 1 hour in a shallow container and eat within 3 days, reheated until steaming hot, 74 °C (165 °F)."
+      ],
+      "prepMin": 25,
+      "cookMin": 50,
+      "servings": 1,
+      "tags": [
+        "weekend-project"
+      ],
+      "tip": "Stuff the peppers the day before, cover them and bake straight from the fridge, adding 5 minutes."
+    },
+    {
+      "id": "eat-the-rainbow-green-kale-chips-pumpkin-seeds",
+      "name": "Crispy kale chips with pumpkin seeds",
+      "about": "Kale roasted until crisp with a little oil, paprika and salt, with a spoonful of pumpkin seeds. A crunchy green snack with **vitamin K, iron and magnesium**.",
+      "ingredients": [
+        {
+          "food": "kale-raw-2f9830",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed, dried very well, torn in pieces"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "paprika-59bfc4",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 150 °C (300 °F). Wash the kale and dry it very well, because wet kale steams instead of crisping.",
+        "Toss the kale with the oil, paprika and salt on a tray, spread in a single layer, and bake for 15 to 20 minutes, until the edges are crisp.",
+        "Serve with the pumpkin seeds. Best eaten the same day."
+      ],
+      "prepMin": 5,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "eat-the-rainbow-green-apple-almonds",
+      "name": "Green apple slices with almonds",
+      "about": "Crisp green apple with a handful of almonds. A tart and crunchy snack with **fibre and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the apple, slice it and serve with the almonds on the side."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "eat-the-rainbow-beet-chickpea-dip-rainbow-sticks",
+      "name": "Beet and chickpea dip with rainbow veggie sticks",
+      "inspiredBy": "Inspired by beet hummus, made with pumpkin seeds instead of tahini",
+      "about": "A magenta dip of chickpeas, cooked beet, lemon and garlic, with red pepper, carrot and cucumber sticks for dunking. It gives you **fibre, folate and a bit of iron**, and the sticks bring vitamin C.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 60,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "beet-cooked-2d61be",
+          "g": 40,
+          "note": "vacuum-packed cooked beet or home-roasted, roughly chopped"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 8,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "washed, cut in sticks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 40,
+          "note": "washed, cut in sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 40,
+          "note": "washed, cut in sticks"
+        },
+        {
+          "food": "garlic-powder-e81d9c",
+          "g": 0.3
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Blend the chickpeas, beet, pumpkin seeds, lemon juice, oil, garlic powder, cumin and salt with 2 tablespoons of water until smooth, adding a little more water if it is stiff.",
+        "Wash the pepper, carrot and cucumber and cut them into sticks.",
+        "Spoon the dip into a small bowl and serve with the sticks. Keep leftover dip covered in the fridge and use within 3 days."
+      ],
+      "prepMin": 10,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "Make a double batch of the dip, keep it covered in the fridge and use it within 3 days."
+    },
+    {
+      "id": "eat-the-rainbow-red-apple-walnuts",
+      "name": "Red apple slices with walnuts",
+      "about": "Crisp red-skinned apple slices with a handful of walnuts. Sweet and crunchy, with **fibre and plant omega-3** from the walnuts.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 160,
+          "note": "red-skinned, washed, sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the apple, slice it and serve it with the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "eat-the-rainbow-mango-almonds",
+      "name": "Mango with almonds",
+      "about": "Sweet golden mango with a handful of almonds. A tropical snack with **vitamin C, vitamin E and fibre**.",
+      "ingredients": [
+        {
+          "food": "mango-peeled-frozen-a464dd",
+          "g": 120,
+          "note": "thawed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Thaw the mango in a covered bowl in the fridge overnight, or use fresh mango, and serve it in a bowl with the almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "eat-the-rainbow-orange-wedges-pumpkin-seeds",
+      "name": "Orange wedges with pumpkin seeds",
+      "about": "Juicy orange wedges with toasted pumpkin seeds. Bright and crunchy, with **vitamin C and magnesium**.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "washed, cut in wedges"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 18,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the orange and cut it into wedges. Serve with the pumpkin seeds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "eat-the-rainbow-blueberries-almonds",
+      "name": "Blueberries with almonds",
+      "about": "Plump blueberries with a handful of almonds. Deep blue-purple, sweet and crunchy, with **fibre, vitamin C and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 120,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Rinse the blueberries and serve them with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "eat-the-rainbow-banana-almonds-cinnamon",
+      "name": "Banana with almonds and cinnamon",
+      "about": "A sliced banana with chopped almonds and a shake of cinnamon. Sweet, soft and crunchy, with **potassium and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 100,
+          "note": "sliced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Slice the banana, scatter over the almonds and dust with cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "eat-the-rainbow-golden-roasted-chickpeas",
+      "name": "Golden turmeric roasted chickpeas",
+      "about": "Chickpeas roasted until crisp with turmeric, cumin and a little salt. A crunchy golden snack with **fibre, iron and plant protein**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "drained, rinsed and patted very dry"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Pat the chickpeas very dry with a clean towel.",
+        "Toss them on a tray with the oil, turmeric, cumin and salt and roast for 25 minutes, shaking the tray halfway, until crisp and golden.",
+        "Cool on the tray for 10 minutes. They keep best in a jar, up to 3 days."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "eat-the-rainbow-golden-chia-pudding-mango-almonds",
+      "name": "Golden chia pudding with mango and almonds",
+      "inspiredBy": "Inspired by golden milk, set into a chia pudding",
+      "about": "Chia seeds soaked overnight in milk with turmeric, cinnamon and ginger until thick like pudding, topped with sweet mango and almonds. A cool golden snack with **plant omega-3, calcium and fibre**.",
+      "ingredients": [
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "chia-seeds-dried-33a3b7",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "mango-peeled-frozen-a464dd",
+          "g": 60,
+          "note": "thawed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.3
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        },
+        {
+          "food": "ginger-ground-648bc0",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Stir the milk, chia, turmeric, cinnamon and ginger together in a jar. Wait 5 minutes and stir again so the chia does not clump.",
+        "Cover and chill for at least 4 hours or overnight, until thick and spoonable. Put the mango in a covered bowl in the fridge to thaw at the same time, or use fresh mango.",
+        "Top with the mango and the almonds just before eating. Keep it covered in the fridge and eat within 3 days."
+      ],
+      "prepMin": 5,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ],
+      "tip": "Make it the night before. A splash more milk loosens it if it sets too firm."
+    },
+    {
+      "id": "eat-the-rainbow-almond-walnut-handful",
+      "name": "A handful of almonds and walnuts",
+      "about": "A small handful of almonds and walnuts. Simple and filling, with **vitamin E, plant omega-3 and magnesium**.",
+      "ingredients": [
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 15,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 15,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Measure out a small handful of each and eat them plain, or toast them in a dry pan for 3 minutes for extra flavour."
+      ],
+      "prepMin": 1,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "eat-the-rainbow-cauliflower-carrot-sticks-lemon-chickpea-dip",
+      "name": "Cauliflower, carrot and cucumber sticks with lemon-garlic chickpea dip",
+      "inspiredBy": "Inspired by hummus, made without tahini",
+      "about": "A creamy, pale dip of chickpeas, lemon and garlic with raw cauliflower, carrot and cucumber for dunking. Crunchy and fresh, with **fibre, iron and plant protein**, and carrot for a little vitamin A.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "drained and rinsed"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 14,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-powder-e81d9c",
+          "g": 0.4
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        },
+        {
+          "food": "cauliflower-raw-f8205d",
+          "g": 80,
+          "note": "washed, cut in small florets"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed, cut in sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed, cut in sticks"
+        }
+      ],
+      "steps": [
+        "Blend the chickpeas, lemon juice, oil, garlic powder, cumin and salt with 2 tablespoons of water until smooth, adding a little more water if it is stiff.",
+        "Wash the cauliflower, carrot and cucumber and cut them into small florets and sticks.",
+        "Serve the vegetables with the dip. Keep the dip covered in the fridge and use it within 3 days."
+      ],
+      "prepMin": 10,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ]
+    },
+    {
+      "id": "eat-the-rainbow-apple-cinnamon-pumpkin-seeds",
+      "name": "Apple slices with cinnamon and pumpkin seeds",
+      "about": "Crisp apple slices dusted with cinnamon, with pumpkin seeds on the side. Sweet and crunchy, with **fibre and magnesium**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Wash and slice the apple, dust it with the cinnamon and serve with the pumpkin seeds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "eat-the-rainbow-green-oats-spinach-egg"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "eat-the-rainbow-sardine-quinoa-herb-salad-kale"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "eat-the-rainbow-green-chicken-curry-kale-quinoa"
+        },
+        {
+          "slot": "snack",
+          "recipe": "eat-the-rainbow-green-apple-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "eat-the-rainbow-green-kale-chips-pumpkin-seeds"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "eat-the-rainbow-strawberry-quinoa-porridge-almonds"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "eat-the-rainbow-green-chicken-curry-kale-quinoa",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "eat-the-rainbow-beef-red-pepper-goulash-potatoes"
+        },
+        {
+          "slot": "snack",
+          "recipe": "eat-the-rainbow-beet-chickpea-dip-rainbow-sticks"
+        },
+        {
+          "slot": "snack",
+          "recipe": "eat-the-rainbow-red-apple-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "eat-the-rainbow-carrot-apple-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "eat-the-rainbow-carrot-lentil-kale-slaw"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "eat-the-rainbow-orange-ginger-salmon-sweet-potato-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "eat-the-rainbow-mango-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "eat-the-rainbow-orange-wedges-pumpkin-seeds"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "eat-the-rainbow-blueberry-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "eat-the-rainbow-purple-cabbage-beet-shrimp-quinoa-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "eat-the-rainbow-beef-eggplant-stew-sweet-potato-cabbage-slaw"
+        },
+        {
+          "slot": "snack",
+          "recipe": "eat-the-rainbow-blueberries-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "eat-the-rainbow-almond-walnut-handful"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "eat-the-rainbow-golden-sweet-potato-corn-hash-egg"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "eat-the-rainbow-beef-eggplant-stew-sweet-potato-cabbage-slaw",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "eat-the-rainbow-golden-turmeric-chicken-chickpea-skillet"
+        },
+        {
+          "slot": "snack",
+          "recipe": "eat-the-rainbow-banana-almonds-cinnamon"
+        },
+        {
+          "slot": "snack",
+          "recipe": "eat-the-rainbow-golden-chia-pudding-mango-almonds"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "eat-the-rainbow-banana-cinnamon-quinoa-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "eat-the-rainbow-golden-turmeric-chicken-chickpea-skillet",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "eat-the-rainbow-cumin-lemon-salmon-cauliflower-chickpea-mash"
+        },
+        {
+          "slot": "snack",
+          "recipe": "eat-the-rainbow-cauliflower-carrot-sticks-lemon-chickpea-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "eat-the-rainbow-apple-cinnamon-pumpkin-seeds"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "eat-the-rainbow-rainbow-yogurt-fruit-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "eat-the-rainbow-rainbow-chickpea-millet-chopped-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "eat-the-rainbow-turkey-millet-stuffed-peppers-paprika-tomato"
+        },
+        {
+          "slot": "snack",
+          "recipe": "eat-the-rainbow-golden-roasted-chickpeas"
+        },
+        {
+          "slot": "snack",
+          "recipe": "eat-the-rainbow-beet-chickpea-dip-rainbow-sticks"
+        }
+      ]
+    }
+  ]
+}
