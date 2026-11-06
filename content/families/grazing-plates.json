@@ -1,0 +1,2008 @@
+{
+  "id": "grazing-plates",
+  "name": "Grazing Plates",
+  "style": "balanced",
+  "cuisine": "Global",
+  "carbStyle": "whole",
+  "regions": [
+    "Lebanon",
+    "Mexico",
+    "France",
+    "Sweden",
+    "Argentina"
+  ],
+  "summary": "Smaller plates you mix and match: sardines on warm lemony lentils, lemon chicken with tabbouleh, baked chickpea bites, seared salmon, chili-lime shrimp and a herby potato salad. Every plate holds real protein, so grazing still fills you up.",
+  "howItWorks": "**Plates, not courses.** Each meal is a plate of a few small things: a protein, a dip or sauce, something crunchy and a starch such as potato, quinoa, lentils or beans. Every meal holds a real portion of protein, and dips, fruit and nuts fill the gaps.\n\n**Cook once, eat twice.** Monday's chickpea bites, Wednesday's lemon chicken and Thursday's beef bites each make two portions, so the next lunch is a quick reheat. Cool the second portion within 1 hour, keep it covered in the fridge and reheat the bites, chicken or beef once, until steaming hot, 74 °C. Sauces and salads stay cold.\n\n**Fish and protein.** Sardines on Monday and salmon on Tuesday and Sunday bring omega-3 and some **vitamin D**. Eggs at two breakfasts and four lunches carry much of the choline; chicken, beef, shrimp, chickpeas, lentils, edamame and beans carry the rest.\n\n**Grazing, safely.** A plate with fish, meat, egg, yogurt, cheese, beans or grains goes back in the fridge within 2 hours, sooner on a hot day. Packed plates travel in a cold bag with an ice pack and are eaten the same day. Wash fruit and vegetables before cutting.\n\n**What changes with size.** Light covers 1,400 to 1,800 kcal. It drops the second snack each day and trims nuts, oil, grains, potatoes, yogurt and beans, while the fish, chicken, beef, shrimp, eggs, fruit and other vegetables are never trimmed. Big grows the meat, fish, potatoes, quinoa, beans and yogurt and adds a snack each day.",
+  "signature": [
+    "grazing-plates-sardine-warm-lentil-plate",
+    "grazing-plates-lemon-chicken-tabbouleh-plate",
+    "grazing-plates-chickpea-edamame-bites-plate",
+    "grazing-plates-chimichurri-beef-plate"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1600,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "grazing-plates-marinated-chickpea-cup"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "grazing-plates-marinated-chickpea-cup"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "grazing-plates-kiwi-pumpkin-seeds"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "grazing-plates-tahini-veg-sticks"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "grazing-plates-blueberry-walnuts"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "grazing-plates-kiwi-pumpkin-seeds"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "grazing-plates-yogurt-berry-cup"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "grazing-plates-black-bean-egg-plate",
+      "name": "Black bean and egg breakfast plate with avocado, lime crema and tomato salsa",
+      "inspiredBy": "Inspired by Mexican huevos and frijoles breakfasts",
+      "about": "Two firm-cooked eggs on a plate with warm black beans, creamy avocado, a spoonful of lime yogurt crema and a quick tomato salsa. It is a proper breakfast with **protein, fibre, folate and choline**.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 90,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 50,
+          "note": "washed before cutting"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "washed, quartered"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 12,
+          "note": "finely diced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 5,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 14
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "The night before, put the eggs in a small pot, cover with cold water and bring to the boil. Simmer for 10 minutes so the yolks are completely firm, cool under cold running water and keep them in their shells in the fridge. Peel them in the morning.",
+        "In the morning, warm the black beans in a small pan with the cumin and a splash of water for 3 to 4 minutes, until steaming hot.",
+        "Wash the tomatoes, cilantro and avocado. Stir the tomatoes, onion, cilantro, half the lime juice and salt together for the salsa.",
+        "Slice the eggs and the avocado. Plate them with the warm beans and the salsa. Stir the yogurt with a squeeze of the lime juice and a pinch of salt and spoon it over the beans as a quick crema."
+      ],
+      "prepMin": 8,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Boil the eggs the night before and this is a 10-minute weekday breakfast."
+    },
+    {
+      "id": "grazing-plates-yogurt-fruit-plate",
+      "name": "Yogurt and fruit breakfast plate with toasted oats and walnuts",
+      "about": "A bowl of thick Greek yogurt with sliced kiwi, blueberries and a handful of toasted oats and walnuts for crunch. It is cool, quick and brings **protein, calcium, vitamin C and omega-3**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 240,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "kiwi-fruit-raw-9fc921",
+          "g": 90,
+          "swap": "vit_c_fruit",
+          "note": "peeled, sliced"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 70,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 25,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the oats and walnuts with the cinnamon in a dry pan over medium heat for 3 minutes, stirring, until golden and fragrant. Tip them onto a plate to cool.",
+        "Spoon the yogurt into a bowl. Peel and slice the kiwi, and rinse the blueberries.",
+        "Arrange the fruit around the yogurt and scatter the toasted oats and walnuts over the top."
+      ],
+      "prepMin": 5,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Toast a few days of oats and walnuts at once and keep them in a jar."
+    },
+    {
+      "id": "grazing-plates-buckwheat-apple-porridge",
+      "name": "Cinnamon buckwheat porridge with stewed apple and walnuts",
+      "about": "Creamy buckwheat simmered in milk with cinnamon, finished with a spoonful of Greek yogurt and topped with soft stewed apple and crunchy walnuts. Buckwheat is an intact grain, and with the milk, yogurt and nuts it gives you **protein, magnesium, calcium and omega-3**.",
+      "ingredients": [
+        {
+          "food": "buckwheat-groats-80619e",
+          "g": 48,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 220
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 60,
+          "swap": "dairy_protein",
+          "note": "stirred in at the end"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 130,
+          "note": "washed, diced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Rinse the buckwheat in a sieve. Put it in a small pot with the milk and half the cinnamon, and bring just to the boil.",
+        "Turn the heat down, cover and simmer for 12 to 15 minutes, stirring now and then, until the groats are tender. Add a splash of water if it thickens before they are done.",
+        "Meanwhile, wash and dice the apple. Cook it in a small pan with a splash of water and the rest of the cinnamon for 5 minutes, until soft.",
+        "Take the porridge off the heat and stir in the yogurt. Spoon it into a bowl and top with the apple and the chopped walnuts."
+      ],
+      "prepMin": 6,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook it fresh. Cooked grains keep no more than 3 days, so do not batch this for the whole week."
+    },
+    {
+      "id": "grazing-plates-lemon-chicken-tabbouleh-plate",
+      "name": "Lemon-garlic chicken bites with kale and quinoa tabbouleh and tahini sauce",
+      "inspiredBy": "Inspired by Lebanese shish taouk and tabbouleh, with quinoa in place of bulgur and kale chopped in with the parsley",
+      "about": "Juicy lemon-garlic chicken pieces with a herb-heavy quinoa tabbouleh, made greener with finely chopped kale and spinach, and a lemony tahini sauce. The parsley and greens bring **vitamin K, vitamin C and calcium**, and the second portion makes tomorrow's lunch plate.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-skinless-boneless-raw-7998f9",
+          "g": 170,
+          "note": "cut into bite-size pieces"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 20,
+          "note": "washed, finely chopped"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "washed, finely chopped"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed, shredded"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "washed, diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 22
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 16
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Toss the chicken with half the lemon juice, half the garlic (crushed), half the oil, the oregano, paprika and a pinch of the salt. Cover, and marinate in the fridge for at least 15 minutes. Never reuse the marinade.",
+        "Rinse the quinoa and simmer it in twice its volume of water, covered, for 12 to 15 minutes until the water is absorbed. Spread it in a shallow container and cool within 1 hour.",
+        "Wash the parsley, spinach, kale, tomatoes and cucumber. Chop the kale fine with the parsley and spinach and massage it with a squeeze of the lemon juice for a minute to soften it. For the tabbouleh, toss the cooled quinoa with the greens, tomatoes, onion, the rest of the lemon juice and oil and a pinch of salt.",
+        "Whisk the tahini with a squeeze of lemon, the rest of the garlic and 2 to 3 tablespoons of water until pourable, and dice the cucumber for the plate.",
+        "Heat a large non-stick pan over medium-high heat. Cook the chicken pieces for 8 to 10 minutes, turning, until golden and a thermometer reads 74 °C (165 °F) in the thickest piece. Wash your hands, the board and the knife after handling the raw chicken.",
+        "Plate one portion of chicken with the tabbouleh, diced cucumber and a drizzle of the tahini sauce. Cool the second portion of chicken and tabbouleh within 1 hour, keep them and the sauce in separate shallow containers in the fridge and use them tomorrow. Tomorrow, reheat the chicken until steaming hot, 74 °C (165 °F), and serve the tabbouleh and sauce cold."
+      ],
+      "prepMin": 20,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Marinate the chicken in the morning and it only needs 10 minutes in the pan at dinner."
+    },
+    {
+      "id": "grazing-plates-chickpea-edamame-bites-plate",
+      "name": "Baked chickpea and edamame bites with lemon-tahini sauce and crunchy salad",
+      "inspiredBy": "Inspired by baked falafel, with edamame for a green centre",
+      "about": "Herby baked bites made from chickpeas, edamame and oats, served with a lemony tahini sauce and a cucumber, carrot and spinach salad. They bring **plant protein, fibre and folate**, the carrot adds vitamin A, and the tahini adds some calcium and vitamin E.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 180,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 60,
+          "swap": "legumes",
+          "note": "frozen"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "roughly chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "washed"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.5
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 22
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 14
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed, grated"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed, shredded"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F) and line a tray with parchment. Heat the frozen edamame in boiling water for 3 minutes, until steaming hot, and drain.",
+        "Pulse the chickpeas, edamame, oats, onion, parsley, cilantro, garlic, cumin, half the lemon juice, half the salt and half the oil in a food processor until it holds together when pressed but still has some texture.",
+        "Shape the mix into small patties, about 5 per portion, and set them on the tray. Brush the tops with a little oil and bake for 18 to 20 minutes, turning once, until golden and crisp at the edges.",
+        "Whisk the tahini with the rest of the lemon juice, a pinch of salt and 2 to 3 tablespoons of water until pourable.",
+        "Wash the cucumber, carrot, spinach and kale. Shred the kale and rub it with a squeeze of the lemon juice for a minute to soften it, then slice the cucumber, grate the carrot and toss everything together with the spinach. Plate one portion of bites with the salad and a drizzle of sauce.",
+        "Cool the second portion of bites within 1 hour on a plate, then keep them and the sauce covered in the fridge. Tomorrow, reheat the bites in a hot oven for 10 minutes until steaming hot, 74 °C (165 °F), and toss a fresh portion of the salad rather than keeping the dressed one."
+      ],
+      "prepMin": 15,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "The bites are firmer if the mix rests in the fridge for 10 minutes before shaping."
+    },
+    {
+      "id": "grazing-plates-salmon-dill-potato-plate",
+      "name": "Baked salmon with dill potatoes, broccoli and a crunchy kale and cucumber salad",
+      "inspiredBy": "Inspired by a Scandinavian-style salmon and new potato supper",
+      "about": "A baked salmon fillet with mustard and lemon, dill potatoes and tender broccoli, with a crisp kale and cucumber salad on the side. The salmon is the **omega-3 and vitamin D** star of the plate, and the kale adds calcium and vitamin C.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "skin on or off"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 150,
+          "note": "scrubbed, cut into chunks"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 100,
+          "note": "washed, cut into florets"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed, shredded"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 14
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Boil the potatoes in salted water for 12 to 15 minutes, until almost tender, then drain.",
+        "Toss the potatoes with half the oil on a tray and roast for 10 minutes. Add the salmon, brushed with the mustard, and the broccoli, tossed with a little oil.",
+        "Roast for 12 to 15 minutes more, until the salmon flakes easily and a thermometer reads 70 °C (158 °F) in the thickest part. Use the salmon the day you buy it or thaw it overnight in the fridge. Wash your hands and the board after handling the raw fish.",
+        "Wash the cucumber and kale. Shred the kale and rub it with half the lemon juice for a minute to soften it, then slice the cucumber and toss it with the kale, the pepper and a pinch of salt.",
+        "Toss the hot potatoes with the dill and the rest of the lemon juice. Plate everything together."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "grazing-plates-edamame-quinoa-plate",
+      "name": "Edamame and quinoa plate with egg, crunchy veg and a cilantro-lime dressing",
+      "about": "Edamame and fluffy quinoa with a firm-boiled egg, carrot, cucumber, spinach and kale, tossed in a garlicky cilantro-lime dressing. It is a packable plate with **plant protein, iron and choline**, and the lime helps your body absorb the iron.",
+      "ingredients": [
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 130,
+          "swap": "legumes",
+          "note": "frozen"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 16
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed, grated"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed, diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed, shredded"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed, shredded"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 12,
+          "note": "finely sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa and simmer it in twice its volume of water, covered, for 12 to 15 minutes until the water is absorbed. Spread it in a shallow container and cool within 1 hour.",
+        "Put the egg in a small pot of cold water, bring to the boil and simmer for 10 minutes so the yolk is completely firm. Cool under cold water, peel and quarter it.",
+        "Heat the frozen edamame in boiling water for 3 minutes, until steaming hot all the way through, then drain and cool under cold water.",
+        "Wash and chop the cilantro, then whisk it with the olive oil, lime juice, crushed garlic and salt.",
+        "Wash the carrot, cucumber, spinach and kale, then grate, dice and shred them, rubbing the kale with a squeeze of the dressing for a minute to soften it. Toss them with the quinoa, edamame, onion and most of the dressing.",
+        "Top with the egg and drizzle with the rest of the dressing. For a packed lunch, use a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 12,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook the quinoa the evening before, cool it within 1 hour and keep it covered in the fridge for no more than 3 days."
+    },
+    {
+      "id": "grazing-plates-chimichurri-beef-plate",
+      "name": "Chimichurri beef bites with crispy potatoes and a white bean salad",
+      "inspiredBy": "Inspired by Argentinian steak with chimichurri",
+      "about": "Seared beef bites in a punchy parsley and garlic chimichurri with crispy roasted potatoes and a lemony white bean and tomato salad. A small portion of lean beef plus beans brings **iron, zinc and B12**, with vitamin C from the parsley and lemon to help absorb the iron.",
+      "ingredients": [
+        {
+          "food": "beef-top-sirloin-steak-lean-raw-a51c2c",
+          "g": 140,
+          "note": "trimmed, cut into bite-size pieces"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 240,
+          "note": "scrubbed, cut into 1.5 cm cubes"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 70,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 70,
+          "note": "washed, halved"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 25,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed, shredded"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Toss the potatoes with a third of the oil and a pinch of salt on a tray and roast for 25 minutes, turning once, until golden and crisp.",
+        "Meanwhile, make the chimichurri. Stir the parsley, garlic, oregano, chili, half the lemon juice, the rest of the oil but a little for the pan and a pinch of salt together.",
+        "Toss the beef with a spoonful of the chimichurri. Heat a heavy pan over high heat with the little oil and sear the beef pieces for 4 to 5 minutes, turning, until browned and a thermometer reads 71 °C (160 °F). Wash your hands, the board and the knife after handling the raw beef. Never reuse the raw marinade.",
+        "Wash the tomatoes, spinach and kale. Shred the kale and rub it with a squeeze of the lemon juice for a minute to soften it. Toss the white beans with the tomatoes, onion, spinach, kale, the rest of the lemon juice and a pinch of salt.",
+        "Plate one portion of beef, potatoes and salad with a spoonful of chimichurri. Cool the second portion within 1 hour in shallow containers and keep it in the fridge for tomorrow, when you reheat the beef and potatoes until steaming hot, 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Dice the potatoes small so they crisp in 25 minutes."
+    },
+    {
+      "id": "grazing-plates-garlic-salmon-beans-plate",
+      "name": "Seared salmon with garlicky white beans, tomatoes and spinach",
+      "inspiredBy": "Inspired by a Tuscan-style white bean and greens supper",
+      "about": "A crisp-edged salmon fillet on a pan of garlicky white beans, burst tomatoes and wilted spinach, with a cool cucumber and parsley salad. It brings **omega-3, vitamin D, iron and folate** in one pan, and it is on the table in about 30 minutes.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 170,
+          "swap": "fatty_fish"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 120,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100,
+          "note": "washed"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed, shredded"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 9,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 16
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "finely sliced"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Pat the salmon dry and season with a pinch of salt. Heat a third of the oil in a non-stick pan over medium-high heat and sear the salmon for 4 minutes, skin side down if it has skin.",
+        "Flip the salmon and cook for 3 to 4 minutes more, until it flakes and a thermometer reads 70 °C (158 °F) in the thickest part. Use the salmon the day you buy it, or thaw it overnight in the fridge. Wash your hands and the board after handling the raw fish. Lift it onto a plate.",
+        "In the same pan, warm the rest of the oil over medium heat. Cook the garlic and smoked paprika for 30 seconds, then add the tomatoes and cook for 4 minutes, until they begin to burst.",
+        "Stir in the white beans and a splash of water and cook for 3 minutes, until hot. Stir in the shredded kale and the spinach and cook for 1 minute more, until just wilted, then add half the lemon juice and a pinch of salt.",
+        "Wash and slice the cucumber and toss it with the onion, parsley and the rest of the lemon juice. Plate the salmon on the beans with the salad on the side."
+      ],
+      "prepMin": 10,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ]
+    },
+    {
+      "id": "grazing-plates-herby-potato-bean-plate",
+      "name": "Herby potato salad plate with egg, white beans and crunchy veg",
+      "inspiredBy": "Inspired by a northern European warm potato salad",
+      "about": "Warm potatoes tossed in a mustard, lemon and yogurt dressing with dill and parsley, plated with creamy white beans, a firm-boiled egg and crisp vegetables. It brings **protein, choline, potassium and fibre**, and it is just as good cold.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 170,
+          "note": "scrubbed, cut into chunks"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 130,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 60,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 14
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 5,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 60,
+          "note": "washed, halved"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "washed, shredded"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put the potatoes and the egg in a pot of cold salted water and bring to the boil. Simmer for 12 to 15 minutes until the potatoes are tender, and the egg for 10 minutes so the yolk is completely firm.",
+        "Lift out the egg, cool it under cold water, then peel and quarter it. Drain the potatoes and let them steam for 2 minutes.",
+        "Stir the yogurt, mustard, lemon juice, dill, parsley, onion and salt together for the dressing.",
+        "Toss the warm potatoes with the dressing and the white beans. Wash the cucumber, tomatoes, spinach and kale. Shred the kale and rub it with a squeeze of lemon juice for a minute to soften it, then arrange the vegetables on the plate with the egg and the potato salad.",
+        "If packing it, cool the potatoes and the egg within 1 hour before adding the yogurt dressing, keep it cold in a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 12,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "grazing-plates-chili-lime-shrimp-plate",
+      "name": "Chili-lime shrimp with roasted sweet potato, black beans and avocado salsa",
+      "inspiredBy": "Inspired by a Mexican-style shrimp and black bean plate",
+      "about": "Quick-seared chili-lime shrimp beside crisp roasted sweet potato, warm black beans and a chunky avocado and pepper salsa. The sweet potato brings **vitamin A**, the beans fibre and folate, and the shrimp lean protein and iodine.",
+      "ingredients": [
+        {
+          "food": "shrimp-raw-0b55a6",
+          "g": 190,
+          "note": "peeled, deveined"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 170,
+          "note": "scrubbed, cut into 2 cm cubes"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 90,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 60,
+          "note": "washed before cutting"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "washed, diced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 50,
+          "note": "washed, diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 24
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Toss the sweet potato cubes with half the oil and a pinch of salt on a tray and roast for 22 to 25 minutes, turning once, until the edges are crisp.",
+        "Cook fresh shrimp the day you buy them. If they are frozen, thaw them overnight in the fridge and cook them the same day. Keep raw shrimp cold until the pan. Toss the shrimp with half the lime juice, the chili powder, cumin, garlic, a pinch of salt and a little oil. Marinate in the fridge for 10 minutes. Never reuse the marinade.",
+        "Wash the avocado, pepper, tomatoes and cilantro. Dice the avocado, pepper and tomatoes and stir them with the onion, cilantro, the rest of the lime juice and a pinch of salt for the salsa.",
+        "Warm the black beans in a small pan with a splash of water for 3 minutes, until steaming hot. Toast the pumpkin seeds in a dry pan for 2 minutes and scatter them over the salsa.",
+        "Heat a pan over high heat and cook the shrimp for 2 to 3 minutes per side, until they are pink, opaque and curled, 70 °C (158 °F) inside. Wash your hands and the board after handling the raw shrimp.",
+        "Plate the shrimp with the sweet potato, the black beans and a spoonful of salsa."
+      ],
+      "prepMin": 12,
+      "cookMin": 24,
+      "servings": 1,
+      "tags": [
+        "medium-spicy"
+      ]
+    },
+    {
+      "id": "grazing-plates-marinated-chickpea-feta-plate",
+      "name": "Marinated chickpea plate with egg, feta, red pepper, cucumber and tomato",
+      "inspiredBy": "Inspired by a Greek-style mezze plate",
+      "about": "Chickpeas soaked in a lemony oregano dressing, plated with a firm-boiled egg, a little feta, crisp pepper, cucumber and tomato and a scatter of pumpkin seeds. The chickpeas bring **protein, folate and iron**, and the lemon and red pepper add vitamin C to help absorb the iron.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 15,
+          "note": "crumbled"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 80,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 70,
+          "note": "washed, halved"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "finely sliced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 10,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 16
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 12,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.5
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Whisk the lemon juice, olive oil, oregano, cumin and salt in a bowl. Stir in the chickpeas and onion and leave to marinate for at least 10 minutes, or up to a few hours in the fridge.",
+        "Put the egg in a small pot of cold water, bring to the boil and simmer for 10 minutes so the yolk is completely firm. Cool under cold water, peel and quarter it.",
+        "Toast the pumpkin seeds in a dry pan for 2 minutes, until they pop.",
+        "Wash the pepper, cucumber, tomatoes and parsley, then slice and halve them as needed.",
+        "Spoon the marinated chickpeas onto a plate and arrange the vegetables, egg and feta around them. Scatter the parsley and seeds over the top.",
+        "For a packed lunch, use a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 15,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook"
+      ],
+      "tip": "The marinated chickpeas keep 3 days in the fridge, so make a double batch to snack on."
+    },
+    {
+      "id": "grazing-plates-lentil-carrot-patties-plate",
+      "name": "Spiced red lentil and carrot patties with roasted broccoli and tahini-yogurt sauce",
+      "inspiredBy": "Inspired by Indian-style lentil tikkis",
+      "about": "Pan-crisped patties of red lentils, grated carrot and oats with cumin and turmeric, served with roasted broccoli and a cool tahini-yogurt sauce. Lentils bring **plant protein, iron and folate**, and the broccoli adds vitamin C to help absorb that iron.",
+      "ingredients": [
+        {
+          "food": "lentil-red-hulled-dry-d3e937",
+          "g": 60,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "washed, grated"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 20,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 25,
+          "note": "finely diced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 2
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "broccoli-raw-51684f",
+          "g": 170,
+          "note": "washed, cut into florets"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 50,
+          "swap": "leafy_greens",
+          "note": "washed, shredded"
+        },
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 90,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 14
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed, grated"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.7
+        }
+      ],
+      "steps": [
+        "Heat the oven to 220 °C (425 °F). Toss the broccoli with a third of the oil and a pinch of salt on a tray and roast for 18 to 20 minutes, until the tips are charred. Wash and shred the kale, toss it with a little of the oil and add it to the tray for the last 6 minutes so the edges crisp.",
+        "Simmer the lentils in just enough water to cover them by 1 cm for 10 to 12 minutes, until very soft and the water is absorbed. Add a splash more water if they catch. Mash them roughly in a bowl.",
+        "Stir in the carrot, oats, onion, garlic, parsley, cumin, turmeric and salt. Let the mix sit for 5 minutes, then shape it into 4 patties.",
+        "Heat the rest of the oil in a non-stick pan over medium heat and cook the patties for 4 to 5 minutes per side, until golden and hot all the way through.",
+        "Squeeze the grated cucumber dry and stir it into the yogurt with the tahini and lemon juice for the sauce.",
+        "Plate the patties with the broccoli and a spoonful of the sauce."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "grazing-plates-kiwi-pumpkin-seeds",
+      "name": "Kiwi with toasted pumpkin seeds",
+      "about": "Juicy kiwi with a handful of toasted pumpkin seeds. It brings **vitamin C and magnesium** in two minutes.",
+      "ingredients": [
+        {
+          "food": "kiwi-fruit-raw-9fc921",
+          "g": 140,
+          "swap": "vit_c_fruit",
+          "note": "peeled, sliced"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 15,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        }
+      ],
+      "steps": [
+        "Toast the pumpkin seeds in a dry pan for 2 minutes until they pop. Peel and slice the kiwi and sprinkle the seeds over it."
+      ],
+      "prepMin": 4,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "grazing-plates-pepper-walnut-dip-sticks",
+      "name": "Roasted red pepper and walnut dip with carrot and cucumber sticks",
+      "inspiredBy": "Inspired by Syrian muhammara",
+      "about": "A smoky red pepper and walnut dip with a little lemon and cumin, for scooping with crisp carrot and cucumber. The walnuts bring **omega-3 and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 80,
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.5
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.3
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "washed, cut into sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed, cut into sticks"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the grill to high. Grill the whole pepper for 10 to 12 minutes, turning, until the skin blackens. Cool it in a covered bowl for 5 minutes, then peel and deseed it.",
+        "Blend the pepper with the walnuts, lemon juice, olive oil, garlic, paprika, cumin and salt until chunky-smooth.",
+        "Wash and cut the carrot and cucumber into sticks and serve them with the dip."
+      ],
+      "prepMin": 10,
+      "cookMin": 12,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make a double batch of dip: it keeps 3 days in the fridge."
+    },
+    {
+      "id": "grazing-plates-apple-almonds",
+      "name": "Apple slices with almonds",
+      "about": "Crisp apple with a handful of almonds. It brings **fibre and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash and slice the apple and serve it with the almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "grazing-plates-blueberry-walnuts",
+      "name": "Blueberries with walnuts",
+      "about": "Sweet blueberries with a handful of walnuts. Together they bring **omega-3, vitamin E and fibre**.",
+      "ingredients": [
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 120,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Rinse the blueberries and serve them with the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "grazing-plates-paprika-edamame",
+      "name": "Warm smoky edamame with lemon",
+      "about": "Warm edamame tossed with smoked paprika, lemon and a drizzle of olive oil. It brings **plant protein, folate and iron**.",
+      "ingredients": [
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 110,
+          "swap": "legumes",
+          "note": "frozen"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Heat the frozen edamame in boiling water for 3 minutes, until steaming hot all the way through, then drain. Toss with the olive oil, lemon juice, smoked paprika and salt and serve warm."
+      ],
+      "prepMin": 2,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "grazing-plates-white-bean-cucumber-cups",
+      "name": "White bean and herb cucumber cups",
+      "inspiredBy": "Inspired by a bruschetta topping, served on cucumber",
+      "about": "Thick cucumber rounds topped with a lemony mashed white bean, tomato and parsley mix. It is crunchy, cool and brings **fibre and folate**.",
+      "ingredients": [
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 130,
+          "note": "washed"
+        },
+        {
+          "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 40,
+          "note": "washed, finely diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 5,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Mash the white beans roughly with the lemon juice, olive oil and salt. Stir in the tomato and parsley.",
+        "Wash the cucumber and cut it into thick rounds. Scoop a little out of the centre of each round if you like.",
+        "Pile the bean mix on the rounds and scatter the walnuts over the top."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "grazing-plates-feta-tomato-cucumber-plate",
+      "name": "Cucumber and tomato with feta and oregano",
+      "inspiredBy": "Inspired by a Greek horiatiki, without the lettuce",
+      "about": "Chunky cucumber and tomato with a little crumbled feta, olive oil and oregano. Light, fresh and brings **calcium and vitamin C**.",
+      "ingredients": [
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "washed, chunked"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100,
+          "note": "washed, halved"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 20,
+          "note": "crumbled"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "oregano-ground-ec4216",
+          "g": 0.6
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the cucumber and tomatoes and chunk them onto a plate. Scatter the feta and walnuts over them, drizzle with the olive oil and sprinkle with the oregano."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "grazing-plates-tahini-veg-sticks",
+      "name": "Lemon-tahini dip with pepper, carrot and cucumber sticks",
+      "about": "A creamy lemon and garlic tahini dip for scooping with crunchy pepper, carrot and cucumber. The tahini brings **calcium, copper and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "tahini-paste-b624d0",
+          "g": 14
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 60,
+          "note": "washed, cut into sticks"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed, cut into sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed, cut into sticks"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Whisk the tahini with the lemon juice, crushed garlic, salt and 2 to 3 tablespoons of water until smooth and pourable. Wash and cut the pepper, carrot and cucumber into sticks and serve them with the dip."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "grazing-plates-kiwi-walnuts",
+      "name": "Kiwi with walnuts",
+      "about": "Juicy kiwi with a handful of walnuts. It brings **vitamin C and omega-3** in two minutes.",
+      "ingredients": [
+        {
+          "food": "kiwi-fruit-raw-9fc921",
+          "g": 140,
+          "swap": "vit_c_fruit",
+          "note": "peeled, sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Peel and slice the kiwi and serve it with the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "grazing-plates-apple-walnuts",
+      "name": "Apple slices with walnuts and cinnamon",
+      "about": "Crisp apple with a handful of walnuts and a dusting of cinnamon. It brings **fibre and omega-3**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 18,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash and slice the apple, dust it with the cinnamon and serve it with the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "grazing-plates-marinated-chickpea-cup",
+      "name": "Lemony marinated chickpeas with cucumber and parsley",
+      "about": "Chickpeas soaked in lemon, olive oil and cumin with crunchy cucumber and fresh parsley. A small cup brings **plant protein, folate and fibre**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed, diced"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Stir the lemon juice, olive oil, cumin and salt together. Toss in the chickpeas, cucumber and parsley and leave for at least 10 minutes. Keep covered in the fridge and eat within 3 days."
+      ],
+      "prepMin": 12,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "grazing-plates-yogurt-berry-cup",
+      "name": "Greek yogurt with blueberries and cinnamon",
+      "about": "A small cup of thick Greek yogurt with blueberries and a dusting of cinnamon. It brings **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-2-fat-plain-3b5a16",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 60,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a cup, top with the rinsed blueberries and dust with the cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "grazing-plates-sardine-warm-lentil-plate",
+      "name": "Sardines on warm lemony lentils with tomato, egg, kale and crunchy veg",
+      "inspiredBy": "Inspired by a French warm lentil salad",
+      "about": "Canned sardines laid over warm garlicky lentils with softened tomatoes, lemon and parsley, plus a firm-boiled egg, a lemony kale salad and cucumber and carrot sticks. The sardines bring **omega-3 and calcium from their soft bones**, the egg adds choline, and the lentils add fibre, folate and iron.",
+      "ingredients": [
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 90,
+          "swap": "fatty_fish",
+          "note": "drained"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50
+        },
+        {
+          "food": "lentils-canned-no-salt-added-drained-c1edbd",
+          "g": 120,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 90,
+          "note": "washed, quartered"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 18
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "kale-raw-2f9830",
+          "g": 30,
+          "swap": "leafy_greens",
+          "note": "washed, shredded"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed"
+        },
+        {
+          "food": "parsley-38257b",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Put the egg in a small pot of cold water, bring to the boil and simmer for 10 minutes so the yolk is completely firm. Cool under cold water, peel and quarter it.",
+        "Warm the olive oil in a small pan over medium heat. Cook the crushed garlic for 30 seconds, then add the rinsed lentils and a splash of water and heat for 3 to 4 minutes, until steaming hot.",
+        "Stir in the tomatoes and cook for 2 minutes, until they just soften. Take the pan off the heat and stir in half the lemon juice, the parsley, the salt and a good grind of pepper.",
+        "Wash the kale, cucumber and carrot. Shred the kale and rub it with the rest of the lemon juice for a minute to soften it, then cut the cucumber and carrot into sticks.",
+        "Drain the sardines and lay them over the warm lentils. Plate with the egg, the kale and the sticks.",
+        "Keep any opened tin of sardines covered in the fridge and use it within 2 days. For a packed lunch, spread the lentils in a shallow container to cool, refrigerate them within 2 hours, then pack everything in a cold bag with an ice pack and eat it the same day. The lentils are good cold."
+      ],
+      "prepMin": 10,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Keep the rest of an opened can of lentils covered in the fridge and use it within 3 days."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "grazing-plates-yogurt-fruit-plate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "grazing-plates-sardine-warm-lentil-plate"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "grazing-plates-chickpea-edamame-bites-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "grazing-plates-pepper-walnut-dip-sticks"
+        },
+        {
+          "slot": "snack",
+          "recipe": "grazing-plates-white-bean-cucumber-cups"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "grazing-plates-black-bean-egg-plate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "grazing-plates-chickpea-edamame-bites-plate",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "grazing-plates-salmon-dill-potato-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "grazing-plates-tahini-veg-sticks"
+        },
+        {
+          "slot": "snack",
+          "recipe": "grazing-plates-apple-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "grazing-plates-buckwheat-apple-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "grazing-plates-edamame-quinoa-plate"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "grazing-plates-lemon-chicken-tabbouleh-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "grazing-plates-blueberry-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "grazing-plates-white-bean-cucumber-cups"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "grazing-plates-yogurt-fruit-plate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "grazing-plates-lemon-chicken-tabbouleh-plate",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "grazing-plates-chimichurri-beef-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "grazing-plates-pepper-walnut-dip-sticks"
+        },
+        {
+          "slot": "snack",
+          "recipe": "grazing-plates-paprika-edamame"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "grazing-plates-black-bean-egg-plate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "grazing-plates-chimichurri-beef-plate",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "grazing-plates-lentil-carrot-patties-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "grazing-plates-apple-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "grazing-plates-kiwi-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "grazing-plates-yogurt-fruit-plate"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "grazing-plates-herby-potato-bean-plate"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "grazing-plates-chili-lime-shrimp-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "grazing-plates-feta-tomato-cucumber-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "grazing-plates-apple-almonds"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "grazing-plates-buckwheat-apple-porridge"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "grazing-plates-marinated-chickpea-feta-plate"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "grazing-plates-garlic-salmon-beans-plate"
+        },
+        {
+          "slot": "snack",
+          "recipe": "grazing-plates-paprika-edamame"
+        },
+        {
+          "slot": "snack",
+          "recipe": "grazing-plates-kiwi-walnuts"
+        }
+      ]
+    }
+  ]
+}
