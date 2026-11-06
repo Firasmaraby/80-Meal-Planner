@@ -1,0 +1,1659 @@
+{
+  "id": "summer-salads",
+  "name": "Summer Salads",
+  "style": "balanced",
+  "cuisine": "Global",
+  "carbStyle": "whole",
+  "regions": [
+    "France",
+    "Greece",
+    "Italy",
+    "Mexico",
+    "Thailand"
+  ],
+  "summary": "Big main-course salads that really fill you up, with little cooking: a classic niçoise, chicken and peach on quinoa, cumin-lime salmon with a black bean and corn salad, watermelon and feta with lemon shrimp, and a Thai-style beef salad. Fruit, beans, fish and crunchy nuts make every plate.",
+  "howItWorks": "**A big salad is the meal.** Every lunch and dinner is a main-course salad on a bed of leaves, with a real protein, a whole-food starch, beans or fruit, and a dressing worth eating. Nothing needs the oven, and no dinner takes more than 40 minutes.\n\n**Cook once, eat twice.** Monday's niçoise, Tuesday's chicken and peach salad, Wednesday's salmon salad, Thursday's beef salad, Friday's lentil salad and Saturday's curried chicken salad each make two portions. The second is a cold lunch the next day, so there is nothing to reheat. Cool it within 1 hour and keep it in the fridge.\n\n**Fish and protein.** Salmon on Wednesday (and again in Thursday's lunch) and on Sunday brings omega-3 and **vitamin D**. Canned light tuna, which is low in mercury, goes in the niçoise. Shrimp, chicken, beef, eggs and Greek yogurt cover the rest of the protein, and beans, lentils or chickpeas turn up every day.\n\n**Summer food safety.** Salads with fish, meat, egg or dairy are out of the fridge for no more than 2 hours, or 1 hour above 32 °C. Cool cooked quinoa and potatoes within 1 hour. Wash melons, leaves and fruit before cutting. Pack lunches in a cold bag with an ice pack and eat them the same day. Opened tins of beans keep 2 days in the fridge.\n\n**What changes with size.** Light drops one snack a day and trims the grains, potatoes, nuts, oil, feta and black beans. At 1,400 kcal the chicken is two-thirds to four-fifths of its Standard size, while the fish, beef, lentils, chickpeas, eggs, fruit and leaves stay about the same. Big grows the meat, fish, beans, grains, potatoes and yogurt, and adds a snack every day.",
+  "signature": [
+    "summer-salads-nicoise-tuna-potato-green-bean-salad",
+    "summer-salads-chicken-peach-quinoa-arugula-salad",
+    "summer-salads-cumin-lime-salmon-black-bean-corn-salad",
+    "summer-salads-watermelon-feta-mint-shrimp-chickpea-salad"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1400,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 0
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "summer-salads-veg-sticks-yogurt-mint-dip"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "summer-salads-cherries-almonds"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "summer-salads-watermelon-feta-mint-cubes"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "summer-salads-watermelon-feta-mint-cubes"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "summer-salads-cucumber-tomato-feta-cup"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "summer-salads-blueberry-yogurt-walnuts"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "summer-salads-blueberries-walnuts"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "summer-salads-blueberry-cherry-overnight-oats",
+      "name": "Blueberry and cherry overnight oats with walnuts",
+      "inspiredBy": "Inspired by Swiss bircher muesli, with summer fruit",
+      "about": "Rolled oats soaked overnight in milk and Greek yogurt, then topped with blueberries, sweet cherries and crunchy walnuts. A cool, creamy breakfast with **fibre, protein and calcium**, and nothing to cook.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 40,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 150,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 90,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 70,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "cherry-sweet-raw-756883",
+          "g": 70,
+          "note": "washed, pitted and halved"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "The night before, stir the oats, milk, yogurt and cinnamon together in a jar or bowl. Cover and keep it in the fridge overnight.",
+        "In the morning, wash the blueberries and cherries, then pit and halve the cherries.",
+        "Stir the oats, loosening them with a splash of milk or water if they are thick, then top with the blueberries, cherries and walnuts.",
+        "Soaked oats keep up to 3 days covered in the fridge, so mix a fresh jar every night or two rather than a whole week at once."
+      ],
+      "prepMin": 7,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ],
+      "tip": "Use frozen cherries or blueberries thawed in the fridge when fresh ones are out of season."
+    },
+    {
+      "id": "summer-salads-peach-yogurt-bowl-walnut-oat-crunch",
+      "name": "Peach yogurt bowl with walnut oat crunch and mint",
+      "inspiredBy": "Inspired by a fruit and yogurt breakfast plate",
+      "about": "Thick Greek yogurt with ripe diced peach, fresh mint and a crunch of toasted oats and walnuts. It brings **protein, calcium and plant omega-3**, and it is cold, quick and refreshing.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 170,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "peach-raw-2e4c88",
+          "g": 160,
+          "note": "washed, pitted and diced"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 30,
+          "swap": "low_gi_grains"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "washed, torn"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 5
+        }
+      ],
+      "steps": [
+        "Toast the oats and walnuts in a dry pan over medium heat for 3 to 4 minutes, stirring, until golden and fragrant. Tip them onto a plate to cool.",
+        "Wash the peach, cut it away from the pit and dice it.",
+        "Spoon the yogurt into a bowl, top with the peach and drizzle with the honey.",
+        "Scatter with the toasted oats and walnuts and the torn mint."
+      ],
+      "prepMin": 6,
+      "cookMin": 4,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Toast a few days of oats and walnuts at once and keep them in a jar."
+    },
+    {
+      "id": "summer-salads-arugula-tomato-basil-scramble-potatoes",
+      "name": "Arugula, tomato and basil scramble with warm potatoes",
+      "inspiredBy": "Inspired by a summer vegetable frittata",
+      "about": "Eggs scrambled until firm with arugula, cherry tomatoes and basil, served over diced potato crisped in the same pan. The eggs bring **choline and protein**, the arugula adds calcium and vitamin K, and the potato brings potassium.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 150,
+          "note": "scrubbed, cut in small cubes"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 80,
+          "note": "washed, halved"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "basil-green-raw-a2ab63",
+          "g": 5,
+          "note": "washed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Cook the potato cubes in a microwave-safe bowl with a splash of water, covered, for 4 to 5 minutes until tender when poked with a fork, or simmer them for 8 minutes and drain.",
+        "Heat the oil in a large non-stick pan over medium-high heat. Add the potatoes and cook for 4 minutes, turning, until golden at the edges.",
+        "Add the tomatoes and cook for 2 minutes until they start to soften. Wash the arugula, stir it in and let it wilt for 30 seconds.",
+        "Beat the eggs with the salt and pepper and pour them over the vegetables. Cook, stirring and folding, for 3 to 4 minutes until the eggs are completely firm with no runny parts.",
+        "Tear the basil over the top and serve."
+      ],
+      "prepMin": 8,
+      "cookMin": 14,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Boil extra potatoes the night before and breakfast is 10 minutes."
+    },
+    {
+      "id": "summer-salads-watermelon-feta-mint-shrimp-chickpea-salad",
+      "name": "Watermelon, feta and mint salad with lemon shrimp and chickpeas",
+      "inspiredBy": "Inspired by the Greek summer pairing of watermelon and feta",
+      "about": "Cold, juicy watermelon, salty feta and mint over baby spinach, topped with quick lemon shrimp, chickpeas and almonds. The shrimp and chickpeas make it a meal, with **protein, iodine and fibre**.",
+      "ingredients": [
+        {
+          "food": "shrimp-peeled-raw-fresh-or-frozen-9603cf",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "peeled"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 110,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "watermelon-raw-36cca1",
+          "g": 250,
+          "note": "rind scrubbed and rinsed first, then cubed"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 30,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "baby spinach, washed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 6,
+          "note": "washed, torn"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Scrub the watermelon rind under running water, then cut away the rind and cube the flesh. Wash the spinach, cucumber and mint.",
+        "If the shrimp are frozen, thaw them overnight in the fridge. Pat the shrimp dry. Heat half the oil in a non-stick pan over medium-high heat and cook the shrimp for 2 to 3 minutes a side, with half the lemon juice and a pinch of the salt, until pink and opaque and firm to the touch, 70 °C (158 °F) in the centre. Tip them onto a clean plate and wash your hands and the board after handling the raw shrimp.",
+        "Whisk the rest of the lemon juice and oil with the pepper and a pinch of salt for the dressing, and toss it with the chickpeas, onion, cucumber and spinach.",
+        "Pile the greens onto a plate, top with the watermelon, shrimp and crumbled feta, then scatter with the mint and almonds.",
+        "Serve right away while the shrimp are still slightly warm and the melon is cold. If you are packing it, chill the shrimp first, keep the watermelon and dressing separate, and carry it in a cold bag with an ice pack to eat the same day."
+      ],
+      "prepMin": 15,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "No time to cook shrimp? Use a drained tin of salmon, and eat it all that day."
+    },
+    {
+      "id": "summer-salads-nicoise-tuna-potato-green-bean-salad",
+      "name": "Niçoise salad with tuna, new potatoes, green beans and firm eggs",
+      "inspiredBy": "Inspired by the salade niçoise of Nice, with canned light tuna and no anchovies",
+      "about": "The classic main-course salad: canned light tuna, tender potatoes, crisp green beans, tomatoes, olives and a firm-cooked egg on baby spinach, with a lemon and Dijon dressing. It brings **protein, selenium and vitamin K**, and the second portion is tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "light-tuna-canned-in-water-drained-unsalted-5d1670",
+          "g": 75,
+          "swap": "lean_protein",
+          "note": "drained"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 170,
+          "note": "small waxy potatoes, scrubbed, halved or quartered"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 100,
+          "note": "washed, trimmed"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100,
+          "note": "washed, halved"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "in the shell"
+        },
+        {
+          "food": "olive-average-42914c",
+          "g": 20,
+          "note": "rinsed, pitted"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "baby spinach, washed"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "basil-green-raw-a2ab63",
+          "g": 5,
+          "note": "washed"
+        },
+        {
+          "food": "dijon-mustard-7b49e7",
+          "g": 6
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Put the potatoes and eggs (in the shell) in a pot, cover with cold water by about 3 cm (1 inch) and bring to a boil. Simmer for 8 minutes, then add the green beans and simmer for 4 minutes more, until the potatoes are tender when poked with a fork. Lift the eggs out into cold water and drain the potatoes and beans.",
+        "Peel tonight's eggs once they are cool enough to handle; the yolks should be completely firm. Keep the eggs for the second portion in their shell in the fridge for tomorrow.",
+        "Whisk the onion, Dijon, lemon juice, oil and pepper for the dressing. Toss the warm potatoes and green beans with half of it so they soak up the flavour.",
+        "Wash the spinach, tomatoes and basil. Arrange the spinach on a plate, then the potatoes, beans, tomatoes, tuna, olives and quartered egg. Spoon over a little more dressing and top with the basil.",
+        "Open tins of fish should be used the same day, so use all the tuna now. Spread the second portion of potatoes, beans and tuna in a shallow container, cool within 1 hour, then cover and refrigerate with the tomatoes. Keep the dressing, spinach and egg separate. Assemble it tomorrow and eat it cold.",
+        "If you pack tomorrow's lunch, carry it in a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 15,
+      "cookMin": 20,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Keep the dressing separate and add it when you eat tomorrow's portion so the beans stay bright green."
+    },
+    {
+      "id": "summer-salads-chicken-peach-quinoa-arugula-salad",
+      "name": "Chicken, peach and quinoa salad with arugula, basil and almonds",
+      "inspiredBy": "Inspired by summer peach and chicken salads",
+      "about": "Seared chicken slices over fluffy quinoa with ripe peach, peppery arugula, basil, cucumber, crunchy almonds and a little feta. Quinoa and chicken bring **protein and magnesium**, and the second portion makes a cold lunch tomorrow.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 175,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "peach-raw-2e4c88",
+          "g": 150,
+          "note": "washed, pitted, sliced"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 70,
+          "note": "washed, diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "basil-green-raw-a2ab63",
+          "g": 6,
+          "note": "washed, torn"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 10,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 22,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa and simmer it in twice its volume of water, covered, for 12 to 15 minutes until the water is absorbed. Spread it in a shallow container and cool within 1 hour.",
+        "Meanwhile, slice the chicken breast in half horizontally so the pieces are even, and season them with a pinch of the salt and the pepper.",
+        "Heat half the oil in a non-stick pan over medium-high heat. Cook the chicken for 5 to 6 minutes a side, until golden and a thermometer reads 74 °C (165 °F) in the thickest part. Rest it on a clean plate, then wash your hands, the board and the knife after handling the raw chicken. Slice the chicken.",
+        "Wash the arugula, cucumber and basil. Whisk the lemon juice, honey, the rest of the oil and a pinch of salt for the dressing. Toss half the cooled quinoa with half the dressing, and keep the second portion of quinoa undressed in the fridge.",
+        "Wash one peach and slice it. Toss the dressed quinoa with half the arugula, cucumber, onion and basil, then top with half the chicken, the sliced peach and half the almonds and feta.",
+        "Cool the rest of the chicken within 1 hour and keep it and the quinoa in separate covered shallow containers in the fridge, with the rest of the arugula, cucumber, onion, basil and dressing kept apart. Tomorrow, slice the second peach, toss everything together just before eating and eat it cold, packed in a cold bag with an ice pack if you take it out."
+      ],
+      "prepMin": 15,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "No peaches? Cherries or a sliced nectarine work well."
+    },
+    {
+      "id": "summer-salads-cumin-lime-salmon-black-bean-corn-salad",
+      "name": "Cumin-lime salmon with black bean, charred corn and avocado salad",
+      "inspiredBy": "Inspired by Tex-Mex corn and black bean salads",
+      "about": "A seared salmon fillet over a bright salad of black beans, charred corn, red pepper, tomatoes, avocado and feta with lime and cilantro. The salmon brings **omega-3 and vitamin D**, the beans bring fibre and folate, and the second portion makes a cold lunch tomorrow.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "skin-on fillet"
+        },
+        {
+          "food": "black-beans-canned-no-salt-added-drained-33bee5",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "corn-frozen-raw-6a4b24",
+          "g": 60,
+          "note": "frozen kernels"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 100,
+          "note": "washed, diced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 70,
+          "note": "washed, quartered"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "avocado-raw-c06278",
+          "g": 35,
+          "note": "washed before cutting, diced"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 10,
+          "swap": "dairy_protein",
+          "note": "crumbled"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 28,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.2
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Heat a dry non-stick or cast-iron pan over high heat. Add the frozen corn and cook for 4 to 5 minutes, shaking now and then, until steaming hot and charred in spots. Tip it into a bowl.",
+        "Wash the pepper, tomatoes, arugula, cilantro and avocado. Add the beans, pepper, tomatoes, onion, cilantro and half the lime juice to the corn with a pinch of the salt and half the oil, and toss.",
+        "Mix the cumin, chili powder and the rest of the salt and rub it over the salmon. Heat the remaining oil in the same pan over medium-high heat.",
+        "Lay both fillets skin-side down in the pan (in two batches if it is small), then wash your hands, the board and the knife after handling the raw salmon. Cook for 4 to 5 minutes until the skin is crisp, then turn and cook for 2 to 3 minutes more, until the thickest part reaches 70 °C (158 °F) and flakes easily. Squeeze the last of the lime juice over them.",
+        "Spread half the arugula on a plate, spoon over half the bean and corn salad, add tonight's avocado and feta and set one fillet on top.",
+        "Cool the second fillet within 1 hour, flake it off its skin, and keep it, the rest of the bean and corn salad and the rest of the arugula in separate shallow containers in the fridge. Eat it cold the next day, with freshly cut avocado and the rest of the feta. Cook the salmon the day you buy it, or thaw frozen fillets overnight in the fridge. Pack tomorrow's lunch in a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Pat the skin dry for a crisper finish."
+    },
+    {
+      "id": "summer-salads-thai-style-beef-quinoa-herb-salad",
+      "name": "Thai-style beef salad with quinoa, cucumber and herbs",
+      "inspiredBy": "Inspired by Thai yam nua, with quinoa to make it a full meal",
+      "about": "Thin-sliced seared sirloin tossed with arugula, cucumber, tomatoes, mint, cilantro and a hot, sour, savoury lime dressing, over quinoa with crunchy peanuts. The beef brings **iron and zinc**, with vitamin C from the lime and tomatoes to help absorb the iron.",
+      "ingredients": [
+        {
+          "food": "beef-top-sirloin-steak-lean-raw-a51c2c",
+          "g": 170,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 110,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 90,
+          "note": "washed, halved"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 8,
+          "note": "washed, torn"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 32,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 10
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 5
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "grated"
+        },
+        {
+          "food": "peanuts-kernel-only-plain-unsalted-4dfa96",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "toasted, roughly chopped"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Rinse the quinoa and simmer it in twice its volume of water, covered, for 12 to 15 minutes until the water is absorbed. Spread it in a shallow container and cool within 1 hour.",
+        "Pat the steak dry and season it with a little pepper. Heat a pan over high heat and cook the steak for 4 to 5 minutes a side, until browned and seared to 71 °C (160 °F) with no pink in the centre. Rest it on a clean plate for 3 minutes, then wash your hands, the board and the knife after handling the raw beef.",
+        "Whisk the lime juice, soy sauce, honey, garlic and chili flakes for the dressing. Toast the peanuts in a dry pan for 2 to 3 minutes until golden, then chop them roughly.",
+        "Slice the steak thinly across the grain. Wash the arugula, cucumber, tomatoes and herbs. Toss half the cooled quinoa with half the arugula, cucumber, tomatoes, onion and herbs and half the dressing, and keep the rest undressed for tomorrow.",
+        "Pile the quinoa salad onto a plate, top with half the beef, spoon over a little more of the dressing, keeping the rest for tomorrow, and scatter with half the peanuts.",
+        "Chill the second portion of beef, the quinoa, the cut vegetables and herbs and the rest of the dressing in separate covered containers within 1 hour. Toss them together just before eating tomorrow, packed in a cold bag with an ice pack if you take it out, and finish it within 3 days."
+      ],
+      "prepMin": 15,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Dial the heat down by leaving out the chili flakes, and put them on the table instead."
+    },
+    {
+      "id": "summer-salads-warm-lentil-sweet-potato-feta-salad",
+      "name": "Lentil and sweet potato salad with arugula, egg, feta and lemon",
+      "inspiredBy": "Inspired by Levantine and Mediterranean lentil salads, with sweet potato",
+      "about": "Tender lentils and sweet potato cubes tossed while warm with cumin, lemon, red onion and arugula, topped with a firm-cooked egg, salty feta and almonds. The lentils bring **iron, folate and fibre**, the sweet potato brings vitamin A, and the lemon helps your body absorb the iron.",
+      "ingredients": [
+        {
+          "food": "lentils-canned-no-salt-added-drained-c1edbd",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "in the shell"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 150,
+          "note": "scrubbed, cut in 2 cm cubes"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 20,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 20,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "roughly chopped"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 5,
+          "note": "washed, torn"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 28,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put the eggs (in the shell) in a pot, cover with cold water, bring to a boil and simmer for 10 minutes, then cool them in cold water; the yolks should be completely firm. Meanwhile, simmer the sweet potato cubes in a separate pot of water for 8 to 10 minutes until tender when poked with a fork. Drain and let them steam dry for a minute.",
+        "Whisk the lemon juice, oil, cumin, salt and pepper in a large bowl. Add the warm sweet potato, the lentils and the onion and toss gently so the sweet potato stays in pieces.",
+        "Wash the arugula and mint. Spoon tomorrow's portion of lentils and sweet potato into a shallow container, then fold half the arugula into tonight's.",
+        "Peel tonight's eggs and quarter them. Spoon tonight's salad onto a plate, top with the egg, crumble over half the feta and scatter with half the almonds and mint. Keep the second portion's eggs in their shell in the fridge.",
+        "Cool tomorrow's portion within 1 hour, cover it and keep it in the fridge. Eat it cold tomorrow, with the rest of the arugula, feta, almonds and mint and the peeled, quartered egg added just before. Pack it in a cold bag with an ice pack and eat it the same day."
+      ],
+      "prepMin": 12,
+      "cookMin": 12,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Use a drained, rinsed tin of lentils, or cook your own from dry and cool them in a shallow container. Lentils left in the tin keep 2 days, covered, in the fridge."
+    },
+    {
+      "id": "summer-salads-curried-chicken-chickpea-apple-salad",
+      "name": "Curried chicken and chickpea salad with apple, spinach and yogurt dressing",
+      "inspiredBy": "Inspired by British coronation chicken, with yogurt, apple and chickpeas",
+      "about": "Seared chicken tossed in a mild curry-yogurt dressing with crisp apple, cucumber and chickpeas, piled over baby spinach with fresh cilantro. The chicken and chickpeas bring **protein and fibre**, and the spinach and lemon add vitamin K and vitamin C.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 160,
+          "swap": "lean_protein"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 110,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 100,
+          "note": "washed, cored, diced"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed, diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "baby spinach, washed"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "finely diced"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 70,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 20,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "curry-powder-55e9c6",
+          "g": 2.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Cut the chicken breast in half horizontally so the pieces are even and season with the salt and half the curry powder. Heat the oil in a non-stick pan over medium-high heat and cook the chicken for 5 to 6 minutes a side, until golden and a thermometer reads 74 °C (165 °F) in the thickest part. Rest it on a clean plate, then wash your hands, the board and the knife after handling the raw chicken.",
+        "Cool the chicken for 10 minutes, then dice it. Meanwhile, stir the yogurt with the rest of the curry powder, the lemon juice and a spoonful of cold water to make the dressing.",
+        "Wash the spinach, cucumber and cilantro. Toss the diced chicken, chickpeas and onion with most of the dressing and chill for 10 minutes if you have time.",
+        "Wash the apple, then dice half of it and half the cucumber. Spread half the spinach on a plate, spoon over half the curried chicken salad with the apple and cucumber, drizzle with a little of the remaining dressing and top with half the cilantro.",
+        "Cool the rest of the curried chicken salad within 1 hour and keep it in a covered shallow container in the fridge, with the spinach, cilantro and the last of the dressing kept apart. Tomorrow, dice the rest of the apple and cucumber, pile everything over the spinach and eat it cold, packed in a cold bag with an ice pack if you take it out. Spoon any chickpeas left in an opened tin into a covered container, refrigerate and use them within 2 days."
+      ],
+      "prepMin": 15,
+      "cookMin": 12,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers"
+      ],
+      "tip": "Cook the chicken the night before and dinner is just chopping and tossing."
+    },
+    {
+      "id": "summer-salads-seared-salmon-potato-cucumber-yogurt-mint-salad",
+      "name": "Seared salmon with warm potatoes, radishes and lemon-mint yogurt on arugula",
+      "inspiredBy": "Inspired by Scandinavian salmon with potatoes and cucumber",
+      "about": "A seared salmon fillet over peppery arugula with tender warm potatoes, crisp radishes, red onion and a lemony mint-yogurt sauce. The salmon brings **omega-3 and vitamin D**, and the potatoes bring potassium.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 140,
+          "swap": "fatty_fish",
+          "note": "skin-on fillet"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 190,
+          "note": "small waxy potatoes, scrubbed, halved"
+        },
+        {
+          "food": "radish-raw-724b59",
+          "g": 100,
+          "note": "washed, thinly sliced"
+        },
+        {
+          "food": "arugula-raw-83d90b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "red-onion-raw-3b568f",
+          "g": 15,
+          "note": "very thinly sliced"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 70,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 6,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 26,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2,
+          "note": "grated"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Put the potatoes in a pot, cover with cold water and bring to a boil. Simmer for 12 to 15 minutes until tender when poked with a fork, then drain and let them steam dry.",
+        "Meanwhile, stir the yogurt with the mint, garlic, half the lemon juice, a pinch of the salt and a spoonful of cold water to make the sauce.",
+        "Wash the arugula and radishes. Toss the warm potatoes, radishes and onion with the rest of the lemon juice, half the oil and the pepper.",
+        "Pat the salmon dry and season it with the rest of the salt. Heat the remaining oil in a non-stick pan over medium-high heat and cook the salmon skin-side down for 4 to 5 minutes until the skin is crisp.",
+        "Turn the fish and cook for 2 to 3 minutes more, until the thickest part reaches 70 °C (158 °F) and flakes easily. Rest it on a clean plate, then wash your hands, the board and the knife after handling the raw fish.",
+        "Spread the arugula on a plate, spoon over the potato salad, set the salmon on top and spoon over the mint-yogurt sauce. Cook the salmon the day you buy it, or thaw frozen fillets overnight in the fridge."
+      ],
+      "prepMin": 12,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Swap the mint for dill if you have it."
+    },
+    {
+      "id": "summer-salads-cherries-walnuts",
+      "name": "Cherries with walnuts",
+      "about": "Sweet fresh cherries with crunchy walnuts. It brings **vitamin C and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "cherry-sweet-raw-756883",
+          "g": 120,
+          "note": "washed, pitted"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the cherries, remove the pits and eat them with the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "summer-salads-cherries-almonds",
+      "name": "Cherries with almonds",
+      "about": "Sweet cherries with a handful of almonds. A snack with **vitamin E, fibre and vitamin C**.",
+      "ingredients": [
+        {
+          "food": "cherry-sweet-raw-756883",
+          "g": 120,
+          "note": "washed, pitted"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 16,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the cherries, remove the pits and eat them with the almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "summer-salads-blueberries-almonds",
+      "name": "Blueberries with almonds",
+      "about": "Blueberries and crunchy almonds in a bowl. A snack with **fibre, vitamin E and manganese**.",
+      "ingredients": [
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 120,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 16,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Rinse the blueberries and serve them with the almonds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "summer-salads-blueberries-walnuts",
+      "name": "Blueberries with walnuts",
+      "about": "Blueberries with walnuts and a dusting of cinnamon. A snack with **fibre and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 120,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the blueberries, top with the walnuts and sprinkle with the cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "summer-salads-blueberry-yogurt-walnuts",
+      "name": "Greek yogurt with blueberries and walnuts",
+      "about": "Thick yogurt with blueberries and crunchy walnuts. It brings **calcium, protein and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "blueberry-raw-e94073",
+          "g": 90,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl, top with the blueberries and scatter with the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "summer-salads-peach-walnuts",
+      "name": "Peach with walnuts",
+      "about": "A ripe peach with a handful of walnuts. It brings **vitamin C, fibre and plant omega-3**, and takes a minute.",
+      "ingredients": [
+        {
+          "food": "peach-raw-2e4c88",
+          "g": 150,
+          "note": "washed, sliced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the peach, slice it away from the pit and eat it with the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "summer-salads-watermelon-feta-mint-cubes",
+      "name": "Watermelon and feta cubes with mint",
+      "about": "Cold watermelon cubes with salty feta and torn mint. It brings **vitamin C, some calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "watermelon-raw-36cca1",
+          "g": 200,
+          "note": "rind scrubbed first, then cubed"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 25,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "washed, torn"
+        }
+      ],
+      "steps": [
+        "Scrub the watermelon rind under running water, cut the flesh into cubes and chill them. Crumble the feta over the cubes and scatter with the mint. Keep it in the fridge until you eat it, and finish it the same day."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "summer-salads-lemony-chickpea-cucumber-cup",
+      "name": "Lemony chickpeas with cucumber and mint",
+      "about": "Chickpeas tossed with crunchy cucumber, mint, lemon and a little olive oil. A snack with **plant protein, fibre and folate**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed, diced"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "washed, torn"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Rinse and drain the chickpeas. Toss them with the cucumber, mint, lemon juice, olive oil and salt. Keep it in the fridge until you eat it. Spoon any beans left in an opened tin into a covered container, refrigerate and use them within 2 days."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "summer-salads-veg-sticks-yogurt-mint-dip",
+      "name": "Cucumber and pepper sticks with yogurt-mint dip",
+      "about": "Crunchy cucumber and red pepper sticks with a cool garlicky yogurt and mint dip, and a handful of walnuts. It brings **vitamin C, calcium and plant omega-3**.",
+      "ingredients": [
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "washed, cut in sticks"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 80,
+          "note": "washed, cut in sticks"
+        },
+        {
+          "food": "greek-yogurt-plain-nonfat-a79a72",
+          "g": 70,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "washed, finely chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the cucumber and pepper and cut them into sticks. Stir the yogurt with the mint, lemon juice and garlic and serve alongside with the walnuts. Keep the dip in the fridge until you eat."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "summer-salads-cucumber-tomato-feta-cup",
+      "name": "Cucumber and cherry tomato cup with feta and mint",
+      "about": "Juicy cherry tomatoes and cucumber with salty feta, fresh mint and a drizzle of olive oil. A snack with **vitamin C, some calcium and protein**.",
+      "ingredients": [
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100,
+          "note": "washed, halved"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "washed, diced"
+        },
+        {
+          "food": "feta-cheese-f7c0e3",
+          "g": 25,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 3,
+          "note": "washed, torn"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 6,
+          "swap": "vit_c_fruit"
+        }
+      ],
+      "steps": [
+        "Wash the tomatoes, cucumber and mint. Toss the tomatoes and cucumber with the olive oil and lemon juice, crumble over the feta and scatter with the mint. Keep it in the fridge until you eat it."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "summer-salads-gazpacho-cup",
+      "name": "Chilled tomato and cucumber gazpacho with almonds",
+      "about": "A cold, no-cook blended soup of ripe tomato, cucumber and red pepper with a little olive oil and garlic, topped with toasted almonds. It brings **vitamin C and lycopene**, and is the most refreshing snack of the week.",
+      "ingredients": [
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 200,
+          "note": "washed"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 80,
+          "note": "washed, chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 1.5
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 8,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "sliced"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the tomatoes, cucumber and pepper. Blend them with the garlic, oil, lemon juice and salt until smooth, then chill for at least 30 minutes.",
+        "Pour into a glass or bowl and top with the almonds. Serve it cold from the fridge, never leave it out for more than 2 hours, and use leftovers within 2 days."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "summer-salads-peach-yogurt-bowl-walnut-oat-crunch"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "summer-salads-watermelon-feta-mint-shrimp-chickpea-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "summer-salads-nicoise-tuna-potato-green-bean-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "summer-salads-cherries-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "summer-salads-blueberries-almonds"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "summer-salads-blueberry-cherry-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "summer-salads-nicoise-tuna-potato-green-bean-salad",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "summer-salads-chicken-peach-quinoa-arugula-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "summer-salads-blueberries-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "summer-salads-lemony-chickpea-cucumber-cup"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "summer-salads-arugula-tomato-basil-scramble-potatoes"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "summer-salads-chicken-peach-quinoa-arugula-salad",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "summer-salads-cumin-lime-salmon-black-bean-corn-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "summer-salads-blueberry-yogurt-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "summer-salads-gazpacho-cup"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "summer-salads-peach-yogurt-bowl-walnut-oat-crunch"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "summer-salads-cumin-lime-salmon-black-bean-corn-salad",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "summer-salads-thai-style-beef-quinoa-herb-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "summer-salads-blueberries-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "summer-salads-veg-sticks-yogurt-mint-dip"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "summer-salads-blueberry-cherry-overnight-oats"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "summer-salads-thai-style-beef-quinoa-herb-salad",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "summer-salads-warm-lentil-sweet-potato-feta-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "summer-salads-peach-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "summer-salads-cherries-almonds"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "summer-salads-peach-yogurt-bowl-walnut-oat-crunch"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "summer-salads-warm-lentil-sweet-potato-feta-salad",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "summer-salads-curried-chicken-chickpea-apple-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "summer-salads-cherries-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "summer-salads-lemony-chickpea-cucumber-cup"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "summer-salads-arugula-tomato-basil-scramble-potatoes"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "summer-salads-curried-chicken-chickpea-apple-salad",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "summer-salads-seared-salmon-potato-cucumber-yogurt-mint-salad"
+        },
+        {
+          "slot": "snack",
+          "recipe": "summer-salads-peach-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "summer-salads-gazpacho-cup"
+        }
+      ]
+    }
+  ]
+}
