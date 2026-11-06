@@ -135,4 +135,9 @@ Every family in CATALOG.md moves through these steps:
   - Engine: a same-name Light copy carries `variantOf`, so the Meals tab lists it once, and signature dishes follow the swap. Size-only recipes take their slot from the size that uses them.
   - Wave 3 was written in parallel, so sibling near-copies (peanut stews, coconut salmon curries, sloppy joes, the hash) were swapped out in review.
   - Rebuilt the data. Tests (494), typecheck and the Playwright walk all pass: 15 Everyday plans show, no duplicate meals, no errors.
+- **Nov 6:** **Everyday wave 4 shipped (20 of 30).** New plans:
+  - `ancient-grains`, `grill-and-skillet`, `grazing-plates` and `eat-the-rainbow` use whole-food carbs and keep Light 1400.
+  - `takeout-at-home` (whole grains) is Light 1600-2000, Standard 2000-2400 and Big. At 1,400 the bun, rice and chicken couldn't stay real without calcium and iron failing, so with `everyday-classics` that makes two plans with no 1400 band.
+  - Big upper limits are all under the house headroom.
+  - Wave 5 is being written.
 
