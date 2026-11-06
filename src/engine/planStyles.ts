@@ -426,9 +426,9 @@ export const HOUSE_BANS: BanId[] = ['pork', 'alcohol'];
 // the same, in the words of a recipe: a step that deglazes with wine, a dish named for ham. Vinegars and the beef or turkey
 // versions of cured meats are fine.
 const HOUSE_WORDS =
-  /\b(pork|bacon|ham|hams|lard|prosciutto|pancetta|guanciale|chorizo|salami|pepperoni|mortadella|wine|mirin|sake|beer|shaoxing|rum|brandy|cognac|sherry|vodka|bourbon|whiske?y|liqueur|marsala|vermouth)\b/;
+  /\b(pork|bacon|ham|hams|lard|prosciutto|pancetta|guanciale|chorizo|salami|pepperoni|mortadella|wine|mirin|sake|beer|shaoxing|rum|brandy|cognac|sherry|vodka|bourbon|whiske?y|liqueur|marsala|vermouth|alcohol|alcoholic|mulled)\b/;
 const HOUSE_WORDS_OK =
-  /\b(?:rice|red|white|sherry|wine|cider|malt)?\s*wine vinegar\b|\bsherry vinegar\b|\b(?:beef|turkey|chicken|plant-based|soy)\s+(?:bacon|ham|chorizo|salami|pepperoni|sausage)\b|\bpork-free\b|\bno pork\b|\bnon-?alcoholic\b|\balcohol-free\b|\bginger beer\b|\broot beer\b/g;
+  /\b(?:rice|red|white|sherry|wine|cider|malt)?\s*wine vinegar\b|\bsherry vinegar\b|\b(?:beef|turkey|chicken|plant-based|soy)\s+(?:bacon|ham|chorizo|salami|pepperoni|sausage)\b|\bpork-free\b|\bno pork\b|\bno alcohol\b|\bnon-?alcoholic\b|\balcohol-free\b|\bginger beer\b|\broot beer\b/g;
 
 // eggs served with a soft yolk; "no runny egg left" and a jammy tomato sauce are fine
 const SOFT_EGG = /soft[- ]boiled egg|soft[- ]cooked egg|jammy (?:egg|yolk)|yolks? (?:is |are )?(?:still |stays? |left )?(?:soft|runny)|runny yolk|sunny[- ]side|over[- ]easy|soft egg\b/;

@@ -353,6 +353,10 @@ describe('house bans: no pork, no alcohol, in any style', () => {
     expect(words({ steps: ['Finish with rice wine vinegar and a little sherry vinegar.'] })).toEqual([]);
     expect(words({ about: 'Lentils with beef chorizo and a turkey bacon crumb.' })).toEqual([]);
     expect(words({ name: 'Hamburger steak with onions' })).toEqual([]);
+    // the word alone counts: no "made without the alcohol", no mulled fruit
+    expect(words({ inspiredBy: 'Inspired by Greek shrimp saganaki, without the alcohol' })).toEqual(['house_words']);
+    expect(words({ name: 'Mulled pears with yogurt' })).toEqual(['house_words']);
+    expect(words({ tip: 'A non-alcoholic ginger beer is a good match.' })).toEqual([]);
   });
 
   it('wants every egg cooked until the yolk is firm', () => {
