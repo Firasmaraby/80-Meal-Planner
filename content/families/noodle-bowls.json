@@ -1,0 +1,2904 @@
+{
+  "id": "noodle-bowls",
+  "name": "Noodle Bowls",
+  "style": "balanced",
+  "cuisine": "Global",
+  "carbStyle": "wholegrain",
+  "regions": [
+    "Japan",
+    "Vietnam",
+    "Korea",
+    "China",
+    "Philippines",
+    "Iran"
+  ],
+  "summary": "Soba and whole-wheat noodle bowls, from a ginger chicken soup with egg ribbons to seared salmon soba, a Korean-style tofu japchae, turmeric salmon with herbs and a pho-style beef soup. Fish three times, four dishes that make tomorrow's lunch, and low-sodium broths throughout.",
+  "howItWorks": "**Noodles in modest portions.** Soba is buckwheat noodles. Whole-wheat spaghetti stands in for the rice noodles in the pho, the sweet potato noodles in the japchae and the reshteh in the herb soup. Every bowl piles on vegetables, beans, tofu, fish or lean meat, and the broths and sauces use low-sodium stock and reduced-sodium soy.\n\n**Cook once, eat twice.** Monday's chicken soup, Wednesday's dan dan-style turkey noodles, Thursday's japchae and Saturday's pho each make two portions, so the next lunch is done. Keep noodles apart from broth, cool them within 1 hour, keep up to 3 days and reheat until steaming. Fresh herbs and cucumber go on cold.\n\n**Fish and eggs.** Sardines on Monday and salmon on Tuesday and Friday bring omega-3 and a little vitamin D. Fish is never a leftover. Eggs show up at two breakfasts (one at Big), as ribbons in the soup and japchae, and sliced on Sunday's herb soup.\n\n**What changes with size.** Light drops the second snack each day and sizes the bowls to fit, so at 1,400 kcal a few hold only a small portion of noodles; lighter versions of several dishes keep the day balanced. Big adds a snack each day and more meat, fish and beans, swaps Saturday's omelette for oatmeal, and makes the chicken soup, japchae and peanut-lime bowl with soba.",
+  "signature": [
+    "noodle-bowls-salmon-soba-ginger-soy",
+    "noodle-bowls-pho-style-beef-noodle-soup",
+    "noodle-bowls-tofu-japchae-noodles",
+    "noodle-bowls-turmeric-salmon-herb-noodles"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "light": {
+      "kcal": 1400,
+      "covers": [
+        "1400-1600",
+        "1600-1800"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 2,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 3,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 4,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 5,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 6,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": 7,
+          "drop": {
+            "slot": "snack",
+            "index": 1
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "noodle-bowls-peanut-turkey-noodles",
+            "to": "noodle-bowls-peanut-turkey-noodles-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "noodle-bowls-pho-style-beef-noodle-soup",
+            "to": "noodle-bowls-pho-style-beef-noodle-soup-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "noodle-bowls-ginger-chicken-noodle-soup",
+            "to": "noodle-bowls-ginger-chicken-noodle-soup-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "noodle-bowls-chickpea-soba-salad",
+            "to": "noodle-bowls-chickpea-soba-salad-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "noodle-bowls-ginger-pear-oatmeal",
+            "to": "noodle-bowls-ginger-pear-oatmeal-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "noodle-bowls-pear-yogurt-walnuts",
+            "to": "noodle-bowls-pear-yogurt-walnuts-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "noodle-bowls-salmon-soba-ginger-soy",
+            "to": "noodle-bowls-salmon-soba-ginger-soy-light"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "noodle-bowls-raspberry-yogurt-bowl",
+            "to": "noodle-bowls-raspberry-yogurt-bowl-light"
+          }
+        }
+      ]
+    },
+    "standard": {
+      "kcal": 2100,
+      "covers": [
+        "1800-2000",
+        "2000-2200",
+        "2200-2400"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2400-2800",
+        "2800-3200"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "add": {
+            "slot": "snack",
+            "recipe": "noodle-bowls-apple-walnuts"
+          }
+        },
+        {
+          "day": 2,
+          "add": {
+            "slot": "snack",
+            "recipe": "noodle-bowls-apple-peanut-butter"
+          }
+        },
+        {
+          "day": 3,
+          "add": {
+            "slot": "snack",
+            "recipe": "noodle-bowls-banana-walnuts"
+          }
+        },
+        {
+          "day": 4,
+          "add": {
+            "slot": "snack",
+            "recipe": "noodle-bowls-pear-yogurt-walnuts"
+          }
+        },
+        {
+          "day": 5,
+          "add": {
+            "slot": "snack",
+            "recipe": "noodle-bowls-edamame-lime-chili"
+          }
+        },
+        {
+          "day": 6,
+          "add": {
+            "slot": "snack",
+            "recipe": "noodle-bowls-pear-almonds"
+          }
+        },
+        {
+          "day": 7,
+          "add": {
+            "slot": "snack",
+            "recipe": "noodle-bowls-banana-peanut-butter"
+          }
+        },
+        {
+          "day": 6,
+          "swap": {
+            "from": "noodle-bowls-veggie-omelette-toast",
+            "to": "noodle-bowls-ginger-pear-oatmeal"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "noodle-bowls-ginger-chicken-noodle-soup",
+            "to": "noodle-bowls-ginger-chicken-noodle-soup-big"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "noodle-bowls-tofu-japchae-noodles",
+            "to": "noodle-bowls-tofu-japchae-noodles-big"
+          }
+        },
+        {
+          "day": "*",
+          "swap": {
+            "from": "noodle-bowls-peanut-lime-edamame-noodles",
+            "to": "noodle-bowls-peanut-lime-edamame-noodles-big"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "noodle-bowls-ginger-pear-oatmeal",
+      "name": "Ginger-pear oatmeal with walnuts",
+      "about": "Creamy oats simmered with a little milk, fresh ginger and cinnamon, topped with chopped pear and toasted walnuts. The oats bring **slow-digesting fibre** and the walnuts bring plant omega-3 fat and crunch.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 55
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 150
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 150,
+          "note": "washed and chopped, skin on"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "finely grated"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 22,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the pear and chop it into small pieces. Grate the ginger finely.",
+        "Toast the walnuts in a dry pan over medium heat until fragrant, about 2 minutes, then chop them.",
+        "Stir the oats, milk, a splash of water, the ginger, cinnamon and iodized salt together in a small pot. Bring it to a gentle bubble and cook, stirring, until creamy, about 5 minutes. Add a splash more water if it gets too thick.",
+        "Stir half of the pear into the oatmeal for the last minute so it softens. Spoon into a bowl and top with the rest of the pear and the walnuts."
+      ],
+      "prepMin": 4,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Make it the night before: soak the oats in the milk in the fridge, eat within 2 days, and warm it in the morning."
+    },
+    {
+      "id": "noodle-bowls-raspberry-yogurt-bowl",
+      "name": "Raspberry yogurt bowl with toasted oats and almonds",
+      "about": "Thick Greek yogurt with tart raspberries, toasted oats and almonds for crunch. It is a quick breakfast with **protein, calcium and vitamin E** to carry you to lunch.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 120,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 35,
+          "note": "regular rolled"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 18,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the oats and the almonds together in a dry pan over medium heat, stirring, until golden and nutty, about 3 minutes. Tip them out to cool.",
+        "Wash the raspberries. Spoon the yogurt into a bowl.",
+        "Top with the raspberries, the toasted oats and almonds, and a pinch of cinnamon."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Toast a few days of oats and almonds at once and keep them in a jar for up to a week."
+    },
+    {
+      "id": "noodle-bowls-veggie-omelette-toast",
+      "name": "Spinach and mushroom omelette with whole-grain toast and tomatoes",
+      "about": "A fluffy, fully set omelette folded around garlicky mushrooms and spinach, with whole-grain toast and cherry tomatoes. The eggs bring **protein and choline** and the spinach and tomatoes bring vitamins A and C.",
+      "ingredients": [
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 60,
+          "note": "wiped clean and sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 40,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 90,
+          "note": "washed and halved"
+        },
+        {
+          "food": "whole-wheat-bread-0dcc61",
+          "g": 70
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the spinach and tomatoes. Wipe the mushrooms clean and slice them. Mince the garlic. Beat the eggs with a pinch of the iodized salt and the pepper.",
+        "Warm half of the canola oil in a nonstick pan over medium-high heat. Cook the mushrooms until golden and dry, about 4 minutes, adding the garlic for the last 30 seconds. Stir in the spinach until just wilted, then tip it onto a plate.",
+        "Wipe the pan, warm the rest of the oil over medium heat and pour in the eggs. Cook, lifting the edges, until the underside is set, about 2 minutes. Spoon the filling on one half, fold the other over and cook for another 2 minutes, until the egg is completely firm all the way through.",
+        "Toast the bread and serve it with the omelette and the tomatoes, sprinkled with the rest of the salt."
+      ],
+      "prepMin": 8,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "noodle-bowls-ginger-chicken-noodle-soup",
+      "name": "Ginger chicken noodle soup with egg ribbons, edamame and greens",
+      "inspiredBy": "Inspired by classic chicken noodle soup and Chinese ginger-scallion chicken soups, with whole-wheat spaghetti",
+      "about": "A clear, fragrant chicken soup with lots of ginger, carrot, napa cabbage and spinach, plus edamame, firm egg ribbons and whole-wheat noodles to make it a meal. It is made with low-sodium broth, so it is **comforting without being very salty**, and the chicken and egg bring protein and choline. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "cut into bite-size strips"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 400,
+          "note": "low-sodium"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "spaghetti, snapped in half"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "washed and sliced into thin coins"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 60,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 50,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20,
+          "note": "whites and greens separated"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the carrot, napa cabbage, spinach and scallions. Slice the carrot into thin coins, the cabbage into ribbons, the ginger into matchsticks and mince the garlic. Keep the scallion whites and greens apart.",
+        "Warm the sesame oil in a large pot over medium heat. Cook the ginger, garlic, scallion whites and carrot for 4 minutes, until fragrant and starting to soften.",
+        "Add the chicken, the broth, the soy sauce and enough water to cover everything. Bring to a gentle simmer and cook until the chicken is cooked through and reaches 74 °C (165 °F) in the thickest piece, about 12 minutes. Wash your hands, board and knife after handling the raw chicken.",
+        "Meanwhile, boil the noodles in a separate pot of water until tender, about 8 minutes, then drain. Cooking them apart keeps the broth clear and the noodles from going soft in the leftovers.",
+        "Stir the frozen edamame into the soup and simmer until steaming hot all the way through, about 3 minutes. Stir in the cabbage and spinach for 1 to 2 minutes, until wilted. Slowly pour in the beaten egg in a thin stream while stirring the soup gently, and simmer for 2 more minutes, until the egg is completely set in firm ribbons. Season with the lime juice and the iodized salt.",
+        "Divide the noodles between two bowls, ladle the soup over, and top with the scallion greens.",
+        "Pack the second portion for tomorrow's lunch: cool the soup, which has the egg in it, and the noodles separately in shallow containers within 1 hour, then refrigerate and eat within 3 days. Reheat the soup until steaming hot, 74 °C (165 °F), and pour it over the noodles."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Add a squeeze of fresh lime and a few chili flakes at the table for heat."
+    },
+    {
+      "id": "noodle-bowls-salmon-soba-ginger-soy",
+      "name": "Seared salmon soba with mushrooms, spinach and ginger-soy sauce",
+      "inspiredBy": "Inspired by Japanese soba with grilled fish, made with a simple soy-ginger-lime sauce",
+      "about": "Nutty buckwheat soba tossed with browned mushrooms, wilted spinach and edamame, topped with a seared salmon fillet and a bright ginger-soy sauce. The salmon brings **omega-3 fats and some vitamin D**, and the edamame and spinach bring folate and iron.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 130,
+          "swap": "fatty_fish",
+          "note": "skin-on or skinless fillet, pin bones removed"
+        },
+        {
+          "food": "soba-buckwheat-noodles-dried-5f616a",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "buckwheat soba"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 80,
+          "note": "wiped clean and sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 50,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "finely grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 12
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 10
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 5,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Buy the salmon the day you cook it, or thaw frozen salmon overnight in the fridge. Wash the spinach, mushrooms and scallion. Whisk the soy sauce, vinegar, lime juice, ginger and half of the sesame oil with a spoonful of water for the sauce.",
+        "Boil the soba in plenty of water until just tender, 4 to 5 minutes, then drain and rinse under cold water so it does not clump.",
+        "Pat the salmon dry. Warm the canola oil in a nonstick pan over medium-high heat and sear the salmon skin side down for 4 minutes, then flip and cook for 3 to 4 minutes more, until it reaches 70 °C (158 °F) in the thickest part and flakes easily. Move it to a clean plate, and wash your hands, board and knife after handling the raw fish.",
+        "In the same pan, cook the mushrooms and garlic for 4 minutes, until golden. Add the spinach and cook until wilted, about 1 minute.",
+        "Pour hot water over the frozen edamame in a bowl until steaming hot all the way through, then drain.",
+        "Toss the soba with the mushrooms, spinach, edamame, the rest of the sesame oil and half of the sauce. Pile it into a bowl, set the salmon on top, and finish with the rest of the sauce, and the scallion."
+      ],
+      "prepMin": 12,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Check the soba label: 100% buckwheat is wheat-free, but many packs are part wheat."
+    },
+    {
+      "id": "noodle-bowls-peanut-turkey-noodles",
+      "name": "Dan dan-style turkey noodles with green beans, napa cabbage and cucumber",
+      "inspiredBy": "Inspired by Sichuan dan dan noodles, with peanut butter standing in for sesame paste, a pinch of Sichuan pepper, lean ground turkey, whole-wheat spaghetti and far less oil and chili",
+      "about": "Chewy whole-wheat noodles and green beans in a savoury, nutty peanut-soy sauce, topped with garlicky ground turkey, napa cabbage and cool cucumber. The turkey brings **protein, iron and zinc**, and the sauce is built on peanut butter rather than oil. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+          "g": 140,
+          "swap": "lean_protein",
+          "note": "ground"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "spaghetti"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 90,
+          "note": "washed and trimmed, cut in thirds"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 100,
+          "note": "washed and shredded"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed and sliced into thin matchsticks"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 14,
+          "note": "smooth, unsweetened"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 12
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "finely grated"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.8
+        },
+        {
+          "food": "sichuan-peppercorn-bb776d",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the green beans, cabbage, cucumber and scallions. Toast the Sichuan peppercorn in a dry pan for 30 seconds and crush it. Whisk it with the peanut butter, soy sauce, vinegar, chili flakes, pepper, half of the garlic and half of the ginger and 2 tablespoons of warm water until smooth, for the sauce.",
+        "Boil the noodles in plenty of water for about 8 minutes, adding the green beans for the last 3 minutes. Scoop out a mug of the cooking water, then drain.",
+        "While they cook, warm the oil in a wide pan over medium-high heat. Cook the turkey, breaking it up with a spoon, until browned and cooked through to 74 °C (165 °F), about 6 minutes. Add the rest of the garlic and ginger for the last minute, then stir in the napa cabbage for 1 to 2 minutes, until just wilted. Wash your hands, board and spoon after handling the raw turkey.",
+        "Toss the hot noodles and green beans with the sauce, loosening it with a splash of the cooking water.",
+        "Divide between two bowls and top with the turkey, cabbage and scallions. Put half of the cucumber on the bowl you are eating now and keep the rest in the fridge for the second portion.",
+        "Pack the second portion, without the cucumber, into a shallow container within 1 hour, refrigerate and eat within 3 days. Reheat it until steaming hot, 74 °C (165 °F), and add the saved cucumber on top."
+      ],
+      "prepMin": 12,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Use less chili for a mild bowl, or add a spoonful of chili crisp at the table."
+    },
+    {
+      "id": "noodle-bowls-tofu-japchae-noodles",
+      "name": "Japchae-style tofu noodles with spinach, carrot and mushrooms",
+      "inspiredBy": "Inspired by Korean japchae, made with whole-wheat noodles in place of sweet potato starch noodles, with tofu for protein",
+      "about": "Silky-chewy noodles tossed with golden tofu, firm egg ribbons, mushrooms, carrot, red pepper and garlicky spinach in a sesame-soy glaze. The calcium-set tofu and egg bring **protein, choline and some calcium** and the vegetables bring vitamin A, and it eats well warm or cold, so it makes tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "extra-firm-tofu-calcium-set-455d4a",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "extra-firm, calcium-set, pressed and cubed"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "spaghetti, snapped in thirds"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed and cut into matchsticks"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 70,
+          "note": "wiped clean and sliced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 50,
+          "note": "washed and sliced into strips"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 14
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the spinach, carrot and red pepper. Wrap the tofu in a clean towel and press it for 10 minutes, then cut it into cubes. Slice the vegetables into thin, even strips.",
+        "Boil the noodles until tender, about 8 minutes, dropping the spinach into the pot for the last 30 seconds. Scoop the spinach out with tongs, squeeze it dry and toss it with a third of the garlic, a little of the sesame oil and a pinch of pepper.",
+        "Drain the noodles, rinse them and snip them a few times with scissors so they are easy to toss.",
+        "Beat the eggs and cook them as a thin flat omelette in a little of the canola oil in the nonstick pan, until completely firm all the way through, about 3 minutes a side, then slice it into ribbons. Wipe the pan, warm the rest of the canola oil over medium-high heat and brown the tofu on all sides, about 6 minutes, and move it to a plate. Cook the onion, carrot, pepper and mushrooms in the same pan for 4 to 5 minutes, until just tender, adding the rest of the garlic at the end.",
+        "Add the noodles, the soy sauce and the rest of the sesame oil to the pan and toss for 2 minutes, until glossy and hot. Fold in the tofu, the spinach and the egg ribbons.",
+        "Serve in bowls sprinkled with the chopped walnuts.",
+        "Pack the second portion into a shallow container within 1 hour, refrigerate and eat within 3 days, cold or reheated until steaming hot, 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Short on time? Skip pressing the tofu and use a bag of mixed stir-fry vegetables."
+    },
+    {
+      "id": "noodle-bowls-turmeric-salmon-herb-noodles",
+      "name": "Turmeric salmon with whole-wheat noodles and a lime-chili herb salad",
+      "inspiredBy": "Inspired by Vietnamese turmeric fish (chả cá) and cold herb noodle bowls (bún), with whole-wheat spaghetti",
+      "about": "Turmeric-rubbed salmon seared until crisp at the edges on cool noodles with cucumber, carrot and napa cabbage and handfuls of mint and cilantro, dressed with lime, soy and chili. The salmon brings **omega-3 fats and vitamin D**, and the herbs bring vitamin K and plenty of flavour.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "fillet, pin bones removed"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "spaghetti"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 90,
+          "note": "washed and sliced into half-moons"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed and grated"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 60,
+          "note": "washed and shredded"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 6,
+          "note": "washed"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 12,
+          "note": "washed"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 25
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 1.5
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Buy the salmon the day you cook it, or thaw it overnight in the fridge. Wash the cucumber, carrot, cabbage and herbs.",
+        "Boil the noodles for about 8 minutes, until tender, then drain and rinse them under cold water until cool.",
+        "Whisk the lime juice, soy sauce, garlic and chili flakes with 2 tablespoons of water for the dressing. Toast the pumpkin seeds in a dry pan for 2 minutes.",
+        "Pat the salmon dry and rub it with the turmeric. Warm the oil in a nonstick pan over medium-high heat and cook it skin side down for 4 minutes, then flip and cook for 2 to 3 minutes more, until it reaches 70 °C (158 °F) and flakes easily. Move it to a clean plate and flake it into large pieces. Wash your hands, board and knife after handling the raw fish.",
+        "Pile the noodles, cabbage, cucumber and carrot in a bowl, top with the salmon and the herbs, spoon over the dressing and finish with the pumpkin seeds."
+      ],
+      "prepMin": 15,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "A squeeze more lime keeps it fresh. Add a few drops of fish sauce if you have it."
+    },
+    {
+      "id": "noodle-bowls-pho-style-beef-noodle-soup",
+      "name": "Pho-style beef noodle soup with napa cabbage and a plate of herbs",
+      "inspiredBy": "Inspired by Vietnamese pho, with a quick chicken-stock broth and whole-wheat spaghetti instead of rice noodles",
+      "about": "A fragrant quick chicken-stock broth spiced with star anise and cinnamon and built on charred onion and ginger, with tender slices of lean beef and napa cabbage, and mint, cilantro, scallion and lime to pile on. The beef brings **iron and zinc**, and the broth is made with low-sodium stock so you can season it to taste. It makes two portions and is the one slow dish of the week.",
+      "ingredients": [
+        {
+          "food": "beef-top-sirloin-steak-lean-raw-a51c2c",
+          "g": 130,
+          "swap": "lean_protein",
+          "note": "sirloin, sliced very thinly across the grain"
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 400,
+          "note": "low-sodium"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "spaghetti, snapped in half"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 100,
+          "note": "washed and cut in wide strips"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "halved"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 12,
+          "note": "sliced in coins"
+        },
+        {
+          "food": "star-anise-02a10b",
+          "g": 0.5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        },
+        {
+          "food": "clove-ground-863cd5",
+          "g": 0.2
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 0.6
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 10
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 5,
+          "note": "washed"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "washed"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash the cabbage, scallion and herbs. Put the beef in the freezer for 20 minutes so it is firm, then slice it as thinly as you can across the grain. Keep it covered in the fridge until you need it.",
+        "Char the onion and the ginger: set them cut side down in a dry pot over high heat until blackened in spots, about 6 minutes. Add the star anise, cinnamon, clove and coriander seed and toast for 30 seconds.",
+        "Pour in the broth and about the same amount of water. Bring to a boil, then simmer gently, partly covered, for 30 minutes. Strain out the solids, return the broth to the pot and season it with the soy sauce.",
+        "Meanwhile, boil the noodles in a separate pot for about 8 minutes until tender, then drain.",
+        "Bring the broth to a rolling simmer. Add the cabbage and cook for 2 minutes, then add the beef and cook until no pink remains and it reaches 71 °C (160 °F), about 2 minutes. Wash your hands, board and knife after handling the raw beef.",
+        "Divide the noodles between two bowls, ladle the soup over, and pass the scallion, mint, cilantro, lime juice and chili flakes at the table.",
+        "Pack the second portion for tomorrow's lunch: cool the soup and the noodles separately in shallow containers within 1 hour, then refrigerate and eat within 3 days. Reheat the soup until steaming hot, 74 °C (165 °F), pour it over the noodles and add the fresh herbs."
+      ],
+      "prepMin": 15,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers"
+      ],
+      "tip": "Use thin spaghetti or capellini for a lighter bowl; brown rice vermicelli works the same way if you find it. In a rush? Simmer the broth for 15 minutes with ground ginger and cinnamon and skip straining."
+    },
+    {
+      "id": "noodle-bowls-herb-bean-noodle-soup",
+      "name": "Herb, chickpea and spinach noodle soup with yogurt and mint",
+      "inspiredBy": "Inspired by Persian ash reshteh, with whole-wheat spaghetti for the noodles, chickpeas for the beans and yogurt in place of kashk",
+      "about": "A thick green soup of cilantro and spinach with chickpeas and noodles, finished with a firm-boiled egg, a spoonful of yogurt, golden mint and chopped walnuts. The chickpeas and egg bring **plant protein, iron, folate and choline**, and the lime brightens the herbs and helps your body absorb that iron.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 55,
+          "swap": "low_gi_grains",
+          "note": "spaghetti, snapped into short pieces"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 70,
+          "note": "chopped"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed and grated"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 90,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 25,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 25,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 350,
+          "note": "low-sodium"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "in the shell"
+        },
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 50,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 1.2
+        },
+        {
+          "food": "mint-dried-3fe241",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the carrot, spinach, scallions and cilantro. Chop the onion, grate the carrot, slice the scallions, mince the garlic and chop the herbs.",
+        "Put the egg in a small pot of cold water, bring it to a boil and simmer for 10 minutes, until the yolk is completely firm, then cool it under cold water, peel it and slice it. Cool and keep it in the fridge if you make it ahead.",
+        "Warm half of the canola oil in a pot over medium heat. Cook the onion and carrot until soft and golden, about 8 minutes, adding the garlic and turmeric for the last minute.",
+        "Pour in the broth and enough water to cover by a finger. Add the chickpeas, bring to a simmer and cook for 8 minutes.",
+        "Add the noodles and simmer until tender, about 8 minutes, stirring so they do not stick. Stir in the spinach, scallions and cilantro and cook for 3 more minutes, until the soup is thick and deep green. Season with the lime juice, iodized salt and pepper.",
+        "Warm the rest of the oil in a small pan, stir in the dried mint for 15 seconds until fragrant, and take it off the heat straight away.",
+        "Ladle the soup into a bowl, swirl in the yogurt, drizzle over the mint oil and top with the sliced egg and the walnuts."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Short on time? Use a bag of pre-washed herbs and spinach."
+    },
+    {
+      "id": "noodle-bowls-peanut-lime-edamame-noodles",
+      "name": "Peanut-lime noodle bowl with edamame, cabbage and carrot",
+      "inspiredBy": "Inspired by Thai-style peanut noodles, with whole-wheat spaghetti, a lime-forward sauce and lots of crunchy raw vegetables",
+      "about": "Cool whole-wheat noodles tossed with a lime-peanut sauce, edamame, napa cabbage, carrot and red pepper. The edamame and peanut butter bring **plant protein and vitamin E**, and the raw vegetables give it crunch and vitamin C.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "spaghetti"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 120,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 70,
+          "note": "washed and finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed and grated"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 50,
+          "note": "washed and thinly sliced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 24,
+          "note": "smooth, unsweetened"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 10
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 6
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "finely grated"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash the cabbage, carrot, red pepper, scallion and cilantro. Shred, grate and slice them.",
+        "Boil the noodles until tender, about 8 minutes, then drain and rinse under cold water until cool.",
+        "Pour hot water over the frozen edamame in a bowl until steaming hot all the way through, then drain and cool under cold water.",
+        "Whisk the peanut butter, lime juice, soy sauce, vinegar, garlic, ginger and chili flakes with 2 tablespoons of warm water until smooth and pourable.",
+        "Toss the noodles, edamame and vegetables with the sauce. Top with the scallion and cilantro."
+      ],
+      "prepMin": 15,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Packing it? Keep the sauce in a small jar and toss just before you eat. Cool the noodles within 1 hour, keep it in a cold bag with an ice pack and eat it the same day."
+    },
+    {
+      "id": "noodle-bowls-chickpea-soba-salad",
+      "name": "Chickpea soba salad with cucumber, spinach, mint and lime-ginger dressing",
+      "inspiredBy": "Inspired by Japanese cold soba (zaru soba) with a bright lime-ginger dressing and chickpeas for protein",
+      "about": "Nutty buckwheat soba with chickpeas, cucumber and carrot, baby spinach, fresh mint and cilantro, and a sharp lime-ginger dressing with walnuts on top. The chickpeas, edamame and soba bring **plant protein, fibre and magnesium** in a lunch that packs well.",
+      "ingredients": [
+        {
+          "food": "soba-buckwheat-noodles-dried-5f616a",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "buckwheat soba"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 130,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 50,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "washed and sliced into half-moons"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed and grated"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 5,
+          "note": "washed"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "washed"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 8
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "finely grated"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        }
+      ],
+      "steps": [
+        "Wash the cucumber, carrot, spinach, mint and cilantro. Slice and grate the vegetables, and tear the herbs.",
+        "Boil the soba in plenty of water until just tender, 4 to 5 minutes, then drain and rinse well under cold water.",
+        "Pour hot water over the frozen edamame in a bowl until steaming hot all the way through, then drain and cool under cold water.",
+        "Whisk the lime juice, vinegar, soy sauce, sesame oil and ginger with a spoonful of water for the dressing.",
+        "Toast the walnuts in a dry pan for 2 minutes. Toss the soba, chickpeas, edamame, vegetables and spinach with the dressing in a big bowl. Top with the herbs and the walnuts."
+      ],
+      "prepMin": 15,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Packing it? Keep the dressing apart and toss it in just before you eat. Cool the soba within 1 hour, keep it in a cold bag with an ice pack and eat it the same day."
+    },
+    {
+      "id": "noodle-bowls-sardine-spinach-noodle-bowl",
+      "name": "Sardine and spinach noodles with ginger, garlic and lime",
+      "inspiredBy": "Inspired by Filipino sardine guisado (canned sardines sautéed with garlic, ginger and tomato), served over whole-wheat spaghetti with spinach and chickpeas",
+      "about": "Whole-wheat noodles tossed in a hot skillet with garlic, ginger, tomatoes, chickpeas and spinach, with flaked canned sardines warmed through, a splash of soy sauce and plenty of lime. Sardines eaten with their soft bones bring **omega-3 fats, calcium and vitamin D**, and the spinach and chickpeas bring iron and folate.",
+      "ingredients": [
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "spaghetti"
+        },
+        {
+          "food": "sardine-atlantic-canned-in-oil-drained-solids-with-bone-5eb9c2",
+          "g": 80,
+          "swap": "fatty_fish",
+          "note": "canned in olive oil, drained, with bones"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 80,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "cherry-tomato-raw-b40abc",
+          "g": 100,
+          "note": "washed and halved"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the spinach, tomatoes and cilantro. Halve the tomatoes, slice the garlic and cut the ginger into matchsticks.",
+        "Boil the noodles in plenty of water until tender, about 8 minutes. Scoop out a mug of the cooking water, then drain.",
+        "While they cook, warm the oil in a large skillet over medium heat. Cook the garlic, ginger and chili flakes for 30 seconds, until fragrant, then add the tomatoes and chickpeas. Cook until the tomatoes are soft and jammy, about 4 minutes, then add the spinach until wilted, about 1 minute.",
+        "Flake in the sardines and add the soy sauce, then warm everything for 1 to 2 minutes, until the sardines are hot.",
+        "Add the noodles with a splash of the cooking water and toss until glossy, 2 minutes. Finish with the lime juice, pepper and cilantro. Cover and refrigerate any leftover sardines in the opened tin and use them within 2 days."
+      ],
+      "prepMin": 12,
+      "cookMin": 15,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Taking it to work? Cool the noodles within 1 hour, pack it in a cold bag with an ice pack and eat it the same day. Fish is not a leftover to keep."
+    },
+    {
+      "id": "noodle-bowls-pear-almonds",
+      "name": "Pear with almonds",
+      "about": "A juicy pear with a handful of almonds. It is easy to pack and filling. **Fibre and vitamin E** in one snack.",
+      "ingredients": [
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 150,
+          "note": "washed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the pear and slice it.",
+        "Eat with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "noodle-bowls-apple-almonds",
+      "name": "Apple with almonds",
+      "about": "Crisp apple with a handful of almonds. Sweet, crunchy and filling. **Vitamin E and fibre** together.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 20,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the apple and slice it.",
+        "Eat with the almonds."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "noodle-bowls-carrot-cucumber-yogurt-dip",
+      "name": "Carrot and cucumber sticks with lime-yogurt dip",
+      "about": "Crunchy sticks for dipping into a cool yogurt dip with lime and cilantro. A light snack with **calcium and vitamin A**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 90,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "washed and cut into sticks"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "washed and cut into sticks"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 6
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 3,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the carrot, cucumber and cilantro and cut the vegetables into sticks.",
+        "Stir the yogurt with the lime juice, cilantro and iodized salt.",
+        "Serve the sticks with the dip."
+      ],
+      "prepMin": 6,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "noodle-bowls-apple-pumpkin-seeds",
+      "name": "Apple slices with pumpkin seeds",
+      "about": "Crisp apple with a spoonful of toasted pumpkin seeds. The seeds bring **magnesium and zinc**, and the toasting makes them nutty.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "pumpkin-seeds-dried-5099f2",
+          "g": 16,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash and slice the apple.",
+        "Toast the pumpkin seeds in a dry pan for 2 minutes, until they pop and smell nutty, then eat them with the apple."
+      ],
+      "prepMin": 3,
+      "cookMin": 2,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "noodle-bowls-roasted-chili-chickpeas",
+      "name": "Crunchy chili-lime chickpeas",
+      "about": "Oven-roasted chickpeas with chili and lime: a crunchy, salty-sour snack. They bring **fibre and plant protein**.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 110,
+          "swap": "legumes",
+          "note": "rinsed, drained and patted very dry"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "chili-powder-f1ace8",
+          "g": 1
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Heat the oven to 200 °C (400 °F). Pat the chickpeas very dry on a towel.",
+        "Toss them with the oil, chili powder and iodized salt on a tray and roast, shaking once, until crisp, about 25 minutes.",
+        "Squeeze over the lime juice and let them cool for a few minutes to crisp up."
+      ],
+      "prepMin": 3,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Roast a double batch and keep them in an open jar for 3 days; they soften in a sealed one."
+    },
+    {
+      "id": "noodle-bowls-pear-walnuts",
+      "name": "Pear and walnuts",
+      "about": "A ripe pear with a handful of walnuts. Sweet, juicy and crunchy. **Fibre, plus plant omega-3 fat** from the walnuts.",
+      "ingredients": [
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 150,
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 24,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the pear and slice it.",
+        "Eat with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "noodle-bowls-banana-peanut-butter",
+      "name": "Banana with peanut butter",
+      "about": "A ripe banana with a spoonful of peanut butter. Sweet, creamy and filling. **Potassium and vitamin E** in one snack.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 100
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 16,
+          "note": "smooth, unsweetened"
+        }
+      ],
+      "steps": [
+        "Peel and slice the banana.",
+        "Serve with the peanut butter for dipping."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "noodle-bowls-edamame-lime-chili",
+      "name": "Warm edamame with lime and chili",
+      "about": "Warm edamame with lime and a pinch of chili. A salty, tangy snack that brings **plant protein, folate and iron**.",
+      "ingredients": [
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 90,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 8
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Pour hot water over the frozen edamame and leave until steaming hot all the way through, about 3 minutes, then drain.",
+        "Toss with the lime juice, chili flakes and iodized salt."
+      ],
+      "prepMin": 2,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "noodle-bowls-raspberry-yogurt-cup",
+      "name": "Greek yogurt with raspberries",
+      "about": "Thick Greek yogurt with a handful of raspberries and a pinch of cinnamon. It is cool and tangy and brings **protein and calcium**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 170,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 80,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the raspberries.",
+        "Spoon the yogurt into a cup and top with the raspberries and a pinch of cinnamon."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "noodle-bowls-banana-walnuts",
+      "name": "Banana with walnuts and cinnamon",
+      "about": "A ripe banana with chopped walnuts and a pinch of cinnamon. Sweet and warm-spiced. **Potassium and fibre**, with plant omega-3 fat.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 100
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 22,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Peel and slice the banana.",
+        "Top with the chopped walnuts and a pinch of cinnamon."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "noodle-bowls-apple-peanut-butter",
+      "name": "Apple with peanut butter",
+      "about": "Crisp apple slices with a spoonful of peanut butter. Crunchy and creamy together. **Fibre, protein and vitamin E**.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 16,
+          "note": "smooth, unsweetened"
+        }
+      ],
+      "steps": [
+        "Wash and slice the apple.",
+        "Serve with the peanut butter for dipping."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "noodle-bowls-apple-walnuts",
+      "name": "Apple with walnuts",
+      "about": "Crisp apple with a handful of walnuts. Crunchy and sweet, with **fibre and plant omega-3 fat** from the walnuts.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "note": "washed"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 22,
+          "swap": "nuts_seeds"
+        }
+      ],
+      "steps": [
+        "Wash the apple and slice it.",
+        "Eat with the walnuts."
+      ],
+      "prepMin": 2,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "noodle-bowls-pear-yogurt-walnuts",
+      "name": "Greek yogurt with pear and walnuts",
+      "about": "Thick Greek yogurt with diced pear, chopped walnuts and a pinch of cinnamon. It is creamy and crunchy, with **protein, calcium and plant omega-3 fat**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 180,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 100,
+          "note": "washed and diced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 16,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the pear and dice it. Chop the walnuts.",
+        "Spoon the yogurt into a cup and top with the pear.",
+        "Sprinkle over the walnuts and a pinch of cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "noodle-bowls-peanut-turkey-noodles-light",
+      "name": "Dan dan-style turkey noodles with green beans, napa cabbage and cucumber",
+      "inspiredBy": "Inspired by Sichuan dan dan noodles, with peanut butter standing in for sesame paste, a pinch of Sichuan pepper, lean ground turkey, whole-wheat spaghetti and far less oil and chili",
+      "about": "Chewy whole-wheat noodles and green beans in a savoury, nutty peanut-soy sauce, topped with garlicky ground turkey, napa cabbage and cool cucumber. The turkey brings **protein, iron and zinc**, and the sauce is built on peanut butter rather than oil. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+          "g": 100,
+          "swap": "lean_protein",
+          "note": "ground"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 45,
+          "swap": "low_gi_grains",
+          "note": "spaghetti"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 90,
+          "note": "washed and trimmed, cut in thirds"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 150,
+          "note": "washed and shredded"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "washed and sliced into thin matchsticks"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 8,
+          "note": "smooth, unsweetened"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 12
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 10
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "finely grated"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.8
+        },
+        {
+          "food": "sichuan-peppercorn-bb776d",
+          "g": 0.3
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the green beans, cabbage, cucumber and scallions. Toast the Sichuan peppercorn in a dry pan for 30 seconds and crush it. Whisk it with the peanut butter, soy sauce, vinegar, chili flakes, pepper, half of the garlic and half of the ginger and 2 tablespoons of warm water until smooth, for the sauce.",
+        "Boil the noodles in plenty of water for about 8 minutes, adding the green beans for the last 3 minutes. Scoop out a mug of the cooking water, then drain.",
+        "While they cook, warm the oil in a wide pan over medium-high heat. Cook the turkey, breaking it up with a spoon, until browned and cooked through to 74 °C (165 °F), about 6 minutes. Add the rest of the garlic and ginger for the last minute, then stir in the napa cabbage for 1 to 2 minutes, until just wilted. Wash your hands, board and spoon after handling the raw turkey.",
+        "Toss the hot noodles and green beans with the sauce, loosening it with a splash of the cooking water.",
+        "Divide between two bowls and top with the turkey, cabbage and scallions. Put half of the cucumber on the bowl you are eating now and keep the rest in the fridge for the second portion.",
+        "Pack the second portion, without the cucumber, into a shallow container within 1 hour, refrigerate and eat within 3 days. Reheat it until steaming hot, 74 °C (165 °F), and add the saved cucumber on top."
+      ],
+      "prepMin": 12,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "Use less chili for a mild bowl, or add a spoonful of chili crisp at the table."
+    },
+    {
+      "id": "noodle-bowls-pho-style-beef-noodle-soup-light",
+      "name": "Pho-style beef noodle soup with napa cabbage and a plate of herbs",
+      "inspiredBy": "Inspired by Vietnamese pho, with a quick chicken-stock broth and whole-wheat spaghetti instead of rice noodles",
+      "about": "A fragrant quick chicken-stock broth spiced with star anise and cinnamon and built on charred onion and ginger, with tender slices of lean beef and napa cabbage, and mint, cilantro, scallion and lime to pile on. The beef brings **iron and zinc**, and the broth is made with low-sodium stock so you can season it to taste. It makes two portions and is the one slow dish of the week.",
+      "ingredients": [
+        {
+          "food": "beef-top-sirloin-steak-lean-raw-a51c2c",
+          "g": 105,
+          "swap": "lean_protein",
+          "note": "sirloin, sliced very thinly across the grain"
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 400,
+          "note": "low-sodium"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "spaghetti, snapped in half"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 170,
+          "note": "washed and cut in wide strips"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "halved"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 12,
+          "note": "sliced in coins"
+        },
+        {
+          "food": "star-anise-02a10b",
+          "g": 0.5
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        },
+        {
+          "food": "clove-ground-863cd5",
+          "g": 0.2
+        },
+        {
+          "food": "coriander-seed-a0cdb1",
+          "g": 0.6
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 10
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 15
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 5,
+          "note": "washed"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 10,
+          "note": "washed"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash the cabbage, scallion and herbs. Put the beef in the freezer for 20 minutes so it is firm, then slice it as thinly as you can across the grain. Keep it covered in the fridge until you need it.",
+        "Char the onion and the ginger: set them cut side down in a dry pot over high heat until blackened in spots, about 6 minutes. Add the star anise, cinnamon, clove and coriander seed and toast for 30 seconds.",
+        "Pour in the broth and about the same amount of water. Bring to a boil, then simmer gently, partly covered, for 30 minutes. Strain out the solids, return the broth to the pot and season it with the soy sauce.",
+        "Meanwhile, boil the noodles in a separate pot for about 8 minutes until tender, then drain.",
+        "Bring the broth to a rolling simmer. Add the cabbage and cook for 2 minutes, then add the beef and cook until no pink remains and it reaches 71 °C (160 °F), about 2 minutes. Wash your hands, board and knife after handling the raw beef.",
+        "Divide the noodles between two bowls, ladle the soup over, and pass the scallion, mint, cilantro, lime juice and chili flakes at the table.",
+        "Pack the second portion for tomorrow's lunch: cool the soup and the noodles separately in shallow containers within 1 hour, then refrigerate and eat within 3 days. Reheat the soup until steaming hot, 74 °C (165 °F), pour it over the noodles and add the fresh herbs."
+      ],
+      "prepMin": 15,
+      "cookMin": 50,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "weekend-project",
+        "makes-leftovers"
+      ],
+      "tip": "Use thin spaghetti or capellini for a lighter bowl; brown rice vermicelli works the same way if you find it. In a rush? Simmer the broth for 15 minutes with ground ginger and cinnamon and skip straining."
+    },
+    {
+      "id": "noodle-bowls-ginger-chicken-noodle-soup-light",
+      "name": "Ginger chicken noodle soup with egg ribbons, edamame and greens",
+      "inspiredBy": "Inspired by classic chicken noodle soup and Chinese ginger-scallion chicken soups, with whole-wheat spaghetti",
+      "about": "A clear, fragrant chicken soup with lots of ginger, carrot, napa cabbage and spinach, plus edamame, firm egg ribbons and whole-wheat noodles to make it a meal. It is made with low-sodium broth, so it is **comforting without being very salty**, and the chicken and egg bring protein and choline. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "cut into bite-size strips"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 400,
+          "note": "low-sodium"
+        },
+        {
+          "food": "whole-wheat-pasta-dry-fc0c47",
+          "g": 80,
+          "swap": "low_gi_grains",
+          "note": "spaghetti, snapped in half"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "washed and sliced into thin coins"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 60,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 50,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20,
+          "note": "whites and greens separated"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the carrot, napa cabbage, spinach and scallions. Slice the carrot into thin coins, the cabbage into ribbons, the ginger into matchsticks and mince the garlic. Keep the scallion whites and greens apart.",
+        "Warm the sesame oil in a large pot over medium heat. Cook the ginger, garlic, scallion whites and carrot for 4 minutes, until fragrant and starting to soften.",
+        "Add the chicken, the broth, the soy sauce and enough water to cover everything. Bring to a gentle simmer and cook until the chicken is cooked through and reaches 74 °C (165 °F) in the thickest piece, about 12 minutes. Wash your hands, board and knife after handling the raw chicken.",
+        "Meanwhile, boil the noodles in a separate pot of water until tender, about 8 minutes, then drain. Cooking them apart keeps the broth clear and the noodles from going soft in the leftovers.",
+        "Stir the frozen edamame into the soup and simmer until steaming hot all the way through, about 3 minutes. Stir in the cabbage and spinach for 1 to 2 minutes, until wilted. Slowly pour in the beaten egg in a thin stream while stirring the soup gently, and simmer for 2 more minutes, until the egg is completely set in firm ribbons. Season with the lime juice and the iodized salt.",
+        "Divide the noodles between two bowls, ladle the soup over, and top with the scallion greens.",
+        "Pack the second portion for tomorrow's lunch: cool the soup, which has the egg in it, and the noodles separately in shallow containers within 1 hour, then refrigerate and eat within 3 days. Reheat the soup until steaming hot, 74 °C (165 °F), and pour it over the noodles."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Add a squeeze of fresh lime and a few chili flakes at the table for heat."
+    },
+    {
+      "id": "noodle-bowls-chickpea-soba-salad-light",
+      "name": "Chickpea soba salad with cucumber, spinach, mint and lime-ginger dressing",
+      "inspiredBy": "Inspired by Japanese cold soba (zaru soba) with a bright lime-ginger dressing and chickpeas for protein",
+      "about": "Nutty buckwheat soba with chickpeas, cucumber and carrot, baby spinach, fresh mint and cilantro, and a sharp lime-ginger dressing with walnuts on top. The chickpeas, edamame and soba bring **plant protein, fibre and magnesium** in a lunch that packs well.",
+      "ingredients": [
+        {
+          "food": "soba-buckwheat-noodles-dried-5f616a",
+          "g": 100,
+          "swap": "low_gi_grains",
+          "note": "buckwheat soba"
+        },
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 85,
+          "swap": "legumes",
+          "note": "rinsed and drained"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 70,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 100,
+          "note": "washed and sliced into half-moons"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 50,
+          "note": "washed and grated"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "mint-raw-9e671e",
+          "g": 5,
+          "note": "washed"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 6,
+          "note": "washed"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 8
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 3,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "finely grated"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 8,
+          "swap": "nuts_seeds",
+          "note": "toasted and chopped"
+        }
+      ],
+      "steps": [
+        "Wash the cucumber, carrot, spinach, mint and cilantro. Slice and grate the vegetables, and tear the herbs.",
+        "Boil the soba in plenty of water until just tender, 4 to 5 minutes, then drain and rinse well under cold water.",
+        "Pour hot water over the frozen edamame in a bowl until steaming hot all the way through, then drain and cool under cold water.",
+        "Whisk the lime juice, vinegar, soy sauce, sesame oil and ginger with a spoonful of water for the dressing.",
+        "Toast the walnuts in a dry pan for 2 minutes. Toss the soba, chickpeas, edamame, vegetables and spinach with the dressing in a big bowl. Top with the herbs and the walnuts."
+      ],
+      "prepMin": 15,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Packing it? Keep the dressing apart and toss it in just before you eat. Cool the soba within 1 hour, keep it in a cold bag with an ice pack and eat it the same day."
+    },
+    {
+      "id": "noodle-bowls-ginger-pear-oatmeal-light",
+      "name": "Ginger-pear oatmeal with walnuts",
+      "about": "Creamy oats simmered with a little milk, fresh ginger and cinnamon, topped with chopped pear and toasted walnuts. The oats bring **slow-digesting fibre** and the walnuts bring plant omega-3 fat and crunch.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 40
+        },
+        {
+          "food": "milk-1-fat-6c1131",
+          "g": 150
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 150,
+          "note": "washed and chopped, skin on"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "finely grated"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the pear and chop it into small pieces. Grate the ginger finely.",
+        "Toast the walnuts in a dry pan over medium heat until fragrant, about 2 minutes, then chop them.",
+        "Stir the oats, milk, a splash of water, the ginger, cinnamon and iodized salt together in a small pot. Bring it to a gentle bubble and cook, stirring, until creamy, about 5 minutes. Add a splash more water if it gets too thick.",
+        "Stir half of the pear into the oatmeal for the last minute so it softens. Spoon into a bowl and top with the rest of the pear and the walnuts."
+      ],
+      "prepMin": 4,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Make it the night before: soak the oats in the milk in the fridge, eat within 2 days, and warm it in the morning."
+    },
+    {
+      "id": "noodle-bowls-pear-yogurt-walnuts-light",
+      "name": "Greek yogurt with pear and walnuts",
+      "about": "Thick Greek yogurt with diced pear, chopped walnuts and a pinch of cinnamon. It is creamy and crunchy, with **protein, calcium and plant omega-3 fat**.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 170,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "pear-raw-with-skin-7d77aa",
+          "g": 80,
+          "note": "washed and diced"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 6,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the pear and dice it. Chop the walnuts.",
+        "Spoon the yogurt into a cup and top with the pear.",
+        "Sprinkle over the walnuts and a pinch of cinnamon."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "no-cook",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "noodle-bowls-salmon-soba-ginger-soy-light",
+      "name": "Seared salmon soba with mushrooms, spinach and ginger-soy sauce",
+      "inspiredBy": "Inspired by Japanese soba with grilled fish, made with a simple soy-ginger-lime sauce",
+      "about": "Nutty buckwheat soba tossed with browned mushrooms, wilted spinach and edamame, topped with a seared salmon fillet and a bright ginger-soy sauce. The salmon brings **omega-3 fats and some vitamin D**, and the edamame and spinach bring folate and iron.",
+      "ingredients": [
+        {
+          "food": "salmon-atlantic-farmed-raw-914b10",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "skin-on or skinless fillet, pin bones removed"
+        },
+        {
+          "food": "soba-buckwheat-noodles-dried-5f616a",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "buckwheat soba"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 80,
+          "note": "wiped clean and sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 50,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "finely grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 12
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 10
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 3,
+          "swap": "healthy_oils"
+        }
+      ],
+      "steps": [
+        "Buy the salmon the day you cook it, or thaw frozen salmon overnight in the fridge. Wash the spinach, mushrooms and scallion. Whisk the soy sauce, vinegar, lime juice, ginger and half of the sesame oil with a spoonful of water for the sauce.",
+        "Boil the soba in plenty of water until just tender, 4 to 5 minutes, then drain and rinse under cold water so it does not clump.",
+        "Pat the salmon dry. Warm the canola oil in a nonstick pan over medium-high heat and sear the salmon skin side down for 4 minutes, then flip and cook for 3 to 4 minutes more, until it reaches 70 °C (158 °F) in the thickest part and flakes easily. Move it to a clean plate, and wash your hands, board and knife after handling the raw fish.",
+        "In the same pan, cook the mushrooms and garlic for 4 minutes, until golden. Add the spinach and cook until wilted, about 1 minute.",
+        "Pour hot water over the frozen edamame in a bowl until steaming hot all the way through, then drain.",
+        "Toss the soba with the mushrooms, spinach, edamame, the rest of the sesame oil and half of the sauce. Pile it into a bowl, set the salmon on top, and finish with the rest of the sauce, and the scallion."
+      ],
+      "prepMin": 12,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Check the soba label: 100% buckwheat is wheat-free, but many packs are part wheat."
+    },
+    {
+      "id": "noodle-bowls-raspberry-yogurt-bowl-light",
+      "name": "Raspberry yogurt bowl with toasted oats and almonds",
+      "about": "Thick Greek yogurt with tart raspberries, toasted oats and almonds for crunch. It is a quick breakfast with **protein, calcium and vitamin E** to carry you to lunch.",
+      "ingredients": [
+        {
+          "food": "greek-yogurt-plain-low-fat-2560b4",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "raspberry-raw-e6d914",
+          "g": 120,
+          "swap": "berries",
+          "note": "washed"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 22,
+          "note": "regular rolled"
+        },
+        {
+          "food": "almonds-dried-39a9af",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Toast the oats and the almonds together in a dry pan over medium heat, stirring, until golden and nutty, about 3 minutes. Tip them out to cool.",
+        "Wash the raspberries. Spoon the yogurt into a bowl.",
+        "Top with the raspberries, the toasted oats and almonds, and a pinch of cinnamon."
+      ],
+      "prepMin": 4,
+      "cookMin": 3,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Toast a few days of oats and almonds at once and keep them in a jar for up to a week."
+    },
+    {
+      "id": "noodle-bowls-ginger-chicken-noodle-soup-big",
+      "name": "Ginger chicken soba soup with egg ribbons, edamame and greens",
+      "inspiredBy": "Inspired by classic chicken noodle soup and Chinese ginger-scallion chicken soups, with soba",
+      "about": "A clear, fragrant chicken soup with lots of ginger, carrot, napa cabbage and spinach, plus edamame, firm egg ribbons and soba noodles to make it a meal. It is made with low-sodium broth, so it is **comforting without being very salty**, and the chicken and egg bring protein and choline. It makes two portions.",
+      "ingredients": [
+        {
+          "food": "chicken-breast-boneless-skinless-raw-c37574",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "cut into bite-size strips"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "chicken-broth-low-sodium-canned-12e88a",
+          "g": 400,
+          "note": "low-sodium"
+        },
+        {
+          "food": "soba-buckwheat-noodles-dried-5f616a",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "buckwheat soba"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "washed and sliced into thin coins"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 60,
+          "note": "washed and sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 50,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 8,
+          "note": "cut into matchsticks"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20,
+          "note": "whites and greens separated"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 8
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 10
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the carrot, napa cabbage, spinach and scallions. Slice the carrot into thin coins, the cabbage into ribbons, the ginger into matchsticks and mince the garlic. Keep the scallion whites and greens apart.",
+        "Warm the sesame oil in a large pot over medium heat. Cook the ginger, garlic, scallion whites and carrot for 4 minutes, until fragrant and starting to soften.",
+        "Add the chicken, the broth, the soy sauce and enough water to cover everything. Bring to a gentle simmer and cook until the chicken is cooked through and reaches 74 °C (165 °F) in the thickest piece, about 12 minutes. Wash your hands, board and knife after handling the raw chicken.",
+        "Meanwhile, boil the soba in a separate pot of water until tender, 4 to 5 minutes, then drain. Cooking them apart keeps the broth clear and the noodles from going soft in the leftovers.",
+        "Stir the frozen edamame into the soup and simmer until steaming hot all the way through, about 3 minutes. Stir in the cabbage and spinach for 1 to 2 minutes, until wilted. Slowly pour in the beaten egg in a thin stream while stirring the soup gently, and simmer for 2 more minutes, until the egg is completely set in firm ribbons. Season with the lime juice and the iodized salt.",
+        "Divide the soba between two bowls, ladle the soup over, and top with the scallion greens.",
+        "Pack the second portion for tomorrow's lunch: cool the soup, which has the egg in it, and the noodles separately in shallow containers within 1 hour, then refrigerate and eat within 3 days. Reheat the soup until steaming hot, 74 °C (165 °F), and pour it over the noodles."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Add a squeeze of fresh lime and a few chili flakes at the table for heat."
+    },
+    {
+      "id": "noodle-bowls-tofu-japchae-noodles-big",
+      "name": "Japchae-style tofu and soba noodles with spinach, carrot and mushrooms",
+      "inspiredBy": "Inspired by Korean japchae, made with soba noodles in place of sweet potato starch noodles, with tofu for protein",
+      "about": "Silky-chewy noodles tossed with golden tofu, firm egg ribbons, mushrooms, carrot, red pepper and garlicky spinach in a sesame-soy glaze. The calcium-set tofu and egg bring **protein, choline and some calcium** and the vegetables bring vitamin A, and it eats well warm or cold, so it makes tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "extra-firm-tofu-calcium-set-455d4a",
+          "g": 110,
+          "swap": "lean_protein",
+          "note": "extra-firm, calcium-set, pressed and cubed"
+        },
+        {
+          "food": "soba-buckwheat-noodles-dried-5f616a",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "buckwheat soba"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed and cut into matchsticks"
+        },
+        {
+          "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+          "g": 70,
+          "note": "wiped clean and sliced"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 50,
+          "note": "washed and sliced into strips"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 40,
+          "note": "sliced"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 4,
+          "note": "minced"
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 14
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "sesame-oil-0c3df9",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Wash the spinach, carrot and red pepper. Wrap the tofu in a clean towel and press it for 10 minutes, then cut it into cubes. Slice the vegetables into thin, even strips.",
+        "Boil the soba until tender, 4 to 5 minutes, dropping the spinach into the pot for the last 30 seconds. Scoop the spinach out with tongs, squeeze it dry and toss it with a third of the garlic, a little of the sesame oil and a pinch of pepper.",
+        "Drain the soba and rinse it under cold water.",
+        "Beat the eggs and cook them as a thin flat omelette in a little of the canola oil in the nonstick pan, until completely firm all the way through, about 3 minutes a side, then slice it into ribbons. Wipe the pan, warm the rest of the canola oil over medium-high heat and brown the tofu on all sides, about 6 minutes, and move it to a plate. Cook the onion, carrot, pepper and mushrooms in the same pan for 4 to 5 minutes, until just tender, adding the rest of the garlic at the end.",
+        "Add the noodles, the soy sauce and the rest of the sesame oil to the pan and toss for 2 minutes, until glossy and hot. Fold in the tofu, the spinach and the egg ribbons.",
+        "Serve in bowls sprinkled with the chopped walnuts.",
+        "Pack the second portion into a shallow container within 1 hour, refrigerate and eat within 3 days, cold or reheated until steaming hot, 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 22,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "makes-leftovers"
+      ],
+      "tip": "Short on time? Skip pressing the tofu and use a bag of mixed stir-fry vegetables."
+    },
+    {
+      "id": "noodle-bowls-peanut-lime-edamame-noodles-big",
+      "name": "Peanut-lime soba bowl with edamame, cabbage and carrot",
+      "inspiredBy": "Inspired by Thai-style peanut noodles, with soba, a lime-forward sauce and lots of crunchy raw vegetables",
+      "about": "Cool soba noodles tossed with a lime-peanut sauce, edamame, napa cabbage, carrot and red pepper. The edamame and peanut butter bring **plant protein and vitamin E**, and the raw vegetables give it crunch and vitamin C.",
+      "ingredients": [
+        {
+          "food": "soba-buckwheat-noodles-dried-5f616a",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "buckwheat soba"
+        },
+        {
+          "food": "edamame-beans-frozen-boiled-in-unsalted-water-6ddd93",
+          "g": 120,
+          "swap": "legumes",
+          "note": "frozen, shelled"
+        },
+        {
+          "food": "napa-cabbage-raw-81cbeb",
+          "g": 70,
+          "note": "washed and finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "washed and grated"
+        },
+        {
+          "food": "red-bell-pepper-raw-42163e",
+          "g": 50,
+          "note": "washed and thinly sliced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "washed and chopped"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 24,
+          "note": "smooth, unsweetened"
+        },
+        {
+          "food": "lime-juice-raw-c67980",
+          "g": 20
+        },
+        {
+          "food": "soy-sauce-reduced-sodium-de4ba7",
+          "g": 10
+        },
+        {
+          "food": "rice-vinegar-298243",
+          "g": 6
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 3,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 3,
+          "note": "finely grated"
+        },
+        {
+          "food": "red-pepper-flakes-crushed-red-pepper-8d66cf",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash the cabbage, carrot, red pepper, scallion and cilantro. Shred, grate and slice them.",
+        "Boil the soba until tender, 4 to 5 minutes, then drain and rinse under cold water until cool.",
+        "Pour hot water over the frozen edamame in a bowl until steaming hot all the way through, then drain and cool under cold water.",
+        "Whisk the peanut butter, lime juice, soy sauce, vinegar, garlic, ginger and chili flakes with 2 tablespoons of warm water until smooth and pourable.",
+        "Toss the noodles, edamame and vegetables with the sauce. Top with the scallion and cilantro."
+      ],
+      "prepMin": 15,
+      "cookMin": 10,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Packing it? Keep the sauce in a small jar and toss just before you eat. Cool the noodles within 1 hour, keep it in a cold bag with an ice pack and eat it the same day."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "noodle-bowls-ginger-pear-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "noodle-bowls-sardine-spinach-noodle-bowl"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "noodle-bowls-ginger-chicken-noodle-soup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "noodle-bowls-pear-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "noodle-bowls-apple-pumpkin-seeds"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "noodle-bowls-raspberry-yogurt-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "noodle-bowls-ginger-chicken-noodle-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "noodle-bowls-salmon-soba-ginger-soy"
+        },
+        {
+          "slot": "snack",
+          "recipe": "noodle-bowls-carrot-cucumber-yogurt-dip"
+        },
+        {
+          "slot": "snack",
+          "recipe": "noodle-bowls-roasted-chili-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "noodle-bowls-veggie-omelette-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "noodle-bowls-chickpea-soba-salad"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "noodle-bowls-peanut-turkey-noodles"
+        },
+        {
+          "slot": "snack",
+          "recipe": "noodle-bowls-pear-yogurt-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "noodle-bowls-apple-pumpkin-seeds"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "noodle-bowls-ginger-pear-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "noodle-bowls-peanut-turkey-noodles",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "noodle-bowls-tofu-japchae-noodles"
+        },
+        {
+          "slot": "snack",
+          "recipe": "noodle-bowls-apple-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "noodle-bowls-edamame-lime-chili"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "noodle-bowls-raspberry-yogurt-bowl"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "noodle-bowls-tofu-japchae-noodles",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "noodle-bowls-turmeric-salmon-herb-noodles"
+        },
+        {
+          "slot": "snack",
+          "recipe": "noodle-bowls-banana-walnuts"
+        },
+        {
+          "slot": "snack",
+          "recipe": "noodle-bowls-roasted-chili-chickpeas"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "noodle-bowls-veggie-omelette-toast"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "noodle-bowls-peanut-lime-edamame-noodles"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "noodle-bowls-pho-style-beef-noodle-soup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "noodle-bowls-raspberry-yogurt-cup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "noodle-bowls-pear-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "noodle-bowls-ginger-pear-oatmeal"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "noodle-bowls-pho-style-beef-noodle-soup",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "noodle-bowls-herb-bean-noodle-soup"
+        },
+        {
+          "slot": "snack",
+          "recipe": "noodle-bowls-apple-almonds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "noodle-bowls-pear-walnuts"
+        }
+      ]
+    }
+  ]
+}
