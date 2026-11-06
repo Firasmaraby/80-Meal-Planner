@@ -1,0 +1,1871 @@
+{
+ "id": "winter-warmers",
+ "name": "Winter Warmers",
+ "style": "balanced",
+ "cuisine": "Global",
+ "carbStyle": "whole",
+ "regions": [
+  "France",
+  "Germany",
+  "United Kingdom",
+  "United States"
+ ],
+ "summary": "Slow braises and roasts for the coldest months: chicken and white bean cassoulet, split pea soup with smoked turkey, a beef and root vegetable stew, roast salmon and trout, and baked oats and spiced fruit for breakfast. Whole-food carbs only, with weekday dinners in about 40 minutes.",
+ "howItWorks": "**Slow food for cold days.** Dinners are braises and roasts: a chicken and white bean cassoulet, roast turkey with cranberry sauce, slow-roasted salmon, chicken braised with mushrooms and onions, roast trout and a beef and root vegetable stew. Weekday dinners take about 40 to 45 minutes. Saturday's beef braise is the one weekend project, and it has a pressure-cooker shortcut.\n\n**Cook once, eat twice.** Monday's cassoulet is Tuesday's lunch. Saturday's split pea soup and beef stew feed Sunday's lunch and dinner, and Saturday's baked oats are Sunday's breakfast. Tuesday's spiced pears and apples, simmered in orange juice, are Wednesday's breakfast. Cool dishes with potato or oats within 1 hour, then reheat them once until steaming.\n\n**Fish three times.** Tinned salmon on Monday, slow-roasted salmon on Wednesday and roast trout on Friday bring omega-3 and some **vitamin D**. The fresh fish is cooked the day it is bought, never kept. Beans, lentils, chickpeas or split peas appear every day, and the split pea soup gets its smoky flavour from a little ready-cooked smoked turkey.\n\n**Light.** It covers 1400 to 1800 kcal and drops both snacks on Wednesday, Friday, Saturday and Sunday, and one on the other days. The chicken thighs shrink most, to about half at 1500 to 1600 and about a quarter at 1400, so beans and lentils carry more of those meals. Oats, nuts, oil, potato and roast turkey also trim. Beef, fish, eggs, fruit and vegetables stay close to as written.\n\n**Big.** It covers 2400 to 3200 kcal and adds a snack on Monday, Wednesday, Thursday, Friday and Sunday. The chicken, turkey, beef, fish, eggs, yogurt, milk, oats, quinoa, beans, nuts and potatoes all grow, while fruit and most vegetables stay as written, so use bigger pots and trays for the stews and roasts.",
+ "signature": [
+  "winter-warmers-chicken-white-bean-cassoulet-bake",
+  "winter-warmers-split-pea-smoked-turkey-soup",
+  "winter-warmers-slow-braised-beef-root-stew",
+  "winter-warmers-slow-roast-salmon-parsnip-mash"
+ ],
+ "lifeStage": "none",
+ "sizes": {
+  "light": {
+   "kcal": 1500,
+   "covers": [
+    "1400-1600",
+    "1600-1800"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "drop": {
+      "slot": "snack",
+      "index": 1
+     }
+    },
+    {
+     "day": 2,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 3,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 3,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 4,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 5,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 5,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 6,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 6,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 7,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    },
+    {
+     "day": 7,
+     "drop": {
+      "slot": "snack",
+      "index": 0
+     }
+    }
+   ]
+  },
+  "standard": {
+   "kcal": 2100,
+   "covers": [
+    "1800-2000",
+    "2000-2200",
+    "2200-2400"
+   ]
+  },
+  "big": {
+   "kcal": 3000,
+   "covers": [
+    "2400-2800",
+    "2800-3200"
+   ],
+   "adjust": [
+    {
+     "day": 1,
+     "add": {
+      "slot": "snack",
+      "recipe": "winter-warmers-banana-walnuts"
+     }
+    },
+    {
+     "day": 3,
+     "add": {
+      "slot": "snack",
+      "recipe": "winter-warmers-apple-walnuts"
+     }
+    },
+    {
+     "day": 5,
+     "add": {
+      "slot": "snack",
+      "recipe": "winter-warmers-cinnamon-roasted-chickpeas"
+     }
+    },
+    {
+     "day": 7,
+     "add": {
+      "slot": "snack",
+      "recipe": "winter-warmers-banana-walnuts"
+     }
+    },
+    {
+     "day": 4,
+     "add": {
+      "slot": "snack",
+      "recipe": "winter-warmers-banana-almonds"
+     }
+    }
+   ]
+  }
+ },
+ "recipes": [
+  {
+   "id": "winter-warmers-cranberry-orange-oatmeal",
+   "name": "Cranberry-orange oatmeal with almonds and walnuts",
+   "inspiredBy": "Inspired by cranberry-orange scones, turned into a warm bowl of oatmeal",
+   "about": "Creamy stovetop oats with orange zest and segments, tart cranberries that burst as they cook, and toasted almonds and walnuts on top. The orange brings **vitamin C**, and the oats and nuts keep you full through a cold morning.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 60,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "milk-reduced-fat-2-fat-4a4316",
+     "g": 180,
+     "note": "to cook the oats"
+    },
+    {
+     "food": "orange-raw-ce787f",
+     "g": 130,
+     "note": "zest a strip first, then peel and cut into segments"
+    },
+    {
+     "food": "cranberry-raw-3a5534",
+     "g": 25,
+     "note": "fresh or frozen"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 10,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 8,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 1
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the orange. Take a few strips of zest with a peeler, then peel it and cut the flesh into segments.",
+    "Put the oats, milk, an equal amount of water, the zest, cranberries, cinnamon and salt in a small pot. Bring to a simmer, then cook over medium-low heat, stirring now and then, for 8 to 10 minutes, until thick and creamy and the cranberries have burst.",
+    "Toast the almonds and walnuts in a dry pan for 2 minutes until fragrant.",
+    "Spoon the oatmeal into a bowl and top with the orange segments and nuts."
+   ],
+   "prepMin": 5,
+   "cookMin": 12,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "For a sweeter bowl, stir half of a mashed banana into the oats while they cook."
+  },
+  {
+   "id": "winter-warmers-spiced-fruit-yogurt",
+   "name": "Spiced pears and apples with yogurt and oat crunch",
+   "inspiredBy": "Inspired by the spiced fruit simmered at winter markets, made with orange juice and whole spices only",
+   "about": "Pears and apples simmered in orange juice with cinnamon, clove, star anise, cardamom and ginger until the kitchen smells like the holidays, then spooned warm over cold yogurt with toasted oats and walnuts. It makes two portions, so tomorrow's breakfast is already done, and the fruit and yogurt bring **fibre and calcium**.",
+   "ingredients": [
+    {
+     "food": "pear-raw-with-skin-7d77aa",
+     "g": 150,
+     "note": "cored, in chunks"
+    },
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 110,
+     "note": "cored, in chunks"
+    },
+    {
+     "food": "orange-raw-ce787f",
+     "g": 100,
+     "note": "juiced"
+    },
+    {
+     "food": "ginger-ground-648bc0",
+     "g": 0.6
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 1
+    },
+    {
+     "food": "clove-ground-863cd5",
+     "g": 0.2
+    },
+    {
+     "food": "star-anise-02a10b",
+     "g": 0.5,
+     "note": "whole pod"
+    },
+    {
+     "food": "cardamom-ground-ac233b",
+     "g": 0.3
+    },
+    {
+     "food": "cranberry-raw-3a5534",
+     "g": 15,
+     "note": "fresh or frozen"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 170,
+     "swap": "dairy_protein",
+     "note": "plain, cold"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 25,
+     "swap": "low_gi_grains",
+     "note": "for the crunch"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    }
+   ],
+   "steps": [
+    "Wash the pears, apples and orange. Core the pears and apples and cut them into chunks about 2 cm across. Juice the orange.",
+    "Put the fruit, orange juice, cranberries, ginger, cinnamon, clove, star anise and cardamom in a small pot. Bring to a gentle simmer, cover and cook for 12 to 15 minutes, stirring once, until the fruit is just soft and the juice is syrupy. Lift out the star anise.",
+    "While the fruit cooks, toast the oats and walnuts in a dry pan for 3 to 4 minutes until golden.",
+    "Spoon the yogurt into a bowl, top with half of the warm fruit, and scatter over the oat crunch.",
+    "Cool the other half of the fruit within 1 hour in a shallow container, cover and refrigerate it. Tomorrow, reheat it until steaming hot, 74 °C (165 °F), then add the cold yogurt and a fresh oat crunch."
+   ],
+   "prepMin": 10,
+   "cookMin": 17,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "makes-leftovers"
+   ],
+   "tip": "Make the fruit on Monday evening while the cassoulet simmers, cool it within 1 hour, and reheat it each morning, so breakfast takes 5 minutes. It keeps up to 3 days in the fridge, and it is lovely over porridge too."
+  },
+  {
+   "id": "winter-warmers-baked-pear-banana-oats",
+   "name": "Baked pear and banana oats with sunflower seeds, walnuts and cinnamon",
+   "inspiredBy": "Inspired by the baked oatmeal of the American Midwest",
+   "about": "A tray of oats baked with mashed banana, diced pear and cinnamon until golden and spoonable, with crunchy sunflower seeds and walnuts on top. It makes two portions, so Sunday's breakfast is just a reheat, and it brings **fibre and vitamin E**.",
+   "ingredients": [
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 60,
+     "swap": "low_gi_grains"
+    },
+    {
+     "food": "milk-reduced-fat-2-fat-4a4316",
+     "g": 280
+    },
+    {
+     "food": "banana-raw-61b750",
+     "g": 60,
+     "note": "mashed"
+    },
+    {
+     "food": "pear-raw-with-skin-7d77aa",
+     "g": 90,
+     "note": "cored, diced"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 14,
+     "swap": "nuts_seeds",
+     "note": "hulled"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 10,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 1.2
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 180 °C (350 °F) and lightly oil a small baking dish.",
+    "Wash the pear, core it and dice it. Mash the banana in a bowl, then stir in the oats, milk, cinnamon, salt and the diced pear.",
+    "Pour into the dish, scatter over the sunflower seeds and walnuts and bake for 25 minutes, until set and golden at the edges.",
+    "Eat one portion warm. Cool the rest within 1 hour in a shallow container, cover and refrigerate it. Tomorrow, reheat it until steaming hot, 74 °C (165 °F), with a splash of milk."
+   ],
+   "prepMin": 8,
+   "cookMin": 25,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "makes-leftovers",
+    "kid-friendly"
+   ],
+   "tip": "Eat the second portion within 2 days. Bake the oats in the morning, then heat the oven to 160 °C again mid-afternoon for the beef stew, so it is hot at dinner time."
+  },
+  {
+   "id": "winter-warmers-salmon-potato-salad",
+   "name": "Warm salmon, egg and potato salad with spinach and lemon-yogurt dressing",
+   "inspiredBy": "Inspired by a British salmon and new-potato salad",
+   "about": "Warm potatoes tossed with wilted baby spinach, flaked tinned salmon, a firm egg and a lemony yogurt dressing with parsley. The tinned salmon, bones and all, brings **omega-3 and calcium**, and the potatoes keep it hearty.",
+   "ingredients": [
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 200,
+     "note": "scrubbed, in bite-sized chunks"
+    },
+    {
+     "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+     "g": 110,
+     "swap": "fatty_fish",
+     "note": "drained, flaked"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 55
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 50,
+     "swap": "dairy_protein",
+     "note": "plain"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 12
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "note": "chopped"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.3
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Scrub the potatoes and cut them into chunks about 3 cm across. Cover with cold water in a pot, bring to a boil and simmer for 12 to 15 minutes, until the potatoes are tender. Drain.",
+    "Meanwhile, boil the egg for 10 to 12 minutes, until the yolk is completely firm, then cool it in cold water, peel and chop it. Whisk the yogurt, lemon juice, olive oil, salt and pepper in a large bowl.",
+    "Wash the spinach. Add the warm potatoes, the spinach and the parsley, and toss gently so the spinach wilts. Fold in the salmon in large flakes, taking out any big pieces of skin, and the egg.",
+    "Eat it warm or at room temperature. Keep any opened tin of salmon covered in the fridge and use it within 2 days."
+   ],
+   "prepMin": 10,
+   "cookMin": 15,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ],
+   "tip": "To pack it, use a cold bag with an ice pack and eat it the same day."
+  },
+  {
+   "id": "winter-warmers-lentil-carrot-egg-salad",
+   "name": "Warm lentil and roasted carrot salad with spinach, a firm egg and pumpkin seeds",
+   "inspiredBy": "Inspired by French lentil salads",
+   "about": "Carrots roasted until sweet and a bit caramelised, tossed with lentils, spinach and a sharp lemon-tahini dressing, topped with a firm egg and pumpkin seeds. The lentils bring **iron and folate**, and the lemon helps your body absorb that iron.",
+   "ingredients": [
+    {
+     "food": "lentils-canned-no-salt-added-drained-c1edbd",
+     "g": 185,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 130,
+     "note": "in thick sticks"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 50,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 55
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "tahini-paste-b624d0",
+     "g": 14
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 12
+    },
+    {
+     "food": "cider-vinegar-c34faa",
+     "g": 6
+    },
+    {
+     "food": "pumpkin-seeds-dried-5099f2",
+     "g": 10,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1.5
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 4,
+     "note": "chopped"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 °C (425 °F). Wash and scrub the carrots, cut them into thick sticks and toss with half of the oil, the cumin and the salt on a tray. Roast for 22 to 25 minutes, turning once, until tender and browned at the edges.",
+    "Meanwhile, boil the egg for 10 to 12 minutes, until the yolk is completely firm, then cool it in cold water, peel and halve it.",
+    "Wash the spinach. Warm the lentils in a small pot or the microwave until steaming. Whisk the tahini, lemon juice, vinegar, the remaining oil, the pepper and a splash of water in a bowl until smooth.",
+    "Toss the warm lentils, spinach and roasted carrots in the dressing and let the spinach wilt for 2 minutes.",
+    "Top with the egg, the parsley and the pumpkin seeds."
+   ],
+   "prepMin": 10,
+   "cookMin": 25,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "To pack it, keep the egg and dressing in a cold bag with an ice pack and eat it the same day."
+  },
+  {
+   "id": "winter-warmers-quinoa-cauliflower-chickpea-bowl",
+   "name": "Quinoa, roasted cauliflower and chickpea bowl with shaved sprouts and lemon-tahini yogurt",
+   "inspiredBy": "Inspired by Levantine tahini sauces over roast cauliflower",
+   "about": "Roasted cauliflower and nutty quinoa with chickpeas, crunchy shaved raw Brussels sprouts and a lemon-tahini yogurt sauce. The chickpeas bring protein and **folate**, and the tahini and yogurt bring calcium.",
+   "ingredients": [
+    {
+     "food": "quinoa-dry-13e0ee",
+     "g": 50,
+     "swap": "low_gi_grains",
+     "note": "rinsed"
+    },
+    {
+     "food": "cauliflower-raw-f8205d",
+     "g": 200,
+     "note": "in small florets"
+    },
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 140,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "brussels-sprouts-raw-88a873",
+     "g": 40,
+     "note": "trimmed and very finely shaved"
+    },
+    {
+     "food": "tahini-paste-b624d0",
+     "g": 8
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 60,
+     "swap": "dairy_protein",
+     "note": "plain"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 15
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 5,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 2,
+     "note": "minced"
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 1
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 4,
+     "note": "chopped"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    }
+   ],
+   "steps": [
+    "Heat the oven to 220 °C (425 °F). Wash the cauliflower and Brussels sprouts. Cut the cauliflower into small florets, toss with the oil, cumin and half of the salt on a tray and roast for 20 to 22 minutes, adding the chickpeas for the last 8 minutes, until browned in places.",
+    "Rinse the quinoa and simmer it in twice its volume of water, covered, for 15 minutes. Drain if needed and fluff with a fork.",
+    "Shave the Brussels sprouts as thinly as you can with a sharp knife. Whisk the tahini, yogurt, lemon juice, garlic, the remaining salt and a splash of cold water until smooth and pourable.",
+    "Pile the quinoa in a bowl, top with the cauliflower, chickpeas and shaved sprouts, pour over the sauce and finish with the parsley."
+   ],
+   "prepMin": 10,
+   "cookMin": 22,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "To pack it, keep the sauce in a cold bag with an ice pack and eat it the same day."
+  },
+  {
+   "id": "winter-warmers-chicken-white-bean-cassoulet-bake",
+   "name": "Chicken and white bean cassoulet-style bake with an oat-parsley crumb",
+   "inspiredBy": "Inspired by French cassoulet, made with chicken thigh and white beans",
+   "about": "Chicken thigh braised with white beans, leek, carrot and tomato, with thyme, bay and a little smoked paprika, then finished under the grill with a crisp garlicky crumb of oats and parsley. It makes two portions, and the beans and spinach bring **iron, folate and fibre**.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-boneless-skinless-raw-722c98",
+     "g": 250,
+     "swap": "lean_protein",
+     "note": "trimmed, in large chunks"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 120,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "leek-raw-01ddc0",
+     "g": 70,
+     "note": "sliced and rinsed well"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 60,
+     "note": "diced"
+    },
+    {
+     "food": "celery-raw-79a241",
+     "g": 30,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 5,
+     "note": "minced"
+    },
+    {
+     "food": "tomato-paste-7d3238",
+     "g": 15
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 200,
+     "note": "just enough to cover the beans"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 70,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "oats-regular-and-quick-dry-a443fd",
+     "g": 12,
+     "swap": "low_gi_grains",
+     "note": "for the crumb"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "note": "chopped"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 1
+    },
+    {
+     "food": "bay-leaf-513612",
+     "g": 0.3,
+     "note": "whole, for the pot"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1.5
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.5
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Rinse the leek well, then slice it. Warm half of the oil in a wide oven-safe pot over medium heat and soften the leek, carrot and celery for 5 minutes, with the garlic for the last minute.",
+    "Stir in the tomato paste, thyme and paprika for 1 minute. Add the chicken and turn it for 3 minutes. Wash your hands, the board and the knife after handling the raw chicken.",
+    "Add the beans, bay leaf, salt, pepper and enough broth to just cover the beans. Bring to a simmer, cover and cook gently for 15 to 18 minutes, until the chicken reaches 74 °C (165 °F) and the sauce is thick. Stir in the spinach until it wilts.",
+    "Meanwhile, toast the oats in a dry pan for 2 minutes, then mix with the parsley, a pinch of salt and the remaining oil. Scatter half over the pot, dish up one portion and grill (broil) that portion for 3 to 4 minutes, until golden.",
+    "Cool the other portion, without crumb, within 2 hours in a shallow container and refrigerate it. Tomorrow, reheat it until steaming hot, 74 °C (165 °F), then scatter over the rest of the crumb and grill it for 3 minutes."
+   ],
+   "prepMin": 12,
+   "cookMin": 30,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "makes-leftovers",
+    "freezer-friendly"
+   ],
+   "tip": "To freeze it, cool the pot within 2 hours and freeze up to 2 months. Thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F). Make the crumb fresh."
+  },
+  {
+   "id": "winter-warmers-roast-turkey-cranberry-sprouts",
+   "name": "Roast turkey breast with cranberry-orange sauce, Brussels sprouts and sweet potato",
+   "inspiredBy": "Inspired by a North American holiday roast dinner, scaled for a Tuesday",
+   "about": "Thick turkey breast steaks rubbed with sage and thyme and roasted on one tray with sweet potato cubes and Brussels sprouts, with a quick tart cranberry and orange sauce. The sweet potato brings **vitamin A**, the sprouts bring vitamin C and K, and the turkey is lean protein.",
+   "ingredients": [
+    {
+     "food": "turkey-breast-skinless-raw-fbc978",
+     "g": 190,
+     "swap": "lean_protein",
+     "note": "in thick steaks"
+    },
+    {
+     "food": "sweet-potato-raw-15f948",
+     "g": 110,
+     "note": "scrubbed, in cubes"
+    },
+    {
+     "food": "brussels-sprouts-raw-88a873",
+     "g": 130,
+     "note": "trimmed, halved"
+    },
+    {
+     "food": "cranberry-raw-3a5534",
+     "g": 40,
+     "note": "fresh or frozen"
+    },
+    {
+     "food": "orange-raw-ce787f",
+     "g": 80,
+     "note": "juiced, plus a strip of zest"
+    },
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 40,
+     "note": "grated, to sweeten the sauce"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "toasted"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 9,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "sage-ground-eb1db2",
+     "g": 1
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 1
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 210 °C (410 °F). Wash the sweet potatoes, sprouts, orange and apple. Toss the sweet potato cubes with half of the oil and a pinch of salt on a large tray and roast for 10 minutes.",
+    "Rub the turkey with half of the remaining oil, the sage, thyme, pepper and the rest of the salt. Add the turkey and the sprouts, tossed in the last of the oil, to the tray. Wash your hands, the board and the knife after handling the raw turkey. Roast for 18 to 20 minutes more, until the turkey reaches 74 °C (165 °F) and the sprouts are browned. Rest the turkey for 5 minutes.",
+    "While the tray roasts, simmer the cranberries, orange juice and zest, grated apple and cinnamon in a small pot for 8 to 10 minutes, until the berries pop and the sauce thickens.",
+    "Slice the turkey, serve with the vegetables and the cranberry sauce, and scatter over the almonds."
+   ],
+   "prepMin": 12,
+   "cookMin": 30,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ]
+  },
+  {
+   "id": "winter-warmers-slow-roast-salmon-parsnip-mash",
+   "name": "Slow-roasted salmon with parsnip and potato mash and lemony braised leeks and kale",
+   "inspiredBy": "Inspired by a bistro plate of salmon with braised leeks and root mash",
+   "about": "Salmon roasted gently until just flaking, on a creamy mash of parsnip and potato, with leeks and kale braised in broth with lemon. The salmon brings **omega-3 and some vitamin D**, and the parsnip gives the mash a natural sweetness.",
+   "ingredients": [
+    {
+     "food": "salmon-atlantic-farmed-raw-914b10",
+     "g": 150,
+     "swap": "fatty_fish",
+     "note": "skin on, in a portion"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 180,
+     "note": "peeled, in chunks"
+    },
+    {
+     "food": "parsnip-raw-27bd40",
+     "g": 110,
+     "note": "peeled, in small chunks"
+    },
+    {
+     "food": "milk-reduced-fat-2-fat-4a4316",
+     "g": 90,
+     "note": "to loosen the mash"
+    },
+    {
+     "food": "leek-raw-01ddc0",
+     "g": 120,
+     "note": "halved, rinsed well, cut in lengths"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 40,
+     "swap": "leafy_greens",
+     "note": "stems removed, finely sliced"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 80
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 20
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 10,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 0.8
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 140 °C (275 °F). Peel the potato and parsnip, cut them into small chunks and put them in a pot of cold water with a pinch of salt. Bring to a boil and simmer for 15 to 18 minutes, until very tender.",
+    "Rinse the leeks well. Warm half of the oil in a pan over medium heat, add the leeks and thyme, and turn for 2 minutes. Add the broth, cover and braise for 8 minutes, then add the washed kale for 3 minutes more, until soft. Finish with half of the lemon juice.",
+    "Rub the salmon with the remaining oil, salt and pepper and put it on a tray. Wash your hands, the board and the knife after handling the raw salmon. Roast for 18 to 22 minutes, until the flesh turns opaque and flakes easily and the thickest part reaches 70 °C (158 °F).",
+    "Drain the potato and parsnip, return them to the pot with the milk and mash until creamy. Serve the salmon on the mash with the leeks and a squeeze of the remaining lemon.",
+    "Buy the salmon and cook it within a day, or thaw frozen fillets in the fridge. Do not keep leftovers of this dish."
+   ],
+   "prepMin": 12,
+   "cookMin": 25,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ]
+  },
+  {
+   "id": "winter-warmers-lemon-parsley-trout-parsnips",
+   "name": "Roasted trout with parsnips, carrots and potatoes, wilted spinach and lemon-parsley yogurt",
+   "inspiredBy": "Inspired by a Scandinavian plate of baked trout and root vegetables",
+   "about": "Trout fillet roasted over parsnips, carrots and potatoes until just flaking, with wilted spinach and a sharp lemon and parsley yogurt. The trout brings **omega-3 and vitamin D**, and the carrots bring vitamin A.",
+   "ingredients": [
+    {
+     "food": "rainbow-trout-farmed-raw-0cc800",
+     "g": 170,
+     "swap": "fatty_fish",
+     "note": "skin on"
+    },
+    {
+     "food": "parsnip-raw-27bd40",
+     "g": 100,
+     "note": "scrubbed, in sticks"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 80,
+     "note": "scrubbed, in sticks"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 100,
+     "note": "scrubbed, in small chunks"
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 45,
+     "swap": "dairy_protein",
+     "note": "plain"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 20
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "note": "chopped"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 2,
+     "note": "minced"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 9,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 210 °C (410 °F). Scrub the parsnips, carrots and potatoes, cut them into sticks and small chunks, toss with two thirds of the oil and a pinch of salt on a large tray, and roast for 15 minutes.",
+    "Rub the trout with the remaining oil, salt, pepper and half of the lemon juice. Wash your hands, the board and the knife after handling the raw trout. Nestle it among the vegetables, skin side down, and roast for 10 to 12 minutes, until the flesh turns opaque and flakes easily and the thickest part reaches 70 °C (158 °F).",
+    "Stir the yogurt, garlic, the remaining lemon juice and the parsley together.",
+    "Wash the spinach and wilt it in a hot pan for 1 minute. Serve the trout over the vegetables with the spinach and sauce.",
+    "Buy the trout and cook it within a day, or thaw frozen fillets in the fridge. Do not keep leftovers of this dish."
+   ],
+   "prepMin": 12,
+   "cookMin": 28,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ]
+  },
+  {
+   "id": "winter-warmers-split-pea-smoked-turkey-soup",
+   "name": "Split pea soup with smoked turkey, leeks and thyme",
+   "inspiredBy": "Inspired by North American split pea soup, made with smoked turkey",
+   "about": "Green split peas simmered with leeks, celery, carrot, thyme and a small amount of ready-cooked smoked turkey until thick and almost creamy, with kale, a squeeze of lemon and toasted walnuts. It makes two portions, and the peas bring **fibre, folate and iron**.",
+   "ingredients": [
+    {
+     "food": "split-peas-dry-6b69b1",
+     "g": 65,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "turkey-light-or-dark-meat-smoked-cooked-skin-and-bone-f28f9e",
+     "g": 50,
+     "swap": "lean_protein",
+     "note": "smoked, ready-cooked, skin removed, finely diced"
+    },
+    {
+     "food": "leek-raw-01ddc0",
+     "g": 70,
+     "note": "sliced and rinsed well"
+    },
+    {
+     "food": "celery-raw-79a241",
+     "g": 40,
+     "note": "diced"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 50,
+     "note": "diced"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 350,
+     "note": "plus water to keep it covered"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 40,
+     "swap": "leafy_greens",
+     "note": "stems removed, finely sliced"
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 12
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 10,
+     "swap": "nuts_seeds",
+     "note": "toasted"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 1
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 1
+    },
+    {
+     "food": "bay-leaf-513612",
+     "g": 0.3,
+     "note": "whole, for the pot"
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Rinse the split peas in cold water. Rinse the leek well, then slice it. Warm the oil in a large pot over medium heat and soften the leek, celery and carrot for 6 minutes, with the garlic for the last minute.",
+    "Stir in the thyme and paprika for 30 seconds. Add the split peas, smoked turkey, bay leaf, pepper and the broth, plus water so the peas are covered by about 3 cm.",
+    "Bring to a boil, then cover and simmer gently for 40 to 45 minutes, stirring now and then and topping up with hot water if it gets too thick, until the peas are completely soft and the soup is thick. The smoked turkey is salty, so taste before adding any salt.",
+    "Wash the kale and stir it in for the last 5 minutes. Lift out the bay leaf, stir in the lemon juice and, for a creamier soup, mash a few spoonfuls against the side of the pot.",
+    "Toast the walnuts in a dry pan for 2 minutes and scatter over each bowl.",
+    "Eat one portion now. Cool the other within 2 hours in a shallow container and refrigerate it. Tomorrow, reheat it once until steaming hot, 74 °C (165 °F), adding a splash of water."
+   ],
+   "prepMin": 12,
+   "cookMin": 52,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "makes-leftovers",
+    "freezer-friendly"
+   ],
+   "tip": "In a pressure cooker the peas take about 15 minutes at high pressure. Split peas foam and can block the vent, so fill the cooker no more than half full, keep the oil in, and release the pressure naturally. To freeze it, cool within 2 hours and freeze up to 2 months. Thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+  },
+  {
+   "id": "winter-warmers-slow-braised-beef-root-stew",
+   "name": "Slow-braised beef and root vegetable stew with thyme and bay",
+   "inspiredBy": "Inspired by the British beef casserole, with parsnip alongside the carrot and potato",
+   "about": "Chunks of beef chuck braised low and slow in the oven with parsnip, carrot and potato in a thyme and tomato gravy, until the beef falls apart with a fork and the vegetables are sweet. It makes two portions, and the beef brings **iron and zinc**, with spinach stirred in at the end.",
+   "ingredients": [
+    {
+     "food": "beef-chuck-for-stew-lean-and-fat-raw-8d6ce5",
+     "g": 160,
+     "swap": "lean_protein",
+     "note": "in large chunks, trimmed"
+    },
+    {
+     "food": "parsnip-raw-27bd40",
+     "g": 80,
+     "note": "peeled, in thick chunks"
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 80,
+     "note": "in thick chunks"
+    },
+    {
+     "food": "potato-flesh-and-skin-raw-491f85",
+     "g": 120,
+     "note": "scrubbed, in large chunks"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 60,
+     "note": "in wedges"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "tomato-paste-7d3238",
+     "g": 28
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 250,
+     "note": "just enough to come two thirds up the meat"
+    },
+    {
+     "food": "cider-vinegar-c34faa",
+     "g": 8
+    },
+    {
+     "food": "spinach-raw-17845b",
+     "g": 80,
+     "swap": "leafy_greens",
+     "note": "washed"
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "note": "chopped"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 7,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 1.2
+    },
+    {
+     "food": "bay-leaf-513612",
+     "g": 0.6,
+     "note": "whole, for the pot"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.6
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Heat the oven to 160 °C (325 °F). Pat the beef dry and season it with the salt and pepper. Warm the oil in a heavy oven-safe pot over medium-high heat and brown the beef in batches, about 3 minutes a side, then set it on a clean plate. Wash your hands, the board and the knife after handling the raw beef.",
+    "In the same pot, soften the onion for 4 minutes, then stir in the garlic, tomato paste and thyme for 1 minute. Add the vinegar and scrape up the browned bits.",
+    "Return the beef to the pot with the bay leaves and broth. Bring to a simmer, cover tightly and braise in the oven for 1 hour. Add the parsnip, carrot and potato, cover and braise for 1 hour more, until the beef is fork-tender, well past 71 °C (160 °F), and the vegetables are soft.",
+    "Wash the spinach, stir it in with the parsley and cook for the last 3 minutes, until it wilts. Lift out the bay leaves and taste for salt.",
+    "Eat one portion now. Cool the other within 1 hour in a shallow container, since it has potato, and refrigerate it. Tomorrow, reheat it once until steaming hot, 74 °C (165 °F)."
+   ],
+   "prepMin": 25,
+   "cookMin": 140,
+   "servings": 2,
+   "tags": [
+    "mild",
+    "weekend-project",
+    "makes-leftovers",
+    "freezer-friendly"
+   ],
+   "tip": "Start it by mid-afternoon, about 3 hours before dinner. In a pressure cooker, braise the browned beef for 25 minutes at high pressure, release, add the vegetables and cook 8 minutes more. To freeze it, cool within 1 hour and freeze up to 2 months. Thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+  },
+  {
+   "id": "winter-warmers-apple-almonds",
+   "name": "Apple wedges with almonds",
+   "about": "Crisp apple wedges with a small handful of almonds. The apple brings fibre, and the almonds bring crunch and **vitamin E**.",
+   "ingredients": [
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 150,
+     "note": "washed, cored, in wedges"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 20,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the apple, core it and cut it into wedges.",
+    "Eat with the almonds."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "no-cook",
+    "mild"
+   ]
+  },
+  {
+   "id": "winter-warmers-pear-walnuts",
+   "name": "Pear with walnuts",
+   "about": "A ripe pear with a small handful of walnuts. The walnuts bring **omega-3**, and the pear brings fibre.",
+   "ingredients": [
+    {
+     "food": "pear-raw-with-skin-7d77aa",
+     "g": 160,
+     "note": "washed"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 16,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the pear and slice it.",
+    "Eat with the walnuts."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "no-cook",
+    "mild"
+   ]
+  },
+  {
+   "id": "winter-warmers-orange-walnuts",
+   "name": "Orange with walnuts",
+   "about": "A juicy orange with a small handful of walnuts. The orange brings **vitamin C**, and the walnuts bring omega-3.",
+   "ingredients": [
+    {
+     "food": "orange-raw-ce787f",
+     "g": 150,
+     "note": "washed, peeled, in segments"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 16,
+     "swap": "nuts_seeds"
+    }
+   ],
+   "steps": [
+    "Wash the orange, peel it and split it into segments.",
+    "Eat with the walnuts."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "no-cook",
+    "mild"
+   ]
+  },
+  {
+   "id": "winter-warmers-egg-veg-sticks",
+   "name": "Firm-boiled egg with carrot and celery sticks",
+   "about": "A firm-boiled egg with crunchy carrot and celery sticks and a pinch of smoked paprika. It brings **protein and choline**.",
+   "ingredients": [
+    {
+     "food": "egg-whole-raw-e196d3",
+     "g": 55
+    },
+    {
+     "food": "carrot-raw-f79846",
+     "g": 70,
+     "note": "washed, in sticks"
+    },
+    {
+     "food": "celery-raw-79a241",
+     "g": 40,
+     "note": "washed, in sticks"
+    },
+    {
+     "food": "smoked-paprika-pimenton-2e4941",
+     "g": 0.3
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.1
+    }
+   ],
+   "steps": [
+    "Boil the egg for 10 to 12 minutes, until the yolk is completely firm, then cool it in cold water and peel it.",
+    "Wash the carrot and celery and cut them into sticks. Serve with the egg, sprinkled with the paprika and salt."
+   ],
+   "prepMin": 3,
+   "cookMin": 12,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ]
+  },
+  {
+   "id": "winter-warmers-apple-walnuts",
+   "name": "Apple wedges with walnuts and cinnamon",
+   "about": "Crisp apple wedges with a small handful of walnuts and a dusting of cinnamon. The walnuts bring **omega-3**, and the apple brings fibre.",
+   "ingredients": [
+    {
+     "food": "apple-raw-with-skin-404882",
+     "g": 150,
+     "note": "washed, cored, in wedges"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 20,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Wash the apple, core it and cut it into wedges.",
+    "Eat with the walnuts and dust with the cinnamon."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "no-cook",
+    "mild"
+   ]
+  },
+  {
+   "id": "winter-warmers-veg-sticks-tahini-dip",
+   "name": "Carrot and celery sticks with lemon-tahini yogurt dip",
+   "about": "Crunchy carrot and celery sticks with a creamy lemon, garlic and tahini yogurt dip. The dip brings **calcium and protein**.",
+   "ingredients": [
+    {
+     "food": "carrot-raw-f79846",
+     "g": 90,
+     "note": "washed, in sticks"
+    },
+    {
+     "food": "celery-raw-79a241",
+     "g": 60,
+     "note": "washed, in sticks"
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 60,
+     "swap": "dairy_protein",
+     "note": "plain"
+    },
+    {
+     "food": "tahini-paste-b624d0",
+     "g": 8
+    },
+    {
+     "food": "lemon-juice-raw-7ae426",
+     "g": 6
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 1,
+     "note": "finely grated"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.1
+    }
+   ],
+   "steps": [
+    "Wash the carrot and celery, then cut them into sticks.",
+    "Stir the yogurt, tahini, lemon juice, garlic and salt together with a splash of water until smooth.",
+    "Serve the sticks with the dip."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "no-cook",
+    "mild"
+   ]
+  },
+  {
+   "id": "winter-warmers-cinnamon-roasted-chickpeas",
+   "name": "Cinnamon-roasted chickpeas",
+   "about": "Chickpeas roasted until crisp with cinnamon, cumin and a pinch of salt. A crunchy snack that brings **fibre, protein and iron**.",
+   "ingredients": [
+    {
+     "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+     "g": 85,
+     "swap": "legumes",
+     "note": "rinsed and patted very dry"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 4,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.8
+    },
+    {
+     "food": "cumin-cummin-seed-dried-ground-b00343",
+     "g": 0.8
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Heat the oven to 210 °C (410 °F). Pat the chickpeas completely dry and toss them with the oil, cinnamon, cumin and salt.",
+    "Roast on a tray for 22 to 25 minutes, shaking once, until crisp. They crisp more as they cool."
+   ],
+   "prepMin": 5,
+   "cookMin": 25,
+   "servings": 1,
+   "tags": [
+    "mild",
+    "kid-friendly"
+   ]
+  },
+  {
+   "id": "winter-warmers-banana-yogurt-walnuts",
+   "name": "Greek yogurt with banana, cinnamon and walnuts",
+   "about": "Cool Greek yogurt with sliced banana, a dusting of cinnamon and crunchy walnuts. It brings **calcium and protein**.",
+   "ingredients": [
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 120,
+     "swap": "dairy_protein",
+     "note": "plain"
+    },
+    {
+     "food": "banana-raw-61b750",
+     "g": 80,
+     "note": "sliced"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 12,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Spoon the yogurt into a bowl.",
+    "Top with the banana, walnuts and cinnamon."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "no-cook",
+    "mild"
+   ]
+  },
+  {
+   "id": "winter-warmers-banana-walnuts",
+   "name": "Banana with walnuts and cinnamon",
+   "about": "A banana with a small handful of walnuts and a dusting of cinnamon. It brings **potassium and omega-3**.",
+   "ingredients": [
+    {
+     "food": "banana-raw-61b750",
+     "g": 110,
+     "note": "peeled"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 20,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Peel the banana and eat it with the walnuts.",
+    "Dust with the cinnamon."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "no-cook",
+    "mild"
+   ]
+  },
+  {
+   "id": "winter-warmers-banana-almonds",
+   "name": "Banana with almonds and cinnamon",
+   "about": "A banana with a small handful of almonds and a dusting of cinnamon. It brings **potassium and vitamin E**.",
+   "ingredients": [
+    {
+     "food": "banana-raw-61b750",
+     "g": 110,
+     "note": "peeled"
+    },
+    {
+     "food": "almonds-dried-39a9af",
+     "g": 20,
+     "swap": "nuts_seeds"
+    },
+    {
+     "food": "cinnamon-ground-ed5c78",
+     "g": 0.5
+    }
+   ],
+   "steps": [
+    "Peel the banana and eat it with the almonds.",
+    "Dust with the cinnamon."
+   ],
+   "prepMin": 3,
+   "cookMin": 0,
+   "servings": 1,
+   "tags": [
+    "no-cook",
+    "mild"
+   ]
+  },
+  {
+   "id": "winter-warmers-squash-white-bean-sage-soup",
+   "name": "Butternut squash and white bean soup with sage, walnuts and sunflower seeds",
+   "inspiredBy": "Inspired by the squash soups of North American winters",
+   "about": "Butternut squash and white beans simmered with onion, garlic and sage, then blended until velvety, with a swirl of cold yogurt and toasted walnuts and sunflower seeds on top. The squash brings **vitamin A**, the seeds bring vitamin E, and the beans make it a filling lunch.",
+   "ingredients": [
+    {
+     "food": "butternut-squash-raw-dc25d8",
+     "g": 220,
+     "note": "peeled, in cubes"
+    },
+    {
+     "food": "white-beans-canned-no-salt-added-drained-65e6ca",
+     "g": 140,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 50,
+     "note": "chopped"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 3,
+     "note": "minced"
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 250
+    },
+    {
+     "food": "milk-reduced-fat-2-fat-4a4316",
+     "g": 80
+    },
+    {
+     "food": "greek-yogurt-plain-low-fat-2560b4",
+     "g": 50,
+     "swap": "dairy_protein",
+     "note": "plain, cold"
+    },
+    {
+     "food": "sunflower-seeds-dried-50647e",
+     "g": 10,
+     "swap": "nuts_seeds",
+     "note": "hulled"
+    },
+    {
+     "food": "walnuts-english-or-persian-560876",
+     "g": 12,
+     "swap": "nuts_seeds",
+     "note": "roughly chopped"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 6,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "sage-ground-eb1db2",
+     "g": 0.6
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 0.5
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.4
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.2
+    }
+   ],
+   "steps": [
+    "Wash the squash, then peel it and cut it into small cubes. Warm the oil in a pot over medium heat and soften the onion for 5 minutes, with the garlic, sage and thyme for the last minute.",
+    "Add the squash, the rinsed beans, the broth, salt and pepper. Bring to a boil, then cover and simmer for 15 to 18 minutes, until the squash is completely soft.",
+    "Take the pot off the heat, add the milk and blend until smooth with a stick blender, or in a blender with the lid vented and a towel on top. Reheat gently until steaming.",
+    "Toast the walnuts and sunflower seeds in a dry pan for 2 minutes until golden.",
+    "Ladle into a bowl, swirl in the cold yogurt and scatter the walnuts and seeds on top."
+   ],
+   "prepMin": 10,
+   "cookMin": 25,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Make it the evening before: cool it within 2 hours in a shallow container, refrigerate it, and reheat it once until steaming hot, 74 °C (165 °F), within 3 days. Pack it in a hot flask and add the yogurt, walnuts and seeds when you eat."
+  },
+  {
+   "id": "winter-warmers-chicken-mushroom-onion-braise",
+   "name": "Chicken braised with mushrooms and onions, over lentils and kale",
+   "inspiredBy": "Inspired by French bistro braises of chicken with mushrooms and small onions",
+   "about": "Chicken thighs braised with browned mushrooms, onion, garlic, thyme and bay in a rich, glossy gravy, then served over lentils and kale that soak up the sauce. The lentils and kale bring **iron and folate**, and the mushrooms bring B vitamins.",
+   "ingredients": [
+    {
+     "food": "chicken-thigh-boneless-skinless-raw-722c98",
+     "g": 265,
+     "swap": "lean_protein",
+     "note": "trimmed, in large pieces"
+    },
+    {
+     "food": "mushroom-brown-italian-crimini-raw-fd00b0",
+     "g": 150,
+     "note": "brown (cremini), halved or quartered"
+    },
+    {
+     "food": "onion-raw-11f646",
+     "g": 80,
+     "note": "in thick wedges"
+    },
+    {
+     "food": "garlic-raw-a9c6a6",
+     "g": 4,
+     "note": "minced"
+    },
+    {
+     "food": "tomato-paste-7d3238",
+     "g": 10
+    },
+    {
+     "food": "chicken-broth-low-sodium-canned-12e88a",
+     "g": 150
+    },
+    {
+     "food": "lentils-canned-no-salt-added-drained-c1edbd",
+     "g": 130,
+     "swap": "legumes",
+     "note": "rinsed"
+    },
+    {
+     "food": "kale-raw-2f9830",
+     "g": 60,
+     "swap": "leafy_greens",
+     "note": "stems removed, finely sliced"
+    },
+    {
+     "food": "cider-vinegar-c34faa",
+     "g": 5
+    },
+    {
+     "food": "parsley-38257b",
+     "g": 5,
+     "note": "chopped"
+    },
+    {
+     "food": "olive-oil-2b2b51",
+     "g": 8,
+     "swap": "healthy_oils"
+    },
+    {
+     "food": "thyme-dried-4c6cce",
+     "g": 1
+    },
+    {
+     "food": "bay-leaf-513612",
+     "g": 0.3,
+     "note": "whole, for the pot"
+    },
+    {
+     "food": "table-salt-iodized-052851",
+     "g": 0.5
+    },
+    {
+     "food": "black-pepper-6fd5df",
+     "g": 0.3
+    }
+   ],
+   "steps": [
+    "Wash the kale and parsley, and wipe or quickly rinse the mushrooms. Warm half of the oil in a wide pot over medium-high heat and brown the chicken for about 3 minutes a side, then set it on a clean plate. Wash your hands, the board and the knife after handling the raw chicken.",
+    "Add the rest of the oil, the mushrooms and the onion and cook for 7 to 8 minutes, stirring now and then, until the mushrooms are browned and the onion is golden at the edges. Stir in the garlic, tomato paste and thyme for 1 minute.",
+    "Pour in the broth with the bay leaf, salt and pepper and scrape up the browned bits. Nestle the chicken back in, bring to a simmer, cover and braise gently for 18 to 20 minutes, until the chicken reaches 74 °C (165 °F) and the gravy is glossy.",
+    "Stir the lentils and kale into the gravy around the chicken for the last 5 minutes, until steaming hot and the kale is soft. Lift out the bay leaf, add the vinegar and taste for salt.",
+    "Serve the chicken on the mushrooms, lentils and kale, scattered with the parsley."
+   ],
+   "prepMin": 10,
+   "cookMin": 32,
+   "servings": 1,
+   "tags": [
+    "mild"
+   ],
+   "tip": "Peeled small shallots or pearl onions, left whole, are lovely here instead of the onion wedges."
+  }
+ ],
+ "week": [
+  {
+   "day": 1,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "winter-warmers-cranberry-orange-oatmeal"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "winter-warmers-salmon-potato-salad"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "winter-warmers-chicken-white-bean-cassoulet-bake"
+    },
+    {
+     "slot": "snack",
+     "recipe": "winter-warmers-apple-almonds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "winter-warmers-banana-yogurt-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "winter-warmers-spiced-fruit-yogurt"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "winter-warmers-chicken-white-bean-cassoulet-bake",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "winter-warmers-roast-turkey-cranberry-sprouts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "winter-warmers-orange-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "winter-warmers-egg-veg-sticks"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "winter-warmers-spiced-fruit-yogurt",
+     "leftover": true
+    },
+    {
+     "slot": "lunch",
+     "recipe": "winter-warmers-lentil-carrot-egg-salad"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "winter-warmers-slow-roast-salmon-parsnip-mash"
+    },
+    {
+     "slot": "snack",
+     "recipe": "winter-warmers-banana-almonds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "winter-warmers-veg-sticks-tahini-dip"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "winter-warmers-cranberry-orange-oatmeal"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "winter-warmers-squash-white-bean-sage-soup"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "winter-warmers-chicken-mushroom-onion-braise"
+    },
+    {
+     "slot": "snack",
+     "recipe": "winter-warmers-pear-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "winter-warmers-egg-veg-sticks"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "winter-warmers-cranberry-orange-oatmeal"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "winter-warmers-quinoa-cauliflower-chickpea-bowl"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "winter-warmers-lemon-parsley-trout-parsnips"
+    },
+    {
+     "slot": "snack",
+     "recipe": "winter-warmers-apple-walnuts"
+    },
+    {
+     "slot": "snack",
+     "recipe": "winter-warmers-banana-yogurt-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "winter-warmers-baked-pear-banana-oats"
+    },
+    {
+     "slot": "lunch",
+     "recipe": "winter-warmers-split-pea-smoked-turkey-soup"
+    },
+    {
+     "slot": "dinner",
+     "recipe": "winter-warmers-slow-braised-beef-root-stew"
+    },
+    {
+     "slot": "snack",
+     "recipe": "winter-warmers-apple-almonds"
+    },
+    {
+     "slot": "snack",
+     "recipe": "winter-warmers-orange-walnuts"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "meals": [
+    {
+     "slot": "breakfast",
+     "recipe": "winter-warmers-baked-pear-banana-oats",
+     "leftover": true
+    },
+    {
+     "slot": "lunch",
+     "recipe": "winter-warmers-split-pea-smoked-turkey-soup",
+     "leftover": true
+    },
+    {
+     "slot": "dinner",
+     "recipe": "winter-warmers-slow-braised-beef-root-stew",
+     "leftover": true
+    },
+    {
+     "slot": "snack",
+     "recipe": "winter-warmers-veg-sticks-tahini-dip"
+    },
+    {
+     "slot": "snack",
+     "recipe": "winter-warmers-pear-walnuts"
+    }
+   ]
+  }
+ ]
+}
