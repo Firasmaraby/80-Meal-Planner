@@ -485,6 +485,26 @@ export function houseGates(plan: MealPlan, foods: FoodIndex): GateFailure[] {
         });
       }
     }
+  // the plan's own words (name, summary, how it works) follow the same rule
+  const planText = [plan.name, plan.summary, plan.description, plan.howItWorks]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase()
+    .replace(HOUSE_WORDS_OK, ' ');
+  const planHit = planText.match(HOUSE_WORDS);
+  if (planHit)
+    out.push({
+      code: 'house_words',
+      message: `The plan text (summary or how it works) mentions "${planHit[1]}". No plan has pork or alcohol, so the words can't either.`,
+      fix: 'Reword the summary or howItWorks to match the recipes.',
+    });
+  const planEgg = planText.match(SOFT_EGG);
+  if (planEgg)
+    out.push({
+      code: 'house_egg',
+      message: `The plan text says "${planEgg[0]}". Every plan cooks eggs until the yolk is firm.`,
+      fix: 'Say the eggs are cooked until the yolk is firm.',
+    });
   return out;
 }
 

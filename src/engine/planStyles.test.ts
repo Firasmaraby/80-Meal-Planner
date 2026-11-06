@@ -359,6 +359,13 @@ describe('house bans: no pork, no alcohol, in any style', () => {
     expect(words({ tip: 'A non-alcoholic ginger beer is a good match.' })).toEqual([]);
   });
 
+  it('reads the plan text too (summary and how it works)', () => {
+    const base = plan({}, /^Chicken breast/i);
+    const codesOf = (p: Partial<import('./types').MealPlan>) => houseGates({ ...base, ...p }, FOOD_INDEX).map((g) => g.code);
+    expect(codesOf({ howItWorks: 'On Friday night, marinate the pork for Saturday.' })).toEqual(['house_words']);
+    expect(codesOf({ summary: 'Lemon, red wine vinegar and herbs do the work.' })).toEqual([]);
+  });
+
   it('wants every egg cooked until the yolk is firm', () => {
     const egg = (meal: Partial<import('./types').Meal>) => houseGates(plan(meal, /^Chicken breast/i), FOOD_INDEX).map((g) => g.code);
     expect(egg({ steps: ['Fry until the white is set and the yolk is still runny.'] })).toEqual(['house_egg']);
