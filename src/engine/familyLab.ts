@@ -215,13 +215,13 @@ export function harmChecks(plan: MealPlan, foods: FoodIndex, size: PlanSize, kca
 /** Slots each recipe is used in, to tell snacks and breakfasts from the rest. */
 function usage(family: FamilyFile) {
   const slots = new Map<string, Set<string>>();
-  const use = (recipe: string, slot: string) => (slots.get(recipe) ?? slots.set(recipe, new Set()).get(recipe)!).add(slot);
-  for (const d of family.week) for (const m of d.meals) use(m.recipe, m.slot);
+  const mark = (recipe: string, slot: string) => (slots.get(recipe) ?? slots.set(recipe, new Set()).get(recipe)!).add(slot);
+  for (const d of family.week) for (const m of d.meals) mark(m.recipe, m.slot);
   // a size's adjust list can bring a recipe in (add) or exchange one (swap)
   for (const s of Object.values(family.sizes))
     for (const op of s?.adjust ?? []) {
-      if ('add' in op) use(op.add.recipe, op.add.slot);
-      else if ('swap' in op) for (const slot of slots.get(op.swap.from) ?? []) use(op.swap.to, slot);
+      if ('add' in op) mark(op.add.recipe, op.add.slot);
+      else if ('swap' in op) for (const slot of slots.get(op.swap.from) ?? []) mark(op.swap.to, slot);
     }
   return slots;
 }
