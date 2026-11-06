@@ -653,3 +653,18 @@ describe('size-only recipe copies', () => {
     expect(meal.variantOf).toBe('veggie-egg-scramble');
   });
 });
+
+describe('carb style promise', () => {
+  const withStarch = (g: number): FamilyFile => {
+    const f = clone();
+    f.carbStyle = 'wholegrain';
+    f.recipes.find((r) => r.id === 'chicken-chickpea-stew')!.ingredients.push({ food: 'cornstarch-65288a', g });
+    return f;
+  };
+  it('lets a spoonful of cornstarch thicken a sauce in a whole-grain family', () => {
+    expect(codes(withStarch(8))).not.toContain('carb_style');
+  });
+  it('fails a real portion of refined starch', () => {
+    expect(codes(withStarch(40))).toContain('carb_style');
+  });
+});

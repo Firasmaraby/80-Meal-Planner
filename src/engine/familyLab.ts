@@ -28,7 +28,7 @@ import {
 import { boldStats, markerCount, paragraphWords, parseRich } from './richText';
 import { HARD_NUTRIENTS, fixListForAI, gradePlan, type DayReport } from './planReport';
 import { SIZING_TOLERANCE, sizingAdvice } from './personalize';
-import { carbStyleFits, carbStyleOfFood } from './carbStyle';
+import { carbStyleFits, carbStyleOfIngredient } from './carbStyle';
 import { isHighMercuryFish, isLiver, isProteinSource } from './foodRoles';
 import { PLAN_STYLES, distinctGroceries, gradeOptionsFor, isSpiceShelf, styleNutrientGates, styleStructureGates } from './planStyles';
 import type { CalorieBand, Food, MealPlan, NutrientKey, PlanSize } from './types';
@@ -424,7 +424,8 @@ function carbPromise(family: FamilyFile, plan: MealPlan, foods: FoodIndex, size:
       for (const i of m.ingredients) {
         const f = getFood(foods, i.foodId);
         if (!f || seen.has(f.id)) continue;
-        const cs = carbStyleOfFood(f);
+        // a spoonful of starch or flour thickening a sauce doesn't change the carb style (GUIDE §6, THICKENER_MAX_G)
+        const cs = carbStyleOfIngredient(f, i.grams);
         if (carbStyleFits(cs, family.carbStyle)) continue;
         seen.add(f.id);
         out.push({
