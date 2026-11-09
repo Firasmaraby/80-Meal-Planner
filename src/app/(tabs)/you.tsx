@@ -10,9 +10,11 @@ import { membershipLine } from '@/lib/paywall';
 import { IS_DEMO_PURCHASES, purchases } from '@/lib/purchases';
 import { isBackendConfigured, supabase } from '@/lib/supabase';
 import { food } from '@/state/catalog';
+import { startOver } from '@/state/startOver';
 import { today, useStore } from '@/state/store';
 import { Button, Card, Chip, Icon, I, IconButton, Row, Screen, Section, Txt, tap, type IconName } from '@/ui/primitives';
 import { radius, space, useTheme } from '@/ui/theme';
+import { useTwoTapConfirm } from '@/ui/useTwoTapConfirm';
 
 const ACTIVITY: { key: Activity; label: string }[] = [
   { key: 'sedentary', label: 'Sedentary' },
@@ -64,7 +66,6 @@ export default function You() {
   const setProfile = useStore((s) => s.setProfile);
   const includeRare = useStore((s) => s.includeRare);
   const setIncludeRare = useStore((s) => s.setIncludeRare);
-  const resetAll = useStore((s) => s.resetAll);
   const logs = useStore((s) => s.logs);
   const membership = useStore((s) => s.membership);
   const clearMembership = useStore((s) => s.clearMembership);
@@ -112,11 +113,17 @@ export default function You() {
     }
   };
 
+  const isWeb = Platform.OS === 'web';
+  const doStartOver = () => {
+    startOver();
+    router.replace('/onboarding');
+  };
+  const startOverTap = useTwoTapConfirm(doStartOver);
+  // window.confirm can be blocked inside a sandboxed iframe, so the web build confirms inline instead
   const reset = () =>
-    confirmAction('Reset everything?', 'This clears your profile, log, favorites and saved plans on this device. It can’t be undone.', 'Reset', () => {
-      resetAll();
-      router.replace('/onboarding');
-    });
+    isWeb
+      ? startOverTap.press()
+      : confirmAction('Start over?', 'This clears your profile, plan, log, check-ins and favourites on this device. It can’t be undone.', 'Start over', doStartOver);
 
   const platform = Platform.OS === 'ios' ? 'ios' : Platform.OS === 'android' ? 'android' : 'web';
   const manage = () => {
@@ -135,10 +142,12 @@ export default function You() {
       setMemberNote('Couldn’t check your purchases. Please try again.');
     }
   };
+  const doResetMembership = () => clearMembership();
+  const resetMembershipTap = useTwoTapConfirm(doResetMembership);
   const resetMembership = () =>
-    confirmAction('Reset demo membership?', 'This ends the demo free week and takes you back to the paywall.', 'Reset', () => {
-      clearMembership();
-    });
+    isWeb
+      ? resetMembershipTap.press()
+      : confirmAction('Reset demo membership?', 'This ends the demo free week and takes you back to the paywall.', 'Reset', doResetMembership);
 
   const signInStub = (provider: string) => {
     // TODO: wire Supabase auth (signInWithIdToken for Apple/Google, signInWithOtp for email).
@@ -335,7 +344,7 @@ export default function You() {
           <Txt v="caption" dim={2} style={{ lineHeight: 18 }}>
             One row per food, with calories, macros and every board nutrient.
           </Txt>
-          <Button kind="ghost" label="Reset everything" icon={I.trash} onPress={reset} />
+          <Button kind="ghost" label={isWeb && startOverTap.armed ? 'Tap again to start over' : 'Start over'} icon={I.trash} onPress={reset} />
         </Card>
         {status && (
           <Txt v="caption" dim={1} style={{ lineHeight: 18 }} accessibilityLiveRegion="polite">
@@ -400,7 +409,7 @@ export default function You() {
       </Section>
 
       <Section title="For the team">
-        {IS_DEMO_PURCHASES && <Button kind="secondary" label="Reset demo membership" icon={I.undo} onPress={resetMembership} />}
+        {IS_DEMO_PURCHASES && <Button kind="secondary" label={isWeb && resetMembershipTap.armed ? 'Tap again to reset' : 'Reset demo membership'} icon={I.undo} onPress={resetMembership} />}
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Plan admin"

@@ -13,6 +13,8 @@ interface HealthState {
   markSynced: (at?: string) => void;
   markError: (message: string) => void;
   clearError: () => void;
+  /** back to the starting values (Start over) */
+  reset: () => void;
 }
 
 /**
@@ -56,6 +58,7 @@ export const useHealthStore = create<HealthState>()(
       markSynced: (at = new Date().toISOString()) => set({ lastSyncedAt: at, lastError: null }),
       markError: (lastError) => set({ lastError }),
       clearError: () => set({ lastError: null }),
+      reset: () => set({ enabled: false, lastSyncedAt: null, lastError: null }),
     }),
     {
       name: 'eighty-health',

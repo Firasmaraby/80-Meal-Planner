@@ -72,6 +72,10 @@ const BUDGETS: { key: Budget; label: string; desc: string }[] = [
 
 const KG_PER_LB = 0.45359237;
 const CM_PER_IN = 2.54;
+const AGE = [14, 90] as const;
+const HEIGHT = [120, 230] as const;
+const WEIGHT = [35, 250] as const;
+const inRange = (n: number | undefined, [lo, hi]: readonly [number, number]) => n !== undefined && n >= lo && n <= hi;
 const clamp = (n: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, n));
 const round1 = (n: number) => Math.round(n * 10) / 10;
 
@@ -93,12 +97,13 @@ export default function Onboarding() {
 
   // a retake skips the welcome and starts from what the person said last time
   const [step, setStep] = useState(isRetake ? at('reasons') : 0);
-  const [sex, setSex] = useState<Sex>(stored.sex);
-  const [age, setAge] = useState(stored.age);
-  const [heightCm, setHeightCm] = useState(stored.heightCm);
-  const [weightKg, setWeightKg] = useState(stored.weightKg);
+  // a first run starts blank: nothing is picked and the numbers are empty. A retake starts from the stored profile.
+  const [sex, setSex] = useState<Sex | undefined>(isRetake ? stored.sex : undefined);
+  const [age, setAge] = useState<number | undefined>(isRetake ? stored.age : undefined);
+  const [heightCm, setHeightCm] = useState<number | undefined>(isRetake ? stored.heightCm : undefined);
+  const [weightKg, setWeightKg] = useState<number | undefined>(isRetake ? stored.weightKg : undefined);
   const [lifeStage, setLifeStage] = useState<LifeStage>(stored.lifeStage);
-  const [activity, setActivity] = useState<Activity>(stored.activity);
+  const [activity, setActivity] = useState<Activity | undefined>(isRetake ? stored.activity : undefined);
   const [goal, setGoal] = useState<Goal>(stored.goal);
   const [diet, setDiet] = useState<string[]>(stored.diet);
   const [carbStyle, setCarbStyle] = useState<CarbStyle>(stored.carbStyle ?? 'whole');
@@ -128,11 +133,19 @@ export default function Onboarding() {
     timer.current = setTimeout(next, ADVANCE_MS);
   };
 
-  const profileNow: Profile = useMemo(
-    () => ({ ...stored, sex, age, heightCm, weightKg, activity, goal, lifeStage: sex === 'female' ? lifeStage : 'none' }),
-    [stored, sex, age, heightCm, weightKg, activity, goal, lifeStage],
+  // the body numbers, once they are all in and in range
+  const body_ =
+    sex && inRange(age, AGE) && inRange(heightCm, HEIGHT) && inRange(weightKg, WEIGHT)
+      ? { sex, age: age as number, heightCm: heightCm as number, weightKg: weightKg as number }
+      : undefined;
+  const lifeStageNow: LifeStage = sex === 'female' ? lifeStage : 'none';
+  // a full profile exists only once the body numbers and activity are in
+  const profileNow: Profile | undefined = useMemo(
+    () => (body_ && activity ? { ...stored, ...body_, activity, goal, lifeStage: lifeStageNow } : undefined),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [stored, body_?.sex, body_?.age, body_?.heightCm, body_?.weightKg, activity, goal, lifeStageNow],
   );
-  const kcal = useMemo(() => calorieTarget(profileNow), [profileNow]);
+  const kcal = useMemo(() => (profileNow ? calorieTarget(profileNow) : undefined), [profileNow]);
 
   // what the person has told us so far; the body numbers only count once they are in
   const answers: QuizAnswers = useMemo(
@@ -145,15 +158,17 @@ export default function Onboarding() {
       time,
       cookingFor,
       budget,
-      lifeStage: step > at('you') ? profileNow.lifeStage : undefined,
+      lifeStage: step > at('you') ? lifeStageNow : undefined,
       kcal: step > at('you') ? kcal : undefined,
     }),
-    [reasons, tastes, diet, carbStyle, carbPicked, time, cookingFor, budget, step, profileNow.lifeStage, kcal],
+    [reasons, tastes, diet, carbStyle, carbPicked, time, cookingFor, budget, step, lifeStageNow, kcal],
   );
   const live = useMemo(() => matchPlans(families, answers, FOOD_INDEX), [families, answers]);
 
   const finish = (plan?: MealPlan) => {
-    setProfile({ sex, age, heightCm, weightKg, lifeStage: profileNow.lifeStage, activity, goal, diet, carbStyle });
+    if (!profileNow) return;
+    const { sex: sx, age: ag, heightCm: h, weightKg: w, lifeStage: ls, activity: act } = profileNow;
+    setProfile({ sex: sx, age: ag, heightCm: h, weightKg: w, lifeStage: ls, activity: act, goal, diet, carbStyle });
     setQuiz(answers);
     if (plan) enroll(plan);
     finishOnboarding();
@@ -189,7 +204,7 @@ export default function Onboarding() {
         <View>
           <Heading title={CARB_QUESTION} sub="We use this to pick plans that suit you. You can change it any time in You, Food preferences." />
           <CarbChoices
-            value={carbStyle}
+            value={carbPicked ? carbStyle : undefined}
             onChange={(v) =>
               choose(
                 setCarbStyle,
@@ -215,17 +230,18 @@ export default function Onboarding() {
           setLifeStage={setLifeStage}
         />
       )}
-      {id === 'activity' && <ActivityGoal {...{ activity, setActivity, goal, setGoal }} pregnantOrNursing={sex === 'female' && lifeStage !== 'none'} />}
+      {id === 'activity' && <ActivityGoal {...{ activity, setActivity, goal, setGoal }} pregnantOrNursing={lifeStageNow !== 'none'} />}
     </>
   );
 
   // multi-select and form steps keep a Continue button; single-choice steps and the taste test move on by themselves
+  const canContinue = id === 'you' ? !!body_ : id === 'activity' ? !!activity : true;
   const needsContinue = id === 'reasons' || id === 'diet' || id === 'you' || id === 'activity';
   const onContinue = () => {
     if (id === 'reasons') return continueFromReasons();
     if (id === 'diet') setProfile({ diet });
-    if (id === 'you') setProfile({ sex, age, heightCm, weightKg, lifeStage: profileNow.lifeStage });
-    if (id === 'activity') setProfile({ activity, goal });
+    if (id === 'you' && body_) setProfile({ ...body_, lifeStage: lifeStageNow });
+    if (id === 'activity' && activity) setProfile({ activity, goal });
     next();
   };
 
@@ -242,14 +258,17 @@ export default function Onboarding() {
           {id === 'welcome' ? (
             <Welcome total={live.total} />
           ) : (
-            <MatchReveal
-              families={families}
-              answers={answers}
-              kcal={kcal}
-              protein={macroTargets(profileNow, kcal).protein}
-              band={bandFor(kcal)}
-              onStart={finish}
-            />
+            profileNow &&
+            kcal !== undefined && (
+              <MatchReveal
+                families={families}
+                answers={answers}
+                kcal={kcal}
+                protein={macroTargets(profileNow, kcal).protein}
+                band={bandFor(kcal)}
+                onStart={finish}
+              />
+            )
           )}
         </Screen>
       ) : (
@@ -277,7 +296,7 @@ export default function Onboarding() {
         ) : (
           <Row gap={space.sm}>
             <Button kind="secondary" label="Back" icon={I.back} onPress={back} style={needsContinue ? undefined : { flex: 1 }} />
-            {needsContinue ? <Button label="Continue" style={{ flex: 1 }} onPress={onContinue} /> : null}
+            {needsContinue ? <Button label="Continue" style={{ flex: 1 }} onPress={onContinue} disabled={!canContinue} /> : null}
           </Row>
         )}
       </BottomBar>
@@ -407,19 +426,45 @@ function RoundBtn({ icon, label, onPress }: { icon: IconName; label: string; onP
 }
 
 /** Big −/+ stepper whose number is also typeable. */
-function NumField({ label, value, onChange, min, max, step = 1, unit }: { label: string; value: number; onChange: (n: number) => void; min: number; max: number; step?: number; unit: string }) {
+function NumField({
+  label,
+  hideLabel,
+  value,
+  onChange,
+  min,
+  max,
+  step = 1,
+  unit,
+  placeholder,
+  start,
+}: {
+  label: string;
+  /** the row above already names the field (next to its unit toggle) */
+  hideLabel?: boolean;
+  value: number | undefined;
+  onChange: (n: number | undefined) => void;
+  min: number;
+  max: number;
+  step?: number;
+  unit: string;
+  placeholder?: string;
+  /** where the − and + buttons begin when the field is empty */
+  start?: number;
+}) {
   const c = useTheme();
-  const [text, setText] = useState(String(value));
+  const [text, setText] = useState(value === undefined ? '' : String(value));
   const [focused, setFocused] = useState(false);
   useEffect(() => {
-    if (!focused) setText(String(value));
+    if (!focused) setText(value === undefined ? '' : String(value));
   }, [value, focused]);
-  const bump = (d: number) => onChange(clamp(round1(value + d), min, max));
+  const bump = (d: number) => onChange(clamp(round1((value ?? start ?? min) + (value === undefined ? 0 : d)), min, max));
   return (
     <View style={{ flex: 1, gap: 6 }}>
-      <Txt v="label" dim={1}>
-        {label}
-      </Txt>
+      {!hideLabel && (
+        <Txt v="label" dim={1}>
+          {label}
+        </Txt>
+      )}
       <Row gap={space.sm}>
         <RoundBtn icon={I.minus} label={`Less ${label}`} onPress={() => bump(-step)} />
         <View
@@ -438,6 +483,8 @@ function NumField({ label, value, onChange, min, max, step = 1, unit }: { label:
           <TextInput
             accessibilityLabel={label}
             value={text}
+            placeholder={placeholder}
+            placeholderTextColor={c.ink3}
             keyboardType="decimal-pad"
             selectTextOnFocus
             onFocus={() => setFocused(true)}
@@ -445,9 +492,9 @@ function NumField({ label, value, onChange, min, max, step = 1, unit }: { label:
             onChangeText={(t) => {
               setText(t);
               const n = parseFloat(t.replace(',', '.'));
-              if (!Number.isNaN(n) && n >= min && n <= max) onChange(n);
+              onChange(!Number.isNaN(n) && n >= min && n <= max ? n : undefined);
             }}
-            style={{ minWidth: 40, maxWidth: 80, textAlign: 'center', fontSize: 22, fontWeight: '800', color: c.ink, fontFamily: font.rounded, padding: 0, outlineWidth: 0 }}
+            style={{ minWidth: 40, maxWidth: 110, textAlign: 'center', fontSize: 22, fontWeight: '800', color: c.ink, fontFamily: font.rounded, padding: 0, outlineWidth: 0 }}
           />
           <Txt v="caption" dim={2}>
             {unit}
@@ -472,24 +519,24 @@ function UnitToggle<T extends string>({ value, options, onChange }: { value: T; 
 // ── 2 · About you ──────────────────────────────────────────────────────────
 
 function AboutYou(p: {
-  sex: Sex;
+  sex: Sex | undefined;
   setSex: (s: Sex) => void;
-  age: number;
-  setAge: (n: number) => void;
-  heightCm: number;
-  setHeightCm: (n: number) => void;
-  weightKg: number;
-  setWeightKg: (n: number) => void;
+  age: number | undefined;
+  setAge: (n: number | undefined) => void;
+  heightCm: number | undefined;
+  setHeightCm: (n: number | undefined) => void;
+  weightKg: number | undefined;
+  setWeightKg: (n: number | undefined) => void;
   lifeStage: LifeStage;
   setLifeStage: (s: LifeStage) => void;
 }) {
   const c = useTheme();
   const [hUnit, setHUnit] = useState<'cm' | 'ft'>('cm');
   const [wUnit, setWUnit] = useState<'kg' | 'lb'>('kg');
-  const totalIn = Math.round(p.heightCm / CM_PER_IN);
-  const ft = Math.floor(totalIn / 12);
-  const inch = totalIn % 12;
-  const lb = Math.round(p.weightKg / KG_PER_LB);
+  const totalIn = p.heightCm === undefined ? undefined : Math.round(p.heightCm / CM_PER_IN);
+  const ft = totalIn === undefined ? undefined : Math.floor(totalIn / 12);
+  const inch = totalIn === undefined ? undefined : totalIn % 12;
+  const lb = p.weightKg === undefined ? undefined : Math.round(p.weightKg / KG_PER_LB);
 
   return (
     <View>
@@ -524,7 +571,7 @@ function AboutYou(p: {
       )}
 
       <View style={{ marginTop: space.xl }}>
-        <NumField label="Age" value={p.age} onChange={p.setAge} min={14} max={90} unit="yrs" />
+        <NumField label="Age" value={p.age} onChange={p.setAge} min={AGE[0]} max={AGE[1]} unit="yrs" placeholder="e.g. 35" start={35} />
       </View>
 
       <View style={{ marginTop: space.xl, gap: space.sm }}>
@@ -535,11 +582,19 @@ function AboutYou(p: {
           <UnitToggle value={hUnit} onChange={setHUnit} options={[{ key: 'cm', label: 'cm' }, { key: 'ft', label: 'ft / in' }]} />
         </Row>
         {hUnit === 'cm' ? (
-          <NumField label="Height" value={Math.round(p.heightCm)} onChange={p.setHeightCm} min={120} max={230} unit="cm" />
+          <NumField hideLabel label="Height" value={p.heightCm === undefined ? undefined : Math.round(p.heightCm)} onChange={p.setHeightCm} min={HEIGHT[0]} max={HEIGHT[1]} unit="cm" placeholder="e.g. 170" start={170} />
         ) : (
           <Row gap={space.md} style={{ alignItems: 'flex-start' }}>
-            <NumField label="Feet" value={ft} onChange={(f) => p.setHeightCm(Math.round((f * 12 + inch) * CM_PER_IN))} min={4} max={7} unit="ft" />
-            <NumField label="Inches" value={inch} onChange={(i) => p.setHeightCm(Math.round((ft * 12 + i) * CM_PER_IN))} min={0} max={11} unit="in" />
+            <NumField label="Feet" value={ft} onChange={(f) => p.setHeightCm(f === undefined ? undefined : Math.round((f * 12 + (inch ?? 0)) * CM_PER_IN))} min={4} max={7} unit="ft" placeholder="e.g. 5" start={5} />
+            <NumField label="Inches" value={inch} onChange={(i) => {
+                if (ft !== undefined) p.setHeightCm(Math.round((ft * 12 + (i ?? 0)) * CM_PER_IN));
+              }}
+              min={0}
+              max={11}
+              unit="in"
+              placeholder="e.g. 7"
+              start={0}
+            />
           </Row>
         )}
       </View>
@@ -552,9 +607,9 @@ function AboutYou(p: {
           <UnitToggle value={wUnit} onChange={setWUnit} options={[{ key: 'kg', label: 'kg' }, { key: 'lb', label: 'lb' }]} />
         </Row>
         {wUnit === 'kg' ? (
-          <NumField label="Weight" value={round1(p.weightKg)} onChange={p.setWeightKg} min={35} max={250} unit="kg" />
+          <NumField hideLabel label="Weight" value={p.weightKg === undefined ? undefined : round1(p.weightKg)} onChange={p.setWeightKg} min={WEIGHT[0]} max={WEIGHT[1]} unit="kg" placeholder="e.g. 70" start={70} />
         ) : (
-          <NumField label="Weight" value={lb} onChange={(n) => p.setWeightKg(round1(n * KG_PER_LB))} min={77} max={550} unit="lb" />
+          <NumField hideLabel label="Weight" value={lb} onChange={(n) => p.setWeightKg(n === undefined ? undefined : round1(n * KG_PER_LB))} min={78} max={550} unit="lb" placeholder="e.g. 155" start={155} />
         )}
       </View>
     </View>
@@ -563,7 +618,7 @@ function AboutYou(p: {
 
 // ── 3 · Activity & goal ────────────────────────────────────────────────────
 
-function ActivityGoal(p: { activity: Activity; setActivity: (a: Activity) => void; goal: Goal; setGoal: (g: Goal) => void; pregnantOrNursing: boolean }) {
+function ActivityGoal(p: { activity: Activity | undefined; setActivity: (a: Activity) => void; goal: Goal; setGoal: (g: Goal) => void; pregnantOrNursing: boolean }) {
   return (
     <View>
       <Heading title="How active are you?" />

@@ -22,10 +22,12 @@ import {
 import { IS_DEMO_PURCHASES, purchases } from '@/lib/purchases';
 import { usePlan } from '@/state/day';
 import { useFamilyOf } from '@/state/families';
+import { startOver } from '@/state/startOver';
 import { useStore } from '@/state/store';
 import { BAR_CLEARANCE, BottomBar } from '@/ui/planParts';
 import { Button, Card, Icon, I, Row, Screen, Txt, tap, type IconName } from '@/ui/primitives';
 import { radius, space, useTheme } from '@/ui/theme';
+import { useTwoTapConfirm } from '@/ui/useTwoTapConfirm';
 
 const BENEFITS: { icon: IconName; title: string; sub: string }[] = [
   { icon: I.target, title: '80% of every vitamin and mineral', sub: 'Every day, worked out for you.' },
@@ -48,6 +50,10 @@ const STEP_COPY: Record<TimelineKey, { label: (day: number) => string; text: str
 export default function Paywall() {
   const c = useTheme();
   const enrollment = useStore((s) => s.enrollment);
+  const startOverTap = useTwoTapConfirm(() => {
+    startOver();
+    router.replace('/onboarding');
+  });
   const plan = usePlan(enrollment?.planId, enrollment?.version);
   const family = useFamilyOf(plan);
   const planName = plan ? (family?.name ?? plan.name) : undefined;
@@ -224,9 +230,12 @@ export default function Paywall() {
             {legalLine(chosen, platform)}
           </Txt>
           {IS_DEMO_PURCHASES && (
-            <Txt v="caption" dim={2} style={{ textAlign: 'center' }}>
-              Demo: no payment is taken.
-            </Txt>
+            <>
+              <Txt v="caption" dim={2} style={{ textAlign: 'center' }}>
+                Demo: no payment is taken.
+              </Txt>
+              <Button kind="ghost" small label={startOverTap.armed ? 'Tap again to start over' : 'Start over'} onPress={startOverTap.press} />
+            </>
           )}
         </View>
       </Screen>

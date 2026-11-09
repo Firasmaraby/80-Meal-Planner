@@ -26,7 +26,7 @@ export const CARB_NEEDS: Record<CarbStyle, string> = {
 };
 
 /** Three big radio cards, one per answer. */
-export function CarbChoices({ value, onChange }: { value: CarbStyle; onChange: (v: CarbStyle) => void }) {
+export function CarbChoices({ value, onChange }: { value?: CarbStyle; onChange: (v: CarbStyle) => void }) {
   return (
     <View accessibilityRole="radiogroup" accessibilityLabel={CARB_QUESTION} style={{ gap: space.sm }}>
       {CARB_OPTIONS.map((o) => (

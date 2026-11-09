@@ -32,6 +32,8 @@ interface KitchenState {
   togglePantry: (foodId: string) => void;
   setPrepDay: (d: number) => void;
   setReminders: (r: Partial<ReminderSettings>) => void;
+  /** back to the starting values (Start over) */
+  reset: () => void;
 }
 
 const clamp = (n: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, Math.round(n)));
@@ -67,18 +69,18 @@ const safeStorage = {
   },
 };
 
+const INITIAL_KITCHEN = { householdSize: 1, pantry: [] as string[], prepDay: 0, reminders: DEFAULT_REMINDERS };
+
 export const useKitchen = create<KitchenState>()(
   persist(
     (set) => ({
-      householdSize: 1,
-      pantry: [],
-      prepDay: 0,
-      reminders: DEFAULT_REMINDERS,
+      ...INITIAL_KITCHEN,
 
       setHouseholdSize: (n) => set({ householdSize: clamp(n, 1, 8) }),
       togglePantry: (foodId) =>
         set((s) => ({ pantry: s.pantry.includes(foodId) ? s.pantry.filter((p) => p !== foodId) : [...s.pantry, foodId] })),
       setPrepDay: (d) => set({ prepDay: clamp(d, 0, 6) }),
+      reset: () => set({ ...INITIAL_KITCHEN }),
       setReminders: (r) => set((s) => ({ reminders: { ...s.reminders, ...r, mealTimes: { ...s.reminders.mealTimes, ...r.mealTimes } } })),
     }),
     {
