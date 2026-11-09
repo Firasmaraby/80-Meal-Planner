@@ -2,6 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
+import type { QuizAnswers } from '@/engine/match';
 import type { Ingredient, LogItem, Meal, MealPlan, MealSlot, Profile } from '@/engine/types';
 import { NO_MEMBERSHIP, addDaysTo, type Membership, type PackageId } from '@/lib/paywall';
 
@@ -63,6 +64,8 @@ export const DEFAULT_PROFILE: Profile = {
 interface State {
   onboarded: boolean;
   profile: Profile;
+  /** the "Find my plan" quiz answers, kept so the Plans tab can show matches; absent until the quiz is done */
+  quiz?: QuizAnswers;
   enrollment?: Enrollment;
   membership: Membership;
   logs: Log[];
@@ -83,6 +86,7 @@ interface State {
   remotePlans: MealPlan[];
 
   setProfile: (p: Partial<Profile>) => void;
+  setQuiz: (a: QuizAnswers) => void;
   finishOnboarding: () => void;
   /** Demo purchases only: begin a free week on this plan. The real store sets membership from its receipt. */
   startMembership: (plan: PackageId) => void;
@@ -113,6 +117,7 @@ const stamp = () => new Date().toISOString();
 const initial = {
   onboarded: false,
   profile: DEFAULT_PROFILE,
+  quiz: undefined,
   enrollment: undefined,
   membership: NO_MEMBERSHIP,
   logs: [] as Log[],
@@ -184,6 +189,7 @@ export const useStore = create<State>()(
       ...initial,
 
       setProfile: (p) => set((s) => ({ profile: { ...s.profile, ...p } })),
+      setQuiz: (a) => set({ quiz: a }),
       finishOnboarding: () => set({ onboarded: true }),
       startMembership: (plan) => {
         const startedOn = today();
