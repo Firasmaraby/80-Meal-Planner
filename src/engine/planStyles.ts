@@ -240,12 +240,17 @@ export const PLAN_STYLES: Record<PlanStyle, PlanStyleInfo> = {
     gates: { maxRedMeatDays: 1, maxPoultryFishDays: 4 },
   },
   // goals
-  muscle: { label: 'Build muscle', blurb: 'A high-protein week for training and gaining lean mass.', gates: { rules: { proteinMinPctKcal: 30 } } },
+  muscle: {
+    label: 'Build muscle',
+    blurb: 'A high-protein week for training and gaining lean mass.',
+    gates: { rules: { proteinMinPctKcal: 30 } },
+    note: 'Built for healthy, active adults. If you have kidney disease or have been told to limit protein, check this week with your care team first.',
+  },
   'muscle-plant': {
     label: 'Build muscle, plant-based',
-    blurb: 'A high-protein vegan week from tofu, tempeh, seitan and legumes, no powders.',
+    blurb: 'A high-protein vegan week built on soy, legumes and more, no powders.',
     gates: { rules: { proteinMinPctKcal: 30, fattyFishPerWeek: 0 }, bans: ['animal'] },
-    note: 'B12 comes from a fortified soy drink in this week; check the carton, and a B12 supplement is the safe bet on a vegan diet.',
+    note: 'B12 comes from a fortified soy drink in this week; check the carton, and a B12 supplement is the safe bet on a vegan diet. If you have kidney disease or have been told to limit protein, check this week with your care team first.',
   },
   'fat-loss': {
     label: 'Fat loss',
