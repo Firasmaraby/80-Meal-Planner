@@ -215,3 +215,20 @@ export function displayTags(tags: readonly string[], style?: string): string[] {
   const implied = new Set(tags.flatMap((t) => IMPLIED_BY[t] ?? []));
   return tags.filter((t) => t !== style && !implied.has(t));
 }
+
+// ── Diet filters ─────────────────────────────────────────────────────────────
+
+/** A plan tagged "vegan" also satisfies "vegetarian" and "dairy-free", and so on. */
+const SATISFIED_BY: Record<string, string[]> = {
+  vegetarian: ['vegetarian', 'vegan'],
+  vegan: ['vegan'],
+  pescatarian: ['pescatarian', 'vegetarian', 'vegan'],
+  'dairy-free': ['dairy-free', 'vegan'],
+  'egg-free': ['egg-free', 'vegan'],
+  'gluten-free': ['gluten-free'],
+};
+
+export function dietMatches(plan: Pick<MealPlan, 'tags'>, diet: string[]): boolean {
+  const tags = plan.tags.map((t) => t.toLowerCase());
+  return diet.every((d) => (SATISFIED_BY[d] ?? [d]).some((t) => tags.includes(t)));
+}
