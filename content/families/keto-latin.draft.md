@@ -1,6 +1,6 @@
 # keto-latin draft: Keto Latin (final week)
 
-Latin American home cooking with the starch taken out and the salsas, avocado and fish left in. Places: Mexico (huevos a la mexicana, salsa verde eggs, carne asada, camarones a la diabla, cochinita-style pork, nopales), Peru (sea bass ceviche, trout in ají amarillo, palta rellena), Brazil (moqueca with couve and a pecan farofa), Argentina (steak with chimichurri and a green salad).
+Latin American home cooking with the starch taken out and the salsas, avocado and fish left in. Places: Mexico (huevos a la mexicana, salsa verde eggs, carne asada, camarones a la diabla, achiote chicken, nopales), Peru (sea bass ceviche, trout in ají amarillo, palta rellena), Brazil (moqueca with couve and a pecan farofa), Argentina (steak with chimichurri and a green salad).
 
 Fat comes from avocado, olive oil, pecans, almonds, pepitas, chia and fish. There is no cheese or cream, and the coconut milk is light and used once. Eye of round, pork tenderloin, chicken breast, sea bass and shrimp are the lean proteins, because olive oil, avocado and eggs already push saturated fat toward 10%. Standard is written near 1,900 kcal and the lab sizes it up; nothing at Big grows past about 375 g of raw meat or fish.
 

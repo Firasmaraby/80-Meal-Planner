@@ -359,6 +359,24 @@ describe('house bans: no pork, no alcohol, in any style', () => {
     expect(words({ tip: 'A non-alcoholic ginger beer is a good match.' })).toEqual([]);
   });
 
+  it('catches pork dish names (al pastor, porchetta) but not pollo pibil or porcini', () => {
+    const words = (meal: Partial<import('./types').Meal>) => houseGates(plan(meal, /^Chicken breast/i), FOOD_INDEX).map((g) => g.code);
+    expect(words({ name: 'Tacos al pastor' })).toEqual(['house_words']);
+    expect(words({ inspiredBy: 'Tuscan porchetta flavours on turkey' })).toEqual(['house_words']);
+    expect(words({ name: 'Pollo pibil' })).toEqual([]);
+    expect(words({ name: 'Porcini risotto' })).toEqual([]);
+  });
+
+  it('reads recipe ids as words too', () => {
+    const gates = (recipeId: string) => houseGates(plan({ recipeId }, /^Chicken breast/i), FOOD_INDEX);
+    expect(gates('x-porchetta-roast').map((g) => g.code)).toEqual(['house_words']);
+    expect(gates('x-roast-pork-bowl').map((g) => g.code)).toEqual(['house_words']);
+    expect(gates('x-lomo-cerdo-repollo')[0].message).toContain('x-lomo-cerdo-repollo');
+    expect(gates('x-roast-pork-bowl')[0].fix).toBe('Rename the recipe id.');
+    expect(gates('x-porcini-risotto')).toEqual([]);
+    expect(gates('x-pollo-pibil')).toEqual([]);
+  });
+
   it('reads the plan text too (summary and how it works)', () => {
     const base = plan({}, /^Chicken breast/i);
     const codesOf = (p: Partial<import('./types').MealPlan>) => houseGates({ ...base, ...p }, FOOD_INDEX).map((g) => g.code);

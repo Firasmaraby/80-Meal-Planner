@@ -6,7 +6,7 @@ Style `vegan`, 7 days, Standard 2100 kcal (1800-2400), Light 1700 (1600-1800), B
 
 | Day | Breakfast | Lunch | Dinner | Snacks |
 |---|---|---|---|---|
-| Mon | Avena with cinnamon, banana, chia and almonds, cooked in soy beverage | Black bean and roasted sweet potato bowl with lime-salted tofu and pepita crema | Soya and mushroom tinga tacos (makes tomorrow's lunch) | Jicama and orange cup with pepitas; tofu al pastor bites with pineapple |
+| Mon | Avena with cinnamon, banana, chia and almonds, cooked in soy beverage | Black bean and roasted sweet potato bowl with lime-salted tofu and pepita crema | Soya and mushroom tinga tacos (makes tomorrow's lunch) | Jicama and orange cup with pepitas; achiote tofu bites with seared pineapple |
 | Tue | Arepas with black beans and tempeh chorizo, avocado, cafe con leche (soy) | Tinga leftover | Peruvian quinoa chupe with white beans, camote and cancha-style hominy | Soy yogurt cup with orange, almonds, Brazil nuts and chia; chia fresca with lime and pineapple |
 | Wed | Avena (swapped from rancheros so salsa and hogao are not both on day 3) | Chupe leftover | Colombian beans with hogao, seared tempeh, roasted plantain and sweet potato (makes Thursday lunch) | Licuado (soy); crispy tempeh with lime and chile |
 | Thu | Arepas | Colombian beans leftover | Pozole verde with white beans, hominy, oyster mushrooms and a pepita salsa | Soy yogurt cup |

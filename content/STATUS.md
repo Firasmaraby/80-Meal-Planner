@@ -151,5 +151,5 @@ Every family in CATALOG.md moves through these steps:
   - The library now has 20 whole-food and 10 whole-grain Everyday plans. 28 keep Light 1400; `everyday-classics` and `takeout-at-home` start Light at 1600 (Firas to confirm).
   - Lab: house words now include "alcohol" and "mulled" and cover the plan's own summary and howItWorks. That fixed stale lines in lean-med, heart-med and lowgi-med.
   - Rebuilt data. Tests (497), typecheck and the Playwright walk pass: 30 Everyday plans, no duplicate meals, no errors.
-  - Open: older regional plans name pork dishes as inspiration (cochinita pibil, porchetta, tofu al pastor). The food is pork-free; Firas to decide.
+  - Done: dishes that borrowed pork dish names (cochinita pibil, porchetta, tofu al pastor, cassoulet) are renamed, and the house-word check now rejects those words and any pork or cerdo in a recipe id.
 

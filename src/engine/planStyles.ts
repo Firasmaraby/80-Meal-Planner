@@ -426,7 +426,7 @@ export const HOUSE_BANS: BanId[] = ['pork', 'alcohol'];
 // the same, in the words of a recipe: a step that deglazes with wine, a dish named for ham. Vinegars and the beef or turkey
 // versions of cured meats are fine.
 const HOUSE_WORDS =
-  /\b(pork|bacon|ham|hams|lard|prosciutto|pancetta|guanciale|chorizo|salami|pepperoni|mortadella|wine|mirin|sake|beer|shaoxing|rum|brandy|cognac|sherry|vodka|bourbon|whiske?y|liqueur|marsala|vermouth|alcohol|alcoholic|mulled)\b/;
+  /\b(pork|bacon|ham|hams|lard|prosciutto|pancetta|guanciale|chorizo|salami|pepperoni|mortadella|wine|mirin|sake|beer|shaoxing|rum|brandy|cognac|sherry|vodka|bourbon|whiske?y|liqueur|marsala|vermouth|alcohol|alcoholic|mulled|cochinita|porchetta|carnitas|pastor|char siu|chashu|tonkatsu|lechon|cassoulet|cerdo|porco)\b/;
 const HOUSE_WORDS_OK =
   /\b(?:rice|red|white|sherry|wine|cider|malt)?\s*wine vinegar\b|\bsherry vinegar\b|\b(?:beef|turkey|chicken|plant-based|soy)\s+(?:bacon|ham|chorizo|salami|pepperoni|sausage)\b|\bpork-free\b|\bno pork\b|\bno alcohol\b|\bnon-?alcoholic\b|\balcohol-free\b|\bginger beer\b|\broot beer\b/g;
 
@@ -452,6 +452,21 @@ export function houseGates(plan: MealPlan, foods: FoodIndex): GateFailure[] {
             recipe: m.recipeId ?? m.name,
             message: `Day ${d.day}, ${m.name}: ${f.name} is not allowed in any plan (${why}).`,
             fix: why === 'pork' ? 'Use the protein that fits the dish: chicken or turkey, beef, lamb or goat, fish or beans.' : 'Leave the alcohol out: stock with a little rice vinegar, or a little sugar or honey with vinegar.',
+          });
+        }
+      }
+      // the recipe id is kebab-case; read it as words so "x-porchetta-roast" is caught like a name would be
+      const idKey = `id:${m.recipeId}`;
+      if (m.recipeId && !seen.has(idKey)) {
+        const idHit = m.recipeId.toLowerCase().replace(/-/g, ' ').replace(HOUSE_WORDS_OK, ' ').match(HOUSE_WORDS);
+        if (idHit) {
+          seen.add(idKey);
+          out.push({
+            code: 'house_words',
+            day: d.day,
+            recipe: m.recipeId,
+            message: `Day ${d.day}, ${m.name}: the recipe id "${m.recipeId}" contains "${idHit[1]}". No plan has pork or alcohol, so the ids can't either.`,
+            fix: 'Rename the recipe id.',
           });
         }
       }

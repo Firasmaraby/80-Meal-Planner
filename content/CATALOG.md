@@ -339,7 +339,7 @@ barley, buckwheat, millet, freekeh). No bread, rice, pasta, tortillas, bulgur or
 | 16 | `spring-fresh` | Spring Fresh | Asparagus, peas, new potatoes, radishes, herbs, trout and salmon, eggs, light lentil salads, strawberries. |
 | 17 | `summer-salads` | Summer Salads | Big main-course salads that fill you up: niçoise-style with potatoes and tuna; chicken, peach and quinoa salad; bean and corn salad with grilled fish; watermelon, feta and mint sides. Little cooking. |
 | 18 | `autumn-harvest` | Autumn Harvest | Squash, apples, mushrooms, lentils, kale and beets: roast squash with lentils and walnuts; chicken with apples and cabbage; mushroom and barley soup; baked apples with oats. |
-| 19 | `winter-warmers` | Winter Warmers | Slow braises and roasts: beef and root veg stew; chicken and white bean cassoulet-style (no sausage); split pea soup with smoked turkey; baked oats; mulled-spice fruit. |
+| 19 | `winter-warmers` | Winter Warmers | Slow braises and roasts: beef and root veg stew; chicken and white bean bake with an oat-parsley crumb; split pea soup with smoked turkey; baked oats; mulled-spice fruit. |
 | 20 | `cook-once-eat-twice` | Cook Once, Eat Twice | A Sunday and a Wednesday cook that feed the week: a big pot of lentils, a tray of roast chicken and roots, a pan of salmon; weekday meals assembled in minutes. |
 
 **Whole grains allowed (10).** Adds brown rice, whole-wheat pasta, whole-grain bread, corn tortillas, bulgur and soba
