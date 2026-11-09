@@ -33,5 +33,15 @@
   "natto-86df6e": {
     "iron": 3.3,
     "_why": "The merged natto record carries 8.6 mg iron per 100 g (USDA SR). The Japanese Standard Tables (8th ed., 04046 itohiki natto, also in this library) give 3.3 mg, and natto's iron should sit near cooked soybeans of similar protein. Set to 3.3 mg, the value from the country that eats it daily."
+  },
+  "soy-milk-all-flavors-enhanced-f9fdd1": {
+    "phosphorus": 90,
+    "_why": "The source has no phosphorus for fortified ('enhanced') soy drink, so every day using it was under-counted. Plain soy drink is about 45 to 50 mg per 100 g; fortified cartons add calcium as calcium carbonate or tricalcium phosphate, giving roughly 50 to 120 mg. Set to 90 mg, toward the high end, so upper-limit checks are never understated."
+  },
+  "soybean-dry-roasted-bb3701": {
+    "phosphorus": 649,
+    "potassium": 1364,
+    "b1": 0.43,
+    "_why": "The source has no phosphorus, potassium or thiamin for dry-roasted soybeans. USDA SR 16111 (soybeans, mature seeds, dry roasted) lists 649 mg phosphorus, 1,364 mg potassium and 0.43 mg thiamin per 100 g."
   }
 }
