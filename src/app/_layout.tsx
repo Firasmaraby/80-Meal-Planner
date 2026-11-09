@@ -6,10 +6,11 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { fetchPublishedPlans } from '@/lib/plansRepo';
+import { isEntitled } from '@/lib/paywall';
 import { useReminderSync } from '@/lib/reminders';
 import { useHealthSync } from '@/lib/useHealthSync';
 import { isBackendConfigured } from '@/lib/supabase';
-import { useStore } from '@/state/store';
+import { today, useStore } from '@/state/store';
 import { palettes } from '@/ui/theme';
 
 SplashScreen.preventAutoHideAsync();
@@ -33,13 +34,19 @@ function BackgroundSync() {
 
 function OnboardingGate() {
   const onboarded = useStore((s) => s.onboarded);
+  const membership = useStore((s) => s.membership);
   const segments = useSegments();
   const router = useRouter();
   useEffect(() => {
-    const inOnboarding = segments[0] === 'onboarding';
-    const inAdmin = segments[0] === 'admin';
-    if (!onboarded && !inOnboarding && !inAdmin) router.replace('/onboarding');
-  }, [onboarded, segments, router]);
+    const first = segments[0] as string | undefined;
+    if (first === 'admin') return;
+    if (!onboarded) {
+      if (first !== 'onboarding') router.replace('/onboarding');
+      return;
+    }
+    // hard paywall: the app opens once the free week has started
+    if (first !== 'paywall' && first !== 'onboarding' && !isEntitled(membership, today())) router.replace('/paywall');
+  }, [onboarded, membership, segments, router]);
   return null;
 }
 
@@ -76,6 +83,7 @@ export default function RootLayout() {
           <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: c.bg } }}>
             <Stack.Screen name="(tabs)" />
             <Stack.Screen name="onboarding" options={{ gestureEnabled: false }} />
+            <Stack.Screen name="paywall" options={{ gestureEnabled: false }} />
             <Stack.Screen name="plan/[id]" />
             <Stack.Screen name="meal/[id]" options={{ presentation: 'modal' }} />
             <Stack.Screen name="log" options={{ presentation: 'modal' }} />

@@ -3,6 +3,7 @@ import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
 import type { Ingredient, LogItem, Meal, MealPlan, MealSlot, Profile } from '@/engine/types';
+import { NO_MEMBERSHIP, addDaysTo, type Membership, type PackageId } from '@/lib/paywall';
 
 export const today = (d = new Date()) => {
   const z = (n: number) => String(n).padStart(2, '0');
@@ -63,6 +64,7 @@ interface State {
   onboarded: boolean;
   profile: Profile;
   enrollment?: Enrollment;
+  membership: Membership;
   logs: Log[];
   /** per-day ingredient edits for a plan meal: key `${date}|${mealId}` */
   dayEdits: Record<string, Ingredient[]>;
@@ -82,6 +84,9 @@ interface State {
 
   setProfile: (p: Partial<Profile>) => void;
   finishOnboarding: () => void;
+  /** Demo purchases only: begin a free week on this plan. The real store sets membership from its receipt. */
+  startMembership: (plan: PackageId) => void;
+  clearMembership: () => void;
   enroll: (plan: MealPlan, startedOn?: string) => void;
   leavePlan: () => void;
   logMeal: (date: string, meal: Meal, ingredients: Ingredient[], planId?: string) => void;
@@ -109,6 +114,7 @@ const initial = {
   onboarded: false,
   profile: DEFAULT_PROFILE,
   enrollment: undefined,
+  membership: NO_MEMBERSHIP,
   logs: [] as Log[],
   dayEdits: {},
   planEdits: {},
@@ -179,6 +185,11 @@ export const useStore = create<State>()(
 
       setProfile: (p) => set((s) => ({ profile: { ...s.profile, ...p } })),
       finishOnboarding: () => set({ onboarded: true }),
+      startMembership: (plan) => {
+        const startedOn = today();
+        set({ membership: { status: 'trial', plan, startedOn, renewsOn: addDaysTo(startedOn, 7), source: 'demo' } });
+      },
+      clearMembership: () => set({ membership: NO_MEMBERSHIP }),
 
       enroll: (plan, startedOn = today()) => set({ enrollment: { planId: plan.id, version: plan.version, startedOn } }),
       leavePlan: () => set({ enrollment: undefined }),

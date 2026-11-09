@@ -16,6 +16,7 @@ type Notifications = typeof import('expo-notifications');
 
 const PREFIX = 'eighty-rem-';
 const TIMER_PREFIX = 'eighty-timer-';
+const TRIAL_PREFIX = 'eighty-trial-';
 const CHANNEL = 'reminders';
 const isNative = Platform.OS !== 'web';
 
@@ -94,6 +95,28 @@ export function scheduleReminders(
   const next = queue.then(run, run);
   queue = next;
   return next;
+}
+
+/**
+ * Remind the person that the free week is nearly over. Replaces any earlier trial reminder.
+ * Asks for notification permission (the paywall is the one moment it makes sense). No-op on web.
+ */
+export async function scheduleTrialReminder(at: Date): Promise<string | null> {
+  if (!isNative) return null;
+  try {
+    const N = await notifications();
+    const pending = await N.getAllScheduledNotificationsAsync();
+    await Promise.all(pending.filter((p) => p.identifier.startsWith(TRIAL_PREFIX)).map((p) => N.cancelScheduledNotificationAsync(p.identifier)));
+    if (at.getTime() <= Date.now()) return null;
+    if (!(await allowed(N, true))) return null;
+    return await N.scheduleNotificationAsync({
+      identifier: `${TRIAL_PREFIX}${Date.now().toString(36)}`,
+      content: { title: 'Your free week ends in 2 days', body: 'You can keep going or cancel in your store account, no charge until then.' },
+      trigger: { type: N.SchedulableTriggerInputTypes.DATE, date: at, channelId: CHANNEL },
+    });
+  } catch {
+    return null;
+  }
 }
 
 /** Ring in `seconds` (a cook timer). Resolves to an id for cancelTimerNotification, or null when not possible. */

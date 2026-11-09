@@ -1,11 +1,13 @@
 import Constants from 'expo-constants';
 import { router, type Href } from 'expo-router';
 import { useEffect, useState, type ReactNode } from 'react';
-import { Alert, Platform, Pressable, Share, Switch, View } from 'react-native';
+import { Alert, Linking, Platform, Pressable, Share, Switch, View } from 'react-native';
 
 import { calorieTarget, macroTargets } from '@/engine/calc';
 import { BOARD_KEYS, NUTRIENTS } from '@/engine/nutrients';
 import type { Activity, Goal, LifeStage, Sex } from '@/engine/types';
+import { membershipLine } from '@/lib/paywall';
+import { IS_DEMO_PURCHASES, purchases } from '@/lib/purchases';
 import { isBackendConfigured, supabase } from '@/lib/supabase';
 import { food } from '@/state/catalog';
 import { today, useStore } from '@/state/store';
@@ -64,7 +66,10 @@ export default function You() {
   const setIncludeRare = useStore((s) => s.setIncludeRare);
   const resetAll = useStore((s) => s.resetAll);
   const logs = useStore((s) => s.logs);
+  const membership = useStore((s) => s.membership);
+  const clearMembership = useStore((s) => s.clearMembership);
   const [status, setStatus] = useState<string | null>(null);
+  const [memberNote, setMemberNote] = useState<string | null>(null);
   const email = useAuthEmail();
 
   const macros = macroTargets(profile, calorieTarget(profile));
@@ -111,6 +116,28 @@ export default function You() {
     confirmAction('Reset everything?', 'This clears your profile, log, favorites and saved plans on this device. It can’t be undone.', 'Reset', () => {
       resetAll();
       router.replace('/onboarding');
+    });
+
+  const platform = Platform.OS === 'ios' ? 'ios' : Platform.OS === 'android' ? 'android' : 'web';
+  const manage = () => {
+    const url = purchases.manageUrl(platform);
+    if (!url) {
+      setMemberNote('Manage your subscription in your app store account.');
+      return;
+    }
+    setMemberNote(null);
+    Linking.openURL(url).catch(() => setMemberNote('Couldn’t open your subscriptions. Manage them in your app store account.'));
+  };
+  const restore = async () => {
+    try {
+      setMemberNote((await purchases.restore()).message);
+    } catch {
+      setMemberNote('Couldn’t check your purchases. Please try again.');
+    }
+  };
+  const resetMembership = () =>
+    confirmAction('Reset demo membership?', 'This ends the demo free week and takes you back to the paywall.', 'Reset', () => {
+      clearMembership();
     });
 
   const signInStub = (provider: string) => {
@@ -317,6 +344,24 @@ export default function You() {
         )}
       </Section>
 
+      <Section title="Membership">
+        <Card style={{ gap: space.sm }}>
+          <Row gap={space.md}>
+            <Icon name={I.star} size={16} color={c.ink2} />
+            <Txt v="bodyStrong" style={{ flex: 1 }}>
+              {membershipLine(membership, today())}
+            </Txt>
+          </Row>
+          <Button kind="secondary" label="Manage subscription" onPress={manage} />
+          <Button kind="ghost" label="Restore purchases" icon={I.restore} onPress={restore} />
+          {memberNote && (
+            <Txt v="caption" dim={1} style={{ lineHeight: 18 }} accessibilityLiveRegion="polite">
+              {memberNote}
+            </Txt>
+          )}
+        </Card>
+      </Section>
+
       <Section title="Account">
         <Card style={{ gap: space.sm }}>
           {isBackendConfigured ? (
@@ -355,6 +400,7 @@ export default function You() {
       </Section>
 
       <Section title="For the team">
+        {IS_DEMO_PURCHASES && <Button kind="secondary" label="Reset demo membership" icon={I.undo} onPress={resetMembership} />}
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Plan admin"

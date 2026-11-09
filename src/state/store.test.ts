@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { DEFAULT_PROFILE, migrateState } from './store';
+import { DEFAULT_PROFILE, migrateState, useStore } from './store';
 
 describe('store migration', () => {
   it('starts everyone on whole-food carbs', () => {
@@ -38,5 +38,30 @@ describe('store migration', () => {
   it('drops the retired halal-friendly and kosher-style filters from a saved profile', () => {
     const out = migrateState({ profile: { ...DEFAULT_PROFILE, diet: ['vegetarian', 'halal-friendly', 'kosher-style'] } }, 4) as { profile: { diet: string[] } };
     expect(out.profile.diet).toEqual(['vegetarian']);
+  });
+});
+
+describe('membership', () => {
+  it('a v5 state saved before memberships loads with the default', () => {
+    const saved = { onboarded: true, profile: DEFAULT_PROFILE, logs: [] };
+    const out = migrateState(saved, 5) as Record<string, unknown>;
+    expect(out).not.toHaveProperty('membership');
+    // persist merges the saved state over the initial state, so the default fills the gap
+    const merged = { ...useStore.getState(), ...out } as ReturnType<typeof useStore.getState>;
+    expect(merged.membership).toEqual({ status: 'none', source: 'demo' });
+    expect(merged.onboarded).toBe(true);
+  });
+
+  it('starts a week-long demo trial and clears it again', () => {
+    useStore.getState().startMembership('annual');
+    const m = useStore.getState().membership;
+    expect(m).toMatchObject({ status: 'trial', plan: 'annual', source: 'demo' });
+    expect(m.startedOn).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    expect(m.renewsOn! > m.startedOn!).toBe(true);
+    useStore.getState().resetAll();
+    expect(useStore.getState().membership).toEqual({ status: 'none', source: 'demo' });
+    useStore.getState().startMembership('monthly');
+    useStore.getState().clearMembership();
+    expect(useStore.getState().membership.status).toBe('none');
   });
 });

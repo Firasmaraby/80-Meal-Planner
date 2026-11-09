@@ -83,7 +83,7 @@ export default function Onboarding() {
   const finish = (plan?: MealPlan) => {
     if (plan) enroll(plan);
     finishOnboarding();
-    router.replace('/');
+    router.replace('/paywall');
   };
 
   return (
