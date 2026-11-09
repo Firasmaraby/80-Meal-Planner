@@ -78,6 +78,11 @@ export interface FamilyFile {
   lifeStage?: LifeStage;
   /** the carb style the family promises (the Everyday plans): the lab fails any size whose food goes beyond it */
   carbStyle?: 'whole' | 'wholegrain';
+  /**
+   * A lower protein floor than the style's own, for one family, with the reason (the vegan whole-food muscle week:
+   * 30% from food alone needs far more soy than anyone has studied). It can only lower the floor, never below 20%.
+   */
+  proteinFloor?: { pctKcal: number; why: string };
   sizes: Partial<Record<PlanSize, FamilySize>>;
   recipes: FamilyRecipe[];
   week: WeekDay[];
@@ -139,6 +144,12 @@ export function validateFamily(raw: unknown, ctx: ValidateContext): { family?: F
   if (raw.regions != null && !(Array.isArray(raw.regions) && raw.regions.every(isStr))) err('regions', 'regions must be a list of names.');
   if (raw.lifeStage != null && !['none', 'pregnant', 'lactating'].includes(raw.lifeStage as string)) err('lifeStage', 'lifeStage must be "none", "pregnant" or "lactating".');
   if (raw.carbStyle != null && !['whole', 'wholegrain'].includes(raw.carbStyle as string)) err('carbStyle', 'carbStyle must be "whole" or "wholegrain".');
+  if (raw.proteinFloor != null) {
+    const pf = raw.proteinFloor as { pctKcal?: unknown; why?: unknown };
+    if (typeof pf.pctKcal !== 'number' || pf.pctKcal < 20 || pf.pctKcal > 35)
+      err('proteinFloor', 'proteinFloor.pctKcal must be a number from 20 to 35.');
+    if (typeof pf.why !== 'string' || pf.why.trim().length < 20) err('proteinFloor', 'proteinFloor needs a "why" that explains the lower floor.');
+  }
   if (isPlanStyle(raw.style)) {
     const want = PLAN_STYLES[raw.style].gates.lifeStage;
     if (want && raw.lifeStage !== want) err('lifeStage', `The ${raw.style} style needs "lifeStage": "${want}".`);
@@ -250,7 +261,7 @@ export function validateFamily(raw: unknown, ctx: ValidateContext): { family?: F
     });
   }
   for (const k of Object.keys(raw)) {
-    if (!['id', 'name', 'style', 'cuisine', 'regions', 'summary', 'howItWorks', 'signature', 'lifeStage', 'carbStyle', 'sizes', 'recipes', 'week'].includes(k)) warn(k, `Unknown field "${k}" is ignored.`);
+    if (!['id', 'name', 'style', 'cuisine', 'regions', 'summary', 'howItWorks', 'signature', 'lifeStage', 'carbStyle', 'proteinFloor', 'sizes', 'recipes', 'week'].includes(k)) warn(k, `Unknown field "${k}" is ignored.`);
   }
 
   if (issues.some((i) => i.level === 'error')) return { issues };

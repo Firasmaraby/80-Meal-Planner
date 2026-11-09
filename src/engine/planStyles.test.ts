@@ -49,6 +49,18 @@ describe('plan styles', () => {
   it('vegan and vegetarian skip the fatty fish rule; anti-inflammatory asks for 3 a week', () => {
     expect(gradeOptionsFor('vegan', 2000).rules.fattyFishPerWeek).toBe(0);
     expect(gradeOptionsFor('vegetarian', 2000).rules.fattyFishPerWeek).toBe(0);
+  });
+
+  it('bans Dijon (usually made with wine) as a food', () => {
+    expect(FOOD_BANS.alcohol({ id: 'dijon-mustard-7b49e7', name: 'Dijon mustard', category: 'condiment' } as never)).toBe('alcohol');
+    expect(FOOD_BANS.alcohol({ id: 'yellow-mustard-prepared-f7e307', name: 'Yellow mustard, prepared', category: 'condiment' } as never)).toBeUndefined();
+  });
+
+  it('lets a family lower its protein floor, never raise it or go under 20%', () => {
+    expect(gradeOptionsFor('muscle-plant', 2400, 25).rules.proteinMinPctKcal).toBe(25);
+    expect(gradeOptionsFor('muscle-plant', 2400, 35).rules.proteinMinPctKcal).toBe(30);
+    expect(gradeOptionsFor('muscle-plant', 2400, 15).rules.proteinMinPctKcal).toBe(30);
+    expect(gradeOptionsFor('muscle-plant', 2400).rules.proteinMinPctKcal).toBe(30);
     expect(gradeOptionsFor('balanced', 2000).rules).toEqual({});
     expect(gradeOptionsFor('anti-inflammatory', 2000).rules).toEqual({ omegaMaxRatio: 3, omegaDayMaxRatio: 5, fattyFishPerWeek: 3 });
   });

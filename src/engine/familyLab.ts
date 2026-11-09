@@ -351,7 +351,7 @@ export function edgesOf(covers: CalorieBand[]): { kcal: number; labels: string[]
 
 /** Grade one plan already sized to `kcal`: day rows, framework issues, style gates and cooking sense. */
 export function gradeEdge(family: FamilyFile, base: MealPlan, size: PlanSize, kcal: number, deps: LabDeps) {
-  const opts = gradeOptionsFor(family.style, kcal);
+  const opts = gradeOptionsFor(family.style, kcal, family.proteinFloor?.pctKcal);
   const { plan: sized, dayKcal } = sizePlan(base, kcal, deps, opts.panel ?? []);
   const band = base.covers?.find((b) => kcal >= b.min && kcal <= b.max) ?? base.band;
   const report = gradePlan({ ...sized, band }, deps.foods, deps.catalog, opts);

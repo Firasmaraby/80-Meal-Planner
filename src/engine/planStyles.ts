@@ -87,7 +87,7 @@ const RAW_SPROUTS = /\b(alfalfa|clover|radish|broccoli|mung bean|bean)\b.*\bspro
 // herbal teas Health Canada asks pregnant women to avoid
 const AVOID_TEAS = /\b(chamomile|aloe|coltsfoot|juniper|pennyroyal|buckthorn|comfrey|labrador tea|sassafras|duck root|lobelia|senna)\b/;
 // alcohol in any form (no safe amount in pregnancy or while breastfeeding); vinegars, ginger ale and alcohol-free products are fine
-const ALCOHOL = /\b(wine|beer|lager|stout|sake|mirin|rum|brandy|cognac|vodka|gin|whiske?y|bourbon|liqueur|shaoxing|marsala|vermouth|sherry|hard cider|alcoholic)\b/;
+const ALCOHOL = /\b(dijon|wine|beer|lager|stout|sake|mirin|rum|brandy|cognac|vodka|gin|whiske?y|bourbon|liqueur|shaoxing|marsala|vermouth|sherry|hard cider|alcoholic)\b/;
 const NOT_ALCOHOL = /vinegar|ginger ale|non-?alcoholic|alcohol[- ]free|de-?alcoholi[sz]ed|root beer|wine grape|winged/;
 
 function alcoholReason(f: Food): string | undefined {
@@ -364,9 +364,12 @@ export const isPlanStyle = (s: unknown): s is PlanStyle => typeof s === 'string'
 // ── Grading options ────────────────────────────────────────────────────────
 
 /** Who a plan at `kcal` is graded against, and the RULES it overrides. Female only below 1600 kcal; life-stage styles grade the female reference only. */
-export function gradeOptionsFor(style: PlanStyle, kcal: number): { panel: ReferencePerson[]; rules: Partial<Rules> } {
+export function gradeOptionsFor(style: PlanStyle, kcal: number, proteinFloor?: number): { panel: ReferencePerson[]; rules: Partial<Rules> } {
   const g = PLAN_STYLES[style].gates;
   const rules: Partial<Rules> = { ...g.rules };
+  // a family may lower its style's protein floor (never raise it, never below 20%), with a stated reason
+  const styleFloor = rules.proteinMinPctKcal ?? 20;
+  if (proteinFloor != null && proteinFloor >= 20 && proteinFloor < styleFloor) rules.proteinMinPctKcal = proteinFloor;
   if (g.glPer2000Kcal) rules.glycemicLoadMax = g.glPer2000Kcal; // per 2000 kcal, scaled per day by gradePlan
   const panel = g.lifeStage
     ? [{ ...FEMALE, lifeStage: g.lifeStage }]
@@ -431,7 +434,7 @@ export const HOUSE_BANS: BanId[] = ['pork', 'alcohol'];
 // the same, in the words of a recipe: a step that deglazes with wine, a dish named for ham. Vinegars and the beef or turkey
 // versions of cured meats are fine.
 const HOUSE_WORDS =
-  /\b(pork|bacon|ham|hams|lard|prosciutto|pancetta|guanciale|chorizo|salami|pepperoni|mortadella|wine|mirin|sake|beer|shaoxing|rum|brandy|cognac|sherry|vodka|bourbon|whiske?y|liqueur|marsala|vermouth|alcohol|alcoholic|mulled|cochinita|porchetta|carnitas|pastor|char siu|chashu|tonkatsu|lechon|cassoulet|cerdo|porco)\b/;
+  /\b(pork|bacon|ham|hams|lard|prosciutto|pancetta|guanciale|chorizo|salami|pepperoni|mortadella|wine|mirin|sake|beer|shaoxing|rum|brandy|cognac|sherry|vodka|bourbon|whiske?y|liqueur|marsala|vermouth|alcohol|alcoholic|mulled|cochinita|porchetta|carnitas|pastor|char siu|chashu|tonkatsu|lechon|cassoulet|cerdo|porco|dijon)\b/;
 const HOUSE_WORDS_OK =
   /\b(?:rice|red|white|sherry|wine|cider|malt)?\s*wine vinegar\b|\bsherry vinegar\b|\b(?:beef|turkey|chicken|plant-based|soy)\s+(?:bacon|ham|chorizo|salami|pepperoni|sausage)\b|\bpork-free\b|\bno pork\b|\bno alcohol\b|\bnon-?alcoholic\b|\balcohol-free\b|\bginger beer\b|\broot beer\b/g;
 

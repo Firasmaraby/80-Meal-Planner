@@ -76,7 +76,7 @@ export function renderReview(family: FamilyFile, size: PlanSize, ctx: CompileCon
     }
 
   // per-day numbers for the chosen size
-  const { panel, rules } = gradeOptionsFor(family.style, compiled.kcal);
+  const { panel, rules } = gradeOptionsFor(family.style, compiled.kcal, family.proteinFloor?.pctKcal);
   const report = gradePlan(plan, ctx.foods, ctx.catalog, { panel, rules });
   out.push(`## Numbers, ${SIZE_LABEL[size]} (${compiled.kcal} kcal)`, '');
   out.push('| Day | kcal | protein % | sat % | omega 6:3 | GL | fibre g | lowest nutrients |', '|---|---|---|---|---|---|---|---|');
