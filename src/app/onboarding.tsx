@@ -4,7 +4,7 @@ import { Pressable, ScrollView, TextInput, View, useWindowDimensions } from 'rea
 import Animated, { FadeInDown, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { bandFor, calorieTarget, macroTargets } from '@/engine/calc';
+import { bandFor, calorieTarget, macroTargets, suggestedProteinPerKg } from '@/engine/calc';
 import {
   EMPTY_ANSWERS,
   REASONS,
@@ -141,9 +141,12 @@ export default function Onboarding() {
   const lifeStageNow: LifeStage = sex === 'female' ? lifeStage : 'none';
   // a full profile exists only once the body numbers and activity are in
   const profileNow: Profile | undefined = useMemo(
-    () => (body_ && activity ? { ...stored, ...body_, activity, goal, lifeStage: lifeStageNow } : undefined),
+    () =>
+      body_ && activity
+        ? { ...stored, ...body_, activity, goal, lifeStage: lifeStageNow, proteinPerKg: suggestedProteinPerKg(goal, reasons) }
+        : undefined,
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [stored, body_?.sex, body_?.age, body_?.heightCm, body_?.weightKg, activity, goal, lifeStageNow],
+    [stored, body_?.sex, body_?.age, body_?.heightCm, body_?.weightKg, activity, goal, lifeStageNow, reasons],
   );
   const kcal = useMemo(() => (profileNow ? calorieTarget(profileNow) : undefined), [profileNow]);
 
@@ -160,15 +163,17 @@ export default function Onboarding() {
       budget,
       lifeStage: step > at('you') ? lifeStageNow : undefined,
       kcal: step > at('you') ? kcal : undefined,
+      goal: step > at('you') && kcal !== undefined ? goal : undefined,
+      proteinGoal: step > at('you') && profileNow && kcal !== undefined ? macroTargets(profileNow, kcal).protein : undefined,
     }),
-    [reasons, tastes, diet, carbStyle, carbPicked, time, cookingFor, budget, step, lifeStageNow, kcal],
+    [reasons, tastes, diet, carbStyle, carbPicked, time, cookingFor, budget, step, lifeStageNow, kcal, goal, profileNow],
   );
   const live = useMemo(() => matchPlans(families, answers, FOOD_INDEX), [families, answers]);
 
   const finish = (plan?: MealPlan) => {
     if (!profileNow) return;
     const { sex: sx, age: ag, heightCm: h, weightKg: w, lifeStage: ls, activity: act } = profileNow;
-    setProfile({ sex: sx, age: ag, heightCm: h, weightKg: w, lifeStage: ls, activity: act, goal, diet, carbStyle });
+    setProfile({ sex: sx, age: ag, heightCm: h, weightKg: w, lifeStage: ls, activity: act, goal, diet, carbStyle, proteinPerKg: profileNow.proteinPerKg });
     setQuiz(answers);
     if (plan) enroll(plan);
     finishOnboarding();

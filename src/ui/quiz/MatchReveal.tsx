@@ -80,6 +80,7 @@ function TopCard({ match, onStart }: { match: Match; onStart: (p: MealPlan) => v
       <Row gap={6} style={{ flexWrap: 'wrap' }}>
         {sizeLabel(pick.plan) ? <Pill label={sizeLabel(pick.plan)!} color={c.bg} bg={c.ink} /> : null}
         <Pill label={kcalRange(pick.plan)} />
+        <Pill label={`About ${match.protein} g protein a day`} />
       </Row>
       {why.length ? (
         <View style={{ gap: 6 }}>
@@ -112,6 +113,7 @@ function AltCard({ match, onStart }: { match: Match; onStart: (p: MealPlan) => v
       <Row gap={6} style={{ flexWrap: 'wrap' }}>
         {sizeLabel(pick.plan) ? <Pill label={sizeLabel(pick.plan)!} /> : null}
         <Pill label={kcalRange(pick.plan)} />
+        <Pill label={`About ${match.protein} g protein a day`} />
       </Row>
       {why[0] ? <Txt v="caption" dim={1}>
           {why[0]}
@@ -227,9 +229,12 @@ export function MatchReveal({
             </View>
             <View>
               <Txt v="label" dim={2}>
-                Protein
+                Protein goal
               </Txt>
               <Txt v="numLg" color={c.protein}>
+                <Txt v="caption" dim={2}>
+                  {'at least '}
+                </Txt>
                 {protein}
                 <Txt v="caption" dim={2}>
                   {' '}g

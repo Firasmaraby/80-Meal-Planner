@@ -3,6 +3,7 @@ import { requirement, requirementsFor, SODIUM_LIMIT_MG, type Requirement } from 
 import type {
   Activity,
   CalorieBand,
+  Goal,
   Food,
   Ingredient,
   LogItem,
@@ -109,6 +110,17 @@ export function calorieTarget(p: Profile): number {
   if (p.goal === 'lose') return Math.round(Math.max(e - 500, e * 0.8));
   if (p.goal === 'gain') return Math.round(e + Math.min(400, e * 0.12));
   return Math.round(e);
+}
+
+/**
+ * The protein goal to suggest, in g per kg of body weight: 2.0 for building muscle or training (the benefit levels off
+ * between about 1.6 and 2.2), 1.8 while losing weight (to keep muscle in a deficit), 1.6 otherwise. People can still set
+ * their own on the You tab. `reasons` are the quiz reasons (QuizReason), kept as strings so this module stays below match.ts.
+ */
+export function suggestedProteinPerKg(goal: Goal, reasons: readonly string[] = []): number {
+  if (goal === 'gain' || reasons.includes('muscle') || reasons.includes('training')) return 2.0;
+  if (goal === 'lose') return 1.8;
+  return 1.6;
 }
 
 export const BAND_STEP = 200;

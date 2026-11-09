@@ -2,7 +2,7 @@ import { router } from 'expo-router';
 import { useMemo } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
 
-import { calorieTarget } from '@/engine/calc';
+import { calorieTarget, macroTargets } from '@/engine/calc';
 import { matchPlans } from '@/engine/match';
 import { FOOD_INDEX } from '@/state/catalog';
 import { useFamilies } from '@/state/families';
@@ -26,7 +26,15 @@ export function ForYou() {
       quiz
         ? matchPlans(
             families,
-            { ...quiz, kcal: calorieTarget(profile), carbStyle: profile.carbStyle ?? 'whole', diet: profile.diet, lifeStage: profile.lifeStage },
+            {
+              ...quiz,
+              kcal: calorieTarget(profile),
+              goal: profile.goal,
+              proteinGoal: macroTargets(profile).protein,
+              carbStyle: profile.carbStyle ?? 'whole',
+              diet: profile.diet,
+              lifeStage: profile.lifeStage,
+            },
             FOOD_INDEX,
           ).ranked
         : [],

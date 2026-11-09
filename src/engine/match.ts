@@ -7,10 +7,10 @@
  *
  * Pure: the quiz screens and the Plans tab "For you" row both call it.
  */
-import { BAND_STEP, type FoodIndex } from './calc';
+import { BAND_STEP, dayPlanTotal, type FoodIndex } from './calc';
 import { dietMatches, familyVisible, pickSize, recipeMinutes, type PlanFamily, type SizePick } from './families';
 import { planCollection } from './browse';
-import type { CarbStyle, Goal, LifeStage, PlanStyle } from './types';
+import type { CarbStyle, Goal, LifeStage, MealPlan, PlanStyle } from './types';
 
 // ── Answers ──────────────────────────────────────────────────────────────────
 
@@ -47,6 +47,10 @@ export interface QuizAnswers {
   lifeStage?: LifeStage;
   /** the person's daily calorie target, once the body numbers are in */
   kcal?: number;
+  /** the goal the calories were worked out for (the activity step); wins over the one read from the reasons */
+  goal?: Goal;
+  /** the person's daily protein goal in grams, once the body numbers are in */
+  proteinGoal?: number;
 }
 
 export const EMPTY_ANSWERS: QuizAnswers = { reasons: [], tastes: {}, diet: [] };
@@ -193,6 +197,28 @@ export function familyFacts(f: PlanFamily): FamilyFacts {
   return facts;
 }
 
+/** Share of a plan's calories that comes from protein, averaged over its days (0.25 = 25%). */
+const proteinCache = new WeakMap<MealPlan, number>();
+export function proteinShare(plan: MealPlan, foods: FoodIndex): number {
+  const hit = proteinCache.get(plan);
+  if (hit !== undefined) return hit;
+  let kcal = 0;
+  let protein = 0;
+  for (const d of plan.days) {
+    const t = dayPlanTotal(d, foods);
+    kcal += t.kcal ?? 0;
+    protein += t.protein ?? 0;
+  }
+  const share = kcal ? (protein * 4) / kcal : 0;
+  proteinCache.set(plan, share);
+  return share;
+}
+
+/** Grams of protein a day the plan gives at the person's calories (the app sizes the plan to them). */
+export function proteinPerDay(plan: MealPlan, foods: FoodIndex, kcal: number): number {
+  return Math.round((proteinShare(plan, foods) * kcal) / 4);
+}
+
 // ── Scoring ──────────────────────────────────────────────────────────────────
 
 /** How strongly each reason pulls each plan style up. */
@@ -252,6 +278,8 @@ export interface Match {
   score: number;
   /** short phrases for "Why this fits you", best first */
   why: string[];
+  /** grams of protein a day at the person's calories (or the size's own) */
+  protein: number;
 }
 
 export interface MatchResult {
@@ -290,7 +318,7 @@ function ruledOut(f: PlanFamily, a: QuizAnswers): boolean {
 }
 const REASON_STYLE_SET = new Set<string>(Object.values(REASON_STYLES).flatMap((m) => Object.keys(m)));
 
-function scoreFamily(f: PlanFamily, a: QuizAnswers, nudge?: Nudge): { score: number; why: string[] } {
+function scoreFamily(f: PlanFamily, a: QuizAnswers, protein: { share: number; grams: number }, nudge?: Nudge): { score: number; why: string[] } {
   const facts = familyFacts(f);
   const style = (f.style ?? 'balanced') as PlanStyle;
   const why: { w: number; text: string }[] = [];
@@ -316,6 +344,14 @@ function scoreFamily(f: PlanFamily, a: QuizAnswers, nudge?: Nudge): { score: num
   score += NICHE[style] ?? 0;
   const dietStyle = DIET_STYLES[style];
   if (dietStyle && a.diet.includes(dietStyle)) score += 1.5;
+
+  // protein, for people building muscle or training
+  if (a.reasons.includes('muscle') || a.reasons.includes('training')) {
+    const pct = protein.share * 100;
+    score += Math.max(-1, Math.min(3, (pct - 20) / 3));
+    if (a.proteinGoal && protein.grams < a.proteinGoal) score -= 3;
+    if (pct >= 25) why.push({ w: 3.5, text: `High in protein: ${Math.round(pct)}% of calories` });
+  }
 
   // life stage
   if (f.lifeStage && f.lifeStage !== 'none' && f.lifeStage === a.lifeStage) {
@@ -404,6 +440,8 @@ function diversify(sorted: Match[]): Match[] {
   return [...picked, ...rest];
 }
 
+const GOAL_TAIL: Record<Goal, string> = { lose: ' for steady weight loss', gain: ' for building muscle', maintain: '' };
+
 export function matchPlans(families: PlanFamily[], a: QuizAnswers, foods: FoodIndex, nudge?: Nudge): MatchResult {
   const library = families.filter((f) => f.isLibrary);
   const pool = library.length ? library : families;
@@ -438,13 +476,15 @@ export function matchPlans(families: PlanFamily[], a: QuizAnswers, foods: FoodIn
     }
   }
   const scored = (inRunning.length ? inRunning : passed).map((family): Match => {
-    const { score, why } = scoreFamily(family, a, nudge);
     const pick = pickSize(family, a.kcal ?? 2000);
+    const share = proteinShare(pick.plan, foods);
+    const grams = Math.round((share * (a.kcal ?? (pick.plan.band.min + pick.plan.band.max) / 2)) / 4);
+    const { score, why } = scoreFamily(family, a, { share, grams }, nudge);
     const extra: string[] = [];
     if (a.diet.length) extra.push(a.diet.map((d) => d.charAt(0).toUpperCase() + d.slice(1)).join(', '));
     if (a.kcal && pick.covered)
-      extra.push(`Sized to your ${a.kcal.toLocaleString('en-CA')} kcal${goalFromReasons(a.reasons) === 'lose' ? ' for steady weight loss' : ''}`);
-    return { family, pick, score, why: [...why, ...extra].slice(0, 3) };
+      extra.push(`Sized to your ${a.kcal.toLocaleString('en-CA')} kcal${GOAL_TAIL[a.goal ?? goalFromReasons(a.reasons)]}`);
+    return { family, pick, score, why: [...why, ...extra].slice(0, 3), protein: grams };
   });
   scored.sort((x, y) => y.score - x.score || x.family.name.localeCompare(y.family.name));
 

@@ -3,7 +3,8 @@ import { describe, expect, it } from 'vitest';
 import { LIBRARY_PLANS, FOOD_INDEX } from '@/state/catalog';
 
 import { dietMatches, groupFamilies } from './families';
-import { EMPTY_ANSWERS, familyFacts, goalFromReasons, matchPlans, REASONS, TASTE_CARDS, type QuizAnswers } from './match';
+import { suggestedProteinPerKg } from './calc';
+import { EMPTY_ANSWERS, familyFacts, goalFromReasons, matchPlans, proteinShare, REASONS, TASTE_CARDS, type QuizAnswers } from './match';
 
 const fams = groupFamilies(LIBRARY_PLANS);
 const cards = TASTE_CARDS.map((c) => c.group);
@@ -120,5 +121,33 @@ describe('matchPlans', () => {
     expect(goalFromReasons(['lose', 'muscle'])).toBe('lose');
     expect(goalFromReasons(['muscle'])).toBe('gain');
     expect(goalFromReasons(['heart'])).toBe('maintain');
+  });
+
+  it('words the calories by the goal they were worked out for', () => {
+    const base: QuizAnswers = { ...EMPTY_ANSWERS, reasons: ['lose', 'muscle'], kcal: 3000 };
+    const gain = matchPlans(fams, { ...base, goal: 'gain' }, FOOD_INDEX).ranked.flatMap((m) => m.why).join(' | ');
+    expect(gain).not.toContain('weight loss');
+    const lose = matchPlans(fams, { ...base, kcal: 2000, goal: 'lose' }, FOOD_INDEX).ranked.flatMap((m) => m.why).join(' | ');
+    expect(lose).not.toContain('building muscle');
+  });
+
+  it('puts protein first for muscle builders, within their carb choice', () => {
+    const a: QuizAnswers = { ...EMPTY_ANSWERS, reasons: ['muscle'], carbStyle: 'whole', kcal: 3000, goal: 'gain', proteinGoal: 140, lifeStage: 'none' };
+    const r = matchPlans(fams, a, FOOD_INDEX);
+    const top = r.ranked[0];
+    expect(top.protein).toBeGreaterThanOrEqual(140);
+    const best = Math.max(...r.ranked.map((m) => proteinShare(m.pick.plan, FOOD_INDEX)));
+    expect(proteinShare(top.pick.plan, FOOD_INDEX)).toBeGreaterThan(best - 0.04);
+    expect(top.why.join(' ')).toMatch(/High in protein/);
+  });
+});
+
+describe('suggestedProteinPerKg', () => {
+  it('follows the goal', () => {
+    expect(suggestedProteinPerKg('gain')).toBe(2);
+    expect(suggestedProteinPerKg('maintain', ['training'])).toBe(2);
+    expect(suggestedProteinPerKg('lose', ['lose'])).toBe(1.8);
+    expect(suggestedProteinPerKg('lose', ['lose', 'muscle'])).toBe(2);
+    expect(suggestedProteinPerKg('maintain', ['heart'])).toBe(1.6);
   });
 });

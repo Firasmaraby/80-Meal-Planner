@@ -3,7 +3,7 @@ import { router, type Href } from 'expo-router';
 import { useEffect, useState, type ReactNode } from 'react';
 import { Alert, Linking, Platform, Pressable, Share, Switch, View } from 'react-native';
 
-import { calorieTarget, macroTargets } from '@/engine/calc';
+import { calorieTarget, macroTargets, suggestedProteinPerKg } from '@/engine/calc';
 import { BOARD_KEYS, NUTRIENTS } from '@/engine/nutrients';
 import type { Activity, Goal, LifeStage, Sex } from '@/engine/types';
 import { membershipLine } from '@/lib/paywall';
@@ -63,6 +63,8 @@ const csvCell = (v: string | number | undefined) => {
 export default function You() {
   const c = useTheme();
   const profile = useStore((s) => s.profile);
+  const quizReasons = useStore((s) => s.quiz?.reasons);
+  const suggestedProtein = suggestedProteinPerKg(profile.goal, quizReasons ?? []);
   const setProfile = useStore((s) => s.setProfile);
   const includeRare = useStore((s) => s.includeRare);
   const setIncludeRare = useStore((s) => s.setIncludeRare);
@@ -255,8 +257,8 @@ export default function You() {
           <Field label="Protein" stacked>
             <Row style={{ justifyContent: 'space-between' }}>
               <NumberStepper value={profile.proteinPerKg} min={0.8} max={2.4} step={0.1} decimals={1} unit="g/kg" onChange={(proteinPerKg) => setProfile({ proteinPerKg })} />
-              {Math.abs(profile.proteinPerKg - 1.6) > 0.001 && (
-                <Button kind="ghost" small label="Back to 1.6" onPress={() => setProfile({ proteinPerKg: 1.6 })} />
+              {Math.abs(profile.proteinPerKg - suggestedProtein) > 0.001 && (
+                <Button kind="ghost" small label={`Back to ${suggestedProtein.toFixed(1)}`} onPress={() => setProfile({ proteinPerKg: suggestedProtein })} />
               )}
             </Row>
             <Txt v="caption" dim={2} style={{ lineHeight: 18 }}>
