@@ -364,6 +364,15 @@ in modest portions next to plenty of vegetables and legumes. `carbStyle: "wholeg
 `takeout-at-home`. 5: `spring-fresh`, `summer-salads`, `autumn-harvest`, `winter-warmers`, `stir-fry-week`. 6:
 `cook-once-eat-twice`, `noodle-bowls`, `wraps-and-tacos`, `lunchbox-week`, `brunch-lovers`.
 
+## Wave 4: whole-food training plans (Nov 9)
+Every muscle and endurance plan used white rice, pasta or seitan, so anyone who picked whole-food carbs (the default) and wanted to build muscle or fuel training never got a plan built for it. These three fill that gap. All are `cuisine: Global`, `carbStyle: whole`.
+
+| id | name | style | sizes | notes |
+|---|---|---|---|---|
+| endurance-whole | Endurance, Whole Foods | endurance | Standard, Big, XL | carbs at least 50% from oats, potatoes, fruit, quinoa, millet; a pre-session and a recovery snack every day (recovery at least 16 g protein); fatty fish 3 a week |
+| muscle-whole | Build Muscle, Whole Foods | muscle | Standard, Big | protein at least 30%; butter chicken, salmon romesco, stroganoff, Portuguese-style cod, adobo; XL dropped because phosphorus and selenium can't stay inside the headroom |
+| muscle-plant-whole | Build Muscle Plant-based, Whole Foods | muscle-plant | Standard | vegan; `proteinFloor` 25% (Firas, Nov 9) so soy stays moderate (silken tofu at most about 255 g a day, isoflavones about 150 mg a day); lupini, lentils, chickpeas and beans share the protein; no bigger size (iron, phosphorus) |
+
 ## Not offered, and why
 - **Carnivore:** it can't reach vitamin C, folate or fibre, and contradicts the framework.
 - **Raw vegan:** can't reliably reach B12, vitamin D, iodine or zinc.
