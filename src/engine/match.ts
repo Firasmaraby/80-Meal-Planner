@@ -86,15 +86,15 @@ export const FLAVOUR_LABEL: Record<FlavourGroup, string> = {
 };
 
 /** One dish per flavour group: a signature dish of a regional plan, so the plate art and the name are real. */
-export const TASTE_CARDS: { group: FlavourGroup; recipeId: string; title: string }[] = [
-  { group: 'med', recipeId: 'lemon-chicken-potatoes', title: 'Greek lemon chicken and potatoes' },
-  { group: 'eastasia', recipeId: 'beef-bibimbap-namul', title: 'Bibimbap with beef and namul' },
-  { group: 'latin', recipeId: 'mexico-salmon-tacos-baja', title: 'Baja-style salmon tacos' },
-  { group: 'southasia', recipeId: 'chicken-karahi-roti', title: 'Chicken karahi with roti' },
-  { group: 'mideast', recipeId: 'shish-tawook-tabbouleh', title: 'Shish tawook with tabbouleh' },
-  { group: 'seasia', recipeId: 'thai-viet-red-curry-chicken-tofu-gai-lan', title: 'Thai red curry with chicken' },
-  { group: 'northern', recipeId: 'north-america-maple-mustard-roasted-salmon-squash-brussels', title: 'Maple-mustard salmon with squash' },
-  { group: 'african', recipeId: 'chicken-yassa-millet', title: 'Chicken yassa with millet' },
+export const TASTE_CARDS: { group: FlavourGroup; recipeId: string; title: string; from: string; blurb: string }[] = [
+  { group: 'med', recipeId: 'lemon-chicken-potatoes', title: 'Greek lemon chicken and potatoes', from: 'Greece', blurb: 'Roasted with lemon, garlic and oregano, with a garlicky yogurt on the side' },
+  { group: 'eastasia', recipeId: 'beef-bibimbap-namul', title: 'Bibimbap with beef and namul', from: 'Korea', blurb: 'A rice bowl topped with seared beef, sesame greens, carrots, mushrooms and an egg' },
+  { group: 'latin', recipeId: 'mexico-salmon-tacos-baja', title: 'Baja-style salmon tacos', from: 'Mexico', blurb: 'Corn tortillas, crunchy cabbage slaw, jalapeño and a lime yogurt crema' },
+  { group: 'southasia', recipeId: 'chicken-karahi-roti', title: 'Chicken karahi with roti', from: 'Pakistan', blurb: 'Chicken simmered with tomato, ginger, garlic and green chili, with warm roti' },
+  { group: 'mideast', recipeId: 'shish-tawook-tabbouleh', title: 'Shish tawook with tabbouleh', from: 'Lebanon', blurb: 'Garlicky lemon chicken skewers with a fresh parsley and mint salad' },
+  { group: 'seasia', recipeId: 'thai-viet-red-curry-chicken-tofu-gai-lan', title: 'Thai red curry with chicken', from: 'Thailand', blurb: 'Coconut, lemongrass and chili, with tofu and crisp gai lan' },
+  { group: 'northern', recipeId: 'north-america-maple-mustard-roasted-salmon-squash-brussels', title: 'Maple-mustard salmon', from: 'Canada', blurb: 'Roasted on a sheet pan with butternut squash and Brussels sprouts' },
+  { group: 'african', recipeId: 'chicken-yassa-millet', title: 'Chicken yassa with millet', from: 'Senegal', blurb: 'Chicken in a tangy sauce of slow-cooked onions, lime and mustard' },
 ];
 
 const REGION_GROUP: Record<string, FlavourGroup> = {};
