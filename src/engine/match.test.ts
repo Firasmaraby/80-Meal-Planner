@@ -142,6 +142,16 @@ describe('matchPlans', () => {
   });
 });
 
+describe('whole-food training plans', () => {
+  it('offers them to people who train and pick whole-food carbs', () => {
+    const base: QuizAnswers = { ...EMPTY_ANSWERS, carbStyle: 'whole', kcal: 2600, lifeStage: 'none', proteinGoal: 150 };
+    const muscle = matchPlans(fams, { ...base, reasons: ['muscle'], goal: 'gain' }, FOOD_INDEX);
+    expect(muscle.ranked[0].family.id).toBe('muscle-whole');
+    const training = matchPlans(fams, { ...base, reasons: ['training'], proteinGoal: 140 }, FOOD_INDEX);
+    expect(training.ranked.slice(0, 3).map((m) => m.family.id)).toContain('endurance-whole');
+  });
+});
+
 describe('suggestedProteinPerKg', () => {
   it('follows the goal', () => {
     expect(suggestedProteinPerKg('gain')).toBe(2);

@@ -349,7 +349,8 @@ function scoreFamily(f: PlanFamily, a: QuizAnswers, protein: { share: number; gr
   if (a.reasons.includes('muscle') || a.reasons.includes('training')) {
     const pct = protein.share * 100;
     score += Math.max(-1, Math.min(3, (pct - 20) / 3));
-    if (a.proteinGoal && protein.grams < a.proteinGoal) score -= 3;
+    // falling short of the protein goal matters for building muscle; training plans put carbs first on purpose
+    if (a.reasons.includes('muscle') && a.proteinGoal && protein.grams < a.proteinGoal) score -= 3;
     if (pct >= 25) why.push({ w: 3.5, text: `High in protein: ${Math.round(pct)}% of calories` });
   }
 
