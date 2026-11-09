@@ -149,6 +149,9 @@ describe('whole-food training plans', () => {
     expect(muscle.ranked[0].family.id).toBe('muscle-whole');
     const training = matchPlans(fams, { ...base, reasons: ['training'], proteinGoal: 140 }, FOOD_INDEX);
     expect(training.ranked.slice(0, 3).map((m) => m.family.id)).toContain('endurance-whole');
+    const vegan = matchPlans(fams, { ...base, reasons: ['muscle'], goal: 'gain', diet: ['vegan'], kcal: 2500, proteinGoal: 140 }, FOOD_INDEX);
+    expect(vegan.exact).toBe(true);
+    expect(vegan.ranked[0].family.id).toBe('muscle-plant-whole');
   });
 });
 
