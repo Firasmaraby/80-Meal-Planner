@@ -152,4 +152,4 @@ Every family in CATALOG.md moves through these steps:
   - Lab: house words now include "alcohol" and "mulled" and cover the plan's own summary and howItWorks. That fixed stale lines in lean-med, heart-med and lowgi-med.
   - Rebuilt data. Tests (497), typecheck and the Playwright walk pass: 30 Everyday plans, no duplicate meals, no errors.
   - Done: dishes that borrowed pork dish names (cochinita pibil, porchetta, tofu al pastor, cassoulet) are renamed, and the house-word check now rejects those words and any pork or cerdo in a recipe id.
-
+- **Nov 9:** step 5 of NEXT.md shipped: the paywall screens (hard paywall with a free week, demo purchases layer ready for RevenueCat), built by a Sonnet writer to my spec and reviewed. Borrowed pork-dish names (cochinita, porchetta, al pastor, cassoulet) renamed, plus 31 recipe ids that still said pork, chorizo, bacon or sherry though the food didn't; the lab checks ids now. Firas: Everyday Classics and Takeout at Home ship with Light from 1,600. Lab 104/104, 529 tests, demo v27.
