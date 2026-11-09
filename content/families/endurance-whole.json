@@ -1,0 +1,1827 @@
+{
+  "id": "endurance-whole",
+  "name": "Endurance, Whole Foods",
+  "style": "endurance",
+  "cuisine": "Global",
+  "carbStyle": "whole",
+  "regions": [
+    "Jamaica",
+    "Ethiopia",
+    "Canada",
+    "Mexico",
+    "Spain",
+    "India",
+    "Portugal",
+    "Greece",
+    "Ukraine"
+  ],
+  "summary": "A carb-first week of whole-food home cooking for runners, cyclists and swimmers: a jerk chicken and sweet potato traybake, berbere beef stew, paprika mackerel, chickpea masala and piri-piri chicken. Oats, potatoes, sweet potatoes, millet, quinoa, buckwheat, beans and fruit sit around your sessions, with protein at every meal and a recovery snack.",
+  "howItWorks": "**Whole-food carbs.** Oats, buckwheat, quinoa, millet, potatoes, sweet potatoes, beans, lentils and fruit bring about half or a little more of the day's calories. There is no bread, rice, pasta or couscous in the week, so it fits the whole-food carbs setting. Every day is a normal training day; on rest days, skip the pre-session snack.\n\n**Fuel before, recovery after.** No schedule is assumed. In the week table the first snack is the easy pre-training one (dates, banana, orange, sweet potato), to eat 30 to 90 minutes before. The second is the recovery snack, with protein and carbs, for within an hour or two of finishing. Move them to fit your session.\n\n**Fish and leftovers.** Salmon cakes on day 1, salmon chowder on day 3 and paprika mackerel on day 5 bring the oily fish, all cooked the day they are bought or opened. The jerk chicken, berbere beef, turkey picadillo and chickpea masala each make two portions, so the next lunch is done. Chill leftovers within an hour and reheat to 74 °C (165 °F).\n\n**Fibre and water.** Fibre is high, and higher at the bigger sizes, so build up slowly and drink plenty of water; move bean-heavy meals to after a hard session if they sit badly. Vitamin D is hard to get from food in any plan: the fish, eggs and milk here help, and your doctor can say if you need more.\n\n**Salt and extras.** The spiced chickpeas and the salted potatoes are the salty recovery snacks, for long, sweaty days. For sessions over about 90 minutes, a sports drink or gel is an easy extra, but none are in the recipes. Honey is not for babies under 1.\n\n**Big and XL.** Potatoes, sweet potatoes, oats, millet, quinoa and beans grow the most, with more chicken, beef, turkey, skyr and oil alongside. Vegetables and fruit stay as written. At XL, one skyr snack on day 1 is swapped for a chickpea and egg one to keep phosphorus in range.",
+  "signature": [
+    "endurance-whole-jerk-chicken-sweet-potato-traybake-coconut-spinach",
+    "endurance-whole-berbere-beef-lentil-stew-millet",
+    "endurance-whole-paprika-mackerel-crushed-potatoes-green-beans",
+    "endurance-whole-chickpea-spinach-masala-raita-millet"
+  ],
+  "lifeStage": "none",
+  "sizes": {
+    "standard": {
+      "kcal": 2600,
+      "covers": [
+        "2200-2400",
+        "2400-2800"
+      ]
+    },
+    "big": {
+      "kcal": 3000,
+      "covers": [
+        "2800-3200"
+      ]
+    },
+    "xl": {
+      "kcal": 3500,
+      "covers": [
+        "3200-3700"
+      ],
+      "adjust": [
+        {
+          "day": 1,
+          "swap": {
+            "from": "endurance-whole-skyr-warm-apple-toasted-oats",
+            "to": "endurance-whole-spiced-chickpeas-egg-raisins"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": [
+    {
+      "id": "endurance-whole-banana-date-oat-porridge-skyr",
+      "name": "Banana and date oat porridge with skyr and walnuts",
+      "inspiredBy": "Inspired by a classic Canadian oatmeal breakfast, with skyr for protein",
+      "about": "Oats simmered in milk with cinnamon and mashed banana, sweetened by chopped dates and topped with a cold spoonful of skyr and crunchy walnuts. It is an easy **slow-burning carb start**, with plenty of protein, so have it 2 to 3 hours before a hard morning session. If you train soon after waking, have a pre-session snack first and the porridge after.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 80,
+          "note": "ripe, mashed"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 25,
+          "note": "pitted and chopped"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put the oats, milk, a splash of water, the cinnamon, the salt and the chopped dates in a small pot over medium heat. Stir often until the porridge is thick and creamy, about 5 minutes.",
+        "Stir in the mashed banana for the last minute so it melts into the porridge.",
+        "Spoon into a bowl, add the cold skyr on top and scatter over the walnuts."
+      ],
+      "prepMin": 3,
+      "cookMin": 7,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Chop the dates the night before so the morning takes five minutes."
+    },
+    {
+      "id": "endurance-whole-apple-buckwheat-porridge-skyr-walnuts",
+      "name": "Warm buckwheat porridge with apple, skyr and sunflower seeds",
+      "inspiredBy": "Inspired by Eastern European kasha porridge",
+      "about": "Toasted buckwheat groats simmered in milk until soft, with sliced apple, cinnamon and a drizzle of honey, finished with skyr and toasted sunflower seeds. A warm, nutty Eastern European-style porridge that gives you **steady carbs** and good protein.",
+      "ingredients": [
+        {
+          "food": "buckwheat-groats-80619e",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 200,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "washed, cored and sliced"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 12,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 10
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Rinse the buckwheat in a sieve. Toast it in a dry small pot over medium heat for 2 minutes until it smells nutty.",
+        "Add the milk, a splash of water, the cinnamon and the salt. Bring to a gentle simmer, cover and cook for 12 minutes, stirring once, until the groats are soft and the porridge is thick.",
+        "Stir in most of the sliced apple for the last 2 minutes so it softens.",
+        "Spoon into a bowl, top with the skyr, the last of the apple and the sunflower seeds, and drizzle with the honey."
+      ],
+      "prepMin": 4,
+      "cookMin": 16,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook it the evening before: cool within 1 hour in a shallow covered container, chill, and reheat with a splash of milk until steaming hot, 74 °C (165 °F). Honey is not for babies under 1."
+    },
+    {
+      "id": "endurance-whole-potato-spinach-omelette-orange",
+      "name": "Spanish potato and spinach omelette with an orange",
+      "inspiredBy": "Inspired by Spanish tortilla de patatas, with spinach added",
+      "about": "A thick Spanish-style omelette of tender potato, sweet onion and spinach, cooked through until the eggs are fully set and golden, with a juicy orange alongside. A **hearty, savoury weekend breakfast** with plenty of carbs and good protein from the eggs.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 250,
+          "note": "scrubbed and thinly sliced"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 150,
+          "note": "beaten"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 60,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 200,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash and scrub the potatoes, then slice them very thinly. Warm the olive oil in a 20 cm non-stick pan over medium-low heat, add the potato and onion with a pinch of the iodized salt, cover and cook for 12 minutes, turning once or twice, until the potato is tender.",
+        "Add the washed spinach and stir for 1 minute until wilted. Spread the vegetables evenly in the pan.",
+        "Beat the eggs with the rest of the salt and the pepper and pour them over the vegetables. Cook over low heat for 6 minutes until the bottom is set and golden.",
+        "Finish the top under a hot broiler for 3 minutes if the pan handle is ovenproof (or flip the omelette onto a plate and slide it back into the pan for 3 minutes) until the eggs are completely firm, with no runny egg left in the centre.",
+        "Serve in wedges with the peeled orange."
+      ],
+      "prepMin": 8,
+      "cookMin": 24,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Slice the potatoes the evening before and keep them in the fridge in a covered bowl of water; drain and pat dry before cooking. Use a 24 cm pan at the bigger sizes."
+    },
+    {
+      "id": "endurance-whole-smashed-sweet-potato-chili-beans-eggs-orange",
+      "name": "Smashed sweet potato with smoky beans, firm eggs and an orange",
+      "inspiredBy": "Inspired by Mexican breakfast beans and eggs",
+      "about": "Soft chunks of sweet potato smashed with cumin and lemon, topped with warm kidney beans, firm-scrambled eggs and scallion, with an orange alongside. A **savoury, dairy-free breakfast** with slow carbs, plant protein and eggs, ready in about 25 minutes.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 250,
+          "note": "scrubbed and cut in chunks"
+        },
+        {
+          "food": "kidney-beans-canned-no-salt-added-drained-89a75f",
+          "g": 100,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "beaten"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 6,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 0.8
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the sweet potato and scallion. Microwave the sweet potato chunks covered for 6 minutes, or boil for 12 minutes, until very tender. Smash roughly with a fork with the lemon juice, half the cumin and a pinch of the iodized salt.",
+        "Warm the rinsed kidney beans with the rest of the cumin, the smoked paprika and a splash of water in a small pan for 4 minutes until steaming hot.",
+        "Beat the eggs with the pepper. Warm the canola oil in a non-stick pan over medium heat and scramble the eggs for 3 minutes, stirring, until completely firm with no liquid egg left.",
+        "Pile the sweet potato on a plate, top with the beans and eggs and the scallion, and serve with the peeled orange."
+      ],
+      "prepMin": 8,
+      "cookMin": 18,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Cook the sweet potato the night before, cool it within 2 hours, keep it covered in the fridge and reheat until steaming hot, 74 °C (165 °F)."
+    },
+    {
+      "id": "endurance-whole-salmon-potato-cakes-dill-skyr",
+      "name": "Salmon and potato cakes with dill skyr and a crunchy carrot salad",
+      "inspiredBy": "Inspired by Scandinavian fish cakes and Canadian salmon patties",
+      "about": "Golden pan-seared cakes of canned salmon, mashed potato and oats, served with a cool dill skyr sauce and a quick carrot, cucumber and sunflower seed salad. The salmon brings **omega-3 fats and a solid hit of protein**, and the potato and oats keep the carbs coming.",
+      "ingredients": [
+        {
+          "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+          "g": 110,
+          "swap": "fatty_fish",
+          "note": "drained, bones mashed in"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 220,
+          "note": "scrubbed and cubed"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 30,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "beaten"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 15,
+          "note": "sliced"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 80,
+          "note": "grated"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 80,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Boil the potato cubes in salted water for 12 to 15 minutes until very tender. Drain well, return them to the pot for a minute to steam dry, then mash roughly and let cool for 10 minutes.",
+        "Wash the scallion, dill, carrot and cucumber. Mash the drained salmon (soft bones and all) into the potato with the oats, beaten egg, scallion, half the dill, half the lemon juice and the pepper. Shape into 2 or 3 thick patties.",
+        "Heat the canola oil in a non-stick pan over medium heat. Cook the cakes for 4 to 5 minutes per side until deep golden and hot through, 74 °C (165 °F) in the middle.",
+        "While they cook, toast the sunflower seeds in a dry pan for 2 minutes, then toss them with the grated carrot, sliced cucumber, a squeeze of lemon and a pinch of the iodized salt.",
+        "Stir the rest of the dill and lemon into the skyr and spoon it beside the cakes and salad."
+      ],
+      "prepMin": 15,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Shape the patties the evening before and keep them covered in the fridge, then fry at lunch. Cool any cooked cakes within 1 hour; keep up to 2 days and reheat to 74 °C (165 °F). If you pack them, use a cold bag with an ice pack and eat within 4 hours."
+    },
+    {
+      "id": "endurance-whole-lemon-chickpea-potato-stew-egg",
+      "name": "Greek-style lemon chickpeas with potatoes, spinach and a firm egg",
+      "inspiredBy": "Inspired by Greek revithada, with potatoes added",
+      "about": "Chickpeas and potatoes simmered with onion, garlic, rosemary and plenty of lemon until the sauce turns silky, with spinach wilted in and a quartered firm egg on top, a bit like the Greek baked chickpeas called revithada. It is **cosy, lemony and filling**, with chickpeas and egg for protein and potatoes for carbs.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 200,
+          "note": "scrubbed, cut in chunks"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 80,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "boiled firm"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 25
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "rosemary-dried-bacf22",
+          "g": 0.5
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.9
+        }
+      ],
+      "steps": [
+        "Cover the egg with cold water, bring to a boil and cook 10 minutes until the yolk is completely firm. Cool in cold water, peel and quarter it.",
+        "Meanwhile, wash the potatoes and spinach. Warm the olive oil in a pot over medium heat and soften the onion for 5 minutes, then add the garlic and rosemary for 30 seconds.",
+        "Add the potatoes, chickpeas, salt, pepper and enough water to just cover. Simmer, partly covered, for 20 minutes, crushing a few potato chunks to thicken the sauce, until the potatoes are tender.",
+        "Fold in the spinach and half the lemon juice and cook 2 minutes until wilted.",
+        "Spoon into a bowl, top with the egg and a dollop of skyr stirred with the rest of the lemon juice."
+      ],
+      "prepMin": 10,
+      "cookMin": 32,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make the stew the evening before without the egg or skyr: cool within 1 hour, keep covered in the fridge up to 3 days and reheat to 74 °C (165 °F). Add a freshly boiled egg."
+    },
+    {
+      "id": "endurance-whole-beef-kidney-bean-borscht-dill-skyr",
+      "name": "Beef and kidney bean beet soup with cabbage, dill skyr and an apple",
+      "inspiredBy": "Inspired by Ukrainian borscht, without the potato and the rye bread",
+      "about": "A ruby beet and cabbage soup with browned beef, kidney beans, carrot and a squeeze of lemon, finished with a spoon of dill skyr. The beans and beef make it **filling and high in protein**, and the beets add natural sweetness and potassium. An apple on the side rounds out the carbs.",
+      "ingredients": [
+        {
+          "food": "ground-beef-extra-lean-raw-eb4b44",
+          "g": 80,
+          "swap": "lean_protein",
+          "note": "lean ground"
+        },
+        {
+          "food": "kidney-beans-canned-no-salt-added-drained-89a75f",
+          "g": 130,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "beet-raw-4df109",
+          "g": 150,
+          "note": "peeled and grated"
+        },
+        {
+          "food": "cabbage-green-raw-f18ffb",
+          "g": 100,
+          "note": "finely shredded"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "grated"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 15
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 80,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 6,
+          "note": "chopped"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "swap": "vit_c_fruit"
+        },
+        {
+          "food": "bay-leaf-513612",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash and prepare the vegetables. Warm the canola oil in a large pot over medium-high heat and brown the ground beef with the onion for 6 minutes, breaking it up, until no pink remains and it reaches 71 °C (160 °F). Wash your hands and the board after handling the raw beef.",
+        "Stir in the tomato paste for 1 minute, then add the beet, carrot, cabbage, bay leaf, salt, pepper and enough water to cover by a thumb-width.",
+        "Simmer, partly covered, for 25 minutes until the beets are tender. Add the rinsed kidney beans and simmer 5 more minutes, then add the lemon juice. Remove the bay leaf.",
+        "Stir half the dill into the skyr. Ladle the borscht into a bowl, add a spoonful of the dill skyr, scatter over the rest of the dill and eat the washed apple on the side."
+      ],
+      "prepMin": 15,
+      "cookMin": 40,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make it the evening before; it tastes better the next day. Cool within 1 hour, chill, and reheat to 74 °C (165 °F). The beets stain, so use a dark cutting board."
+    },
+    {
+      "id": "endurance-whole-jerk-chicken-sweet-potato-traybake-coconut-spinach",
+      "name": "Jerk chicken and sweet potato traybake with coconut spinach and lemon onions",
+      "inspiredBy": "Inspired by Jamaican jerk chicken, as a one-tray dinner with sweet potato and coconut spinach",
+      "about": "Chicken thighs rubbed with a quick jerk paste of allspice, thyme, scallion, garlic and cayenne, roasted on one tray with sweet potato wedges, then served with creamy coconut spinach and sharp lemon-pickled onions. A **big tray of slow carbs** with lots of protein, and enough left for tomorrow's lunch.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 155,
+          "swap": "lean_protein",
+          "note": "trimmed of fat"
+        },
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 300,
+          "note": "scrubbed, cut into wedges"
+        },
+        {
+          "food": "coconut-milk-reduced-fat-93cbb3",
+          "g": 60
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 120,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 50,
+          "note": "thinly sliced"
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 20,
+          "note": "chopped"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 4,
+          "note": "grated"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 30
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "allspice-ground-67abb9",
+          "g": 1.5
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.6
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.4
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Mix the sliced onion with half the lemon juice and a pinch of the iodized salt in a small bowl and leave it to pickle while you cook.",
+        "Heat the oven to 220 °C (425 °F). Mix half the scallion, the garlic, ginger, cayenne, the rest of the lemon juice, half the canola oil, the allspice, thyme, pepper and half the salt into a paste. Rub it all over the raw chicken, cover and marinate in the fridge for 30 minutes to 4 hours. Wash your hands and the board after handling the raw chicken, and never reuse the marinade.",
+        "Toss the sweet potato wedges with the rest of the oil on a tray and roast for 10 minutes. Add the chicken to the tray and roast 20 to 25 minutes more, turning the wedges once, until the chicken reaches 74 °C (165 °F) and the wedges are tender and browned.",
+        "While the tray roasts, warm the coconut milk with the rest of the scallion and a splash of water in a pan for 3 minutes. Add the washed spinach and stir 2 minutes until just wilted.",
+        "Rest the chicken on a clean plate for 5 minutes, then slice it. Serve with the wedges, the coconut spinach and the drained onions.",
+        "Put the second portion in a shallow container, cool within 1 hour and chill; eat it tomorrow, reheated to 74 °C (165 °F), with the onions kept cold."
+      ],
+      "prepMin": 20,
+      "cookMin": 40,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers"
+      ],
+      "tip": "No scotch bonnet needed: cayenne gives the heat. Mix the paste the night before and marinate for up to 4 hours on the day. Leave out the cayenne for a milder, kid-friendly version."
+    },
+    {
+      "id": "endurance-whole-berbere-beef-lentil-stew-millet",
+      "name": "Berbere beef and red lentil stew with spinach and millet",
+      "inspiredBy": "Inspired by Ethiopian minchet abish and misir wot, without injera",
+      "about": "Lean beef simmered with red lentils, onion, ginger, garlic and warming berbere until thick and saucy, with spinach folded in and a mound of fluffy millet underneath. It is a **rich, hearty stew** with plenty of protein, and it tastes even better the next day.",
+      "ingredients": [
+        {
+          "food": "ground-beef-extra-lean-raw-eb4b44",
+          "g": 120,
+          "swap": "lean_protein",
+          "note": "lean ground"
+        },
+        {
+          "food": "red-lentils-split-dried-raw-a4a763",
+          "g": 40,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "foxtail-millet-polished-grain-raw-0dfe59",
+          "g": 50,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 100,
+          "note": "finely diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 60,
+          "note": "diced"
+        },
+        {
+          "food": "tomato-paste-7d3238",
+          "g": 15
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "grated"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "berbere-ethiopian-spice-blend-a8ab4f",
+          "g": 6
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Wash the vegetables. Cook the millet: toast the rinsed millet in a dry pot for 2 minutes, add about twice its volume of water and a pinch of salt, cover and simmer 15 minutes, then rest 5 minutes with the lid on and fluff with a fork.",
+        "Meanwhile, warm the oil in a wide pot over medium heat and soften the onion for 6 minutes. Add the garlic, ginger and berbere and stir for 1 minute until fragrant.",
+        "Add the ground beef and brown it for 6 minutes, breaking it up, until no pink remains. Wash your hands and the board after handling the raw beef.",
+        "Stir in the tomato paste, lentils, carrot, the salt and enough water to cover by a thumb-width. Simmer, stirring now and then, for 18 minutes until the lentils have melted into a thick stew and the beef is at 71 °C (160 °F).",
+        "Fold in the washed spinach and cook 2 minutes until wilted, then finish with the lemon juice. Spoon over the millet.",
+        "Put the second portion, with its millet, in a shallow container, cool within 1 hour and chill. Use it tomorrow, reheated to 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "No berbere? Mix paprika, a little cayenne, cumin, ginger, allspice and cinnamon. Cool within 1 hour; freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+    },
+    {
+      "id": "endurance-whole-salmon-potato-chowder",
+      "name": "Salmon and potato chowder with carrot, dill and lemon",
+      "inspiredBy": "Inspired by Canadian fish chowders and Scandinavian laxsoppa",
+      "about": "A creamy, chunky chowder of tender potato, carrot and onion, with flaked salmon, milk and plenty of fresh dill and lemon, with crunchy sunflower seeds on top. It is **comfort food that fuels recovery**: salmon brings omega-3 fats and protein, and the potatoes bring the carbs.",
+      "ingredients": [
+        {
+          "food": "salmon-pink-canned-drained-solids-with-bone-736a8c",
+          "g": 115,
+          "swap": "fatty_fish",
+          "note": "drained, with the soft bones"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 320,
+          "note": "scrubbed, diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 80,
+          "note": "diced"
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 70,
+          "note": "diced"
+        },
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 130,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "toasted"
+        },
+        {
+          "food": "dill-raw-b97f95",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "thyme-dried-4c6cce",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash the vegetables. Toast the sunflower seeds in a dry pan for 2 minutes and set aside. Warm the olive oil in a pot over medium heat and soften the onion and carrot with the thyme for 6 minutes.",
+        "Add the potatoes, the salt and enough water to just cover. Simmer for 12 to 15 minutes until the potatoes are tender. Crush a few pieces against the side of the pot to thicken the broth.",
+        "Stir in the milk and warm gently for 3 minutes without boiling. The crushed potato gives the chowder its body.",
+        "Flake in the drained salmon, bones and all (they mash in easily), and warm through for 3 minutes until steaming hot. Add the lemon juice, pepper and most of the dill.",
+        "Ladle into a bowl and top with the rest of the dill and the toasted sunflower seeds. Tip any leftover canned salmon into a covered container, chill it and use it within 2 days."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Eat the chowder the same day; if you have extra, cool it within 1 hour and use it within 2 days, reheated to 74 °C (165 °F)."
+    },
+    {
+      "id": "endurance-whole-turkey-picadillo-quinoa",
+      "name": "Turkey picadillo with carrots, raisins and quinoa",
+      "inspiredBy": "Inspired by Cuban and Mexican picadillo, served over quinoa",
+      "about": "A Cuban- and Mexican-style picadillo: ground turkey simmered with tomato, carrot, raisins, garlic and cumin, finished with lemon and cilantro and spooned over fluffy quinoa. The sweet raisins and bright lemon make it a **lean, savoury-sweet plate** with plenty of lean protein, and it is even better the next day.",
+      "ingredients": [
+        {
+          "food": "ground-turkey-93-lean-7-fat-raw-2b2c29",
+          "g": 150,
+          "swap": "lean_protein",
+          "note": "ground"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 70,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 150
+        },
+        {
+          "food": "carrot-raw-f79846",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 100,
+          "note": "diced"
+        },
+        {
+          "food": "raisin-fe075b",
+          "g": 20
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 8,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 12
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1.2
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Cook the quinoa: simmer the rinsed quinoa in about twice its volume of water with a pinch of the iodized salt, covered, for 15 minutes, then rest 5 minutes and fluff.",
+        "Meanwhile, wash the vegetables. Warm the canola oil in a wide pan over medium heat and soften the onion and carrot for 7 minutes. Add the garlic, cumin and cinnamon and stir for 30 seconds.",
+        "Add the ground turkey and cook for 6 minutes, breaking it up, until no pink remains. Wash your hands and the board after handling the raw turkey.",
+        "Add the crushed tomatoes, raisins, salt and pepper. Simmer for 12 minutes until thick and glossy and the turkey has reached 74 °C (165 °F). Stir in the lemon juice and half the cilantro.",
+        "Serve the picadillo over the quinoa with the rest of the cilantro. Put the second portion, with its quinoa, in a shallow container, cool within 1 hour and chill. Use it tomorrow, reheated to 74 °C (165 °F)."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "mild",
+        "makes-leftovers",
+        "freezer-friendly",
+        "kid-friendly"
+      ],
+      "tip": "Cool within 1 hour, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+    },
+    {
+      "id": "endurance-whole-paprika-mackerel-crushed-potatoes-green-beans",
+      "name": "Paprika mackerel with crushed potatoes and green beans",
+      "inspiredBy": "Inspired by Spanish and Portuguese grilled mackerel with potatoes",
+      "about": "Atlantic mackerel fillets pan-seared with smoked paprika and garlic, on a bed of olive oil crushed potatoes and bright green beans, finished with lemon and scallion. Mackerel is one of the richest fish for **omega-3 fats and vitamin D**, and the potatoes carry the carbs.",
+      "ingredients": [
+        {
+          "food": "mackerel-atlantic-raw-e5edaa",
+          "g": 150,
+          "swap": "fatty_fish",
+          "note": "fillets, pin bones removed"
+        },
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 320,
+          "note": "small, scrubbed"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 120,
+          "note": "trimmed"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 14,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "sliced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 15
+        },
+        {
+          "food": "scallion-raw-1ccff7",
+          "g": 12,
+          "note": "sliced"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the vegetables. Boil the potatoes in salted water for 15 to 20 minutes until a knife slides in easily, adding the green beans for the last 4 minutes. Drain well.",
+        "Crush the potatoes lightly with a fork in the pot, then toss with half the olive oil, half the lemon juice, the pepper and half the scallion. Keep warm with the green beans.",
+        "Pat the mackerel dry and season with the smoked paprika and a pinch of the iodized salt. Heat the rest of the olive oil in a non-stick pan over medium-high heat.",
+        "Cook the mackerel skin-side down for 4 minutes until crisp, then flip, add the sliced garlic and cook 2 to 3 minutes more until the garlic is golden and the fish flakes and reaches 70 °C (158 °F). Wash your hands and the board after handling the raw fish.",
+        "Serve the fish on the potatoes and green beans with the rest of the lemon juice and scallion."
+      ],
+      "prepMin": 12,
+      "cookMin": 28,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Ask the fishmonger to remove the pin bones. Buy the fish the day you cook it, or thaw frozen fillets overnight in the fridge. Eat the same day."
+    },
+    {
+      "id": "endurance-whole-chickpea-spinach-masala-raita-millet",
+      "name": "Chickpea and spinach masala with cucumber raita and millet",
+      "inspiredBy": "Inspired by North Indian chana masala and cucumber raita, over millet",
+      "about": "Chickpeas simmered in an onion, tomato, ginger and garam masala sauce with spinach, spooned over fluffy millet and cooled by a creamy cucumber and skyr raita. A **plant-forward dinner** with plenty of protein from chickpeas, skyr and millet.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 160,
+          "swap": "legumes",
+          "note": "rinsed"
+        },
+        {
+          "food": "foxtail-millet-polished-grain-raw-0dfe59",
+          "g": 60,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 150
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 100,
+          "note": "finely diced"
+        },
+        {
+          "food": "spinach-raw-17845b",
+          "g": 100,
+          "swap": "leafy_greens",
+          "note": "washed"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "cucumber-raw-087bf8",
+          "g": 60,
+          "note": "grated"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 5,
+          "note": "minced"
+        },
+        {
+          "food": "ginger-root-raw-da2481",
+          "g": 5,
+          "note": "grated"
+        },
+        {
+          "food": "canola-oil-6744e1",
+          "g": 10,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 10
+        },
+        {
+          "food": "coriander-cilantro-raw-c0e7c1",
+          "g": 8,
+          "note": "chopped"
+        },
+        {
+          "food": "cumin-cummin-seed-dried-ground-b00343",
+          "g": 1
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1.5
+        },
+        {
+          "food": "turmeric-ground-32f550",
+          "g": 0.5
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 0.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        }
+      ],
+      "steps": [
+        "Cook the millet: toast the rinsed millet in a dry pot for 2 minutes, add about twice its volume of water and a pinch of salt, cover and simmer 15 minutes, then rest 5 minutes with the lid on and fluff with a fork.",
+        "Meanwhile, wash the vegetables and cilantro. Warm the oil in a wide pan over medium heat and cook the onion for 7 minutes until golden. Add the garlic, ginger, cumin, turmeric and cayenne and stir for 1 minute.",
+        "Add the crushed tomatoes and the salt and simmer for 5 minutes. Stir in the chickpeas and 100 ml of water and simmer 10 minutes, mashing a few chickpeas to thicken the sauce.",
+        "Fold in the spinach and the garam masala and cook for 2 minutes until wilted. Finish with the lemon juice and half the cilantro.",
+        "Stir the grated cucumber into the skyr with a pinch of salt for the raita. Serve the masala over the millet with the raita on the side and the rest of the cilantro on top.",
+        "Put the second portion, with its millet, in a shallow container, cool within 1 hour and chill; keep the raita covered in its own container. Use both tomorrow, reheating the masala and millet to 74 °C (165 °F) and serving the raita cold."
+      ],
+      "prepMin": 15,
+      "cookMin": 35,
+      "servings": 2,
+      "tags": [
+        "medium-spicy",
+        "makes-leftovers",
+        "freezer-friendly"
+      ],
+      "tip": "Skyr is easy to find in most supermarkets, but plain Greek yogurt works too, and hulled millet from the bulk section is fine. Freeze the masala without the raita: cool within 1 hour, freeze up to 2 months, thaw in the fridge, use within 2 days, never refreeze, and reheat to 74 °C (165 °F)."
+    },
+    {
+      "id": "endurance-whole-piri-piri-chicken-tomato-quinoa-green-beans",
+      "name": "Piri-piri chicken with tomato quinoa and green beans",
+      "inspiredBy": "Inspired by Portuguese piri-piri chicken, served with tomato quinoa",
+      "about": "Chicken thighs marinated in a fiery lemon, garlic, cayenne and smoked paprika paste, roasted until sticky and served over a soft tomato quinoa cooked like Portuguese tomato rice, with green beans. A **weekend favourite** with lots of protein and a bright, hot kick you can dial up or down.",
+      "ingredients": [
+        {
+          "food": "chicken-thigh-boneless-skinless-raw-722c98",
+          "g": 170,
+          "swap": "lean_protein",
+          "note": "trimmed of fat"
+        },
+        {
+          "food": "quinoa-dry-13e0ee",
+          "g": 65,
+          "swap": "low_gi_grains",
+          "note": "rinsed"
+        },
+        {
+          "food": "tomato-red-ripe-canned-crushed-c5bbec",
+          "g": 120
+        },
+        {
+          "food": "onion-raw-11f646",
+          "g": 100,
+          "note": "finely diced"
+        },
+        {
+          "food": "green-beans-raw-29678a",
+          "g": 100,
+          "note": "trimmed"
+        },
+        {
+          "food": "garlic-raw-a9c6a6",
+          "g": 8,
+          "note": "minced"
+        },
+        {
+          "food": "lemon-juice-raw-7ae426",
+          "g": 30
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 12,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "smoked-paprika-pimenton-2e4941",
+          "g": 2
+        },
+        {
+          "food": "cayenne-pepper-a95c95",
+          "g": 1
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 1.2
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Mix half the garlic with the lemon juice, half the olive oil, the smoked paprika, cayenne, pepper and a third of the salt. Add the raw chicken, turn to coat, cover and marinate in the fridge for 1 to 4 hours. Wash your hands and the board after handling the raw chicken, and never reuse the marinade.",
+        "Heat the oven to 220 °C (425 °F). Lift the chicken onto a tray, discard the marinade and roast for 25 to 30 minutes, turning once, until the chicken is browned and reaches 74 °C (165 °F). Rest it on a clean plate.",
+        "Meanwhile, warm the rest of the oil in a pot over medium heat and soften the onion for 5 minutes. Add the rest of the garlic, then the rinsed quinoa and crushed tomatoes, a splash of water and the rest of the salt. Cover and simmer for 15 minutes, then rest 5 minutes and fluff.",
+        "Steam or boil the washed green beans for 4 minutes until tender but still bright.",
+        "Serve the sliced chicken over the tomato quinoa with the green beans."
+      ],
+      "prepMin": 20,
+      "cookMin": 45,
+      "servings": 1,
+      "tags": [
+        "spicy",
+        "weekend-project"
+      ],
+      "tip": "Eat it the same day, or cool within 1 hour, keep up to 2 days and reheat to 74 °C (165 °F). Use half the cayenne for a milder version."
+    },
+    {
+      "id": "endurance-whole-peanut-butter-stuffed-dates",
+      "name": "Peanut butter stuffed dates",
+      "about": "Soft medjool dates split and filled with smooth peanut butter and a tiny pinch of salt. Quick **natural sugars to top up** your fuel before a session, with a little fat and protein to keep the stomach happy.",
+      "ingredients": [
+        {
+          "food": "date-medjool-425697",
+          "g": 60,
+          "note": "pitted"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 15
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Slit each date open along one side and take out the pit.",
+        "Fill each one with peanut butter, add the tiniest pinch of the iodized salt and press closed.",
+        "Eat 30 to 60 minutes before training."
+      ],
+      "prepMin": 4,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "endurance-whole-peanut-butter-banana-halves",
+      "name": "Peanut butter banana halves with honey",
+      "about": "A ripe banana sliced in half lengthwise, spread with peanut butter and drizzled with honey. An old athlete favourite that gives you **fast carbs and potassium** and sits lightly before a workout.",
+      "ingredients": [
+        {
+          "food": "banana-raw-61b750",
+          "g": 130,
+          "note": "ripe"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 14
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 8
+        }
+      ],
+      "steps": [
+        "Peel the banana and slice it in half lengthwise.",
+        "Spread the peanut butter over the cut sides and drizzle with the honey.",
+        "Eat 30 to 60 minutes before training."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Honey is not for babies under 1."
+    },
+    {
+      "id": "endurance-whole-oat-date-energy-bites",
+      "name": "Oat and date energy bites",
+      "about": "No-bake bites of rolled oats, mashed dates and peanut butter with a pinch of cinnamon. They give **slow oat carbs and quick date sugars** in one portable snack, ideal for a jersey pocket.",
+      "ingredients": [
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 25,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 35,
+          "note": "pitted"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 12
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.1
+        }
+      ],
+      "steps": [
+        "Mash the pitted dates with a fork, or pulse them in a food processor, until sticky.",
+        "Mix in the oats, peanut butter, cinnamon and salt until it holds together; add a teaspoon of water if it is dry.",
+        "Roll into small balls. They keep in a covered container in the fridge for up to 5 days."
+      ],
+      "prepMin": 8,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "endurance-whole-apple-raisin-walnut-bowl",
+      "name": "Apple slices with raisins, walnuts and cinnamon",
+      "about": "Crisp apple slices tossed with plump raisins, chopped walnuts and a dusting of cinnamon. A **light, juicy pre-session snack** with quick fruit carbs and a little crunch.",
+      "ingredients": [
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 180,
+          "swap": "vit_c_fruit",
+          "note": "washed, cored and sliced"
+        },
+        {
+          "food": "raisin-fe075b",
+          "g": 30
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 10,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.4
+        }
+      ],
+      "steps": [
+        "Wash the apple, core it and cut it into slices.",
+        "Toss with the raisins, walnuts and cinnamon in a bowl.",
+        "Eat 30 to 60 minutes before training."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "endurance-whole-cinnamon-sweet-potato-rounds",
+      "name": "Cinnamon sweet potato rounds with honey",
+      "about": "Thick rounds of sweet potato cooked until soft, dusted with cinnamon and a little salt and drizzled with honey. Gentle on the stomach and **a slow, easy carb top-up**, a favourite with long-distance riders.",
+      "ingredients": [
+        {
+          "food": "sweet-potato-raw-15f948",
+          "g": 200,
+          "note": "scrubbed, cut into thick rounds"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 8
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.8
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Wash the sweet potato and cut it into rounds about 2 cm thick.",
+        "Microwave them covered for 5 to 6 minutes, or roast at 200 °C (400 °F) for 20 minutes, until a knife slides in easily.",
+        "Dust with the cinnamon and the iodized salt and drizzle with the honey. Eat warm, 60 to 90 minutes before training."
+      ],
+      "prepMin": 5,
+      "cookMin": 6,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Honey is not for babies under 1."
+    },
+    {
+      "id": "endurance-whole-orange-and-dates",
+      "name": "Orange segments with medjool dates",
+      "about": "Juicy orange segments with soft medjool dates. Simple, sweet and **easy on the stomach**, with quick carbs and vitamin C before you head out.",
+      "ingredients": [
+        {
+          "food": "orange-raw-ce787f",
+          "g": 200,
+          "swap": "vit_c_fruit",
+          "note": "washed and peeled"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 50,
+          "note": "pitted"
+        }
+      ],
+      "steps": [
+        "Wash and peel the orange and break it into segments.",
+        "Serve with the pitted dates. Eat 30 to 60 minutes before training."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "endurance-whole-skyr-warm-apple-toasted-oats",
+      "name": "Skyr with warm cinnamon apple and toasted oats",
+      "about": "Cold, thick skyr over warm cinnamon apple and crunchy toasted oats, like a quick apple crisp. A **recovery snack with plenty of protein** and fruit carbs to refill.",
+      "ingredients": [
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 220,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "apple-raw-with-skin-404882",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "washed, cored and diced"
+        },
+        {
+          "food": "oats-regular-and-quick-dry-a443fd",
+          "g": 25,
+          "swap": "low_gi_grains",
+          "note": "rolled"
+        },
+        {
+          "food": "honey-strained-or-extracted-e9d5cd",
+          "g": 8
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.6
+        }
+      ],
+      "steps": [
+        "Toast the oats in a dry pan over medium heat for 3 minutes until golden and fragrant, then tip them out.",
+        "Cook the diced apple in the same pan with a splash of water, the cinnamon and the honey for 4 minutes until soft.",
+        "Spoon the skyr into a bowl, top with the warm apple and the toasted oats."
+      ],
+      "prepMin": 3,
+      "cookMin": 8,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly",
+        "15-minute"
+      ],
+      "tip": "Honey is not for babies under 1."
+    },
+    {
+      "id": "endurance-whole-peanut-butter-banana-skyr-smoothie",
+      "name": "Peanut butter banana smoothie with skyr",
+      "about": "A thick blender smoothie of milk, skyr, banana and peanut butter. Drink it within an hour or two of finishing a session for **plenty of protein** and quick carbs in a form you can finish even when you are not hungry.",
+      "ingredients": [
+        {
+          "food": "milk-reduced-fat-2-fat-4a4316",
+          "g": 250,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 120,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "banana-raw-61b750",
+          "g": 100,
+          "note": "ripe"
+        },
+        {
+          "food": "peanut-butter-smooth-51208a",
+          "g": 12
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.3
+        }
+      ],
+      "steps": [
+        "Put the milk, skyr, banana, peanut butter and cinnamon in a blender.",
+        "Blend until smooth, about 30 seconds, and drink right away."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "endurance-whole-skyr-dates-walnuts",
+      "name": "Skyr with chopped dates, walnuts, sunflower seeds and cinnamon",
+      "about": "Thick skyr stirred with chopped dates and cinnamon, topped with walnuts and sunflower seeds. A **recovery snack with plenty of protein**, plus quick date sugars and a little omega-3 fat from the walnuts.",
+      "ingredients": [
+        {
+          "food": "skyr-plain-b0ee5c",
+          "g": 180,
+          "swap": "dairy_protein"
+        },
+        {
+          "food": "date-medjool-425697",
+          "g": 40,
+          "note": "pitted and chopped"
+        },
+        {
+          "food": "walnuts-english-or-persian-560876",
+          "g": 14,
+          "swap": "nuts_seeds",
+          "note": "chopped"
+        },
+        {
+          "food": "sunflower-seeds-dried-50647e",
+          "g": 9,
+          "swap": "nuts_seeds"
+        },
+        {
+          "food": "cinnamon-ground-ed5c78",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Stir the chopped dates and cinnamon into the skyr.",
+        "Top with the walnuts and sunflower seeds."
+      ],
+      "prepMin": 3,
+      "cookMin": 0,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "no-cook",
+        "kid-friendly",
+        "15-minute"
+      ]
+    },
+    {
+      "id": "endurance-whole-salted-potatoes-firm-eggs-orange",
+      "name": "Salted baby potatoes with firm-boiled eggs and an orange",
+      "about": "Small potatoes boiled until tender and tossed with olive oil and a good pinch of salt, with two firm-boiled eggs and a juicy orange. A **salty, savoury recovery snack** with real protein, as welcome after a long sweaty session as it is simple.",
+      "ingredients": [
+        {
+          "food": "potato-flesh-and-skin-raw-491f85",
+          "g": 250,
+          "note": "small, scrubbed"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 100,
+          "note": "boiled firm"
+        },
+        {
+          "food": "orange-raw-ce787f",
+          "g": 150,
+          "swap": "vit_c_fruit",
+          "note": "washed and peeled"
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 5,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.8
+        },
+        {
+          "food": "black-pepper-6fd5df",
+          "g": 0.2
+        }
+      ],
+      "steps": [
+        "Cover the eggs with cold water in a pot, bring to a boil and cook 10 minutes until the yolks are completely firm. Cool in cold water and peel.",
+        "Meanwhile, boil the potatoes in a separate pot of water for 15 to 18 minutes until tender, then drain and toss with the olive oil, the iodized salt and the pepper.",
+        "Serve the warm potatoes with the halved eggs and the orange segments. Eat within an hour or two of finishing a session."
+      ],
+      "prepMin": 5,
+      "cookMin": 20,
+      "servings": 1,
+      "tags": [
+        "mild",
+        "kid-friendly"
+      ],
+      "tip": "Make it ahead: boil the eggs and potatoes the day before, cool within 2 hours and chill. Eggs in their shells keep up to 1 week, the potatoes up to 3 days; eat them cold, or warm the potatoes until steaming hot. After a long, sweaty session, a little extra salt is fine."
+    },
+    {
+      "id": "endurance-whole-spiced-chickpeas-egg-raisins",
+      "name": "Crispy spiced chickpeas with a firm egg and raisins",
+      "about": "Rinsed chickpeas roasted until crunchy with garam masala and a little salt, like a roasted chana snack, served with a firm-boiled egg and sweet raisins. A **salty-sweet recovery snack** with plant and egg protein.",
+      "ingredients": [
+        {
+          "food": "chickpeas-canned-no-salt-added-drained-742cc3",
+          "g": 150,
+          "swap": "legumes",
+          "note": "rinsed and patted very dry"
+        },
+        {
+          "food": "egg-whole-raw-e196d3",
+          "g": 50,
+          "note": "boiled firm"
+        },
+        {
+          "food": "raisin-fe075b",
+          "g": 30
+        },
+        {
+          "food": "olive-oil-2b2b51",
+          "g": 4,
+          "swap": "healthy_oils"
+        },
+        {
+          "food": "garam-masala-951e26",
+          "g": 1.2
+        },
+        {
+          "food": "table-salt-iodized-052851",
+          "g": 0.5
+        }
+      ],
+      "steps": [
+        "Heat the oven to 210 °C (410 °F). Toss the dry chickpeas with the olive oil, garam masala and salt on a tray and roast 25 minutes, shaking once, until crisp.",
+        "Meanwhile, cover the egg with cold water, bring to a boil and cook 10 minutes until the yolk is completely firm. Cool in cold water and peel.",
+        "Serve the warm chickpeas with the halved egg and the raisins. Eat within an hour or two of finishing a session."
+      ],
+      "prepMin": 5,
+      "cookMin": 25,
+      "servings": 1,
+      "tags": [
+        "mild"
+      ],
+      "tip": "Make it ahead: roast the chickpeas before you head out, or the day before (cool within 2 hours, keep covered in the fridge up to 3 days and re-crisp in a hot oven for 5 minutes). Firm-boiled eggs keep in their shells in the fridge for up to 1 week."
+    }
+  ],
+  "week": [
+    {
+      "day": 1,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "endurance-whole-banana-date-oat-porridge-skyr"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "endurance-whole-salmon-potato-cakes-dill-skyr"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "endurance-whole-jerk-chicken-sweet-potato-traybake-coconut-spinach"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-whole-orange-and-dates"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-whole-skyr-warm-apple-toasted-oats"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "endurance-whole-apple-buckwheat-porridge-skyr-walnuts"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "endurance-whole-jerk-chicken-sweet-potato-traybake-coconut-spinach",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "endurance-whole-berbere-beef-lentil-stew-millet"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-whole-peanut-butter-stuffed-dates"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-whole-peanut-butter-banana-skyr-smoothie"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "endurance-whole-smashed-sweet-potato-chili-beans-eggs-orange"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "endurance-whole-berbere-beef-lentil-stew-millet",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "endurance-whole-salmon-potato-chowder"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-whole-oat-date-energy-bites"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-whole-spiced-chickpeas-egg-raisins"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "endurance-whole-banana-date-oat-porridge-skyr"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "endurance-whole-lemon-chickpea-potato-stew-egg"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "endurance-whole-turkey-picadillo-quinoa"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-whole-apple-raisin-walnut-bowl"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-whole-salted-potatoes-firm-eggs-orange"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "endurance-whole-smashed-sweet-potato-chili-beans-eggs-orange"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "endurance-whole-turkey-picadillo-quinoa",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "endurance-whole-paprika-mackerel-crushed-potatoes-green-beans"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-whole-cinnamon-sweet-potato-rounds"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-whole-peanut-butter-banana-skyr-smoothie"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "endurance-whole-potato-spinach-omelette-orange"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "endurance-whole-beef-kidney-bean-borscht-dill-skyr"
+        },
+        {
+          "slot": "dinner",
+          "recipe": "endurance-whole-chickpea-spinach-masala-raita-millet"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-whole-peanut-butter-banana-halves"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-whole-skyr-dates-walnuts"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "meals": [
+        {
+          "slot": "breakfast",
+          "recipe": "endurance-whole-banana-date-oat-porridge-skyr"
+        },
+        {
+          "slot": "lunch",
+          "recipe": "endurance-whole-chickpea-spinach-masala-raita-millet",
+          "leftover": true
+        },
+        {
+          "slot": "dinner",
+          "recipe": "endurance-whole-piri-piri-chicken-tomato-quinoa-green-beans"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-whole-peanut-butter-banana-halves"
+        },
+        {
+          "slot": "snack",
+          "recipe": "endurance-whole-salted-potatoes-firm-eggs-orange"
+        }
+      ]
+    }
+  ]
+}
