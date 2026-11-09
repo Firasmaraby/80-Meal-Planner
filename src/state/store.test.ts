@@ -65,3 +65,18 @@ describe('membership', () => {
     expect(useStore.getState().membership.status).toBe('none');
   });
 });
+
+describe('quiz answers', () => {
+  it('a state saved before the quiz loads without answers, and reset clears them', () => {
+    const saved = { onboarded: true, profile: DEFAULT_PROFILE, logs: [] };
+    const out = migrateState(saved, 5) as Record<string, unknown>;
+    expect(out).not.toHaveProperty('quiz');
+    const merged = { ...useStore.getState(), ...out } as ReturnType<typeof useStore.getState>;
+    expect(merged.quiz).toBeUndefined();
+
+    useStore.getState().setQuiz({ reasons: ['muscle'], tastes: { med: 'yum' }, diet: [], time: 'quick' });
+    expect(useStore.getState().quiz?.reasons).toEqual(['muscle']);
+    useStore.getState().resetAll();
+    expect(useStore.getState().quiz).toBeUndefined();
+  });
+});

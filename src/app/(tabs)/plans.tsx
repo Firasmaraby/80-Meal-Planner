@@ -42,6 +42,7 @@ import {
   tagLabel,
   useWho,
 } from '@/ui/planParts';
+import { ForYou } from '@/ui/quiz/ForYou';
 import { space, useTheme } from '@/ui/theme';
 
 const fmtN = (n: number) => Math.round(n).toLocaleString();
@@ -228,6 +229,8 @@ export default function Plans() {
           </Row>
         </View>
       }>
+      <ForYou />
+      <View style={{ height: space.md }} />
       <SearchField value={query} onChange={setQuery} label="Search plans" placeholder="Salmon, lentils, Mexican, high iron" />
       {!searching ? (
         <View style={{ marginTop: space.md }}>

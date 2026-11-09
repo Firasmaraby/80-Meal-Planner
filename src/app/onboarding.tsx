@@ -1,32 +1,45 @@
-import { router } from 'expo-router';
-import { useEffect, useMemo, useState } from 'react';
-import { Pressable, TextInput, View, useWindowDimensions } from 'react-native';
-import Animated, { FadeInDown } from 'react-native-reanimated';
+import { router, useLocalSearchParams } from 'expo-router';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { Pressable, ScrollView, TextInput, View, useWindowDimensions } from 'react-native';
+import Animated, { FadeInDown, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { BAND_STEP, bandFor, bandLabel, calorieTarget, macroTargets } from '@/engine/calc';
-import { familyVisible, pickSize } from '@/engine/families';
-import { PLAN_STYLES } from '@/engine/planStyles';
+import { bandFor, calorieTarget, macroTargets } from '@/engine/calc';
+import {
+  EMPTY_ANSWERS,
+  REASONS,
+  goalFromReasons,
+  matchPlans,
+  type Budget,
+  type CookingFor,
+  type FlavourGroup,
+  type QuizAnswers,
+  type QuizReason,
+  type Taste,
+  type WeeknightTime,
+} from '@/engine/match';
 import type { Activity, CarbStyle, Goal, LifeStage, MealPlan, NutrientKey, Profile, Sex } from '@/engine/types';
-import { plainText } from '@/engine/richText';
 import { FOOD_INDEX } from '@/state/catalog';
 import { useFamilies } from '@/state/families';
-import { useStore } from '@/state/store';
+import { isEntitled } from '@/lib/paywall';
+import { today, useStore } from '@/state/store';
 import { CARB_QUESTION, CarbChoices } from '@/ui/carbParts';
 import { Choice } from '@/ui/Choice';
-import { BAR_CLEARANCE, BottomBar, DIET_OPTIONS, Fingerprint, displayTags, Pill, dietMatches, planStats, tagLabel, useWho } from '@/ui/planParts';
-import { Button, Card, Chip, Icon, I, Row, Screen, Txt, tap, type IconName } from '@/ui/primitives';
+import { BAR_CLEARANCE, BottomBar, DIET_OPTIONS } from '@/ui/planParts';
+import { Button, Chip, Icon, I, Row, Screen, Txt, tap, type IconName } from '@/ui/primitives';
+import { LiveBuilder } from '@/ui/quiz/LiveBuilder';
+import { MatchReveal } from '@/ui/quiz/MatchReveal';
+import { TasteTest } from '@/ui/quiz/TasteCard';
 import { MAX_WIDTH, font, radius, space, useTheme } from '@/ui/theme';
 import { NutrientTile } from '@/ui/viz';
 
-type StepId = 'welcome' | 'you' | 'activity' | 'diet' | 'carbs' | 'numbers';
-const STEPS: { id: StepId; label: string }[] = [
-  { id: 'welcome', label: 'Welcome' },
-  { id: 'you', label: 'About you' },
-  { id: 'activity', label: 'Activity' },
-  { id: 'diet', label: 'Diet' },
-  { id: 'carbs', label: 'Carbs' },
-  { id: 'numbers', label: 'Your numbers' },
-];
+type StepId = 'welcome' | 'reasons' | 'taste' | 'diet' | 'carbs' | 'time' | 'who' | 'budget' | 'you' | 'activity' | 'reveal';
+const STEPS: StepId[] = ['welcome', 'reasons', 'taste', 'diet', 'carbs', 'time', 'who', 'budget', 'you', 'activity', 'reveal'];
+const at = (id: StepId) => STEPS.indexOf(id);
+/** the steps that show the live builder: reasons to activity */
+const QUIZ_STEPS = at('activity') - at('reasons') + 1;
+/** a tap on a single-choice answer moves on after this long, so the choice is seen */
+const ADVANCE_MS = 260;
 
 const ACTIVITIES: { key: Activity; label: string; desc: string }[] = [
   { key: 'sedentary', label: 'Sedentary', desc: 'Desk day, little planned exercise' },
@@ -41,20 +54,45 @@ const GOALS: { key: Goal; label: string; desc: string }[] = [
   { key: 'gain', label: 'Build muscle', desc: 'A small surplus' },
 ];
 
+const TIMES: { key: WeeknightTime; label: string; desc: string }[] = [
+  { key: 'quick', label: '15 minutes', desc: 'Fast and simple' },
+  { key: 'medium', label: '30 minutes', desc: 'A little cooking is fine' },
+  { key: 'love', label: 'I love to cook', desc: 'Happy to take my time' },
+];
+const WHO: { key: CookingFor; label: string; desc: string }[] = [
+  { key: 'one', label: 'Just me', desc: 'Leftovers are welcome' },
+  { key: 'two', label: 'Two of us', desc: 'Dinner for a pair' },
+  { key: 'family', label: 'A family', desc: 'Big pots, happy plates' },
+];
+const BUDGETS: { key: Budget; label: string; desc: string }[] = [
+  { key: 'cheap', label: 'Keep it cheap', desc: 'Pantry staples first' },
+  { key: 'middle', label: 'Somewhere in the middle', desc: 'A bit of everything' },
+  { key: 'treat', label: 'Treat me', desc: 'Good ingredients, why not' },
+];
+
 const KG_PER_LB = 0.45359237;
 const CM_PER_IN = 2.54;
-const MAX_SUGGESTED = 6;
 const clamp = (n: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, n));
 const round1 = (n: number) => Math.round(n * 10) / 10;
 
+const inner = { width: '100%', maxWidth: MAX_WIDTH, alignSelf: 'center', paddingHorizontal: space.lg } as const;
+
 export default function Onboarding() {
   const c = useTheme();
+  const insets = useSafeAreaInsets();
+  const { retake } = useLocalSearchParams<{ retake?: string }>();
+  const isRetake = retake === '1';
   const stored = useStore((s) => s.profile);
+  const storedQuiz = useStore((s) => s.quiz);
+  const membership = useStore((s) => s.membership);
   const setProfile = useStore((s) => s.setProfile);
+  const setQuiz = useStore((s) => s.setQuiz);
   const finishOnboarding = useStore((s) => s.finishOnboarding);
   const enroll = useStore((s) => s.enroll);
+  const families = useFamilies();
 
-  const [step, setStep] = useState(0);
+  // a retake skips the welcome and starts from what the person said last time
+  const [step, setStep] = useState(isRetake ? at('reasons') : 0);
   const [sex, setSex] = useState<Sex>(stored.sex);
   const [age, setAge] = useState(stored.age);
   const [heightCm, setHeightCm] = useState(stored.heightCm);
@@ -64,73 +102,182 @@ export default function Onboarding() {
   const [goal, setGoal] = useState<Goal>(stored.goal);
   const [diet, setDiet] = useState<string[]>(stored.diet);
   const [carbStyle, setCarbStyle] = useState<CarbStyle>(stored.carbStyle ?? 'whole');
+  const [carbPicked, setCarbPicked] = useState(!!storedQuiz?.carbStyle);
+  const [reasons, setReasons] = useState<QuizReason[]>(storedQuiz?.reasons ?? []);
+  const [tastes, setTastes] = useState<Partial<Record<FlavourGroup, Taste>>>(storedQuiz?.tastes ?? {});
+  const [time, setTime] = useState<WeeknightTime | undefined>(storedQuiz?.time);
+  const [cookingFor, setCookingFor] = useState<CookingFor | undefined>(storedQuiz?.cookingFor);
+  const [budget, setBudget] = useState<Budget | undefined>(storedQuiz?.budget);
 
-  const id = STEPS[step].id;
-  const last = step === STEPS.length - 1;
+  const id = STEPS[step];
+  const next = () => setStep((s) => Math.min(STEPS.length - 1, s + 1));
+  const back = () => {
+    if (step <= (isRetake ? at('reasons') : 0)) {
+      if (router.canGoBack()) router.back();
+      else router.replace('/');
+      return;
+    }
+    setStep((s) => s - 1);
+  };
 
-  const commit = () => {
-    if (id === 'you') setProfile({ sex, age, heightCm, weightKg, lifeStage: sex === 'female' ? lifeStage : 'none' });
-    if (id === 'activity') setProfile({ activity, goal });
-    if (id === 'diet') setProfile({ diet });
-    if (id === 'carbs') setProfile({ carbStyle });
+  // single-choice taps move on by themselves once the choice has been seen
+  const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  useEffect(() => () => clearTimeout(timer.current), []);
+  const advanceSoon = () => {
+    clearTimeout(timer.current);
+    timer.current = setTimeout(next, ADVANCE_MS);
   };
-  const next = () => {
-    commit();
-    setStep((s) => Math.min(STEPS.length - 1, s + 1));
-  };
-  const back = () => setStep((s) => Math.max(0, s - 1));
+
+  const profileNow: Profile = useMemo(
+    () => ({ ...stored, sex, age, heightCm, weightKg, activity, goal, lifeStage: sex === 'female' ? lifeStage : 'none' }),
+    [stored, sex, age, heightCm, weightKg, activity, goal, lifeStage],
+  );
+  const kcal = useMemo(() => calorieTarget(profileNow), [profileNow]);
+
+  // what the person has told us so far; the body numbers only count once they are in
+  const answers: QuizAnswers = useMemo(
+    () => ({
+      ...EMPTY_ANSWERS,
+      reasons,
+      tastes,
+      diet: step >= at('diet') ? diet : [],
+      carbStyle: carbPicked || step > at('carbs') ? carbStyle : undefined,
+      time,
+      cookingFor,
+      budget,
+      lifeStage: step > at('you') ? profileNow.lifeStage : undefined,
+      kcal: step > at('you') ? kcal : undefined,
+    }),
+    [reasons, tastes, diet, carbStyle, carbPicked, time, cookingFor, budget, step, profileNow.lifeStage, kcal],
+  );
+  const live = useMemo(() => matchPlans(families, answers, FOOD_INDEX), [families, answers]);
 
   const finish = (plan?: MealPlan) => {
+    setProfile({ sex, age, heightCm, weightKg, lifeStage: profileNow.lifeStage, activity, goal, diet, carbStyle });
+    setQuiz(answers);
     if (plan) enroll(plan);
     finishOnboarding();
-    router.replace('/paywall');
+    // someone retaking the quiz already has access: skip the paywall
+    if (isRetake && isEntitled(membership, today())) router.replace(plan ? '/' : '/plans');
+    else router.replace('/paywall');
   };
+
+  const pickReason = (r: QuizReason) =>
+    setReasons((rs) => (rs.includes(r) ? rs.filter((x) => x !== r) : [...rs, r].slice(-2)));
+  const continueFromReasons = () => {
+    setGoal(goalFromReasons(reasons));
+    next();
+  };
+  /** one tap: save the answer, then move on */
+  const choose = <T,>(set: (v: T) => void, v: T, save?: () => void) => {
+    set(v);
+    save?.();
+    advanceSoon();
+  };
+
+  const body = (
+    <>
+      {id === 'reasons' && <Reasons value={reasons} onPick={pickReason} />}
+      {id === 'taste' && (
+        <View>
+          <Heading title="Taste test" sub="Would you eat this tonight?" />
+          <TasteTest onChange={(g, t) => setTastes((x) => ({ ...x, [g]: t }))} onDone={next} />
+        </View>
+      )}
+      {id === 'diet' && <Diet diet={diet} setDiet={setDiet} />}
+      {id === 'carbs' && (
+        <View>
+          <Heading title={CARB_QUESTION} sub="We use this to pick plans that suit you. You can change it any time in You, Food preferences." />
+          <CarbChoices
+            value={carbStyle}
+            onChange={(v) =>
+              choose(
+                setCarbStyle,
+                v,
+                () => {
+                  setCarbPicked(true);
+                  setProfile({ carbStyle: v });
+                },
+              )
+            }
+          />
+        </View>
+      )}
+      {id === 'time' && (
+        <Single title="Weeknight dinners?" sub="How long do you want to spend?" options={TIMES} value={time} onPick={(v) => choose(setTime, v)} />
+      )}
+      {id === 'who' && <Single title="Who are you cooking for?" options={WHO} value={cookingFor} onPick={(v) => choose(setCookingFor, v)} />}
+      {id === 'budget' && <Single title="What about the grocery bill?" options={BUDGETS} value={budget} onPick={(v) => choose(setBudget, v)} />}
+      {id === 'you' && (
+        <AboutYou
+          {...{ sex, setSex, age, setAge, heightCm, setHeightCm, weightKg, setWeightKg }}
+          lifeStage={lifeStage}
+          setLifeStage={setLifeStage}
+        />
+      )}
+      {id === 'activity' && <ActivityGoal {...{ activity, setActivity, goal, setGoal }} pregnantOrNursing={sex === 'female' && lifeStage !== 'none'} />}
+    </>
+  );
+
+  // multi-select and form steps keep a Continue button; single-choice steps and the taste test move on by themselves
+  const needsContinue = id === 'reasons' || id === 'diet' || id === 'you' || id === 'activity';
+  const onContinue = () => {
+    if (id === 'reasons') return continueFromReasons();
+    if (id === 'diet') setProfile({ diet });
+    if (id === 'you') setProfile({ sex, age, heightCm, weightKg, lifeStage: profileNow.lifeStage });
+    if (id === 'activity') setProfile({ activity, goal });
+    next();
+  };
+
+  const progress = (
+    <View style={{ height: 4, borderRadius: 2, backgroundColor: c.surface2, overflow: 'hidden', marginBottom: space.lg }}>
+      <ProgressFill fraction={step / (STEPS.length - 1)} />
+    </View>
+  );
 
   return (
     <View style={{ flex: 1, backgroundColor: c.bg }}>
-      <Screen
-        key={id}
-        bottomInset={BAR_CLEARANCE}
-        header={
-          <View style={{ marginBottom: space.xl, gap: space.sm }}>
-            <Row gap={6}>
-              {STEPS.map((s, i) => (
-                <View key={s.id} style={{ flex: 1, height: 5, borderRadius: 3, backgroundColor: i <= step ? c.ink : c.surface2 }} />
-              ))}
-            </Row>
-            <Txt v="label" dim={2}>
-              {step + 1} of {STEPS.length} · {STEPS[step].label}
-            </Txt>
-          </View>
-        }>
-        <Animated.View entering={FadeInDown.duration(280)}>
-          {id === 'welcome' && <Welcome />}
-          {id === 'you' && (
-            <AboutYou
-              {...{ sex, setSex, age, setAge, heightCm, setHeightCm, weightKg, setWeightKg }}
-              lifeStage={lifeStage}
-              setLifeStage={setLifeStage}
+      {id === 'welcome' || id === 'reveal' ? (
+        <Screen bottomInset={BAR_CLEARANCE} key={id} header={<View style={{ marginBottom: space.sm }}>{progress}</View>}>
+          {id === 'welcome' ? (
+            <Welcome total={live.total} />
+          ) : (
+            <MatchReveal
+              families={families}
+              answers={answers}
+              kcal={kcal}
+              protein={macroTargets(profileNow, kcal).protein}
+              band={bandFor(kcal)}
+              onStart={finish}
             />
           )}
-          {id === 'activity' && <ActivityGoal {...{ activity, setActivity, goal, setGoal }} pregnantOrNursing={sex === 'female' && lifeStage !== 'none'} />}
-          {id === 'diet' && <Diet diet={diet} setDiet={setDiet} />}
-          {id === 'carbs' && <Carbs value={carbStyle} onChange={setCarbStyle} />}
-          {id === 'numbers' && <Numbers onStart={finish} />}
-        </Animated.View>
-      </Screen>
+        </Screen>
+      ) : (
+        <View style={{ flex: 1, paddingTop: insets.top + space.md }}>
+          <View style={inner}>
+            {progress}
+            <LiveBuilder remaining={live.remaining} progress={(step - at('reasons') + 1) / (QUIZ_STEPS + 1)} answers={answers} />
+          </View>
+          <ScrollView key={id} style={{ flex: 1 }} contentContainerStyle={{ paddingBottom: insets.bottom + BAR_CLEARANCE }} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps="handled">
+            <Animated.View entering={FadeInDown.duration(280)} style={[inner, { paddingTop: space.xl }]}>
+              {body}
+            </Animated.View>
+          </ScrollView>
+        </View>
+      )}
 
       <BottomBar>
         {id === 'welcome' ? (
-          <Button label="Get started" icon={I.chevron} onPress={next} />
-        ) : last ? (
+          <Button label="Find my plan" icon={I.chevron} onPress={next} />
+        ) : id === 'reveal' ? (
           <Row gap={space.sm}>
             <Button kind="secondary" label="Back" icon={I.back} onPress={back} />
-            <Button kind="ghost" label="I’ll choose later" style={{ flex: 1 }} onPress={() => finish()} />
+            <Button kind="ghost" label="I’ll browse the plans myself" style={{ flex: 1 }} onPress={() => finish()} />
           </Row>
         ) : (
           <Row gap={space.sm}>
-            <Button kind="secondary" label="Back" icon={I.back} onPress={back} />
-            <Button label="Continue" style={{ flex: 1 }} onPress={next} />
+            <Button kind="secondary" label="Back" icon={I.back} onPress={back} style={needsContinue ? undefined : { flex: 1 }} />
+            {needsContinue ? <Button label="Continue" style={{ flex: 1 }} onPress={onContinue} /> : null}
           </Row>
         )}
       </BottomBar>
@@ -138,7 +285,18 @@ export default function Onboarding() {
   );
 }
 
-// ── 1 · Welcome ────────────────────────────────────────────────────────────
+/** The thin bar along the top: grows as the person moves through the quiz. */
+function ProgressFill({ fraction }: { fraction: number }) {
+  const c = useTheme();
+  const w = useSharedValue(fraction);
+  useEffect(() => {
+    w.value = withTiming(fraction, { duration: 350 });
+  }, [fraction, w]);
+  const style = useAnimatedStyle(() => ({ width: `${w.value * 100}%` }));
+  return <Animated.View style={[{ height: 4, borderRadius: 2, backgroundColor: c.ink }, style]} />;
+}
+
+// ── Welcome ────────────────────────────────────────────────────────────────
 
 const DEMO: { k: NutrientKey; from: number; to: number }[] = [
   { k: 'vitC', from: 0.2, to: 0.96 },
@@ -148,7 +306,7 @@ const DEMO: { k: NutrientKey; from: number; to: number }[] = [
   { k: 'folate', from: 0.1, to: 0.82 },
 ];
 
-function Welcome() {
+function Welcome({ total }: { total: number }) {
   const { width } = useWindowDimensions();
   const [filled, setFilled] = useState(false);
   useEffect(() => {
@@ -159,14 +317,17 @@ function Welcome() {
       clearInterval(loop);
     };
   }, []);
-  const inner = Math.min(width, MAX_WIDTH) - space.lg * 2;
-  const size = Math.floor((inner - space.sm * (DEMO.length - 1)) / DEMO.length);
+  const innerW = Math.min(width, MAX_WIDTH) - space.lg * 2;
+  const size = Math.floor((innerW - space.sm * (DEMO.length - 1)) / DEMO.length);
   return (
     <View style={{ paddingTop: space.xl }}>
       <Txt v="display" style={{ fontSize: 68, lineHeight: 76, letterSpacing: -2 }}>
         Eighty
       </Txt>
       <Txt v="h2" dim={1} style={{ marginTop: space.md, fontWeight: '500', lineHeight: 28 }}>
+        {`${total} plans. One is yours.`}
+      </Txt>
+      <Txt v="body" dim={1} style={{ marginTop: space.sm }}>
         Hit 80% of every vitamin and mineral, every day. The plan does the work.
       </Txt>
       <View style={{ flexDirection: 'row', gap: space.sm, marginTop: space.xxl }}>
@@ -178,8 +339,37 @@ function Welcome() {
         Each tile is done at 80%: the dashed line.
       </Txt>
       <Txt v="caption" dim={2} style={{ marginTop: space.xl }}>
-        About a minute to set up.
+        A few quick questions and we’ll find it. About a minute.
       </Txt>
+    </View>
+  );
+}
+
+// ── New quiz steps ─────────────────────────────────────────────────────────
+
+function Reasons({ value, onPick }: { value: QuizReason[]; onPick: (r: QuizReason) => void }) {
+  return (
+    <View>
+      <Heading title="What brings you here?" sub="Pick up to two. Not sure? Just continue." />
+      <Row gap={space.sm} style={{ flexWrap: 'wrap' }}>
+        {REASONS.map((r) => (
+          <Chip key={r.key} label={r.label} active={value.includes(r.key)} onPress={() => onPick(r.key)} style={{ height: 42, paddingHorizontal: 18 }} />
+        ))}
+      </Row>
+    </View>
+  );
+}
+
+/** One question, a few big cards. A tap picks and moves on. */
+function Single<T extends string>({ title, sub, options, value, onPick }: { title: string; sub?: string; options: { key: T; label: string; desc?: string }[]; value?: T; onPick: (v: T) => void }) {
+  return (
+    <View>
+      <Heading title={title} sub={sub} />
+      <View accessibilityRole="radiogroup" accessibilityLabel={title} style={{ gap: space.sm }}>
+        {options.map((o) => (
+          <Choice key={o.key} label={o.label} desc={o.desc} selected={value === o.key} onPress={() => onPick(o.key)} />
+        ))}
+      </View>
     </View>
   );
 }
@@ -414,141 +604,6 @@ function Diet({ diet, setDiet }: { diet: string[]; setDiet: (d: string[]) => voi
         <Txt v="caption" dim={2} style={{ marginTop: space.md }}>
           Eat everything? Just continue.
         </Txt>
-      )}
-    </View>
-  );
-}
-
-// ── 5 · Carbs ──────────────────────────────────────────────────────────────
-
-function Carbs({ value, onChange }: { value: CarbStyle; onChange: (v: CarbStyle) => void }) {
-  return (
-    <View>
-      <Heading title={CARB_QUESTION} sub="We use this to pick plans that suit you. You can change it any time in You, Food preferences." />
-      <CarbChoices value={value} onChange={onChange} />
-    </View>
-  );
-}
-
-// ── 6 · Your numbers ───────────────────────────────────────────────────────
-
-function Numbers({ onStart }: { onStart: (plan: MealPlan) => void }) {
-  const c = useTheme();
-  const profile: Profile = useStore((s) => s.profile);
-  const families = useFamilies();
-  const who = useWho(profile);
-
-  const kcal = useMemo(() => calorieTarget(profile), [profile]);
-  const band = useMemo(() => bandFor(kcal), [kcal]);
-  const protein = useMemo(() => macroTargets(profile, kcal).protein, [profile, kcal]);
-  const carbStyle = profile.carbStyle ?? 'whole';
-
-  // one card per family, at the size that fits: the families near your band, then your diet, within your carb choice
-  const { list, exact } = useMemo(() => {
-    const all = families.filter((f) => familyVisible(f, carbStyle, FOOD_INDEX)).map((family) => ({ family, pick: pickSize(family, kcal) }));
-    type Entry = (typeof all)[number];
-    const byBand = (a: Entry, b: Entry) => a.pick.gap - b.pick.gap || a.family.name.localeCompare(b.family.name);
-    const near = all.filter((e) => e.pick.gap <= BAND_STEP).sort(byBand);
-    const pool = near.length ? near : [...all].sort(byBand).slice(0, 3);
-    const matching = pool.filter((e) => dietMatches(e.family, profile.diet));
-    const chosen = matching.length || !profile.diet.length ? matching : pool;
-    return { list: chosen.slice(0, MAX_SUGGESTED), exact: matching.length > 0 || !profile.diet.length };
-  }, [families, kcal, carbStyle, profile.diet]);
-
-  const stats = useMemo(() => new Map(list.map((e) => [e.pick.plan.id, planStats(e.pick.plan, who)])), [list, who]);
-
-  return (
-    <View>
-      <Heading title="Your numbers" sub="Every plan is built so its meals fill your vitamins and minerals. Your board shows it happening." />
-      <Card>
-        <Txt v="label" dim={1}>
-          Daily target
-        </Txt>
-        <Txt v="display" style={{ marginTop: 4 }}>
-          {kcal.toLocaleString()}
-          <Txt v="h3" dim={2}>
-            {'  '}kcal
-          </Txt>
-        </Txt>
-        <View style={{ height: 1, backgroundColor: c.line, marginVertical: space.md }} />
-        <Row gap={space.xl}>
-          <View>
-            <Txt v="numLg" color={c.protein}>
-              {protein}
-              <Txt v="caption" dim={2}>
-                {' '}g
-              </Txt>
-            </Txt>
-            <Txt v="caption" dim={2}>
-              protein a day
-            </Txt>
-          </View>
-          <View>
-            <Txt v="numLg">{bandLabel(band)}</Txt>
-            <Txt v="caption" dim={2}>
-              your plan band
-            </Txt>
-          </View>
-        </Row>
-      </Card>
-
-      <Txt v="label" dim={1} style={{ marginTop: space.xl, marginBottom: space.sm }}>
-        Plans for you
-      </Txt>
-      {!exact && (
-        <Txt v="caption" dim={2} style={{ marginBottom: space.sm }}>
-          No exact diet match yet. These are the closest.
-        </Txt>
-      )}
-      {list.length === 0 ? (
-        <Card>
-          <Txt v="h3">No plans in your band yet</Txt>
-          <Txt v="caption" dim={1} style={{ marginTop: 2 }}>
-            Browse the full library from the Plans tab.
-          </Txt>
-        </Card>
-      ) : (
-        <View style={{ gap: space.md }}>
-          {list.map(({ family, pick }) => {
-            const p = pick.plan;
-            const st = stats.get(p.id)!;
-            const same = pick.covered;
-            return (
-              <Card key={family.id}>
-                <Txt v="label" dim={2}>
-                  {family.cuisine}
-                </Txt>
-                <Txt v="h2" style={{ marginTop: 2 }}>
-                  {family.name}
-                </Txt>
-                <Row gap={6} style={{ flexWrap: 'wrap', marginTop: space.sm }}>
-                  <Pill label={`${bandLabel(p.band)} kcal`} color={same ? c.bg : c.ink2} bg={same ? c.ink : c.surface2} />
-                  {family.style ? <Pill label={PLAN_STYLES[family.style].label} /> : null}
-                  {displayTags(family.tags, family.style).slice(0, family.style ? 2 : 3).map((t) => (
-                    <Pill key={t} label={tagLabel(t)} />
-                  ))}
-                </Row>
-                {family.summary && family.isLibrary ? (
-                  <Txt v="caption" dim={1} style={{ marginTop: space.sm, lineHeight: 18 }} numberOfLines={3}>
-                    {plainText(family.summary)}
-                  </Txt>
-                ) : null}
-                <Row gap={space.lg} style={{ marginTop: space.md }}>
-                  <Fingerprint progress={st.progress} size={11} gap={3} />
-                  <View style={{ flex: 1 }}>
-                    <Txt v="h3">
-                      {st.covered}/{st.of} covered
-                    </Txt>
-                    <Txt v="caption" dim={2}>
-                      on an average day
-                    </Txt>
-                  </View>
-                </Row>
-                <Button label="Start this plan" icon={I.check} style={{ marginTop: space.md }} onPress={() => onStart(p)} />
-              </Card>
-            );
-          })}
-        </View>
       )}
     </View>
   );
